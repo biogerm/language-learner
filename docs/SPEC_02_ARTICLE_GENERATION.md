@@ -78,10 +78,11 @@ The AI generation results must be serialized into JSON data strictly following a
 ```json
 {
   "course_id": "sfid",
+  "course_title": "SFI D",
   "steps": [
     {
       "step_id": "step_01",
-      "step_title": "Step 1: Daily Life and Health",
+      "step_title": "Daily Life and Health",
       "articles": [
         {
           "article_id": "art_01",
@@ -118,7 +119,8 @@ The AI generation results must be serialized into JSON data strictly following a
 ```
 
 ### Field Descriptions
-*   `step_title`: A meaningful thematic title for the Step (e.g., "Step 1: Daily Life").
+*   `course_title`: A meaningful title for the course (e.g., "SFI D"). Do not expose internal IDs to the user.
+*   `step_title`: A meaningful thematic title for the Step (e.g., "Daily Life and Health"). Do not include prefixes like "Step 1" as it exposes internal hierarchy.
 *   `article_title`: A meaningful title for the specific reading article.
 *   `sv`: The complete Swedish original sentence text.
 *   `en`: The complete English translation of the sentence.

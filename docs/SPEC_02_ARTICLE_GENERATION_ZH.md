@@ -78,10 +78,11 @@ AI 生成的结果必须被序列化为严格遵循三层嵌套架构的 JSON �
 ```json
 {
   "course_id": "sfid",
+  "course_title": "SFI D",
   "steps": [
     {
       "step_id": "step_01",
-      "step_title": "Step 1: Daily Life and Health",
+      "step_title": "Daily Life and Health",
       "articles": [
         {
           "article_id": "art_01",
@@ -118,7 +119,8 @@ AI 生成的结果必须被序列化为严格遵循三层嵌套架构的 JSON �
 ```
 
 ### 字段说明
-*   `step_title`: Step 的有意义的主题标题（例如 "Step 1: 日常生活"）。
+*   `course_title`: 课程的有意义的标题（例如 "SFI D"）。不要向用户暴露内部 ID。
+*   `step_title`: Step 的有意义的主题标题（例如 "日常生活"）。不要包含 "Step 1" 等前缀，以免暴露内部层级。
 *   `article_title`: 具体阅读文章的有意义的标题。
 *   `sv`: 完整的瑞典语原句文本。
 *   `en`: 该句子的完整英语翻译。

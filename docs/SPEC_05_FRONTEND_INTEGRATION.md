@@ -43,10 +43,11 @@ The generated articles from Phase 2 must be assembled into a single JavaScript o
 // Auto-generated. DO NOT EDIT.
 window.APP_DATA = {
   "course_id": "sfid",
+  "course_title": "SFI D",
   "steps": [
     {
       "step_id": "step_01",
-      "step_title": "Step 1: Daily Life and Health",
+      "step_title": "Daily Life and Health",
       "articles": [
         {
           "article_id": "art_01",
