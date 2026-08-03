@@ -24,7 +24,7 @@ The pipeline is designed to be highly flexible regarding input sources. The inpu
 
 ### 2.2 Primary Inputs (Current Project)
 *   `b1_ordlista.json`: B1 level vocabulary list (approx. 3,433 entries, ~30 defective entries)
-*   `extracted_ordkort.txt`: The raw text extracted from the original PDF. Used as the ground-truth reference for repairing defective entries.
+*   `original_source.pdf`: The original textbook or material PDF file. Used as the ground-truth reference for repairing defective entries.
 *   `ok_b1_ordlista.json`: B1 level supplementary vocabulary (46 clean entries)
 *   `b1_extra.json`: B1 extra vocabulary (233 entries, source and translation share the same form)
 
@@ -39,37 +39,37 @@ These parameters are defined here in Phase 1 and **MUST be inherited** by all su
 The input JSON must be traversed and repaired according to the following specific rules. 
 
 > [!IMPORTANT]
-> **Ground Truth Rule**: The errors described below are artifacts of the PDF extraction process. To fix them, the system MUST NOT rely on the AI to "guess" or hallucinate the repair. Instead, the script must actively search the `extracted_ordkort.txt` (raw PDF text) for the corrupted fragment, locate its exact position, extract the surrounding text block, and use that original ground-truth context to correct the error.
+> **Ground Truth Rule**: The errors described below are artifacts of the PDF extraction process. To fix them, the system MUST NOT rely on the AI to "guess" or hallucinate the repair. Instead, the script must use a PDF parsing library (e.g., `pdfplumber` or `PyMuPDF`) to actively search the `original_source.pdf` for the corrupted fragment, locate its exact position on the page, extract the surrounding text block directly from the PDF, and use that original ground-truth context to correct the error.
 
 The repair process must maintain an Audit Trail.
 
 ### 3.1 Soft-Hyphen Truncation Fix
 *   **Condition**: The JSON value string contains a soft hyphen `\u00ad`.
-*   **Logic**: Search for the truncated key or value in the raw PDF text. Extract the full, unbroken line. Use this line to determine the complete English translation and remove the soft hyphen.
+*   **Logic**: Search for the truncated key or value in the original PDF. Extract the full, unbroken line. Use this line to determine the complete English translation and remove the soft hyphen.
 *   **Example**:
     *   Input: `"människa": "human being, per\u00ad"`
-    *   Action: Find "human being, per" in PDF text, retrieve full line "människa human being, person".
+    *   Action: Find "human being, per" in the PDF, retrieve full line "människa human being, person".
     *   Output: `"människa": "human being, person"`
 
 ### 3.2 Grammar Info Replacement Fix
 *   **Condition**: The JSON value string starts with `(-` or `(+` (these are Swedish conjugation patterns, not English translations).
-*   **Logic**: This happens when the PDF parser grabbed the grammatical suffix instead of the translation. Search the raw PDF text for the key, extract the surrounding lines to find the actual English translation that follows the grammar info.
+*   **Logic**: This happens when the PDF parser grabbed the grammatical suffix instead of the translation. Search the original PDF for the key, extract the surrounding lines to find the actual English translation that follows the grammar info.
 *   **Example**:
     *   Input: `"sammanfatta": "(-r, -de, -t)"`
-    *   Action: Find "sammanfatta" in PDF text, read the adjacent text containing the English translation.
+    *   Action: Find "sammanfatta" in the PDF, read the adjacent text containing the English translation.
     *   Output: `"sammanfatta": "summarize"`
 
 ### 3.3 Phrasal Verb Split Fix
 *   **Condition**: The JSON value is solely a Swedish particle or preposition (e.g., `på`, `av`, `ut`, `upp`).
-*   **Logic**: This happens when a phrasal verb is split across lines in the PDF. Search the raw PDF text for the key adjacent to the preposition. Merge them into a new key, extract the actual English translation from the surrounding text, and delete the original split entries.
+*   **Logic**: This happens when a phrasal verb is split across lines in the PDF. Search the original PDF for the key adjacent to the preposition. Merge them into a new key, extract the actual English translation from the surrounding text, and delete the original split entries.
 *   **Example**:
     *   Input: `"stöta": "på"`
-    *   Action: Locate "stöta på" in the PDF text, retrieve the adjacent English translation.
+    *   Action: Locate "stöta på" in the PDF, retrieve the adjacent English translation.
     *   Output: `"stöta på": "run into, encounter"`
 
 ### 3.4 Line-Wrap Orphan Cleanup
 *   **Condition**: The JSON key consists only of English characters (no Swedish special characters like `å, ä, ö`) **AND** is very short (usually `< 5` characters). These are typically PDF line-break artifacts.
-*   **Logic**: Search the PDF text to confirm these are orphaned fragments of a previous line's English translation. Permanently delete these entries as keys, as their valid content has been merged in steps 3.1-3.3.
+*   **Logic**: Search the PDF to confirm these are orphaned fragments of a previous line's English translation. Permanently delete these entries as keys, as their valid content has been merged in steps 3.1-3.3.
 *   **Example**:
     *   Detected: `"ne": "well known in the arts"`, `"ty": "flower"`, `"me": "my jacket?"`
     *   Action: Removed from the dataset.
