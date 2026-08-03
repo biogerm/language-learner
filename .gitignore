@@ -1,0 +1,18 @@
+# OS Files
+.DS_Store
+*.swp
+*.swo
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+venv/
+env/
+.pytest_cache/
+
+# Obsidian (per user request, ignore the entire vault config)
+.obsidian/
+
+# Temp processing directories
+docs_v2/
