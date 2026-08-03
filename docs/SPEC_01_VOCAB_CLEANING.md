@@ -24,6 +24,7 @@ The pipeline is designed to be highly flexible regarding input sources. The inpu
 
 ### 2.2 Primary Inputs (Current Project)
 *   `b1_ordlista.json`: B1 level vocabulary list (approx. 3,433 entries, ~30 defective entries)
+*   `extracted_ordkort.txt`: The raw text extracted from the original PDF. Used as the ground-truth reference for repairing defective entries.
 *   `ok_b1_ordlista.json`: B1 level supplementary vocabulary (46 clean entries)
 *   `b1_extra.json`: B1 extra vocabulary (233 entries, source and translation share the same form)
 
@@ -35,32 +36,40 @@ These parameters are defined here in Phase 1 and **MUST be inherited** by all su
 
 ## 3. Data Cleaning Rules
 
-The input JSON must be traversed and repaired according to the following specific rules. The repair process must maintain an Audit Trail.
+The input JSON must be traversed and repaired according to the following specific rules. 
+
+> [!IMPORTANT]
+> **Ground Truth Rule**: The errors described below are artifacts of the PDF extraction process. To fix them, the system MUST NOT rely on the AI to "guess" or hallucinate the repair. Instead, the script must actively search the `extracted_ordkort.txt` (raw PDF text) for the corrupted fragment, locate its exact position, extract the surrounding text block, and use that original ground-truth context to correct the error.
+
+The repair process must maintain an Audit Trail.
 
 ### 3.1 Soft-Hyphen Truncation Fix
 *   **Condition**: The JSON value string contains a soft hyphen `\u00ad`.
-*   **Logic**: Extract the truncated value, call the AI to complete it, and remove the soft hyphen.
+*   **Logic**: Search for the truncated key or value in the raw PDF text. Extract the full, unbroken line. Use this line to determine the complete English translation and remove the soft hyphen.
 *   **Example**:
     *   Input: `"människa": "human being, per\u00ad"`
+    *   Action: Find "human being, per" in PDF text, retrieve full line "människa human being, person".
     *   Output: `"människa": "human being, person"`
 
 ### 3.2 Grammar Info Replacement Fix
 *   **Condition**: The JSON value string starts with `(-` or `(+` (these are Swedish conjugation patterns, not English translations).
-*   **Logic**: Clear the incorrect value and send the key to the AI to retrieve the accurate English translation.
+*   **Logic**: This happens when the PDF parser grabbed the grammatical suffix instead of the translation. Search the raw PDF text for the key, extract the surrounding lines to find the actual English translation that follows the grammar info.
 *   **Example**:
     *   Input: `"sammanfatta": "(-r, -de, -t)"`
+    *   Action: Find "sammanfatta" in PDF text, read the adjacent text containing the English translation.
     *   Output: `"sammanfatta": "summarize"`
 
 ### 3.3 Phrasal Verb Split Fix
 *   **Condition**: The JSON value is solely a Swedish particle or preposition (e.g., `på`, `av`, `ut`, `upp`).
-*   **Logic**: Merge the original key and this value into a complete phrasal verb as a new key, and delete the original entry. Use the AI to generate the English translation for the new merged phrasal verb.
+*   **Logic**: This happens when a phrasal verb is split across lines in the PDF. Search the raw PDF text for the key adjacent to the preposition. Merge them into a new key, extract the actual English translation from the surrounding text, and delete the original split entries.
 *   **Example**:
     *   Input: `"stöta": "på"`
+    *   Action: Locate "stöta på" in the PDF text, retrieve the adjacent English translation.
     *   Output: `"stöta på": "run into, encounter"`
 
 ### 3.4 Line-Wrap Orphan Cleanup
 *   **Condition**: The JSON key consists only of English characters (no Swedish special characters like `å, ä, ö`) **AND** is very short (usually `< 5` characters). These are typically PDF line-break artifacts.
-*   **Logic**: Permanently delete these entries.
+*   **Logic**: Search the PDF text to confirm these are orphaned fragments of a previous line's English translation. Permanently delete these entries as keys, as their valid content has been merged in steps 3.1-3.3.
 *   **Example**:
     *   Detected: `"ne": "well known in the arts"`, `"ty": "flower"`, `"me": "my jacket?"`
     *   Action: Removed from the dataset.
@@ -130,21 +139,26 @@ Use the following Prompt templates to drive the LLM for repair and translation t
 
 ### 8.1 AI Defect Repair Prompt
 ```text
-You are an expert Swedish to English translator. I have some corrupted entries from a Swedish vocabulary dictionary extracted from a PDF. Please repair them based on the context.
+You are a data extraction assistant. We have some corrupted entries from a Swedish vocabulary dictionary extracted from a PDF. 
 
-For truncated translations (indicated by '\u00ad' or similar), guess the full English translation. 
-For grammatical info entries (e.g. "(-r, -de, -t)"), provide the actual English translation of the Swedish word.
+Instead of guessing, I will provide you with the corrupted JSON entry, AND the raw text block extracted from the original PDF surrounding this entry.
+Your task is to use the raw PDF text to find the correct, full Swedish word/phrase and its English translation.
 
-Input JSON:
+Input Corrupted JSON:
 {
-  "människa": "human being, per\u00ad",
-  "sammanfatta": "(-r, -de, -t)"
+  "människa": "human being, per\u00ad"
 }
+
+Raw PDF Text Context:
+"...
+djur animal
+människa human being, person
+sammanfatta (-r, -de, -t) summarize
+..."
 
 Provide ONLY the repaired JSON as your response:
 {
-  "människa": "human being, person",
-  "sammanfatta": "summarize"
+  "människa": "human being, person"
 }
 ```
 

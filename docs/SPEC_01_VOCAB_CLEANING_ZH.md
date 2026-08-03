@@ -24,6 +24,7 @@
 
 ### 2.2 主要输入 (Current Project)
 *   `b1_ordlista.json`: B1 级别词汇列表（约 3,433 条目，包含约 30 个缺陷条目）
+*   `extracted_ordkort.txt`: 从原始 PDF 中提取的纯文本。作为修复缺陷条目的**事实基准 (Ground Truth)** 参考。
 *   `ok_b1_ordlista.json`: B1 级别补充词汇（46 个干净条目）
 *   `b1_extra.json`: B1 额外词汇（233 条目，原文和译文形式相同）
 
@@ -35,32 +36,40 @@
 
 ## 3. 数据清洗规则 (Data Cleaning Rules)
 
-必须按照以下特定规则对输入 JSON 进行遍历和修复。修复过程必须保持日志记录 (Audit Trail)。
+必须按照以下特定规则对输入 JSON 进行遍历和修复。
+
+> [!IMPORTANT]
+> **事实基准规则 (Ground Truth Rule)**: 下文描述的错误均是 PDF 提取过程的伪影。为了修复它们，系统**绝对不能**依赖 AI 去“猜测”或幻觉出修复结果。相反，脚本必须主动在 `extracted_ordkort.txt`（原始 PDF 文本）中搜索损坏的片段，定位其确切位置，提取周围的文本块，并使用该原始事实上下文来纠正错误。
+
+修复过程必须保持日志记录 (Audit Trail)。
 
 ### 3.1 软连字符截断修复
 *   **条件**: JSON 的 value 字符串中包含软连字符 `\u00ad`。
-*   **逻辑**: 提取出被截断的 value，调用 AI 进行补全，并移除软连字符。
+*   **逻辑**: 在原始 PDF 文本中搜索被截断的 key 或 value，提取出完整未断行的该行文本，利用该行确定完整的英文翻译，并移除软连字符。
 *   **示例**:
     *   输入: `"människa": "human being, per\u00ad"`
+    *   处理: 在 PDF 文本中找到 "human being, per"，提取完整行 "människa human being, person"。
     *   输出: `"människa": "human being, person"`
 
 ### 3.2 语法信息替代修复
 *   **条件**: JSON 的 value 字符串以 `(-` 或 `(+` 开头（这些是瑞典语的变位模式，不是英文翻译）。
-*   **逻辑**: 清除该错误的 value，将该 key 发送给 AI 重新获取准确的英文翻译。
+*   **逻辑**: 这是由于 PDF 解析器抓取了语法后缀而非翻译导致的。在原始 PDF 文本中搜索该 key，提取周围的行，找到跟在语法信息后面的实际英文翻译。
 *   **示例**:
     *   输入: `"sammanfatta": "(-r, -de, -t)"`
+    *   处理: 在 PDF 文本中找到 "sammanfatta"，读取包含英文翻译的相邻文本。
     *   输出: `"sammanfatta": "summarize"`
 
 ### 3.3 短语动词分裂修复
 *   **条件**: JSON 的 value 仅为一个瑞典语的小品词或介词（如 `på`, `av`, `ut`, `upp` 等）。
-*   **逻辑**: 将原本的 key 和该 value 合并为一个完整的短语动词作为新的 key，并删除原有词条。然后使用 AI 为合并后的新短语动词生成对应的英文翻译。
+*   **逻辑**: 这是因为 PDF 中短语动词被跨行切断导致的。在原始 PDF 文本中搜索与该介词相邻的 key，将它们合并为新的 key，从周围文本提取实际英文翻译，并删除原有的分裂条目。
 *   **示例**:
     *   输入: `"stöta": "på"`
+    *   处理: 在 PDF 文本中定位 "stöta på"，获取相邻的英文翻译。
     *   输出: `"stöta på": "run into, encounter"`
 
 ### 3.4 换行孤儿条目清除
 *   **条件**: JSON 的 key 仅包含英文字符（无瑞典语特殊字符如 `å, ä, ö`）**且** 长度非常短（通常 `< 5` 个字符）。这类条目通常是 PDF 跨行识别导致的碎片。
-*   **逻辑**: 永久删除这些条目。
+*   **逻辑**: 在 PDF 文本中搜索以确认它们是上一行英文翻译的孤儿片段。永久删除这些条目，因为它们的有效内容已经在 3.1-3.3 步中被合并。
 *   **示例**:
     *   检测到: `"ne": "well known in the arts"`, `"ty": "flower"`, `"me": "my jacket?"`
     *   处理: 从数据集中移除。
@@ -130,21 +139,26 @@
 
 ### 8.1 缺陷修复 Prompt
 ```text
-You are an expert Swedish to English translator. I have some corrupted entries from a Swedish vocabulary dictionary extracted from a PDF. Please repair them based on the context.
+You are a data extraction assistant. We have some corrupted entries from a Swedish vocabulary dictionary extracted from a PDF. 
 
-For truncated translations (indicated by '\u00ad' or similar), guess the full English translation. 
-For grammatical info entries (e.g. "(-r, -de, -t)"), provide the actual English translation of the Swedish word.
+Instead of guessing, I will provide you with the corrupted JSON entry, AND the raw text block extracted from the original PDF surrounding this entry.
+Your task is to use the raw PDF text to find the correct, full Swedish word/phrase and its English translation.
 
-Input JSON:
+Input Corrupted JSON:
 {
-  "människa": "human being, per\u00ad",
-  "sammanfatta": "(-r, -de, -t)"
+  "människa": "human being, per\u00ad"
 }
+
+Raw PDF Text Context:
+"...
+djur animal
+människa human being, person
+sammanfatta (-r, -de, -t) summarize
+..."
 
 Provide ONLY the repaired JSON as your response:
 {
-  "människa": "human being, person",
-  "sammanfatta": "summarize"
+  "människa": "human being, person"
 }
 ```
 
