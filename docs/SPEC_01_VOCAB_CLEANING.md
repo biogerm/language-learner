@@ -24,7 +24,7 @@ The pipeline is designed to be highly flexible regarding input sources. The inpu
 
 ### 2.2 Primary Inputs (Current Project)
 *   `b1_ordlista.json`: B1 level vocabulary list (approx. 3,433 entries, ~30 defective entries)
-*   `original_source.pdf`: The original textbook or material PDF file. Used as the ground-truth reference for repairing defective entries.
+*   `RivstartB1B2_Ordlista_engelska.pdf` and `rivstart_B1_B2_TB__ordkort_1.pdf`: The original textbook and flashcard PDF files. Used as the ground-truth reference for repairing defective entries.
 *   `ok_b1_ordlista.json`: B1 level supplementary vocabulary (46 clean entries)
 *   `b1_extra.json`: B1 extra vocabulary (233 entries, source and translation share the same form)
 
@@ -39,7 +39,7 @@ These parameters are defined here in Phase 1 and **MUST be inherited** by all su
 The input JSON must be traversed and repaired according to the following specific rules. 
 
 > [!IMPORTANT]
-> **Ground Truth Rule**: The errors described below are artifacts of the PDF extraction process. To fix them, the system MUST NOT rely on the AI to "guess" or hallucinate the repair. Instead, the script must use a PDF parsing library (e.g., `pdfplumber` or `PyMuPDF`) to actively search the `original_source.pdf` for the corrupted fragment, locate its exact position on the page, extract the surrounding text block directly from the PDF, and use that original ground-truth context to correct the error.
+> **Ground Truth Rule**: The errors described below are artifacts of the PDF extraction process. To fix them, the system MUST NOT rely on the AI to "guess" or hallucinate the repair. Instead, the script must use a PDF parsing library (e.g., `pdfplumber` or `PyMuPDF`) to actively search the original PDF files (`RivstartB1B2_Ordlista_engelska.pdf` or `rivstart_B1_B2_TB__ordkort_1.pdf`) for the corrupted fragment, locate its exact position on the page, extract the surrounding text block directly from the PDF, and use that original ground-truth context to correct the error.
 
 The repair process must maintain an Audit Trail.
 

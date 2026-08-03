@@ -24,7 +24,7 @@
 
 ### 2.2 主要输入 (Current Project)
 *   `b1_ordlista.json`: B1 级别词汇列表（约 3,433 条目，包含约 30 个缺陷条目）
-*   `original_source.pdf`: 原始的教科书或材料 PDF 文件。作为修复缺陷条目的**事实基准 (Ground Truth)** 参考。
+*   `RivstartB1B2_Ordlista_engelska.pdf` 和 `rivstart_B1_B2_TB__ordkort_1.pdf`: 原始的教科书和单词卡 PDF 文件。作为修复缺陷条目的**事实基准 (Ground Truth)** 参考。
 *   `ok_b1_ordlista.json`: B1 级别补充词汇（46 个干净条目）
 *   `b1_extra.json`: B1 额外词汇（233 条目，原文和译文形式相同）
 
@@ -39,7 +39,7 @@
 必须按照以下特定规则对输入 JSON 进行遍历和修复。
 
 > [!IMPORTANT]
-> **事实基准规则 (Ground Truth Rule)**: 下文描述的错误均是 PDF 提取过程的伪影。为了修复它们，系统**绝对不能**依赖 AI 去“猜测”或幻觉出修复结果。相反，脚本必须使用 PDF 解析库（如 `pdfplumber` 或 `PyMuPDF`）主动在 `original_source.pdf` 中搜索损坏的片段，定位其在页面上的确切位置，直接从 PDF 中提取周围的文本块，并使用该原始事实上下文来纠正错误。
+> **事实基准规则 (Ground Truth Rule)**: 下文描述的错误均是 PDF 提取过程的伪影。为了修复它们，系统**绝对不能**依赖 AI 去“猜测”或幻觉出修复结果。相反，脚本必须使用 PDF 解析库（如 `pdfplumber` 或 `PyMuPDF`）主动在原始 PDF 文件 (`RivstartB1B2_Ordlista_engelska.pdf` 或 `rivstart_B1_B2_TB__ordkort_1.pdf`) 中搜索损坏的片段，定位其在页面上的确切位置，直接从 PDF 中提取周围的文本块，并使用该原始事实上下文来纠正错误。
 
 修复过程必须保持日志记录 (Audit Trail)。
 
