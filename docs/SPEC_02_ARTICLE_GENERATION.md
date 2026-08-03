@@ -7,6 +7,11 @@
 
 The core task of this phase is to receive the `master_dict.json` (generated in Phase 1) and transform its vocabulary into structured, contextually coherent article data (JSON format).
 
+> [!IMPORTANT]
+> **Autonomous Agent Workflow**: Phase 2 is NOT a dumb script looping through an API. It is designed to be executed by an autonomous AI Agent. The Agent must intelligently manage the workflow in two distinct steps:
+> 1. **Semantic Clustering**: The Agent first analyzes the entire vocabulary list and intelligently groups words into coherent thematic clusters (future articles) based on semantics and context.
+> 2. **Article Generation**: Only after all words are categorized does the Agent proceed to generate articles for each cluster.
+
 Generated articles must be written in Swedish strictly at the **CEFR B1 (SFI Level D)** standard, providing English as the bridge language translation. Every article should be a coherent story or essay that naturally incorporates the target vocabulary.
 
 ```mermaid
@@ -36,15 +41,16 @@ graph TD
 *   `allow_word_overlap` (Boolean): Whether the same word can appear as a target in multiple articles (Default: false).
 *   `natural_reuse_target` (Integer): How many times a word should naturally appear in other articles beyond its "primary appearance" (Default: 2).
 
-## 3. Word Grouping Strategy
+## 3. Autonomous Semantic Clustering (Sub-step 2.1)
 
 > [!IMPORTANT]
-> Before words are allocated to specific articles, they must undergo Semantic Grouping. Words related by context appearing in the same article create coherent narratives, significantly lowering learner comprehension barriers.
+> Before generating any articles, the AI Agent MUST perform a holistic review of the `master_dict.json` to intelligently cluster the words. Words related by context appearing in the same article create coherent narratives, significantly lowering learner comprehension barriers.
 
-Supported grouping methods (in descending order of priority):
-1.  **Semantic Theme Clustering**: Group words by semantic themes (e.g., food, work, family, nature, society). This maps directly to the "Step" layer in our data architecture.
-2.  **Textbook Chapter Grouping**: If specific chapter metadata is available, group words by chapter.
-3.  **AI Auto-clustering**: If no clear themes exist, the AI engine must dynamically cluster words based on semantic similarity.
+The AI Agent must autonomously execute the following:
+1. **Analyze the Vocabulary**: Read the entire input dictionary.
+2. **Determine Themes (Steps)**: Intelligently identify underlying semantic themes (e.g., healthcare, job hunting, daily routines, nature, society). These themes map to the "Step" layer in our architecture.
+3. **Allocate Words (Articles)**: Group words into specific article clusters (e.g., 20-30 words per cluster) under each theme. The Agent must ensure words in a cluster share a strong semantic relationship that allows for natural story-telling.
+4. **Finalize Blueprint**: Only when 100% of the words are assigned to a logical cluster does the Agent proceed to Article Generation (Sub-step 2.2).
 
 ## 4. Word Overlap Strategy
 
