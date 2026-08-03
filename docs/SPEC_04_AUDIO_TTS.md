@@ -1,0 +1,160 @@
+# Phase 4: Audio TTS Generation & Verification
+
+## 1. Overview
+The core objective of Phase 4 is to generate MP3 pronunciation audio for all generated sentences and individual words, and to rigorously verify their quality.
+
+To meet the needs of SFI learners, the audio is generated using the Microsoft Edge TTS API, with the speech rate reduced by 20% to accommodate a learning pace. 
+Furthermore, this phase incorporates an Automatic Speech Recognition (ASR) loopback verification using OpenAI Whisper. This ensures pronunciation accuracy and prevents the pipeline from outputting corrupted files caused by network timeouts or silent generation bugs.
+
+## 2. Input Specification
+
+- **Input from Phase 2**: The article JSON files containing all sentences. Each sentence must have an `id` and an `sv` (Swedish text) field.
+- **Input from Phase 1**: The `master_dict.json` containing all individual words (using the `base_form` key).
+- **Parameters**:
+  - `voice_sentence`: TTS voice for sentences (Default: `sv-SE-SofieNeural`, Female)
+  - `voice_word`: TTS voice for words (Default: `sv-SE-MattiasNeural`, Male)
+  - `rate`: Speech rate adjustment (Default: `-20%`)
+  - `output_format`: Audio format (Default: `mp3`)
+  - `max_concurrent`: Maximum concurrent requests (Default: 10)
+  - `retry_count`: Retries for failed requests (Default: 5)
+  - `min_file_size_bytes`: Minimum valid MP3 file size (Default: 1024 bytes)
+  - `whisper_model`: Whisper model for verification (Default: `base`)
+  - `verification_threshold`: Minimum similarity score for TTS verification (Default: 0.85)
+
+## 3. TTS Generation Pipeline
+
+### 3.1 Task Splitting
+- **Sentence Audio Task**: Extract all unique sentences from the Phase 2 JSON files.
+- **Word Audio Task**: Extract all unique `base_form` entries from the Phase 1 dictionary.
+- **Deduplicate**: Words and sentences appearing multiple times across chapters are generated only once and shared.
+
+### 3.2 Concurrency
+- Use Python `asyncio` and the `edge-tts` library to achieve high-concurrency generation.
+- Cap the concurrency at `max_concurrent` to prevent triggering Edge API rate limits.
+- Flow for each sub-task: Call Edge TTS API -> Save as MP3 file.
+
+### 3.3 File Naming Conventions
+- Sentence Audio: `sentences_audio/{sentence_id}.mp3` (e.g., `sentences_audio/art01_s001.mp3`)
+- Word Audio: `words_audio/{base_form}.mp3` (e.g., `words_audio/soffpotatis.mp3`)
+- All filenames must be **lowercase**, with spaces replaced by underscores `_`.
+- Special Swedish characters (å, ä, ö) should be retained in the filename; do not downgrade to ASCII.
+
+### 3.4 Quality Checks
+Perform basic checks after every generation:
+1. **File Existence**: Confirm the file is saved to the correct path.
+2. **File Size**: Check if the file size is `>= min_file_size_bytes` (1KB) to prevent empty or corrupted files.
+3. **Audio Duration (Optional)**: Reject audio files shorter than 0.3 seconds.
+- Files failing these checks automatically trigger a retry (up to `retry_count`).
+- If retries are exhausted, log the error and skip to the next task.
+
+## 4. Speech Recognition (ASR) Verification
+Introduce an ASR mechanism to perform closed-loop validation on the generated audio, ensuring the TTS engine actually pronounced the intended text.
+
+### 4.1 Verification Flow
+1. Load the generated MP3 file.
+2. Feed it into Whisper (or Azure Speech-to-Text) to extract the transcript.
+3. **Normalize**: Convert both the original text and the generated transcript to lowercase, and strip all punctuation and extra whitespace.
+4. Calculate **Levenshtein distance (Character-level)** or **Word Error Rate (WER)**.
+5. Calculate the similarity score: `similarity score = 1 - (edit_distance / max_length)`.
+
+### 4.2 Decision Rules
+- **PASS**: If `similarity >= verification_threshold` (default 0.85).
+- **FAIL**: If `similarity < verification_threshold`, mark as failed and trigger a regeneration retry.
+- **FLAG**: If the similarity remains below the threshold after 3 regeneration cycles, flag the audio for manual review.
+
+### 4.3 Special Handling
+- **Single Word Audio**: For standalone words, enforce an **Exact Match** after normalization instead of using edit distance.
+- **Numbers**: If a sentence contains numbers, normalize the numbers to their spelled-out text equivalents before comparing.
+- **Proper Nouns**: Exclude proper nouns from the comparison text if they are known to be consistently misrecognized by Whisper.
+
+## 5. Output Specification
+
+### 5.1 Audio Files
+- **Directories**: `sentences_audio/` and `words_audio/`.
+- **Format**: MP3, Mono, 24kHz Sample Rate.
+
+### 5.2 Audio Manifest JSON
+At the end of the run, an `audio_manifest.json` must be generated for frontend and backend state tracking.
+```json
+{
+  "metadata": {
+    "generated_at": "2025-01-01T00:00:00Z",
+    "voice_sentence": "sv-SE-SofieNeural",
+    "voice_word": "sv-SE-MattiasNeural",
+    "rate": "-20%",
+    "total_sentence_files": 500,
+    "total_word_files": 3433
+  },
+  "sentences": {
+    "art01_s001": {
+      "file": "sentences_audio/art01_s001.mp3",
+      "duration_ms": 3200,
+      "verification_score": 0.95,
+      "status": "verified"
+    }
+  },
+  "words": {
+    "soffpotatis": {
+      "file": "words_audio/soffpotatis.mp3",
+      "duration_ms": 1100,
+      "verification_score": 1.0,
+      "status": "verified"
+    }
+  }
+}
+```
+
+## 6. Validation Rules
+1. Every `sentence` referenced in the Phase 2 JSONs must have a corresponding MP3 in `sentences_audio/`.
+2. Every `base_form` referenced in the Master Dictionary must have a corresponding MP3 in `words_audio/`.
+3. All audio files must pass the `min_file_size_bytes` check.
+4. At least **95%** of the audio files must pass the ASR verification.
+5. The remaining <= 5% of unverified files must be explicitly recorded with a "flagged" status in the manifest for manual inspection.
+
+## 7. Scripts & Snippets
+
+> [!NOTE]
+> This phase is entirely API/Script driven. No LLM reasoning prompts are required.
+
+**Edge TTS CLI Reference:**
+```bash
+# Word Audio
+edge-tts --text "soffpotatis" --voice "sv-SE-MattiasNeural" --rate="-20%" --write-media "words_audio/soffpotatis.mp3"
+
+# Sentence Audio
+edge-tts --text "Det är en fin dag idag." --voice "sv-SE-SofieNeural" --rate="-20%" --write-media "sentences_audio/art01_s001.mp3"
+```
+
+**Whisper Verification Snippet (Python):**
+```python
+import whisper
+import Levenshtein
+
+def verify_audio(file_path, original_text, threshold=0.85):
+    model = whisper.load_model("base")
+    # Force Swedish language
+    result = model.transcribe(file_path, language="sv")
+    
+    transcript = result["text"].lower().strip()
+    target_text = original_text.lower().strip()
+    
+    # Simple cleanup
+    transcript = "".join([c for c in transcript if c.isalnum() or c.isspace()])
+    target_text = "".join([c for c in target_text if c.isalnum() or c.isspace()])
+    
+    distance = Levenshtein.distance(target_text, transcript)
+    max_len = max(len(target_text), len(transcript))
+    
+    if max_len == 0:
+        return 0.0
+        
+    similarity = 1 - (distance / max_len)
+    return similarity
+```
+
+## 8. Error Handling
+
+- **Network timeout**: The Edge TTS API may stop responding. Use an exponential backoff strategy for retries.
+- **Rate limiting**: If a 429 error occurs, suspend execution (cooldown) for a few seconds and reduce the concurrency pool before resuming.
+- **Corrupted audio**: If the file size is too small or cannot be read by an audio library, delete it immediately and retry generation.
+- **Whisper unavailable**: If the local Whisper model fails to load or runs out of memory (OOM), log a Warning, skip the ASR verification phase, but continue saving the generated MP3s to ensure the pipeline doesn't crash completely.
