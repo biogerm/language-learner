@@ -62,5 +62,18 @@ graph TD
 - **Output**: `frontend/js/`, `print/sfid_b1_articles.html`
 - **Link**: [SPEC_05_FRONTEND_INTEGRATION.md](./SPEC_05_FRONTEND_INTEGRATION.md)
 
-## 4. Execution Protocol
+## 4. Phase Isolation & Reporting Protocol
+
+Every phase must strictly adhere to the following isolation and reporting requirements:
+
+1. **Independent Output Directory**: Each phase must generate its own independent folder (e.g., `course/sfid/phase1/`, `course/sfid/phase2/`). All products, intermediate files, and logs for that phase must be saved exclusively within this independent folder.
+2. **Phase Report File**: At the conclusion of each phase, a detailed report file (e.g., `phase1_report.md`) must be generated within that phase's folder. 
+3. **Report Content**: The report must contain exhaustive statistics and details of all modifications made during the phase, especially focusing on changed parts and items that require special elaboration. For example:
+    *   **Phase 1**: Detailed list of all modified/repaired words, the original defective string, and the final corrected word.
+    *   **Phase 2**: The total number of articles generated, the distribution of topics, and the final vocabulary coverage rate (must be 100%).
+    *   **Phase 3-5**: Generation counts, success/failure rates, and deployment metrics.
+
+This report serves as the final audit document for the phase's execution.
+
+## 5. Execution Protocol
 This pipeline should be orchestrated by a master Python script (e.g., `build_course.py`) that strictly enforces the execution order and validates the outputs of each phase before proceeding to the next.

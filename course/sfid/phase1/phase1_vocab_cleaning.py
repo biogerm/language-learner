@@ -19,12 +19,12 @@ def main():
     # Manual fixes by the AI/LLM based on PDF extraction context
     fixes_3_1_and_3_2 = {
         "människa": "human being, person",
-        "jag har alltid varit intresserad av…": "I have always been interested",
+        "jag har alltid varit intresserad av…": "I have always been interested in…",
         "förbereda sig": "prepare oneself",
         "kulturpersonlighet": "cultural persona, someone well known in the arts/culture",
         "Har du hört vad som har hänt?": "Have you heard what’s happened?",
         "partikel": "grammatical particle",
-        "Vet du vad jag gjorde igår…?": "Do you know what I did yesterday?",
+        "Vet du vad jag gjorde igår…?": "Do you know what I did yesterday…?",
         "sockerbagare": "confectioner",
         "finansminister": "minister of finance",
         "tilläggspension": "supplementary, income-based pension",
@@ -38,7 +38,7 @@ def main():
         "konst- och industriutställning": "art and industrial exhibition",
         "ingå partnerskap": "enter into a civil union",
         "vetenskapsman": "scientist",
-        "Jag måste berätta en sak/en grej…": "I have to tell you something",
+        "Jag måste berätta en sak/en grej…": "I have to tell you something…",
         "beställa tid": "make an appointment",
         "Vilken tur att du påminde mig": "How fortunate that you reminded me",
         "kvadratkilometer": "square kilometer",
