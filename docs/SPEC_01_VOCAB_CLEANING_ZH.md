@@ -39,7 +39,7 @@
 必须按照以下特定规则对输入 JSON 进行遍历和修复。
 
 > [!IMPORTANT]
-> **事实基准规则 (Ground Truth Rule)**: 下文描述的错误均是 PDF 提取过程的伪影。为了修复它们，系统**绝对不能**依赖 AI 去“猜测”或幻觉出修复结果。相反，脚本必须使用 PDF 解析库（如 `pdfplumber` 或 `PyMuPDF`）主动在原始 PDF 文件 (`RivstartB1B2_Ordlista_engelska.pdf`) 中搜索损坏的片段，定位其在页面上的确切位置，直接从 PDF 中提取周围的文本块，并使用该原始事实上下文来纠正错误。
+> **事实基准规则 (Ground Truth Rule)**: 下文描述的错误均是 PDF 提取过程的伪影。为了修复它们，系统**绝对不能**依赖 AI 去盲目“猜测”或幻觉出修复结果。相反，脚本必须将原始 PDF 文件 (`RivstartB1B2_Ordlista_engelska.pdf`) 连同损坏的片段直接发送给大型语言模型 (利用 LLM 原生的多模态 PDF 读取能力)。必须指示 LLM 主动在 PDF 文档中搜索，定位其在页面上的确切位置，直接从原始教材中读取周围的上下文文本，并使用该事实基准输出正确无误的词条。
 
 修复过程必须保持日志记录 (Audit Trail)。
 
@@ -139,22 +139,14 @@
 
 ### 8.1 缺陷修复 Prompt
 ```text
-You are a data extraction assistant. We have some corrupted entries from a Swedish vocabulary dictionary extracted from a PDF. 
+You are a data extraction assistant. We have some corrupted entries from a Swedish vocabulary dictionary originally extracted from the attached PDF. 
 
-Instead of guessing, I will provide you with the corrupted JSON entry, AND the raw text block extracted from the original PDF surrounding this entry.
-Your task is to use the raw PDF text to find the correct, full Swedish word/phrase and its English translation.
+Instead of guessing, your task is to use your native PDF reading capabilities to search the attached PDF document for the corrupted fragment. Locate its exact position, read the surrounding context from the original textbook, and use this ground truth to find the correct, full Swedish word/phrase and its English translation.
 
 Input Corrupted JSON:
 {
   "människa": "human being, per\u00ad"
 }
-
-Raw PDF Text Context:
-"...
-djur animal
-människa human being, person
-sammanfatta (-r, -de, -t) summarize
-..."
 
 Provide ONLY the repaired JSON as your response:
 {

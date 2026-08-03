@@ -39,7 +39,7 @@ These parameters are defined here in Phase 1 and **MUST be inherited** by all su
 The input JSON must be traversed and repaired according to the following specific rules. 
 
 > [!IMPORTANT]
-> **Ground Truth Rule**: The errors described below are artifacts of the PDF extraction process. To fix them, the system MUST NOT rely on the AI to "guess" or hallucinate the repair. Instead, the script must use a PDF parsing library (e.g., `pdfplumber` or `PyMuPDF`) to actively search the original PDF file (`RivstartB1B2_Ordlista_engelska.pdf`) for the corrupted fragment, locate its exact position on the page, extract the surrounding text block directly from the PDF, and use that original ground-truth context to correct the error.
+> **Ground Truth Rule**: The errors described below are artifacts of the PDF extraction process. To fix them, the system MUST NOT rely on the AI to blindly "guess" or hallucinate the repair. Instead, the script must pass the original PDF file (`RivstartB1B2_Ordlista_engelska.pdf`) directly to the Large Language Model (leveraging the LLM's native multimodal PDF reading capabilities) along with the corrupted fragment. The LLM must be instructed to actively search the PDF document, locate the exact position on the page, extract the surrounding text block directly from the PDF, and use that original ground-truth context to output the correct error-free entry.
 
 The repair process must maintain an Audit Trail.
 
@@ -139,22 +139,14 @@ Use the following Prompt templates to drive the LLM for repair and translation t
 
 ### 8.1 AI Defect Repair Prompt
 ```text
-You are a data extraction assistant. We have some corrupted entries from a Swedish vocabulary dictionary extracted from a PDF. 
+You are a data extraction assistant. We have some corrupted entries from a Swedish vocabulary dictionary originally extracted from the attached PDF. 
 
-Instead of guessing, I will provide you with the corrupted JSON entry, AND the raw text block extracted from the original PDF surrounding this entry.
-Your task is to use the raw PDF text to find the correct, full Swedish word/phrase and its English translation.
+Instead of guessing, your task is to use your native PDF reading capabilities to search the attached PDF document for the corrupted fragment. Locate its exact position, read the surrounding context from the original textbook, and use this ground truth to find the correct, full Swedish word/phrase and its English translation.
 
 Input Corrupted JSON:
 {
   "människa": "human being, per\u00ad"
 }
-
-Raw PDF Text Context:
-"...
-djur animal
-människa human being, person
-sammanfatta (-r, -de, -t) summarize
-..."
 
 Provide ONLY the repaired JSON as your response:
 {

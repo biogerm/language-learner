@@ -70,7 +70,7 @@ Every phase must strictly adhere to the following isolation and reporting requir
 2. **Phase Report File**: At the conclusion of each phase, a detailed report file (e.g., `phase1_report.md`) must be generated within that phase's folder. 
 3. **Report Content**: The report must contain exhaustive statistics and details of all modifications made during the phase, especially focusing on changed parts and items that require special elaboration. For example:
     *   **Phase 1**: Detailed list of all modified/repaired words, the original defective string, and the final corrected word.
-    *   **Phase 2**: The total number of articles generated, the distribution of topics, and the final vocabulary coverage rate (must be 100%).
+    *   **Phase 2**: The total number of articles generated, the distribution of topics, the word distribution across articles, and the final vocabulary coverage rate (must be 100%).
     *   **Phase 3-5**: Generation counts, success/failure rates, and deployment metrics.
 
 This report serves as the final audit document for the phase's execution.
