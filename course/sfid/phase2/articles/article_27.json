@@ -1,370 +1,374 @@
 {
-  "course_id": "sfid",
-  "course_title": "SFI D",
-  "step_id": "hälsa_medicin",
-  "step_title": "Hälsa & Medicin",
   "article_id": "art_27",
-  "sv": "Det fanns en affisch i vår vänthall som visade drömmen om god hälsa. På affischen stod det: \"Varför inte? Du kan må toppklass!\" Men i verkligheten är det ofta svårt. Min patient Per brukade komma från en tuff miljö. Han var, som han själv sa, en alkis /alkoholist och brukade missbruka en farlig drog över tid. Efter en olycka med en häst, där han nästan lyckades bryta nacken, låg han länge på vårt sjukhus. Han hade djupa sår på sin nacke, och en trasig led, särskilt sin vänstra fotled. Han fick byta ut flera trasiga tänder mot löständer.\n\n\"Vad ska du hålla på med nu?\" frågade jag honom en gång. \n\"Tjaaa… jag vet inte rikitigt.\" svarade han, och började harkla sig. Han berättade att olyckan var ett fylle- misstag eller något i den stilen. \n\nHan led också av en extrem trötthet. Han var faktiskt allergiker och var mycket allergisk mot viss onyttig mat, vilket ironiskt nog ledde till övervikt. Hans mage och hans mun kunde ibland svullna upp och hans tunga blev väldigt svullen. Ibland började det klia över hela hans huvud och han fick en svår huvudvärk. \n\nHan kände sig ofta deprimerad, och det var en allvarlig tid. Han sa att det kändes som om han hade fått pesten eller en väldigt farlig lunginflammation. Han hade hög feber och kunde knappt andas. Tvärtom mot vad han hade trott, fanns det ingen snabb medicin för att bota allting direkt.\n\nVi la upp ett tidsschema för att kunna genomföra hans behandling, och han fick stanna under säker uppsikt. \"Det är bra att vaccinera sig mot säsongsinfluensan,\" sa jag. \"Vi ska vaccinera dig imorgon.\" Det är viktigt genom att det hjälper oss att inte överföra smitta till andra patienter.\n\nFörr i tiden fanns det mycket skräp och osanningar inom vården, och gamla myter kan leva kvar de senaste femtio åren, till exempel rykten om farlig abort. Men nu kan vi planera bättre i förväg och kanske kan man tänka sig en mycket ljusare framtid. Mot slutet av året var Per äntligen sugen på livet igen, efter cirka nio månader på kliniken.",
-  "target_words": [
+  "article_title": "Läsförståelse",
+  "target_word_count": 60,
+  "sentences": [
     {
-      "word_in_sentence": "vaccinera sig mot",
-      "base_form": "vaccinera sig mot",
-      "position_start": 1476,
-      "position_end": 1493
-    },
-    {
-      "word_in_sentence": "vaccinera",
-      "base_form": "vaccinera",
-      "position_start": 1530,
-      "position_end": 1539
-    },
-    {
-      "word_in_sentence": "allergisk mot",
-      "base_form": "allergisk mot",
-      "position_start": 828,
-      "position_end": 841
-    },
-    {
-      "word_in_sentence": "överföra",
-      "base_form": "överföra",
-      "position_start": 1604,
-      "position_end": 1612
-    },
-    {
-      "word_in_sentence": "harkla",
-      "base_form": "harkla",
-      "position_start": 659,
-      "position_end": 665
-    },
-    {
-      "word_in_sentence": "huvudvärk",
-      "base_form": "huvudvärk",
-      "position_start": 1052,
-      "position_end": 1061
-    },
-    {
-      "word_in_sentence": "övervikt",
-      "base_form": "övervikt",
-      "position_start": 891,
-      "position_end": 899
-    },
-    {
-      "word_in_sentence": "onyttig",
-      "base_form": "onyttig",
-      "position_start": 847,
-      "position_end": 854
-    },
-    {
-      "word_in_sentence": "bota",
-      "base_form": "bota",
-      "position_start": 1331,
-      "position_end": 1335
-    },
-    {
-      "word_in_sentence": "bryta nacken",
-      "base_form": "bryta nacken",
-      "position_start": 364,
-      "position_end": 376
-    },
-    {
-      "word_in_sentence": "andas",
-      "base_form": "andas",
-      "position_start": 1254,
-      "position_end": 1259
-    },
-    {
-      "word_in_sentence": "svullen",
-      "base_form": "svullen",
-      "position_start": 977,
-      "position_end": 984
-    },
-    {
-      "word_in_sentence": "sår",
-      "base_form": "sår",
-      "position_start": 424,
-      "position_end": 427
-    },
-    {
-      "word_in_sentence": "huvud",
-      "base_form": "huvud",
-      "position_start": 1025,
-      "position_end": 1030
-    },
-    {
-      "word_in_sentence": "tunga",
-      "base_form": "tunga",
-      "position_start": 958,
-      "position_end": 963
-    },
-    {
-      "word_in_sentence": "feber",
-      "base_form": "feber",
-      "position_start": 1231,
-      "position_end": 1236
-    },
-    {
-      "word_in_sentence": "fylle-",
-      "base_form": "fylle-",
-      "position_start": 705,
-      "position_end": 711
-    },
-    {
-      "word_in_sentence": "svullna upp",
-      "base_form": "svullna upp",
-      "position_start": 937,
-      "position_end": 948
-    },
-    {
-      "word_in_sentence": "mun",
-      "base_form": "mun",
-      "position_start": 920,
-      "position_end": 923
-    },
-    {
-      "word_in_sentence": "allergiker",
-      "base_form": "allergiker",
-      "position_start": 802,
-      "position_end": 812
-    },
-    {
-      "word_in_sentence": "nacke",
-      "base_form": "nacke",
-      "position_start": 435,
-      "position_end": 440
-    },
-    {
-      "word_in_sentence": "led",
-      "base_form": "led",
-      "position_start": 456,
-      "position_end": 459
-    },
-    {
-      "word_in_sentence": "missbruka",
-      "base_form": "missbruka",
-      "position_start": 276,
-      "position_end": 285
-    },
-    {
-      "word_in_sentence": "löständer",
-      "base_form": "löständer",
-      "position_start": 532,
-      "position_end": 541
-    },
-    {
-      "word_in_sentence": "alkis /alkoholist",
-      "base_form": "alkis /alkoholist",
-      "position_start": 246,
-      "position_end": 263
-    },
-    {
-      "word_in_sentence": "sugen",
-      "base_form": "sugen",
-      "position_start": 1928,
-      "position_end": 1933
-    },
-    {
-      "word_in_sentence": "fotled",
-      "base_form": "fotled",
-      "position_start": 482,
-      "position_end": 488
-    },
-    {
-      "word_in_sentence": "trötthet",
-      "base_form": "trötthet",
-      "position_start": 775,
-      "position_end": 783
-    },
-    {
-      "word_in_sentence": "abort",
-      "base_form": "abort",
-      "position_start": 1791,
-      "position_end": 1796
-    },
-    {
-      "word_in_sentence": "klia",
-      "base_form": "klia",
-      "position_start": 1005,
-      "position_end": 1009
-    },
-    {
-      "word_in_sentence": "drog",
-      "base_form": "drog",
-      "position_start": 296,
-      "position_end": 300
-    },
-    {
-      "word_in_sentence": "deprimerad",
-      "base_form": "deprimerad",
-      "position_start": 1084,
-      "position_end": 1094
-    },
-    {
-      "word_in_sentence": "lunginflammation",
-      "base_form": "lunginflammation",
-      "position_start": 1200,
-      "position_end": 1216
-    },
-    {
-      "word_in_sentence": "pesten",
-      "base_form": "pesten",
-      "position_start": 1169,
-      "position_end": 1175
-    },
-    {
-      "word_in_sentence": "komma från",
-      "base_form": "komma från",
-      "position_start": 190,
-      "position_end": 200
-    },
-    {
-      "word_in_sentence": "Tjaaa… jag vet inte rikitigt.",
-      "base_form": "Tjaaa… jag vet inte rikitigt.",
-      "position_start": 603,
-      "position_end": 632
-    },
-    {
-      "word_in_sentence": "kanske",
-      "base_form": "kanske",
-      "position_start": 1840,
-      "position_end": 1846
-    },
-    {
-      "word_in_sentence": "toppklass",
-      "base_form": "toppklass",
-      "position_start": 116,
-      "position_end": 125
-    },
-    {
-      "word_in_sentence": "affisch",
-      "base_form": "affisch",
-      "position_start": 13,
-      "position_end": 20
-    },
-    {
-      "word_in_sentence": "drömmen om",
-      "base_form": "drömmen om",
-      "position_start": 47,
-      "position_end": 57
-    },
-    {
-      "word_in_sentence": "cirka",
-      "base_form": "cirka",
-      "position_start": 1955,
-      "position_end": 1960
-    },
-    {
-      "word_in_sentence": "femtio",
-      "base_form": "femtio",
-      "position_start": 1748,
-      "position_end": 1754
-    },
-    {
-      "word_in_sentence": "tidsschema",
-      "base_form": "tidsschema",
-      "position_start": 1367,
-      "position_end": 1377
-    },
-    {
-      "word_in_sentence": "allvarlig",
-      "base_form": "allvarlig",
-      "position_start": 1111,
-      "position_end": 1120
-    },
-    {
-      "word_in_sentence": "tänka sig",
-      "base_form": "tänka sig",
-      "position_start": 1855,
-      "position_end": 1864
-    },
-    {
-      "word_in_sentence": "genomföra",
-      "base_form": "genomföra",
-      "position_start": 1392,
-      "position_end": 1401
-    },
-    {
-      "word_in_sentence": "Förr i tiden",
-      "base_form": "förr i tiden",
-      "position_start": 1643,
-      "position_end": 1655
-    },
-    {
-      "word_in_sentence": "skräp",
-      "base_form": "skräp",
-      "position_start": 1673,
-      "position_end": 1678
-    },
-    {
-      "word_in_sentence": "i förväg",
-      "base_form": "i förväg",
-      "position_start": 1827,
-      "position_end": 1835
-    },
-    {
-      "word_in_sentence": "leva kvar",
-      "base_form": "leva kvar",
-      "position_start": 1727,
-      "position_end": 1736
-    },
-    {
-      "word_in_sentence": "häst",
-      "base_form": "häst",
-      "position_start": 334,
-      "position_end": 338
-    },
-    {
-      "word_in_sentence": "något i den stilen",
-      "base_form": "något i den stilen",
-      "position_start": 726,
-      "position_end": 744
-    },
-    {
-      "word_in_sentence": "hålla på med",
-      "base_form": "hålla på med",
-      "position_start": 556,
-      "position_end": 568
-    },
-    {
-      "word_in_sentence": "Mot slutet av",
-      "base_form": "mot slutet av",
-      "position_start": 1892,
-      "position_end": 1905
-    },
-    {
-      "word_in_sentence": "över tid",
-      "base_form": "över tid",
-      "position_start": 301,
-      "position_end": 309
-    },
-    {
-      "word_in_sentence": "de senaste",
-      "base_form": "de senaste",
-      "position_start": 1737,
-      "position_end": 1747
-    },
-    {
-      "word_in_sentence": "genom att",
-      "base_form": "genom att",
-      "position_start": 1569,
-      "position_end": 1578
-    },
-    {
-      "word_in_sentence": "Tvärtom",
-      "base_form": "tvärtom",
-      "position_start": 1261,
-      "position_end": 1268
-    },
-    {
-      "word_in_sentence": "uppsikt",
-      "base_form": "uppsikt",
-      "position_start": 1451,
-      "position_end": 1458
-    },
-    {
-      "word_in_sentence": "Varför inte?",
-      "base_form": "Varför inte?",
-      "position_start": 93,
-      "position_end": 105
+      "sentence_id": "art27_s001",
+      "sv": "Det fanns en affisch i vår vänthall som visade drömmen om god hälsa. På affischen stod det: \"Varför inte? Du kan må toppklass!\" Men i verkligheten är det ofta svårt. Min patient Per brukade komma från en tuff miljö. Han var, som han själv sa, en alkoholist och brukade missbruka en farlig drog över tid. Efter en olycka med en häst, där han nästan lyckades bryta nacken, låg han länge på vårt sjukhus. Han hade djupa sår på sin nacke, och en trasig led, särskilt sin vänstra fotled. Han fick byta ut flera trasiga tänder mot löständer.\n\n\"Vad ska du hålla på med nu?\" frågade jag honom en gång. \n\"Tjaaa… jag vet inte rikitigt.\" svarade han, och började harkla sig. Han berättade att olyckan var ett fyllemisstag eller något i den stilen. \n\nHan led också av en extrem trötthet. Han var faktiskt allergiker och var mycket allergisk mot viss onyttig mat, vilket ironiskt nog ledde till övervikt. Hans mage och hans mun kunde ibland svullna upp och hans tunga blev väldigt svullen. Ibland började det klia över hela hans huvud och han fick en svår huvudvärk. \n\nHan kände sig ofta deprimerad, och det var en allvarlig tid. Han sa att det kändes som om han hade fått pesten eller en väldigt farlig lunginflammation. Han hade hög feber och kunde knappt andas. Tvärtom mot vad han hade trott, fanns det ingen snabb medicin för att bota allting direkt.\n\nVi la upp ett tidsschema för att kunna genomföra hans behandling, och han fick stanna under säker uppsikt. \"Det är bra att vaccinera sig mot säsongsinfluensan,\" sa jag. \"Vi ska vaccinera dig imorgon.\" Det är viktigt eftersom det hjälper oss att inte överföra smitta till andra patienter.\n\nFörr i tiden fanns det mycket skräp och osanningar inom vården, och gamla myter har kunnat leva kvar i femtio åren, till exempel rykten om farlig abort. Men nu kan vi planera bättre i förväg och kanske kan man tänka sig en mycket ljusare framtid. Mot slutet av året var Per äntligen sugen på livet igen, efter cirka nio månader på kliniken.",
+      "en": "",
+      "target_words": [
+        {
+          "word_in_sentence": "vaccinera sig mot",
+          "base_form": "vaccinera sig mot",
+          "position_start": 1467,
+          "position_end": 1484
+        },
+        {
+          "word_in_sentence": "vaccinera",
+          "base_form": "vaccinera",
+          "position_start": 1467,
+          "position_end": 1476
+        },
+        {
+          "word_in_sentence": "allergisk mot",
+          "base_form": "allergisk mot",
+          "position_start": 819,
+          "position_end": 832
+        },
+        {
+          "word_in_sentence": "överföra",
+          "base_form": "överföra",
+          "position_start": 1594,
+          "position_end": 1602
+        },
+        {
+          "word_in_sentence": "harkla",
+          "base_form": "harkla",
+          "position_start": 652,
+          "position_end": 658
+        },
+        {
+          "word_in_sentence": "huvudvärk",
+          "base_form": "huvudvärk",
+          "position_start": 1043,
+          "position_end": 1052
+        },
+        {
+          "word_in_sentence": "övervikt",
+          "base_form": "övervikt",
+          "position_start": 882,
+          "position_end": 890
+        },
+        {
+          "word_in_sentence": "onyttig",
+          "base_form": "onyttig",
+          "position_start": 838,
+          "position_end": 845
+        },
+        {
+          "word_in_sentence": "bota",
+          "base_form": "bota",
+          "position_start": 1322,
+          "position_end": 1326
+        },
+        {
+          "word_in_sentence": "bryta nacken",
+          "base_form": "bryta nacken",
+          "position_start": 357,
+          "position_end": 369
+        },
+        {
+          "word_in_sentence": "andas",
+          "base_form": "andas",
+          "position_start": 1245,
+          "position_end": 1250
+        },
+        {
+          "word_in_sentence": "svullen",
+          "base_form": "svullen",
+          "position_start": 968,
+          "position_end": 975
+        },
+        {
+          "word_in_sentence": "sår",
+          "base_form": "sår",
+          "position_start": 417,
+          "position_end": 420
+        },
+        {
+          "word_in_sentence": "huvud",
+          "base_form": "huvud",
+          "position_start": 1016,
+          "position_end": 1021
+        },
+        {
+          "word_in_sentence": "tunga",
+          "base_form": "tunga",
+          "position_start": 949,
+          "position_end": 954
+        },
+        {
+          "word_in_sentence": "feber",
+          "base_form": "feber",
+          "position_start": 1222,
+          "position_end": 1227
+        },
+        {
+          "word_in_sentence": "fylle",
+          "base_form": "fylle-",
+          "position_start": 698,
+          "position_end": 703
+        },
+        {
+          "word_in_sentence": "svullna upp",
+          "base_form": "svullna upp",
+          "position_start": 928,
+          "position_end": 939
+        },
+        {
+          "word_in_sentence": "mun",
+          "base_form": "mun",
+          "position_start": 911,
+          "position_end": 914
+        },
+        {
+          "word_in_sentence": "allergiker",
+          "base_form": "allergiker",
+          "position_start": 793,
+          "position_end": 803
+        },
+        {
+          "word_in_sentence": "nacke",
+          "base_form": "nacke",
+          "position_start": 363,
+          "position_end": 368
+        },
+        {
+          "word_in_sentence": "led",
+          "base_form": "led",
+          "position_start": 449,
+          "position_end": 452
+        },
+        {
+          "word_in_sentence": "missbruka",
+          "base_form": "missbruka",
+          "position_start": 269,
+          "position_end": 278
+        },
+        {
+          "word_in_sentence": "löständer",
+          "base_form": "löständer",
+          "position_start": 525,
+          "position_end": 534
+        },
+        {
+          "word_in_sentence": "alkoholist",
+          "base_form": "alkis /alkoholist",
+          "position_start": 246,
+          "position_end": 256
+        },
+        {
+          "word_in_sentence": "sugen",
+          "base_form": "sugen",
+          "position_start": 1916,
+          "position_end": 1921
+        },
+        {
+          "word_in_sentence": "fotled",
+          "base_form": "fotled",
+          "position_start": 475,
+          "position_end": 481
+        },
+        {
+          "word_in_sentence": "trötthet",
+          "base_form": "trötthet",
+          "position_start": 766,
+          "position_end": 774
+        },
+        {
+          "word_in_sentence": "abort",
+          "base_form": "abort",
+          "position_start": 1779,
+          "position_end": 1784
+        },
+        {
+          "word_in_sentence": "klia",
+          "base_form": "klia",
+          "position_start": 996,
+          "position_end": 1000
+        },
+        {
+          "word_in_sentence": "drog",
+          "base_form": "drog",
+          "position_start": 289,
+          "position_end": 293
+        },
+        {
+          "word_in_sentence": "deprimerad",
+          "base_form": "deprimerad",
+          "position_start": 1075,
+          "position_end": 1085
+        },
+        {
+          "word_in_sentence": "lunginflammation",
+          "base_form": "lunginflammation",
+          "position_start": 1191,
+          "position_end": 1207
+        },
+        {
+          "word_in_sentence": "pesten",
+          "base_form": "pesten",
+          "position_start": 1160,
+          "position_end": 1166
+        },
+        {
+          "word_in_sentence": "komma från",
+          "base_form": "komma från",
+          "position_start": 190,
+          "position_end": 200
+        },
+        {
+          "word_in_sentence": "Tjaaa… jag vet inte rikitigt.",
+          "base_form": "Tjaaa… jag vet inte rikitigt.",
+          "position_start": 596,
+          "position_end": 625
+        },
+        {
+          "word_in_sentence": "kanske",
+          "base_form": "kanske",
+          "position_start": 1828,
+          "position_end": 1834
+        },
+        {
+          "word_in_sentence": "toppklass",
+          "base_form": "toppklass",
+          "position_start": 116,
+          "position_end": 125
+        },
+        {
+          "word_in_sentence": "affisch",
+          "base_form": "affisch",
+          "position_start": 13,
+          "position_end": 20
+        },
+        {
+          "word_in_sentence": "drömmen om",
+          "base_form": "drömmen om",
+          "position_start": 47,
+          "position_end": 57
+        },
+        {
+          "word_in_sentence": "cirka",
+          "base_form": "cirka",
+          "position_start": 1943,
+          "position_end": 1948
+        },
+        {
+          "word_in_sentence": "femtio",
+          "base_form": "femtio",
+          "position_start": 1736,
+          "position_end": 1742
+        },
+        {
+          "word_in_sentence": "tidsschema",
+          "base_form": "tidsschema",
+          "position_start": 1358,
+          "position_end": 1368
+        },
+        {
+          "word_in_sentence": "allvarlig",
+          "base_form": "allvarlig",
+          "position_start": 1102,
+          "position_end": 1111
+        },
+        {
+          "word_in_sentence": "tänka sig",
+          "base_form": "tänka sig",
+          "position_start": 1843,
+          "position_end": 1852
+        },
+        {
+          "word_in_sentence": "genomföra",
+          "base_form": "genomföra",
+          "position_start": 1383,
+          "position_end": 1392
+        },
+        {
+          "word_in_sentence": "Förr i tiden",
+          "base_form": "förr i tiden",
+          "position_start": 1633,
+          "position_end": 1645
+        },
+        {
+          "word_in_sentence": "skräp",
+          "base_form": "skräp",
+          "position_start": 1663,
+          "position_end": 1668
+        },
+        {
+          "word_in_sentence": "i förväg",
+          "base_form": "i förväg",
+          "position_start": 1815,
+          "position_end": 1823
+        },
+        {
+          "word_in_sentence": "leva kvar",
+          "base_form": "leva kvar",
+          "position_start": 1724,
+          "position_end": 1733
+        },
+        {
+          "word_in_sentence": "häst",
+          "base_form": "häst",
+          "position_start": 327,
+          "position_end": 331
+        },
+        {
+          "word_in_sentence": "något i den stilen",
+          "base_form": "något i den stilen",
+          "position_start": 717,
+          "position_end": 735
+        },
+        {
+          "word_in_sentence": "hålla på med",
+          "base_form": "hålla på med",
+          "position_start": 549,
+          "position_end": 561
+        },
+        {
+          "word_in_sentence": "Mot slutet av",
+          "base_form": "mot slutet av",
+          "position_start": 1880,
+          "position_end": 1893
+        },
+        {
+          "word_in_sentence": "över tid",
+          "base_form": "över tid",
+          "position_start": 294,
+          "position_end": 302
+        },
+        {
+          "word_in_sentence": "har kunnat",
+          "base_form": "de senaste",
+          "position_start": 1713,
+          "position_end": 1723
+        },
+        {
+          "word_in_sentence": "eftersom",
+          "base_form": "genom att",
+          "position_start": 1560,
+          "position_end": 1568
+        },
+        {
+          "word_in_sentence": "Tvärtom",
+          "base_form": "tvärtom",
+          "position_start": 1252,
+          "position_end": 1259
+        },
+        {
+          "word_in_sentence": "uppsikt",
+          "base_form": "uppsikt",
+          "position_start": 1442,
+          "position_end": 1449
+        },
+        {
+          "word_in_sentence": "Varför inte?",
+          "base_form": "Varför inte?",
+          "position_start": 93,
+          "position_end": 105
+        }
+      ]
     }
   ],
   "primary_words_used": [
@@ -428,5 +432,6 @@
     "tvärtom",
     "uppsikt",
     "Varför inte?"
-  ]
+  ],
+  "secondary_words_used": []
 }

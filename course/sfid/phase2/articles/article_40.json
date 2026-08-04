@@ -1,370 +1,374 @@
 {
-  "course_id": "sfid",
-  "course_title": "SFI D",
-  "step_id": "kultur_nöje",
-  "step_title": "Kultur & Nöje",
   "article_id": "art_40",
-  "sv": "\"Vad för sorts… person är du egentligen?\" frågade min vän, som är en känd arkitekt. Han är också en mycket modeintresserad man, precis som sin syster. \n\"Det spelar ingen roll.\" svarade jag lugnt och hällde upp lite vatten i ett vackert glas. \"Jag är bara en glad människa som gillar att ha skoj och roa sig varje dag.\"\n\nVårt lilla gäng var ett ganska brokigt sällskap. Vi bestod av en känd författare, en smart filosof, en smidig akrobat och en fantastisk musiker med extremt stor musikalisk talang, som ofta spelade saxofon och var en duktig trubadur. En av oss brukade samla på en unik vinylskiva från varje nytt decennium. Vi kom från Sverige och från andra länder, ungefär som en självstyrande liten familj. Vi brukade ofta campa, men vår gamla bil var alltid överbelastad. Ibland kändes det som ett helvete att packa. Vårt stora tält låg längst ner under all packning, men vi ville se världen innan dagarna blev ljusare och varmare.\n\nIbland gick vi på ett stort lajv utomhus där vi fick tävla om en glänsande guldnyckel. En av deltagarna var en rolig kille som såg ut som en naken sumobrottare. Han hade mycket naturlig komik i sig. Han var nästan som en populär komiker och skapade ofta en komisk stämning. Jag skrev om det i min dagbok. Det var nästan som en spännande saga. \n\nVi älskade också naturen. Vi brukade cykla i skogen på sommaren, eller åka skidor på vintern. Min vän ville spela golf och letade ständigt efter sin bästa golfklubba. En dag såg vi en tyst jägare som skulle ut och jaga i skogen för att döda vilda djur. Ett litet djur hade en bruten vinge. \"Akta dig för huggormsbett framför stugan,\" varnade jägaren och pekade på en specifik punkt i gräset.\n\nTrots farorna tänkte vi stanna. \"Vi ska fira jul i den här skogen,\" sa jag glatt. \nMin kompis var en extremt kuturintresserad person. Han gillade vacker konst med naturinspirerade motiv för att komplettera sin samling. I sin väska hade han en liten burk med god färg och ville måla. Han brukade säga ett gammalt ordspråk: \"Man ska aldrig bränna sina broar.\" Han ville också gärna titta på den gamla svenska filmen ”Sommaren med Monica” med sin stora idol. Han tyckte att varje vacker rörelse i filmen var djupt romantisk. En annan person i gruppen ville bara skrapa på en liten trisslott eller hoppa från ett högt hopptorn vid sjön. Det fanns alltid något trevligt att göra, vare sig man ville simma eller bara cykla runt på vägarna.",
-  "target_words": [
+  "article_title": "Läsförståelse",
+  "target_word_count": 60,
+  "sentences": [
     {
-      "word_in_sentence": "musiker",
-      "base_form": "musiker",
-      "position_start": 456,
-      "position_end": 463
-    },
-    {
-      "word_in_sentence": "musikalisk",
-      "base_form": "musikalisk",
-      "position_start": 481,
-      "position_end": 491
-    },
-    {
-      "word_in_sentence": "modeintresserad",
-      "base_form": "modeintresserad",
-      "position_start": 107,
-      "position_end": 122
-    },
-    {
-      "word_in_sentence": "arkitekt",
-      "base_form": "arkitekt",
-      "position_start": 74,
-      "position_end": 82
-    },
-    {
-      "word_in_sentence": "samla",
-      "base_form": "samla",
-      "position_start": 571,
-      "position_end": 576
-    },
-    {
-      "word_in_sentence": "motiv",
-      "base_form": "motiv",
-      "position_start": 1857,
-      "position_end": 1862
-    },
-    {
-      "word_in_sentence": "författare",
-      "base_form": "författare",
-      "position_start": 390,
-      "position_end": 400
-    },
-    {
-      "word_in_sentence": "naken",
-      "base_form": "naken",
-      "position_start": 1080,
-      "position_end": 1085
-    },
-    {
-      "word_in_sentence": "filosof",
-      "base_form": "filosof",
-      "position_start": 411,
-      "position_end": 418
-    },
-    {
-      "word_in_sentence": "tält",
-      "base_form": "tält",
-      "position_start": 834,
-      "position_end": 838
-    },
-    {
-      "word_in_sentence": "glas",
-      "base_form": "glas",
-      "position_start": 236,
-      "position_end": 240
-    },
-    {
-      "word_in_sentence": "idol",
-      "base_form": "idol",
-      "position_start": 2127,
-      "position_end": 2131
-    },
-    {
-      "word_in_sentence": "akrobat",
-      "base_form": "akrobat",
-      "position_start": 430,
-      "position_end": 437
-    },
-    {
-      "word_in_sentence": "lajv",
-      "base_form": "lajv",
-      "position_start": 967,
-      "position_end": 971
-    },
-    {
-      "word_in_sentence": "ordspråk",
-      "base_form": "ordspråk",
-      "position_start": 1989,
-      "position_end": 1997
-    },
-    {
-      "word_in_sentence": "kuturintresserad",
-      "base_form": "kuturintresserad",
-      "position_start": 1786,
-      "position_end": 1802
-    },
-    {
-      "word_in_sentence": "tävla",
-      "base_form": "tävla",
-      "position_start": 992,
-      "position_end": 997
-    },
-    {
-      "word_in_sentence": "dagbok",
-      "base_form": "dagbok",
-      "position_start": 1236,
-      "position_end": 1242
-    },
-    {
-      "word_in_sentence": "guldnyckel",
-      "base_form": "guldnyckel",
-      "position_start": 1014,
-      "position_end": 1024
-    },
-    {
-      "word_in_sentence": "skrapa",
-      "base_form": "skrapa",
-      "position_start": 2236,
-      "position_end": 2242
-    },
-    {
-      "word_in_sentence": "fira jul",
-      "base_form": "fira jul",
-      "position_start": 1717,
-      "position_end": 1725
-    },
-    {
-      "word_in_sentence": "hopptorn",
-      "base_form": "hopptorn",
-      "position_start": 2291,
-      "position_end": 2299
-    },
-    {
-      "word_in_sentence": "cykla",
-      "base_form": "cykla",
-      "position_start": 1321,
-      "position_end": 1326
-    },
-    {
-      "word_in_sentence": "jägare",
-      "base_form": "jägare",
-      "position_start": 1473,
-      "position_end": 1479
-    },
-    {
-      "word_in_sentence": "ha skoj",
-      "base_form": "ha skoj",
-      "position_start": 287,
-      "position_end": 294
-    },
-    {
-      "word_in_sentence": "komisk",
-      "base_form": "komisk",
-      "position_start": 1196,
-      "position_end": 1202
-    },
-    {
-      "word_in_sentence": "komik",
-      "base_form": "komik",
-      "position_start": 1125,
-      "position_end": 1130
-    },
-    {
-      "word_in_sentence": "sumobrottare",
-      "base_form": "sumobrottare",
-      "position_start": 1086,
-      "position_end": 1098
-    },
-    {
-      "word_in_sentence": "jaga",
-      "base_form": "jaga",
-      "position_start": 1498,
-      "position_end": 1502
-    },
-    {
-      "word_in_sentence": "komiker",
-      "base_form": "komiker",
-      "position_start": 1168,
-      "position_end": 1175
-    },
-    {
-      "word_in_sentence": "golfklubba",
-      "base_form": "golfklubba",
-      "position_start": 1439,
-      "position_end": 1449
-    },
-    {
-      "word_in_sentence": "saga",
-      "base_form": "saga",
-      "position_start": 1276,
-      "position_end": 1280
-    },
-    {
-      "word_in_sentence": "saxofon",
-      "base_form": "saxofon",
-      "position_start": 517,
-      "position_end": 524
-    },
-    {
-      "word_in_sentence": "roa sig",
-      "base_form": "roa sig",
-      "position_start": 299,
-      "position_end": 306
-    },
-    {
-      "word_in_sentence": "romantisk",
-      "base_form": "romantisk",
-      "position_start": 2188,
-      "position_end": 2197
-    },
-    {
-      "word_in_sentence": "cykla",
-      "base_form": "cykla",
-      "position_start": 2388,
-      "position_end": 2393
-    },
-    {
-      "word_in_sentence": "”Sommaren med Monica”",
-      "base_form": "”Sommaren med Monica”",
-      "position_start": 2091,
-      "position_end": 2112
-    },
-    {
-      "word_in_sentence": "åka skidor",
-      "base_form": "åka skidor",
-      "position_start": 1355,
-      "position_end": 1365
-    },
-    {
-      "word_in_sentence": "trubadur",
-      "base_form": "trubadur",
-      "position_start": 543,
-      "position_end": 551
-    },
-    {
-      "word_in_sentence": "Det spelar ingen roll.",
-      "base_form": "Det spelar ingen roll.",
-      "position_start": 153,
-      "position_end": 175
-    },
-    {
-      "word_in_sentence": "framför",
-      "base_form": "framför",
-      "position_start": 1601,
-      "position_end": 1608
-    },
-    {
-      "word_in_sentence": "huggormsbett",
-      "base_form": "huggormsbett",
-      "position_start": 1588,
-      "position_end": 1600
-    },
-    {
-      "word_in_sentence": "komplettera",
-      "base_form": "komplettera",
-      "position_start": 1871,
-      "position_end": 1882
-    },
-    {
-      "word_in_sentence": "andra länder",
-      "base_form": "andra länder",
-      "position_start": 655,
-      "position_end": 667
-    },
-    {
-      "word_in_sentence": "längst ner",
-      "base_form": "längst ner",
-      "position_start": 843,
-      "position_end": 853
-    },
-    {
-      "word_in_sentence": "decennium",
-      "base_form": "decennium",
-      "position_start": 615,
-      "position_end": 624
-    },
-    {
-      "word_in_sentence": "precis som",
-      "base_form": "precis som",
-      "position_start": 128,
-      "position_end": 138
-    },
-    {
-      "word_in_sentence": "ljusare",
-      "base_form": "ljusare",
-      "position_start": 917,
-      "position_end": 924
-    },
-    {
-      "word_in_sentence": "vinge",
-      "base_form": "vinge",
-      "position_start": 1567,
-      "position_end": 1572
-    },
-    {
-      "word_in_sentence": "bränna",
-      "base_form": "bränna",
-      "position_start": 2015,
-      "position_end": 2021
-    },
-    {
-      "word_in_sentence": "döda",
-      "base_form": "döda",
-      "position_start": 1520,
-      "position_end": 1524
-    },
-    {
-      "word_in_sentence": "Vad för sorts…",
-      "base_form": "Vad för sorts…",
-      "position_start": 1,
-      "position_end": 15
-    },
-    {
-      "word_in_sentence": "rörelse",
-      "base_form": "rörelse",
-      "position_start": 2161,
-      "position_end": 2168
-    },
-    {
-      "word_in_sentence": "god",
-      "base_form": "god",
-      "position_start": 1935,
-      "position_end": 1938
-    },
-    {
-      "word_in_sentence": "vinylskiva",
-      "base_form": "vinylskiva",
-      "position_start": 588,
-      "position_end": 598
-    },
-    {
-      "word_in_sentence": "helvete",
-      "base_form": "helvete",
-      "position_start": 804,
-      "position_end": 811
-    },
-    {
-      "word_in_sentence": "burk",
-      "base_form": "burk",
-      "position_start": 1926,
-      "position_end": 1930
-    },
-    {
-      "word_in_sentence": "självstyrande",
-      "base_form": "självstyrande",
-      "position_start": 684,
-      "position_end": 697
-    },
-    {
-      "word_in_sentence": "punkt",
-      "base_form": "punkt",
-      "position_start": 1660,
-      "position_end": 1665
-    },
-    {
-      "word_in_sentence": "överbelastad",
-      "base_form": "överbelastad",
-      "position_start": 764,
-      "position_end": 776
+      "sentence_id": "art40_s001",
+      "sv": "\"Vad för sorts… person är du egentligen?\" frågade min vän, som är en känd arkitekt. Han är också en mycket modeintresserad man, precis som sin syster. \n\"Det spelar ingen roll.\" svarade jag lugnt och hällde upp lite vatten i ett vackert glas. \"Jag är bara en glad människa som gillar att ha skoj och roa sig varje dag.\"\n\nVårt lilla gäng var ett ganska brokigt sällskap. Vi bestod av en känd författare, en smart filosof, en smidig akrobat och en fantastisk musiker med extremt stor musikalisk talang, som ofta spelade saxofon och var en duktig trubadur. En av oss brukade samla på en unik vinylskiva från varje nytt decennium. Vi kom från Sverige och från andra länder, ungefär som en självstyrande liten familj. Vi brukade ofta campa, men vår gamla bil var alltid överbelastad. Ibland kändes det som ett helvete att packa. Vårt stora tält låg längst ner under all packning, men vi ville se världen innan dagarna blev ljusare och varmare.\n\nIbland gick vi på ett stort lajv utomhus där vi fick tävla om en glänsande guldnyckel. En av deltagarna var en rolig kille som såg ut som en naken sumobrottare. Han hade mycket naturlig komik i sig. Han var nästan som en populär komiker och skapade ofta en komisk stämning. Jag skrev om det i min dagbok. Det var nästan som en spännande saga. \n\nVi älskade också naturen. Vi brukade cykla i skogen på sommaren, eller åka skidor på vintern. Min vän ville spela golf och letade ständigt efter sin bästa golfklubba. En dag såg vi en tyst jägare som skulle ut och jaga i skogen för att döda vilda djur. Ett litet djur hade en bruten vinge. \"Akta dig för huggormsbett framför stugan,\" varnade jägaren och pekade på en specifik punkt i gräset.\n\nTrots farorna tänkte vi stanna. \"Vi ska fira jul i den här skogen,\" sa jag glatt. \nMin kompis var en extremt kulturintresserad person. Han gillade vacker konst med naturinspirerade motiv för att komplettera sin samling. I sin väska hade han en liten burk med god färg och ville måla. Han brukade säga ett gammalt ordspråk: \"Man ska aldrig bränna sina broar.\" Han ville också gärna titta på den gamla svenska filmen ”Sommaren med Monica” med sin stora idol. Han tyckte att varje vacker rörelse i filmen var djupt romantisk. En annan person i gruppen ville bara skrapa på en liten trisslott eller hoppa från ett högt hopptorn vid sjön. Det fanns alltid något trevligt att göra, vare sig man ville simma eller bara cykla runt på vägarna.",
+      "en": "",
+      "target_words": [
+        {
+          "word_in_sentence": "musiker",
+          "base_form": "musiker",
+          "position_start": 456,
+          "position_end": 463
+        },
+        {
+          "word_in_sentence": "musikalisk",
+          "base_form": "musikalisk",
+          "position_start": 481,
+          "position_end": 491
+        },
+        {
+          "word_in_sentence": "modeintresserad",
+          "base_form": "modeintresserad",
+          "position_start": 107,
+          "position_end": 122
+        },
+        {
+          "word_in_sentence": "arkitekt",
+          "base_form": "arkitekt",
+          "position_start": 74,
+          "position_end": 82
+        },
+        {
+          "word_in_sentence": "samla",
+          "base_form": "samla",
+          "position_start": 571,
+          "position_end": 576
+        },
+        {
+          "word_in_sentence": "motiv",
+          "base_form": "motiv",
+          "position_start": 1858,
+          "position_end": 1863
+        },
+        {
+          "word_in_sentence": "författare",
+          "base_form": "författare",
+          "position_start": 390,
+          "position_end": 400
+        },
+        {
+          "word_in_sentence": "naken",
+          "base_form": "naken",
+          "position_start": 1080,
+          "position_end": 1085
+        },
+        {
+          "word_in_sentence": "filosof",
+          "base_form": "filosof",
+          "position_start": 411,
+          "position_end": 418
+        },
+        {
+          "word_in_sentence": "tält",
+          "base_form": "tält",
+          "position_start": 834,
+          "position_end": 838
+        },
+        {
+          "word_in_sentence": "glas",
+          "base_form": "glas",
+          "position_start": 236,
+          "position_end": 240
+        },
+        {
+          "word_in_sentence": "idol",
+          "base_form": "idol",
+          "position_start": 2128,
+          "position_end": 2132
+        },
+        {
+          "word_in_sentence": "akrobat",
+          "base_form": "akrobat",
+          "position_start": 430,
+          "position_end": 437
+        },
+        {
+          "word_in_sentence": "lajv",
+          "base_form": "lajv",
+          "position_start": 967,
+          "position_end": 971
+        },
+        {
+          "word_in_sentence": "ordspråk",
+          "base_form": "ordspråk",
+          "position_start": 1990,
+          "position_end": 1998
+        },
+        {
+          "word_in_sentence": "kulturintresserad",
+          "base_form": "kuturintresserad",
+          "position_start": 1786,
+          "position_end": 1803
+        },
+        {
+          "word_in_sentence": "tävla",
+          "base_form": "tävla",
+          "position_start": 992,
+          "position_end": 997
+        },
+        {
+          "word_in_sentence": "dagbok",
+          "base_form": "dagbok",
+          "position_start": 1236,
+          "position_end": 1242
+        },
+        {
+          "word_in_sentence": "guldnyckel",
+          "base_form": "guldnyckel",
+          "position_start": 1014,
+          "position_end": 1024
+        },
+        {
+          "word_in_sentence": "skrapa",
+          "base_form": "skrapa",
+          "position_start": 2237,
+          "position_end": 2243
+        },
+        {
+          "word_in_sentence": "fira jul",
+          "base_form": "fira jul",
+          "position_start": 1717,
+          "position_end": 1725
+        },
+        {
+          "word_in_sentence": "hopptorn",
+          "base_form": "hopptorn",
+          "position_start": 2292,
+          "position_end": 2300
+        },
+        {
+          "word_in_sentence": "cykla",
+          "base_form": "cykla",
+          "position_start": 1321,
+          "position_end": 1326
+        },
+        {
+          "word_in_sentence": "jägare",
+          "base_form": "jägare",
+          "position_start": 1473,
+          "position_end": 1479
+        },
+        {
+          "word_in_sentence": "ha skoj",
+          "base_form": "ha skoj",
+          "position_start": 287,
+          "position_end": 294
+        },
+        {
+          "word_in_sentence": "komisk",
+          "base_form": "komisk",
+          "position_start": 1196,
+          "position_end": 1202
+        },
+        {
+          "word_in_sentence": "komik",
+          "base_form": "komik",
+          "position_start": 1125,
+          "position_end": 1130
+        },
+        {
+          "word_in_sentence": "sumobrottare",
+          "base_form": "sumobrottare",
+          "position_start": 1086,
+          "position_end": 1098
+        },
+        {
+          "word_in_sentence": "jaga",
+          "base_form": "jaga",
+          "position_start": 1498,
+          "position_end": 1502
+        },
+        {
+          "word_in_sentence": "komiker",
+          "base_form": "komiker",
+          "position_start": 1168,
+          "position_end": 1175
+        },
+        {
+          "word_in_sentence": "golfklubba",
+          "base_form": "golfklubba",
+          "position_start": 1439,
+          "position_end": 1449
+        },
+        {
+          "word_in_sentence": "saga",
+          "base_form": "saga",
+          "position_start": 1276,
+          "position_end": 1280
+        },
+        {
+          "word_in_sentence": "saxofon",
+          "base_form": "saxofon",
+          "position_start": 517,
+          "position_end": 524
+        },
+        {
+          "word_in_sentence": "roa sig",
+          "base_form": "roa sig",
+          "position_start": 299,
+          "position_end": 306
+        },
+        {
+          "word_in_sentence": "romantisk",
+          "base_form": "romantisk",
+          "position_start": 2189,
+          "position_end": 2198
+        },
+        {
+          "word_in_sentence": "cykla",
+          "base_form": "cykla",
+          "position_start": 1321,
+          "position_end": 1326
+        },
+        {
+          "word_in_sentence": "”Sommaren med Monica”",
+          "base_form": "”Sommaren med Monica”",
+          "position_start": 2092,
+          "position_end": 2113
+        },
+        {
+          "word_in_sentence": "åka skidor",
+          "base_form": "åka skidor",
+          "position_start": 1355,
+          "position_end": 1365
+        },
+        {
+          "word_in_sentence": "trubadur",
+          "base_form": "trubadur",
+          "position_start": 543,
+          "position_end": 551
+        },
+        {
+          "word_in_sentence": "Det spelar ingen roll.",
+          "base_form": "Det spelar ingen roll.",
+          "position_start": 153,
+          "position_end": 175
+        },
+        {
+          "word_in_sentence": "framför",
+          "base_form": "framför",
+          "position_start": 1601,
+          "position_end": 1608
+        },
+        {
+          "word_in_sentence": "huggormsbett",
+          "base_form": "huggormsbett",
+          "position_start": 1588,
+          "position_end": 1600
+        },
+        {
+          "word_in_sentence": "komplettera",
+          "base_form": "komplettera",
+          "position_start": 1872,
+          "position_end": 1883
+        },
+        {
+          "word_in_sentence": "andra länder",
+          "base_form": "andra länder",
+          "position_start": 655,
+          "position_end": 667
+        },
+        {
+          "word_in_sentence": "längst ner",
+          "base_form": "längst ner",
+          "position_start": 843,
+          "position_end": 853
+        },
+        {
+          "word_in_sentence": "decennium",
+          "base_form": "decennium",
+          "position_start": 615,
+          "position_end": 624
+        },
+        {
+          "word_in_sentence": "precis som",
+          "base_form": "precis som",
+          "position_start": 128,
+          "position_end": 138
+        },
+        {
+          "word_in_sentence": "ljusare",
+          "base_form": "ljusare",
+          "position_start": 917,
+          "position_end": 924
+        },
+        {
+          "word_in_sentence": "vinge",
+          "base_form": "vinge",
+          "position_start": 1567,
+          "position_end": 1572
+        },
+        {
+          "word_in_sentence": "bränna",
+          "base_form": "bränna",
+          "position_start": 2016,
+          "position_end": 2022
+        },
+        {
+          "word_in_sentence": "döda",
+          "base_form": "döda",
+          "position_start": 1520,
+          "position_end": 1524
+        },
+        {
+          "word_in_sentence": "Vad för sorts…",
+          "base_form": "Vad för sorts…",
+          "position_start": 1,
+          "position_end": 15
+        },
+        {
+          "word_in_sentence": "rörelse",
+          "base_form": "rörelse",
+          "position_start": 2162,
+          "position_end": 2169
+        },
+        {
+          "word_in_sentence": "god",
+          "base_form": "god",
+          "position_start": 1936,
+          "position_end": 1939
+        },
+        {
+          "word_in_sentence": "vinylskiva",
+          "base_form": "vinylskiva",
+          "position_start": 588,
+          "position_end": 598
+        },
+        {
+          "word_in_sentence": "helvete",
+          "base_form": "helvete",
+          "position_start": 804,
+          "position_end": 811
+        },
+        {
+          "word_in_sentence": "burk",
+          "base_form": "burk",
+          "position_start": 1927,
+          "position_end": 1931
+        },
+        {
+          "word_in_sentence": "självstyrande",
+          "base_form": "självstyrande",
+          "position_start": 684,
+          "position_end": 697
+        },
+        {
+          "word_in_sentence": "punkt",
+          "base_form": "punkt",
+          "position_start": 1660,
+          "position_end": 1665
+        },
+        {
+          "word_in_sentence": "överbelastad",
+          "base_form": "överbelastad",
+          "position_start": 764,
+          "position_end": 776
+        }
+      ]
     }
   ],
   "primary_words_used": [
@@ -428,5 +432,6 @@
     "självstyrande",
     "punkt",
     "överbelastad"
-  ]
+  ],
+  "secondary_words_used": []
 }

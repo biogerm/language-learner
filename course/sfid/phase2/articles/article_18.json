@@ -1,370 +1,374 @@
 {
-  "course_id": "sfid",
-  "course_title": "SFI D",
-  "step_id": "natur_miljö",
-  "step_title": "Natur & Miljö",
   "article_id": "art_18",
-  "sv": "\"Hjälp mig!\" ropade min vän när vi cyklade mountainbike. Banan var böjd och lite krånglig. \"Nu förstår jag inte.\" fortsatte hon. Vi var i norr, i ett stort vildmarksområde. Min vän arbetar som pedagog och älskar vår underbara natur. Vi hade åkt hit för att uppleva allt från bergmansk dramatik till en stilla björkskog.\n\nJag ville rekonstruera en scen från filmen ”Det sjunde inseglet”. Min vän skrattade och tyckte att det var bättre att ta något att äta eller dricka. Det var en bra tidpunkt då en varm sol lyste. Vi satte oss vid en vacker blomma som också var vår lokala landskapsblomma. Hon började lära mig varje växtnamn och förklarade att man kan plantera dem för att få en naturlig och ekologisk utsmyckning runt sitt trähus.\n\n\"Visste du att två tredjedelar av Sveriges yta är skog?\" frågade hon. Det brukade väcka intresse i varje klimatdebatt. I en stor älv, vår landets näst största, kunde man simma och fiska. Sveriges tredje största sjö är också populär.\n\nLängs västra kusten är miljön mer klippig. Där brukar vi besöka det yttersta havsband och bygga ut små vindskydd. Det finns fina havsbad där barnen brukar fiska krabba och leta efter roliga skaldjur. En gång åkte vi på sälsafari och fick se en livs levande säl. Den var nästan lika stor som i naturlig storlek på museum. Vissa sälar kändes nästan lika orädda som en tam hund. \n\nMin väns bästa tips var att vandra i fjällen. Man går sakta över sten efter sten och plockar hjortron eller smultron. Man kan också stöta på ett vackert landskapsdjur. På kvällen kan märkliga saker inträffa. Innan solen går ner måste man slå läger. Det är vackert att se hur färgerna i luften sluta på rött. Men om man är längst upp i landet får man se en midnattsol och en klar stjärna. På grund av bristande kommunikation är området lugnt. Vissa bygger en utlramodern stuga, men det gamla vinner alltid.",
-  "target_words": [
+  "article_title": "Läsförståelse",
+  "target_word_count": 60,
+  "sentences": [
     {
-      "word_in_sentence": "krånglig",
-      "base_form": "krånglig",
-      "position_start": 81,
-      "position_end": 89
-    },
-    {
-      "word_in_sentence": "bergmansk",
-      "base_form": "bergmansk",
-      "position_start": 275,
-      "position_end": 284
-    },
-    {
-      "word_in_sentence": "”Det sjunde inseglet”",
-      "base_form": "”Det sjunde inseglet”",
-      "position_start": 364,
-      "position_end": 385
-    },
-    {
-      "word_in_sentence": "smultron",
-      "base_form": "smultron",
-      "position_start": 1456,
-      "position_end": 1464
-    },
-    {
-      "word_in_sentence": "sol",
-      "base_form": "sol",
-      "position_start": 505,
-      "position_end": 508
-    },
-    {
-      "word_in_sentence": "pedagog",
-      "base_form": "pedagog",
-      "position_start": 193,
-      "position_end": 200
-    },
-    {
-      "word_in_sentence": "växtnamn",
-      "base_form": "växtnamn",
-      "position_start": 619,
-      "position_end": 627
-    },
-    {
-      "word_in_sentence": "plantera",
-      "base_form": "plantera",
-      "position_start": 655,
-      "position_end": 663
-    },
-    {
-      "word_in_sentence": "rekonstruera",
-      "base_form": "rekonstruera",
-      "position_start": 331,
-      "position_end": 343
-    },
-    {
-      "word_in_sentence": "landskapsblomma",
-      "base_form": "landskapsblomma",
-      "position_start": 575,
-      "position_end": 590
-    },
-    {
-      "word_in_sentence": "landskapsdjur",
-      "base_form": "landskapsdjur",
-      "position_start": 1501,
-      "position_end": 1514
-    },
-    {
-      "word_in_sentence": "stjärna",
-      "base_form": "stjärna",
-      "position_start": 1727,
-      "position_end": 1734
-    },
-    {
-      "word_in_sentence": "klippig",
-      "base_form": "klippig",
-      "position_start": 1004,
-      "position_end": 1011
-    },
-    {
-      "word_in_sentence": "skaldjur",
-      "base_form": "skaldjur",
-      "position_start": 1160,
-      "position_end": 1168
-    },
-    {
-      "word_in_sentence": "natur",
-      "base_form": "natur",
-      "position_start": 226,
-      "position_end": 231
-    },
-    {
-      "word_in_sentence": "midnattsol",
-      "base_form": "midnattsol",
-      "position_start": 1704,
-      "position_end": 1714
-    },
-    {
-      "word_in_sentence": "säl",
-      "base_form": "säl",
-      "position_start": 1227,
-      "position_end": 1230
-    },
-    {
-      "word_in_sentence": "vildmarksområde",
-      "base_form": "vildmarksområde",
-      "position_start": 156,
-      "position_end": 171
-    },
-    {
-      "word_in_sentence": "kommunikation",
-      "base_form": "kommunikation",
-      "position_start": 1758,
-      "position_end": 1771
-    },
-    {
-      "word_in_sentence": "naturlig",
-      "base_form": "naturlig",
-      "position_start": 682,
-      "position_end": 690
-    },
-    {
-      "word_in_sentence": "fiska krabba",
-      "base_form": "fiska krabba",
-      "position_start": 1125,
-      "position_end": 1137
-    },
-    {
-      "word_in_sentence": "ta något att äta eller dricka",
-      "base_form": "ta något att äta eller dricka",
-      "position_start": 439,
-      "position_end": 468
-    },
-    {
-      "word_in_sentence": "solen går ner",
-      "base_form": "solen går ner",
-      "position_start": 1562,
-      "position_end": 1575
-    },
-    {
-      "word_in_sentence": "näst största",
-      "base_form": "näst störst",
-      "position_start": 882,
-      "position_end": 894
-    },
-    {
-      "word_in_sentence": "älv",
-      "base_form": "älv",
-      "position_start": 865,
-      "position_end": 868
-    },
-    {
-      "word_in_sentence": "hjortron",
-      "base_form": "hjortron",
-      "position_start": 1441,
-      "position_end": 1449
-    },
-    {
-      "word_in_sentence": "fiska",
-      "base_form": "fiska",
-      "position_start": 916,
-      "position_end": 921
-    },
-    {
-      "word_in_sentence": "tam",
-      "base_form": "tam",
-      "position_start": 1336,
-      "position_end": 1339
-    },
-    {
-      "word_in_sentence": "vandra i fjällen",
-      "base_form": "vandra i fjällen",
-      "position_start": 1376,
-      "position_end": 1392
-    },
-    {
-      "word_in_sentence": "mountainbike",
-      "base_form": "mountainbike",
-      "position_start": 43,
-      "position_end": 55
-    },
-    {
-      "word_in_sentence": "havsbad",
-      "base_form": "havsbad",
-      "position_start": 1099,
-      "position_end": 1106
-    },
-    {
-      "word_in_sentence": "sten efter sten",
-      "base_form": "sten efter sten",
-      "position_start": 1413,
-      "position_end": 1428
-    },
-    {
-      "word_in_sentence": "havsband",
-      "base_form": "havsband",
-      "position_start": 1047,
-      "position_end": 1055
-    },
-    {
-      "word_in_sentence": "trähus",
-      "base_form": "trähus",
-      "position_start": 727,
-      "position_end": 733
-    },
-    {
-      "word_in_sentence": "klimatdebatt",
-      "base_form": "klimatdebatt",
-      "position_start": 841,
-      "position_end": 853
-    },
-    {
-      "word_in_sentence": "ekologisk",
-      "base_form": "ekologisk",
-      "position_start": 695,
-      "position_end": 704
-    },
-    {
-      "word_in_sentence": "björkskog",
-      "base_form": "björkskog",
-      "position_start": 309,
-      "position_end": 318
-    },
-    {
-      "word_in_sentence": "naturlig storlek",
-      "base_form": "naturlig storlek",
-      "position_start": 1263,
-      "position_end": 1279
-    },
-    {
-      "word_in_sentence": "utsmyckning",
-      "base_form": "utsmyckning",
-      "position_start": 705,
-      "position_end": 716
-    },
-    {
-      "word_in_sentence": "blomma",
-      "base_form": "blomma",
-      "position_start": 543,
-      "position_end": 549
-    },
-    {
-      "word_in_sentence": "sälsafari",
-      "base_form": "sälsafari",
-      "position_start": 1189,
-      "position_end": 1198
-    },
-    {
-      "word_in_sentence": "inträffa",
-      "base_form": "inträffa",
-      "position_start": 1546,
-      "position_end": 1554
-    },
-    {
-      "word_in_sentence": "väcka intresse",
-      "base_form": "väcka intresse",
-      "position_start": 818,
-      "position_end": 832
-    },
-    {
-      "word_in_sentence": "Nu förstår jag inte.",
-      "base_form": "Nu förstår jag inte.",
-      "position_start": 92,
-      "position_end": 112
-    },
-    {
-      "word_in_sentence": "böjd",
-      "base_form": "böjd",
-      "position_start": 67,
-      "position_end": 71
-    },
-    {
-      "word_in_sentence": "tredje största",
-      "base_form": "tredje största",
-      "position_start": 932,
-      "position_end": 946
-    },
-    {
-      "word_in_sentence": "sakta",
-      "base_form": "sakta",
-      "position_start": 1402,
-      "position_end": 1407
-    },
-    {
-      "word_in_sentence": "västra",
-      "base_form": "västra",
-      "position_start": 976,
-      "position_end": 982
-    },
-    {
-      "word_in_sentence": "norr",
-      "base_form": "norr",
-      "position_start": 138,
-      "position_end": 142
-    },
-    {
-      "word_in_sentence": "tips",
-      "base_form": "tips",
-      "position_start": 1363,
-      "position_end": 1367
-    },
-    {
-      "word_in_sentence": "bygga ut",
-      "base_form": "bygga ut",
-      "position_start": 1060,
-      "position_end": 1068
-    },
-    {
-      "word_in_sentence": "Hjälp mig!",
-      "base_form": "Hjälp mig!",
-      "position_start": 1,
-      "position_end": 11
-    },
-    {
-      "word_in_sentence": "slå",
-      "base_form": "slå",
-      "position_start": 1586,
-      "position_end": 1589
-    },
-    {
-      "word_in_sentence": "sluta på",
-      "base_form": "sluta på",
-      "position_start": 1641,
-      "position_end": 1649
-    },
-    {
-      "word_in_sentence": "två tredjedelar",
-      "base_form": "två tredjedelar",
-      "position_start": 751,
-      "position_end": 766
-    },
-    {
-      "word_in_sentence": "utlramodern",
-      "base_form": "utlramodern",
-      "position_start": 1806,
-      "position_end": 1817
-    },
-    {
-      "word_in_sentence": "då",
-      "base_form": "då",
-      "position_start": 494,
-      "position_end": 496
-    },
-    {
-      "word_in_sentence": "simma",
-      "base_form": "simma",
-      "position_start": 906,
-      "position_end": 911
-    },
-    {
-      "word_in_sentence": "stöta på",
-      "base_form": "stöta på",
-      "position_start": 1480,
-      "position_end": 1488
-    },
-    {
-      "word_in_sentence": "underbara",
-      "base_form": "underbar",
-      "position_start": 216,
-      "position_end": 225
+      "sentence_id": "art18_s001",
+      "sv": "\"Hjälp mig!\" ropade min vän när vi cyklade mountainbike. Banan var böjd och lite krånglig. \"Nu förstår jag inte.\" fortsatte hon. Vi var i norr, i ett stort vildmarksområde. Min vän arbetar som pedagog och älskar vår underbara natur. Vi hade åkt hit för att uppleva allt från bergmansk dramatik till en stilla björkskog.\n\nJag ville rekonstruera en scen från filmen ”Det sjunde inseglet”. Min vän skrattade och tyckte att det var bättre att ta något att äta eller dricka. Det var en bra tidpunkt då en varm sol lyste. Vi satte oss vid en vacker blomma som också var vår lokala landskapsblomma. Hon började lära mig varje växtnamn och förklarade att man kan plantera dem för att få en naturlig och ekologisk utsmyckning runt sitt trähus.\n\n\"Visste du att två tredjedelar av Sveriges yta är skog?\" frågade hon. Det brukade väcka intresse i varje klimatdebatt. I en stor älv, vår landets näst största, kunde man simma och fiska. Sveriges tredje största sjö är också populär.\n\nLängs västra kusten är miljön mer klippig. Där brukar vi besöka det yttersta havsband och bygga ut små vindskydd. Det finns fina havsbad där barnen brukar fiska krabba och leta efter roliga skaldjur. En gång åkte vi på sälsafari och fick se en livs levande säl. Den var nästan lika stor som i naturlig storlek på museum. Vissa sälar kändes nästan lika orädda som en tam hund. \n\nMin väns bästa tips var att vandra i fjällen. Man går sakta över sten efter sten och plockar hjortron eller smultron. Man kan också stöta på ett vackert landskapsdjur. På kvällen kan märkliga saker inträffa. Innan solen går ner måste man slå läger. Det är vackert att se hur färgerna i luften sluta på rött. Men om man är längst upp i landet får man se en midnattsol och en klar stjärna. På grund av bristande kommunikation är området lugnt. Vissa bygger en ultramodern stuga, men det gamla vinner alltid.",
+      "en": "",
+      "target_words": [
+        {
+          "word_in_sentence": "krånglig",
+          "base_form": "krånglig",
+          "position_start": 81,
+          "position_end": 89
+        },
+        {
+          "word_in_sentence": "bergmansk",
+          "base_form": "bergmansk",
+          "position_start": 275,
+          "position_end": 284
+        },
+        {
+          "word_in_sentence": "”Det sjunde inseglet”",
+          "base_form": "”Det sjunde inseglet”",
+          "position_start": 364,
+          "position_end": 385
+        },
+        {
+          "word_in_sentence": "smultron",
+          "base_form": "smultron",
+          "position_start": 1456,
+          "position_end": 1464
+        },
+        {
+          "word_in_sentence": "sol",
+          "base_form": "sol",
+          "position_start": 505,
+          "position_end": 508
+        },
+        {
+          "word_in_sentence": "pedagog",
+          "base_form": "pedagog",
+          "position_start": 193,
+          "position_end": 200
+        },
+        {
+          "word_in_sentence": "växtnamn",
+          "base_form": "växtnamn",
+          "position_start": 619,
+          "position_end": 627
+        },
+        {
+          "word_in_sentence": "plantera",
+          "base_form": "plantera",
+          "position_start": 655,
+          "position_end": 663
+        },
+        {
+          "word_in_sentence": "rekonstruera",
+          "base_form": "rekonstruera",
+          "position_start": 331,
+          "position_end": 343
+        },
+        {
+          "word_in_sentence": "landskapsblomma",
+          "base_form": "landskapsblomma",
+          "position_start": 575,
+          "position_end": 590
+        },
+        {
+          "word_in_sentence": "landskapsdjur",
+          "base_form": "landskapsdjur",
+          "position_start": 1501,
+          "position_end": 1514
+        },
+        {
+          "word_in_sentence": "stjärna",
+          "base_form": "stjärna",
+          "position_start": 1727,
+          "position_end": 1734
+        },
+        {
+          "word_in_sentence": "klippig",
+          "base_form": "klippig",
+          "position_start": 1004,
+          "position_end": 1011
+        },
+        {
+          "word_in_sentence": "skaldjur",
+          "base_form": "skaldjur",
+          "position_start": 1160,
+          "position_end": 1168
+        },
+        {
+          "word_in_sentence": "natur",
+          "base_form": "natur",
+          "position_start": 226,
+          "position_end": 231
+        },
+        {
+          "word_in_sentence": "midnattsol",
+          "base_form": "midnattsol",
+          "position_start": 1704,
+          "position_end": 1714
+        },
+        {
+          "word_in_sentence": "säl",
+          "base_form": "säl",
+          "position_start": 1189,
+          "position_end": 1192
+        },
+        {
+          "word_in_sentence": "vildmarksområde",
+          "base_form": "vildmarksområde",
+          "position_start": 156,
+          "position_end": 171
+        },
+        {
+          "word_in_sentence": "kommunikation",
+          "base_form": "kommunikation",
+          "position_start": 1758,
+          "position_end": 1771
+        },
+        {
+          "word_in_sentence": "naturlig",
+          "base_form": "naturlig",
+          "position_start": 682,
+          "position_end": 690
+        },
+        {
+          "word_in_sentence": "fiska krabba",
+          "base_form": "fiska krabba",
+          "position_start": 1125,
+          "position_end": 1137
+        },
+        {
+          "word_in_sentence": "ta något att äta eller dricka",
+          "base_form": "ta något att äta eller dricka",
+          "position_start": 439,
+          "position_end": 468
+        },
+        {
+          "word_in_sentence": "solen går ner",
+          "base_form": "solen går ner",
+          "position_start": 1562,
+          "position_end": 1575
+        },
+        {
+          "word_in_sentence": "näst största",
+          "base_form": "näst störst",
+          "position_start": 882,
+          "position_end": 894
+        },
+        {
+          "word_in_sentence": "älv",
+          "base_form": "älv",
+          "position_start": 865,
+          "position_end": 868
+        },
+        {
+          "word_in_sentence": "hjortron",
+          "base_form": "hjortron",
+          "position_start": 1441,
+          "position_end": 1449
+        },
+        {
+          "word_in_sentence": "fiska",
+          "base_form": "fiska",
+          "position_start": 916,
+          "position_end": 921
+        },
+        {
+          "word_in_sentence": "tam",
+          "base_form": "tam",
+          "position_start": 1336,
+          "position_end": 1339
+        },
+        {
+          "word_in_sentence": "vandra i fjällen",
+          "base_form": "vandra i fjällen",
+          "position_start": 1376,
+          "position_end": 1392
+        },
+        {
+          "word_in_sentence": "mountainbike",
+          "base_form": "mountainbike",
+          "position_start": 43,
+          "position_end": 55
+        },
+        {
+          "word_in_sentence": "havsbad",
+          "base_form": "havsbad",
+          "position_start": 1099,
+          "position_end": 1106
+        },
+        {
+          "word_in_sentence": "sten efter sten",
+          "base_form": "sten efter sten",
+          "position_start": 1413,
+          "position_end": 1428
+        },
+        {
+          "word_in_sentence": "havsband",
+          "base_form": "havsband",
+          "position_start": 1047,
+          "position_end": 1055
+        },
+        {
+          "word_in_sentence": "trähus",
+          "base_form": "trähus",
+          "position_start": 727,
+          "position_end": 733
+        },
+        {
+          "word_in_sentence": "klimatdebatt",
+          "base_form": "klimatdebatt",
+          "position_start": 841,
+          "position_end": 853
+        },
+        {
+          "word_in_sentence": "ekologisk",
+          "base_form": "ekologisk",
+          "position_start": 695,
+          "position_end": 704
+        },
+        {
+          "word_in_sentence": "björkskog",
+          "base_form": "björkskog",
+          "position_start": 309,
+          "position_end": 318
+        },
+        {
+          "word_in_sentence": "naturlig storlek",
+          "base_form": "naturlig storlek",
+          "position_start": 1263,
+          "position_end": 1279
+        },
+        {
+          "word_in_sentence": "utsmyckning",
+          "base_form": "utsmyckning",
+          "position_start": 705,
+          "position_end": 716
+        },
+        {
+          "word_in_sentence": "blomma",
+          "base_form": "blomma",
+          "position_start": 543,
+          "position_end": 549
+        },
+        {
+          "word_in_sentence": "sälsafari",
+          "base_form": "sälsafari",
+          "position_start": 1189,
+          "position_end": 1198
+        },
+        {
+          "word_in_sentence": "inträffa",
+          "base_form": "inträffa",
+          "position_start": 1546,
+          "position_end": 1554
+        },
+        {
+          "word_in_sentence": "väcka intresse",
+          "base_form": "väcka intresse",
+          "position_start": 818,
+          "position_end": 832
+        },
+        {
+          "word_in_sentence": "Nu förstår jag inte.",
+          "base_form": "Nu förstår jag inte.",
+          "position_start": 92,
+          "position_end": 112
+        },
+        {
+          "word_in_sentence": "böjd",
+          "base_form": "böjd",
+          "position_start": 67,
+          "position_end": 71
+        },
+        {
+          "word_in_sentence": "tredje största",
+          "base_form": "tredje största",
+          "position_start": 932,
+          "position_end": 946
+        },
+        {
+          "word_in_sentence": "sakta",
+          "base_form": "sakta",
+          "position_start": 1402,
+          "position_end": 1407
+        },
+        {
+          "word_in_sentence": "västra",
+          "base_form": "västra",
+          "position_start": 976,
+          "position_end": 982
+        },
+        {
+          "word_in_sentence": "norr",
+          "base_form": "norr",
+          "position_start": 138,
+          "position_end": 142
+        },
+        {
+          "word_in_sentence": "tips",
+          "base_form": "tips",
+          "position_start": 1363,
+          "position_end": 1367
+        },
+        {
+          "word_in_sentence": "bygga ut",
+          "base_form": "bygga ut",
+          "position_start": 1060,
+          "position_end": 1068
+        },
+        {
+          "word_in_sentence": "Hjälp mig!",
+          "base_form": "Hjälp mig!",
+          "position_start": 1,
+          "position_end": 11
+        },
+        {
+          "word_in_sentence": "slå",
+          "base_form": "slå",
+          "position_start": 1586,
+          "position_end": 1589
+        },
+        {
+          "word_in_sentence": "sluta på",
+          "base_form": "sluta på",
+          "position_start": 1641,
+          "position_end": 1649
+        },
+        {
+          "word_in_sentence": "två tredjedelar",
+          "base_form": "två tredjedelar",
+          "position_start": 751,
+          "position_end": 766
+        },
+        {
+          "word_in_sentence": "ultramodern",
+          "base_form": "utlramodern",
+          "position_start": 1806,
+          "position_end": 1817
+        },
+        {
+          "word_in_sentence": "då",
+          "base_form": "då",
+          "position_start": 494,
+          "position_end": 496
+        },
+        {
+          "word_in_sentence": "simma",
+          "base_form": "simma",
+          "position_start": 906,
+          "position_end": 911
+        },
+        {
+          "word_in_sentence": "stöta på",
+          "base_form": "stöta på",
+          "position_start": 1480,
+          "position_end": 1488
+        },
+        {
+          "word_in_sentence": "underbara",
+          "base_form": "underbar",
+          "position_start": 216,
+          "position_end": 225
+        }
+      ]
     }
   ],
   "primary_words_used": [
@@ -428,5 +432,6 @@
     "simma",
     "stöta på",
     "underbar"
-  ]
+  ],
+  "secondary_words_used": []
 }

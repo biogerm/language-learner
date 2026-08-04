@@ -1,370 +1,374 @@
 {
-  "course_id": "sfid",
-  "course_title": "SFI D",
-  "step_id": "relationer_känslor",
-  "step_title": "Relationer & Känslor",
   "article_id": "art_54",
-  "sv": "Hejsan …\nKära … Anna,\nAllt väl? Är allt bra med dig? \nHär är allting toppen/underbart/härligt på min nya semester.\nHar du hört vad som har hänt? Det hände en så rolig sak … i lördags när jag skulle slå en signal till en gammal bekant. Vet du vem jag träffade? \nJag mötte Peter! Vet du inte varför…? Han har ju flyttat tillbaka, fastän han trivdes bra utomlands. \n\n\"Är det sant?\" frågade jag honom. Han var snabb som en vessla på att hälsa på mig med en artig och trevlig bugning. Han sa att nuförtiden ser han väldigt trendig och äventyrlig ut. Det var en riktig ljuspunkt på dagen, en känsla av ren lycka att se honom. Jag kunde inte låta bli att fantisera om gamla tider, allt kändes som historia i koncentrat. \n\nVi brukade alltid stötta varandra och han var en modig förebild för mig. Han ville utveckla sina idéer och var mycket lojal och extremt ärlig. \n\n\"Tänker ni… flytta hit nu?\" frågade jag. Han sa ja, men han hade en tendens att snabbt ångra sig. Man måste akta sig för att förlora sig själv helt och hållet i en stad. Han tyckte att staden blivit väldigt omodern och att han inte hittat lugnet någonstans, varken här eller ingen annanstans. \n\n\"Man kan inte leva på andra,\" sa jag. \"Du måste vara bussig och inte usel.\" \n\"Nej, fy.\" sa han. \"Jag skulle aldrig vara ofin. Det är icke en bra egenskap.\" Han var inte glad att behöva vara utan pengar.\n\nPlötsligt kom en hysterisk kvinna fram och kastade en påse rakt i knät på honom! Hon bar en märklig, stickande parfym. \n\"Lägg av!\" skrek han. \n\nHan berättade att kvinnan trodde att han ville ha en affär med henne. Det är ibland svårt att lära känna människor ordentligt och man hinner inte känna någon väl innan det uppstår problem. \n\"Hur länge?\" frågade jag honom förvånat. \n\"Ett bra tag,\" suckade han tyst. \"Bry dig inte om … henne. Hon är en etablerad men helt hopplös person, ja, tänk dig/er att alltid behöva bråka.\" Jag kände mig tvungen att sjunka ner i min stol och fundera vidare. \n\nJag hoppas att vi snart kan ses och njuta av en mysig fika. \"Ha det så bra!\" och \"Du med /Du också.\" brukar vi ju skriva.",
-  "target_words": [
+  "article_title": "Läsförståelse",
+  "target_word_count": 60,
+  "sentences": [
     {
-      "word_in_sentence": "slå en signal",
-      "base_form": "slå en signal",
-      "position_start": 198,
-      "position_end": 211
-    },
-    {
-      "word_in_sentence": "lycka",
-      "base_form": "lycka",
-      "position_start": 600,
-      "position_end": 605
-    },
-    {
-      "word_in_sentence": "ofin",
-      "base_form": "ofin",
-      "position_start": 1275,
-      "position_end": 1279
-    },
-    {
-      "word_in_sentence": "ljuspunkt",
-      "base_form": "ljuspunkt",
-      "position_start": 563,
-      "position_end": 572
-    },
-    {
-      "word_in_sentence": "Du med /Du också.",
-      "base_form": "Du med /Du också.",
-      "position_start": 2033,
-      "position_end": 2050
-    },
-    {
-      "word_in_sentence": "Kära …",
-      "base_form": "Kära …",
-      "position_start": 9,
-      "position_end": 15
-    },
-    {
-      "word_in_sentence": "lojal",
-      "base_form": "lojal",
-      "position_start": 833,
-      "position_end": 838
-    },
-    {
-      "word_in_sentence": "stötta",
-      "base_form": "stötta",
-      "position_start": 733,
-      "position_end": 739
-    },
-    {
-      "word_in_sentence": "modig",
-      "base_form": "modig",
-      "position_start": 764,
-      "position_end": 769
-    },
-    {
-      "word_in_sentence": "bekant",
-      "base_form": "bekant",
-      "position_start": 227,
-      "position_end": 233
-    },
-    {
-      "word_in_sentence": "hälsa",
-      "base_form": "hälsa",
-      "position_start": 433,
-      "position_end": 438
-    },
-    {
-      "word_in_sentence": "Nej, fy.",
-      "base_form": "Nej, fy.",
-      "position_start": 1233,
-      "position_end": 1241
-    },
-    {
-      "word_in_sentence": "hopplös",
-      "base_form": "hopplös",
-      "position_start": 1823,
-      "position_end": 1830
-    },
-    {
-      "word_in_sentence": "äventyrlig",
-      "base_form": "äventyrlig",
-      "position_start": 530,
-      "position_end": 540
-    },
-    {
-      "word_in_sentence": "Allt väl?",
-      "base_form": "Allt väl?",
-      "position_start": 22,
-      "position_end": 31
-    },
-    {
-      "word_in_sentence": "fantisera",
-      "base_form": "fantisera",
-      "position_start": 648,
-      "position_end": 657
-    },
-    {
-      "word_in_sentence": "förlora",
-      "base_form": "förlora",
-      "position_start": 985,
-      "position_end": 992
-    },
-    {
-      "word_in_sentence": "helt och hållet",
-      "base_form": "helt och hållet",
-      "position_start": 1003,
-      "position_end": 1018
-    },
-    {
-      "word_in_sentence": "känna någon väl",
-      "base_form": "känna någon väl",
-      "position_start": 1649,
-      "position_end": 1664
-    },
-    {
-      "word_in_sentence": "Det hände en så rolig sak …",
-      "base_form": "Det hände en så rolig sak …",
-      "position_start": 145,
-      "position_end": 172
-    },
-    {
-      "word_in_sentence": "Här är allting toppen/underbart/härligt",
-      "base_form": "Här är allting toppen/underbart/härligt",
-      "position_start": 54,
-      "position_end": 93
-    },
-    {
-      "word_in_sentence": "bussig",
-      "base_form": "bussig",
-      "position_start": 1208,
-      "position_end": 1214
-    },
-    {
-      "word_in_sentence": "lära känna",
-      "base_form": "lära känna",
-      "position_start": 1597,
-      "position_end": 1607
-    },
-    {
-      "word_in_sentence": "omodern",
-      "base_form": "omodern",
-      "position_start": 1067,
-      "position_end": 1074
-    },
-    {
-      "word_in_sentence": "ärlig",
-      "base_form": "ärlig",
-      "position_start": 851,
-      "position_end": 856
-    },
-    {
-      "word_in_sentence": "usel",
-      "base_form": "usel",
-      "position_start": 1224,
-      "position_end": 1228
-    },
-    {
-      "word_in_sentence": "Är allt bra med dig?",
-      "base_form": "Är allt bra med dig?",
-      "position_start": 32,
-      "position_end": 52
-    },
-    {
-      "word_in_sentence": "Har du hört vad som har hänt?",
-      "base_form": "Har du hört vad som har hänt?",
-      "position_start": 115,
-      "position_end": 144
-    },
-    {
-      "word_in_sentence": "ångra sig",
-      "base_form": "ångra sig",
-      "position_start": 947,
-      "position_end": 956
-    },
-    {
-      "word_in_sentence": "Hejsan …",
-      "base_form": "Hejsan …",
-      "position_start": 0,
-      "position_end": 8
-    },
-    {
-      "word_in_sentence": "Vet du vem jag träffade?",
-      "base_form": "Vet du vem jag träffade?",
-      "position_start": 235,
-      "position_end": 259
-    },
-    {
-      "word_in_sentence": "förebild",
-      "base_form": "förebild",
-      "position_start": 770,
-      "position_end": 778
-    },
-    {
-      "word_in_sentence": "ha en affär",
-      "base_form": "ha en affär",
-      "position_start": 1550,
-      "position_end": 1561
-    },
-    {
-      "word_in_sentence": "akta sig",
-      "base_form": "akta sig",
-      "position_start": 968,
-      "position_end": 976
-    },
-    {
-      "word_in_sentence": "hysterisk",
-      "base_form": "hysterisk",
-      "position_start": 1376,
-      "position_end": 1385
-    },
-    {
-      "word_in_sentence": "Bry dig inte om …",
-      "base_form": "Bry dig inte om …",
-      "position_start": 1769,
-      "position_end": 1786
-    },
-    {
-      "word_in_sentence": "njuta av",
-      "base_form": "njuta av",
-      "position_start": 1987,
-      "position_end": 1995
-    },
-    {
-      "word_in_sentence": "artig",
-      "base_form": "artig",
-      "position_start": 453,
-      "position_end": 458
-    },
-    {
-      "word_in_sentence": "tendens",
-      "base_form": "tendens",
-      "position_start": 928,
-      "position_end": 935
-    },
-    {
-      "word_in_sentence": "i knät",
-      "base_form": "i knät",
-      "position_start": 1423,
-      "position_end": 1429
-    },
-    {
-      "word_in_sentence": "ingen annanstans",
-      "base_form": "ingen annanstans",
-      "position_start": 1135,
-      "position_end": 1151
-    },
-    {
-      "word_in_sentence": "leva på andra",
-      "base_form": "leva på andra",
-      "position_start": 1169,
-      "position_end": 1182
-    },
-    {
-      "word_in_sentence": "nuförtiden",
-      "base_form": "nuförtiden",
-      "position_start": 491,
-      "position_end": 501
-    },
-    {
-      "word_in_sentence": "fastän",
-      "base_form": "fastän",
-      "position_start": 328,
-      "position_end": 334
-    },
-    {
-      "word_in_sentence": "trendig",
-      "base_form": "trendig",
-      "position_start": 518,
-      "position_end": 525
-    },
-    {
-      "word_in_sentence": "utveckla",
-      "base_form": "utveckla",
-      "position_start": 798,
-      "position_end": 806
-    },
-    {
-      "word_in_sentence": "Hur länge?",
-      "base_form": "Hur länge?",
-      "position_start": 1694,
-      "position_end": 1704
-    },
-    {
-      "word_in_sentence": "icke",
-      "base_form": "icke",
-      "position_start": 1288,
-      "position_end": 1292
-    },
-    {
-      "word_in_sentence": "i koncentrat",
-      "base_form": "i koncentrat",
-      "position_start": 699,
-      "position_end": 711
-    },
-    {
-      "word_in_sentence": "stickande",
-      "base_form": "stickande",
-      "position_start": 1460,
-      "position_end": 1469
-    },
-    {
-      "word_in_sentence": "vara utan",
-      "base_form": "vara utan",
-      "position_start": 1340,
-      "position_end": 1349
-    },
-    {
-      "word_in_sentence": "Vet du inte varför…?",
-      "base_form": "Vet du inte varför…?",
-      "position_start": 278,
-      "position_end": 298
-    },
-    {
-      "word_in_sentence": "etablerad",
-      "base_form": "etablerad",
-      "position_start": 1804,
-      "position_end": 1813
-    },
-    {
-      "word_in_sentence": "snabb som en vessla",
-      "base_form": "snabb som en vessla",
-      "position_start": 406,
-      "position_end": 425
-    },
-    {
-      "word_in_sentence": "Tänker ni…",
-      "base_form": "Tänker ni…",
-      "position_start": 861,
-      "position_end": 871
-    },
-    {
-      "word_in_sentence": "sjunka",
-      "base_form": "sjunka",
-      "position_start": 1907,
-      "position_end": 1913
-    },
-    {
-      "word_in_sentence": "tänk dig/er",
-      "base_form": "tänk dig/er",
-      "position_start": 1843,
-      "position_end": 1854
-    },
-    {
-      "word_in_sentence": "vidare",
-      "base_form": "vidare",
-      "position_start": 1941,
-      "position_end": 1947
-    },
-    {
-      "word_in_sentence": "Är det sant?",
-      "base_form": "Är det sant?",
-      "position_start": 365,
-      "position_end": 377
-    },
-    {
-      "word_in_sentence": "Lägg av!",
-      "base_form": "Lägg av!",
-      "position_start": 1480,
-      "position_end": 1488
+      "sentence_id": "art54_s001",
+      "sv": "Hejsan …\nKära … Anna,\nAllt väl? Är allt bra med dig? \nHär är allting toppen på min nya semester.\nHar du hört vad som har hänt? Det hände en så rolig sak … i lördags när jag skulle slå en signal till en gammal bekant. Vet du vem jag träffade? \nJag mötte Peter! Vet du inte varför…? Han har ju flyttat tillbaka, fastän han trivdes bra utomlands. \n\n\"Är det sant?\" frågade jag honom. Han var snabb som en vessla på att hälsa på mig med en artig och trevlig bugning. Han sa att nuförtiden ser han väldigt trendig och äventyrlig ut. Det var en riktig ljuspunkt på dagen, en känsla av ren lycka att se honom. Jag kunde inte låta bli att fantisera om gamla tider, allt kändes som historia i koncentrat. \n\nVi brukade alltid stötta varandra och han var en modig förebild för mig. Han ville utveckla sina idéer och var mycket lojal och extremt ärlig. \n\n\"Tänker ni… flytta hit nu?\" frågade jag. Han sa ja, men han hade en tendens att snabbt ångra sig. Man måste akta sig för att förlora sig själv helt och hållet i en stad. Han tyckte att staden blivit väldigt omodern och att han inte hittat lugnet någonstans, varken här eller ingen annanstans. \n\n\"Man kan inte leva på andra,\" sa jag. \"Du måste vara bussig och inte usel.\" \n\"Nej, fy.\" sa han. \"Jag skulle aldrig vara ofin. Det är icke en bra egenskap.\" Han var inte glad att behöva vara utan pengar.\n\nPlötsligt kom en hysterisk kvinna fram och kastade en påse rakt i knät på honom! Hon bar en märklig, stickande parfym. \n\"Lägg av!\" skrek han. \n\nHan berättade att kvinnan trodde att han ville ha en affär med henne. Det är ibland svårt att lära känna människor ordentligt och man hinner inte känna någon väl innan det uppstår problem. \n\"Hur länge?\" frågade jag honom förvånat. \n\"Ett bra tag,\" suckade han tyst. \"Bry dig inte om … henne. Hon är en etablerad men helt hopplös person, ja, tänk dig att alltid behöva bråka.\" Jag kände mig tvungen att sjunka ner i min stol och fundera vidare. \n\nJag hoppas att vi snart kan ses och njuta av en mysig fika. \"Ha det så bra!\" och \"Du med /Du också.\" brukar vi ju skriva.",
+      "en": "",
+      "target_words": [
+        {
+          "word_in_sentence": "slå en signal",
+          "base_form": "slå en signal",
+          "position_start": 180,
+          "position_end": 193
+        },
+        {
+          "word_in_sentence": "lycka",
+          "base_form": "lycka",
+          "position_start": 582,
+          "position_end": 587
+        },
+        {
+          "word_in_sentence": "ofin",
+          "base_form": "ofin",
+          "position_start": 1257,
+          "position_end": 1261
+        },
+        {
+          "word_in_sentence": "ljuspunkt",
+          "base_form": "ljuspunkt",
+          "position_start": 545,
+          "position_end": 554
+        },
+        {
+          "word_in_sentence": "Du med /Du också.",
+          "base_form": "Du med /Du också.",
+          "position_start": 2012,
+          "position_end": 2029
+        },
+        {
+          "word_in_sentence": "Kära …",
+          "base_form": "Kära …",
+          "position_start": 9,
+          "position_end": 15
+        },
+        {
+          "word_in_sentence": "lojal",
+          "base_form": "lojal",
+          "position_start": 815,
+          "position_end": 820
+        },
+        {
+          "word_in_sentence": "stötta",
+          "base_form": "stötta",
+          "position_start": 715,
+          "position_end": 721
+        },
+        {
+          "word_in_sentence": "modig",
+          "base_form": "modig",
+          "position_start": 746,
+          "position_end": 751
+        },
+        {
+          "word_in_sentence": "bekant",
+          "base_form": "bekant",
+          "position_start": 209,
+          "position_end": 215
+        },
+        {
+          "word_in_sentence": "hälsa",
+          "base_form": "hälsa",
+          "position_start": 415,
+          "position_end": 420
+        },
+        {
+          "word_in_sentence": "Nej, fy.",
+          "base_form": "Nej, fy.",
+          "position_start": 1215,
+          "position_end": 1223
+        },
+        {
+          "word_in_sentence": "hopplös",
+          "base_form": "hopplös",
+          "position_start": 1805,
+          "position_end": 1812
+        },
+        {
+          "word_in_sentence": "äventyrlig",
+          "base_form": "äventyrlig",
+          "position_start": 512,
+          "position_end": 522
+        },
+        {
+          "word_in_sentence": "Allt väl?",
+          "base_form": "Allt väl?",
+          "position_start": 22,
+          "position_end": 31
+        },
+        {
+          "word_in_sentence": "fantisera",
+          "base_form": "fantisera",
+          "position_start": 630,
+          "position_end": 639
+        },
+        {
+          "word_in_sentence": "förlora",
+          "base_form": "förlora",
+          "position_start": 967,
+          "position_end": 974
+        },
+        {
+          "word_in_sentence": "helt och hållet",
+          "base_form": "helt och hållet",
+          "position_start": 985,
+          "position_end": 1000
+        },
+        {
+          "word_in_sentence": "känna någon väl",
+          "base_form": "känna någon väl",
+          "position_start": 1631,
+          "position_end": 1646
+        },
+        {
+          "word_in_sentence": "Det hände en så rolig sak …",
+          "base_form": "Det hände en så rolig sak …",
+          "position_start": 127,
+          "position_end": 154
+        },
+        {
+          "word_in_sentence": "Här är allting toppen",
+          "base_form": "Här är allting toppen/underbart/härligt",
+          "position_start": 54,
+          "position_end": 75
+        },
+        {
+          "word_in_sentence": "bussig",
+          "base_form": "bussig",
+          "position_start": 1190,
+          "position_end": 1196
+        },
+        {
+          "word_in_sentence": "lära känna",
+          "base_form": "lära känna",
+          "position_start": 1579,
+          "position_end": 1589
+        },
+        {
+          "word_in_sentence": "omodern",
+          "base_form": "omodern",
+          "position_start": 1049,
+          "position_end": 1056
+        },
+        {
+          "word_in_sentence": "ärlig",
+          "base_form": "ärlig",
+          "position_start": 833,
+          "position_end": 838
+        },
+        {
+          "word_in_sentence": "usel",
+          "base_form": "usel",
+          "position_start": 1206,
+          "position_end": 1210
+        },
+        {
+          "word_in_sentence": "Är allt bra med dig?",
+          "base_form": "Är allt bra med dig?",
+          "position_start": 32,
+          "position_end": 52
+        },
+        {
+          "word_in_sentence": "Har du hört vad som har hänt?",
+          "base_form": "Har du hört vad som har hänt?",
+          "position_start": 97,
+          "position_end": 126
+        },
+        {
+          "word_in_sentence": "ångra sig",
+          "base_form": "ångra sig",
+          "position_start": 929,
+          "position_end": 938
+        },
+        {
+          "word_in_sentence": "Hejsan …",
+          "base_form": "Hejsan …",
+          "position_start": 0,
+          "position_end": 8
+        },
+        {
+          "word_in_sentence": "Vet du vem jag träffade?",
+          "base_form": "Vet du vem jag träffade?",
+          "position_start": 217,
+          "position_end": 241
+        },
+        {
+          "word_in_sentence": "förebild",
+          "base_form": "förebild",
+          "position_start": 752,
+          "position_end": 760
+        },
+        {
+          "word_in_sentence": "ha en affär",
+          "base_form": "ha en affär",
+          "position_start": 1532,
+          "position_end": 1543
+        },
+        {
+          "word_in_sentence": "akta sig",
+          "base_form": "akta sig",
+          "position_start": 950,
+          "position_end": 958
+        },
+        {
+          "word_in_sentence": "hysterisk",
+          "base_form": "hysterisk",
+          "position_start": 1358,
+          "position_end": 1367
+        },
+        {
+          "word_in_sentence": "Bry dig inte om …",
+          "base_form": "Bry dig inte om …",
+          "position_start": 1751,
+          "position_end": 1768
+        },
+        {
+          "word_in_sentence": "njuta av",
+          "base_form": "njuta av",
+          "position_start": 1966,
+          "position_end": 1974
+        },
+        {
+          "word_in_sentence": "artig",
+          "base_form": "artig",
+          "position_start": 435,
+          "position_end": 440
+        },
+        {
+          "word_in_sentence": "tendens",
+          "base_form": "tendens",
+          "position_start": 910,
+          "position_end": 917
+        },
+        {
+          "word_in_sentence": "i knät",
+          "base_form": "i knät",
+          "position_start": 1405,
+          "position_end": 1411
+        },
+        {
+          "word_in_sentence": "ingen annanstans",
+          "base_form": "ingen annanstans",
+          "position_start": 1117,
+          "position_end": 1133
+        },
+        {
+          "word_in_sentence": "leva på andra",
+          "base_form": "leva på andra",
+          "position_start": 1151,
+          "position_end": 1164
+        },
+        {
+          "word_in_sentence": "nuförtiden",
+          "base_form": "nuförtiden",
+          "position_start": 473,
+          "position_end": 483
+        },
+        {
+          "word_in_sentence": "fastän",
+          "base_form": "fastän",
+          "position_start": 310,
+          "position_end": 316
+        },
+        {
+          "word_in_sentence": "trendig",
+          "base_form": "trendig",
+          "position_start": 500,
+          "position_end": 507
+        },
+        {
+          "word_in_sentence": "utveckla",
+          "base_form": "utveckla",
+          "position_start": 780,
+          "position_end": 788
+        },
+        {
+          "word_in_sentence": "Hur länge?",
+          "base_form": "Hur länge?",
+          "position_start": 1676,
+          "position_end": 1686
+        },
+        {
+          "word_in_sentence": "icke",
+          "base_form": "icke",
+          "position_start": 1270,
+          "position_end": 1274
+        },
+        {
+          "word_in_sentence": "i koncentrat",
+          "base_form": "i koncentrat",
+          "position_start": 681,
+          "position_end": 693
+        },
+        {
+          "word_in_sentence": "stickande",
+          "base_form": "stickande",
+          "position_start": 1442,
+          "position_end": 1451
+        },
+        {
+          "word_in_sentence": "vara utan",
+          "base_form": "vara utan",
+          "position_start": 1322,
+          "position_end": 1331
+        },
+        {
+          "word_in_sentence": "Vet du inte varför…?",
+          "base_form": "Vet du inte varför…?",
+          "position_start": 260,
+          "position_end": 280
+        },
+        {
+          "word_in_sentence": "etablerad",
+          "base_form": "etablerad",
+          "position_start": 1786,
+          "position_end": 1795
+        },
+        {
+          "word_in_sentence": "snabb som en vessla",
+          "base_form": "snabb som en vessla",
+          "position_start": 388,
+          "position_end": 407
+        },
+        {
+          "word_in_sentence": "Tänker ni…",
+          "base_form": "Tänker ni…",
+          "position_start": 843,
+          "position_end": 853
+        },
+        {
+          "word_in_sentence": "sjunka",
+          "base_form": "sjunka",
+          "position_start": 1886,
+          "position_end": 1892
+        },
+        {
+          "word_in_sentence": "tänk dig",
+          "base_form": "tänk dig/er",
+          "position_start": 1825,
+          "position_end": 1833
+        },
+        {
+          "word_in_sentence": "vidare",
+          "base_form": "vidare",
+          "position_start": 1920,
+          "position_end": 1926
+        },
+        {
+          "word_in_sentence": "Är det sant?",
+          "base_form": "Är det sant?",
+          "position_start": 347,
+          "position_end": 359
+        },
+        {
+          "word_in_sentence": "Lägg av!",
+          "base_form": "Lägg av!",
+          "position_start": 1462,
+          "position_end": 1470
+        }
+      ]
     }
   ],
   "primary_words_used": [
@@ -428,5 +432,6 @@
     "vidare",
     "Är det sant?",
     "Lägg av!"
-  ]
+  ],
+  "secondary_words_used": []
 }

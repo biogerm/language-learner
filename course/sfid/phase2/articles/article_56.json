@@ -1,370 +1,374 @@
 {
-  "course_id": "sfid",
-  "course_title": "SFI D",
-  "step_id": "relationer_känslor",
-  "step_title": "Relationer & Känslor",
   "article_id": "art_56",
-  "sv": "Mannen på vår lilla ö\n\nDet sägs att… man lätt kan ha det tråkigt på landsbygden. Jag bor på en härlig ö, och jag är stolt över att vara en lantis. Här finns en man som brukar bjuda in till middag under sitt stora, blå tak. Han är känd som byns flintis /flintskallig gubbe. \n\nHan var gift med en trevlig kvinna, och deras långa äktenskap kändes som en sjungande vacker dröm. Hon flyttade och sedan dess känner han en stor sorg. Det var synd om honom, tyckte många grannar.\n\nHan ville laga god mat för alla och försöka locka gäster för att skapa en bra stämning i huset. Han sa att faktum är att han verkligen ville vara en hedersman och hjälpa till med byns utveckling. Man kan kalla honom en fantastisk hedersman på många sätt. Hans starka identitet byggde på att alltid tala sanning. Han sa ofta: \"Förstår du? Man får aldrig skvallra om sina grannar.\" Han kunde ge råd till exakt alla som behövde det. Han brukade till och med tända ett ljus för dem han tänkt på och ville beundra.\n\nMen en ny man flyttade till byn. Han var en riktig mytoman och en farlig lögnare. Han ville bara luras och bråka. Han var väldigt snabbtänkt och verkade seriös på ytan, men var ganska otrevlig inuti. Han började genast skruva på sig när man ställde djupa frågor. Hans konstiga beteende var mycket irriterande, men ändå blev man tyvärr lite lockad av hans vilda historier. \"Hur snabbt?\" frågade vi ofta när han stolt berättade en osannolik variant av en händelse. Han var en icke-rökare, och han ville aldrig hålla kopplad sin aggressiva hund. \n\nHan var inte alls kontrollerad. Det kunde ganska snart visa sig att hans ord inte alls var en självklar sanning. Vi slutade helt att tro på hans berättelser. Han tyckte om att använda engelska uttryck och pratade ofta med ord som \"one’s\" för att verka internationell. \n\n\"Är det en acceptabel prognos för vår by?\" sa ordföranden med en djup suck. Allt var definitivt inte frid och fröjd längre. Han ville ofta lova att vara snäll, men han blev bara sur när vi ifrågasatte honom. \n\"Helt otroligt!\" sa vi. \nHan ville vara lik en god människa, och vi bar på ett litet hopp om att han skulle ändra sig. Men han vågade inte stanna, och därför blev en obligatorisk flytt det enda valet.",
-  "target_words": [
+  "article_title": "Läsförståelse",
+  "target_word_count": 60,
+  "sentences": [
     {
-      "word_in_sentence": "ha det tråkigt",
-      "base_form": "ha det tråkigt",
-      "position_start": 50,
-      "position_end": 64
-    },
-    {
-      "word_in_sentence": "flintis /flintskallig",
-      "base_form": "flintis /flintskallig",
-      "position_start": 244,
-      "position_end": 265
-    },
-    {
-      "word_in_sentence": "sjungande",
-      "base_form": "sjungande",
-      "position_start": 351,
-      "position_end": 360
-    },
-    {
-      "word_in_sentence": "bjuda",
-      "base_form": "bjuda",
-      "position_start": 175,
-      "position_end": 180
-    },
-    {
-      "word_in_sentence": "stämning",
-      "base_form": "stämning",
-      "position_start": 551,
-      "position_end": 559
-    },
-    {
-      "word_in_sentence": "lantis",
-      "base_form": "lantis",
-      "position_start": 139,
-      "position_end": 145
-    },
-    {
-      "word_in_sentence": "identitet",
-      "base_form": "identitet",
-      "position_start": 740,
-      "position_end": 749
-    },
-    {
-      "word_in_sentence": "hedersman",
-      "base_form": "hedersman",
-      "position_start": 622,
-      "position_end": 631
-    },
-    {
-      "word_in_sentence": "suck",
-      "base_form": "suck",
-      "position_start": 1869,
-      "position_end": 1873
-    },
-    {
-      "word_in_sentence": "synd",
-      "base_form": "synd",
-      "position_start": 435,
-      "position_end": 439
-    },
-    {
-      "word_in_sentence": "sur",
-      "base_form": "sur",
-      "position_start": 1977,
-      "position_end": 1980
-    },
-    {
-      "word_in_sentence": "lova",
-      "base_form": "lova",
-      "position_start": 1938,
-      "position_end": 1942
-    },
-    {
-      "word_in_sentence": "irriterande",
-      "base_form": "irriterande",
-      "position_start": 1281,
-      "position_end": 1292
-    },
-    {
-      "word_in_sentence": "ge råd",
-      "base_form": "ge råd",
-      "position_start": 863,
-      "position_end": 869
-    },
-    {
-      "word_in_sentence": "beundra",
-      "base_form": "beundra",
-      "position_start": 974,
-      "position_end": 981
-    },
-    {
-      "word_in_sentence": "mytoman",
-      "base_form": "mytoman",
-      "position_start": 1035,
-      "position_end": 1042
-    },
-    {
-      "word_in_sentence": "sorg",
-      "base_form": "sorg",
-      "position_start": 421,
-      "position_end": 425
-    },
-    {
-      "word_in_sentence": "lögnare",
-      "base_form": "lögnare",
-      "position_start": 1057,
-      "position_end": 1064
-    },
-    {
-      "word_in_sentence": "tala sanning",
-      "base_form": "tala sanning",
-      "position_start": 771,
-      "position_end": 783
-    },
-    {
-      "word_in_sentence": "snabbtänkt",
-      "base_form": "snabbtänkt",
-      "position_start": 1114,
-      "position_end": 1124
-    },
-    {
-      "word_in_sentence": "äktenskap",
-      "base_form": "äktenskap",
-      "position_start": 327,
-      "position_end": 336
-    },
-    {
-      "word_in_sentence": "kontrollerad",
-      "base_form": "kontrollerad",
-      "position_start": 1547,
-      "position_end": 1559
-    },
-    {
-      "word_in_sentence": "luras",
-      "base_form": "luras",
-      "position_start": 1081,
-      "position_end": 1086
-    },
-    {
-      "word_in_sentence": "lockad",
-      "base_form": "lockad",
-      "position_start": 1324,
-      "position_end": 1330
-    },
-    {
-      "word_in_sentence": "acceptabel",
-      "base_form": "acceptabel",
-      "position_start": 1810,
-      "position_end": 1820
-    },
-    {
-      "word_in_sentence": "skruva på sig",
-      "base_form": "skruva på sig",
-      "position_start": 1203,
-      "position_end": 1216
-    },
-    {
-      "word_in_sentence": "frid och fröjd",
-      "base_form": "frid och fröjd",
-      "position_start": 1900,
-      "position_end": 1914
-    },
-    {
-      "word_in_sentence": "skvallra",
-      "base_form": "skvallra",
-      "position_start": 826,
-      "position_end": 834
-    },
-    {
-      "word_in_sentence": "visa sig",
-      "base_form": "visa sig",
-      "position_start": 1584,
-      "position_end": 1592
-    },
-    {
-      "word_in_sentence": "osannolik",
-      "base_form": "osannolik",
-      "position_start": 1413,
-      "position_end": 1422
-    },
-    {
-      "word_in_sentence": "otrevlig",
-      "base_form": "otrevlig",
-      "position_start": 1168,
-      "position_end": 1176
-    },
-    {
-      "word_in_sentence": "seriös",
-      "base_form": "seriös",
-      "position_start": 1137,
-      "position_end": 1143
-    },
-    {
-      "word_in_sentence": "hedersman",
-      "base_form": "hedersman",
-      "position_start": 622,
-      "position_end": 631
-    },
-    {
-      "word_in_sentence": "vara lik",
-      "base_form": "vara lik",
-      "position_start": 2043,
-      "position_end": 2051
-    },
-    {
-      "word_in_sentence": "tak",
-      "base_form": "tak",
-      "position_start": 218,
-      "position_end": 221
-    },
-    {
-      "word_in_sentence": "Förstår du?",
-      "base_form": "Förstår du?",
-      "position_start": 799,
-      "position_end": 810
-    },
-    {
-      "word_in_sentence": "blå",
-      "base_form": "blå",
-      "position_start": 214,
-      "position_end": 217
-    },
-    {
-      "word_in_sentence": "obligatorisk",
-      "base_form": "obligatorisk",
-      "position_start": 2174,
-      "position_end": 2186
-    },
-    {
-      "word_in_sentence": "Hur snabbt?",
-      "base_form": "Hur snabbt?",
-      "position_start": 1357,
-      "position_end": 1368
-    },
-    {
-      "word_in_sentence": "Det sägs att…",
-      "base_form": "Det sägs att…",
-      "position_start": 23,
-      "position_end": 36
-    },
-    {
-      "word_in_sentence": "Helt otroligt!",
-      "base_form": "Helt otroligt!",
-      "position_start": 2009,
-      "position_end": 2023
-    },
-    {
-      "word_in_sentence": "ljus",
-      "base_form": "ljus",
-      "position_start": 938,
-      "position_end": 942
-    },
-    {
-      "word_in_sentence": "locka",
-      "base_form": "locka",
-      "position_start": 517,
-      "position_end": 522
-    },
-    {
-      "word_in_sentence": "tro",
-      "base_form": "tro",
-      "position_start": 1662,
-      "position_end": 1665
-    },
-    {
-      "word_in_sentence": "one’s",
-      "base_form": "one’s",
-      "position_start": 1760,
-      "position_end": 1765
-    },
-    {
-      "word_in_sentence": "variant",
-      "base_form": "variant",
-      "position_start": 1423,
-      "position_end": 1430
-    },
-    {
-      "word_in_sentence": "gift med",
-      "base_form": "gift med",
-      "position_start": 283,
-      "position_end": 291
-    },
-    {
-      "word_in_sentence": "prognos",
-      "base_form": "prognos",
-      "position_start": 1821,
-      "position_end": 1828
-    },
-    {
-      "word_in_sentence": "sedan dess",
-      "base_form": "sedan dess",
-      "position_start": 391,
-      "position_end": 401
-    },
-    {
-      "word_in_sentence": "laga",
-      "base_form": "laga",
-      "position_start": 483,
-      "position_end": 487
-    },
-    {
-      "word_in_sentence": "våga",
-      "base_form": "våga",
-      "position_start": 2135,
-      "position_end": 2139
-    },
-    {
-      "word_in_sentence": "med",
-      "base_form": "med",
-      "position_start": 288,
-      "position_end": 291
-    },
-    {
-      "word_in_sentence": "hålla kopplad",
-      "base_form": "hålla kopplad",
-      "position_start": 1492,
-      "position_end": 1505
-    },
-    {
-      "word_in_sentence": "självklar",
-      "base_form": "självklar",
-      "position_start": 1623,
-      "position_end": 1632
-    },
-    {
-      "word_in_sentence": "hopp",
-      "base_form": "hopp",
-      "position_start": 2093,
-      "position_end": 2097
-    },
-    {
-      "word_in_sentence": "faktum är att",
-      "base_form": "faktum är att",
-      "position_start": 580,
-      "position_end": 593
-    },
-    {
-      "word_in_sentence": "icke-rökare",
-      "base_form": "icke-rökare",
-      "position_start": 1458,
-      "position_end": 1469
-    },
-    {
-      "word_in_sentence": "tänkt",
-      "base_form": "tänkt",
-      "position_start": 955,
-      "position_end": 960
-    },
-    {
-      "word_in_sentence": "härlig",
-      "base_form": "härlig",
-      "position_start": 95,
-      "position_end": 101
-    },
-    {
-      "word_in_sentence": "ö",
-      "base_form": "ö",
-      "position_start": 20,
-      "position_end": 21
+      "sentence_id": "art56_s001",
+      "sv": "Mannen på vår lilla ö\n\nDet sägs att… man lätt kan ha det tråkigt på landsbygden. Jag bor på en härlig ö, och jag är stolt över att vara en lantis. Här finns en man som brukar bjuda in till middag under sitt stora, blå tak. Han är känd som byns flintskallig man. \n\nHan var gift med en trevlig kvinna, och deras långa äktenskap kändes som en sjungande vacker dröm. Hon flyttade och sedan dess känner han en stor sorg. Det var synd om honom, tyckte många grannar.\n\nHan ville laga god mat för alla och försöka locka gäster för att skapa en bra stämning i huset. Han sa att faktum är att han verkligen ville vara en hedersman och hjälpa till med byns utveckling. Man kan kalla honom en fantastisk hedersman på många sätt. Hans starka identitet byggde på att alltid tala sanning. Han sa ofta: \"Förstår du? Man får aldrig skvallra om sina grannar.\" Han kunde ge råd till exakt alla som behövde det. Han brukade till och med tända ett ljus för dem han tänkt på och ville beundra.\n\nMen en ny man flyttade till byn. Han var en riktig mytoman och en farlig lögnare. Han ville bara luras och bråka. Han var väldigt snabbtänkt och verkade seriös på ytan, men var ganska otrevlig inuti. Han började genast skruva på sig när man ställde djupa frågor. Hans konstiga beteende var mycket irriterande, men ändå blev man tyvärr lite lockad av hans vilda historier. \"Hur snabbt?\" frågade vi ofta när han stolt berättade en osannolik variant av en händelse. Han var en icke-rökare, och han ville aldrig hålla sin aggressiva hund kopplad. \n\nHan var inte alls kontrollerad. Det kunde ganska snart visa sig att hans ord inte alls var en självklar sanning. Vi slutade helt att tro på hans berättelser. Han tyckte om att använda engelska uttryck och pratade ofta med ord som \"one’s\" för att verka internationell. \n\n\"Är det en acceptabel prognos för vår by?\" sa ordföranden med en djup suck. Allt var definitivt inte frid och fröjd längre. Han ville ofta lova att vara snäll, men han blev bara sur när vi ifrågasatte honom. \n\"Helt otroligt!\" sa vi. \nHan ville vara lik en god människa, och vi bar på ett litet hopp om att han skulle ändra sig. Men han vågade inte stanna, och därför blev en obligatorisk flytt det enda valet.",
+      "en": "",
+      "target_words": [
+        {
+          "word_in_sentence": "ha det tråkigt",
+          "base_form": "ha det tråkigt",
+          "position_start": 50,
+          "position_end": 64
+        },
+        {
+          "word_in_sentence": "flintskallig",
+          "base_form": "flintis /flintskallig",
+          "position_start": 244,
+          "position_end": 256
+        },
+        {
+          "word_in_sentence": "sjungande",
+          "base_form": "sjungande",
+          "position_start": 340,
+          "position_end": 349
+        },
+        {
+          "word_in_sentence": "bjuda",
+          "base_form": "bjuda",
+          "position_start": 175,
+          "position_end": 180
+        },
+        {
+          "word_in_sentence": "stämning",
+          "base_form": "stämning",
+          "position_start": 540,
+          "position_end": 548
+        },
+        {
+          "word_in_sentence": "lantis",
+          "base_form": "lantis",
+          "position_start": 139,
+          "position_end": 145
+        },
+        {
+          "word_in_sentence": "identitet",
+          "base_form": "identitet",
+          "position_start": 729,
+          "position_end": 738
+        },
+        {
+          "word_in_sentence": "hedersman",
+          "base_form": "hedersman",
+          "position_start": 611,
+          "position_end": 620
+        },
+        {
+          "word_in_sentence": "suck",
+          "base_form": "suck",
+          "position_start": 1858,
+          "position_end": 1862
+        },
+        {
+          "word_in_sentence": "synd",
+          "base_form": "synd",
+          "position_start": 424,
+          "position_end": 428
+        },
+        {
+          "word_in_sentence": "sur",
+          "base_form": "sur",
+          "position_start": 1966,
+          "position_end": 1969
+        },
+        {
+          "word_in_sentence": "lova",
+          "base_form": "lova",
+          "position_start": 1927,
+          "position_end": 1931
+        },
+        {
+          "word_in_sentence": "irriterande",
+          "base_form": "irriterande",
+          "position_start": 1270,
+          "position_end": 1281
+        },
+        {
+          "word_in_sentence": "ge råd",
+          "base_form": "ge råd",
+          "position_start": 852,
+          "position_end": 858
+        },
+        {
+          "word_in_sentence": "beundra",
+          "base_form": "beundra",
+          "position_start": 963,
+          "position_end": 970
+        },
+        {
+          "word_in_sentence": "mytoman",
+          "base_form": "mytoman",
+          "position_start": 1024,
+          "position_end": 1031
+        },
+        {
+          "word_in_sentence": "sorg",
+          "base_form": "sorg",
+          "position_start": 410,
+          "position_end": 414
+        },
+        {
+          "word_in_sentence": "lögnare",
+          "base_form": "lögnare",
+          "position_start": 1046,
+          "position_end": 1053
+        },
+        {
+          "word_in_sentence": "tala sanning",
+          "base_form": "tala sanning",
+          "position_start": 760,
+          "position_end": 772
+        },
+        {
+          "word_in_sentence": "snabbtänkt",
+          "base_form": "snabbtänkt",
+          "position_start": 1103,
+          "position_end": 1113
+        },
+        {
+          "word_in_sentence": "äktenskap",
+          "base_form": "äktenskap",
+          "position_start": 316,
+          "position_end": 325
+        },
+        {
+          "word_in_sentence": "kontrollerad",
+          "base_form": "kontrollerad",
+          "position_start": 1536,
+          "position_end": 1548
+        },
+        {
+          "word_in_sentence": "luras",
+          "base_form": "luras",
+          "position_start": 1070,
+          "position_end": 1075
+        },
+        {
+          "word_in_sentence": "lockad",
+          "base_form": "lockad",
+          "position_start": 1313,
+          "position_end": 1319
+        },
+        {
+          "word_in_sentence": "acceptabel",
+          "base_form": "acceptabel",
+          "position_start": 1799,
+          "position_end": 1809
+        },
+        {
+          "word_in_sentence": "skruva på sig",
+          "base_form": "skruva på sig",
+          "position_start": 1192,
+          "position_end": 1205
+        },
+        {
+          "word_in_sentence": "frid och fröjd",
+          "base_form": "frid och fröjd",
+          "position_start": 1889,
+          "position_end": 1903
+        },
+        {
+          "word_in_sentence": "skvallra",
+          "base_form": "skvallra",
+          "position_start": 815,
+          "position_end": 823
+        },
+        {
+          "word_in_sentence": "visa sig",
+          "base_form": "visa sig",
+          "position_start": 1573,
+          "position_end": 1581
+        },
+        {
+          "word_in_sentence": "osannolik",
+          "base_form": "osannolik",
+          "position_start": 1402,
+          "position_end": 1411
+        },
+        {
+          "word_in_sentence": "otrevlig",
+          "base_form": "otrevlig",
+          "position_start": 1157,
+          "position_end": 1165
+        },
+        {
+          "word_in_sentence": "seriös",
+          "base_form": "seriös",
+          "position_start": 1126,
+          "position_end": 1132
+        },
+        {
+          "word_in_sentence": "hedersman",
+          "base_form": "hedersman",
+          "position_start": 611,
+          "position_end": 620
+        },
+        {
+          "word_in_sentence": "vara lik",
+          "base_form": "vara lik",
+          "position_start": 2032,
+          "position_end": 2040
+        },
+        {
+          "word_in_sentence": "tak",
+          "base_form": "tak",
+          "position_start": 218,
+          "position_end": 221
+        },
+        {
+          "word_in_sentence": "Förstår du?",
+          "base_form": "Förstår du?",
+          "position_start": 788,
+          "position_end": 799
+        },
+        {
+          "word_in_sentence": "blå",
+          "base_form": "blå",
+          "position_start": 214,
+          "position_end": 217
+        },
+        {
+          "word_in_sentence": "obligatorisk",
+          "base_form": "obligatorisk",
+          "position_start": 2163,
+          "position_end": 2175
+        },
+        {
+          "word_in_sentence": "Hur snabbt?",
+          "base_form": "Hur snabbt?",
+          "position_start": 1346,
+          "position_end": 1357
+        },
+        {
+          "word_in_sentence": "Det sägs att…",
+          "base_form": "Det sägs att…",
+          "position_start": 23,
+          "position_end": 36
+        },
+        {
+          "word_in_sentence": "Helt otroligt!",
+          "base_form": "Helt otroligt!",
+          "position_start": 1998,
+          "position_end": 2012
+        },
+        {
+          "word_in_sentence": "ljus",
+          "base_form": "ljus",
+          "position_start": 927,
+          "position_end": 931
+        },
+        {
+          "word_in_sentence": "locka",
+          "base_form": "locka",
+          "position_start": 506,
+          "position_end": 511
+        },
+        {
+          "word_in_sentence": "tro",
+          "base_form": "tro",
+          "position_start": 1539,
+          "position_end": 1542
+        },
+        {
+          "word_in_sentence": "one’s",
+          "base_form": "one’s",
+          "position_start": 1749,
+          "position_end": 1754
+        },
+        {
+          "word_in_sentence": "variant",
+          "base_form": "variant",
+          "position_start": 1412,
+          "position_end": 1419
+        },
+        {
+          "word_in_sentence": "gift med",
+          "base_form": "gift med",
+          "position_start": 272,
+          "position_end": 280
+        },
+        {
+          "word_in_sentence": "prognos",
+          "base_form": "prognos",
+          "position_start": 1810,
+          "position_end": 1817
+        },
+        {
+          "word_in_sentence": "sedan dess",
+          "base_form": "sedan dess",
+          "position_start": 380,
+          "position_end": 390
+        },
+        {
+          "word_in_sentence": "laga",
+          "base_form": "laga",
+          "position_start": 472,
+          "position_end": 476
+        },
+        {
+          "word_in_sentence": "våga",
+          "base_form": "våga",
+          "position_start": 2124,
+          "position_end": 2128
+        },
+        {
+          "word_in_sentence": "med",
+          "base_form": "med",
+          "position_start": 277,
+          "position_end": 280
+        },
+        {
+          "word_in_sentence": "kopplad",
+          "base_form": "hålla kopplad",
+          "position_start": 1507,
+          "position_end": 1514
+        },
+        {
+          "word_in_sentence": "självklar",
+          "base_form": "självklar",
+          "position_start": 1612,
+          "position_end": 1621
+        },
+        {
+          "word_in_sentence": "hopp",
+          "base_form": "hopp",
+          "position_start": 2082,
+          "position_end": 2086
+        },
+        {
+          "word_in_sentence": "faktum är att",
+          "base_form": "faktum är att",
+          "position_start": 569,
+          "position_end": 582
+        },
+        {
+          "word_in_sentence": "icke-rökare",
+          "base_form": "icke-rökare",
+          "position_start": 1447,
+          "position_end": 1458
+        },
+        {
+          "word_in_sentence": "tänkt",
+          "base_form": "tänkt",
+          "position_start": 944,
+          "position_end": 949
+        },
+        {
+          "word_in_sentence": "härlig",
+          "base_form": "härlig",
+          "position_start": 95,
+          "position_end": 101
+        },
+        {
+          "word_in_sentence": "ö",
+          "base_form": "ö",
+          "position_start": 20,
+          "position_end": 21
+        }
+      ]
     }
   ],
   "primary_words_used": [
@@ -428,5 +432,6 @@
     "tänkt",
     "härlig",
     "ö"
-  ]
+  ],
+  "secondary_words_used": []
 }

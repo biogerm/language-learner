@@ -1,370 +1,374 @@
 {
-  "course_id": "sfid",
-  "course_title": "SFI D",
-  "step_id": "mat_matlagning",
-  "step_title": "Mat & Matlagning",
   "article_id": "art_14",
-  "sv": "I Sverige kan en måltid ha ett speciellt tema. Först och främst har vi fika. Att fika kan vara så enkelt som att dricka ett glas saft och äta en macka på ett litet fik. Vissa föredrar kall mjölk, medan andra tar ett glas vin till en sen middag. \"Det är fint?\" frågade en vän från utlandet när hon såg min hemlagade mat.\n\nEn typisk svensk vardagsmat är kokt potatis och en köttbulle. Man kan ha i lite krydda, till exempel kryddpeppar. \"Men ni äter väl inte hästkött?\" undrade hon. \"Jo, det är sant!\" sa jag. Förr fanns inget förbud mot det, även om man var tvungen att äta vad som fanns, särskilt under en historisk oljekris. Men hon slapp vara rädd för det nu. Hon ville inte ge kritik, men tyckte idén var lite knäppt.\n\nJag lagade också palt, en gammal rätt bakad på vetemjöl och potatis. Den serveras med mycket smör och lingonsylt. \"Å ena sidan… å andra sidan,\" började min vän, \"är det jättegott, men man får ju paltkoma.\" För att hon inte skulle bli slagen av trötthet, så bestämde vi oss för att gå ut. Vi tog ett dopp. Efter flera salta bad fick vi ny energi.\n\nVi firade den varma månaden juni genom att äta mer. Solens låga fallvinkel över havet var vacker. Vi tittade på en gammal film, en riktig snyftare, medan vi åt dessert. Jag hade gjort en ugnsgräddad pannkaka med en klick äggost. Vi hade också en äppelkaka kryddad med kanel och prydd med minst en äppelklyfta. Dessutom fanns färsk jordgubbe och några björnbär som verkade vara begravd under grädden.\n\n\"Denna rätt bör höra till en officiell meny,\" sa hon. \"Tack, men nästa gång kanske jag lagar kryddig thaimat med paprika och lite riven parmesan på toppen, även om det kräver en lång förklaring av ett svårt recept steg för steg,\" skrattade jag.",
-  "target_words": [
+  "article_title": "Läsförståelse",
+  "target_word_count": 60,
+  "sentences": [
     {
-      "word_in_sentence": "mjölk",
-      "base_form": "mjölk",
-      "position_start": 189,
-      "position_end": 194
-    },
-    {
-      "word_in_sentence": "saft",
-      "base_form": "saft",
-      "position_start": 129,
-      "position_end": 133
-    },
-    {
-      "word_in_sentence": "jordgubbe",
-      "base_form": "jordgubbe",
-      "position_start": 1400,
-      "position_end": 1409
-    },
-    {
-      "word_in_sentence": "vin",
-      "base_form": "vin",
-      "position_start": 221,
-      "position_end": 224
-    },
-    {
-      "word_in_sentence": "macka",
-      "base_form": "macka",
-      "position_start": 145,
-      "position_end": 150
-    },
-    {
-      "word_in_sentence": "fik",
-      "base_form": "fik",
-      "position_start": 164,
-      "position_end": 167
-    },
-    {
-      "word_in_sentence": "salta bad",
-      "base_form": "salta bad",
-      "position_start": 1039,
-      "position_end": 1048
-    },
-    {
-      "word_in_sentence": "snyftare",
-      "base_form": "snyftare",
-      "position_start": 1207,
-      "position_end": 1215
-    },
-    {
-      "word_in_sentence": "palt",
-      "base_form": "palt",
-      "position_start": 739,
-      "position_end": 743
-    },
-    {
-      "word_in_sentence": "kokt",
-      "base_form": "kokt",
-      "position_start": 352,
-      "position_end": 356
-    },
-    {
-      "word_in_sentence": "potatis",
-      "base_form": "potatis",
-      "position_start": 357,
-      "position_end": 364
-    },
-    {
-      "word_in_sentence": "vetemjöl",
-      "base_form": "vetemjöl",
-      "position_start": 769,
-      "position_end": 777
-    },
-    {
-      "word_in_sentence": "smör",
-      "base_form": "smör",
-      "position_start": 815,
-      "position_end": 819
-    },
-    {
-      "word_in_sentence": "lingonsylt",
-      "base_form": "lingonsylt",
-      "position_start": 824,
-      "position_end": 834
-    },
-    {
-      "word_in_sentence": "paltkoma",
-      "base_form": "paltkoma",
-      "position_start": 917,
-      "position_end": 925
-    },
-    {
-      "word_in_sentence": "bakad på",
-      "base_form": "bakad på",
-      "position_start": 760,
-      "position_end": 768
-    },
-    {
-      "word_in_sentence": "ugnsgräddad",
-      "base_form": "ugnsgräddad",
-      "position_start": 1256,
-      "position_end": 1267
-    },
-    {
-      "word_in_sentence": "pannkaka",
-      "base_form": "pannkaka",
-      "position_start": 1268,
-      "position_end": 1276
-    },
-    {
-      "word_in_sentence": "björnbär",
-      "base_form": "björnbär",
-      "position_start": 1420,
-      "position_end": 1428
-    },
-    {
-      "word_in_sentence": "krydda",
-      "base_form": "krydda",
-      "position_start": 401,
-      "position_end": 407
-    },
-    {
-      "word_in_sentence": "fika",
-      "base_form": "fika",
-      "position_start": 71,
-      "position_end": 75
-    },
-    {
-      "word_in_sentence": "thaimat",
-      "base_form": "thaimat",
-      "position_start": 1571,
-      "position_end": 1578
-    },
-    {
-      "word_in_sentence": "äggost",
-      "base_form": "äggost",
-      "position_start": 1290,
-      "position_end": 1296
-    },
-    {
-      "word_in_sentence": "hemlagade",
-      "base_form": "hemlagad",
-      "position_start": 305,
-      "position_end": 314
-    },
-    {
-      "word_in_sentence": "vardagsmat",
-      "base_form": "vardagsmat",
-      "position_start": 338,
-      "position_end": 348
-    },
-    {
-      "word_in_sentence": "hästkött",
-      "base_form": "hästkött",
-      "position_start": 457,
-      "position_end": 465
-    },
-    {
-      "word_in_sentence": "köttbulle",
-      "base_form": "köttbulle",
-      "position_start": 372,
-      "position_end": 381
-    },
-    {
-      "word_in_sentence": "middag",
-      "base_form": "middag",
-      "position_start": 237,
-      "position_end": 243
-    },
-    {
-      "word_in_sentence": "måltid",
-      "base_form": "måltid",
-      "position_start": 17,
-      "position_end": 23
-    },
-    {
-      "word_in_sentence": "äppelkaka",
-      "base_form": "äppelkaka",
-      "position_start": 1315,
-      "position_end": 1324
-    },
-    {
-      "word_in_sentence": "kryddad med",
-      "base_form": "kryddad med",
-      "position_start": 1325,
-      "position_end": 1336
-    },
-    {
-      "word_in_sentence": "kryddpeppar",
-      "base_form": "kryddpeppar",
-      "position_start": 422,
-      "position_end": 433
-    },
-    {
-      "word_in_sentence": "äppelklyfta",
-      "base_form": "äppelklyfta",
-      "position_start": 1366,
-      "position_end": 1377
-    },
-    {
-      "word_in_sentence": "paprika",
-      "base_form": "paprika",
-      "position_start": 1583,
-      "position_end": 1590
-    },
-    {
-      "word_in_sentence": "parmesan",
-      "base_form": "parmesan",
-      "position_start": 1606,
-      "position_end": 1614
-    },
-    {
-      "word_in_sentence": "recept",
-      "base_form": "recept",
-      "position_start": 1677,
-      "position_end": 1683
-    },
-    {
-      "word_in_sentence": "oljekris",
-      "base_form": "oljekris",
-      "position_start": 616,
-      "position_end": 624
-    },
-    {
-      "word_in_sentence": "bli slagen",
-      "base_form": "bli slagen",
-      "position_start": 952,
-      "position_end": 962
-    },
-    {
-      "word_in_sentence": "höra till",
-      "base_form": "höra till",
-      "position_start": 1486,
-      "position_end": 1495
-    },
-    {
-      "word_in_sentence": "knäppt",
-      "base_form": "knäppt",
-      "position_start": 713,
-      "position_end": 719
-    },
-    {
-      "word_in_sentence": "Det är fint?",
-      "base_form": "Det är fint?",
-      "position_start": 246,
-      "position_end": 258
-    },
-    {
-      "word_in_sentence": "Jo, det är sant!",
-      "base_form": "Jo, det är sant!",
-      "position_start": 482,
-      "position_end": 498
-    },
-    {
-      "word_in_sentence": "tema",
-      "base_form": "tema",
-      "position_start": 41,
-      "position_end": 45
-    },
-    {
-      "word_in_sentence": "steg",
-      "base_form": "steg",
-      "position_start": 1684,
-      "position_end": 1688
-    },
-    {
-      "word_in_sentence": "låga",
-      "base_form": "låg",
-      "position_start": 1128,
-      "position_end": 1132
-    },
-    {
-      "word_in_sentence": "bör",
-      "base_form": "bör",
-      "position_start": 1482,
-      "position_end": 1485
-    },
-    {
-      "word_in_sentence": "kritik",
-      "base_form": "kritik",
-      "position_start": 680,
-      "position_end": 686
-    },
-    {
-      "word_in_sentence": "juni",
-      "base_form": "juni",
-      "position_start": 1097,
-      "position_end": 1101
-    },
-    {
-      "word_in_sentence": "fallvinkel",
-      "base_form": "fallvinkel",
-      "position_start": 1133,
-      "position_end": 1143
-    },
-    {
-      "word_in_sentence": "gå ut",
-      "base_form": "gå ut",
-      "position_start": 1003,
-      "position_end": 1008
-    },
-    {
-      "word_in_sentence": "Först och främst",
-      "base_form": "först och främst",
-      "position_start": 47,
-      "position_end": 63
-    },
-    {
-      "word_in_sentence": "förklaring",
-      "base_form": "förklaring",
-      "position_start": 1653,
-      "position_end": 1663
-    },
-    {
-      "word_in_sentence": "bestämde",
-      "base_form": "bestämma",
-      "position_start": 979,
-      "position_end": 987
-    },
-    {
-      "word_in_sentence": "förbud",
-      "base_form": "förbud",
-      "position_start": 525,
-      "position_end": 531
-    },
-    {
-      "word_in_sentence": "tvungen att",
-      "base_form": "tvungen att",
-      "position_start": 557,
-      "position_end": 568
-    },
-    {
-      "word_in_sentence": "begravd",
-      "base_form": "begravd",
-      "position_start": 1446,
-      "position_end": 1453
-    },
-    {
-      "word_in_sentence": "minst",
-      "base_form": "minst",
-      "position_start": 1357,
-      "position_end": 1362
-    },
-    {
-      "word_in_sentence": "officiell",
-      "base_form": "officiell",
-      "position_start": 1499,
-      "position_end": 1508
-    },
-    {
-      "word_in_sentence": "vara rädd för",
-      "base_form": "vara rädd för",
-      "position_start": 640,
-      "position_end": 653
-    },
-    {
-      "word_in_sentence": "Å ena sidan… å andra sidan",
-      "base_form": "å ena sidan… å andra sidan",
-      "position_start": 837,
-      "position_end": 863
+      "sentence_id": "art14_s001",
+      "sv": "I Sverige kan en måltid ha ett speciellt tema. Först och främst har vi fika. Att fika kan vara så enkelt som att dricka ett glas saft och äta en macka på ett litet fik. Vissa föredrar kall mjölk, medan andra tar ett glas vin till en sen middag. \"Det är fint?\" frågade en vän från utlandet när hon såg min hemlagade mat.\n\nEn typisk svensk vardagsmat är kokt potatis och en köttbulle. Man kan ha i lite krydda, till exempel kryddpeppar. \"Men ni äter väl inte hästkött?\" undrade hon. \"Jo, det är sant!\" sa jag. Förr fanns inget förbud mot det, även om man var tvungen att äta vad som fanns, särskilt under en historisk oljekris. Men hon slapp vara rädd för det nu. Hon ville inte ge kritik, men tyckte idén var lite knäpp.\n\nJag lagade också palt, en gammal rätt bakad på vetemjöl och potatis. Den serveras med mycket smör och lingonsylt. \"Å ena sidan… å andra sidan,\" började min vän, \"är det jättegott, men man får ju paltkoma.\" För att hon inte skulle bli slagen av trötthet, så bestämde vi oss för att gå ut. Vi tog ett dopp. Efter flera salta bad fick vi ny energi.\n\nVi firade den varma månaden juni genom att äta mer. Solens låga fallvinkel över havet var vacker. Vi tittade på en gammal film, en riktig snyftare, medan vi åt dessert. Jag hade gjort en ugnsgräddad pannkaka med en klick äggost. Vi hade också en äppelkaka kryddad med kanel och prydd med minst en äppelklyfta. Dessutom fanns färsk jordgubbe och några björnbär som verkade vara begravda under grädden.\n\n\"Denna rätt bör höra till en officiell meny,\" sa hon. \"Tack, men nästa gång kanske jag lagar kryddig thaimat med paprika och lite riven parmesan på toppen, även om det kräver en lång förklaring av ett svårt recept steg för steg,\" skrattade jag.",
+      "en": "",
+      "target_words": [
+        {
+          "word_in_sentence": "mjölk",
+          "base_form": "mjölk",
+          "position_start": 189,
+          "position_end": 194
+        },
+        {
+          "word_in_sentence": "saft",
+          "base_form": "saft",
+          "position_start": 129,
+          "position_end": 133
+        },
+        {
+          "word_in_sentence": "jordgubbe",
+          "base_form": "jordgubbe",
+          "position_start": 1399,
+          "position_end": 1408
+        },
+        {
+          "word_in_sentence": "vin",
+          "base_form": "vin",
+          "position_start": 221,
+          "position_end": 224
+        },
+        {
+          "word_in_sentence": "macka",
+          "base_form": "macka",
+          "position_start": 145,
+          "position_end": 150
+        },
+        {
+          "word_in_sentence": "fik",
+          "base_form": "fik",
+          "position_start": 71,
+          "position_end": 74
+        },
+        {
+          "word_in_sentence": "salta bad",
+          "base_form": "salta bad",
+          "position_start": 1038,
+          "position_end": 1047
+        },
+        {
+          "word_in_sentence": "snyftare",
+          "base_form": "snyftare",
+          "position_start": 1206,
+          "position_end": 1214
+        },
+        {
+          "word_in_sentence": "palt",
+          "base_form": "palt",
+          "position_start": 738,
+          "position_end": 742
+        },
+        {
+          "word_in_sentence": "kokt",
+          "base_form": "kokt",
+          "position_start": 352,
+          "position_end": 356
+        },
+        {
+          "word_in_sentence": "potatis",
+          "base_form": "potatis",
+          "position_start": 357,
+          "position_end": 364
+        },
+        {
+          "word_in_sentence": "vetemjöl",
+          "base_form": "vetemjöl",
+          "position_start": 768,
+          "position_end": 776
+        },
+        {
+          "word_in_sentence": "smör",
+          "base_form": "smör",
+          "position_start": 814,
+          "position_end": 818
+        },
+        {
+          "word_in_sentence": "lingonsylt",
+          "base_form": "lingonsylt",
+          "position_start": 823,
+          "position_end": 833
+        },
+        {
+          "word_in_sentence": "paltkoma",
+          "base_form": "paltkoma",
+          "position_start": 916,
+          "position_end": 924
+        },
+        {
+          "word_in_sentence": "bakad på",
+          "base_form": "bakad på",
+          "position_start": 759,
+          "position_end": 767
+        },
+        {
+          "word_in_sentence": "ugnsgräddad",
+          "base_form": "ugnsgräddad",
+          "position_start": 1255,
+          "position_end": 1266
+        },
+        {
+          "word_in_sentence": "pannkaka",
+          "base_form": "pannkaka",
+          "position_start": 1267,
+          "position_end": 1275
+        },
+        {
+          "word_in_sentence": "björnbär",
+          "base_form": "björnbär",
+          "position_start": 1419,
+          "position_end": 1427
+        },
+        {
+          "word_in_sentence": "krydda",
+          "base_form": "krydda",
+          "position_start": 401,
+          "position_end": 407
+        },
+        {
+          "word_in_sentence": "fika",
+          "base_form": "fika",
+          "position_start": 71,
+          "position_end": 75
+        },
+        {
+          "word_in_sentence": "thaimat",
+          "base_form": "thaimat",
+          "position_start": 1571,
+          "position_end": 1578
+        },
+        {
+          "word_in_sentence": "äggost",
+          "base_form": "äggost",
+          "position_start": 1289,
+          "position_end": 1295
+        },
+        {
+          "word_in_sentence": "hemlagade",
+          "base_form": "hemlagad",
+          "position_start": 305,
+          "position_end": 314
+        },
+        {
+          "word_in_sentence": "vardagsmat",
+          "base_form": "vardagsmat",
+          "position_start": 338,
+          "position_end": 348
+        },
+        {
+          "word_in_sentence": "hästkött",
+          "base_form": "hästkött",
+          "position_start": 457,
+          "position_end": 465
+        },
+        {
+          "word_in_sentence": "köttbulle",
+          "base_form": "köttbulle",
+          "position_start": 372,
+          "position_end": 381
+        },
+        {
+          "word_in_sentence": "middag",
+          "base_form": "middag",
+          "position_start": 237,
+          "position_end": 243
+        },
+        {
+          "word_in_sentence": "måltid",
+          "base_form": "måltid",
+          "position_start": 17,
+          "position_end": 23
+        },
+        {
+          "word_in_sentence": "äppelkaka",
+          "base_form": "äppelkaka",
+          "position_start": 1314,
+          "position_end": 1323
+        },
+        {
+          "word_in_sentence": "kryddad med",
+          "base_form": "kryddad med",
+          "position_start": 1324,
+          "position_end": 1335
+        },
+        {
+          "word_in_sentence": "kryddpeppar",
+          "base_form": "kryddpeppar",
+          "position_start": 422,
+          "position_end": 433
+        },
+        {
+          "word_in_sentence": "äppelklyfta",
+          "base_form": "äppelklyfta",
+          "position_start": 1365,
+          "position_end": 1376
+        },
+        {
+          "word_in_sentence": "paprika",
+          "base_form": "paprika",
+          "position_start": 1583,
+          "position_end": 1590
+        },
+        {
+          "word_in_sentence": "parmesan",
+          "base_form": "parmesan",
+          "position_start": 1606,
+          "position_end": 1614
+        },
+        {
+          "word_in_sentence": "recept",
+          "base_form": "recept",
+          "position_start": 1677,
+          "position_end": 1683
+        },
+        {
+          "word_in_sentence": "oljekris",
+          "base_form": "oljekris",
+          "position_start": 616,
+          "position_end": 624
+        },
+        {
+          "word_in_sentence": "bli slagen",
+          "base_form": "bli slagen",
+          "position_start": 951,
+          "position_end": 961
+        },
+        {
+          "word_in_sentence": "höra till",
+          "base_form": "höra till",
+          "position_start": 1486,
+          "position_end": 1495
+        },
+        {
+          "word_in_sentence": "knäpp",
+          "base_form": "knäppt",
+          "position_start": 713,
+          "position_end": 718
+        },
+        {
+          "word_in_sentence": "Det är fint?",
+          "base_form": "Det är fint?",
+          "position_start": 246,
+          "position_end": 258
+        },
+        {
+          "word_in_sentence": "Jo, det är sant!",
+          "base_form": "Jo, det är sant!",
+          "position_start": 482,
+          "position_end": 498
+        },
+        {
+          "word_in_sentence": "tema",
+          "base_form": "tema",
+          "position_start": 41,
+          "position_end": 45
+        },
+        {
+          "word_in_sentence": "steg",
+          "base_form": "steg",
+          "position_start": 1684,
+          "position_end": 1688
+        },
+        {
+          "word_in_sentence": "låga",
+          "base_form": "låg",
+          "position_start": 1127,
+          "position_end": 1131
+        },
+        {
+          "word_in_sentence": "bör",
+          "base_form": "bör",
+          "position_start": 865,
+          "position_end": 868
+        },
+        {
+          "word_in_sentence": "kritik",
+          "base_form": "kritik",
+          "position_start": 680,
+          "position_end": 686
+        },
+        {
+          "word_in_sentence": "juni",
+          "base_form": "juni",
+          "position_start": 1096,
+          "position_end": 1100
+        },
+        {
+          "word_in_sentence": "fallvinkel",
+          "base_form": "fallvinkel",
+          "position_start": 1132,
+          "position_end": 1142
+        },
+        {
+          "word_in_sentence": "gå ut",
+          "base_form": "gå ut",
+          "position_start": 1002,
+          "position_end": 1007
+        },
+        {
+          "word_in_sentence": "Först och främst",
+          "base_form": "först och främst",
+          "position_start": 47,
+          "position_end": 63
+        },
+        {
+          "word_in_sentence": "förklaring",
+          "base_form": "förklaring",
+          "position_start": 1653,
+          "position_end": 1663
+        },
+        {
+          "word_in_sentence": "bestämde",
+          "base_form": "bestämma",
+          "position_start": 978,
+          "position_end": 986
+        },
+        {
+          "word_in_sentence": "förbud",
+          "base_form": "förbud",
+          "position_start": 525,
+          "position_end": 531
+        },
+        {
+          "word_in_sentence": "tvungen att",
+          "base_form": "tvungen att",
+          "position_start": 557,
+          "position_end": 568
+        },
+        {
+          "word_in_sentence": "begravd",
+          "base_form": "begravd",
+          "position_start": 1445,
+          "position_end": 1452
+        },
+        {
+          "word_in_sentence": "minst",
+          "base_form": "minst",
+          "position_start": 1356,
+          "position_end": 1361
+        },
+        {
+          "word_in_sentence": "officiell",
+          "base_form": "officiell",
+          "position_start": 1499,
+          "position_end": 1508
+        },
+        {
+          "word_in_sentence": "vara rädd för",
+          "base_form": "vara rädd för",
+          "position_start": 640,
+          "position_end": 653
+        },
+        {
+          "word_in_sentence": "Å ena sidan… å andra sidan",
+          "base_form": "å ena sidan… å andra sidan",
+          "position_start": 836,
+          "position_end": 862
+        }
+      ]
     }
   ],
   "primary_words_used": [
@@ -428,5 +432,6 @@
     "officiell",
     "vara rädd för",
     "å ena sidan… å andra sidan"
-  ]
+  ],
+  "secondary_words_used": []
 }

@@ -1,370 +1,374 @@
 {
-  "course_id": "sfid",
-  "course_title": "SFI D",
-  "step_id": "vardagsliv",
-  "step_title": "Vardagsliv",
   "article_id": "art_30",
-  "sv": "Hoppas ni alla/du mår bra! Min vardag ser nog ut som något helt annat än din. Jag jobbar hemifrån i ett gammalt boende som brukade vara ett vandrarhem. Byggnaden är lika stor som ett litet palats, eller kanske mer som ett stort lantställe. I en mysig lokal nära en sluss sitter jag i mina mjukiskläder. Jag brukar dagdrömma och ta en paus med kaffe och en hård skorpa i mitt vardagsrum. Ibland brukar jag snusa.\n\nPå vintern, t.ex. i kall februari, brukar jag stanna hemma. Jag är lite som en städare och försöker hålla ren miljö överallt. Jag gillar inte att släpa på tunga kassar från ett möbelvaruhus eller handla i ett stressigt köpcentrum i centrum. I ett svenskt folkhem fanns det i alla tider en tradition att stanna hemma hos familjen. En myskväll (”en sån” = vardagligt för en sådan mysig kväll) är vad jag brukar leva för. \n\nFolk i mitt grannland kan ha olika syn på ett roligt nöjesliv. Åtta av tio vill gå ut och roa sig. De vill besöka ett fint societetshus under en varm sommarmånad och dansa långt in på nätterna. De gillar att annonsera sina fester. Där finns det något för alla, men ibland kan någon vara hal som en ål och luras. Tystnad kan vara bättre.\n\nSjälv känner jag mig ibland som en gammal riddare som måste hindra kaoset. En gång kom en exotisk skorpion in i mitt sommarställe. Det var tre år i rad som jag bodde där under semestern. Jag var helt halvsovande och var tvungen att vifta bort den när den sprang runt på golvet. \n\nNu är det äntligen söndag. Ikväll tänker jag göra av med lite energi. Kanske ska jag debutera som författare. Jag lärde mig nyss en ny sats om grammatik och hur man använder futurum. Jag brukar alltid hålla upp dörren för nya möjligheter i livet.",
-  "target_words": [
+  "article_title": "Läsförståelse",
+  "target_word_count": 60,
+  "sentences": [
     {
-      "word_in_sentence": "hemifrån",
-      "base_form": "hemifrån",
-      "position_start": 89,
-      "position_end": 97
-    },
-    {
-      "word_in_sentence": "vardag",
-      "base_form": "vardag",
-      "position_start": 31,
-      "position_end": 37
-    },
-    {
-      "word_in_sentence": "vandrarhem",
-      "base_form": "vandrarhem",
-      "position_start": 140,
-      "position_end": 150
-    },
-    {
-      "word_in_sentence": "städare",
-      "base_form": "städare",
-      "position_start": 492,
-      "position_end": 499
-    },
-    {
-      "word_in_sentence": "boende",
-      "base_form": "boende",
-      "position_start": 112,
-      "position_end": 118
-    },
-    {
-      "word_in_sentence": "hålla upp dörren",
-      "base_form": "hålla upp dörren",
-      "position_start": 1653,
-      "position_end": 1669
-    },
-    {
-      "word_in_sentence": "lantställe",
-      "base_form": "lantställe",
-      "position_start": 228,
-      "position_end": 238
-    },
-    {
-      "word_in_sentence": "skorpion",
-      "base_form": "skorpion",
-      "position_start": 1270,
-      "position_end": 1278
-    },
-    {
-      "word_in_sentence": "halvsovande",
-      "base_form": "halvsovande",
-      "position_start": 1372,
-      "position_end": 1383
-    },
-    {
-      "word_in_sentence": "i centrum",
-      "base_form": "i centrum",
-      "position_start": 643,
-      "position_end": 652
-    },
-    {
-      "word_in_sentence": "mjukiskläder",
-      "base_form": "mjukiskläder",
-      "position_start": 289,
-      "position_end": 301
-    },
-    {
-      "word_in_sentence": "stanna hemma",
-      "base_form": "stanna hemma",
-      "position_start": 459,
-      "position_end": 471
-    },
-    {
-      "word_in_sentence": "hemma hos",
-      "base_form": "hemma hos",
-      "position_start": 723,
-      "position_end": 732
-    },
-    {
-      "word_in_sentence": "myskväll",
-      "base_form": "myskväll",
-      "position_start": 746,
-      "position_end": 754
-    },
-    {
-      "word_in_sentence": "”en sån” = vardagligt för en sådan",
-      "base_form": "”en sån” = vardagligt för en sådan",
-      "position_start": 756,
-      "position_end": 790
-    },
-    {
-      "word_in_sentence": "möbelvaruhus",
-      "base_form": "möbelvaruhus",
-      "position_start": 590,
-      "position_end": 602
-    },
-    {
-      "word_in_sentence": "skorpa",
-      "base_form": "skorpa",
-      "position_start": 361,
-      "position_end": 367
-    },
-    {
-      "word_in_sentence": "handla",
-      "base_form": "handla",
-      "position_start": 609,
-      "position_end": 615
-    },
-    {
-      "word_in_sentence": "hålla ren",
-      "base_form": "hålla ren",
-      "position_start": 513,
-      "position_end": 522
-    },
-    {
-      "word_in_sentence": "köpcentrum",
-      "base_form": "köpcentrum",
-      "position_start": 632,
-      "position_end": 642
-    },
-    {
-      "word_in_sentence": "futurum",
-      "base_form": "futurum",
-      "position_start": 1626,
-      "position_end": 1633
-    },
-    {
-      "word_in_sentence": "folkhem",
-      "base_form": "folkhem",
-      "position_start": 668,
-      "position_end": 675
-    },
-    {
-      "word_in_sentence": "snusa",
-      "base_form": "snusa",
-      "position_start": 405,
-      "position_end": 410
-    },
-    {
-      "word_in_sentence": "tre år i rad",
-      "base_form": "tre år i rad",
-      "position_start": 1311,
-      "position_end": 1323
-    },
-    {
-      "word_in_sentence": "riddare",
-      "base_form": "riddare",
-      "position_start": 1214,
-      "position_end": 1221
-    },
-    {
-      "word_in_sentence": "paus",
-      "base_form": "paus",
-      "position_start": 334,
-      "position_end": 338
-    },
-    {
-      "word_in_sentence": "dagdrömma",
-      "base_form": "dagdrömma",
-      "position_start": 314,
-      "position_end": 323
-    },
-    {
-      "word_in_sentence": "sommarställe",
-      "base_form": "sommarställe",
-      "position_start": 1289,
-      "position_end": 1301
-    },
-    {
-      "word_in_sentence": "sats",
-      "base_form": "sats",
-      "position_start": 1587,
-      "position_end": 1591
-    },
-    {
-      "word_in_sentence": "leva för",
-      "base_form": "leva för",
-      "position_start": 822,
-      "position_end": 830
-    },
-    {
-      "word_in_sentence": "nöjesliv",
-      "base_form": "nöjesliv",
-      "position_start": 887,
-      "position_end": 895
-    },
-    {
-      "word_in_sentence": "något för alla",
-      "base_form": "något för alla",
-      "position_start": 1079,
-      "position_end": 1093
-    },
-    {
-      "word_in_sentence": "societetshus",
-      "base_form": "societetshus",
-      "position_start": 957,
-      "position_end": 969
-    },
-    {
-      "word_in_sentence": "sommarmånad",
-      "base_form": "sommarmånad",
-      "position_start": 984,
-      "position_end": 995
-    },
-    {
-      "word_in_sentence": "något helt annat",
-      "base_form": "något helt annat",
-      "position_start": 53,
-      "position_end": 69
-    },
-    {
-      "word_in_sentence": "långt in på nätterna",
-      "base_form": "långt in på nätterna",
-      "position_start": 1006,
-      "position_end": 1026
-    },
-    {
-      "word_in_sentence": "Ikväll",
-      "base_form": "ikväll",
-      "position_start": 1479,
-      "position_end": 1485
-    },
-    {
-      "word_in_sentence": "vardagsrum",
-      "base_form": "vardagsrum",
-      "position_start": 375,
-      "position_end": 385
-    },
-    {
-      "word_in_sentence": "Hoppas ni alla/du mår bra!",
-      "base_form": "Hoppas ni alla/du mår bra!",
-      "position_start": 0,
-      "position_end": 26
-    },
-    {
-      "word_in_sentence": "äntligen",
-      "base_form": "äntligen",
-      "position_start": 1462,
-      "position_end": 1470
-    },
-    {
-      "word_in_sentence": "hal som en ål",
-      "base_form": "hal som en ål",
-      "position_start": 1121,
-      "position_end": 1134
-    },
-    {
-      "word_in_sentence": "i alla tider",
-      "base_form": "i alla tider",
-      "position_start": 686,
-      "position_end": 698
-    },
-    {
-      "word_in_sentence": "palats",
-      "base_form": "palats",
-      "position_start": 189,
-      "position_end": 195
-    },
-    {
-      "word_in_sentence": "runt",
-      "base_form": "runt",
-      "position_start": 1434,
-      "position_end": 1438
-    },
-    {
-      "word_in_sentence": "släpa",
-      "base_form": "släpa",
-      "position_start": 559,
-      "position_end": 564
-    },
-    {
-      "word_in_sentence": "sluss",
-      "base_form": "sluss",
-      "position_start": 265,
-      "position_end": 270
-    },
-    {
-      "word_in_sentence": "t.ex.",
-      "base_form": "t.ex.",
-      "position_start": 425,
-      "position_end": 430
-    },
-    {
-      "word_in_sentence": "annonsera",
-      "base_form": "annonsera",
-      "position_start": 1042,
-      "position_end": 1051
-    },
-    {
-      "word_in_sentence": "söndag",
-      "base_form": "söndag",
-      "position_start": 1471,
-      "position_end": 1477
-    },
-    {
-      "word_in_sentence": "februari",
-      "base_form": "februari",
-      "position_start": 438,
-      "position_end": 446
-    },
-    {
-      "word_in_sentence": "lokal",
-      "base_form": "lokal",
-      "position_start": 251,
-      "position_end": 256
-    },
-    {
-      "word_in_sentence": "göra av med",
-      "base_form": "göra av med",
-      "position_start": 1497,
-      "position_end": 1508
-    },
-    {
-      "word_in_sentence": "Åtta av tio",
-      "base_form": "åtta av tio",
-      "position_start": 897,
-      "position_end": 908
-    },
-    {
-      "word_in_sentence": "grannland",
-      "base_form": "grannland",
-      "position_start": 846,
-      "position_end": 855
-    },
-    {
-      "word_in_sentence": "Tystnad",
-      "base_form": "tystnad",
-      "position_start": 1146,
-      "position_end": 1153
-    },
-    {
-      "word_in_sentence": "vifta",
-      "base_form": "vifta",
-      "position_start": 1404,
-      "position_end": 1409
-    },
-    {
-      "word_in_sentence": "lika stor som",
-      "base_form": "lika stor som",
-      "position_start": 165,
-      "position_end": 178
-    },
-    {
-      "word_in_sentence": "debutera",
-      "base_form": "debutera",
-      "position_start": 1537,
-      "position_end": 1545
-    },
-    {
-      "word_in_sentence": "hindra",
-      "base_form": "hindra",
-      "position_start": 1232,
-      "position_end": 1238
-    },
-    {
-      "word_in_sentence": "ha olika syn på",
-      "base_form": "ha olika syn på",
-      "position_start": 860,
-      "position_end": 875
+      "sentence_id": "art30_s001",
+      "sv": "Hoppas ni alla mår bra! Min vardag ser nog ut som något helt annat än din. Jag jobbar hemifrån i ett gammalt boende som brukade vara ett vandrarhem. Byggnaden är lika stor som ett litet palats, eller kanske mer som ett stort lantställe. I en mysig lokal nära en sluss sitter jag i mina mjukiskläder. Jag brukar dagdrömma och ta en paus med kaffe och en hård skorpa i mitt vardagsrum. Ibland brukar jag snusa.\n\nPå vintern, t.ex. en kall februari, brukar jag stanna hemma. Jag är lite som en städare och försöker hålla miljön ren överallt. Jag gillar inte att släpa på tunga kassar från ett möbelvaruhus eller handla i ett stressigt köpcentrum i centrum. I ett svenskt folkhem fanns det i alla tider en tradition att stanna hemma hos familjen. En myskväll (”en sån” = vardagligt för en sådan mysig kväll) är vad jag brukar leva för. \n\nFolk i mitt grannland kan ha olika syn på ett roligt nöjesliv. Åtta av tio vill gå ut och roa sig. De vill besöka ett fint societetshus under en varm sommarmånad och dansa långt in på nätterna. De gillar att annonsera sina fester. Där finns det något för alla, men ibland kan någon vara hal som en ål och luras. Tystnad kan vara bättre.\n\nSjälv känner jag mig ibland som en gammal riddare som måste hindra kaoset. En gång kom en exotisk skorpion in i mitt sommarställe. Det var tre år i rad som jag bodde där under semestern. Jag var helt halvsovande och var tvungen att vifta bort den när den sprang runt på golvet. \n\nNu är det äntligen söndag. Ikväll tänker jag göra av med lite energi. Kanske ska jag debutera som författare. Jag lärde mig nyss en ny sats om grammatik och hur man använder futurum. Jag brukar alltid hålla upp dörren för nya möjligheter i livet.",
+      "en": "",
+      "target_words": [
+        {
+          "word_in_sentence": "hemifrån",
+          "base_form": "hemifrån",
+          "position_start": 86,
+          "position_end": 94
+        },
+        {
+          "word_in_sentence": "vardag",
+          "base_form": "vardag",
+          "position_start": 28,
+          "position_end": 34
+        },
+        {
+          "word_in_sentence": "vandrarhem",
+          "base_form": "vandrarhem",
+          "position_start": 137,
+          "position_end": 147
+        },
+        {
+          "word_in_sentence": "städare",
+          "base_form": "städare",
+          "position_start": 490,
+          "position_end": 497
+        },
+        {
+          "word_in_sentence": "boende",
+          "base_form": "boende",
+          "position_start": 109,
+          "position_end": 115
+        },
+        {
+          "word_in_sentence": "hålla upp dörren",
+          "base_form": "hålla upp dörren",
+          "position_start": 1652,
+          "position_end": 1668
+        },
+        {
+          "word_in_sentence": "lantställe",
+          "base_form": "lantställe",
+          "position_start": 225,
+          "position_end": 235
+        },
+        {
+          "word_in_sentence": "skorpion",
+          "base_form": "skorpion",
+          "position_start": 1269,
+          "position_end": 1277
+        },
+        {
+          "word_in_sentence": "halvsovande",
+          "base_form": "halvsovande",
+          "position_start": 1371,
+          "position_end": 1382
+        },
+        {
+          "word_in_sentence": "i centrum",
+          "base_form": "i centrum",
+          "position_start": 642,
+          "position_end": 651
+        },
+        {
+          "word_in_sentence": "mjukiskläder",
+          "base_form": "mjukiskläder",
+          "position_start": 286,
+          "position_end": 298
+        },
+        {
+          "word_in_sentence": "stanna hemma",
+          "base_form": "stanna hemma",
+          "position_start": 457,
+          "position_end": 469
+        },
+        {
+          "word_in_sentence": "hemma hos",
+          "base_form": "hemma hos",
+          "position_start": 722,
+          "position_end": 731
+        },
+        {
+          "word_in_sentence": "myskväll",
+          "base_form": "myskväll",
+          "position_start": 745,
+          "position_end": 753
+        },
+        {
+          "word_in_sentence": "”en sån” = vardagligt för en sådan",
+          "base_form": "”en sån” = vardagligt för en sådan",
+          "position_start": 755,
+          "position_end": 789
+        },
+        {
+          "word_in_sentence": "möbelvaruhus",
+          "base_form": "möbelvaruhus",
+          "position_start": 589,
+          "position_end": 601
+        },
+        {
+          "word_in_sentence": "skorpa",
+          "base_form": "skorpa",
+          "position_start": 358,
+          "position_end": 364
+        },
+        {
+          "word_in_sentence": "handla",
+          "base_form": "handla",
+          "position_start": 608,
+          "position_end": 614
+        },
+        {
+          "word_in_sentence": "hålla ren",
+          "base_form": "hålla ren",
+          "position_start": 513,
+          "position_end": 522
+        },
+        {
+          "word_in_sentence": "köpcentrum",
+          "base_form": "köpcentrum",
+          "position_start": 631,
+          "position_end": 641
+        },
+        {
+          "word_in_sentence": "futurum",
+          "base_form": "futurum",
+          "position_start": 1625,
+          "position_end": 1632
+        },
+        {
+          "word_in_sentence": "folkhem",
+          "base_form": "folkhem",
+          "position_start": 667,
+          "position_end": 674
+        },
+        {
+          "word_in_sentence": "snusa",
+          "base_form": "snusa",
+          "position_start": 402,
+          "position_end": 407
+        },
+        {
+          "word_in_sentence": "tre år i rad",
+          "base_form": "tre år i rad",
+          "position_start": 1310,
+          "position_end": 1322
+        },
+        {
+          "word_in_sentence": "riddare",
+          "base_form": "riddare",
+          "position_start": 1213,
+          "position_end": 1220
+        },
+        {
+          "word_in_sentence": "paus",
+          "base_form": "paus",
+          "position_start": 331,
+          "position_end": 335
+        },
+        {
+          "word_in_sentence": "dagdrömma",
+          "base_form": "dagdrömma",
+          "position_start": 311,
+          "position_end": 320
+        },
+        {
+          "word_in_sentence": "sommarställe",
+          "base_form": "sommarställe",
+          "position_start": 1288,
+          "position_end": 1300
+        },
+        {
+          "word_in_sentence": "sats",
+          "base_form": "sats",
+          "position_start": 1586,
+          "position_end": 1590
+        },
+        {
+          "word_in_sentence": "leva för",
+          "base_form": "leva för",
+          "position_start": 821,
+          "position_end": 829
+        },
+        {
+          "word_in_sentence": "nöjesliv",
+          "base_form": "nöjesliv",
+          "position_start": 886,
+          "position_end": 894
+        },
+        {
+          "word_in_sentence": "något för alla",
+          "base_form": "något för alla",
+          "position_start": 1078,
+          "position_end": 1092
+        },
+        {
+          "word_in_sentence": "societetshus",
+          "base_form": "societetshus",
+          "position_start": 956,
+          "position_end": 968
+        },
+        {
+          "word_in_sentence": "sommarmånad",
+          "base_form": "sommarmånad",
+          "position_start": 983,
+          "position_end": 994
+        },
+        {
+          "word_in_sentence": "något helt annat",
+          "base_form": "något helt annat",
+          "position_start": 50,
+          "position_end": 66
+        },
+        {
+          "word_in_sentence": "långt in på nätterna",
+          "base_form": "långt in på nätterna",
+          "position_start": 1005,
+          "position_end": 1025
+        },
+        {
+          "word_in_sentence": "Ikväll",
+          "base_form": "ikväll",
+          "position_start": 1478,
+          "position_end": 1484
+        },
+        {
+          "word_in_sentence": "vardagsrum",
+          "base_form": "vardagsrum",
+          "position_start": 372,
+          "position_end": 382
+        },
+        {
+          "word_in_sentence": "Hoppas ni alla mår bra!",
+          "base_form": "Hoppas ni alla/du mår bra!",
+          "position_start": 0,
+          "position_end": 23
+        },
+        {
+          "word_in_sentence": "äntligen",
+          "base_form": "äntligen",
+          "position_start": 1461,
+          "position_end": 1469
+        },
+        {
+          "word_in_sentence": "hal som en ål",
+          "base_form": "hal som en ål",
+          "position_start": 1120,
+          "position_end": 1133
+        },
+        {
+          "word_in_sentence": "i alla tider",
+          "base_form": "i alla tider",
+          "position_start": 685,
+          "position_end": 697
+        },
+        {
+          "word_in_sentence": "palats",
+          "base_form": "palats",
+          "position_start": 186,
+          "position_end": 192
+        },
+        {
+          "word_in_sentence": "runt",
+          "base_form": "runt",
+          "position_start": 1433,
+          "position_end": 1437
+        },
+        {
+          "word_in_sentence": "släpa",
+          "base_form": "släpa",
+          "position_start": 558,
+          "position_end": 563
+        },
+        {
+          "word_in_sentence": "sluss",
+          "base_form": "sluss",
+          "position_start": 262,
+          "position_end": 267
+        },
+        {
+          "word_in_sentence": "t.ex.",
+          "base_form": "t.ex.",
+          "position_start": 422,
+          "position_end": 427
+        },
+        {
+          "word_in_sentence": "annonsera",
+          "base_form": "annonsera",
+          "position_start": 1041,
+          "position_end": 1050
+        },
+        {
+          "word_in_sentence": "söndag",
+          "base_form": "söndag",
+          "position_start": 1470,
+          "position_end": 1476
+        },
+        {
+          "word_in_sentence": "februari",
+          "base_form": "februari",
+          "position_start": 436,
+          "position_end": 444
+        },
+        {
+          "word_in_sentence": "lokal",
+          "base_form": "lokal",
+          "position_start": 248,
+          "position_end": 253
+        },
+        {
+          "word_in_sentence": "göra av med",
+          "base_form": "göra av med",
+          "position_start": 1496,
+          "position_end": 1507
+        },
+        {
+          "word_in_sentence": "Åtta av tio",
+          "base_form": "åtta av tio",
+          "position_start": 896,
+          "position_end": 907
+        },
+        {
+          "word_in_sentence": "grannland",
+          "base_form": "grannland",
+          "position_start": 845,
+          "position_end": 854
+        },
+        {
+          "word_in_sentence": "Tystnad",
+          "base_form": "tystnad",
+          "position_start": 1145,
+          "position_end": 1152
+        },
+        {
+          "word_in_sentence": "vifta",
+          "base_form": "vifta",
+          "position_start": 1403,
+          "position_end": 1408
+        },
+        {
+          "word_in_sentence": "lika stor som",
+          "base_form": "lika stor som",
+          "position_start": 162,
+          "position_end": 175
+        },
+        {
+          "word_in_sentence": "debutera",
+          "base_form": "debutera",
+          "position_start": 1536,
+          "position_end": 1544
+        },
+        {
+          "word_in_sentence": "hindra",
+          "base_form": "hindra",
+          "position_start": 1231,
+          "position_end": 1237
+        },
+        {
+          "word_in_sentence": "ha olika syn på",
+          "base_form": "ha olika syn på",
+          "position_start": 859,
+          "position_end": 874
+        }
+      ]
     }
   ],
   "primary_words_used": [
@@ -428,5 +432,6 @@
     "debutera",
     "hindra",
     "ha olika syn på"
-  ]
+  ],
+  "secondary_words_used": []
 }

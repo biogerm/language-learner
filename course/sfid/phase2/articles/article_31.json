@@ -1,370 +1,374 @@
 {
-  "course_id": "sfid",
-  "course_title": "SFI D",
-  "step_id": "vardagsliv",
-  "step_title": "Vardagsliv",
   "article_id": "art_31",
-  "sv": "När min granne frågade hur jag mådde sa jag: \"–Jo, det är bara bra.\" Men sanningen är att den här veckan har varit ganska stressig. I måndags bestämde jag mig för en ny livsstil. Förra veckan bestämde jag mig för att förändra varje vardaglig rutin jag hade. Jag hade nämligen svåra sömnproblem. Min läkare gav mig ett val: antingen…eller. Han tyckte jag skulle vara ute mer utanför hemmet.\n\nFör några dagar sedan började jag promenera. Jag gick till en klädbutik som hade en stor realisation hela dagen. Istället för att titta i en gammal katalog köpte jag en ny vit baddräkt och en extra tjock strumpa. Men plötsligt märkte jag att min plånbok var borta. Jag ville inte råka göra något dumt eller verka som att jag försökte snatta. Jag tänkte fråga efter någon i personalen som kunde agera. De hittade den inte. Jag brukar inte snåla, men en dyr klocka jag hade i väskan var också borta. Hade jag lagt den någonstans? \n\nMorgonen därpå var det iskallt och marken var isig. Jag tog en ful jacka och ett paraply. Jag var inte van vid kylan och började frysa ända in i min själ. Jag tänkte drömma mig bort. Min nuvarande lägenhet är inte lika stor som huset jag bodde i när jag var 10 år gammal, men varje detalj är viktig. Jag gick in i mitt sovrum för att vila i en kvart. \n\n\"Förbered dig för i övermorgon!\" sa en sjungande röst i radion. Det var ett program om en duktig husmor. Ett tips var att städa ur sitt kylskåp, ett annat var att bada bastu i sitt lilla badrum för att ta det lugnt. Att bada bastu är en användbar metod för avkoppling. Jag har faktiskt inte badat bastu alls, i alla fall inte på flera månader. Förut badade jag flera gånger i veckan. \n\nEfter ett par dagar kände jag mig bättre. Jag slutade ge upp och bestämde mig för att släppa ut all stress. Om något går sönder, vad kommer det betyda om hundra år? Man måste sova åtta timmar per dygn, minst en viss tid för sig själv. Mitt favoritlag kom på sjunde plats i ligan, men vad gör det? Livet går vidare!",
-  "target_words": [
+  "article_title": "Läsförståelse",
+  "target_word_count": 60,
+  "sentences": [
     {
-      "word_in_sentence": "utanför hemmet",
-      "base_form": "utanför hemmet",
-      "position_start": 374,
-      "position_end": 388
-    },
-    {
-      "word_in_sentence": "10 år gammal",
-      "base_form": "10 år gammal",
-      "position_start": 1179,
-      "position_end": 1191
-    },
-    {
-      "word_in_sentence": "Förra veckan",
-      "base_form": "förra veckan",
-      "position_start": 179,
-      "position_end": 191
-    },
-    {
-      "word_in_sentence": "vardaglig",
-      "base_form": "vardaglig",
-      "position_start": 232,
-      "position_end": 241
-    },
-    {
-      "word_in_sentence": "råka",
-      "base_form": "råka",
-      "position_start": 671,
-      "position_end": 675
-    },
-    {
-      "word_in_sentence": "i övermorgon",
-      "base_form": "i övermorgon",
-      "position_start": 1292,
-      "position_end": 1304
-    },
-    {
-      "word_in_sentence": "För några dagar sedan",
-      "base_form": "för några dagar sedan",
-      "position_start": 391,
-      "position_end": 412
-    },
-    {
-      "word_in_sentence": "I måndags",
-      "base_form": "i måndags",
-      "position_start": 132,
-      "position_end": 141
-    },
-    {
-      "word_in_sentence": "inte på flera månader",
-      "base_form": "inte på flera månader",
-      "position_start": 1595,
-      "position_end": 1616
-    },
-    {
-      "word_in_sentence": "flera gånger i veckan",
-      "base_form": "flera gånger i veckan",
-      "position_start": 1635,
-      "position_end": 1656
-    },
-    {
-      "word_in_sentence": "klocka",
-      "base_form": "klocka",
-      "position_start": 847,
-      "position_end": 853
-    },
-    {
-      "word_in_sentence": "göra något dumt",
-      "base_form": "göra något dumt",
-      "position_start": 676,
-      "position_end": 691
-    },
-    {
-      "word_in_sentence": "hela dagen",
-      "base_form": "hela dagen",
-      "position_start": 492,
-      "position_end": 502
-    },
-    {
-      "word_in_sentence": "realisation",
-      "base_form": "realisation",
-      "position_start": 480,
-      "position_end": 491
-    },
-    {
-      "word_in_sentence": "plånbok",
-      "base_form": "plånbok",
-      "position_start": 637,
-      "position_end": 644
-    },
-    {
-      "word_in_sentence": "den här veckan",
-      "base_form": "den här veckan",
-      "position_start": 90,
-      "position_end": 104
-    },
-    {
-      "word_in_sentence": "snatta",
-      "base_form": "snatta",
-      "position_start": 725,
-      "position_end": 731
-    },
-    {
-      "word_in_sentence": "Morgonen därpå",
-      "base_form": "morgonen därpå",
-      "position_start": 921,
-      "position_end": 935
-    },
-    {
-      "word_in_sentence": "strumpa",
-      "base_form": "strumpa",
-      "position_start": 595,
-      "position_end": 602
-    },
-    {
-      "word_in_sentence": "van vid",
-      "base_form": "van vid",
-      "position_start": 1024,
-      "position_end": 1031
-    },
-    {
-      "word_in_sentence": "sovrum",
-      "base_form": "sovrum",
-      "position_start": 1240,
-      "position_end": 1246
-    },
-    {
-      "word_in_sentence": "användbar",
-      "base_form": "användbar",
-      "position_start": 1511,
-      "position_end": 1520
-    },
-    {
-      "word_in_sentence": "per dygn",
-      "base_form": "per dygn",
-      "position_start": 1852,
-      "position_end": 1860
-    },
-    {
-      "word_in_sentence": "sömnproblem",
-      "base_form": "sömnproblem",
-      "position_start": 282,
-      "position_end": 293
-    },
-    {
-      "word_in_sentence": "ful",
-      "base_form": "ful",
-      "position_start": 984,
-      "position_end": 987
-    },
-    {
-      "word_in_sentence": "husmor",
-      "base_form": "husmor",
-      "position_start": 1371,
-      "position_end": 1377
-    },
-    {
-      "word_in_sentence": "paraply",
-      "base_form": "paraply",
-      "position_start": 1002,
-      "position_end": 1009
-    },
-    {
-      "word_in_sentence": "ett par dagar",
-      "base_form": "ett par dagar",
-      "position_start": 1666,
-      "position_end": 1679
-    },
-    {
-      "word_in_sentence": "granne",
-      "base_form": "granne",
-      "position_start": 8,
-      "position_end": 14
-    },
-    {
-      "word_in_sentence": "vara ute",
-      "base_form": "vara ute",
-      "position_start": 361,
-      "position_end": 369
-    },
-    {
-      "word_in_sentence": "kvart",
-      "base_form": "kvart",
-      "position_start": 1265,
-      "position_end": 1270
-    },
-    {
-      "word_in_sentence": "bada bastu",
-      "base_form": "bada bastu",
-      "position_start": 1437,
-      "position_end": 1447
-    },
-    {
-      "word_in_sentence": "livsstil",
-      "base_form": "livsstil",
-      "position_start": 169,
-      "position_end": 177
-    },
-    {
-      "word_in_sentence": "ta det lugnt",
-      "base_form": "ta det lugnt",
-      "position_start": 1476,
-      "position_end": 1488
-    },
-    {
-      "word_in_sentence": "badrum",
-      "base_form": "badrum",
-      "position_start": 1461,
-      "position_end": 1467
-    },
-    {
-      "word_in_sentence": "kylskåp",
-      "base_form": "kylskåp",
-      "position_start": 1410,
-      "position_end": 1417
-    },
-    {
-      "word_in_sentence": "katalog",
-      "base_form": "katalog",
-      "position_start": 539,
-      "position_end": 546
-    },
-    {
-      "word_in_sentence": "baddräkt",
-      "base_form": "baddräkt",
-      "position_start": 567,
-      "position_end": 575
-    },
-    {
-      "word_in_sentence": "antingen…eller",
-      "base_form": "antingen…eller",
-      "position_start": 323,
-      "position_end": 337
-    },
-    {
-      "word_in_sentence": "sjunde plats",
-      "base_form": "sjunde plats",
-      "position_start": 1918,
-      "position_end": 1930
-    },
-    {
-      "word_in_sentence": "sjungande",
-      "base_form": "sjungande",
-      "position_start": 1313,
-      "position_end": 1322
-    },
-    {
-      "word_in_sentence": "detalj",
-      "base_form": "detalj",
-      "position_start": 1203,
-      "position_end": 1209
-    },
-    {
-      "word_in_sentence": "vit",
-      "base_form": "vit",
-      "position_start": 563,
-      "position_end": 566
-    },
-    {
-      "word_in_sentence": "inte lika stor",
-      "base_form": "inte lika stor",
-      "position_start": 1130,
-      "position_end": 1144
-    },
-    {
-      "word_in_sentence": "betyda",
-      "base_form": "betyda",
-      "position_start": 1804,
-      "position_end": 1810
-    },
-    {
-      "word_in_sentence": "Förbered",
-      "base_form": "förbered",
-      "position_start": 1275,
-      "position_end": 1283
-    },
-    {
-      "word_in_sentence": "verka",
-      "base_form": "verka",
-      "position_start": 698,
-      "position_end": 703
-    },
-    {
-      "word_in_sentence": "en viss tid",
-      "base_form": "en viss tid",
-      "position_start": 1868,
-      "position_end": 1879
-    },
-    {
-      "word_in_sentence": "fråga efter någon",
-      "base_form": "fråga efter någon",
-      "position_start": 744,
-      "position_end": 761
-    },
-    {
-      "word_in_sentence": "någonstans",
-      "base_form": "någonstans",
-      "position_start": 907,
-      "position_end": 917
-    },
-    {
-      "word_in_sentence": "frysa",
-      "base_form": "frysa",
-      "position_start": 1050,
-      "position_end": 1055
-    },
-    {
-      "word_in_sentence": "snåla",
-      "base_form": "snåla",
-      "position_start": 829,
-      "position_end": 834
-    },
-    {
-      "word_in_sentence": "agera",
-      "base_form": "agera",
-      "position_start": 785,
-      "position_end": 790
-    },
-    {
-      "word_in_sentence": "själ",
-      "base_form": "själ",
-      "position_start": 1070,
-      "position_end": 1074
-    },
-    {
-      "word_in_sentence": "drömma",
-      "base_form": "drömma",
-      "position_start": 1087,
-      "position_end": 1093
-    },
-    {
-      "word_in_sentence": "isig",
-      "base_form": "isig",
-      "position_start": 967,
-      "position_end": 971
-    },
-    {
-      "word_in_sentence": "–Jo, det är bara bra.",
-      "base_form": "–Jo, det är bara bra.",
-      "position_start": 46,
-      "position_end": 67
-    },
-    {
-      "word_in_sentence": "ge upp",
-      "base_form": "ge upp",
-      "position_start": 1714,
-      "position_end": 1720
-    },
-    {
-      "word_in_sentence": "släppa ut",
-      "base_form": "släppa ut",
-      "position_start": 1746,
-      "position_end": 1755
-    },
-    {
-      "word_in_sentence": "sönder",
-      "base_form": "sönder",
-      "position_start": 1781,
-      "position_end": 1787
+      "sentence_id": "art31_s001",
+      "sv": "När min granne frågade hur jag mådde sa jag: \"–Jo, det är bara bra.\" Men sanningen är att den här veckan har varit ganska stressig. I måndags bestämde jag mig för en ny livsstil. Förra veckan bestämde jag mig för att förändra varje vardaglig rutin jag hade. Jag hade nämligen svåra sömnproblem. Min läkare gav mig ett val: antingen…eller. Han tyckte jag skulle vara utomhus mer.\n\nFör några dagar sedan började jag promenera. Jag gick till en klädbutik som hade en stor rea hela dagen. Istället för att titta i en gammal katalog köpte jag en ny vit baddräkt och ett par extra tjocka strumpor. Men plötsligt märkte jag att min plånbok var borta. Jag ville inte råka göra något dumt eller verka som att jag försökte snatta. Jag tänkte fråga någon i personalen som kunde agera. De hittade den inte. Jag brukar inte snåla, men en dyr klocka jag hade i väskan var också borta. Hade jag lagt den någonstans? \n\nMorgonen därpå var det iskallt och marken var isig. Jag tog en ful jacka och ett paraply. Jag var inte van vid kylan och började frysa ända in i min själ. Jag tänkte drömma mig bort. Min nuvarande lägenhet är inte lika stor som huset jag bodde i när jag var 10 år gammal, men varje detalj är viktig. Jag gick in i mitt sovrum för att vila i en kvart. \n\n\"Förbered dig för i övermorgon!\" sa en sjungande röst i radion. Det var ett program om en duktig husmor. Ett tips var att städa ur sitt kylskåp, ett annat var att bada bastu i sitt lilla badrum för att ta det lugnt. Att bada bastu är en användbar metod för avkoppling. Jag har faktiskt inte badat bastu alls, i alla fall inte på flera månader. Förut badade jag flera gånger i veckan. \n\nEfter ett par dagar kände jag mig bättre. Jag slutade ge upp och bestämde mig för att släppa ut all stress. Om något går sönder, vad kommer det betyda om hundra år? Man måste sova åtta timmar per dygn, minst en viss tid för sig själv. Mitt favoritlag kom på sjunde plats i ligan, men vad gör det? Livet går vidare!",
+      "en": "",
+      "target_words": [
+        {
+          "word_in_sentence": "utanför hemmet",
+          "base_form": "utanför hemmet",
+          "position_start": 374,
+          "position_end": 388
+        },
+        {
+          "word_in_sentence": "10 år gammal",
+          "base_form": "10 år gammal",
+          "position_start": 1161,
+          "position_end": 1173
+        },
+        {
+          "word_in_sentence": "Förra veckan",
+          "base_form": "förra veckan",
+          "position_start": 179,
+          "position_end": 191
+        },
+        {
+          "word_in_sentence": "vardaglig",
+          "base_form": "vardaglig",
+          "position_start": 232,
+          "position_end": 241
+        },
+        {
+          "word_in_sentence": "råka",
+          "base_form": "råka",
+          "position_start": 659,
+          "position_end": 663
+        },
+        {
+          "word_in_sentence": "i övermorgon",
+          "base_form": "i övermorgon",
+          "position_start": 1274,
+          "position_end": 1286
+        },
+        {
+          "word_in_sentence": "För några dagar sedan",
+          "base_form": "för några dagar sedan",
+          "position_start": 380,
+          "position_end": 401
+        },
+        {
+          "word_in_sentence": "I måndags",
+          "base_form": "i måndags",
+          "position_start": 132,
+          "position_end": 141
+        },
+        {
+          "word_in_sentence": "inte på flera månader",
+          "base_form": "inte på flera månader",
+          "position_start": 1577,
+          "position_end": 1598
+        },
+        {
+          "word_in_sentence": "flera gånger i veckan",
+          "base_form": "flera gånger i veckan",
+          "position_start": 1617,
+          "position_end": 1638
+        },
+        {
+          "word_in_sentence": "klocka",
+          "base_form": "klocka",
+          "position_start": 829,
+          "position_end": 835
+        },
+        {
+          "word_in_sentence": "göra något dumt",
+          "base_form": "göra något dumt",
+          "position_start": 664,
+          "position_end": 679
+        },
+        {
+          "word_in_sentence": "hela dagen",
+          "base_form": "hela dagen",
+          "position_start": 473,
+          "position_end": 483
+        },
+        {
+          "word_in_sentence": "realisation",
+          "base_form": "realisation",
+          "position_start": 480,
+          "position_end": 491
+        },
+        {
+          "word_in_sentence": "plånbok",
+          "base_form": "plånbok",
+          "position_start": 625,
+          "position_end": 632
+        },
+        {
+          "word_in_sentence": "den här veckan",
+          "base_form": "den här veckan",
+          "position_start": 90,
+          "position_end": 104
+        },
+        {
+          "word_in_sentence": "snatta",
+          "base_form": "snatta",
+          "position_start": 713,
+          "position_end": 719
+        },
+        {
+          "word_in_sentence": "Morgonen därpå",
+          "base_form": "morgonen därpå",
+          "position_start": 903,
+          "position_end": 917
+        },
+        {
+          "word_in_sentence": "strumpa",
+          "base_form": "strumpa",
+          "position_start": 595,
+          "position_end": 602
+        },
+        {
+          "word_in_sentence": "van vid",
+          "base_form": "van vid",
+          "position_start": 1006,
+          "position_end": 1013
+        },
+        {
+          "word_in_sentence": "sovrum",
+          "base_form": "sovrum",
+          "position_start": 1222,
+          "position_end": 1228
+        },
+        {
+          "word_in_sentence": "användbar",
+          "base_form": "användbar",
+          "position_start": 1493,
+          "position_end": 1502
+        },
+        {
+          "word_in_sentence": "per dygn",
+          "base_form": "per dygn",
+          "position_start": 1834,
+          "position_end": 1842
+        },
+        {
+          "word_in_sentence": "sömnproblem",
+          "base_form": "sömnproblem",
+          "position_start": 282,
+          "position_end": 293
+        },
+        {
+          "word_in_sentence": "ful",
+          "base_form": "ful",
+          "position_start": 966,
+          "position_end": 969
+        },
+        {
+          "word_in_sentence": "husmor",
+          "base_form": "husmor",
+          "position_start": 1353,
+          "position_end": 1359
+        },
+        {
+          "word_in_sentence": "paraply",
+          "base_form": "paraply",
+          "position_start": 984,
+          "position_end": 991
+        },
+        {
+          "word_in_sentence": "ett par dagar",
+          "base_form": "ett par dagar",
+          "position_start": 1648,
+          "position_end": 1661
+        },
+        {
+          "word_in_sentence": "granne",
+          "base_form": "granne",
+          "position_start": 8,
+          "position_end": 14
+        },
+        {
+          "word_in_sentence": "vara ute",
+          "base_form": "vara ute",
+          "position_start": 361,
+          "position_end": 369
+        },
+        {
+          "word_in_sentence": "kvart",
+          "base_form": "kvart",
+          "position_start": 1247,
+          "position_end": 1252
+        },
+        {
+          "word_in_sentence": "bada bastu",
+          "base_form": "bada bastu",
+          "position_start": 1419,
+          "position_end": 1429
+        },
+        {
+          "word_in_sentence": "livsstil",
+          "base_form": "livsstil",
+          "position_start": 169,
+          "position_end": 177
+        },
+        {
+          "word_in_sentence": "ta det lugnt",
+          "base_form": "ta det lugnt",
+          "position_start": 1458,
+          "position_end": 1470
+        },
+        {
+          "word_in_sentence": "badrum",
+          "base_form": "badrum",
+          "position_start": 1443,
+          "position_end": 1449
+        },
+        {
+          "word_in_sentence": "kylskåp",
+          "base_form": "kylskåp",
+          "position_start": 1392,
+          "position_end": 1399
+        },
+        {
+          "word_in_sentence": "katalog",
+          "base_form": "katalog",
+          "position_start": 520,
+          "position_end": 527
+        },
+        {
+          "word_in_sentence": "baddräkt",
+          "base_form": "baddräkt",
+          "position_start": 548,
+          "position_end": 556
+        },
+        {
+          "word_in_sentence": "antingen…eller",
+          "base_form": "antingen…eller",
+          "position_start": 323,
+          "position_end": 337
+        },
+        {
+          "word_in_sentence": "sjunde plats",
+          "base_form": "sjunde plats",
+          "position_start": 1900,
+          "position_end": 1912
+        },
+        {
+          "word_in_sentence": "sjungande",
+          "base_form": "sjungande",
+          "position_start": 1295,
+          "position_end": 1304
+        },
+        {
+          "word_in_sentence": "detalj",
+          "base_form": "detalj",
+          "position_start": 1185,
+          "position_end": 1191
+        },
+        {
+          "word_in_sentence": "vit",
+          "base_form": "vit",
+          "position_start": 544,
+          "position_end": 547
+        },
+        {
+          "word_in_sentence": "inte lika stor",
+          "base_form": "inte lika stor",
+          "position_start": 1112,
+          "position_end": 1126
+        },
+        {
+          "word_in_sentence": "betyda",
+          "base_form": "betyda",
+          "position_start": 1786,
+          "position_end": 1792
+        },
+        {
+          "word_in_sentence": "Förbered",
+          "base_form": "förbered",
+          "position_start": 1257,
+          "position_end": 1265
+        },
+        {
+          "word_in_sentence": "verka",
+          "base_form": "verka",
+          "position_start": 686,
+          "position_end": 691
+        },
+        {
+          "word_in_sentence": "en viss tid",
+          "base_form": "en viss tid",
+          "position_start": 1850,
+          "position_end": 1861
+        },
+        {
+          "word_in_sentence": "fråga någon",
+          "base_form": "fråga efter någon",
+          "position_start": 732,
+          "position_end": 743
+        },
+        {
+          "word_in_sentence": "någonstans",
+          "base_form": "någonstans",
+          "position_start": 889,
+          "position_end": 899
+        },
+        {
+          "word_in_sentence": "frysa",
+          "base_form": "frysa",
+          "position_start": 1032,
+          "position_end": 1037
+        },
+        {
+          "word_in_sentence": "snåla",
+          "base_form": "snåla",
+          "position_start": 811,
+          "position_end": 816
+        },
+        {
+          "word_in_sentence": "agera",
+          "base_form": "agera",
+          "position_start": 767,
+          "position_end": 772
+        },
+        {
+          "word_in_sentence": "själ",
+          "base_form": "själ",
+          "position_start": 1052,
+          "position_end": 1056
+        },
+        {
+          "word_in_sentence": "drömma",
+          "base_form": "drömma",
+          "position_start": 1069,
+          "position_end": 1075
+        },
+        {
+          "word_in_sentence": "isig",
+          "base_form": "isig",
+          "position_start": 949,
+          "position_end": 953
+        },
+        {
+          "word_in_sentence": "–Jo, det är bara bra.",
+          "base_form": "–Jo, det är bara bra.",
+          "position_start": 46,
+          "position_end": 67
+        },
+        {
+          "word_in_sentence": "ge upp",
+          "base_form": "ge upp",
+          "position_start": 1696,
+          "position_end": 1702
+        },
+        {
+          "word_in_sentence": "släppa ut",
+          "base_form": "släppa ut",
+          "position_start": 1728,
+          "position_end": 1737
+        },
+        {
+          "word_in_sentence": "sönder",
+          "base_form": "sönder",
+          "position_start": 1763,
+          "position_end": 1769
+        }
+      ]
     }
   ],
   "primary_words_used": [
@@ -428,5 +432,6 @@
     "ge upp",
     "släppa ut",
     "sönder"
-  ]
+  ],
+  "secondary_words_used": []
 }

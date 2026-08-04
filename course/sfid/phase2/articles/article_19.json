@@ -1,370 +1,374 @@
 {
-  "course_id": "sfid",
-  "course_title": "SFI D",
-  "step_id": "natur_miljö",
-  "step_title": "Natur & Miljö",
   "article_id": "art_19",
-  "sv": "\"–Hej! Det var länge sedan!\" sa jag när jag mötte min gamla vän i skogen.\n\"Va?\" sa hon. Sedan kände hon igen mig.\n\"Jag måste berätta en sak/en grej…\" började hon. \"Har du hört vad XX gjort?\" frågade hon och log. \n\"Nej, jag har ingen åsikt om kändisar,\" svarade jag bestämd. \n\"Har du/ni hört att?\" skämtade hon, \"han ska ha planer på att abdikera från sitt jobb som personlig tränare!\" Hennes berättelse kändes som en rolig abdikation från allvaret, men det var skönt att vara ute i naturen.\n\n\"Har du hört talas om …?\" frågade hon och pekade på en gammal stenhäll. \"Där finns en hällristning från ett tidigt århundrade. Det fanns en katolik som var känd för att ha rest hit dragen av sex hästar.\"\n\nHon hade en röd- och vitrandig jacka och en mintgrön mössa. Vi satte oss bland träden. \"Det finns en missuppfattning om skogen. Vissa tror att djur kommer att anfalla, men de är ofta oskyldiga,\" sa hon. Vi köpte lite godis i lösvikt och lade en klick sylt på en bit bröd. Hon frågade om min vegan-korv gjord på havre. \n\"Har du ätit det någon gång?\" frågade jag. \n\"Nej, det har jag aldrig gjort!\" skrattade hon. Hon kunde inte låta bli att smaka. Smaken var jättestark och fick hennes ögon att svida.\n\nSedan pratade vi om vår natur. \"På 70-talet under en högkonjunktur började den gröna vågen slå igenom. Folk ville ha ett naturligt kretslopp för allt från regn till avlopp,\" sa hon. Idag är en modern miljörörelse viktig i varje miljö- och klimatdebatt. Det engelska ordet climate syns i varje taggmoln online. \n\nMånga unga vill engagera sig i miljön. Även min lilla guldfisk verkar vilja ha rent vatten! \"Det är svårt att hinna med att bygga ett starkt skydd mot föroreningar, men vi måste motivera fler att acceptera fakta och inte överdriva rädslan,\" sa hon. Ibland känns det som om vi pratar på grönländska, ingen förstår varandra. Ett namn på problemet är okunskap. Det kändes bra att döpa problemen och förhoppningsvis få tillbaka hoppet. Innan vi gick kastade vi en snöboll mot ett litet apelsinträd i ett växthus. Vi riskerar att få problem om vi inte agerar, men vi kämpar på!",
-  "target_words": [
+  "article_title": "Läsförståelse",
+  "target_word_count": 60,
+  "sentences": [
     {
-      "word_in_sentence": "hällristning",
-      "base_form": "hällristning",
-      "position_start": 578,
-      "position_end": 590
-    },
-    {
-      "word_in_sentence": "kretslopp",
-      "base_form": "kretslopp",
-      "position_start": 1329,
-      "position_end": 1338
-    },
-    {
-      "word_in_sentence": "taggmoln",
-      "base_form": "taggmoln",
-      "position_start": 1491,
-      "position_end": 1499
-    },
-    {
-      "word_in_sentence": "Har du ätit det någon gång?",
-      "base_form": "Har du ätit det någon gång?",
-      "position_start": 1017,
-      "position_end": 1044
-    },
-    {
-      "word_in_sentence": "Nej, det har jag aldrig gjort!",
-      "base_form": "Nej, det har jag aldrig gjort!",
-      "position_start": 1061,
-      "position_end": 1091
-    },
-    {
-      "word_in_sentence": "korv",
-      "base_form": "korv",
-      "position_start": 994,
-      "position_end": 998
-    },
-    {
-      "word_in_sentence": "havre",
-      "base_form": "havre",
-      "position_start": 1008,
-      "position_end": 1013
-    },
-    {
-      "word_in_sentence": "mintgrön",
-      "base_form": "mintgrön",
-      "position_start": 741,
-      "position_end": 749
-    },
-    {
-      "word_in_sentence": "högkonjunktur",
-      "base_form": "högkonjunktur",
-      "position_start": 1251,
-      "position_end": 1264
-    },
-    {
-      "word_in_sentence": "avlopp",
-      "base_form": "avlopp",
-      "position_start": 1363,
-      "position_end": 1369
-    },
-    {
-      "word_in_sentence": "jättestark",
-      "base_form": "jättestark",
-      "position_start": 1154,
-      "position_end": 1164
-    },
-    {
-      "word_in_sentence": "få problem",
-      "base_form": "få problem",
-      "position_start": 2035,
-      "position_end": 2045
-    },
-    {
-      "word_in_sentence": "miljörörelse",
-      "base_form": "miljörörelse",
-      "position_start": 1398,
-      "position_end": 1410
-    },
-    {
-      "word_in_sentence": "gröna vågen",
-      "base_form": "gröna vågen",
-      "position_start": 1277,
-      "position_end": 1288
-    },
-    {
-      "word_in_sentence": "slå igenom",
-      "base_form": "slå igenom",
-      "position_start": 1289,
-      "position_end": 1299
-    },
-    {
-      "word_in_sentence": "miljö- och klimatdebatt",
-      "base_form": "miljö- och klimatdebatt",
-      "position_start": 1426,
-      "position_end": 1449
-    },
-    {
-      "word_in_sentence": "climate",
-      "base_form": "climate",
-      "position_start": 1470,
-      "position_end": 1477
-    },
-    {
-      "word_in_sentence": "hinna med",
-      "base_form": "hinna med",
-      "position_start": 1620,
-      "position_end": 1629
-    },
-    {
-      "word_in_sentence": "skydd mot",
-      "base_form": "skydd mot",
-      "position_start": 1651,
-      "position_end": 1660
-    },
-    {
-      "word_in_sentence": "ute i naturen",
-      "base_form": "ute i naturen",
-      "position_start": 476,
-      "position_end": 489
-    },
-    {
-      "word_in_sentence": "dragen av sex hästar",
-      "base_form": "dragen av sex hästar",
-      "position_start": 673,
-      "position_end": 693
-    },
-    {
-      "word_in_sentence": "katolik",
-      "base_form": "katolik",
-      "position_start": 632,
-      "position_end": 639
-    },
-    {
-      "word_in_sentence": "abdikation",
-      "base_form": "abdikation",
-      "position_start": 423,
-      "position_end": 433
-    },
-    {
-      "word_in_sentence": "apelsinträd",
-      "base_form": "apelsinträd",
-      "position_start": 1992,
-      "position_end": 2003
-    },
-    {
-      "word_in_sentence": "abdikera",
-      "base_form": "abdikera",
-      "position_start": 337,
-      "position_end": 345
-    },
-    {
-      "word_in_sentence": "stenhäll",
-      "base_form": "stenhäll",
-      "position_start": 554,
-      "position_end": 562
-    },
-    {
-      "word_in_sentence": "kände hon igen",
-      "base_form": "känna igen",
-      "position_start": 94,
-      "position_end": 108
-    },
-    {
-      "word_in_sentence": "ha planer",
-      "base_form": "ha planer",
-      "position_start": 320,
-      "position_end": 329
-    },
-    {
-      "word_in_sentence": "grönländska",
-      "base_form": "grönländska",
-      "position_start": 1796,
-      "position_end": 1807
-    },
-    {
-      "word_in_sentence": "personlig tränare",
-      "base_form": "personlig tränare",
-      "position_start": 365,
-      "position_end": 382
-    },
-    {
-      "word_in_sentence": "engagera sig i",
-      "base_form": "engagera sig i",
-      "position_start": 1526,
-      "position_end": 1540
-    },
-    {
-      "word_in_sentence": "Har du hört vad XX gjort?",
-      "base_form": "Har du hört vad XX gjort?",
-      "position_start": 164,
-      "position_end": 189
-    },
-    {
-      "word_in_sentence": "Jag måste berätta en sak/en grej…",
-      "base_form": "Jag måste berätta en sak/en grej…",
-      "position_start": 115,
-      "position_end": 148
-    },
-    {
-      "word_in_sentence": "Har du hört talas om …?",
-      "base_form": "Har du hört talas om …?",
-      "position_start": 493,
-      "position_end": 516
-    },
-    {
-      "word_in_sentence": "Har du/ni hört att?",
-      "base_form": "Har du/ni hört att?",
-      "position_start": 276,
-      "position_end": 295
-    },
-    {
-      "word_in_sentence": "missuppfattning",
-      "base_form": "missuppfattning",
-      "position_start": 798,
-      "position_end": 813
-    },
-    {
-      "word_in_sentence": "guldfisk",
-      "base_form": "guldfisk",
-      "position_start": 1564,
-      "position_end": 1572
-    },
-    {
-      "word_in_sentence": "känd för att ha",
-      "base_form": "känd för att ha",
-      "position_start": 648,
-      "position_end": 663
-    },
-    {
-      "word_in_sentence": "snöboll",
-      "base_form": "snöboll",
-      "position_start": 1970,
-      "position_end": 1977
-    },
-    {
-      "word_in_sentence": "låta bli",
-      "base_form": "låta bli",
-      "position_start": 1123,
-      "position_end": 1131
-    },
-    {
-      "word_in_sentence": "oskyldiga",
-      "base_form": "oskyldig",
-      "position_start": 880,
-      "position_end": 889
-    },
-    {
-      "word_in_sentence": "–Hej! Det var länge sedan!",
-      "base_form": "–Hej! Det var länge sedan!",
-      "position_start": 1,
-      "position_end": 27
-    },
-    {
-      "word_in_sentence": "ingen åsikt",
-      "base_form": "ingen åsikt",
-      "position_start": 227,
-      "position_end": 238
-    },
-    {
-      "word_in_sentence": "bestämd",
-      "base_form": "bestämd",
-      "position_start": 265,
-      "position_end": 272
-    },
-    {
-      "word_in_sentence": "anfalla",
-      "base_form": "anfalla",
-      "position_start": 856,
-      "position_end": 863
-    },
-    {
-      "word_in_sentence": "vara",
-      "base_form": "vara",
-      "position_start": 471,
-      "position_end": 475
-    },
-    {
-      "word_in_sentence": "bland",
-      "base_form": "bland",
-      "position_start": 770,
-      "position_end": 775
-    },
-    {
-      "word_in_sentence": "svida",
-      "base_form": "svida",
-      "position_start": 1190,
-      "position_end": 1195
-    },
-    {
-      "word_in_sentence": "acceptera",
-      "base_form": "acceptera",
-      "position_start": 1706,
-      "position_end": 1715
-    },
-    {
-      "word_in_sentence": "århundrade",
-      "base_form": "århundrade",
-      "position_start": 607,
-      "position_end": 617
-    },
-    {
-      "word_in_sentence": "överdriva",
-      "base_form": "överdriva",
-      "position_start": 1731,
-      "position_end": 1740
-    },
-    {
-      "word_in_sentence": "röd- och vitrandig",
-      "base_form": "röd- och vitrandig",
-      "position_start": 709,
-      "position_end": 727
-    },
-    {
-      "word_in_sentence": "Va?",
-      "base_form": "Va?",
-      "position_start": 75,
-      "position_end": 78
-    },
-    {
-      "word_in_sentence": "unga",
-      "base_form": "ung",
-      "position_start": 1516,
-      "position_end": 1520
-    },
-    {
-      "word_in_sentence": "namn",
-      "base_form": "namn",
-      "position_start": 1837,
-      "position_end": 1841
-    },
-    {
-      "word_in_sentence": "få tillbaka",
-      "base_form": "få tillbaka",
-      "position_start": 1922,
-      "position_end": 1933
-    },
-    {
-      "word_in_sentence": "döpa",
-      "base_form": "döpa",
-      "position_start": 1887,
-      "position_end": 1891
-    },
-    {
-      "word_in_sentence": "lösvikt",
-      "base_form": "lösvikt",
-      "position_start": 922,
-      "position_end": 929
-    },
-    {
-      "word_in_sentence": "klick",
-      "base_form": "klick",
-      "position_start": 942,
-      "position_end": 947
-    },
-    {
-      "word_in_sentence": "motivera",
-      "base_form": "motivera",
-      "position_start": 1688,
-      "position_end": 1696
+      "sentence_id": "art19_s001",
+      "sv": "\"–Hej! Det var länge sedan!\" sa jag när jag mötte min gamla vän i skogen.\n\"Va?\" sa hon. Sedan kände hon igen mig.\n\"Jag måste berätta en sak/en grej…\" började hon. \"Har du hört vad XX gjort?\" frågade hon och log. \n\"Nej, jag har ingen åsikt om kändisar,\" svarade jag bestämt. \n\"Har du/ni hört att?\" skämtade hon, \"han ska ha planer på att abdikera från sitt jobb som personlig tränare!\" Hennes berättelse kändes som en rolig abdikation från allvaret, men det var skönt att vara ute i naturen.\n\n\"Har du hört talas om …?\" frågade hon och pekade på en gammal stenhäll. \"Där finns en hällristning från ett tidigt århundrade. Det fanns en katolik som var känd för att ha rest hit dragen av sex hästar.\"\n\nHon hade en röd- och vitrandig jacka och en mintgrön mössa. Vi satte oss bland träden. \"Det finns en missuppfattning om skogen. Vissa tror att djur kommer att anfalla, men de är ofta oskyldiga,\" sa hon. Vi köpte lite godis i lösvikt och lade en klick sylt på en bit bröd. Hon frågade om min vegan-korv gjord på havre. \n\"Har du ätit det någon gång?\" frågade jag. \n\"Nej, det har jag aldrig gjort!\" skrattade hon. Hon kunde inte låta bli att smaka. Smaken var jättestark och fick hennes ögon att svida.\n\nSedan pratade vi om vår natur. \"På 70-talet under en högkonjunktur började den gröna vågen slå igenom. Folk ville ha ett naturligt kretslopp för allt från regn till avlopp,\" sa hon. Idag är en modern miljörörelse viktig i varje miljö- och klimatdebatt. Det engelska ordet climate syns i varje taggmoln online. \n\nMånga unga vill engagera sig i miljön. Även min lilla guldfisk verkar vilja ha rent vatten! \"Det är svårt att hinna med att bygga ett starkt skydd mot föroreningar, men vi måste motivera fler att acceptera fakta och inte överdriva rädslan,\" sa hon. Ibland känns det som om vi pratar på grönländska, ingen förstår varandra. Ett namn på problemet är okunskap. Det kändes bra att döpa problemen och förhoppningsvis få tillbaka hoppet. Innan vi gick kastade vi en snöboll mot ett litet apelsinträd i ett växthus. Vi riskerar att få problem om vi inte agerar, men vi kämpar på!",
+      "en": "",
+      "target_words": [
+        {
+          "word_in_sentence": "hällristning",
+          "base_form": "hällristning",
+          "position_start": 578,
+          "position_end": 590
+        },
+        {
+          "word_in_sentence": "kretslopp",
+          "base_form": "kretslopp",
+          "position_start": 1329,
+          "position_end": 1338
+        },
+        {
+          "word_in_sentence": "taggmoln",
+          "base_form": "taggmoln",
+          "position_start": 1491,
+          "position_end": 1499
+        },
+        {
+          "word_in_sentence": "Har du ätit det någon gång?",
+          "base_form": "Har du ätit det någon gång?",
+          "position_start": 1017,
+          "position_end": 1044
+        },
+        {
+          "word_in_sentence": "Nej, det har jag aldrig gjort!",
+          "base_form": "Nej, det har jag aldrig gjort!",
+          "position_start": 1061,
+          "position_end": 1091
+        },
+        {
+          "word_in_sentence": "korv",
+          "base_form": "korv",
+          "position_start": 994,
+          "position_end": 998
+        },
+        {
+          "word_in_sentence": "havre",
+          "base_form": "havre",
+          "position_start": 1008,
+          "position_end": 1013
+        },
+        {
+          "word_in_sentence": "mintgrön",
+          "base_form": "mintgrön",
+          "position_start": 741,
+          "position_end": 749
+        },
+        {
+          "word_in_sentence": "högkonjunktur",
+          "base_form": "högkonjunktur",
+          "position_start": 1251,
+          "position_end": 1264
+        },
+        {
+          "word_in_sentence": "avlopp",
+          "base_form": "avlopp",
+          "position_start": 1363,
+          "position_end": 1369
+        },
+        {
+          "word_in_sentence": "jättestark",
+          "base_form": "jättestark",
+          "position_start": 1154,
+          "position_end": 1164
+        },
+        {
+          "word_in_sentence": "få problem",
+          "base_form": "få problem",
+          "position_start": 2035,
+          "position_end": 2045
+        },
+        {
+          "word_in_sentence": "miljörörelse",
+          "base_form": "miljörörelse",
+          "position_start": 1398,
+          "position_end": 1410
+        },
+        {
+          "word_in_sentence": "gröna vågen",
+          "base_form": "gröna vågen",
+          "position_start": 1277,
+          "position_end": 1288
+        },
+        {
+          "word_in_sentence": "slå igenom",
+          "base_form": "slå igenom",
+          "position_start": 1289,
+          "position_end": 1299
+        },
+        {
+          "word_in_sentence": "miljö- och klimatdebatt",
+          "base_form": "miljö- och klimatdebatt",
+          "position_start": 1426,
+          "position_end": 1449
+        },
+        {
+          "word_in_sentence": "climate",
+          "base_form": "climate",
+          "position_start": 1470,
+          "position_end": 1477
+        },
+        {
+          "word_in_sentence": "hinna med",
+          "base_form": "hinna med",
+          "position_start": 1620,
+          "position_end": 1629
+        },
+        {
+          "word_in_sentence": "skydd mot",
+          "base_form": "skydd mot",
+          "position_start": 1651,
+          "position_end": 1660
+        },
+        {
+          "word_in_sentence": "ute i naturen",
+          "base_form": "ute i naturen",
+          "position_start": 476,
+          "position_end": 489
+        },
+        {
+          "word_in_sentence": "dragen av sex hästar",
+          "base_form": "dragen av sex hästar",
+          "position_start": 673,
+          "position_end": 693
+        },
+        {
+          "word_in_sentence": "katolik",
+          "base_form": "katolik",
+          "position_start": 632,
+          "position_end": 639
+        },
+        {
+          "word_in_sentence": "abdikation",
+          "base_form": "abdikation",
+          "position_start": 423,
+          "position_end": 433
+        },
+        {
+          "word_in_sentence": "apelsinträd",
+          "base_form": "apelsinträd",
+          "position_start": 1992,
+          "position_end": 2003
+        },
+        {
+          "word_in_sentence": "abdikera",
+          "base_form": "abdikera",
+          "position_start": 337,
+          "position_end": 345
+        },
+        {
+          "word_in_sentence": "stenhäll",
+          "base_form": "stenhäll",
+          "position_start": 554,
+          "position_end": 562
+        },
+        {
+          "word_in_sentence": "kände hon igen",
+          "base_form": "känna igen",
+          "position_start": 94,
+          "position_end": 108
+        },
+        {
+          "word_in_sentence": "ha planer",
+          "base_form": "ha planer",
+          "position_start": 320,
+          "position_end": 329
+        },
+        {
+          "word_in_sentence": "grönländska",
+          "base_form": "grönländska",
+          "position_start": 1796,
+          "position_end": 1807
+        },
+        {
+          "word_in_sentence": "personlig tränare",
+          "base_form": "personlig tränare",
+          "position_start": 365,
+          "position_end": 382
+        },
+        {
+          "word_in_sentence": "engagera sig i",
+          "base_form": "engagera sig i",
+          "position_start": 1526,
+          "position_end": 1540
+        },
+        {
+          "word_in_sentence": "Har du hört vad XX gjort?",
+          "base_form": "Har du hört vad XX gjort?",
+          "position_start": 164,
+          "position_end": 189
+        },
+        {
+          "word_in_sentence": "Jag måste berätta en sak/en grej…",
+          "base_form": "Jag måste berätta en sak/en grej…",
+          "position_start": 115,
+          "position_end": 148
+        },
+        {
+          "word_in_sentence": "Har du hört talas om …?",
+          "base_form": "Har du hört talas om …?",
+          "position_start": 493,
+          "position_end": 516
+        },
+        {
+          "word_in_sentence": "Har du/ni hört att?",
+          "base_form": "Har du/ni hört att?",
+          "position_start": 276,
+          "position_end": 295
+        },
+        {
+          "word_in_sentence": "missuppfattning",
+          "base_form": "missuppfattning",
+          "position_start": 798,
+          "position_end": 813
+        },
+        {
+          "word_in_sentence": "guldfisk",
+          "base_form": "guldfisk",
+          "position_start": 1564,
+          "position_end": 1572
+        },
+        {
+          "word_in_sentence": "känd för att ha",
+          "base_form": "känd för att ha",
+          "position_start": 648,
+          "position_end": 663
+        },
+        {
+          "word_in_sentence": "snöboll",
+          "base_form": "snöboll",
+          "position_start": 1970,
+          "position_end": 1977
+        },
+        {
+          "word_in_sentence": "låta bli",
+          "base_form": "låta bli",
+          "position_start": 1123,
+          "position_end": 1131
+        },
+        {
+          "word_in_sentence": "oskyldiga",
+          "base_form": "oskyldig",
+          "position_start": 880,
+          "position_end": 889
+        },
+        {
+          "word_in_sentence": "–Hej! Det var länge sedan!",
+          "base_form": "–Hej! Det var länge sedan!",
+          "position_start": 1,
+          "position_end": 27
+        },
+        {
+          "word_in_sentence": "ingen åsikt",
+          "base_form": "ingen åsikt",
+          "position_start": 227,
+          "position_end": 238
+        },
+        {
+          "word_in_sentence": "bestämt",
+          "base_form": "bestämd",
+          "position_start": 265,
+          "position_end": 272
+        },
+        {
+          "word_in_sentence": "anfalla",
+          "base_form": "anfalla",
+          "position_start": 856,
+          "position_end": 863
+        },
+        {
+          "word_in_sentence": "vara",
+          "base_form": "vara",
+          "position_start": 254,
+          "position_end": 258
+        },
+        {
+          "word_in_sentence": "bland",
+          "base_form": "bland",
+          "position_start": 770,
+          "position_end": 775
+        },
+        {
+          "word_in_sentence": "svida",
+          "base_form": "svida",
+          "position_start": 1190,
+          "position_end": 1195
+        },
+        {
+          "word_in_sentence": "acceptera",
+          "base_form": "acceptera",
+          "position_start": 1706,
+          "position_end": 1715
+        },
+        {
+          "word_in_sentence": "århundrade",
+          "base_form": "århundrade",
+          "position_start": 607,
+          "position_end": 617
+        },
+        {
+          "word_in_sentence": "överdriva",
+          "base_form": "överdriva",
+          "position_start": 1731,
+          "position_end": 1740
+        },
+        {
+          "word_in_sentence": "röd- och vitrandig",
+          "base_form": "röd- och vitrandig",
+          "position_start": 709,
+          "position_end": 727
+        },
+        {
+          "word_in_sentence": "Va?",
+          "base_form": "Va?",
+          "position_start": 75,
+          "position_end": 78
+        },
+        {
+          "word_in_sentence": "unga",
+          "base_form": "ung",
+          "position_start": 1516,
+          "position_end": 1520
+        },
+        {
+          "word_in_sentence": "namn",
+          "base_form": "namn",
+          "position_start": 1837,
+          "position_end": 1841
+        },
+        {
+          "word_in_sentence": "få tillbaka",
+          "base_form": "få tillbaka",
+          "position_start": 1922,
+          "position_end": 1933
+        },
+        {
+          "word_in_sentence": "döpa",
+          "base_form": "döpa",
+          "position_start": 1887,
+          "position_end": 1891
+        },
+        {
+          "word_in_sentence": "lösvikt",
+          "base_form": "lösvikt",
+          "position_start": 922,
+          "position_end": 929
+        },
+        {
+          "word_in_sentence": "klick",
+          "base_form": "klick",
+          "position_start": 942,
+          "position_end": 947
+        },
+        {
+          "word_in_sentence": "motivera",
+          "base_form": "motivera",
+          "position_start": 1688,
+          "position_end": 1696
+        }
+      ]
     }
   ],
   "primary_words_used": [
@@ -428,5 +432,6 @@
     "lösvikt",
     "klick",
     "motivera"
-  ]
+  ],
+  "secondary_words_used": []
 }

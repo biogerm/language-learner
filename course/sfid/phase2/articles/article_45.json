@@ -1,370 +1,374 @@
 {
-  "course_id": "sfid",
-  "course_title": "SFI D",
-  "step_id": "samhälle_politik",
-  "step_title": "Samhälle & Politik",
   "article_id": "art_45",
-  "sv": "Min vän och jag hade lagat middag tillsammans. Medan vi höll på med vår matlagning i ett chockrosa kök, började vi diskutera hur vårt samhälle har förändrats. Vi var givetvis lite trötta, men också glada över ett trevligt mottagande från gästerna tidigare.\n\n\"Vad tänker du på?\" frågade min vän, som alltid är väldigt open-minded i sina åsikter.\n\"Jag tänker på hur det var historiskt sett,\" sa jag. \"Under frihetstiden och tidigare fick varje kvinna och oskyldig människa lida när landets armé tvingades ut för att kriga och försvara ett stort rike.\"\n\n\"Det är sant. En medveten majoritet av folket, eller snarare en stor del av vår folkmängd, drabbades ofta när gamla kungar skulle dra streck på kartan och bestämma över landets tronföljd. Men det var ännu värre för en utländsk minoritet,\" sa hon. \"Är vi lyckligare idag?\"\n\n\"Det beror på.\" sa jag. \"Många tycker att det blivit mycket bättre. Efter en lång historisk process och en snabb industrialisering såg vi en industriell tillväxt växa fram. Vi fick en europeisk utveckling som gav fler och fler människor stabilitet.\"\n\nVi pratade också om lag och rätt. Idag har vi ett modernt institut för juridik och en rättvis domare som kan döma om någon skulle begå ett brott. Förr i tiden var man ofta helt omedveten om sina rättigheter, och ett straff delades snabbt ut, medan en belöning bara gick till makteliten. \"Jaha, då ska vi se …\" sa min vän ironiskt. \"Dagens makthavare försöker åtminstone publicera sina beslut.\" \n\n\"På tal om skyldigheter, har du skickat in din deklaration?\" frågade jag.\n\"Nej, jag måste deklarera imorgon,\" svarade hon. \"Men jag måste varna för att prata mer om staten. Jag känner att jag tagit en… för mycket av vinet.\" \n\nVi bytte ämne. \"Vad fick ni?\" frågade jag plötsligt, och syftade på en tävling. Hon hade fått nio poäng. Vi pratade även om en tidigare resa. \"En snäll schweizare erbjöd oss lift när vi reste söderut nära den norska gränsen,\" berättade hon. \"Senare bodde vi i en stuga på landet.\"\n\nVi diskuterade sedan vad som händer efter livet. \"Tror du på reinkarnation?\" frågade hon. \"Att man föds igen efteråt?\"\n\"Jag blev lite skrämd av den tanken,\" sa jag, \"men till slut insåg jag att det är fascinerande. Mer än en hälft av jordens befolkning tror på något sådant, medan resten av dem föredrar att hävda något annat. Det finns dock inga bevis just nu.\"\n\nNär två bråkiga katter plötsligt började slåss i hallen, fick jag gå emellan och dela ut lite mat för att lugna dem. Min vän ville genast följa med ut och hjälpa till.",
-  "target_words": [
+  "article_title": "Läsförståelse",
+  "target_word_count": 60,
+  "sentences": [
     {
-      "word_in_sentence": "samhälle",
-      "base_form": "samhälle",
-      "position_start": 134,
-      "position_end": 142
-    },
-    {
-      "word_in_sentence": "tronföljd",
-      "base_form": "tronföljd",
-      "position_start": 728,
-      "position_end": 737
-    },
-    {
-      "word_in_sentence": "matlagning",
-      "base_form": "matlagning",
-      "position_start": 72,
-      "position_end": 82
-    },
-    {
-      "word_in_sentence": "chockrosa",
-      "base_form": "chockrosa",
-      "position_start": 89,
-      "position_end": 98
-    },
-    {
-      "word_in_sentence": "söderut",
-      "base_form": "söderut",
-      "position_start": 1889,
-      "position_end": 1896
-    },
-    {
-      "word_in_sentence": "kriga",
-      "base_form": "kriga",
-      "position_start": 514,
-      "position_end": 519
-    },
-    {
-      "word_in_sentence": "historiskt sett",
-      "base_form": "historiskt sett",
-      "position_start": 372,
-      "position_end": 387
-    },
-    {
-      "word_in_sentence": "frihetstiden",
-      "base_form": "frihetstiden",
-      "position_start": 405,
-      "position_end": 417
-    },
-    {
-      "word_in_sentence": "juridik",
-      "base_form": "juridik",
-      "position_start": 1146,
-      "position_end": 1153
-    },
-    {
-      "word_in_sentence": "rike",
-      "base_form": "rike",
-      "position_start": 543,
-      "position_end": 547
-    },
-    {
-      "word_in_sentence": "Vad tänker du på?",
-      "base_form": "Vad tänker du på?",
-      "position_start": 259,
-      "position_end": 276
-    },
-    {
-      "word_in_sentence": "reinkarnation",
-      "base_form": "reinkarnation",
-      "position_start": 2040,
-      "position_end": 2053
-    },
-    {
-      "word_in_sentence": "varna för",
-      "base_form": "varna för",
-      "position_start": 1609,
-      "position_end": 1618
-    },
-    {
-      "word_in_sentence": "lift",
-      "base_form": "lift",
-      "position_start": 1871,
-      "position_end": 1875
-    },
-    {
-      "word_in_sentence": "minoritet",
-      "base_form": "minoritet",
-      "position_start": 778,
-      "position_end": 787
-    },
-    {
-      "word_in_sentence": "Jaha, då ska vi se …",
-      "base_form": "Jaha, då ska vi se …",
-      "position_start": 1363,
-      "position_end": 1383
-    },
-    {
-      "word_in_sentence": "deklaration",
-      "base_form": "deklaration",
-      "position_start": 1518,
-      "position_end": 1529
-    },
-    {
-      "word_in_sentence": "deklarera",
-      "base_form": "deklarera",
-      "position_start": 1561,
-      "position_end": 1570
-    },
-    {
-      "word_in_sentence": "omedveten",
-      "base_form": "omedveten",
-      "position_start": 1252,
-      "position_end": 1261
-    },
-    {
-      "word_in_sentence": "belöning",
-      "base_form": "belöning",
-      "position_start": 1326,
-      "position_end": 1334
-    },
-    {
-      "word_in_sentence": "straff",
-      "base_form": "straff",
-      "position_start": 1291,
-      "position_end": 1297
-    },
-    {
-      "word_in_sentence": "efteråt",
-      "base_form": "efteråt",
-      "position_start": 2088,
-      "position_end": 2095
-    },
-    {
-      "word_in_sentence": "skrämd",
-      "base_form": "skrämd",
-      "position_start": 2113,
-      "position_end": 2119
-    },
-    {
-      "word_in_sentence": "folkmängd",
-      "base_form": "folkmängd",
-      "position_start": 631,
-      "position_end": 640
-    },
-    {
-      "word_in_sentence": "publicera",
-      "base_form": "publicera",
-      "position_start": 1445,
-      "position_end": 1454
-    },
-    {
-      "word_in_sentence": "medveten",
-      "base_form": "medveten",
-      "position_start": 568,
-      "position_end": 576
-    },
-    {
-      "word_in_sentence": "begå",
-      "base_form": "begå",
-      "position_start": 1205,
-      "position_end": 1209
-    },
-    {
-      "word_in_sentence": "armé",
-      "base_form": "armé",
-      "position_start": 488,
-      "position_end": 492
-    },
-    {
-      "word_in_sentence": "domare",
-      "base_form": "domare",
-      "position_start": 1169,
-      "position_end": 1175
-    },
-    {
-      "word_in_sentence": "kvinna",
-      "base_form": "kvinna",
-      "position_start": 442,
-      "position_end": 448
-    },
-    {
-      "word_in_sentence": "industriell",
-      "base_form": "industriell",
-      "position_start": 965,
-      "position_end": 976
-    },
-    {
-      "word_in_sentence": "historisk",
-      "base_form": "historisk",
-      "position_start": 906,
-      "position_end": 915
-    },
-    {
-      "word_in_sentence": "schweizare",
-      "base_form": "schweizare",
-      "position_start": 1849,
-      "position_end": 1859
-    },
-    {
-      "word_in_sentence": "växa fram",
-      "base_form": "växa fram",
-      "position_start": 986,
-      "position_end": 995
-    },
-    {
-      "word_in_sentence": "gå emellan",
-      "base_form": "gå emellan",
-      "position_start": 2409,
-      "position_end": 2419
-    },
-    {
-      "word_in_sentence": "industrialisering",
-      "base_form": "industrialisering",
-      "position_start": 937,
-      "position_end": 954
-    },
-    {
-      "word_in_sentence": "europeisk",
-      "base_form": "europeisk",
-      "position_start": 1008,
-      "position_end": 1017
-    },
-    {
-      "word_in_sentence": "människa",
-      "base_form": "människa",
-      "position_start": 462,
-      "position_end": 470
-    },
-    {
-      "word_in_sentence": "majoritet",
-      "base_form": "majoritet",
-      "position_start": 577,
-      "position_end": 586
-    },
-    {
-      "word_in_sentence": "institut",
-      "base_form": "institut",
-      "position_start": 1133,
-      "position_end": 1141
-    },
-    {
-      "word_in_sentence": "dock",
-      "base_form": "dock",
-      "position_start": 2316,
-      "position_end": 2320
-    },
-    {
-      "word_in_sentence": "Det beror på.",
-      "base_form": "Det beror på.",
-      "position_start": 825,
-      "position_end": 838
-    },
-    {
-      "word_in_sentence": "nio",
-      "base_form": "nio",
-      "position_start": 1791,
-      "position_end": 1794
-    },
-    {
-      "word_in_sentence": "givetvis",
-      "base_form": "givetvis",
-      "position_start": 166,
-      "position_end": 174
-    },
-    {
-      "word_in_sentence": "till slut",
-      "base_form": "till slut",
-      "position_start": 2149,
-      "position_end": 2158
-    },
-    {
-      "word_in_sentence": "mottagande",
-      "base_form": "mottagande",
-      "position_start": 222,
-      "position_end": 232
-    },
-    {
-      "word_in_sentence": "Vad fick ni?",
-      "base_form": "Vad fick ni?",
-      "position_start": 1713,
-      "position_end": 1725
-    },
-    {
-      "word_in_sentence": "fler och fler",
-      "base_form": "fler och fler",
-      "position_start": 1037,
-      "position_end": 1050
-    },
-    {
-      "word_in_sentence": "bättre",
-      "base_form": "bättre",
-      "position_start": 884,
-      "position_end": 890
-    },
-    {
-      "word_in_sentence": "följa med",
-      "base_form": "följa med",
-      "position_start": 2481,
-      "position_end": 2490
-    },
-    {
-      "word_in_sentence": "på landet",
-      "base_form": "på landet",
-      "position_start": 1966,
-      "position_end": 1975
-    },
-    {
-      "word_in_sentence": "hävda",
-      "base_form": "hävda",
-      "position_start": 2287,
-      "position_end": 2292
-    },
-    {
-      "word_in_sentence": "norska gränsen",
-      "base_form": "norska gränsen",
-      "position_start": 1906,
-      "position_end": 1920
-    },
-    {
-      "word_in_sentence": "just nu",
-      "base_form": "just nu",
-      "position_start": 2332,
-      "position_end": 2339
-    },
-    {
-      "word_in_sentence": "hälft",
-      "base_form": "hälft",
-      "position_start": 2204,
-      "position_end": 2209
-    },
-    {
-      "word_in_sentence": "dela ut",
-      "base_form": "dela ut",
-      "position_start": 2424,
-      "position_end": 2431
-    },
-    {
-      "word_in_sentence": "resten av",
-      "base_form": "resten av",
-      "position_start": 2260,
-      "position_end": 2269
-    },
-    {
-      "word_in_sentence": "minded",
-      "base_form": "minded",
-      "position_start": 322,
-      "position_end": 328
-    },
-    {
-      "word_in_sentence": "dra streck",
-      "base_form": "dra streck",
-      "position_start": 681,
-      "position_end": 691
-    },
-    {
-      "word_in_sentence": "en… för mycket",
-      "base_form": "en… för mycket",
-      "position_start": 1669,
-      "position_end": 1683
+      "sentence_id": "art45_s001",
+      "sv": "Min vän och jag hade lagat middag tillsammans. Medan vi höll på med vår matlagning i ett chockrosa kök, började vi diskutera hur vårt samhälle har förändrats. Vi var givetvis lite trötta, men också glada över ett trevligt mottagande från gästerna tidigare.\n\n\"Vad tänker du på?\" frågade min vän, som alltid är väldigt öppensinnad i sina åsikter.\n\"Jag tänker på hur det var historiskt sett,\" sa jag. \"Under frihetstiden och tidigare fick varje kvinna och oskyldig människa lida när landets armé tvingades ut för att kriga och försvara ett stort rike.\"\n\n\"Det är sant. En medveten majoritet av folket, eller snarare en stor del av vår folkmängd, drabbades ofta när gamla kungar skulle dra streck på kartan och bestämma över landets tronföljd. Men det var ännu värre för en utländsk minoritet,\" sa hon. \"Är vi lyckligare idag?\"\n\n\"Det beror på.\" sa jag. \"Många tycker att det blivit mycket bättre. Efter en lång historisk process och en snabb industrialisering såg vi en industriell tillväxt växa fram. Vi fick en europeisk utveckling som gav fler och fler människor stabilitet.\"\n\nVi pratade också om lag och rätt. Idag har vi ett modernt institut för juridik och en rättvis domare som kan döma om någon skulle begå ett brott. Förr i tiden var man ofta helt omedveten om sina rättigheter, och ett straff delades snabbt ut, medan en belöning bara gick till makteliten. \"Jaha, då ska vi se …\" sa min vän ironiskt. \"Dagens makthavare försöker åtminstone publicera sina beslut.\" \n\n\"På tal om skyldigheter, har du skickat in din deklaration?\" frågade jag.\n\"Nej, jag måste deklarera imorgon,\" svarade hon. \"Men jag måste varna för att prata mer om staten. Jag känner att jag tagit en… för mycket av vinet.\" \n\nVi bytte ämne. \"Vad fick ni?\" frågade jag plötsligt, och syftade på en tävling. Hon hade fått nio poäng. Vi pratade även om en tidigare resa. \"En snäll schweizare erbjöd oss lift när vi reste söderut nära den norska gränsen,\" berättade hon. \"Senare bodde vi i en stuga på landet.\"\n\nVi diskuterade sedan vad som händer efter livet. \"Tror du på reinkarnation?\" frågade hon. \"Att man föds igen efteråt?\"\n\"Jag blev lite skrämd av den tanken,\" sa jag, \"men till slut insåg jag att det är fascinerande. Mer än hälften av jordens befolkning tror på något sådant, medan resten av dem föredrar att hävda något annat. Det finns dock inga bevis just nu.\"\n\nNär två bråkiga katter plötsligt började slåss i hallen, fick jag gå emellan och dela ut lite mat för att lugna dem. Min vän ville genast följa med ut och hjälpa till.",
+      "en": "",
+      "target_words": [
+        {
+          "word_in_sentence": "samhälle",
+          "base_form": "samhälle",
+          "position_start": 134,
+          "position_end": 142
+        },
+        {
+          "word_in_sentence": "tronföljd",
+          "base_form": "tronföljd",
+          "position_start": 728,
+          "position_end": 737
+        },
+        {
+          "word_in_sentence": "matlagning",
+          "base_form": "matlagning",
+          "position_start": 72,
+          "position_end": 82
+        },
+        {
+          "word_in_sentence": "chockrosa",
+          "base_form": "chockrosa",
+          "position_start": 89,
+          "position_end": 98
+        },
+        {
+          "word_in_sentence": "söderut",
+          "base_form": "söderut",
+          "position_start": 1889,
+          "position_end": 1896
+        },
+        {
+          "word_in_sentence": "kriga",
+          "base_form": "kriga",
+          "position_start": 514,
+          "position_end": 519
+        },
+        {
+          "word_in_sentence": "historiskt sett",
+          "base_form": "historiskt sett",
+          "position_start": 372,
+          "position_end": 387
+        },
+        {
+          "word_in_sentence": "frihetstiden",
+          "base_form": "frihetstiden",
+          "position_start": 405,
+          "position_end": 417
+        },
+        {
+          "word_in_sentence": "juridik",
+          "base_form": "juridik",
+          "position_start": 1146,
+          "position_end": 1153
+        },
+        {
+          "word_in_sentence": "rike",
+          "base_form": "rike",
+          "position_start": 543,
+          "position_end": 547
+        },
+        {
+          "word_in_sentence": "Vad tänker du på?",
+          "base_form": "Vad tänker du på?",
+          "position_start": 259,
+          "position_end": 276
+        },
+        {
+          "word_in_sentence": "reinkarnation",
+          "base_form": "reinkarnation",
+          "position_start": 2040,
+          "position_end": 2053
+        },
+        {
+          "word_in_sentence": "varna för",
+          "base_form": "varna för",
+          "position_start": 1609,
+          "position_end": 1618
+        },
+        {
+          "word_in_sentence": "lift",
+          "base_form": "lift",
+          "position_start": 1871,
+          "position_end": 1875
+        },
+        {
+          "word_in_sentence": "minoritet",
+          "base_form": "minoritet",
+          "position_start": 778,
+          "position_end": 787
+        },
+        {
+          "word_in_sentence": "Jaha, då ska vi se …",
+          "base_form": "Jaha, då ska vi se …",
+          "position_start": 1363,
+          "position_end": 1383
+        },
+        {
+          "word_in_sentence": "deklaration",
+          "base_form": "deklaration",
+          "position_start": 1518,
+          "position_end": 1529
+        },
+        {
+          "word_in_sentence": "deklarera",
+          "base_form": "deklarera",
+          "position_start": 1561,
+          "position_end": 1570
+        },
+        {
+          "word_in_sentence": "omedveten",
+          "base_form": "omedveten",
+          "position_start": 1252,
+          "position_end": 1261
+        },
+        {
+          "word_in_sentence": "belöning",
+          "base_form": "belöning",
+          "position_start": 1326,
+          "position_end": 1334
+        },
+        {
+          "word_in_sentence": "straff",
+          "base_form": "straff",
+          "position_start": 1291,
+          "position_end": 1297
+        },
+        {
+          "word_in_sentence": "efteråt",
+          "base_form": "efteråt",
+          "position_start": 2088,
+          "position_end": 2095
+        },
+        {
+          "word_in_sentence": "skrämd",
+          "base_form": "skrämd",
+          "position_start": 2113,
+          "position_end": 2119
+        },
+        {
+          "word_in_sentence": "folkmängd",
+          "base_form": "folkmängd",
+          "position_start": 631,
+          "position_end": 640
+        },
+        {
+          "word_in_sentence": "publicera",
+          "base_form": "publicera",
+          "position_start": 1445,
+          "position_end": 1454
+        },
+        {
+          "word_in_sentence": "medveten",
+          "base_form": "medveten",
+          "position_start": 568,
+          "position_end": 576
+        },
+        {
+          "word_in_sentence": "begå",
+          "base_form": "begå",
+          "position_start": 1205,
+          "position_end": 1209
+        },
+        {
+          "word_in_sentence": "armé",
+          "base_form": "armé",
+          "position_start": 488,
+          "position_end": 492
+        },
+        {
+          "word_in_sentence": "domare",
+          "base_form": "domare",
+          "position_start": 1169,
+          "position_end": 1175
+        },
+        {
+          "word_in_sentence": "kvinna",
+          "base_form": "kvinna",
+          "position_start": 442,
+          "position_end": 448
+        },
+        {
+          "word_in_sentence": "industriell",
+          "base_form": "industriell",
+          "position_start": 965,
+          "position_end": 976
+        },
+        {
+          "word_in_sentence": "historisk",
+          "base_form": "historisk",
+          "position_start": 372,
+          "position_end": 381
+        },
+        {
+          "word_in_sentence": "schweizare",
+          "base_form": "schweizare",
+          "position_start": 1849,
+          "position_end": 1859
+        },
+        {
+          "word_in_sentence": "växa fram",
+          "base_form": "växa fram",
+          "position_start": 986,
+          "position_end": 995
+        },
+        {
+          "word_in_sentence": "gå emellan",
+          "base_form": "gå emellan",
+          "position_start": 2408,
+          "position_end": 2418
+        },
+        {
+          "word_in_sentence": "industrialisering",
+          "base_form": "industrialisering",
+          "position_start": 937,
+          "position_end": 954
+        },
+        {
+          "word_in_sentence": "europeisk",
+          "base_form": "europeisk",
+          "position_start": 1008,
+          "position_end": 1017
+        },
+        {
+          "word_in_sentence": "människa",
+          "base_form": "människa",
+          "position_start": 462,
+          "position_end": 470
+        },
+        {
+          "word_in_sentence": "majoritet",
+          "base_form": "majoritet",
+          "position_start": 577,
+          "position_end": 586
+        },
+        {
+          "word_in_sentence": "institut",
+          "base_form": "institut",
+          "position_start": 1133,
+          "position_end": 1141
+        },
+        {
+          "word_in_sentence": "dock",
+          "base_form": "dock",
+          "position_start": 2315,
+          "position_end": 2319
+        },
+        {
+          "word_in_sentence": "Det beror på.",
+          "base_form": "Det beror på.",
+          "position_start": 825,
+          "position_end": 838
+        },
+        {
+          "word_in_sentence": "nio",
+          "base_form": "nio",
+          "position_start": 1791,
+          "position_end": 1794
+        },
+        {
+          "word_in_sentence": "givetvis",
+          "base_form": "givetvis",
+          "position_start": 166,
+          "position_end": 174
+        },
+        {
+          "word_in_sentence": "till slut",
+          "base_form": "till slut",
+          "position_start": 2149,
+          "position_end": 2158
+        },
+        {
+          "word_in_sentence": "mottagande",
+          "base_form": "mottagande",
+          "position_start": 222,
+          "position_end": 232
+        },
+        {
+          "word_in_sentence": "Vad fick ni?",
+          "base_form": "Vad fick ni?",
+          "position_start": 1713,
+          "position_end": 1725
+        },
+        {
+          "word_in_sentence": "fler och fler",
+          "base_form": "fler och fler",
+          "position_start": 1037,
+          "position_end": 1050
+        },
+        {
+          "word_in_sentence": "bättre",
+          "base_form": "bättre",
+          "position_start": 884,
+          "position_end": 890
+        },
+        {
+          "word_in_sentence": "följa med",
+          "base_form": "följa med",
+          "position_start": 2480,
+          "position_end": 2489
+        },
+        {
+          "word_in_sentence": "på landet",
+          "base_form": "på landet",
+          "position_start": 1966,
+          "position_end": 1975
+        },
+        {
+          "word_in_sentence": "hävda",
+          "base_form": "hävda",
+          "position_start": 2286,
+          "position_end": 2291
+        },
+        {
+          "word_in_sentence": "norska gränsen",
+          "base_form": "norska gränsen",
+          "position_start": 1906,
+          "position_end": 1920
+        },
+        {
+          "word_in_sentence": "just nu",
+          "base_form": "just nu",
+          "position_start": 2331,
+          "position_end": 2338
+        },
+        {
+          "word_in_sentence": "hälft",
+          "base_form": "hälft",
+          "position_start": 2201,
+          "position_end": 2206
+        },
+        {
+          "word_in_sentence": "dela ut",
+          "base_form": "dela ut",
+          "position_start": 2423,
+          "position_end": 2430
+        },
+        {
+          "word_in_sentence": "resten av",
+          "base_form": "resten av",
+          "position_start": 2259,
+          "position_end": 2268
+        },
+        {
+          "word_in_sentence": "minded",
+          "base_form": "minded",
+          "position_start": 322,
+          "position_end": 328
+        },
+        {
+          "word_in_sentence": "dra streck",
+          "base_form": "dra streck",
+          "position_start": 681,
+          "position_end": 691
+        },
+        {
+          "word_in_sentence": "en… för mycket",
+          "base_form": "en… för mycket",
+          "position_start": 1669,
+          "position_end": 1683
+        }
+      ]
     }
   ],
   "primary_words_used": [
@@ -428,5 +432,6 @@
     "minded",
     "dra streck",
     "en… för mycket"
-  ]
+  ],
+  "secondary_words_used": []
 }

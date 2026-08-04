@@ -1,370 +1,374 @@
 {
-  "course_id": "sfid",
-  "course_title": "SFI D",
-  "step_id": "kultur_nöje",
-  "step_title": "Kultur & Nöje",
   "article_id": "art_35",
-  "sv": "När man reser norrut i landet, kan man besöka en känd kulturattraktion som har överlevt mer än ett årtionde. Kultur är viktigt för många, och när det gäller nöje är denna plats mer eller mindre fantastisk. \n\nDet gamla huset var en gång i tiden knutet till ett lokalt jordbruk, men nu vill man bidra till att vi får uppleva mycket roligt. Vissa personer är absolut en nolla på att sjunga och dansa, men här kan man ändå vara med i en stor kör. Ibland spelas vacker musik och folk bjuds in till en traditionell dans eller till och med en spännande maskeradbal. En känd kulturpersonlighet brukar ofta söka kontakt med unga artister här.\n\nAndra gillar konst. I en stor sal finns en imponerande konstsamling. Du kan få en utställningskatalog för att lära dig mer om varje utställning. En berömd dansk konstnär har sin bästa målning här. Att måla en vacker tavla eller att bara rita med blyerts är en tyst och skön upplevelse. Ibland kan man också titta på ett fint foto eller ett gammalt historiskt dokument. \"Man kan verkligen undra vem som gjorde denna?\", brukar besökare säga.\n\nMen det finns en annan del också. Kanske vill du vara med? Vissa går till en schackklubb för att spela schack tillsammans. Det spelas även brädspel och folk brukar spela kort på fredagskvällarna. Andra gillar att spela dataspel hela natten. En del vill hellre spela teater och drömmer om att bli en bra skådelspelare en dag. Även om det finns en syn på konst som något strikt, är det viktigt att veta att alla intressen får ta plats. Kulturen ska inte dö ut. \n\nKanske gillar du sport? På husets egen sportbar kan man se en viktig match på tv. En person äter en god proteinkaka medan den andra har druckit mycket och nästan brutit sin pinne mitt itu. Man behöver inte ha någon bra bollkänsla för att heja, och man behöver inte ens en boll för att ha kul. Ibland visas även kampsport, och det verkar inte spela roll vad du gillar. Det finns en kulturell mix för alla, och allt detta är en liten utgift för mycket glädje. Det är alltså en klubb och plats där poesi möter vild fest. \n\nJag gick därifrån med ett leende, full av inspiration och en konditional kärlek till kultur.",
-  "target_words": [
+  "article_title": "Läsförståelse",
+  "target_word_count": 60,
+  "sentences": [
     {
-      "word_in_sentence": "sportbar",
-      "base_form": "sportbar",
-      "position_start": 1576,
-      "position_end": 1584
-    },
-    {
-      "word_in_sentence": "vara med i",
-      "base_form": "vara med i",
-      "position_start": 419,
-      "position_end": 429
-    },
-    {
-      "word_in_sentence": "Kultur",
-      "base_form": "kultur",
-      "position_start": 109,
-      "position_end": 115
-    },
-    {
-      "word_in_sentence": "kulturattraktion",
-      "base_form": "kulturattraktion",
-      "position_start": 54,
-      "position_end": 70
-    },
-    {
-      "word_in_sentence": "proteinkaka",
-      "base_form": "proteinkaka",
-      "position_start": 1641,
-      "position_end": 1652
-    },
-    {
-      "word_in_sentence": "sjunga",
-      "base_form": "sjunga",
-      "position_start": 380,
-      "position_end": 386
-    },
-    {
-      "word_in_sentence": "musik",
-      "base_form": "musik",
-      "position_start": 464,
-      "position_end": 469
-    },
-    {
-      "word_in_sentence": "match",
-      "base_form": "match",
-      "position_start": 1606,
-      "position_end": 1611
-    },
-    {
-      "word_in_sentence": "dans",
-      "base_form": "dans",
-      "position_start": 509,
-      "position_end": 513
-    },
-    {
-      "word_in_sentence": "kampsport",
-      "base_form": "kampsport",
-      "position_start": 1848,
-      "position_end": 1857
-    },
-    {
-      "word_in_sentence": "bollkänsla",
-      "base_form": "bollkänsla",
-      "position_start": 1756,
-      "position_end": 1766
-    },
-    {
-      "word_in_sentence": "boll",
-      "base_form": "boll",
-      "position_start": 1809,
-      "position_end": 1813
-    },
-    {
-      "word_in_sentence": "vara med",
-      "base_form": "vara med",
-      "position_start": 1125,
-      "position_end": 1133
-    },
-    {
-      "word_in_sentence": "spela teater",
-      "base_form": "spela teater",
-      "position_start": 1336,
-      "position_end": 1348
-    },
-    {
-      "word_in_sentence": "kör",
-      "base_form": "kör",
-      "position_start": 438,
-      "position_end": 441
-    },
-    {
-      "word_in_sentence": "poesi",
-      "base_form": "poesi",
-      "position_start": 2032,
-      "position_end": 2037
-    },
-    {
-      "word_in_sentence": "kulturell",
-      "base_form": "kulturell",
-      "position_start": 1918,
-      "position_end": 1927
-    },
-    {
-      "word_in_sentence": "En del",
-      "base_form": "en del",
-      "position_start": 1317,
-      "position_end": 1323
-    },
-    {
-      "word_in_sentence": "jordbruk",
-      "base_form": "jordbruk",
-      "position_start": 267,
-      "position_end": 275
-    },
-    {
-      "word_in_sentence": "utställning",
-      "base_form": "utställning",
-      "position_start": 767,
-      "position_end": 778
-    },
-    {
-      "word_in_sentence": "utställningskatalog",
-      "base_form": "utställningskatalog",
-      "position_start": 717,
-      "position_end": 736
-    },
-    {
-      "word_in_sentence": "klubb",
-      "base_form": "klubb",
-      "position_start": 2012,
-      "position_end": 2017
-    },
-    {
-      "word_in_sentence": "spela schack",
-      "base_form": "spela schack",
-      "position_start": 1173,
-      "position_end": 1185
-    },
-    {
-      "word_in_sentence": "schackklubb",
-      "base_form": "schackklubb",
-      "position_start": 1153,
-      "position_end": 1164
-    },
-    {
-      "word_in_sentence": "spela dataspel",
-      "base_form": "spela dataspel",
-      "position_start": 1289,
-      "position_end": 1303
-    },
-    {
-      "word_in_sentence": "spela roll",
-      "base_form": "spela roll",
-      "position_start": 1879,
-      "position_end": 1889
-    },
-    {
-      "word_in_sentence": "kulturpersonlighet",
-      "base_form": "kulturpersonlighet",
-      "position_start": 567,
-      "position_end": 585
-    },
-    {
-      "word_in_sentence": "konstnär",
-      "base_form": "konstnär",
-      "position_start": 796,
-      "position_end": 804
-    },
-    {
-      "word_in_sentence": "fest",
-      "base_form": "fest",
-      "position_start": 2049,
-      "position_end": 2053
-    },
-    {
-      "word_in_sentence": "konstsamling",
-      "base_form": "konstsamling",
-      "position_start": 690,
-      "position_end": 702
-    },
-    {
-      "word_in_sentence": "rita",
-      "base_form": "rita",
-      "position_start": 872,
-      "position_end": 876
-    },
-    {
-      "word_in_sentence": "spela kort",
-      "base_form": "spela kort",
-      "position_start": 1240,
-      "position_end": 1250
-    },
-    {
-      "word_in_sentence": "tavla",
-      "base_form": "tavla",
-      "position_start": 851,
-      "position_end": 856
-    },
-    {
-      "word_in_sentence": "måla",
-      "base_form": "måla",
-      "position_start": 836,
-      "position_end": 840
-    },
-    {
-      "word_in_sentence": "målning",
-      "base_form": "målning",
-      "position_start": 819,
-      "position_end": 826
-    },
-    {
-      "word_in_sentence": "maskeradbal",
-      "base_form": "maskeradbal",
-      "position_start": 546,
-      "position_end": 557
-    },
-    {
-      "word_in_sentence": "skådelspelare",
-      "base_form": "skådelspelare",
-      "position_start": 1379,
-      "position_end": 1392
-    },
-    {
-      "word_in_sentence": "dansa",
-      "base_form": "dansa",
-      "position_start": 391,
-      "position_end": 396
-    },
-    {
-      "word_in_sentence": "foto",
-      "base_form": "foto",
-      "position_start": 960,
-      "position_end": 964
-    },
-    {
-      "word_in_sentence": "norrut",
-      "base_form": "norrut",
-      "position_start": 14,
-      "position_end": 20
-    },
-    {
-      "word_in_sentence": "när det gäller",
-      "base_form": "när det gäller",
-      "position_start": 142,
-      "position_end": 156
-    },
-    {
-      "word_in_sentence": "mer eller mindre",
-      "base_form": "mer eller mindre",
-      "position_start": 177,
-      "position_end": 193
-    },
-    {
-      "word_in_sentence": "dansk",
-      "base_form": "dansk",
-      "position_start": 790,
-      "position_end": 795
-    },
-    {
-      "word_in_sentence": "bidra till",
-      "base_form": "bidra till",
-      "position_start": 293,
-      "position_end": 303
-    },
-    {
-      "word_in_sentence": "söka kontakt",
-      "base_form": "söka kontakt",
-      "position_start": 598,
-      "position_end": 610
-    },
-    {
-      "word_in_sentence": "undra",
-      "base_form": "undra",
-      "position_start": 1023,
-      "position_end": 1028
-    },
-    {
-      "word_in_sentence": "mitt itu",
-      "base_form": "mitt itu",
-      "position_start": 1716,
-      "position_end": 1724
-    },
-    {
-      "word_in_sentence": "årtionde",
-      "base_form": "årtionde",
-      "position_start": 99,
-      "position_end": 107
-    },
-    {
-      "word_in_sentence": "syn",
-      "base_form": "syn",
-      "position_start": 1422,
-      "position_end": 1425
-    },
-    {
-      "word_in_sentence": "nolla",
-      "base_form": "nolla",
-      "position_start": 367,
-      "position_end": 372
-    },
-    {
-      "word_in_sentence": "tyst",
-      "base_form": "tyst",
-      "position_start": 895,
-      "position_end": 899
-    },
-    {
-      "word_in_sentence": "dokument",
-      "base_form": "dokument",
-      "position_start": 994,
-      "position_end": 1002
-    },
-    {
-      "word_in_sentence": "dö ut",
-      "base_form": "dö ut",
-      "position_start": 1528,
-      "position_end": 1533
-    },
-    {
-      "word_in_sentence": "utgift",
-      "base_form": "utgift",
-      "position_start": 1969,
-      "position_end": 1975
-    },
-    {
-      "word_in_sentence": "den andra",
-      "base_form": "den andra",
-      "position_start": 1659,
-      "position_end": 1668
-    },
-    {
-      "word_in_sentence": "absolut",
-      "base_form": "absolut",
-      "position_start": 356,
-      "position_end": 363
-    },
-    {
-      "word_in_sentence": "därifrån",
-      "base_form": "därifrån",
-      "position_start": 2066,
-      "position_end": 2074
-    },
-    {
-      "word_in_sentence": "verkligen",
-      "base_form": "verkligen",
-      "position_start": 1013,
-      "position_end": 1022
-    },
-    {
-      "word_in_sentence": "konditional",
-      "base_form": "konditional",
-      "position_start": 2118,
-      "position_end": 2129
-    },
-    {
-      "word_in_sentence": "alltså",
-      "base_form": "alltså",
-      "position_start": 2002,
-      "position_end": 2008
+      "sentence_id": "art35_s001",
+      "sv": "När man reser norrut i landet, kan man besöka en känd kulturattraktion som har överlevt mer än ett årtionde. Kultur är viktigt för många, och när det gäller nöje är denna plats mer eller mindre fantastisk. \n\nDet gamla huset var en gång i tiden knutet till ett lokalt jordbruk, men nu vill man bidra till att vi får uppleva mycket roligt. Vissa personer är absolut en nolla på att sjunga och dansa, men här kan man ändå vara med i en stor kör. Ibland spelas vacker musik och folk bjuds in till en traditionell dans eller till och med en spännande maskeradbal. En känd kulturpersonlighet brukar ofta söka kontakt med unga artister här.\n\nAndra gillar konst. I en stor sal finns en imponerande konstsamling. Du kan få en utställningskatalog för att lära dig mer om varje utställning. En berömd dansk konstnär har sin bästa målning här. Att måla en vacker tavla eller att bara rita med blyerts är en tyst och skön upplevelse. Ibland kan man också titta på ett fint foto eller ett gammalt historiskt dokument. \"Man kan verkligen undra vem som gjorde den här?\", brukar besökare säga.\n\nMen det finns en annan del också. Kanske vill du vara med? Vissa går till en schackklubb för att spela schack tillsammans. Det spelas även brädspel och folk brukar spela kort på fredagskvällarna. Andra gillar att spela dataspel hela natten. En del vill hellre spela teater och drömmer om att bli en bra skådespelare en dag. Även om det finns en syn på konst som något strikt, är det viktigt att veta att alla intressen får ta plats. Kulturen ska inte dö ut. \n\nKanske gillar du sport? På husets egen sportbar kan man se en viktig match på tv. En person äter en god proteinkaka medan den andra har druckit mycket och nästan brutit sin pinne mitt itu. Man behöver inte ha någon bra bollkänsla för att heja, och man behöver inte ens en boll för att ha kul. Ibland visas även kampsport, och det verkar inte spela roll vad du gillar. Det finns en kulturell mix för alla, och allt detta är en liten utgift för mycket glädje. Det är alltså en klubb och plats där poesi möter vild fest. \n\nJag gick därifrån med ett leende, full av inspiration och en villkorslös kärlek till kultur.",
+      "en": "",
+      "target_words": [
+        {
+          "word_in_sentence": "sportbar",
+          "base_form": "sportbar",
+          "position_start": 1577,
+          "position_end": 1585
+        },
+        {
+          "word_in_sentence": "vara med i",
+          "base_form": "vara med i",
+          "position_start": 419,
+          "position_end": 429
+        },
+        {
+          "word_in_sentence": "Kultur",
+          "base_form": "kultur",
+          "position_start": 109,
+          "position_end": 115
+        },
+        {
+          "word_in_sentence": "kulturattraktion",
+          "base_form": "kulturattraktion",
+          "position_start": 54,
+          "position_end": 70
+        },
+        {
+          "word_in_sentence": "proteinkaka",
+          "base_form": "proteinkaka",
+          "position_start": 1642,
+          "position_end": 1653
+        },
+        {
+          "word_in_sentence": "sjunga",
+          "base_form": "sjunga",
+          "position_start": 380,
+          "position_end": 386
+        },
+        {
+          "word_in_sentence": "musik",
+          "base_form": "musik",
+          "position_start": 464,
+          "position_end": 469
+        },
+        {
+          "word_in_sentence": "match",
+          "base_form": "match",
+          "position_start": 1607,
+          "position_end": 1612
+        },
+        {
+          "word_in_sentence": "dans",
+          "base_form": "dans",
+          "position_start": 391,
+          "position_end": 395
+        },
+        {
+          "word_in_sentence": "kampsport",
+          "base_form": "kampsport",
+          "position_start": 1849,
+          "position_end": 1858
+        },
+        {
+          "word_in_sentence": "bollkänsla",
+          "base_form": "bollkänsla",
+          "position_start": 1757,
+          "position_end": 1767
+        },
+        {
+          "word_in_sentence": "boll",
+          "base_form": "boll",
+          "position_start": 1757,
+          "position_end": 1761
+        },
+        {
+          "word_in_sentence": "vara med",
+          "base_form": "vara med",
+          "position_start": 419,
+          "position_end": 427
+        },
+        {
+          "word_in_sentence": "spela teater",
+          "base_form": "spela teater",
+          "position_start": 1338,
+          "position_end": 1350
+        },
+        {
+          "word_in_sentence": "kör",
+          "base_form": "kör",
+          "position_start": 438,
+          "position_end": 441
+        },
+        {
+          "word_in_sentence": "poesi",
+          "base_form": "poesi",
+          "position_start": 2033,
+          "position_end": 2038
+        },
+        {
+          "word_in_sentence": "kulturell",
+          "base_form": "kulturell",
+          "position_start": 1919,
+          "position_end": 1928
+        },
+        {
+          "word_in_sentence": "En del",
+          "base_form": "en del",
+          "position_start": 1319,
+          "position_end": 1325
+        },
+        {
+          "word_in_sentence": "jordbruk",
+          "base_form": "jordbruk",
+          "position_start": 267,
+          "position_end": 275
+        },
+        {
+          "word_in_sentence": "utställning",
+          "base_form": "utställning",
+          "position_start": 717,
+          "position_end": 728
+        },
+        {
+          "word_in_sentence": "utställningskatalog",
+          "base_form": "utställningskatalog",
+          "position_start": 717,
+          "position_end": 736
+        },
+        {
+          "word_in_sentence": "klubb",
+          "base_form": "klubb",
+          "position_start": 1161,
+          "position_end": 1166
+        },
+        {
+          "word_in_sentence": "spela schack",
+          "base_form": "spela schack",
+          "position_start": 1175,
+          "position_end": 1187
+        },
+        {
+          "word_in_sentence": "schackklubb",
+          "base_form": "schackklubb",
+          "position_start": 1155,
+          "position_end": 1166
+        },
+        {
+          "word_in_sentence": "spela dataspel",
+          "base_form": "spela dataspel",
+          "position_start": 1291,
+          "position_end": 1305
+        },
+        {
+          "word_in_sentence": "spela roll",
+          "base_form": "spela roll",
+          "position_start": 1880,
+          "position_end": 1890
+        },
+        {
+          "word_in_sentence": "kulturpersonlighet",
+          "base_form": "kulturpersonlighet",
+          "position_start": 567,
+          "position_end": 585
+        },
+        {
+          "word_in_sentence": "konstnär",
+          "base_form": "konstnär",
+          "position_start": 796,
+          "position_end": 804
+        },
+        {
+          "word_in_sentence": "fest",
+          "base_form": "fest",
+          "position_start": 2050,
+          "position_end": 2054
+        },
+        {
+          "word_in_sentence": "konstsamling",
+          "base_form": "konstsamling",
+          "position_start": 690,
+          "position_end": 702
+        },
+        {
+          "word_in_sentence": "rita",
+          "base_form": "rita",
+          "position_start": 872,
+          "position_end": 876
+        },
+        {
+          "word_in_sentence": "spela kort",
+          "base_form": "spela kort",
+          "position_start": 1242,
+          "position_end": 1252
+        },
+        {
+          "word_in_sentence": "tavla",
+          "base_form": "tavla",
+          "position_start": 851,
+          "position_end": 856
+        },
+        {
+          "word_in_sentence": "måla",
+          "base_form": "måla",
+          "position_start": 836,
+          "position_end": 840
+        },
+        {
+          "word_in_sentence": "målning",
+          "base_form": "målning",
+          "position_start": 819,
+          "position_end": 826
+        },
+        {
+          "word_in_sentence": "maskeradbal",
+          "base_form": "maskeradbal",
+          "position_start": 546,
+          "position_end": 557
+        },
+        {
+          "word_in_sentence": "skådespelare",
+          "base_form": "skådelspelare",
+          "position_start": 1381,
+          "position_end": 1393
+        },
+        {
+          "word_in_sentence": "dansa",
+          "base_form": "dansa",
+          "position_start": 391,
+          "position_end": 396
+        },
+        {
+          "word_in_sentence": "foto",
+          "base_form": "foto",
+          "position_start": 960,
+          "position_end": 964
+        },
+        {
+          "word_in_sentence": "norrut",
+          "base_form": "norrut",
+          "position_start": 14,
+          "position_end": 20
+        },
+        {
+          "word_in_sentence": "när det gäller",
+          "base_form": "när det gäller",
+          "position_start": 142,
+          "position_end": 156
+        },
+        {
+          "word_in_sentence": "mer eller mindre",
+          "base_form": "mer eller mindre",
+          "position_start": 177,
+          "position_end": 193
+        },
+        {
+          "word_in_sentence": "dansk",
+          "base_form": "dansk",
+          "position_start": 790,
+          "position_end": 795
+        },
+        {
+          "word_in_sentence": "bidra till",
+          "base_form": "bidra till",
+          "position_start": 293,
+          "position_end": 303
+        },
+        {
+          "word_in_sentence": "söka kontakt",
+          "base_form": "söka kontakt",
+          "position_start": 598,
+          "position_end": 610
+        },
+        {
+          "word_in_sentence": "undra",
+          "base_form": "undra",
+          "position_start": 1023,
+          "position_end": 1028
+        },
+        {
+          "word_in_sentence": "mitt itu",
+          "base_form": "mitt itu",
+          "position_start": 1717,
+          "position_end": 1725
+        },
+        {
+          "word_in_sentence": "årtionde",
+          "base_form": "årtionde",
+          "position_start": 99,
+          "position_end": 107
+        },
+        {
+          "word_in_sentence": "syn",
+          "base_form": "syn",
+          "position_start": 1423,
+          "position_end": 1426
+        },
+        {
+          "word_in_sentence": "nolla",
+          "base_form": "nolla",
+          "position_start": 367,
+          "position_end": 372
+        },
+        {
+          "word_in_sentence": "tyst",
+          "base_form": "tyst",
+          "position_start": 895,
+          "position_end": 899
+        },
+        {
+          "word_in_sentence": "dokument",
+          "base_form": "dokument",
+          "position_start": 994,
+          "position_end": 1002
+        },
+        {
+          "word_in_sentence": "dö ut",
+          "base_form": "dö ut",
+          "position_start": 1529,
+          "position_end": 1534
+        },
+        {
+          "word_in_sentence": "utgift",
+          "base_form": "utgift",
+          "position_start": 1970,
+          "position_end": 1976
+        },
+        {
+          "word_in_sentence": "den andra",
+          "base_form": "den andra",
+          "position_start": 1660,
+          "position_end": 1669
+        },
+        {
+          "word_in_sentence": "absolut",
+          "base_form": "absolut",
+          "position_start": 356,
+          "position_end": 363
+        },
+        {
+          "word_in_sentence": "därifrån",
+          "base_form": "därifrån",
+          "position_start": 2067,
+          "position_end": 2075
+        },
+        {
+          "word_in_sentence": "verkligen",
+          "base_form": "verkligen",
+          "position_start": 1013,
+          "position_end": 1022
+        },
+        {
+          "word_in_sentence": "villkorslös",
+          "base_form": "konditional",
+          "position_start": 2119,
+          "position_end": 2130
+        },
+        {
+          "word_in_sentence": "alltså",
+          "base_form": "alltså",
+          "position_start": 2003,
+          "position_end": 2009
+        }
+      ]
     }
   ],
   "primary_words_used": [
@@ -428,5 +432,6 @@
     "verkligen",
     "konditional",
     "alltså"
-  ]
+  ],
+  "secondary_words_used": []
 }

@@ -1,370 +1,374 @@
 {
-  "course_id": "sfid",
-  "course_title": "SFI D",
-  "step_id": "utbildning",
-  "step_title": "Utbildning",
   "article_id": "art_11",
-  "sv": "Jag studerar ett nytt ämne på en spännande folkhögskola i staden. Varje dag har vi en föreläsning om olika historiska språk, och förra veckan lärde vi oss mycket om den indoeuropeiska språkfamiljen. I den familjen är det välkänt att germanska språk som urnordiska, isländska och färöiska ingår. Även om de är besläktade, och har liknande grammatik, låter de ofta väldigt olika när de talas. Andra kända språk i Europa som estniska, samiska och ungerska tillhör nämligen den finsk-ugriska familjen. Dessutom talade vi om inuitspråk på Grönland och hur en rysk dialekt kan påverka en hel grupp av människor i gränsområden. \"Kommer du ihåg?\" frågade en äldre dam i min klass när vi diskuterade. \"Läraren sa att det finns en giantisk summa språk i världen, över sex tusen totalt!\" \n\nVi fick därefter i uppgift att skriva en artikel om grammatik. Läraren sa att vi skulle välja en röd rubrik och skriva en bra inledning för att locka läsaren. Förutom det måste vi följa en kursiverad språkkonvention för alla exempelord. Ett råd var att \"Säga något högt\" när man skriver. Vi skulle nämligen redovisa allt detta skriftligt inför hela klassen. För att göra det tydligare: man kan till exempel… sätta ett sammansatt ord inom parentes för att förklara dess betydelse. \"Har du provat/försökt att…?\" frågade läraren när jag verkade osäker. Hon gav mig mycket stöd.\n\nI vår text skulle vi framförallt visa att vi förstår grundläggande grammatik. Vi fyllde noggrant en kolumn i boken med verb i infinitiv, presens och preteritum. Vi lärde oss också att böja varje verbgrupp i rätt tempus, som till exempel konditionalis, vilket kan vara ganska svårt för många. En komplett verbfras är viktig, precis som att använda bra sambandsord och förstå hur direkt och indirekt tal fungerar i dialoger. Vi lärde oss även skillnaden mellan vad som är en kort stavelse och en lång stavelse när man pratar. Vi fick i uppdrag att meddela varandra omedelbart om vi såg en felaktig genetivform eller ett adjektiv i superlativ.\n\nSlutligen berättade läraren om hur nuvarande och samtida regler ständigt har utvecklats genom åren. Svenska akademien arbetar mycket aktivt för att möta nya behov i samhället. Ett politiskt beslut eller en negativ debatt mot vissa förändringar påverkar också hur språket växer. Nya ord kan ständigt födas ur vardagen, medan andra kan falla bort, nästan på samma sätt som gamla kläder säljs på extrapris. Det kändes otroligt bra när texten slutligen blev helt färdig efter allt hårt arbete.",
-  "target_words": [
+  "article_title": "Läsförståelse",
+  "target_word_count": 60,
+  "sentences": [
     {
-      "word_in_sentence": "rubrik",
-      "base_form": "rubrik",
-      "position_start": 880,
-      "position_end": 886
-    },
-    {
-      "word_in_sentence": "artikel",
-      "base_form": "artikel",
-      "position_start": 820,
-      "position_end": 827
-    },
-    {
-      "word_in_sentence": "verbfras",
-      "base_form": "verbfras",
-      "position_start": 1659,
-      "position_end": 1667
-    },
-    {
-      "word_in_sentence": "lång stavelse",
-      "base_form": "lång stavelse",
-      "position_start": 1849,
-      "position_end": 1862
-    },
-    {
-      "word_in_sentence": "kort stavelse",
-      "base_form": "kort stavelse",
-      "position_start": 1828,
-      "position_end": 1841
-    },
-    {
-      "word_in_sentence": "inledning",
-      "base_form": "inledning",
-      "position_start": 905,
-      "position_end": 914
-    },
-    {
-      "word_in_sentence": "sambandsord",
-      "base_form": "sambandsord",
-      "position_start": 1706,
-      "position_end": 1717
-    },
-    {
-      "word_in_sentence": "presens",
-      "base_form": "presens",
-      "position_start": 1492,
-      "position_end": 1499
-    },
-    {
-      "word_in_sentence": "kolumn",
-      "base_form": "kolumn",
-      "position_start": 1455,
-      "position_end": 1461
-    },
-    {
-      "word_in_sentence": "verbgrupp",
-      "base_form": "verbgrupp",
-      "position_start": 1550,
-      "position_end": 1559
-    },
-    {
-      "word_in_sentence": "infinitiv",
-      "base_form": "infinitiv",
-      "position_start": 1481,
-      "position_end": 1490
-    },
-    {
-      "word_in_sentence": "indirekt tal",
-      "base_form": "indirekt tal",
-      "position_start": 1744,
-      "position_end": 1756
-    },
-    {
-      "word_in_sentence": "preteritum",
-      "base_form": "preteritum",
-      "position_start": 1504,
-      "position_end": 1514
-    },
-    {
-      "word_in_sentence": "inom parentes",
-      "base_form": "inom parentes",
-      "position_start": 1212,
-      "position_end": 1225
-    },
-    {
-      "word_in_sentence": "redovisa",
-      "base_form": "redovisa",
-      "position_start": 1086,
-      "position_end": 1094
-    },
-    {
-      "word_in_sentence": "genetivform",
-      "base_form": "genetivform",
-      "position_start": 1951,
-      "position_end": 1962
-    },
-    {
-      "word_in_sentence": "ämne",
-      "base_form": "ämne",
-      "position_start": 22,
-      "position_end": 26
-    },
-    {
-      "word_in_sentence": "konditionalis",
-      "base_form": "konditionalis",
-      "position_start": 1592,
-      "position_end": 1605
-    },
-    {
-      "word_in_sentence": "tempus",
-      "base_form": "tempus",
-      "position_start": 1567,
-      "position_end": 1573
-    },
-    {
-      "word_in_sentence": "superlativ",
-      "base_form": "superlativ",
-      "position_start": 1984,
-      "position_end": 1994
-    },
-    {
-      "word_in_sentence": "finsk-ugriska",
-      "base_form": "finsk-ugriska",
-      "position_start": 474,
-      "position_end": 487
-    },
-    {
-      "word_in_sentence": "föreläsning",
-      "base_form": "föreläsning",
-      "position_start": 86,
-      "position_end": 97
-    },
-    {
-      "word_in_sentence": "inuitspråk",
-      "base_form": "inuitspråk",
-      "position_start": 520,
-      "position_end": 530
-    },
-    {
-      "word_in_sentence": "folkhögskola",
-      "base_form": "folkhögskola",
-      "position_start": 43,
-      "position_end": 55
-    },
-    {
-      "word_in_sentence": "kursiverad",
-      "base_form": "kursiverad",
-      "position_start": 968,
-      "position_end": 978
-    },
-    {
-      "word_in_sentence": "urnordiska",
-      "base_form": "urnordiska",
-      "position_start": 253,
-      "position_end": 263
-    },
-    {
-      "word_in_sentence": "estniska",
-      "base_form": "estniska",
-      "position_start": 422,
-      "position_end": 430
-    },
-    {
-      "word_in_sentence": "Svenska akademien",
-      "base_form": "Svenska akademien",
-      "position_start": 2097,
-      "position_end": 2114
-    },
-    {
-      "word_in_sentence": "färöiska",
-      "base_form": "färöiska",
-      "position_start": 279,
-      "position_end": 287
-    },
-    {
-      "word_in_sentence": "germanska",
-      "base_form": "germanska",
-      "position_start": 233,
-      "position_end": 242
-    },
-    {
-      "word_in_sentence": "indoeuropeiska",
-      "base_form": "indoeuropeiska",
-      "position_start": 169,
-      "position_end": 183
-    },
-    {
-      "word_in_sentence": "isländska",
-      "base_form": "isländska",
-      "position_start": 265,
-      "position_end": 274
-    },
-    {
-      "word_in_sentence": "samiska",
-      "base_form": "samiska",
-      "position_start": 432,
-      "position_end": 439
-    },
-    {
-      "word_in_sentence": "ungerska",
-      "base_form": "ungerska",
-      "position_start": 444,
-      "position_end": 452
-    },
-    {
-      "word_in_sentence": "sammansatt",
-      "base_form": "sammansatt",
-      "position_start": 1197,
-      "position_end": 1207
-    },
-    {
-      "word_in_sentence": "språkkonvention",
-      "base_form": "språkkonvention",
-      "position_start": 979,
-      "position_end": 994
-    },
-    {
-      "word_in_sentence": "rysk",
-      "base_form": "rysk",
-      "position_start": 554,
-      "position_end": 558
-    },
-    {
-      "word_in_sentence": "nuvarande",
-      "base_form": "nuvarande",
-      "position_start": 2032,
-      "position_end": 2041
-    },
-    {
-      "word_in_sentence": "dam",
-      "base_form": "dam",
-      "position_start": 656,
-      "position_end": 659
-    },
-    {
-      "word_in_sentence": "summa",
-      "base_form": "summa",
-      "position_start": 730,
-      "position_end": 735
-    },
-    {
-      "word_in_sentence": "Säga något högt",
-      "base_form": "Säga något högt",
-      "position_start": 1033,
-      "position_end": 1048
-    },
-    {
-      "word_in_sentence": "födas",
-      "base_form": "födas",
-      "position_start": 2296,
-      "position_end": 2301
-    },
-    {
-      "word_in_sentence": "falla",
-      "base_form": "falla",
-      "position_start": 2331,
-      "position_end": 2336
-    },
-    {
-      "word_in_sentence": "färdig",
-      "base_form": "färdig",
-      "position_start": 2456,
-      "position_end": 2462
-    },
-    {
-      "word_in_sentence": "meddela",
-      "base_form": "meddela",
-      "position_start": 1901,
-      "position_end": 1908
-    },
-    {
-      "word_in_sentence": "man kan till exempel…",
-      "base_form": "man kan till exempel…",
-      "position_start": 1165,
-      "position_end": 1186
-    },
-    {
-      "word_in_sentence": "samtida",
-      "base_form": "samtida",
-      "position_start": 2046,
-      "position_end": 2053
-    },
-    {
-      "word_in_sentence": "Kommer du ihåg?",
-      "base_form": "Kommer du ihåg?",
-      "position_start": 622,
-      "position_end": 637
-    },
-    {
-      "word_in_sentence": "giantisk",
-      "base_form": "giantisk",
-      "position_start": 721,
-      "position_end": 729
-    },
-    {
-      "word_in_sentence": "negativ",
-      "base_form": "negativ",
-      "position_start": 2203,
-      "position_end": 2210
-    },
-    {
-      "word_in_sentence": "extrapris",
-      "base_form": "extrapris",
-      "position_start": 2390,
-      "position_end": 2399
-    },
-    {
-      "word_in_sentence": "mot",
-      "base_form": "mot",
-      "position_start": 2218,
-      "position_end": 2221
-    },
-    {
-      "word_in_sentence": "röd",
-      "base_form": "röd",
-      "position_start": 876,
-      "position_end": 879
-    },
-    {
-      "word_in_sentence": "nämligen",
-      "base_form": "nämligen",
-      "position_start": 461,
-      "position_end": 469
-    },
-    {
-      "word_in_sentence": "politiskt",
-      "base_form": "politisk",
-      "position_start": 2177,
-      "position_end": 2186
-    },
-    {
-      "word_in_sentence": "Även om",
-      "base_form": "även om",
-      "position_start": 295,
-      "position_end": 302
-    },
-    {
-      "word_in_sentence": "Förutom",
-      "base_form": "förutom",
-      "position_start": 938,
-      "position_end": 945
-    },
-    {
-      "word_in_sentence": "grupp",
-      "base_form": "grupp",
-      "position_start": 586,
-      "position_end": 591
-    },
-    {
-      "word_in_sentence": "Har du provat/försökt att…?",
-      "base_form": "Har du provat/försökt att…?",
-      "position_start": 1260,
-      "position_end": 1287
-    },
-    {
-      "word_in_sentence": "möta",
-      "base_form": "möta",
-      "position_start": 2145,
-      "position_end": 2149
+      "sentence_id": "art11_s001",
+      "sv": "Jag studerar ett nytt ämne på en spännande folkhögskola i staden. Varje dag har vi en föreläsning om olika historiska språk, och förra veckan lärde vi oss mycket om den indoeuropeiska språkfamiljen. I den familjen är det välkänt att germanska språk som urnordiska, isländska och färöiska ingår. Även om de är besläktade, och har liknande grammatik, låter de ofta väldigt olika när de talas. Andra kända språk i Europa som estniska, samiska och ungerska tillhör nämligen den finsk-ugriska familjen. Dessutom talade vi om inuitspråk på Grönland och hur en rysk dialekt kan påverka en hel grupp av människor i gränsområden. \"Kommer du ihåg?\" frågade en äldre dam i min klass när vi diskuterade. \"Läraren sa att det finns en gigantisk summa språk i världen, över sex tusen totalt!\" \n\nVi fick därefter i uppgift att skriva en artikel om grammatik. Läraren sa att vi skulle välja en röd rubrik och skriva en bra inledning för att locka läsaren. Förutom det måste vi följa en kursiverad språkkonvention för alla exempelord. Ett råd var att \"Säga något högt\" när man skriver. Vi skulle nämligen redovisa allt detta skriftligt inför hela klassen. För att göra det tydligare: man kan till exempel… sätta ett sammansatt ord inom parentes för att förklara dess betydelse. \"Har du provat/försökt att…?\" frågade läraren när jag verkade osäker. Hon gav mig mycket stöd.\n\nI vår text skulle vi framförallt visa att vi förstår grundläggande grammatik. Vi fyllde noggrant en kolumn i boken med verb i infinitiv, presens och preteritum. Vi lärde oss också att böja varje verbgrupp i rätt tempus, som till exempel konditionalis, vilket kan vara ganska svårt för många. En komplett verbfras är viktig, precis som att använda bra sambandsord och förstå hur direkt och indirekt tal fungerar i dialoger. Vi lärde oss även skillnaden mellan vad som är en kort stavelse och en lång stavelse när man pratar. Vi fick i uppdrag att meddela varandra omedelbart om vi såg en felaktig genetivform eller ett adjektiv i superlativ.\n\nSlutligen berättade läraren om hur nuvarande och samtida regler ständigt har utvecklats genom åren. Svenska akademien arbetar mycket aktivt för att möta nya behov i samhället. Ett politiskt beslut eller en negativ debatt mot vissa förändringar påverkar också hur språket växer. Nya ord kan ständigt födas ur vardagen, medan andra kan falla bort, nästan på samma sätt som gamla kläder säljs på extrapris. Det kändes otroligt bra när texten slutligen blev helt färdig efter allt hårt arbete.",
+      "en": "",
+      "target_words": [
+        {
+          "word_in_sentence": "rubrik",
+          "base_form": "rubrik",
+          "position_start": 881,
+          "position_end": 887
+        },
+        {
+          "word_in_sentence": "artikel",
+          "base_form": "artikel",
+          "position_start": 821,
+          "position_end": 828
+        },
+        {
+          "word_in_sentence": "verbfras",
+          "base_form": "verbfras",
+          "position_start": 1660,
+          "position_end": 1668
+        },
+        {
+          "word_in_sentence": "lång stavelse",
+          "base_form": "lång stavelse",
+          "position_start": 1850,
+          "position_end": 1863
+        },
+        {
+          "word_in_sentence": "kort stavelse",
+          "base_form": "kort stavelse",
+          "position_start": 1829,
+          "position_end": 1842
+        },
+        {
+          "word_in_sentence": "inledning",
+          "base_form": "inledning",
+          "position_start": 906,
+          "position_end": 915
+        },
+        {
+          "word_in_sentence": "sambandsord",
+          "base_form": "sambandsord",
+          "position_start": 1707,
+          "position_end": 1718
+        },
+        {
+          "word_in_sentence": "presens",
+          "base_form": "presens",
+          "position_start": 1493,
+          "position_end": 1500
+        },
+        {
+          "word_in_sentence": "kolumn",
+          "base_form": "kolumn",
+          "position_start": 1456,
+          "position_end": 1462
+        },
+        {
+          "word_in_sentence": "verbgrupp",
+          "base_form": "verbgrupp",
+          "position_start": 1551,
+          "position_end": 1560
+        },
+        {
+          "word_in_sentence": "infinitiv",
+          "base_form": "infinitiv",
+          "position_start": 1482,
+          "position_end": 1491
+        },
+        {
+          "word_in_sentence": "indirekt tal",
+          "base_form": "indirekt tal",
+          "position_start": 1745,
+          "position_end": 1757
+        },
+        {
+          "word_in_sentence": "preteritum",
+          "base_form": "preteritum",
+          "position_start": 1505,
+          "position_end": 1515
+        },
+        {
+          "word_in_sentence": "inom parentes",
+          "base_form": "inom parentes",
+          "position_start": 1213,
+          "position_end": 1226
+        },
+        {
+          "word_in_sentence": "redovisa",
+          "base_form": "redovisa",
+          "position_start": 1087,
+          "position_end": 1095
+        },
+        {
+          "word_in_sentence": "genetivform",
+          "base_form": "genetivform",
+          "position_start": 1952,
+          "position_end": 1963
+        },
+        {
+          "word_in_sentence": "ämne",
+          "base_form": "ämne",
+          "position_start": 22,
+          "position_end": 26
+        },
+        {
+          "word_in_sentence": "konditionalis",
+          "base_form": "konditionalis",
+          "position_start": 1593,
+          "position_end": 1606
+        },
+        {
+          "word_in_sentence": "tempus",
+          "base_form": "tempus",
+          "position_start": 1568,
+          "position_end": 1574
+        },
+        {
+          "word_in_sentence": "superlativ",
+          "base_form": "superlativ",
+          "position_start": 1985,
+          "position_end": 1995
+        },
+        {
+          "word_in_sentence": "finsk-ugriska",
+          "base_form": "finsk-ugriska",
+          "position_start": 474,
+          "position_end": 487
+        },
+        {
+          "word_in_sentence": "föreläsning",
+          "base_form": "föreläsning",
+          "position_start": 86,
+          "position_end": 97
+        },
+        {
+          "word_in_sentence": "inuitspråk",
+          "base_form": "inuitspråk",
+          "position_start": 520,
+          "position_end": 530
+        },
+        {
+          "word_in_sentence": "folkhögskola",
+          "base_form": "folkhögskola",
+          "position_start": 43,
+          "position_end": 55
+        },
+        {
+          "word_in_sentence": "kursiverad",
+          "base_form": "kursiverad",
+          "position_start": 969,
+          "position_end": 979
+        },
+        {
+          "word_in_sentence": "urnordiska",
+          "base_form": "urnordiska",
+          "position_start": 253,
+          "position_end": 263
+        },
+        {
+          "word_in_sentence": "estniska",
+          "base_form": "estniska",
+          "position_start": 422,
+          "position_end": 430
+        },
+        {
+          "word_in_sentence": "Svenska akademien",
+          "base_form": "Svenska akademien",
+          "position_start": 2098,
+          "position_end": 2115
+        },
+        {
+          "word_in_sentence": "färöiska",
+          "base_form": "färöiska",
+          "position_start": 279,
+          "position_end": 287
+        },
+        {
+          "word_in_sentence": "germanska",
+          "base_form": "germanska",
+          "position_start": 233,
+          "position_end": 242
+        },
+        {
+          "word_in_sentence": "indoeuropeiska",
+          "base_form": "indoeuropeiska",
+          "position_start": 169,
+          "position_end": 183
+        },
+        {
+          "word_in_sentence": "isländska",
+          "base_form": "isländska",
+          "position_start": 265,
+          "position_end": 274
+        },
+        {
+          "word_in_sentence": "samiska",
+          "base_form": "samiska",
+          "position_start": 432,
+          "position_end": 439
+        },
+        {
+          "word_in_sentence": "ungerska",
+          "base_form": "ungerska",
+          "position_start": 444,
+          "position_end": 452
+        },
+        {
+          "word_in_sentence": "sammansatt",
+          "base_form": "sammansatt",
+          "position_start": 1198,
+          "position_end": 1208
+        },
+        {
+          "word_in_sentence": "språkkonvention",
+          "base_form": "språkkonvention",
+          "position_start": 980,
+          "position_end": 995
+        },
+        {
+          "word_in_sentence": "rysk",
+          "base_form": "rysk",
+          "position_start": 554,
+          "position_end": 558
+        },
+        {
+          "word_in_sentence": "nuvarande",
+          "base_form": "nuvarande",
+          "position_start": 2033,
+          "position_end": 2042
+        },
+        {
+          "word_in_sentence": "dam",
+          "base_form": "dam",
+          "position_start": 656,
+          "position_end": 659
+        },
+        {
+          "word_in_sentence": "summa",
+          "base_form": "summa",
+          "position_start": 731,
+          "position_end": 736
+        },
+        {
+          "word_in_sentence": "Säga något högt",
+          "base_form": "Säga något högt",
+          "position_start": 1034,
+          "position_end": 1049
+        },
+        {
+          "word_in_sentence": "födas",
+          "base_form": "födas",
+          "position_start": 2297,
+          "position_end": 2302
+        },
+        {
+          "word_in_sentence": "falla",
+          "base_form": "falla",
+          "position_start": 2332,
+          "position_end": 2337
+        },
+        {
+          "word_in_sentence": "färdig",
+          "base_form": "färdig",
+          "position_start": 2457,
+          "position_end": 2463
+        },
+        {
+          "word_in_sentence": "meddela",
+          "base_form": "meddela",
+          "position_start": 1902,
+          "position_end": 1909
+        },
+        {
+          "word_in_sentence": "man kan till exempel…",
+          "base_form": "man kan till exempel…",
+          "position_start": 1166,
+          "position_end": 1187
+        },
+        {
+          "word_in_sentence": "samtida",
+          "base_form": "samtida",
+          "position_start": 2047,
+          "position_end": 2054
+        },
+        {
+          "word_in_sentence": "Kommer du ihåg?",
+          "base_form": "Kommer du ihåg?",
+          "position_start": 622,
+          "position_end": 637
+        },
+        {
+          "word_in_sentence": "gigantisk",
+          "base_form": "giantisk",
+          "position_start": 721,
+          "position_end": 730
+        },
+        {
+          "word_in_sentence": "negativ",
+          "base_form": "negativ",
+          "position_start": 2204,
+          "position_end": 2211
+        },
+        {
+          "word_in_sentence": "extrapris",
+          "base_form": "extrapris",
+          "position_start": 2391,
+          "position_end": 2400
+        },
+        {
+          "word_in_sentence": "mot",
+          "base_form": "mot",
+          "position_start": 2219,
+          "position_end": 2222
+        },
+        {
+          "word_in_sentence": "röd",
+          "base_form": "röd",
+          "position_start": 877,
+          "position_end": 880
+        },
+        {
+          "word_in_sentence": "nämligen",
+          "base_form": "nämligen",
+          "position_start": 461,
+          "position_end": 469
+        },
+        {
+          "word_in_sentence": "politiskt",
+          "base_form": "politisk",
+          "position_start": 2178,
+          "position_end": 2187
+        },
+        {
+          "word_in_sentence": "Även om",
+          "base_form": "även om",
+          "position_start": 295,
+          "position_end": 302
+        },
+        {
+          "word_in_sentence": "Förutom",
+          "base_form": "förutom",
+          "position_start": 939,
+          "position_end": 946
+        },
+        {
+          "word_in_sentence": "grupp",
+          "base_form": "grupp",
+          "position_start": 586,
+          "position_end": 591
+        },
+        {
+          "word_in_sentence": "Har du provat/försökt att…?",
+          "base_form": "Har du provat/försökt att…?",
+          "position_start": 1261,
+          "position_end": 1288
+        },
+        {
+          "word_in_sentence": "möta",
+          "base_form": "möta",
+          "position_start": 2146,
+          "position_end": 2150
+        }
+      ]
     }
   ],
   "primary_words_used": [
@@ -428,5 +432,6 @@
     "grupp",
     "Har du provat/försökt att…?",
     "möta"
-  ]
+  ],
+  "secondary_words_used": []
 }
