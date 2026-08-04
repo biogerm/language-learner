@@ -1,0 +1,432 @@
+{
+  "course_id": "sfid",
+  "course_title": "SFI D",
+  "step_id": "vardagsliv",
+  "step_title": "Vardagsliv",
+  "article_id": "art_29",
+  "sv": "För en lång period bodde jag i en gammal lägenhet. På den tiden kände jag mig ofta ofräsch och smutsig för vi hade inget bra badrum. Jag brukade ligga vaken på natten. Jag kände mig nästan som ett trött skelett och tyckte att rummet försökte hålla i fångenskap min energi. Men jag har alltid varit intresserad av… ja, inredning och fastigheter. Så på senare tid började jag leta efter en ny bostad. Det blev början på en spännande tid.\n\nEtt bra husköp brukar alltid ta tid och huspriser kan vara extrema. Varannan kväll brukade jag följa marknaden och skriva en lista över intressanta objekt. En viktig aspekt var att hemmet skulle passa min personlighet. \"Jag hänger inte med riktigt!\" sa min vän, för jag hade varit på visning en massa gånger. Till slut bestämde jag mig för att förhandla om en liten lyxvilla och köpa den med mina sparade pengar. Min gamla lägenhet skulle jag givetvis sälja. Huset jag köpte hade en vacker brun dörr. Jag köpte också en tavla med ett vackert nattmotiv som skulle få stå i centrum i mitt nya vardagsrum. \n\nIdag kan jag verkligen säga: Vi har det jättebra här i … vår lilla by. Mitt nya hushåll fungerar mycket bättre. Än idag njuter jag av mitt nya hem. Jag brukar gå upp klockan åtta varje morgon. Jag trycker på en knapp på kaffemaskinen. Det är viktigt att tvätta sig, raka sig och kamma sig innan man går ut. Ibland måste man också klippa sig för att förbli fin. Sedan sätter jag på mig en bekväm sko och är redo. \"Bostad\" är förresten ett bra samlingsnamn för en plats där man kan bo. \n\nVad händer imorgon? Jo, på min fritid ska jag besöka ett vackert operahus och sedan ett stort badhus. Det fick jag i födelsedagspresent av en kompis. Nästa gång hoppas jag att vi kan komma in i en lugn stund och ha en rolig spelkväll. Kanske kommer någon konstnärlig kritiker på besök som är lik mig i smaken. Vid den här tiden njuter jag bara av livet.",
+  "target_words": [
+    {
+      "word_in_sentence": "fritid",
+      "base_form": "fritid",
+      "position_start": 1559,
+      "position_end": 1565
+    },
+    {
+      "word_in_sentence": "På den tiden",
+      "base_form": "på den tiden",
+      "position_start": 51,
+      "position_end": 63
+    },
+    {
+      "word_in_sentence": "hushåll",
+      "base_form": "hushåll",
+      "position_start": 1122,
+      "position_end": 1129
+    },
+    {
+      "word_in_sentence": "Idag",
+      "base_form": "idag",
+      "position_start": 1042,
+      "position_end": 1046
+    },
+    {
+      "word_in_sentence": "ta tid",
+      "base_form": "ta tid",
+      "position_start": 466,
+      "position_end": 472
+    },
+    {
+      "word_in_sentence": "morgon",
+      "base_form": "morgon",
+      "position_start": 1227,
+      "position_end": 1233
+    },
+    {
+      "word_in_sentence": "kväll",
+      "base_form": "kväll",
+      "position_start": 514,
+      "position_end": 519
+    },
+    {
+      "word_in_sentence": "jag har alltid varit intresserad av…",
+      "base_form": "jag har alltid varit intresserad av…",
+      "position_start": 277,
+      "position_end": 313
+    },
+    {
+      "word_in_sentence": "sko",
+      "base_form": "sko",
+      "position_start": 1437,
+      "position_end": 1440
+    },
+    {
+      "word_in_sentence": "Vad händer imorgon?",
+      "base_form": "Vad händer imorgon?",
+      "position_start": 1528,
+      "position_end": 1547
+    },
+    {
+      "word_in_sentence": "bo",
+      "base_form": "bo",
+      "position_start": 1522,
+      "position_end": 1524
+    },
+    {
+      "word_in_sentence": "ofräsch",
+      "base_form": "ofräsch",
+      "position_start": 83,
+      "position_end": 90
+    },
+    {
+      "word_in_sentence": "raka sig",
+      "base_form": "raka sig",
+      "position_start": 1308,
+      "position_end": 1316
+    },
+    {
+      "word_in_sentence": "kamma sig",
+      "base_form": "kamma sig",
+      "position_start": 1321,
+      "position_end": 1330
+    },
+    {
+      "word_in_sentence": "smutsig",
+      "base_form": "smutsig",
+      "position_start": 95,
+      "position_end": 102
+    },
+    {
+      "word_in_sentence": "klippa sig",
+      "base_form": "klippa sig",
+      "position_start": 1372,
+      "position_end": 1382
+    },
+    {
+      "word_in_sentence": "tvätta sig",
+      "base_form": "tvätta sig",
+      "position_start": 1296,
+      "position_end": 1306
+    },
+    {
+      "word_in_sentence": "pengar",
+      "base_form": "pengar",
+      "position_start": 842,
+      "position_end": 848
+    },
+    {
+      "word_in_sentence": "en massa gånger",
+      "base_form": "en massa gånger",
+      "position_start": 729,
+      "position_end": 744
+    },
+    {
+      "word_in_sentence": "Nästa gång",
+      "base_form": "nästa gång",
+      "position_start": 1678,
+      "position_end": 1688
+    },
+    {
+      "word_in_sentence": "födelsedagspresent",
+      "base_form": "födelsedagspresent",
+      "position_start": 1645,
+      "position_end": 1663
+    },
+    {
+      "word_in_sentence": "period",
+      "base_form": "period",
+      "position_start": 12,
+      "position_end": 18
+    },
+    {
+      "word_in_sentence": "lägenhet",
+      "base_form": "lägenhet",
+      "position_start": 41,
+      "position_end": 49
+    },
+    {
+      "word_in_sentence": "spelkväll",
+      "base_form": "spelkväll",
+      "position_start": 1752,
+      "position_end": 1761
+    },
+    {
+      "word_in_sentence": "sälja",
+      "base_form": "sälja",
+      "position_start": 889,
+      "position_end": 894
+    },
+    {
+      "word_in_sentence": "Än idag",
+      "base_form": "än idag",
+      "position_start": 1154,
+      "position_end": 1161
+    },
+    {
+      "word_in_sentence": "Vid den här tiden",
+      "base_form": "vid den här tiden",
+      "position_start": 1838,
+      "position_end": 1855
+    },
+    {
+      "word_in_sentence": "bostad",
+      "base_form": "bostad",
+      "position_start": 391,
+      "position_end": 397
+    },
+    {
+      "word_in_sentence": "operahus",
+      "base_form": "operahus",
+      "position_start": 1593,
+      "position_end": 1601
+    },
+    {
+      "word_in_sentence": "Vi har det jättebra här i …",
+      "base_form": "Vi har det jättebra här i …",
+      "position_start": 1071,
+      "position_end": 1098
+    },
+    {
+      "word_in_sentence": "nattmotiv",
+      "base_form": "nattmotiv",
+      "position_start": 979,
+      "position_end": 988
+    },
+    {
+      "word_in_sentence": "köpa",
+      "base_form": "köpa",
+      "position_start": 816,
+      "position_end": 820
+    },
+    {
+      "word_in_sentence": "badhus",
+      "base_form": "badhus",
+      "position_start": 1622,
+      "position_end": 1628
+    },
+    {
+      "word_in_sentence": "husköp",
+      "base_form": "husköp",
+      "position_start": 445,
+      "position_end": 451
+    },
+    {
+      "word_in_sentence": "förhandla",
+      "base_form": "förhandla",
+      "position_start": 781,
+      "position_end": 790
+    },
+    {
+      "word_in_sentence": "lyxvilla",
+      "base_form": "lyxvilla",
+      "position_start": 803,
+      "position_end": 811
+    },
+    {
+      "word_in_sentence": "dörr",
+      "base_form": "dörr",
+      "position_start": 932,
+      "position_end": 936
+    },
+    {
+      "word_in_sentence": "huspriser",
+      "base_form": "huspris",
+      "position_start": 477,
+      "position_end": 486
+    },
+    {
+      "word_in_sentence": "på senare tid",
+      "base_form": "på senare tid",
+      "position_start": 348,
+      "position_end": 361
+    },
+    {
+      "word_in_sentence": "personlighet",
+      "base_form": "personlighet",
+      "position_start": 642,
+      "position_end": 654
+    },
+    {
+      "word_in_sentence": "förbli",
+      "base_form": "förbli",
+      "position_start": 1391,
+      "position_end": 1397
+    },
+    {
+      "word_in_sentence": "extrema",
+      "base_form": "extrem",
+      "position_start": 496,
+      "position_end": 503
+    },
+    {
+      "word_in_sentence": "ligga vaken",
+      "base_form": "ligga vaken",
+      "position_start": 145,
+      "position_end": 156
+    },
+    {
+      "word_in_sentence": "hålla i fångenskap",
+      "base_form": "hålla i fångenskap",
+      "position_start": 242,
+      "position_end": 260
+    },
+    {
+      "word_in_sentence": "stund",
+      "base_form": "stund",
+      "position_start": 1730,
+      "position_end": 1735
+    },
+    {
+      "word_in_sentence": "aspekt",
+      "base_form": "aspekt",
+      "position_start": 603,
+      "position_end": 609
+    },
+    {
+      "word_in_sentence": "gammal",
+      "base_form": "gammal",
+      "position_start": 34,
+      "position_end": 40
+    },
+    {
+      "word_in_sentence": "brun",
+      "base_form": "brun",
+      "position_start": 927,
+      "position_end": 931
+    },
+    {
+      "word_in_sentence": "åtta",
+      "base_form": "åtta",
+      "position_start": 1216,
+      "position_end": 1220
+    },
+    {
+      "word_in_sentence": "Varannan",
+      "base_form": "varannan",
+      "position_start": 505,
+      "position_end": 513
+    },
+    {
+      "word_in_sentence": "kritiker",
+      "base_form": "kritiker",
+      "position_start": 1795,
+      "position_end": 1803
+    },
+    {
+      "word_in_sentence": "lik",
+      "base_form": "lik",
+      "position_start": 1820,
+      "position_end": 1823
+    },
+    {
+      "word_in_sentence": "Jag hänger inte med riktigt!",
+      "base_form": "Jag hänger inte med riktigt!",
+      "position_start": 657,
+      "position_end": 685
+    },
+    {
+      "word_in_sentence": "lista",
+      "base_form": "lista",
+      "position_start": 562,
+      "position_end": 567
+    },
+    {
+      "word_in_sentence": "stå i centrum",
+      "base_form": "stå i centrum",
+      "position_start": 1003,
+      "position_end": 1016
+    },
+    {
+      "word_in_sentence": "knapp",
+      "base_form": "knapp",
+      "position_start": 1253,
+      "position_end": 1258
+    },
+    {
+      "word_in_sentence": "följa",
+      "base_form": "följa",
+      "position_start": 532,
+      "position_end": 537
+    },
+    {
+      "word_in_sentence": "skelett",
+      "base_form": "skelett",
+      "position_start": 203,
+      "position_end": 210
+    },
+    {
+      "word_in_sentence": "samlingsnamn",
+      "base_form": "samlingsnamn",
+      "position_start": 1484,
+      "position_end": 1496
+    },
+    {
+      "word_in_sentence": "komma in i",
+      "base_form": "komma in i",
+      "position_start": 1711,
+      "position_end": 1721
+    }
+  ],
+  "primary_words_used": [
+    "fritid",
+    "på den tiden",
+    "hushåll",
+    "idag",
+    "ta tid",
+    "morgon",
+    "kväll",
+    "jag har alltid varit intresserad av…",
+    "sko",
+    "Vad händer imorgon?",
+    "bo",
+    "ofräsch",
+    "raka sig",
+    "kamma sig",
+    "smutsig",
+    "klippa sig",
+    "tvätta sig",
+    "pengar",
+    "en massa gånger",
+    "nästa gång",
+    "födelsedagspresent",
+    "period",
+    "lägenhet",
+    "spelkväll",
+    "sälja",
+    "än idag",
+    "vid den här tiden",
+    "bostad",
+    "operahus",
+    "Vi har det jättebra här i …",
+    "nattmotiv",
+    "köpa",
+    "badhus",
+    "husköp",
+    "förhandla",
+    "lyxvilla",
+    "dörr",
+    "huspris",
+    "på senare tid",
+    "personlighet",
+    "förbli",
+    "extrem",
+    "ligga vaken",
+    "hålla i fångenskap",
+    "stund",
+    "aspekt",
+    "gammal",
+    "brun",
+    "åtta",
+    "varannan",
+    "kritiker",
+    "lik",
+    "Jag hänger inte med riktigt!",
+    "lista",
+    "stå i centrum",
+    "knapp",
+    "följa",
+    "skelett",
+    "samlingsnamn",
+    "komma in i"
+  ]
+}

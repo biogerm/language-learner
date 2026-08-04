@@ -1,0 +1,432 @@
+{
+  "course_id": "sfid",
+  "course_title": "SFI D",
+  "step_id": "samhälle_politik",
+  "step_title": "Samhälle & Politik",
+  "article_id": "art_46",
+  "sv": "\"Vad sägs om att…? Vi kanske borde läsa en ny bok,\" föreslog jag för en svensk kompis. Han höll redan en tjock bok i handen.\n\"Vad handlar den om?\" undrade han. \n\"Det är en känd faktoid om makt och politik på tjugotalet och början av 1930-talet,\" förklarade jag.\n\nBoken handlade om en oärlig finansman som nyligen var skild och valde att flytta hit från utlandet. Han ville introducera en helt ny typ av fond och en dyr aktie. Mannen var extremt fräck och använde sig av osjyst korruption. Han lyckades övertala flera förmögna investerare, till och med en italiensk greve och en rik norske företagare. Många av dessa var nära släkt med den tidens maktelit. \"Hur mycket tjänar du?\" frågade de ofta honom, och han lovade alltid att öka summan på deras bankkonto. De flesta av dem kunde bara se en framtida enorm rikedom. Finansmannen ville ur sin gamla fattigdom och valde tyvärr att stjäla från folket istället för att arbeta ärligt.\n\nSnart uppstod en nationell ekonomisk kris. Det var svårt att veta vem som skulle tala för folket när staten ville höja varje litet pris. En vanlig arbetare hade nästan aldrig några besparingar, och få människor kunde ha råd att ens leva drägligt. Om man inte kunde uppge en stadig inkomst, kunde maten kosta mer än man någonsin hade tjänat. \n\nI varje land fanns det också en moralisk sanning som makthavarna blundade för. Det existerade ett hårt förtryck. Till exempel, under stora delar av 40-talet var homosexualitet fortfarande strängt förbjudet i Sverige. Att vara sig själv innebar att man skulle riskera att hamna i fängelse. Man kunde lätt gå vilse i lagboken och plötsligt vara skyldig till ett allvarligt brott. Det var verkligen en skamlig period i historien. En samtidig politiker försökte ge ett vettigt motargument i riksdagen, men det dröjde tyvärr innan folket fick riktig frihet. \n\n\"Jag vet inte riktigt.\" sa min kompis tyst och började klappa sin trötta hund. \"Det låter väldigt tungt. Men det är bra att staten slutade anmäla folk för kärlek. Idag kan man åtminstone leva öppet, vara stolt medlem i en vanlig idrottsförening eller donera en miljon till välgörenhet utan att det nödvändigtvis behöver synas i pressen.\" ",
+  "target_words": [
+    {
+      "word_in_sentence": "känd",
+      "base_form": "känd",
+      "position_start": 172,
+      "position_end": 176
+    },
+    {
+      "word_in_sentence": "40-talet",
+      "base_form": "40-talet",
+      "position_start": 1424,
+      "position_end": 1432
+    },
+    {
+      "word_in_sentence": "kosta",
+      "base_form": "kosta",
+      "position_start": 1235,
+      "position_end": 1240
+    },
+    {
+      "word_in_sentence": "1930-talet",
+      "base_form": "1930-talet",
+      "position_start": 233,
+      "position_end": 243
+    },
+    {
+      "word_in_sentence": "land",
+      "base_form": "land",
+      "position_start": 1284,
+      "position_end": 1288
+    },
+    {
+      "word_in_sentence": "svensk",
+      "base_form": "svensk",
+      "position_start": 72,
+      "position_end": 78
+    },
+    {
+      "word_in_sentence": "uppge",
+      "base_form": "uppge",
+      "position_start": 1198,
+      "position_end": 1203
+    },
+    {
+      "word_in_sentence": "motargument",
+      "base_form": "motargument",
+      "position_start": 1749,
+      "position_end": 1760
+    },
+    {
+      "word_in_sentence": "nationell",
+      "base_form": "nationell",
+      "position_start": 950,
+      "position_end": 959
+    },
+    {
+      "word_in_sentence": "miljon",
+      "base_form": "miljon",
+      "position_start": 2092,
+      "position_end": 2098
+    },
+    {
+      "word_in_sentence": "oärlig",
+      "base_form": "oärlig",
+      "position_start": 284,
+      "position_end": 290
+    },
+    {
+      "word_in_sentence": "kris",
+      "base_form": "kris",
+      "position_start": 970,
+      "position_end": 974
+    },
+    {
+      "word_in_sentence": "frihet",
+      "base_form": "frihet",
+      "position_start": 1821,
+      "position_end": 1827
+    },
+    {
+      "word_in_sentence": "Hur mycket tjänar du?",
+      "base_form": "Hur mycket tjänar du?",
+      "position_start": 657,
+      "position_end": 678
+    },
+    {
+      "word_in_sentence": "höja",
+      "base_form": "höja",
+      "position_start": 1047,
+      "position_end": 1051
+    },
+    {
+      "word_in_sentence": "aktie",
+      "base_form": "aktie",
+      "position_start": 419,
+      "position_end": 424
+    },
+    {
+      "word_in_sentence": "italiensk",
+      "base_form": "italiensk",
+      "position_start": 555,
+      "position_end": 564
+    },
+    {
+      "word_in_sentence": "rikedom",
+      "base_form": "rikedom",
+      "position_start": 809,
+      "position_end": 816
+    },
+    {
+      "word_in_sentence": "idrottsförening",
+      "base_form": "idrottsförening",
+      "position_start": 2060,
+      "position_end": 2075
+    },
+    {
+      "word_in_sentence": "skamlig",
+      "base_form": "skamlig",
+      "position_start": 1675,
+      "position_end": 1682
+    },
+    {
+      "word_in_sentence": "fond",
+      "base_form": "fond",
+      "position_start": 403,
+      "position_end": 407
+    },
+    {
+      "word_in_sentence": "anmäla",
+      "base_form": "anmäla",
+      "position_start": 1970,
+      "position_end": 1976
+    },
+    {
+      "word_in_sentence": "fräck",
+      "base_form": "fräck",
+      "position_start": 445,
+      "position_end": 450
+    },
+    {
+      "word_in_sentence": "bankkonto",
+      "base_form": "bankkonto",
+      "position_start": 749,
+      "position_end": 758
+    },
+    {
+      "word_in_sentence": "osjyst",
+      "base_form": "osjyst",
+      "position_start": 470,
+      "position_end": 476
+    },
+    {
+      "word_in_sentence": "norske",
+      "base_form": "norske",
+      "position_start": 582,
+      "position_end": 588
+    },
+    {
+      "word_in_sentence": "homosexualitet",
+      "base_form": "homosexualitet",
+      "position_start": 1437,
+      "position_end": 1451
+    },
+    {
+      "word_in_sentence": "ha råd",
+      "base_form": "ha råd",
+      "position_start": 1150,
+      "position_end": 1156
+    },
+    {
+      "word_in_sentence": "förbjudet",
+      "base_form": "förbjudet",
+      "position_start": 1472,
+      "position_end": 1481
+    },
+    {
+      "word_in_sentence": "pris",
+      "base_form": "pris",
+      "position_start": 1064,
+      "position_end": 1068
+    },
+    {
+      "word_in_sentence": "moralisk",
+      "base_form": "moralisk",
+      "position_start": 1308,
+      "position_end": 1316
+    },
+    {
+      "word_in_sentence": "sanning",
+      "base_form": "sanning",
+      "position_start": 1317,
+      "position_end": 1324
+    },
+    {
+      "word_in_sentence": "tjugotalet",
+      "base_form": "tjugotalet",
+      "position_start": 208,
+      "position_end": 218
+    },
+    {
+      "word_in_sentence": "riskera",
+      "base_form": "riskera",
+      "position_start": 1535,
+      "position_end": 1542
+    },
+    {
+      "word_in_sentence": "vara skyldig",
+      "base_form": "vara skyldig",
+      "position_start": 1614,
+      "position_end": 1626
+    },
+    {
+      "word_in_sentence": "hamna",
+      "base_form": "hamna",
+      "position_start": 1547,
+      "position_end": 1552
+    },
+    {
+      "word_in_sentence": "förtryck",
+      "base_form": "förtryck",
+      "position_start": 1379,
+      "position_end": 1387
+    },
+    {
+      "word_in_sentence": "skild",
+      "base_form": "skild",
+      "position_start": 317,
+      "position_end": 322
+    },
+    {
+      "word_in_sentence": "fängelse",
+      "base_form": "fängelse",
+      "position_start": 1555,
+      "position_end": 1563
+    },
+    {
+      "word_in_sentence": "korruption",
+      "base_form": "korruption",
+      "position_start": 477,
+      "position_end": 487
+    },
+    {
+      "word_in_sentence": "gå vilse",
+      "base_form": "gå vilse",
+      "position_start": 1580,
+      "position_end": 1588
+    },
+    {
+      "word_in_sentence": "samtidig",
+      "base_form": "samtidig",
+      "position_start": 1706,
+      "position_end": 1714
+    },
+    {
+      "word_in_sentence": "Vad handlar den om?",
+      "base_form": "Vad handlar den om?",
+      "position_start": 126,
+      "position_end": 145
+    },
+    {
+      "word_in_sentence": "nästan aldrig",
+      "base_form": "nästan aldrig",
+      "position_start": 1094,
+      "position_end": 1107
+    },
+    {
+      "word_in_sentence": "tala för",
+      "base_form": "tala för",
+      "position_start": 1014,
+      "position_end": 1022
+    },
+    {
+      "word_in_sentence": "ur",
+      "base_form": "ur",
+      "position_start": 837,
+      "position_end": 839
+    },
+    {
+      "word_in_sentence": "stjäla",
+      "base_form": "stjäla",
+      "position_start": 881,
+      "position_end": 887
+    },
+    {
+      "word_in_sentence": "leva",
+      "base_form": "leva",
+      "position_start": 1165,
+      "position_end": 1169
+    },
+    {
+      "word_in_sentence": "bara",
+      "base_form": "bara",
+      "position_start": 783,
+      "position_end": 787
+    },
+    {
+      "word_in_sentence": "rik",
+      "base_form": "rik",
+      "position_start": 578,
+      "position_end": 581
+    },
+    {
+      "word_in_sentence": "nära släkt",
+      "base_form": "nära släkt",
+      "position_start": 620,
+      "position_end": 630
+    },
+    {
+      "word_in_sentence": "övertala",
+      "base_form": "övertala",
+      "position_start": 502,
+      "position_end": 510
+    },
+    {
+      "word_in_sentence": "hit",
+      "base_form": "hit",
+      "position_start": 344,
+      "position_end": 347
+    },
+    {
+      "word_in_sentence": "klappa",
+      "base_form": "klappa",
+      "position_start": 1886,
+      "position_end": 1892
+    },
+    {
+      "word_in_sentence": "öka",
+      "base_form": "öka",
+      "position_start": 729,
+      "position_end": 732
+    },
+    {
+      "word_in_sentence": "introducera",
+      "base_form": "introducera",
+      "position_start": 373,
+      "position_end": 384
+    },
+    {
+      "word_in_sentence": "faktoid",
+      "base_form": "faktoid",
+      "position_start": 177,
+      "position_end": 184
+    },
+    {
+      "word_in_sentence": "synas",
+      "base_form": "synas",
+      "position_start": 2151,
+      "position_end": 2156
+    },
+    {
+      "word_in_sentence": "Jag vet inte riktigt.",
+      "base_form": "Jag vet inte riktigt.",
+      "position_start": 1832,
+      "position_end": 1853
+    },
+    {
+      "word_in_sentence": "Vad sägs om att…?",
+      "base_form": "Vad sägs om att…?",
+      "position_start": 1,
+      "position_end": 18
+    }
+  ],
+  "primary_words_used": [
+    "känd",
+    "40-talet",
+    "kosta",
+    "1930-talet",
+    "land",
+    "svensk",
+    "uppge",
+    "motargument",
+    "nationell",
+    "miljon",
+    "oärlig",
+    "kris",
+    "frihet",
+    "Hur mycket tjänar du?",
+    "höja",
+    "aktie",
+    "italiensk",
+    "rikedom",
+    "idrottsförening",
+    "skamlig",
+    "fond",
+    "anmäla",
+    "fräck",
+    "bankkonto",
+    "osjyst",
+    "norske",
+    "homosexualitet",
+    "ha råd",
+    "förbjudet",
+    "pris",
+    "moralisk",
+    "sanning",
+    "tjugotalet",
+    "riskera",
+    "vara skyldig",
+    "hamna",
+    "förtryck",
+    "skild",
+    "fängelse",
+    "korruption",
+    "gå vilse",
+    "samtidig",
+    "Vad handlar den om?",
+    "nästan aldrig",
+    "tala för",
+    "ur",
+    "stjäla",
+    "leva",
+    "bara",
+    "rik",
+    "nära släkt",
+    "övertala",
+    "hit",
+    "klappa",
+    "öka",
+    "introducera",
+    "faktoid",
+    "synas",
+    "Jag vet inte riktigt.",
+    "Vad sägs om att…?"
+  ]
+}

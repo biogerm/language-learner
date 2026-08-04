@@ -1,0 +1,432 @@
+{
+  "course_id": "sfid",
+  "course_title": "SFI D",
+  "step_id": "hälsa_medicin",
+  "step_title": "Hälsa & Medicin",
+  "article_id": "art_25",
+  "sv": "Min lillebror och jag bodde i en liten, fredlig by. På en skinande grön kulle kunde man titta ut över hela samhället. Men vår startpunkt var inte enkel. Vi fick uppleva en hemsk tid. Det var en kontrast till ytan, där allt verkade bra.\n\nFram till år… ja, fram till år 1986, då en känd kärnkraftsolycka skedde, fanns det ingen oro. \"Hur kommer det sig att…?\" frågade min bror ofta när han hörde nyheterna. Ett populärt massmedium (böjning: massmediet, massmedier, massmedierna) rapporterade om farorna. Denna katastrof kunde leda till att många blev sjuka. En läkare i vår by blev tyvärr knivmördad och en annan kvinna hotades när någon försökte skjuta ihjäl henne i en bred backe. Det var helt sjukt! Gärningsmannen var en hjärtlös psykopat med ett sammasatt syndrom i sin hjärna. Han kände ingen sympati och kunde till och med ljuga och ta till en lögn i rätten.\n\nVi fick lära oss att alltid vara tillsammans för att trygga sin framtid. Det kunde finnas faror, och Socialstyrelsen varnade för att en ny infektionssjukdom var på väg. En sjuksköterska som var utbildad inom akutsjukvård sa: \"Ställ frågor om du känner kramp i magen eller får en konstig pupill i ögat, och stanna hemma om du håller på att svimma.\" Medicinen hon gav kunde smaka illa, men den var noggrann, och man var väl omhändertagen. Man ville minska riskerna för att bli sämre. Att få vård i tid var viktigt.\n\nJag minns också att man kunde göra som man vill när det gällde preventivmedel. Men man var ibland osäker och trodde på felaktig information. Just det, vi var tvungna att skicka in en blankett för att få hjälp. Om någon hade ett handikapp och var funktionshindrad kunde en ambulans rulla in för att hämta dem. Många gånger var vi tvungna att hålla ett positivt kroppsspråk för att hjälpa dem att kalla på doktorer.\n\nNär jag nu brukar tänka tillbaka på de tio åren, vill jag tipsa alla om att värdesätta sin hälsa.",
+  "target_words": [
+    {
+      "word_in_sentence": "kärnkraftsolycka",
+      "base_form": "kärnkraftsolycka",
+      "position_start": 285,
+      "position_end": 301
+    },
+    {
+      "word_in_sentence": "skjuta ihjäl",
+      "base_form": "skjuta ihjäl",
+      "position_start": 645,
+      "position_end": 657
+    },
+    {
+      "word_in_sentence": "preventivmedel",
+      "base_form": "preventivmedel",
+      "position_start": 1442,
+      "position_end": 1456
+    },
+    {
+      "word_in_sentence": "göra som man vill",
+      "base_form": "göra som man vill",
+      "position_start": 1409,
+      "position_end": 1426
+    },
+    {
+      "word_in_sentence": "infektionssjukdom",
+      "base_form": "infektionssjukdom",
+      "position_start": 1004,
+      "position_end": 1021
+    },
+    {
+      "word_in_sentence": "Socialstyrelsen",
+      "base_form": "Socialstyrelsen",
+      "position_start": 966,
+      "position_end": 981
+    },
+    {
+      "word_in_sentence": "knivmördad",
+      "base_form": "knivmördad",
+      "position_start": 587,
+      "position_end": 597
+    },
+    {
+      "word_in_sentence": "trygga sin framtid",
+      "base_form": "trygga sin framtid",
+      "position_start": 918,
+      "position_end": 936
+    },
+    {
+      "word_in_sentence": "hjärtlös",
+      "base_form": "hjärtlös",
+      "position_start": 723,
+      "position_end": 731
+    },
+    {
+      "word_in_sentence": "kulle",
+      "base_form": "kulle",
+      "position_start": 72,
+      "position_end": 77
+    },
+    {
+      "word_in_sentence": "tänka tillbaka",
+      "base_form": "tänka tillbaka",
+      "position_start": 1812,
+      "position_end": 1826
+    },
+    {
+      "word_in_sentence": "Fram till år…",
+      "base_form": "fram till år…",
+      "position_start": 237,
+      "position_end": 250
+    },
+    {
+      "word_in_sentence": "handikapp",
+      "base_form": "handikapp",
+      "position_start": 1607,
+      "position_end": 1616
+    },
+    {
+      "word_in_sentence": "funktionshindrad",
+      "base_form": "funktionshindrad",
+      "position_start": 1625,
+      "position_end": 1641
+    },
+    {
+      "word_in_sentence": "vara tillsammans",
+      "base_form": "vara tillsammans",
+      "position_start": 893,
+      "position_end": 909
+    },
+    {
+      "word_in_sentence": "utbildad inom",
+      "base_form": "utbildad inom",
+      "position_start": 1059,
+      "position_end": 1072
+    },
+    {
+      "word_in_sentence": "massmedium",
+      "base_form": "massmedium",
+      "position_start": 418,
+      "position_end": 428
+    },
+    {
+      "word_in_sentence": "massmediet, massmedier, massmedierna)",
+      "base_form": "massmediet, massmedier, massmedierna)",
+      "position_start": 439,
+      "position_end": 476
+    },
+    {
+      "word_in_sentence": "kramp",
+      "base_form": "kramp",
+      "position_start": 1117,
+      "position_end": 1122
+    },
+    {
+      "word_in_sentence": "by",
+      "base_form": "by",
+      "position_start": 48,
+      "position_end": 50
+    },
+    {
+      "word_in_sentence": "lillebror",
+      "base_form": "lillebror",
+      "position_start": 4,
+      "position_end": 13
+    },
+    {
+      "word_in_sentence": "svimma",
+      "base_form": "svimma",
+      "position_start": 1204,
+      "position_end": 1210
+    },
+    {
+      "word_in_sentence": "helt sjukt",
+      "base_form": "helt sjukt",
+      "position_start": 689,
+      "position_end": 699
+    },
+    {
+      "word_in_sentence": "hjärna",
+      "base_form": "hjärna",
+      "position_start": 773,
+      "position_end": 779
+    },
+    {
+      "word_in_sentence": "skinande",
+      "base_form": "skinande",
+      "position_start": 58,
+      "position_end": 66
+    },
+    {
+      "word_in_sentence": "leda till att",
+      "base_form": "leda till att",
+      "position_start": 524,
+      "position_end": 537
+    },
+    {
+      "word_in_sentence": "kroppsspråk",
+      "base_form": "kroppsspråk",
+      "position_start": 1739,
+      "position_end": 1750
+    },
+    {
+      "word_in_sentence": "pupill",
+      "base_form": "pupill",
+      "position_start": 1152,
+      "position_end": 1158
+    },
+    {
+      "word_in_sentence": "till ytan",
+      "base_form": "till ytan",
+      "position_start": 203,
+      "position_end": 212
+    },
+    {
+      "word_in_sentence": "backe",
+      "base_form": "backe",
+      "position_start": 674,
+      "position_end": 679
+    },
+    {
+      "word_in_sentence": "smaka illa",
+      "base_form": "smaka illa",
+      "position_start": 1237,
+      "position_end": 1247
+    },
+    {
+      "word_in_sentence": "psykopat",
+      "base_form": "psykopat",
+      "position_start": 732,
+      "position_end": 740
+    },
+    {
+      "word_in_sentence": "ta till en lögn",
+      "base_form": "ta till en lögn",
+      "position_start": 838,
+      "position_end": 853
+    },
+    {
+      "word_in_sentence": "syndrom",
+      "base_form": "syndrom",
+      "position_start": 759,
+      "position_end": 766
+    },
+    {
+      "word_in_sentence": "omhändertagen",
+      "base_form": "omhändertagen",
+      "position_start": 1287,
+      "position_end": 1300
+    },
+    {
+      "word_in_sentence": "få vård",
+      "base_form": "få vård",
+      "position_start": 1351,
+      "position_end": 1358
+    },
+    {
+      "word_in_sentence": "hålla",
+      "base_form": "hålla",
+      "position_start": 1720,
+      "position_end": 1725
+    },
+    {
+      "word_in_sentence": "rulla",
+      "base_form": "rulla",
+      "position_start": 1660,
+      "position_end": 1665
+    },
+    {
+      "word_in_sentence": "tio",
+      "base_form": "tio",
+      "position_start": 1833,
+      "position_end": 1836
+    },
+    {
+      "word_in_sentence": "ljuga",
+      "base_form": "ljuga",
+      "position_start": 828,
+      "position_end": 833
+    },
+    {
+      "word_in_sentence": "osäker",
+      "base_form": "osäker",
+      "position_start": 1477,
+      "position_end": 1483
+    },
+    {
+      "word_in_sentence": "felaktig",
+      "base_form": "felaktig",
+      "position_start": 1498,
+      "position_end": 1506
+    },
+    {
+      "word_in_sentence": "Just det",
+      "base_form": "just det",
+      "position_start": 1520,
+      "position_end": 1528
+    },
+    {
+      "word_in_sentence": "noggrann",
+      "base_form": "noggrann",
+      "position_start": 1261,
+      "position_end": 1269
+    },
+    {
+      "word_in_sentence": "kontrast",
+      "base_form": "kontrast",
+      "position_start": 194,
+      "position_end": 202
+    },
+    {
+      "word_in_sentence": "sämre",
+      "base_form": "sämre",
+      "position_start": 1340,
+      "position_end": 1345
+    },
+    {
+      "word_in_sentence": "finnas",
+      "base_form": "finnas",
+      "position_start": 948,
+      "position_end": 954
+    },
+    {
+      "word_in_sentence": "Ställ frågor",
+      "base_form": "ställ frågor",
+      "position_start": 1091,
+      "position_end": 1103
+    },
+    {
+      "word_in_sentence": "startpunkt",
+      "base_form": "startpunkt",
+      "position_start": 126,
+      "position_end": 136
+    },
+    {
+      "word_in_sentence": "minska",
+      "base_form": "minska",
+      "position_start": 1312,
+      "position_end": 1318
+    },
+    {
+      "word_in_sentence": "titta ut över",
+      "base_form": "titta ut över",
+      "position_start": 88,
+      "position_end": 101
+    },
+    {
+      "word_in_sentence": "tipsa",
+      "base_form": "tipsa",
+      "position_start": 1852,
+      "position_end": 1857
+    },
+    {
+      "word_in_sentence": "Hur kommer det sig att…?",
+      "base_form": "Hur kommer det sig att…?",
+      "position_start": 332,
+      "position_end": 356
+    },
+    {
+      "word_in_sentence": "stanna",
+      "base_form": "stanna",
+      "position_start": 1171,
+      "position_end": 1177
+    },
+    {
+      "word_in_sentence": "sammasatt",
+      "base_form": "sammasatt",
+      "position_start": 749,
+      "position_end": 758
+    },
+    {
+      "word_in_sentence": "kalla",
+      "base_form": "kalla",
+      "position_start": 1774,
+      "position_end": 1779
+    },
+    {
+      "word_in_sentence": "fredlig",
+      "base_form": "fredlig",
+      "position_start": 40,
+      "position_end": 47
+    },
+    {
+      "word_in_sentence": "enkel",
+      "base_form": "enkel",
+      "position_start": 146,
+      "position_end": 151
+    },
+    {
+      "word_in_sentence": "bred",
+      "base_form": "bred",
+      "position_start": 669,
+      "position_end": 673
+    },
+    {
+      "word_in_sentence": "skicka in",
+      "base_form": "skicka in",
+      "position_start": 1549,
+      "position_end": 1558
+    }
+  ],
+  "primary_words_used": [
+    "kärnkraftsolycka",
+    "skjuta ihjäl",
+    "preventivmedel",
+    "göra som man vill",
+    "infektionssjukdom",
+    "Socialstyrelsen",
+    "knivmördad",
+    "trygga sin framtid",
+    "hjärtlös",
+    "kulle",
+    "tänka tillbaka",
+    "fram till år…",
+    "handikapp",
+    "funktionshindrad",
+    "vara tillsammans",
+    "utbildad inom",
+    "massmedium",
+    "massmediet, massmedier, massmedierna)",
+    "kramp",
+    "by",
+    "lillebror",
+    "svimma",
+    "helt sjukt",
+    "hjärna",
+    "skinande",
+    "leda till att",
+    "kroppsspråk",
+    "pupill",
+    "till ytan",
+    "backe",
+    "smaka illa",
+    "psykopat",
+    "ta till en lögn",
+    "syndrom",
+    "omhändertagen",
+    "få vård",
+    "hålla",
+    "rulla",
+    "tio",
+    "ljuga",
+    "osäker",
+    "felaktig",
+    "just det",
+    "noggrann",
+    "kontrast",
+    "sämre",
+    "finnas",
+    "ställ frågor",
+    "startpunkt",
+    "minska",
+    "titta ut över",
+    "tipsa",
+    "Hur kommer det sig att…?",
+    "stanna",
+    "sammasatt",
+    "kalla",
+    "fredlig",
+    "enkel",
+    "bred",
+    "skicka in"
+  ]
+}

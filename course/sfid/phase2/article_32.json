@@ -1,0 +1,432 @@
+{
+  "course_id": "sfid",
+  "course_title": "SFI D",
+  "step_id": "vardagsliv",
+  "step_title": "Vardagsliv",
+  "article_id": "art_32",
+  "sv": "\"Vet du vem som frågade efter dig?\" sa min vän. Det var en sällskapsdam från förr. Hon var väldigt fattig i början, men nu jobbade hon på ett exklusivt hunddagis här i vår lilla förort. Jag var trött och tyckte att det är skönt att lata sig och vara en riktig soffpotatis. Men denna morgon blev en rivstart. Det är så lätt att försova sig när man är trött, och jag vaknade jättesent. \"jag skulle vilja…\" tänkte jag, \"bara ligga kvar under täcket\". Jag var tvungen att skynda. Jag fick snabbt ta på mig kläderna och skynda på rejält för att hinna.\n\nEgentligen gillar jag inredning. Jag ville stanna hemma och bygga en balkong för att ordna en skön plats att sitta på. Men nu hade jag bråttom. Jag la min utrustning i en stor påse. Jag tog med badbyxor och simglasögon. Trots min ålder kände jag mig stark som en oxe. Jag ville inte stanna inne och suga åt mig negativ energi, så jag bestämde mig för att flytta ut på stan. \n\nDet var verkligen en hektisk dag. Mycket folk var ute. Jag gick till simhallen som hade en gemensam bastu. Simhallen var uppdelad i olika sektioner av en storlek som var enorm. Jag ville klättra upp för det höga hopptornet. Efter badet fick man torka sig själv noggrant.\n\nJag funderade på att ringa till frisören för en klippning i en snygg salong, så jag skulle slippa se tråkig ut. Jag upptäckte också att jag hade ett litet hål i min tröja. Jag tänkte på att boka en traditionell husmorssemester, men det var ett högt tryck på alla biljetter. Varje siffra i prislistan var otroligt hög, och jag kände mig pyttelite orolig. \"Vad vill du syssla med?\" frågade min vän, som var likadan som jag. Vi verkade höra ihop genom starka kulturella band. Det är viktigt att höra av sig till gamla vänner. \n\nPlötsligt försökte någon typ av vild hund, som nog kanske var dräktig, angripa en soptunna på gatan. Jag tänkte att jag hade fått en intressant erfarenhet idag. Klockan fyra var det dags att gå hem och lägga sig.",
+  "target_words": [
+    {
+      "word_in_sentence": "balkong",
+      "base_form": "balkong",
+      "position_start": 617,
+      "position_end": 624
+    },
+    {
+      "word_in_sentence": "Klockan fyra",
+      "base_form": "klockan fyra",
+      "position_start": 1882,
+      "position_end": 1894
+    },
+    {
+      "word_in_sentence": "bastu",
+      "base_form": "bastu",
+      "position_start": 1024,
+      "position_end": 1029
+    },
+    {
+      "word_in_sentence": "syssla med",
+      "base_form": "syssla med",
+      "position_start": 1563,
+      "position_end": 1573
+    },
+    {
+      "word_in_sentence": "lata sig",
+      "base_form": "lata sig",
+      "position_start": 232,
+      "position_end": 240
+    },
+    {
+      "word_in_sentence": "inredning",
+      "base_form": "inredning",
+      "position_start": 570,
+      "position_end": 579
+    },
+    {
+      "word_in_sentence": "folk",
+      "base_form": "folk",
+      "position_start": 965,
+      "position_end": 969
+    },
+    {
+      "word_in_sentence": "skynda",
+      "base_form": "skynda",
+      "position_start": 468,
+      "position_end": 474
+    },
+    {
+      "word_in_sentence": "hål",
+      "base_form": "hål",
+      "position_start": 1351,
+      "position_end": 1354
+    },
+    {
+      "word_in_sentence": "påse",
+      "base_form": "påse",
+      "position_start": 724,
+      "position_end": 728
+    },
+    {
+      "word_in_sentence": "simglasögon",
+      "base_form": "simglasögon",
+      "position_start": 755,
+      "position_end": 766
+    },
+    {
+      "word_in_sentence": "slippa",
+      "base_form": "slippa",
+      "position_start": 1287,
+      "position_end": 1293
+    },
+    {
+      "word_in_sentence": "ringa till",
+      "base_form": "ringa till",
+      "position_start": 1217,
+      "position_end": 1227
+    },
+    {
+      "word_in_sentence": "badbyxor",
+      "base_form": "badbyxor",
+      "position_start": 742,
+      "position_end": 750
+    },
+    {
+      "word_in_sentence": "ta på",
+      "base_form": "ta på",
+      "position_start": 492,
+      "position_end": 497
+    },
+    {
+      "word_in_sentence": "ordna",
+      "base_form": "ordna",
+      "position_start": 633,
+      "position_end": 638
+    },
+    {
+      "word_in_sentence": "bygga",
+      "base_form": "bygga",
+      "position_start": 608,
+      "position_end": 613
+    },
+    {
+      "word_in_sentence": "soffpotatis",
+      "base_form": "soffpotatis",
+      "position_start": 260,
+      "position_end": 271
+    },
+    {
+      "word_in_sentence": "lägga sig",
+      "base_form": "lägga sig",
+      "position_start": 1923,
+      "position_end": 1932
+    },
+    {
+      "word_in_sentence": "skön",
+      "base_form": "skön",
+      "position_start": 642,
+      "position_end": 646
+    },
+    {
+      "word_in_sentence": "skynda på",
+      "base_form": "skynda på",
+      "position_start": 515,
+      "position_end": 524
+    },
+    {
+      "word_in_sentence": "rivstart",
+      "base_form": "rivstart",
+      "position_start": 298,
+      "position_end": 306
+    },
+    {
+      "word_in_sentence": "snygg",
+      "base_form": "snygg",
+      "position_start": 1259,
+      "position_end": 1264
+    },
+    {
+      "word_in_sentence": "ålder",
+      "base_form": "ålder",
+      "position_start": 778,
+      "position_end": 783
+    },
+    {
+      "word_in_sentence": "utrustning",
+      "base_form": "utrustning",
+      "position_start": 703,
+      "position_end": 713
+    },
+    {
+      "word_in_sentence": "flytta",
+      "base_form": "flytta",
+      "position_start": 903,
+      "position_end": 909
+    },
+    {
+      "word_in_sentence": "husmorssemester",
+      "base_form": "husmorssemester",
+      "position_start": 1407,
+      "position_end": 1422
+    },
+    {
+      "word_in_sentence": "salong",
+      "base_form": "salong",
+      "position_start": 1265,
+      "position_end": 1271
+    },
+    {
+      "word_in_sentence": "höra av sig",
+      "base_form": "höra av sig",
+      "position_start": 1688,
+      "position_end": 1699
+    },
+    {
+      "word_in_sentence": "hunddagis",
+      "base_form": "hunddagis",
+      "position_start": 152,
+      "position_end": 161
+    },
+    {
+      "word_in_sentence": "sällskapsdam",
+      "base_form": "sällskapsdam",
+      "position_start": 59,
+      "position_end": 71
+    },
+    {
+      "word_in_sentence": "klippning",
+      "base_form": "klippning",
+      "position_start": 1244,
+      "position_end": 1253
+    },
+    {
+      "word_in_sentence": "siffra",
+      "base_form": "siffra",
+      "position_start": 1476,
+      "position_end": 1482
+    },
+    {
+      "word_in_sentence": "pyttelite",
+      "base_form": "pyttelite",
+      "position_start": 1532,
+      "position_end": 1541
+    },
+    {
+      "word_in_sentence": "förort",
+      "base_form": "förort",
+      "position_start": 178,
+      "position_end": 184
+    },
+    {
+      "word_in_sentence": "torka sig",
+      "base_form": "torka sig",
+      "position_start": 1169,
+      "position_end": 1178
+    },
+    {
+      "word_in_sentence": "själv",
+      "base_form": "själv",
+      "position_start": 1179,
+      "position_end": 1184
+    },
+    {
+      "word_in_sentence": "försova sig",
+      "base_form": "försova sig",
+      "position_start": 327,
+      "position_end": 338
+    },
+    {
+      "word_in_sentence": "vild",
+      "base_form": "vild",
+      "position_start": 1753,
+      "position_end": 1757
+    },
+    {
+      "word_in_sentence": "stark som en oxe",
+      "base_form": "stark som en oxe",
+      "position_start": 798,
+      "position_end": 814
+    },
+    {
+      "word_in_sentence": "suga",
+      "base_form": "suga",
+      "position_start": 847,
+      "position_end": 851
+    },
+    {
+      "word_in_sentence": "Vet du vem som frågade efter dig?",
+      "base_form": "Vet du vem som frågade efter dig?",
+      "position_start": 1,
+      "position_end": 34
+    },
+    {
+      "word_in_sentence": "fattig",
+      "base_form": "fattig",
+      "position_start": 99,
+      "position_end": 105
+    },
+    {
+      "word_in_sentence": "här",
+      "base_form": "här",
+      "position_start": 162,
+      "position_end": 165
+    },
+    {
+      "word_in_sentence": "i början",
+      "base_form": "i början",
+      "position_start": 106,
+      "position_end": 114
+    },
+    {
+      "word_in_sentence": "erfarenhet",
+      "base_form": "erfarenhet",
+      "position_start": 1865,
+      "position_end": 1875
+    },
+    {
+      "word_in_sentence": "klättra",
+      "base_form": "klättra",
+      "position_start": 1111,
+      "position_end": 1118
+    },
+    {
+      "word_in_sentence": "hektisk",
+      "base_form": "hektisk",
+      "position_start": 945,
+      "position_end": 952
+    },
+    {
+      "word_in_sentence": "högt tryck",
+      "base_form": "högt tryck",
+      "position_start": 1440,
+      "position_end": 1450
+    },
+    {
+      "word_in_sentence": "angripa",
+      "base_form": "angripa",
+      "position_start": 1792,
+      "position_end": 1799
+    },
+    {
+      "word_in_sentence": "uppdelad",
+      "base_form": "uppdelad",
+      "position_start": 1045,
+      "position_end": 1053
+    },
+    {
+      "word_in_sentence": "gemensam",
+      "base_form": "gemensam",
+      "position_start": 1015,
+      "position_end": 1023
+    },
+    {
+      "word_in_sentence": "likadan",
+      "base_form": "likadan",
+      "position_start": 1601,
+      "position_end": 1608
+    },
+    {
+      "word_in_sentence": "höra ihop",
+      "base_form": "höra ihop",
+      "position_start": 1629,
+      "position_end": 1638
+    },
+    {
+      "word_in_sentence": "kulturella band",
+      "base_form": "kulturella band",
+      "position_start": 1652,
+      "position_end": 1667
+    },
+    {
+      "word_in_sentence": "någon typ av",
+      "base_form": "någon typ av",
+      "position_start": 1740,
+      "position_end": 1752
+    },
+    {
+      "word_in_sentence": "storlek",
+      "base_form": "storlek",
+      "position_start": 1078,
+      "position_end": 1085
+    },
+    {
+      "word_in_sentence": "jag skulle vilja…",
+      "base_form": "jag skulle vilja…",
+      "position_start": 385,
+      "position_end": 402
+    },
+    {
+      "word_in_sentence": "nog",
+      "base_form": "nog",
+      "position_start": 1768,
+      "position_end": 1771
+    },
+    {
+      "word_in_sentence": "dräktig",
+      "base_form": "dräktig",
+      "position_start": 1783,
+      "position_end": 1790
+    }
+  ],
+  "primary_words_used": [
+    "balkong",
+    "klockan fyra",
+    "bastu",
+    "syssla med",
+    "lata sig",
+    "inredning",
+    "folk",
+    "skynda",
+    "hål",
+    "påse",
+    "simglasögon",
+    "slippa",
+    "ringa till",
+    "badbyxor",
+    "ta på",
+    "ordna",
+    "bygga",
+    "soffpotatis",
+    "lägga sig",
+    "skön",
+    "skynda på",
+    "rivstart",
+    "snygg",
+    "ålder",
+    "utrustning",
+    "flytta",
+    "husmorssemester",
+    "salong",
+    "höra av sig",
+    "hunddagis",
+    "sällskapsdam",
+    "klippning",
+    "siffra",
+    "pyttelite",
+    "förort",
+    "torka sig",
+    "själv",
+    "försova sig",
+    "vild",
+    "stark som en oxe",
+    "suga",
+    "Vet du vem som frågade efter dig?",
+    "fattig",
+    "här",
+    "i början",
+    "erfarenhet",
+    "klättra",
+    "hektisk",
+    "högt tryck",
+    "angripa",
+    "uppdelad",
+    "gemensam",
+    "likadan",
+    "höra ihop",
+    "kulturella band",
+    "någon typ av",
+    "storlek",
+    "jag skulle vilja…",
+    "nog",
+    "dräktig"
+  ]
+}

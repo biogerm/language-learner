@@ -1,0 +1,432 @@
+{
+  "course_id": "sfid",
+  "course_title": "SFI D",
+  "step_id": "hälsa_medicin",
+  "step_title": "Hälsa & Medicin",
+  "article_id": "art_22",
+  "sv": "För några år sedan mådde jag väldigt dåligt. Jag hade problem med min vikt och jag fortsatte att gå upp i vikt. Jag var trött hela tiden, ibland helt dödstrött. Jag hade svårt att sova och det kändes som en parasit i min kropp. En läkare tvingade mig till och med att lägga in mig på ett sinnessjukhus på grund av risken för självmord efter en oavsiktlig överdos av medicin. Det var en hemsk tid. Jag fick ibland råd per brev, men inget verkade passa mig. \n\nMen en dag läste jag ett tips på en vägg intill sjukhuset: \"Lyssna till ditt hjärta.\" Jag bestämde mig för att bli frisk och att det är viktigt att bry sig om sin hälsa. Jag ville inte bara sitta och slappa. Det var i samband med detta jag anmälde mig till en exotisk träningsresa. Evenemanget skulle äga rum i Spanien. \n\nJag packade mina träningskläder och träningsskor. Där började ett nära samarbete med en sportig gyminstruktör. Han förklarade att all motion är nyttig. Han sa att \"motienera\" ger en hälsosam livsstil. Vi tränade i en serie av korta pass. Det var en motionsform som byggde på intensiv styrketräning. \n\nI början fick jag väldigt ont i ett knä och i varje muskel i mina ben. Ibland blev jag delvis döv av ansträngning, men jag lärde mig att stretcha efter varje träningspass. Fastän jag fick extrem träningsvärk, kändes det ändå bra att svettas och förbättra min kondition. Allt handlar inte bara om att träna stenhårt, man måste också koppla av. Att vila är inte en halvsanning – det är jätteviktigt!\n\nMin form förbättrades mycket snabbare än jag någonsin sett. Pulsen var som lägst när vi mediterade. Vi lärde oss att lyssna på kroppen, som fungerar lite… för sig, på ett fantastiskt sätt. Om någon hade sagt att jag skulle träna i fin frack hade jag skrattat. Alla ville hänga med. När jag till slut bad om att få svar på vad hälsa kallas för, sa min tränare: \"Det är livet.\"",
+  "target_words": [
+    {
+      "word_in_sentence": "passa",
+      "base_form": "passa",
+      "position_start": 445,
+      "position_end": 450
+    },
+    {
+      "word_in_sentence": "träna",
+      "base_form": "träna",
+      "position_start": 1381,
+      "position_end": 1386
+    },
+    {
+      "word_in_sentence": "trött",
+      "base_form": "trött",
+      "position_start": 120,
+      "position_end": 125
+    },
+    {
+      "word_in_sentence": "dödstrött",
+      "base_form": "dödstrött",
+      "position_start": 150,
+      "position_end": 159
+    },
+    {
+      "word_in_sentence": "svettas",
+      "base_form": "svettas",
+      "position_start": 1314,
+      "position_end": 1321
+    },
+    {
+      "word_in_sentence": "kondition",
+      "base_form": "kondition",
+      "position_start": 1340,
+      "position_end": 1349
+    },
+    {
+      "word_in_sentence": "nyttig",
+      "base_form": "nyttig",
+      "position_start": 924,
+      "position_end": 930
+    },
+    {
+      "word_in_sentence": "kropp",
+      "base_form": "kropp",
+      "position_start": 221,
+      "position_end": 226
+    },
+    {
+      "word_in_sentence": "slappa",
+      "base_form": "slappa",
+      "position_start": 658,
+      "position_end": 664
+    },
+    {
+      "word_in_sentence": "träningsresa",
+      "base_form": "träningsresa",
+      "position_start": 726,
+      "position_end": 738
+    },
+    {
+      "word_in_sentence": "vikt",
+      "base_form": "vikt",
+      "position_start": 70,
+      "position_end": 74
+    },
+    {
+      "word_in_sentence": "gå upp i vikt",
+      "base_form": "gå upp i vikt",
+      "position_start": 97,
+      "position_end": 110
+    },
+    {
+      "word_in_sentence": "pass",
+      "base_form": "pass",
+      "position_start": 1012,
+      "position_end": 1016
+    },
+    {
+      "word_in_sentence": "träningspass",
+      "base_form": "träningspass",
+      "position_start": 1239,
+      "position_end": 1251
+    },
+    {
+      "word_in_sentence": "träningskläder",
+      "base_form": "träningskläder",
+      "position_start": 797,
+      "position_end": 811
+    },
+    {
+      "word_in_sentence": "sova",
+      "base_form": "sova",
+      "position_start": 180,
+      "position_end": 184
+    },
+    {
+      "word_in_sentence": "frisk",
+      "base_form": "frisk",
+      "position_start": 573,
+      "position_end": 578
+    },
+    {
+      "word_in_sentence": "ont",
+      "base_form": "ont",
+      "position_start": 1107,
+      "position_end": 1110
+    },
+    {
+      "word_in_sentence": "knä",
+      "base_form": "knä",
+      "position_start": 1117,
+      "position_end": 1120
+    },
+    {
+      "word_in_sentence": "muskel",
+      "base_form": "muskel",
+      "position_start": 1133,
+      "position_end": 1139
+    },
+    {
+      "word_in_sentence": "ben",
+      "base_form": "ben",
+      "position_start": 1147,
+      "position_end": 1150
+    },
+    {
+      "word_in_sentence": "motion",
+      "base_form": "motion",
+      "position_start": 914,
+      "position_end": 920
+    },
+    {
+      "word_in_sentence": "motionsform",
+      "base_form": "motionsform",
+      "position_start": 1029,
+      "position_end": 1040
+    },
+    {
+      "word_in_sentence": "träningsvärk",
+      "base_form": "träningsvärk",
+      "position_start": 1276,
+      "position_end": 1288
+    },
+    {
+      "word_in_sentence": "stretcha",
+      "base_form": "stretcha",
+      "position_start": 1218,
+      "position_end": 1226
+    },
+    {
+      "word_in_sentence": "styrketräning",
+      "base_form": "styrketräning",
+      "position_start": 1064,
+      "position_end": 1077
+    },
+    {
+      "word_in_sentence": "träningsskor",
+      "base_form": "träningsskor",
+      "position_start": 816,
+      "position_end": 828
+    },
+    {
+      "word_in_sentence": "motienera",
+      "base_form": "motienera",
+      "position_start": 944,
+      "position_end": 953
+    },
+    {
+      "word_in_sentence": "hälsosam",
+      "base_form": "hälsosam",
+      "position_start": 962,
+      "position_end": 970
+    },
+    {
+      "word_in_sentence": "koppla av",
+      "base_form": "koppla av",
+      "position_start": 1413,
+      "position_end": 1422
+    },
+    {
+      "word_in_sentence": "gyminstruktör",
+      "base_form": "gyminstruktör",
+      "position_start": 876,
+      "position_end": 889
+    },
+    {
+      "word_in_sentence": "sportig",
+      "base_form": "sportig",
+      "position_start": 868,
+      "position_end": 875
+    },
+    {
+      "word_in_sentence": "bry sig om",
+      "base_form": "bry sig om",
+      "position_start": 606,
+      "position_end": 616
+    },
+    {
+      "word_in_sentence": "Lyssna till ditt hjärta.",
+      "base_form": "Lyssna till ditt hjärta.",
+      "position_start": 518,
+      "position_end": 542
+    },
+    {
+      "word_in_sentence": "överdos",
+      "base_form": "överdos",
+      "position_start": 355,
+      "position_end": 362
+    },
+    {
+      "word_in_sentence": "självmord",
+      "base_form": "självmord",
+      "position_start": 325,
+      "position_end": 334
+    },
+    {
+      "word_in_sentence": "sinnessjukhus",
+      "base_form": "sinnessjukhus",
+      "position_start": 288,
+      "position_end": 301
+    },
+    {
+      "word_in_sentence": "exotisk",
+      "base_form": "exotisk",
+      "position_start": 718,
+      "position_end": 725
+    },
+    {
+      "word_in_sentence": "per brev",
+      "base_form": "per brev",
+      "position_start": 417,
+      "position_end": 425
+    },
+    {
+      "word_in_sentence": "lyssna",
+      "base_form": "lyssna",
+      "position_start": 1597,
+      "position_end": 1603
+    },
+    {
+      "word_in_sentence": "tvingade",
+      "base_form": "tvinga",
+      "position_start": 238,
+      "position_end": 246
+    },
+    {
+      "word_in_sentence": "parasit",
+      "base_form": "parasit",
+      "position_start": 207,
+      "position_end": 214
+    },
+    {
+      "word_in_sentence": "äga rum",
+      "base_form": "äga rum",
+      "position_start": 759,
+      "position_end": 766
+    },
+    {
+      "word_in_sentence": "sett",
+      "base_form": "sett",
+      "position_start": 1534,
+      "position_end": 1538
+    },
+    {
+      "word_in_sentence": "ändå",
+      "base_form": "ändå",
+      "position_start": 1301,
+      "position_end": 1305
+    },
+    {
+      "word_in_sentence": "lägst",
+      "base_form": "lägst",
+      "position_start": 1555,
+      "position_end": 1560
+    },
+    {
+      "word_in_sentence": "kallas för",
+      "base_form": "kallas för",
+      "position_start": 1812,
+      "position_end": 1822
+    },
+    {
+      "word_in_sentence": "frack",
+      "base_form": "frack",
+      "position_start": 1715,
+      "position_end": 1720
+    },
+    {
+      "word_in_sentence": "hänga med",
+      "base_form": "hänga med",
+      "position_start": 1751,
+      "position_end": 1760
+    },
+    {
+      "word_in_sentence": "intill",
+      "base_form": "intill",
+      "position_start": 499,
+      "position_end": 505
+    },
+    {
+      "word_in_sentence": "i samband med",
+      "base_form": "i samband med",
+      "position_start": 674,
+      "position_end": 687
+    },
+    {
+      "word_in_sentence": "få svar",
+      "base_form": "få svar",
+      "position_start": 1791,
+      "position_end": 1798
+    },
+    {
+      "word_in_sentence": "vägg",
+      "base_form": "vägg",
+      "position_start": 494,
+      "position_end": 498
+    },
+    {
+      "word_in_sentence": "delvis",
+      "base_form": "delvis",
+      "position_start": 1168,
+      "position_end": 1174
+    },
+    {
+      "word_in_sentence": "döv",
+      "base_form": "döv",
+      "position_start": 1175,
+      "position_end": 1178
+    },
+    {
+      "word_in_sentence": "snabbare än",
+      "base_form": "snabbare än",
+      "position_start": 1509,
+      "position_end": 1520
+    },
+    {
+      "word_in_sentence": "serie",
+      "base_form": "serie",
+      "position_start": 997,
+      "position_end": 1002
+    },
+    {
+      "word_in_sentence": "nära samarbete",
+      "base_form": "nära samarbete",
+      "position_start": 846,
+      "position_end": 860
+    },
+    {
+      "word_in_sentence": "halvsanning",
+      "base_form": "halvsanning",
+      "position_start": 1444,
+      "position_end": 1455
+    },
+    {
+      "word_in_sentence": "… för sig",
+      "base_form": "… för sig",
+      "position_start": 1633,
+      "position_end": 1642
+    }
+  ],
+  "primary_words_used": [
+    "passa",
+    "träna",
+    "trött",
+    "dödstrött",
+    "svettas",
+    "kondition",
+    "nyttig",
+    "kropp",
+    "slappa",
+    "träningsresa",
+    "vikt",
+    "gå upp i vikt",
+    "pass",
+    "träningspass",
+    "träningskläder",
+    "sova",
+    "frisk",
+    "ont",
+    "knä",
+    "muskel",
+    "ben",
+    "motion",
+    "motionsform",
+    "träningsvärk",
+    "stretcha",
+    "styrketräning",
+    "träningsskor",
+    "motienera",
+    "hälsosam",
+    "koppla av",
+    "gyminstruktör",
+    "sportig",
+    "bry sig om",
+    "Lyssna till ditt hjärta.",
+    "överdos",
+    "självmord",
+    "sinnessjukhus",
+    "exotisk",
+    "per brev",
+    "lyssna",
+    "tvinga",
+    "parasit",
+    "äga rum",
+    "sett",
+    "ändå",
+    "lägst",
+    "kallas för",
+    "frack",
+    "hänga med",
+    "intill",
+    "i samband med",
+    "få svar",
+    "vägg",
+    "delvis",
+    "döv",
+    "snabbare än",
+    "serie",
+    "nära samarbete",
+    "halvsanning",
+    "… för sig"
+  ]
+}

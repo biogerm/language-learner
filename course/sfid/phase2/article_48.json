@@ -1,0 +1,432 @@
+{
+  "course_id": "sfid",
+  "course_title": "SFI D",
+  "step_id": "samhälle_politik",
+  "step_title": "Samhälle & Politik",
+  "article_id": "art_48",
+  "sv": "En fredag pratade min lärare, en trevlig engelsman, mycket om svensk politik och historia, om förr och nu. \"Hänger du med?\" frågade han och såg på oss.\n\"Redan som ung hörde jag ofta en berättelse om hur gamla länder fungerade,\" började han. \"Vissa länder hade länge ett mäktigt styre under en bestämd kejsarinna. På den tiden skulle man kröna en härskare under pompa och ståt för att hen skulle sitta på en tron. Ibland fanns det också en religiös ledare, som en katolsk påve, eller en representant för en lutheransk trosinriktning inom vår tidiga kristendom.\"\n\nHan berättade att det ofta var farligt att lägga sig i makten på den tiden. En okänd utlänning eller en politisk motståndare kunde snabbt hamna på en galgbacke för en blodig avrättning. Man kunde också bli tvingad att rulla ihop sig i fosterställning om någon hotade att skjuta en tung järnkula mot en under ett krig. \"Hur dum får man vara?\" sa en klasskamrat och började stirra på en hemsk bild i en tidning om gamla vapen. \"En tvåkilos kula är ju jättetung och livsfarlig.\"\n\nSedan ändrades samhället drastiskt. Vi gick från manuellt arbete till industriell masstillverkning och en ökad konsumtion i sig, mycket tack vare tidig globalisering. Vårt eget land fick ett nytt politiskt system. Ett lokalt förbund från varje län samlades för att skapa en demokratisk stat. Idag styrs mycket lagstiftning av en riksdagsledamot i Stockholm och varje lokal ledamot i våra olika kommittéer. En viktig representant för folket bör ha en modern syn på allas jämlikhet, helt oavsett kön eller sexuell läggning. Samtidigt kan en stor folkomröstning eller en mer vanlig omröstning handla om väldigt svåra frågor. Även tolv år senare minns man kanske ett historiskt beslut om till exempel ett nationellt spritförbud och hur svårt det var att hålla reda på alla olika politiska åsikter. \n\nIdag diskuterar vi moderna faror som rasism och högerextremism. Ibland går en känd kvinnlig partiledare ut i ett stort nyhetsprogram för att påminna om vikten av ett politiskt samförstånd mellan två stora politiska block. Då krävs det ofta en stark koalition. Man försöker gemensamt bekämpa farliga idéer som extrem kommuism. Om folket vill klaga, väljer de ofta att demonstrera i en fredlig demonstration. Det stora torget brukar vara nere på stan, och det fungerar som en mycket bra samlingsplats. \n\nNyligen hörde jag en schweizisk politiker som var envis som en åsna inför ett nytt lagförslag om framtidens familjer. Han diskuterade bland annat rätten att adoptera små barn från ett utsatt barnhem. Det visade tydligt att politik alltid är och förblir viktigt för vår vardag.",
+  "target_words": [
+    {
+      "word_in_sentence": "representant",
+      "base_form": "representant",
+      "position_start": 486,
+      "position_end": 498
+    },
+    {
+      "word_in_sentence": "block",
+      "base_form": "block",
+      "position_start": 2050,
+      "position_end": 2055
+    },
+    {
+      "word_in_sentence": "masstillverkning",
+      "base_form": "masstillverkning",
+      "position_start": 1121,
+      "position_end": 1137
+    },
+    {
+      "word_in_sentence": "kejsarinna",
+      "base_form": "kejsarinna",
+      "position_start": 301,
+      "position_end": 311
+    },
+    {
+      "word_in_sentence": "koalition",
+      "base_form": "koalition",
+      "position_start": 2084,
+      "position_end": 2093
+    },
+    {
+      "word_in_sentence": "högerextremism",
+      "base_form": "högerextremism",
+      "position_start": 1883,
+      "position_end": 1897
+    },
+    {
+      "word_in_sentence": "samförstånd",
+      "base_form": "samförstånd",
+      "position_start": 2011,
+      "position_end": 2022
+    },
+    {
+      "word_in_sentence": "tvåkilos",
+      "base_form": "tvåkilos",
+      "position_start": 991,
+      "position_end": 999
+    },
+    {
+      "word_in_sentence": "styre",
+      "base_form": "styre",
+      "position_start": 278,
+      "position_end": 283
+    },
+    {
+      "word_in_sentence": "konsumtion",
+      "base_form": "konsumtion",
+      "position_start": 1150,
+      "position_end": 1160
+    },
+    {
+      "word_in_sentence": "schweizisk",
+      "base_form": "schweizisk",
+      "position_start": 2358,
+      "position_end": 2368
+    },
+    {
+      "word_in_sentence": "skjuta",
+      "base_form": "skjuta",
+      "position_start": 833,
+      "position_end": 839
+    },
+    {
+      "word_in_sentence": "barnhem",
+      "base_form": "barnhem",
+      "position_start": 2528,
+      "position_end": 2535
+    },
+    {
+      "word_in_sentence": "järnkula",
+      "base_form": "järnkula",
+      "position_start": 848,
+      "position_end": 856
+    },
+    {
+      "word_in_sentence": "län",
+      "base_form": "län",
+      "position_start": 1283,
+      "position_end": 1286
+    },
+    {
+      "word_in_sentence": "globalisering",
+      "base_form": "globalisering",
+      "position_start": 1191,
+      "position_end": 1204
+    },
+    {
+      "word_in_sentence": "kvinnlig",
+      "base_form": "kvinnlig",
+      "position_start": 1918,
+      "position_end": 1926
+    },
+    {
+      "word_in_sentence": "sexuell läggning",
+      "base_form": "sexuell läggning",
+      "position_start": 1543,
+      "position_end": 1559
+    },
+    {
+      "word_in_sentence": "demonstration",
+      "base_form": "demonstration",
+      "position_start": 2227,
+      "position_end": 2240
+    },
+    {
+      "word_in_sentence": "lutheransk",
+      "base_form": "lutheransk",
+      "position_start": 506,
+      "position_end": 516
+    },
+    {
+      "word_in_sentence": "demonstrera",
+      "base_form": "demonstrera",
+      "position_start": 2202,
+      "position_end": 2213
+    },
+    {
+      "word_in_sentence": "spritförbud",
+      "base_form": "spritförbud",
+      "position_start": 1751,
+      "position_end": 1762
+    },
+    {
+      "word_in_sentence": "engelsman",
+      "base_form": "engelsman",
+      "position_start": 41,
+      "position_end": 50
+    },
+    {
+      "word_in_sentence": "förbund",
+      "base_form": "förbund",
+      "position_start": 1264,
+      "position_end": 1271
+    },
+    {
+      "word_in_sentence": "omröstning",
+      "base_form": "omröstning",
+      "position_start": 1618,
+      "position_end": 1628
+    },
+    {
+      "word_in_sentence": "trosinriktning",
+      "base_form": "trosinriktning",
+      "position_start": 517,
+      "position_end": 531
+    },
+    {
+      "word_in_sentence": "kommuism",
+      "base_form": "kommuism",
+      "position_start": 2151,
+      "position_end": 2159
+    },
+    {
+      "word_in_sentence": "kröna",
+      "base_form": "kröna",
+      "position_start": 337,
+      "position_end": 342
+    },
+    {
+      "word_in_sentence": "folkomröstning",
+      "base_form": "folkomröstning",
+      "position_start": 1583,
+      "position_end": 1597
+    },
+    {
+      "word_in_sentence": "utlänning",
+      "base_form": "utlänning",
+      "position_start": 647,
+      "position_end": 656
+    },
+    {
+      "word_in_sentence": "påve",
+      "base_form": "påve",
+      "position_start": 471,
+      "position_end": 475
+    },
+    {
+      "word_in_sentence": "riksdagsledamot",
+      "base_form": "riksdagsledamot",
+      "position_start": 1368,
+      "position_end": 1383
+    },
+    {
+      "word_in_sentence": "kristendom",
+      "base_form": "kristendom",
+      "position_start": 548,
+      "position_end": 558
+    },
+    {
+      "word_in_sentence": "nyhetsprogram",
+      "base_form": "nyhetsprogram",
+      "position_start": 1954,
+      "position_end": 1967
+    },
+    {
+      "word_in_sentence": "galgbacke",
+      "base_form": "galgbacke",
+      "position_start": 712,
+      "position_end": 721
+    },
+    {
+      "word_in_sentence": "avrättning",
+      "base_form": "avrättning",
+      "position_start": 736,
+      "position_end": 746
+    },
+    {
+      "word_in_sentence": "adoptera",
+      "base_form": "adoptera",
+      "position_start": 2494,
+      "position_end": 2502
+    },
+    {
+      "word_in_sentence": "ledamot",
+      "base_form": "ledamot",
+      "position_start": 1412,
+      "position_end": 1419
+    },
+    {
+      "word_in_sentence": "tron",
+      "base_form": "tron",
+      "position_start": 407,
+      "position_end": 411
+    },
+    {
+      "word_in_sentence": "kön",
+      "base_form": "kön",
+      "position_start": 1533,
+      "position_end": 1536
+    },
+    {
+      "word_in_sentence": "Hur dum får man vara?",
+      "base_form": "Hur dum får man vara?",
+      "position_start": 881,
+      "position_end": 902
+    },
+    {
+      "word_in_sentence": "tolv år senare",
+      "base_form": "tolv år senare",
+      "position_start": 1666,
+      "position_end": 1680
+    },
+    {
+      "word_in_sentence": "envis som en åsna",
+      "base_form": "envis som en åsna",
+      "position_start": 2387,
+      "position_end": 2404
+    },
+    {
+      "word_in_sentence": "som ung",
+      "base_form": "som ung",
+      "position_start": 159,
+      "position_end": 166
+    },
+    {
+      "word_in_sentence": "tidning",
+      "base_form": "tidning",
+      "position_start": 963,
+      "position_end": 970
+    },
+    {
+      "word_in_sentence": "vara nere på",
+      "base_form": "vara nere på",
+      "position_start": 2266,
+      "position_end": 2278
+    },
+    {
+      "word_in_sentence": "berättelse",
+      "base_form": "berättelse",
+      "position_start": 185,
+      "position_end": 195
+    },
+    {
+      "word_in_sentence": "bör ha",
+      "base_form": "bör ha",
+      "position_start": 1479,
+      "position_end": 1485
+    },
+    {
+      "word_in_sentence": "stirra",
+      "base_form": "stirra",
+      "position_start": 934,
+      "position_end": 940
+    },
+    {
+      "word_in_sentence": "i sig",
+      "base_form": "i sig",
+      "position_start": 1161,
+      "position_end": 1166
+    },
+    {
+      "word_in_sentence": "inför",
+      "base_form": "inför",
+      "position_start": 2405,
+      "position_end": 2410
+    },
+    {
+      "word_in_sentence": "hålla reda på",
+      "base_form": "hålla reda på",
+      "position_start": 1789,
+      "position_end": 1802
+    },
+    {
+      "word_in_sentence": "fredag",
+      "base_form": "fredag",
+      "position_start": 3,
+      "position_end": 9
+    },
+    {
+      "word_in_sentence": "Hänger du med?",
+      "base_form": "Hänger du med?",
+      "position_start": 108,
+      "position_end": 122
+    },
+    {
+      "word_in_sentence": "fosterställning",
+      "base_form": "fosterställning",
+      "position_start": 797,
+      "position_end": 812
+    },
+    {
+      "word_in_sentence": "samlingsplats",
+      "base_form": "samlingsplats",
+      "position_start": 2320,
+      "position_end": 2333
+    },
+    {
+      "word_in_sentence": "oss",
+      "base_form": "oss",
+      "position_start": 147,
+      "position_end": 150
+    },
+    {
+      "word_in_sentence": "förr och nu",
+      "base_form": "förr och nu",
+      "position_start": 94,
+      "position_end": 105
+    },
+    {
+      "word_in_sentence": "lägga sig i",
+      "base_form": "lägga sig i",
+      "position_start": 605,
+      "position_end": 616
+    },
+    {
+      "word_in_sentence": "påminna om",
+      "base_form": "påminna om",
+      "position_start": 1976,
+      "position_end": 1986
+    }
+  ],
+  "primary_words_used": [
+    "representant",
+    "block",
+    "masstillverkning",
+    "kejsarinna",
+    "koalition",
+    "högerextremism",
+    "samförstånd",
+    "tvåkilos",
+    "styre",
+    "konsumtion",
+    "schweizisk",
+    "skjuta",
+    "barnhem",
+    "järnkula",
+    "län",
+    "globalisering",
+    "kvinnlig",
+    "sexuell läggning",
+    "demonstration",
+    "lutheransk",
+    "demonstrera",
+    "spritförbud",
+    "engelsman",
+    "förbund",
+    "omröstning",
+    "trosinriktning",
+    "kommuism",
+    "kröna",
+    "folkomröstning",
+    "utlänning",
+    "påve",
+    "riksdagsledamot",
+    "kristendom",
+    "nyhetsprogram",
+    "galgbacke",
+    "avrättning",
+    "adoptera",
+    "ledamot",
+    "tron",
+    "kön",
+    "Hur dum får man vara?",
+    "tolv år senare",
+    "envis som en åsna",
+    "som ung",
+    "tidning",
+    "vara nere på",
+    "berättelse",
+    "bör ha",
+    "stirra",
+    "i sig",
+    "inför",
+    "hålla reda på",
+    "fredag",
+    "Hänger du med?",
+    "fosterställning",
+    "samlingsplats",
+    "oss",
+    "förr och nu",
+    "lägga sig i",
+    "påminna om"
+  ]
+}

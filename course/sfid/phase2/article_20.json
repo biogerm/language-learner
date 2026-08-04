@@ -1,0 +1,432 @@
+{
+  "course_id": "sfid",
+  "course_title": "SFI D",
+  "step_id": "natur_miljö",
+  "step_title": "Natur & Miljö",
+  "article_id": "art_20",
+  "sv": "Jag har inte något emot att vara ute i naturen, särskilt när vi för en månad sedan besökte en ny miljöcertifierad park. Den ligger tusen meter över havet, med en underbar utsikt över en klar himmel. Vi bodde i en stor trädkoja byggd av rent trä. Stämningen var informell och man tar hållbarhet på allvar. \"Detta verkar vara en fantastisk plats,\" sa jag. \"Det tycker jag också.\" svarade min vän. Min vän är en känd idrottsstjärna som vill vara miljömedveten.\n\n\"Naturen här är en riktig berg -och dalbana,\" skrattade han, eftersom landskapet går mycket upp och ner. Vi hade en diskussion om miljö. Det finns en viktig skillnad mellan gammal och ny forkning om djurens beteende. Däremot är alla överens om att vår ursprungliga natur är bäst. Inom parken försöker man driva ett stort reningsverk på högvarv för att minska alla utsläpp som gör att vår flod kan bli förorenad. Sällan ser man en så ren vattenyta som här, och den kommer ofta på första plats i landet. Många vill vara en miljövänlig besökare, vilket är en klok åsikt. \n\nI somras kunde vi se skogen växa under en varm sommar. Nu, från kall gryning till mörk skymning, är själva skogen helt fantastisk. Där brukar man ha gott om vilda djur. Jag kan avslöja att vi såg en skadad höna som blev räddad. En vild kanin reste sig på sina bakben och bredvid den satt en liten mus och en råtta nära en sten. \n\nMan har valt att plantera in vissa djur för att rädda den lokala faunan. En lokal älgstam frodas och vi såg en stolt älgko. Dessutom fanns det en grävling, en liten vessla och till och med en flitig bäver. Man varnade oss för en giftig huggorm, men vi plockade ändå blåa bär medan ett surrande bi flög förbi. Min vän sa skämtsamt att han ville ta med sig en åsna nästa gång för att bära allt. Det var en fantastisk upplevelse. Ta reda på mer!",
+  "target_words": [
+    {
+      "word_in_sentence": "har inte något emot",
+      "base_form": "har inte något emot",
+      "position_start": 4,
+      "position_end": 23
+    },
+    {
+      "word_in_sentence": "meter över havet",
+      "base_form": "meter över havet",
+      "position_start": 137,
+      "position_end": 153
+    },
+    {
+      "word_in_sentence": "berg -och dalbana",
+      "base_form": "berg -och dalbana",
+      "position_start": 485,
+      "position_end": 502
+    },
+    {
+      "word_in_sentence": "trä",
+      "base_form": "trä",
+      "position_start": 241,
+      "position_end": 244
+    },
+    {
+      "word_in_sentence": "idrottsstjärna",
+      "base_form": "idrottsstjärna",
+      "position_start": 414,
+      "position_end": 428
+    },
+    {
+      "word_in_sentence": "forkning",
+      "base_form": "forkning",
+      "position_start": 646,
+      "position_end": 654
+    },
+    {
+      "word_in_sentence": "beteende",
+      "base_form": "beteende",
+      "position_start": 666,
+      "position_end": 674
+    },
+    {
+      "word_in_sentence": "flod",
+      "base_form": "flod",
+      "position_start": 847,
+      "position_end": 851
+    },
+    {
+      "word_in_sentence": "vattenyta",
+      "base_form": "vattenyta",
+      "position_start": 896,
+      "position_end": 905
+    },
+    {
+      "word_in_sentence": "ha gott om",
+      "base_form": "ha gott om",
+      "position_start": 1175,
+      "position_end": 1185
+    },
+    {
+      "word_in_sentence": "utsläpp",
+      "base_form": "utsläpp",
+      "position_start": 823,
+      "position_end": 830
+    },
+    {
+      "word_in_sentence": "reningsverk",
+      "base_form": "reningsverk",
+      "position_start": 780,
+      "position_end": 791
+    },
+    {
+      "word_in_sentence": "miljömedveten",
+      "base_form": "miljömedveten",
+      "position_start": 443,
+      "position_end": 456
+    },
+    {
+      "word_in_sentence": "miljövänlig",
+      "base_form": "miljövänlig",
+      "position_start": 980,
+      "position_end": 991
+    },
+    {
+      "word_in_sentence": "trädkoja",
+      "base_form": "trädkoja",
+      "position_start": 218,
+      "position_end": 226
+    },
+    {
+      "word_in_sentence": "hållbarhet",
+      "base_form": "hållbarhet",
+      "position_start": 283,
+      "position_end": 293
+    },
+    {
+      "word_in_sentence": "miljöcertifierad",
+      "base_form": "miljöcertifierad",
+      "position_start": 97,
+      "position_end": 113
+    },
+    {
+      "word_in_sentence": "kall",
+      "base_form": "kall",
+      "position_start": 1093,
+      "position_end": 1097
+    },
+    {
+      "word_in_sentence": "växa",
+      "base_form": "växa",
+      "position_start": 1057,
+      "position_end": 1061
+    },
+    {
+      "word_in_sentence": "sommar",
+      "base_form": "sommar",
+      "position_start": 1076,
+      "position_end": 1082
+    },
+    {
+      "word_in_sentence": "utsikt",
+      "base_form": "utsikt",
+      "position_start": 171,
+      "position_end": 177
+    },
+    {
+      "word_in_sentence": "himmel",
+      "base_form": "himmel",
+      "position_start": 191,
+      "position_end": 197
+    },
+    {
+      "word_in_sentence": "skymning",
+      "base_form": "skymning",
+      "position_start": 1116,
+      "position_end": 1124
+    },
+    {
+      "word_in_sentence": "gryning",
+      "base_form": "gryning",
+      "position_start": 1098,
+      "position_end": 1105
+    },
+    {
+      "word_in_sentence": "höna",
+      "base_form": "höna",
+      "position_start": 1235,
+      "position_end": 1239
+    },
+    {
+      "word_in_sentence": "bär",
+      "base_form": "bär",
+      "position_start": 1630,
+      "position_end": 1633
+    },
+    {
+      "word_in_sentence": "huggorm",
+      "base_form": "huggorm",
+      "position_start": 1595,
+      "position_end": 1602
+    },
+    {
+      "word_in_sentence": "älgko",
+      "base_form": "älgko",
+      "position_start": 1476,
+      "position_end": 1481
+    },
+    {
+      "word_in_sentence": "vessla",
+      "base_form": "vessla",
+      "position_start": 1524,
+      "position_end": 1530
+    },
+    {
+      "word_in_sentence": "ursprungliga",
+      "base_form": "ursprunglig",
+      "position_start": 711,
+      "position_end": 723
+    },
+    {
+      "word_in_sentence": "åsna",
+      "base_form": "åsna",
+      "position_start": 1717,
+      "position_end": 1721
+    },
+    {
+      "word_in_sentence": "mus",
+      "base_form": "mus",
+      "position_start": 1326,
+      "position_end": 1329
+    },
+    {
+      "word_in_sentence": "bi",
+      "base_form": "bi",
+      "position_start": 1653,
+      "position_end": 1655
+    },
+    {
+      "word_in_sentence": "älgstam",
+      "base_form": "älgstam",
+      "position_start": 1441,
+      "position_end": 1448
+    },
+    {
+      "word_in_sentence": "kanin",
+      "base_form": "kanin",
+      "position_start": 1265,
+      "position_end": 1270
+    },
+    {
+      "word_in_sentence": "giftig",
+      "base_form": "giftig",
+      "position_start": 1588,
+      "position_end": 1594
+    },
+    {
+      "word_in_sentence": "grävling",
+      "base_form": "grävling",
+      "position_start": 1505,
+      "position_end": 1513
+    },
+    {
+      "word_in_sentence": "bäver",
+      "base_form": "bäver",
+      "position_start": 1558,
+      "position_end": 1563
+    },
+    {
+      "word_in_sentence": "råtta",
+      "base_form": "råtta",
+      "position_start": 1337,
+      "position_end": 1342
+    },
+    {
+      "word_in_sentence": "sten",
+      "base_form": "sten",
+      "position_start": 1351,
+      "position_end": 1355
+    },
+    {
+      "word_in_sentence": "plantera in",
+      "base_form": "plantera in",
+      "position_start": 1376,
+      "position_end": 1387
+    },
+    {
+      "word_in_sentence": "månad",
+      "base_form": "månad",
+      "position_start": 71,
+      "position_end": 76
+    },
+    {
+      "word_in_sentence": "Däremot",
+      "base_form": "däremot",
+      "position_start": 676,
+      "position_end": 683
+    },
+    {
+      "word_in_sentence": "själva",
+      "base_form": "själva",
+      "position_start": 1129,
+      "position_end": 1135
+    },
+    {
+      "word_in_sentence": "informell",
+      "base_form": "informell",
+      "position_start": 261,
+      "position_end": 270
+    },
+    {
+      "word_in_sentence": "skillnad",
+      "base_form": "skillnad",
+      "position_start": 616,
+      "position_end": 624
+    },
+    {
+      "word_in_sentence": "skadad",
+      "base_form": "skadad",
+      "position_start": 1228,
+      "position_end": 1234
+    },
+    {
+      "word_in_sentence": "på allvar",
+      "base_form": "på allvar",
+      "position_start": 294,
+      "position_end": 303
+    },
+    {
+      "word_in_sentence": "åsikt",
+      "base_form": "åsikt",
+      "position_start": 1020,
+      "position_end": 1025
+    },
+    {
+      "word_in_sentence": "Inom",
+      "base_form": "inom",
+      "position_start": 739,
+      "position_end": 743
+    },
+    {
+      "word_in_sentence": "på första plats",
+      "base_form": "på första plats",
+      "position_start": 935,
+      "position_end": 950
+    },
+    {
+      "word_in_sentence": "Det tycker jag också.",
+      "base_form": "Det tycker jag också.",
+      "position_start": 355,
+      "position_end": 376
+    },
+    {
+      "word_in_sentence": "Sällan",
+      "base_form": "sällan",
+      "position_start": 871,
+      "position_end": 877
+    },
+    {
+      "word_in_sentence": "som gör att",
+      "base_form": "som gör att",
+      "position_start": 831,
+      "position_end": 842
+    },
+    {
+      "word_in_sentence": "verkar vara",
+      "base_form": "verka vara",
+      "position_start": 312,
+      "position_end": 323
+    },
+    {
+      "word_in_sentence": "avslöja",
+      "base_form": "avslöja",
+      "position_start": 1206,
+      "position_end": 1213
+    },
+    {
+      "word_in_sentence": "bakben",
+      "base_form": "bakben",
+      "position_start": 1289,
+      "position_end": 1295
+    },
+    {
+      "word_in_sentence": "högvarv",
+      "base_form": "högvarv",
+      "position_start": 795,
+      "position_end": 802
+    },
+    {
+      "word_in_sentence": "I somras",
+      "base_form": "i somras",
+      "position_start": 1029,
+      "position_end": 1037
+    },
+    {
+      "word_in_sentence": "Ta reda på mer!",
+      "base_form": "Ta reda på mer!",
+      "position_start": 1786,
+      "position_end": 1801
+    }
+  ],
+  "primary_words_used": [
+    "har inte något emot",
+    "meter över havet",
+    "berg -och dalbana",
+    "trä",
+    "idrottsstjärna",
+    "forkning",
+    "beteende",
+    "flod",
+    "vattenyta",
+    "ha gott om",
+    "utsläpp",
+    "reningsverk",
+    "miljömedveten",
+    "miljövänlig",
+    "trädkoja",
+    "hållbarhet",
+    "miljöcertifierad",
+    "kall",
+    "växa",
+    "sommar",
+    "utsikt",
+    "himmel",
+    "skymning",
+    "gryning",
+    "höna",
+    "bär",
+    "huggorm",
+    "älgko",
+    "vessla",
+    "ursprunglig",
+    "åsna",
+    "mus",
+    "bi",
+    "älgstam",
+    "kanin",
+    "giftig",
+    "grävling",
+    "bäver",
+    "råtta",
+    "sten",
+    "plantera in",
+    "månad",
+    "däremot",
+    "själva",
+    "informell",
+    "skillnad",
+    "skadad",
+    "på allvar",
+    "åsikt",
+    "inom",
+    "på första plats",
+    "Det tycker jag också.",
+    "sällan",
+    "som gör att",
+    "verka vara",
+    "avslöja",
+    "bakben",
+    "högvarv",
+    "i somras",
+    "Ta reda på mer!"
+  ]
+}

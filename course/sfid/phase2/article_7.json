@@ -1,0 +1,432 @@
+{
+  "course_id": "sfid",
+  "course_title": "SFI D",
+  "step_id": "arbetsliv",
+  "step_title": "Arbetsliv",
+  "article_id": "art_07",
+  "sv": "En spännande vecka på kontoret\n\n\"Jag skriver till er för att…\" började min sekreterare läsa ur ett brev. Anledningen var att en pr-konsult ville presentera ett nytt projekt. Det var ett stort byggnadsprojekt bredvid ett nytt handelscentrum. \"Det blir ett spännande öde för staden,\" sa vår vd.\n\nHan planerade att investera i en ny produkt. Fabriken skulle tillverka en fet lyxvara och hoppades att den skulle bli en storsäljare. För att lansera den bra behövde han bra försäljning och handel. \"Du måste kontakta någon som kan hjälpa till,\" sa han. \"Du skulle kunna prova/försöka.\" Jag är serviceinriktad och duktig på min arbetsuppgift.\n\nDet var ett viktigt möte. Jag var noga med att inte komma försent, utan kom precis i rätt tid. För att förbereda sig hade han skrivit några stödord på en tavla nedanför skärmen. Ett bra knep är att använda exakt rätt titel. \"Vi ska besluta om framtiden,\" sa han. Han ville kräva att vår personal skulle samarbeta mer. Numera måste vi också införa nya regler som har att göra med säkerhet på varje bygge.\n\n\"Vi behöver en advokat och en revisor för att skriva under avtal,\" sa han. \"Det kan vara en tung och stressig tid. Vi kan inte dölja att arbetet kan ta en dryg månad.\" \"Det tycker inte jag heller.\" sa en kommissarie som var där för säkerhetsfrågor. Vi pratade också om att anställa en apotekare på deltid och en servitris till kantinen.\n\n\"Jag tycker inte att vi ska anställa varken…eller av dem just nu,\" sa vd:n. \"Vid ett annat tillfälle kan de få en chans.\" Alla som ville bli medlem i klubben fick en betald plats, och varje medlem var nöjd.",
+  "target_words": [
+    {
+      "word_in_sentence": "Anledningen",
+      "base_form": "Anledningen",
+      "position_start": 105,
+      "position_end": 116
+    },
+    {
+      "word_in_sentence": "presentera",
+      "base_form": "presentera",
+      "position_start": 145,
+      "position_end": 155
+    },
+    {
+      "word_in_sentence": "deltid",
+      "base_form": "deltid",
+      "position_start": 1340,
+      "position_end": 1346
+    },
+    {
+      "word_in_sentence": "besluta om",
+      "base_form": "besluta om",
+      "position_start": 869,
+      "position_end": 879
+    },
+    {
+      "word_in_sentence": "förbereda sig",
+      "base_form": "förbereda sig",
+      "position_start": 740,
+      "position_end": 753
+    },
+    {
+      "word_in_sentence": "Jag skriver till er för att…",
+      "base_form": "Jag skriver till er för att…",
+      "position_start": 33,
+      "position_end": 61
+    },
+    {
+      "word_in_sentence": "kontakta någon",
+      "base_form": "kontakta någon",
+      "position_start": 502,
+      "position_end": 516
+    },
+    {
+      "word_in_sentence": "komma försent",
+      "base_form": "komma försent",
+      "position_start": 689,
+      "position_end": 702
+    },
+    {
+      "word_in_sentence": "vd",
+      "base_form": "vd",
+      "position_start": 289,
+      "position_end": 291
+    },
+    {
+      "word_in_sentence": "servitris",
+      "base_form": "servitris",
+      "position_start": 1354,
+      "position_end": 1363
+    },
+    {
+      "word_in_sentence": "betald",
+      "base_form": "betald",
+      "position_start": 1546,
+      "position_end": 1552
+    },
+    {
+      "word_in_sentence": "medlem",
+      "base_form": "medlem",
+      "position_start": 1570,
+      "position_end": 1576
+    },
+    {
+      "word_in_sentence": "duktig",
+      "base_form": "duktig",
+      "position_start": 607,
+      "position_end": 613
+    },
+    {
+      "word_in_sentence": "pr-konsult",
+      "base_form": "pr-konsult",
+      "position_start": 128,
+      "position_end": 138
+    },
+    {
+      "word_in_sentence": "projekt",
+      "base_form": "projekt",
+      "position_start": 165,
+      "position_end": 172
+    },
+    {
+      "word_in_sentence": "arbetsuppgift",
+      "base_form": "arbetsuppgift",
+      "position_start": 621,
+      "position_end": 634
+    },
+    {
+      "word_in_sentence": "tung",
+      "base_form": "tung",
+      "position_start": 1134,
+      "position_end": 1138
+    },
+    {
+      "word_in_sentence": "investera",
+      "base_form": "investera",
+      "position_start": 312,
+      "position_end": 321
+    },
+    {
+      "word_in_sentence": "kräva att",
+      "base_form": "kräva att",
+      "position_start": 910,
+      "position_end": 919
+    },
+    {
+      "word_in_sentence": "advokat",
+      "base_form": "advokat",
+      "position_start": 1057,
+      "position_end": 1064
+    },
+    {
+      "word_in_sentence": "stressig",
+      "base_form": "stressig",
+      "position_start": 1143,
+      "position_end": 1151
+    },
+    {
+      "word_in_sentence": "bli medlem",
+      "base_form": "bli medlem",
+      "position_start": 1517,
+      "position_end": 1527
+    },
+    {
+      "word_in_sentence": "personal",
+      "base_form": "personal",
+      "position_start": 924,
+      "position_end": 932
+    },
+    {
+      "word_in_sentence": "möte",
+      "base_form": "möte",
+      "position_start": 657,
+      "position_end": 661
+    },
+    {
+      "word_in_sentence": "serviceinriktad",
+      "base_form": "serviceinriktad",
+      "position_start": 587,
+      "position_end": 602
+    },
+    {
+      "word_in_sentence": "tillverka",
+      "base_form": "tillverka",
+      "position_start": 355,
+      "position_end": 364
+    },
+    {
+      "word_in_sentence": "produkt",
+      "base_form": "produkt",
+      "position_start": 330,
+      "position_end": 337
+    },
+    {
+      "word_in_sentence": "lansera",
+      "base_form": "lansera",
+      "position_start": 436,
+      "position_end": 443
+    },
+    {
+      "word_in_sentence": "handel",
+      "base_form": "handel",
+      "position_start": 484,
+      "position_end": 490
+    },
+    {
+      "word_in_sentence": "försäljning",
+      "base_form": "försäljning",
+      "position_start": 468,
+      "position_end": 479
+    },
+    {
+      "word_in_sentence": "storsäljare",
+      "base_form": "storsäljare",
+      "position_start": 415,
+      "position_end": 426
+    },
+    {
+      "word_in_sentence": "bygge",
+      "base_form": "bygge",
+      "position_start": 1034,
+      "position_end": 1039
+    },
+    {
+      "word_in_sentence": "revisor",
+      "base_form": "revisor",
+      "position_start": 1072,
+      "position_end": 1079
+    },
+    {
+      "word_in_sentence": "apotekare",
+      "base_form": "apotekare",
+      "position_start": 1327,
+      "position_end": 1336
+    },
+    {
+      "word_in_sentence": "samarbeta",
+      "base_form": "samarbeta",
+      "position_start": 940,
+      "position_end": 949
+    },
+    {
+      "word_in_sentence": "handelscentrum",
+      "base_form": "handelscentrum",
+      "position_start": 225,
+      "position_end": 239
+    },
+    {
+      "word_in_sentence": "byggnadsprojekt",
+      "base_form": "byggnadsprojekt",
+      "position_start": 192,
+      "position_end": 207
+    },
+    {
+      "word_in_sentence": "kommissarie",
+      "base_form": "kommissarie",
+      "position_start": 1246,
+      "position_end": 1257
+    },
+    {
+      "word_in_sentence": "lyxvara",
+      "base_form": "lyxvara",
+      "position_start": 372,
+      "position_end": 379
+    },
+    {
+      "word_in_sentence": "sekreterare",
+      "base_form": "sekreterare",
+      "position_start": 75,
+      "position_end": 86
+    },
+    {
+      "word_in_sentence": "exakt",
+      "base_form": "exakt",
+      "position_start": 843,
+      "position_end": 848
+    },
+    {
+      "word_in_sentence": "Numera",
+      "base_form": "numera",
+      "position_start": 955,
+      "position_end": 961
+    },
+    {
+      "word_in_sentence": "skriva under",
+      "base_form": "skriva under",
+      "position_start": 1088,
+      "position_end": 1100
+    },
+    {
+      "word_in_sentence": "införa",
+      "base_form": "införa",
+      "position_start": 977,
+      "position_end": 983
+    },
+    {
+      "word_in_sentence": "dölja",
+      "base_form": "dölja",
+      "position_start": 1169,
+      "position_end": 1174
+    },
+    {
+      "word_in_sentence": "precis",
+      "base_form": "precis",
+      "position_start": 713,
+      "position_end": 719
+    },
+    {
+      "word_in_sentence": "dryg",
+      "base_form": "dryg",
+      "position_start": 1197,
+      "position_end": 1201
+    },
+    {
+      "word_in_sentence": "Det tycker inte jag heller.",
+      "base_form": "Det tycker inte jag heller.",
+      "position_start": 1211,
+      "position_end": 1238
+    },
+    {
+      "word_in_sentence": "nedanför",
+      "base_form": "nedanför",
+      "position_start": 797,
+      "position_end": 805
+    },
+    {
+      "word_in_sentence": "spännande",
+      "base_form": "spännande",
+      "position_start": 255,
+      "position_end": 264
+    },
+    {
+      "word_in_sentence": "titel",
+      "base_form": "titel",
+      "position_start": 854,
+      "position_end": 859
+    },
+    {
+      "word_in_sentence": "fet",
+      "base_form": "fet",
+      "position_start": 368,
+      "position_end": 371
+    },
+    {
+      "word_in_sentence": "som har att göra med",
+      "base_form": "som har att göra med",
+      "position_start": 995,
+      "position_end": 1015
+    },
+    {
+      "word_in_sentence": "få en chans",
+      "base_form": "få en chans",
+      "position_start": 1488,
+      "position_end": 1499
+    },
+    {
+      "word_in_sentence": "stödord",
+      "base_form": "stödord",
+      "position_start": 777,
+      "position_end": 784
+    },
+    {
+      "word_in_sentence": "knep",
+      "base_form": "knep",
+      "position_start": 823,
+      "position_end": 827
+    },
+    {
+      "word_in_sentence": "öde",
+      "base_form": "öde",
+      "position_start": 265,
+      "position_end": 268
+    },
+    {
+      "word_in_sentence": "Du skulle kunna prova/försöka.",
+      "base_form": "Du skulle kunna prova/försöka.",
+      "position_start": 548,
+      "position_end": 578
+    },
+    {
+      "word_in_sentence": "varken…eller",
+      "base_form": "varken…eller",
+      "position_start": 1417,
+      "position_end": 1429
+    },
+    {
+      "word_in_sentence": "tillfälle",
+      "base_form": "tillfälle",
+      "position_start": 1471,
+      "position_end": 1480
+    }
+  ],
+  "primary_words_used": [
+    "Anledningen",
+    "presentera",
+    "deltid",
+    "besluta om",
+    "förbereda sig",
+    "Jag skriver till er för att…",
+    "kontakta någon",
+    "komma försent",
+    "vd",
+    "servitris",
+    "betald",
+    "medlem",
+    "duktig",
+    "pr-konsult",
+    "projekt",
+    "arbetsuppgift",
+    "tung",
+    "investera",
+    "kräva att",
+    "advokat",
+    "stressig",
+    "bli medlem",
+    "personal",
+    "möte",
+    "serviceinriktad",
+    "tillverka",
+    "produkt",
+    "lansera",
+    "handel",
+    "försäljning",
+    "storsäljare",
+    "bygge",
+    "revisor",
+    "apotekare",
+    "samarbeta",
+    "handelscentrum",
+    "byggnadsprojekt",
+    "kommissarie",
+    "lyxvara",
+    "sekreterare",
+    "exakt",
+    "numera",
+    "skriva under",
+    "införa",
+    "dölja",
+    "precis",
+    "dryg",
+    "Det tycker inte jag heller.",
+    "nedanför",
+    "spännande",
+    "titel",
+    "fet",
+    "som har att göra med",
+    "få en chans",
+    "stödord",
+    "knep",
+    "öde",
+    "Du skulle kunna prova/försöka.",
+    "varken…eller",
+    "tillfälle"
+  ]
+}

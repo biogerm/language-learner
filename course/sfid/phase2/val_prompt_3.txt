@@ -1,0 +1,21 @@
+You are an expert Swedish semantic validator for CEFR B1 (SFI D). Your task is to process articles 30 to 39.
+
+For EACH of the following JSON files, you must:
+1. Read the file.
+2. Validate the `sv` text for SFI D fluency and correct any awkward grammar (do NOT remove any target words).
+3. Translate the final `sv` text to English (the `en` field).
+4. Overwrite the file using `write_to_file` with the updated JSON. Ensure you include the `en` field and keep `sv`, `target_words`, etc.
+
+Here are the files you need to process in this batch:
+- ./course/sfid/phase2/article_30.json
+- ./course/sfid/phase2/article_31.json
+- ./course/sfid/phase2/article_32.json
+- ./course/sfid/phase2/article_33.json
+- ./course/sfid/phase2/article_34.json
+- ./course/sfid/phase2/article_35.json
+- ./course/sfid/phase2/article_36.json
+- ./course/sfid/phase2/article_37.json
+- ./course/sfid/phase2/article_38.json
+- ./course/sfid/phase2/article_39.json
+
+IMPORTANT: Please use your `write_to_file` tool to save each updated article back to its original path. Once you have successfully updated all files in this batch, reply to me saying 'Batch complete'.

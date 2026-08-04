@@ -1,0 +1,432 @@
+{
+  "course_id": "sfid",
+  "course_title": "SFI D",
+  "step_id": "resor_transport",
+  "step_title": "Resor & Transport",
+  "article_id": "art_03",
+  "sv": "\"Vad hände igår?\" frågade min vän, som var väldigt ressugen. \"Vet du vad som hände igår?\" frågade hon sedan snabbt. Jag svarade att det var en lång historia. Vi hade bestämt oss för att bila i en stor, fin och snabb ferraribil som skulle gå i arv från min farbror. Vår plan var att campa året runt och se hela landet. Den svenska turistnäring är stark, och varje turist kan få hjälp på en lokal turisinformation.\n\nVi började vår resa med en långpromenad i en vacker skärgård. Där fanns det många små öar som kunde bilda grunden för en fantastisk upplevelse. Mellan öarna fanns det vatten, och vi fick använda en roddbåt för att ta sig runt i en liten hamn. Där fanns en bra och stabil brygga. Två män talade med oss och ville guida oss på en guidad tur. De berättade att bergen började resa sig ur havet. Det kunde bli mörkt, men allt var mycket vackert. Men plötsligt kom en björn ut ur skogen och verkade gå till attack, fast den egentligen bara var rädd. \"Björnar brukar gå i ide på vintern,\" sa guiden och lugnade oss.\n\nPå söndagen tog vi en lugn söndagspromenad på en gammal stig. Där fick vi ett flygblad från en ung gatuförsäljare. Texten på bladet handlade om en stor kappsegling och om hur man kan bilda team med andra människor. \"Vet du när bussarna går?\" frågade min vän, eftersom vi var trötta på att promenera och ville köra på nästa cykelbana för att se staden Tain i Skottland. Jag vet att det är långt dit, men drömmar är fria. Vår packning började väga mycket. Vi ville åka ur skogen, så vi bestämde oss för att vi skulle åka dit en annan gång.\n\nNu är det vinter och det finns vägsalt på varje vinterväg, vilket är ett måste enligt vår grundlag för säkerhet. Det kan vara en läskig upplevelse att köra när det är halt. Båda mina vänner är hemma nu, och vi är redo att ge oss ut på nya äventyr under nästa ledighet. Att röra på sig är alltid bra. Vem vet vart vi ska gå nästa gång?",
+  "target_words": [
+    {
+      "word_in_sentence": "skärgård",
+      "base_form": "skärgård",
+      "position_start": 466,
+      "position_end": 474
+    },
+    {
+      "word_in_sentence": "resa sig",
+      "base_form": "resa sig",
+      "position_start": 786,
+      "position_end": 794
+    },
+    {
+      "word_in_sentence": "bilda",
+      "base_form": "bilda",
+      "position_start": 1207,
+      "position_end": 1212
+    },
+    {
+      "word_in_sentence": "vägsalt",
+      "base_form": "vägsalt",
+      "position_start": 1594,
+      "position_end": 1601
+    },
+    {
+      "word_in_sentence": "väga",
+      "base_form": "väga",
+      "position_start": 1465,
+      "position_end": 1469
+    },
+    {
+      "word_in_sentence": "gå i ide",
+      "base_form": "gå i ide",
+      "position_start": 974,
+      "position_end": 982
+    },
+    {
+      "word_in_sentence": "bilda grunden för",
+      "base_form": "bilda grunden för",
+      "position_start": 514,
+      "position_end": 531
+    },
+    {
+      "word_in_sentence": "vinterväg",
+      "base_form": "vinterväg",
+      "position_start": 1611,
+      "position_end": 1620
+    },
+    {
+      "word_in_sentence": "gå till attack",
+      "base_form": "gå till attack",
+      "position_start": 907,
+      "position_end": 921
+    },
+    {
+      "word_in_sentence": "Vet du när bussarna går?",
+      "base_form": "Vet du när bussarna går?",
+      "position_start": 1240,
+      "position_end": 1264
+    },
+    {
+      "word_in_sentence": "Vad hände igår?",
+      "base_form": "Vad hände igår?",
+      "position_start": 1,
+      "position_end": 16
+    },
+    {
+      "word_in_sentence": "en annan gång",
+      "base_form": "en annan gång",
+      "position_start": 1547,
+      "position_end": 1560
+    },
+    {
+      "word_in_sentence": "långpromenad",
+      "base_form": "långpromenad",
+      "position_start": 441,
+      "position_end": 453
+    },
+    {
+      "word_in_sentence": "Vet du vad som hände igår?",
+      "base_form": "Vet du vad som hände igår?",
+      "position_start": 62,
+      "position_end": 88
+    },
+    {
+      "word_in_sentence": "ressugen",
+      "base_form": "ressugen",
+      "position_start": 51,
+      "position_end": 59
+    },
+    {
+      "word_in_sentence": "ferraribil",
+      "base_form": "ferraribil",
+      "position_start": 216,
+      "position_end": 226
+    },
+    {
+      "word_in_sentence": "gatuförsäljare",
+      "base_form": "gatuförsäljare",
+      "position_start": 1123,
+      "position_end": 1137
+    },
+    {
+      "word_in_sentence": "söndagspromenad",
+      "base_form": "söndagspromenad",
+      "position_start": 1051,
+      "position_end": 1066
+    },
+    {
+      "word_in_sentence": "turist",
+      "base_form": "turist",
+      "position_start": 363,
+      "position_end": 369
+    },
+    {
+      "word_in_sentence": "gå i arv",
+      "base_form": "gå i arv",
+      "position_start": 238,
+      "position_end": 246
+    },
+    {
+      "word_in_sentence": "köra på",
+      "base_form": "köra på",
+      "position_start": 1333,
+      "position_end": 1340
+    },
+    {
+      "word_in_sentence": "flygblad",
+      "base_form": "flygblad",
+      "position_start": 1102,
+      "position_end": 1110
+    },
+    {
+      "word_in_sentence": "stabil",
+      "base_form": "stabil",
+      "position_start": 678,
+      "position_end": 684
+    },
+    {
+      "word_in_sentence": "åka ur",
+      "base_form": "åka ur",
+      "position_start": 1487,
+      "position_end": 1493
+    },
+    {
+      "word_in_sentence": "cykelbana",
+      "base_form": "cykelbana",
+      "position_start": 1347,
+      "position_end": 1356
+    },
+    {
+      "word_in_sentence": "grundlag",
+      "base_form": "grundlag",
+      "position_start": 1653,
+      "position_end": 1661
+    },
+    {
+      "word_in_sentence": "bila",
+      "base_form": "bila",
+      "position_start": 186,
+      "position_end": 190
+    },
+    {
+      "word_in_sentence": "läskig",
+      "base_form": "läskig",
+      "position_start": 1692,
+      "position_end": 1698
+    },
+    {
+      "word_in_sentence": "stig",
+      "base_form": "stig",
+      "position_start": 1080,
+      "position_end": 1084
+    },
+    {
+      "word_in_sentence": "turistnäring",
+      "base_form": "turistnäring",
+      "position_start": 330,
+      "position_end": 342
+    },
+    {
+      "word_in_sentence": "turisinformation",
+      "base_form": "turisinformation",
+      "position_start": 395,
+      "position_end": 411
+    },
+    {
+      "word_in_sentence": "campa",
+      "base_form": "campa",
+      "position_start": 282,
+      "position_end": 287
+    },
+    {
+      "word_in_sentence": "Tain",
+      "base_form": "tain",
+      "position_start": 1375,
+      "position_end": 1379
+    },
+    {
+      "word_in_sentence": "kappsegling",
+      "base_form": "kappsegling",
+      "position_start": 1176,
+      "position_end": 1187
+    },
+    {
+      "word_in_sentence": "guida",
+      "base_form": "guida",
+      "position_start": 726,
+      "position_end": 731
+    },
+    {
+      "word_in_sentence": "guidad tur",
+      "base_form": "guidad tur",
+      "position_start": 742,
+      "position_end": 752
+    },
+    {
+      "word_in_sentence": "året runt",
+      "base_form": "året runt",
+      "position_start": 288,
+      "position_end": 297
+    },
+    {
+      "word_in_sentence": "ta sig runt",
+      "base_form": "ta sig runt",
+      "position_start": 628,
+      "position_end": 639
+    },
+    {
+      "word_in_sentence": "promenera",
+      "base_form": "promenera",
+      "position_start": 1313,
+      "position_end": 1322
+    },
+    {
+      "word_in_sentence": "hamn",
+      "base_form": "hamn",
+      "position_start": 651,
+      "position_end": 655
+    },
+    {
+      "word_in_sentence": "roddbåt",
+      "base_form": "roddbåt",
+      "position_start": 612,
+      "position_end": 619
+    },
+    {
+      "word_in_sentence": "bra",
+      "base_form": "bra",
+      "position_start": 670,
+      "position_end": 673
+    },
+    {
+      "word_in_sentence": "Nu",
+      "base_form": "nu",
+      "position_start": 1563,
+      "position_end": 1565
+    },
+    {
+      "word_in_sentence": "andra",
+      "base_form": "andra",
+      "position_start": 1222,
+      "position_end": 1227
+    },
+    {
+      "word_in_sentence": "bli",
+      "base_form": "bli",
+      "position_start": 815,
+      "position_end": 818
+    },
+    {
+      "word_in_sentence": "Båda",
+      "base_form": "båda",
+      "position_start": 1736,
+      "position_end": 1740
+    },
+    {
+      "word_in_sentence": "talade",
+      "base_form": "tala",
+      "position_start": 701,
+      "position_end": 707
+    },
+    {
+      "word_in_sentence": "sedan",
+      "base_form": "sedan",
+      "position_start": 102,
+      "position_end": 107
+    },
+    {
+      "word_in_sentence": "under",
+      "base_form": "under",
+      "position_start": 1810,
+      "position_end": 1815
+    },
+    {
+      "word_in_sentence": "ge",
+      "base_form": "ge",
+      "position_start": 1785,
+      "position_end": 1787
+    },
+    {
+      "word_in_sentence": "röra",
+      "base_form": "röra",
+      "position_start": 1836,
+      "position_end": 1840
+    },
+    {
+      "word_in_sentence": "Två",
+      "base_form": "två",
+      "position_start": 693,
+      "position_end": 696
+    },
+    {
+      "word_in_sentence": "Vem",
+      "base_form": "vem",
+      "position_start": 1863,
+      "position_end": 1866
+    },
+    {
+      "word_in_sentence": "många",
+      "base_form": "många",
+      "position_start": 490,
+      "position_end": 495
+    },
+    {
+      "word_in_sentence": "gå",
+      "base_form": "gå",
+      "position_start": 1883,
+      "position_end": 1885
+    },
+    {
+      "word_in_sentence": "Mellan",
+      "base_form": "mellan",
+      "position_start": 558,
+      "position_end": 564
+    },
+    {
+      "word_in_sentence": "använda",
+      "base_form": "använda",
+      "position_start": 601,
+      "position_end": 608
+    },
+    {
+      "word_in_sentence": "snabb",
+      "base_form": "snabb",
+      "position_start": 210,
+      "position_end": 215
+    },
+    {
+      "word_in_sentence": "stark",
+      "base_form": "stark",
+      "position_start": 346,
+      "position_end": 351
+    },
+    {
+      "word_in_sentence": "fin",
+      "base_form": "fin",
+      "position_start": 202,
+      "position_end": 205
+    }
+  ],
+  "primary_words_used": [
+    "skärgård",
+    "resa sig",
+    "bilda",
+    "vägsalt",
+    "väga",
+    "gå i ide",
+    "bilda grunden för",
+    "vinterväg",
+    "gå till attack",
+    "Vet du när bussarna går?",
+    "Vad hände igår?",
+    "en annan gång",
+    "långpromenad",
+    "Vet du vad som hände igår?",
+    "ressugen",
+    "ferraribil",
+    "gatuförsäljare",
+    "söndagspromenad",
+    "turist",
+    "gå i arv",
+    "köra på",
+    "flygblad",
+    "stabil",
+    "åka ur",
+    "cykelbana",
+    "grundlag",
+    "bila",
+    "läskig",
+    "stig",
+    "turistnäring",
+    "turisinformation",
+    "campa",
+    "tain",
+    "kappsegling",
+    "guida",
+    "guidad tur",
+    "året runt",
+    "ta sig runt",
+    "promenera",
+    "hamn",
+    "roddbåt",
+    "bra",
+    "nu",
+    "andra",
+    "bli",
+    "båda",
+    "tala",
+    "sedan",
+    "under",
+    "ge",
+    "röra",
+    "två",
+    "vem",
+    "många",
+    "gå",
+    "mellan",
+    "använda",
+    "snabb",
+    "stark",
+    "fin"
+  ]
+}

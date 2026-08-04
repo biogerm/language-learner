@@ -1,0 +1,432 @@
+{
+  "course_id": "sfid",
+  "course_title": "SFI D",
+  "step_id": "samhälle_politik",
+  "step_title": "Samhälle & Politik",
+  "article_id": "art_43",
+  "sv": "Ett land kan ha olika statsskick. Vissa länder är en republik med en president och ibland en premiärminister, medan andra har en kung och en kronprins som måste tillhöra en stor kungafamilj. Tyvärr finns det också länder där en maktgalen diktator lyckas ta kontrollen genom en brutal statskupp. Då tvingas ofta en interimsregering att avgå, och politiska ledare kan till och med bli skjutna på öppen gata. I en demokrati måste man däremot bli vald av folket för att få sitta vid makten. \n\nEtt demokratiskt land styrs ofta av ett parlament. En parlamentsledamot representerar ett politiskt parti, och varje röst från en allmän folkomröstning räknas. Vissa väljare gillar ett stort, traditionellt parti, men andra väljer att placera sin röst på ett litet enfrågeparti. Vad har de för löften? Jo, i sitt valmanifest kan en partiledare lova jättemycket, till exempel förändringar om energi som kärnkraft eller om offentlig ekonomi. \n\nVår kända regering består av många ministrar. Där finns en finansminister, en utrikesminister, en utbildningsminister, en kulturminister och andra viktiga statsråd. Deras uppgift är att hålla ordning och samarbeta med varje statlig myndighet. \n\nFör sextio år sedan var samhället mycket mer ojämlikt, ett typiskt klassamhälle. Men sedan utvecklades en berömd välfärdststat. En välkänd socialdemokratisk rörelse ville bygga en bättre välfärd för varje medborgare i landet. Alla som hade barn fick barnbidrag, och de äldre fick en tilläggspension plus andra olika bidrag. Även om vi har ett relativt högt skattetryck i Sverige idag, så ger den typen av system en stor grundläggande trygghet. \n\nPolitiken måste ständigt utvecklas i samband med tiden. Det är viktigt att stödja en samkönad familj, värna om miljön vid vår vackra kust, o.s.v. Jag brukar ofta associera politik med ansvar, eftersom politiska beslut lätt kan sluta väldigt illa om de är oförberedda. Man ska inte bara stå bredbent och göra en grandios entré som om man vore kung för en dag. Förresten, visste du att en republikansk rörelse ofta kan ha rötterna i gamla historiska traditioner?",
+  "target_words": [
+    {
+      "word_in_sentence": "republik",
+      "base_form": "republik",
+      "position_start": 53,
+      "position_end": 61
+    },
+    {
+      "word_in_sentence": "premiärminister",
+      "base_form": "premiärminister",
+      "position_start": 93,
+      "position_end": 108
+    },
+    {
+      "word_in_sentence": "diktator",
+      "base_form": "diktator",
+      "position_start": 238,
+      "position_end": 246
+    },
+    {
+      "word_in_sentence": "parlament",
+      "base_form": "parlament",
+      "position_start": 529,
+      "position_end": 538
+    },
+    {
+      "word_in_sentence": "parlamentsledamot",
+      "base_form": "parlamentsledamot",
+      "position_start": 543,
+      "position_end": 560
+    },
+    {
+      "word_in_sentence": "parti",
+      "base_form": "parti",
+      "position_start": 589,
+      "position_end": 594
+    },
+    {
+      "word_in_sentence": "regering",
+      "base_form": "regering",
+      "position_start": 940,
+      "position_end": 948
+    },
+    {
+      "word_in_sentence": "kung",
+      "base_form": "kung",
+      "position_start": 129,
+      "position_end": 133
+    },
+    {
+      "word_in_sentence": "kung för en dag",
+      "base_form": "kung för en dag",
+      "position_start": 1963,
+      "position_end": 1978
+    },
+    {
+      "word_in_sentence": "finansminister",
+      "base_form": "finansminister",
+      "position_start": 989,
+      "position_end": 1003
+    },
+    {
+      "word_in_sentence": "kungafamilj",
+      "base_form": "kungafamilj",
+      "position_start": 178,
+      "position_end": 189
+    },
+    {
+      "word_in_sentence": "statsskick",
+      "base_form": "statsskick",
+      "position_start": 22,
+      "position_end": 32
+    },
+    {
+      "word_in_sentence": "bli vald",
+      "base_form": "bli vald",
+      "position_start": 439,
+      "position_end": 447
+    },
+    {
+      "word_in_sentence": "kronprins",
+      "base_form": "kronprins",
+      "position_start": 141,
+      "position_end": 150
+    },
+    {
+      "word_in_sentence": "valmanifest",
+      "base_form": "valmanifest",
+      "position_start": 801,
+      "position_end": 812
+    },
+    {
+      "word_in_sentence": "enfrågeparti",
+      "base_form": "enfrågeparti",
+      "position_start": 753,
+      "position_end": 765
+    },
+    {
+      "word_in_sentence": "republikansk",
+      "base_form": "republikansk",
+      "position_start": 2008,
+      "position_end": 2020
+    },
+    {
+      "word_in_sentence": "partiledare",
+      "base_form": "partiledare",
+      "position_start": 820,
+      "position_end": 831
+    },
+    {
+      "word_in_sentence": "röst",
+      "base_form": "röst",
+      "position_start": 606,
+      "position_end": 610
+    },
+    {
+      "word_in_sentence": "socialdemokratisk",
+      "base_form": "socialdemokratisk",
+      "position_start": 1314,
+      "position_end": 1331
+    },
+    {
+      "word_in_sentence": "klassamhälle",
+      "base_form": "klassamhälle",
+      "position_start": 1242,
+      "position_end": 1254
+    },
+    {
+      "word_in_sentence": "medborgare",
+      "base_form": "medborgare",
+      "position_start": 1380,
+      "position_end": 1390
+    },
+    {
+      "word_in_sentence": "välfärd",
+      "base_form": "välfärd",
+      "position_start": 1362,
+      "position_end": 1369
+    },
+    {
+      "word_in_sentence": "välfärdststat",
+      "base_form": "välfärdststat",
+      "position_start": 1288,
+      "position_end": 1301
+    },
+    {
+      "word_in_sentence": "barnbidrag",
+      "base_form": "barnbidrag",
+      "position_start": 1425,
+      "position_end": 1435
+    },
+    {
+      "word_in_sentence": "tilläggspension",
+      "base_form": "tilläggspension",
+      "position_start": 1458,
+      "position_end": 1473
+    },
+    {
+      "word_in_sentence": "bidrag",
+      "base_form": "bidrag",
+      "position_start": 1491,
+      "position_end": 1497
+    },
+    {
+      "word_in_sentence": "skattetryck",
+      "base_form": "skattetryck",
+      "position_start": 1532,
+      "position_end": 1543
+    },
+    {
+      "word_in_sentence": "ekonomi",
+      "base_form": "ekonomi",
+      "position_start": 919,
+      "position_end": 926
+    },
+    {
+      "word_in_sentence": "offentlig",
+      "base_form": "offentlig",
+      "position_start": 909,
+      "position_end": 918
+    },
+    {
+      "word_in_sentence": "kärnkraft",
+      "base_form": "kärnkraft",
+      "position_start": 890,
+      "position_end": 899
+    },
+    {
+      "word_in_sentence": "statskupp",
+      "base_form": "statskupp",
+      "position_start": 284,
+      "position_end": 293
+    },
+    {
+      "word_in_sentence": "sitta vid makten",
+      "base_form": "sitta vid makten",
+      "position_start": 469,
+      "position_end": 485
+    },
+    {
+      "word_in_sentence": "interimsregering",
+      "base_form": "interimsregering",
+      "position_start": 314,
+      "position_end": 330
+    },
+    {
+      "word_in_sentence": "på öppen gata",
+      "base_form": "på öppen gata",
+      "position_start": 391,
+      "position_end": 404
+    },
+    {
+      "word_in_sentence": "myndighet",
+      "base_form": "myndighet",
+      "position_start": 1162,
+      "position_end": 1171
+    },
+    {
+      "word_in_sentence": "statsråd",
+      "base_form": "statsråd",
+      "position_start": 1085,
+      "position_end": 1093
+    },
+    {
+      "word_in_sentence": "utrikesminister",
+      "base_form": "utrikesminister",
+      "position_start": 1008,
+      "position_end": 1023
+    },
+    {
+      "word_in_sentence": "utbildningsminister",
+      "base_form": "utbildningsminister",
+      "position_start": 1028,
+      "position_end": 1047
+    },
+    {
+      "word_in_sentence": "kulturminister",
+      "base_form": "kulturminister",
+      "position_start": 1052,
+      "position_end": 1066
+    },
+    {
+      "word_in_sentence": "bredbent",
+      "base_form": "bredbent",
+      "position_start": 1911,
+      "position_end": 1919
+    },
+    {
+      "word_in_sentence": "o.s.v.",
+      "base_form": "o.s.v.",
+      "position_start": 1760,
+      "position_end": 1766
+    },
+    {
+      "word_in_sentence": "den typen av",
+      "base_form": "den typen av",
+      "position_start": 1567,
+      "position_end": 1579
+    },
+    {
+      "word_in_sentence": "sextio",
+      "base_form": "sextio",
+      "position_start": 1179,
+      "position_end": 1185
+    },
+    {
+      "word_in_sentence": "Vad",
+      "base_form": "Vad",
+      "position_start": 767,
+      "position_end": 770
+    },
+    {
+      "word_in_sentence": "samband",
+      "base_form": "samband",
+      "position_start": 1658,
+      "position_end": 1665
+    },
+    {
+      "word_in_sentence": "samkönad",
+      "base_form": "samkönad",
+      "position_start": 1706,
+      "position_end": 1714
+    },
+    {
+      "word_in_sentence": "associera",
+      "base_form": "associera",
+      "position_start": 1783,
+      "position_end": 1792
+    },
+    {
+      "word_in_sentence": "ordning",
+      "base_form": "ordning",
+      "position_start": 1122,
+      "position_end": 1129
+    },
+    {
+      "word_in_sentence": "lyckas",
+      "base_form": "lyckas",
+      "position_start": 247,
+      "position_end": 253
+    },
+    {
+      "word_in_sentence": "tillhöra",
+      "base_form": "tillhöra",
+      "position_start": 161,
+      "position_end": 169
+    },
+    {
+      "word_in_sentence": "kust",
+      "base_form": "kust",
+      "position_start": 1754,
+      "position_end": 1758
+    },
+    {
+      "word_in_sentence": "sluta",
+      "base_form": "sluta",
+      "position_start": 1848,
+      "position_end": 1853
+    },
+    {
+      "word_in_sentence": "allmän",
+      "base_form": "allmän",
+      "position_start": 619,
+      "position_end": 625
+    },
+    {
+      "word_in_sentence": "entré",
+      "base_form": "entré",
+      "position_start": 1941,
+      "position_end": 1946
+    },
+    {
+      "word_in_sentence": "ha rötterna i",
+      "base_form": "ha rötterna i",
+      "position_start": 2038,
+      "position_end": 2051
+    },
+    {
+      "word_in_sentence": "välkänd",
+      "base_form": "välkänd",
+      "position_start": 1306,
+      "position_end": 1313
+    },
+    {
+      "word_in_sentence": "placera",
+      "base_form": "placera",
+      "position_start": 723,
+      "position_end": 730
+    },
+    {
+      "word_in_sentence": "berömd",
+      "base_form": "berömd",
+      "position_start": 1281,
+      "position_end": 1287
+    },
+    {
+      "word_in_sentence": "Förresten",
+      "base_form": "förresten",
+      "position_start": 1980,
+      "position_end": 1989
+    }
+  ],
+  "primary_words_used": [
+    "republik",
+    "premiärminister",
+    "diktator",
+    "parlament",
+    "parlamentsledamot",
+    "parti",
+    "regering",
+    "kung",
+    "kung för en dag",
+    "finansminister",
+    "kungafamilj",
+    "statsskick",
+    "bli vald",
+    "kronprins",
+    "valmanifest",
+    "enfrågeparti",
+    "republikansk",
+    "partiledare",
+    "röst",
+    "socialdemokratisk",
+    "klassamhälle",
+    "medborgare",
+    "välfärd",
+    "välfärdststat",
+    "barnbidrag",
+    "tilläggspension",
+    "bidrag",
+    "skattetryck",
+    "ekonomi",
+    "offentlig",
+    "kärnkraft",
+    "statskupp",
+    "sitta vid makten",
+    "interimsregering",
+    "på öppen gata",
+    "myndighet",
+    "statsråd",
+    "utrikesminister",
+    "utbildningsminister",
+    "kulturminister",
+    "bredbent",
+    "o.s.v.",
+    "den typen av",
+    "sextio",
+    "Vad",
+    "samband",
+    "samkönad",
+    "associera",
+    "ordning",
+    "lyckas",
+    "tillhöra",
+    "kust",
+    "sluta",
+    "allmän",
+    "entré",
+    "ha rötterna i",
+    "välkänd",
+    "placera",
+    "berömd",
+    "förresten"
+  ]
+}

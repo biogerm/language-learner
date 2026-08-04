@@ -1,0 +1,432 @@
+{
+  "course_id": "sfid",
+  "course_title": "SFI D",
+  "step_id": "kultur_nöje",
+  "step_title": "Kultur & Nöje",
+  "article_id": "art_36",
+  "sv": "Jag älskar konst. Jag har alltid varit en person som vill utforska konsthistoria. Därför bestämde jag mig för att gå en konstutbildning. Till en början var det svårt att minnas varje bokstav i den teoretiska boken, men jag gillade att sitta i min ateljé och rita i min övningsbok. Jag försökte även göra en teckning och lite nakenmåleri. Varje besökare i mitt lilla galleri brukade ofta nämna hur mycket de älskade mitt vackra landskap. De kunde upptäcka spännande detaljer. \"Visst låter det kul?\" frågade jag min vän. \"Det var väldigt kul att arbeta med det.\" Men för att tjäna pengar fick jag ibland erbjuda att dekorera hus med mina tavlor. \n\nLivet handlade inte bara om konst. Jag var också regissör. Jag försökte spela in en musikvideo med min bror. Han brukade ofta leka skådespelare och ville alltid spela död framför kameran. Vi skrev ett filmmanus som var en blandning av en mystisk myt, en actionfilm och en kärleksfilm. Den blev inspelad i svartvit färg, vilket var en konstig men snygg detalj. I ena scenen fick han trä upp pärlor på en hårig tråd. Troligtvis skulle filmen bli bra.\n\nSenare skrev jag också en teaterpjäs. En känd skådespelerska, som för övrigt är singel, ville ha huvudrollen i min pjäs. Hon hade stor respekt för landets teatertradition, och hennes prestation skulle motsvara alla förväntningar. Men tyvärr blev hon sjuk. Hon fick ta antibiotika i flera veckor för att inte dö av infektionen. Hon var tvungen att gå ur projektet och vi fick byta namn på produktionen. Sådan är branschen. Det brukar vara så här ibland.\n\nNär jag inte jobbar älskar jag fredagsmys. Istället för att gå på bio gillar jag att spela ett parti schack. Jag har också skrivit en bra roman. En kollega frågade: \"Vad tycker du om konstitutionell rätt, eller OS som hålls vart fjärde år?\" Jag svarade: \"Nja… Jag vill bara tänka på kultur. Kommer du förresten att komma ihåg vår roliga julfest ännu om tio år? Du då?\" Jag log och tänkte att det var en härlig bit av mitt liv.",
+  "target_words": [
+    {
+      "word_in_sentence": "galleri",
+      "base_form": "galleri",
+      "position_start": 366,
+      "position_end": 373
+    },
+    {
+      "word_in_sentence": "ateljé",
+      "base_form": "ateljé",
+      "position_start": 247,
+      "position_end": 253
+    },
+    {
+      "word_in_sentence": "konstutbildning",
+      "base_form": "konstutbildning",
+      "position_start": 120,
+      "position_end": 135
+    },
+    {
+      "word_in_sentence": "teckning",
+      "base_form": "teckning",
+      "position_start": 307,
+      "position_end": 315
+    },
+    {
+      "word_in_sentence": "konsthistoria",
+      "base_form": "konsthistoria",
+      "position_start": 67,
+      "position_end": 80
+    },
+    {
+      "word_in_sentence": "nakenmåleri",
+      "base_form": "nakenmåleri",
+      "position_start": 325,
+      "position_end": 336
+    },
+    {
+      "word_in_sentence": "roman",
+      "base_form": "roman",
+      "position_start": 1688,
+      "position_end": 1693
+    },
+    {
+      "word_in_sentence": "singel",
+      "base_form": "singel",
+      "position_start": 1176,
+      "position_end": 1182
+    },
+    {
+      "word_in_sentence": "skådespelare",
+      "base_form": "skådespelare",
+      "position_start": 777,
+      "position_end": 789
+    },
+    {
+      "word_in_sentence": "konstig",
+      "base_form": "konstig",
+      "position_start": 980,
+      "position_end": 987
+    },
+    {
+      "word_in_sentence": "leka",
+      "base_form": "leka",
+      "position_start": 772,
+      "position_end": 776
+    },
+    {
+      "word_in_sentence": "Troligtvis",
+      "base_form": "troligtvis",
+      "position_start": 1061,
+      "position_end": 1071
+    },
+    {
+      "word_in_sentence": "antibiotika",
+      "base_form": "antibiotika",
+      "position_start": 1364,
+      "position_end": 1375
+    },
+    {
+      "word_in_sentence": "spela in",
+      "base_form": "spela in",
+      "position_start": 718,
+      "position_end": 726
+    },
+    {
+      "word_in_sentence": "spela död",
+      "base_form": "spela död",
+      "position_start": 807,
+      "position_end": 816
+    },
+    {
+      "word_in_sentence": "fredagsmys",
+      "base_form": "fredagsmys",
+      "position_start": 1581,
+      "position_end": 1591
+    },
+    {
+      "word_in_sentence": "Visst låter det kul?",
+      "base_form": "Visst låter det kul?",
+      "position_start": 476,
+      "position_end": 496
+    },
+    {
+      "word_in_sentence": "musikvideo",
+      "base_form": "musikvideo",
+      "position_start": 730,
+      "position_end": 740
+    },
+    {
+      "word_in_sentence": "gå på bio",
+      "base_form": "gå på bio",
+      "position_start": 1610,
+      "position_end": 1619
+    },
+    {
+      "word_in_sentence": "bokstav",
+      "base_form": "bokstav",
+      "position_start": 183,
+      "position_end": 190
+    },
+    {
+      "word_in_sentence": "konstitutionell",
+      "base_form": "konstitutionell",
+      "position_start": 1733,
+      "position_end": 1748
+    },
+    {
+      "word_in_sentence": "övningsbok",
+      "base_form": "övningsbok",
+      "position_start": 269,
+      "position_end": 279
+    },
+    {
+      "word_in_sentence": "kul",
+      "base_form": "kul",
+      "position_start": 492,
+      "position_end": 495
+    },
+    {
+      "word_in_sentence": "vart fjärde år",
+      "base_form": "vart fjärde år",
+      "position_start": 1774,
+      "position_end": 1788
+    },
+    {
+      "word_in_sentence": "teatertradition",
+      "base_form": "teatertradition",
+      "position_start": 1251,
+      "position_end": 1266
+    },
+    {
+      "word_in_sentence": "regissör",
+      "base_form": "regissör",
+      "position_start": 695,
+      "position_end": 703
+    },
+    {
+      "word_in_sentence": "filmmanus",
+      "base_form": "filmmanus",
+      "position_start": 847,
+      "position_end": 856
+    },
+    {
+      "word_in_sentence": "teaterpjäs",
+      "base_form": "teaterpjäs",
+      "position_start": 1122,
+      "position_end": 1132
+    },
+    {
+      "word_in_sentence": "pjäs",
+      "base_form": "pjäs",
+      "position_start": 1211,
+      "position_end": 1215
+    },
+    {
+      "word_in_sentence": "svartvit",
+      "base_form": "svartvit",
+      "position_start": 951,
+      "position_end": 959
+    },
+    {
+      "word_in_sentence": "myt",
+      "base_form": "myt",
+      "position_start": 892,
+      "position_end": 895
+    },
+    {
+      "word_in_sentence": "ett parti schack",
+      "base_form": "ett parti schack",
+      "position_start": 1641,
+      "position_end": 1657
+    },
+    {
+      "word_in_sentence": "skådespelerska",
+      "base_form": "skådespelerska",
+      "position_start": 1142,
+      "position_end": 1156
+    },
+    {
+      "word_in_sentence": "trä upp",
+      "base_form": "trä upp",
+      "position_start": 1028,
+      "position_end": 1035
+    },
+    {
+      "word_in_sentence": "gå ur",
+      "base_form": "gå ur",
+      "position_start": 1443,
+      "position_end": 1448
+    },
+    {
+      "word_in_sentence": "julfest",
+      "base_form": "julfest",
+      "position_start": 1887,
+      "position_end": 1894
+    },
+    {
+      "word_in_sentence": "konst",
+      "base_form": "konst",
+      "position_start": 11,
+      "position_end": 16
+    },
+    {
+      "word_in_sentence": "actionfilm",
+      "base_form": "actionfilm",
+      "position_start": 900,
+      "position_end": 910
+    },
+    {
+      "word_in_sentence": "kärleksfilm",
+      "base_form": "kärleksfilm",
+      "position_start": 918,
+      "position_end": 929
+    },
+    {
+      "word_in_sentence": "Nja…",
+      "base_form": "Nja…",
+      "position_start": 1805,
+      "position_end": 1809
+    },
+    {
+      "word_in_sentence": "bit",
+      "base_form": "bit",
+      "position_start": 1960,
+      "position_end": 1963
+    },
+    {
+      "word_in_sentence": "dekorera",
+      "base_form": "dekorera",
+      "position_start": 614,
+      "position_end": 622
+    },
+    {
+      "word_in_sentence": "mystisk",
+      "base_form": "mystisk",
+      "position_start": 884,
+      "position_end": 891
+    },
+    {
+      "word_in_sentence": "byta namn",
+      "base_form": "byta namn",
+      "position_start": 1471,
+      "position_end": 1480
+    },
+    {
+      "word_in_sentence": "nämna",
+      "base_form": "nämna",
+      "position_start": 387,
+      "position_end": 392
+    },
+    {
+      "word_in_sentence": "så här",
+      "base_form": "så här",
+      "position_start": 1534,
+      "position_end": 1540
+    },
+    {
+      "word_in_sentence": "erbjuda",
+      "base_form": "erbjuda",
+      "position_start": 602,
+      "position_end": 609
+    },
+    {
+      "word_in_sentence": "landskap",
+      "base_form": "landskap",
+      "position_start": 427,
+      "position_end": 435
+    },
+    {
+      "word_in_sentence": "dö",
+      "base_form": "dö",
+      "position_start": 1404,
+      "position_end": 1406
+    },
+    {
+      "word_in_sentence": "Sådan",
+      "base_form": "sådan",
+      "position_start": 1498,
+      "position_end": 1503
+    },
+    {
+      "word_in_sentence": "upptäcka",
+      "base_form": "upptäcka",
+      "position_start": 446,
+      "position_end": 454
+    },
+    {
+      "word_in_sentence": "en",
+      "base_form": "en",
+      "position_start": 39,
+      "position_end": 41
+    },
+    {
+      "word_in_sentence": "komma ihåg",
+      "base_form": "komma ihåg",
+      "position_start": 1865,
+      "position_end": 1875
+    },
+    {
+      "word_in_sentence": "Du då?",
+      "base_form": "Du då?",
+      "position_start": 1911,
+      "position_end": 1917
+    },
+    {
+      "word_in_sentence": "Till en början",
+      "base_form": "till en början",
+      "position_start": 137,
+      "position_end": 151
+    },
+    {
+      "word_in_sentence": "ena",
+      "base_form": "ena",
+      "position_start": 1008,
+      "position_end": 1011
+    },
+    {
+      "word_in_sentence": "ännu",
+      "base_form": "ännu",
+      "position_start": 1895,
+      "position_end": 1899
+    },
+    {
+      "word_in_sentence": "besökare",
+      "base_form": "besökare",
+      "position_start": 344,
+      "position_end": 352
+    },
+    {
+      "word_in_sentence": "hårig",
+      "base_form": "hårig",
+      "position_start": 1049,
+      "position_end": 1054
+    },
+    {
+      "word_in_sentence": "motsvara",
+      "base_form": "motsvara",
+      "position_start": 1297,
+      "position_end": 1305
+    }
+  ],
+  "primary_words_used": [
+    "galleri",
+    "ateljé",
+    "konstutbildning",
+    "teckning",
+    "konsthistoria",
+    "nakenmåleri",
+    "roman",
+    "singel",
+    "skådespelare",
+    "konstig",
+    "leka",
+    "troligtvis",
+    "antibiotika",
+    "spela in",
+    "spela död",
+    "fredagsmys",
+    "Visst låter det kul?",
+    "musikvideo",
+    "gå på bio",
+    "bokstav",
+    "konstitutionell",
+    "övningsbok",
+    "kul",
+    "vart fjärde år",
+    "teatertradition",
+    "regissör",
+    "filmmanus",
+    "teaterpjäs",
+    "pjäs",
+    "svartvit",
+    "myt",
+    "ett parti schack",
+    "skådespelerska",
+    "trä upp",
+    "gå ur",
+    "julfest",
+    "konst",
+    "actionfilm",
+    "kärleksfilm",
+    "Nja…",
+    "bit",
+    "dekorera",
+    "mystisk",
+    "byta namn",
+    "nämna",
+    "så här",
+    "erbjuda",
+    "landskap",
+    "dö",
+    "sådan",
+    "upptäcka",
+    "en",
+    "komma ihåg",
+    "Du då?",
+    "till en början",
+    "ena",
+    "ännu",
+    "besökare",
+    "hårig",
+    "motsvara"
+  ]
+}

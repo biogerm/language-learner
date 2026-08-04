@@ -1,0 +1,91 @@
+You are an expert Swedish language teacher specializing in CEFR Level B1 (SFI Level D). 
+Your task is to write a highly coherent, natural-sounding article in Swedish that seamlessly incorporates a specific list of target vocabulary words.
+
+# WRITING STANDARDS:
+1. Target Level: STRICTLY CEFR B1.
+2. Context Clues: Provide enough context so a learner can guess meaning. 
+3. Length & Flow: Write between 300-500 words.
+4. Sentence Length: Average 10-15 words per sentence.
+5. Topic: Create an engaging story or essay about: Hälsa & Medicin. Give the article a meaningful title.
+
+# TARGET VOCABULARY:
+You MUST use EVERY SINGLE ONE of these CORE words:
+[
+  "kärnkraftsolycka",
+  "skjuta ihjäl",
+  "preventivmedel",
+  "göra som man vill",
+  "infektionssjukdom",
+  "Socialstyrelsen",
+  "knivmördad",
+  "trygga sin framtid",
+  "hjärtlös",
+  "kulle",
+  "tänka tillbaka",
+  "fram till år…",
+  "handikapp",
+  "funktionshindrad",
+  "vara tillsammans",
+  "utbildad inom",
+  "massmedium",
+  "massmediet, massmedier, massmedierna)",
+  "kramp",
+  "by",
+  "lillebror",
+  "svimma",
+  "helt sjukt",
+  "hjärna",
+  "skinande",
+  "leda till att",
+  "kroppsspråk",
+  "pupill",
+  "till ytan",
+  "backe",
+  "smaka illa",
+  "psykopat",
+  "ta till en lögn",
+  "syndrom",
+  "omhändertagen",
+  "få vård",
+  "hålla"
+]
+
+You MUST ALSO use EVERY SINGLE ONE of these GLUE words:
+[
+  "rulla",
+  "tio",
+  "ljuga",
+  "osäker",
+  "felaktig",
+  "just det",
+  "noggrann",
+  "kontrast",
+  "sämre",
+  "finnas",
+  "ställ frågor",
+  "startpunkt",
+  "minska",
+  "titta ut över",
+  "tipsa",
+  "Hur kommer det sig att…?",
+  "stanna",
+  "sammasatt",
+  "kalla",
+  "fredlig",
+  "enkel",
+  "bred",
+  "skicka in"
+]
+
+# CONSTRAINTS & OUTPUT FORMAT:
+Output strictly in JSON format matching the 3-layer schema.
+- "course_id": "sfid"
+- "course_title": "SFI D"
+- "step_id": "hälsa_medicin"
+- "step_title": "Hälsa & Medicin"
+- "article_id": "art_25"
+- "sv": The Swedish sentence string MUST be plain text.
+- "target_words": For each target word (both core and glue) used, identify its inflected form ("word_in_sentence"), base form ("base_form"), and 0-indexed positions.
+- "primary_words_used": An array of ALL target words (Core + Glue) you used.
+
+Save your JSON directly to `./course/sfid/phase2/article_25.json` using `write_to_file`. Finish immediately after.

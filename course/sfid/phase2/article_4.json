@@ -1,0 +1,432 @@
+{
+  "course_id": "sfid",
+  "course_title": "SFI D",
+  "step_id": "resor_transport",
+  "step_title": "Resor & Transport",
+  "article_id": "art_04",
+  "sv": "Min vän, som ursprungligen är från en liten by norrut, gillar att resa. Hon ville komma ifrån sin vanliga stad, eftersom hon kände en stor förändring närma sig med stora steg. Hon hade varit bortrest flera gånger och nu var det dags för en ny lång vistelse. Som nyinflyttad i en ny stad kände hon sig ofta ensam, så resor gav henne stöd.\n\n\"Jag vill uppleva en milsvid utsikt och besöka en gammal fästning,\" började hon säga. \"Nähä! Vill du verkligen det?\" frågade jag. Hon nickade. Först skulle hon ta ett flyg, landa med en mellanlandning och sedan ta en passagerarfärja. Efter hennes ankomst skulle hon hyra ett fordon för att åka många mil till kusten. \"Close your eyes,\" sa hon på engelska när vi lyssnade på en lokal radiosändning om resor.\n\nNär hon äntligen var framme vid vattnet, bestämde hon sig för att hyra en kajak. \"Man måste ha bra balans i en kajak för att inte drunkna,\" sa en trevlig hotellägare. Det fanns alla sorters båtar där, till och med en gammal långbåt och ett stort skepp. Hon lät kajaken glida fram över vattnet. Hon valde att bara flyta med strömmen och gradvis slappna av. Hon kunde se barn springa runt på stranden och en hund springa lös.\n\nPå kvällen åt hon katrinplommon och tänkte på sitt uppbrott från sitt gamla liv. En äldre man, klädd som en kardinal, berättade om män som brukade rista namn i stenar och grunda nya städer i hela världen. \"Sök i dig själv,\" sa han. Allt verkade flyta på väldigt bra och det kändes aldrig som en katastrof. Hon ville inte ha en halv semester, utan en helt underbar tid. En ovanlig resenär vill alltid gå lite längre bort. På det sättet blir det aldrig tråkigt i längden. Jag hoppas att hon vill komma tillbaka och göra ett återbesök hos mig. Det vore synd att byta ut en viss del av livet när det inte är en dålig sak, men jag förstod att hon var lycklig när hon gick ner till havet.",
+  "target_words": [
+    {
+      "word_in_sentence": "komma ifrån",
+      "base_form": "komma ifrån",
+      "position_start": 82,
+      "position_end": 93
+    },
+    {
+      "word_in_sentence": "ursprungligen",
+      "base_form": "ursprungligen",
+      "position_start": 13,
+      "position_end": 26
+    },
+    {
+      "word_in_sentence": "katrinplommon",
+      "base_form": "katrinplommon",
+      "position_start": 1190,
+      "position_end": 1203
+    },
+    {
+      "word_in_sentence": "radiosändning",
+      "base_form": "radiosändning",
+      "position_start": 722,
+      "position_end": 735
+    },
+    {
+      "word_in_sentence": "närma sig med stora steg",
+      "base_form": "närma sig med stora steg",
+      "position_start": 150,
+      "position_end": 174
+    },
+    {
+      "word_in_sentence": "längre bort",
+      "base_form": "längre bort",
+      "position_start": 1580,
+      "position_end": 1591
+    },
+    {
+      "word_in_sentence": "passagerarfärja",
+      "base_form": "passagerarfärja",
+      "position_start": 556,
+      "position_end": 571
+    },
+    {
+      "word_in_sentence": "drunkna",
+      "base_form": "drunkna",
+      "position_start": 877,
+      "position_end": 884
+    },
+    {
+      "word_in_sentence": "kardinal",
+      "base_form": "kardinal",
+      "position_start": 1280,
+      "position_end": 1288
+    },
+    {
+      "word_in_sentence": "grunda",
+      "base_form": "grunda",
+      "position_start": 1343,
+      "position_end": 1349
+    },
+    {
+      "word_in_sentence": "rista",
+      "base_form": "rista",
+      "position_start": 1319,
+      "position_end": 1324
+    },
+    {
+      "word_in_sentence": "skepp",
+      "base_form": "skepp",
+      "position_start": 993,
+      "position_end": 998
+    },
+    {
+      "word_in_sentence": "långbåt",
+      "base_form": "långbåt",
+      "position_start": 971,
+      "position_end": 978
+    },
+    {
+      "word_in_sentence": "uppbrott",
+      "base_form": "uppbrott",
+      "position_start": 1223,
+      "position_end": 1231
+    },
+    {
+      "word_in_sentence": "stöd",
+      "base_form": "stöd",
+      "position_start": 332,
+      "position_end": 336
+    },
+    {
+      "word_in_sentence": "Nähä!",
+      "base_form": "Nähä!",
+      "position_start": 426,
+      "position_end": 431
+    },
+    {
+      "word_in_sentence": "springa runt",
+      "base_form": "springa runt",
+      "position_start": 1121,
+      "position_end": 1133
+    },
+    {
+      "word_in_sentence": "återbesök",
+      "base_form": "återbesök",
+      "position_start": 1694,
+      "position_end": 1703
+    },
+    {
+      "word_in_sentence": "bortrest",
+      "base_form": "bortrest",
+      "position_start": 191,
+      "position_end": 199
+    },
+    {
+      "word_in_sentence": "springa lös",
+      "base_form": "springa lös",
+      "position_start": 1158,
+      "position_end": 1169
+    },
+    {
+      "word_in_sentence": "nyinflyttad",
+      "base_form": "nyinflyttad",
+      "position_start": 262,
+      "position_end": 273
+    },
+    {
+      "word_in_sentence": "flyta på",
+      "base_form": "flyta på",
+      "position_start": 1417,
+      "position_end": 1425
+    },
+    {
+      "word_in_sentence": "i längden",
+      "base_form": "i längden",
+      "position_start": 1631,
+      "position_end": 1640
+    },
+    {
+      "word_in_sentence": "eyes,",
+      "base_form": "eyes,",
+      "position_start": 668,
+      "position_end": 673
+    },
+    {
+      "word_in_sentence": "resenär",
+      "base_form": "resenär",
+      "position_start": 1552,
+      "position_end": 1559
+    },
+    {
+      "word_in_sentence": "flyta med",
+      "base_form": "flyta med",
+      "position_start": 1060,
+      "position_end": 1069
+    },
+    {
+      "word_in_sentence": "vistelse",
+      "base_form": "vistelse",
+      "position_start": 248,
+      "position_end": 256
+    },
+    {
+      "word_in_sentence": "hotellägare",
+      "base_form": "hotellägare",
+      "position_start": 901,
+      "position_end": 912
+    },
+    {
+      "word_in_sentence": "fordon",
+      "base_form": "fordon",
+      "position_start": 614,
+      "position_end": 620
+    },
+    {
+      "word_in_sentence": "På det sättet",
+      "base_form": "på det sättet",
+      "position_start": 1593,
+      "position_end": 1606
+    },
+    {
+      "word_in_sentence": "mil",
+      "base_form": "mil",
+      "position_start": 639,
+      "position_end": 642
+    },
+    {
+      "word_in_sentence": "kajak",
+      "base_form": "kajak",
+      "position_start": 821,
+      "position_end": 826
+    },
+    {
+      "word_in_sentence": "norrut",
+      "base_form": "norrut",
+      "position_start": 47,
+      "position_end": 53
+    },
+    {
+      "word_in_sentence": "milsvid",
+      "base_form": "milsvid",
+      "position_start": 360,
+      "position_end": 367
+    },
+    {
+      "word_in_sentence": "fästning",
+      "base_form": "fästning",
+      "position_start": 396,
+      "position_end": 404
+    },
+    {
+      "word_in_sentence": "glida fram",
+      "base_form": "glida fram",
+      "position_start": 1016,
+      "position_end": 1026
+    },
+    {
+      "word_in_sentence": "mellanlandning",
+      "base_form": "mellanlandning",
+      "position_start": 525,
+      "position_end": 539
+    },
+    {
+      "word_in_sentence": "landa",
+      "base_form": "landa",
+      "position_start": 512,
+      "position_end": 517
+    },
+    {
+      "word_in_sentence": "ankomst",
+      "base_form": "ankomst",
+      "position_start": 586,
+      "position_end": 593
+    },
+    {
+      "word_in_sentence": "säga",
+      "base_form": "säga",
+      "position_start": 419,
+      "position_end": 423
+    },
+    {
+      "word_in_sentence": "komma",
+      "base_form": "komma",
+      "position_start": 1666,
+      "position_end": 1671
+    },
+    {
+      "word_in_sentence": "hela",
+      "base_form": "hela",
+      "position_start": 1363,
+      "position_end": 1367
+    },
+    {
+      "word_in_sentence": "byta",
+      "base_form": "byta",
+      "position_start": 1731,
+      "position_end": 1735
+    },
+    {
+      "word_in_sentence": "stor",
+      "base_form": "stor",
+      "position_start": 134,
+      "position_end": 138
+    },
+    {
+      "word_in_sentence": "Först",
+      "base_form": "först",
+      "position_start": 482,
+      "position_end": 487
+    },
+    {
+      "word_in_sentence": "ner",
+      "base_form": "ner",
+      "position_start": 1839,
+      "position_end": 1842
+    },
+    {
+      "word_in_sentence": "dålig",
+      "base_form": "dålig",
+      "position_start": 1779,
+      "position_end": 1784
+    },
+    {
+      "word_in_sentence": "när",
+      "base_form": "när",
+      "position_start": 694,
+      "position_end": 697
+    },
+    {
+      "word_in_sentence": "flera",
+      "base_form": "flera",
+      "position_start": 200,
+      "position_end": 205
+    },
+    {
+      "word_in_sentence": "alla",
+      "base_form": "alla",
+      "position_start": 924,
+      "position_end": 928
+    },
+    {
+      "word_in_sentence": "Man",
+      "base_form": "man",
+      "position_start": 829,
+      "position_end": 832
+    },
+    {
+      "word_in_sentence": "lång",
+      "base_form": "lång",
+      "position_start": 243,
+      "position_end": 247
+    },
+    {
+      "word_in_sentence": "sak",
+      "base_form": "sak",
+      "position_start": 1785,
+      "position_end": 1788
+    },
+    {
+      "word_in_sentence": "balans",
+      "base_form": "balans",
+      "position_start": 846,
+      "position_end": 852
+    },
+    {
+      "word_in_sentence": "gradvis",
+      "base_form": "gradvis",
+      "position_start": 1083,
+      "position_end": 1090
+    },
+    {
+      "word_in_sentence": "halv",
+      "base_form": "halv",
+      "position_start": 1499,
+      "position_end": 1503
+    },
+    {
+      "word_in_sentence": "viss",
+      "base_form": "viss",
+      "position_start": 1742,
+      "position_end": 1746
+    },
+    {
+      "word_in_sentence": "ovanlig",
+      "base_form": "ovanlig",
+      "position_start": 1544,
+      "position_end": 1551
+    },
+    {
+      "word_in_sentence": "Sök",
+      "base_form": "sök",
+      "position_start": 1378,
+      "position_end": 1381
+    },
+    {
+      "word_in_sentence": "katastrof",
+      "base_form": "katastrof",
+      "position_start": 1467,
+      "position_end": 1476
+    }
+  ],
+  "primary_words_used": [
+    "komma ifrån",
+    "ursprungligen",
+    "katrinplommon",
+    "radiosändning",
+    "närma sig med stora steg",
+    "längre bort",
+    "passagerarfärja",
+    "drunkna",
+    "kardinal",
+    "grunda",
+    "rista",
+    "skepp",
+    "långbåt",
+    "uppbrott",
+    "stöd",
+    "Nähä!",
+    "springa runt",
+    "återbesök",
+    "bortrest",
+    "springa lös",
+    "nyinflyttad",
+    "flyta på",
+    "i längden",
+    "eyes,",
+    "resenär",
+    "flyta med",
+    "vistelse",
+    "hotellägare",
+    "fordon",
+    "på det sättet",
+    "mil",
+    "kajak",
+    "norrut",
+    "milsvid",
+    "fästning",
+    "glida fram",
+    "mellanlandning",
+    "landa",
+    "ankomst",
+    "säga",
+    "komma",
+    "hela",
+    "byta",
+    "stor",
+    "först",
+    "ner",
+    "dålig",
+    "när",
+    "flera",
+    "alla",
+    "man",
+    "lång",
+    "sak",
+    "balans",
+    "gradvis",
+    "halv",
+    "viss",
+    "ovanlig",
+    "sök",
+    "katastrof"
+  ]
+}

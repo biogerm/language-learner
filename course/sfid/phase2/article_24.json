@@ -1,0 +1,432 @@
+{
+  "course_id": "sfid",
+  "course_title": "SFI D",
+  "step_id": "hälsa_medicin",
+  "step_title": "Hälsa & Medicin",
+  "article_id": "art_24",
+  "sv": "\"I början av … ja, på 1900-talet, såg vår hälsovård helt annorlunda ut än idag,\" sa min gamla mormor. \"Viss medicinsk kunskap har visserligen funnits sedan 500 f.kr. Före Kristus, men samhället har förändrats.\" Vi hade samlats i en vacker paviljong för att fira hennes födelsedag. Det blev ett gripande berättande om hennes långa liv. \"Jo, jag lovar!\" fortsatte hon ivrigt. \"Tidigare var allt annat än lätt.\"\n\nHon hade arbetat inom svensk sjukvård under många år. Byggnaderna brukade ligga nära varandra på sjukhusområdet. I ett litet rum med en väldig lukt av rök och stark medicin, tog de hand om patienterna. Ibland fick de ge p-piller eller en smärtstillande tablett till kvinnorna. Om en kvinna var gravid och kände ångest, fick hon vila lite till. Man fick ofta kolla med en erfaren läkare innan någon fick gå över till en ny behandling.\n\n\"I en sameby i norr fanns en kvinna med ett allvarligt funktionshinder,\" mindes hon. \"Hon fick ofta gå till fots ner för berget.\" Det blev en anledning till att staten ville bygga ut samhället. Politikerna skrev ett viktigt lagförslag, som senare blev en proposition, om allas rättighet till tandvård, barnomsorg och åldringsvård. Varje medborgare skulle ha rätt till bra vård, vilket var en enorm investering för vårt land. Målet var att folkets behov skulle uppfyllas.\n\n\"När jag var ung hade vi lagom mycket mat,\" skrattade hon när vi åt tillsammans. Vi åt ofta traditionellt paltbröd med olika tillbehör. En viktig ingrediens var ofta salt skinka. Men när jag fick ont i min mage blev min vanliga mat bortplockad. Vi åt sällan sötsaker, kanske lite god vaniljsås om vi hade tur. Min mormors fysiska skick var dåligt cirka fem år efter kriget. Då var tallrikarna sällan fyllda av färsk mat, utan ibland enbart fylld med varm soppa. En gång råkade hon få schampo i ögonen när hon tvättade sig, och höll på att ramla av sin pall! \"Min skål var i alla fall helt fylld,\" mindes hon. \n\nTrots all brist på pengar försökte man år efter år hjälpa de sjuka från början till slut. Ett varmt hjärta kan ibland bota mycket. Om någon drabbades försökte man begrava oron och prata öppet. Efter rätt vård kunde de ofta gå tillbaka till det normala/vanliga.",
+  "target_words": [
+    {
+      "word_in_sentence": "medicinsk",
+      "base_form": "medicinsk",
+      "position_start": 108,
+      "position_end": 117
+    },
+    {
+      "word_in_sentence": "berättande",
+      "base_form": "berättande",
+      "position_start": 303,
+      "position_end": 313
+    },
+    {
+      "word_in_sentence": "hälsovård",
+      "base_form": "hälsovård",
+      "position_start": 42,
+      "position_end": 51
+    },
+    {
+      "word_in_sentence": "sjukvård",
+      "base_form": "sjukvård",
+      "position_start": 439,
+      "position_end": 447
+    },
+    {
+      "word_in_sentence": "rök",
+      "base_form": "rök",
+      "position_start": 561,
+      "position_end": 564
+    },
+    {
+      "word_in_sentence": "tandvård",
+      "base_form": "tandvård",
+      "position_start": 1137,
+      "position_end": 1145
+    },
+    {
+      "word_in_sentence": "barnomsorg",
+      "base_form": "barnomsorg",
+      "position_start": 1147,
+      "position_end": 1157
+    },
+    {
+      "word_in_sentence": "åldringsvård",
+      "base_form": "åldringsvård",
+      "position_start": 1162,
+      "position_end": 1174
+    },
+    {
+      "word_in_sentence": "funktionshinder",
+      "base_form": "funktionshinder",
+      "position_start": 900,
+      "position_end": 915
+    },
+    {
+      "word_in_sentence": "tablett",
+      "base_form": "tablett",
+      "position_start": 663,
+      "position_end": 670
+    },
+    {
+      "word_in_sentence": "lagförslag",
+      "base_form": "lagförslag",
+      "position_start": 1069,
+      "position_end": 1079
+    },
+    {
+      "word_in_sentence": "proposition",
+      "base_form": "proposition",
+      "position_start": 1100,
+      "position_end": 1111
+    },
+    {
+      "word_in_sentence": "ångest",
+      "base_form": "ångest",
+      "position_start": 721,
+      "position_end": 727
+    },
+    {
+      "word_in_sentence": "gravid",
+      "base_form": "gravid",
+      "position_start": 704,
+      "position_end": 710
+    },
+    {
+      "word_in_sentence": "lite till",
+      "base_form": "lite till",
+      "position_start": 743,
+      "position_end": 752
+    },
+    {
+      "word_in_sentence": "medicin",
+      "base_form": "medicin",
+      "position_start": 575,
+      "position_end": 582
+    },
+    {
+      "word_in_sentence": "paviljong",
+      "base_form": "paviljong",
+      "position_start": 239,
+      "position_end": 248
+    },
+    {
+      "word_in_sentence": "uppfyllas",
+      "base_form": "uppfyllas",
+      "position_start": 1305,
+      "position_end": 1314
+    },
+    {
+      "word_in_sentence": "gå tillbaka till det normala/vanliga",
+      "base_form": "gå tillbaka till det normala/vanliga",
+      "position_start": 2151,
+      "position_end": 2187
+    },
+    {
+      "word_in_sentence": "sameby",
+      "base_form": "sameby",
+      "position_start": 851,
+      "position_end": 857
+    },
+    {
+      "word_in_sentence": "fyllda av",
+      "base_form": "fyllda av",
+      "position_start": 1717,
+      "position_end": 1726
+    },
+    {
+      "word_in_sentence": "ner för",
+      "base_form": "ner för",
+      "position_start": 958,
+      "position_end": 965
+    },
+    {
+      "word_in_sentence": "till fots",
+      "base_form": "till fots",
+      "position_start": 948,
+      "position_end": 957
+    },
+    {
+      "word_in_sentence": "år efter år",
+      "base_form": "år efter år",
+      "position_start": 1967,
+      "position_end": 1978
+    },
+    {
+      "word_in_sentence": "en anledning till",
+      "base_form": "en anledning till",
+      "position_start": 984,
+      "position_end": 1001
+    },
+    {
+      "word_in_sentence": "fylld med",
+      "base_form": "fylld med",
+      "position_start": 1757,
+      "position_end": 1766
+    },
+    {
+      "word_in_sentence": "tillbehör",
+      "base_form": "tillbehör",
+      "position_start": 1442,
+      "position_end": 1451
+    },
+    {
+      "word_in_sentence": "paltbröd",
+      "base_form": "paltbröd",
+      "position_start": 1423,
+      "position_end": 1431
+    },
+    {
+      "word_in_sentence": "ingrediens",
+      "base_form": "ingrediens",
+      "position_start": 1463,
+      "position_end": 1473
+    },
+    {
+      "word_in_sentence": "gå över till",
+      "base_form": "gå över till",
+      "position_start": 813,
+      "position_end": 825
+    },
+    {
+      "word_in_sentence": "rätt till",
+      "base_form": "rätt till",
+      "position_start": 1203,
+      "position_end": 1212
+    },
+    {
+      "word_in_sentence": "p-piller",
+      "base_form": "p-piller",
+      "position_start": 630,
+      "position_end": 638
+    },
+    {
+      "word_in_sentence": "vaniljsås",
+      "base_form": "vaniljsås",
+      "position_start": 1601,
+      "position_end": 1610
+    },
+    {
+      "word_in_sentence": "mage",
+      "base_form": "mage",
+      "position_start": 1523,
+      "position_end": 1527
+    },
+    {
+      "word_in_sentence": "hjärta",
+      "base_form": "hjärta",
+      "position_start": 2028,
+      "position_end": 2034
+    },
+    {
+      "word_in_sentence": "fylld",
+      "base_form": "fylld",
+      "position_start": 1906,
+      "position_end": 1911
+    },
+    {
+      "word_in_sentence": "skinka",
+      "base_form": "skinka",
+      "position_start": 1488,
+      "position_end": 1494
+    },
+    {
+      "word_in_sentence": "fem",
+      "base_form": "fem",
+      "position_start": 1670,
+      "position_end": 1673
+    },
+    {
+      "word_in_sentence": "från början",
+      "base_form": "från början",
+      "position_start": 1995,
+      "position_end": 2006
+    },
+    {
+      "word_in_sentence": "lagom",
+      "base_form": "lagom",
+      "position_start": 1342,
+      "position_end": 1347
+    },
+    {
+      "word_in_sentence": "Tidigare",
+      "base_form": "tidigare",
+      "position_start": 375,
+      "position_end": 383
+    },
+    {
+      "word_in_sentence": "f.kr. Före Kristus",
+      "base_form": "f.kr. Före Kristus",
+      "position_start": 160,
+      "position_end": 178
+    },
+    {
+      "word_in_sentence": "lukt",
+      "base_form": "lukt",
+      "position_start": 553,
+      "position_end": 557
+    },
+    {
+      "word_in_sentence": "annat än",
+      "base_form": "annat än",
+      "position_start": 393,
+      "position_end": 401
+    },
+    {
+      "word_in_sentence": "öppet",
+      "base_form": "öppet",
+      "position_start": 2114,
+      "position_end": 2119
+    },
+    {
+      "word_in_sentence": "ligga nära varandra",
+      "base_form": "ligga nära varandra",
+      "position_start": 484,
+      "position_end": 503
+    },
+    {
+      "word_in_sentence": "väldig",
+      "base_form": "väldig",
+      "position_start": 546,
+      "position_end": 552
+    },
+    {
+      "word_in_sentence": "bortplockad",
+      "base_form": "bortplockad",
+      "position_start": 1549,
+      "position_end": 1560
+    },
+    {
+      "word_in_sentence": "begrava",
+      "base_form": "begrava",
+      "position_start": 2091,
+      "position_end": 2098
+    },
+    {
+      "word_in_sentence": "tillsammans",
+      "base_form": "tillsammans",
+      "position_start": 1385,
+      "position_end": 1396
+    },
+    {
+      "word_in_sentence": "skick",
+      "base_form": "skick",
+      "position_start": 1647,
+      "position_end": 1652
+    },
+    {
+      "word_in_sentence": "schampo i ögonen",
+      "base_form": "schampo i ögonen",
+      "position_start": 1801,
+      "position_end": 1817
+    },
+    {
+      "word_in_sentence": "kolla med",
+      "base_form": "kolla med",
+      "position_start": 768,
+      "position_end": 777
+    },
+    {
+      "word_in_sentence": "investering",
+      "base_form": "investering",
+      "position_start": 1243,
+      "position_end": 1254
+    },
+    {
+      "word_in_sentence": "Jo, jag lovar!",
+      "base_form": "Jo, jag lovar!",
+      "position_start": 336,
+      "position_end": 350
+    },
+    {
+      "word_in_sentence": "I början av …",
+      "base_form": "i början av …",
+      "position_start": 1,
+      "position_end": 14
+    },
+    {
+      "word_in_sentence": "samlats",
+      "base_form": "samlas",
+      "position_start": 219,
+      "position_end": 226
+    },
+    {
+      "word_in_sentence": "ramla av",
+      "base_form": "ramla av",
+      "position_start": 1856,
+      "position_end": 1864
+    },
+    {
+      "word_in_sentence": "brist på",
+      "base_form": "brist på",
+      "position_start": 1938,
+      "position_end": 1946
+    },
+    {
+      "word_in_sentence": "gripande",
+      "base_form": "gripande",
+      "position_start": 294,
+      "position_end": 302
+    }
+  ],
+  "primary_words_used": [
+    "medicinsk",
+    "berättande",
+    "hälsovård",
+    "sjukvård",
+    "rök",
+    "tandvård",
+    "barnomsorg",
+    "åldringsvård",
+    "funktionshinder",
+    "tablett",
+    "lagförslag",
+    "proposition",
+    "ångest",
+    "gravid",
+    "lite till",
+    "medicin",
+    "paviljong",
+    "uppfyllas",
+    "gå tillbaka till det normala/vanliga",
+    "sameby",
+    "fyllda av",
+    "ner för",
+    "till fots",
+    "år efter år",
+    "en anledning till",
+    "fylld med",
+    "tillbehör",
+    "paltbröd",
+    "ingrediens",
+    "gå över till",
+    "rätt till",
+    "p-piller",
+    "vaniljsås",
+    "mage",
+    "hjärta",
+    "fylld",
+    "skinka",
+    "fem",
+    "från början",
+    "lagom",
+    "tidigare",
+    "f.kr. Före Kristus",
+    "lukt",
+    "annat än",
+    "öppet",
+    "ligga nära varandra",
+    "väldig",
+    "bortplockad",
+    "begrava",
+    "tillsammans",
+    "skick",
+    "schampo i ögonen",
+    "kolla med",
+    "investering",
+    "Jo, jag lovar!",
+    "i början av …",
+    "samlas",
+    "ramla av",
+    "brist på",
+    "gripande"
+  ]
+}

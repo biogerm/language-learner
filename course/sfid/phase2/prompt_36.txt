@@ -1,0 +1,91 @@
+You are an expert Swedish language teacher specializing in CEFR Level B1 (SFI Level D). 
+Your task is to write a highly coherent, natural-sounding article in Swedish that seamlessly incorporates a specific list of target vocabulary words.
+
+# WRITING STANDARDS:
+1. Target Level: STRICTLY CEFR B1.
+2. Context Clues: Provide enough context so a learner can guess meaning. 
+3. Length & Flow: Write between 300-500 words.
+4. Sentence Length: Average 10-15 words per sentence.
+5. Topic: Create an engaging story or essay about: Kultur & Nöje. Give the article a meaningful title.
+
+# TARGET VOCABULARY:
+You MUST use EVERY SINGLE ONE of these CORE words:
+[
+  "galleri",
+  "ateljé",
+  "konstutbildning",
+  "teckning",
+  "konsthistoria",
+  "nakenmåleri",
+  "roman",
+  "singel",
+  "skådespelare",
+  "konstig",
+  "leka",
+  "troligtvis",
+  "antibiotika",
+  "spela in",
+  "spela död",
+  "fredagsmys",
+  "Visst låter det kul?",
+  "musikvideo",
+  "gå på bio",
+  "bokstav",
+  "konstitutionell",
+  "övningsbok",
+  "kul",
+  "vart fjärde år",
+  "teatertradition",
+  "regissör",
+  "filmmanus",
+  "teaterpjäs",
+  "pjäs",
+  "svartvit",
+  "myt",
+  "ett parti schack",
+  "skådespelerska",
+  "trä upp",
+  "gå ur",
+  "julfest",
+  "konst",
+  "actionfilm",
+  "kärleksfilm"
+]
+
+You MUST ALSO use EVERY SINGLE ONE of these GLUE words:
+[
+  "Nja…",
+  "bit",
+  "dekorera",
+  "mystisk",
+  "byta namn",
+  "nämna",
+  "så här",
+  "erbjuda",
+  "landskap",
+  "dö",
+  "sådan",
+  "upptäcka",
+  "en",
+  "komma ihåg",
+  "Du då?",
+  "till en början",
+  "ena",
+  "ännu",
+  "besökare",
+  "hårig",
+  "motsvara"
+]
+
+# CONSTRAINTS & OUTPUT FORMAT:
+Output strictly in JSON format matching the 3-layer schema.
+- "course_id": "sfid"
+- "course_title": "SFI D"
+- "step_id": "kultur_nöje"
+- "step_title": "Kultur & Nöje"
+- "article_id": "art_36"
+- "sv": The Swedish sentence string MUST be plain text.
+- "target_words": For each target word (both core and glue) used, identify its inflected form ("word_in_sentence"), base form ("base_form"), and 0-indexed positions.
+- "primary_words_used": An array of ALL target words (Core + Glue) you used.
+
+Save your JSON directly to `./course/sfid/phase2/article_36.json` using `write_to_file`. Finish immediately after.

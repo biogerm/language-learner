@@ -1,0 +1,432 @@
+{
+  "course_id": "sfid",
+  "course_title": "SFI D",
+  "step_id": "kultur_nöje",
+  "step_title": "Kultur & Nöje",
+  "article_id": "art_41",
+  "sv": "En vanlig lördagskväll satt vi och tittade på en spännande teveserie och började fundera över livet. Jag var klädd i en svart basker, precis som en klassisk målare, men den var tyvärr för liten. \n\"Vad tänker du göra när…?\" frågade min kompis plötsligt, utan att avsluta meningen. Han var en duktig dektektiv, fast han också gillade att blogga om arkitektur och gammalt hantverk.\n\"Jag vet inte. Jag skulle vilja veta hur… man bygger en gigantisk minnesbyggnad,\" sa jag ärligt.\n\nVi var mycket intresserade av kultur, så vi bestämde oss för att passera en känd sevärdhet i staden, ett vackert slott. Där fanns en staty av massivt brons, en fantastisk bronsstaty. Plötsligt såg vi en gammal skvallertidning på marken. \n\"Vad har hänt?\" sa han och plockade upp den för att hitta ledtrådar. Tidningen hade en handling som verkade handla om en gammal folksaga om ett läskigt odjur. \n\"Kanske kan ett riktigt odjur hoppa upp ur vattnet!\" sa han.\n\"Överdriv!\" skrek jag. \"Du är alltid så sträng och intensiv.\" \n\nSenare hörde vi musik från en scen. Det var en känd popgrupp som skulle spela fiol, och det såg ut som en färgstark cirkus. På marken låg en lös kanonkula. \"Vi måste se till att gömma den. Den kan orsaka skada,\" sa jag, men min vän ville bara låta den vara. \n\nHan ville istället ta med mig till ett stort diskotek där en discokula snurrade. Vi dansade jättemycket, men jag valde att stå över en Tangokurs som hölls där. Efteråt kände vi för ett äventyr och valde att ta ett dopp i sjön. Då började jag inse att det var mycket roligare än tråkig skidåkning eller snabbt rally. Vi pratade om den gamla filmen ”Fanny och Alexander”, en dokumentär vi sett hälften av, och om sjuttiotalets idéer kring fri sex. Allt detta inspirerade mig till att skriva en vacker dikt följande morgon, där min kompis var en sann hjälte.",
+  "target_words": [
+    {
+      "word_in_sentence": "ta ett dopp",
+      "base_form": "ta ett dopp",
+      "position_start": 1467,
+      "position_end": 1478
+    },
+    {
+      "word_in_sentence": "odjur",
+      "base_form": "odjur",
+      "position_start": 867,
+      "position_end": 872
+    },
+    {
+      "word_in_sentence": "Tangokurs",
+      "base_form": "Tangokurs",
+      "position_start": 1395,
+      "position_end": 1404
+    },
+    {
+      "word_in_sentence": "skidåkning",
+      "base_form": "skidåkning",
+      "position_start": 1545,
+      "position_end": 1555
+    },
+    {
+      "word_in_sentence": "discokula",
+      "base_form": "discokula",
+      "position_start": 1321,
+      "position_end": 1330
+    },
+    {
+      "word_in_sentence": "dikt",
+      "base_form": "dikt",
+      "position_start": 1759,
+      "position_end": 1763
+    },
+    {
+      "word_in_sentence": "målare",
+      "base_form": "målare",
+      "position_start": 157,
+      "position_end": 163
+    },
+    {
+      "word_in_sentence": "scen",
+      "base_form": "scen",
+      "position_start": 1030,
+      "position_end": 1034
+    },
+    {
+      "word_in_sentence": "teveserie",
+      "base_form": "teveserie",
+      "position_start": 59,
+      "position_end": 68
+    },
+    {
+      "word_in_sentence": "basker",
+      "base_form": "basker",
+      "position_start": 126,
+      "position_end": 132
+    },
+    {
+      "word_in_sentence": "”Fanny och Alexander”",
+      "base_form": "”Fanny och Alexander”",
+      "position_start": 1607,
+      "position_end": 1628
+    },
+    {
+      "word_in_sentence": "äventyr",
+      "base_form": "äventyr",
+      "position_start": 1445,
+      "position_end": 1452
+    },
+    {
+      "word_in_sentence": "dokumentär",
+      "base_form": "dokumentär",
+      "position_start": 1633,
+      "position_end": 1643
+    },
+    {
+      "word_in_sentence": "handling",
+      "base_form": "handling",
+      "position_start": 802,
+      "position_end": 810
+    },
+    {
+      "word_in_sentence": "spela",
+      "base_form": "spela",
+      "position_start": 1072,
+      "position_end": 1077
+    },
+    {
+      "word_in_sentence": "sevärdhet",
+      "base_form": "sevärdhet",
+      "position_start": 558,
+      "position_end": 567
+    },
+    {
+      "word_in_sentence": "skvallertidning",
+      "base_form": "skvallertidning",
+      "position_start": 687,
+      "position_end": 702
+    },
+    {
+      "word_in_sentence": "bronsstaty",
+      "base_form": "bronsstaty",
+      "position_start": 648,
+      "position_end": 658
+    },
+    {
+      "word_in_sentence": "folksaga",
+      "base_form": "folksaga",
+      "position_start": 843,
+      "position_end": 851
+    },
+    {
+      "word_in_sentence": "popgrupp",
+      "base_form": "popgrupp",
+      "position_start": 1052,
+      "position_end": 1060
+    },
+    {
+      "word_in_sentence": "slott",
+      "base_form": "slott",
+      "position_start": 590,
+      "position_end": 595
+    },
+    {
+      "word_in_sentence": "brons",
+      "base_form": "brons",
+      "position_start": 627,
+      "position_end": 632
+    },
+    {
+      "word_in_sentence": "dektektiv",
+      "base_form": "dektektiv",
+      "position_start": 298,
+      "position_end": 307
+    },
+    {
+      "word_in_sentence": "cirkus",
+      "base_form": "cirkus",
+      "position_start": 1116,
+      "position_end": 1122
+    },
+    {
+      "word_in_sentence": "diskotek",
+      "base_form": "diskotek",
+      "position_start": 1305,
+      "position_end": 1313
+    },
+    {
+      "word_in_sentence": "fiol",
+      "base_form": "fiol",
+      "position_start": 1078,
+      "position_end": 1082
+    },
+    {
+      "word_in_sentence": "hjälte",
+      "base_form": "hjälte",
+      "position_start": 1808,
+      "position_end": 1814
+    },
+    {
+      "word_in_sentence": "hantverk",
+      "base_form": "hantverk",
+      "position_start": 369,
+      "position_end": 377
+    },
+    {
+      "word_in_sentence": "minnesbyggnad",
+      "base_form": "minnesbyggnad",
+      "position_start": 445,
+      "position_end": 458
+    },
+    {
+      "word_in_sentence": "fri sex",
+      "base_form": "fri sex",
+      "position_start": 1697,
+      "position_end": 1704
+    },
+    {
+      "word_in_sentence": "rally",
+      "base_form": "rally",
+      "position_start": 1569,
+      "position_end": 1574
+    },
+    {
+      "word_in_sentence": "arkitektur",
+      "base_form": "arkitektur",
+      "position_start": 346,
+      "position_end": 356
+    },
+    {
+      "word_in_sentence": "kanonkula",
+      "base_form": "kanonkula",
+      "position_start": 1145,
+      "position_end": 1154
+    },
+    {
+      "word_in_sentence": "blogga",
+      "base_form": "blogga",
+      "position_start": 336,
+      "position_end": 342
+    },
+    {
+      "word_in_sentence": "handla om",
+      "base_form": "handla om",
+      "position_start": 823,
+      "position_end": 832
+    },
+    {
+      "word_in_sentence": "låta",
+      "base_form": "låta",
+      "position_start": 1243,
+      "position_end": 1247
+    },
+    {
+      "word_in_sentence": "lördagskväll",
+      "base_form": "lördagskväll",
+      "position_start": 10,
+      "position_end": 22
+    },
+    {
+      "word_in_sentence": "passera",
+      "base_form": "passera",
+      "position_start": 542,
+      "position_end": 549
+    },
+    {
+      "word_in_sentence": "hitta",
+      "base_form": "hitta",
+      "position_start": 767,
+      "position_end": 772
+    },
+    {
+      "word_in_sentence": "ta med",
+      "base_form": "ta med",
+      "position_start": 1279,
+      "position_end": 1285
+    },
+    {
+      "word_in_sentence": "Vad har hänt?",
+      "base_form": "Vad har hänt?",
+      "position_start": 716,
+      "position_end": 729
+    },
+    {
+      "word_in_sentence": "för liten",
+      "base_form": "för liten",
+      "position_start": 184,
+      "position_end": 193
+    },
+    {
+      "word_in_sentence": "hälften av",
+      "base_form": "hälften av",
+      "position_start": 1652,
+      "position_end": 1662
+    },
+    {
+      "word_in_sentence": "intresserade av",
+      "base_form": "intresserade av",
+      "position_start": 491,
+      "position_end": 506
+    },
+    {
+      "word_in_sentence": "stå över",
+      "base_form": "stå över",
+      "position_start": 1383,
+      "position_end": 1391
+    },
+    {
+      "word_in_sentence": "inse",
+      "base_form": "inse",
+      "position_start": 1502,
+      "position_end": 1506
+    },
+    {
+      "word_in_sentence": "gigantisk",
+      "base_form": "gigantisk",
+      "position_start": 435,
+      "position_end": 444
+    },
+    {
+      "word_in_sentence": "hoppa upp ur",
+      "base_form": "hoppa upp ur",
+      "position_start": 905,
+      "position_end": 917
+    },
+    {
+      "word_in_sentence": "lös",
+      "base_form": "lös",
+      "position_start": 1141,
+      "position_end": 1144
+    },
+    {
+      "word_in_sentence": "orsaka",
+      "base_form": "orsaka",
+      "position_start": 1197,
+      "position_end": 1203
+    },
+    {
+      "word_in_sentence": "Överdriv!",
+      "base_form": "överdriv!",
+      "position_start": 937,
+      "position_end": 946
+    },
+    {
+      "word_in_sentence": "jättemycket",
+      "base_form": "jättemycket",
+      "position_start": 1352,
+      "position_end": 1363
+    },
+    {
+      "word_in_sentence": "Jag skulle vilja veta hur…",
+      "base_form": "Jag skulle vilja veta hur…",
+      "position_start": 394,
+      "position_end": 420
+    },
+    {
+      "word_in_sentence": "fundera",
+      "base_form": "fundera",
+      "position_start": 81,
+      "position_end": 88
+    },
+    {
+      "word_in_sentence": "följande",
+      "base_form": "följande",
+      "position_start": 1764,
+      "position_end": 1772
+    },
+    {
+      "word_in_sentence": "se till att",
+      "base_form": "se till att",
+      "position_start": 1166,
+      "position_end": 1177
+    },
+    {
+      "word_in_sentence": "gömma",
+      "base_form": "gömma",
+      "position_start": 1178,
+      "position_end": 1183
+    },
+    {
+      "word_in_sentence": "Vad tänker du göra när…?",
+      "base_form": "Vad tänker du göra när…?",
+      "position_start": 197,
+      "position_end": 221
+    },
+    {
+      "word_in_sentence": "sträng",
+      "base_form": "sträng",
+      "position_start": 976,
+      "position_end": 982
+    },
+    {
+      "word_in_sentence": "intensiv",
+      "base_form": "intensiv",
+      "position_start": 987,
+      "position_end": 995
+    }
+  ],
+  "primary_words_used": [
+    "ta ett dopp",
+    "odjur",
+    "Tangokurs",
+    "skidåkning",
+    "discokula",
+    "dikt",
+    "målare",
+    "scen",
+    "teveserie",
+    "basker",
+    "”Fanny och Alexander”",
+    "äventyr",
+    "dokumentär",
+    "handling",
+    "spela",
+    "sevärdhet",
+    "skvallertidning",
+    "bronsstaty",
+    "folksaga",
+    "popgrupp",
+    "slott",
+    "brons",
+    "dektektiv",
+    "cirkus",
+    "diskotek",
+    "fiol",
+    "hjälte",
+    "hantverk",
+    "minnesbyggnad",
+    "fri sex",
+    "rally",
+    "arkitektur",
+    "kanonkula",
+    "blogga",
+    "handla om",
+    "låta",
+    "lördagskväll",
+    "passera",
+    "hitta",
+    "ta med",
+    "Vad har hänt?",
+    "för liten",
+    "hälften av",
+    "intresserade av",
+    "stå över",
+    "inse",
+    "gigantisk",
+    "hoppa upp ur",
+    "lös",
+    "orsaka",
+    "överdriv!",
+    "jättemycket",
+    "Jag skulle vilja veta hur…",
+    "fundera",
+    "följande",
+    "se till att",
+    "gömma",
+    "Vad tänker du göra när…?",
+    "sträng",
+    "intensiv"
+  ]
+}

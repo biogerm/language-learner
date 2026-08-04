@@ -1,0 +1,432 @@
+{
+  "course_id": "sfid",
+  "course_title": "SFI D",
+  "step_id": "mat_matlagning",
+  "step_title": "Mat & Matlagning",
+  "article_id": "art_16",
+  "sv": "\"Läget?\" frågade min granne när han bestämde sig för att titta in en kall kväll i mars. \"Tror du att…?\" började han, men stannade. Jag förstod vad han skulle mena. Han var jättehungrig.\n\nJag hade en idé om att laga en värmande soppa. \"Vi borde äta något gott,\" sa jag. Jag började laga mat framför en glittrande brasa. Ett faktum är att jag älskar närproducerad och närodlad mat. Jag ville ta reda på om han gillade klassisk svensk husmanskost, så att han fick uppleva riktig tradition.\n\nFörst bjöd jag på soppa på gul ärta med stekt fläsk. Vissa kryddar den med tyska örter, men jag hade i lite vitlök och ingefära. En unge hade nog tyckt det var konstigt, men han tyckte om det. Min granne verkade inte vara smittad av någon förkylning, för han hade en god aptit. Han förklarade i detalj varför det var den bästa måltiden på länge. Som konsekvens fick jag laga ännu mer!\n\nTill huvudrätt bjöd jag på en maträtt som var en kåldolme fylld med ris och kött. Vi hade också tärnad tomat och rå lök. Som tillbehör serverade jag ugnstekt lax med en klick gräddsås. \n\nTill efterrätt åt vi saffranspannkaka gjord av en fin smet med saffran och äggvita. Den serverades med salmbär och vispad grädde, samt lite russin. Det var en kaloririk men underbar efterrätt. Framför allt älskade han en liten riven persika på toppen, och lite konfekt att smälta i munnen. \n\nVi drack varm choklad och kaffe latte. En stor mängd choklad fanns med. Jag lade i en liten flinga av choklad i kaffet. Han tog också en smörgås med krås från en gås – oftast äter man det på Mårten Gås, men varför kryssa över en bra sak bara för att det är fel årstid? Maten kunde dessutom innehålla lite konjak för smaken.",
+  "target_words": [
+    {
+      "word_in_sentence": "ärta",
+      "base_form": "ärta",
+      "position_start": 519,
+      "position_end": 523
+    },
+    {
+      "word_in_sentence": "stekt",
+      "base_form": "stekt",
+      "position_start": 528,
+      "position_end": 533
+    },
+    {
+      "word_in_sentence": "konfekt",
+      "base_form": "konfekt",
+      "position_start": 1322,
+      "position_end": 1329
+    },
+    {
+      "word_in_sentence": "fläsk",
+      "base_form": "fläsk",
+      "position_start": 534,
+      "position_end": 539
+    },
+    {
+      "word_in_sentence": "russin",
+      "base_form": "russin",
+      "position_start": 1201,
+      "position_end": 1207
+    },
+    {
+      "word_in_sentence": "äggvita",
+      "base_form": "äggvita",
+      "position_start": 1136,
+      "position_end": 1143
+    },
+    {
+      "word_in_sentence": "vitlök",
+      "base_form": "vitlök",
+      "position_start": 596,
+      "position_end": 602
+    },
+    {
+      "word_in_sentence": "flinga",
+      "base_form": "flinga",
+      "position_start": 1445,
+      "position_end": 1451
+    },
+    {
+      "word_in_sentence": "soppa",
+      "base_form": "soppa",
+      "position_start": 227,
+      "position_end": 232
+    },
+    {
+      "word_in_sentence": "smet",
+      "base_form": "smet",
+      "position_start": 1115,
+      "position_end": 1119
+    },
+    {
+      "word_in_sentence": "saffran",
+      "base_form": "saffran",
+      "position_start": 1124,
+      "position_end": 1131
+    },
+    {
+      "word_in_sentence": "närproducerad",
+      "base_form": "närproducerad",
+      "position_start": 348,
+      "position_end": 361
+    },
+    {
+      "word_in_sentence": "salmbär",
+      "base_form": "salmbär",
+      "position_start": 1164,
+      "position_end": 1171
+    },
+    {
+      "word_in_sentence": "gräddsås",
+      "base_form": "gräddsås",
+      "position_start": 1049,
+      "position_end": 1057
+    },
+    {
+      "word_in_sentence": "maträtt",
+      "base_form": "maträtt",
+      "position_start": 904,
+      "position_end": 911
+    },
+    {
+      "word_in_sentence": "riven",
+      "base_form": "riven",
+      "position_start": 1288,
+      "position_end": 1293
+    },
+    {
+      "word_in_sentence": "persika",
+      "base_form": "persika",
+      "position_start": 1294,
+      "position_end": 1301
+    },
+    {
+      "word_in_sentence": "ugnstekt",
+      "base_form": "ugnstekt",
+      "position_start": 1023,
+      "position_end": 1031
+    },
+    {
+      "word_in_sentence": "rå",
+      "base_form": "rå",
+      "position_start": 987,
+      "position_end": 989
+    },
+    {
+      "word_in_sentence": "vispad",
+      "base_form": "vispad",
+      "position_start": 1176,
+      "position_end": 1182
+    },
+    {
+      "word_in_sentence": "lax",
+      "base_form": "lax",
+      "position_start": 1032,
+      "position_end": 1035
+    },
+    {
+      "word_in_sentence": "kaffe latte",
+      "base_form": "kaffe latte",
+      "position_start": 1379,
+      "position_end": 1390
+    },
+    {
+      "word_in_sentence": "tärnad",
+      "base_form": "tärnad",
+      "position_start": 970,
+      "position_end": 976
+    },
+    {
+      "word_in_sentence": "kåldolme",
+      "base_form": "kåldolme",
+      "position_start": 923,
+      "position_end": 931
+    },
+    {
+      "word_in_sentence": "ingefära",
+      "base_form": "ingefära",
+      "position_start": 607,
+      "position_end": 615
+    },
+    {
+      "word_in_sentence": "saffranspannkaka",
+      "base_form": "saffranspannkaka",
+      "position_start": 1082,
+      "position_end": 1098
+    },
+    {
+      "word_in_sentence": "varm choklad",
+      "base_form": "varm choklad",
+      "position_start": 1362,
+      "position_end": 1374
+    },
+    {
+      "word_in_sentence": "tomat",
+      "base_form": "tomat",
+      "position_start": 977,
+      "position_end": 982
+    },
+    {
+      "word_in_sentence": "smörgås",
+      "base_form": "smörgås",
+      "position_start": 1490,
+      "position_end": 1497
+    },
+    {
+      "word_in_sentence": "gås",
+      "base_form": "gås",
+      "position_start": 1515,
+      "position_end": 1518
+    },
+    {
+      "word_in_sentence": "krås",
+      "base_form": "krås",
+      "position_start": 1502,
+      "position_end": 1506
+    },
+    {
+      "word_in_sentence": "närodlad",
+      "base_form": "närodlad",
+      "position_start": 366,
+      "position_end": 374
+    },
+    {
+      "word_in_sentence": "kaloririk",
+      "base_form": "kaloririk",
+      "position_start": 1220,
+      "position_end": 1229
+    },
+    {
+      "word_in_sentence": "gjord av",
+      "base_form": "gjord av",
+      "position_start": 1099,
+      "position_end": 1107
+    },
+    {
+      "word_in_sentence": "konjak",
+      "base_form": "konjak",
+      "position_start": 1658,
+      "position_end": 1664
+    },
+    {
+      "word_in_sentence": "ris",
+      "base_form": "ris",
+      "position_start": 942,
+      "position_end": 945
+    },
+    {
+      "word_in_sentence": "titta in",
+      "base_form": "titta in",
+      "position_start": 57,
+      "position_end": 65
+    },
+    {
+      "word_in_sentence": "glittrande",
+      "base_form": "glittrande",
+      "position_start": 301,
+      "position_end": 311
+    },
+    {
+      "word_in_sentence": "ta reda på",
+      "base_form": "ta reda på",
+      "position_start": 390,
+      "position_end": 400
+    },
+    {
+      "word_in_sentence": "unge",
+      "base_form": "unge",
+      "position_start": 620,
+      "position_end": 624
+    },
+    {
+      "word_in_sentence": "smälta",
+      "base_form": "smälta",
+      "position_start": 1334,
+      "position_end": 1340
+    },
+    {
+      "word_in_sentence": "oftast",
+      "base_form": "oftast",
+      "position_start": 1521,
+      "position_end": 1527
+    },
+    {
+      "word_in_sentence": "borde",
+      "base_form": "borde",
+      "position_start": 238,
+      "position_end": 243
+    },
+    {
+      "word_in_sentence": "i detalj",
+      "base_form": "i detalj",
+      "position_start": 781,
+      "position_end": 789
+    },
+    {
+      "word_in_sentence": "så att",
+      "base_form": "så att",
+      "position_start": 445,
+      "position_end": 451
+    },
+    {
+      "word_in_sentence": "mena",
+      "base_form": "mena",
+      "position_start": 158,
+      "position_end": 162
+    },
+    {
+      "word_in_sentence": "vara smittad av",
+      "base_form": "vara smittad av",
+      "position_start": 705,
+      "position_end": 720
+    },
+    {
+      "word_in_sentence": "idé",
+      "base_form": "idé",
+      "position_start": 199,
+      "position_end": 202
+    },
+    {
+      "word_in_sentence": "Framför allt",
+      "base_form": "framför allt",
+      "position_start": 1254,
+      "position_end": 1266
+    },
+    {
+      "word_in_sentence": "Läget?",
+      "base_form": "Läget?",
+      "position_start": 1,
+      "position_end": 7
+    },
+    {
+      "word_in_sentence": "mängd",
+      "base_form": "mängd",
+      "position_start": 1400,
+      "position_end": 1405
+    },
+    {
+      "word_in_sentence": "kryssa över",
+      "base_form": "kryssa över",
+      "position_start": 1567,
+      "position_end": 1578
+    },
+    {
+      "word_in_sentence": "faktum",
+      "base_form": "faktum",
+      "position_start": 323,
+      "position_end": 329
+    },
+    {
+      "word_in_sentence": "mars",
+      "base_form": "mars",
+      "position_start": 82,
+      "position_end": 86
+    },
+    {
+      "word_in_sentence": "konsekvens",
+      "base_form": "konsekvens",
+      "position_start": 838,
+      "position_end": 848
+    },
+    {
+      "word_in_sentence": "brasa",
+      "base_form": "brasa",
+      "position_start": 312,
+      "position_end": 317
+    },
+    {
+      "word_in_sentence": "innehålla",
+      "base_form": "innehålla",
+      "position_start": 1643,
+      "position_end": 1652
+    },
+    {
+      "word_in_sentence": "tyska",
+      "base_form": "tyska",
+      "position_start": 563,
+      "position_end": 568
+    },
+    {
+      "word_in_sentence": "Tror du att…?",
+      "base_form": "Tror du att…?",
+      "position_start": 89,
+      "position_end": 102
+    },
+    {
+      "word_in_sentence": "uppleva",
+      "base_form": "uppleva",
+      "position_start": 461,
+      "position_end": 468
+    }
+  ],
+  "primary_words_used": [
+    "ärta",
+    "stekt",
+    "konfekt",
+    "fläsk",
+    "russin",
+    "äggvita",
+    "vitlök",
+    "flinga",
+    "soppa",
+    "smet",
+    "saffran",
+    "närproducerad",
+    "salmbär",
+    "gräddsås",
+    "maträtt",
+    "riven",
+    "persika",
+    "ugnstekt",
+    "rå",
+    "vispad",
+    "lax",
+    "kaffe latte",
+    "tärnad",
+    "kåldolme",
+    "ingefära",
+    "saffranspannkaka",
+    "varm choklad",
+    "tomat",
+    "smörgås",
+    "gås",
+    "krås",
+    "närodlad",
+    "kaloririk",
+    "gjord av",
+    "konjak",
+    "ris",
+    "titta in",
+    "glittrande",
+    "ta reda på",
+    "unge",
+    "smälta",
+    "oftast",
+    "borde",
+    "i detalj",
+    "så att",
+    "mena",
+    "vara smittad av",
+    "idé",
+    "framför allt",
+    "Läget?",
+    "mängd",
+    "kryssa över",
+    "faktum",
+    "mars",
+    "konsekvens",
+    "brasa",
+    "innehålla",
+    "tyska",
+    "Tror du att…?",
+    "uppleva"
+  ]
+}

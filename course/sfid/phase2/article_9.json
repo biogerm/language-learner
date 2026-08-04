@@ -1,0 +1,432 @@
+{
+  "course_id": "sfid",
+  "course_title": "SFI D",
+  "step_id": "utbildning",
+  "step_title": "Utbildning",
+  "article_id": "art_09",
+  "sv": "Att studera har blivit mer och mer viktigt för många, eftersom man ofta vill ta en examen. En skolelev i en vanlig skola får bra undervisning i ämnen som matte. För att undvika problem måste de ofta fokusera på att räkna mycket. En duktig lärare kan hjälpa till med hjälp av en bra bok. Ibland får eleverna översätta ett gammalt orspråk. En klassisk övning är att ringa in eller markera en understuken mening i texten och läsa med rätt betoning.\n\nJag bestämde mig för att prova en snabbkurs i pedagogik. Jag ville praktisera på en förskola för att se hur en förskollärare jobbar. Den som var yngst i vår klass var bara tjugo år, men kände sig ändå sedd. Han behövde inte be om lov för att få en bra lektion. Senare valde han att studera på universitet för att bli gymnasielärare. Man kan klassa honom som en framtida akademiker. På ett universitet kan man lära sig mycket, till och med om lyckoforskning och annan akademisk forskning. Jag vet en som vill forska om hur stress kan reducera glädjen. \n\nVår rektor berättade att de skulle ta över en kurs i svenska för invandrare. Min klasskompis ville protestera mot att vi skulle ha ett stort prov senast på fredag. Han kände sig nästan lika vilsen som en björn som måste lufsa in i en bur eller stå byxlös framför alla. Men man måste prioritera och till en viss grad göra sitt bästa. Det mesta måste ju ske i tid.\n\nInför provet skulle vi räkna ihop poängen inom varje område och svara på en kortfattad fråga. Minst en person om året brukar få högsta betyg. Sist av alla hoppas jag att jag är bättre än någonsin på att skriva, och kanske fira med en lokalproducerad måltid.",
+  "target_words": [
+    {
+      "word_in_sentence": "översätta",
+      "base_form": "översätta",
+      "position_start": 307,
+      "position_end": 316
+    },
+    {
+      "word_in_sentence": "bok",
+      "base_form": "bok",
+      "position_start": 282,
+      "position_end": 285
+    },
+    {
+      "word_in_sentence": "studera",
+      "base_form": "studera",
+      "position_start": 4,
+      "position_end": 11
+    },
+    {
+      "word_in_sentence": "examen",
+      "base_form": "examen",
+      "position_start": 83,
+      "position_end": 89
+    },
+    {
+      "word_in_sentence": "undervisning",
+      "base_form": "undervisning",
+      "position_start": 129,
+      "position_end": 141
+    },
+    {
+      "word_in_sentence": "matte",
+      "base_form": "matte",
+      "position_start": 154,
+      "position_end": 159
+    },
+    {
+      "word_in_sentence": "förskollärare",
+      "base_form": "förskollärare",
+      "position_start": 558,
+      "position_end": 571
+    },
+    {
+      "word_in_sentence": "gymnasielärare",
+      "base_form": "gymnasielärare",
+      "position_start": 764,
+      "position_end": 778
+    },
+    {
+      "word_in_sentence": "universitet",
+      "base_form": "universitet",
+      "position_start": 836,
+      "position_end": 847
+    },
+    {
+      "word_in_sentence": "studera på universitet",
+      "base_form": "studera på universitet",
+      "position_start": 729,
+      "position_end": 751
+    },
+    {
+      "word_in_sentence": "lektion",
+      "base_form": "lektion",
+      "position_start": 699,
+      "position_end": 706
+    },
+    {
+      "word_in_sentence": "forskning",
+      "base_form": "forskning",
+      "position_start": 924,
+      "position_end": 933
+    },
+    {
+      "word_in_sentence": "lyckoforskning",
+      "base_form": "lyckoforskning",
+      "position_start": 889,
+      "position_end": 903
+    },
+    {
+      "word_in_sentence": "forska om",
+      "base_form": "forska om",
+      "position_start": 955,
+      "position_end": 964
+    },
+    {
+      "word_in_sentence": "klass",
+      "base_form": "klass",
+      "position_start": 604,
+      "position_end": 609
+    },
+    {
+      "word_in_sentence": "akademiker",
+      "base_form": "akademiker",
+      "position_start": 817,
+      "position_end": 827
+    },
+    {
+      "word_in_sentence": "akademisk",
+      "base_form": "akademisk",
+      "position_start": 914,
+      "position_end": 923
+    },
+    {
+      "word_in_sentence": "skola",
+      "base_form": "skola",
+      "position_start": 115,
+      "position_end": 120
+    },
+    {
+      "word_in_sentence": "rektor",
+      "base_form": "rektor",
+      "position_start": 1004,
+      "position_end": 1010
+    },
+    {
+      "word_in_sentence": "skolelev",
+      "base_form": "skolelev",
+      "position_start": 94,
+      "position_end": 102
+    },
+    {
+      "word_in_sentence": "svenska för invandrare",
+      "base_form": "svenska för invandrare",
+      "position_start": 1053,
+      "position_end": 1075
+    },
+    {
+      "word_in_sentence": "prov",
+      "base_form": "prov",
+      "position_start": 1141,
+      "position_end": 1145
+    },
+    {
+      "word_in_sentence": "protestera",
+      "base_form": "protestera",
+      "position_start": 1099,
+      "position_end": 1109
+    },
+    {
+      "word_in_sentence": "klasskompis",
+      "base_form": "klasskompis",
+      "position_start": 1081,
+      "position_end": 1092
+    },
+    {
+      "word_in_sentence": "klassisk",
+      "base_form": "klassisk",
+      "position_start": 341,
+      "position_end": 349
+    },
+    {
+      "word_in_sentence": "klassa",
+      "base_form": "klassa",
+      "position_start": 788,
+      "position_end": 794
+    },
+    {
+      "word_in_sentence": "snabbkurs",
+      "base_form": "snabbkurs",
+      "position_start": 481,
+      "position_end": 490
+    },
+    {
+      "word_in_sentence": "praktisera",
+      "base_form": "praktisera",
+      "position_start": 514,
+      "position_end": 524
+    },
+    {
+      "word_in_sentence": "förskola",
+      "base_form": "förskola",
+      "position_start": 531,
+      "position_end": 539
+    },
+    {
+      "word_in_sentence": "senast på fredag",
+      "base_form": "senast på fredag",
+      "position_start": 1146,
+      "position_end": 1162
+    },
+    {
+      "word_in_sentence": "grad",
+      "base_form": "grad",
+      "position_start": 1311,
+      "position_end": 1315
+    },
+    {
+      "word_in_sentence": "prova",
+      "base_form": "prova",
+      "position_start": 472,
+      "position_end": 477
+    },
+    {
+      "word_in_sentence": "ringa in",
+      "base_form": "ringa in",
+      "position_start": 364,
+      "position_end": 372
+    },
+    {
+      "word_in_sentence": "räkna",
+      "base_form": "räkna",
+      "position_start": 215,
+      "position_end": 220
+    },
+    {
+      "word_in_sentence": "område",
+      "base_form": "område",
+      "position_start": 1417,
+      "position_end": 1423
+    },
+    {
+      "word_in_sentence": "markera",
+      "base_form": "markera",
+      "position_start": 379,
+      "position_end": 386
+    },
+    {
+      "word_in_sentence": "understuken",
+      "base_form": "understuken",
+      "position_start": 390,
+      "position_end": 401
+    },
+    {
+      "word_in_sentence": "räkna ihop",
+      "base_form": "räkna ihop",
+      "position_start": 1387,
+      "position_end": 1397
+    },
+    {
+      "word_in_sentence": "betoning",
+      "base_form": "betoning",
+      "position_start": 436,
+      "position_end": 444
+    },
+    {
+      "word_in_sentence": "fokusera på",
+      "base_form": "fokusera på",
+      "position_start": 199,
+      "position_end": 210
+    },
+    {
+      "word_in_sentence": "prioritera",
+      "base_form": "prioritera",
+      "position_start": 1283,
+      "position_end": 1293
+    },
+    {
+      "word_in_sentence": "orspråk",
+      "base_form": "orspråk",
+      "position_start": 329,
+      "position_end": 336
+    },
+    {
+      "word_in_sentence": "reducera",
+      "base_form": "reducera",
+      "position_start": 980,
+      "position_end": 988
+    },
+    {
+      "word_in_sentence": "en person om året",
+      "base_form": "en person om året",
+      "position_start": 1464,
+      "position_end": 1481
+    },
+    {
+      "word_in_sentence": "ske",
+      "base_form": "ske",
+      "position_start": 1352,
+      "position_end": 1355
+    },
+    {
+      "word_in_sentence": "byxlös",
+      "base_form": "byxlös",
+      "position_start": 1248,
+      "position_end": 1254
+    },
+    {
+      "word_in_sentence": "undvika",
+      "base_form": "undvika",
+      "position_start": 169,
+      "position_end": 176
+    },
+    {
+      "word_in_sentence": "eftersom",
+      "base_form": "eftersom",
+      "position_start": 54,
+      "position_end": 62
+    },
+    {
+      "word_in_sentence": "bur",
+      "base_form": "bur",
+      "position_start": 1234,
+      "position_end": 1237
+    },
+    {
+      "word_in_sentence": "be om lov",
+      "base_form": "be om lov",
+      "position_start": 671,
+      "position_end": 680
+    },
+    {
+      "word_in_sentence": "lokalproducerad",
+      "base_form": "lokalproducerad",
+      "position_start": 1598,
+      "position_end": 1613
+    },
+    {
+      "word_in_sentence": "ta över",
+      "base_form": "ta över",
+      "position_start": 1035,
+      "position_end": 1042
+    },
+    {
+      "word_in_sentence": "kortfattad",
+      "base_form": "kortfattad",
+      "position_start": 1440,
+      "position_end": 1450
+    },
+    {
+      "word_in_sentence": "sedd",
+      "base_form": "sedd",
+      "position_start": 648,
+      "position_end": 652
+    },
+    {
+      "word_in_sentence": "mer och mer",
+      "base_form": "mer och mer",
+      "position_start": 23,
+      "position_end": 34
+    },
+    {
+      "word_in_sentence": "någonsin",
+      "base_form": "någonsin",
+      "position_start": 1551,
+      "position_end": 1559
+    },
+    {
+      "word_in_sentence": "med hjälp av",
+      "base_form": "med hjälp av",
+      "position_start": 262,
+      "position_end": 274
+    },
+    {
+      "word_in_sentence": "yngst",
+      "base_form": "yngst",
+      "position_start": 592,
+      "position_end": 597
+    },
+    {
+      "word_in_sentence": "lufsa",
+      "base_form": "lufsa",
+      "position_start": 1220,
+      "position_end": 1225
+    },
+    {
+      "word_in_sentence": "Sist",
+      "base_form": "sist",
+      "position_start": 1506,
+      "position_end": 1510
+    }
+  ],
+  "primary_words_used": [
+    "översätta",
+    "bok",
+    "studera",
+    "examen",
+    "undervisning",
+    "matte",
+    "förskollärare",
+    "gymnasielärare",
+    "universitet",
+    "studera på universitet",
+    "lektion",
+    "forskning",
+    "lyckoforskning",
+    "forska om",
+    "klass",
+    "akademiker",
+    "akademisk",
+    "skola",
+    "rektor",
+    "skolelev",
+    "svenska för invandrare",
+    "prov",
+    "protestera",
+    "klasskompis",
+    "klassisk",
+    "klassa",
+    "snabbkurs",
+    "praktisera",
+    "förskola",
+    "senast på fredag",
+    "grad",
+    "prova",
+    "ringa in",
+    "räkna",
+    "område",
+    "markera",
+    "understuken",
+    "räkna ihop",
+    "betoning",
+    "fokusera på",
+    "prioritera",
+    "orspråk",
+    "reducera",
+    "en person om året",
+    "ske",
+    "byxlös",
+    "undvika",
+    "eftersom",
+    "bur",
+    "be om lov",
+    "lokalproducerad",
+    "ta över",
+    "kortfattad",
+    "sedd",
+    "mer och mer",
+    "någonsin",
+    "med hjälp av",
+    "yngst",
+    "lufsa",
+    "sist"
+  ]
+}

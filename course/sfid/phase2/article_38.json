@@ -1,0 +1,432 @@
+{
+  "course_id": "sfid",
+  "course_title": "SFI D",
+  "step_id": "kultur_nöje",
+  "step_title": "Kultur & Nöje",
+  "article_id": "art_38",
+  "sv": "\"Vet du vad jag har läst?\" frågade jag min vän i vår telefon. \"Det var en spännande tidningsartikel om en skröna som brukar sprida sig på internet vartannat år. Det är en rolig vandringshistoria om en svensk charterresenär som ringde till ett utrikesdepartement bara för skojs skull. Han sa att han var nära släkt med kungen.\"\n\"Det var underhållande, men vad hände sedan?\" undrade hon.\n\"Jo, det var egentligen bara ett roligt skämt, typ ett stort aprilskämt\", sa jag för att dra ut på historien.\n\nSedan frågade jag henne om hon ville följa med till en stor nöjespark i staden för att se en ny attraktion. \n\"Jag kan tyvärr inte idag.\" svarade hon snabbt.\n\"Vad ville hon ha?\" tänkte jag tyst för mig själv. \"Hur klarar du dig?\" frågade jag istället. \"Vad gör du hela dagarna?\"\n\nHon förklarade att hon inte gillade att bara ligga och lata sig. Istället ville hon idrotta och ha en aktiv fritidsvana. Hon hade en förvånansvärd stor samling av träningsutrustning. Hennes absolut bästa fritidsaktivitet var utförsåkning under en kall vinter. Varje timme på berget var viktig. Ibland kunde hon ta fram en gammal pjäxa och en stav från garaget och drömma om backen. \"Det känns som en helt omöjlig uppgift att leva utan snön\", sa hon. Inuti henne fanns det också väldigt mycket fantasi.\n\n\"Men när snön saknas, så gillar du väl en annan sport där man kan vinna en stor tävling? Kanske ridning eller snabb hästpolo? Eller spela innebandy med kompisar?\" \n\"Ja, dessutom älskar jag skridskoåkning. Jag sätter på mig min skridsko och åker på isen\", svarade hon. \"Men jag gillar inte all motorsport. Jag skulle aldrig köra en sportbil snabbt eller vara en av de så kallade tysta golfspelare som går runt.\"\n\nDet fanns en tydlig åsikt i hennes val. Det verkade som att hennes passioner skulle höra hemma på ett aktivt läger. Lång transport till ett sådant läger var ibland svårt, särskilt när kläderna var täckta av jordig mark. Inte förrän hon kom hem kände hon sig trött. Hon sade ett gammalt citat om hälsa. \n\"Men vill du inte gå på teater då och då?\" frågade jag henne. \n\"Kanske\", sa hon med ett skratt, \"men jag tycker faktiskt man borde avskaffa allt stillasittande i världen!\"\n",
+  "target_words": [
+    {
+      "word_in_sentence": "charterresenär",
+      "base_form": "charterresenär",
+      "position_start": 208,
+      "position_end": 222
+    },
+    {
+      "word_in_sentence": "utrikesdepartement",
+      "base_form": "utrikesdepartement",
+      "position_start": 243,
+      "position_end": 261
+    },
+    {
+      "word_in_sentence": "idrotta",
+      "base_form": "idrotta",
+      "position_start": 860,
+      "position_end": 867
+    },
+    {
+      "word_in_sentence": "golfspelare",
+      "base_form": "golfspelare",
+      "position_start": 1663,
+      "position_end": 1674
+    },
+    {
+      "word_in_sentence": "motorsport",
+      "base_form": "motorsport",
+      "position_start": 1572,
+      "position_end": 1582
+    },
+    {
+      "word_in_sentence": "Vet du vad jag har läst?",
+      "base_form": "Vet du vad jag har läst?",
+      "position_start": 1,
+      "position_end": 25
+    },
+    {
+      "word_in_sentence": "skröna",
+      "base_form": "skröna",
+      "position_start": 106,
+      "position_end": 112
+    },
+    {
+      "word_in_sentence": "sprida",
+      "base_form": "sprida",
+      "position_start": 124,
+      "position_end": 130
+    },
+    {
+      "word_in_sentence": "tidningsartikel",
+      "base_form": "tidningsartikel",
+      "position_start": 84,
+      "position_end": 99
+    },
+    {
+      "word_in_sentence": "vandringshistoria",
+      "base_form": "vandringshistoria",
+      "position_start": 177,
+      "position_end": 194
+    },
+    {
+      "word_in_sentence": "underhållande",
+      "base_form": "underhållande",
+      "position_start": 336,
+      "position_end": 349
+    },
+    {
+      "word_in_sentence": "vartannat år",
+      "base_form": "vartannat år",
+      "position_start": 147,
+      "position_end": 159
+    },
+    {
+      "word_in_sentence": "för skojs skull",
+      "base_form": "för skojs skull",
+      "position_start": 267,
+      "position_end": 282
+    },
+    {
+      "word_in_sentence": "förvånansvärd",
+      "base_form": "förvånansvärd",
+      "position_start": 909,
+      "position_end": 922
+    },
+    {
+      "word_in_sentence": "sportbil",
+      "base_form": "sportbil",
+      "position_start": 1610,
+      "position_end": 1618
+    },
+    {
+      "word_in_sentence": "saknas",
+      "base_form": "saknas",
+      "position_start": 1293,
+      "position_end": 1299
+    },
+    {
+      "word_in_sentence": "nöjespark",
+      "base_form": "nöjespark",
+      "position_start": 557,
+      "position_end": 566
+    },
+    {
+      "word_in_sentence": "skämt",
+      "base_form": "skämt",
+      "position_start": 426,
+      "position_end": 431
+    },
+    {
+      "word_in_sentence": "aprilskämt",
+      "base_form": "aprilskämt",
+      "position_start": 447,
+      "position_end": 457
+    },
+    {
+      "word_in_sentence": "transport",
+      "base_form": "transport",
+      "position_start": 1812,
+      "position_end": 1821
+    },
+    {
+      "word_in_sentence": "stav",
+      "base_form": "stav",
+      "position_start": 1118,
+      "position_end": 1122
+    },
+    {
+      "word_in_sentence": "tävling",
+      "base_form": "tävling",
+      "position_start": 1359,
+      "position_end": 1366
+    },
+    {
+      "word_in_sentence": "pjäxa",
+      "base_form": "pjäxa",
+      "position_start": 1105,
+      "position_end": 1110
+    },
+    {
+      "word_in_sentence": "samling",
+      "base_form": "samling",
+      "position_start": 928,
+      "position_end": 935
+    },
+    {
+      "word_in_sentence": "citat",
+      "base_form": "citat",
+      "position_start": 1977,
+      "position_end": 1982
+    },
+    {
+      "word_in_sentence": "läger",
+      "base_form": "läger",
+      "position_start": 1800,
+      "position_end": 1805
+    },
+    {
+      "word_in_sentence": "attraktion",
+      "base_form": "attraktion",
+      "position_start": 593,
+      "position_end": 603
+    },
+    {
+      "word_in_sentence": "fritidsvana",
+      "base_form": "fritidsvana",
+      "position_start": 884,
+      "position_end": 895
+    },
+    {
+      "word_in_sentence": "fantasi",
+      "base_form": "fantasi",
+      "position_start": 1269,
+      "position_end": 1276
+    },
+    {
+      "word_in_sentence": "utförsåkning",
+      "base_form": "utförsåkning",
+      "position_start": 1001,
+      "position_end": 1013
+    },
+    {
+      "word_in_sentence": "hästpolo",
+      "base_form": "hästpolo",
+      "position_start": 1395,
+      "position_end": 1403
+    },
+    {
+      "word_in_sentence": "fritidsaktivitet",
+      "base_form": "fritidsaktivitet",
+      "position_start": 980,
+      "position_end": 996
+    },
+    {
+      "word_in_sentence": "gå på teater",
+      "base_form": "gå på teater",
+      "position_start": 2012,
+      "position_end": 2024
+    },
+    {
+      "word_in_sentence": "vinna",
+      "base_form": "vinna",
+      "position_start": 1345,
+      "position_end": 1350
+    },
+    {
+      "word_in_sentence": "ridning",
+      "base_form": "ridning",
+      "position_start": 1375,
+      "position_end": 1382
+    },
+    {
+      "word_in_sentence": "skridsko",
+      "base_form": "skridsko",
+      "position_start": 1506,
+      "position_end": 1514
+    },
+    {
+      "word_in_sentence": "innebandy",
+      "base_form": "innebandy",
+      "position_start": 1417,
+      "position_end": 1426
+    },
+    {
+      "word_in_sentence": "sport",
+      "base_form": "sport",
+      "position_start": 1327,
+      "position_end": 1332
+    },
+    {
+      "word_in_sentence": "skridskoåkning",
+      "base_form": "skridskoåkning",
+      "position_start": 1468,
+      "position_end": 1482
+    },
+    {
+      "word_in_sentence": "dra",
+      "base_form": "dra",
+      "position_start": 475,
+      "position_end": 478
+    },
+    {
+      "word_in_sentence": "telefon",
+      "base_form": "telefon",
+      "position_start": 53,
+      "position_end": 60
+    },
+    {
+      "word_in_sentence": "avskaffa",
+      "base_form": "avskaffa",
+      "position_start": 2125,
+      "position_end": 2133
+    },
+    {
+      "word_in_sentence": "vinter",
+      "base_form": "vinter",
+      "position_start": 1028,
+      "position_end": 1034
+    },
+    {
+      "word_in_sentence": "vad",
+      "base_form": "vad",
+      "position_start": 355,
+      "position_end": 358
+    },
+    {
+      "word_in_sentence": "Inuti",
+      "base_form": "inuti",
+      "position_start": 1226,
+      "position_end": 1231
+    },
+    {
+      "word_in_sentence": "ligga och lata sig",
+      "base_form": "ligga och lata sig",
+      "position_start": 821,
+      "position_end": 839
+    },
+    {
+      "word_in_sentence": "omöjlig",
+      "base_form": "omöjlig",
+      "position_start": 1181,
+      "position_end": 1188
+    },
+    {
+      "word_in_sentence": "timme",
+      "base_form": "timme",
+      "position_start": 1042,
+      "position_end": 1047
+    },
+    {
+      "word_in_sentence": "jordig",
+      "base_form": "jordig",
+      "position_start": 1898,
+      "position_end": 1904
+    },
+    {
+      "word_in_sentence": "släkt med",
+      "base_form": "släkt med",
+      "position_start": 308,
+      "position_end": 317
+    },
+    {
+      "word_in_sentence": "ta fram",
+      "base_form": "ta fram",
+      "position_start": 1087,
+      "position_end": 1094
+    },
+    {
+      "word_in_sentence": "Jag kan tyvärr inte idag.",
+      "base_form": "Jag kan tyvärr inte idag.",
+      "position_start": 607,
+      "position_end": 632
+    },
+    {
+      "word_in_sentence": "tydlig",
+      "base_form": "tydlig",
+      "position_start": 1704,
+      "position_end": 1710
+    },
+    {
+      "word_in_sentence": "så kallade",
+      "base_form": "så kallade",
+      "position_start": 1646,
+      "position_end": 1656
+    },
+    {
+      "word_in_sentence": "höra hemma",
+      "base_form": "höra hemma",
+      "position_start": 1775,
+      "position_end": 1785
+    },
+    {
+      "word_in_sentence": "förrän",
+      "base_form": "förrän",
+      "position_start": 1916,
+      "position_end": 1922
+    },
+    {
+      "word_in_sentence": "Hur klarar du dig?",
+      "base_form": "Hur klarar du dig?",
+      "position_start": 706,
+      "position_end": 724
+    },
+    {
+      "word_in_sentence": "dessutom",
+      "base_form": "dessutom",
+      "position_start": 1448,
+      "position_end": 1456
+    },
+    {
+      "word_in_sentence": "då och då",
+      "base_form": "då och då",
+      "position_start": 2025,
+      "position_end": 2034
+    },
+    {
+      "word_in_sentence": "Vad ville hon ha?",
+      "base_form": "Vad ville hon ha?",
+      "position_start": 655,
+      "position_end": 672
+    }
+  ],
+  "primary_words_used": [
+    "charterresenär",
+    "utrikesdepartement",
+    "idrotta",
+    "golfspelare",
+    "motorsport",
+    "Vet du vad jag har läst?",
+    "skröna",
+    "sprida",
+    "tidningsartikel",
+    "vandringshistoria",
+    "underhållande",
+    "vartannat år",
+    "för skojs skull",
+    "förvånansvärd",
+    "sportbil",
+    "saknas",
+    "nöjespark",
+    "skämt",
+    "aprilskämt",
+    "transport",
+    "stav",
+    "tävling",
+    "pjäxa",
+    "samling",
+    "citat",
+    "läger",
+    "attraktion",
+    "fritidsvana",
+    "fantasi",
+    "utförsåkning",
+    "hästpolo",
+    "fritidsaktivitet",
+    "gå på teater",
+    "vinna",
+    "ridning",
+    "skridsko",
+    "innebandy",
+    "sport",
+    "skridskoåkning",
+    "dra",
+    "telefon",
+    "avskaffa",
+    "vinter",
+    "vad",
+    "inuti",
+    "ligga och lata sig",
+    "omöjlig",
+    "timme",
+    "jordig",
+    "släkt med",
+    "ta fram",
+    "Jag kan tyvärr inte idag.",
+    "tydlig",
+    "så kallade",
+    "höra hemma",
+    "förrän",
+    "Hur klarar du dig?",
+    "dessutom",
+    "då och då",
+    "Vad ville hon ha?"
+  ]
+}

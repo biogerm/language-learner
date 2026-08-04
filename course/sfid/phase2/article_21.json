@@ -1,0 +1,432 @@
+{
+  "course_id": "sfid",
+  "course_title": "SFI D",
+  "step_id": "natur_miljö",
+  "step_title": "Natur & Miljö",
+  "article_id": "art_21",
+  "sv": "Vi befann oss i en vacker och nästan orörd del av Norden. Det var en suggestiv miljö. Vi började dagen vid en vacker näckrosdamm i en grön dal. Det var himla vackert, och vi kunde andas frisk luft. På ett litet grässtrå kröp en myra. På bergets sydsida lyste solen. \"Oj då,\" sa vår guide, \"titta där!\" \n\nEn stor björn, närmare bestämt en brunbjörn, rörde sig i skogen. Bredvid låg ett kadaver som den skulle äta. \"Det är i princip omöjligt att se dem så här,\" sa vår zoolog. Han tyckte om både…och när det gällde växter och djur. Vi såg också en ren och ett litet får. En ståtlig älg och en liten älgkalv stod i skogsbrynet. En varg, eller ulv som man förr sa, ylade i fjärran. Skogen var så tät att man var tvungen att be om hjälp för att hitta ut. Jag fick lust att gå närmare kanten, men jag stannade strax innan en brant klippa. Där fanns is på marken. \n\nVår botaniker visade oss en sällsynt växt, en vacker kaprifol. Han berättade hur man kunde skydda den. \"Vi måste öva på att ta hand om naturen utan att förstöra den.\" Han ritade ett mönster på ett papper. Han förklarade skillnaden mellan en hanne och en hona hos vissa blommor. I vattnet nedanför simmade en ål, men som tur var ingen krokodil! I havet långt borta kunde vi se en delfin.\n\nVi hade med oss en hund, en glad pudel, och såg en färgglad påfågel vid en gård. Vi upptäckte också en spindel, en fästing och en surrande geting. Plötsligt såg vi en orm och en stor oxe på fältet. \"Ett stort antal av de djur vi sett är däggdjur,\" sa guiden.\n\nMan ville behålla rätt temperatur i stugan, men ute började det sjunka redan på eftermiddagen. Vi fick se en stor andel av detta område på tjugo kvadratkilometer. En spanske turist var med oss. Han var nykterist och drack bara vatten, en fantastisk lokal råvara. När dagen var slut bad han oss att ge respons på hans svenska. Detta var min femte resa hit, och jag kommer åka hit igen!",
+  "target_words": [
+    {
+      "word_in_sentence": "växt",
+      "base_form": "växt",
+      "position_start": 896,
+      "position_end": 900
+    },
+    {
+      "word_in_sentence": "hanne",
+      "base_form": "hanne",
+      "position_start": 1100,
+      "position_end": 1105
+    },
+    {
+      "word_in_sentence": "ren",
+      "base_form": "ren",
+      "position_start": 546,
+      "position_end": 549
+    },
+    {
+      "word_in_sentence": "ål",
+      "base_form": "ål",
+      "position_start": 1167,
+      "position_end": 1169
+    },
+    {
+      "word_in_sentence": "spindel",
+      "base_form": "spindel",
+      "position_start": 1350,
+      "position_end": 1357
+    },
+    {
+      "word_in_sentence": "älgkalv",
+      "base_form": "älgkalv",
+      "position_start": 597,
+      "position_end": 604
+    },
+    {
+      "word_in_sentence": "myra",
+      "base_form": "myra",
+      "position_start": 228,
+      "position_end": 232
+    },
+    {
+      "word_in_sentence": "får",
+      "base_form": "får",
+      "position_start": 564,
+      "position_end": 567
+    },
+    {
+      "word_in_sentence": "orm",
+      "base_form": "orm",
+      "position_start": 1414,
+      "position_end": 1417
+    },
+    {
+      "word_in_sentence": "oxe",
+      "base_form": "oxe",
+      "position_start": 1430,
+      "position_end": 1433
+    },
+    {
+      "word_in_sentence": "älg",
+      "base_form": "älg",
+      "position_start": 580,
+      "position_end": 583
+    },
+    {
+      "word_in_sentence": "geting",
+      "base_form": "geting",
+      "position_start": 1386,
+      "position_end": 1392
+    },
+    {
+      "word_in_sentence": "kadaver",
+      "base_form": "kadaver",
+      "position_start": 385,
+      "position_end": 392
+    },
+    {
+      "word_in_sentence": "hona",
+      "base_form": "hona",
+      "position_start": 1113,
+      "position_end": 1117
+    },
+    {
+      "word_in_sentence": "björn",
+      "base_form": "björn",
+      "position_start": 312,
+      "position_end": 317
+    },
+    {
+      "word_in_sentence": "fästing",
+      "base_form": "fästing",
+      "position_start": 1362,
+      "position_end": 1369
+    },
+    {
+      "word_in_sentence": "brunbjörn",
+      "base_form": "brunbjörn",
+      "position_start": 338,
+      "position_end": 347
+    },
+    {
+      "word_in_sentence": "ulv",
+      "base_form": "ulv",
+      "position_start": 640,
+      "position_end": 643
+    },
+    {
+      "word_in_sentence": "krokodil",
+      "base_form": "krokodil",
+      "position_start": 1193,
+      "position_end": 1201
+    },
+    {
+      "word_in_sentence": "zoolog",
+      "base_form": "zoolog",
+      "position_start": 467,
+      "position_end": 473
+    },
+    {
+      "word_in_sentence": "klippa",
+      "base_form": "klippa",
+      "position_start": 825,
+      "position_end": 831
+    },
+    {
+      "word_in_sentence": "brant",
+      "base_form": "brant",
+      "position_start": 819,
+      "position_end": 824
+    },
+    {
+      "word_in_sentence": "kaprifol",
+      "base_form": "kaprifol",
+      "position_start": 912,
+      "position_end": 920
+    },
+    {
+      "word_in_sentence": "delfin",
+      "base_form": "delfin",
+      "position_start": 1238,
+      "position_end": 1244
+    },
+    {
+      "word_in_sentence": "botaniker",
+      "base_form": "botaniker",
+      "position_start": 863,
+      "position_end": 872
+    },
+    {
+      "word_in_sentence": "tät",
+      "base_form": "tät",
+      "position_start": 692,
+      "position_end": 695
+    },
+    {
+      "word_in_sentence": "grässtrå",
+      "base_form": "grässtrå",
+      "position_start": 211,
+      "position_end": 219
+    },
+    {
+      "word_in_sentence": "is",
+      "base_form": "is",
+      "position_start": 843,
+      "position_end": 845
+    },
+    {
+      "word_in_sentence": "kvadratkilometer",
+      "base_form": "kvadratkilometer",
+      "position_start": 1652,
+      "position_end": 1668
+    },
+    {
+      "word_in_sentence": "dal",
+      "base_form": "dal",
+      "position_start": 139,
+      "position_end": 142
+    },
+    {
+      "word_in_sentence": "luft",
+      "base_form": "luft",
+      "position_start": 192,
+      "position_end": 196
+    },
+    {
+      "word_in_sentence": "sydsida",
+      "base_form": "sydsida",
+      "position_start": 245,
+      "position_end": 252
+    },
+    {
+      "word_in_sentence": "påfågel",
+      "base_form": "påfågel",
+      "position_start": 1307,
+      "position_end": 1314
+    },
+    {
+      "word_in_sentence": "pudel",
+      "base_form": "pudel",
+      "position_start": 1280,
+      "position_end": 1285
+    },
+    {
+      "word_in_sentence": "orörd",
+      "base_form": "orörd",
+      "position_start": 37,
+      "position_end": 42
+    },
+    {
+      "word_in_sentence": "däggdjur",
+      "base_form": "däggdjur",
+      "position_start": 1484,
+      "position_end": 1492
+    },
+    {
+      "word_in_sentence": "råvara",
+      "base_form": "råvara",
+      "position_start": 1762,
+      "position_end": 1768
+    },
+    {
+      "word_in_sentence": "temperatur",
+      "base_form": "temperatur",
+      "position_start": 1530,
+      "position_end": 1540
+    },
+    {
+      "word_in_sentence": "näckrosdamm",
+      "base_form": "näckrosdamm",
+      "position_start": 117,
+      "position_end": 128
+    },
+    {
+      "word_in_sentence": "spanske",
+      "base_form": "spanske",
+      "position_start": 1673,
+      "position_end": 1680
+    },
+    {
+      "word_in_sentence": "strax innan",
+      "base_form": "strax innan",
+      "position_start": 804,
+      "position_end": 815
+    },
+    {
+      "word_in_sentence": "Norden",
+      "base_form": "Norden",
+      "position_start": 50,
+      "position_end": 56
+    },
+    {
+      "word_in_sentence": "himla",
+      "base_form": "himla",
+      "position_start": 152,
+      "position_end": 157
+    },
+    {
+      "word_in_sentence": "öva på",
+      "base_form": "öva på",
+      "position_start": 972,
+      "position_end": 978
+    },
+    {
+      "word_in_sentence": "antal",
+      "base_form": "antal",
+      "position_start": 1456,
+      "position_end": 1461
+    },
+    {
+      "word_in_sentence": "ge respons",
+      "base_form": "ge respons",
+      "position_start": 1805,
+      "position_end": 1815
+    },
+    {
+      "word_in_sentence": "redan",
+      "base_form": "redan",
+      "position_start": 1578,
+      "position_end": 1583
+    },
+    {
+      "word_in_sentence": "be om hjälp",
+      "base_form": "be om hjälp",
+      "position_start": 720,
+      "position_end": 731
+    },
+    {
+      "word_in_sentence": "utan att",
+      "base_form": "utan att",
+      "position_start": 1002,
+      "position_end": 1010
+    },
+    {
+      "word_in_sentence": "både…och",
+      "base_form": "både…och",
+      "position_start": 489,
+      "position_end": 497
+    },
+    {
+      "word_in_sentence": "i princip",
+      "base_form": "i princip",
+      "position_start": 421,
+      "position_end": 430
+    },
+    {
+      "word_in_sentence": "skydda",
+      "base_form": "skydda",
+      "position_start": 950,
+      "position_end": 956
+    },
+    {
+      "word_in_sentence": "andel",
+      "base_form": "andel",
+      "position_start": 1621,
+      "position_end": 1626
+    },
+    {
+      "word_in_sentence": "papper",
+      "base_form": "papper",
+      "position_start": 1056,
+      "position_end": 1062
+    },
+    {
+      "word_in_sentence": "suggestiv",
+      "base_form": "suggestiv",
+      "position_start": 69,
+      "position_end": 78
+    },
+    {
+      "word_in_sentence": "fick lust",
+      "base_form": "få lust",
+      "position_start": 754,
+      "position_end": 763
+    },
+    {
+      "word_in_sentence": "femte",
+      "base_form": "femte",
+      "position_start": 1847,
+      "position_end": 1852
+    },
+    {
+      "word_in_sentence": "igen",
+      "base_form": "igen",
+      "position_start": 1886,
+      "position_end": 1890
+    },
+    {
+      "word_in_sentence": "nykterist",
+      "base_form": "nykterist",
+      "position_start": 1709,
+      "position_end": 1718
+    },
+    {
+      "word_in_sentence": "Oj då",
+      "base_form": "oj då",
+      "position_start": 267,
+      "position_end": 272
+    }
+  ],
+  "primary_words_used": [
+    "växt",
+    "hanne",
+    "ren",
+    "ål",
+    "spindel",
+    "älgkalv",
+    "myra",
+    "får",
+    "orm",
+    "oxe",
+    "älg",
+    "geting",
+    "kadaver",
+    "hona",
+    "björn",
+    "fästing",
+    "brunbjörn",
+    "ulv",
+    "krokodil",
+    "zoolog",
+    "klippa",
+    "brant",
+    "kaprifol",
+    "delfin",
+    "botaniker",
+    "tät",
+    "grässtrå",
+    "is",
+    "kvadratkilometer",
+    "dal",
+    "luft",
+    "sydsida",
+    "påfågel",
+    "pudel",
+    "orörd",
+    "däggdjur",
+    "råvara",
+    "temperatur",
+    "näckrosdamm",
+    "spanske",
+    "strax innan",
+    "Norden",
+    "himla",
+    "öva på",
+    "antal",
+    "ge respons",
+    "redan",
+    "be om hjälp",
+    "utan att",
+    "både…och",
+    "i princip",
+    "skydda",
+    "andel",
+    "papper",
+    "suggestiv",
+    "få lust",
+    "femte",
+    "igen",
+    "nykterist",
+    "oj då"
+  ]
+}
