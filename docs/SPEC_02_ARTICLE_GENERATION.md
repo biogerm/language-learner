@@ -8,9 +8,10 @@
 The core task of this phase is to receive the `master_dict.json` (generated in Phase 1) and transform its vocabulary into structured, contextually coherent article data (JSON format).
 
 > [!IMPORTANT]
-> **Autonomous Agent Workflow**: Phase 2 is NOT a dumb script looping through an API. It is designed to be executed by an autonomous AI Agent. The Agent must intelligently manage the workflow in two distinct steps:
+> **Autonomous Agent Workflow**: Phase 2 is NOT a dumb script looping through an API. It is designed to be executed by an autonomous AI Agent. The Agent must intelligently manage the workflow in three distinct steps:
 > 1. **Semantic Clustering**: The Agent first analyzes the entire vocabulary list and intelligently groups words into coherent thematic clusters (future articles) based on semantics and context.
-> 2. **Article Generation**: Only after all words are categorized does the Agent proceed to generate articles for each cluster.
+> 2. **Article Generation**: After clustering, the Agent generates articles for each cluster.
+> 3. **AI Teacher Review (Loopback)**: A secondary AI (acting as an SFI language teacher) reviews, grades, and critiques the generated article to ensure B1 quality. If it fails, the article is rewritten.
 
 Generated articles must be written in Swedish strictly at the **CEFR B1 (SFI Level D)** standard, providing English as the bridge language translation. Every article should be a coherent story or essay that naturally incorporates the target vocabulary.
 
@@ -129,7 +130,7 @@ The AI generation results must be serialized into JSON data strictly following a
 *   `step_title`: A meaningful thematic title for the Step (e.g., "Daily Life and Health"). Do not include prefixes like "Step 1" as it exposes internal hierarchy.
 *   `article_title`: A meaningful title for the specific reading article.
 *   `sv`: The complete Swedish original sentence text.
-*   `en`: The complete English translation of the sentence.
+*   `en`: The complete English translation of the ENTIRE sentence (NOT just the translation of the individual target words).
 *   `target_words`: Array of target words appearing in the sentence.
     *   `word_in_sentence`: The actual inflected form of the word used in the sentence.
     *   `base_form`: The dictionary base form (MUST exactly match a key in `master_dict.json`).
@@ -148,7 +149,20 @@ The AI generation results must be serialized into JSON data strictly following a
 4.  **ID Uniqueness**: `sentence_id` and `article_id` must be globally unique across the dataset.
 5.  **Translation Completeness**: The `sv` and `en` fields in the `sentences` array cannot be empty strings.
 
-## 8. AI Prompt Template
+## 8. AI Teacher Review (Sub-step 2.3)
+
+> [!IMPORTANT]
+> To ensure the generated content meets strict educational standards, every generated article must be evaluated by a secondary AI Agent instructed to act as a professional SFI D language teacher.
+
+For each generated article, the Teacher Agent must output a Markdown-formatted review containing:
+1. **Helhetsintryck (Overall impression)**
+2. **Grammatik och Ordförråd (Grammar and Vocabulary feedback)**: Correcting any unnatural phrasing or inappropriate verb particles.
+3. **Struktur och Flyt (Structure and flow)**
+4. **Betyg/Rekommendation (Grade and recommendation)**
+
+**Refinement Loop**: If the Teacher Agent assigns a failing grade or identifies severe unnaturalness, the feedback must be routed back to the Generation Agent to rewrite the article. The final JSON is only saved when the Teacher Agent approves the text (e.g., Godkänt or Väl godkänt).
+
+## 9. AI Prompt Template
 
 When calling the LLM, use models with Function Calling / Structured Output capabilities (e.g., GPT-4o or Gemini 1.5 Pro). Update the prompt template to strictly enforce the B1 level and the 3-layer architecture:
 
@@ -169,6 +183,7 @@ Your task is to write a highly coherent, natural-sounding article in Swedish tha
 # CONSTRAINTS & OUTPUT FORMAT:
 You must output strictly in JSON format matching the requested 3-layer schema (Course -> Step -> Article).
 - "sv": The Swedish sentence string MUST be plain text. DO NOT use markdown, HTML, or **bold** tags.
+- "en": You MUST provide the English translation for the ENTIRE Swedish sentence. Do not just translate the isolated target words.
 - "target_words": For each target word used in the sentence, identify its exact inflected form ("word_in_sentence"), its original base form ("base_form"), and its precise 0-indexed character positions ("position_start" and "position_end") in the "sv" string.
 - You are strictly FORBIDDEN from skipping any word from the target vocabulary list. All words must have their primary appearance.
 ```

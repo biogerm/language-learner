@@ -8,9 +8,10 @@
 此阶段的核心任务是接收第一阶段 (Phase 1) 生成的 `master_dict.json`，并将其词汇转换为结构化、语境连贯的文章数据（JSON 格式）。
 
 > [!IMPORTANT]
-> **自主 AI 智能体工作流 (Autonomous Agent Workflow)**: 第二阶段 (Phase 2) 绝对不是一个在后台无脑循环调用 API 的脚本。它旨在由一个自主的 AI 智能体 (AI Agent) 来执行。该智能体必须通过以下两个不同的步骤来智能地管理整个工作流：
+> **自主 AI 智能体工作流 (Autonomous Agent Workflow)**: 第二阶段 (Phase 2) 绝对不是一个在后台无脑循环调用 API 的脚本。它旨在由一个自主的 AI 智能体 (AI Agent) 来执行。该智能体必须通过以下三个不同的步骤来智能地管理整个工作流：
 > 1. **语义聚类 (Semantic Clustering)**: 智能体首先分析整个输入的词汇表，并利用自身的智能，基于语义和语境将单词分类到连贯的主题簇（即未来的文章）中。
-> 2. **文章生成 (Article Generation)**: 只有在 100% 的单词都被手工/智能分类好之后，智能体才开始为每个簇生成文章。
+> 2. **文章生成 (Article Generation)**: 在完成聚类之后，智能体开始为每个簇生成文章。
+> 3. **AI 教师批改 (AI Teacher Review)**: 一个次级 AI（扮演 SFI 语言教师）对生成的文章进行审阅、评分和批改，以确保符合 B1 质量。如果不合格，必须重写。
 
 生成的文章必须严格遵守 **CEFR B1 (SFI Level D)** 标准用瑞典语编写，并提供英语作为桥梁语言的翻译。每篇文章都应该是一个连贯的故事或短文，且自然地融入目标词汇。
 
@@ -127,10 +128,10 @@ AI 生成的结果必须被序列化为严格遵循三层嵌套架构的 JSON �
 ### 字段说明
 *   `course_title`: 课程的有意义的标题（例如 "SFI D"）。不要向用户暴露内部 ID。
 *   `step_title`: Step 的有意义的主题标题（例如 "日常生活"）。不要包含 "Step 1" 等前缀，以免暴露内部层级。
-*   `article_title`: 具体阅读文章的有意义的标题。
+*   `article_title`: 特定阅读文章的描述性标题。
 *   `sv`: 完整的瑞典语原句文本。
-*   `en`: 该句子的完整英语翻译。
-*   `target_words`: 该句子中出现的目标词汇数组。
+*   `en`: **整句**完整的英文翻译（千万不要仅仅翻译那些目标单词，而是要翻译整个句子）。
+*   `target_words`: 句子中出现的目标词汇数组。
     *   `word_in_sentence`: 单词在句子中的实际形态（可能发生了变位）。
     *   `base_form`: 字典基本形态（必须与 `master_dict.json` 中的 key 完全匹配）。
     *   `position_start` / `position_end`: 基于 `sv` 字符串的 0 索引字符边界 `[start, end)`，用于 UI 精确高亮。
@@ -143,12 +144,25 @@ AI 生成的结果必须被序列化为严格遵循三层嵌套架构的 JSON �
 > 生成后必须运行自动校验脚本。任何违反以下规则的输出都将导致流水线构建失败。
 
 1.  **100% 覆盖率**: `master_dict.json` 中的每个词必须作为 `primary_words_used` 出现在且仅出现在一篇文章中。
-2.  **无生造词 (No Hallucinations)**: `base_form` 不能包含输入词典中没有的编造词。
-3.  **索引准确性**: 对于每个 target_word，提取 `sv.substring(position_start, position_end)` 必须完全等于 `word_in_sentence`。
-4.  **ID 唯一性**: `sentence_id` 和 `article_id` 必须在全局唯一。
+2.  **禁止幻觉 (No Hallucinations)**: `base_form` 不能包含在输入词典中找不到的编造单词。
+3.  **索引准确性 (Index Accuracy)**: 对于每一个 `target_word`，提取 `sv.substring(position_start, position_end)` **必须**完全等同于 `word_in_sentence`。
+4.  **ID 唯一性**: 在整个数据集中，`sentence_id` 和 `article_id` 必须是全局唯一的。
 5.  **翻译完整性**: `sentences` 数组中的 `sv` 和 `en` 字段不能为空字符串。
 
-## 8. AI Prompt 模板
+## 8. AI 教师批改环节 (Sub-step 2.3)
+
+> [!IMPORTANT]
+> 为了确保生成的内容符合严格的教育标准，生成的每一篇文章都必须交由一个扮演“专业 SFI D 级语言教师”的次级 AI 智能体进行评审。
+
+对于每一篇生成的文章，教师智能体必须输出一份 Markdown 格式的批改报告，包含以下四项内容：
+1. **整体印象 (Helhetsintryck)**
+2. **语法和词汇 (Grammatik och Ordförråd)**：纠正任何不自然的表达或使用不当的动词短语。
+3. **结构和连贯度 (Struktur och Flyt)**
+4. **评分/建议 (Betyg/Rekommendation)**
+
+**精炼循环 (Refinement Loop)**：如果教师智能体给出了不及格的评分，或者指出了严重的行文不自然，这些反馈必须返回给生成智能体，强制其重写该文章。只有当教师智能体批准该文章（例如给出 Godkänt 或 Väl godkänt 评分）后，最终的 JSON 才会被保存。
+
+## 9. AI 提示词模板 (Prompt Template)
 
 调用 LLM 时，应使用具备函数调用/结构化输出功能的模型。更新 Prompt 模板以严格强制执行 B1 级别和三层架构：
 
@@ -169,6 +183,7 @@ Your task is to write a highly coherent, natural-sounding article in Swedish tha
 # CONSTRAINTS & OUTPUT FORMAT:
 You must output strictly in JSON format matching the requested 3-layer schema (Course -> Step -> Article).
 - "sv": The Swedish sentence string MUST be plain text. DO NOT use markdown, HTML, or **bold** tags.
+- "en": You MUST provide the English translation for the ENTIRE Swedish sentence. Do not just translate the isolated target words.
 - "target_words": For each target word used in the sentence, identify its exact inflected form ("word_in_sentence"), its original base form ("base_form"), and its precise 0-indexed character positions ("position_start" and "position_end") in the "sv" string.
 - You are strictly FORBIDDEN from skipping any word from the target vocabulary list. All words must have their primary appearance.
 ```
