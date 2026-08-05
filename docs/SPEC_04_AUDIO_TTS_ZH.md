@@ -29,11 +29,31 @@ Phase 4 的核心目标是为所有生成的句子和独立单词生成 MP3 发�
 - **男女声交替 (Voice Alternation)**: 生成句子或单词音频时，必须在提供的语音池（男声和女声）中进行交替轮换。例如：句子 1 使用女声，句子 2 使用男声，句子 3 使用女声...；单词生成同理（词 1 女，词 2 男）。这对于防止学习者产生听觉疲劳、适应不同性别口音至关重要。
 
 ### 3.2 并发与防限流策略 (Concurrency & Rate Limit Evasion)
-为了在实现高并发生成的同时避免触发 Edge TTS API 的速率限制，脚本必须实现以下健壮的生成循环：
-1. **线程池限制**: 使用 Python 的 `concurrent.futures.ThreadPoolExecutor` (或 `asyncio` 等效方案)，并将最大并发数限制为 `max_workers=10`。这在生成速度和单 IP 速率限制之间取得了最佳平衡。
-2. **重试循环**: 将每次 TTS API 调用包裹在一个最高允许 10 次重试的循环中。
+为了在实现高并发生成的同时避免触发 Edge TTS API 的速率限制，脚本必须实现以下健壮的生成循环。脚本必须结合使用线程池、文件大小强制校验以及失败冷却休眠：
+
+1. **线程池限制**: 使用 Python 的 `concurrent.futures.ThreadPoolExecutor` 并将最大并发数限制为 `max_workers=10`。这在生成速度和单 IP 速率限制之间取得了最佳平衡。
+2. **重试循环**: 将每次 TTS API 子进程调用包裹在一个 `for attempt in range(10):` 的 10 次重试循环中。
 3. **双重质量校验**: 当触发限流时，Edge TTS 经常会静默失败并生成 0KB 的空文件。脚本必须校验输出的 MP3 文件不仅存在，且其文件大小严格 `> 1024 字节` (1KB)，才能视为生成成功。
 4. **冷却休眠**: 如果捕获到异常或文件大小校验失败，必须在进入下一次重试循环前执行 `time.sleep(1)`。这能产生一种天然的“流量错峰”效果，让速率限制得以冷却。
+
+**参考代码实现**:
+```python
+def generate_tts(text, mp3_path, voice):
+    cmd = f'edge-tts --voice {voice} --rate=-20% --text "{text}" --write-media {mp3_path}'
+    max_retries = 10
+    for attempt in range(max_retries):
+        try:
+            # 静默执行命令
+            subprocess.run(cmd, shell=True, check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+            # 关键：检查文件是否真的生成了，并且大于 1KB（防止静默失败生成空文件）
+            if os.path.exists(mp3_path) and os.path.getsize(mp3_path) > 1024:
+                return True
+        except Exception:
+            pass
+        # 失败时休眠 1 秒，实现天然的流量错峰冷却
+        time.sleep(1)
+    return False
+```
 
 ### 3.3 文件命名规范
 - 句子音频: `sentences_audio/{sentence_id}.mp3` (例如, `sentences_audio/art01_s001.mp3`)
