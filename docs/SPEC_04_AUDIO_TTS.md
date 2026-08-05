@@ -22,7 +22,7 @@ Furthermore, this phase incorporates an Automatic Speech Recognition (ASR) loopb
 
 ## 3. TTS Generation Pipeline
 
-### 3.1 Task Breakdown and Voice Alternation
+### 3.1 Task Splitting
 - **Sentence Audio Task**: Extract all unique sentences from the Phase 2 JSON files.
 - **Word Audio Task**: Extract all unique `base_form` entries from the Phase 1 dictionary.
 - **Deduplicate**: Words and sentences appearing multiple times across chapters are generated only once and shared.
