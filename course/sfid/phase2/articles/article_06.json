@@ -1,441 +1,434 @@
 {
-  "course_id": "sfid",
-  "course_title": "SFI D",
-  "stage_id": "stage_01",
-  "stage_title": "Arbetsliv",
-  "article_id": "art_06",
-  "article_title": "Läsförståelse",
-  "target_word_count": 60,
-  "sentences": [
-    {
-      "sentence_id": "art06_s001",
-      "sv": "För många börjar ett arbetsliv när de ska söka jobb för första gången. \"Vad ville hon bli?\" frågade min chef. Min vän var från en vanlig arbetarfamilj utanför staden, vars föräldrar var arbetare. Hon ville inte bli präst, utan ville jobba på en fabrik. Hon började som sommarjobbare. Det var möjligt att de skulle anställa henne permanent direkt efter sommaren. \"Hur många år har hon jobbat här?\" frågade jag. Hon var nyss anställd.\n\nFabriken var ett stort livsmedelsföretag. De hade ett gott samarbete med ett stort tevebolag. Det fanns ingen annan arbetsgivare som kunde konkurrera med deras resultat. Företaget var kanske en tredjedel så stort som de största i världen, men de var ändå framgångsrika. De planerade att ingå partnerskap med en utländsk partner, trots att de behövde en bra taktik. För att prestera högst upp, var de tvungna att sätta upp ett tydligt mål.\n\nMen det var inte…förrän en ny chef tog över som problem började drabba dem. Vissa regler saknade logisk mening. De hade post som alltid kom sent och de glömde beställa kontorsmaterial. Det var viktigt att fack och personal fick bra arbetsvillkor och lika lön för lika arbete. Annars kunde de avskeda folk. En chef sa: \"Jag har en dröm.\" Han talade om passfrihet och att man skulle referera till franska metoder.\n\n\"Det passar bra.\" sa en kollega. \"Vi måste rapportera allt vi gör. Vi ska skapa nya regler under min mandatperiod och skicka ut dem.\" Han tog mycket ansvar för sin nya roll. Han sa också till de anställda: \"Vänligen följ varje instruktion noga.\" Han bad oss vara mer kreativ och att vi måste lämna tillbaka allt vi lånar.\n\nJag skrev ett mejl till honom: \"Jag vore tacksam om … ni kunde ge mig mer tid. Skulle ni kunna skicka…? mer information efter mötet? Med vänliga hälsningar, en som försöker vara ett proffs längst bak i rummet.\" ",
-      "en": "",
-      "target_words": [
+    "course_id": "sfid",
+    "course_title": "SFI D",
+    "stage_id": "stage_01",
+    "stage_title": "Arbetsliv",
+    "article_id": "art_06",
+    "article_title": "Läsförståelse",
+    "target_word_count": 60,
+    "sentences": [
         {
-          "word_in_sentence": "anställa",
-          "base_form": "anställa",
-          "position_start": 314,
-          "position_end": 322
-        },
-        {
-          "word_in_sentence": "sommarjobbare",
-          "base_form": "sommarjobbare",
-          "position_start": 269,
-          "position_end": 282
-        },
-        {
-          "word_in_sentence": "samarbete",
-          "base_form": "samarbete",
-          "position_start": 493,
-          "position_end": 502
-        },
-        {
-          "word_in_sentence": "mandatperiod",
-          "base_form": "mandatperiod",
-          "position_start": 1388,
-          "position_end": 1400
-        },
-        {
-          "word_in_sentence": "post",
-          "base_form": "post",
-          "position_start": 994,
-          "position_end": 998
-        },
-        {
-          "word_in_sentence": "tevebolag",
-          "base_form": "tevebolag",
-          "position_start": 517,
-          "position_end": 526
-        },
-        {
-          "word_in_sentence": "Hur många år har hon jobbat här?",
-          "base_form": "Hur många år har du/han/hon jobbat här?",
-          "position_start": 363,
-          "position_end": 395
-        },
-        {
-          "word_in_sentence": "har",
-          "base_form": "ha",
-          "position_start": 376,
-          "position_end": 379
-        },
-        {
-          "word_in_sentence": "lika lön för lika arbete",
-          "base_form": "lika lön för lika arbete",
-          "position_start": 1124,
-          "position_end": 1148
-        },
-        {
-          "word_in_sentence": "fabrik",
-          "base_form": "fabrik",
-          "position_start": 245,
-          "position_end": 251
-        },
-        {
-          "word_in_sentence": "arbetarfamilj",
-          "base_form": "arbetarfamilj",
-          "position_start": 137,
-          "position_end": 150
-        },
-        {
-          "word_in_sentence": "arbetare",
-          "base_form": "arbetare",
-          "position_start": 186,
-          "position_end": 194
-        },
-        {
-          "word_in_sentence": "arbetsgivare",
-          "base_form": "arbetsgivare",
-          "position_start": 550,
-          "position_end": 562
-        },
-        {
-          "word_in_sentence": "fack",
-          "base_form": "fack",
-          "position_start": 1079,
-          "position_end": 1083
-        },
-        {
-          "word_in_sentence": "arbetsvillkor",
-          "base_form": "arbetsvillkor",
-          "position_start": 1106,
-          "position_end": 1119
-        },
-        {
-          "word_in_sentence": "avskeda",
-          "base_form": "avskeda",
-          "position_start": 1166,
-          "position_end": 1173
-        },
-        {
-          "word_in_sentence": "livsmedelsföretag",
-          "base_form": "livmedelsföretag",
-          "position_start": 457,
-          "position_end": 474
-        },
-        {
-          "word_in_sentence": "ingå partnerskap",
-          "base_form": "ingå partnerskap",
-          "position_start": 721,
-          "position_end": 737
-        },
-        {
-          "word_in_sentence": "arbetsliv",
-          "base_form": "arbetsliv",
-          "position_start": 21,
-          "position_end": 30
-        },
-        {
-          "word_in_sentence": "drabba",
-          "base_form": "drabba",
-          "position_start": 938,
-          "position_end": 944
-        },
-        {
-          "word_in_sentence": "passfrihet",
-          "base_form": "passfrihet",
-          "position_start": 1225,
-          "position_end": 1235
-        },
-        {
-          "word_in_sentence": "Det passar bra.",
-          "base_form": "Det passar bra.",
-          "position_start": 1288,
-          "position_end": 1303
-        },
-        {
-          "word_in_sentence": "söka jobb",
-          "base_form": "söka jobb",
-          "position_start": 42,
-          "position_end": 51
-        },
-        {
-          "word_in_sentence": "anställd",
-          "base_form": "anställd",
-          "position_start": 423,
-          "position_end": 431
-        },
-        {
-          "word_in_sentence": "kontorsmaterial",
-          "base_form": "kontormaterial",
-          "position_start": 1042,
-          "position_end": 1057
-        },
-        {
-          "word_in_sentence": "proffs",
-          "base_form": "proffs",
-          "position_start": 1792,
-          "position_end": 1798
-        },
-        {
-          "word_in_sentence": "ansvar",
-          "base_form": "ansvar",
-          "position_start": 1436,
-          "position_end": 1442
-        },
-        {
-          "word_in_sentence": "vänliga hälsningar",
-          "base_form": "vänliga hälsningar",
-          "position_start": 1747,
-          "position_end": 1765
-        },
-        {
-          "word_in_sentence": "roll",
-          "base_form": "roll",
-          "position_start": 1455,
-          "position_end": 1459
-        },
-        {
-          "word_in_sentence": "resultat",
-          "base_form": "resultat",
-          "position_start": 594,
-          "position_end": 602
-        },
-        {
-          "word_in_sentence": "mål",
-          "base_form": "mål",
-          "position_start": 868,
-          "position_end": 871
-        },
-        {
-          "word_in_sentence": "planerade",
-          "base_form": "planera",
-          "position_start": 707,
-          "position_end": 716
-        },
-        {
-          "word_in_sentence": "Jag vore tacksam om …",
-          "base_form": "Jag vore tacksam om …",
-          "position_start": 1642,
-          "position_end": 1663
-        },
-        {
-          "word_in_sentence": "Vänligen",
-          "base_form": "vänligen",
-          "position_start": 1494,
-          "position_end": 1502
-        },
-        {
-          "word_in_sentence": "instruktion",
-          "base_form": "instruktion",
-          "position_start": 1514,
-          "position_end": 1525
-        },
-        {
-          "word_in_sentence": "skapa",
-          "base_form": "skapa",
-          "position_start": 1361,
-          "position_end": 1366
-        },
-        {
-          "word_in_sentence": "skicka",
-          "base_form": "skicka",
-          "position_start": 1405,
-          "position_end": 1411
-        },
-        {
-          "word_in_sentence": "Skulle ni kunna skicka…?",
-          "base_form": "Skulle ni kunna skicka…?",
-          "position_start": 1689,
-          "position_end": 1713
-        },
-        {
-          "word_in_sentence": "taktik",
-          "base_form": "taktik",
-          "position_start": 791,
-          "position_end": 797
-        },
-        {
-          "word_in_sentence": "prestera",
-          "base_form": "prestera",
-          "position_start": 807,
-          "position_end": 815
-        },
-        {
-          "word_in_sentence": "präst",
-          "base_form": "präst",
-          "position_start": 215,
-          "position_end": 220
-        },
-        {
-          "word_in_sentence": "möjligt",
-          "base_form": "möjlig",
-          "position_start": 292,
-          "position_end": 299
-        },
-        {
-          "word_in_sentence": "konkurrera",
-          "base_form": "konkurrera",
-          "position_start": 573,
-          "position_end": 583
-        },
-        {
-          "word_in_sentence": "referera",
-          "base_form": "referera",
-          "position_start": 1255,
-          "position_end": 1263
-        },
-        {
-          "word_in_sentence": "efter",
-          "base_form": "efter",
-          "position_start": 346,
-          "position_end": 351
-        },
-        {
-          "word_in_sentence": "kreativ",
-          "base_form": "kreativ",
-          "position_start": 1554,
-          "position_end": 1561
-        },
-        {
-          "word_in_sentence": "vars",
-          "base_form": "vars",
-          "position_start": 167,
-          "position_end": 171
-        },
-        {
-          "word_in_sentence": "ingen",
-          "base_form": "ingen",
-          "position_start": 538,
-          "position_end": 543
-        },
-        {
-          "word_in_sentence": "franska",
-          "base_form": "franska",
-          "position_start": 1269,
-          "position_end": 1276
-        },
-        {
-          "word_in_sentence": "rapportera",
-          "base_form": "rapportera",
-          "position_start": 1330,
-          "position_end": 1340
-        },
-        {
-          "word_in_sentence": "längst",
-          "base_form": "längst",
-          "position_start": 1799,
-          "position_end": 1805
-        },
-        {
-          "word_in_sentence": "en tredjedel så stort som",
-          "base_form": "en tredjedel så stort som",
-          "position_start": 625,
-          "position_end": 650
-        },
-        {
-          "word_in_sentence": "logisk",
-          "base_form": "logisk",
-          "position_start": 971,
-          "position_end": 977
-        },
-        {
-          "word_in_sentence": "lämna tillbaka",
-          "base_form": "lämna tillbaka",
-          "position_start": 1579,
-          "position_end": 1593
-        },
-        {
-          "word_in_sentence": "direkt efter",
-          "base_form": "direkt efter",
-          "position_start": 339,
-          "position_end": 351
-        },
-        {
-          "word_in_sentence": "inte…förrän",
-          "base_form": "inte…förrän",
-          "position_start": 886,
-          "position_end": 897
-        },
-        {
-          "word_in_sentence": "Vad ville hon bli?",
-          "base_form": "Vad ville hon bli?",
-          "position_start": 72,
-          "position_end": 90
-        },
-        {
-          "word_in_sentence": "högst",
-          "base_form": "högst",
-          "position_start": 816,
-          "position_end": 821
-        },
-        {
-          "word_in_sentence": "utanför",
-          "base_form": "utanför",
-          "position_start": 151,
-          "position_end": 158
-        },
-        {
-          "word_in_sentence": "trots att",
-          "base_form": "trots att",
-          "position_start": 763,
-          "position_end": 772
+            "sentence_id": "art06_s001",
+            "sv": "För många börjar ett arbetsliv när de ska söka jobb för första gången. \"Vad ville hon bli?\" frågade min chef. Min vän var från en vanlig arbetarfamilj utanför staden, vars föräldrar var arbetare. Hon ville inte bli präst, utan ville jobba på en fabrik. Hon började som sommarjobbare. Det var möjligt att de skulle anställa henne permanent direkt efter sommaren. \"Hur många år har hon jobbat här?\" frågade jag. Hon var nyss anställd.\n\nFabriken var ett stort livsmedelsföretag. De hade ett gott samarbete med ett stort tevebolag. Det fanns ingen annan arbetsgivare som kunde konkurrera med deras resultat. Företaget var kanske en tredjedel så stort som de största i världen, men de var ändå framgångsrika. De planerade att ingå partnerskap med en utländsk partner, trots att de behövde en bra taktik. För att prestera högst upp, var de tvungna att sätta upp ett tydligt mål.\n\nMen det var inte…förrän en ny chef tog över som problem började drabba dem. Vissa regler saknade logisk mening. De hade post som alltid kom sent och de glömde beställa kontorsmaterial. Det var viktigt att fack och personal fick bra arbetsvillkor och lika lön för lika arbete. Annars kunde de avskeda folk. En chef sa: \"Jag har en dröm.\" Han talade om passfrihet och att man skulle referera till franska metoder.\n\n\"Det passar bra.\" sa en kollega. \"Vi måste rapportera allt vi gör. Vi ska skapa nya regler under min mandatperiod och skicka ut dem.\" Han tog mycket ansvar för sin nya roll. Han sa också till de anställda: \"Vänligen följ varje instruktion noga.\" Han bad oss vara mer kreativ och att vi måste lämna tillbaka allt vi lånar.\n\nJag skrev ett mejl till honom: \"Jag vore tacksam om … ni kunde ge mig mer tid. Skulle ni kunna skicka…? mer information efter mötet? Med vänliga hälsningar, en som försöker vara ett proffs längst bak i rummet.\" ",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "anställa",
+                    "base_form": "anställa",
+                    "position_start": 314,
+                    "position_end": 322
+                },
+                {
+                    "word_in_sentence": "sommarjobbare",
+                    "base_form": "sommarjobbare",
+                    "position_start": 269,
+                    "position_end": 282
+                },
+                {
+                    "word_in_sentence": "samarbete",
+                    "base_form": "samarbete",
+                    "position_start": 493,
+                    "position_end": 502
+                },
+                {
+                    "word_in_sentence": "mandatperiod",
+                    "base_form": "mandatperiod",
+                    "position_start": 1388,
+                    "position_end": 1400
+                },
+                {
+                    "word_in_sentence": "post",
+                    "base_form": "post",
+                    "position_start": 994,
+                    "position_end": 998
+                },
+                {
+                    "word_in_sentence": "tevebolag",
+                    "base_form": "tevebolag",
+                    "position_start": 517,
+                    "position_end": 526
+                },
+                {
+                    "word_in_sentence": "Hur många år har hon jobbat här?",
+                    "base_form": "Hur många år har du/han/hon jobbat här?",
+                    "position_start": 363,
+                    "position_end": 395
+                },
+                {
+                    "word_in_sentence": "lika lön för lika arbete",
+                    "base_form": "lika lön för lika arbete",
+                    "position_start": 1124,
+                    "position_end": 1148
+                },
+                {
+                    "word_in_sentence": "fabrik",
+                    "base_form": "fabrik",
+                    "position_start": 245,
+                    "position_end": 251
+                },
+                {
+                    "word_in_sentence": "arbetarfamilj",
+                    "base_form": "arbetarfamilj",
+                    "position_start": 137,
+                    "position_end": 150
+                },
+                {
+                    "word_in_sentence": "arbetare",
+                    "base_form": "arbetare",
+                    "position_start": 186,
+                    "position_end": 194
+                },
+                {
+                    "word_in_sentence": "arbetsgivare",
+                    "base_form": "arbetsgivare",
+                    "position_start": 550,
+                    "position_end": 562
+                },
+                {
+                    "word_in_sentence": "fack",
+                    "base_form": "fack",
+                    "position_start": 1079,
+                    "position_end": 1083
+                },
+                {
+                    "word_in_sentence": "arbetsvillkor",
+                    "base_form": "arbetsvillkor",
+                    "position_start": 1106,
+                    "position_end": 1119
+                },
+                {
+                    "word_in_sentence": "avskeda",
+                    "base_form": "avskeda",
+                    "position_start": 1166,
+                    "position_end": 1173
+                },
+                {
+                    "word_in_sentence": "livsmedelsföretag",
+                    "base_form": "livmedelsföretag",
+                    "position_start": 457,
+                    "position_end": 474
+                },
+                {
+                    "word_in_sentence": "ingå partnerskap",
+                    "base_form": "ingå partnerskap",
+                    "position_start": 721,
+                    "position_end": 737
+                },
+                {
+                    "word_in_sentence": "arbetsliv",
+                    "base_form": "arbetsliv",
+                    "position_start": 21,
+                    "position_end": 30
+                },
+                {
+                    "word_in_sentence": "drabba",
+                    "base_form": "drabba",
+                    "position_start": 938,
+                    "position_end": 944
+                },
+                {
+                    "word_in_sentence": "passfrihet",
+                    "base_form": "passfrihet",
+                    "position_start": 1225,
+                    "position_end": 1235
+                },
+                {
+                    "word_in_sentence": "Det passar bra.",
+                    "base_form": "Det passar bra.",
+                    "position_start": 1288,
+                    "position_end": 1303
+                },
+                {
+                    "word_in_sentence": "söka jobb",
+                    "base_form": "söka jobb",
+                    "position_start": 42,
+                    "position_end": 51
+                },
+                {
+                    "word_in_sentence": "anställd",
+                    "base_form": "anställd",
+                    "position_start": 423,
+                    "position_end": 431
+                },
+                {
+                    "word_in_sentence": "kontorsmaterial",
+                    "base_form": "kontormaterial",
+                    "position_start": 1042,
+                    "position_end": 1057
+                },
+                {
+                    "word_in_sentence": "proffs",
+                    "base_form": "proffs",
+                    "position_start": 1792,
+                    "position_end": 1798
+                },
+                {
+                    "word_in_sentence": "ansvar",
+                    "base_form": "ansvar",
+                    "position_start": 1436,
+                    "position_end": 1442
+                },
+                {
+                    "word_in_sentence": "vänliga hälsningar",
+                    "base_form": "vänliga hälsningar",
+                    "position_start": 1747,
+                    "position_end": 1765
+                },
+                {
+                    "word_in_sentence": "roll",
+                    "base_form": "roll",
+                    "position_start": 1455,
+                    "position_end": 1459
+                },
+                {
+                    "word_in_sentence": "resultat",
+                    "base_form": "resultat",
+                    "position_start": 594,
+                    "position_end": 602
+                },
+                {
+                    "word_in_sentence": "mål",
+                    "base_form": "mål",
+                    "position_start": 868,
+                    "position_end": 871
+                },
+                {
+                    "word_in_sentence": "planerade",
+                    "base_form": "planera",
+                    "position_start": 707,
+                    "position_end": 716
+                },
+                {
+                    "word_in_sentence": "Jag vore tacksam om …",
+                    "base_form": "Jag vore tacksam om …",
+                    "position_start": 1642,
+                    "position_end": 1663
+                },
+                {
+                    "word_in_sentence": "Vänligen",
+                    "base_form": "vänligen",
+                    "position_start": 1494,
+                    "position_end": 1502
+                },
+                {
+                    "word_in_sentence": "instruktion",
+                    "base_form": "instruktion",
+                    "position_start": 1514,
+                    "position_end": 1525
+                },
+                {
+                    "word_in_sentence": "skapa",
+                    "base_form": "skapa",
+                    "position_start": 1361,
+                    "position_end": 1366
+                },
+                {
+                    "word_in_sentence": "skicka",
+                    "base_form": "skicka",
+                    "position_start": 1405,
+                    "position_end": 1411
+                },
+                {
+                    "word_in_sentence": "Skulle ni kunna skicka…?",
+                    "base_form": "Skulle ni kunna skicka…?",
+                    "position_start": 1689,
+                    "position_end": 1713
+                },
+                {
+                    "word_in_sentence": "taktik",
+                    "base_form": "taktik",
+                    "position_start": 791,
+                    "position_end": 797
+                },
+                {
+                    "word_in_sentence": "prestera",
+                    "base_form": "prestera",
+                    "position_start": 807,
+                    "position_end": 815
+                },
+                {
+                    "word_in_sentence": "präst",
+                    "base_form": "präst",
+                    "position_start": 215,
+                    "position_end": 220
+                },
+                {
+                    "word_in_sentence": "möjligt",
+                    "base_form": "möjlig",
+                    "position_start": 292,
+                    "position_end": 299
+                },
+                {
+                    "word_in_sentence": "konkurrera",
+                    "base_form": "konkurrera",
+                    "position_start": 573,
+                    "position_end": 583
+                },
+                {
+                    "word_in_sentence": "referera",
+                    "base_form": "referera",
+                    "position_start": 1255,
+                    "position_end": 1263
+                },
+                {
+                    "word_in_sentence": "efter",
+                    "base_form": "efter",
+                    "position_start": 346,
+                    "position_end": 351
+                },
+                {
+                    "word_in_sentence": "kreativ",
+                    "base_form": "kreativ",
+                    "position_start": 1554,
+                    "position_end": 1561
+                },
+                {
+                    "word_in_sentence": "vars",
+                    "base_form": "vars",
+                    "position_start": 167,
+                    "position_end": 171
+                },
+                {
+                    "word_in_sentence": "ingen",
+                    "base_form": "ingen",
+                    "position_start": 538,
+                    "position_end": 543
+                },
+                {
+                    "word_in_sentence": "franska",
+                    "base_form": "franska",
+                    "position_start": 1269,
+                    "position_end": 1276
+                },
+                {
+                    "word_in_sentence": "rapportera",
+                    "base_form": "rapportera",
+                    "position_start": 1330,
+                    "position_end": 1340
+                },
+                {
+                    "word_in_sentence": "längst",
+                    "base_form": "längst",
+                    "position_start": 1799,
+                    "position_end": 1805
+                },
+                {
+                    "word_in_sentence": "en tredjedel så stort som",
+                    "base_form": "en tredjedel så stort som",
+                    "position_start": 625,
+                    "position_end": 650
+                },
+                {
+                    "word_in_sentence": "logisk",
+                    "base_form": "logisk",
+                    "position_start": 971,
+                    "position_end": 977
+                },
+                {
+                    "word_in_sentence": "lämna tillbaka",
+                    "base_form": "lämna tillbaka",
+                    "position_start": 1579,
+                    "position_end": 1593
+                },
+                {
+                    "word_in_sentence": "direkt efter",
+                    "base_form": "direkt efter",
+                    "position_start": 339,
+                    "position_end": 351
+                },
+                {
+                    "word_in_sentence": "inte…förrän",
+                    "base_form": "inte…förrän",
+                    "position_start": 886,
+                    "position_end": 897
+                },
+                {
+                    "word_in_sentence": "Vad ville hon bli?",
+                    "base_form": "Vad ville hon bli?",
+                    "position_start": 72,
+                    "position_end": 90
+                },
+                {
+                    "word_in_sentence": "högst",
+                    "base_form": "högst",
+                    "position_start": 816,
+                    "position_end": 821
+                },
+                {
+                    "word_in_sentence": "utanför",
+                    "base_form": "utanför",
+                    "position_start": 151,
+                    "position_end": 158
+                },
+                {
+                    "word_in_sentence": "trots att",
+                    "base_form": "trots att",
+                    "position_start": 763,
+                    "position_end": 772
+                }
+            ]
         }
-      ]
-    }
-  ],
-  "primary_words_used": [
-    "anställa",
-    "sommarjobbare",
-    "samarbete",
-    "mandatperiod",
-    "post",
-    "tevebolag",
-    "Hur många år har du/han/hon jobbat här?",
-    "have",
-    "lika lön för lika arbete",
-    "fabrik",
-    "arbetarfamilj",
-    "arbetare",
-    "arbetsgivare",
-    "fack",
-    "arbetsvillkor",
-    "avskeda",
-    "livmedelsföretag",
-    "ingå partnerskap",
-    "arbetsliv",
-    "drabba",
-    "passfrihet",
-    "Det passar bra.",
-    "söka jobb",
-    "anställd",
-    "kontormaterial",
-    "proffs",
-    "ansvar",
-    "vänliga hälsningar",
-    "roll",
-    "resultat",
-    "mål",
-    "planera",
-    "Jag vore tacksam om …",
-    "vänligen",
-    "instruktion",
-    "skapa",
-    "skicka",
-    "Skulle ni kunna skicka…?",
-    "taktik",
-    "prestera",
-    "präst",
-    "möjlig",
-    "konkurrera",
-    "referera",
-    "efter",
-    "kreativ",
-    "vars",
-    "ingen",
-    "franska",
-    "rapportera",
-    "längst",
-    "en tredjedel så stort som",
-    "logisk",
-    "lämna tillbaka",
-    "direkt efter",
-    "inte…förrän",
-    "Vad ville hon bli?",
-    "högst",
-    "utanför",
-    "trots att"
-  ],
-  "secondary_words_used": []
+    ],
+    "primary_words_used": [
+        "anställa",
+        "sommarjobbare",
+        "samarbete",
+        "mandatperiod",
+        "post",
+        "tevebolag",
+        "Hur många år har du/han/hon jobbat här?",
+        "lika lön för lika arbete",
+        "fabrik",
+        "arbetarfamilj",
+        "arbetare",
+        "arbetsgivare",
+        "fack",
+        "arbetsvillkor",
+        "avskeda",
+        "livmedelsföretag",
+        "ingå partnerskap",
+        "arbetsliv",
+        "drabba",
+        "passfrihet",
+        "Det passar bra.",
+        "söka jobb",
+        "anställd",
+        "kontormaterial",
+        "proffs",
+        "ansvar",
+        "vänliga hälsningar",
+        "roll",
+        "resultat",
+        "mål",
+        "planera",
+        "Jag vore tacksam om …",
+        "vänligen",
+        "instruktion",
+        "skapa",
+        "skicka",
+        "Skulle ni kunna skicka…?",
+        "taktik",
+        "prestera",
+        "präst",
+        "möjlig",
+        "konkurrera",
+        "referera",
+        "efter",
+        "kreativ",
+        "vars",
+        "ingen",
+        "franska",
+        "rapportera",
+        "längst",
+        "en tredjedel så stort som",
+        "logisk",
+        "lämna tillbaka",
+        "direkt efter",
+        "inte…förrän",
+        "Vad ville hon bli?",
+        "högst",
+        "utanför",
+        "trots att"
+    ],
+    "secondary_words_used": []
 }

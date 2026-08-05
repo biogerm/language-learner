@@ -1,441 +1,447 @@
 {
-  "course_id": "sfid",
-  "course_title": "SFI D",
-  "stage_id": "stage_02",
-  "stage_title": "Samhälle & Politik",
-  "article_id": "art_42",
-  "article_title": "Läsförståelse",
-  "target_word_count": 60,
-  "sentences": [
-    {
-      "sentence_id": "art42_s001",
-      "sv": "Sverige är en parlamentarisk demokrati med en lång historia. Tidigare hade man en stark kungamakt. Idag har monarkin ingen politisk makt. Vår statschef är en kung eller en drottning, men det är en statsminister och vår riksdag som beslutar om varje lag och styr vår stat. En blivande kronprinsessa, en prins eller en prinsessa har ett välkomnande leende men stiftar inga lagar. \n\n\"Ska vi…?\" frågade en vän plötsligt, när vi stod vid en stor järnvägsstation för att pricka in ett tåg. \"Prata om aktuell politik, menar jag.\" \nHan var en ambitiös klättrare inom en stor borgerlig organisation. Han ville få tag på en roll som en viktig ledare och känd politiker. \n\"Okej, Varifrån?\" frågade jag. \"Var ska vi börja?\" \n\"Jo, vi kan återberätta en plötslig skandal,\" föreslog han. \"Någon ville låna ut mycket statlig valuta till en rik affärsman så han blev rik som ett troll. Det orsakade en ekonomisk kris, ett dåligt resultat av fel värdering.\"\n\nVi pratade också om mörkare händelser i vårt samhälle. Förr i tiden kunde en elit utföra en maktdemonstration. Då kunde hemskheter hända, till och med ett mord. Någon kunde mörda sin konkurrent. Idag har vi en bra polis som ska stå för säkerheten. Det är viktigt att varje judisk, muslimsk eller kristen grupp ska känna sig trygg. I en modern kyrka ska man kunna fira en religiös gudstjänst i fred. En laglig rättighet och en rättvis regel skapar möjligheter av olika slag, vilket ger en bättre livskvalitet för alla.\n\nMedan vi pratade satt en söt liten valp på marken och gnydde. En flicka försökte trösta hunden eftersom den hade blivit skrämd av en högljudd hårtork inifrån en frisersalong. Jag började klappa i händerna för att locka på hunden. Det är roligt hur man ibland kan tröttna på samhällsproblem och istället prata om svensk grammatik. \n\"I svenskan finns det något som kallas partikelverb,\" sa min vän. \"Man kombinerar ett verb med en partikel. Du kan också använda ett presens particip.\"\nJag suckade. Vi behövde hitta en bra avslutningsfras för att sluta samtalet innan tåget rullade in.",
-      "en": "",
-      "target_words": [
+    "course_id": "sfid",
+    "course_title": "SFI D",
+    "stage_id": "stage_02",
+    "stage_title": "Samhälle & Politik",
+    "article_id": "art_42",
+    "article_title": "Läsförståelse",
+    "target_word_count": 60,
+    "sentences": [
         {
-          "word_in_sentence": "historia",
-          "base_form": "historia",
-          "position_start": 51,
-          "position_end": 59
-        },
-        {
-          "word_in_sentence": "stat",
-          "base_form": "stat",
-          "position_start": 142,
-          "position_end": 146
-        },
-        {
-          "word_in_sentence": "regel",
-          "base_form": "regel",
-          "position_start": 1375,
-          "position_end": 1380
-        },
-        {
-          "word_in_sentence": "gudstjänst",
-          "base_form": "gudstjänst",
-          "position_start": 1321,
-          "position_end": 1331
-        },
-        {
-          "word_in_sentence": "religiös",
-          "base_form": "religiös",
-          "position_start": 1312,
-          "position_end": 1320
-        },
-        {
-          "word_in_sentence": "lag",
-          "base_form": "lag",
-          "position_start": 249,
-          "position_end": 252
-        },
-        {
-          "word_in_sentence": "drottning",
-          "base_form": "drottning",
-          "position_start": 172,
-          "position_end": 181
-        },
-        {
-          "word_in_sentence": "riksdag",
-          "base_form": "riksdag",
-          "position_start": 219,
-          "position_end": 226
-        },
-        {
-          "word_in_sentence": "organisation",
-          "base_form": "organisation",
-          "position_start": 577,
-          "position_end": 589
-        },
-        {
-          "word_in_sentence": "kyrka",
-          "base_form": "kyrka",
-          "position_start": 1284,
-          "position_end": 1289
-        },
-        {
-          "word_in_sentence": "polis",
-          "base_form": "polis",
-          "position_start": 1155,
-          "position_end": 1160
-        },
-        {
-          "word_in_sentence": "skandal",
-          "base_form": "skandal",
-          "position_start": 749,
-          "position_end": 756
-        },
-        {
-          "word_in_sentence": "ekonomisk",
-          "base_form": "ekonomisk",
-          "position_start": 885,
-          "position_end": 894
-        },
-        {
-          "word_in_sentence": "judisk",
-          "base_form": "judisk",
-          "position_start": 1214,
-          "position_end": 1220
-        },
-        {
-          "word_in_sentence": "borgerlig",
-          "base_form": "borgerlig",
-          "position_start": 567,
-          "position_end": 576
-        },
-        {
-          "word_in_sentence": "mörda",
-          "base_form": "mörda",
-          "position_start": 1114,
-          "position_end": 1119
-        },
-        {
-          "word_in_sentence": "politik",
-          "base_form": "politik",
-          "position_start": 502,
-          "position_end": 509
-        },
-        {
-          "word_in_sentence": "mord",
-          "base_form": "mord",
-          "position_start": 1096,
-          "position_end": 1100
-        },
-        {
-          "word_in_sentence": "laglig",
-          "base_form": "laglig",
-          "position_start": 1343,
-          "position_end": 1349
-        },
-        {
-          "word_in_sentence": "politiker",
-          "base_form": "politiker",
-          "position_start": 649,
-          "position_end": 658
-        },
-        {
-          "word_in_sentence": "ledare",
-          "base_form": "ledare",
-          "position_start": 633,
-          "position_end": 639
-        },
-        {
-          "word_in_sentence": "livskvalitet",
-          "base_form": "livskvalitet",
-          "position_start": 1436,
-          "position_end": 1448
-        },
-        {
-          "word_in_sentence": "trösta",
-          "base_form": "trösta",
-          "position_start": 1541,
-          "position_end": 1547
-        },
-        {
-          "word_in_sentence": "maktdemonstration",
-          "base_form": "maktdemonstration",
-          "position_start": 1033,
-          "position_end": 1050
-        },
-        {
-          "word_in_sentence": "valp",
-          "base_form": "valp",
-          "position_start": 1495,
-          "position_end": 1499
-        },
-        {
-          "word_in_sentence": "partikelverb",
-          "base_form": "partikelverb",
-          "position_start": 1830,
-          "position_end": 1842
-        },
-        {
-          "word_in_sentence": "partikel",
-          "base_form": "partikel",
-          "position_start": 1830,
-          "position_end": 1838
-        },
-        {
-          "word_in_sentence": "presens particip",
-          "base_form": "presens particip",
-          "position_start": 1924,
-          "position_end": 1940
-        },
-        {
-          "word_in_sentence": "av olika slag",
-          "base_form": "av olika slag",
-          "position_start": 1400,
-          "position_end": 1413
-        },
-        {
-          "word_in_sentence": "valuta",
-          "base_form": "valuta",
-          "position_start": 809,
-          "position_end": 815
-        },
-        {
-          "word_in_sentence": "järnvägsstation",
-          "base_form": "järnvägsstation",
-          "position_start": 441,
-          "position_end": 456
-        },
-        {
-          "word_in_sentence": "prins",
-          "base_form": "prins",
-          "position_start": 288,
-          "position_end": 293
-        },
-        {
-          "word_in_sentence": "prinsessa",
-          "base_form": "prinsessa",
-          "position_start": 288,
-          "position_end": 297
-        },
-        {
-          "word_in_sentence": "statsminister",
-          "base_form": "statsminister",
-          "position_start": 197,
-          "position_end": 210
-        },
-        {
-          "word_in_sentence": "parlamentarisk",
-          "base_form": "parlamentarisk",
-          "position_start": 14,
-          "position_end": 28
-        },
-        {
-          "word_in_sentence": "demokrati",
-          "base_form": "demokrati",
-          "position_start": 29,
-          "position_end": 38
-        },
-        {
-          "word_in_sentence": "statschef",
-          "base_form": "statschef",
-          "position_start": 142,
-          "position_end": 151
-        },
-        {
-          "word_in_sentence": "makt",
-          "base_form": "makt",
-          "position_start": 93,
-          "position_end": 97
-        },
-        {
-          "word_in_sentence": "kungamakt",
-          "base_form": "kungamakt",
-          "position_start": 88,
-          "position_end": 97
-        },
-        {
-          "word_in_sentence": "kronprinsessa",
-          "base_form": "kronprinsessa",
-          "position_start": 284,
-          "position_end": 297
-        },
-        {
-          "word_in_sentence": "aktuell",
-          "base_form": "aktuell",
-          "position_start": 494,
-          "position_end": 501
-        },
-        {
-          "word_in_sentence": "Ska vi…?",
-          "base_form": "Ska vi…?",
-          "position_start": 381,
-          "position_end": 389
-        },
-        {
-          "word_in_sentence": "avslutningsfras",
-          "base_form": "avslutningsfras",
-          "position_start": 1980,
-          "position_end": 1995
-        },
-        {
-          "word_in_sentence": "resultat av",
-          "base_form": "resultat av",
-          "position_start": 912,
-          "position_end": 923
-        },
-        {
-          "word_in_sentence": "få tag på",
-          "base_form": "få tag på",
-          "position_start": 601,
-          "position_end": 610
-        },
-        {
-          "word_in_sentence": "rik som ett troll",
-          "base_form": "rik som ett troll",
-          "position_start": 850,
-          "position_end": 867
-        },
-        {
-          "word_in_sentence": "plötslig",
-          "base_form": "plötslig",
-          "position_start": 406,
-          "position_end": 414
-        },
-        {
-          "word_in_sentence": "välkomnande",
-          "base_form": "välkomnande",
-          "position_start": 335,
-          "position_end": 346
-        },
-        {
-          "word_in_sentence": "värdering",
-          "base_form": "värdering",
-          "position_start": 928,
-          "position_end": 937
-        },
-        {
-          "word_in_sentence": "klättrare",
-          "base_form": "klättrare",
-          "position_start": 544,
-          "position_end": 553
-        },
-        {
-          "word_in_sentence": "pricka in",
-          "base_form": "pricka in",
-          "position_start": 465,
-          "position_end": 474
-        },
-        {
-          "word_in_sentence": "på marken",
-          "base_form": "på marken",
-          "position_start": 1500,
-          "position_end": 1509
-        },
-        {
-          "word_in_sentence": "låna ut",
-          "base_form": "låna ut",
-          "position_start": 786,
-          "position_end": 793
-        },
-        {
-          "word_in_sentence": "stå för",
-          "base_form": "stå för",
-          "position_start": 1169,
-          "position_end": 1176
-        },
-        {
-          "word_in_sentence": "hårtork",
-          "base_form": "hårtork",
-          "position_start": 1602,
-          "position_end": 1609
-        },
-        {
-          "word_in_sentence": "hända",
-          "base_form": "hända",
-          "position_start": 1072,
-          "position_end": 1077
-        },
-        {
-          "word_in_sentence": "klappa i händerna",
-          "base_form": "klappa i händerna",
-          "position_start": 1647,
-          "position_end": 1664
-        },
-        {
-          "word_in_sentence": "tröttna",
-          "base_form": "tröttna",
-          "position_start": 1723,
-          "position_end": 1730
-        },
-        {
-          "word_in_sentence": "Varifrån?",
-          "base_form": "varifrån?",
-          "position_start": 668,
-          "position_end": 677
-        },
-        {
-          "word_in_sentence": "återberätta",
-          "base_form": "återberätta",
-          "position_start": 725,
-          "position_end": 736
+            "sentence_id": "art42_s001",
+            "sv": "Sverige är en parlamentarisk demokrati med en lång historia. Tidigare hade man en stark kungamakt. Idag har monarkin ingen politisk makt. Vår statschef är en kung eller en drottning, men det är en statsminister och vår riksdag som beslutar om varje lag och styr vår stat. En blivande kronprinsessa, en prins eller en prinsessa har ett välkomnande leende men stiftar inga lagar. \n\n\"Ska vi…?\" frågade en vän plötsligt, när vi stod vid en stor järnvägsstation för att pricka in ett tåg. \"Prata om aktuell politik, menar jag.\" \nHan var en ambitiös klättrare inom en stor borgerlig organisation. Han ville få tag på en roll som en viktig ledare och känd politiker. \n\"Okej, Varifrån?\" frågade jag. \"Var ska vi börja?\" \n\"Jo, vi kan återberätta en plötslig skandal,\" föreslog han. \"Någon ville låna ut mycket statlig valuta till en rik affärsman så han blev rik som ett troll. Det orsakade en ekonomisk kris, ett dåligt resultat av fel värdering.\"\n\nVi pratade också om mörkare händelser i vårt samhälle. Förr i tiden kunde en elit utföra en maktdemonstration. Då kunde hemskheter hända, till och med ett mord. Någon kunde mörda sin konkurrent. Idag har vi en bra polis som ska stå för säkerheten. Det är viktigt att varje judisk, muslimsk eller kristen grupp ska känna sig trygg. I en modern kyrka ska man kunna fira en religiös gudstjänst i fred. En laglig rättighet och en rättvis regel skapar möjligheter av olika slag, vilket ger en bättre livskvalitet för alla.\n\nMedan vi pratade satt en söt liten valp på marken och gnydde. En flicka försökte trösta hunden eftersom den hade blivit skrämd av en högljudd hårtork inifrån en frisersalong. Jag började klappa i händerna för att locka på hunden. Det är roligt hur man ibland kan tröttna på samhällsproblem och istället prata om svensk grammatik. \n\"I svenskan finns det något som kallas partikelverb,\" sa min vän. \"Man kombinerar ett verb med en partikel. Du kan också använda ett presens particip.\"\nJag suckade. Vi behövde hitta en bra avslutningsfras för att sluta samtalet innan tåget rullade in.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "parlamentarisk",
+                    "base_form": "parlamentarisk",
+                    "position_start": 14,
+                    "position_end": 28
+                },
+                {
+                    "word_in_sentence": "demokrati",
+                    "base_form": "demokrati",
+                    "position_start": 29,
+                    "position_end": 38
+                },
+                {
+                    "word_in_sentence": "historia",
+                    "base_form": "historia",
+                    "position_start": 51,
+                    "position_end": 59
+                },
+                {
+                    "word_in_sentence": "kungamakt",
+                    "base_form": "kungamakt",
+                    "position_start": 88,
+                    "position_end": 97
+                },
+                {
+                    "word_in_sentence": "makt",
+                    "base_form": "makt",
+                    "position_start": 93,
+                    "position_end": 97
+                },
+                {
+                    "word_in_sentence": "stat",
+                    "base_form": "stat",
+                    "position_start": 142,
+                    "position_end": 146
+                },
+                {
+                    "word_in_sentence": "statschef",
+                    "base_form": "statschef",
+                    "position_start": 142,
+                    "position_end": 151
+                },
+                {
+                    "word_in_sentence": "drottning",
+                    "base_form": "drottning",
+                    "position_start": 172,
+                    "position_end": 181
+                },
+                {
+                    "word_in_sentence": "statsminister",
+                    "base_form": "statsminister",
+                    "position_start": 197,
+                    "position_end": 210
+                },
+                {
+                    "word_in_sentence": "riksdag",
+                    "base_form": "riksdag",
+                    "position_start": 219,
+                    "position_end": 226
+                },
+                {
+                    "word_in_sentence": "lag",
+                    "base_form": "lag",
+                    "position_start": 249,
+                    "position_end": 252
+                },
+                {
+                    "word_in_sentence": "kronprinsessa",
+                    "base_form": "kronprinsessa",
+                    "position_start": 284,
+                    "position_end": 297
+                },
+                {
+                    "word_in_sentence": "prins",
+                    "base_form": "prins",
+                    "position_start": 288,
+                    "position_end": 293
+                },
+                {
+                    "word_in_sentence": "prinsessa",
+                    "base_form": "prinsessa",
+                    "position_start": 288,
+                    "position_end": 297
+                },
+                {
+                    "word_in_sentence": "välkomnande",
+                    "base_form": "välkomnande",
+                    "position_start": 335,
+                    "position_end": 346
+                },
+                {
+                    "word_in_sentence": "Ska vi…?",
+                    "base_form": "Ska vi…?",
+                    "position_start": 381,
+                    "position_end": 389
+                },
+                {
+                    "word_in_sentence": "plötslig",
+                    "base_form": "plötslig",
+                    "position_start": 406,
+                    "position_end": 414
+                },
+                {
+                    "word_in_sentence": "järnvägsstation",
+                    "base_form": "järnvägsstation",
+                    "position_start": 441,
+                    "position_end": 456
+                },
+                {
+                    "word_in_sentence": "pricka in",
+                    "base_form": "pricka in",
+                    "position_start": 465,
+                    "position_end": 474
+                },
+                {
+                    "word_in_sentence": "aktuell",
+                    "base_form": "aktuell",
+                    "position_start": 494,
+                    "position_end": 501
+                },
+                {
+                    "word_in_sentence": "politik",
+                    "base_form": "politik",
+                    "position_start": 502,
+                    "position_end": 509
+                },
+                {
+                    "word_in_sentence": "klättrare",
+                    "base_form": "klättrare",
+                    "position_start": 544,
+                    "position_end": 553
+                },
+                {
+                    "word_in_sentence": "borgerlig",
+                    "base_form": "borgerlig",
+                    "position_start": 567,
+                    "position_end": 576
+                },
+                {
+                    "word_in_sentence": "organisation",
+                    "base_form": "organisation",
+                    "position_start": 577,
+                    "position_end": 589
+                },
+                {
+                    "word_in_sentence": "få tag på",
+                    "base_form": "få tag på",
+                    "position_start": 601,
+                    "position_end": 610
+                },
+                {
+                    "word_in_sentence": "ledare",
+                    "base_form": "ledare",
+                    "position_start": 633,
+                    "position_end": 639
+                },
+                {
+                    "word_in_sentence": "politiker",
+                    "base_form": "politiker",
+                    "position_start": 649,
+                    "position_end": 658
+                },
+                {
+                    "word_in_sentence": "Varifrån?",
+                    "base_form": "varifrån?",
+                    "position_start": 668,
+                    "position_end": 677
+                },
+                {
+                    "word_in_sentence": "återberätta",
+                    "base_form": "återberätta",
+                    "position_start": 725,
+                    "position_end": 736
+                },
+                {
+                    "word_in_sentence": "skandal",
+                    "base_form": "skandal",
+                    "position_start": 749,
+                    "position_end": 756
+                },
+                {
+                    "word_in_sentence": "låna ut",
+                    "base_form": "låna ut",
+                    "position_start": 786,
+                    "position_end": 793
+                },
+                {
+                    "word_in_sentence": "valuta",
+                    "base_form": "valuta",
+                    "position_start": 809,
+                    "position_end": 815
+                },
+                {
+                    "word_in_sentence": "rik som ett troll",
+                    "base_form": "rik som ett troll",
+                    "position_start": 850,
+                    "position_end": 867
+                },
+                {
+                    "word_in_sentence": "ekonomisk",
+                    "base_form": "ekonomisk",
+                    "position_start": 885,
+                    "position_end": 894
+                },
+                {
+                    "word_in_sentence": "resultat av",
+                    "base_form": "resultat av",
+                    "position_start": 912,
+                    "position_end": 923
+                },
+                {
+                    "word_in_sentence": "värdering",
+                    "base_form": "värdering",
+                    "position_start": 928,
+                    "position_end": 937
+                },
+                {
+                    "word_in_sentence": "maktdemonstration",
+                    "base_form": "maktdemonstration",
+                    "position_start": 1033,
+                    "position_end": 1050
+                },
+                {
+                    "word_in_sentence": "hända",
+                    "base_form": "hända",
+                    "position_start": 1072,
+                    "position_end": 1077
+                },
+                {
+                    "word_in_sentence": "mord",
+                    "base_form": "mord",
+                    "position_start": 1096,
+                    "position_end": 1100
+                },
+                {
+                    "word_in_sentence": "mörda",
+                    "base_form": "mörda",
+                    "position_start": 1114,
+                    "position_end": 1119
+                },
+                {
+                    "word_in_sentence": "polis",
+                    "base_form": "polis",
+                    "position_start": 1155,
+                    "position_end": 1160
+                },
+                {
+                    "word_in_sentence": "stå för",
+                    "base_form": "stå för",
+                    "position_start": 1169,
+                    "position_end": 1176
+                },
+                {
+                    "word_in_sentence": "judisk",
+                    "base_form": "judisk",
+                    "position_start": 1214,
+                    "position_end": 1220
+                },
+                {
+                    "word_in_sentence": "kyrka",
+                    "base_form": "kyrka",
+                    "position_start": 1284,
+                    "position_end": 1289
+                },
+                {
+                    "word_in_sentence": "religiös",
+                    "base_form": "religiös",
+                    "position_start": 1312,
+                    "position_end": 1320
+                },
+                {
+                    "word_in_sentence": "gudstjänst",
+                    "base_form": "gudstjänst",
+                    "position_start": 1321,
+                    "position_end": 1331
+                },
+                {
+                    "word_in_sentence": "laglig",
+                    "base_form": "laglig",
+                    "position_start": 1343,
+                    "position_end": 1349
+                },
+                {
+                    "word_in_sentence": "regel",
+                    "base_form": "regel",
+                    "position_start": 1375,
+                    "position_end": 1380
+                },
+                {
+                    "word_in_sentence": "av olika slag",
+                    "base_form": "av olika slag",
+                    "position_start": 1400,
+                    "position_end": 1413
+                },
+                {
+                    "word_in_sentence": "livskvalitet",
+                    "base_form": "livskvalitet",
+                    "position_start": 1436,
+                    "position_end": 1448
+                },
+                {
+                    "word_in_sentence": "valp",
+                    "base_form": "valp",
+                    "position_start": 1495,
+                    "position_end": 1499
+                },
+                {
+                    "word_in_sentence": "på marken",
+                    "base_form": "på marken",
+                    "position_start": 1500,
+                    "position_end": 1509
+                },
+                {
+                    "word_in_sentence": "trösta",
+                    "base_form": "trösta",
+                    "position_start": 1541,
+                    "position_end": 1547
+                },
+                {
+                    "word_in_sentence": "hårtork",
+                    "base_form": "hårtork",
+                    "position_start": 1602,
+                    "position_end": 1609
+                },
+                {
+                    "word_in_sentence": "klappa i händerna",
+                    "base_form": "klappa i händerna",
+                    "position_start": 1647,
+                    "position_end": 1664
+                },
+                {
+                    "word_in_sentence": "tröttna",
+                    "base_form": "tröttna",
+                    "position_start": 1723,
+                    "position_end": 1730
+                },
+                {
+                    "word_in_sentence": "partikelverb",
+                    "base_form": "partikelverb",
+                    "position_start": 1830,
+                    "position_end": 1842
+                },
+                {
+                    "word_in_sentence": "partikel",
+                    "base_form": "partikel",
+                    "position_start": 1830,
+                    "position_end": 1838
+                },
+                {
+                    "word_in_sentence": "kombinera",
+                    "base_form": "kombinera",
+                    "position_start": 1862,
+                    "position_end": 1871
+                },
+                {
+                    "word_in_sentence": "presens particip",
+                    "base_form": "presens particip",
+                    "position_start": 1924,
+                    "position_end": 1940
+                },
+                {
+                    "word_in_sentence": "avslutningsfras",
+                    "base_form": "avslutningsfras",
+                    "position_start": 1980,
+                    "position_end": 1995
+                }
+            ]
         }
-      ]
-    }
-  ],
-  "primary_words_used": [
-    "historia",
-    "stat",
-    "regel",
-    "gudstjänst",
-    "religiös",
-    "lag",
-    "drottning",
-    "riksdag",
-    "organisation",
-    "kyrka",
-    "polis",
-    "skandal",
-    "ekonomisk",
-    "judisk",
-    "borgerlig",
-    "mörda",
-    "politik",
-    "mord",
-    "laglig",
-    "politiker",
-    "ledare",
-    "livskvalitet",
-    "trösta",
-    "maktdemonstration",
-    "valp",
-    "partikelverb",
-    "partikel",
-    "presens particip",
-    "av olika slag",
-    "valuta",
-    "järnvägsstation",
-    "prins",
-    "prinsessa",
-    "statsminister",
-    "parlamentarisk",
-    "demokrati",
-    "statschef",
-    "makt",
-    "kungamakt",
-    "kronprinsessa",
-    "aktuell",
-    "Ska vi…?",
-    "avslutningsfras",
-    "resultat av",
-    "få tag på",
-    "rik som ett troll",
-    "plötslig",
-    "välkomnande",
-    "värdering",
-    "klättrare",
-    "pricka in",
-    "på marken",
-    "låna ut",
-    "stå för",
-    "hårtork",
-    "hända",
-    "klappa i händerna",
-    "tröttna",
-    "varifrån?",
-    "återberätta"
-  ],
-  "secondary_words_used": []
+    ],
+    "primary_words_used": [
+        "historia",
+        "stat",
+        "regel",
+        "gudstjänst",
+        "religiös",
+        "lag",
+        "drottning",
+        "riksdag",
+        "organisation",
+        "kyrka",
+        "polis",
+        "skandal",
+        "ekonomisk",
+        "judisk",
+        "borgerlig",
+        "mörda",
+        "politik",
+        "mord",
+        "laglig",
+        "politiker",
+        "ledare",
+        "livskvalitet",
+        "trösta",
+        "maktdemonstration",
+        "valp",
+        "partikelverb",
+        "partikel",
+        "presens particip",
+        "av olika slag",
+        "valuta",
+        "järnvägsstation",
+        "prins",
+        "prinsessa",
+        "statsminister",
+        "parlamentarisk",
+        "demokrati",
+        "statschef",
+        "makt",
+        "kungamakt",
+        "kronprinsessa",
+        "aktuell",
+        "Ska vi…?",
+        "avslutningsfras",
+        "resultat av",
+        "få tag på",
+        "rik som ett troll",
+        "plötslig",
+        "välkomnande",
+        "värdering",
+        "klättrare",
+        "pricka in",
+        "på marken",
+        "låna ut",
+        "stå för",
+        "hårtork",
+        "hända",
+        "klappa i händerna",
+        "tröttna",
+        "varifrån?",
+        "återberätta"
+    ],
+    "secondary_words_used": []
 }

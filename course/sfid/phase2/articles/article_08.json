@@ -1,441 +1,440 @@
 {
-  "course_id": "sfid",
-  "course_title": "SFI D",
-  "stage_id": "stage_05",
-  "stage_title": "Utbildning",
-  "article_id": "art_08",
-  "article_title": "Läsförståelse",
-  "target_word_count": 60,
-  "sentences": [
-    {
-      "sentence_id": "art08_s001",
-      "sv": "Att börja en ny utbildning för att lära sig ett nytt språk är alltid intressant. Min kurskamrat och jag bestämde oss för att gå en kurs. Innan vi började på ett universitet tänkte vi testa en privatlärare. Vi hade läst en undersökning från 1700-talet om hur olika grupper av människor kunde utbilda sig. Där stod att barn från överklass brukade uppfostras med egen lärare, medan arbetarklass och övrig samhällsklass inte fick samma chans. \"Varför fick hon ingen…?\" undrade min kompis när hon läste om en fattig flicka. \n\nIdag kan man utbilda sig till vad som helst. Första dagen fick vi vända sida i boken och läsa en mening. \"Du måste uttala varje fras rätt,\" sa läraren. Hon brukade förklara grammatik, som ordföljd och varje ordklass. Vi lärde oss skillnaden mellan substantiv, adjektiv och pronomen. Vi pratade också om ett könsneutralt ord som hen. \n\nPå lektionen måste vi skriva och svara på frågor. Läraren ville uppmana oss att skriva ner alla svarsalternativ och notera rätt svar. \"Kolla i facit,\" sa hon, \"men försök att formulera egna tankar först.\" Vi fick ofta i uppgift att skriva dagbok eller skriva mejl. \"Vad tycker du?\" frågade läraren. \"Är det svårt?\" Jag svarade att det förstås var lite svårt, men bra för att testa sina gränser. Det kunde nästan göra ont i huvudet av alla nya regler och man kände ibland för att bita ihop.\n\nIbland hade vi också en fysisk aktivitet som en danskurs efter skolan. Då kunde man se en mängd människor. Efteråt fick man gå hem och blåsa håret torrt. \"Se upp!\" sa min kompis, \"Här kommer den sista bussen.\" När vi åkte hem sa hon: \"Vem frågade efter dig?\" Jag var så trött att jag kände mig stendöd, men jag orkade höra på henne ändå. Den senaste veckan var av bästa sort.",
-      "en": "",
-      "target_words": [
+    "course_id": "sfid",
+    "course_title": "SFI D",
+    "stage_id": "stage_05",
+    "stage_title": "Utbildning",
+    "article_id": "art_08",
+    "article_title": "Läsförståelse",
+    "target_word_count": 60,
+    "sentences": [
         {
-          "word_in_sentence": "sida",
-          "base_form": "sida",
-          "position_start": 593,
-          "position_end": 597
-        },
-        {
-          "word_in_sentence": "skriva",
-          "base_form": "skriva",
-          "position_start": 878,
-          "position_end": 884
-        },
-        {
-          "word_in_sentence": "skriva ner",
-          "base_form": "skriv ner",
-          "position_start": 936,
-          "position_end": 946
-        },
-        {
-          "word_in_sentence": "ord",
-          "base_form": "ord",
-          "position_start": 709,
-          "position_end": 712
-        },
-        {
-          "word_in_sentence": "läsa",
-          "base_form": "läsa",
-          "position_start": 610,
-          "position_end": 614
-        },
-        {
-          "word_in_sentence": "svara",
-          "base_form": "svara",
-          "position_start": 889,
-          "position_end": 894
-        },
-        {
-          "word_in_sentence": "svar",
-          "base_form": "svar",
-          "position_start": 889,
-          "position_end": 893
-        },
-        {
-          "word_in_sentence": "svarsalternativ",
-          "base_form": "svarsalternativ",
-          "position_start": 952,
-          "position_end": 967
-        },
-        {
-          "word_in_sentence": "notera",
-          "base_form": "notera",
-          "position_start": 972,
-          "position_end": 978
-        },
-        {
-          "word_in_sentence": "testa",
-          "base_form": "testa",
-          "position_start": 183,
-          "position_end": 188
-        },
-        {
-          "word_in_sentence": "testa sina gränser",
-          "base_form": "testa sina gränser",
-          "position_start": 1231,
-          "position_end": 1249
-        },
-        {
-          "word_in_sentence": "adjektiv",
-          "base_form": "adjektiv",
-          "position_start": 781,
-          "position_end": 789
-        },
-        {
-          "word_in_sentence": "substantiv",
-          "base_form": "substantiv",
-          "position_start": 769,
-          "position_end": 779
-        },
-        {
-          "word_in_sentence": "pronomen",
-          "base_form": "pronomen",
-          "position_start": 794,
-          "position_end": 802
-        },
-        {
-          "word_in_sentence": "ordklass",
-          "base_form": "ordklass",
-          "position_start": 728,
-          "position_end": 736
-        },
-        {
-          "word_in_sentence": "mening",
-          "base_form": "mening",
-          "position_start": 618,
-          "position_end": 624
-        },
-        {
-          "word_in_sentence": "förstås",
-          "base_form": "förstås",
-          "position_start": 1191,
-          "position_end": 1198
-        },
-        {
-          "word_in_sentence": "facit",
-          "base_form": "facit",
-          "position_start": 999,
-          "position_end": 1004
-        },
-        {
-          "word_in_sentence": "undersökning",
-          "base_form": "undersökning",
-          "position_start": 222,
-          "position_end": 234
-        },
-        {
-          "word_in_sentence": "skriva dagbok",
-          "base_form": "skriva dagbok",
-          "position_start": 1088,
-          "position_end": 1101
-        },
-        {
-          "word_in_sentence": "språk",
-          "base_form": "språk",
-          "position_start": 53,
-          "position_end": 58
-        },
-        {
-          "word_in_sentence": "överklass",
-          "base_form": "överklass",
-          "position_start": 327,
-          "position_end": 336
-        },
-        {
-          "word_in_sentence": "samhällsklass",
-          "base_form": "samhällsklass",
-          "position_start": 402,
-          "position_end": 415
-        },
-        {
-          "word_in_sentence": "arbetarklass",
-          "base_form": "arbetarklass",
-          "position_start": 379,
-          "position_end": 391
-        },
-        {
-          "word_in_sentence": "kurskamrat",
-          "base_form": "kurskamrat",
-          "position_start": 85,
-          "position_end": 95
-        },
-        {
-          "word_in_sentence": "förklara",
-          "base_form": "förklara",
-          "position_start": 685,
-          "position_end": 693
-        },
-        {
-          "word_in_sentence": "grammatik",
-          "base_form": "grammatik",
-          "position_start": 694,
-          "position_end": 703
-        },
-        {
-          "word_in_sentence": "utbilda",
-          "base_form": "utbilda",
-          "position_start": 291,
-          "position_end": 298
-        },
-        {
-          "word_in_sentence": "utbilda sig till",
-          "base_form": "utbilda sig till",
-          "position_start": 534,
-          "position_end": 550
-        },
-        {
-          "word_in_sentence": "skriva mejl",
-          "base_form": "skriva mejl",
-          "position_start": 1108,
-          "position_end": 1119
-        },
-        {
-          "word_in_sentence": "utbildning",
-          "base_form": "utbildning",
-          "position_start": 16,
-          "position_end": 26
-        },
-        {
-          "word_in_sentence": "universitet",
-          "base_form": "univerisitet",
-          "position_start": 161,
-          "position_end": 172
-        },
-        {
-          "word_in_sentence": "fras",
-          "base_form": "fras",
-          "position_start": 649,
-          "position_end": 653
-        },
-        {
-          "word_in_sentence": "uttala",
-          "base_form": "uttala",
-          "position_start": 636,
-          "position_end": 642
-        },
-        {
-          "word_in_sentence": "hen",
-          "base_form": "hen",
-          "position_start": 849,
-          "position_end": 852
-        },
-        {
-          "word_in_sentence": "ordföljd",
-          "base_form": "ordföljd",
-          "position_start": 709,
-          "position_end": 717
-        },
-        {
-          "word_in_sentence": "danskurs",
-          "base_form": "danskurs",
-          "position_start": 1395,
-          "position_end": 1403
-        },
-        {
-          "word_in_sentence": "privatlärare",
-          "base_form": "privatlärare",
-          "position_start": 192,
-          "position_end": 204
-        },
-        {
-          "word_in_sentence": "lära sig",
-          "base_form": "lära sig",
-          "position_start": 35,
-          "position_end": 43
-        },
-        {
-          "word_in_sentence": "en mängd",
-          "base_form": "en mängd",
-          "position_start": 1434,
-          "position_end": 1442
-        },
-        {
-          "word_in_sentence": "Se upp!",
-          "base_form": "se upp!",
-          "position_start": 1502,
-          "position_end": 1509
-        },
-        {
-          "word_in_sentence": "1700-talet",
-          "base_form": "1700-talet",
-          "position_start": 240,
-          "position_end": 250
-        },
-        {
-          "word_in_sentence": "senaste",
-          "base_form": "senaste",
-          "position_start": 1689,
-          "position_end": 1696
-        },
-        {
-          "word_in_sentence": "höra",
-          "base_form": "höra",
-          "position_start": 1665,
-          "position_end": 1669
-        },
-        {
-          "word_in_sentence": "uppfostras",
-          "base_form": "uppfostras",
-          "position_start": 345,
-          "position_end": 355
-        },
-        {
-          "word_in_sentence": "sort",
-          "base_form": "sort",
-          "position_start": 1717,
-          "position_end": 1721
-        },
-        {
-          "word_in_sentence": "Varför fick hon ingen…?",
-          "base_form": "Varför fick hon ingen…?",
-          "position_start": 440,
-          "position_end": 463
-        },
-        {
-          "word_in_sentence": "övrig",
-          "base_form": "övrig",
-          "position_start": 396,
-          "position_end": 401
-        },
-        {
-          "word_in_sentence": "fysisk",
-          "base_form": "fysisk",
-          "position_start": 1371,
-          "position_end": 1377
-        },
-        {
-          "word_in_sentence": "uppmana",
-          "base_form": "uppmana",
-          "position_start": 920,
-          "position_end": 927
-        },
-        {
-          "word_in_sentence": "Vem frågade efter dig?",
-          "base_form": "Vem frågade efter dig?",
-          "position_start": 1582,
-          "position_end": 1604
-        },
-        {
-          "word_in_sentence": "sista",
-          "base_form": "sista",
-          "position_start": 1542,
-          "position_end": 1547
-        },
-        {
-          "word_in_sentence": "stendöd",
-          "base_form": "stendöd",
-          "position_start": 1641,
-          "position_end": 1648
-        },
-        {
-          "word_in_sentence": "göra ont",
-          "base_form": "göra ont",
-          "position_start": 1268,
-          "position_end": 1276
-        },
-        {
-          "word_in_sentence": "blåsa håret torrt",
-          "base_form": "blåsa torr",
-          "position_start": 1482,
-          "position_end": 1499
-        },
-        {
-          "word_in_sentence": "könsneutralt",
-          "base_form": "könsneutral",
-          "position_start": 828,
-          "position_end": 840
-        },
-        {
-          "word_in_sentence": "se",
-          "base_form": "se",
-          "position_start": 1246,
-          "position_end": 1248
-        },
-        {
-          "word_in_sentence": "formulera",
-          "base_form": "formulera",
-          "position_start": 1031,
-          "position_end": 1040
-        },
-        {
-          "word_in_sentence": "Vad tycker du?",
-          "base_form": "Vad tycker du?",
-          "position_start": 1122,
-          "position_end": 1136
-        },
-        {
-          "word_in_sentence": "bita",
-          "base_form": "bita",
-          "position_start": 1335,
-          "position_end": 1339
+            "sentence_id": "art08_s001",
+            "sv": "Att börja en ny utbildning för att lära sig ett nytt språk är alltid intressant. Min kurskamrat och jag bestämde oss för att gå en kurs. Innan vi började på ett universitet tänkte vi testa en privatlärare. Vi hade läst en undersökning från 1700-talet om hur olika grupper av människor kunde utbilda sig. Där stod att barn från överklass brukade uppfostras med egen lärare, medan arbetarklass och övrig samhällsklass inte fick samma chans. \"Varför fick hon ingen…?\" undrade min kompis när hon läste om en fattig flicka. \n\nIdag kan man utbilda sig till vad som helst. Första dagen fick vi vända sida i boken och läsa en mening. \"Du måste uttala varje fras rätt,\" sa läraren. Hon brukade förklara grammatik, som ordföljd och varje ordklass. Vi lärde oss skillnaden mellan substantiv, adjektiv och pronomen. Vi pratade också om ett könsneutralt ord som hen. \n\nPå lektionen måste vi skriva och svara på frågor. Läraren ville uppmana oss att skriva ner alla svarsalternativ och notera rätt svar. \"Kolla i facit,\" sa hon, \"men försök att formulera egna tankar först.\" Vi fick ofta i uppgift att skriva dagbok eller skriva mejl. \"Vad tycker du?\" frågade läraren. \"Är det svårt?\" Jag svarade att det förstås var lite svårt, men bra för att testa sina gränser. Det kunde nästan göra ont i huvudet av alla nya regler och man kände ibland för att bita ihop.\n\nIbland hade vi också en fysisk aktivitet som en danskurs efter skolan. Då kunde man se en mängd människor. Efteråt fick man gå hem och blåsa håret torrt. \"Se upp!\" sa min kompis, \"Här kommer den sista bussen.\" När vi åkte hem sa hon: \"Vem frågade efter dig?\" Jag var så trött att jag kände mig stendöd, men jag orkade höra på henne ändå. Den senaste veckan var av bästa sort.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "utbildning",
+                    "base_form": "utbildning",
+                    "position_start": 16,
+                    "position_end": 26
+                },
+                {
+                    "word_in_sentence": "lära sig",
+                    "base_form": "lära sig",
+                    "position_start": 35,
+                    "position_end": 43
+                },
+                {
+                    "word_in_sentence": "språk",
+                    "base_form": "språk",
+                    "position_start": 53,
+                    "position_end": 58
+                },
+                {
+                    "word_in_sentence": "kurskamrat",
+                    "base_form": "kurskamrat",
+                    "position_start": 85,
+                    "position_end": 95
+                },
+                {
+                    "word_in_sentence": "universitet",
+                    "base_form": "univerisitet",
+                    "position_start": 161,
+                    "position_end": 172
+                },
+                {
+                    "word_in_sentence": "testa",
+                    "base_form": "testa",
+                    "position_start": 183,
+                    "position_end": 188
+                },
+                {
+                    "word_in_sentence": "privatlärare",
+                    "base_form": "privatlärare",
+                    "position_start": 192,
+                    "position_end": 204
+                },
+                {
+                    "word_in_sentence": "undersökning",
+                    "base_form": "undersökning",
+                    "position_start": 222,
+                    "position_end": 234
+                },
+                {
+                    "word_in_sentence": "1700-talet",
+                    "base_form": "1700-talet",
+                    "position_start": 240,
+                    "position_end": 250
+                },
+                {
+                    "word_in_sentence": "utbilda",
+                    "base_form": "utbilda",
+                    "position_start": 291,
+                    "position_end": 298
+                },
+                {
+                    "word_in_sentence": "överklass",
+                    "base_form": "överklass",
+                    "position_start": 327,
+                    "position_end": 336
+                },
+                {
+                    "word_in_sentence": "uppfostras",
+                    "base_form": "uppfostras",
+                    "position_start": 345,
+                    "position_end": 355
+                },
+                {
+                    "word_in_sentence": "arbetarklass",
+                    "base_form": "arbetarklass",
+                    "position_start": 379,
+                    "position_end": 391
+                },
+                {
+                    "word_in_sentence": "övrig",
+                    "base_form": "övrig",
+                    "position_start": 396,
+                    "position_end": 401
+                },
+                {
+                    "word_in_sentence": "samhällsklass",
+                    "base_form": "samhällsklass",
+                    "position_start": 402,
+                    "position_end": 415
+                },
+                {
+                    "word_in_sentence": "Varför fick hon ingen…?",
+                    "base_form": "Varför fick hon ingen…?",
+                    "position_start": 440,
+                    "position_end": 463
+                },
+                {
+                    "word_in_sentence": "Varför",
+                    "base_form": "Varför",
+                    "position_start": 440,
+                    "position_end": 446
+                },
+                {
+                    "word_in_sentence": "utbilda sig till",
+                    "base_form": "utbilda sig till",
+                    "position_start": 534,
+                    "position_end": 550
+                },
+                {
+                    "word_in_sentence": "sida",
+                    "base_form": "sida",
+                    "position_start": 593,
+                    "position_end": 597
+                },
+                {
+                    "word_in_sentence": "läsa",
+                    "base_form": "läsa",
+                    "position_start": 610,
+                    "position_end": 614
+                },
+                {
+                    "word_in_sentence": "mening",
+                    "base_form": "mening",
+                    "position_start": 618,
+                    "position_end": 624
+                },
+                {
+                    "word_in_sentence": "uttala",
+                    "base_form": "uttala",
+                    "position_start": 636,
+                    "position_end": 642
+                },
+                {
+                    "word_in_sentence": "fras",
+                    "base_form": "fras",
+                    "position_start": 649,
+                    "position_end": 653
+                },
+                {
+                    "word_in_sentence": "förklara",
+                    "base_form": "förklara",
+                    "position_start": 685,
+                    "position_end": 693
+                },
+                {
+                    "word_in_sentence": "grammatik",
+                    "base_form": "grammatik",
+                    "position_start": 694,
+                    "position_end": 703
+                },
+                {
+                    "word_in_sentence": "ord",
+                    "base_form": "ord",
+                    "position_start": 709,
+                    "position_end": 712
+                },
+                {
+                    "word_in_sentence": "ordföljd",
+                    "base_form": "ordföljd",
+                    "position_start": 709,
+                    "position_end": 717
+                },
+                {
+                    "word_in_sentence": "ordklass",
+                    "base_form": "ordklass",
+                    "position_start": 728,
+                    "position_end": 736
+                },
+                {
+                    "word_in_sentence": "substantiv",
+                    "base_form": "substantiv",
+                    "position_start": 769,
+                    "position_end": 779
+                },
+                {
+                    "word_in_sentence": "adjektiv",
+                    "base_form": "adjektiv",
+                    "position_start": 781,
+                    "position_end": 789
+                },
+                {
+                    "word_in_sentence": "pronomen",
+                    "base_form": "pronomen",
+                    "position_start": 794,
+                    "position_end": 802
+                },
+                {
+                    "word_in_sentence": "könsneutralt",
+                    "base_form": "könsneutral",
+                    "position_start": 828,
+                    "position_end": 840
+                },
+                {
+                    "word_in_sentence": "hen",
+                    "base_form": "hen",
+                    "position_start": 849,
+                    "position_end": 852
+                },
+                {
+                    "word_in_sentence": "svara",
+                    "base_form": "svara",
+                    "position_start": 889,
+                    "position_end": 894
+                },
+                {
+                    "word_in_sentence": "svar",
+                    "base_form": "svar",
+                    "position_start": 889,
+                    "position_end": 893
+                },
+                {
+                    "word_in_sentence": "uppmana",
+                    "base_form": "uppmana",
+                    "position_start": 920,
+                    "position_end": 927
+                },
+                {
+                    "word_in_sentence": "skriva ner",
+                    "base_form": "skriv ner",
+                    "position_start": 936,
+                    "position_end": 946
+                },
+                {
+                    "word_in_sentence": "svarsalternativ",
+                    "base_form": "svarsalternativ",
+                    "position_start": 952,
+                    "position_end": 967
+                },
+                {
+                    "word_in_sentence": "notera",
+                    "base_form": "notera",
+                    "position_start": 972,
+                    "position_end": 978
+                },
+                {
+                    "word_in_sentence": "facit",
+                    "base_form": "facit",
+                    "position_start": 999,
+                    "position_end": 1004
+                },
+                {
+                    "word_in_sentence": "formulera",
+                    "base_form": "formulera",
+                    "position_start": 1031,
+                    "position_end": 1040
+                },
+                {
+                    "word_in_sentence": "skriva dagbok",
+                    "base_form": "skriva dagbok",
+                    "position_start": 1088,
+                    "position_end": 1101
+                },
+                {
+                    "word_in_sentence": "skriva mejl",
+                    "base_form": "skriva mejl",
+                    "position_start": 1108,
+                    "position_end": 1119
+                },
+                {
+                    "word_in_sentence": "Vad tycker du?",
+                    "base_form": "Vad tycker du?",
+                    "position_start": 1122,
+                    "position_end": 1136
+                },
+                {
+                    "word_in_sentence": "förstås",
+                    "base_form": "förstås",
+                    "position_start": 1191,
+                    "position_end": 1198
+                },
+                {
+                    "word_in_sentence": "testa sina gränser",
+                    "base_form": "testa sina gränser",
+                    "position_start": 1231,
+                    "position_end": 1249
+                },
+                {
+                    "word_in_sentence": "se",
+                    "base_form": "se",
+                    "position_start": 1246,
+                    "position_end": 1248
+                },
+                {
+                    "word_in_sentence": "göra ont",
+                    "base_form": "göra ont",
+                    "position_start": 1268,
+                    "position_end": 1276
+                },
+                {
+                    "word_in_sentence": "bita",
+                    "base_form": "bita",
+                    "position_start": 1335,
+                    "position_end": 1339
+                },
+                {
+                    "word_in_sentence": "fysisk",
+                    "base_form": "fysisk",
+                    "position_start": 1371,
+                    "position_end": 1377
+                },
+                {
+                    "word_in_sentence": "danskurs",
+                    "base_form": "danskurs",
+                    "position_start": 1395,
+                    "position_end": 1403
+                },
+                {
+                    "word_in_sentence": "en mängd",
+                    "base_form": "en mängd",
+                    "position_start": 1434,
+                    "position_end": 1442
+                },
+                {
+                    "word_in_sentence": "blåsa håret torrt",
+                    "base_form": "blåsa torr",
+                    "position_start": 1482,
+                    "position_end": 1499
+                },
+                {
+                    "word_in_sentence": "Se upp!",
+                    "base_form": "se upp!",
+                    "position_start": 1502,
+                    "position_end": 1509
+                },
+                {
+                    "word_in_sentence": "sista",
+                    "base_form": "sista",
+                    "position_start": 1542,
+                    "position_end": 1547
+                },
+                {
+                    "word_in_sentence": "Vem frågade efter dig?",
+                    "base_form": "Vem frågade efter dig?",
+                    "position_start": 1582,
+                    "position_end": 1604
+                },
+                {
+                    "word_in_sentence": "stendöd",
+                    "base_form": "stendöd",
+                    "position_start": 1641,
+                    "position_end": 1648
+                },
+                {
+                    "word_in_sentence": "höra",
+                    "base_form": "höra",
+                    "position_start": 1665,
+                    "position_end": 1669
+                },
+                {
+                    "word_in_sentence": "senaste",
+                    "base_form": "senaste",
+                    "position_start": 1689,
+                    "position_end": 1696
+                },
+                {
+                    "word_in_sentence": "sort",
+                    "base_form": "sort",
+                    "position_start": 1717,
+                    "position_end": 1721
+                }
+            ]
         }
-      ]
-    }
-  ],
-  "primary_words_used": [
-    "sida",
-    "skriva",
-    "skriv ner",
-    "ord",
-    "läsa",
-    "svara",
-    "svar",
-    "svarsalternativ",
-    "notera",
-    "testa",
-    "testa sina gränser",
-    "adjektiv",
-    "substantiv",
-    "pronomen",
-    "ordklass",
-    "mening",
-    "förstås",
-    "facit",
-    "undersökning",
-    "skriva dagbok",
-    "språk",
-    "överklass",
-    "samhällsklass",
-    "arbetarklass",
-    "kurskamrat",
-    "förklara",
-    "grammatik",
-    "utbilda",
-    "utbilda sig till",
-    "skriva mejl",
-    "utbildning",
-    "univerisitet",
-    "fras",
-    "uttala",
-    "hen",
-    "ordföljd",
-    "danskurs",
-    "privatlärare",
-    "lära sig",
-    "en mängd",
-    "se upp!",
-    "1700-talet",
-    "senaste",
-    "höra",
-    "uppfostras",
-    "sort",
-    "Varför fick hon ingen…?",
-    "övrig",
-    "fysisk",
-    "uppmana",
-    "Vem frågade efter dig?",
-    "sista",
-    "stendöd",
-    "göra ont",
-    "blåsa torr",
-    "könsneutral",
-    "se",
-    "formulera",
-    "Vad tycker du?",
-    "bita"
-  ],
-  "secondary_words_used": []
+    ],
+    "primary_words_used": [
+        "sida",
+        "skriv ner",
+        "ord",
+        "läsa",
+        "svara",
+        "svar",
+        "svarsalternativ",
+        "notera",
+        "testa",
+        "testa sina gränser",
+        "adjektiv",
+        "substantiv",
+        "pronomen",
+        "ordklass",
+        "mening",
+        "förstås",
+        "facit",
+        "undersökning",
+        "skriva dagbok",
+        "språk",
+        "överklass",
+        "samhällsklass",
+        "arbetarklass",
+        "kurskamrat",
+        "förklara",
+        "grammatik",
+        "utbilda",
+        "utbilda sig till",
+        "skriva mejl",
+        "utbildning",
+        "univerisitet",
+        "fras",
+        "uttala",
+        "hen",
+        "ordföljd",
+        "danskurs",
+        "privatlärare",
+        "lära sig",
+        "en mängd",
+        "se upp!",
+        "1700-talet",
+        "senaste",
+        "höra",
+        "uppfostras",
+        "sort",
+        "Varför fick hon ingen…?",
+        "övrig",
+        "fysisk",
+        "uppmana",
+        "Vem frågade efter dig?",
+        "sista",
+        "stendöd",
+        "göra ont",
+        "blåsa torr",
+        "könsneutral",
+        "se",
+        "formulera",
+        "Vad tycker du?",
+        "bita"
+    ],
+    "secondary_words_used": []
 }

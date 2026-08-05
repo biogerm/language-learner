@@ -1,441 +1,434 @@
 {
-  "course_id": "sfid",
-  "course_title": "SFI D",
-  "stage_id": "stage_10",
-  "stage_title": "Mat & Matlagning",
-  "article_id": "art_12",
-  "article_title": "Läsförståelse",
-  "target_word_count": 60,
-  "sentences": [
-    {
-      "sentence_id": "art12_s001",
-      "sv": "Jag älskar mat. I många år har jag tyckt om att baka och laga goda rätter. Min vän, som är en känd dramatiker, älskar mycket dramatik i köket. Efter att ha jobbat hela dagen var han hungrig som en varg. Han brukar säga att han gillar att äta som en häst när magen är tom. Jag tänkte föreslå att vi kunde gå ut och äta.\n\nFör en stund tänkte jag att vi skulle köpa hämtmat. Men hallen var trång och jag kände mig mentalt trött efter jobbet. Vi valde att stanna hemma. Istället för att… gå på restaurang, började vi laga lättlagad plockmat och skära upp varje grönsak samt frukt som äpple och banan. \"Det är inte sant!\" ropade min vän plötsligt. En blodtörstig mygga hade gett honom ett getingstick. \"En kommentar till,\" sa han, \"och jag dör. Jag känner mig obekväm och behöver mer kolhydrat. Jag vill inte vara kritisk, men jag måste äta.\"\n\nJag bad honom att provsmaka lite salamikorv. \"Du måste äta ordentligt för att inte sakna föda,\" sa jag. För att slippa ett misslyckande serverade jag rätten på en hög nivå. Doften av vitlök började sprida sig. Var och en fick en tallrik.\n\nVi ville dricka något gott. Jag drack kall läsk medan han tog en ljus öl. Ibland blandar han en drink, kanske en stor paraplydrink, men nu drack vi utan mycket socker. Vatten är annars bäst, för dricker man havsvatten blir man bara törstigare. Jag kunde vara säker på att min vän var nöjd. \n\nEfter middagen undrade jag: \"Ska vi ta en fika?\" Jag ville hellre baka en kaka än att äta köpt godis eller smågodis. Vi hade choklad hemma. Min vän ville dock bara ha en skål med lättyoghurt. Han tyckte att min mat för dagen var lite för dramatisk. Vi talade om att odla bär och hur man brukade sylta och safta förr i tiden, eller liknande saker. Jag hoppas vi kan ses nästnästa vecka igen, innan all glädje hinner försvinna.",
-      "en": "",
-      "target_words": [
+    "course_id": "sfid",
+    "course_title": "SFI D",
+    "stage_id": "stage_10",
+    "stage_title": "Mat & Matlagning",
+    "article_id": "art_12",
+    "article_title": "Läsförståelse",
+    "target_word_count": 60,
+    "sentences": [
         {
-          "word_in_sentence": "öl",
-          "base_form": "öl",
-          "position_start": 1148,
-          "position_end": 1150
-        },
-        {
-          "word_in_sentence": "läsk",
-          "base_form": "läsk",
-          "position_start": 1121,
-          "position_end": 1125
-        },
-        {
-          "word_in_sentence": "dricka",
-          "base_form": "dricka",
-          "position_start": 1087,
-          "position_end": 1093
-        },
-        {
-          "word_in_sentence": "drink",
-          "base_form": "drink",
-          "position_start": 1174,
-          "position_end": 1179
-        },
-        {
-          "word_in_sentence": "paraplydrink",
-          "base_form": "paraplydrink",
-          "position_start": 1196,
-          "position_end": 1208
-        },
-        {
-          "word_in_sentence": "mat",
-          "base_form": "mat",
-          "position_start": 11,
-          "position_end": 14
-        },
-        {
-          "word_in_sentence": "choklad",
-          "base_form": "choklad",
-          "position_start": 1495,
-          "position_end": 1502
-        },
-        {
-          "word_in_sentence": "banan",
-          "base_form": "banan",
-          "position_start": 590,
-          "position_end": 595
-        },
-        {
-          "word_in_sentence": "kolhydrat",
-          "base_form": "kolhydrat",
-          "position_start": 779,
-          "position_end": 788
-        },
-        {
-          "word_in_sentence": "kaka",
-          "base_form": "kaka",
-          "position_start": 1444,
-          "position_end": 1448
-        },
-        {
-          "word_in_sentence": "lättyoghurt",
-          "base_form": "lättyoghurt",
-          "position_start": 1549,
-          "position_end": 1560
-        },
-        {
-          "word_in_sentence": "grönsak",
-          "base_form": "grönsak",
-          "position_start": 557,
-          "position_end": 564
-        },
-        {
-          "word_in_sentence": "odla",
-          "base_form": "odla",
-          "position_start": 1636,
-          "position_end": 1640
-        },
-        {
-          "word_in_sentence": "baka",
-          "base_form": "baka",
-          "position_start": 48,
-          "position_end": 52
-        },
-        {
-          "word_in_sentence": "sylta",
-          "base_form": "sylta",
-          "position_start": 1665,
-          "position_end": 1670
-        },
-        {
-          "word_in_sentence": "safta",
-          "base_form": "safta",
-          "position_start": 1675,
-          "position_end": 1680
-        },
-        {
-          "word_in_sentence": "salamikorv",
-          "base_form": "salamikorv",
-          "position_start": 872,
-          "position_end": 882
-        },
-        {
-          "word_in_sentence": "gå ut och äta",
-          "base_form": "gå ut och äta",
-          "position_start": 304,
-          "position_end": 317
-        },
-        {
-          "word_in_sentence": "havsvatten",
-          "base_form": "havsvatten",
-          "position_start": 1285,
-          "position_end": 1295
-        },
-        {
-          "word_in_sentence": "törstigare",
-          "base_form": "törstigare",
-          "position_start": 1310,
-          "position_end": 1320
-        },
-        {
-          "word_in_sentence": "restaurang",
-          "base_form": "restaurang",
-          "position_start": 490,
-          "position_end": 500
-        },
-        {
-          "word_in_sentence": "mat för dagen",
-          "base_form": "mat för dagen",
-          "position_start": 1581,
-          "position_end": 1594
-        },
-        {
-          "word_in_sentence": "dramatisk",
-          "base_form": "dramatisk",
-          "position_start": 1608,
-          "position_end": 1617
-        },
-        {
-          "word_in_sentence": "hungrig som en varg",
-          "base_form": "hungrig som en varg",
-          "position_start": 182,
-          "position_end": 201
-        },
-        {
-          "word_in_sentence": "att äta som en häst",
-          "base_form": "att äta som en häst",
-          "position_start": 234,
-          "position_end": 253
-        },
-        {
-          "word_in_sentence": "föda",
-          "base_form": "föda",
-          "position_start": 928,
-          "position_end": 932
-        },
-        {
-          "word_in_sentence": "dramatik",
-          "base_form": "dramatik",
-          "position_start": 99,
-          "position_end": 107
-        },
-        {
-          "word_in_sentence": "dramatiker",
-          "base_form": "dramatiker",
-          "position_start": 99,
-          "position_end": 109
-        },
-        {
-          "word_in_sentence": "provsmaka",
-          "base_form": "provsmaka",
-          "position_start": 857,
-          "position_end": 866
-        },
-        {
-          "word_in_sentence": "blodtörstig",
-          "base_form": "blodtörstig",
-          "position_start": 646,
-          "position_end": 657
-        },
-        {
-          "word_in_sentence": "lättlagad",
-          "base_form": "lättlagad",
-          "position_start": 518,
-          "position_end": 527
-        },
-        {
-          "word_in_sentence": "plockmat",
-          "base_form": "plockmat",
-          "position_start": 528,
-          "position_end": 536
-        },
-        {
-          "word_in_sentence": "hämtmat",
-          "base_form": "hämtmat",
-          "position_start": 363,
-          "position_end": 370
-        },
-        {
-          "word_in_sentence": "godis",
-          "base_form": "godis",
-          "position_start": 1465,
-          "position_end": 1470
-        },
-        {
-          "word_in_sentence": "smågodis",
-          "base_form": "smågodis",
-          "position_start": 1477,
-          "position_end": 1485
-        },
-        {
-          "word_in_sentence": "äpple",
-          "base_form": "äpple",
-          "position_start": 580,
-          "position_end": 585
-        },
-        {
-          "word_in_sentence": "socker",
-          "base_form": "socker",
-          "position_start": 1238,
-          "position_end": 1244
-        },
-        {
-          "word_in_sentence": "Ska vi ta en fika?",
-          "base_form": "Ska vi ta en fika?",
-          "position_start": 1399,
-          "position_end": 1417
-        },
-        {
-          "word_in_sentence": "För en stund",
-          "base_form": "för en stund",
-          "position_start": 320,
-          "position_end": 332
-        },
-        {
-          "word_in_sentence": "nivå",
-          "base_form": "nivå",
-          "position_start": 1006,
-          "position_end": 1010
-        },
-        {
-          "word_in_sentence": "tom",
-          "base_form": "tom",
-          "position_start": 267,
-          "position_end": 270
-        },
-        {
-          "word_in_sentence": "hellre baka en kaka än",
-          "base_form": "hellre … än",
-          "position_start": 1429,
-          "position_end": 1451
-        },
-        {
-          "word_in_sentence": "trång",
-          "base_form": "trång",
-          "position_start": 387,
-          "position_end": 392
-        },
-        {
-          "word_in_sentence": "nästnästa",
-          "base_form": "nästnästa",
-          "position_start": 1739,
-          "position_end": 1748
-        },
-        {
-          "word_in_sentence": "försvinna",
-          "base_form": "försvinna",
-          "position_start": 1785,
-          "position_end": 1794
-        },
-        {
-          "word_in_sentence": "mentalt",
-          "base_form": "mentalt",
-          "position_start": 411,
-          "position_end": 418
-        },
-        {
-          "word_in_sentence": "Det är inte sant!",
-          "base_form": "Det är inte sant!",
-          "position_start": 598,
-          "position_end": 615
-        },
-        {
-          "word_in_sentence": "obekväm",
-          "base_form": "obekväm",
-          "position_start": 755,
-          "position_end": 762
-        },
-        {
-          "word_in_sentence": "getingstick",
-          "base_form": "getingstick",
-          "position_start": 684,
-          "position_end": 695
-        },
-        {
-          "word_in_sentence": "Istället för att…",
-          "base_form": "Istället för att…",
-          "position_start": 466,
-          "position_end": 483
-        },
-        {
-          "word_in_sentence": "kritisk",
-          "base_form": "kritisk",
-          "position_start": 809,
-          "position_end": 816
-        },
-        {
-          "word_in_sentence": "sprida sig",
-          "base_form": "sprida sig",
-          "position_start": 1037,
-          "position_end": 1047
-        },
-        {
-          "word_in_sentence": "vara säker på",
-          "base_form": "vara säker på",
-          "position_start": 1332,
-          "position_end": 1345
-        },
-        {
-          "word_in_sentence": "misslyckande",
-          "base_form": "misslyckande",
-          "position_start": 962,
-          "position_end": 974
-        },
-        {
-          "word_in_sentence": "Var och en",
-          "base_form": "var och en",
-          "position_start": 1049,
-          "position_end": 1059
-        },
-        {
-          "word_in_sentence": "kommentar",
-          "base_form": "kommentar",
-          "position_start": 701,
-          "position_end": 710
-        },
-        {
-          "word_in_sentence": "sakna",
-          "base_form": "sakna",
-          "position_start": 922,
-          "position_end": 927
-        },
-        {
-          "word_in_sentence": "år",
-          "base_form": "år",
-          "position_start": 24,
-          "position_end": 26
-        },
-        {
-          "word_in_sentence": "Efter att ha",
-          "base_form": "efter att ha",
-          "position_start": 143,
-          "position_end": 155
-        },
-        {
-          "word_in_sentence": "liknande",
-          "base_form": "liknande",
-          "position_start": 1701,
-          "position_end": 1709
+            "sentence_id": "art12_s001",
+            "sv": "Jag älskar mat. I många år har jag tyckt om att baka och laga goda rätter. Min vän, som är en känd dramatiker, älskar mycket dramatik i köket. Efter att ha jobbat hela dagen var han hungrig som en varg. Han brukar säga att han gillar att äta som en häst när magen är tom. Jag tänkte föreslå att vi kunde gå ut och äta.\n\nFör en stund tänkte jag att vi skulle köpa hämtmat. Men hallen var trång och jag kände mig mentalt trött efter jobbet. Vi valde att stanna hemma. Istället för att… gå på restaurang, började vi laga lättlagad plockmat och skära upp varje grönsak samt frukt som äpple och banan. \"Det är inte sant!\" ropade min vän plötsligt. En blodtörstig mygga hade gett honom ett getingstick. \"En kommentar till,\" sa han, \"och jag dör. Jag känner mig obekväm och behöver mer kolhydrat. Jag vill inte vara kritisk, men jag måste äta.\"\n\nJag bad honom att provsmaka lite salamikorv. \"Du måste äta ordentligt för att inte sakna föda,\" sa jag. För att slippa ett misslyckande serverade jag rätten på en hög nivå. Doften av vitlök började sprida sig. Var och en fick en tallrik.\n\nVi ville dricka något gott. Jag drack kall läsk medan han tog en ljus öl. Ibland blandar han en drink, kanske en stor paraplydrink, men nu drack vi utan mycket socker. Vatten är annars bäst, för dricker man havsvatten blir man bara törstigare. Jag kunde vara säker på att min vän var nöjd. \n\nEfter middagen undrade jag: \"Ska vi ta en fika?\" Jag ville hellre baka en kaka än att äta köpt godis eller smågodis. Vi hade choklad hemma. Min vän ville dock bara ha en skål med lättyoghurt. Han tyckte att min mat för dagen var lite för dramatisk. Vi talade om att odla bär och hur man brukade sylta och safta förr i tiden, eller liknande saker. Jag hoppas vi kan ses nästnästa vecka igen, innan all glädje hinner försvinna.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "öl",
+                    "base_form": "öl",
+                    "position_start": 1148,
+                    "position_end": 1150
+                },
+                {
+                    "word_in_sentence": "läsk",
+                    "base_form": "läsk",
+                    "position_start": 1121,
+                    "position_end": 1125
+                },
+                {
+                    "word_in_sentence": "dricka",
+                    "base_form": "dricka",
+                    "position_start": 1087,
+                    "position_end": 1093
+                },
+                {
+                    "word_in_sentence": "drink",
+                    "base_form": "drink",
+                    "position_start": 1174,
+                    "position_end": 1179
+                },
+                {
+                    "word_in_sentence": "paraplydrink",
+                    "base_form": "paraplydrink",
+                    "position_start": 1196,
+                    "position_end": 1208
+                },
+                {
+                    "word_in_sentence": "mat",
+                    "base_form": "mat",
+                    "position_start": 11,
+                    "position_end": 14
+                },
+                {
+                    "word_in_sentence": "choklad",
+                    "base_form": "choklad",
+                    "position_start": 1495,
+                    "position_end": 1502
+                },
+                {
+                    "word_in_sentence": "banan",
+                    "base_form": "banan",
+                    "position_start": 590,
+                    "position_end": 595
+                },
+                {
+                    "word_in_sentence": "kolhydrat",
+                    "base_form": "kolhydrat",
+                    "position_start": 779,
+                    "position_end": 788
+                },
+                {
+                    "word_in_sentence": "kaka",
+                    "base_form": "kaka",
+                    "position_start": 1444,
+                    "position_end": 1448
+                },
+                {
+                    "word_in_sentence": "lättyoghurt",
+                    "base_form": "lättyoghurt",
+                    "position_start": 1549,
+                    "position_end": 1560
+                },
+                {
+                    "word_in_sentence": "grönsak",
+                    "base_form": "grönsak",
+                    "position_start": 557,
+                    "position_end": 564
+                },
+                {
+                    "word_in_sentence": "odla",
+                    "base_form": "odla",
+                    "position_start": 1636,
+                    "position_end": 1640
+                },
+                {
+                    "word_in_sentence": "baka",
+                    "base_form": "baka",
+                    "position_start": 48,
+                    "position_end": 52
+                },
+                {
+                    "word_in_sentence": "sylta",
+                    "base_form": "sylta",
+                    "position_start": 1665,
+                    "position_end": 1670
+                },
+                {
+                    "word_in_sentence": "safta",
+                    "base_form": "safta",
+                    "position_start": 1675,
+                    "position_end": 1680
+                },
+                {
+                    "word_in_sentence": "salamikorv",
+                    "base_form": "salamikorv",
+                    "position_start": 872,
+                    "position_end": 882
+                },
+                {
+                    "word_in_sentence": "gå ut och äta",
+                    "base_form": "gå ut och äta",
+                    "position_start": 304,
+                    "position_end": 317
+                },
+                {
+                    "word_in_sentence": "havsvatten",
+                    "base_form": "havsvatten",
+                    "position_start": 1285,
+                    "position_end": 1295
+                },
+                {
+                    "word_in_sentence": "törstigare",
+                    "base_form": "törstigare",
+                    "position_start": 1310,
+                    "position_end": 1320
+                },
+                {
+                    "word_in_sentence": "restaurang",
+                    "base_form": "restaurang",
+                    "position_start": 490,
+                    "position_end": 500
+                },
+                {
+                    "word_in_sentence": "mat för dagen",
+                    "base_form": "mat för dagen",
+                    "position_start": 1581,
+                    "position_end": 1594
+                },
+                {
+                    "word_in_sentence": "dramatisk",
+                    "base_form": "dramatisk",
+                    "position_start": 1608,
+                    "position_end": 1617
+                },
+                {
+                    "word_in_sentence": "hungrig som en varg",
+                    "base_form": "hungrig som en varg",
+                    "position_start": 182,
+                    "position_end": 201
+                },
+                {
+                    "word_in_sentence": "att äta som en häst",
+                    "base_form": "att äta som en häst",
+                    "position_start": 234,
+                    "position_end": 253
+                },
+                {
+                    "word_in_sentence": "föda",
+                    "base_form": "föda",
+                    "position_start": 928,
+                    "position_end": 932
+                },
+                {
+                    "word_in_sentence": "dramatik",
+                    "base_form": "dramatik",
+                    "position_start": 99,
+                    "position_end": 107
+                },
+                {
+                    "word_in_sentence": "dramatiker",
+                    "base_form": "dramatiker",
+                    "position_start": 99,
+                    "position_end": 109
+                },
+                {
+                    "word_in_sentence": "provsmaka",
+                    "base_form": "provsmaka",
+                    "position_start": 857,
+                    "position_end": 866
+                },
+                {
+                    "word_in_sentence": "blodtörstig",
+                    "base_form": "blodtörstig",
+                    "position_start": 646,
+                    "position_end": 657
+                },
+                {
+                    "word_in_sentence": "lättlagad",
+                    "base_form": "lättlagad",
+                    "position_start": 518,
+                    "position_end": 527
+                },
+                {
+                    "word_in_sentence": "plockmat",
+                    "base_form": "plockmat",
+                    "position_start": 528,
+                    "position_end": 536
+                },
+                {
+                    "word_in_sentence": "hämtmat",
+                    "base_form": "hämtmat",
+                    "position_start": 363,
+                    "position_end": 370
+                },
+                {
+                    "word_in_sentence": "godis",
+                    "base_form": "godis",
+                    "position_start": 1465,
+                    "position_end": 1470
+                },
+                {
+                    "word_in_sentence": "smågodis",
+                    "base_form": "smågodis",
+                    "position_start": 1477,
+                    "position_end": 1485
+                },
+                {
+                    "word_in_sentence": "äpple",
+                    "base_form": "äpple",
+                    "position_start": 580,
+                    "position_end": 585
+                },
+                {
+                    "word_in_sentence": "socker",
+                    "base_form": "socker",
+                    "position_start": 1238,
+                    "position_end": 1244
+                },
+                {
+                    "word_in_sentence": "Ska vi ta en fika?",
+                    "base_form": "Ska vi ta en fika?",
+                    "position_start": 1399,
+                    "position_end": 1417
+                },
+                {
+                    "word_in_sentence": "För en stund",
+                    "base_form": "för en stund",
+                    "position_start": 320,
+                    "position_end": 332
+                },
+                {
+                    "word_in_sentence": "nivå",
+                    "base_form": "nivå",
+                    "position_start": 1006,
+                    "position_end": 1010
+                },
+                {
+                    "word_in_sentence": "tom",
+                    "base_form": "tom",
+                    "position_start": 267,
+                    "position_end": 270
+                },
+                {
+                    "word_in_sentence": "hellre baka en kaka än",
+                    "base_form": "hellre … än",
+                    "position_start": 1429,
+                    "position_end": 1451
+                },
+                {
+                    "word_in_sentence": "trång",
+                    "base_form": "trång",
+                    "position_start": 387,
+                    "position_end": 392
+                },
+                {
+                    "word_in_sentence": "nästnästa",
+                    "base_form": "nästnästa",
+                    "position_start": 1739,
+                    "position_end": 1748
+                },
+                {
+                    "word_in_sentence": "försvinna",
+                    "base_form": "försvinna",
+                    "position_start": 1785,
+                    "position_end": 1794
+                },
+                {
+                    "word_in_sentence": "Det är inte sant!",
+                    "base_form": "Det är inte sant!",
+                    "position_start": 598,
+                    "position_end": 615
+                },
+                {
+                    "word_in_sentence": "obekväm",
+                    "base_form": "obekväm",
+                    "position_start": 755,
+                    "position_end": 762
+                },
+                {
+                    "word_in_sentence": "getingstick",
+                    "base_form": "getingstick",
+                    "position_start": 684,
+                    "position_end": 695
+                },
+                {
+                    "word_in_sentence": "Istället för att…",
+                    "base_form": "Istället för att…",
+                    "position_start": 466,
+                    "position_end": 483
+                },
+                {
+                    "word_in_sentence": "kritisk",
+                    "base_form": "kritisk",
+                    "position_start": 809,
+                    "position_end": 816
+                },
+                {
+                    "word_in_sentence": "sprida sig",
+                    "base_form": "sprida sig",
+                    "position_start": 1037,
+                    "position_end": 1047
+                },
+                {
+                    "word_in_sentence": "vara säker på",
+                    "base_form": "vara säker på",
+                    "position_start": 1332,
+                    "position_end": 1345
+                },
+                {
+                    "word_in_sentence": "misslyckande",
+                    "base_form": "misslyckande",
+                    "position_start": 962,
+                    "position_end": 974
+                },
+                {
+                    "word_in_sentence": "Var och en",
+                    "base_form": "var och en",
+                    "position_start": 1049,
+                    "position_end": 1059
+                },
+                {
+                    "word_in_sentence": "kommentar",
+                    "base_form": "kommentar",
+                    "position_start": 701,
+                    "position_end": 710
+                },
+                {
+                    "word_in_sentence": "sakna",
+                    "base_form": "sakna",
+                    "position_start": 922,
+                    "position_end": 927
+                },
+                {
+                    "word_in_sentence": "år",
+                    "base_form": "år",
+                    "position_start": 24,
+                    "position_end": 26
+                },
+                {
+                    "word_in_sentence": "Efter att ha",
+                    "base_form": "efter att ha",
+                    "position_start": 143,
+                    "position_end": 155
+                },
+                {
+                    "word_in_sentence": "liknande",
+                    "base_form": "liknande",
+                    "position_start": 1701,
+                    "position_end": 1709
+                }
+            ]
         }
-      ]
-    }
-  ],
-  "primary_words_used": [
-    "öl",
-    "läsk",
-    "dricka",
-    "drink",
-    "paraplydrink",
-    "mat",
-    "choklad",
-    "banan",
-    "kolhydrat",
-    "kaka",
-    "lättyoghurt",
-    "grönsak",
-    "odla",
-    "baka",
-    "sylta",
-    "safta",
-    "salamikorv",
-    "gå ut och äta",
-    "havsvatten",
-    "törstigare",
-    "restaurang",
-    "mat för dagen",
-    "dramatisk",
-    "hungrig som en varg",
-    "att äta som en häst",
-    "föda",
-    "dramatik",
-    "dramatiker",
-    "provsmaka",
-    "blodtörstig",
-    "lättlagad",
-    "plockmat",
-    "hämtmat",
-    "godis",
-    "smågodis",
-    "äpple",
-    "socker",
-    "Ska vi ta en fika?",
-    "för en stund",
-    "nivå",
-    "tom",
-    "hellre … än",
-    "trång",
-    "nästnästa",
-    "försvinna",
-    "ntally",
-    "Det är inte sant!",
-    "obekväm",
-    "getingstick",
-    "Istället för att…",
-    "kritisk",
-    "sprida sig",
-    "vara säker på",
-    "misslyckande",
-    "var och en",
-    "kommentar",
-    "sakna",
-    "år",
-    "efter att ha",
-    "liknande"
-  ],
-  "secondary_words_used": []
+    ],
+    "primary_words_used": [
+        "öl",
+        "läsk",
+        "dricka",
+        "drink",
+        "paraplydrink",
+        "mat",
+        "choklad",
+        "banan",
+        "kolhydrat",
+        "kaka",
+        "lättyoghurt",
+        "grönsak",
+        "odla",
+        "baka",
+        "sylta",
+        "safta",
+        "salamikorv",
+        "gå ut och äta",
+        "havsvatten",
+        "törstigare",
+        "restaurang",
+        "mat för dagen",
+        "dramatisk",
+        "hungrig som en varg",
+        "att äta som en häst",
+        "föda",
+        "dramatik",
+        "dramatiker",
+        "provsmaka",
+        "blodtörstig",
+        "lättlagad",
+        "plockmat",
+        "hämtmat",
+        "godis",
+        "smågodis",
+        "äpple",
+        "socker",
+        "Ska vi ta en fika?",
+        "för en stund",
+        "nivå",
+        "tom",
+        "hellre … än",
+        "trång",
+        "nästnästa",
+        "försvinna",
+        "Det är inte sant!",
+        "obekväm",
+        "getingstick",
+        "Istället för att…",
+        "kritisk",
+        "sprida sig",
+        "vara säker på",
+        "misslyckande",
+        "var och en",
+        "kommentar",
+        "sakna",
+        "år",
+        "efter att ha",
+        "liknande"
+    ],
+    "secondary_words_used": []
 }
