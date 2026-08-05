@@ -134,7 +134,9 @@ AI 生成的结果必须被序列化为严格遵循三层嵌套架构的 JSON �
 *   `target_words`: 句子中出现的目标词汇数组。
     *   `word_in_sentence`: 单词在句子中的实际形态（可能发生了变位）。
     *   `base_form`: 字典基本形态（必须与 `master_dict.json` 中的 key 完全匹配）。
+    *   `contextual_en`: 该单词在当前句子特定语境下的英文翻译。
     *   `position_start` / `position_end`: 基于 `sv` 字符串的 0 索引字符边界 `[start, end)`，用于 UI 精确高亮。
+*   `secondary_words`: 额外的非大纲拓展词汇数组（针对 B1 学习者有难度的动词、名词等）。它的对象结构与 `target_words` 完全一致（包含 `word_in_sentence`, `base_form`, `contextual_en`, `position_start`, `position_end`）。
 *   `primary_words_used`: 在本篇文章中完成“主出场”的词汇。
 *   `secondary_words_used`: 在本篇文章中作为自然复现上下文的词汇。
 
@@ -184,8 +186,9 @@ Your task is to write a highly coherent, natural-sounding article in Swedish tha
 You must output strictly in JSON format matching the requested 3-layer schema (Course -> Stage -> Article).
 - "sv": The Swedish sentence string MUST be plain text. DO NOT use markdown, HTML, or **bold** tags.
 - "en": You MUST provide the English translation for the ENTIRE Swedish sentence. Do not just translate the isolated target words.
-- "target_words": For each target word used in the sentence, identify its exact inflected form ("word_in_sentence"), its original base form ("base_form"), and its precise 0-indexed character positions ("position_start" and "position_end") in the "sv" string.
-- You are strictly FORBIDDEN from skipping any word from the target vocabulary list. All words must have their primary appearance.
+- "target_words": For each target word used in the sentence, identify its exact inflected form ("word_in_sentence"), its original base form ("base_form"), its contextual English translation ("contextual_en"), and its precise 0-indexed character positions ("position_start" and "position_end") in the "sv" string.
+- "secondary_words": In addition to the target words, voluntarily select 20-30 other moderately difficult or useful B1-level words across the article. Extract them into this array using the exact same fields as target_words (including `contextual_en`). Do not extract trivial A1 words (like "och", "att", "är").
+- You are strictly FORBIDDEN from skipping any word from the target vocabulary list. All target words must have their primary appearance.
 ```
 
 ## 9. 错误处理

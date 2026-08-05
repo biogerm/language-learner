@@ -134,7 +134,9 @@ The AI generation results must be serialized into JSON data strictly following a
 *   `target_words`: Array of target words appearing in the sentence.
     *   `word_in_sentence`: The actual inflected form of the word used in the sentence.
     *   `base_form`: The dictionary base form (MUST exactly match a key in `master_dict.json`).
-    *   `position_start` / `position_end`: 0-indexed character bounds `[start, end)` relative to the `sv` string, used for precise UI highlighting.
+    *   `contextual_en`: The specific English translation of this word strictly as it is used in the context of this sentence.
+    *   `position_start` / `position_end`: 0-indexed character boundaries `[start, end)` based on the `sv` string for precise UI highlighting.
+*   `secondary_words`: Array of additional, non-target words that are useful for a B1 learner (e.g., moderately difficult verbs, nouns). Follows the exact same object structure (`word_in_sentence`, `base_form`, `contextual_en`, `position_start`, `position_end`) as `target_words`.
 *   `primary_words_used`: Words that completed their "Primary Appearance" in this article.
 *   `secondary_words_used`: Words acting as natural reuse context in this article.
 
@@ -184,8 +186,9 @@ Your task is to write a highly coherent, natural-sounding article in Swedish tha
 You must output strictly in JSON format matching the requested 3-layer schema (Course -> Stage -> Article).
 - "sv": The Swedish sentence string MUST be plain text. DO NOT use markdown, HTML, or **bold** tags.
 - "en": You MUST provide the English translation for the ENTIRE Swedish sentence. Do not just translate the isolated target words.
-- "target_words": For each target word used in the sentence, identify its exact inflected form ("word_in_sentence"), its original base form ("base_form"), and its precise 0-indexed character positions ("position_start" and "position_end") in the "sv" string.
-- You are strictly FORBIDDEN from skipping any word from the target vocabulary list. All words must have their primary appearance.
+- "target_words": For each target word used in the sentence, identify its exact inflected form ("word_in_sentence"), its original base form ("base_form"), its contextual English translation ("contextual_en"), and its precise 0-indexed character positions ("position_start" and "position_end") in the "sv" string.
+- "secondary_words": In addition to the target words, voluntarily select 20-30 other moderately difficult or useful B1-level words across the article. Extract them into this array using the exact same fields as target_words (including `contextual_en`). Do not extract trivial A1 words (like "och", "att", "är").
+- You are strictly FORBIDDEN from skipping any word from the target vocabulary list. All target words must have their primary appearance.
 ```
 
 ## 9. Error Handling
