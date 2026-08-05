@@ -1316,7 +1316,7 @@
           "secondary_words_used": []
         }
       ],
-      "stage_id": "step_01",
+      "stage_id": "stage_01",
       "stage_title": "Arbetsliv"
     },
     {
@@ -4381,7 +4381,7 @@
           "secondary_words_used": []
         }
       ],
-      "stage_id": "step_02",
+      "stage_id": "stage_02",
       "stage_title": "Samhälle & Politik"
     },
     {
@@ -7446,7 +7446,7 @@
           "secondary_words_used": []
         }
       ],
-      "stage_id": "step_03",
+      "stage_id": "stage_03",
       "stage_title": "Vardagsliv"
     },
     {
@@ -10948,7 +10948,7 @@
           "secondary_words_used": []
         }
       ],
-      "stage_id": "step_04",
+      "stage_id": "stage_04",
       "stage_title": "Relationer & Känslor"
     },
     {
@@ -12702,7 +12702,7 @@
           "secondary_words_used": []
         }
       ],
-      "stage_id": "step_05",
+      "stage_id": "stage_05",
       "stage_title": "Utbildning"
     },
     {
@@ -15330,7 +15330,7 @@
           "secondary_words_used": []
         }
       ],
-      "stage_id": "step_06",
+      "stage_id": "stage_06",
       "stage_title": "Hälsa & Medicin"
     },
     {
@@ -17521,7 +17521,7 @@
           "secondary_words_used": []
         }
       ],
-      "stage_id": "step_07",
+      "stage_id": "stage_07",
       "stage_title": "Natur & Miljö"
     },
     {
@@ -20586,7 +20586,7 @@
           "secondary_words_used": []
         }
       ],
-      "stage_id": "step_08",
+      "stage_id": "stage_08",
       "stage_title": "Kultur & Nöje"
     },
     {
@@ -21903,7 +21903,7 @@
           "secondary_words_used": []
         }
       ],
-      "stage_id": "step_09",
+      "stage_id": "stage_09",
       "stage_title": "Resor & Transport"
     },
     {
@@ -24094,7 +24094,7 @@
           "secondary_words_used": []
         }
       ],
-      "stage_id": "step_10",
+      "stage_id": "stage_10",
       "stage_title": "Mat & Matlagning"
     },
     {
@@ -24974,7 +24974,7 @@
           "secondary_words_used": []
         }
       ],
-      "stage_id": "step_11",
+      "stage_id": "stage_11",
       "stage_title": "Vetenskap & Teknik"
     }
   ]
