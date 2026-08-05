@@ -5,14 +5,14 @@
   "sentences": [
     {
       "sentence_id": "art37_s001",
-      "sv": "När sommaren började närma sig, ville jag fira och festa varje helg. Efter många lata dagar var jag extremt partysugen och ville starta min semester på en stor musikfestival. Först var jag tvungen att boka boende i god tid. Jag hittade en plats bakom ett stort varuhus i närheten, och min plan var att ställa en vagn där ifall det skulle börja regna. \n\n\"Gillar du festivaler?\" frågade min vän, som var en känd finlandssvensk sångare och artist. \n\"Jo, det är helt okej.\" sa jag och log stort. \n\"På vilket sätt?\" frågade han då. \n\"Festivaler är en del av min identitet, och ungdomskultur är viktig för mig på många olika sätt\", svarade jag.\n\nDenna festival var som en mäktig konst- och industriutställning, och här fanns även spännande matkultur. Man kunde äta en stor festmåltid med lokalt kött och färskt bröd. Det kunde ofta tillkomma avgifter för maten, men det var guld värt ändå.\n\nI slutet av kvällen skulle en känd musiker som hette Stry spela hög punkmusik. Hans röst var kristallklar och energin var enorm. \n\"Det låter hemskt!\" ropade min andra kompis med viss skepsis. Han gillade absolut inte hög musik. Istället för att lyssna, föredrog han att gå på en tyst biograf. \n\nHan gjorde en jättesnabb sökning på sin smarta mobil, tittade på en digital karta och visade oss vägen. Vi hade rest genom stora delar av norra Sverige.\n\"Jag såg en fantastisk deckare nyligen. Det var min favoritfilm,\" sa han entusiastiskt. \"Filmen utspelar sig i kallaste Norrland. Filmen handlar om… ett allvarligt brott. Filmen bygger på en bok av… en känd författare, på engelska kallad en book. Filmen bygger på en verklig händelse.\" \n\"Spännande!\" sa jag. \"Själv gillar jag komedi och läskig skräckfilm.\" \n\"Den var urkul,\" sa min vän. \n\nDagen efter deltog vi i en traditionell bryggdans. All denna festlighet kunde fungera som en positiv förändring i våra liv. Vid kontakt med så mycket glädje kände jag att glädjen kunde ta fart på riktigt. Jag började till och med skriva om en gammal dikt, och tänkte på svensk grammatik och vad ett perfekt particip är. Om jag var ekonomiskt oberoende skulle jag leva så här för alltid.",
+      "sv": "När sommaren började närma sig, ville jag fira och festa varje helg. Efter många lata dagar var jag extremt partysugen och ville starta min semester på en stor musikfestival. Först var jag tvungen att boka boende i god tid. Jag hittade en plats bakom ett stort varuhus i närheten, och min plan var att ställa en vagn där ifall det skulle börja regna. \n\n\"Gillar du festivaler?\" frågade min vän, som var en känd finlandssvensk sångare och artist. \n\"Jo, det är helt okej.\" sa jag och log stort. \n\"På vilket sätt?\" frågade han då. \n\"Festivaler är en del av min identitet, och ungdomskultur är viktig för mig på många olika sätt\", svarade jag.\n\nDenna festival var som en mäktig konst- och industriutställning, och här fanns även spännande matkultur. Man kunde äta en stor festmåltid med lokalt kött och färskt bröd. Det kunde ofta tillkomma avgifter för maten, men det var guld värt ändå.\n\nI slutet av kvällen skulle en känd musiker som hette Stry spela hög punkmusik. Hans röst var kristallklar och energin var enorm. \n\"Det låter hemskt!\" ropade min andra kompis med viss skepsis. Han gillade absolut inte hög musik. Istället för att lyssna, föredrog han att gå på en tyst biograf. \n\nHan gjorde en jättesnabb sökning på sin smarta mobil, tittade på en digital karta och visade oss vägen. Vi hade rest genom stora delar av norra Sverige.\n\"Jag såg en fantastisk deckare nyligen. Det var min favoritfilm,\" sa han entusiastiskt. \"Filmen utspelar sig i kallaste Norrland. Filmen handlar om… ett allvarligt brott. Filmen bygger på en bok av… en känd författare. Filmen bygger på en verklig händelse.\" \n\"Spännande!\" sa jag. \"Själv gillar jag komedi och läskig skräckfilm.\" \n\"Den var urkul,\" sa min vän. \n\nDagen efter deltog vi i en traditionell bryggdans. All denna festlighet kunde fungera som en positiv förändring i våra liv. Vid kontakt med så mycket glädje kände jag att glädjen kunde ta fart på riktigt. Jag började till och med skriva om en gammal dikt, och tänkte på svensk grammatik och vad ett perfekt particip är. Om jag var ekonomiskt oberoende skulle jag leva så här för alltid.",
       "en": "",
       "target_words": [
         {
           "word_in_sentence": "komedi",
           "base_form": "komedi",
-          "position_start": 1659,
-          "position_end": 1665
+          "position_start": 1631,
+          "position_end": 1637
         },
         {
           "word_in_sentence": "deckare",
@@ -23,8 +23,8 @@
         {
           "word_in_sentence": "skräckfilm",
           "base_form": "skräckfilm",
-          "position_start": 1677,
-          "position_end": 1687
+          "position_start": 1649,
+          "position_end": 1659
         },
         {
           "word_in_sentence": "favoritfilm",
@@ -35,14 +35,14 @@
         {
           "word_in_sentence": "urkul",
           "base_form": "urkul",
-          "position_start": 1700,
-          "position_end": 1705
+          "position_start": 1672,
+          "position_end": 1677
         },
         {
           "word_in_sentence": "bryggdans",
           "base_form": "bryggdans",
-          "position_start": 1762,
-          "position_end": 1771
+          "position_start": 1734,
+          "position_end": 1743
         },
         {
           "word_in_sentence": "en del av",
@@ -77,8 +77,8 @@
         {
           "word_in_sentence": "fungera som",
           "base_form": "fungera som",
-          "position_start": 1800,
-          "position_end": 1811
+          "position_start": 1772,
+          "position_end": 1783
         },
         {
           "word_in_sentence": "stora delar av",
@@ -153,22 +153,22 @@
           "position_end": 1531
         },
         {
-          "word_in_sentence": "book",
+          "word_in_sentence": "bok",
           "base_form": "book",
-          "position_start": 1574,
-          "position_end": 1578
+          "position_start": 201,
+          "position_end": 204
         },
         {
           "word_in_sentence": "Filmen bygger på en verklig händelse.",
           "base_form": "Filmen bygger på en verklig händelse.",
-          "position_start": 1580,
-          "position_end": 1617
+          "position_start": 1552,
+          "position_end": 1589
         },
         {
           "word_in_sentence": "skriva om",
           "base_form": "skriva om",
-          "position_start": 1952,
-          "position_end": 1961
+          "position_start": 1924,
+          "position_end": 1933
         },
         {
           "word_in_sentence": "biograf",
@@ -185,8 +185,8 @@
         {
           "word_in_sentence": "perfekt particip",
           "base_form": "perfekt particip",
-          "position_start": 2021,
-          "position_end": 2037
+          "position_start": 1993,
+          "position_end": 2009
         },
         {
           "word_in_sentence": "punkmusik",
@@ -197,8 +197,8 @@
         {
           "word_in_sentence": "ta fart",
           "base_form": "ta fart",
-          "position_start": 1907,
-          "position_end": 1914
+          "position_start": 1879,
+          "position_end": 1886
         },
         {
           "word_in_sentence": "smarta mobil",
@@ -221,8 +221,8 @@
         {
           "word_in_sentence": "festlighet",
           "base_form": "festlighet",
-          "position_start": 1783,
-          "position_end": 1793
+          "position_start": 1755,
+          "position_end": 1765
         },
         {
           "word_in_sentence": "vagn",
@@ -263,8 +263,8 @@
         {
           "word_in_sentence": "förändring",
           "base_form": "förändring",
-          "position_start": 1823,
-          "position_end": 1833
+          "position_start": 1795,
+          "position_end": 1805
         },
         {
           "word_in_sentence": "på många olika sätt",
@@ -341,8 +341,8 @@
         {
           "word_in_sentence": "ekonomiskt oberoende",
           "base_form": "ekonomiskt oberoende",
-          "position_start": 2053,
-          "position_end": 2073
+          "position_start": 2025,
+          "position_end": 2045
         },
         {
           "word_in_sentence": "På vilket sätt?",
@@ -353,8 +353,8 @@
         {
           "word_in_sentence": "Vid kontakt med",
           "base_form": "vid kontakt med",
-          "position_start": 1846,
-          "position_end": 1861
+          "position_start": 1818,
+          "position_end": 1833
         },
         {
           "word_in_sentence": "skepsis",
