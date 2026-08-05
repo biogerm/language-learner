@@ -160,15 +160,28 @@ AI 生成的结果必须被序列化为严格遵循三层嵌套架构的 JSON �
 4.  **ID 唯一性**: `sentence_id` 和 `article_id` 必须在全局唯一。
 5.  **翻译完整性**: `sentences` 数组中的 `sv` 和 `en` 字段不能为空字符串。
 
-## 8. 独立逐句翻译与双语校验 (Sub-step 2.4 & 2.5)
+## 8. AI 教师批改环节 (Sub-step 2.3)
 
 > [!IMPORTANT]
-> 翻译任务绝对不能与文章生成任务混在一起让 AI 一次性完成。文章的撰写、目标词提取以及全文双语翻译必须拆分为流水线上的独立步骤。
+> 为了确保生成的内容符合严格的教育标准，生成的每一篇文章都必须交由一个扮演“专业 SFI D 级语言教师”的次级 AI 智能体进行评审。
+
+对于每一篇生成的文章，教师智能体必须输出一份 Markdown 格式的批改报告，包含以下四项内容：
+1. **整体印象 (Helhetsintryck)**
+2. **语法和词汇 (Grammatik och Ordförråd)**：纠正任何不自然的表达或使用不当的动词短语。
+3. **结构和连贯度 (Struktur och Flyt)**
+4. **评分/建议 (Betyg/Rekommendation)**
+
+**精炼循环 (Refinement Loop)**：如果教师智能体给出了不及格的评分，或者指出了严重的行文不自然，这些反馈必须返回给生成智能体，强制其重写该文章。只有当教师智能体批准该文章（例如给出 Godkänt 或 Väl godkänt 评分）后，才允许进入翻译环节。
+
+## 9. 独立双语翻译与校验环节 (Sub-step 2.4 & 2.5)
+
+> [!IMPORTANT]
+> 翻译任务绝对不能与文章生成任务混在一起让 AI 一次性完成。文章的撰写必须与全文双语翻译拆分为流水线上的独立步骤。
 
 **Sub-step 2.4: 独立逐句翻译**
-当纯瑞典语文章通过了 2.3 环节的教师批改后，交由翻译 AI 进行逐句翻译。
+当纯瑞典语文章通过了 2.3 环节的教师批改后，交由专门的翻译 AI 进行逐句翻译，并同时提取目标词汇的坐标。
 翻译时的核心原则：**结构对齐与语法正确**。
-*   必须保证瑞典语原句与英语翻译在“句式结构”上尽可能保持相同（高度镜像对齐）。
+*   必须保证瑞典语原句与英语翻译在“句式结构”上尽可能保持相同（高度镜像对齐），以便学习者逐字对照。
 *   在保证句式对齐的同时，必须确保输出的英文符合绝对正确的英文语法。
 *   在此阶段，同时要求 AI 为句子中的 `target_words` 和 `secondary_words` 生成基于当前句子精确语境的 `contextual_en`。
 
@@ -177,16 +190,42 @@ AI 生成的结果必须被序列化为严格遵循三层嵌套架构的 JSON �
 *   **审查内容**：对比瑞典语原句和英文翻译，检查是否遗漏了子句、是否保持了相同的句式结构，以及英文语法是否正确。同时审查 `contextual_en` 是否精准。
 *   **精炼循环**：如果教师发现翻译与原句句式差异过大，或者存在英语语法错误，必须给出具体的修改建议，并打回给翻译模型强制重译。只有在教师完全批准后，才能组装最终的 JSON。
 
-## 9. AI Prompt 模板参考
+## 10. AI Prompt 模板参考
 
-由于任务被拆分，调用 LLM 时应根据具体步骤发送专属 Prompt。以下是针对“翻译与词汇提取 (Sub-step 2.4)”环节的提示词更新：
+由于任务被拆分，调用 LLM 时应根据具体步骤发送专属 Prompt。更新 Prompt 模板以严格强制执行 B1 级别和三层架构。
+
+### 10.1 瑞典语文章生成 Prompt (Sub-step 2.2)
+
+```text
+You are an expert Swedish language teacher specializing in CEFR Level B1 (SFI Level D). 
+Your task is to write a highly coherent, natural-sounding article in Swedish that seamlessly incorporates a specific list of target vocabulary words.
+
+# WRITING STANDARDS:
+1. Target Level: STRICTLY CEFR B1. Use grammatical structures appropriate for this level (e.g., subordinate clauses with 'att', 'eftersom', 'om'). Avoid overly academic C1/C2 phrasing.
+2. Context Clues: When using a target word, provide enough context so a learner can guess its meaning. Do not just make a list of disconnected sentences.
+3. Length & Flow: Write between 300-500 words. The article must have a clear beginning, middle, and end. 
+4. Sentence Length: Average 10-15 words per sentence. Mix short and long sentences naturally.
+5. Topic: Create an engaging story or essay about: {THEMATIC_STAGE_TITLE}. Give the article a meaningful title.
+
+# TARGET VOCABULARY (MUST USE 100%):
+{TARGET_WORDS_JSON}
+
+# CONSTRAINTS & OUTPUT FORMAT:
+You must output strictly in JSON format matching the requested 3-layer schema (Course -> Stage -> Article).
+- "sv": The Swedish sentence string MUST be plain text. DO NOT use markdown, HTML, or **bold** tags.
+- "en": Leave this empty for now, it will be handled by the translation step.
+- "target_words": Extract the words, but leave `contextual_en` empty for now.
+- You are strictly FORBIDDEN from skipping any word from the target vocabulary list. All target words must have their primary appearance.
+```
+
+### 10.2 独立逐句翻译与词汇提取 Prompt (Sub-step 2.4)
 
 ```text
 You are an expert bilingual translator (Swedish to English) assisting a CEFR Level B1 (SFI Level D) language teacher.
 You will receive a Swedish text. Your task is to process it sentence by sentence, providing translations and extracting specific words.
 
 # TRANSLATION STANDARDS:
-1. Structural Alignment: You MUST translate each sentence in a way that closely mirrors the original Swedish sentence structure. 
+1. Structural Alignment: You MUST translate each sentence in a way that closely mirrors the original Swedish sentence structure to help learners map words directly. 
 2. Grammatical Correctness: While mirroring the Swedish structure, the resulting English MUST still follow strictly correct English grammar.
 3. Sentence-by-Sentence: You must process and output the exact Swedish sentence ("sv") alongside its full English translation ("en").
 
@@ -197,7 +236,7 @@ You will receive a Swedish text. Your task is to process it sentence by sentence
 You must output strictly in the designated JSON schema.
 ```
 
-## 10. 错误处理
+## 11. 错误处理
 
 *   **JSON 验证失败**: 如果 AI 返回无效的 JSON 或未通过 Schema 验证，将精确的解析器错误消息返回给 AI 并要求重试。
 *   **覆盖率校验失败**: 如果遗漏了单词，提取遗漏的词汇并通过“纠正 Prompt”注入（例如："You missed the following words: ['word1']. Please rewrite the article to include ALL provided target words."）。
