@@ -28,10 +28,12 @@ Furthermore, this phase incorporates an Automatic Speech Recognition (ASR) loopb
 - **Deduplicate**: Words and sentences appearing multiple times across chapters are generated only once and shared.
 - **Voice Alternation (Male/Female)**: When generating sentence or word audio, the script MUST alternate between the voices in the voice pool (e.g., Sentence 1 uses Female, Sentence 2 uses Male, Sentence 3 uses Female; same for Words). This is crucial to prevent auditory fatigue and help learners adapt to different accents and genders.
 
-### 3.2 Concurrency
-- Use Python `asyncio` and the `edge-tts` library to achieve high-concurrency generation.
-- Cap the concurrency at `max_concurrent` to prevent triggering Edge API rate limits.
-- Flow for each sub-task: Call Edge TTS API -> Save as MP3 file.
+### 3.2 Concurrency & Rate Limit Evasion
+To achieve high-concurrency generation while avoiding Edge TTS API rate limits, implement the following robust generation loop:
+1. **Thread Pool**: Use Python's `concurrent.futures.ThreadPoolExecutor` (or `asyncio` equivalents) with `max_workers=10`. This strikes the optimal balance between generation speed and single-IP rate limits.
+2. **Robust Retry Loop**: Wrap each TTS API subprocess call in a loop allowing up to 10 retries.
+3. **Double Quality Validation**: Edge TTS may silently fail and generate empty 0KB files upon hitting a rate limit. Always verify that the output MP3 file exists AND its size is strictly `> 1024 bytes` before considering the generation successful.
+4. **Cooldown Sleep**: If an exception is caught or the file size validation fails, execute `time.sleep(1)` before the next loop iteration. This creates a natural "traffic desynchronization" allowing the rate limit to cool down.
 
 ### 3.3 File Naming Conventions
 - Sentence Audio: `sentences_audio/{sentence_id}.mp3` (e.g., `sentences_audio/art01_s001.mp3`)
