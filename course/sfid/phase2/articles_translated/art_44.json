@@ -16,13 +16,24 @@
                     "word_in_sentence": "svärdotter",
                     "base_form": "svärdotter",
                     "position_start": 4,
-                    "position_end": 14
+                    "position_end": 14,
+                    "contextual_en": "daughter-in-law"
                 },
                 {
                     "word_in_sentence": "i slutet på",
                     "base_form": "i slutet på",
                     "position_start": 28,
-                    "position_end": 39
+                    "position_end": 39,
+                    "contextual_en": "at the end of"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "besök",
+                    "base_form": "besök",
+                    "position_start": 22,
+                    "position_end": 27,
+                    "contextual_en": "visit"
                 }
             ]
         },
@@ -35,13 +46,31 @@
                     "word_in_sentence": "politiskt aktiv",
                     "base_form": "politiskt aktiv",
                     "position_start": 8,
-                    "position_end": 23
+                    "position_end": 23,
+                    "contextual_en": "politically active"
                 },
                 {
                     "word_in_sentence": "bonderepublik",
                     "base_form": "bonderepublik",
                     "position_start": 50,
-                    "position_end": 63
+                    "position_end": 63,
+                    "contextual_en": "peasant republic"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "hemland",
+                    "base_form": "hemland",
+                    "position_start": 31,
+                    "position_end": 38,
+                    "contextual_en": "home country"
+                },
+                {
+                    "word_in_sentence": "flytta",
+                    "base_form": "flytta",
+                    "position_start": 79,
+                    "position_end": 85,
+                    "contextual_en": "move"
                 }
             ]
         },
@@ -54,7 +83,24 @@
                     "word_in_sentence": "emigrera",
                     "base_form": "emigrera",
                     "position_start": 21,
-                    "position_end": 29
+                    "position_end": 29,
+                    "contextual_en": "emigrating"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "funderade",
+                    "base_form": "funderade",
+                    "position_start": 4,
+                    "position_end": 13,
+                    "contextual_en": "thought"
+                },
+                {
+                    "word_in_sentence": "frihet",
+                    "base_form": "frihet",
+                    "position_start": 52,
+                    "position_end": 58,
+                    "contextual_en": "freedom"
                 }
             ]
         },
@@ -67,7 +113,17 @@
                     "word_in_sentence": "styra",
                     "base_form": "styra",
                     "position_start": 44,
-                    "position_end": 49
+                    "position_end": 49,
+                    "contextual_en": "govern"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "ställde",
+                    "base_form": "ställde",
+                    "position_start": 4,
+                    "position_end": 11,
+                    "contextual_en": "asked"
                 }
             ]
         },
@@ -80,7 +136,17 @@
                     "word_in_sentence": "indelat",
                     "base_form": "indelat",
                     "position_start": 12,
-                    "position_end": 19
+                    "position_end": 19,
+                    "contextual_en": "divided"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "områden",
+                    "base_form": "områden",
+                    "position_start": 28,
+                    "position_end": 35,
+                    "contextual_en": "areas"
                 }
             ]
         },
@@ -93,19 +159,31 @@
                     "word_in_sentence": "kommun",
                     "base_form": "kommun",
                     "position_start": 7,
-                    "position_end": 13
+                    "position_end": 13,
+                    "contextual_en": "municipality"
                 },
                 {
                     "word_in_sentence": "landsting",
                     "base_form": "landsting",
                     "position_start": 18,
-                    "position_end": 27
+                    "position_end": 27,
+                    "contextual_en": "county council"
                 },
                 {
                     "word_in_sentence": "befolkning",
                     "base_form": "befolkning",
                     "position_start": 47,
-                    "position_end": 57
+                    "position_end": 57,
+                    "contextual_en": "population"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "ansvar",
+                    "base_form": "ansvar",
+                    "position_start": 32,
+                    "position_end": 38,
+                    "contextual_en": "responsibility"
                 }
             ]
         },
@@ -118,19 +196,38 @@
                     "word_in_sentence": "kommun",
                     "base_form": "kommun",
                     "position_start": 58,
-                    "position_end": 64
+                    "position_end": 64,
+                    "contextual_en": "municipal"
                 },
                 {
                     "word_in_sentence": "kollektivtrafik",
                     "base_form": "kollektivtrafik",
                     "position_start": 34,
-                    "position_end": 49
+                    "position_end": 49,
+                    "contextual_en": "public transport"
                 },
                 {
                     "word_in_sentence": "kommunal",
                     "base_form": "kommunal",
                     "position_start": 58,
-                    "position_end": 66
+                    "position_end": 66,
+                    "contextual_en": "municipal"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "kollektivtrafik",
+                    "base_form": "kollektivtrafik",
+                    "position_start": 34,
+                    "position_end": 49,
+                    "contextual_en": "public transport"
+                },
+                {
+                    "word_in_sentence": "kommunal",
+                    "base_form": "kommunal",
+                    "position_start": 58,
+                    "position_end": 66,
+                    "contextual_en": "municipal"
                 }
             ]
         },
@@ -143,25 +240,45 @@
                     "word_in_sentence": "vuxen",
                     "base_form": "vuxen",
                     "position_start": 6,
-                    "position_end": 11
+                    "position_end": 11,
+                    "contextual_en": "adult"
                 },
                 {
                     "word_in_sentence": "invånare",
                     "base_form": "invånare",
                     "position_start": 12,
-                    "position_end": 20
+                    "position_end": 20,
+                    "contextual_en": "resident"
                 },
                 {
                     "word_in_sentence": "socialtjänst",
                     "base_form": "socialtjänst",
                     "position_start": 54,
-                    "position_end": 66
+                    "position_end": 66,
+                    "contextual_en": "social service"
                 },
                 {
                     "word_in_sentence": "socialbidrag",
                     "base_form": "socialbidrag",
                     "position_start": 86,
-                    "position_end": 98
+                    "position_end": 98,
+                    "contextual_en": "social allowance"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "effektiv",
+                    "base_form": "effektiv",
+                    "position_start": 45,
+                    "position_end": 53,
+                    "contextual_en": "efficient"
+                },
+                {
+                    "word_in_sentence": "behöver",
+                    "base_form": "behöver",
+                    "position_start": 21,
+                    "position_end": 28,
+                    "contextual_en": "needs"
                 }
             ]
         },
@@ -174,19 +291,31 @@
                     "word_in_sentence": "djup",
                     "base_form": "djup",
                     "position_start": 12,
-                    "position_end": 16
+                    "position_end": 16,
+                    "contextual_en": "deep"
                 },
                 {
                     "word_in_sentence": "blick",
                     "base_form": "blick",
                     "position_start": 17,
-                    "position_end": 22
+                    "position_end": 22,
+                    "contextual_en": "gaze"
                 },
                 {
                     "word_in_sentence": "anteckna",
                     "base_form": "anteckna",
                     "position_start": 42,
-                    "position_end": 50
+                    "position_end": 50,
+                    "contextual_en": "take notes"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "genast",
+                    "base_form": "genast",
+                    "position_start": 35,
+                    "position_end": 41,
+                    "contextual_en": "immediately"
                 }
             ]
         },
@@ -194,7 +323,23 @@
             "sentence_id": "art_44_s010",
             "sv": "\"Vem bestämmer över riket?\" frågade hon.",
             "en": "\"Who rules over the kingdom?\" she asked.",
-            "target_words": []
+            "target_words": [],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "bestämmer",
+                    "base_form": "bestämmer",
+                    "position_start": 5,
+                    "position_end": 14,
+                    "contextual_en": "rules"
+                },
+                {
+                    "word_in_sentence": "riket",
+                    "base_form": "riket",
+                    "position_start": 20,
+                    "position_end": 25,
+                    "contextual_en": "kingdom"
+                }
+            ]
         },
         {
             "sentence_id": "art_44_s011",
@@ -205,13 +350,31 @@
                     "word_in_sentence": "länsstyrelse",
                     "base_form": "länsstyrelse",
                     "position_start": 14,
-                    "position_end": 26
+                    "position_end": 26,
+                    "contextual_en": "county administrative board"
                 },
                 {
                     "word_in_sentence": "stadsminister",
                     "base_form": "stadsminister",
                     "position_start": 67,
-                    "position_end": 80
+                    "position_end": 80,
+                    "contextual_en": "prime minister"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "regionalt",
+                    "base_form": "regionalt",
+                    "position_start": 27,
+                    "position_end": 36,
+                    "contextual_en": "regionally"
+                },
+                {
+                    "word_in_sentence": "huvudstaden",
+                    "base_form": "huvudstaden",
+                    "position_start": 44,
+                    "position_end": 55,
+                    "contextual_en": "capital"
                 }
             ]
         },
@@ -224,19 +387,31 @@
                     "word_in_sentence": "försvarsminister",
                     "base_form": "försvarsminister",
                     "position_start": 10,
-                    "position_end": 26
+                    "position_end": 26,
+                    "contextual_en": "minister of defense"
                 },
                 {
                     "word_in_sentence": "miljöminister",
                     "base_form": "miljöminister",
                     "position_start": 39,
-                    "position_end": 52
+                    "position_end": 52,
+                    "contextual_en": "minister of environment"
                 },
                 {
                     "word_in_sentence": "departement",
                     "base_form": "departement",
                     "position_start": 72,
-                    "position_end": 83
+                    "position_end": 83,
+                    "contextual_en": "ministries"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "varsitt",
+                    "base_form": "varsitt",
+                    "position_start": 64,
+                    "position_end": 71,
+                    "contextual_en": "respective"
                 }
             ]
         },
@@ -249,7 +424,17 @@
                     "word_in_sentence": "ministerpost",
                     "base_form": "ministerpost",
                     "position_start": 6,
-                    "position_end": 18
+                    "position_end": 18,
+                    "contextual_en": "ministerial post"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "viktig",
+                    "base_form": "viktig",
+                    "position_start": 22,
+                    "position_end": 28,
+                    "contextual_en": "important"
                 }
             ]
         },
@@ -262,19 +447,38 @@
                     "word_in_sentence": "rösta",
                     "base_form": "rösta",
                     "position_start": 11,
-                    "position_end": 16
+                    "position_end": 16,
+                    "contextual_en": "vote"
                 },
                 {
                     "word_in_sentence": "rösträtt",
                     "base_form": "rösträtt",
                     "position_start": 49,
-                    "position_end": 57
+                    "position_end": 57,
+                    "contextual_en": "suffrage"
                 },
                 {
                     "word_in_sentence": "rättighet",
                     "base_form": "rättighet",
                     "position_start": 74,
-                    "position_end": 83
+                    "position_end": 83,
+                    "contextual_en": "right"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "allmänna val",
+                    "base_form": "allmänna val",
+                    "position_start": 19,
+                    "position_end": 31,
+                    "contextual_en": "general elections"
+                },
+                {
+                    "word_in_sentence": "självklar",
+                    "base_form": "självklar",
+                    "position_start": 64,
+                    "position_end": 73,
+                    "contextual_en": "self-evident"
                 }
             ]
         },
@@ -287,25 +491,45 @@
                     "word_in_sentence": "diskriminering",
                     "base_form": "diskriminering",
                     "position_start": 36,
-                    "position_end": 50
+                    "position_end": 50,
+                    "contextual_en": "discrimination"
                 },
                 {
                     "word_in_sentence": "regeringsformen",
                     "base_form": "regeringsformen",
                     "position_start": 78,
-                    "position_end": 93
+                    "position_end": 93,
+                    "contextual_en": "Instrument of Government"
                 },
                 {
                     "word_in_sentence": "tryckfrihetsförordningen",
                     "base_form": "tryckfrihetsförordningen",
                     "position_start": 95,
-                    "position_end": 119
+                    "position_end": 119,
+                    "contextual_en": "Freedom of the Press Act"
                 },
                 {
                     "word_in_sentence": "yttrandefrihetsgrundlagen",
                     "base_form": "yttrandefrihetsgrundlagen",
                     "position_start": 124,
-                    "position_end": 149
+                    "position_end": 149,
+                    "contextual_en": "Fundamental Law on Freedom of Expression"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "skyddar",
+                    "base_form": "skyddar",
+                    "position_start": 3,
+                    "position_end": 10,
+                    "contextual_en": "protect"
+                },
+                {
+                    "word_in_sentence": "grundlagar",
+                    "base_form": "grundlagar",
+                    "position_start": 62,
+                    "position_end": 72,
+                    "contextual_en": "fundamental laws"
                 }
             ]
         },
@@ -318,13 +542,31 @@
                     "word_in_sentence": "fånge",
                     "base_form": "fånge",
                     "position_start": 36,
-                    "position_end": 41
+                    "position_end": 41,
+                    "contextual_en": "prisoner"
                 },
                 {
                     "word_in_sentence": "bubbla",
                     "base_form": "bubbla",
                     "position_start": 57,
-                    "position_end": 63
+                    "position_end": 63,
+                    "contextual_en": "bubble"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "stund",
+                    "base_form": "stund",
+                    "position_start": 16,
+                    "position_end": 21,
+                    "contextual_en": "while"
+                },
+                {
+                    "word_in_sentence": "likt",
+                    "base_form": "likt",
+                    "position_start": 23,
+                    "position_end": 27,
+                    "contextual_en": "like"
                 }
             ]
         },
@@ -332,7 +574,23 @@
             "sentence_id": "art_44_s017",
             "sv": "\"Det låter som ett ganska tryggt land.",
             "en": "\"It sounds like a pretty safe country.",
-            "target_words": []
+            "target_words": [],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "låter",
+                    "base_form": "låter",
+                    "position_start": 5,
+                    "position_end": 10,
+                    "contextual_en": "sounds"
+                },
+                {
+                    "word_in_sentence": "tryggt",
+                    "base_form": "tryggt",
+                    "position_start": 26,
+                    "position_end": 32,
+                    "contextual_en": "safe"
+                }
+            ]
         },
         {
             "sentence_id": "art_44_s018",
@@ -343,7 +601,17 @@
                     "word_in_sentence": "Det är möjligt.",
                     "base_form": "Det är möjligt.",
                     "position_start": 0,
-                    "position_end": 15
+                    "position_end": 15,
+                    "contextual_en": "It's possible."
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "sa",
+                    "base_form": "sa",
+                    "position_start": 17,
+                    "position_end": 19,
+                    "contextual_en": "said"
                 }
             ]
         },
@@ -356,13 +624,31 @@
                     "word_in_sentence": "sparka",
                     "base_form": "sparka",
                     "position_start": 53,
-                    "position_end": 59
+                    "position_end": 59,
+                    "contextual_en": "fire"
                 },
                 {
                     "word_in_sentence": "erkan",
                     "base_form": "följd",
                     "position_start": 81,
-                    "position_end": 86
+                    "position_end": 86,
+                    "contextual_en": "effect"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "bryter",
+                    "base_form": "bryter",
+                    "position_start": 25,
+                    "position_end": 31,
+                    "contextual_en": "breaks"
+                },
+                {
+                    "word_in_sentence": "omedelbar",
+                    "base_form": "omedelbar",
+                    "position_start": 70,
+                    "position_end": 79,
+                    "contextual_en": "immediate"
                 }
             ]
         },
@@ -370,7 +656,23 @@
             "sentence_id": "art_44_s020",
             "sv": "\"Men är allt bara svår politik?\" frågade hon.",
             "en": "\"But is everything just difficult politics?\" she asked.",
-            "target_words": []
+            "target_words": [],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "svår",
+                    "base_form": "svår",
+                    "position_start": 18,
+                    "position_end": 22,
+                    "contextual_en": "difficult"
+                },
+                {
+                    "word_in_sentence": "politik",
+                    "base_form": "politik",
+                    "position_start": 23,
+                    "position_end": 30,
+                    "contextual_en": "politics"
+                }
+            ]
         },
         {
             "sentence_id": "art_44_s021",
@@ -381,13 +683,31 @@
                     "word_in_sentence": "rofylld",
                     "base_form": "rofylld",
                     "position_start": 17,
-                    "position_end": 24
+                    "position_end": 24,
+                    "contextual_en": "peaceful"
                 },
                 {
                     "word_in_sentence": "vilsam",
                     "base_form": "vilsam",
                     "position_start": 29,
-                    "position_end": 35
+                    "position_end": 35,
+                    "contextual_en": "restful"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "plats",
+                    "base_form": "plats",
+                    "position_start": 36,
+                    "position_end": 41,
+                    "contextual_en": "place"
+                },
+                {
+                    "word_in_sentence": "besöka",
+                    "base_form": "besöka",
+                    "position_start": 46,
+                    "position_end": 52,
+                    "contextual_en": "visit"
                 }
             ]
         },
@@ -395,7 +715,16 @@
             "sentence_id": "art_44_s022",
             "sv": "\"Självklart,\" sa jag.",
             "en": "\"Of course,\" I said.",
-            "target_words": []
+            "target_words": [],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "Självklart",
+                    "base_form": "självklart",
+                    "position_start": 1,
+                    "position_end": 11,
+                    "contextual_en": "Of course"
+                }
+            ]
         },
         {
             "sentence_id": "art_44_s023",
@@ -406,7 +735,17 @@
                     "word_in_sentence": "långt ifrån",
                     "base_form": "långt ifrån",
                     "position_start": 5,
-                    "position_end": 16
+                    "position_end": 16,
+                    "contextual_en": "far away from"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "natur",
+                    "base_form": "natur",
+                    "position_start": 42,
+                    "position_end": 47,
+                    "contextual_en": "nature"
                 }
             ]
         },
@@ -419,19 +758,31 @@
                     "word_in_sentence": "lugn och ro",
                     "base_form": "lugn och ro",
                     "position_start": 14,
-                    "position_end": 25
+                    "position_end": 25,
+                    "contextual_en": "peace and quiet"
                 },
                 {
                     "word_in_sentence": "varm",
                     "base_form": "varm",
                     "position_start": 31,
-                    "position_end": 35
+                    "position_end": 35,
+                    "contextual_en": "warm"
                 },
                 {
                     "word_in_sentence": "nationalpark",
                     "base_form": "nationalpark",
                     "position_start": 46,
-                    "position_end": 58
+                    "position_end": 58,
+                    "contextual_en": "national park"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "solig",
+                    "base_form": "solig",
+                    "position_start": 40,
+                    "position_end": 45,
+                    "contextual_en": "sunny"
                 }
             ]
         },
@@ -444,19 +795,38 @@
                     "word_in_sentence": "kunglighet",
                     "base_form": "kunglighet",
                     "position_start": 18,
-                    "position_end": 28
+                    "position_end": 28,
+                    "contextual_en": "royal"
                 },
                 {
                     "word_in_sentence": "världsartist",
                     "base_form": "världsartist",
                     "position_start": 45,
-                    "position_end": 57
+                    "position_end": 57,
+                    "contextual_en": "world artist"
                 },
                 {
                     "word_in_sentence": "turistort",
                     "base_form": "turistort",
                     "position_start": 75,
-                    "position_end": 84
+                    "position_end": 84,
+                    "contextual_en": "tourist resort"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "berömd",
+                    "base_form": "berömd",
+                    "position_start": 38,
+                    "position_end": 44,
+                    "contextual_en": "famous"
+                },
+                {
+                    "word_in_sentence": "populär",
+                    "base_form": "populär",
+                    "position_start": 67,
+                    "position_end": 74,
+                    "contextual_en": "popular"
                 }
             ]
         },
@@ -469,13 +839,24 @@
                     "word_in_sentence": "resmål",
                     "base_form": "resmål",
                     "position_start": 48,
-                    "position_end": 54
+                    "position_end": 54,
+                    "contextual_en": "travel destination"
                 },
                 {
                     "word_in_sentence": "Pippi Långstrump",
                     "base_form": "Pippi Långstrump",
                     "position_start": 77,
-                    "position_end": 93
+                    "position_end": 93,
+                    "contextual_en": "Pippi Longstocking"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "träffa",
+                    "base_form": "träffa",
+                    "position_start": 70,
+                    "position_end": 76,
+                    "contextual_en": "meet"
                 }
             ]
         },
@@ -488,7 +869,24 @@
                     "word_in_sentence": "nationalskald",
                     "base_form": "nationalskald",
                     "position_start": 58,
-                    "position_end": 71
+                    "position_end": 71,
+                    "contextual_en": "national poet"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "statyer",
+                    "base_form": "statyer",
+                    "position_start": 34,
+                    "position_end": 41,
+                    "contextual_en": "statues"
+                },
+                {
+                    "word_in_sentence": "historisk",
+                    "base_form": "historisk",
+                    "position_start": 48,
+                    "position_end": 57,
+                    "contextual_en": "historical"
                 }
             ]
         },
@@ -496,7 +894,16 @@
             "sentence_id": "art_44_s028",
             "sv": "\"Låter skönt,\" sa hon.",
             "en": "\"Sounds nice,\" she said.",
-            "target_words": []
+            "target_words": [],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "skönt",
+                    "base_form": "skönt",
+                    "position_start": 7,
+                    "position_end": 12,
+                    "contextual_en": "nice"
+                }
+            ]
         },
         {
             "sentence_id": "art_44_s029",
@@ -507,13 +914,24 @@
                     "word_in_sentence": "Man skulle kunna…istället",
                     "base_form": "Man skulle kunna…istället",
                     "position_start": 1,
-                    "position_end": 26
+                    "position_end": 26,
+                    "contextual_en": "Could one... instead"
                 },
                 {
                     "word_in_sentence": "husmanskost",
                     "base_form": "husmanskost",
                     "position_start": 50,
-                    "position_end": 61
+                    "position_end": 61,
+                    "contextual_en": "traditional home cooking"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "restaurang",
+                    "base_form": "restaurang",
+                    "position_start": 68,
+                    "position_end": 78,
+                    "contextual_en": "restaurant"
                 }
             ]
         },
@@ -526,7 +944,24 @@
                     "word_in_sentence": "utvilad",
                     "base_form": "rested",
                     "position_start": 22,
-                    "position_end": 29
+                    "position_end": 29,
+                    "contextual_en": "rested"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "ganska",
+                    "base_form": "ganska",
+                    "position_start": 15,
+                    "position_end": 21,
+                    "contextual_en": "quite"
+                },
+                {
+                    "word_in_sentence": "resan",
+                    "base_form": "resan",
+                    "position_start": 39,
+                    "position_end": 44,
+                    "contextual_en": "trip"
                 }
             ]
         },
@@ -539,7 +974,24 @@
                     "word_in_sentence": "varning",
                     "base_form": "varning",
                     "position_start": 35,
-                    "position_end": 42
+                    "position_end": 42,
+                    "contextual_en": "warning"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "Absolut",
+                    "base_form": "absolut",
+                    "position_start": 1,
+                    "position_end": 8,
+                    "contextual_en": "Absolutely"
+                },
+                {
+                    "word_in_sentence": "gav",
+                    "base_form": "gav",
+                    "position_start": 22,
+                    "position_end": 25,
+                    "contextual_en": "gave"
                 }
             ]
         },
@@ -552,7 +1004,24 @@
                     "word_in_sentence": "högertrafik",
                     "base_form": "högertrafik",
                     "position_start": 30,
-                    "position_end": 41
+                    "position_end": 41,
+                    "contextual_en": "right-hand traffic"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "kom ihåg",
+                    "base_form": "kom ihåg",
+                    "position_start": 5,
+                    "position_end": 13,
+                    "contextual_en": "remember"
+                },
+                {
+                    "word_in_sentence": "kör bil",
+                    "base_form": "kör bil",
+                    "position_start": 60,
+                    "position_end": 67,
+                    "contextual_en": "drive"
                 }
             ]
         },
@@ -565,19 +1034,38 @@
                     "word_in_sentence": "faktor",
                     "base_form": "faktor",
                     "position_start": 12,
-                    "position_end": 18
+                    "position_end": 18,
+                    "contextual_en": "factor"
                 },
                 {
                     "word_in_sentence": "återkomma",
                     "base_form": "återkomma",
                     "position_start": 92,
-                    "position_end": 101
+                    "position_end": 101,
+                    "contextual_en": "return"
                 },
                 {
                     "word_in_sentence": "någon gång",
                     "base_form": "någon gång",
                     "position_start": 102,
-                    "position_end": 112
+                    "position_end": 112,
+                    "contextual_en": "sometime"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "spelar roll",
+                    "base_form": "spelar roll",
+                    "position_start": 19,
+                    "position_end": 30,
+                    "contextual_en": "plays a role"
+                },
+                {
+                    "word_in_sentence": "hoppades",
+                    "base_form": "hoppades",
+                    "position_start": 58,
+                    "position_end": 66,
+                    "contextual_en": "hoped"
                 }
             ]
         },
@@ -590,13 +1078,31 @@
                     "word_in_sentence": "lugna",
                     "base_form": "lugna",
                     "position_start": 19,
-                    "position_end": 24
+                    "position_end": 24,
+                    "contextual_en": "calm"
                 },
                 {
                     "word_in_sentence": "favorit",
                     "base_form": "favorit",
                     "position_start": 69,
-                    "position_end": 76
+                    "position_end": 76,
+                    "contextual_en": "favorite"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "matbit",
+                    "base_form": "matbit",
+                    "position_start": 44,
+                    "position_end": 50,
+                    "contextual_en": "bite to eat"
+                },
+                {
+                    "word_in_sentence": "beställde",
+                    "base_form": "beställde",
+                    "position_start": 55,
+                    "position_end": 64,
+                    "contextual_en": "ordered"
                 }
             ]
         }

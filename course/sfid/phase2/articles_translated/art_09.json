@@ -16,27 +16,32 @@
                     "word_in_sentence": "studera",
                     "base_form": "studera",
                     "position_start": 4,
-                    "position_end": 11
+                    "position_end": 11,
+                    "contextual_en": "Studying"
                 },
                 {
                     "word_in_sentence": "mer och mer",
                     "base_form": "mer och mer",
                     "position_start": 23,
-                    "position_end": 34
+                    "position_end": 34,
+                    "contextual_en": "more and more"
                 },
                 {
                     "word_in_sentence": "eftersom",
                     "base_form": "eftersom",
                     "position_start": 54,
-                    "position_end": 62
+                    "position_end": 62,
+                    "contextual_en": "since"
                 },
                 {
                     "word_in_sentence": "examen",
                     "base_form": "examen",
                     "position_start": 83,
-                    "position_end": 89
+                    "position_end": 89,
+                    "contextual_en": "degree"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_09_s002",
@@ -47,27 +52,32 @@
                     "word_in_sentence": "skolelev",
                     "base_form": "skolelev",
                     "position_start": 3,
-                    "position_end": 11
+                    "position_end": 11,
+                    "contextual_en": "school student"
                 },
                 {
                     "word_in_sentence": "skola",
                     "base_form": "skola",
                     "position_start": 24,
-                    "position_end": 29
+                    "position_end": 29,
+                    "contextual_en": "school"
                 },
                 {
                     "word_in_sentence": "undervisning",
                     "base_form": "undervisning",
                     "position_start": 38,
-                    "position_end": 50
+                    "position_end": 50,
+                    "contextual_en": "teaching"
                 },
                 {
                     "word_in_sentence": "matte",
                     "base_form": "matte",
                     "position_start": 63,
-                    "position_end": 68
+                    "position_end": 68,
+                    "contextual_en": "math"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_09_s003",
@@ -78,21 +88,25 @@
                     "word_in_sentence": "undvika",
                     "base_form": "undvika",
                     "position_start": 8,
-                    "position_end": 15
+                    "position_end": 15,
+                    "contextual_en": "avoid"
                 },
                 {
                     "word_in_sentence": "fokusera på",
                     "base_form": "fokusera på",
                     "position_start": 38,
-                    "position_end": 49
+                    "position_end": 49,
+                    "contextual_en": "focus on"
                 },
                 {
                     "word_in_sentence": "räkna",
                     "base_form": "räkna",
                     "position_start": 54,
-                    "position_end": 59
+                    "position_end": 59,
+                    "contextual_en": "calculating"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_09_s004",
@@ -103,15 +117,18 @@
                     "word_in_sentence": "med hjälp av",
                     "base_form": "med hjälp av",
                     "position_start": 33,
-                    "position_end": 45
+                    "position_end": 45,
+                    "contextual_en": "with the aid of"
                 },
                 {
                     "word_in_sentence": "bok",
                     "base_form": "bok",
                     "position_start": 53,
-                    "position_end": 56
+                    "position_end": 56,
+                    "contextual_en": "book"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_09_s005",
@@ -122,15 +139,18 @@
                     "word_in_sentence": "översätta",
                     "base_form": "översätta",
                     "position_start": 20,
-                    "position_end": 29
+                    "position_end": 29,
+                    "contextual_en": "translate"
                 },
                 {
                     "word_in_sentence": "ordspråk",
                     "base_form": "orspråk",
                     "position_start": 42,
-                    "position_end": 50
+                    "position_end": 50,
+                    "contextual_en": "proverb"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_09_s006",
@@ -141,39 +161,46 @@
                     "word_in_sentence": "klass",
                     "base_form": "klass",
                     "position_start": 3,
-                    "position_end": 8
+                    "position_end": 8,
+                    "contextual_en": "class"
                 },
                 {
                     "word_in_sentence": "klassisk",
                     "base_form": "klassisk",
                     "position_start": 3,
-                    "position_end": 11
+                    "position_end": 11,
+                    "contextual_en": "classic"
                 },
                 {
                     "word_in_sentence": "ringa in",
                     "base_form": "ringa in",
                     "position_start": 26,
-                    "position_end": 34
+                    "position_end": 34,
+                    "contextual_en": "circle"
                 },
                 {
                     "word_in_sentence": "markera",
                     "base_form": "markera",
                     "position_start": 41,
-                    "position_end": 48
+                    "position_end": 48,
+                    "contextual_en": "mark"
                 },
                 {
                     "word_in_sentence": "understruken",
                     "base_form": "understuken",
                     "position_start": 52,
-                    "position_end": 64
+                    "position_end": 64,
+                    "contextual_en": "underlined"
                 },
                 {
                     "word_in_sentence": "betoning",
                     "base_form": "betoning",
                     "position_start": 99,
-                    "position_end": 107
+                    "position_end": 107,
+                    "contextual_en": "emphasis"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_09_s007",
@@ -184,19 +211,31 @@
                     "word_in_sentence": "prov",
                     "base_form": "prov",
                     "position_start": 25,
-                    "position_end": 29
+                    "position_end": 29,
+                    "contextual_en": "test"
                 },
                 {
                     "word_in_sentence": "prova",
                     "base_form": "prova",
                     "position_start": 25,
-                    "position_end": 30
+                    "position_end": 30,
+                    "contextual_en": "try"
                 },
                 {
                     "word_in_sentence": "snabbkurs",
                     "base_form": "snabbkurs",
                     "position_start": 34,
-                    "position_end": 43
+                    "position_end": 43,
+                    "contextual_en": "crash course"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "pedagogik",
+                    "base_form": "pedagogik",
+                    "position_start": 46,
+                    "position_end": 55,
+                    "contextual_en": "pedagogy"
                 }
             ]
         },
@@ -209,27 +248,32 @@
                     "word_in_sentence": "skola",
                     "base_form": "skola",
                     "position_start": 30,
-                    "position_end": 35
+                    "position_end": 35,
+                    "contextual_en": "school"
                 },
                 {
                     "word_in_sentence": "praktisera",
                     "base_form": "praktisera",
                     "position_start": 10,
-                    "position_end": 20
+                    "position_end": 20,
+                    "contextual_en": "do an internship"
                 },
                 {
                     "word_in_sentence": "förskola",
                     "base_form": "förskola",
                     "position_start": 27,
-                    "position_end": 35
+                    "position_end": 35,
+                    "contextual_en": "preschool"
                 },
                 {
                     "word_in_sentence": "förskollärare",
                     "base_form": "förskollärare",
                     "position_start": 54,
-                    "position_end": 67
+                    "position_end": 67,
+                    "contextual_en": "preschool teacher"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_09_s009",
@@ -240,21 +284,25 @@
                     "word_in_sentence": "klass",
                     "base_form": "klass",
                     "position_start": 24,
-                    "position_end": 29
+                    "position_end": 29,
+                    "contextual_en": "class"
                 },
                 {
                     "word_in_sentence": "yngst",
                     "base_form": "yngst",
                     "position_start": 12,
-                    "position_end": 17
+                    "position_end": 17,
+                    "contextual_en": "youngest"
                 },
                 {
                     "word_in_sentence": "sedd",
                     "base_form": "sedd",
                     "position_start": 68,
-                    "position_end": 72
+                    "position_end": 72,
+                    "contextual_en": "seen"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_09_s010",
@@ -265,15 +313,18 @@
                     "word_in_sentence": "be om lov",
                     "base_form": "be om lov",
                     "position_start": 17,
-                    "position_end": 26
+                    "position_end": 26,
+                    "contextual_en": "ask for permission"
                 },
                 {
                     "word_in_sentence": "lektion",
                     "base_form": "lektion",
                     "position_start": 45,
-                    "position_end": 52
+                    "position_end": 52,
+                    "contextual_en": "lesson"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_09_s011",
@@ -284,27 +335,32 @@
                     "word_in_sentence": "studera",
                     "base_form": "studera",
                     "position_start": 21,
-                    "position_end": 28
+                    "position_end": 28,
+                    "contextual_en": "study"
                 },
                 {
                     "word_in_sentence": "studera på universitet",
                     "base_form": "studera på universitet",
                     "position_start": 21,
-                    "position_end": 43
+                    "position_end": 43,
+                    "contextual_en": "study at a university"
                 },
                 {
                     "word_in_sentence": "universitet",
                     "base_form": "universitet",
                     "position_start": 32,
-                    "position_end": 43
+                    "position_end": 43,
+                    "contextual_en": "university"
                 },
                 {
                     "word_in_sentence": "gymnasielärare",
                     "base_form": "gymnasielärare",
                     "position_start": 56,
-                    "position_end": 70
+                    "position_end": 70,
+                    "contextual_en": "high school teacher"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_09_s012",
@@ -315,19 +371,31 @@
                     "word_in_sentence": "klass",
                     "base_form": "klass",
                     "position_start": 8,
-                    "position_end": 13
+                    "position_end": 13,
+                    "contextual_en": "class"
                 },
                 {
                     "word_in_sentence": "klassa",
                     "base_form": "klassa",
                     "position_start": 8,
-                    "position_end": 14
+                    "position_end": 14,
+                    "contextual_en": "classify"
                 },
                 {
                     "word_in_sentence": "akademiker",
                     "base_form": "akademiker",
                     "position_start": 37,
-                    "position_end": 47
+                    "position_end": 47,
+                    "contextual_en": "academic"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "framtida",
+                    "base_form": "framtida",
+                    "position_start": 28,
+                    "position_end": 36,
+                    "contextual_en": "future"
                 }
             ]
         },
@@ -340,27 +408,32 @@
                     "word_in_sentence": "universitet",
                     "base_form": "universitet",
                     "position_start": 7,
-                    "position_end": 18
+                    "position_end": 18,
+                    "contextual_en": "university"
                 },
                 {
                     "word_in_sentence": "lyckoforskning",
                     "base_form": "lyckoforskning",
                     "position_start": 60,
-                    "position_end": 74
+                    "position_end": 74,
+                    "contextual_en": "happiness research"
                 },
                 {
                     "word_in_sentence": "forskning",
                     "base_form": "forskning",
                     "position_start": 65,
-                    "position_end": 74
+                    "position_end": 74,
+                    "contextual_en": "research"
                 },
                 {
                     "word_in_sentence": "akademisk",
                     "base_form": "akademisk",
                     "position_start": 85,
-                    "position_end": 94
+                    "position_end": 94,
+                    "contextual_en": "academic"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_09_s014",
@@ -371,13 +444,24 @@
                     "word_in_sentence": "forska om",
                     "base_form": "forska om",
                     "position_start": 20,
-                    "position_end": 29
+                    "position_end": 29,
+                    "contextual_en": "research"
                 },
                 {
                     "word_in_sentence": "reducera",
                     "base_form": "reducera",
                     "position_start": 45,
-                    "position_end": 53
+                    "position_end": 53,
+                    "contextual_en": "reduce"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "glädjen",
+                    "base_form": "glädjen",
+                    "position_start": 54,
+                    "position_end": 61,
+                    "contextual_en": "joy"
                 }
             ]
         },
@@ -390,21 +474,25 @@
                     "word_in_sentence": "rektor",
                     "base_form": "rektor",
                     "position_start": 4,
-                    "position_end": 10
+                    "position_end": 10,
+                    "contextual_en": "principal"
                 },
                 {
                     "word_in_sentence": "ta över",
                     "base_form": "ta över",
                     "position_start": 35,
-                    "position_end": 42
+                    "position_end": 42,
+                    "contextual_en": "take over"
                 },
                 {
                     "word_in_sentence": "svenska för invandrare",
                     "base_form": "svenska för invandrare",
                     "position_start": 53,
-                    "position_end": 75
+                    "position_end": 75,
+                    "contextual_en": "Swedish for immigrants"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_09_s016",
@@ -415,21 +503,25 @@
                     "word_in_sentence": "klasskompis",
                     "base_form": "klasskompis",
                     "position_start": 4,
-                    "position_end": 15
+                    "position_end": 15,
+                    "contextual_en": "classmate"
                 },
                 {
                     "word_in_sentence": "protestera",
                     "base_form": "protestera",
                     "position_start": 22,
-                    "position_end": 32
+                    "position_end": 32,
+                    "contextual_en": "protest"
                 },
                 {
                     "word_in_sentence": "senast på fredag",
                     "base_form": "senast på fredag",
                     "position_start": 69,
-                    "position_end": 85
+                    "position_end": 85,
+                    "contextual_en": "by Friday at the latest"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_09_s017",
@@ -440,19 +532,31 @@
                     "word_in_sentence": "lufsa",
                     "base_form": "lufsa",
                     "position_start": 56,
-                    "position_end": 61
+                    "position_end": 61,
+                    "contextual_en": "lumber"
                 },
                 {
                     "word_in_sentence": "bur",
                     "base_form": "bur",
                     "position_start": 70,
-                    "position_end": 73
+                    "position_end": 73,
+                    "contextual_en": "cage"
                 },
                 {
                     "word_in_sentence": "byxlös",
                     "base_form": "byxlös",
                     "position_start": 84,
-                    "position_end": 90
+                    "position_end": 90,
+                    "contextual_en": "pantless"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "vilsen",
+                    "base_form": "vilsen",
+                    "position_start": 26,
+                    "position_end": 32,
+                    "contextual_en": "lost"
                 }
             ]
         },
@@ -465,15 +569,18 @@
                     "word_in_sentence": "prioritera",
                     "base_form": "prioritera",
                     "position_start": 14,
-                    "position_end": 24
+                    "position_end": 24,
+                    "contextual_en": "prioritize"
                 },
                 {
                     "word_in_sentence": "grad",
                     "base_form": "grad",
                     "position_start": 42,
-                    "position_end": 46
+                    "position_end": 46,
+                    "contextual_en": "degree"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_09_s019",
@@ -484,7 +591,17 @@
                     "word_in_sentence": "ske",
                     "base_form": "ske",
                     "position_start": 19,
-                    "position_end": 22
+                    "position_end": 22,
+                    "contextual_en": "happen"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "i tid",
+                    "base_form": "i tid",
+                    "position_start": 23,
+                    "position_end": 28,
+                    "contextual_en": "on time"
                 }
             ]
         },
@@ -497,21 +614,25 @@
                     "word_in_sentence": "räkna ihop",
                     "base_form": "räkna ihop",
                     "position_start": 23,
-                    "position_end": 33
+                    "position_end": 33,
+                    "contextual_en": "add up"
                 },
                 {
                     "word_in_sentence": "område",
                     "base_form": "område",
                     "position_start": 53,
-                    "position_end": 59
+                    "position_end": 59,
+                    "contextual_en": "area"
                 },
                 {
                     "word_in_sentence": "kortfattad",
                     "base_form": "kortfattad",
                     "position_start": 76,
-                    "position_end": 86
+                    "position_end": 86,
+                    "contextual_en": "brief"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_09_s021",
@@ -522,7 +643,17 @@
                     "word_in_sentence": "en person om året",
                     "base_form": "en person om året",
                     "position_start": 6,
-                    "position_end": 23
+                    "position_end": 23,
+                    "contextual_en": "one person a year"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "högsta betyg",
+                    "base_form": "högsta betyg",
+                    "position_start": 34,
+                    "position_end": 46,
+                    "contextual_en": "highest grade"
                 }
             ]
         },
@@ -535,21 +666,25 @@
                     "word_in_sentence": "Sist",
                     "base_form": "sist",
                     "position_start": 0,
-                    "position_end": 4
+                    "position_end": 4,
+                    "contextual_en": "Last"
                 },
                 {
                     "word_in_sentence": "någonsin",
                     "base_form": "någonsin",
                     "position_start": 45,
-                    "position_end": 53
+                    "position_end": 53,
+                    "contextual_en": "ever"
                 },
                 {
                     "word_in_sentence": "lokalproducerad",
                     "base_form": "lokalproducerad",
                     "position_start": 92,
-                    "position_end": 107
+                    "position_end": 107,
+                    "contextual_en": "locally produced"
                 }
-            ]
+            ],
+            "secondary_words": []
         }
     ],
     "primary_words_used": [

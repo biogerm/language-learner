@@ -16,15 +16,18 @@
                     "word_in_sentence": "ursprungligen",
                     "base_form": "ursprungligen",
                     "position_start": 13,
-                    "position_end": 26
+                    "position_end": 26,
+                    "contextual_en": "originally"
                 },
                 {
                     "word_in_sentence": "norrut",
                     "base_form": "norrut",
                     "position_start": 47,
-                    "position_end": 53
+                    "position_end": 53,
+                    "contextual_en": "up north"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_04_s002",
@@ -35,33 +38,39 @@
                     "word_in_sentence": "komma ifrån",
                     "base_form": "komma ifrån",
                     "position_start": 10,
-                    "position_end": 21
+                    "position_end": 21,
+                    "contextual_en": "get away from"
                 },
                 {
                     "word_in_sentence": "komma",
                     "base_form": "komma",
                     "position_start": 10,
-                    "position_end": 15
+                    "position_end": 15,
+                    "contextual_en": "get"
                 },
                 {
                     "word_in_sentence": "stor",
                     "base_form": "stor",
                     "position_start": 62,
-                    "position_end": 66
+                    "position_end": 66,
+                    "contextual_en": "big"
                 },
                 {
                     "word_in_sentence": "närma sig med stora steg",
                     "base_form": "närma sig med stora steg",
                     "position_start": 78,
-                    "position_end": 102
+                    "position_end": 102,
+                    "contextual_en": "approaching with rapid steps"
                 },
                 {
                     "word_in_sentence": "när",
                     "base_form": "när",
                     "position_start": 78,
-                    "position_end": 81
+                    "position_end": 81,
+                    "contextual_en": "when"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_04_s003",
@@ -72,27 +81,32 @@
                     "word_in_sentence": "bortrest",
                     "base_form": "bortrest",
                     "position_start": 15,
-                    "position_end": 23
+                    "position_end": 23,
+                    "contextual_en": "away"
                 },
                 {
                     "word_in_sentence": "flera",
                     "base_form": "flera",
                     "position_start": 24,
-                    "position_end": 29
+                    "position_end": 29,
+                    "contextual_en": "several"
                 },
                 {
                     "word_in_sentence": "lång",
                     "base_form": "lång",
                     "position_start": 67,
-                    "position_end": 71
+                    "position_end": 71,
+                    "contextual_en": "long"
                 },
                 {
                     "word_in_sentence": "vistelse",
                     "base_form": "vistelse",
                     "position_start": 72,
-                    "position_end": 80
+                    "position_end": 80,
+                    "contextual_en": "stay"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_04_s004",
@@ -103,15 +117,18 @@
                     "word_in_sentence": "nyinflyttad",
                     "base_form": "nyinflyttad",
                     "position_start": 4,
-                    "position_end": 15
+                    "position_end": 15,
+                    "contextual_en": "newcomer"
                 },
                 {
                     "word_in_sentence": "stöd",
                     "base_form": "stöd",
                     "position_start": 74,
-                    "position_end": 78
+                    "position_end": 78,
+                    "contextual_en": "support"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_04_s005",
@@ -122,33 +139,39 @@
                     "word_in_sentence": "mil",
                     "base_form": "mil",
                     "position_start": 21,
-                    "position_end": 24
+                    "position_end": 24,
+                    "contextual_en": "miles"
                 },
                 {
                     "word_in_sentence": "milsvid",
                     "base_form": "milsvid",
                     "position_start": 21,
-                    "position_end": 28
+                    "position_end": 28,
+                    "contextual_en": "stretching for miles"
                 },
                 {
                     "word_in_sentence": "Sök",
                     "base_form": "sök",
                     "position_start": 42,
-                    "position_end": 45
+                    "position_end": 45,
+                    "contextual_en": "Search"
                 },
                 {
                     "word_in_sentence": "fästning",
                     "base_form": "fästning",
                     "position_start": 57,
-                    "position_end": 65
+                    "position_end": 65,
+                    "contextual_en": "fortress"
                 },
                 {
                     "word_in_sentence": "säga",
                     "base_form": "säga",
                     "position_start": 80,
-                    "position_end": 84
+                    "position_end": 84,
+                    "contextual_en": "saying"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_04_s006",
@@ -159,21 +182,25 @@
                     "word_in_sentence": "Nähä!",
                     "base_form": "Nähä!",
                     "position_start": 1,
-                    "position_end": 6
+                    "position_end": 6,
+                    "contextual_en": "Oh, really!"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_04_s007",
             "sv": "Vill du verkligen det?\" frågade jag.",
             "en": "Do you really want to?\" I asked.",
-            "target_words": []
+            "target_words": [],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_04_s008",
             "sv": "Hon nickade.",
             "en": "She nodded.",
-            "target_words": []
+            "target_words": [],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_04_s009",
@@ -184,27 +211,32 @@
                     "word_in_sentence": "Först",
                     "base_form": "först",
                     "position_start": 0,
-                    "position_end": 5
+                    "position_end": 5,
+                    "contextual_en": "First"
                 },
                 {
                     "word_in_sentence": "landa",
                     "base_form": "landa",
                     "position_start": 30,
-                    "position_end": 35
+                    "position_end": 35,
+                    "contextual_en": "land"
                 },
                 {
                     "word_in_sentence": "mellanlandning",
                     "base_form": "mellanlandning",
                     "position_start": 43,
-                    "position_end": 57
+                    "position_end": 57,
+                    "contextual_en": "layover"
                 },
                 {
                     "word_in_sentence": "passagerarfärja",
                     "base_form": "passagerarfärja",
                     "position_start": 74,
-                    "position_end": 89
+                    "position_end": 89,
+                    "contextual_en": "passenger ferry"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_04_s010",
@@ -215,21 +247,25 @@
                     "word_in_sentence": "mil",
                     "base_form": "mil",
                     "position_start": 66,
-                    "position_end": 69
+                    "position_end": 69,
+                    "contextual_en": "miles"
                 },
                 {
                     "word_in_sentence": "ankomst",
                     "base_form": "ankomst",
                     "position_start": 13,
-                    "position_end": 20
+                    "position_end": 20,
+                    "contextual_en": "arrival"
                 },
                 {
                     "word_in_sentence": "fordon",
                     "base_form": "fordon",
                     "position_start": 41,
-                    "position_end": 47
+                    "position_end": 47,
+                    "contextual_en": "vehicle"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_04_s011",
@@ -240,15 +276,18 @@
                     "word_in_sentence": "när",
                     "base_form": "när",
                     "position_start": 17,
-                    "position_end": 20
+                    "position_end": 20,
+                    "contextual_en": "when"
                 },
                 {
                     "word_in_sentence": "radiosändning",
                     "base_form": "radiosändning",
                     "position_start": 45,
-                    "position_end": 58
+                    "position_end": 58,
+                    "contextual_en": "radio broadcast"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_04_s012",
@@ -259,15 +298,18 @@
                     "word_in_sentence": "när",
                     "base_form": "när",
                     "position_start": 0,
-                    "position_end": 3
+                    "position_end": 3,
+                    "contextual_en": "When"
                 },
                 {
                     "word_in_sentence": "kajak",
                     "base_form": "kajak",
                     "position_start": 74,
-                    "position_end": 79
+                    "position_end": 79,
+                    "contextual_en": "kayak"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_04_s013",
@@ -278,33 +320,39 @@
                     "word_in_sentence": "kajak",
                     "base_form": "kajak",
                     "position_start": 30,
-                    "position_end": 35
+                    "position_end": 35,
+                    "contextual_en": "kayak"
                 },
                 {
                     "word_in_sentence": "Man",
                     "base_form": "man",
                     "position_start": 1,
-                    "position_end": 4
+                    "position_end": 4,
+                    "contextual_en": "You"
                 },
                 {
                     "word_in_sentence": "balans",
                     "base_form": "balans",
                     "position_start": 18,
-                    "position_end": 24
+                    "position_end": 24,
+                    "contextual_en": "balance"
                 },
                 {
                     "word_in_sentence": "drunkna",
                     "base_form": "drunkna",
                     "position_start": 49,
-                    "position_end": 56
+                    "position_end": 56,
+                    "contextual_en": "drown"
                 },
                 {
                     "word_in_sentence": "hotellägare",
                     "base_form": "hotellägare",
                     "position_start": 73,
-                    "position_end": 84
+                    "position_end": 84,
+                    "contextual_en": "hotel owner"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_04_s014",
@@ -315,33 +363,39 @@
                     "word_in_sentence": "stor",
                     "base_form": "stor",
                     "position_start": 73,
-                    "position_end": 77
+                    "position_end": 77,
+                    "contextual_en": "large"
                 },
                 {
                     "word_in_sentence": "lång",
                     "base_form": "lång",
                     "position_start": 57,
-                    "position_end": 61
+                    "position_end": 61,
+                    "contextual_en": "old"
                 },
                 {
                     "word_in_sentence": "alla",
                     "base_form": "alla",
                     "position_start": 10,
-                    "position_end": 14
+                    "position_end": 14,
+                    "contextual_en": "all"
                 },
                 {
                     "word_in_sentence": "långbåt",
                     "base_form": "långbåt",
                     "position_start": 57,
-                    "position_end": 64
+                    "position_end": 64,
+                    "contextual_en": "longboat"
                 },
                 {
                     "word_in_sentence": "skepp",
                     "base_form": "skepp",
                     "position_start": 79,
-                    "position_end": 84
+                    "position_end": 84,
+                    "contextual_en": "ship"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_04_s015",
@@ -352,15 +406,18 @@
                     "word_in_sentence": "kajak",
                     "base_form": "kajak",
                     "position_start": 8,
-                    "position_end": 13
+                    "position_end": 13,
+                    "contextual_en": "kayak"
                 },
                 {
                     "word_in_sentence": "glida fram",
                     "base_form": "glida fram",
                     "position_start": 16,
-                    "position_end": 26
+                    "position_end": 26,
+                    "contextual_en": "glide forward"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_04_s016",
@@ -371,15 +428,18 @@
                     "word_in_sentence": "flyta med",
                     "base_form": "flyta med",
                     "position_start": 19,
-                    "position_end": 28
+                    "position_end": 28,
+                    "contextual_en": "go with the flow"
                 },
                 {
                     "word_in_sentence": "gradvis",
                     "base_form": "gradvis",
                     "position_start": 42,
-                    "position_end": 49
+                    "position_end": 49,
+                    "contextual_en": "gradually"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_04_s017",
@@ -390,15 +450,18 @@
                     "word_in_sentence": "springa runt",
                     "base_form": "springa runt",
                     "position_start": 18,
-                    "position_end": 30
+                    "position_end": 30,
+                    "contextual_en": "running around"
                 },
                 {
                     "word_in_sentence": "springa lös",
                     "base_form": "springa lös",
                     "position_start": 55,
-                    "position_end": 66
+                    "position_end": 66,
+                    "contextual_en": "running loose"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_04_s018",
@@ -409,15 +472,18 @@
                     "word_in_sentence": "katrinplommon",
                     "base_form": "katrinplommon",
                     "position_start": 18,
-                    "position_end": 31
+                    "position_end": 31,
+                    "contextual_en": "prunes"
                 },
                 {
                     "word_in_sentence": "uppbrott",
                     "base_form": "uppbrott",
                     "position_start": 51,
-                    "position_end": 59
+                    "position_end": 59,
+                    "contextual_en": "departure"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_04_s019",
@@ -428,39 +494,46 @@
                     "word_in_sentence": "Man",
                     "base_form": "man",
                     "position_start": 9,
-                    "position_end": 12
+                    "position_end": 12,
+                    "contextual_en": "men"
                 },
                 {
                     "word_in_sentence": "kardinal",
                     "base_form": "kardinal",
                     "position_start": 27,
-                    "position_end": 35
+                    "position_end": 35,
+                    "contextual_en": "cardinal"
                 },
                 {
                     "word_in_sentence": "rista",
                     "base_form": "rista",
                     "position_start": 66,
-                    "position_end": 71
+                    "position_end": 71,
+                    "contextual_en": "carve"
                 },
                 {
                     "word_in_sentence": "grunda",
                     "base_form": "grunda",
                     "position_start": 90,
-                    "position_end": 96
+                    "position_end": 96,
+                    "contextual_en": "found"
                 },
                 {
                     "word_in_sentence": "hela",
                     "base_form": "hela",
                     "position_start": 110,
-                    "position_end": 114
+                    "position_end": 114,
+                    "contextual_en": "all over the"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_04_s020",
             "sv": "\"Sök i dig själv,\" sa han.",
             "en": "\"Search within yourself,\" he said.",
-            "target_words": []
+            "target_words": [],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_04_s021",
@@ -471,15 +544,18 @@
                     "word_in_sentence": "flyta på",
                     "base_form": "flyta på",
                     "position_start": 13,
-                    "position_end": 21
+                    "position_end": 21,
+                    "contextual_en": "flow"
                 },
                 {
                     "word_in_sentence": "katastrof",
                     "base_form": "katastrof",
                     "position_start": 63,
-                    "position_end": 72
+                    "position_end": 72,
+                    "contextual_en": "disaster"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_04_s022",
@@ -490,9 +566,11 @@
                     "word_in_sentence": "halv",
                     "base_form": "halv",
                     "position_start": 21,
-                    "position_end": 25
+                    "position_end": 25,
+                    "contextual_en": "half"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_04_s023",
@@ -503,21 +581,25 @@
                     "word_in_sentence": "ovanlig",
                     "base_form": "ovanlig",
                     "position_start": 3,
-                    "position_end": 10
+                    "position_end": 10,
+                    "contextual_en": "unusual"
                 },
                 {
                     "word_in_sentence": "resenär",
                     "base_form": "resenär",
                     "position_start": 11,
-                    "position_end": 18
+                    "position_end": 18,
+                    "contextual_en": "traveler"
                 },
                 {
                     "word_in_sentence": "längre bort",
                     "base_form": "längre bort",
                     "position_start": 39,
-                    "position_end": 50
+                    "position_end": 50,
+                    "contextual_en": "further away"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_04_s024",
@@ -528,15 +610,18 @@
                     "word_in_sentence": "På det sättet",
                     "base_form": "på det sättet",
                     "position_start": 0,
-                    "position_end": 13
+                    "position_end": 13,
+                    "contextual_en": "In that way"
                 },
                 {
                     "word_in_sentence": "i längden",
                     "base_form": "i längden",
                     "position_start": 38,
-                    "position_end": 47
+                    "position_end": 47,
+                    "contextual_en": "in the long run"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_04_s025",
@@ -547,15 +632,18 @@
                     "word_in_sentence": "komma tillbaka",
                     "base_form": "komma tillbaka",
                     "position_start": 24,
-                    "position_end": 38
+                    "position_end": 38,
+                    "contextual_en": "come back"
                 },
                 {
                     "word_in_sentence": "återbesök",
                     "base_form": "återbesök",
                     "position_start": 52,
-                    "position_end": 61
+                    "position_end": 61,
+                    "contextual_en": "return visit"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_04_s026",
@@ -566,33 +654,39 @@
                     "word_in_sentence": "byta",
                     "base_form": "byta",
                     "position_start": 18,
-                    "position_end": 22
+                    "position_end": 22,
+                    "contextual_en": "replace"
                 },
                 {
                     "word_in_sentence": "viss",
                     "base_form": "viss",
                     "position_start": 29,
-                    "position_end": 33
+                    "position_end": 33,
+                    "contextual_en": "certain"
                 },
                 {
                     "word_in_sentence": "dålig",
                     "base_form": "dålig",
                     "position_start": 66,
-                    "position_end": 71
+                    "position_end": 71,
+                    "contextual_en": "bad"
                 },
                 {
                     "word_in_sentence": "sak",
                     "base_form": "sak",
                     "position_start": 72,
-                    "position_end": 75
+                    "position_end": 75,
+                    "contextual_en": "thing"
                 },
                 {
                     "word_in_sentence": "ner",
                     "base_form": "ner",
                     "position_start": 126,
-                    "position_end": 129
+                    "position_end": 129,
+                    "contextual_en": "down"
                 }
-            ]
+            ],
+            "secondary_words": []
         }
     ],
     "primary_words_used": [

@@ -16,19 +16,31 @@
                     "word_in_sentence": "spännande",
                     "base_form": "spännande",
                     "position_start": 3,
-                    "position_end": 12
+                    "position_end": 12,
+                    "contextual_en": "exciting"
                 },
                 {
                     "word_in_sentence": "Jag skriver till er för att…",
                     "base_form": "Jag skriver till er för att…",
                     "position_start": 33,
-                    "position_end": 61
+                    "position_end": 61,
+                    "contextual_en": "I am writing to you to..."
                 },
                 {
                     "word_in_sentence": "sekreterare",
                     "base_form": "sekreterare",
                     "position_start": 75,
-                    "position_end": 86
+                    "position_end": 86,
+                    "contextual_en": "secretary"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "brev",
+                    "base_form": "brev",
+                    "position_start": 99,
+                    "position_end": 103,
+                    "contextual_en": "letter"
                 }
             ]
         },
@@ -41,27 +53,32 @@
                     "word_in_sentence": "Anledningen",
                     "base_form": "Anledningen",
                     "position_start": 0,
-                    "position_end": 11
+                    "position_end": 11,
+                    "contextual_en": "The reason"
                 },
                 {
                     "word_in_sentence": "pr-konsult",
                     "base_form": "pr-konsult",
                     "position_start": 23,
-                    "position_end": 33
+                    "position_end": 33,
+                    "contextual_en": "PR consultant"
                 },
                 {
                     "word_in_sentence": "presentera",
                     "base_form": "presentera",
                     "position_start": 40,
-                    "position_end": 50
+                    "position_end": 50,
+                    "contextual_en": "present"
                 },
                 {
                     "word_in_sentence": "projekt",
                     "base_form": "projekt",
                     "position_start": 60,
-                    "position_end": 67
+                    "position_end": 67,
+                    "contextual_en": "project"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_07_s003",
@@ -72,27 +89,32 @@
                     "word_in_sentence": "projekt",
                     "base_form": "projekt",
                     "position_start": 26,
-                    "position_end": 33
+                    "position_end": 33,
+                    "contextual_en": "project"
                 },
                 {
                     "word_in_sentence": "byggnadsprojekt",
                     "base_form": "byggnadsprojekt",
                     "position_start": 18,
-                    "position_end": 33
+                    "position_end": 33,
+                    "contextual_en": "construction project"
                 },
                 {
                     "word_in_sentence": "handel",
                     "base_form": "handel",
                     "position_start": 51,
-                    "position_end": 57
+                    "position_end": 57,
+                    "contextual_en": "shopping"
                 },
                 {
                     "word_in_sentence": "handelscentrum",
                     "base_form": "handelscentrum",
                     "position_start": 51,
-                    "position_end": 65
+                    "position_end": 65,
+                    "contextual_en": "shopping center"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_07_s004",
@@ -103,21 +125,25 @@
                     "word_in_sentence": "spännande",
                     "base_form": "spännande",
                     "position_start": 14,
-                    "position_end": 23
+                    "position_end": 23,
+                    "contextual_en": "exciting"
                 },
                 {
                     "word_in_sentence": "öde",
                     "base_form": "öde",
                     "position_start": 24,
-                    "position_end": 27
+                    "position_end": 27,
+                    "contextual_en": "destiny"
                 },
                 {
                     "word_in_sentence": "vd",
                     "base_form": "vd",
                     "position_start": 48,
-                    "position_end": 50
+                    "position_end": 50,
+                    "contextual_en": "CEO"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_07_s005",
@@ -128,15 +154,18 @@
                     "word_in_sentence": "investera",
                     "base_form": "investera",
                     "position_start": 18,
-                    "position_end": 27
+                    "position_end": 27,
+                    "contextual_en": "invest"
                 },
                 {
                     "word_in_sentence": "produkt",
                     "base_form": "produkt",
                     "position_start": 36,
-                    "position_end": 43
+                    "position_end": 43,
+                    "contextual_en": "product"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_07_s006",
@@ -147,27 +176,32 @@
                     "word_in_sentence": "tillverka",
                     "base_form": "tillverka",
                     "position_start": 16,
-                    "position_end": 25
+                    "position_end": 25,
+                    "contextual_en": "manufacture"
                 },
                 {
                     "word_in_sentence": "dyr",
                     "base_form": "fet",
                     "position_start": 29,
-                    "position_end": 32
+                    "position_end": 32,
+                    "contextual_en": "expensive"
                 },
                 {
                     "word_in_sentence": "lyxvara",
                     "base_form": "lyxvara",
                     "position_start": 33,
-                    "position_end": 40
+                    "position_end": 40,
+                    "contextual_en": "luxury item"
                 },
                 {
                     "word_in_sentence": "storsäljare",
                     "base_form": "storsäljare",
                     "position_start": 76,
-                    "position_end": 87
+                    "position_end": 87,
+                    "contextual_en": "bestseller"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_07_s007",
@@ -178,27 +212,32 @@
                     "word_in_sentence": "handel",
                     "base_form": "handel",
                     "position_start": 56,
-                    "position_end": 62
+                    "position_end": 62,
+                    "contextual_en": "trade"
                 },
                 {
                     "word_in_sentence": "vd",
                     "base_form": "vd",
                     "position_start": 28,
-                    "position_end": 30
+                    "position_end": 30,
+                    "contextual_en": "he"
                 },
                 {
                     "word_in_sentence": "lansera",
                     "base_form": "lansera",
                     "position_start": 8,
-                    "position_end": 15
+                    "position_end": 15,
+                    "contextual_en": "launch"
                 },
                 {
                     "word_in_sentence": "försäljning",
                     "base_form": "försäljning",
                     "position_start": 40,
-                    "position_end": 51
+                    "position_end": 51,
+                    "contextual_en": "sales"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_07_s008",
@@ -209,9 +248,11 @@
                     "word_in_sentence": "kontakta någon",
                     "base_form": "kontakta någon",
                     "position_start": 10,
-                    "position_end": 24
+                    "position_end": 24,
+                    "contextual_en": "contact someone"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_07_s009",
@@ -222,9 +263,11 @@
                     "word_in_sentence": "Du skulle kunna försöka.",
                     "base_form": "Du skulle kunna prova/försöka.",
                     "position_start": 1,
-                    "position_end": 25
+                    "position_end": 25,
+                    "contextual_en": "You could try."
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_07_s010",
@@ -235,21 +278,25 @@
                     "word_in_sentence": "serviceinriktad",
                     "base_form": "serviceinriktad",
                     "position_start": 7,
-                    "position_end": 22
+                    "position_end": 22,
+                    "contextual_en": "service-minded"
                 },
                 {
                     "word_in_sentence": "duktig",
                     "base_form": "duktig",
                     "position_start": 27,
-                    "position_end": 33
+                    "position_end": 33,
+                    "contextual_en": "good"
                 },
                 {
                     "word_in_sentence": "arbetsuppgift",
                     "base_form": "arbetsuppgift",
                     "position_start": 41,
-                    "position_end": 54
+                    "position_end": 54,
+                    "contextual_en": "task"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_07_s011",
@@ -260,9 +307,11 @@
                     "word_in_sentence": "möte",
                     "base_form": "möte",
                     "position_start": 20,
-                    "position_end": 24
+                    "position_end": 24,
+                    "contextual_en": "meeting"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_07_s012",
@@ -273,15 +322,18 @@
                     "word_in_sentence": "komma försent",
                     "base_form": "komma försent",
                     "position_start": 26,
-                    "position_end": 39
+                    "position_end": 39,
+                    "contextual_en": "arrive late"
                 },
                 {
                     "word_in_sentence": "precis",
                     "base_form": "precis",
                     "position_start": 50,
-                    "position_end": 56
+                    "position_end": 56,
+                    "contextual_en": "exactly"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_07_s013",
@@ -292,21 +344,25 @@
                     "word_in_sentence": "förbereda sig",
                     "base_form": "förbereda sig",
                     "position_start": 8,
-                    "position_end": 21
+                    "position_end": 21,
+                    "contextual_en": "prepare"
                 },
                 {
                     "word_in_sentence": "stödord",
                     "base_form": "stödord",
                     "position_start": 45,
-                    "position_end": 52
+                    "position_end": 52,
+                    "contextual_en": "keywords"
                 },
                 {
                     "word_in_sentence": "nedanför",
                     "base_form": "nedanför",
                     "position_start": 65,
-                    "position_end": 73
+                    "position_end": 73,
+                    "contextual_en": "below"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_07_s014",
@@ -317,21 +373,25 @@
                     "word_in_sentence": "knep",
                     "base_form": "knep",
                     "position_start": 8,
-                    "position_end": 12
+                    "position_end": 12,
+                    "contextual_en": "trick"
                 },
                 {
                     "word_in_sentence": "exakt",
                     "base_form": "exakt",
                     "position_start": 28,
-                    "position_end": 33
+                    "position_end": 33,
+                    "contextual_en": "exactly"
                 },
                 {
                     "word_in_sentence": "titel",
                     "base_form": "titel",
                     "position_start": 39,
-                    "position_end": 44
+                    "position_end": 44,
+                    "contextual_en": "title"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_07_s015",
@@ -342,9 +402,11 @@
                     "word_in_sentence": "besluta om",
                     "base_form": "besluta om",
                     "position_start": 8,
-                    "position_end": 18
+                    "position_end": 18,
+                    "contextual_en": "decide on"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_07_s016",
@@ -355,21 +417,25 @@
                     "word_in_sentence": "kräva att",
                     "base_form": "kräva att",
                     "position_start": 10,
-                    "position_end": 19
+                    "position_end": 19,
+                    "contextual_en": "demand that"
                 },
                 {
                     "word_in_sentence": "personal",
                     "base_form": "personal",
                     "position_start": 24,
-                    "position_end": 32
+                    "position_end": 32,
+                    "contextual_en": "staff"
                 },
                 {
                     "word_in_sentence": "samarbeta",
                     "base_form": "samarbeta",
                     "position_start": 40,
-                    "position_end": 49
+                    "position_end": 49,
+                    "contextual_en": "collaborate"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_07_s017",
@@ -380,27 +446,32 @@
                     "word_in_sentence": "Numera",
                     "base_form": "numera",
                     "position_start": 0,
-                    "position_end": 6
+                    "position_end": 6,
+                    "contextual_en": "Nowadays"
                 },
                 {
                     "word_in_sentence": "införa",
                     "base_form": "införa",
                     "position_start": 22,
-                    "position_end": 28
+                    "position_end": 28,
+                    "contextual_en": "introduce"
                 },
                 {
                     "word_in_sentence": "som har att göra med",
                     "base_form": "som har att göra med",
                     "position_start": 40,
-                    "position_end": 60
+                    "position_end": 60,
+                    "contextual_en": "related to"
                 },
                 {
                     "word_in_sentence": "bygge",
                     "base_form": "bygge",
                     "position_start": 79,
-                    "position_end": 84
+                    "position_end": 84,
+                    "contextual_en": "construction site"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_07_s018",
@@ -411,21 +482,25 @@
                     "word_in_sentence": "advokat",
                     "base_form": "advokat",
                     "position_start": 15,
-                    "position_end": 22
+                    "position_end": 22,
+                    "contextual_en": "lawyer"
                 },
                 {
                     "word_in_sentence": "revisor",
                     "base_form": "revisor",
                     "position_start": 30,
-                    "position_end": 37
+                    "position_end": 37,
+                    "contextual_en": "accountant"
                 },
                 {
                     "word_in_sentence": "skriva under",
                     "base_form": "skriva under",
                     "position_start": 46,
-                    "position_end": 58
+                    "position_end": 58,
+                    "contextual_en": "sign"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_07_s019",
@@ -436,15 +511,18 @@
                     "word_in_sentence": "tung",
                     "base_form": "tung",
                     "position_start": 17,
-                    "position_end": 21
+                    "position_end": 21,
+                    "contextual_en": "tough"
                 },
                 {
                     "word_in_sentence": "stressig",
                     "base_form": "stressig",
                     "position_start": 26,
-                    "position_end": 34
+                    "position_end": 34,
+                    "contextual_en": "stressful"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_07_s020",
@@ -455,15 +533,18 @@
                     "word_in_sentence": "dölja",
                     "base_form": "dölja",
                     "position_start": 12,
-                    "position_end": 17
+                    "position_end": 17,
+                    "contextual_en": "hide"
                 },
                 {
                     "word_in_sentence": "dryg",
                     "base_form": "dryg",
                     "position_start": 40,
-                    "position_end": 44
+                    "position_end": 44,
+                    "contextual_en": "good"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_07_s021",
@@ -474,15 +555,18 @@
                     "word_in_sentence": "Det tycker inte jag heller.",
                     "base_form": "Det tycker inte jag heller.",
                     "position_start": 1,
-                    "position_end": 28
+                    "position_end": 28,
+                    "contextual_en": "I do not think so either."
                 },
                 {
                     "word_in_sentence": "kommissarie",
                     "base_form": "kommissarie",
                     "position_start": 36,
-                    "position_end": 47
+                    "position_end": 47,
+                    "contextual_en": "inspector"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_07_s022",
@@ -493,21 +577,25 @@
                     "word_in_sentence": "apotekare",
                     "base_form": "apotekare",
                     "position_start": 36,
-                    "position_end": 45
+                    "position_end": 45,
+                    "contextual_en": "pharmacist"
                 },
                 {
                     "word_in_sentence": "deltid",
                     "base_form": "deltid",
                     "position_start": 49,
-                    "position_end": 55
+                    "position_end": 55,
+                    "contextual_en": "part-time"
                 },
                 {
                     "word_in_sentence": "servitris",
                     "base_form": "servitris",
                     "position_start": 63,
-                    "position_end": 72
+                    "position_end": 72,
+                    "contextual_en": "waitress"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_07_s023",
@@ -518,9 +606,11 @@
                     "word_in_sentence": "varken…eller",
                     "base_form": "varken…eller",
                     "position_start": 37,
-                    "position_end": 49
+                    "position_end": 49,
+                    "contextual_en": "either... or"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_07_s024",
@@ -531,15 +621,18 @@
                     "word_in_sentence": "tillfälle",
                     "base_form": "tillfälle",
                     "position_start": 15,
-                    "position_end": 24
+                    "position_end": 24,
+                    "contextual_en": "occasion"
                 },
                 {
                     "word_in_sentence": "få en chans",
                     "base_form": "få en chans",
                     "position_start": 32,
-                    "position_end": 43
+                    "position_end": 43,
+                    "contextual_en": "get a chance"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_07_s025",
@@ -550,21 +643,25 @@
                     "word_in_sentence": "bli medlem",
                     "base_form": "bli medlem",
                     "position_start": 15,
-                    "position_end": 25
+                    "position_end": 25,
+                    "contextual_en": "become a member"
                 },
                 {
                     "word_in_sentence": "medlem",
                     "base_form": "medlem",
                     "position_start": 19,
-                    "position_end": 25
+                    "position_end": 25,
+                    "contextual_en": "member"
                 },
                 {
                     "word_in_sentence": "betald",
                     "base_form": "betald",
                     "position_start": 44,
-                    "position_end": 50
+                    "position_end": 50,
+                    "contextual_en": "paid"
                 }
-            ]
+            ],
+            "secondary_words": []
         }
     ],
     "primary_words_used": [

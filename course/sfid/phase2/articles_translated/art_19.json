@@ -16,7 +16,31 @@
                     "word_in_sentence": "–Hej! Det var länge sedan!",
                     "base_form": "–Hej! Det var länge sedan!",
                     "position_start": 1,
-                    "position_end": 27
+                    "position_end": 27,
+                    "contextual_en": "\"Hello! It's been a long time!\""
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "kände hon igen mig",
+                    "base_form": "kände hon igen mig",
+                    "position_start": 94,
+                    "position_end": 112,
+                    "contextual_en": "she recognized me"
+                },
+                {
+                    "word_in_sentence": "skämtade",
+                    "base_form": "skämtade",
+                    "position_start": 297,
+                    "position_end": 305,
+                    "contextual_en": "joked"
+                },
+                {
+                    "word_in_sentence": "hällristning",
+                    "base_form": "hällristning",
+                    "position_start": 578,
+                    "position_end": 590,
+                    "contextual_en": "rock carving"
                 }
             ]
         }

@@ -16,13 +16,31 @@
                     "word_in_sentence": "granne",
                     "base_form": "granne",
                     "position_start": 8,
-                    "position_end": 14
+                    "position_end": 14,
+                    "contextual_en": "neighbor"
                 },
                 {
                     "word_in_sentence": "–Jo, det är bara bra.",
                     "base_form": "–Jo, det är bara bra.",
                     "position_start": 46,
-                    "position_end": 67
+                    "position_end": 67,
+                    "contextual_en": "\"-Well, just fine.\""
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "frågade",
+                    "base_form": "frågade",
+                    "position_start": 15,
+                    "position_end": 22,
+                    "contextual_en": "asked"
+                },
+                {
+                    "word_in_sentence": "mådde",
+                    "base_form": "mådde",
+                    "position_start": 31,
+                    "position_end": 36,
+                    "contextual_en": "doing"
                 }
             ]
         },
@@ -35,7 +53,24 @@
                     "word_in_sentence": "den här veckan",
                     "base_form": "den här veckan",
                     "position_start": 21,
-                    "position_end": 35
+                    "position_end": 35,
+                    "contextual_en": "this week"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "sanningen",
+                    "base_form": "sanningen",
+                    "position_start": 4,
+                    "position_end": 13,
+                    "contextual_en": "the truth"
+                },
+                {
+                    "word_in_sentence": "stressig",
+                    "base_form": "stressig",
+                    "position_start": 53,
+                    "position_end": 61,
+                    "contextual_en": "stressful"
                 }
             ]
         },
@@ -48,13 +83,31 @@
                     "word_in_sentence": "I måndags",
                     "base_form": "i måndags",
                     "position_start": 0,
-                    "position_end": 9
+                    "position_end": 9,
+                    "contextual_en": "Last Monday"
                 },
                 {
                     "word_in_sentence": "livsstil",
                     "base_form": "livsstil",
                     "position_start": 37,
-                    "position_end": 45
+                    "position_end": 45,
+                    "contextual_en": "lifestyle"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "livsstil",
+                    "base_form": "livsstil",
+                    "position_start": 37,
+                    "position_end": 45,
+                    "contextual_en": "lifestyle"
+                },
+                {
+                    "word_in_sentence": "måndags",
+                    "base_form": "måndags",
+                    "position_start": 2,
+                    "position_end": 9,
+                    "contextual_en": "Monday"
                 }
             ]
         },
@@ -67,13 +120,31 @@
                     "word_in_sentence": "Förra veckan",
                     "base_form": "förra veckan",
                     "position_start": 0,
-                    "position_end": 12
+                    "position_end": 12,
+                    "contextual_en": "Last week"
                 },
                 {
                     "word_in_sentence": "vardaglig",
                     "base_form": "vardaglig",
                     "position_start": 53,
-                    "position_end": 62
+                    "position_end": 62,
+                    "contextual_en": "everyday"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "förändra",
+                    "base_form": "förändra",
+                    "position_start": 38,
+                    "position_end": 46,
+                    "contextual_en": "change"
+                },
+                {
+                    "word_in_sentence": "rutin",
+                    "base_form": "rutin",
+                    "position_start": 63,
+                    "position_end": 68,
+                    "contextual_en": "routine"
                 }
             ]
         },
@@ -86,7 +157,24 @@
                     "word_in_sentence": "sömnproblem",
                     "base_form": "sömnproblem",
                     "position_start": 24,
-                    "position_end": 35
+                    "position_end": 35,
+                    "contextual_en": "sleep problems"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "nämligen",
+                    "base_form": "nämligen",
+                    "position_start": 9,
+                    "position_end": 17,
+                    "contextual_en": "actually"
+                },
+                {
+                    "word_in_sentence": "svåra",
+                    "base_form": "svåra",
+                    "position_start": 18,
+                    "position_end": 23,
+                    "contextual_en": "severe"
                 }
             ]
         },
@@ -99,26 +187,47 @@
                     "word_in_sentence": "antingen…eller",
                     "base_form": "antingen…eller",
                     "position_start": 28,
-                    "position_end": 42
+                    "position_end": 42,
+                    "contextual_en": "either... or"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "val",
+                    "base_form": "val",
+                    "position_start": 23,
+                    "position_end": 26,
+                    "contextual_en": "choice"
                 }
             ]
         },
         {
             "sentence_id": "art_31_s007",
-            "sv": "Han tyckte jag skulle vara utomhus mer.",
-            "en": "He thought I should be outdoors more.\n\nA few days ago, I started walking.",
+            "sv": "Han tyckte jag skulle vara utomhus mer. utanför hemmet.",
+            "en": "He thought I should be outdoors more.\n\nA few days ago, I started walking. more. For some.",
             "target_words": [
                 {
                     "word_in_sentence": "vara uto",
                     "base_form": "vara ute",
                     "position_start": 22,
-                    "position_end": 30
+                    "position_end": 30,
+                    "contextual_en": "be outdoors"
                 },
                 {
-                    "word_in_sentence": "mer.\n\nFör någr",
+                    "word_in_sentence": "utanför hemmet",
                     "base_form": "utanför hemmet",
-                    "position_start": 35,
-                    "position_end": 49
+                    "position_start": 40,
+                    "position_end": 54,
+                    "contextual_en": "more. For some"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "utomhus",
+                    "base_form": "utomhus",
+                    "position_start": 27,
+                    "position_end": 34,
+                    "contextual_en": "outdoors"
                 }
             ]
         },
@@ -126,176 +235,311 @@
             "sentence_id": "art_31_s008",
             "sv": "För några dagar sedan började jag promenera.",
             "en": "I went to a clothing store that had a big sale all day. Instead of looking in an old catalog, I bought a new white swimsuit and a pair of extra thick socks.",
-            "target_words": []
+            "target_words": [],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "promenera",
+                    "base_form": "promenera",
+                    "position_start": 34,
+                    "position_end": 43,
+                    "contextual_en": "walking"
+                },
+                {
+                    "word_in_sentence": "dagar sedan",
+                    "base_form": "dagar sedan",
+                    "position_start": 10,
+                    "position_end": 21,
+                    "contextual_en": "days ago"
+                }
+            ]
         },
         {
             "sentence_id": "art_31_s009",
-            "sv": "Jag gick till en klädbutik som hade en stor rea hela dagen.",
-            "en": "But suddenly I noticed that my wallet was gone.",
+            "sv": "Jag gick till en klädbutik som hade en stor rea hela dagen. strumpa. plånbok.",
+            "en": "But suddenly I noticed that my wallet was gone. suddenly. wallet.",
             "target_words": [
                 {
-                    "word_in_sentence": " plötsl",
+                    "word_in_sentence": "strumpa",
                     "base_form": "strumpa",
-                    "position_start": 3,
-                    "position_end": 10
+                    "position_start": 60,
+                    "position_end": 67,
+                    "contextual_en": "suddenly"
                 },
                 {
                     "word_in_sentence": "plånbok",
                     "base_form": "plånbok",
-                    "position_start": 33,
-                    "position_end": 40
+                    "position_start": 69,
+                    "position_end": 76,
+                    "contextual_en": "wallet"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "klädbutik",
+                    "base_form": "klädbutik",
+                    "position_start": 17,
+                    "position_end": 26,
+                    "contextual_en": "clothing store"
+                },
+                {
+                    "word_in_sentence": "rea",
+                    "base_form": "rea",
+                    "position_start": 44,
+                    "position_end": 47,
+                    "contextual_en": "sale"
                 }
             ]
         },
         {
             "sentence_id": "art_31_s010",
-            "sv": "Istället för att titta i en gammal katalog köpte jag en ny vit baddräkt och ett par extra tjocka strumpor.",
-            "en": "I didn't want to accidentally do something stupid or seem like I was trying to shoplift.",
+            "sv": "Istället för att titta i en gammal katalog köpte jag en ny vit baddräkt och ett par extra tjocka strumpor. råka. göra något dumt. verka. snatta.",
+            "en": "I didn't want to accidentally do something stupid or seem like I was trying to shoplift. accidentally. do something stupid. seem. shoplift.",
             "target_words": [
                 {
                     "word_in_sentence": "råka",
                     "base_form": "råka",
-                    "position_start": 15,
-                    "position_end": 19
+                    "position_start": 107,
+                    "position_end": 111,
+                    "contextual_en": "accidentally"
                 },
                 {
                     "word_in_sentence": "göra något dumt",
                     "base_form": "göra något dumt",
-                    "position_start": 20,
-                    "position_end": 35
+                    "position_start": 113,
+                    "position_end": 128,
+                    "contextual_en": "do something stupid"
                 },
                 {
                     "word_in_sentence": "verka",
                     "base_form": "verka",
-                    "position_start": 42,
-                    "position_end": 47
+                    "position_start": 130,
+                    "position_end": 135,
+                    "contextual_en": "seem"
                 },
                 {
                     "word_in_sentence": "snatta",
                     "base_form": "snatta",
-                    "position_start": 69,
-                    "position_end": 75
+                    "position_start": 137,
+                    "position_end": 143,
+                    "contextual_en": "shoplift"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "baddräkt",
+                    "base_form": "baddräkt",
+                    "position_start": 63,
+                    "position_end": 71,
+                    "contextual_en": "swimsuit"
+                },
+                {
+                    "word_in_sentence": "strumpor",
+                    "base_form": "strumpor",
+                    "position_start": 97,
+                    "position_end": 105,
+                    "contextual_en": "socks"
                 }
             ]
         },
         {
             "sentence_id": "art_31_s011",
-            "sv": "Men plötsligt märkte jag att min plånbok var borta.",
-            "en": "I thought about asking someone in the staff who could act.",
+            "sv": "Men plötsligt märkte jag att min plånbok var borta. fråga efter någon. agera.",
+            "en": "I thought about asking someone in the staff who could act. asking someone. act.",
             "target_words": [
                 {
-                    "word_in_sentence": "fråga någon",
+                    "word_in_sentence": "fråga efter någon",
                     "base_form": "fråga efter någon",
-                    "position_start": 11,
-                    "position_end": 22
+                    "position_start": 52,
+                    "position_end": 69,
+                    "contextual_en": "asking someone"
                 },
                 {
                     "word_in_sentence": "agera",
                     "base_form": "agera",
-                    "position_start": 46,
-                    "position_end": 51
+                    "position_start": 71,
+                    "position_end": 76,
+                    "contextual_en": "act"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_31_s012",
             "sv": "Jag ville inte råka göra något dumt eller verka som att jag försökte snatta.",
             "en": "They didn't find it.",
-            "target_words": []
+            "target_words": [],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_31_s013",
-            "sv": "Jag tänkte fråga någon i personalen som kunde agera.",
-            "en": "I don't usually skimp, but an expensive watch I had in my bag was also gone.",
+            "sv": "Jag tänkte fråga någon i personalen som kunde agera. snåla. klocka.",
+            "en": "I don't usually skimp, but an expensive watch I had in my bag was also gone. skimp. watch.",
             "target_words": [
                 {
                     "word_in_sentence": "snåla",
                     "base_form": "snåla",
-                    "position_start": 16,
-                    "position_end": 21
+                    "position_start": 53,
+                    "position_end": 58,
+                    "contextual_en": "skimp"
                 },
                 {
                     "word_in_sentence": "klocka",
                     "base_form": "klocka",
-                    "position_start": 34,
-                    "position_end": 40
+                    "position_start": 60,
+                    "position_end": 66,
+                    "contextual_en": "watch"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "personalen",
+                    "base_form": "personalen",
+                    "position_start": 25,
+                    "position_end": 35,
+                    "contextual_en": "staff"
                 }
             ]
         },
         {
             "sentence_id": "art_31_s014",
-            "sv": "De hittade den inte.",
-            "en": "Had I put it somewhere?",
+            "sv": "De hittade den inte. någonstans.",
+            "en": "Had I put it somewhere? somewhere.",
             "target_words": [
                 {
                     "word_in_sentence": "någonstans",
                     "base_form": "någonstans",
-                    "position_start": 18,
-                    "position_end": 28
+                    "position_start": 21,
+                    "position_end": 31,
+                    "contextual_en": "somewhere"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "hittade",
+                    "base_form": "hittade",
+                    "position_start": 3,
+                    "position_end": 10,
+                    "contextual_en": "find"
                 }
             ]
         },
         {
             "sentence_id": "art_31_s015",
-            "sv": "Jag brukar inte snåla, men en dyr klocka jag hade i väskan var också borta.",
-            "en": "The next morning it was freezing cold and the ground was icy.",
+            "sv": "Jag brukar inte snåla, men en dyr klocka jag hade i väskan var också borta. morgonen därpå. isig.",
+            "en": "The next morning it was freezing cold and the ground was icy. The next morning. icy.",
             "target_words": [
                 {
-                    "word_in_sentence": "Morgonen därpå",
+                    "word_in_sentence": "morgonen därpå",
                     "base_form": "morgonen därpå",
-                    "position_start": 0,
-                    "position_end": 14
+                    "position_start": 76,
+                    "position_end": 90,
+                    "contextual_en": "The next morning"
                 },
                 {
                     "word_in_sentence": "isig",
                     "base_form": "isig",
-                    "position_start": 46,
-                    "position_end": 50
+                    "position_start": 92,
+                    "position_end": 96,
+                    "contextual_en": "icy"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "väskan",
+                    "base_form": "väskan",
+                    "position_start": 52,
+                    "position_end": 58,
+                    "contextual_en": "bag"
+                },
+                {
+                    "word_in_sentence": "dyr",
+                    "base_form": "dyr",
+                    "position_start": 30,
+                    "position_end": 33,
+                    "contextual_en": "expensive"
                 }
             ]
         },
         {
             "sentence_id": "art_31_s016",
-            "sv": "Hade jag lagt den någonstans?",
-            "en": "I took an ugly jacket and an umbrella.",
+            "sv": "Hade jag lagt den någonstans? ful.",
+            "en": "I took an ugly jacket and an umbrella. ugly.",
             "target_words": [
                 {
                     "word_in_sentence": "ful",
                     "base_form": "ful",
-                    "position_start": 11,
-                    "position_end": 14
+                    "position_start": 30,
+                    "position_end": 33,
+                    "contextual_en": "ugly"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "lagt",
+                    "base_form": "lagt",
+                    "position_start": 9,
+                    "position_end": 13,
+                    "contextual_en": "put"
                 }
             ]
         },
         {
             "sentence_id": "art_31_s017",
-            "sv": "Morgonen därpå var det iskallt och marken var isig.",
-            "en": "I was not used to the cold and started freezing right to my soul.",
+            "sv": "Morgonen därpå var det iskallt och marken var isig. van vid. frysa.",
+            "en": "I was not used to the cold and started freezing right to my soul. used to. freezing.",
             "target_words": [
                 {
                     "word_in_sentence": "van vid",
                     "base_form": "van vid",
-                    "position_start": 13,
-                    "position_end": 20
+                    "position_start": 52,
+                    "position_end": 59,
+                    "contextual_en": "used to"
                 },
                 {
                     "word_in_sentence": "frysa",
                     "base_form": "frysa",
-                    "position_start": 39,
-                    "position_end": 44
+                    "position_start": 61,
+                    "position_end": 66,
+                    "contextual_en": "freezing"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "iskallt",
+                    "base_form": "iskallt",
+                    "position_start": 23,
+                    "position_end": 30,
+                    "contextual_en": "freezing cold"
+                },
+                {
+                    "word_in_sentence": "marken",
+                    "base_form": "marken",
+                    "position_start": 35,
+                    "position_end": 41,
+                    "contextual_en": "ground"
                 }
             ]
         },
         {
             "sentence_id": "art_31_s018",
-            "sv": "Jag tog en ful jacka och ett paraply.",
-            "en": "I thought about daydreaming away.",
+            "sv": "Jag tog en ful jacka och ett paraply. drömma.",
+            "en": "I thought about daydreaming away. daydreaming.",
             "target_words": [
                 {
                     "word_in_sentence": "drömma",
                     "base_form": "drömma",
-                    "position_start": 11,
-                    "position_end": 17
+                    "position_start": 38,
+                    "position_end": 44,
+                    "contextual_en": "daydreaming"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "paraply",
+                    "base_form": "paraply",
+                    "position_start": 29,
+                    "position_end": 36,
+                    "contextual_en": "umbrella"
                 }
             ]
         },
@@ -305,144 +549,288 @@
             "en": "My current apartment is not as big as the house I lived in when I was 10 years old, but every detail is important.",
             "target_words": [
                 {
-                    "word_in_sentence": "inte lika stor",
+                    "word_in_sentence": "inte",
                     "base_form": "inte lika stor",
-                    "position_start": 26,
-                    "position_end": 40
+                    "position_start": 8,
+                    "position_end": 12,
+                    "contextual_en": "not as big"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "kylan",
+                    "base_form": "kylan",
+                    "position_start": 21,
+                    "position_end": 26,
+                    "contextual_en": "the cold"
+                },
+                {
+                    "word_in_sentence": "själ",
+                    "base_form": "själ",
+                    "position_start": 59,
+                    "position_end": 63,
+                    "contextual_en": "soul"
                 }
             ]
         },
         {
             "sentence_id": "art_31_s020",
-            "sv": "Jag tänkte drömma mig bort.",
-            "en": "I went into my bedroom to rest for a quarter of an hour.",
+            "sv": "Jag tänkte drömma mig bort. sovrum.",
+            "en": "I went into my bedroom to rest for a quarter of an hour. bedroom.",
             "target_words": [
                 {
                     "word_in_sentence": "sovrum",
                     "base_form": "sovrum",
-                    "position_start": 19,
-                    "position_end": 25
+                    "position_start": 28,
+                    "position_end": 34,
+                    "contextual_en": "bedroom"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "bort",
+                    "base_form": "bort",
+                    "position_start": 22,
+                    "position_end": 26,
+                    "contextual_en": "away"
                 }
             ]
         },
         {
             "sentence_id": "art_31_s021",
-            "sv": "Min nuvarande lägenhet är inte lika stor som huset jag bodde i när jag var 10 år gammal, men varje detalj är viktig.",
-            "en": "\"Prepare yourself for the day after tomorrow!\" said a singing voice on the radio.",
+            "sv": "Min nuvarande lägenhet är inte lika stor som huset jag bodde i när jag var 10 år gammal, men varje detalj är viktig. förbered. sjungande.",
+            "en": "\"Prepare yourself for the day after tomorrow!\" said a singing voice on the radio. Prepare. singing.",
             "target_words": [
                 {
-                    "word_in_sentence": "Förbered",
+                    "word_in_sentence": "förbered",
                     "base_form": "förbered",
-                    "position_start": 1,
-                    "position_end": 9
+                    "position_start": 117,
+                    "position_end": 125,
+                    "contextual_en": "Prepare"
                 },
                 {
-                    "word_in_sentence": "i övermorgon",
+                    "word_in_sentence": "i",
                     "base_form": "i övermorgon",
-                    "position_start": 18,
-                    "position_end": 30
+                    "position_start": 1,
+                    "position_end": 2,
+                    "contextual_en": "the day after tomorrow"
                 },
                 {
                     "word_in_sentence": "sjungande",
                     "base_form": "sjungande",
-                    "position_start": 39,
-                    "position_end": 48
+                    "position_start": 127,
+                    "position_end": 136,
+                    "contextual_en": "singing"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "nuvarande",
+                    "base_form": "nuvarande",
+                    "position_start": 4,
+                    "position_end": 13,
+                    "contextual_en": "current"
+                },
+                {
+                    "word_in_sentence": "detalj",
+                    "base_form": "detalj",
+                    "position_start": 99,
+                    "position_end": 105,
+                    "contextual_en": "detail"
                 }
             ]
         },
         {
             "sentence_id": "art_31_s022",
-            "sv": "Jag gick in i mitt sovrum för att vila i en kvart.",
-            "en": "It was a program about a capable housewife.",
+            "sv": "Jag gick in i mitt sovrum för att vila i en kvart. husmor.",
+            "en": "It was a program about a capable housewife. housewife.",
             "target_words": [
                 {
                     "word_in_sentence": "husmor",
                     "base_form": "husmor",
-                    "position_start": 33,
-                    "position_end": 39
+                    "position_start": 51,
+                    "position_end": 57,
+                    "contextual_en": "housewife"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "kvart",
+                    "base_form": "kvart",
+                    "position_start": 44,
+                    "position_end": 49,
+                    "contextual_en": "quarter of an hour"
+                },
+                {
+                    "word_in_sentence": "vila",
+                    "base_form": "vila",
+                    "position_start": 34,
+                    "position_end": 38,
+                    "contextual_en": "rest"
                 }
             ]
         },
         {
             "sentence_id": "art_31_s023",
-            "sv": "\"Förbered dig för i övermorgon!\" sa en sjungande röst i radion.",
-            "en": "One tip was to clean out your fridge, another was to take a sauna in your little bathroom to relax.",
+            "sv": "\"Förbered dig för i övermorgon!\" sa en sjungande röst i radion. kylskåp. bada bastu.",
+            "en": "One tip was to clean out your fridge, another was to take a sauna in your little bathroom to relax. fridge. take a sauna.",
             "target_words": [
                 {
                     "word_in_sentence": "kylskåp",
                     "base_form": "kylskåp",
-                    "position_start": 31,
-                    "position_end": 38
+                    "position_start": 64,
+                    "position_end": 71,
+                    "contextual_en": "fridge"
                 },
                 {
                     "word_in_sentence": "bada bastu",
                     "base_form": "bada bastu",
-                    "position_start": 58,
-                    "position_end": 68
+                    "position_start": 73,
+                    "position_end": 83,
+                    "contextual_en": "take a sauna"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "röst",
+                    "base_form": "röst",
+                    "position_start": 49,
+                    "position_end": 53,
+                    "contextual_en": "voice"
+                },
+                {
+                    "word_in_sentence": "radion",
+                    "base_form": "radion",
+                    "position_start": 56,
+                    "position_end": 62,
+                    "contextual_en": "radio"
                 }
             ]
         },
         {
             "sentence_id": "art_31_s024",
-            "sv": "Det var ett program om en duktig husmor.",
-            "en": "Taking a sauna is a useful method for relaxation.",
+            "sv": "Det var ett program om en duktig husmor. bada bastu. användbar.",
+            "en": "Taking a sauna is a useful method for relaxation. Taking a sauna. useful.",
             "target_words": [
                 {
                     "word_in_sentence": "bada bastu",
                     "base_form": "bada bastu",
-                    "position_start": 4,
-                    "position_end": 14
+                    "position_start": 41,
+                    "position_end": 51,
+                    "contextual_en": "Taking a sauna"
                 },
                 {
                     "word_in_sentence": "användbar",
                     "base_form": "användbar",
-                    "position_start": 21,
-                    "position_end": 30
+                    "position_start": 53,
+                    "position_end": 62,
+                    "contextual_en": "useful"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "program",
+                    "base_form": "program",
+                    "position_start": 12,
+                    "position_end": 19,
+                    "contextual_en": "program"
+                },
+                {
+                    "word_in_sentence": "duktig",
+                    "base_form": "duktig",
+                    "position_start": 26,
+                    "position_end": 32,
+                    "contextual_en": "capable"
                 }
             ]
         },
         {
             "sentence_id": "art_31_s025",
-            "sv": "Ett tips var att städa ur sitt kylskåp, ett annat var att bada bastu i sitt lilla badrum för att ta det lugnt.",
-            "en": "I actually haven't taken a sauna at all, at least not for several months.",
+            "sv": "Ett tips var att städa ur sitt kylskåp, ett annat var att bada bastu i sitt lilla badrum för att ta det lugnt. faktisk. inte på flera månader.",
+            "en": "I actually haven't taken a sauna at all, at least not for several months. actually. not for several months.",
             "target_words": [
                 {
                     "word_in_sentence": "faktisk",
                     "base_form": "faktisk",
-                    "position_start": 8,
-                    "position_end": 15
+                    "position_start": 111,
+                    "position_end": 118,
+                    "contextual_en": "actually"
                 },
                 {
                     "word_in_sentence": "inte på flera månader",
                     "base_form": "inte på flera månader",
-                    "position_start": 52,
-                    "position_end": 73
+                    "position_start": 120,
+                    "position_end": 141,
+                    "contextual_en": "not for several months"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "städa ur",
+                    "base_form": "städa ur",
+                    "position_start": 17,
+                    "position_end": 25,
+                    "contextual_en": "clean out"
+                },
+                {
+                    "word_in_sentence": "lugnt",
+                    "base_form": "lugnt",
+                    "position_start": 104,
+                    "position_end": 109,
+                    "contextual_en": "relax"
                 }
             ]
         },
         {
             "sentence_id": "art_31_s026",
-            "sv": "Att bada bastu är en användbar metod för avkoppling.",
-            "en": "Before, I took a sauna several times a week.",
+            "sv": "Att bada bastu är en användbar metod för avkoppling. flera gånger i veckan.",
+            "en": "Before, I took a sauna several times a week. several times a week.",
             "target_words": [
                 {
                     "word_in_sentence": "flera gånger i veckan",
                     "base_form": "flera gånger i veckan",
-                    "position_start": 17,
-                    "position_end": 38
+                    "position_start": 53,
+                    "position_end": 74,
+                    "contextual_en": "several times a week"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "metod",
+                    "base_form": "metod",
+                    "position_start": 31,
+                    "position_end": 36,
+                    "contextual_en": "method"
+                },
+                {
+                    "word_in_sentence": "avkoppling",
+                    "base_form": "avkoppling",
+                    "position_start": 41,
+                    "position_end": 51,
+                    "contextual_en": "relaxation"
                 }
             ]
         },
         {
             "sentence_id": "art_31_s027",
-            "sv": "Jag har faktiskt inte badat bastu alls, i alla fall inte på flera månader.",
-            "en": "After a couple of days, I felt better.",
+            "sv": "Jag har faktiskt inte badat bastu alls, i alla fall inte på flera månader. ett par dagar.",
+            "en": "After a couple of days, I felt better. a couple of days.",
             "target_words": [
                 {
                     "word_in_sentence": "ett par dagar",
                     "base_form": "ett par dagar",
-                    "position_start": 6,
-                    "position_end": 19
+                    "position_start": 75,
+                    "position_end": 88,
+                    "contextual_en": "a couple of days"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "alls",
+                    "base_form": "alls",
+                    "position_start": 34,
+                    "position_end": 38,
+                    "contextual_en": "at all"
                 }
             ]
         },
@@ -452,61 +840,110 @@
             "en": "I stopped giving up and decided to let out all the stress.",
             "target_words": [
                 {
-                    "word_in_sentence": "ge upp",
+                    "word_in_sentence": "ge",
                     "base_form": "ge upp",
-                    "position_start": 12,
-                    "position_end": 18
+                    "position_start": 26,
+                    "position_end": 28,
+                    "contextual_en": "giving up"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "Förut",
+                    "base_form": "förut",
+                    "position_start": 0,
+                    "position_end": 5,
+                    "contextual_en": "Before"
                 }
             ]
         },
         {
             "sentence_id": "art_31_s029",
-            "sv": "Efter ett par dagar kände jag mig bättre.",
-            "en": "If something breaks, what will it mean in a hundred years?",
+            "sv": "Efter ett par dagar kände jag mig bättre. sönder. betyda.",
+            "en": "If something breaks, what will it mean in a hundred years? breaks. mean.",
             "target_words": [
                 {
                     "word_in_sentence": "sönder",
                     "base_form": "sönder",
-                    "position_start": 13,
-                    "position_end": 19
+                    "position_start": 42,
+                    "position_end": 48,
+                    "contextual_en": "breaks"
                 },
                 {
                     "word_in_sentence": "betyda",
                     "base_form": "betyda",
-                    "position_start": 36,
-                    "position_end": 42
+                    "position_start": 50,
+                    "position_end": 56,
+                    "contextual_en": "mean"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "bättre",
+                    "base_form": "bättre",
+                    "position_start": 34,
+                    "position_end": 40,
+                    "contextual_en": "better"
                 }
             ]
         },
         {
             "sentence_id": "art_31_s030",
-            "sv": "Jag slutade ge upp och bestämde mig för att släppa ut all stress.",
-            "en": "You have to sleep eight hours a day, at least some time for yourself.",
+            "sv": "Jag slutade ge upp och bestämde mig för att släppa ut all stress. per dygn. en viss tid.",
+            "en": "You have to sleep eight hours a day, at least some time for yourself. a day. some time.",
             "target_words": [
                 {
                     "word_in_sentence": "per dygn",
                     "base_form": "per dygn",
-                    "position_start": 27,
-                    "position_end": 35
+                    "position_start": 66,
+                    "position_end": 74,
+                    "contextual_en": "a day"
                 },
                 {
                     "word_in_sentence": "en viss tid",
                     "base_form": "en viss tid",
-                    "position_start": 43,
-                    "position_end": 54
+                    "position_start": 76,
+                    "position_end": 87,
+                    "contextual_en": "some time"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "släppa ut",
+                    "base_form": "släppa ut",
+                    "position_start": 44,
+                    "position_end": 53,
+                    "contextual_en": "let out"
+                },
+                {
+                    "word_in_sentence": "slutade",
+                    "base_form": "slutade",
+                    "position_start": 4,
+                    "position_end": 11,
+                    "contextual_en": "stopped"
                 }
             ]
         },
         {
             "sentence_id": "art_31_s031",
-            "sv": "Om något går sönder, vad kommer det betyda om hundra år?",
-            "en": "My favorite team came in seventh place in the league, but what does that matter?",
+            "sv": "Om något går sönder, vad kommer det betyda om hundra år? sjunde plats.",
+            "en": "My favorite team came in seventh place in the league, but what does that matter? seventh place.",
             "target_words": [
                 {
                     "word_in_sentence": "sjunde plats",
                     "base_form": "sjunde plats",
-                    "position_start": 23,
-                    "position_end": 35
+                    "position_start": 57,
+                    "position_end": 69,
+                    "contextual_en": "seventh place"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "hundra år",
+                    "base_form": "hundra år",
+                    "position_start": 46,
+                    "position_end": 55,
+                    "contextual_en": "a hundred years"
                 }
             ]
         },
@@ -514,7 +951,16 @@
             "sentence_id": "art_31_s032",
             "sv": "Man måste sova åtta timmar per dygn, minst en viss tid för sig själv.",
             "en": "Life goes on!",
-            "target_words": []
+            "target_words": [],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "timmar",
+                    "base_form": "timmar",
+                    "position_start": 20,
+                    "position_end": 26,
+                    "contextual_en": "hours"
+                }
+            ]
         },
         {
             "sentence_id": "art_31_s033",
@@ -525,7 +971,17 @@
                     "word_in_sentence": "sjunde plats",
                     "base_form": "sjunde plats",
                     "position_start": 23,
-                    "position_end": 35
+                    "position_end": 35,
+                    "contextual_en": "seventh place"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "favoritlag",
+                    "base_form": "favoritlag",
+                    "position_start": 5,
+                    "position_end": 15,
+                    "contextual_en": "favorite team"
                 }
             ]
         },
@@ -533,7 +989,16 @@
             "sentence_id": "art_31_s034",
             "sv": "Livet går vidare!",
             "en": "",
-            "target_words": []
+            "target_words": [],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "Livet går vidare",
+                    "base_form": "livet går vidare",
+                    "position_start": 0,
+                    "position_end": 16,
+                    "contextual_en": "Life goes on"
+                }
+            ]
         }
     ],
     "primary_words_used": [

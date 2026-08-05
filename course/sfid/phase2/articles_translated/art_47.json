@@ -16,13 +16,24 @@
                     "word_in_sentence": "Sami",
                     "base_form": "Sami",
                     "position_start": 18,
-                    "position_end": 22
+                    "position_end": 22,
+                    "contextual_en": "Sami"
                 },
                 {
                     "word_in_sentence": "torg",
                     "base_form": "torg",
                     "position_start": 36,
-                    "position_end": 40
+                    "position_end": 40,
+                    "contextual_en": "square"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "mötte",
+                    "base_form": "mötte",
+                    "position_start": 4,
+                    "position_end": 9,
+                    "contextual_en": "met"
                 }
             ]
         },
@@ -35,13 +46,24 @@
                     "word_in_sentence": "trettiotre",
                     "base_form": "trettiotre",
                     "position_start": 8,
-                    "position_end": 18
+                    "position_end": 18,
+                    "contextual_en": "thirty-three"
                 },
                 {
                     "word_in_sentence": "bosätta sig",
                     "base_form": "bosätta sig",
                     "position_start": 74,
-                    "position_end": 85
+                    "position_end": 85,
+                    "contextual_en": "settle"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "precis",
+                    "base_form": "precis",
+                    "position_start": 38,
+                    "position_end": 44,
+                    "contextual_en": "just"
                 }
             ]
         },
@@ -54,7 +76,17 @@
                     "word_in_sentence": "Kan du prata lite långsammare?",
                     "base_form": "Kan du prata lite långsammare?",
                     "position_start": 1,
-                    "position_end": 31
+                    "position_end": 31,
+                    "contextual_en": "Can you speak a little slower?"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "vänligt",
+                    "base_form": "vänligt",
+                    "position_start": 41,
+                    "position_end": 48,
+                    "contextual_en": "kindly"
                 }
             ]
         },
@@ -67,7 +99,24 @@
                     "word_in_sentence": "mer",
                     "base_form": "mer",
                     "position_start": 37,
-                    "position_end": 40
+                    "position_end": 40,
+                    "contextual_en": "more"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "förstå",
+                    "base_form": "förstå",
+                    "position_start": 10,
+                    "position_end": 16,
+                    "contextual_en": "understand"
+                },
+                {
+                    "word_in_sentence": "lära mig",
+                    "base_form": "lära mig",
+                    "position_start": 28,
+                    "position_end": 36,
+                    "contextual_en": "learn"
                 }
             ]
         },
@@ -80,7 +129,17 @@
                     "word_in_sentence": "framtid",
                     "base_form": "framtid",
                     "position_start": 23,
-                    "position_end": 30
+                    "position_end": 30,
+                    "contextual_en": "future"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "diskuterade",
+                    "base_form": "diskuterade",
+                    "position_start": 3,
+                    "position_end": 14,
+                    "contextual_en": "discussed"
                 }
             ]
         },
@@ -93,37 +152,59 @@
                     "word_in_sentence": "Sami",
                     "base_form": "Sami",
                     "position_start": 0,
-                    "position_end": 4
+                    "position_end": 4,
+                    "contextual_en": "Sami"
                 },
                 {
                     "word_in_sentence": "1800-talet",
                     "base_form": "1800-talet",
                     "position_start": 23,
-                    "position_end": 33
+                    "position_end": 33,
+                    "contextual_en": "19th century"
                 },
                 {
                     "word_in_sentence": "1900-talet",
                     "base_form": "1900-talet",
                     "position_start": 48,
-                    "position_end": 58
+                    "position_end": 58,
+                    "contextual_en": "20th century"
                 },
                 {
                     "word_in_sentence": "monarki",
                     "base_form": "monarki",
                     "position_start": 91,
-                    "position_end": 98
+                    "position_end": 98,
+                    "contextual_en": "monarchy"
                 },
                 {
                     "word_in_sentence": "kejsardöme",
                     "base_form": "kejsardöme",
                     "position_start": 119,
-                    "position_end": 129
+                    "position_end": 129,
+                    "contextual_en": "empire"
                 },
                 {
                     "word_in_sentence": "kejsare",
                     "base_form": "kejsare",
                     "position_start": 155,
-                    "position_end": 162
+                    "position_end": 162,
+                    "contextual_en": "emperor"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "mäktigt",
+                    "base_form": "mäktigt",
+                    "position_start": 111,
+                    "position_end": 118,
+                    "contextual_en": "powerful"
+                },
+                {
+                    "word_in_sentence": "grym",
+                    "base_form": "grym",
+                    "position_start": 150,
+                    "position_end": 154,
+                    "contextual_en": "cruel"
                 }
             ]
         },
@@ -136,25 +217,45 @@
                     "word_in_sentence": "konvertera",
                     "base_form": "konvertera",
                     "position_start": 25,
-                    "position_end": 35
+                    "position_end": 35,
+                    "contextual_en": "convert"
                 },
                 {
                     "word_in_sentence": "lutherskt kristen",
                     "base_form": "lutherskt kristen",
                     "position_start": 75,
-                    "position_end": 92
+                    "position_end": 92,
+                    "contextual_en": "Lutheran Christian"
                 },
                 {
                     "word_in_sentence": "hot",
                     "base_form": "hot",
                     "position_start": 116,
-                    "position_end": 119
+                    "position_end": 119,
+                    "contextual_en": "threats"
                 },
                 {
                     "word_in_sentence": "otrygghet",
                     "base_form": "otrygghet",
                     "position_start": 129,
-                    "position_end": 138
+                    "position_end": 138,
+                    "contextual_en": "insecurity"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "tvingades",
+                    "base_form": "tvingades",
+                    "position_start": 15,
+                    "position_end": 24,
+                    "contextual_en": "forced"
+                },
+                {
+                    "word_in_sentence": "specifik",
+                    "base_form": "specifik",
+                    "position_start": 44,
+                    "position_end": 52,
+                    "contextual_en": "specific"
                 }
             ]
         },
@@ -162,7 +263,16 @@
             "sentence_id": "art_47_s008",
             "sv": "\"Ja, verkligen,\" sa jag.",
             "en": "\"Yes, indeed,\" I said.",
-            "target_words": []
+            "target_words": [],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "verkligen",
+                    "base_form": "verkligen",
+                    "position_start": 5,
+                    "position_end": 14,
+                    "contextual_en": "indeed"
+                }
+            ]
         },
         {
             "sentence_id": "art_47_s009",
@@ -173,13 +283,24 @@
                     "word_in_sentence": "diktatur",
                     "base_form": "diktatur",
                     "position_start": 14,
-                    "position_end": 22
+                    "position_end": 22,
+                    "contextual_en": "dictatorship"
                 },
                 {
                     "word_in_sentence": "våld",
                     "base_form": "våld",
                     "position_start": 38,
-                    "position_end": 42
+                    "position_end": 42,
+                    "contextual_en": "violence"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "ren",
+                    "base_form": "ren",
+                    "position_start": 10,
+                    "position_end": 13,
+                    "contextual_en": "pure"
                 }
             ]
         },
@@ -192,25 +313,45 @@
                     "word_in_sentence": "socialistisk",
                     "base_form": "socialistisk",
                     "position_start": 14,
-                    "position_end": 26
+                    "position_end": 26,
+                    "contextual_en": "socialist"
                 },
                 {
                     "word_in_sentence": "nationalistisk",
                     "base_form": "nationalistisk",
                     "position_start": 33,
-                    "position_end": 47
+                    "position_end": 47,
+                    "contextual_en": "nationalist"
                 },
                 {
                     "word_in_sentence": "förändra",
                     "base_form": "förändra",
                     "position_start": 61,
-                    "position_end": 69
+                    "position_end": 69,
+                    "contextual_en": "change"
                 },
                 {
                     "word_in_sentence": "krig",
                     "base_form": "krig",
                     "position_start": 107,
-                    "position_end": 111
+                    "position_end": 111,
+                    "contextual_en": "war"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "radikal",
+                    "base_form": "radikal",
+                    "position_start": 6,
+                    "position_end": 13,
+                    "contextual_en": "radical"
+                },
+                {
+                    "word_in_sentence": "farligt",
+                    "base_form": "farligt",
+                    "position_start": 99,
+                    "position_end": 106,
+                    "contextual_en": "dangerous"
                 }
             ]
         },
@@ -223,7 +364,24 @@
                     "word_in_sentence": "successionsordningen",
                     "base_form": "successionsordningen",
                     "position_start": 70,
-                    "position_end": 90
+                    "position_end": 90,
+                    "contextual_en": "Act of Succession"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "fredliga",
+                    "base_form": "fredliga",
+                    "position_start": 20,
+                    "position_end": 28,
+                    "contextual_en": "peaceful"
+                },
+                {
+                    "word_in_sentence": "regleras",
+                    "base_form": "regleras",
+                    "position_start": 34,
+                    "position_end": 42,
+                    "contextual_en": "regulated"
                 }
             ]
         },
@@ -236,19 +394,38 @@
                     "word_in_sentence": "ungdomsförbund",
                     "base_form": "ungdomsförbund",
                     "position_start": 36,
-                    "position_end": 50
+                    "position_end": 50,
+                    "contextual_en": "youth league"
                 },
                 {
                     "word_in_sentence": "jämlikhet",
                     "base_form": "jämlikhet",
                     "position_start": 69,
-                    "position_end": 78
+                    "position_end": 78,
+                    "contextual_en": "equality"
                 },
                 {
                     "word_in_sentence": "självstyre",
                     "base_form": "självstyre",
                     "position_start": 93,
-                    "position_end": 103
+                    "position_end": 103,
+                    "contextual_en": "self-government"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "engagerar sig",
+                    "base_form": "engagerar sig",
+                    "position_start": 11,
+                    "position_end": 24,
+                    "contextual_en": "get involved"
+                },
+                {
+                    "word_in_sentence": "kämpa",
+                    "base_form": "kämpa",
+                    "position_start": 59,
+                    "position_end": 64,
+                    "contextual_en": "fight"
                 }
             ]
         },
@@ -261,7 +438,24 @@
                     "word_in_sentence": "Sami",
                     "base_form": "Sami",
                     "position_start": 0,
-                    "position_end": 4
+                    "position_end": 4,
+                    "contextual_en": "Sami"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "nickade",
+                    "base_form": "nickade",
+                    "position_start": 5,
+                    "position_end": 12,
+                    "contextual_en": "nodded"
+                },
+                {
+                    "word_in_sentence": "förstående",
+                    "base_form": "förstående",
+                    "position_start": 13,
+                    "position_end": 23,
+                    "contextual_en": "understandingly"
                 }
             ]
         },
@@ -274,7 +468,17 @@
                     "word_in_sentence": "Vad gör du helst?",
                     "base_form": "Vad gör du helst?",
                     "position_start": 1,
-                    "position_end": 18
+                    "position_end": 18,
+                    "contextual_en": "What do you prefer to do?"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "nyfiket",
+                    "base_form": "nyfiket",
+                    "position_start": 32,
+                    "position_end": 39,
+                    "contextual_en": "curiously"
                 }
             ]
         },
@@ -287,19 +491,31 @@
                     "word_in_sentence": "vara för sig själv",
                     "base_form": "vara för sig själv",
                     "position_start": 40,
-                    "position_end": 58
+                    "position_end": 58,
+                    "contextual_en": "be by myself"
                 },
                 {
                     "word_in_sentence": "brygga",
                     "base_form": "brygga",
                     "position_start": 74,
-                    "position_end": 80
+                    "position_end": 80,
+                    "contextual_en": "jetty"
                 },
                 {
                     "word_in_sentence": "debatt",
                     "base_form": "debatt",
                     "position_start": 119,
-                    "position_end": 125
+                    "position_end": 125,
+                    "contextual_en": "debate"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "skönt",
+                    "base_form": "skönt",
+                    "position_start": 23,
+                    "position_end": 28,
+                    "contextual_en": "nice"
                 }
             ]
         },
@@ -312,37 +528,59 @@
                     "word_in_sentence": "import",
                     "base_form": "import",
                     "position_start": 50,
-                    "position_end": 56
+                    "position_end": 56,
+                    "contextual_en": "import"
                 },
                 {
                     "word_in_sentence": "exportera",
                     "base_form": "exportera",
                     "position_start": 72,
-                    "position_end": 81
+                    "position_end": 81,
+                    "contextual_en": "export"
                 },
                 {
                     "word_in_sentence": "USA",
                     "base_form": "USA",
                     "position_start": 94,
-                    "position_end": 97
+                    "position_end": 97,
+                    "contextual_en": "USA"
                 },
                 {
                     "word_in_sentence": "tysk",
                     "base_form": "tysk",
                     "position_start": 108,
-                    "position_end": 112
+                    "position_end": 112,
+                    "contextual_en": "German"
                 },
                 {
                     "word_in_sentence": "allians",
                     "base_form": "allians",
                     "position_start": 113,
-                    "position_end": 120
+                    "position_end": 120,
+                    "contextual_en": "alliance"
                 },
                 {
                     "word_in_sentence": "thailändsk",
                     "base_form": "thailändsk",
                     "position_start": 141,
-                    "position_end": 151
+                    "position_end": 151,
+                    "contextual_en": "Thai"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "ökad",
+                    "base_form": "ökad",
+                    "position_start": 38,
+                    "position_end": 42,
+                    "contextual_en": "increased"
+                },
+                {
+                    "word_in_sentence": "undersöka",
+                    "base_form": "undersöka",
+                    "position_start": 128,
+                    "position_end": 137,
+                    "contextual_en": "investigate"
                 }
             ]
         },
@@ -355,7 +593,24 @@
                     "word_in_sentence": "samhällsplanering",
                     "base_form": "samhällsplanering",
                     "position_start": 27,
-                    "position_end": 44
+                    "position_end": 44,
+                    "contextual_en": "societal planning"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "kräver",
+                    "base_form": "kräver",
+                    "position_start": 6,
+                    "position_end": 12,
+                    "contextual_en": "requires"
+                },
+                {
+                    "word_in_sentence": "enormt",
+                    "base_form": "enormt",
+                    "position_start": 16,
+                    "position_end": 22,
+                    "contextual_en": "enormously"
                 }
             ]
         },
@@ -368,7 +623,17 @@
                     "word_in_sentence": "om ek",
                     "base_form": "about",
                     "position_start": 39,
-                    "position_end": 44
+                    "position_end": 44,
+                    "contextual_en": "about the economy"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "säger",
+                    "base_form": "säger",
+                    "position_start": 8,
+                    "position_end": 13,
+                    "contextual_en": "say"
                 }
             ]
         },
@@ -378,10 +643,20 @@
             "en": "\"What?! You're joking!\" exclaimed Sami and laughed.",
             "target_words": [
                 {
-                    "word_in_sentence": "Va?! Du skojar!",
+                    "word_in_sentence": "Va?!",
                     "base_form": "Va?! Du skojar!",
                     "position_start": 1,
-                    "position_end": 16
+                    "position_end": 5,
+                    "contextual_en": "What?! You're joking!"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "Va?!",
+                    "base_form": "va?!",
+                    "position_start": 1,
+                    "position_end": 5,
+                    "contextual_en": "What?!"
                 }
             ]
         },
@@ -389,18 +664,29 @@
             "sentence_id": "art_47_s020",
             "sv": "Du skojar!\" utbrast Sami och skrattade.",
             "en": "\"It sounds very complicated.",
-            "target_words": []
+            "target_words": [],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_47_s021",
-            "sv": "\"Det låter väldigt komplicerat.",
-            "en": "I thought only expensive food would be on the menu today.\"",
+            "sv": "\"Det låter väldigt komplicerat. dyr.",
+            "en": "I thought only expensive food would be on the menu today.\" expensive.",
             "target_words": [
                 {
                     "word_in_sentence": "dyr",
                     "base_form": "dyr",
-                    "position_start": 20,
-                    "position_end": 23
+                    "position_start": 32,
+                    "position_end": 35,
+                    "contextual_en": "expensive"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "komplicerat",
+                    "base_form": "komplicerat",
+                    "position_start": 19,
+                    "position_end": 30,
+                    "contextual_en": "complicated"
                 }
             ]
         },
@@ -408,37 +694,74 @@
             "sentence_id": "art_47_s022",
             "sv": "Jag trodde att bara dyr mat skulle stå på menyn idag.\"",
             "en": "Suddenly we heard a scream.",
-            "target_words": []
+            "target_words": [],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "menyn",
+                    "base_form": "menyn",
+                    "position_start": 42,
+                    "position_end": 47,
+                    "contextual_en": "menu"
+                }
+            ]
         },
         {
             "sentence_id": "art_47_s023",
-            "sv": "Plötsligt hörde vi ett skrik.",
-            "en": "A criminal thief had tried to rob a store nearby and then tried to escape.",
+            "sv": "Plötsligt hörde vi ett skrik. kriminell. tjuv.",
+            "en": "A criminal thief had tried to rob a store nearby and then tried to escape. criminal. thief.",
             "target_words": [
                 {
                     "word_in_sentence": "kriminell",
                     "base_form": "kriminell",
-                    "position_start": 3,
-                    "position_end": 12
+                    "position_start": 30,
+                    "position_end": 39,
+                    "contextual_en": "criminal"
                 },
                 {
                     "word_in_sentence": "tjuv",
                     "base_form": "tjuv",
-                    "position_start": 13,
-                    "position_end": 17
+                    "position_start": 41,
+                    "position_end": 45,
+                    "contextual_en": "thief"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "skrik",
+                    "base_form": "skrik",
+                    "position_start": 23,
+                    "position_end": 28,
+                    "contextual_en": "scream"
                 }
             ]
         },
         {
             "sentence_id": "art_47_s024",
-            "sv": "En kriminell tjuv hade försökt råna en butik i närheten och sedan försökt rymma.",
-            "en": "In the panic, chaos arose in all local traffic.",
+            "sv": "En kriminell tjuv hade försökt råna en butik i närheten och sedan försökt rymma. trafik.",
+            "en": "In the panic, chaos arose in all local traffic. traffic.",
             "target_words": [
                 {
                     "word_in_sentence": "trafik",
                     "base_form": "trafik",
-                    "position_start": 35,
-                    "position_end": 41
+                    "position_start": 81,
+                    "position_end": 87,
+                    "contextual_en": "traffic"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "råna",
+                    "base_form": "råna",
+                    "position_start": 31,
+                    "position_end": 35,
+                    "contextual_en": "rob"
+                },
+                {
+                    "word_in_sentence": "rymma",
+                    "base_form": "rymma",
+                    "position_start": 74,
+                    "position_end": 79,
+                    "contextual_en": "escape"
                 }
             ]
         },
@@ -446,7 +769,23 @@
             "sentence_id": "art_47_s025",
             "sv": "I paniken uppstod kaos i all lokal trafik.",
             "en": "Two cars, of which one vehicle belonged to the Swedish military, happened to crash, which caused a serious traffic accident.",
-            "target_words": []
+            "target_words": [],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "paniken",
+                    "base_form": "paniken",
+                    "position_start": 2,
+                    "position_end": 9,
+                    "contextual_en": "panic"
+                },
+                {
+                    "word_in_sentence": "kaos",
+                    "base_form": "kaos",
+                    "position_start": 18,
+                    "position_end": 22,
+                    "contextual_en": "chaos"
+                }
+            ]
         },
         {
             "sentence_id": "art_47_s026",
@@ -456,85 +795,189 @@
                 {
                     "word_in_sentence": "olycka",
                     "base_form": "olycka",
-                    "position_start": 22,
-                    "position_end": 28
+                    "position_start": 104,
+                    "position_end": 110,
+                    "contextual_en": "accident"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "fordon",
+                    "base_form": "fordon",
+                    "position_start": 21,
+                    "position_end": 27,
+                    "contextual_en": "vehicle"
+                },
+                {
+                    "word_in_sentence": "krocka",
+                    "base_form": "krocka",
+                    "position_start": 61,
+                    "position_end": 67,
+                    "contextual_en": "crash"
                 }
             ]
         },
         {
             "sentence_id": "art_47_s027",
-            "sv": "Vi såg en chockerande olycka hända framför våra ögon.",
-            "en": "A high-ranking police superintendent came there to try to handle the situation.",
+            "sv": "Vi såg en chockerande olycka hända framför våra ögon. polisintendent. försöka.",
+            "en": "A high-ranking police superintendent came there to try to handle the situation. police superintendent. try.",
             "target_words": [
                 {
                     "word_in_sentence": "polisintendent",
                     "base_form": "polisintendent",
-                    "position_start": 16,
-                    "position_end": 30
+                    "position_start": 54,
+                    "position_end": 68,
+                    "contextual_en": "police superintendent"
                 },
                 {
                     "word_in_sentence": "försöka",
                     "base_form": "försöka",
-                    "position_start": 47,
-                    "position_end": 54
+                    "position_start": 70,
+                    "position_end": 77,
+                    "contextual_en": "try"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "chockerande",
+                    "base_form": "chockerande",
+                    "position_start": 10,
+                    "position_end": 21,
+                    "contextual_en": "shocking"
+                },
+                {
+                    "word_in_sentence": "framför",
+                    "base_form": "framför",
+                    "position_start": 35,
+                    "position_end": 42,
+                    "contextual_en": "before"
                 }
             ]
         },
         {
             "sentence_id": "art_47_s028",
-            "sv": "En högt uppsatt polisintendent kom dit för att försöka hantera situationen.",
-            "en": "It was hard to know who was who among all the screaming witnesses.",
+            "sv": "En högt uppsatt polisintendent kom dit för att försöka hantera situationen. vem som är vem.",
+            "en": "It was hard to know who was who among all the screaming witnesses. who was who.",
             "target_words": [
                 {
                     "word_in_sentence": "vem som är vem",
                     "base_form": "vem som är vem",
-                    "position_start": 23,
-                    "position_end": 37
+                    "position_start": 76,
+                    "position_end": 90,
+                    "contextual_en": "who was who"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "högt uppsatt",
+                    "base_form": "högt uppsatt",
+                    "position_start": 3,
+                    "position_end": 15,
+                    "contextual_en": "high-ranking"
+                },
+                {
+                    "word_in_sentence": "hantera",
+                    "base_form": "hantera",
+                    "position_start": 55,
+                    "position_end": 62,
+                    "contextual_en": "handle"
                 }
             ]
         },
         {
             "sentence_id": "art_47_s029",
-            "sv": "Det var svårt att veta vem som är vem bland alla skrikande vittnen.",
-            "en": "Someone claimed that a man had been murdered by a known murderer and then been shot, and that there had been great enmity between them.",
+            "sv": "Det var svårt att veta vem som är vem bland alla skrikande vittnen. mördad. mördare.",
+            "en": "Someone claimed that a man had been murdered by a known murderer and then been shot, and that there had been great enmity between them. murdered. murderer.",
             "target_words": [
                 {
                     "word_in_sentence": "mördad",
                     "base_form": "mördad",
-                    "position_start": 32,
-                    "position_end": 38
+                    "position_start": 68,
+                    "position_end": 74,
+                    "contextual_en": "murdered"
                 },
                 {
                     "word_in_sentence": "mördare",
                     "base_form": "mördare",
-                    "position_start": 50,
-                    "position_end": 57
+                    "position_start": 76,
+                    "position_end": 83,
+                    "contextual_en": "murderer"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "skrikande",
+                    "base_form": "skrikande",
+                    "position_start": 49,
+                    "position_end": 58,
+                    "contextual_en": "screaming"
+                },
+                {
+                    "word_in_sentence": "vittnen",
+                    "base_form": "vittnen",
+                    "position_start": 59,
+                    "position_end": 66,
+                    "contextual_en": "witnesses"
                 }
             ]
         },
         {
             "sentence_id": "art_47_s030",
-            "sv": "Någon hävdade att en man blivit mördad av en känd mördare och sedan blivit skjuten, och att det funnits stor fiendskap dem emellan.",
-            "en": "This turned out to be a pure untruth, however.",
+            "sv": "Någon hävdade att en man blivit mördad av en känd mördare och sedan blivit skjuten, och att det funnits stor fiendskap dem emellan. osanning.",
+            "en": "This turned out to be a pure untruth, however. untruth.",
             "target_words": [
                 {
                     "word_in_sentence": "osanning",
                     "base_form": "osanning",
-                    "position_start": 34,
-                    "position_end": 42
+                    "position_start": 132,
+                    "position_end": 140,
+                    "contextual_en": "untruth"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "hävdade",
+                    "base_form": "hävdade",
+                    "position_start": 6,
+                    "position_end": 13,
+                    "contextual_en": "claimed"
+                },
+                {
+                    "word_in_sentence": "fiendskap",
+                    "base_form": "fiendskap",
+                    "position_start": 109,
+                    "position_end": 118,
+                    "contextual_en": "enmity"
                 }
             ]
         },
         {
             "sentence_id": "art_47_s031",
-            "sv": "Detta visade sig dock vara en ren osanning.",
-            "en": "The police arrested three suspects at the scene, and chose to immediately invite everyone involved to the police station for questioning.",
+            "sv": "Detta visade sig dock vara en ren osanning. stycken.",
+            "en": "The police arrested three suspects at the scene, and chose to immediately invite everyone involved to the police station for questioning. arrested.",
             "target_words": [
                 {
                     "word_in_sentence": "stycken",
                     "base_form": "stycken",
-                    "position_start": 17,
-                    "position_end": 24
+                    "position_start": 44,
+                    "position_end": 51,
+                    "contextual_en": "arrested"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "visade sig",
+                    "base_form": "visade sig",
+                    "position_start": 6,
+                    "position_end": 16,
+                    "contextual_en": "turned out"
+                },
+                {
+                    "word_in_sentence": "ren",
+                    "base_form": "ren",
+                    "position_start": 30,
+                    "position_end": 33,
+                    "contextual_en": "pure"
                 }
             ]
         },
@@ -547,13 +990,31 @@
                     "word_in_sentence": "stycken",
                     "base_form": "stycken",
                     "position_start": 17,
-                    "position_end": 24
+                    "position_end": 24,
+                    "contextual_en": "three"
                 },
                 {
                     "word_in_sentence": "bjuda in",
                     "base_form": "bjuda in",
                     "position_start": 78,
-                    "position_end": 86
+                    "position_end": 86,
+                    "contextual_en": "invite"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "misstänkta",
+                    "base_form": "misstänkta",
+                    "position_start": 25,
+                    "position_end": 35,
+                    "contextual_en": "suspects"
+                },
+                {
+                    "word_in_sentence": "inblandade",
+                    "base_form": "inblandade",
+                    "position_start": 92,
+                    "position_end": 102,
+                    "contextual_en": "involved"
                 }
             ]
         }

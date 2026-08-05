@@ -16,27 +16,32 @@
                     "word_in_sentence": "Varje",
                     "base_form": "Varje",
                     "position_start": 0,
-                    "position_end": 5
+                    "position_end": 5,
+                    "contextual_en": "Every"
                 },
                 {
                     "word_in_sentence": "börjar",
                     "base_form": "börja",
                     "position_start": 13,
-                    "position_end": 19
+                    "position_end": 19,
+                    "contextual_en": "start"
                 },
                 {
                     "word_in_sentence": "ny",
                     "base_form": "ny",
                     "position_start": 26,
-                    "position_end": 28
+                    "position_end": 28,
+                    "contextual_en": "new"
                 },
                 {
                     "word_in_sentence": "fantastisk",
                     "base_form": "fantastisk",
                     "position_start": 38,
-                    "position_end": 48
+                    "position_end": 48,
+                    "contextual_en": "fantastic"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_00_s002",
@@ -47,21 +52,25 @@
                     "word_in_sentence": "otroligt",
                     "base_form": "otrolig",
                     "position_start": 7,
-                    "position_end": 15
+                    "position_end": 15,
+                    "contextual_en": "incredible"
                 },
                 {
                     "word_in_sentence": "rolig",
                     "base_form": "rolig",
                     "position_start": 9,
-                    "position_end": 14
+                    "position_end": 14,
+                    "contextual_en": "fun"
                 },
                 {
                     "word_in_sentence": "påverka",
                     "base_form": "påverka",
                     "position_start": 59,
-                    "position_end": 66
+                    "position_end": 66,
+                    "contextual_en": "affect"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_00_s003",
@@ -72,33 +81,39 @@
                     "word_in_sentence": "kroppsarbete",
                     "base_form": "kroppsarbete",
                     "position_start": 23,
-                    "position_end": 35
+                    "position_end": 35,
+                    "contextual_en": "physical labor"
                 },
                 {
                     "word_in_sentence": "fick",
                     "base_form": "få",
                     "position_start": 78,
-                    "position_end": 82
+                    "position_end": 82,
+                    "contextual_en": "had to"
                 },
                 {
                     "word_in_sentence": "energi",
                     "base_form": "energi",
                     "position_start": 98,
-                    "position_end": 104
+                    "position_end": 104,
+                    "contextual_en": "energy"
                 },
                 {
                     "word_in_sentence": "sin",
                     "base_form": "sin",
                     "position_start": 110,
-                    "position_end": 113
+                    "position_end": 113,
+                    "contextual_en": "their"
                 },
                 {
                     "word_in_sentence": "egen",
                     "base_form": "egen",
                     "position_start": 114,
-                    "position_end": 118
+                    "position_end": 118,
+                    "contextual_en": "own"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_00_s004",
@@ -109,33 +124,39 @@
                     "word_in_sentence": "egen",
                     "base_form": "egen",
                     "position_start": 17,
-                    "position_end": 21
+                    "position_end": 21,
+                    "contextual_en": "own"
                 },
                 {
                     "word_in_sentence": "egentligen",
                     "base_form": "egentligen",
                     "position_start": 17,
-                    "position_end": 27
+                    "position_end": 27,
+                    "contextual_en": "really"
                 },
                 {
                     "word_in_sentence": "hårt",
                     "base_form": "hård",
                     "position_start": 45,
-                    "position_end": 49
+                    "position_end": 49,
+                    "contextual_en": "hard"
                 },
                 {
                     "word_in_sentence": "på grund av",
                     "base_form": "på grund av",
                     "position_start": 59,
-                    "position_end": 70
+                    "position_end": 70,
+                    "contextual_en": "because of"
                 },
                 {
                     "word_in_sentence": "Om",
                     "base_form": "om",
                     "position_start": 104,
-                    "position_end": 106
+                    "position_end": 106,
+                    "contextual_en": "If"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_00_s005",
@@ -146,15 +167,18 @@
                     "word_in_sentence": "dator",
                     "base_form": "dator",
                     "position_start": 61,
-                    "position_end": 66
+                    "position_end": 66,
+                    "contextual_en": "computer"
                 },
                 {
                     "word_in_sentence": "hela",
                     "base_form": "hel",
                     "position_start": 67,
-                    "position_end": 71
+                    "position_end": 71,
+                    "contextual_en": "all"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_00_s006",
@@ -165,15 +189,18 @@
                     "word_in_sentence": "egen",
                     "base_form": "egen",
                     "position_start": 60,
-                    "position_end": 64
+                    "position_end": 64,
+                    "contextual_en": "own"
                 },
                 {
                     "word_in_sentence": "civilingenjör",
                     "base_form": "civilingenjör",
                     "position_start": 16,
-                    "position_end": 29
+                    "position_end": 29,
+                    "contextual_en": "civil engineer"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_00_s007",
@@ -184,21 +211,25 @@
                     "word_in_sentence": "Om",
                     "base_form": "om",
                     "position_start": 74,
-                    "position_end": 76
+                    "position_end": 76,
+                    "contextual_en": "If"
                 },
                 {
                     "word_in_sentence": "matematik",
                     "base_form": "matematik",
                     "position_start": 23,
-                    "position_end": 32
+                    "position_end": 32,
+                    "contextual_en": "mathematics"
                 },
                 {
                     "word_in_sentence": "redskap",
                     "base_form": "redskap",
                     "position_start": 52,
-                    "position_end": 59
+                    "position_end": 59,
+                    "contextual_en": "tools"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_00_s008",
@@ -209,9 +240,11 @@
                     "word_in_sentence": "geolog",
                     "base_form": "geolog",
                     "position_start": 12,
-                    "position_end": 18
+                    "position_end": 18,
+                    "contextual_en": "geologist"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_00_s009",
@@ -222,33 +255,39 @@
                     "word_in_sentence": "rolig",
                     "base_form": "rolig",
                     "position_start": 10,
-                    "position_end": 15
+                    "position_end": 15,
+                    "contextual_en": "fun"
                 },
                 {
                     "word_in_sentence": "Om",
                     "base_form": "om",
                     "position_start": 59,
-                    "position_end": 61
+                    "position_end": 61,
+                    "contextual_en": "If"
                 },
                 {
                     "word_in_sentence": "geolog",
                     "base_form": "geolog",
                     "position_start": 41,
-                    "position_end": 47
+                    "position_end": 47,
+                    "contextual_en": "geology"
                 },
                 {
                     "word_in_sentence": "både",
                     "base_form": "både",
                     "position_start": 36,
-                    "position_end": 40
+                    "position_end": 40,
+                    "contextual_en": "both"
                 },
                 {
                     "word_in_sentence": "astronomi",
                     "base_form": "astronomi",
                     "position_start": 53,
-                    "position_end": 62
+                    "position_end": 62,
+                    "contextual_en": "astronomy"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_00_s010",
@@ -259,15 +298,18 @@
                     "word_in_sentence": "skulle",
                     "base_form": "skulle",
                     "position_start": 4,
-                    "position_end": 10
+                    "position_end": 10,
+                    "contextual_en": "would"
                 },
                 {
                     "word_in_sentence": "elektricitet",
                     "base_form": "elektricitet",
                     "position_start": 69,
-                    "position_end": 81
+                    "position_end": 81,
+                    "contextual_en": "electricity"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_00_s011",
@@ -278,33 +320,39 @@
                     "word_in_sentence": "Om",
                     "base_form": "om",
                     "position_start": 0,
-                    "position_end": 2
+                    "position_end": 2,
+                    "contextual_en": "If"
                 },
                 {
                     "word_in_sentence": "skulle",
                     "base_form": "skulle",
                     "position_start": 46,
-                    "position_end": 52
+                    "position_end": 52,
+                    "contextual_en": "would"
                 },
                 {
                     "word_in_sentence": "till exempel",
                     "base_form": "till exempel",
                     "position_start": 6,
-                    "position_end": 18
+                    "position_end": 18,
+                    "contextual_en": "for example"
                 },
                 {
                     "word_in_sentence": "bredband",
                     "base_form": "bredband",
                     "position_start": 36,
-                    "position_end": 44
+                    "position_end": 44,
+                    "contextual_en": "broadband"
                 },
                 {
                     "word_in_sentence": "vänta",
                     "base_form": "vänta",
                     "position_start": 64,
-                    "position_end": 69
+                    "position_end": 69,
+                    "contextual_en": "wait"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_00_s012",
@@ -315,27 +363,32 @@
                     "word_in_sentence": "Om",
                     "base_form": "om",
                     "position_start": 79,
-                    "position_end": 81
+                    "position_end": 81,
+                    "contextual_en": "If"
                 },
                 {
                     "word_in_sentence": "gissar",
                     "base_form": "gissa",
                     "position_start": 4,
-                    "position_end": 10
+                    "position_end": 10,
+                    "contextual_en": "guess"
                 },
                 {
                     "word_in_sentence": "mindre än",
                     "base_form": "mindre än",
                     "position_start": 15,
-                    "position_end": 24
+                    "position_end": 24,
+                    "contextual_en": "less than"
                 },
                 {
                     "word_in_sentence": "faktisk",
                     "base_form": "faktisk",
                     "position_start": 53,
-                    "position_end": 60
+                    "position_end": 60,
+                    "contextual_en": "actually"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_00_s013",
@@ -346,27 +399,32 @@
                     "word_in_sentence": "göra",
                     "base_form": "göra",
                     "position_start": 13,
-                    "position_end": 17
+                    "position_end": 17,
+                    "contextual_en": "make"
                 },
                 {
                     "word_in_sentence": "fel",
                     "base_form": "fel",
                     "position_start": 18,
-                    "position_end": 21
+                    "position_end": 21,
+                    "contextual_en": "mistake"
                 },
                 {
                     "word_in_sentence": "välja",
                     "base_form": "välja",
                     "position_start": 34,
-                    "position_end": 39
+                    "position_end": 39,
+                    "contextual_en": "choosing"
                 },
                 {
                     "word_in_sentence": "verktyg",
                     "base_form": "verktyg",
                     "position_start": 48,
-                    "position_end": 55
+                    "position_end": 55,
+                    "contextual_en": "tool"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_00_s014",
@@ -377,15 +435,18 @@
                     "word_in_sentence": "Om",
                     "base_form": "om",
                     "position_start": 18,
-                    "position_end": 20
+                    "position_end": 20,
+                    "contextual_en": "If"
                 },
                 {
                     "word_in_sentence": "för mycket",
                     "base_form": "för mycket",
                     "position_start": 35,
-                    "position_end": 45
+                    "position_end": 45,
+                    "contextual_en": "too much"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_00_s015",
@@ -396,21 +457,25 @@
                     "word_in_sentence": "jag hittade mycket information på nätet",
                     "base_form": "jag hittade … på nätet",
                     "position_start": 38,
-                    "position_end": 77
+                    "position_end": 77,
+                    "contextual_en": "I found a lot of information online"
                 },
                 {
                     "word_in_sentence": "hitta",
                     "base_form": "hitta på",
                     "position_start": 42,
-                    "position_end": 47
+                    "position_end": 47,
+                    "contextual_en": "found"
                 },
                 {
                     "word_in_sentence": "nätet",
                     "base_form": "nätet",
                     "position_start": 72,
-                    "position_end": 77
+                    "position_end": 77,
+                    "contextual_en": "online"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_00_s016",
@@ -421,33 +486,39 @@
                     "word_in_sentence": "Om",
                     "base_form": "om",
                     "position_start": 32,
-                    "position_end": 34
+                    "position_end": 34,
+                    "contextual_en": "If"
                 },
                 {
                     "word_in_sentence": "statistik",
                     "base_form": "statistik",
                     "position_start": 21,
-                    "position_end": 30
+                    "position_end": 30,
+                    "contextual_en": "statistic"
                 },
                 {
                     "word_in_sentence": "ungefär",
                     "base_form": "ungefär",
                     "position_start": 80,
-                    "position_end": 87
+                    "position_end": 87,
+                    "contextual_en": "about"
                 },
                 {
                     "word_in_sentence": "teveskärm",
                     "base_form": "teveskärm",
                     "position_start": 122,
-                    "position_end": 131
+                    "position_end": 131,
+                    "contextual_en": "TV screen"
                 },
                 {
                     "word_in_sentence": "teve",
                     "base_form": "teve",
                     "position_start": 122,
-                    "position_end": 126
+                    "position_end": 126,
+                    "contextual_en": "TV"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_00_s017",
@@ -458,15 +529,18 @@
                     "word_in_sentence": "teve",
                     "base_form": "teve",
                     "position_start": 46,
-                    "position_end": 50
+                    "position_end": 50,
+                    "contextual_en": "TV"
                 },
                 {
                     "word_in_sentence": "titta på teve",
                     "base_form": "titta på teve",
                     "position_start": 37,
-                    "position_end": 50
+                    "position_end": 50,
+                    "contextual_en": "watch TV"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_00_s018",
@@ -477,21 +551,25 @@
                     "word_in_sentence": "teve",
                     "base_form": "teve",
                     "position_start": 10,
-                    "position_end": 14
+                    "position_end": 14,
+                    "contextual_en": "TV"
                 },
                 {
                     "word_in_sentence": "teveapparat",
                     "base_form": "teveapparat",
                     "position_start": 30,
-                    "position_end": 41
+                    "position_end": 41,
+                    "contextual_en": "television set"
                 },
                 {
                     "word_in_sentence": "vilken",
                     "base_form": "vilken",
                     "position_start": 109,
-                    "position_end": 115
+                    "position_end": 115,
+                    "contextual_en": "which"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_00_s019",
@@ -502,21 +580,25 @@
                     "word_in_sentence": "till exempel",
                     "base_form": "till exempel",
                     "position_start": 75,
-                    "position_end": 87
+                    "position_end": 87,
+                    "contextual_en": "for example"
                 },
                 {
                     "word_in_sentence": "nätet",
                     "base_form": "nätet",
                     "position_start": 68,
-                    "position_end": 73
+                    "position_end": 73,
+                    "contextual_en": "internet"
                 },
                 {
                     "word_in_sentence": "möjlighet",
                     "base_form": "möjlighet",
                     "position_start": 21,
-                    "position_end": 30
+                    "position_end": 30,
+                    "contextual_en": "opportunity"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_00_s020",
@@ -527,15 +609,18 @@
                     "word_in_sentence": "Tidigt",
                     "base_form": "tidig",
                     "position_start": 0,
-                    "position_end": 6
+                    "position_end": 6,
+                    "contextual_en": "Early"
                 },
                 {
                     "word_in_sentence": "mejl",
                     "base_form": "mejl",
                     "position_start": 38,
-                    "position_end": 42
+                    "position_end": 42,
+                    "contextual_en": "email"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_00_s021",
@@ -546,15 +631,18 @@
                     "word_in_sentence": "skicka sms",
                     "base_form": "skicka sms",
                     "position_start": 47,
-                    "position_end": 57
+                    "position_end": 57,
+                    "contextual_en": "send a text message"
                 },
                 {
                     "word_in_sentence": "telefonsamtal",
                     "base_form": "telefonsamtal",
                     "position_start": 98,
-                    "position_end": 111
+                    "position_end": 111,
+                    "contextual_en": "phone call"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_00_s022",
@@ -565,9 +653,11 @@
                     "word_in_sentence": "glömma",
                     "base_form": "glömma",
                     "position_start": 55,
-                    "position_end": 61
+                    "position_end": 61,
+                    "contextual_en": "forget"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_00_s023",
@@ -578,15 +668,18 @@
                     "word_in_sentence": "delta",
                     "base_form": "delta",
                     "position_start": 18,
-                    "position_end": 23
+                    "position_end": 23,
+                    "contextual_en": "participating"
                 },
                 {
                     "word_in_sentence": "fysisk aktivitet",
                     "base_form": "fysisk aktivitet",
                     "position_start": 75,
-                    "position_end": 91
+                    "position_end": 91,
+                    "contextual_en": "physical activity"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_00_s024",
@@ -597,15 +690,18 @@
                     "word_in_sentence": "samma",
                     "base_form": "samma",
                     "position_start": 37,
-                    "position_end": 42
+                    "position_end": 42,
+                    "contextual_en": "same"
                 },
                 {
                     "word_in_sentence": "orkar",
                     "base_form": "orka",
                     "position_start": 59,
-                    "position_end": 64
+                    "position_end": 64,
+                    "contextual_en": "energy"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_00_s025",
@@ -616,9 +712,11 @@
                     "word_in_sentence": "rätt",
                     "base_form": "rätt",
                     "position_start": 28,
-                    "position_end": 32
+                    "position_end": 32,
+                    "contextual_en": "right"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_00_s026",
@@ -629,9 +727,11 @@
                     "word_in_sentence": "variera",
                     "base_form": "variera",
                     "position_start": 16,
-                    "position_end": 23
+                    "position_end": 23,
+                    "contextual_en": "vary"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_00_s027",
@@ -642,15 +742,18 @@
                     "word_in_sentence": "kunna",
                     "base_form": "kunna",
                     "position_start": 14,
-                    "position_end": 19
+                    "position_end": 19,
+                    "contextual_en": "being able"
                 },
                 {
                     "word_in_sentence": "hög",
                     "base_form": "hög",
                     "position_start": 43,
-                    "position_end": 46
+                    "position_end": 46,
+                    "contextual_en": "high"
                 }
-            ]
+            ],
+            "secondary_words": []
         }
     ],
     "primary_words_used": [

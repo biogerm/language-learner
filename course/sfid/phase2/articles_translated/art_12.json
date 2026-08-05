@@ -16,9 +16,11 @@
                     "word_in_sentence": "mat",
                     "base_form": "mat",
                     "position_start": 11,
-                    "position_end": 14
+                    "position_end": 14,
+                    "contextual_en": "food"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_12_s002",
@@ -29,15 +31,18 @@
                     "word_in_sentence": "år",
                     "base_form": "år",
                     "position_start": 8,
-                    "position_end": 10
+                    "position_end": 10,
+                    "contextual_en": "years"
                 },
                 {
                     "word_in_sentence": "baka",
                     "base_form": "baka",
                     "position_start": 32,
-                    "position_end": 36
+                    "position_end": 36,
+                    "contextual_en": "bake"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_12_s003",
@@ -48,21 +53,25 @@
                     "word_in_sentence": "mat",
                     "base_form": "mat",
                     "position_start": 27,
-                    "position_end": 30
+                    "position_end": 30,
+                    "contextual_en": "food"
                 },
                 {
                     "word_in_sentence": "dramatik",
                     "base_form": "dramatik",
                     "position_start": 24,
-                    "position_end": 32
+                    "position_end": 32,
+                    "contextual_en": "drama"
                 },
                 {
                     "word_in_sentence": "dramatiker",
                     "base_form": "dramatiker",
                     "position_start": 24,
-                    "position_end": 34
+                    "position_end": 34,
+                    "contextual_en": "playwright"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_12_s004",
@@ -73,15 +82,18 @@
                     "word_in_sentence": "Efter att ha",
                     "base_form": "efter att ha",
                     "position_start": 0,
-                    "position_end": 12
+                    "position_end": 12,
+                    "contextual_en": "After"
                 },
                 {
                     "word_in_sentence": "hungrig som en varg",
                     "base_form": "hungrig som en varg",
                     "position_start": 39,
-                    "position_end": 58
+                    "position_end": 58,
+                    "contextual_en": "hungry as a wolf"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_12_s005",
@@ -92,15 +104,18 @@
                     "word_in_sentence": "att äta som en häst",
                     "base_form": "att äta som en häst",
                     "position_start": 31,
-                    "position_end": 50
+                    "position_end": 50,
+                    "contextual_en": "to eat like a horse"
                 },
                 {
                     "word_in_sentence": "tom",
                     "base_form": "tom",
                     "position_start": 64,
-                    "position_end": 67
+                    "position_end": 67,
+                    "contextual_en": "empty"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_12_s006",
@@ -111,9 +126,11 @@
                     "word_in_sentence": "gå ut och äta",
                     "base_form": "gå ut och äta",
                     "position_start": 32,
-                    "position_end": 45
+                    "position_end": 45,
+                    "contextual_en": "go out and eat"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_12_s007",
@@ -124,21 +141,25 @@
                     "word_in_sentence": "mat",
                     "base_form": "mat",
                     "position_start": 47,
-                    "position_end": 50
+                    "position_end": 50,
+                    "contextual_en": "food"
                 },
                 {
                     "word_in_sentence": "För en stund",
                     "base_form": "för en stund",
                     "position_start": 0,
-                    "position_end": 12
+                    "position_end": 12,
+                    "contextual_en": "For a while"
                 },
                 {
                     "word_in_sentence": "hämtmat",
                     "base_form": "hämtmat",
                     "position_start": 43,
-                    "position_end": 50
+                    "position_end": 50,
+                    "contextual_en": "takeout"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_12_s008",
@@ -149,15 +170,18 @@
                     "word_in_sentence": "trång",
                     "base_form": "trång",
                     "position_start": 15,
-                    "position_end": 20
+                    "position_end": 20,
+                    "contextual_en": "cramped"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_12_s009",
             "sv": "Vi valde att stanna hemma.",
             "en": "We chose to stay home.",
-            "target_words": []
+            "target_words": [],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_12_s010",
@@ -168,51 +192,60 @@
                     "word_in_sentence": "mat",
                     "base_form": "mat",
                     "position_start": 67,
-                    "position_end": 70
+                    "position_end": 70,
+                    "contextual_en": "food"
                 },
                 {
                     "word_in_sentence": "Istället för att…",
                     "base_form": "Istället för att…",
                     "position_start": 0,
-                    "position_end": 17
+                    "position_end": 17,
+                    "contextual_en": "Instead of..."
                 },
                 {
                     "word_in_sentence": "restaurang",
                     "base_form": "restaurang",
                     "position_start": 24,
-                    "position_end": 34
+                    "position_end": 34,
+                    "contextual_en": "restaurant"
                 },
                 {
                     "word_in_sentence": "lättlagad",
                     "base_form": "lättlagad",
                     "position_start": 52,
-                    "position_end": 61
+                    "position_end": 61,
+                    "contextual_en": "easy"
                 },
                 {
                     "word_in_sentence": "plockmat",
                     "base_form": "plockmat",
                     "position_start": 62,
-                    "position_end": 70
+                    "position_end": 70,
+                    "contextual_en": "finger food"
                 },
                 {
                     "word_in_sentence": "grönsak",
                     "base_form": "grönsak",
                     "position_start": 91,
-                    "position_end": 98
+                    "position_end": 98,
+                    "contextual_en": "vegetable"
                 },
                 {
                     "word_in_sentence": "äpple",
                     "base_form": "äpple",
                     "position_start": 114,
-                    "position_end": 119
+                    "position_end": 119,
+                    "contextual_en": "apple"
                 },
                 {
                     "word_in_sentence": "banan",
                     "base_form": "banan",
                     "position_start": 124,
-                    "position_end": 129
+                    "position_end": 129,
+                    "contextual_en": "banana"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_12_s011",
@@ -223,9 +256,11 @@
                     "word_in_sentence": "Det är inte sant!",
                     "base_form": "Det är inte sant!",
                     "position_start": 1,
-                    "position_end": 18
+                    "position_end": 18,
+                    "contextual_en": "It is not true!"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_12_s012",
@@ -236,15 +271,18 @@
                     "word_in_sentence": "blodtörstig",
                     "base_form": "blodtörstig",
                     "position_start": 3,
-                    "position_end": 14
+                    "position_end": 14,
+                    "contextual_en": "bloodthirsty"
                 },
                 {
                     "word_in_sentence": "getingstick",
                     "base_form": "getingstick",
                     "position_start": 41,
-                    "position_end": 52
+                    "position_end": 52,
+                    "contextual_en": "wasp sting"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_12_s013",
@@ -255,9 +293,11 @@
                     "word_in_sentence": "kommentar",
                     "base_form": "kommentar",
                     "position_start": 4,
-                    "position_end": 13
+                    "position_end": 13,
+                    "contextual_en": "comment"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_12_s014",
@@ -268,15 +308,18 @@
                     "word_in_sentence": "obekväm",
                     "base_form": "obekväm",
                     "position_start": 15,
-                    "position_end": 22
+                    "position_end": 22,
+                    "contextual_en": "uncomfortable"
                 },
                 {
                     "word_in_sentence": "kolhydrat",
                     "base_form": "kolhydrat",
                     "position_start": 39,
-                    "position_end": 48
+                    "position_end": 48,
+                    "contextual_en": "carbohydrate"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_12_s015",
@@ -287,9 +330,11 @@
                     "word_in_sentence": "kritisk",
                     "base_form": "kritisk",
                     "position_start": 19,
-                    "position_end": 26
+                    "position_end": 26,
+                    "contextual_en": "critical"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_12_s016",
@@ -300,15 +345,18 @@
                     "word_in_sentence": "provsmaka",
                     "base_form": "provsmaka",
                     "position_start": 18,
-                    "position_end": 27
+                    "position_end": 27,
+                    "contextual_en": "taste"
                 },
                 {
                     "word_in_sentence": "salamikorv",
                     "base_form": "salamikorv",
                     "position_start": 33,
-                    "position_end": 43
+                    "position_end": 43,
+                    "contextual_en": "salami sausage"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_12_s017",
@@ -319,15 +367,18 @@
                     "word_in_sentence": "sakna",
                     "base_form": "sakna",
                     "position_start": 38,
-                    "position_end": 43
+                    "position_end": 43,
+                    "contextual_en": "lack"
                 },
                 {
                     "word_in_sentence": "föda",
                     "base_form": "föda",
                     "position_start": 44,
-                    "position_end": 48
+                    "position_end": 48,
+                    "contextual_en": "food"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_12_s018",
@@ -338,15 +389,18 @@
                     "word_in_sentence": "misslyckande",
                     "base_form": "misslyckande",
                     "position_start": 19,
-                    "position_end": 31
+                    "position_end": 31,
+                    "contextual_en": "failure"
                 },
                 {
                     "word_in_sentence": "nivå",
                     "base_form": "nivå",
                     "position_start": 63,
-                    "position_end": 67
+                    "position_end": 67,
+                    "contextual_en": "level"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_12_s019",
@@ -357,9 +411,11 @@
                     "word_in_sentence": "sprida sig",
                     "base_form": "sprida sig",
                     "position_start": 25,
-                    "position_end": 35
+                    "position_end": 35,
+                    "contextual_en": "spread"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_12_s020",
@@ -370,9 +426,11 @@
                     "word_in_sentence": "Var och en",
                     "base_form": "var och en",
                     "position_start": 0,
-                    "position_end": 10
+                    "position_end": 10,
+                    "contextual_en": "Everyone"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_12_s021",
@@ -383,9 +441,11 @@
                     "word_in_sentence": "dricka",
                     "base_form": "dricka",
                     "position_start": 9,
-                    "position_end": 15
+                    "position_end": 15,
+                    "contextual_en": "drink"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_12_s022",
@@ -396,15 +456,18 @@
                     "word_in_sentence": "läsk",
                     "base_form": "läsk",
                     "position_start": 15,
-                    "position_end": 19
+                    "position_end": 19,
+                    "contextual_en": "soda"
                 },
                 {
                     "word_in_sentence": "öl",
                     "base_form": "öl",
                     "position_start": 42,
-                    "position_end": 44
+                    "position_end": 44,
+                    "contextual_en": "beer"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_12_s023",
@@ -415,21 +478,25 @@
                     "word_in_sentence": "drink",
                     "base_form": "drink",
                     "position_start": 22,
-                    "position_end": 27
+                    "position_end": 27,
+                    "contextual_en": "drink"
                 },
                 {
                     "word_in_sentence": "paraplydrink",
                     "base_form": "paraplydrink",
                     "position_start": 44,
-                    "position_end": 56
+                    "position_end": 56,
+                    "contextual_en": "umbrella drink"
                 },
                 {
                     "word_in_sentence": "socker",
                     "base_form": "socker",
                     "position_start": 86,
-                    "position_end": 92
+                    "position_end": 92,
+                    "contextual_en": "sugar"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_12_s024",
@@ -440,15 +507,18 @@
                     "word_in_sentence": "havsvatten",
                     "base_form": "havsvatten",
                     "position_start": 39,
-                    "position_end": 49
+                    "position_end": 49,
+                    "contextual_en": "seawater"
                 },
                 {
                     "word_in_sentence": "törstigare",
                     "base_form": "törstigare",
                     "position_start": 64,
-                    "position_end": 74
+                    "position_end": 74,
+                    "contextual_en": "thirstier"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_12_s025",
@@ -459,9 +529,11 @@
                     "word_in_sentence": "vara säker på",
                     "base_form": "vara säker på",
                     "position_start": 10,
-                    "position_end": 23
+                    "position_end": 23,
+                    "contextual_en": "be sure"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_12_s026",
@@ -472,9 +544,11 @@
                     "word_in_sentence": "Ska vi ta en fika?",
                     "base_form": "Ska vi ta en fika?",
                     "position_start": 29,
-                    "position_end": 47
+                    "position_end": 47,
+                    "contextual_en": "Should we have a fika?"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_12_s027",
@@ -485,27 +559,32 @@
                     "word_in_sentence": "hellre baka en kaka än",
                     "base_form": "hellre … än",
                     "position_start": 10,
-                    "position_end": 32
+                    "position_end": 32,
+                    "contextual_en": "would rather bake a cake than"
                 },
                 {
                     "word_in_sentence": "kaka",
                     "base_form": "kaka",
                     "position_start": 25,
-                    "position_end": 29
+                    "position_end": 29,
+                    "contextual_en": "cake"
                 },
                 {
                     "word_in_sentence": "godis",
                     "base_form": "godis",
                     "position_start": 46,
-                    "position_end": 51
+                    "position_end": 51,
+                    "contextual_en": "candy"
                 },
                 {
                     "word_in_sentence": "smågodis",
                     "base_form": "smågodis",
                     "position_start": 58,
-                    "position_end": 66
+                    "position_end": 66,
+                    "contextual_en": "loose candy"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_12_s028",
@@ -516,9 +595,11 @@
                     "word_in_sentence": "choklad",
                     "base_form": "choklad",
                     "position_start": 8,
-                    "position_end": 15
+                    "position_end": 15,
+                    "contextual_en": "chocolate"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_12_s029",
@@ -529,9 +610,11 @@
                     "word_in_sentence": "lättyoghurt",
                     "base_form": "lättyoghurt",
                     "position_start": 39,
-                    "position_end": 50
+                    "position_end": 50,
+                    "contextual_en": "low-fat yogurt"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_12_s030",
@@ -542,15 +625,18 @@
                     "word_in_sentence": "mat för dagen",
                     "base_form": "mat för dagen",
                     "position_start": 19,
-                    "position_end": 32
+                    "position_end": 32,
+                    "contextual_en": "food for the day"
                 },
                 {
                     "word_in_sentence": "dramatisk",
                     "base_form": "dramatisk",
                     "position_start": 46,
-                    "position_end": 55
+                    "position_end": 55,
+                    "contextual_en": "dramatic"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_12_s031",
@@ -561,27 +647,32 @@
                     "word_in_sentence": "odla",
                     "base_form": "odla",
                     "position_start": 17,
-                    "position_end": 21
+                    "position_end": 21,
+                    "contextual_en": "growing"
                 },
                 {
                     "word_in_sentence": "sylta",
                     "base_form": "sylta",
                     "position_start": 46,
-                    "position_end": 51
+                    "position_end": 51,
+                    "contextual_en": "make jam"
                 },
                 {
                     "word_in_sentence": "safta",
                     "base_form": "safta",
                     "position_start": 56,
-                    "position_end": 61
+                    "position_end": 61,
+                    "contextual_en": "juice"
                 },
                 {
                     "word_in_sentence": "liknande",
                     "base_form": "liknande",
                     "position_start": 82,
-                    "position_end": 90
+                    "position_end": 90,
+                    "contextual_en": "similar"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_12_s032",
@@ -592,15 +683,18 @@
                     "word_in_sentence": "nästnästa",
                     "base_form": "nästnästa",
                     "position_start": 22,
-                    "position_end": 31
+                    "position_end": 31,
+                    "contextual_en": "the week after next"
                 },
                 {
                     "word_in_sentence": "försvinna",
                     "base_form": "försvinna",
                     "position_start": 68,
-                    "position_end": 77
+                    "position_end": 77,
+                    "contextual_en": "disappear"
                 }
-            ]
+            ],
+            "secondary_words": []
         }
     ],
     "primary_words_used": [

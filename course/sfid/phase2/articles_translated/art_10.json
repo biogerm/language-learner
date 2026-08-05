@@ -16,19 +16,31 @@
                     "word_in_sentence": "kurskompis",
                     "base_form": "kurskompis",
                     "position_start": 12,
-                    "position_end": 22
+                    "position_end": 22,
+                    "contextual_en": "course mate"
                 },
                 {
                     "word_in_sentence": "bibliotek",
                     "base_form": "bibliotek",
                     "position_start": 56,
-                    "position_end": 65
+                    "position_end": 65,
+                    "contextual_en": "library"
                 },
                 {
                     "word_in_sentence": "repetera",
                     "base_form": "repetera",
                     "position_start": 74,
-                    "position_end": 82
+                    "position_end": 82,
+                    "contextual_en": "revise"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "prov",
+                    "base_form": "prov",
+                    "position_start": 99,
+                    "position_end": 103,
+                    "contextual_en": "test"
                 }
             ]
         },
@@ -41,21 +53,25 @@
                     "word_in_sentence": "Har du lust att…?",
                     "base_form": "Har du lust att…?",
                     "position_start": 1,
-                    "position_end": 18
+                    "position_end": 18,
+                    "contextual_en": "Would you like to...?"
                 },
                 {
                     "word_in_sentence": "föreslå",
                     "base_form": "föreslå",
                     "position_start": 43,
-                    "position_end": 50
+                    "position_end": 50,
+                    "contextual_en": "suggest"
                 },
                 {
                     "word_in_sentence": "klämdag",
                     "base_form": "klämdag",
                     "position_start": 79,
-                    "position_end": 86
+                    "position_end": 86,
+                    "contextual_en": "bridge day"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_10_s003",
@@ -66,9 +82,11 @@
                     "word_in_sentence": "Vad säger du?",
                     "base_form": "Vad säger du?",
                     "position_start": 1,
-                    "position_end": 14
+                    "position_end": 14,
+                    "contextual_en": "What do you say?"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_10_s004",
@@ -79,9 +97,11 @@
                     "word_in_sentence": "så många timmar som möjligt",
                     "base_form": "så många som möjligt",
                     "position_start": 39,
-                    "position_end": 66
+                    "position_end": 66,
+                    "contextual_en": "as many hours as possible"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_10_s005",
@@ -92,9 +112,11 @@
                     "word_in_sentence": "diskutera",
                     "base_form": "diskutera",
                     "position_start": 13,
-                    "position_end": 22
+                    "position_end": 22,
+                    "contextual_en": "discuss"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_10_s006",
@@ -105,19 +127,31 @@
                     "word_in_sentence": "bestå av",
                     "base_form": "bestå av",
                     "position_start": 19,
-                    "position_end": 27
+                    "position_end": 27,
+                    "contextual_en": "consist of"
                 },
                 {
                     "word_in_sentence": "skriftlig",
                     "base_form": "skriftlig",
                     "position_start": 31,
-                    "position_end": 40
+                    "position_end": 40,
+                    "contextual_en": "written"
                 },
                 {
                     "word_in_sentence": "muntlig",
                     "base_form": "muntlig",
                     "position_start": 52,
-                    "position_end": 59
+                    "position_end": 59,
+                    "contextual_en": "oral"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "redovisning",
+                    "base_form": "redovisning",
+                    "position_start": 60,
+                    "position_end": 71,
+                    "contextual_en": "presentation"
                 }
             ]
         },
@@ -130,13 +164,24 @@
                     "word_in_sentence": "fördel",
                     "base_form": "fördel",
                     "position_start": 3,
-                    "position_end": 9
+                    "position_end": 9,
+                    "contextual_en": "advantage"
                 },
                 {
                     "word_in_sentence": "ordlista",
                     "base_form": "ordlista",
                     "position_start": 34,
-                    "position_end": 42
+                    "position_end": 42,
+                    "contextual_en": "glossary"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "öva på",
+                    "base_form": "öva på",
+                    "position_start": 47,
+                    "position_end": 53,
+                    "contextual_en": "practice on"
                 }
             ]
         },
@@ -149,21 +194,25 @@
                     "word_in_sentence": "lapp",
                     "base_form": "lapp",
                     "position_start": 11,
-                    "position_end": 15
+                    "position_end": 15,
+                    "contextual_en": "piece of paper"
                 },
                 {
                     "word_in_sentence": "ruta",
                     "base_form": "ruta",
                     "position_start": 26,
-                    "position_end": 30
+                    "position_end": 30,
+                    "contextual_en": "box"
                 },
                 {
                     "word_in_sentence": "påstående",
                     "base_form": "påstående",
                     "position_start": 44,
-                    "position_end": 53
+                    "position_end": 53,
+                    "contextual_en": "statement"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_10_s009",
@@ -174,7 +223,17 @@
                     "word_in_sentence": "begrepp",
                     "base_form": "begrepp",
                     "position_start": 30,
-                    "position_end": 37
+                    "position_end": 37,
+                    "contextual_en": "concept"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "viktigt",
+                    "base_form": "viktigt",
+                    "position_start": 22,
+                    "position_end": 29,
+                    "contextual_en": "important"
                 }
             ]
         },
@@ -187,21 +246,25 @@
                     "word_in_sentence": "stryka under",
                     "base_form": "stryka under",
                     "position_start": 22,
-                    "position_end": 34
+                    "position_end": 34,
+                    "contextual_en": "underlining"
                 },
                 {
                     "word_in_sentence": "nyckelord",
                     "base_form": "nyckelord",
                     "position_start": 41,
-                    "position_end": 50
+                    "position_end": 50,
+                    "contextual_en": "keyword"
                 },
                 {
                     "word_in_sentence": "sammanfatta",
                     "base_form": "sammanfatta",
                     "position_start": 61,
-                    "position_end": 72
+                    "position_end": 72,
+                    "contextual_en": "summarizing"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_10_s011",
@@ -212,15 +275,18 @@
                     "word_in_sentence": "ordkunskapsövning",
                     "base_form": "ordkunkskapsövning",
                     "position_start": 18,
-                    "position_end": 35
+                    "position_end": 35,
+                    "contextual_en": "vocabulary exercise"
                 },
                 {
                     "word_in_sentence": "ordkunskap",
                     "base_form": "ordkunskap",
                     "position_start": 18,
-                    "position_end": 28
+                    "position_end": 28,
+                    "contextual_en": "vocabulary"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_10_s012",
@@ -231,33 +297,39 @@
                     "word_in_sentence": "ordkunskap",
                     "base_form": "ordkunskap",
                     "position_start": 11,
-                    "position_end": 21
+                    "position_end": 21,
+                    "contextual_en": "vocabulary"
                 },
                 {
                     "word_in_sentence": "vokal",
                     "base_form": "vokal",
                     "position_start": 44,
-                    "position_end": 49
+                    "position_end": 49,
+                    "contextual_en": "vowel"
                 },
                 {
                     "word_in_sentence": "konsonant",
                     "base_form": "konsonant",
                     "position_start": 54,
-                    "position_end": 63
+                    "position_end": 63,
+                    "contextual_en": "consonant"
                 },
                 {
                     "word_in_sentence": "stavelse",
                     "base_form": "stavelse",
                     "position_start": 74,
-                    "position_end": 82
+                    "position_end": 82,
+                    "contextual_en": "syllable"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_10_s013",
             "sv": "Det var roligt.",
             "en": "It was fun.",
-            "target_words": []
+            "target_words": [],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_10_s014",
@@ -268,15 +340,18 @@
                     "word_in_sentence": "skicklig",
                     "base_form": "skicklig",
                     "position_start": 7,
-                    "position_end": 15
+                    "position_end": 15,
+                    "contextual_en": "skillful"
                 },
                 {
                     "word_in_sentence": "poängterade",
                     "base_form": "poängtera",
                     "position_start": 18,
-                    "position_end": 29
+                    "position_end": 29,
+                    "contextual_en": "pointed out"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_10_s015",
@@ -287,19 +362,31 @@
                     "word_in_sentence": "svag",
                     "base_form": "svag",
                     "position_start": 42,
-                    "position_end": 46
+                    "position_end": 46,
+                    "contextual_en": "weak"
                 },
                 {
                     "word_in_sentence": "reduktion",
                     "base_form": "reduktion",
                     "position_start": 47,
-                    "position_end": 56
+                    "position_end": 56,
+                    "contextual_en": "reduction"
                 },
                 {
                     "word_in_sentence": "assimilation",
                     "base_form": "asssimilation",
                     "position_start": 61,
-                    "position_end": 73
+                    "position_end": 73,
+                    "contextual_en": "assimilation"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "ljudförändringar",
+                    "base_form": "ljudförändringar",
+                    "position_start": 20,
+                    "position_end": 36,
+                    "contextual_en": "sound changes"
                 }
             ]
         },
@@ -312,15 +399,18 @@
                     "word_in_sentence": "bevisa",
                     "base_form": "bevisa",
                     "position_start": 9,
-                    "position_end": 15
+                    "position_end": 15,
+                    "contextual_en": "prove"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_10_s017",
             "sv": "Sedan gick vi igenom olika ordklasser och satsdelar.",
             "en": "Then we went through different parts of speech and parts of a sentence.",
-            "target_words": []
+            "target_words": [],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_10_s018",
@@ -331,9 +421,11 @@
                     "word_in_sentence": "subjekt",
                     "base_form": "subjekt",
                     "position_start": 27,
-                    "position_end": 34
+                    "position_end": 34,
+                    "contextual_en": "subject"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_10_s019",
@@ -344,19 +436,31 @@
                     "word_in_sentence": "bestämd form",
                     "base_form": "bestämd form",
                     "position_start": 12,
-                    "position_end": 24
+                    "position_end": 24,
+                    "contextual_en": "definite form"
                 },
                 {
                     "word_in_sentence": "obestämd form",
                     "base_form": "obestämd form",
                     "position_start": 29,
-                    "position_end": 42
+                    "position_end": 42,
+                    "contextual_en": "indefinite form"
                 },
                 {
                     "word_in_sentence": "komparativ",
                     "base_form": "komparativ",
                     "position_start": 71,
-                    "position_end": 81
+                    "position_end": 81,
+                    "contextual_en": "comparative"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "jämförde",
+                    "base_form": "jämförde",
+                    "position_start": 3,
+                    "position_end": 11,
+                    "contextual_en": "compared"
                 }
             ]
         },
@@ -369,19 +473,31 @@
                     "word_in_sentence": "reflexiv",
                     "base_form": "reflexiv",
                     "position_start": 14,
-                    "position_end": 22
+                    "position_end": 22,
+                    "contextual_en": "reflexive"
                 },
                 {
                     "word_in_sentence": "supinum",
                     "base_form": "supinum",
                     "position_start": 65,
-                    "position_end": 72
+                    "position_end": 72,
+                    "contextual_en": "supine"
                 },
                 {
                     "word_in_sentence": "imperativ",
                     "base_form": "imperativ",
                     "position_start": 77,
-                    "position_end": 86
+                    "position_end": 86,
+                    "contextual_en": "imperative"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "pronomen",
+                    "base_form": "pronomen",
+                    "position_start": 24,
+                    "position_end": 32,
+                    "contextual_en": "pronouns"
                 }
             ]
         },
@@ -394,15 +510,18 @@
                     "word_in_sentence": "betona",
                     "base_form": "betona",
                     "position_start": 22,
-                    "position_end": 28
+                    "position_end": 28,
+                    "contextual_en": "emphasize"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_10_s022",
             "sv": "Vi tränade på att bygga meningar.",
             "en": "We practiced building sentences.",
-            "target_words": []
+            "target_words": [],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_10_s023",
@@ -413,15 +532,18 @@
                     "word_in_sentence": "huvudsats",
                     "base_form": "huvudsats",
                     "position_start": 27,
-                    "position_end": 36
+                    "position_end": 36,
+                    "contextual_en": "main clause"
                 },
                 {
                     "word_in_sentence": "bisats",
                     "base_form": "bisats",
                     "position_start": 54,
-                    "position_end": 60
+                    "position_end": 60,
+                    "contextual_en": "subordinate clause"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_10_s024",
@@ -432,19 +554,31 @@
                     "word_in_sentence": "konjunktion",
                     "base_form": "konjunktion",
                     "position_start": 14,
-                    "position_end": 25
+                    "position_end": 25,
+                    "contextual_en": "conjunction"
                 },
                 {
                     "word_in_sentence": "subjunktion",
                     "base_form": "subjunktion",
                     "position_start": 30,
-                    "position_end": 41
+                    "position_end": 41,
+                    "contextual_en": "subjunction"
                 },
                 {
                     "word_in_sentence": "prepostion",
                     "base_form": "prepostion",
                     "position_start": 51,
-                    "position_end": 61
+                    "position_end": 61,
+                    "contextual_en": "preposition"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "förändra",
+                    "base_form": "förändra",
+                    "position_start": 66,
+                    "position_end": 74,
+                    "contextual_en": "change"
                 }
             ]
         },
@@ -457,9 +591,11 @@
                     "word_in_sentence": "direkt tal",
                     "base_form": "direkt tal",
                     "position_start": 24,
-                    "position_end": 34
+                    "position_end": 34,
+                    "contextual_en": "direct speech"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_10_s026",
@@ -470,7 +606,17 @@
                     "word_in_sentence": "nackdel",
                     "base_form": "nackdel",
                     "position_start": 3,
-                    "position_end": 10
+                    "position_end": 10,
+                    "contextual_en": "disadvantage"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "regler",
+                    "base_form": "regler",
+                    "position_start": 51,
+                    "position_end": 57,
+                    "contextual_en": "rules"
                 }
             ]
         },
@@ -483,15 +629,18 @@
                     "word_in_sentence": "kusin",
                     "base_form": "kusin",
                     "position_start": 4,
-                    "position_end": 9
+                    "position_end": 9,
+                    "contextual_en": "cousin"
                 },
                 {
                     "word_in_sentence": "akademi",
                     "base_form": "akademi",
                     "position_start": 33,
-                    "position_end": 40
+                    "position_end": 40,
+                    "contextual_en": "academy"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_10_s028",
@@ -502,19 +651,31 @@
                     "word_in_sentence": "arv",
                     "base_form": "arv",
                     "position_start": 26,
-                    "position_end": 29
+                    "position_end": 29,
+                    "contextual_en": "heritage"
                 },
                 {
                     "word_in_sentence": "nyfångad",
                     "base_form": "nyfångad",
                     "position_start": 45,
-                    "position_end": 53
+                    "position_end": 53,
+                    "contextual_en": "newly caught"
                 },
                 {
                     "word_in_sentence": "blanda i",
                     "base_form": "blanda i",
                     "position_start": 73,
-                    "position_end": 81
+                    "position_end": 81,
+                    "contextual_en": "mix in"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "gryta",
+                    "base_form": "gryta",
+                    "position_start": 85,
+                    "position_end": 90,
+                    "contextual_en": "pot"
                 }
             ]
         },
@@ -527,7 +688,17 @@
                     "word_in_sentence": "other",
                     "base_form": "other",
                     "position_start": 19,
-                    "position_end": 24
+                    "position_end": 24,
+                    "contextual_en": "other"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "översättas",
+                    "base_form": "översättas",
+                    "position_start": 29,
+                    "position_end": 39,
+                    "contextual_en": "translated"
                 }
             ]
         },
@@ -540,27 +711,32 @@
                     "word_in_sentence": "enda",
                     "base_form": "enda",
                     "position_start": 4,
-                    "position_end": 8
+                    "position_end": 8,
+                    "contextual_en": "only"
                 },
                 {
                     "word_in_sentence": "livlig",
                     "base_form": "livlig",
                     "position_start": 29,
-                    "position_end": 35
+                    "position_end": 35,
+                    "contextual_en": "lively"
                 },
                 {
                     "word_in_sentence": "avslutning",
                     "base_form": "avslutning",
                     "position_start": 36,
-                    "position_end": 46
+                    "position_end": 46,
+                    "contextual_en": "ending"
                 },
                 {
                     "word_in_sentence": "slutsats",
                     "base_form": "slutsats",
                     "position_start": 61,
-                    "position_end": 69
+                    "position_end": 69,
+                    "contextual_en": "conclusion"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_10_s031",
@@ -571,7 +747,17 @@
                     "word_in_sentence": "Siffran är uppe i",
                     "base_form": "siffran är uppe i",
                     "position_start": 0,
-                    "position_end": 17
+                    "position_end": 17,
+                    "contextual_en": "The number is up to"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "förstå",
+                    "base_form": "förstå",
+                    "position_start": 63,
+                    "position_end": 69,
+                    "contextual_en": "understand"
                 }
             ]
         },
@@ -584,13 +770,24 @@
                     "word_in_sentence": "föredra",
                     "base_form": "föredra",
                     "position_start": 12,
-                    "position_end": 19
+                    "position_end": 19,
+                    "contextual_en": "prefer"
                 },
                 {
                     "word_in_sentence": "betala",
                     "base_form": "betala",
                     "position_start": 42,
-                    "position_end": 48
+                    "position_end": 48,
+                    "contextual_en": "pay"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "rast",
+                    "base_form": "rast",
+                    "position_start": 30,
+                    "position_end": 34,
+                    "contextual_en": "break"
                 }
             ]
         }

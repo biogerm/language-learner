@@ -16,21 +16,25 @@
                     "word_in_sentence": "När",
                     "base_form": "när",
                     "position_start": 0,
-                    "position_end": 3
+                    "position_end": 3,
+                    "contextual_en": "When"
                 },
                 {
                     "word_in_sentence": "man",
                     "base_form": "man",
                     "position_start": 4,
-                    "position_end": 7
+                    "position_end": 7,
+                    "contextual_en": "many"
                 },
                 {
                     "word_in_sentence": "karriär",
                     "base_form": "karriär",
                     "position_start": 51,
-                    "position_end": 58
+                    "position_end": 58,
+                    "contextual_en": "career"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_05_s002",
@@ -41,39 +45,46 @@
                     "word_in_sentence": "Först",
                     "base_form": "först",
                     "position_start": 0,
-                    "position_end": 5
+                    "position_end": 5,
+                    "contextual_en": "At first"
                 },
                 {
                     "word_in_sentence": "bankdirektör",
                     "base_form": "bankdirektör",
                     "position_start": 21,
-                    "position_end": 33
+                    "position_end": 33,
+                    "contextual_en": "bank manager"
                 },
                 {
                     "word_in_sentence": "jobb",
                     "base_form": "jobb",
                     "position_start": 38,
-                    "position_end": 42
+                    "position_end": 42,
+                    "contextual_en": "work"
                 },
                 {
                     "word_in_sentence": "jobba",
                     "base_form": "jobba",
                     "position_start": 38,
-                    "position_end": 43
+                    "position_end": 43,
+                    "contextual_en": "work"
                 },
                 {
                     "word_in_sentence": "stor",
                     "base_form": "stor",
                     "position_start": 49,
-                    "position_end": 53
+                    "position_end": 53,
+                    "contextual_en": "large"
                 },
                 {
                     "word_in_sentence": "finansvärld",
                     "base_form": "finansvärld",
                     "position_start": 54,
-                    "position_end": 65
+                    "position_end": 65,
+                    "contextual_en": "financial world"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_05_s003",
@@ -84,21 +95,25 @@
                     "word_in_sentence": "yrke",
                     "base_form": "yrke",
                     "position_start": 8,
-                    "position_end": 12
+                    "position_end": 12,
+                    "contextual_en": "career"
                 },
                 {
                     "word_in_sentence": "yrkesplan",
                     "base_form": "yrkesplan",
                     "position_start": 8,
-                    "position_end": 17
+                    "position_end": 17,
+                    "contextual_en": "career plan"
                 },
                 {
                     "word_in_sentence": "gradvis",
                     "base_form": "gradvis",
                     "position_start": 27,
-                    "position_end": 34
+                    "position_end": 34,
+                    "contextual_en": "gradually"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_05_s004",
@@ -109,21 +124,25 @@
                     "word_in_sentence": "jobb",
                     "base_form": "jobb",
                     "position_start": 5,
-                    "position_end": 9
+                    "position_end": 9,
+                    "contextual_en": "living"
                 },
                 {
                     "word_in_sentence": "jobba",
                     "base_form": "jobba",
                     "position_start": 5,
-                    "position_end": 10
+                    "position_end": 10,
+                    "contextual_en": "do"
                 },
                 {
                     "word_in_sentence": "Vad jobbar hon med?",
                     "base_form": "Vad jobbar hon med?",
                     "position_start": 1,
-                    "position_end": 20
+                    "position_end": 20,
+                    "contextual_en": "What does she do for a living?"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_05_s005",
@@ -134,15 +153,18 @@
                     "word_in_sentence": "jobb",
                     "base_form": "jobb",
                     "position_start": 41,
-                    "position_end": 45
+                    "position_end": 45,
+                    "contextual_en": "job"
                 },
                 {
                     "word_in_sentence": "källarfabrik",
                     "base_form": "källarfabrik",
                     "position_start": 56,
-                    "position_end": 68
+                    "position_end": 68,
+                    "contextual_en": "basement factory"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_05_s006",
@@ -153,21 +175,25 @@
                     "word_in_sentence": "ovanlig",
                     "base_form": "ovanlig",
                     "position_start": 18,
-                    "position_end": 25
+                    "position_end": 25,
+                    "contextual_en": "unusual"
                 },
                 {
                     "word_in_sentence": "sak",
                     "base_form": "sak",
                     "position_start": 26,
-                    "position_end": 29
+                    "position_end": 29,
+                    "contextual_en": "thing"
                 },
                 {
                     "word_in_sentence": "industri",
                     "base_form": "industri",
                     "position_start": 43,
-                    "position_end": 51
+                    "position_end": 51,
+                    "contextual_en": "industry"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_05_s007",
@@ -178,27 +204,32 @@
                     "word_in_sentence": "jobb",
                     "base_form": "jobb",
                     "position_start": 37,
-                    "position_end": 41
+                    "position_end": 41,
+                    "contextual_en": "work"
                 },
                 {
                     "word_in_sentence": "arbetsdag",
                     "base_form": "arbetsdag",
                     "position_start": 10,
-                    "position_end": 19
+                    "position_end": 19,
+                    "contextual_en": "workday"
                 },
                 {
                     "word_in_sentence": "lång",
                     "base_form": "lång",
                     "position_start": 28,
-                    "position_end": 32
+                    "position_end": 32,
+                    "contextual_en": "long"
                 },
                 {
                     "word_in_sentence": "jobbig",
                     "base_form": "jobbig",
                     "position_start": 37,
-                    "position_end": 43
+                    "position_end": 43,
+                    "contextual_en": "tough"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_05_s008",
@@ -209,27 +240,32 @@
                     "word_in_sentence": "ner",
                     "base_form": "ner",
                     "position_start": 10,
-                    "position_end": 13
+                    "position_end": 13,
+                    "contextual_en": "down"
                 },
                 {
                     "word_in_sentence": "dålig",
                     "base_form": "dålig",
                     "position_start": 29,
-                    "position_end": 34
+                    "position_end": 34,
+                    "contextual_en": "bad"
                 },
                 {
                     "word_in_sentence": "arbeta",
                     "base_form": "arbeta",
                     "position_start": 45,
-                    "position_end": 51
+                    "position_end": 51,
+                    "contextual_en": "work"
                 },
                 {
                     "word_in_sentence": "arbetsmiljö",
                     "base_form": "arbetsmiljö",
                     "position_start": 65,
-                    "position_end": 76
+                    "position_end": 76,
+                    "contextual_en": "working environment"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_05_s009",
@@ -240,21 +276,25 @@
                     "word_in_sentence": "byta",
                     "base_form": "byta",
                     "position_start": 19,
-                    "position_end": 23
+                    "position_end": 23,
+                    "contextual_en": "change"
                 },
                 {
                     "word_in_sentence": "sällskap",
                     "base_form": "sällskap",
                     "position_start": 53,
-                    "position_end": 61
+                    "position_end": 61,
+                    "contextual_en": "company"
                 },
                 {
                     "word_in_sentence": "kollega",
                     "base_form": "kollega",
                     "position_start": 71,
-                    "position_end": 78
+                    "position_end": 78,
+                    "contextual_en": "colleague"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_05_s010",
@@ -265,21 +305,25 @@
                     "word_in_sentence": "man",
                     "base_form": "man",
                     "position_start": 0,
-                    "position_end": 3
+                    "position_end": 3,
+                    "contextual_en": "You"
                 },
                 {
                     "word_in_sentence": "ner",
                     "base_form": "ner",
                     "position_start": 24,
-                    "position_end": 27
+                    "position_end": 27,
+                    "contextual_en": "down"
                 },
                 {
                     "word_in_sentence": "genom kollegor",
                     "base_form": "genom kollegor",
                     "position_start": 28,
-                    "position_end": 42
+                    "position_end": 42,
+                    "contextual_en": "through colleagues"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_05_s011",
@@ -290,15 +334,18 @@
                     "word_in_sentence": "alla",
                     "base_form": "alla",
                     "position_start": 6,
-                    "position_end": 10
+                    "position_end": 10,
+                    "contextual_en": "all"
                 },
                 {
                     "word_in_sentence": "fackförbund",
                     "base_form": "fackförbund",
                     "position_start": 23,
-                    "position_end": 34
+                    "position_end": 34,
+                    "contextual_en": "trade union"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_05_s012",
@@ -309,15 +356,18 @@
                     "word_in_sentence": "finansiera",
                     "base_form": "finansiera",
                     "position_start": 19,
-                    "position_end": 29
+                    "position_end": 29,
+                    "contextual_en": "finance"
                 },
                 {
                     "word_in_sentence": "arbetstid",
                     "base_form": "arbetstid",
                     "position_start": 63,
-                    "position_end": 72
+                    "position_end": 72,
+                    "contextual_en": "working hours"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_05_s013",
@@ -328,9 +378,11 @@
                     "word_in_sentence": "arbetsvecka",
                     "base_form": "arbetsvecka",
                     "position_start": 26,
-                    "position_end": 37
+                    "position_end": 37,
+                    "contextual_en": "workweek"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_05_s014",
@@ -341,9 +393,11 @@
                     "word_in_sentence": "visa vem som bestämmer",
                     "base_form": "visa vem som bestämmer",
                     "position_start": 37,
-                    "position_end": 59
+                    "position_end": 59,
+                    "contextual_en": "show who is in charge"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_05_s015",
@@ -354,9 +408,11 @@
                     "word_in_sentence": "produktchef",
                     "base_form": "produktchef",
                     "position_start": 3,
-                    "position_end": 14
+                    "position_end": 14,
+                    "contextual_en": "product manager"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_05_s016",
@@ -367,15 +423,18 @@
                     "word_in_sentence": "arbetsam",
                     "base_form": "arbetsam",
                     "position_start": 13,
-                    "position_end": 21
+                    "position_end": 21,
+                    "contextual_en": "hardworking"
                 },
                 {
                     "word_in_sentence": "balans",
                     "base_form": "balans",
                     "position_start": 47,
-                    "position_end": 53
+                    "position_end": 53,
+                    "contextual_en": "balance"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_05_s017",
@@ -386,15 +445,18 @@
                     "word_in_sentence": "högavlönad",
                     "base_form": "högavlönad",
                     "position_start": 9,
-                    "position_end": 19
+                    "position_end": 19,
+                    "contextual_en": "high-paid"
                 },
                 {
                     "word_in_sentence": "lön",
                     "base_form": "lön",
                     "position_start": 14,
-                    "position_end": 17
+                    "position_end": 17,
+                    "contextual_en": "pay"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_05_s018",
@@ -405,33 +467,39 @@
                     "word_in_sentence": "industri",
                     "base_form": "industri",
                     "position_start": 35,
-                    "position_end": 43
+                    "position_end": 43,
+                    "contextual_en": "industry"
                 },
                 {
                     "word_in_sentence": "lön",
                     "base_form": "lön",
                     "position_start": 12,
-                    "position_end": 15
+                    "position_end": 15,
+                    "contextual_en": "paid"
                 },
                 {
                     "word_in_sentence": "lågavlönad",
                     "base_form": "lågavlönad",
                     "position_start": 7,
-                    "position_end": 17
+                    "position_end": 17,
+                    "contextual_en": "low-paid"
                 },
                 {
                     "word_in_sentence": "skogsindustri",
                     "base_form": "skogsindustri",
                     "position_start": 30,
-                    "position_end": 43
+                    "position_end": 43,
+                    "contextual_en": "forest industry"
                 },
                 {
                     "word_in_sentence": "gruvindustri",
                     "base_form": "gruvindustri",
                     "position_start": 61,
-                    "position_end": 73
+                    "position_end": 73,
+                    "contextual_en": "mining industry"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_05_s019",
@@ -442,21 +510,25 @@
                     "word_in_sentence": "viss",
                     "base_form": "viss",
                     "position_start": 20,
-                    "position_end": 24
+                    "position_end": 24,
+                    "contextual_en": "certain"
                 },
                 {
                     "word_in_sentence": "skatt",
                     "base_form": "skatt",
                     "position_start": 25,
-                    "position_end": 30
+                    "position_end": 30,
+                    "contextual_en": "tax"
                 },
                 {
                     "word_in_sentence": "tjäna",
                     "base_form": "tjäna",
                     "position_start": 46,
-                    "position_end": 51
+                    "position_end": 51,
+                    "contextual_en": "earn"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_05_s020",
@@ -467,15 +539,18 @@
                     "word_in_sentence": "lön",
                     "base_form": "lön",
                     "position_start": 4,
-                    "position_end": 7
+                    "position_end": 7,
+                    "contextual_en": "salary"
                 },
                 {
                     "word_in_sentence": "jobba extra",
                     "base_form": "jobba extra",
                     "position_start": 44,
-                    "position_end": 55
+                    "position_end": 55,
+                    "contextual_en": "work extra"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_05_s021",
@@ -486,21 +561,25 @@
                     "word_in_sentence": "flera",
                     "base_form": "flera",
                     "position_start": 7,
-                    "position_end": 12
+                    "position_end": 12,
+                    "contextual_en": "several"
                 },
                 {
                     "word_in_sentence": "arbetskamrat",
                     "base_form": "arbetskamrat",
                     "position_start": 45,
-                    "position_end": 57
+                    "position_end": 57,
+                    "contextual_en": "coworker"
                 },
                 {
                     "word_in_sentence": "Vad fick ni ge för det?",
                     "base_form": "Vad fick ni ge för det?",
                     "position_start": 85,
-                    "position_end": 108
+                    "position_end": 108,
+                    "contextual_en": "What did you have to pay for that?"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_05_s022",
@@ -511,15 +590,18 @@
                     "word_in_sentence": "funka",
                     "base_form": "funka",
                     "position_start": 17,
-                    "position_end": 22
+                    "position_end": 22,
+                    "contextual_en": "work"
                 },
                 {
                     "word_in_sentence": "arbetslöshet",
                     "base_form": "arbetslöshet",
                     "position_start": 43,
-                    "position_end": 55
+                    "position_end": 55,
+                    "contextual_en": "unemployment"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_05_s023",
@@ -530,15 +612,18 @@
                     "word_in_sentence": "ledig",
                     "base_form": "ledig",
                     "position_start": 19,
-                    "position_end": 24
+                    "position_end": 24,
+                    "contextual_en": "off"
                 },
                 {
                     "word_in_sentence": "arbetsfri",
                     "base_form": "arbetsfri",
                     "position_start": 55,
-                    "position_end": 64
+                    "position_end": 64,
+                    "contextual_en": "work-free"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_05_s024",
@@ -549,9 +634,11 @@
                     "word_in_sentence": "komma",
                     "base_form": "komma",
                     "position_start": 17,
-                    "position_end": 22
+                    "position_end": 22,
+                    "contextual_en": "get"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_05_s025",
@@ -562,15 +649,18 @@
                     "word_in_sentence": "halv",
                     "base_form": "halv",
                     "position_start": 9,
-                    "position_end": 13
+                    "position_end": 13,
+                    "contextual_en": "half"
                 },
                 {
                     "word_in_sentence": "hushållsarbete",
                     "base_form": "hushållsarbete",
                     "position_start": 42,
-                    "position_end": 56
+                    "position_end": 56,
+                    "contextual_en": "household chores"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_05_s026",
@@ -581,15 +671,18 @@
                     "word_in_sentence": "komma",
                     "base_form": "komma",
                     "position_start": 17,
-                    "position_end": 22
+                    "position_end": 22,
+                    "contextual_en": "come"
                 },
                 {
                     "word_in_sentence": "komma hem från jobbet.",
                     "base_form": "Komma hem från jobbet.",
                     "position_start": 17,
-                    "position_end": 39
+                    "position_end": 39,
+                    "contextual_en": "come home from work."
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_05_s027",
@@ -600,9 +693,11 @@
                     "word_in_sentence": "praktik",
                     "base_form": "praktik",
                     "position_start": 52,
-                    "position_end": 59
+                    "position_end": 59,
+                    "contextual_en": "internship"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_05_s028",
@@ -613,9 +708,11 @@
                     "word_in_sentence": "Hela",
                     "base_form": "hela",
                     "position_start": 0,
-                    "position_end": 4
+                    "position_end": 4,
+                    "contextual_en": "whole"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_05_s029",
@@ -626,9 +723,11 @@
                     "word_in_sentence": "säga",
                     "base_form": "säga",
                     "position_start": 18,
-                    "position_end": 22
+                    "position_end": 22,
+                    "contextual_en": "say"
                 }
-            ]
+            ],
+            "secondary_words": []
         }
     ],
     "primary_words_used": [

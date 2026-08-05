@@ -11,7 +11,16 @@
             "sentence_id": "art_50_s001",
             "sv": "Hej Maria!",
             "en": "Hello Maria!",
-            "target_words": []
+            "target_words": [],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "Hej",
+                    "base_form": "hej",
+                    "position_start": 0,
+                    "position_end": 3,
+                    "contextual_en": "Hello"
+                }
+            ]
         },
         {
             "sentence_id": "art_50_s002",
@@ -22,9 +31,11 @@
                     "word_in_sentence": "Vet du vad?",
                     "base_form": "Vet du om?",
                     "position_start": 0,
-                    "position_end": 11
+                    "position_end": 11,
+                    "contextual_en": "Guess what?"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_50_s003",
@@ -35,7 +46,17 @@
                     "word_in_sentence": "tiderna förändras",
                     "base_form": "tiderna förändras",
                     "position_start": 16,
-                    "position_end": 33
+                    "position_end": 33,
+                    "contextual_en": "times change"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "verkligen",
+                    "base_form": "verkligen",
+                    "position_start": 34,
+                    "position_end": 43,
+                    "contextual_en": "really"
                 }
             ]
         },
@@ -48,13 +69,24 @@
                     "word_in_sentence": "i morse",
                     "base_form": "i morse",
                     "position_start": 7,
-                    "position_end": 14
+                    "position_end": 14,
+                    "contextual_en": "this morning"
                 },
                 {
                     "word_in_sentence": "morgonrock",
                     "base_form": "morgonrock",
                     "position_start": 43,
-                    "position_end": 53
+                    "position_end": 53,
+                    "contextual_en": "bathrobe"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "Tidigt",
+                    "base_form": "tidigt",
+                    "position_start": 0,
+                    "position_end": 6,
+                    "contextual_en": "Early"
                 }
             ]
         },
@@ -67,19 +99,31 @@
                     "word_in_sentence": "pojkvän",
                     "base_form": "pojkvän",
                     "position_start": 4,
-                    "position_end": 11
+                    "position_end": 11,
+                    "contextual_en": "boyfriend"
                 },
                 {
                     "word_in_sentence": "gifta sig",
                     "base_form": "gifta sig",
                     "position_start": 32,
-                    "position_end": 41
+                    "position_end": 41,
+                    "contextual_en": "get married"
                 },
                 {
                     "word_in_sentence": "gift",
                     "base_form": "gift",
                     "position_start": 32,
-                    "position_end": 36
+                    "position_end": 36,
+                    "contextual_en": "married"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "nästa",
+                    "base_form": "nästa",
+                    "position_start": 42,
+                    "position_end": 47,
+                    "contextual_en": "next"
                 }
             ]
         },
@@ -92,25 +136,38 @@
                     "word_in_sentence": "förhållande",
                     "base_form": "förhållande",
                     "position_start": 18,
-                    "position_end": 29
+                    "position_end": 29,
+                    "contextual_en": "relationship"
                 },
                 {
                     "word_in_sentence": "relation",
                     "base_form": "relation",
                     "position_start": 49,
-                    "position_end": 57
+                    "position_end": 57,
+                    "contextual_en": "connection"
                 },
                 {
                     "word_in_sentence": "prat",
                     "base_form": "prat",
                     "position_start": 66,
-                    "position_end": 70
+                    "position_end": 70,
+                    "contextual_en": "talk"
                 },
                 {
                     "word_in_sentence": "skilsmässa",
                     "base_form": "skilsmässa",
                     "position_start": 115,
-                    "position_end": 125
+                    "position_end": 125,
+                    "contextual_en": "divorce"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "vanligt",
+                    "base_form": "vanligt",
+                    "position_start": 86,
+                    "position_end": 93,
+                    "contextual_en": "common"
                 }
             ]
         },
@@ -123,13 +180,24 @@
                     "word_in_sentence": "umgås",
                     "base_form": "umgås",
                     "position_start": 10,
-                    "position_end": 15
+                    "position_end": 15,
+                    "contextual_en": "socialize"
                 },
                 {
                     "word_in_sentence": "som förr",
                     "base_form": "som förr",
                     "position_start": 41,
-                    "position_end": 49
+                    "position_end": 49,
+                    "contextual_en": "like before"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "ändå",
+                    "base_form": "ändå",
+                    "position_start": 31,
+                    "position_end": 35,
+                    "contextual_en": "still"
                 }
             ]
         },
@@ -142,19 +210,31 @@
                     "word_in_sentence": "prat",
                     "base_form": "prat",
                     "position_start": 26,
-                    "position_end": 30
+                    "position_end": 30,
+                    "contextual_en": "talk"
                 },
                 {
                     "word_in_sentence": "släkt",
                     "base_form": "släkt",
                     "position_start": 45,
-                    "position_end": 50
+                    "position_end": 50,
+                    "contextual_en": "extended family"
                 },
                 {
                     "word_in_sentence": "barn",
                     "base_form": "barn",
                     "position_start": 66,
-                    "position_end": 70
+                    "position_end": 70,
+                    "contextual_en": "children"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "plötsligt",
+                    "base_form": "plötsligt",
+                    "position_start": 9,
+                    "position_end": 18,
+                    "contextual_en": "suddenly"
                 }
             ]
         },
@@ -167,7 +247,17 @@
                     "word_in_sentence": "förälder",
                     "base_form": "förälder",
                     "position_start": 6,
-                    "position_end": 14
+                    "position_end": 14,
+                    "contextual_en": "parent"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "bästa",
+                    "base_form": "bästa",
+                    "position_start": 34,
+                    "position_end": 39,
+                    "contextual_en": "best"
                 }
             ]
         },
@@ -180,7 +270,17 @@
                     "word_in_sentence": "hoppas",
                     "base_form": "hoppas",
                     "position_start": 4,
-                    "position_end": 10
+                    "position_end": 10,
+                    "contextual_en": "hope"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "lyckliga",
+                    "base_form": "lyckliga",
+                    "position_start": 27,
+                    "position_end": 35,
+                    "contextual_en": "happy"
                 }
             ]
         },
@@ -193,25 +293,38 @@
                     "word_in_sentence": "gift",
                     "base_form": "gift",
                     "position_start": 8,
-                    "position_end": 12
+                    "position_end": 12,
+                    "contextual_en": "married"
                 },
                 {
                     "word_in_sentence": "fru",
                     "base_form": "fru",
                     "position_start": 43,
-                    "position_end": 46
+                    "position_end": 46,
+                    "contextual_en": "wife"
                 },
                 {
                     "word_in_sentence": "arg som ett bi",
                     "base_form": "arg som ett bi",
                     "position_start": 58,
-                    "position_end": 72
+                    "position_end": 72,
+                    "contextual_en": "mad as a hornet"
                 },
                 {
                     "word_in_sentence": "älskare",
                     "base_form": "älskare",
                     "position_start": 115,
-                    "position_end": 122
+                    "position_end": 122,
+                    "contextual_en": "lover"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "visst",
+                    "base_form": "visst",
+                    "position_start": 52,
+                    "position_end": 57,
+                    "contextual_en": "apparently"
                 }
             ]
         },
@@ -224,25 +337,38 @@
                     "word_in_sentence": "ilsken",
                     "base_form": "ilsken",
                     "position_start": 19,
-                    "position_end": 25
+                    "position_end": 25,
+                    "contextual_en": "angry"
                 },
                 {
                     "word_in_sentence": "vänja",
                     "base_form": "vänja",
                     "position_start": 37,
-                    "position_end": 42
+                    "position_end": 42,
+                    "contextual_en": "get used"
                 },
                 {
                     "word_in_sentence": " vid",
                     "base_form": "bror",
                     "position_start": 46,
-                    "position_end": 50
+                    "position_end": 50,
+                    "contextual_en": "to"
                 },
                 {
                     "word_in_sentence": "vänja sig vid",
                     "base_form": "vänja sig vid",
                     "position_start": 84,
-                    "position_end": 97
+                    "position_end": 97,
+                    "contextual_en": "get used to"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "situationen",
+                    "base_form": "situationen",
+                    "position_start": 51,
+                    "position_end": 62,
+                    "contextual_en": "the situation"
                 }
             ]
         },
@@ -255,13 +381,31 @@
                     "word_in_sentence": "långhelg",
                     "base_form": "långhelg",
                     "position_start": 18,
-                    "position_end": 26
+                    "position_end": 26,
+                    "contextual_en": "long weekend"
                 },
                 {
                     "word_in_sentence": "allihop",
                     "base_form": "allihop",
                     "position_start": 35,
-                    "position_end": 42
+                    "position_end": 42,
+                    "contextual_en": "all"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "senaste",
+                    "base_form": "senaste",
+                    "position_start": 10,
+                    "position_end": 17,
+                    "contextual_en": "last"
+                },
+                {
+                    "word_in_sentence": "landet",
+                    "base_form": "landet",
+                    "position_start": 52,
+                    "position_end": 58,
+                    "contextual_en": "the country"
                 }
             ]
         },
@@ -274,25 +418,38 @@
                     "word_in_sentence": "barn",
                     "base_form": "barn",
                     "position_start": 24,
-                    "position_end": 28
+                    "position_end": 28,
+                    "contextual_en": "children"
                 },
                 {
                     "word_in_sentence": "barnvakt",
                     "base_form": "barnvakt",
                     "position_start": 24,
-                    "position_end": 32
+                    "position_end": 32,
+                    "contextual_en": "babysitter"
                 },
                 {
                     "word_in_sentence": "skolbarn",
                     "base_form": "skolbarn",
                     "position_start": 48,
-                    "position_end": 56
+                    "position_end": 56,
+                    "contextual_en": "schoolchildren"
                 },
                 {
                     "word_in_sentence": "barnfamilj",
                     "base_form": "barnfamilj",
                     "position_start": 71,
-                    "position_end": 81
+                    "position_end": 81,
+                    "contextual_en": "family with children"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "anställt",
+                    "base_form": "anställt",
+                    "position_start": 8,
+                    "position_end": 16,
+                    "contextual_en": "hired"
                 }
             ]
         },
@@ -305,7 +462,17 @@
                     "word_in_sentence": "barn",
                     "base_form": "barn",
                     "position_start": 0,
-                    "position_end": 4
+                    "position_end": 4,
+                    "contextual_en": "children"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "sagor",
+                    "base_form": "sagor",
+                    "position_start": 21,
+                    "position_end": 26,
+                    "contextual_en": "fairy tales"
                 }
             ]
         },
@@ -318,25 +485,38 @@
                     "word_in_sentence": "påminna",
                     "base_form": "påminna",
                     "position_start": 16,
-                    "position_end": 23
+                    "position_end": 23,
+                    "contextual_en": "remind"
                 },
                 {
                     "word_in_sentence": "Rödluvan och vargen",
                     "base_form": "Rödluvan och vargen",
                     "position_start": 47,
-                    "position_end": 66
+                    "position_end": 66,
+                    "contextual_en": "Little Red Riding Hood and the Wolf"
                 },
                 {
                     "word_in_sentence": "varg",
                     "base_form": "varg",
                     "position_start": 60,
-                    "position_end": 64
+                    "position_end": 64,
+                    "contextual_en": "wolf"
                 },
                 {
                     "word_in_sentence": "Peter och vargen",
                     "base_form": "Peter och vargen",
                     "position_start": 76,
-                    "position_end": 92
+                    "position_end": 92,
+                    "contextual_en": "Peter and the Wolf"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "berättelser",
+                    "base_form": "berättelser",
+                    "position_start": 31,
+                    "position_end": 42,
+                    "contextual_en": "stories"
                 }
             ]
         },
@@ -349,7 +529,17 @@
                     "word_in_sentence": "en av er",
                     "base_form": "en av er",
                     "position_start": 7,
-                    "position_end": 15
+                    "position_end": 15,
+                    "contextual_en": "one of you"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "minns",
+                    "base_form": "minns",
+                    "position_start": 22,
+                    "position_end": 27,
+                    "contextual_en": "remembers"
                 }
             ]
         },
@@ -362,25 +552,38 @@
                     "word_in_sentence": "varg",
                     "base_form": "varg",
                     "position_start": 10,
-                    "position_end": 14
+                    "position_end": 14,
+                    "contextual_en": "wolf"
                 },
                 {
                     "word_in_sentence": "farlig",
                     "base_form": "farlig",
                     "position_start": 25,
-                    "position_end": 31
+                    "position_end": 31,
+                    "contextual_en": "dangerous"
                 },
                 {
                     "word_in_sentence": "livsfarlig",
                     "base_form": "livsfarlig",
                     "position_start": 43,
-                    "position_end": 53
+                    "position_end": 53,
+                    "contextual_en": "lethal"
                 },
                 {
                     "word_in_sentence": "mankhöjd",
                     "base_form": "mankhöjd",
                     "position_start": 82,
-                    "position_end": 90
+                    "position_end": 90,
+                    "contextual_en": "height at the withers"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "imponerande",
+                    "base_form": "imponerande",
+                    "position_start": 65,
+                    "position_end": 76,
+                    "contextual_en": "impressively"
                 }
             ]
         },
@@ -393,13 +596,24 @@
                     "word_in_sentence": "vända",
                     "base_form": "vända",
                     "position_start": 31,
-                    "position_end": 36
+                    "position_end": 36,
+                    "contextual_en": "turn"
                 },
                 {
                     "word_in_sentence": "vända sig om",
                     "base_form": "vända sig om",
                     "position_start": 56,
-                    "position_end": 68
+                    "position_end": 68,
+                    "contextual_en": "turn around"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "möter",
+                    "base_form": "möter",
+                    "position_start": 7,
+                    "position_end": 12,
+                    "contextual_en": "meet"
                 }
             ]
         },
@@ -412,13 +626,31 @@
                     "word_in_sentence": "ganska",
                     "base_form": "ganska",
                     "position_start": 19,
-                    "position_end": 25
+                    "position_end": 25,
+                    "contextual_en": "quite"
                 },
                 {
                     "word_in_sentence": "i allmänhet",
                     "base_form": "i allmänhet",
                     "position_start": 33,
-                    "position_end": 44
+                    "position_end": 44,
+                    "contextual_en": "in general"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "Som tur är",
+                    "base_form": "som tur är",
+                    "position_start": 0,
+                    "position_end": 10,
+                    "contextual_en": "Luckily"
+                },
+                {
+                    "word_in_sentence": "sällan",
+                    "base_form": "sällan",
+                    "position_start": 26,
+                    "position_end": 32,
+                    "contextual_en": "rarely"
                 }
             ]
         },
@@ -431,13 +663,24 @@
                     "word_in_sentence": "varg",
                     "base_form": "varg",
                     "position_start": 0,
-                    "position_end": 4
+                    "position_end": 4,
+                    "contextual_en": "wolf"
                 },
                 {
                     "word_in_sentence": "stamfader",
                     "base_form": "stamfader",
                     "position_start": 27,
-                    "position_end": 36
+                    "position_end": 36,
+                    "contextual_en": "ancestor"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "hundens",
+                    "base_form": "hundens",
+                    "position_start": 13,
+                    "position_end": 20,
+                    "contextual_en": "dog's"
                 }
             ]
         },
@@ -450,7 +693,17 @@
                     "word_in_sentence": "älgfarm",
                     "base_form": "älgfarm",
                     "position_start": 26,
-                    "position_end": 33
+                    "position_end": 33,
+                    "contextual_en": "moose farm"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "besökte",
+                    "base_form": "besökte",
+                    "position_start": 6,
+                    "position_end": 13,
+                    "contextual_en": "visited"
                 }
             ]
         },
@@ -463,13 +716,31 @@
                     "word_in_sentence": "säljargument",
                     "base_form": "säljargument",
                     "position_start": 20,
-                    "position_end": 32
+                    "position_end": 32,
+                    "contextual_en": "selling point"
                 },
                 {
                     "word_in_sentence": "ndna tider.",
                     "base_form": "regelbunden",
                     "position_start": 83,
-                    "position_end": 94
+                    "position_end": 94,
+                    "contextual_en": "regular times."
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "besökare",
+                    "base_form": "besökare",
+                    "position_start": 41,
+                    "position_end": 49,
+                    "contextual_en": "visitors"
+                },
+                {
+                    "word_in_sentence": "klappa",
+                    "base_form": "klappa",
+                    "position_start": 55,
+                    "position_end": 61,
+                    "contextual_en": "pet"
                 }
             ]
         },
@@ -482,13 +753,24 @@
                     "word_in_sentence": "expanderande",
                     "base_form": "expanderande",
                     "position_start": 19,
-                    "position_end": 31
+                    "position_end": 31,
+                    "contextual_en": "expanding"
                 },
                 {
                     "word_in_sentence": "ökad",
                     "base_form": "ökad",
                     "position_start": 59,
-                    "position_end": 63
+                    "position_end": 63,
+                    "contextual_en": "increasing"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "turistnäring",
+                    "base_form": "turistnäring",
+                    "position_start": 32,
+                    "position_end": 44,
+                    "contextual_en": "tourism industry"
                 }
             ]
         },
@@ -501,7 +783,17 @@
                     "word_in_sentence": "tolv",
                     "base_form": "tolv",
                     "position_start": 8,
-                    "position_end": 12
+                    "position_end": 12,
+                    "contextual_en": "twelve"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "samtidigt",
+                    "base_form": "samtidigt",
+                    "position_start": 26,
+                    "position_end": 35,
+                    "contextual_en": "at the same time"
                 }
             ]
         },
@@ -514,7 +806,24 @@
                     "word_in_sentence": "undantag",
                     "base_form": "undantag",
                     "position_start": 35,
-                    "position_end": 43
+                    "position_end": 43,
+                    "contextual_en": "exception"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "Ingen",
+                    "base_form": "ingen",
+                    "position_start": 0,
+                    "position_end": 5,
+                    "contextual_en": "No one"
+                },
+                {
+                    "word_in_sentence": "rädd",
+                    "base_form": "rädd",
+                    "position_start": 16,
+                    "position_end": 20,
+                    "contextual_en": "afraid"
                 }
             ]
         },
@@ -527,25 +836,38 @@
                     "word_in_sentence": "inofficiell",
                     "base_form": "inofficiell",
                     "position_start": 13,
-                    "position_end": 24
+                    "position_end": 24,
+                    "contextual_en": "unofficial"
                 },
                 {
                     "word_in_sentence": "man måste ha",
                     "base_form": "man måste ha",
                     "position_start": 46,
-                    "position_end": 58
+                    "position_end": 58,
+                    "contextual_en": "you must have"
                 },
                 {
                     "word_in_sentence": "godkänd",
                     "base_form": "godkänd",
                     "position_start": 62,
-                    "position_end": 69
+                    "position_end": 69,
+                    "contextual_en": "approved"
                 },
                 {
                     "word_in_sentence": "kontrollera",
                     "base_form": "kontrollera",
                     "position_start": 104,
-                    "position_end": 115
+                    "position_end": 115,
+                    "contextual_en": "control"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "djurskötare",
+                    "base_form": "djurskötare",
+                    "position_start": 70,
+                    "position_end": 81,
+                    "contextual_en": "zookeeper"
                 }
             ]
         },
@@ -558,19 +880,31 @@
                     "word_in_sentence": "komma på",
                     "base_form": "komma på",
                     "position_start": 23,
-                    "position_end": 31
+                    "position_end": 31,
+                    "contextual_en": "remember"
                 },
                 {
                     "word_in_sentence": "valspråk",
                     "base_form": "valspråk",
                     "position_start": 48,
-                    "position_end": 56
+                    "position_end": 56,
+                    "contextual_en": "motto"
                 },
                 {
                     "word_in_sentence": "fortfarande",
                     "base_form": "fortfarande",
                     "position_start": 72,
-                    "position_end": 83
+                    "position_end": 83,
+                    "contextual_en": "still"
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "respekt",
+                    "base_form": "respekt",
+                    "position_start": 96,
+                    "position_end": 103,
+                    "contextual_en": "respect"
                 }
             ]
         },
@@ -583,7 +917,17 @@
                     "word_in_sentence": "I slutet…",
                     "base_form": "I slutet…",
                     "position_start": 0,
-                    "position_end": 9
+                    "position_end": 9,
+                    "contextual_en": "At the end..."
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "nöjda",
+                    "base_form": "nöjda",
+                    "position_start": 55,
+                    "position_end": 60,
+                    "contextual_en": "satisfied"
                 }
             ]
         },
@@ -596,9 +940,11 @@
                     "word_in_sentence": "Hör av dig snart!",
                     "base_form": "Hör av dig snart!",
                     "position_start": 0,
-                    "position_end": 17
+                    "position_end": 17,
+                    "contextual_en": "Keep in touch!"
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_50_s031",
@@ -609,15 +955,18 @@
                     "word_in_sentence": "Puss och kram …",
                     "base_form": "Puss och kram …",
                     "position_start": 0,
-                    "position_end": 15
+                    "position_end": 15,
+                    "contextual_en": "Hugs and kisses ..."
                 },
                 {
                     "word_in_sentence": "Kramar …",
                     "base_form": "Kramar …",
                     "position_start": 16,
-                    "position_end": 24
+                    "position_end": 24,
+                    "contextual_en": "Hugs and kisses ..."
                 }
-            ]
+            ],
+            "secondary_words": []
         }
     ],
     "primary_words_used": [
