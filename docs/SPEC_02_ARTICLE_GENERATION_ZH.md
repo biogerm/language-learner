@@ -34,9 +34,9 @@ graph TD
 *   **`source_level`**: 继承自 Phase 1。对于本项目，严格限定为 **"B1"**。该参数决定了 AI 生成引擎使用的语法和词汇难度。
 *   **`native_language`**: 继承自 Phase 1（默认："English"）。
 
-### 2.3 配置参数
-*   `words_per_article` (Integer): 每篇文章包含的**目标词**数量（默认值：20-30）。
-*   `article_length_words` (Integer): 目标文章的总词数长度（默认值：300-500）。
+### 2.3 配置参数 (Configuration Parameters)
+*   `words_per_article` (Integer): 每篇文章包含的**目标单词**数量（默认值：50-60，允许较高密度的词汇打包以减少文章总数）。
+*   `article_length_words` (Integer): 目标文章的总字数（默认值：300-500）。
 *   `course_id` (String): 课程标识符，用于数据命名空间（默认值："sfid"）。
 *   `allow_word_overlap` (Boolean): 相同的单词是否可以作为目标词出现在多篇文章中（默认值：false）。
 *   `natural_reuse_target` (Integer): 每个单词在其“主出场”文章之外，还应该自然出现在多少篇文章中（默认值：2）。
@@ -66,10 +66,10 @@ AI 智能体必须自主执行以下操作：
 由于输入的 `source_level` 为 B1，所有 AI 生成的文章必须严格遵循 CEFR B1 (SFI Level D) 标准：
 
 *   **语言难度**: 使用 B1 级别的瑞典语词汇和语法。频繁使用从句（如 `att`, `eftersom`, `om`），但要**避免** C1 及以上的生僻词汇或过于复杂的修辞（如高级被动语态或古语）。
-*   **文章结构**: 必须具有清晰的叙事弧（引言、正文、结语）。不能是毫无逻辑的句子堆砌。
-*   **句子长度**: 平均每句 10-15 个单词。长短句结合，保证阅读节奏。
-*   **目标词密度**: 目标词汇应占文章总词数的 5-8%。
-*   **上下文线索**: 目标词必须置于“可通过上下文猜测词义”的语境中。例如，不要仅仅说 "Han är en soffpotatis" (他是个沙发土豆)，而应该说 "Han är en soffpotatis som sitter framför TV:n hela dagen och aldrig tränar" (他是个整天坐在电视前从不锻炼的沙发土豆)。
+*   **文章结构 (Article Structure)**: 必须有清晰的叙事弧线（开头、正文、结尾）。不允许将随机的句子堆砌在一起。
+*   **句子长度 (Sentence Length)**: 平均每句 10-15 个单词。长短句结合，保证阅读节奏。
+*   **目标词汇密度 (Target Word Density)**: 目标词汇可以比较密集（例如，占文章总字数的 10-15%，或在 500 字的文章中包含约 60 个目标词），前提是文本依然连贯、可读，并能被语言老师接受。
+*   **语境线索 (Context Clues)**: 目标单词必须放置在能猜出其含义的语境中。例如，不要仅仅写 "Han är en soffpotatis"（他是个沙发土豆），而应该写 "Han är en soffpotatis som sitter framför TV:n hela dagen och aldrig tränar"（他是个沙发土豆，整天坐在电视机前，从不锻炼）。
 *   **自然性**: 文本必须读起来像原生的瑞典语文章，坚决避免填鸭式的“生词表式”生硬造句。
 
 ## 6. 输出规范 (三层架构)

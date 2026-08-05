@@ -35,7 +35,7 @@ graph TD
 *   **`native_language`**: Inherited from Phase 1 (Default: "English").
 
 ### 2.3 Configuration Parameters
-*   `words_per_article` (Integer): Number of **target words** per article (Default: 20-30).
+*   `words_per_article` (Integer): Number of **target words** per article (Default: 50-60, allowing for denser vocabulary packing to reduce total article count).
 *   `article_length_words` (Integer): Total word count of the target article (Default: 300-500).
 *   `course_id` (String): Course identifier for the data namespace (Default: "sfid").
 *   `allow_word_overlap` (Boolean): Whether the same word can appear as a target in multiple articles (Default: false).
@@ -68,7 +68,7 @@ Because the input `source_level` is B1, all AI-generated articles must strictly 
 *   **Language Difficulty**: Use B1 level Swedish vocabulary and grammar. Frequently use subordinate clauses (e.g., `att`, `eftersom`, `om`), but **avoid** C1+ obscure vocabulary or overly complex rhetorical structures (like advanced passive voices or archaic phrasing).
 *   **Article Structure**: Must have a clear narrative arc (introduction, body, conclusion). Random sentences stacked together are not allowed.
 *   **Sentence Length**: Average 10-15 words per sentence. Mix short and long sentences for reading rhythm.
-*   **Target Word Density**: Target words should make up 5-8% of the total article word count.
+*   **Target Word Density**: Target words can be packed densely (e.g., 10-15% of the total article word count, or approx. 60 words in a 500-word article), provided the text remains coherent, readable, and acceptable to a language teacher.
 *   **Context Clues**: Target words must be placed in contexts where their meaning can be guessed. For example, instead of just "Han är en soffpotatis" (He is a couch potato), write "Han är en soffpotatis som sitter framför TV:n hela dagen och aldrig tränar" (He is a couch potato who sits in front of the TV all day and never exercises).
 *   **Naturalness**: The text must read like native Swedish. Rigid, "vocab-list style" phrasing is strictly forbidden.
 
