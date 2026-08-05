@@ -40,7 +40,7 @@ graph TD
 
 ### Phase 2: Structured Article Generation
 - **Goal**: Generate CEFR B1 (SFI D) level Swedish articles incorporating 100% of the target vocabulary.
-- **Rules**: Semantic grouping, 3-layer architecture (`Course` -> `Step` -> `Article`), strict JSON character index mapping.
+- **Rules**: Semantic grouping, 3-layer architecture (`Course` -> `Stage` -> `Article`), strict JSON character index mapping.
 - **Output**: `chapters/*.json`
 - **Link**: [SPEC_02_ARTICLE_GENERATION.md](./SPEC_02_ARTICLE_GENERATION.md)
 

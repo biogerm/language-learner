@@ -36,7 +36,7 @@ window.globalDictionary = {
 
 ### 2.2 Article Data Interface (`data.js`)
 
-The generated articles from Phase 2 must be assembled into a single JavaScript object mirroring the **Course -> Step -> Article** hierarchy.
+The generated articles from Phase 2 must be assembled into a single JavaScript object mirroring the **Course -> Stage -> Article** hierarchy.
 
 **Output Specification (`data.js`):**
 ```javascript
@@ -44,10 +44,10 @@ The generated articles from Phase 2 must be assembled into a single JavaScript o
 window.APP_DATA = {
   "course_id": "sfid",
   "course_title": "SFI D",
-  "steps": [
+  "stages": [
     {
-      "step_id": "step_01",
-      "step_title": "Daily Life and Health",
+      "stage_id": "stage_01",
+      "stage_title": "Daily Life and Health",
       "articles": [
         {
           "article_id": "art_01",
@@ -120,7 +120,7 @@ The generator script must inject the following CSS block into the generated HTML
 2.  Format into Key-Value pairs and wrap in `window.globalDictionary = ...`.
 3.  Write to `frontend/js/global_dict.js`.
 4.  Read all Article JSONs in the `chapters/` directory.
-5.  Combine them into the nested `Course -> Step -> Article` structure.
+5.  Combine them into the nested `Course -> Stage -> Article` structure.
 6.  Wrap in `window.APP_DATA = ...`.
 7.  Write to `frontend/js/data.js`.
 8.  Pass the Article JSONs to an HTML templating engine (e.g., Jinja2 or custom string interpolation) and write `print/sfid_b1_articles.html`.

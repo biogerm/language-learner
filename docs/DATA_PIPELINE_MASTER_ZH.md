@@ -38,9 +38,9 @@ graph TD
 - **输出**: `master_dict.json`
 - **链接**: [SPEC_01_VOCAB_CLEANING_ZH.md](./SPEC_01_VOCAB_CLEANING_ZH.md)
 
-### Phase 2: 结构化文章生成
-- **目标**: 生成 100% 包含目标词汇的 CEFR B1 (SFI D) 级别瑞典语文章。
-- **规则**: 语义分组、三层架构 (`Course` -> `Step` -> `Article`)、严格的 JSON 字符索引映射。
+### 第二阶段 (Phase 2): 结构化文章生成
+- **目标**: 生成融合了 100% 目标词汇、符合 CEFR B1 (SFI D) 级别的瑞典语文章。
+- **规则**: 语义分组、三层架构 (`Course` -> `Stage` -> `Article`)、严格的 JSON 字符索引映射。
 - **输出**: `chapters/*.json`
 - **链接**: [SPEC_02_ARTICLE_GENERATION_ZH.md](./SPEC_02_ARTICLE_GENERATION_ZH.md)
 

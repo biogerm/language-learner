@@ -49,7 +49,7 @@ graph TD
 
 The AI Agent must autonomously execute the following:
 1. **Analyze the Vocabulary**: Read the entire input dictionary.
-2. **Determine Themes (Steps)**: Intelligently identify underlying semantic themes (e.g., healthcare, job hunting, daily routines, nature, society). These themes map to the "Step" layer in our architecture.
+2. **Determine Themes (Steps)**: Intelligently identify underlying semantic themes (e.g., healthcare, job hunting, daily routines, nature, society). These themes map to the "Stage" layer in our architecture.
 3. **Allocate Words (Articles)**: Group words into specific article clusters (e.g., 20-30 words per cluster) under each theme. The Agent must ensure words in a cluster share a strong semantic relationship that allows for natural story-telling.
 4. **Finalize Blueprint**: Only when 100% of the words are assigned to a logical cluster does the Agent proceed to Article Generation (Sub-step 2.2).
 
@@ -75,7 +75,7 @@ Because the input `source_level` is B1, all AI-generated articles must strictly 
 
 ## 6. Output Specification (3-Layer Architecture)
 
-The AI generation results must be serialized into JSON data strictly following a 3-layer hierarchical architecture: **Course -> Step -> Article**.
+The AI generation results must be serialized into JSON data strictly following a 3-layer hierarchical architecture: **Course -> Stage -> Article**.
 
 > [!WARNING]
 > The `sv` field must be plain text. It is **NOT ALLOWED** to contain any HTML tags (like `<strong>`) or Markdown (like `**`). Highlighting is implemented via the exact character indices `position_start` and `position_end`.
@@ -86,10 +86,10 @@ The AI generation results must be serialized into JSON data strictly following a
 {
   "course_id": "sfid",
   "course_title": "SFI D",
-  "steps": [
+  "stages": [
     {
-      "step_id": "step_01",
-      "step_title": "Daily Life and Health",
+      "stage_id": "stage_01",
+      "stage_title": "Daily Life and Health",
       "articles": [
         {
           "article_id": "art_01",
@@ -127,7 +127,7 @@ The AI generation results must be serialized into JSON data strictly following a
 
 ### Field Descriptions
 *   `course_title`: A meaningful title for the course (e.g., "SFI D"). Do not expose internal IDs to the user.
-*   `step_title`: A meaningful thematic title for the Step (e.g., "Daily Life and Health"). Do not include prefixes like "Step 1" as it exposes internal hierarchy.
+*   `step_title`: A meaningful thematic title for the Stage (e.g., "Daily Life and Health"). Do not include prefixes like "Stage 1" as it exposes internal hierarchy.
 *   `article_title`: A meaningful title for the specific reading article.
 *   `sv`: The complete Swedish original sentence text.
 *   `en`: The complete English translation of the ENTIRE sentence (NOT just the translation of the individual target words).
@@ -175,13 +175,13 @@ Your task is to write a highly coherent, natural-sounding article in Swedish tha
 2. Context Clues: When using a target word, provide enough context so a learner can guess its meaning. Do not just make a list of disconnected sentences.
 3. Length & Flow: Write between 300-500 words. The article must have a clear beginning, middle, and end. 
 4. Sentence Length: Average 10-15 words per sentence. Mix short and long sentences naturally.
-5. Topic: Create an engaging story or essay about: {THEMATIC_STEP_TITLE}. Give the article a meaningful title.
+5. Topic: Create an engaging story or essay about: {THEMATIC_STAGE_TITLE}. Give the article a meaningful title.
 
 # TARGET VOCABULARY (MUST USE 100%):
 {TARGET_WORDS_JSON}
 
 # CONSTRAINTS & OUTPUT FORMAT:
-You must output strictly in JSON format matching the requested 3-layer schema (Course -> Step -> Article).
+You must output strictly in JSON format matching the requested 3-layer schema (Course -> Stage -> Article).
 - "sv": The Swedish sentence string MUST be plain text. DO NOT use markdown, HTML, or **bold** tags.
 - "en": You MUST provide the English translation for the ENTIRE Swedish sentence. Do not just translate the isolated target words.
 - "target_words": For each target word used in the sentence, identify its exact inflected form ("word_in_sentence"), its original base form ("base_form"), and its precise 0-indexed character positions ("position_start" and "position_end") in the "sv" string.

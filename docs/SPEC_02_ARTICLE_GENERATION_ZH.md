@@ -75,7 +75,7 @@ AI 智能体必须自主执行以下操作：
 
 ## 6. 输出规范 (三层架构)
 
-AI 生成的结果必须被序列化为严格遵循三层嵌套架构的 JSON 数据：**Course -> Step -> Article**。
+AI 生成的结果必须被序列化为严格遵循三层嵌套架构的 JSON 数据：**Course -> Stage -> Article**。
 
 > [!WARNING]
 > `sv` 字段必须是纯文本。**不允许**包含任何 HTML 标签（如 `<strong>`）或 Markdown（如 `**`）。高亮是通过精确的字符索引 `position_start` 和 `position_end` 实现的。
@@ -86,10 +86,10 @@ AI 生成的结果必须被序列化为严格遵循三层嵌套架构的 JSON �
 {
   "course_id": "sfid",
   "course_title": "SFI D",
-  "steps": [
+  "stages": [
     {
-      "step_id": "step_01",
-      "step_title": "Daily Life and Health",
+      "stage_id": "stage_01",
+      "stage_title": "Daily Life and Health",
       "articles": [
         {
           "article_id": "art_01",
@@ -127,7 +127,7 @@ AI 生成的结果必须被序列化为严格遵循三层嵌套架构的 JSON �
 
 ### 字段说明
 *   `course_title`: 课程的有意义的标题（例如 "SFI D"）。不要向用户暴露内部 ID。
-*   `step_title`: Step 的有意义的主题标题（例如 "日常生活"）。不要包含 "Step 1" 等前缀，以免暴露内部层级。
+*   `step_title`: Stage 的有意义的主题标题（例如 "日常生活"）。不要包含 "Stage 1" 等前缀，以免暴露内部层级。
 *   `article_title`: 特定阅读文章的描述性标题。
 *   `sv`: 完整的瑞典语原句文本。
 *   `en`: **整句**完整的英文翻译（千万不要仅仅翻译那些目标单词，而是要翻译整个句子）。
@@ -175,13 +175,13 @@ Your task is to write a highly coherent, natural-sounding article in Swedish tha
 2. Context Clues: When using a target word, provide enough context so a learner can guess its meaning. Do not just make a list of disconnected sentences.
 3. Length & Flow: Write between 300-500 words. The article must have a clear beginning, middle, and end. 
 4. Sentence Length: Average 10-15 words per sentence. Mix short and long sentences naturally.
-5. Topic: Create an engaging story or essay about: {THEMATIC_STEP_TITLE}. Give the article a meaningful title.
+5. Topic: Create an engaging story or essay about: {THEMATIC_STAGE_TITLE}. Give the article a meaningful title.
 
 # TARGET VOCABULARY (MUST USE 100%):
 {TARGET_WORDS_JSON}
 
 # CONSTRAINTS & OUTPUT FORMAT:
-You must output strictly in JSON format matching the requested 3-layer schema (Course -> Step -> Article).
+You must output strictly in JSON format matching the requested 3-layer schema (Course -> Stage -> Article).
 - "sv": The Swedish sentence string MUST be plain text. DO NOT use markdown, HTML, or **bold** tags.
 - "en": You MUST provide the English translation for the ENTIRE Swedish sentence. Do not just translate the isolated target words.
 - "target_words": For each target word used in the sentence, identify its exact inflected form ("word_in_sentence"), its original base form ("base_form"), and its precise 0-indexed character positions ("position_start" and "position_end") in the "sv" string.

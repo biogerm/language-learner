@@ -36,7 +36,7 @@ window.globalDictionary = {
 
 ### 2.2 文章数据接口 (`data.js`)
 
-Phase 2 生成的文章必须被组装成一个映射了 **Course -> Step -> Article** 层级结构的单一 JavaScript 对象。
+Phase 2 生成的文章必须被组装成一个映射了 **Course -> Stage -> Article** 层级结构的单一 JavaScript 对象。
 
 **输出规范 (`data.js`):**
 ```javascript
@@ -44,10 +44,10 @@ Phase 2 生成的文章必须被组装成一个映射了 **Course -> Step -> Art
 window.APP_DATA = {
   "course_id": "sfid",
   "course_title": "SFI D",
-  "steps": [
+  "stages": [
     {
-      "step_id": "step_01",
-      "step_title": "Daily Life and Health",
+      "stage_id": "stage_01",
+      "stage_title": "Daily Life and Health",
       "articles": [
         {
           "article_id": "art_01",
@@ -120,7 +120,7 @@ window.APP_DATA = {
 2.  格式化为 Key-Value 键值对，并包裹在 `window.globalDictionary = ...` 中。
 3.  写入到 `frontend/js/global_dict.js`。
 4.  读取 `chapters/` 目录下的所有文章 JSON。
-5.  将它们合并为嵌套的 `Course -> Step -> Article` 结构。
+5.  将它们合并为嵌套的 `Course -> Stage -> Article` 结构。
 6.  包裹在 `window.APP_DATA = ...` 中。
 7.  写入到 `frontend/js/data.js`。
 8.  将文章 JSON 传递给 HTML 模板引擎（如 Jinja2 或自定义字符串插值），并写入 `print/sfid_b1_articles.html`。
