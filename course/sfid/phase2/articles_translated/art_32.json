@@ -479,7 +479,7 @@
                     "base_form": "flytta",
                     "position_start": 86,
                     "position_end": 92,
-                    "contextual_en": "give me"
+                    "contextual_en": "move"
                 }
             ],
             "secondary_words": [
@@ -668,7 +668,7 @@
                     "base_form": "själv",
                     "position_start": 1,
                     "position_end": 6,
-                    "contextual_en": "I thought"
+                    "contextual_en": "self"
                 },
                 {
                     "word_in_sentence": "ringa till",
