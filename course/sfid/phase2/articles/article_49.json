@@ -8,8 +8,8 @@
     "target_word_count": 60,
     "sentences": [
         {
-            "sentence_id": "art49_s001",
-            "sv": "Jag sa tack på förhand till min bästa vän för att han ville komma. Vi hade bestämt oss för att träffas och prata om relationer och hur vi brukar må. \nHan sa att han naturligtvis skulle ställa upp. Han var min bästa kompis, en person som jag alltid kunde chatta med. \n\nVi började diskutera vad vi tyckte var viktigt. \"Vad brukar du tycka bäst om i en familj?\" frågade jag. \"Och vad brukar du tycka sämst om?\"\n\"Man bör gilla ärlighet,\" svarade han och såg glad ut. \"Ett trevligt samtal är alltid bra, oavsett om det är djupt snack eller bara lite sportsnack.\"\n\"Jag håller med.\" svarade jag snabbt. \"Och att man kan förlåta en annan vän. En stark vänskap är oerhört viktig för att man ska må bra och känna sig lycklig.\"\n\nVi pratade sedan om varför folk ibland väljer att skilja sig och plötsligt kan bli som en fiende till varandra. Det är alltid tråkigt när ett långt förhållande tar slut. Minnen från ett vackert bröllop eller en fin bröllopsdag kan kännas långt borta. Människor kan tyvärr skilja sig åt med tiden. Vissa väljer då att bo separat, och konflikter kan förekomma. \"Då måste man ibland lämna över ansvaret och låta den andra personen gå fri från kritik,\" sa han. \"Man ska inte behöva gå runt och känna ilska.\"\n\nHan berättade därefter om sin egen flickvän. \"Hon är en enorm djurvän, och vi försöker informera andra om en ny kampanj för utsatta djur, både stora och små.\"\n\"Är du riktigt kär i henne?\" frågade jag.\n\"Ja, jag kan verkligen älska vårt lugna familjeliv. Men ibland kan jag ändå känna mig ensam när hon reser mycket.\"\n\"Det är ungefär så för mig också ibland,\" sa jag för att hålla med.\n\"Vi får väl se.\" sa han lugnt. \"Det ordnar sig.\" \n\nOch efter det var vi båda trötta. Klockan var mycket, det var en jättesen kväll, och ungdomar utanför fönstret skrek ord med prefixet jätte- framför allt. Jag försökte vara tyst som en mus och började smyga mot dörren. \n\"Du har tur som kan somna snabbt,\" log han. \"Kärleken kommer att räcka långt, om man bara vågar vilja ha den.",
+            "sentence_id": "art_49_s001",
+            "sv": "Jag sa tack på förhand till min bästa vän för att han ville komma.",
             "en": "",
             "target_words": [
                 {
@@ -35,348 +35,564 @@
                     "base_form": "vän",
                     "position_start": 38,
                     "position_end": 41
-                },
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_49_s002",
+            "sv": "Vi hade bestämt oss för att träffas och prata om relationer och hur vi brukar må.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "träffas",
                     "base_form": "träffas",
-                    "position_start": 95,
-                    "position_end": 102
+                    "position_start": 28,
+                    "position_end": 35
                 },
                 {
                     "word_in_sentence": "prata",
                     "base_form": "prata",
-                    "position_start": 107,
-                    "position_end": 112
+                    "position_start": 40,
+                    "position_end": 45
                 },
                 {
                     "word_in_sentence": "må",
                     "base_form": "må",
-                    "position_start": 145,
-                    "position_end": 147
-                },
+                    "position_start": 78,
+                    "position_end": 80
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_49_s003",
+            "sv": "Han sa att han naturligtvis skulle ställa upp.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "naturligtvis",
                     "base_form": "naturligtvis",
-                    "position_start": 165,
-                    "position_end": 177
+                    "position_start": 15,
+                    "position_end": 27
                 },
                 {
                     "word_in_sentence": "tur",
                     "base_form": "tur",
-                    "position_start": 167,
-                    "position_end": 170
-                },
+                    "position_start": 17,
+                    "position_end": 20
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_49_s004",
+            "sv": "Han var min bästa kompis, en person som jag alltid kunde chatta med.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "bästa kompis",
                     "base_form": "bästa kompis",
-                    "position_start": 209,
-                    "position_end": 221
+                    "position_start": 12,
+                    "position_end": 24
                 },
                 {
                     "word_in_sentence": "kompis",
                     "base_form": "kompis",
-                    "position_start": 215,
-                    "position_end": 221
+                    "position_start": 18,
+                    "position_end": 24
                 },
                 {
                     "word_in_sentence": "som",
                     "base_form": "som",
-                    "position_start": 233,
-                    "position_end": 236
+                    "position_start": 36,
+                    "position_end": 39
                 },
                 {
                     "word_in_sentence": "chatta",
                     "base_form": "chatta",
-                    "position_start": 254,
-                    "position_end": 260
-                },
+                    "position_start": 57,
+                    "position_end": 63
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_49_s005",
+            "sv": "Vi började diskutera vad vi tyckte var viktigt.",
+            "en": "",
+            "target_words": []
+        },
+        {
+            "sentence_id": "art_49_s006",
+            "sv": "\"Vad brukar du tycka bäst om i en familj?\" frågade jag.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "tycka bäst om",
                     "base_form": "tycka bäst om",
-                    "position_start": 331,
-                    "position_end": 344
+                    "position_start": 15,
+                    "position_end": 28
                 },
                 {
                     "word_in_sentence": "familj",
                     "base_form": "familj",
-                    "position_start": 350,
-                    "position_end": 356
-                },
+                    "position_start": 34,
+                    "position_end": 40
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_49_s007",
+            "sv": "\"Och vad brukar du tycka sämst om?\"",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "tycka sämst om",
                     "base_form": "tycka sämst om",
-                    "position_start": 391,
-                    "position_end": 405
-                },
+                    "position_start": 19,
+                    "position_end": 33
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_49_s008",
+            "sv": "\"Man bör gilla ärlighet,\" svarade han och såg glad ut.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "gilla",
                     "base_form": "gilla",
-                    "position_start": 417,
-                    "position_end": 422
+                    "position_start": 9,
+                    "position_end": 14
                 },
                 {
                     "word_in_sentence": "glad",
                     "base_form": "glad",
-                    "position_start": 454,
-                    "position_end": 458
-                },
+                    "position_start": 46,
+                    "position_end": 50
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_49_s009",
+            "sv": "\"Ett trevligt samtal är alltid bra, oavsett om det är djupt snack eller bara lite sportsnack.\"",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "snack",
                     "base_form": "snack",
-                    "position_start": 523,
-                    "position_end": 528
+                    "position_start": 60,
+                    "position_end": 65
                 },
                 {
                     "word_in_sentence": "sportsnack",
                     "base_form": "sportsnack",
-                    "position_start": 545,
-                    "position_end": 555
-                },
+                    "position_start": 82,
+                    "position_end": 92
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_49_s010",
+            "sv": "\"Jag håller med.\" svarade jag snabbt.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "Jag håller med.",
                     "base_form": "Jag håller med.",
-                    "position_start": 559,
-                    "position_end": 574
-                },
+                    "position_start": 1,
+                    "position_end": 16
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_49_s011",
+            "sv": "\"Och att man kan förlåta en annan vän.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "förlåta",
                     "base_form": "förlåta",
-                    "position_start": 613,
-                    "position_end": 620
-                },
+                    "position_start": 17,
+                    "position_end": 24
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_49_s012",
+            "sv": "En stark vänskap är oerhört viktig för att man ska må bra och känna sig lycklig.\"",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "vänskap",
                     "base_form": "vänskap",
-                    "position_start": 644,
-                    "position_end": 651
+                    "position_start": 9,
+                    "position_end": 16
                 },
                 {
                     "word_in_sentence": "må bra",
                     "base_form": "må bra",
-                    "position_start": 686,
-                    "position_end": 692
+                    "position_start": 51,
+                    "position_end": 57
                 },
                 {
                     "word_in_sentence": "känna",
                     "base_form": "känna",
-                    "position_start": 697,
-                    "position_end": 702
+                    "position_start": 62,
+                    "position_end": 67
                 },
                 {
                     "word_in_sentence": "lycklig",
                     "base_form": "lycklig",
-                    "position_start": 707,
-                    "position_end": 714
-                },
+                    "position_start": 72,
+                    "position_end": 79
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_49_s013",
+            "sv": "Vi pratade sedan om varför folk ibland väljer att skilja sig och plötsligt kan bli som en fiende till varandra.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "varför",
                     "base_form": "Varför",
-                    "position_start": 738,
-                    "position_end": 744
+                    "position_start": 20,
+                    "position_end": 26
                 },
                 {
                     "word_in_sentence": "skilja sig",
                     "base_form": "skilja sig",
-                    "position_start": 768,
-                    "position_end": 778
+                    "position_start": 50,
+                    "position_end": 60
                 },
                 {
                     "word_in_sentence": "fiende",
                     "base_form": "fiende",
-                    "position_start": 808,
-                    "position_end": 814
-                },
+                    "position_start": 90,
+                    "position_end": 96
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_49_s014",
+            "sv": "Det är alltid tråkigt när ett långt förhållande tar slut.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "slut",
                     "base_form": "slut",
-                    "position_start": 882,
-                    "position_end": 886
-                },
+                    "position_start": 52,
+                    "position_end": 56
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_49_s015",
+            "sv": "Minnen från ett vackert bröllop eller en fin bröllopsdag kan kännas långt borta.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "bröllop",
                     "base_form": "bröllop",
-                    "position_start": 912,
-                    "position_end": 919
+                    "position_start": 24,
+                    "position_end": 31
                 },
                 {
                     "word_in_sentence": "bröllopsdag",
                     "base_form": "bröllopsdag",
-                    "position_start": 933,
-                    "position_end": 944
-                },
+                    "position_start": 45,
+                    "position_end": 56
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_49_s016",
+            "sv": "Människor kan tyvärr skilja sig åt med tiden.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "skilja sig åt",
                     "base_form": "skilja sig åt",
-                    "position_start": 990,
-                    "position_end": 1003
+                    "position_start": 21,
+                    "position_end": 34
                 },
                 {
                     "word_in_sentence": "med tiden",
                     "base_form": "med tiden",
-                    "position_start": 1004,
-                    "position_end": 1013
-                },
+                    "position_start": 35,
+                    "position_end": 44
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_49_s017",
+            "sv": "Vissa väljer då att bo separat, och konflikter kan förekomma.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "separat",
                     "base_form": "separat",
-                    "position_start": 1038,
-                    "position_end": 1045
+                    "position_start": 23,
+                    "position_end": 30
                 },
                 {
                     "word_in_sentence": "förekomma",
                     "base_form": "förekomma",
-                    "position_start": 1066,
-                    "position_end": 1075
-                },
+                    "position_start": 51,
+                    "position_end": 60
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_49_s018",
+            "sv": "\"Då måste man ibland lämna över ansvaret och låta den andra personen gå fri från kritik,\" sa han.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "lämna över",
                     "base_form": "lämna över",
-                    "position_start": 1098,
-                    "position_end": 1108
+                    "position_start": 21,
+                    "position_end": 31
                 },
                 {
                     "word_in_sentence": "gå fri",
                     "base_form": "gå fri",
-                    "position_start": 1146,
-                    "position_end": 1152
-                },
+                    "position_start": 69,
+                    "position_end": 75
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_49_s019",
+            "sv": "\"Man ska inte behöva gå runt och känna ilska.\"",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "behöva",
                     "base_form": "behöva",
-                    "position_start": 1189,
-                    "position_end": 1195
-                },
+                    "position_start": 14,
+                    "position_end": 20
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_49_s020",
+            "sv": "Han berättade därefter om sin egen flickvän.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "flickvän",
                     "base_form": "flickvän",
-                    "position_start": 1258,
-                    "position_end": 1266
-                },
+                    "position_start": 35,
+                    "position_end": 43
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_49_s021",
+            "sv": "\"Hon är en enorm djurvän, och vi försöker informera andra om en ny kampanj för utsatta djur, både stora och små.\"",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "djurvän",
                     "base_form": "djurvän",
-                    "position_start": 1285,
-                    "position_end": 1292
+                    "position_start": 17,
+                    "position_end": 24
                 },
                 {
                     "word_in_sentence": "informera",
                     "base_form": "informera",
-                    "position_start": 1310,
-                    "position_end": 1319
+                    "position_start": 42,
+                    "position_end": 51
                 },
                 {
                     "word_in_sentence": "kampanj",
                     "base_form": "kampanj",
-                    "position_start": 1335,
-                    "position_end": 1342
+                    "position_start": 67,
+                    "position_end": 74
                 },
                 {
                     "word_in_sentence": "stora och små",
                     "base_form": "stora och små",
-                    "position_start": 1366,
-                    "position_end": 1379
-                },
+                    "position_start": 98,
+                    "position_end": 111
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_49_s022",
+            "sv": "\"Är du riktigt kär i henne?\" frågade jag.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "kär",
                     "base_form": "kär",
-                    "position_start": 1397,
-                    "position_end": 1400
-                },
+                    "position_start": 15,
+                    "position_end": 18
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_49_s023",
+            "sv": "\"Ja, jag kan verkligen älska vårt lugna familjeliv.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "älska",
                     "base_form": "älska",
-                    "position_start": 1447,
-                    "position_end": 1452
+                    "position_start": 23,
+                    "position_end": 28
                 },
                 {
                     "word_in_sentence": "familjeliv",
                     "base_form": "familjeliv",
-                    "position_start": 1464,
-                    "position_end": 1474
-                },
+                    "position_start": 40,
+                    "position_end": 50
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_49_s024",
+            "sv": "Men ibland kan jag ändå känna mig ensam när hon reser mycket.\"",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "känna mig",
                     "base_form": "känna sig/mig",
-                    "position_start": 1500,
-                    "position_end": 1509
+                    "position_start": 24,
+                    "position_end": 33
                 },
                 {
                     "word_in_sentence": "ensam",
                     "base_form": "ensam",
-                    "position_start": 1510,
-                    "position_end": 1515
-                },
+                    "position_start": 34,
+                    "position_end": 39
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_49_s025",
+            "sv": "\"Det är ungefär så för mig också ibland,\" sa jag för att hålla med.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "ungefär så",
                     "base_form": "ungefär så",
-                    "position_start": 1547,
-                    "position_end": 1557
+                    "position_start": 8,
+                    "position_end": 18
                 },
                 {
                     "word_in_sentence": "hålla med",
                     "base_form": "hålla med",
-                    "position_start": 1596,
-                    "position_end": 1605
-                },
+                    "position_start": 57,
+                    "position_end": 66
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_49_s026",
+            "sv": "\"Vi får väl se.\" sa han lugnt.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "Vi får väl se.",
                     "base_form": "Vi får väl se.",
-                    "position_start": 1608,
-                    "position_end": 1622
-                },
+                    "position_start": 1,
+                    "position_end": 15
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_49_s027",
+            "sv": "\"Det ordnar sig.\"",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "Det ordnar sig.",
                     "base_form": "Det ordnar sig.",
-                    "position_start": 1639,
-                    "position_end": 1654
-                },
+                    "position_start": 1,
+                    "position_end": 16
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_49_s028",
+            "sv": "Och efter det var vi båda trötta.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "efter det",
                     "base_form": "efter det",
-                    "position_start": 1662,
-                    "position_end": 1671
-                },
+                    "position_start": 4,
+                    "position_end": 13
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_49_s029",
+            "sv": "Klockan var mycket, det var en jättesen kväll, och ungdomar utanför fönstret skrek ord med prefixet jätte- framför allt.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "jättesen",
                     "base_form": "jättesen",
-                    "position_start": 1723,
-                    "position_end": 1731
+                    "position_start": 31,
+                    "position_end": 39
                 },
                 {
                     "word_in_sentence": "jätte-",
                     "base_form": "jätte-",
-                    "position_start": 1792,
-                    "position_end": 1798
-                },
+                    "position_start": 100,
+                    "position_end": 106
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_49_s030",
+            "sv": "Jag försökte vara tyst som en mus och började smyga mot dörren.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "tyst som en mus",
                     "base_form": "tyst som en mus",
-                    "position_start": 1831,
-                    "position_end": 1846
+                    "position_start": 18,
+                    "position_end": 33
                 },
                 {
                     "word_in_sentence": "smyga",
                     "base_form": "smyga",
-                    "position_start": 1859,
-                    "position_end": 1864
-                },
+                    "position_start": 46,
+                    "position_end": 51
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_49_s031",
+            "sv": "\"Du har tur som kan somna snabbt,\" log han.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "somna",
                     "base_form": "somna",
-                    "position_start": 1898,
-                    "position_end": 1903
-                },
+                    "position_start": 20,
+                    "position_end": 25
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_49_s032",
+            "sv": "\"Kärleken kommer att räcka långt, om man bara vågar vilja ha den.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "räcka",
                     "base_form": "räcka",
-                    "position_start": 1943,
-                    "position_end": 1948
+                    "position_start": 21,
+                    "position_end": 26
                 },
                 {
                     "word_in_sentence": "vilja",
                     "base_form": "vilja",
-                    "position_start": 1974,
-                    "position_end": 1979
+                    "position_start": 52,
+                    "position_end": 57
                 }
             ]
         }

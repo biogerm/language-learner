@@ -1,441 +1,649 @@
 {
-  "course_id": "sfid",
-  "course_title": "SFI D",
-  "stage_id": "stage_04",
-  "stage_title": "Relationer & Känslor",
-  "article_id": "art_50",
-  "article_title": "Läsförståelse",
-  "target_word_count": 60,
-  "sentences": [
-    {
-      "sentence_id": "art50_s001",
-      "sv": "Hej Maria!\nVet du vad? Det är sant att tiderna förändras verkligen snabbt. Tidigt i morse drack jag kaffe i min varma morgonrock. Min pojkvän sa då att han ville gifta sig nästa år.\nVi har ett starkt förhållande och en väldigt bra relation, men vi pratar också om hur vanligt det tyvärr är med en skilsmässa. Folk vill umgås, men mycket är ändå inte som förr. Det blev plötsligt mycket prat om hans stora släkt och alla deras barn. Varje förälder vill ju alltid det bästa. Jag hoppas att vi får vara lyckliga. Han var gift tidigare, och hans före detta fru blev visst arg som ett bi när hon trodde att han hade träffat en ny älskare. Man kan ibland bli ilsken och behöva vänja mig vid situationen, för det tar tid att vänja sig vid nya saker.\n\nUnder vår senaste långhelg åkte vi allihop upp till landet. Vi hade anställt en ung barnvakt till några små skolbarn från en annan barnfamilj. Barnen älskade gamla sagor. Vi brukade ofta påminna dem om berättelser som Rödluvan och vargen och även Peter och vargen. Kanske en av er också minns hur spännande det var? En riktig varg kan ju se farlig och rentav livsfarlig ut, med en imponerande stor mankhöjd. Om man möter en kan man behöva vända bilen snabbt eller vända sig om i skogen. Som tur är syns de ganska sällan i allmänhet. Vargen är ju hundens kända stamfader.\n\nSedan besökte vi en lokal älgfarm tillsammans. Deras absolut bästa säljargument var att besökare fick klappa älgarna under regelbundna tider. Det är tydligen en expanderande turistnäring med en snabbt ökad popularitet. Det var tolv personer där samtidigt. Ingen kände sig rädd, med ett enda undantag. Det fanns en inofficiell regel där som sa att man måste ha en godkänd djurskötare med sig för att kunna kontrollera allt. \nDå kunde man plötsligt komma på att deras gamla valspråk var att djuren fortfarande ska ha full respekt. I slutet… av hela dagen var vi alla extremt trötta och nöjda. \n\nHör av dig snart!\nPuss och kram …\nKramar …",
-      "en": "",
-      "target_words": [
+    "course_id": "sfid",
+    "course_title": "SFI D",
+    "stage_id": "stage_04",
+    "stage_title": "Relationer & Känslor",
+    "article_id": "art_50",
+    "article_title": "Läsförståelse",
+    "target_word_count": 60,
+    "sentences": [
         {
-          "word_in_sentence": "gifta sig",
-          "base_form": "gifta sig",
-          "position_start": 162,
-          "position_end": 171
+            "sentence_id": "art_50_s001",
+            "sv": "Hej Maria!",
+            "en": "",
+            "target_words": []
         },
         {
-          "word_in_sentence": "skilsmässa",
-          "base_form": "skilsmässa",
-          "position_start": 297,
-          "position_end": 307
+            "sentence_id": "art_50_s002",
+            "sv": "Vet du vad?",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "Vet du vad?",
+                    "base_form": "Vet du om?",
+                    "position_start": 0,
+                    "position_end": 11
+                }
+            ]
         },
         {
-          "word_in_sentence": "som förr",
-          "base_form": "som förr",
-          "position_start": 350,
-          "position_end": 358
+            "sentence_id": "art_50_s003",
+            "sv": "Det är sant att tiderna förändras verkligen snabbt.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "tiderna förändras",
+                    "base_form": "tiderna förändras",
+                    "position_start": 16,
+                    "position_end": 33
+                }
+            ]
         },
         {
-          "word_in_sentence": "pojkvän",
-          "base_form": "pojkvän",
-          "position_start": 134,
-          "position_end": 141
+            "sentence_id": "art_50_s004",
+            "sv": "Tidigt i morse drack jag kaffe i min varma morgonrock.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "i morse",
+                    "base_form": "i morse",
+                    "position_start": 7,
+                    "position_end": 14
+                },
+                {
+                    "word_in_sentence": "morgonrock",
+                    "base_form": "morgonrock",
+                    "position_start": 43,
+                    "position_end": 53
+                }
+            ]
         },
         {
-          "word_in_sentence": "barn",
-          "base_form": "barn",
-          "position_start": 426,
-          "position_end": 430
+            "sentence_id": "art_50_s005",
+            "sv": "Min pojkvän sa då att han ville gifta sig nästa år.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "gifta sig",
+                    "base_form": "gifta sig",
+                    "position_start": 32,
+                    "position_end": 41
+                },
+                {
+                    "word_in_sentence": "pojkvän",
+                    "base_form": "pojkvän",
+                    "position_start": 4,
+                    "position_end": 11
+                },
+                {
+                    "word_in_sentence": "gift",
+                    "base_form": "gift",
+                    "position_start": 32,
+                    "position_end": 36
+                }
+            ]
         },
         {
-          "word_in_sentence": "förhållande",
-          "base_form": "förhållande",
-          "position_start": 200,
-          "position_end": 211
+            "sentence_id": "art_50_s006",
+            "sv": "Vi har ett starkt förhållande och en väldigt bra relation, men vi pratar också om hur vanligt det tyvärr är med en skilsmässa.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "skilsmässa",
+                    "base_form": "skilsmässa",
+                    "position_start": 115,
+                    "position_end": 125
+                },
+                {
+                    "word_in_sentence": "förhållande",
+                    "base_form": "förhållande",
+                    "position_start": 18,
+                    "position_end": 29
+                },
+                {
+                    "word_in_sentence": "prat",
+                    "base_form": "prat",
+                    "position_start": 66,
+                    "position_end": 70
+                },
+                {
+                    "word_in_sentence": "relation",
+                    "base_form": "relation",
+                    "position_start": 49,
+                    "position_end": 57
+                }
+            ]
         },
         {
-          "word_in_sentence": "släkt",
-          "base_form": "släkt",
-          "position_start": 405,
-          "position_end": 410
+            "sentence_id": "art_50_s007",
+            "sv": "Folk vill umgås, men mycket är ändå inte som förr.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "som förr",
+                    "base_form": "som förr",
+                    "position_start": 41,
+                    "position_end": 49
+                },
+                {
+                    "word_in_sentence": "umgås",
+                    "base_form": "umgås",
+                    "position_start": 10,
+                    "position_end": 15
+                }
+            ]
         },
         {
-          "word_in_sentence": "umgås",
-          "base_form": "umgås",
-          "position_start": 319,
-          "position_end": 324
+            "sentence_id": "art_50_s008",
+            "sv": "Det blev plötsligt mycket prat om hans stora släkt och alla deras barn.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "barn",
+                    "base_form": "barn",
+                    "position_start": 66,
+                    "position_end": 70
+                },
+                {
+                    "word_in_sentence": "släkt",
+                    "base_form": "släkt",
+                    "position_start": 45,
+                    "position_end": 50
+                }
+            ]
         },
         {
-          "word_in_sentence": "fru",
-          "base_form": "fru",
-          "position_start": 553,
-          "position_end": 556
+            "sentence_id": "art_50_s009",
+            "sv": "Varje förälder vill ju alltid det bästa.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "förälder",
+                    "base_form": "förälder",
+                    "position_start": 6,
+                    "position_end": 14
+                }
+            ]
         },
         {
-          "word_in_sentence": "förälder",
-          "base_form": "förälder",
-          "position_start": 438,
-          "position_end": 446
+            "sentence_id": "art_50_s010",
+            "sv": "Jag hoppas att vi får vara lyckliga.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "hoppas",
+                    "base_form": "hoppas",
+                    "position_start": 4,
+                    "position_end": 10
+                }
+            ]
         },
         {
-          "word_in_sentence": "hoppas",
-          "base_form": "hoppas",
-          "position_start": 477,
-          "position_end": 483
+            "sentence_id": "art_50_s011",
+            "sv": "Han var gift tidigare, och hans före detta fru blev visst arg som ett bi när hon trodde att han hade träffat en ny älskare.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "fru",
+                    "base_form": "fru",
+                    "position_start": 43,
+                    "position_end": 46
+                },
+                {
+                    "word_in_sentence": "älskare",
+                    "base_form": "älskare",
+                    "position_start": 115,
+                    "position_end": 122
+                },
+                {
+                    "word_in_sentence": "arg som ett bi",
+                    "base_form": "arg som ett bi",
+                    "position_start": 58,
+                    "position_end": 72
+                }
+            ]
         },
         {
-          "word_in_sentence": "älskare",
-          "base_form": "älskare",
-          "position_start": 625,
-          "position_end": 632
+            "sentence_id": "art_50_s012",
+            "sv": "Man kan ibland bli ilsken och behöva vänja mig vid situationen, för det tar tid att vänja sig vid nya saker.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "bror",
+                    "base_form": "bror",
+                    "position_start": 46,
+                    "position_end": 50
+                },
+                {
+                    "word_in_sentence": "ilsken",
+                    "base_form": "ilsken",
+                    "position_start": 19,
+                    "position_end": 25
+                },
+                {
+                    "word_in_sentence": "vänja",
+                    "base_form": "vänja",
+                    "position_start": 37,
+                    "position_end": 42
+                },
+                {
+                    "word_in_sentence": "vänja sig vid",
+                    "base_form": "vänja sig vid",
+                    "position_start": 84,
+                    "position_end": 97
+                }
+            ]
         },
         {
-          "word_in_sentence": "bror",
-          "base_form": "bror",
-          "position_start": 680,
-          "position_end": 684
+            "sentence_id": "art_50_s013",
+            "sv": "Under vår senaste långhelg åkte vi allihop upp till landet.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "långhelg",
+                    "base_form": "långhelg",
+                    "position_start": 18,
+                    "position_end": 26
+                },
+                {
+                    "word_in_sentence": "allihop",
+                    "base_form": "allihop",
+                    "position_start": 35,
+                    "position_end": 42
+                }
+            ]
         },
         {
-          "word_in_sentence": "gift",
-          "base_form": "gift",
-          "position_start": 162,
-          "position_end": 166
+            "sentence_id": "art_50_s014",
+            "sv": "Vi hade anställt en ung barnvakt till några små skolbarn från en annan barnfamilj.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "barnvakt",
+                    "base_form": "barnvakt",
+                    "position_start": 24,
+                    "position_end": 32
+                },
+                {
+                    "word_in_sentence": "skolbarn",
+                    "base_form": "skolbarn",
+                    "position_start": 48,
+                    "position_end": 56
+                },
+                {
+                    "word_in_sentence": "barnfamilj",
+                    "base_form": "barnfamilj",
+                    "position_start": 71,
+                    "position_end": 81
+                }
+            ]
         },
         {
-          "word_in_sentence": "prat",
-          "base_form": "prat",
-          "position_start": 248,
-          "position_end": 252
+            "sentence_id": "art_50_s015",
+            "sv": "Barnen älskade gamla sagor.",
+            "en": "",
+            "target_words": []
         },
         {
-          "word_in_sentence": "Puss och kram …",
-          "base_form": "Puss och kram …",
-          "position_start": 1927,
-          "position_end": 1942
+            "sentence_id": "art_50_s016",
+            "sv": "Vi brukade ofta påminna dem om berättelser som Rödluvan och vargen och även Peter och vargen.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "varg",
+                    "base_form": "varg",
+                    "position_start": 60,
+                    "position_end": 64
+                },
+                {
+                    "word_in_sentence": "Rödluvan och vargen",
+                    "base_form": "Rödluvan och vargen",
+                    "position_start": 47,
+                    "position_end": 66
+                },
+                {
+                    "word_in_sentence": "Peter och vargen",
+                    "base_form": "Peter och vargen",
+                    "position_start": 76,
+                    "position_end": 92
+                },
+                {
+                    "word_in_sentence": "påminna",
+                    "base_form": "påminna",
+                    "position_start": 16,
+                    "position_end": 23
+                }
+            ]
         },
         {
-          "word_in_sentence": "Kramar …",
-          "base_form": "Kramar …",
-          "position_start": 1943,
-          "position_end": 1951
+            "sentence_id": "art_50_s017",
+            "sv": "Kanske en av er också minns hur spännande det var?",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "en av er",
+                    "base_form": "en av er",
+                    "position_start": 7,
+                    "position_end": 15
+                }
+            ]
         },
         {
-          "word_in_sentence": "barnvakt",
-          "base_form": "barnvakt",
-          "position_start": 828,
-          "position_end": 836
+            "sentence_id": "art_50_s018",
+            "sv": "En riktig varg kan ju se farlig och rentav livsfarlig ut, med en imponerande stor mankhöjd.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "farlig",
+                    "base_form": "farlig",
+                    "position_start": 25,
+                    "position_end": 31
+                },
+                {
+                    "word_in_sentence": "livsfarlig",
+                    "base_form": "livsfarlig",
+                    "position_start": 43,
+                    "position_end": 53
+                },
+                {
+                    "word_in_sentence": "mankhöjd",
+                    "base_form": "mankhöjd",
+                    "position_start": 82,
+                    "position_end": 90
+                }
+            ]
         },
         {
-          "word_in_sentence": "ilsken",
-          "base_form": "ilsken",
-          "position_start": 653,
-          "position_end": 659
+            "sentence_id": "art_50_s019",
+            "sv": "Om man möter en kan man behöva vända bilen snabbt eller vända sig om i skogen.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "vända",
+                    "base_form": "vända",
+                    "position_start": 31,
+                    "position_end": 36
+                },
+                {
+                    "word_in_sentence": "vända sig om",
+                    "base_form": "vända sig om",
+                    "position_start": 56,
+                    "position_end": 68
+                }
+            ]
         },
         {
-          "word_in_sentence": "farlig",
-          "base_form": "farlig",
-          "position_start": 1085,
-          "position_end": 1091
+            "sentence_id": "art_50_s020",
+            "sv": "Som tur är syns de ganska sällan i allmänhet.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "i allmänhet",
+                    "base_form": "i allmänhet",
+                    "position_start": 33,
+                    "position_end": 44
+                },
+                {
+                    "word_in_sentence": "ganska",
+                    "base_form": "ganska",
+                    "position_start": 19,
+                    "position_end": 25
+                }
+            ]
         },
         {
-          "word_in_sentence": "vänja",
-          "base_form": "vänja",
-          "position_start": 671,
-          "position_end": 676
+            "sentence_id": "art_50_s021",
+            "sv": "Vargen är ju hundens kända stamfader.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "stamfader",
+                    "base_form": "stamfader",
+                    "position_start": 27,
+                    "position_end": 36
+                }
+            ]
         },
         {
-          "word_in_sentence": "vänja sig vid",
-          "base_form": "vänja sig vid",
-          "position_start": 718,
-          "position_end": 731
+            "sentence_id": "art_50_s022",
+            "sv": "Sedan besökte vi en lokal älgfarm tillsammans.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "älgfarm",
+                    "base_form": "älgfarm",
+                    "position_start": 26,
+                    "position_end": 33
+                }
+            ]
         },
         {
-          "word_in_sentence": "relation",
-          "base_form": "relation",
-          "position_start": 231,
-          "position_end": 239
+            "sentence_id": "art_50_s023",
+            "sv": "Deras absolut bästa säljargument var att besökare fick klappa älgarna under regelbundna tider.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "säljargument",
+                    "base_form": "säljargument",
+                    "position_start": 20,
+                    "position_end": 32
+                },
+                {
+                    "word_in_sentence": "regelbunden",
+                    "base_form": "regelbunden",
+                    "position_start": 83,
+                    "position_end": 94
+                }
+            ]
         },
         {
-          "word_in_sentence": "livsfarlig",
-          "base_form": "livsfarlig",
-          "position_start": 1103,
-          "position_end": 1113
+            "sentence_id": "art_50_s024",
+            "sv": "Det är tydligen en expanderande turistnäring med en snabbt ökad popularitet.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "expanderande",
+                    "base_form": "expanderande",
+                    "position_start": 19,
+                    "position_end": 31
+                },
+                {
+                    "word_in_sentence": "ökad",
+                    "base_form": "ökad",
+                    "position_start": 59,
+                    "position_end": 63
+                }
+            ]
         },
         {
-          "word_in_sentence": "varg",
-          "base_form": "varg",
-          "position_start": 975,
-          "position_end": 979
+            "sentence_id": "art_50_s025",
+            "sv": "Det var tolv personer där samtidigt.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "tolv",
+                    "base_form": "tolv",
+                    "position_start": 8,
+                    "position_end": 12
+                }
+            ]
         },
         {
-          "word_in_sentence": "arg som ett bi",
-          "base_form": "arg som ett bi",
-          "position_start": 568,
-          "position_end": 582
+            "sentence_id": "art_50_s026",
+            "sv": "Ingen kände sig rädd, med ett enda undantag.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "undantag",
+                    "base_form": "undantag",
+                    "position_start": 35,
+                    "position_end": 43
+                }
+            ]
         },
         {
-          "word_in_sentence": "vända",
-          "base_form": "vända",
-          "position_start": 1183,
-          "position_end": 1188
+            "sentence_id": "art_50_s027",
+            "sv": "Det fanns en inofficiell regel där som sa att man måste ha en godkänd djurskötare med sig för att kunna kontrollera allt.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "godkänd",
+                    "base_form": "godkänd",
+                    "position_start": 62,
+                    "position_end": 69
+                },
+                {
+                    "word_in_sentence": "inofficiell",
+                    "base_form": "inofficiell",
+                    "position_start": 13,
+                    "position_end": 24
+                },
+                {
+                    "word_in_sentence": "kontrollera",
+                    "base_form": "kontrollera",
+                    "position_start": 104,
+                    "position_end": 115
+                },
+                {
+                    "word_in_sentence": "man måste ha",
+                    "base_form": "man måste ha",
+                    "position_start": 46,
+                    "position_end": 58
+                }
+            ]
         },
         {
-          "word_in_sentence": "mankhöjd",
-          "base_form": "mankhöjd",
-          "position_start": 1142,
-          "position_end": 1150
+            "sentence_id": "art_50_s028",
+            "sv": "Då kunde man plötsligt komma på att deras gamla valspråk var att djuren fortfarande ska ha full respekt.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "fortfarande",
+                    "base_form": "fortfarande",
+                    "position_start": 72,
+                    "position_end": 83
+                },
+                {
+                    "word_in_sentence": "valspråk",
+                    "base_form": "valspråk",
+                    "position_start": 48,
+                    "position_end": 56
+                },
+                {
+                    "word_in_sentence": "komma på",
+                    "base_form": "komma på",
+                    "position_start": 23,
+                    "position_end": 31
+                }
+            ]
         },
         {
-          "word_in_sentence": "skolbarn",
-          "base_form": "skolbarn",
-          "position_start": 852,
-          "position_end": 860
+            "sentence_id": "art_50_s029",
+            "sv": "I slutet… av hela dagen var vi alla extremt trötta och nöjda.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "I slutet…",
+                    "base_form": "I slutet…",
+                    "position_start": 0,
+                    "position_end": 9
+                }
+            ]
         },
         {
-          "word_in_sentence": "i morse",
-          "base_form": "i morse",
-          "position_start": 82,
-          "position_end": 89
+            "sentence_id": "art_50_s030",
+            "sv": "Hör av dig snart!",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "Hör av dig snart!",
+                    "base_form": "Hör av dig snart!",
+                    "position_start": 0,
+                    "position_end": 17
+                }
+            ]
         },
         {
-          "word_in_sentence": "Rödluvan och vargen",
-          "base_form": "Rödluvan och vargen",
-          "position_start": 962,
-          "position_end": 981
-        },
-        {
-          "word_in_sentence": "Peter och vargen",
-          "base_form": "Peter och vargen",
-          "position_start": 991,
-          "position_end": 1007
-        },
-        {
-          "word_in_sentence": "fortfarande",
-          "base_form": "fortfarande",
-          "position_start": 1812,
-          "position_end": 1823
-        },
-        {
-          "word_in_sentence": "vända sig om",
-          "base_form": "vända sig om",
-          "position_start": 1208,
-          "position_end": 1220
-        },
-        {
-          "word_in_sentence": "barnfamilj",
-          "base_form": "barnfamilj",
-          "position_start": 875,
-          "position_end": 885
-        },
-        {
-          "word_in_sentence": "säljargument",
-          "base_form": "säljargument",
-          "position_start": 1383,
-          "position_end": 1395
-        },
-        {
-          "word_in_sentence": "morgonrock",
-          "base_form": "morgonrock",
-          "position_start": 118,
-          "position_end": 128
-        },
-        {
-          "word_in_sentence": "älgfarm",
-          "base_form": "älgfarm",
-          "position_start": 1342,
-          "position_end": 1349
-        },
-        {
-          "word_in_sentence": "Hör av dig snart!",
-          "base_form": "Hör av dig snart!",
-          "position_start": 1909,
-          "position_end": 1926
-        },
-        {
-          "word_in_sentence": "godkänd",
-          "base_form": "godkänd",
-          "position_start": 1679,
-          "position_end": 1686
-        },
-        {
-          "word_in_sentence": "i allmänhet",
-          "base_form": "i allmänhet",
-          "position_start": 1264,
-          "position_end": 1275
-        },
-        {
-          "word_in_sentence": "valspråk",
-          "base_form": "valspråk",
-          "position_start": 1788,
-          "position_end": 1796
-        },
-        {
-          "word_in_sentence": "I slutet…",
-          "base_form": "I slutet…",
-          "position_start": 1845,
-          "position_end": 1854
-        },
-        {
-          "word_in_sentence": "långhelg",
-          "base_form": "långhelg",
-          "position_start": 762,
-          "position_end": 770
-        },
-        {
-          "word_in_sentence": "regelbunden",
-          "base_form": "regelbunden",
-          "position_start": 1446,
-          "position_end": 1457
-        },
-        {
-          "word_in_sentence": "komma på",
-          "base_form": "komma på",
-          "position_start": 1763,
-          "position_end": 1771
-        },
-        {
-          "word_in_sentence": "påminna",
-          "base_form": "påminna",
-          "position_start": 931,
-          "position_end": 938
-        },
-        {
-          "word_in_sentence": "ganska",
-          "base_form": "ganska",
-          "position_start": 1250,
-          "position_end": 1256
-        },
-        {
-          "word_in_sentence": "stamfader",
-          "base_form": "stamfader",
-          "position_start": 1304,
-          "position_end": 1313
-        },
-        {
-          "word_in_sentence": "en av er",
-          "base_form": "en av er",
-          "position_start": 1016,
-          "position_end": 1024
-        },
-        {
-          "word_in_sentence": "inofficiell",
-          "base_form": "inofficiell",
-          "position_start": 1630,
-          "position_end": 1641
-        },
-        {
-          "word_in_sentence": "tiderna förändras",
-          "base_form": "tiderna förändras",
-          "position_start": 39,
-          "position_end": 56
-        },
-        {
-          "word_in_sentence": "allihop",
-          "base_form": "allihop",
-          "position_start": 779,
-          "position_end": 786
-        },
-        {
-          "word_in_sentence": "undantag",
-          "base_form": "undantag",
-          "position_start": 1607,
-          "position_end": 1615
-        },
-        {
-          "word_in_sentence": "kontrollera",
-          "base_form": "kontrollera",
-          "position_start": 1721,
-          "position_end": 1732
-        },
-        {
-          "word_in_sentence": "man måste ha",
-          "base_form": "man måste ha",
-          "position_start": 1663,
-          "position_end": 1675
-        },
-        {
-          "word_in_sentence": "expanderande",
-          "base_form": "expanderande",
-          "position_start": 1477,
-          "position_end": 1489
-        },
-        {
-          "word_in_sentence": "Vet du vad?",
-          "base_form": "Vet du om?",
-          "position_start": 11,
-          "position_end": 22
-        },
-        {
-          "word_in_sentence": "tolv",
-          "base_form": "tolv",
-          "position_start": 1543,
-          "position_end": 1547
-        },
-        {
-          "word_in_sentence": "ökad",
-          "base_form": "ökad",
-          "position_start": 1517,
-          "position_end": 1521
+            "sentence_id": "art_50_s031",
+            "sv": "Puss och kram …\nKramar …",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "Puss och kram …",
+                    "base_form": "Puss och kram …",
+                    "position_start": 0,
+                    "position_end": 15
+                },
+                {
+                    "word_in_sentence": "Kramar …",
+                    "base_form": "Kramar …",
+                    "position_start": 16,
+                    "position_end": 24
+                }
+            ]
         }
-      ]
-    }
-  ],
-  "primary_words_used": [
-    "gifta sig",
-    "skilsmässa",
-    "som förr",
-    "pojkvän",
-    "barn",
-    "förhållande",
-    "släkt",
-    "umgås",
-    "fru",
-    "förälder",
-    "hoppas",
-    "älskare",
-    "bror",
-    "gift",
-    "prat",
-    "Puss och kram …",
-    "Kramar …",
-    "barnvakt",
-    "ilsken",
-    "farlig",
-    "vänja",
-    "vänja sig vid",
-    "relation",
-    "livsfarlig",
-    "varg",
-    "arg som ett bi",
-    "vända",
-    "mankhöjd",
-    "skolbarn",
-    "i morse",
-    "Rödluvan och vargen",
-    "Peter och vargen",
-    "fortfarande",
-    "vända sig om",
-    "barnfamilj",
-    "säljargument",
-    "morgonrock",
-    "älgfarm",
-    "Hör av dig snart!",
-    "godkänd",
-    "i allmänhet",
-    "valspråk",
-    "I slutet…",
-    "långhelg",
-    "regelbunden",
-    "komma på",
-    "påminna",
-    "ganska",
-    "stamfader",
-    "en av er",
-    "inofficiell",
-    "tiderna förändras",
-    "allihop",
-    "undantag",
-    "kontrollera",
-    "man måste ha",
-    "expanderande",
-    "Vet du om?",
-    "tolv",
-    "ökad"
-  ],
-  "secondary_words_used": []
+    ],
+    "primary_words_used": [
+        "gifta sig",
+        "skilsmässa",
+        "som förr",
+        "pojkvän",
+        "barn",
+        "förhållande",
+        "släkt",
+        "umgås",
+        "fru",
+        "förälder",
+        "hoppas",
+        "älskare",
+        "bror",
+        "gift",
+        "prat",
+        "Puss och kram …",
+        "Kramar …",
+        "barnvakt",
+        "ilsken",
+        "farlig",
+        "vänja",
+        "vänja sig vid",
+        "relation",
+        "livsfarlig",
+        "varg",
+        "arg som ett bi",
+        "vända",
+        "mankhöjd",
+        "skolbarn",
+        "i morse",
+        "Rödluvan och vargen",
+        "Peter och vargen",
+        "fortfarande",
+        "vända sig om",
+        "barnfamilj",
+        "säljargument",
+        "morgonrock",
+        "älgfarm",
+        "Hör av dig snart!",
+        "godkänd",
+        "i allmänhet",
+        "valspråk",
+        "I slutet…",
+        "långhelg",
+        "regelbunden",
+        "komma på",
+        "påminna",
+        "ganska",
+        "stamfader",
+        "en av er",
+        "inofficiell",
+        "tiderna förändras",
+        "allihop",
+        "undantag",
+        "kontrollera",
+        "man måste ha",
+        "expanderande",
+        "Vet du om?",
+        "tolv",
+        "ökad"
+    ],
+    "secondary_words_used": []
 }

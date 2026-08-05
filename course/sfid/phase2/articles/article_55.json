@@ -8,8 +8,8 @@
     "target_word_count": 60,
     "sentences": [
         {
-            "sentence_id": "art55_s001",
-            "sv": "Ett nytt liv med en vän\n\nI min tidiga barndom kände jag en snäll, gammal gumma. Hennes liv var mycket fascinerande. Hon brukade skriva ett långt inlägg i sin dagbok varje kväll om sina tankar. Hennes man brukade tyvärr ofta vara borta på resor, och det brukade ibland gå dåligt för honom i hans affärer. Han var ganska opålitlig och ofta olycklig över detta. \n\nFör att inte vara ensam valde hon att köpa en hund. Det var en traditionell och lojal ras. Den nya hunden gav henne en oerhörd glädje, en riktig lyckokick i vardagen. Hunden var trofast, sällskaplig och otroligt hjälpsam hemma. Han var hur lugn som helst inomhus och var aldrig någonsin aggressiv.\n\nHon ville att allt i livet skulle vara så… som möjligt, nästan perfekt. Hunden hade en enorm betydelse för hennes gemenskap med andra människor. Hon brukade tjata på hunden att alltid vara lydig och ibland graciös, men hunden var istället ganska klumpig och mycket lekfull. Han var busig och stack ofta iväg, för att strax därefter snabbt följa efter henne hem igen. Han var nyfiken på allt nytt, men ibland framstod han som lite korkad.\n\nGummans alla vänner, och även hennes nära och kära, tyckte direkt att hunden var gullig. Han var självständig, men kunde också ibland skrämma grannarna när han plötsligt blev galen och sprang runt i cirklar. En gång hittade de en gammal, smutsig hundrakronorssedel som hunden glatt drog fram ur en buske med sin blöta näsa. De fick sedan var sin glass. \n\nGumman var alltid generös och hon brukade regelbundet betala ut en del pengar till välgörenhet. Hon var kanske gammal men ändå väldigt påhittig. Ett riktigt spännande genombrott kom faktiskt när hon plötsligt blev en mycket framgångsrik lokal hundtränare. Hon kunde på så sätt fördubbla sina små inkomster, vilket skapade en fortsatt stabil och bra ekonomi för henne.\n\n\"Man behöver aldrig vara rädd för en trevlig hund,\" sa hon ofta. Hunden blev aldrig stressad eller desperat, och hon själv var aldrig rädd i hans trygga sällskap. \n\n\"Ibland kan en vanlig dag kännas tråkig,\" sa hon ofta. \"Men då måste man helt enkelt gilla läget och försöka se ljust på något trevligt som ändå händer. En bra hund är verkligen en sann vän. Allt kändes precis som förut när han var där.\" \n\nEtt fint minne jag har är hur hon brukade viska tyst till hunden och le stort mot honom. \n\"Vi kommer alltid att längta efter dig när du reser bort,\" sa hon till mig, och jag kände absolut detsamma för henne. Hon var alltid väldigt förstående och enormt positiv. Hon avslutade alltid sina fina små brev till mig med orden puss puss.",
+            "sentence_id": "art_55_s001",
+            "sv": "Ett nytt liv med en vän\n\nI min tidiga barndom kände jag en snäll, gammal gumma.",
             "en": "",
             "target_words": [
                 {
@@ -23,360 +23,583 @@
                     "base_form": "gumma",
                     "position_start": 73,
                     "position_end": 78
-                },
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_55_s002",
+            "sv": "Hennes liv var mycket fascinerande.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "fascinerande",
                     "base_form": "fascinerande",
-                    "position_start": 102,
-                    "position_end": 114
-                },
+                    "position_start": 22,
+                    "position_end": 34
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_55_s003",
+            "sv": "Hon brukade skriva ett långt inlägg i sin dagbok varje kväll om sina tankar.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "inlägg",
                     "base_form": "inlägg",
-                    "position_start": 145,
-                    "position_end": 151
-                },
+                    "position_start": 29,
+                    "position_end": 35
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_55_s004",
+            "sv": "Hennes man brukade tyvärr ofta vara borta på resor, och det brukade ibland gå dåligt för honom i hans affärer.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "vara borta",
                     "base_form": "vara borta",
-                    "position_start": 224,
-                    "position_end": 234
+                    "position_start": 31,
+                    "position_end": 41
                 },
                 {
                     "word_in_sentence": "gå dåligt för",
                     "base_form": "gå dåligt för",
-                    "position_start": 268,
-                    "position_end": 281
-                },
+                    "position_start": 75,
+                    "position_end": 88
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_55_s005",
+            "sv": "Han var ganska opålitlig och ofta olycklig över detta.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "opålitlig",
                     "base_form": "opålitlig",
-                    "position_start": 319,
-                    "position_end": 328
+                    "position_start": 15,
+                    "position_end": 24
                 },
                 {
                     "word_in_sentence": "olycklig",
                     "base_form": "olycklig",
-                    "position_start": 338,
-                    "position_end": 346
-                },
+                    "position_start": 34,
+                    "position_end": 42
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_55_s006",
+            "sv": "För att inte vara ensam valde hon att köpa en hund.",
+            "en": "",
+            "target_words": []
+        },
+        {
+            "sentence_id": "art_55_s007",
+            "sv": "Det var en traditionell och lojal ras.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "traditionell",
                     "base_form": "traditionell",
-                    "position_start": 424,
-                    "position_end": 436
-                },
+                    "position_start": 11,
+                    "position_end": 23
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_55_s008",
+            "sv": "Den nya hunden gav henne en oerhörd glädje, en riktig lyckokick i vardagen.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "oerhörd",
                     "base_form": "oerhörd",
-                    "position_start": 480,
-                    "position_end": 487
+                    "position_start": 28,
+                    "position_end": 35
                 },
                 {
                     "word_in_sentence": "lyckokick",
                     "base_form": "lyckokick",
-                    "position_start": 506,
-                    "position_end": 515
-                },
+                    "position_start": 54,
+                    "position_end": 63
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_55_s009",
+            "sv": "Hunden var trofast, sällskaplig och otroligt hjälpsam hemma.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "trofast",
                     "base_form": "trofast",
-                    "position_start": 539,
-                    "position_end": 546
+                    "position_start": 11,
+                    "position_end": 18
                 },
                 {
                     "word_in_sentence": "sällskaplig",
                     "base_form": "sällskaplig",
-                    "position_start": 548,
-                    "position_end": 559
+                    "position_start": 20,
+                    "position_end": 31
                 },
                 {
                     "word_in_sentence": "hjälpsam",
                     "base_form": "hjälpsam",
-                    "position_start": 573,
-                    "position_end": 581
-                },
+                    "position_start": 45,
+                    "position_end": 53
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_55_s010",
+            "sv": "Han var hur lugn som helst inomhus och var aldrig någonsin aggressiv.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "hur lugn som helst",
                     "base_form": "hur lugn som helst",
-                    "position_start": 597,
-                    "position_end": 615
+                    "position_start": 8,
+                    "position_end": 26
                 },
                 {
                     "word_in_sentence": "aggressiv",
                     "base_form": "aggressiv",
-                    "position_start": 648,
-                    "position_end": 657
-                },
+                    "position_start": 59,
+                    "position_end": 68
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_55_s011",
+            "sv": "Hon ville att allt i livet skulle vara så… som möjligt, nästan perfekt.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "le",
                     "base_form": "le",
-                    "position_start": 667,
-                    "position_end": 669
+                    "position_start": 7,
+                    "position_end": 9
                 },
                 {
                     "word_in_sentence": "så… som möjligt",
                     "base_form": "så… som möjligt",
-                    "position_start": 699,
-                    "position_end": 714
-                },
+                    "position_start": 39,
+                    "position_end": 54
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_55_s012",
+            "sv": "Hunden hade en enorm betydelse för hennes gemenskap med andra människor.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "betydelse",
                     "base_form": "betydelse",
-                    "position_start": 753,
-                    "position_end": 762
+                    "position_start": 21,
+                    "position_end": 30
                 },
                 {
                     "word_in_sentence": "gemenskap",
                     "base_form": "gemenskap",
-                    "position_start": 774,
-                    "position_end": 783
-                },
+                    "position_start": 42,
+                    "position_end": 51
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_55_s013",
+            "sv": "Hon brukade tjata på hunden att alltid vara lydig och ibland graciös, men hunden var istället ganska klumpig och mycket lekfull.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "tjata",
                     "base_form": "tjata",
-                    "position_start": 817,
-                    "position_end": 822
+                    "position_start": 12,
+                    "position_end": 17
                 },
                 {
                     "word_in_sentence": "lydig",
                     "base_form": "lydig",
-                    "position_start": 849,
-                    "position_end": 854
+                    "position_start": 44,
+                    "position_end": 49
                 },
                 {
                     "word_in_sentence": "graciös",
                     "base_form": "graciös",
-                    "position_start": 866,
-                    "position_end": 873
+                    "position_start": 61,
+                    "position_end": 68
                 },
                 {
                     "word_in_sentence": "klumpig",
                     "base_form": "klumpig",
-                    "position_start": 906,
-                    "position_end": 913
+                    "position_start": 101,
+                    "position_end": 108
                 },
                 {
                     "word_in_sentence": "lekfull",
                     "base_form": "lekfull",
-                    "position_start": 925,
-                    "position_end": 932
-                },
+                    "position_start": 120,
+                    "position_end": 127
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_55_s014",
+            "sv": "Han var busig och stack ofta iväg, för att strax därefter snabbt följa efter henne hem igen.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "busig",
                     "base_form": "busig",
-                    "position_start": 942,
-                    "position_end": 947
+                    "position_start": 8,
+                    "position_end": 13
                 },
                 {
                     "word_in_sentence": "följa efter",
                     "base_form": "följa efter",
-                    "position_start": 999,
-                    "position_end": 1010
-                },
+                    "position_start": 65,
+                    "position_end": 76
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_55_s015",
+            "sv": "Han var nyfiken på allt nytt, men ibland framstod han som lite korkad.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "nyfiken",
                     "base_form": "nyfiken",
-                    "position_start": 1035,
-                    "position_end": 1042
+                    "position_start": 8,
+                    "position_end": 15
                 },
                 {
                     "word_in_sentence": "korkad",
                     "base_form": "korkad",
-                    "position_start": 1090,
-                    "position_end": 1096
-                },
+                    "position_start": 63,
+                    "position_end": 69
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_55_s016",
+            "sv": "Gummans alla vänner, och även hennes nära och kära, tyckte direkt att hunden var gullig.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "nära och kära",
                     "base_form": "nära och kära",
-                    "position_start": 1136,
-                    "position_end": 1149
+                    "position_start": 37,
+                    "position_end": 50
                 },
                 {
                     "word_in_sentence": "gullig",
                     "base_form": "gullig",
-                    "position_start": 1180,
-                    "position_end": 1186
-                },
+                    "position_start": 81,
+                    "position_end": 87
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_55_s017",
+            "sv": "Han var självständig, men kunde också ibland skrämma grannarna när han plötsligt blev galen och sprang runt i cirklar.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "självständig",
                     "base_form": "självständig",
-                    "position_start": 1196,
-                    "position_end": 1208
+                    "position_start": 8,
+                    "position_end": 20
                 },
                 {
                     "word_in_sentence": "skrämma",
                     "base_form": "skrämma",
-                    "position_start": 1233,
-                    "position_end": 1240
+                    "position_start": 45,
+                    "position_end": 52
                 },
                 {
                     "word_in_sentence": "galen",
                     "base_form": "galen",
-                    "position_start": 1274,
-                    "position_end": 1279
-                },
+                    "position_start": 86,
+                    "position_end": 91
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_55_s018",
+            "sv": "En gång hittade de en gammal, smutsig hundrakronorssedel som hunden glatt drog fram ur en buske med sin blöta näsa.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "hundrakronorssedel",
                     "base_form": "hundrakronorssedel",
-                    "position_start": 1345,
-                    "position_end": 1363
+                    "position_start": 38,
+                    "position_end": 56
                 },
                 {
                     "word_in_sentence": "näsa",
                     "base_form": "näsa",
-                    "position_start": 1417,
-                    "position_end": 1421
-                },
+                    "position_start": 110,
+                    "position_end": 114
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_55_s019",
+            "sv": "De fick sedan var sin glass.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "var sin",
                     "base_form": "var sin",
-                    "position_start": 1437,
-                    "position_end": 1444
-                },
+                    "position_start": 14,
+                    "position_end": 21
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_55_s020",
+            "sv": "Gumman var alltid generös och hon brukade regelbundet betala ut en del pengar till välgörenhet.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "generös",
                     "base_form": "generös",
-                    "position_start": 1472,
-                    "position_end": 1479
+                    "position_start": 18,
+                    "position_end": 25
                 },
                 {
                     "word_in_sentence": "betala ut",
                     "base_form": "betala ut",
-                    "position_start": 1508,
-                    "position_end": 1517
+                    "position_start": 54,
+                    "position_end": 63
                 },
                 {
                     "word_in_sentence": "välgörenhet",
                     "base_form": "välgörenhet",
-                    "position_start": 1537,
-                    "position_end": 1548
-                },
+                    "position_start": 83,
+                    "position_end": 94
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_55_s021",
+            "sv": "Hon var kanske gammal men ändå väldigt påhittig.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "påhittig",
                     "base_form": "påhittig",
-                    "position_start": 1589,
-                    "position_end": 1597
-                },
+                    "position_start": 39,
+                    "position_end": 47
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_55_s022",
+            "sv": "Ett riktigt spännande genombrott kom faktiskt när hon plötsligt blev en mycket framgångsrik lokal hundtränare.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "genombrott",
                     "base_form": "genombrott",
-                    "position_start": 1621,
-                    "position_end": 1631
+                    "position_start": 22,
+                    "position_end": 32
                 },
                 {
                     "word_in_sentence": "faktisk",
                     "base_form": "faktisk",
-                    "position_start": 1636,
-                    "position_end": 1643
+                    "position_start": 37,
+                    "position_end": 44
                 },
                 {
                     "word_in_sentence": "framgångsrik",
                     "base_form": "framgångsrik",
-                    "position_start": 1678,
-                    "position_end": 1690
-                },
+                    "position_start": 79,
+                    "position_end": 91
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_55_s023",
+            "sv": "Hon kunde på så sätt fördubbla sina små inkomster, vilket skapade en fortsatt stabil och bra ekonomi för henne.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "fördubbla",
                     "base_form": "fördubbla",
-                    "position_start": 1731,
-                    "position_end": 1740
+                    "position_start": 21,
+                    "position_end": 30
                 },
                 {
                     "word_in_sentence": "fortsatt",
                     "base_form": "fortsatt",
-                    "position_start": 1779,
-                    "position_end": 1787
-                },
+                    "position_start": 69,
+                    "position_end": 77
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_55_s024",
+            "sv": "\"Man behöver aldrig vara rädd för en trevlig hund,\" sa hon ofta.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "vara rädd",
                     "base_form": "vara rädd",
-                    "position_start": 1843,
-                    "position_end": 1852
+                    "position_start": 20,
+                    "position_end": 29
                 },
                 {
                     "word_in_sentence": "rädd",
                     "base_form": "rädd",
-                    "position_start": 1848,
-                    "position_end": 1852
-                },
+                    "position_start": 25,
+                    "position_end": 29
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_55_s025",
+            "sv": "Hunden blev aldrig stressad eller desperat, och hon själv var aldrig rädd i hans trygga sällskap.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "desperat",
                     "base_form": "desperat",
-                    "position_start": 1922,
-                    "position_end": 1930
-                },
+                    "position_start": 34,
+                    "position_end": 42
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_55_s026",
+            "sv": "\"Ibland kan en vanlig dag kännas tråkig,\" sa hon ofta.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "tråkig",
                     "base_form": "tråkig",
-                    "position_start": 2021,
-                    "position_end": 2027
-                },
+                    "position_start": 33,
+                    "position_end": 39
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_55_s027",
+            "sv": "\"Men då måste man helt enkelt gilla läget och försöka se ljust på något trevligt som ändå händer.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "gilla läget",
                     "base_form": "gilla läget",
-                    "position_start": 2073,
-                    "position_end": 2084
+                    "position_start": 30,
+                    "position_end": 41
                 },
                 {
                     "word_in_sentence": "se ljust på något",
                     "base_form": "se ljust på något",
-                    "position_start": 2097,
-                    "position_end": 2114
-                },
+                    "position_start": 54,
+                    "position_end": 71
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_55_s028",
+            "sv": "En bra hund är verkligen en sann vän.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "sann",
                     "base_form": "sann",
-                    "position_start": 2169,
-                    "position_end": 2173
-                },
+                    "position_start": 28,
+                    "position_end": 32
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_55_s029",
+            "sv": "Allt kändes precis som förut när han var där.\"",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "förut",
                     "base_form": "förut",
-                    "position_start": 2202,
-                    "position_end": 2207
-                },
+                    "position_start": 23,
+                    "position_end": 28
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_55_s030",
+            "sv": "Ett fint minne jag har är hur hon brukade viska tyst till hunden och le stort mot honom.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "minne",
                     "base_form": "minne",
-                    "position_start": 2237,
-                    "position_end": 2242
+                    "position_start": 9,
+                    "position_end": 14
                 },
                 {
                     "word_in_sentence": "viska",
                     "base_form": "viska",
-                    "position_start": 2270,
-                    "position_end": 2275
-                },
+                    "position_start": 42,
+                    "position_end": 47
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_55_s031",
+            "sv": "\"Vi kommer alltid att längta efter dig när du reser bort,\" sa hon till mig, och jag kände absolut detsamma för henne.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "längta efter",
                     "base_form": "längta efter",
-                    "position_start": 2340,
-                    "position_end": 2352
+                    "position_start": 22,
+                    "position_end": 34
                 },
                 {
                     "word_in_sentence": "detsamma",
                     "base_form": "detsamma",
-                    "position_start": 2416,
-                    "position_end": 2424
-                },
+                    "position_start": 98,
+                    "position_end": 106
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_55_s032",
+            "sv": "Hon var alltid väldigt förstående och enormt positiv.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "förstående",
                     "base_form": "förstående",
-                    "position_start": 2459,
-                    "position_end": 2469
+                    "position_start": 23,
+                    "position_end": 33
                 },
                 {
                     "word_in_sentence": "positiv",
                     "base_form": "positiv",
-                    "position_start": 2481,
-                    "position_end": 2488
-                },
+                    "position_start": 45,
+                    "position_end": 52
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_55_s033",
+            "sv": "Hon avslutade alltid sina fina små brev till mig med orden puss puss.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "puss puss",
                     "base_form": "puss puss",
-                    "position_start": 2549,
-                    "position_end": 2558
+                    "position_start": 59,
+                    "position_end": 68
                 }
             ]
         }

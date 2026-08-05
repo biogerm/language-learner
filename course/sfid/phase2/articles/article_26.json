@@ -1,441 +1,616 @@
 {
-  "course_id": "sfid",
-  "course_title": "SFI D",
-  "stage_id": "stage_06",
-  "stage_title": "Hälsa & Medicin",
-  "article_id": "art_26",
-  "article_title": "Läsförståelse",
-  "target_word_count": 60,
-  "sentences": [
-    {
-      "sentence_id": "art26_s001",
-      "sv": "En kall januari träffade jag en typisk hurtbulle. Han verkade född för att röra på sig. Varje morgon, jämt och helt utan uppehåll, brukade han jogga i skogen. Hans motto var: \"Ju … desto!\" vilket för honom betydde: ju snabbare, desto friskare. Han hade bestämt sig för att sätta upp ett stort mål och springa ett maraton. Han älskade att vara aktiv och ville komma ut för att bygga upp sin uthållighet, sin styrka och sin snabbhet. Han kunde vara duktig på att köra trettio armhävningar i sträck. Trots att han var smal var han mycket stark och alltid pigg. \n\nHan trodde aldrig att han skulle bli intagen på ett sjukhus. Han var registrerad på ett privat gym som säkert tjänade en miljard, eftersom branschen var enorm. Han skötte sina matvanor perfekt och drack absolut ingen alkohol, han var alltså aldrig berusad. Han gillade att intervjua sina vänner och ge dem träningsråd. Han visste hur man kunde rädda en ond rygg med rätt skydd, och hur en snabb uppfräschning kunde överraska kroppen positivt. Han älskade att känna sig fräsch och vägrade att lukta illa även om han var svettig.\n\nMen en dag hände något som fick honom att fatta att hälsa är skört. Han skulle tyvärr bli tvungen att vila. Han blev plötsligt biten av en hund som var rabiessmittad! Han blev snabbt smittad och fick en allvarlig infektion. Det var inte som en vanlig allergi, utan kroppen reagerade som vid en kraftig allergichock med svår hosta. Smärtan spred sig i varje nerv. Han började lida enormt. Hans lidande var hemskt och han fick till och med en partiell ansiktsförlamning. \n\nHan fick genomgå en lång behandling och var ofta stressad över förlorad inkomst efter sin första karensdag. Han kunde inte aktivera sig som vanligt. Efter vad som kändes som ett helt sekel i sängen, kunde han till slut korsa en osynlig linje tillbaka till hälsa. Han menar nu att förmågan att stanna upp ibland symboliserar sann visdom.",
-      "en": "",
-      "target_words": [
+    "course_id": "sfid",
+    "course_title": "SFI D",
+    "stage_id": "stage_06",
+    "stage_title": "Hälsa & Medicin",
+    "article_id": "art_26",
+    "article_title": "Läsförståelse",
+    "target_word_count": 60,
+    "sentences": [
         {
-          "word_in_sentence": "miljard",
-          "base_form": "miljard",
-          "position_start": 681,
-          "position_end": 688
+            "sentence_id": "art_26_s001",
+            "sv": "En kall januari träffade jag en typisk hurtbulle.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "hurtbulle",
+                    "base_form": "hurtbulle",
+                    "position_start": 39,
+                    "position_end": 48
+                },
+                {
+                    "word_in_sentence": "januari",
+                    "base_form": "januari",
+                    "position_start": 8,
+                    "position_end": 15
+                },
+                {
+                    "word_in_sentence": "typisk",
+                    "base_form": "typisk",
+                    "position_start": 32,
+                    "position_end": 38
+                }
+            ]
         },
         {
-          "word_in_sentence": "rygg",
-          "base_form": "rygg",
-          "position_start": 917,
-          "position_end": 921
+            "sentence_id": "art_26_s002",
+            "sv": "Han verkade född för att röra på sig.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "röra på sig",
+                    "base_form": "röra på sig",
+                    "position_start": 25,
+                    "position_end": 36
+                },
+                {
+                    "word_in_sentence": "född",
+                    "base_form": "född",
+                    "position_start": 12,
+                    "position_end": 16
+                }
+            ]
         },
         {
-          "word_in_sentence": "maraton",
-          "base_form": "maraton",
-          "position_start": 313,
-          "position_end": 320
+            "sentence_id": "art_26_s003",
+            "sv": "Varje morgon, jämt och helt utan uppehåll, brukade han jogga i skogen.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "jogga",
+                    "base_form": "jogga",
+                    "position_start": 55,
+                    "position_end": 60
+                },
+                {
+                    "word_in_sentence": "ge",
+                    "base_form": "giva",
+                    "position_start": 66,
+                    "position_end": 68
+                },
+                {
+                    "word_in_sentence": "jämt",
+                    "base_form": "jämt",
+                    "position_start": 14,
+                    "position_end": 18
+                },
+                {
+                    "word_in_sentence": "uppehåll",
+                    "base_form": "uppehåll",
+                    "position_start": 33,
+                    "position_end": 41
+                }
+            ]
         },
         {
-          "word_in_sentence": "skydd",
-          "base_form": "skydd",
-          "position_start": 931,
-          "position_end": 936
+            "sentence_id": "art_26_s004",
+            "sv": "Hans motto var: \"Ju … desto!\" vilket för honom betydde: ju snabbare, desto friskare.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "Ju … desto",
+                    "base_form": "Ju … desto",
+                    "position_start": 17,
+                    "position_end": 27
+                }
+            ]
         },
         {
-          "word_in_sentence": "jogga",
-          "base_form": "jogga",
-          "position_start": 143,
-          "position_end": 148
+            "sentence_id": "art_26_s005",
+            "sv": "Han hade bestämt sig för att sätta upp ett stort mål och springa ett maraton.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "maraton",
+                    "base_form": "maraton",
+                    "position_start": 69,
+                    "position_end": 76
+                },
+                {
+                    "word_in_sentence": "sätta upp",
+                    "base_form": "sätta upp",
+                    "position_start": 29,
+                    "position_end": 38
+                }
+            ]
         },
         {
-          "word_in_sentence": "stressad",
-          "base_form": "stressad",
-          "position_start": 1609,
-          "position_end": 1617
+            "sentence_id": "art_26_s006",
+            "sv": "Han älskade att vara aktiv och ville komma ut för att bygga upp sin uthållighet, sin styrka och sin snabbhet.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "snabbhet",
+                    "base_form": "snabbhet",
+                    "position_start": 100,
+                    "position_end": 108
+                },
+                {
+                    "word_in_sentence": "uthållighet",
+                    "base_form": "uthållighet",
+                    "position_start": 68,
+                    "position_end": 79
+                },
+                {
+                    "word_in_sentence": "styrka",
+                    "base_form": "styrka",
+                    "position_start": 85,
+                    "position_end": 91
+                },
+                {
+                    "word_in_sentence": "komma ut",
+                    "base_form": "komma ut",
+                    "position_start": 37,
+                    "position_end": 45
+                },
+                {
+                    "word_in_sentence": "aktiv",
+                    "base_form": "aktiv",
+                    "position_start": 21,
+                    "position_end": 26
+                }
+            ]
         },
         {
-          "word_in_sentence": "hurtbulle",
-          "base_form": "hurtbulle",
-          "position_start": 39,
-          "position_end": 48
+            "sentence_id": "art_26_s007",
+            "sv": "Han kunde vara duktig på att köra trettio armhävningar i sträck.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "armhävningar",
+                    "base_form": "armhävning",
+                    "position_start": 42,
+                    "position_end": 54
+                },
+                {
+                    "word_in_sentence": "köra",
+                    "base_form": "köra",
+                    "position_start": 29,
+                    "position_end": 33
+                },
+                {
+                    "word_in_sentence": "vara duktig på",
+                    "base_form": "vara duktig på",
+                    "position_start": 10,
+                    "position_end": 24
+                }
+            ]
         },
         {
-          "word_in_sentence": "alkohol",
-          "base_form": "alkohol",
-          "position_start": 777,
-          "position_end": 784
+            "sentence_id": "art_26_s008",
+            "sv": "Trots att han var smal var han mycket stark och alltid pigg.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "pigg",
+                    "base_form": "pigg",
+                    "position_start": 55,
+                    "position_end": 59
+                },
+                {
+                    "word_in_sentence": "smal",
+                    "base_form": "smal",
+                    "position_start": 18,
+                    "position_end": 22
+                }
+            ]
         },
         {
-          "word_in_sentence": "snabbhet",
-          "base_form": "snabbhet",
-          "position_start": 422,
-          "position_end": 430
+            "sentence_id": "art_26_s009",
+            "sv": "Han trodde aldrig att han skulle bli intagen på ett sjukhus.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "intagen",
+                    "base_form": "intagen",
+                    "position_start": 37,
+                    "position_end": 44
+                }
+            ]
         },
         {
-          "word_in_sentence": "pigg",
-          "base_form": "pigg",
-          "position_start": 552,
-          "position_end": 556
+            "sentence_id": "art_26_s010",
+            "sv": "Han var registrerad på ett privat gym som säkert tjänade en miljard, eftersom branschen var enorm.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "miljard",
+                    "base_form": "miljard",
+                    "position_start": 60,
+                    "position_end": 67
+                },
+                {
+                    "word_in_sentence": "registrerad",
+                    "base_form": "registrerad",
+                    "position_start": 8,
+                    "position_end": 19
+                },
+                {
+                    "word_in_sentence": "privat",
+                    "base_form": "privat",
+                    "position_start": 27,
+                    "position_end": 33
+                },
+                {
+                    "word_in_sentence": "enorm",
+                    "base_form": "enorm",
+                    "position_start": 92,
+                    "position_end": 97
+                }
+            ]
         },
         {
-          "word_in_sentence": "uthållighet",
-          "base_form": "uthållighet",
-          "position_start": 390,
-          "position_end": 401
+            "sentence_id": "art_26_s011",
+            "sv": "Han skötte sina matvanor perfekt och drack absolut ingen alkohol, han var alltså aldrig berusad.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "alkohol",
+                    "base_form": "alkohol",
+                    "position_start": 57,
+                    "position_end": 64
+                },
+                {
+                    "word_in_sentence": "matvanor",
+                    "base_form": "matvana",
+                    "position_start": 16,
+                    "position_end": 24
+                },
+                {
+                    "word_in_sentence": "berusad",
+                    "base_form": "berusad",
+                    "position_start": 88,
+                    "position_end": 95
+                }
+            ]
         },
         {
-          "word_in_sentence": "styrka",
-          "base_form": "styrka",
-          "position_start": 407,
-          "position_end": 413
+            "sentence_id": "art_26_s012",
+            "sv": "Han gillade att intervjua sina vänner och ge dem träningsråd.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "intervjua",
+                    "base_form": "intervjua",
+                    "position_start": 16,
+                    "position_end": 25
+                }
+            ]
         },
         {
-          "word_in_sentence": "vila",
-          "base_form": "vila",
-          "position_start": 1191,
-          "position_end": 1195
+            "sentence_id": "art_26_s013",
+            "sv": "Han visste hur man kunde rädda en ond rygg med rätt skydd, och hur en snabb uppfräschning kunde överraska kroppen positivt.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "rygg",
+                    "base_form": "rygg",
+                    "position_start": 38,
+                    "position_end": 42
+                },
+                {
+                    "word_in_sentence": "skydd",
+                    "base_form": "skydd",
+                    "position_start": 52,
+                    "position_end": 57
+                },
+                {
+                    "word_in_sentence": "fräsch",
+                    "base_form": "fräsch",
+                    "position_start": 79,
+                    "position_end": 85
+                },
+                {
+                    "word_in_sentence": "uppfräschning",
+                    "base_form": "uppfräschning",
+                    "position_start": 76,
+                    "position_end": 89
+                },
+                {
+                    "word_in_sentence": "rädda",
+                    "base_form": "rädda",
+                    "position_start": 25,
+                    "position_end": 30
+                },
+                {
+                    "word_in_sentence": "överraska",
+                    "base_form": "överraska",
+                    "position_start": 96,
+                    "position_end": 105
+                }
+            ]
         },
         {
-          "word_in_sentence": "armhävningar",
-          "base_form": "armhävning",
-          "position_start": 474,
-          "position_end": 486
+            "sentence_id": "art_26_s014",
+            "sv": "Han älskade att känna sig fräsch och vägrade att lukta illa även om han var svettig.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "svettig",
+                    "base_form": "svettig",
+                    "position_start": 76,
+                    "position_end": 83
+                },
+                {
+                    "word_in_sentence": "lukta illa",
+                    "base_form": "lukta illa",
+                    "position_start": 49,
+                    "position_end": 59
+                }
+            ]
         },
         {
-          "word_in_sentence": "svettig",
-          "base_form": "svettig",
-          "position_start": 1079,
-          "position_end": 1086
+            "sentence_id": "art_26_s015",
+            "sv": "Men en dag hände något som fick honom att fatta att hälsa är skört.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "fatta",
+                    "base_form": "fatta",
+                    "position_start": 42,
+                    "position_end": 47
+                }
+            ]
         },
         {
-          "word_in_sentence": "smal",
-          "base_form": "smal",
-          "position_start": 515,
-          "position_end": 519
+            "sentence_id": "art_26_s016",
+            "sv": "Han skulle tyvärr bli tvungen att vila.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "vila",
+                    "base_form": "vila",
+                    "position_start": 34,
+                    "position_end": 38
+                },
+                {
+                    "word_in_sentence": "bli tvungen",
+                    "base_form": "bli tvungen",
+                    "position_start": 18,
+                    "position_end": 29
+                }
+            ]
         },
         {
-          "word_in_sentence": "röra på sig",
-          "base_form": "röra på sig",
-          "position_start": 75,
-          "position_end": 86
+            "sentence_id": "art_26_s017",
+            "sv": "Han blev plötsligt biten av en hund som var rabiessmittad!",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "rabiessmittad",
+                    "base_form": "rabies-smittad",
+                    "position_start": 44,
+                    "position_end": 57
+                },
+                {
+                    "word_in_sentence": "smittad",
+                    "base_form": "smittad",
+                    "position_start": 50,
+                    "position_end": 57
+                }
+            ]
         },
         {
-          "word_in_sentence": "matvanor",
-          "base_form": "matvana",
-          "position_start": 736,
-          "position_end": 744
+            "sentence_id": "art_26_s018",
+            "sv": "Han blev snabbt smittad och fick en allvarlig infektion.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "infektion",
+                    "base_form": "infektion",
+                    "position_start": 46,
+                    "position_end": 55
+                }
+            ]
         },
         {
-          "word_in_sentence": "köra",
-          "base_form": "köra",
-          "position_start": 461,
-          "position_end": 465
+            "sentence_id": "art_26_s019",
+            "sv": "Det var inte som en vanlig allergi, utan kroppen reagerade som vid en kraftig allergichock med svår hosta.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "allergichock",
+                    "base_form": "allergichock",
+                    "position_start": 78,
+                    "position_end": 90
+                },
+                {
+                    "word_in_sentence": "hosta",
+                    "base_form": "hosta",
+                    "position_start": 100,
+                    "position_end": 105
+                },
+                {
+                    "word_in_sentence": "allergi",
+                    "base_form": "allergi",
+                    "position_start": 27,
+                    "position_end": 34
+                }
+            ]
         },
         {
-          "word_in_sentence": "fräsch",
-          "base_form": "fräsch",
-          "position_start": 958,
-          "position_end": 964
+            "sentence_id": "art_26_s020",
+            "sv": "Smärtan spred sig i varje nerv.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "nerv",
+                    "base_form": "nerv",
+                    "position_start": 26,
+                    "position_end": 30
+                }
+            ]
         },
         {
-          "word_in_sentence": "lukta illa",
-          "base_form": "lukta illa",
-          "position_start": 1052,
-          "position_end": 1062
+            "sentence_id": "art_26_s021",
+            "sv": "Han började lida enormt.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "lida",
+                    "base_form": "lida",
+                    "position_start": 12,
+                    "position_end": 16
+                }
+            ]
         },
         {
-          "word_in_sentence": "nerv",
-          "base_form": "nerv",
-          "position_start": 1446,
-          "position_end": 1450
+            "sentence_id": "art_26_s022",
+            "sv": "Hans lidande var hemskt och han fick till och med en partiell ansiktsförlamning.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "ansiktsförlamning",
+                    "base_form": "ansiktsförlamning",
+                    "position_start": 62,
+                    "position_end": 79
+                },
+                {
+                    "word_in_sentence": "lidande",
+                    "base_form": "lidande",
+                    "position_start": 5,
+                    "position_end": 12
+                }
+            ]
         },
         {
-          "word_in_sentence": "lida",
-          "base_form": "lida",
-          "position_start": 1464,
-          "position_end": 1468
+            "sentence_id": "art_26_s023",
+            "sv": "Han fick genomgå en lång behandling och var ofta stressad över förlorad inkomst efter sin första karensdag.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "stressad",
+                    "base_form": "stressad",
+                    "position_start": 49,
+                    "position_end": 57
+                },
+                {
+                    "word_in_sentence": "karensdag",
+                    "base_form": "karensdag",
+                    "position_start": 97,
+                    "position_end": 106
+                },
+                {
+                    "word_in_sentence": "behandling",
+                    "base_form": "behandling",
+                    "position_start": 25,
+                    "position_end": 35
+                }
+            ]
         },
         {
-          "word_in_sentence": "aktivera sig",
-          "base_form": "aktivera sig",
-          "position_start": 1683,
-          "position_end": 1695
+            "sentence_id": "art_26_s024",
+            "sv": "Han kunde inte aktivera sig som vanligt.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "aktivera sig",
+                    "base_form": "aktivera sig",
+                    "position_start": 15,
+                    "position_end": 27
+                },
+                {
+                    "word_in_sentence": "som vanligt",
+                    "base_form": "som vanligt",
+                    "position_start": 28,
+                    "position_end": 39
+                }
+            ]
         },
         {
-          "word_in_sentence": "karensdag",
-          "base_form": "karensdag",
-          "position_start": 1657,
-          "position_end": 1666
+            "sentence_id": "art_26_s025",
+            "sv": "Efter vad som kändes som ett helt sekel i sängen, kunde han till slut korsa en osynlig linje tillbaka till hälsa.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "linje",
+                    "base_form": "linje",
+                    "position_start": 87,
+                    "position_end": 92
+                },
+                {
+                    "word_in_sentence": "sekel",
+                    "base_form": "sekel",
+                    "position_start": 34,
+                    "position_end": 39
+                }
+            ]
         },
         {
-          "word_in_sentence": "uppfräschning",
-          "base_form": "uppfräschning",
-          "position_start": 955,
-          "position_end": 968
-        },
-        {
-          "word_in_sentence": "intagen",
-          "base_form": "intagen",
-          "position_start": 597,
-          "position_end": 604
-        },
-        {
-          "word_in_sentence": "ansiktsförlamning",
-          "base_form": "ansiktsförlamning",
-          "position_start": 1539,
-          "position_end": 1556
-        },
-        {
-          "word_in_sentence": "rabiessmittad",
-          "base_form": "rabies-smittad",
-          "position_start": 1241,
-          "position_end": 1254
-        },
-        {
-          "word_in_sentence": "behandling",
-          "base_form": "behandling",
-          "position_start": 1585,
-          "position_end": 1595
-        },
-        {
-          "word_in_sentence": "allergichock",
-          "base_form": "allergichock",
-          "position_start": 1391,
-          "position_end": 1403
-        },
-        {
-          "word_in_sentence": "lidande",
-          "base_form": "lidande",
-          "position_start": 1482,
-          "position_end": 1489
-        },
-        {
-          "word_in_sentence": "hosta",
-          "base_form": "hosta",
-          "position_start": 1413,
-          "position_end": 1418
-        },
-        {
-          "word_in_sentence": "berusad",
-          "base_form": "berusad",
-          "position_start": 808,
-          "position_end": 815
-        },
-        {
-          "word_in_sentence": "infektion",
-          "base_form": "infektion",
-          "position_start": 1302,
-          "position_end": 1311
-        },
-        {
-          "word_in_sentence": "smittad",
-          "base_form": "smittad",
-          "position_start": 1247,
-          "position_end": 1254
-        },
-        {
-          "word_in_sentence": "allergi",
-          "base_form": "allergi",
-          "position_start": 1340,
-          "position_end": 1347
-        },
-        {
-          "word_in_sentence": "linje",
-          "base_form": "linje",
-          "position_start": 1796,
-          "position_end": 1801
-        },
-        {
-          "word_in_sentence": "komma ut",
-          "base_form": "komma ut",
-          "position_start": 359,
-          "position_end": 367
-        },
-        {
-          "word_in_sentence": "bli tvungen",
-          "base_form": "bli tvungen",
-          "position_start": 1175,
-          "position_end": 1186
-        },
-        {
-          "word_in_sentence": "född",
-          "base_form": "född",
-          "position_start": 62,
-          "position_end": 66
-        },
-        {
-          "word_in_sentence": "registrerad",
-          "base_form": "registrerad",
-          "position_start": 629,
-          "position_end": 640
-        },
-        {
-          "word_in_sentence": "sätta upp",
-          "base_form": "sätta upp",
-          "position_start": 273,
-          "position_end": 282
-        },
-        {
-          "word_in_sentence": "som vanligt",
-          "base_form": "som vanligt",
-          "position_start": 1696,
-          "position_end": 1707
-        },
-        {
-          "word_in_sentence": "vara duktig på",
-          "base_form": "vara duktig på",
-          "position_start": 442,
-          "position_end": 456
-        },
-        {
-          "word_in_sentence": "aktiv",
-          "base_form": "aktiv",
-          "position_start": 343,
-          "position_end": 348
-        },
-        {
-          "word_in_sentence": "privat",
-          "base_form": "privat",
-          "position_start": 648,
-          "position_end": 654
-        },
-        {
-          "word_in_sentence": "fatta",
-          "base_form": "fatta",
-          "position_start": 1131,
-          "position_end": 1136
-        },
-        {
-          "word_in_sentence": "januari",
-          "base_form": "januari",
-          "position_start": 8,
-          "position_end": 15
-        },
-        {
-          "word_in_sentence": "sekel",
-          "base_form": "sekel",
-          "position_start": 1743,
-          "position_end": 1748
-        },
-        {
-          "word_in_sentence": "intervjua",
-          "base_form": "intervjua",
-          "position_start": 833,
-          "position_end": 842
-        },
-        {
-          "word_in_sentence": "enorm",
-          "base_form": "enorm",
-          "position_start": 713,
-          "position_end": 718
-        },
-        {
-          "word_in_sentence": "rädda",
-          "base_form": "rädda",
-          "position_start": 904,
-          "position_end": 909
-        },
-        {
-          "word_in_sentence": "Ju … desto",
-          "base_form": "Ju … desto",
-          "position_start": 176,
-          "position_end": 186
-        },
-        {
-          "word_in_sentence": "symboliserar",
-          "base_form": "symbolisera",
-          "position_start": 1871,
-          "position_end": 1883
-        },
-        {
-          "word_in_sentence": "överraska",
-          "base_form": "överraska",
-          "position_start": 975,
-          "position_end": 984
-        },
-        {
-          "word_in_sentence": "ge",
-          "base_form": "giva",
-          "position_start": 154,
-          "position_end": 156
-        },
-        {
-          "word_in_sentence": "typisk",
-          "base_form": "typisk",
-          "position_start": 32,
-          "position_end": 38
-        },
-        {
-          "word_in_sentence": "jämt",
-          "base_form": "jämt",
-          "position_start": 102,
-          "position_end": 106
-        },
-        {
-          "word_in_sentence": "uppehåll",
-          "base_form": "uppehåll",
-          "position_start": 121,
-          "position_end": 129
+            "sentence_id": "art_26_s026",
+            "sv": "Han menar nu att förmågan att stanna upp ibland symboliserar sann visdom.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "symboliserar",
+                    "base_form": "symbolisera",
+                    "position_start": 48,
+                    "position_end": 60
+                }
+            ]
         }
-      ]
-    }
-  ],
-  "primary_words_used": [
-    "miljard",
-    "rygg",
-    "maraton",
-    "skydd",
-    "jogga",
-    "stressad",
-    "hurtbulle",
-    "alkohol",
-    "snabbhet",
-    "pigg",
-    "uthållighet",
-    "styrka",
-    "vila",
-    "armhävning",
-    "svettig",
-    "smal",
-    "röra på sig",
-    "matvana",
-    "köra",
-    "fräsch",
-    "lukta illa",
-    "nerv",
-    "lida",
-    "aktivera sig",
-    "karensdag",
-    "uppfräschning",
-    "intagen",
-    "ansiktsförlamning",
-    "rabies-smittad",
-    "behandling",
-    "allergichock",
-    "lidande",
-    "hosta",
-    "berusad",
-    "infektion",
-    "smittad",
-    "allergi",
-    "linje",
-    "komma ut",
-    "bli tvungen",
-    "född",
-    "registrerad",
-    "sätta upp",
-    "som vanligt",
-    "vara duktig på",
-    "aktiv",
-    "privat",
-    "fatta",
-    "januari",
-    "sekel",
-    "intervjua",
-    "enorm",
-    "rädda",
-    "Ju … desto",
-    "symbolisera",
-    "överraska",
-    "giva",
-    "typisk",
-    "jämt",
-    "uppehåll"
-  ],
-  "secondary_words_used": []
+    ],
+    "primary_words_used": [
+        "miljard",
+        "rygg",
+        "maraton",
+        "skydd",
+        "jogga",
+        "stressad",
+        "hurtbulle",
+        "alkohol",
+        "snabbhet",
+        "pigg",
+        "uthållighet",
+        "styrka",
+        "vila",
+        "armhävning",
+        "svettig",
+        "smal",
+        "röra på sig",
+        "matvana",
+        "köra",
+        "fräsch",
+        "lukta illa",
+        "nerv",
+        "lida",
+        "aktivera sig",
+        "karensdag",
+        "uppfräschning",
+        "intagen",
+        "ansiktsförlamning",
+        "rabies-smittad",
+        "behandling",
+        "allergichock",
+        "lidande",
+        "hosta",
+        "berusad",
+        "infektion",
+        "smittad",
+        "allergi",
+        "linje",
+        "komma ut",
+        "bli tvungen",
+        "född",
+        "registrerad",
+        "sätta upp",
+        "som vanligt",
+        "vara duktig på",
+        "aktiv",
+        "privat",
+        "fatta",
+        "januari",
+        "sekel",
+        "intervjua",
+        "enorm",
+        "rädda",
+        "Ju … desto",
+        "symbolisera",
+        "överraska",
+        "giva",
+        "typisk",
+        "jämt",
+        "uppehåll"
+    ],
+    "secondary_words_used": []
 }

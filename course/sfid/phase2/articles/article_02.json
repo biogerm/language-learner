@@ -8,8 +8,8 @@
     "target_word_count": 60,
     "sentences": [
         {
-            "sentence_id": "art02_s001",
-            "sv": "Min kompis Anna är bibliotekarie och gillar normalt sett att läsa böcker i fred. Men förra veckan bestämde hon sig för att åka iväg på en lång resa utomlands under sin ledighet. \"Det är dags att åka på en riktig semester\", sa hon glatt till mig.\n\nHon hade en mycket tung packning eftersom hon planerade att vandra i bergen. Innan hon skulle gå iväg till stationen, packade hon noggrant ner en karta och en kompass i sin väska. \"Priserna har gått upp.\" tänkte hon, så hon valde ett billigt vandrarhem i en liten stad istället för ett dyrt lyxhotell. Hon hade också tänkt ta tåget, eftersom det är ett bra sätt att se en lång järnvägslinje. Men tyvärr var tåget inställt, så hon var tvungen att ta bussen. En snäll busschaufför hjälpte henne med väskan när hon klev på sin buss.\n\nSnart var hon framme. När man är på väg till en ny plats är allting mycket spännande. Hon bestämde sig snabbt för att gå ner till en solig strand för att vila. På så sätt kunde hon njuta av den friska naturen. Sedan ville hon åka till en storstad för att gå på museum och se historiska utställningar.\n\nEfter fyra dagar i naturen kände hon sig helt klar. \"Jag måste veta vad som finns i stan,\" tänkte hon och hyrde ett praktiskt rum i centrum. Hennes nya rum var faktiskt inte mindre än det första. På morgonen gick hon ner på stan för att besöka en känd marknad. Hon var så glad att hon ville springa nerför hela gatan. Hon valde sedan att gå ut med sin kamera på en lång gata. Där såg hon någon rida på en häst förbi en stor bil. Det var en perfekt upplevelse, och hon började äntligen förstå hur roligt det verkligen är att resa. Hon försökte spara alla minnen.\n\nSenare samma vecka skickade hon ett meddelande: \"Du borde komma och hälsa på mig.\" Så jag bestämde mig för att åka och hälsa på henne på ett kort besök. \"Ta samma väg som du kom.\" sa hon när jag frågade om vägbeskrivning. Jag kunde se att hennes stora glädje skulle fylla hela min dag. När min tid började ta slut var det tyvärr dags att åka hem. Vi kommer att hålla kontakt och jag ska kontakta henne direkt nästa gång jag vill resa. Jag kunde se deras intressanta kultur och det var bäst att ha öppna ögon och bara gå förbi alla vackra gamla hus längs varje väg.",
+            "sentence_id": "art_02_s001",
+            "sv": "Min kompis Anna är bibliotekarie och gillar normalt sett att läsa böcker i fred.",
             "en": "",
             "target_words": [
                 {
@@ -17,366 +17,569 @@
                     "base_form": "biliotekarie",
                     "position_start": 19,
                     "position_end": 32
-                },
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_02_s002",
+            "sv": "Men förra veckan bestämde hon sig för att åka iväg på en lång resa utomlands under sin ledighet.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "åka iväg",
                     "base_form": "åka iväg",
-                    "position_start": 123,
-                    "position_end": 131
+                    "position_start": 42,
+                    "position_end": 50
                 },
                 {
                     "word_in_sentence": "väg",
                     "base_form": "väg",
-                    "position_start": 128,
-                    "position_end": 131
+                    "position_start": 47,
+                    "position_end": 50
                 },
                 {
                     "word_in_sentence": "resa",
                     "base_form": "resa",
-                    "position_start": 143,
-                    "position_end": 147
+                    "position_start": 62,
+                    "position_end": 66
                 },
                 {
                     "word_in_sentence": "utomlands",
                     "base_form": "utomlands",
-                    "position_start": 148,
-                    "position_end": 157
+                    "position_start": 67,
+                    "position_end": 76
                 },
                 {
                     "word_in_sentence": "ledighet",
                     "base_form": "ledighet",
-                    "position_start": 168,
-                    "position_end": 176
-                },
+                    "position_start": 87,
+                    "position_end": 95
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_02_s003",
+            "sv": "\"Det är dags att åka på en riktig semester\", sa hon glatt till mig.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "åka på",
                     "base_form": "åka på",
-                    "position_start": 195,
-                    "position_end": 201
+                    "position_start": 17,
+                    "position_end": 23
                 },
                 {
                     "word_in_sentence": "semester",
                     "base_form": "semester",
-                    "position_start": 212,
-                    "position_end": 220
-                },
+                    "position_start": 34,
+                    "position_end": 42
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_02_s004",
+            "sv": "Hon hade en mycket tung packning eftersom hon planerade att vandra i bergen.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "packning",
                     "base_form": "packning",
-                    "position_start": 271,
-                    "position_end": 279
+                    "position_start": 24,
+                    "position_end": 32
                 },
                 {
                     "word_in_sentence": "vandra",
                     "base_form": "vandra",
-                    "position_start": 307,
-                    "position_end": 313
-                },
+                    "position_start": 60,
+                    "position_end": 66
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_02_s005",
+            "sv": "Innan hon skulle gå iväg till stationen, packade hon noggrant ner en karta och en kompass i sin väska.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "gå iväg",
                     "base_form": "gå iväg",
-                    "position_start": 341,
-                    "position_end": 348
+                    "position_start": 17,
+                    "position_end": 24
                 },
                 {
                     "word_in_sentence": "kompass",
                     "base_form": "kompass",
-                    "position_start": 406,
-                    "position_end": 413
-                },
+                    "position_start": 82,
+                    "position_end": 89
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_02_s006",
+            "sv": "\"Priserna har gått upp.\" tänkte hon, så hon valde ett billigt vandrarhem i en liten stad istället för ett dyrt lyxhotell.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "Priserna har gått upp.",
                     "base_form": "Priserna har gått upp.",
-                    "position_start": 428,
-                    "position_end": 450
+                    "position_start": 1,
+                    "position_end": 23
                 },
                 {
                     "word_in_sentence": "billigt",
                     "base_form": "billig",
-                    "position_start": 481,
-                    "position_end": 488
+                    "position_start": 54,
+                    "position_end": 61
                 },
                 {
                     "word_in_sentence": "bil",
                     "base_form": "bil",
-                    "position_start": 481,
-                    "position_end": 484
+                    "position_start": 54,
+                    "position_end": 57
                 },
                 {
                     "word_in_sentence": "stad",
                     "base_form": "stad",
-                    "position_start": 511,
-                    "position_end": 515
+                    "position_start": 84,
+                    "position_end": 88
                 },
                 {
                     "word_in_sentence": "lyxhotell",
                     "base_form": "lyxhotell",
-                    "position_start": 538,
-                    "position_end": 547
-                },
+                    "position_start": 111,
+                    "position_end": 120
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_02_s007",
+            "sv": "Hon hade också tänkt ta tåget, eftersom det är ett bra sätt att se en lång järnvägslinje.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "ta tåget",
                     "base_form": "ta tåget",
-                    "position_start": 570,
-                    "position_end": 578
+                    "position_start": 21,
+                    "position_end": 29
                 },
                 {
                     "word_in_sentence": "sätt",
                     "base_form": "sätt",
-                    "position_start": 604,
-                    "position_end": 608
+                    "position_start": 55,
+                    "position_end": 59
                 },
                 {
                     "word_in_sentence": "järnvägslinje",
                     "base_form": "järnvägslinje",
-                    "position_start": 624,
-                    "position_end": 637
-                },
+                    "position_start": 75,
+                    "position_end": 88
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_02_s008",
+            "sv": "Men tyvärr var tåget inställt, så hon var tvungen att ta bussen.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "ta bussen",
                     "base_form": "ta bussen",
-                    "position_start": 693,
-                    "position_end": 702
+                    "position_start": 54,
+                    "position_end": 63
                 },
                 {
                     "word_in_sentence": "buss",
                     "base_form": "buss",
-                    "position_start": 696,
-                    "position_end": 700
-                },
+                    "position_start": 57,
+                    "position_end": 61
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_02_s009",
+            "sv": "En snäll busschaufför hjälpte henne med väskan när hon klev på sin buss.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "busschaufför",
                     "base_form": "busschaufför",
-                    "position_start": 713,
-                    "position_end": 725
-                },
+                    "position_start": 9,
+                    "position_end": 21
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_02_s010",
+            "sv": "Snart var hon framme.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "Snart",
                     "base_form": "snart",
-                    "position_start": 778,
-                    "position_end": 783
-                },
+                    "position_start": 0,
+                    "position_end": 5
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_02_s011",
+            "sv": "När man är på väg till en ny plats är allting mycket spännande.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "är på väg",
                     "base_form": "vara på väg",
-                    "position_start": 808,
-                    "position_end": 817
-                },
+                    "position_start": 8,
+                    "position_end": 17
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_02_s012",
+            "sv": "Hon bestämde sig snabbt för att gå ner till en solig strand för att vila.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "gå ner till",
                     "base_form": "gå ner till",
-                    "position_start": 896,
-                    "position_end": 907
+                    "position_start": 32,
+                    "position_end": 43
                 },
                 {
                     "word_in_sentence": "strand",
                     "base_form": "strand",
-                    "position_start": 917,
-                    "position_end": 923
-                },
+                    "position_start": 53,
+                    "position_end": 59
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_02_s013",
+            "sv": "På så sätt kunde hon njuta av den friska naturen.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "På så sätt",
                     "base_form": "på så sätt",
-                    "position_start": 938,
-                    "position_end": 948
-                },
+                    "position_start": 0,
+                    "position_end": 10
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_02_s014",
+            "sv": "Sedan ville hon åka till en storstad för att gå på museum och se historiska utställningar.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "åka till",
                     "base_form": "åka till",
-                    "position_start": 1004,
-                    "position_end": 1012
+                    "position_start": 16,
+                    "position_end": 24
                 },
                 {
                     "word_in_sentence": "storstad",
                     "base_form": "storstad",
-                    "position_start": 1016,
-                    "position_end": 1024
+                    "position_start": 28,
+                    "position_end": 36
                 },
                 {
                     "word_in_sentence": "gå på museum",
                     "base_form": "gå på museum",
-                    "position_start": 1033,
-                    "position_end": 1045
-                },
+                    "position_start": 45,
+                    "position_end": 57
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_02_s015",
+            "sv": "Efter fyra dagar i naturen kände hon sig helt klar.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "fyra",
                     "base_form": "fyra",
-                    "position_start": 1086,
-                    "position_end": 1090
+                    "position_start": 6,
+                    "position_end": 10
                 },
                 {
                     "word_in_sentence": "klar",
                     "base_form": "klar",
-                    "position_start": 1126,
-                    "position_end": 1130
-                },
+                    "position_start": 46,
+                    "position_end": 50
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_02_s016",
+            "sv": "\"Jag måste veta vad som finns i stan,\" tänkte hon och hyrde ett praktiskt rum i centrum.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "veta",
                     "base_form": "veta",
-                    "position_start": 1143,
-                    "position_end": 1147
+                    "position_start": 11,
+                    "position_end": 15
                 },
                 {
                     "word_in_sentence": "praktiskt",
                     "base_form": "praktisk",
-                    "position_start": 1196,
-                    "position_end": 1205
+                    "position_start": 64,
+                    "position_end": 73
                 },
                 {
                     "word_in_sentence": "rum",
                     "base_form": "rum",
-                    "position_start": 1206,
-                    "position_end": 1209
-                },
+                    "position_start": 74,
+                    "position_end": 77
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_02_s017",
+            "sv": "Hennes nya rum var faktiskt inte mindre än det första.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "faktisk",
                     "base_form": "faktisk",
-                    "position_start": 1240,
-                    "position_end": 1247
+                    "position_start": 19,
+                    "position_end": 26
                 },
                 {
                     "word_in_sentence": "mindre",
                     "base_form": "mindre",
-                    "position_start": 1254,
-                    "position_end": 1260
-                },
+                    "position_start": 33,
+                    "position_end": 39
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_02_s018",
+            "sv": "På morgonen gick hon ner på stan för att besöka en känd marknad.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "besöka",
                     "base_form": "besöka",
-                    "position_start": 1317,
-                    "position_end": 1323
+                    "position_start": 41,
+                    "position_end": 47
                 },
                 {
                     "word_in_sentence": "besök",
                     "base_form": "besök",
-                    "position_start": 1317,
-                    "position_end": 1322
-                },
+                    "position_start": 41,
+                    "position_end": 46
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_02_s019",
+            "sv": "Hon var så glad att hon ville springa nerför hela gatan.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "springa",
                     "base_form": "springa",
-                    "position_start": 1371,
-                    "position_end": 1378
+                    "position_start": 30,
+                    "position_end": 37
                 },
                 {
                     "word_in_sentence": "gata",
                     "base_form": "gata",
-                    "position_start": 1391,
-                    "position_end": 1395
-                },
+                    "position_start": 50,
+                    "position_end": 54
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_02_s020",
+            "sv": "Hon valde sedan att gå ut med sin kamera på en lång gata.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "gå ut med",
                     "base_form": "gå ut med",
-                    "position_start": 1418,
-                    "position_end": 1427
-                },
+                    "position_start": 20,
+                    "position_end": 29
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_02_s021",
+            "sv": "Där såg hon någon rida på en häst förbi en stor bil.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "rida",
                     "base_form": "rida",
-                    "position_start": 1474,
-                    "position_end": 1478
-                },
+                    "position_start": 18,
+                    "position_end": 22
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_02_s022",
+            "sv": "Det var en perfekt upplevelse, och hon började äntligen förstå hur roligt det verkligen är att resa.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "perfekt",
                     "base_form": "perfekt",
-                    "position_start": 1520,
-                    "position_end": 1527
+                    "position_start": 11,
+                    "position_end": 18
                 },
                 {
                     "word_in_sentence": "förstå",
                     "base_form": "förstå",
-                    "position_start": 1565,
-                    "position_end": 1571
-                },
+                    "position_start": 56,
+                    "position_end": 62
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_02_s023",
+            "sv": "Hon försökte spara alla minnen.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "spara",
                     "base_form": "spara",
-                    "position_start": 1623,
-                    "position_end": 1628
-                },
+                    "position_start": 13,
+                    "position_end": 18
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_02_s024",
+            "sv": "Senare samma vecka skickade hon ett meddelande: \"Du borde komma och hälsa på mig.\"",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "Senare",
                     "base_form": "senare",
-                    "position_start": 1643,
-                    "position_end": 1649
+                    "position_start": 0,
+                    "position_end": 6
                 },
                 {
                     "word_in_sentence": "komma och hälsa på",
                     "base_form": "komma och hälsa på",
-                    "position_start": 1701,
-                    "position_end": 1719
+                    "position_start": 58,
+                    "position_end": 76
                 },
                 {
                     "word_in_sentence": "hälsa på",
                     "base_form": "hälsa på",
-                    "position_start": 1711,
-                    "position_end": 1719
-                },
+                    "position_start": 68,
+                    "position_end": 76
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_02_s025",
+            "sv": "Så jag bestämde mig för att åka och hälsa på henne på ett kort besök.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "kort",
                     "base_form": "kort",
-                    "position_start": 1784,
-                    "position_end": 1788
-                },
+                    "position_start": 58,
+                    "position_end": 62
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_02_s026",
+            "sv": "\"Ta samma väg som du kom.\" sa hon när jag frågade om vägbeskrivning.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "Ta samma väg som du kom.",
                     "base_form": "Ta samma väg som du kom.",
-                    "position_start": 1797,
-                    "position_end": 1821
-                },
+                    "position_start": 1,
+                    "position_end": 25
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_02_s027",
+            "sv": "Jag kunde se att hennes stora glädje skulle fylla hela min dag.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "fylla",
                     "base_form": "fylla",
-                    "position_start": 1909,
-                    "position_end": 1914
-                },
+                    "position_start": 44,
+                    "position_end": 49
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_02_s028",
+            "sv": "När min tid började ta slut var det tyvärr dags att åka hem.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "ta slut",
                     "base_form": "ta slut",
-                    "position_start": 1949,
-                    "position_end": 1956
-                },
+                    "position_start": 20,
+                    "position_end": 27
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_02_s029",
+            "sv": "Vi kommer att hålla kontakt och jag ska kontakta henne direkt nästa gång jag vill resa.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "kontakt",
                     "base_form": "kontakt",
-                    "position_start": 2010,
-                    "position_end": 2017
+                    "position_start": 20,
+                    "position_end": 27
                 },
                 {
                     "word_in_sentence": "kontakta",
                     "base_form": "kontakta",
-                    "position_start": 2030,
-                    "position_end": 2038
+                    "position_start": 40,
+                    "position_end": 48
                 },
                 {
                     "word_in_sentence": "direkt",
                     "base_form": "direkt",
-                    "position_start": 2045,
-                    "position_end": 2051
-                },
+                    "position_start": 55,
+                    "position_end": 61
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_02_s030",
+            "sv": "Jag kunde se deras intressanta kultur och det var bäst att ha öppna ögon och bara gå förbi alla vackra gamla hus längs varje väg.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "deras",
                     "base_form": "deras",
-                    "position_start": 2091,
-                    "position_end": 2096
+                    "position_start": 13,
+                    "position_end": 18
                 },
                 {
                     "word_in_sentence": "bäst",
                     "base_form": "bäst",
-                    "position_start": 2128,
-                    "position_end": 2132
+                    "position_start": 50,
+                    "position_end": 54
                 },
                 {
                     "word_in_sentence": "öppna",
                     "base_form": "öppna",
-                    "position_start": 2140,
-                    "position_end": 2145
+                    "position_start": 62,
+                    "position_end": 67
                 },
                 {
                     "word_in_sentence": "gå förbi",
                     "base_form": "gå förbi",
-                    "position_start": 2160,
-                    "position_end": 2168
+                    "position_start": 82,
+                    "position_end": 90
                 }
             ]
         }

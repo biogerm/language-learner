@@ -1,441 +1,657 @@
 {
-  "course_id": "sfid",
-  "course_title": "SFI D",
-  "stage_id": "stage_03",
-  "stage_title": "Vardagsliv",
-  "article_id": "art_32",
-  "article_title": "Läsförståelse",
-  "target_word_count": 60,
-  "sentences": [
-    {
-      "sentence_id": "art32_s001",
-      "sv": "\"Vet du vem som frågade efter dig?\" sa min vän. Det var en sällskapsdam från förr. Hon var väldigt fattig i början, men nu jobbade hon på ett exklusivt hunddagis här i vår lilla förort. Jag var trött och tyckte att det är skönt att lata sig och vara en riktig soffpotatis. Men denna morgon blev en rivstart. Det är så lätt att försova sig när man är trött, och jag vaknade jättesent. \"jag skulle vilja…\" tänkte jag, \"bara ligga kvar under täcket\". Jag var tvungen att skynda. Jag fick snabbt ta på mig kläderna och skynda mig rejält för att hinna.\n\nEgentligen gillar jag inredning. Jag ville stanna hemma och bygga en balkong för att ordna en skön plats att sitta på. Men nu hade jag bråttom. Jag la min utrustning i en stor påse. Jag tog med badbyxor och simglasögon. Trots min ålder kände jag mig stark som en oxe. Jag ville inte stanna inne och suga åt mig negativ energi, så jag bestämde mig för att ge mig ut på stan. \n\nDet var verkligen en hektisk dag. Mycket folk var ute. Jag gick till simhallen som hade en gemensam bastu. Simhallen var uppdelad i olika sektioner som var enorma. Jag ville klättra upp för det höga hopptornet. Efter badet fick man torka sig noggrant.\n\nJag funderade på att ringa till frisören för en klippning i en snygg salong, så jag skulle slippa se tråkig ut. Jag upptäckte också att jag hade ett litet hål i min tröja. Jag tänkte på att boka en traditionell husmorssemester, men det var ett högt tryck på alla biljetter. Varje siffra i prislistan var otroligt hög, och jag kände mig pyttelite orolig. \"Vad vill du syssla med?\" frågade min vän, som var likadan som jag. Vi verkade höra ihop genom starka kulturella band. Det är viktigt att höra av sig till gamla vänner. \n\nPlötsligt försökte någon typ av vild hund, som kanske var dräktig, angripa en soptunna på gatan. Jag tänkte att jag hade fått en intressant erfarenhet idag. Klockan fyra var det dags att gå hem och lägga sig.",
-      "en": "",
-      "target_words": [
+    "course_id": "sfid",
+    "course_title": "SFI D",
+    "stage_id": "stage_03",
+    "stage_title": "Vardagsliv",
+    "article_id": "art_32",
+    "article_title": "Läsförståelse",
+    "target_word_count": 60,
+    "sentences": [
         {
-          "word_in_sentence": "balkong",
-          "base_form": "balkong",
-          "position_start": 618,
-          "position_end": 625
+            "sentence_id": "art_32_s001",
+            "sv": "\"Vet du vem som frågade efter dig?\" sa min vän.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "Vet du vem som frågade efter dig?",
+                    "base_form": "Vet du vem som frågade efter dig?",
+                    "position_start": 1,
+                    "position_end": 34
+                }
+            ]
         },
         {
-          "word_in_sentence": "Klockan fyra",
-          "base_form": "klockan fyra",
-          "position_start": 1860,
-          "position_end": 1872
+            "sentence_id": "art_32_s002",
+            "sv": "Det var en sällskapsdam från förr.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "sällskapsdam",
+                    "base_form": "sällskapsdam",
+                    "position_start": 11,
+                    "position_end": 23
+                }
+            ]
         },
         {
-          "word_in_sentence": "bastu",
-          "base_form": "bastu",
-          "position_start": 1025,
-          "position_end": 1030
+            "sentence_id": "art_32_s003",
+            "sv": "Hon var väldigt fattig i början, men nu jobbade hon på ett exklusivt hunddagis här i vår lilla förort.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "hunddagis",
+                    "base_form": "hunddagis",
+                    "position_start": 69,
+                    "position_end": 78
+                },
+                {
+                    "word_in_sentence": "förort",
+                    "base_form": "förort",
+                    "position_start": 95,
+                    "position_end": 101
+                },
+                {
+                    "word_in_sentence": "fattig",
+                    "base_form": "fattig",
+                    "position_start": 16,
+                    "position_end": 22
+                },
+                {
+                    "word_in_sentence": "här",
+                    "base_form": "här",
+                    "position_start": 79,
+                    "position_end": 82
+                },
+                {
+                    "word_in_sentence": "i början",
+                    "base_form": "i början",
+                    "position_start": 23,
+                    "position_end": 31
+                }
+            ]
         },
         {
-          "word_in_sentence": "syssla med",
-          "base_form": "syssla med",
-          "position_start": 1545,
-          "position_end": 1555
+            "sentence_id": "art_32_s004",
+            "sv": "Jag var trött och tyckte att det är skönt att lata sig och vara en riktig soffpotatis.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "lata sig",
+                    "base_form": "lata sig",
+                    "position_start": 46,
+                    "position_end": 54
+                },
+                {
+                    "word_in_sentence": "soffpotatis",
+                    "base_form": "soffpotatis",
+                    "position_start": 74,
+                    "position_end": 85
+                },
+                {
+                    "word_in_sentence": "skön",
+                    "base_form": "skön",
+                    "position_start": 36,
+                    "position_end": 40
+                }
+            ]
         },
         {
-          "word_in_sentence": "lata sig",
-          "base_form": "lata sig",
-          "position_start": 232,
-          "position_end": 240
+            "sentence_id": "art_32_s005",
+            "sv": "Men denna morgon blev en rivstart.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "rivstart",
+                    "base_form": "rivstart",
+                    "position_start": 25,
+                    "position_end": 33
+                }
+            ]
         },
         {
-          "word_in_sentence": "inredning",
-          "base_form": "inredning",
-          "position_start": 571,
-          "position_end": 580
+            "sentence_id": "art_32_s006",
+            "sv": "Det är så lätt att försova sig när man är trött, och jag vaknade jättesent.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "försova sig",
+                    "base_form": "försova sig",
+                    "position_start": 19,
+                    "position_end": 30
+                }
+            ]
         },
         {
-          "word_in_sentence": "folk",
-          "base_form": "folk",
-          "position_start": 966,
-          "position_end": 970
+            "sentence_id": "art_32_s007",
+            "sv": "\"jag skulle vilja…\" tänkte jag, \"bara ligga kvar under täcket\".",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "jag skulle vilja…",
+                    "base_form": "jag skulle vilja…",
+                    "position_start": 1,
+                    "position_end": 18
+                }
+            ]
         },
         {
-          "word_in_sentence": "skynda",
-          "base_form": "skynda",
-          "position_start": 468,
-          "position_end": 474
+            "sentence_id": "art_32_s008",
+            "sv": "Jag var tvungen att skynda.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "skynda",
+                    "base_form": "skynda",
+                    "position_start": 20,
+                    "position_end": 26
+                }
+            ]
         },
         {
-          "word_in_sentence": "hål",
-          "base_form": "hål",
-          "position_start": 1333,
-          "position_end": 1336
+            "sentence_id": "art_32_s009",
+            "sv": "Jag fick snabbt ta på mig kläderna och skynda mig rejält för att hinna.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "ta på",
+                    "base_form": "ta på",
+                    "position_start": 16,
+                    "position_end": 21
+                },
+                {
+                    "word_in_sentence": "skynda på",
+                    "base_form": "skynda på",
+                    "position_start": 39,
+                    "position_end": 48
+                }
+            ]
         },
         {
-          "word_in_sentence": "påse",
-          "base_form": "påse",
-          "position_start": 725,
-          "position_end": 729
+            "sentence_id": "art_32_s010",
+            "sv": "Egentligen gillar jag inredning.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "inredning",
+                    "base_form": "inredning",
+                    "position_start": 22,
+                    "position_end": 31
+                }
+            ]
         },
         {
-          "word_in_sentence": "simglasögon",
-          "base_form": "simglasögon",
-          "position_start": 756,
-          "position_end": 767
+            "sentence_id": "art_32_s011",
+            "sv": "Jag ville stanna hemma och bygga en balkong för att ordna en skön plats att sitta på.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "balkong",
+                    "base_form": "balkong",
+                    "position_start": 36,
+                    "position_end": 43
+                },
+                {
+                    "word_in_sentence": "ordna",
+                    "base_form": "ordna",
+                    "position_start": 52,
+                    "position_end": 57
+                },
+                {
+                    "word_in_sentence": "bygga",
+                    "base_form": "bygga",
+                    "position_start": 27,
+                    "position_end": 32
+                }
+            ]
         },
         {
-          "word_in_sentence": "slippa",
-          "base_form": "slippa",
-          "position_start": 1269,
-          "position_end": 1275
+            "sentence_id": "art_32_s012",
+            "sv": "Men nu hade jag bråttom.",
+            "en": "",
+            "target_words": []
         },
         {
-          "word_in_sentence": "ringa till",
-          "base_form": "ringa till",
-          "position_start": 1199,
-          "position_end": 1209
+            "sentence_id": "art_32_s013",
+            "sv": "Jag la min utrustning i en stor påse.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "påse",
+                    "base_form": "påse",
+                    "position_start": 32,
+                    "position_end": 36
+                },
+                {
+                    "word_in_sentence": "utrustning",
+                    "base_form": "utrustning",
+                    "position_start": 11,
+                    "position_end": 21
+                }
+            ]
         },
         {
-          "word_in_sentence": "badbyxor",
-          "base_form": "badbyxor",
-          "position_start": 743,
-          "position_end": 751
+            "sentence_id": "art_32_s014",
+            "sv": "Jag tog med badbyxor och simglasögon.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "simglasögon",
+                    "base_form": "simglasögon",
+                    "position_start": 25,
+                    "position_end": 36
+                },
+                {
+                    "word_in_sentence": "badbyxor",
+                    "base_form": "badbyxor",
+                    "position_start": 12,
+                    "position_end": 20
+                }
+            ]
         },
         {
-          "word_in_sentence": "ta på",
-          "base_form": "ta på",
-          "position_start": 492,
-          "position_end": 497
+            "sentence_id": "art_32_s015",
+            "sv": "Trots min ålder kände jag mig stark som en oxe.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "ålder",
+                    "base_form": "ålder",
+                    "position_start": 10,
+                    "position_end": 15
+                },
+                {
+                    "word_in_sentence": "stark som en oxe",
+                    "base_form": "stark som en oxe",
+                    "position_start": 30,
+                    "position_end": 46
+                }
+            ]
         },
         {
-          "word_in_sentence": "ordna",
-          "base_form": "ordna",
-          "position_start": 634,
-          "position_end": 639
+            "sentence_id": "art_32_s016",
+            "sv": "Jag ville inte stanna inne och suga åt mig negativ energi, så jag bestämde mig för att ge mig ut på stan.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "flytta",
+                    "base_form": "flytta",
+                    "position_start": 86,
+                    "position_end": 92
+                },
+                {
+                    "word_in_sentence": "suga",
+                    "base_form": "suga",
+                    "position_start": 31,
+                    "position_end": 35
+                }
+            ]
         },
         {
-          "word_in_sentence": "bygga",
-          "base_form": "bygga",
-          "position_start": 609,
-          "position_end": 614
+            "sentence_id": "art_32_s017",
+            "sv": "Det var verkligen en hektisk dag.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "hektisk",
+                    "base_form": "hektisk",
+                    "position_start": 21,
+                    "position_end": 28
+                }
+            ]
         },
         {
-          "word_in_sentence": "soffpotatis",
-          "base_form": "soffpotatis",
-          "position_start": 260,
-          "position_end": 271
+            "sentence_id": "art_32_s018",
+            "sv": "Mycket folk var ute.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "folk",
+                    "base_form": "folk",
+                    "position_start": 7,
+                    "position_end": 11
+                }
+            ]
         },
         {
-          "word_in_sentence": "lägga sig",
-          "base_form": "lägga sig",
-          "position_start": 1901,
-          "position_end": 1910
+            "sentence_id": "art_32_s019",
+            "sv": "Jag gick till simhallen som hade en gemensam bastu.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "bastu",
+                    "base_form": "bastu",
+                    "position_start": 45,
+                    "position_end": 50
+                },
+                {
+                    "word_in_sentence": "gemensam",
+                    "base_form": "gemensam",
+                    "position_start": 36,
+                    "position_end": 44
+                }
+            ]
         },
         {
-          "word_in_sentence": "skön",
-          "base_form": "skön",
-          "position_start": 222,
-          "position_end": 226
+            "sentence_id": "art_32_s020",
+            "sv": "Simhallen var uppdelad i olika sektioner som var enorma.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "uppdelad",
+                    "base_form": "uppdelad",
+                    "position_start": 14,
+                    "position_end": 22
+                },
+                {
+                    "word_in_sentence": "storlek",
+                    "base_form": "storlek",
+                    "position_start": 46,
+                    "position_end": 53
+                }
+            ]
         },
         {
-          "word_in_sentence": "skynda på",
-          "base_form": "skynda på",
-          "position_start": 515,
-          "position_end": 524
+            "sentence_id": "art_32_s021",
+            "sv": "Jag ville klättra upp för det höga hopptornet.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "klättra",
+                    "base_form": "klättra",
+                    "position_start": 10,
+                    "position_end": 17
+                }
+            ]
         },
         {
-          "word_in_sentence": "rivstart",
-          "base_form": "rivstart",
-          "position_start": 298,
-          "position_end": 306
+            "sentence_id": "art_32_s022",
+            "sv": "Efter badet fick man torka sig noggrant.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "torka sig",
+                    "base_form": "torka sig",
+                    "position_start": 21,
+                    "position_end": 30
+                },
+                {
+                    "word_in_sentence": "nog",
+                    "base_form": "nog",
+                    "position_start": 31,
+                    "position_end": 34
+                }
+            ]
         },
         {
-          "word_in_sentence": "snygg",
-          "base_form": "snygg",
-          "position_start": 1241,
-          "position_end": 1246
+            "sentence_id": "art_32_s023",
+            "sv": "Jag funderade på att ringa till frisören för en klippning i en snygg salong, så jag skulle slippa se tråkig ut.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "slippa",
+                    "base_form": "slippa",
+                    "position_start": 91,
+                    "position_end": 97
+                },
+                {
+                    "word_in_sentence": "ringa till",
+                    "base_form": "ringa till",
+                    "position_start": 21,
+                    "position_end": 31
+                },
+                {
+                    "word_in_sentence": "snygg",
+                    "base_form": "snygg",
+                    "position_start": 63,
+                    "position_end": 68
+                },
+                {
+                    "word_in_sentence": "salong",
+                    "base_form": "salong",
+                    "position_start": 69,
+                    "position_end": 75
+                },
+                {
+                    "word_in_sentence": "klippning",
+                    "base_form": "klippning",
+                    "position_start": 48,
+                    "position_end": 57
+                },
+                {
+                    "word_in_sentence": "själv",
+                    "base_form": "själv",
+                    "position_start": 1,
+                    "position_end": 6
+                }
+            ]
         },
         {
-          "word_in_sentence": "ålder",
-          "base_form": "ålder",
-          "position_start": 779,
-          "position_end": 784
+            "sentence_id": "art_32_s024",
+            "sv": "Jag upptäckte också att jag hade ett litet hål i min tröja.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "hål",
+                    "base_form": "hål",
+                    "position_start": 43,
+                    "position_end": 46
+                }
+            ]
         },
         {
-          "word_in_sentence": "utrustning",
-          "base_form": "utrustning",
-          "position_start": 704,
-          "position_end": 714
+            "sentence_id": "art_32_s025",
+            "sv": "Jag tänkte på att boka en traditionell husmorssemester, men det var ett högt tryck på alla biljetter.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "husmorssemester",
+                    "base_form": "husmorssemester",
+                    "position_start": 39,
+                    "position_end": 54
+                },
+                {
+                    "word_in_sentence": "högt tryck",
+                    "base_form": "högt tryck",
+                    "position_start": 72,
+                    "position_end": 82
+                }
+            ]
         },
         {
-          "word_in_sentence": "flytta",
-          "base_form": "flytta",
-          "position_start": 903,
-          "position_end": 909
+            "sentence_id": "art_32_s026",
+            "sv": "Varje siffra i prislistan var otroligt hög, och jag kände mig pyttelite orolig.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "siffra",
+                    "base_form": "siffra",
+                    "position_start": 6,
+                    "position_end": 12
+                },
+                {
+                    "word_in_sentence": "pyttelite",
+                    "base_form": "pyttelite",
+                    "position_start": 62,
+                    "position_end": 71
+                }
+            ]
         },
         {
-          "word_in_sentence": "husmorssemester",
-          "base_form": "husmorssemester",
-          "position_start": 1389,
-          "position_end": 1404
+            "sentence_id": "art_32_s027",
+            "sv": "\"Vad vill du syssla med?\" frågade min vän, som var likadan som jag.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "syssla med",
+                    "base_form": "syssla med",
+                    "position_start": 13,
+                    "position_end": 23
+                },
+                {
+                    "word_in_sentence": "likadan",
+                    "base_form": "likadan",
+                    "position_start": 51,
+                    "position_end": 58
+                }
+            ]
         },
         {
-          "word_in_sentence": "salong",
-          "base_form": "salong",
-          "position_start": 1247,
-          "position_end": 1253
+            "sentence_id": "art_32_s028",
+            "sv": "Vi verkade höra ihop genom starka kulturella band.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "höra ihop",
+                    "base_form": "höra ihop",
+                    "position_start": 11,
+                    "position_end": 20
+                },
+                {
+                    "word_in_sentence": "kulturella band",
+                    "base_form": "kulturella band",
+                    "position_start": 34,
+                    "position_end": 49
+                }
+            ]
         },
         {
-          "word_in_sentence": "höra av sig",
-          "base_form": "höra av sig",
-          "position_start": 1670,
-          "position_end": 1681
+            "sentence_id": "art_32_s029",
+            "sv": "Det är viktigt att höra av sig till gamla vänner.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "höra av sig",
+                    "base_form": "höra av sig",
+                    "position_start": 19,
+                    "position_end": 30
+                }
+            ]
         },
         {
-          "word_in_sentence": "hunddagis",
-          "base_form": "hunddagis",
-          "position_start": 152,
-          "position_end": 161
+            "sentence_id": "art_32_s030",
+            "sv": "Plötsligt försökte någon typ av vild hund, som kanske var dräktig, angripa en soptunna på gatan.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "vild",
+                    "base_form": "vild",
+                    "position_start": 32,
+                    "position_end": 36
+                },
+                {
+                    "word_in_sentence": "angripa",
+                    "base_form": "angripa",
+                    "position_start": 67,
+                    "position_end": 74
+                },
+                {
+                    "word_in_sentence": "någon typ av",
+                    "base_form": "någon typ av",
+                    "position_start": 19,
+                    "position_end": 31
+                },
+                {
+                    "word_in_sentence": "dräktig",
+                    "base_form": "dräktig",
+                    "position_start": 58,
+                    "position_end": 65
+                }
+            ]
         },
         {
-          "word_in_sentence": "sällskapsdam",
-          "base_form": "sällskapsdam",
-          "position_start": 59,
-          "position_end": 71
+            "sentence_id": "art_32_s031",
+            "sv": "Jag tänkte att jag hade fått en intressant erfarenhet idag.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "erfarenhet",
+                    "base_form": "erfarenhet",
+                    "position_start": 43,
+                    "position_end": 53
+                }
+            ]
         },
         {
-          "word_in_sentence": "klippning",
-          "base_form": "klippning",
-          "position_start": 1226,
-          "position_end": 1235
-        },
-        {
-          "word_in_sentence": "siffra",
-          "base_form": "siffra",
-          "position_start": 1458,
-          "position_end": 1464
-        },
-        {
-          "word_in_sentence": "pyttelite",
-          "base_form": "pyttelite",
-          "position_start": 1514,
-          "position_end": 1523
-        },
-        {
-          "word_in_sentence": "förort",
-          "base_form": "förort",
-          "position_start": 178,
-          "position_end": 184
-        },
-        {
-          "word_in_sentence": "torka sig",
-          "base_form": "torka sig",
-          "position_start": 1157,
-          "position_end": 1166
-        },
-        {
-          "word_in_sentence": "själv",
-          "base_form": "själv",
-          "position_start": 1179,
-          "position_end": 1184
-        },
-        {
-          "word_in_sentence": "försova sig",
-          "base_form": "försova sig",
-          "position_start": 327,
-          "position_end": 338
-        },
-        {
-          "word_in_sentence": "vild",
-          "base_form": "vild",
-          "position_start": 1735,
-          "position_end": 1739
-        },
-        {
-          "word_in_sentence": "stark som en oxe",
-          "base_form": "stark som en oxe",
-          "position_start": 799,
-          "position_end": 815
-        },
-        {
-          "word_in_sentence": "suga",
-          "base_form": "suga",
-          "position_start": 848,
-          "position_end": 852
-        },
-        {
-          "word_in_sentence": "Vet du vem som frågade efter dig?",
-          "base_form": "Vet du vem som frågade efter dig?",
-          "position_start": 1,
-          "position_end": 34
-        },
-        {
-          "word_in_sentence": "fattig",
-          "base_form": "fattig",
-          "position_start": 99,
-          "position_end": 105
-        },
-        {
-          "word_in_sentence": "här",
-          "base_form": "här",
-          "position_start": 162,
-          "position_end": 165
-        },
-        {
-          "word_in_sentence": "i början",
-          "base_form": "i början",
-          "position_start": 106,
-          "position_end": 114
-        },
-        {
-          "word_in_sentence": "erfarenhet",
-          "base_form": "erfarenhet",
-          "position_start": 1843,
-          "position_end": 1853
-        },
-        {
-          "word_in_sentence": "klättra",
-          "base_form": "klättra",
-          "position_start": 1099,
-          "position_end": 1106
-        },
-        {
-          "word_in_sentence": "hektisk",
-          "base_form": "hektisk",
-          "position_start": 946,
-          "position_end": 953
-        },
-        {
-          "word_in_sentence": "högt tryck",
-          "base_form": "högt tryck",
-          "position_start": 1422,
-          "position_end": 1432
-        },
-        {
-          "word_in_sentence": "angripa",
-          "base_form": "angripa",
-          "position_start": 1770,
-          "position_end": 1777
-        },
-        {
-          "word_in_sentence": "uppdelad",
-          "base_form": "uppdelad",
-          "position_start": 1046,
-          "position_end": 1054
-        },
-        {
-          "word_in_sentence": "gemensam",
-          "base_form": "gemensam",
-          "position_start": 1016,
-          "position_end": 1024
-        },
-        {
-          "word_in_sentence": "likadan",
-          "base_form": "likadan",
-          "position_start": 1583,
-          "position_end": 1590
-        },
-        {
-          "word_in_sentence": "höra ihop",
-          "base_form": "höra ihop",
-          "position_start": 1611,
-          "position_end": 1620
-        },
-        {
-          "word_in_sentence": "kulturella band",
-          "base_form": "kulturella band",
-          "position_start": 1634,
-          "position_end": 1649
-        },
-        {
-          "word_in_sentence": "någon typ av",
-          "base_form": "någon typ av",
-          "position_start": 1722,
-          "position_end": 1734
-        },
-        {
-          "word_in_sentence": "storlek",
-          "base_form": "storlek",
-          "position_start": 1078,
-          "position_end": 1085
-        },
-        {
-          "word_in_sentence": "jag skulle vilja…",
-          "base_form": "jag skulle vilja…",
-          "position_start": 385,
-          "position_end": 402
-        },
-        {
-          "word_in_sentence": "nog",
-          "base_form": "nog",
-          "position_start": 1167,
-          "position_end": 1170
-        },
-        {
-          "word_in_sentence": "dräktig",
-          "base_form": "dräktig",
-          "position_start": 1761,
-          "position_end": 1768
+            "sentence_id": "art_32_s032",
+            "sv": "Klockan fyra var det dags att gå hem och lägga sig.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "Klockan fyra",
+                    "base_form": "klockan fyra",
+                    "position_start": 0,
+                    "position_end": 12
+                },
+                {
+                    "word_in_sentence": "lägga sig",
+                    "base_form": "lägga sig",
+                    "position_start": 41,
+                    "position_end": 50
+                }
+            ]
         }
-      ]
-    }
-  ],
-  "primary_words_used": [
-    "balkong",
-    "klockan fyra",
-    "bastu",
-    "syssla med",
-    "lata sig",
-    "inredning",
-    "folk",
-    "skynda",
-    "hål",
-    "påse",
-    "simglasögon",
-    "slippa",
-    "ringa till",
-    "badbyxor",
-    "ta på",
-    "ordna",
-    "bygga",
-    "soffpotatis",
-    "lägga sig",
-    "skön",
-    "skynda på",
-    "rivstart",
-    "snygg",
-    "ålder",
-    "utrustning",
-    "flytta",
-    "husmorssemester",
-    "salong",
-    "höra av sig",
-    "hunddagis",
-    "sällskapsdam",
-    "klippning",
-    "siffra",
-    "pyttelite",
-    "förort",
-    "torka sig",
-    "själv",
-    "försova sig",
-    "vild",
-    "stark som en oxe",
-    "suga",
-    "Vet du vem som frågade efter dig?",
-    "fattig",
-    "här",
-    "i början",
-    "erfarenhet",
-    "klättra",
-    "hektisk",
-    "högt tryck",
-    "angripa",
-    "uppdelad",
-    "gemensam",
-    "likadan",
-    "höra ihop",
-    "kulturella band",
-    "någon typ av",
-    "storlek",
-    "jag skulle vilja…",
-    "nog",
-    "dräktig"
-  ],
-  "secondary_words_used": []
+    ],
+    "primary_words_used": [
+        "balkong",
+        "klockan fyra",
+        "bastu",
+        "syssla med",
+        "lata sig",
+        "inredning",
+        "folk",
+        "skynda",
+        "hål",
+        "påse",
+        "simglasögon",
+        "slippa",
+        "ringa till",
+        "badbyxor",
+        "ta på",
+        "ordna",
+        "bygga",
+        "soffpotatis",
+        "lägga sig",
+        "skön",
+        "skynda på",
+        "rivstart",
+        "snygg",
+        "ålder",
+        "utrustning",
+        "flytta",
+        "husmorssemester",
+        "salong",
+        "höra av sig",
+        "hunddagis",
+        "sällskapsdam",
+        "klippning",
+        "siffra",
+        "pyttelite",
+        "förort",
+        "torka sig",
+        "själv",
+        "försova sig",
+        "vild",
+        "stark som en oxe",
+        "suga",
+        "Vet du vem som frågade efter dig?",
+        "fattig",
+        "här",
+        "i början",
+        "erfarenhet",
+        "klättra",
+        "hektisk",
+        "högt tryck",
+        "angripa",
+        "uppdelad",
+        "gemensam",
+        "likadan",
+        "höra ihop",
+        "kulturella band",
+        "någon typ av",
+        "storlek",
+        "jag skulle vilja…",
+        "nog",
+        "dräktig"
+    ],
+    "secondary_words_used": []
 }

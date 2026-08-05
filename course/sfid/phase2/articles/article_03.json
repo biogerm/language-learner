@@ -1,441 +1,621 @@
 {
-  "course_id": "sfid",
-  "course_title": "SFI D",
-  "stage_id": "stage_09",
-  "stage_title": "Resor & Transport",
-  "article_id": "art_03",
-  "article_title": "Läsförståelse",
-  "target_word_count": 60,
-  "sentences": [
-    {
-      "sentence_id": "art03_s001",
-      "sv": "\"Vad hände igår?\" frågade min vän, som var väldigt ressugen. \"Vet du vad som hände igår?\" frågade hon sedan snabbt. Jag svarade att det var en lång historia. Vi hade bestämt oss för att bila i en stor, fin och snabb sportbil som skulle gå i arv från min farbror. Vår plan var att campa året runt och se hela landet. Den svenska turistnäringen är stark, och varje turist kan få hjälp på en lokal turistinformation.\n\nVi började vår resa med en långpromenad i en vacker skärgård. Där fanns det många små öar som kunde bilda grunden för en fantastisk upplevelse. Mellan öarna fanns det vatten, och vi fick använda en roddbåt för att ta sig runt i en liten hamn. Där fanns en bra och stabil brygga. Två män talade med oss och ville guida oss på en guidad tur. De berättade att bergen började resa sig ur havet. Det kunde bli mörkt, men allt var mycket vackert. Men plötsligt kom en björn ut ur skogen och verkade gå till attack, fast den egentligen bara var rädd. \"Björnar brukar gå i ide på vintern,\" sa guiden och lugnade oss.\n\nPå söndagen tog vi en lugn söndagspromenad på en gammal stig. Där fick vi ett flygblad från en ung gatuförsäljare. Texten på bladet handlade om en stor kappsegling och om hur man kan bilda team med andra människor. \"Vet du när bussarna går?\" frågade min vän, eftersom vi var trötta på att promenera och ville köra på nästa cykelbana för att se staden Tain i Skottland. Jag vet att det är långt dit, men drömmar är fria. Vår packning började väga mycket. Vi ville åka ut ur skogen, så vi bestämde oss för att vi skulle åka dit en annan gång.\n\nNu är det vinter och det finns vägsalt på varje vinterväg, vilket är ett måste enligt vår grundlag för säkerhet. Det kan vara en läskig upplevelse att köra när det är halt. Båda mina vänner är hemma nu, och vi är redo att ge oss ut på nya äventyr under nästa ledighet. Att röra på sig är alltid bra. Vem vet vart vi ska gå nästa gång?",
-      "en": "",
-      "target_words": [
+    "course_id": "sfid",
+    "course_title": "SFI D",
+    "stage_id": "stage_09",
+    "stage_title": "Resor & Transport",
+    "article_id": "art_03",
+    "article_title": "Läsförståelse",
+    "target_word_count": 60,
+    "sentences": [
         {
-          "word_in_sentence": "skärgård",
-          "base_form": "skärgård",
-          "position_start": 467,
-          "position_end": 475
+            "sentence_id": "art_03_s001",
+            "sv": "\"Vad hände igår?\" frågade min vän, som var väldigt ressugen.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "Vad hände igår?",
+                    "base_form": "Vad hände igår?",
+                    "position_start": 1,
+                    "position_end": 16
+                },
+                {
+                    "word_in_sentence": "ressugen",
+                    "base_form": "ressugen",
+                    "position_start": 51,
+                    "position_end": 59
+                },
+                {
+                    "word_in_sentence": "ge",
+                    "base_form": "ge",
+                    "position_start": 56,
+                    "position_end": 58
+                },
+                {
+                    "word_in_sentence": "gå",
+                    "base_form": "gå",
+                    "position_start": 12,
+                    "position_end": 14
+                }
+            ]
         },
         {
-          "word_in_sentence": "resa sig",
-          "base_form": "resa sig",
-          "position_start": 787,
-          "position_end": 795
+            "sentence_id": "art_03_s002",
+            "sv": "\"Vet du vad som hände igår?\" frågade hon sedan snabbt.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "Vet du vad som hände igår?",
+                    "base_form": "Vet du vad som hände igår?",
+                    "position_start": 1,
+                    "position_end": 27
+                },
+                {
+                    "word_in_sentence": "sedan",
+                    "base_form": "sedan",
+                    "position_start": 41,
+                    "position_end": 46
+                },
+                {
+                    "word_in_sentence": "snabb",
+                    "base_form": "snabb",
+                    "position_start": 47,
+                    "position_end": 52
+                }
+            ]
         },
         {
-          "word_in_sentence": "bilda",
-          "base_form": "bilda",
-          "position_start": 515,
-          "position_end": 520
+            "sentence_id": "art_03_s003",
+            "sv": "Jag svarade att det var en lång historia.",
+            "en": "",
+            "target_words": []
         },
         {
-          "word_in_sentence": "vägsalt",
-          "base_form": "vägsalt",
-          "position_start": 1598,
-          "position_end": 1605
+            "sentence_id": "art_03_s004",
+            "sv": "Vi hade bestämt oss för att bila i en stor, fin och snabb sportbil som skulle gå i arv från min farbror.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "sportbil",
+                    "base_form": "ferraribil",
+                    "position_start": 58,
+                    "position_end": 66
+                },
+                {
+                    "word_in_sentence": "gå i arv",
+                    "base_form": "gå i arv",
+                    "position_start": 78,
+                    "position_end": 86
+                },
+                {
+                    "word_in_sentence": "bila",
+                    "base_form": "bila",
+                    "position_start": 28,
+                    "position_end": 32
+                },
+                {
+                    "word_in_sentence": "fin",
+                    "base_form": "fin",
+                    "position_start": 44,
+                    "position_end": 47
+                }
+            ]
         },
         {
-          "word_in_sentence": "väga",
-          "base_form": "väga",
-          "position_start": 1466,
-          "position_end": 1470
+            "sentence_id": "art_03_s005",
+            "sv": "Vår plan var att campa året runt och se hela landet.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "campa",
+                    "base_form": "campa",
+                    "position_start": 17,
+                    "position_end": 22
+                },
+                {
+                    "word_in_sentence": "året runt",
+                    "base_form": "året runt",
+                    "position_start": 23,
+                    "position_end": 32
+                }
+            ]
         },
         {
-          "word_in_sentence": "gå i ide",
-          "base_form": "gå i ide",
-          "position_start": 975,
-          "position_end": 983
+            "sentence_id": "art_03_s006",
+            "sv": "Den svenska turistnäringen är stark, och varje turist kan få hjälp på en lokal turistinformation.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "turist",
+                    "base_form": "turist",
+                    "position_start": 12,
+                    "position_end": 18
+                },
+                {
+                    "word_in_sentence": "turistnäring",
+                    "base_form": "turistnäring",
+                    "position_start": 12,
+                    "position_end": 24
+                },
+                {
+                    "word_in_sentence": "turistinformation",
+                    "base_form": "turisinformation",
+                    "position_start": 79,
+                    "position_end": 96
+                },
+                {
+                    "word_in_sentence": "stark",
+                    "base_form": "stark",
+                    "position_start": 30,
+                    "position_end": 35
+                }
+            ]
         },
         {
-          "word_in_sentence": "bilda grunden för",
-          "base_form": "bilda grunden för",
-          "position_start": 515,
-          "position_end": 532
+            "sentence_id": "art_03_s007",
+            "sv": "Vi började vår resa med en långpromenad i en vacker skärgård.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "skärgård",
+                    "base_form": "skärgård",
+                    "position_start": 52,
+                    "position_end": 60
+                },
+                {
+                    "word_in_sentence": "långpromenad",
+                    "base_form": "långpromenad",
+                    "position_start": 27,
+                    "position_end": 39
+                }
+            ]
         },
         {
-          "word_in_sentence": "vinterväg",
-          "base_form": "vinterväg",
-          "position_start": 1615,
-          "position_end": 1624
+            "sentence_id": "art_03_s008",
+            "sv": "Där fanns det många små öar som kunde bilda grunden för en fantastisk upplevelse.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "bilda",
+                    "base_form": "bilda",
+                    "position_start": 38,
+                    "position_end": 43
+                },
+                {
+                    "word_in_sentence": "bilda grunden för",
+                    "base_form": "bilda grunden för",
+                    "position_start": 38,
+                    "position_end": 55
+                },
+                {
+                    "word_in_sentence": "många",
+                    "base_form": "många",
+                    "position_start": 14,
+                    "position_end": 19
+                }
+            ]
         },
         {
-          "word_in_sentence": "gå till attack",
-          "base_form": "gå till attack",
-          "position_start": 908,
-          "position_end": 922
+            "sentence_id": "art_03_s009",
+            "sv": "Mellan öarna fanns det vatten, och vi fick använda en roddbåt för att ta sig runt i en liten hamn.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "ta sig runt",
+                    "base_form": "ta sig runt",
+                    "position_start": 70,
+                    "position_end": 81
+                },
+                {
+                    "word_in_sentence": "hamn",
+                    "base_form": "hamn",
+                    "position_start": 93,
+                    "position_end": 97
+                },
+                {
+                    "word_in_sentence": "roddbåt",
+                    "base_form": "roddbåt",
+                    "position_start": 54,
+                    "position_end": 61
+                },
+                {
+                    "word_in_sentence": "Mellan",
+                    "base_form": "mellan",
+                    "position_start": 0,
+                    "position_end": 6
+                },
+                {
+                    "word_in_sentence": "använda",
+                    "base_form": "använda",
+                    "position_start": 43,
+                    "position_end": 50
+                }
+            ]
         },
         {
-          "word_in_sentence": "Vet du när bussarna går?",
-          "base_form": "Vet du när bussarna går?",
-          "position_start": 1241,
-          "position_end": 1265
+            "sentence_id": "art_03_s010",
+            "sv": "Där fanns en bra och stabil brygga.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "stabil",
+                    "base_form": "stabil",
+                    "position_start": 21,
+                    "position_end": 27
+                },
+                {
+                    "word_in_sentence": "bra",
+                    "base_form": "bra",
+                    "position_start": 13,
+                    "position_end": 16
+                }
+            ]
         },
         {
-          "word_in_sentence": "Vad hände igår?",
-          "base_form": "Vad hände igår?",
-          "position_start": 1,
-          "position_end": 16
+            "sentence_id": "art_03_s011",
+            "sv": "Två män talade med oss och ville guida oss på en guidad tur.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "guida",
+                    "base_form": "guida",
+                    "position_start": 33,
+                    "position_end": 38
+                },
+                {
+                    "word_in_sentence": "guidad tur",
+                    "base_form": "guidad tur",
+                    "position_start": 49,
+                    "position_end": 59
+                },
+                {
+                    "word_in_sentence": "talade",
+                    "base_form": "tala",
+                    "position_start": 8,
+                    "position_end": 14
+                },
+                {
+                    "word_in_sentence": "Två",
+                    "base_form": "två",
+                    "position_start": 0,
+                    "position_end": 3
+                }
+            ]
         },
         {
-          "word_in_sentence": "en annan gång",
-          "base_form": "en annan gång",
-          "position_start": 1551,
-          "position_end": 1564
+            "sentence_id": "art_03_s012",
+            "sv": "De berättade att bergen började resa sig ur havet.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "resa sig",
+                    "base_form": "resa sig",
+                    "position_start": 32,
+                    "position_end": 40
+                }
+            ]
         },
         {
-          "word_in_sentence": "långpromenad",
-          "base_form": "långpromenad",
-          "position_start": 442,
-          "position_end": 454
+            "sentence_id": "art_03_s013",
+            "sv": "Det kunde bli mörkt, men allt var mycket vackert.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "bli",
+                    "base_form": "bli",
+                    "position_start": 10,
+                    "position_end": 13
+                }
+            ]
         },
         {
-          "word_in_sentence": "Vet du vad som hände igår?",
-          "base_form": "Vet du vad som hände igår?",
-          "position_start": 62,
-          "position_end": 88
+            "sentence_id": "art_03_s014",
+            "sv": "Men plötsligt kom en björn ut ur skogen och verkade gå till attack, fast den egentligen bara var rädd.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "gå till attack",
+                    "base_form": "gå till attack",
+                    "position_start": 52,
+                    "position_end": 66
+                }
+            ]
         },
         {
-          "word_in_sentence": "ressugen",
-          "base_form": "ressugen",
-          "position_start": 51,
-          "position_end": 59
+            "sentence_id": "art_03_s015",
+            "sv": "\"Björnar brukar gå i ide på vintern,\" sa guiden och lugnade oss.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "gå i ide",
+                    "base_form": "gå i ide",
+                    "position_start": 16,
+                    "position_end": 24
+                }
+            ]
         },
         {
-          "word_in_sentence": "sportbil",
-          "base_form": "ferraribil",
-          "position_start": 216,
-          "position_end": 224
+            "sentence_id": "art_03_s016",
+            "sv": "På söndagen tog vi en lugn söndagspromenad på en gammal stig.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "söndagspromenad",
+                    "base_form": "söndagspromenad",
+                    "position_start": 27,
+                    "position_end": 42
+                },
+                {
+                    "word_in_sentence": "stig",
+                    "base_form": "stig",
+                    "position_start": 56,
+                    "position_end": 60
+                }
+            ]
         },
         {
-          "word_in_sentence": "gatuförsäljare",
-          "base_form": "gatuförsäljare",
-          "position_start": 1124,
-          "position_end": 1138
+            "sentence_id": "art_03_s017",
+            "sv": "Där fick vi ett flygblad från en ung gatuförsäljare.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "gatuförsäljare",
+                    "base_form": "gatuförsäljare",
+                    "position_start": 37,
+                    "position_end": 51
+                },
+                {
+                    "word_in_sentence": "flygblad",
+                    "base_form": "flygblad",
+                    "position_start": 16,
+                    "position_end": 24
+                }
+            ]
         },
         {
-          "word_in_sentence": "söndagspromenad",
-          "base_form": "söndagspromenad",
-          "position_start": 1052,
-          "position_end": 1067
+            "sentence_id": "art_03_s018",
+            "sv": "Texten på bladet handlade om en stor kappsegling och om hur man kan bilda team med andra människor.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "kappsegling",
+                    "base_form": "kappsegling",
+                    "position_start": 37,
+                    "position_end": 48
+                },
+                {
+                    "word_in_sentence": "andra",
+                    "base_form": "andra",
+                    "position_start": 83,
+                    "position_end": 88
+                }
+            ]
         },
         {
-          "word_in_sentence": "turist",
-          "base_form": "turist",
-          "position_start": 328,
-          "position_end": 334
+            "sentence_id": "art_03_s019",
+            "sv": "\"Vet du när bussarna går?\" frågade min vän, eftersom vi var trötta på att promenera och ville köra på nästa cykelbana för att se staden Tain i Skottland.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "Vet du när bussarna går?",
+                    "base_form": "Vet du när bussarna går?",
+                    "position_start": 1,
+                    "position_end": 25
+                },
+                {
+                    "word_in_sentence": "köra på",
+                    "base_form": "köra på",
+                    "position_start": 94,
+                    "position_end": 101
+                },
+                {
+                    "word_in_sentence": "cykelbana",
+                    "base_form": "cykelbana",
+                    "position_start": 108,
+                    "position_end": 117
+                },
+                {
+                    "word_in_sentence": "Tain",
+                    "base_form": "tain",
+                    "position_start": 136,
+                    "position_end": 140
+                },
+                {
+                    "word_in_sentence": "promenera",
+                    "base_form": "promenera",
+                    "position_start": 74,
+                    "position_end": 83
+                }
+            ]
         },
         {
-          "word_in_sentence": "gå i arv",
-          "base_form": "gå i arv",
-          "position_start": 236,
-          "position_end": 244
+            "sentence_id": "art_03_s020",
+            "sv": "Jag vet att det är långt dit, men drömmar är fria.",
+            "en": "",
+            "target_words": []
         },
         {
-          "word_in_sentence": "köra på",
-          "base_form": "köra på",
-          "position_start": 1334,
-          "position_end": 1341
+            "sentence_id": "art_03_s021",
+            "sv": "Vår packning började väga mycket.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "väga",
+                    "base_form": "väga",
+                    "position_start": 21,
+                    "position_end": 25
+                }
+            ]
         },
         {
-          "word_in_sentence": "flygblad",
-          "base_form": "flygblad",
-          "position_start": 1103,
-          "position_end": 1111
+            "sentence_id": "art_03_s022",
+            "sv": "Vi ville åka ut ur skogen, så vi bestämde oss för att vi skulle åka dit en annan gång.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "en annan gång",
+                    "base_form": "en annan gång",
+                    "position_start": 72,
+                    "position_end": 85
+                },
+                {
+                    "word_in_sentence": "åka ut ur",
+                    "base_form": "åka ur",
+                    "position_start": 9,
+                    "position_end": 18
+                }
+            ]
         },
         {
-          "word_in_sentence": "stabil",
-          "base_form": "stabil",
-          "position_start": 679,
-          "position_end": 685
+            "sentence_id": "art_03_s023",
+            "sv": "Nu är det vinter och det finns vägsalt på varje vinterväg, vilket är ett måste enligt vår grundlag för säkerhet.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "vägsalt",
+                    "base_form": "vägsalt",
+                    "position_start": 31,
+                    "position_end": 38
+                },
+                {
+                    "word_in_sentence": "vinterväg",
+                    "base_form": "vinterväg",
+                    "position_start": 48,
+                    "position_end": 57
+                },
+                {
+                    "word_in_sentence": "grundlag",
+                    "base_form": "grundlag",
+                    "position_start": 90,
+                    "position_end": 98
+                },
+                {
+                    "word_in_sentence": "Nu",
+                    "base_form": "nu",
+                    "position_start": 0,
+                    "position_end": 2
+                }
+            ]
         },
         {
-          "word_in_sentence": "åka ut ur",
-          "base_form": "åka ur",
-          "position_start": 1488,
-          "position_end": 1497
+            "sentence_id": "art_03_s024",
+            "sv": "Det kan vara en läskig upplevelse att köra när det är halt.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "läskig",
+                    "base_form": "läskig",
+                    "position_start": 16,
+                    "position_end": 22
+                }
+            ]
         },
         {
-          "word_in_sentence": "cykelbana",
-          "base_form": "cykelbana",
-          "position_start": 1348,
-          "position_end": 1357
+            "sentence_id": "art_03_s025",
+            "sv": "Båda mina vänner är hemma nu, och vi är redo att ge oss ut på nya äventyr under nästa ledighet.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "Båda",
+                    "base_form": "båda",
+                    "position_start": 0,
+                    "position_end": 4
+                },
+                {
+                    "word_in_sentence": "under",
+                    "base_form": "under",
+                    "position_start": 74,
+                    "position_end": 79
+                }
+            ]
         },
         {
-          "word_in_sentence": "grundlag",
-          "base_form": "grundlag",
-          "position_start": 1657,
-          "position_end": 1665
+            "sentence_id": "art_03_s026",
+            "sv": "Att röra på sig är alltid bra.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "röra",
+                    "base_form": "röra",
+                    "position_start": 4,
+                    "position_end": 8
+                }
+            ]
         },
         {
-          "word_in_sentence": "bila",
-          "base_form": "bila",
-          "position_start": 186,
-          "position_end": 190
-        },
-        {
-          "word_in_sentence": "läskig",
-          "base_form": "läskig",
-          "position_start": 1696,
-          "position_end": 1702
-        },
-        {
-          "word_in_sentence": "stig",
-          "base_form": "stig",
-          "position_start": 1081,
-          "position_end": 1085
-        },
-        {
-          "word_in_sentence": "turistnäring",
-          "base_form": "turistnäring",
-          "position_start": 328,
-          "position_end": 340
-        },
-        {
-          "word_in_sentence": "turistinformation",
-          "base_form": "turisinformation",
-          "position_start": 395,
-          "position_end": 412
-        },
-        {
-          "word_in_sentence": "campa",
-          "base_form": "campa",
-          "position_start": 280,
-          "position_end": 285
-        },
-        {
-          "word_in_sentence": "Tain",
-          "base_form": "tain",
-          "position_start": 1376,
-          "position_end": 1380
-        },
-        {
-          "word_in_sentence": "kappsegling",
-          "base_form": "kappsegling",
-          "position_start": 1177,
-          "position_end": 1188
-        },
-        {
-          "word_in_sentence": "guida",
-          "base_form": "guida",
-          "position_start": 727,
-          "position_end": 732
-        },
-        {
-          "word_in_sentence": "guidad tur",
-          "base_form": "guidad tur",
-          "position_start": 743,
-          "position_end": 753
-        },
-        {
-          "word_in_sentence": "året runt",
-          "base_form": "året runt",
-          "position_start": 286,
-          "position_end": 295
-        },
-        {
-          "word_in_sentence": "ta sig runt",
-          "base_form": "ta sig runt",
-          "position_start": 629,
-          "position_end": 640
-        },
-        {
-          "word_in_sentence": "promenera",
-          "base_form": "promenera",
-          "position_start": 1314,
-          "position_end": 1323
-        },
-        {
-          "word_in_sentence": "hamn",
-          "base_form": "hamn",
-          "position_start": 652,
-          "position_end": 656
-        },
-        {
-          "word_in_sentence": "roddbåt",
-          "base_form": "roddbåt",
-          "position_start": 613,
-          "position_end": 620
-        },
-        {
-          "word_in_sentence": "bra",
-          "base_form": "bra",
-          "position_start": 671,
-          "position_end": 674
-        },
-        {
-          "word_in_sentence": "Nu",
-          "base_form": "nu",
-          "position_start": 1567,
-          "position_end": 1569
-        },
-        {
-          "word_in_sentence": "andra",
-          "base_form": "andra",
-          "position_start": 1223,
-          "position_end": 1228
-        },
-        {
-          "word_in_sentence": "bli",
-          "base_form": "bli",
-          "position_start": 816,
-          "position_end": 819
-        },
-        {
-          "word_in_sentence": "Båda",
-          "base_form": "båda",
-          "position_start": 1740,
-          "position_end": 1744
-        },
-        {
-          "word_in_sentence": "talade",
-          "base_form": "tala",
-          "position_start": 702,
-          "position_end": 708
-        },
-        {
-          "word_in_sentence": "sedan",
-          "base_form": "sedan",
-          "position_start": 102,
-          "position_end": 107
-        },
-        {
-          "word_in_sentence": "under",
-          "base_form": "under",
-          "position_start": 1814,
-          "position_end": 1819
-        },
-        {
-          "word_in_sentence": "ge",
-          "base_form": "ge",
-          "position_start": 56,
-          "position_end": 58
-        },
-        {
-          "word_in_sentence": "röra",
-          "base_form": "röra",
-          "position_start": 1840,
-          "position_end": 1844
-        },
-        {
-          "word_in_sentence": "Två",
-          "base_form": "två",
-          "position_start": 694,
-          "position_end": 697
-        },
-        {
-          "word_in_sentence": "Vem",
-          "base_form": "vem",
-          "position_start": 1867,
-          "position_end": 1870
-        },
-        {
-          "word_in_sentence": "många",
-          "base_form": "många",
-          "position_start": 491,
-          "position_end": 496
-        },
-        {
-          "word_in_sentence": "gå",
-          "base_form": "gå",
-          "position_start": 12,
-          "position_end": 14
-        },
-        {
-          "word_in_sentence": "Mellan",
-          "base_form": "mellan",
-          "position_start": 559,
-          "position_end": 565
-        },
-        {
-          "word_in_sentence": "använda",
-          "base_form": "använda",
-          "position_start": 602,
-          "position_end": 609
-        },
-        {
-          "word_in_sentence": "snabb",
-          "base_form": "snabb",
-          "position_start": 108,
-          "position_end": 113
-        },
-        {
-          "word_in_sentence": "stark",
-          "base_form": "stark",
-          "position_start": 346,
-          "position_end": 351
-        },
-        {
-          "word_in_sentence": "fin",
-          "base_form": "fin",
-          "position_start": 202,
-          "position_end": 205
+            "sentence_id": "art_03_s027",
+            "sv": "Vem vet vart vi ska gå nästa gång?",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "Vem",
+                    "base_form": "vem",
+                    "position_start": 0,
+                    "position_end": 3
+                }
+            ]
         }
-      ]
-    }
-  ],
-  "primary_words_used": [
-    "skärgård",
-    "resa sig",
-    "bilda",
-    "vägsalt",
-    "väga",
-    "gå i ide",
-    "bilda grunden för",
-    "vinterväg",
-    "gå till attack",
-    "Vet du när bussarna går?",
-    "Vad hände igår?",
-    "en annan gång",
-    "långpromenad",
-    "Vet du vad som hände igår?",
-    "ressugen",
-    "ferraribil",
-    "gatuförsäljare",
-    "söndagspromenad",
-    "turist",
-    "gå i arv",
-    "köra på",
-    "flygblad",
-    "stabil",
-    "åka ur",
-    "cykelbana",
-    "grundlag",
-    "bila",
-    "läskig",
-    "stig",
-    "turistnäring",
-    "turisinformation",
-    "campa",
-    "tain",
-    "kappsegling",
-    "guida",
-    "guidad tur",
-    "året runt",
-    "ta sig runt",
-    "promenera",
-    "hamn",
-    "roddbåt",
-    "bra",
-    "nu",
-    "andra",
-    "bli",
-    "båda",
-    "tala",
-    "sedan",
-    "under",
-    "ge",
-    "röra",
-    "två",
-    "vem",
-    "många",
-    "gå",
-    "mellan",
-    "använda",
-    "snabb",
-    "stark",
-    "fin"
-  ],
-  "secondary_words_used": []
+    ],
+    "primary_words_used": [
+        "skärgård",
+        "resa sig",
+        "bilda",
+        "vägsalt",
+        "väga",
+        "gå i ide",
+        "bilda grunden för",
+        "vinterväg",
+        "gå till attack",
+        "Vet du när bussarna går?",
+        "Vad hände igår?",
+        "en annan gång",
+        "långpromenad",
+        "Vet du vad som hände igår?",
+        "ressugen",
+        "ferraribil",
+        "gatuförsäljare",
+        "söndagspromenad",
+        "turist",
+        "gå i arv",
+        "köra på",
+        "flygblad",
+        "stabil",
+        "åka ur",
+        "cykelbana",
+        "grundlag",
+        "bila",
+        "läskig",
+        "stig",
+        "turistnäring",
+        "turisinformation",
+        "campa",
+        "tain",
+        "kappsegling",
+        "guida",
+        "guidad tur",
+        "året runt",
+        "ta sig runt",
+        "promenera",
+        "hamn",
+        "roddbåt",
+        "bra",
+        "nu",
+        "andra",
+        "bli",
+        "båda",
+        "tala",
+        "sedan",
+        "under",
+        "ge",
+        "röra",
+        "två",
+        "vem",
+        "många",
+        "gå",
+        "mellan",
+        "använda",
+        "snabb",
+        "stark",
+        "fin"
+    ],
+    "secondary_words_used": []
 }

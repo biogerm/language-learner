@@ -8,8 +8,8 @@
     "target_word_count": 60,
     "sentences": [
         {
-            "sentence_id": "art31_s001",
-            "sv": "När min granne frågade hur jag mådde sa jag: \"–Jo, det är bara bra.\" Men sanningen är att den här veckan har varit ganska stressig. I måndags bestämde jag mig för en ny livsstil. Förra veckan bestämde jag mig för att förändra varje vardaglig rutin jag hade. Jag hade nämligen svåra sömnproblem. Min läkare gav mig ett val: antingen…eller. Han tyckte jag skulle vara utomhus mer.\n\nFör några dagar sedan började jag promenera. Jag gick till en klädbutik som hade en stor rea hela dagen. Istället för att titta i en gammal katalog köpte jag en ny vit baddräkt och ett par extra tjocka strumpor. Men plötsligt märkte jag att min plånbok var borta. Jag ville inte råka göra något dumt eller verka som att jag försökte snatta. Jag tänkte fråga någon i personalen som kunde agera. De hittade den inte. Jag brukar inte snåla, men en dyr klocka jag hade i väskan var också borta. Hade jag lagt den någonstans? \n\nMorgonen därpå var det iskallt och marken var isig. Jag tog en ful jacka och ett paraply. Jag var inte van vid kylan och började frysa ända in i min själ. Jag tänkte drömma mig bort. Min nuvarande lägenhet är inte lika stor som huset jag bodde i när jag var 10 år gammal, men varje detalj är viktig. Jag gick in i mitt sovrum för att vila i en kvart. \n\n\"Förbered dig för i övermorgon!\" sa en sjungande röst i radion. Det var ett program om en duktig husmor. Ett tips var att städa ur sitt kylskåp, ett annat var att bada bastu i sitt lilla badrum för att ta det lugnt. Att bada bastu är en användbar metod för avkoppling. Jag har faktiskt inte badat bastu alls, i alla fall inte på flera månader. Förut badade jag flera gånger i veckan. \n\nEfter ett par dagar kände jag mig bättre. Jag slutade ge upp och bestämde mig för att släppa ut all stress. Om något går sönder, vad kommer det betyda om hundra år? Man måste sova åtta timmar per dygn, minst en viss tid för sig själv. Mitt favoritlag kom på sjunde plats i ligan, men vad gör det? Livet går vidare!",
+            "sentence_id": "art_31_s001",
+            "sv": "När min granne frågade hur jag mådde sa jag: \"–Jo, det är bara bra.\"",
             "en": "",
             "target_words": [
                 {
@@ -23,362 +23,591 @@
                     "base_form": "–Jo, det är bara bra.",
                     "position_start": 46,
                     "position_end": 67
-                },
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_31_s002",
+            "sv": "Men sanningen är att den här veckan har varit ganska stressig.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "den här veckan",
                     "base_form": "den här veckan",
-                    "position_start": 90,
-                    "position_end": 104
-                },
+                    "position_start": 21,
+                    "position_end": 35
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_31_s003",
+            "sv": "I måndags bestämde jag mig för en ny livsstil.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "I måndags",
                     "base_form": "i måndags",
-                    "position_start": 132,
-                    "position_end": 141
+                    "position_start": 0,
+                    "position_end": 9
                 },
                 {
                     "word_in_sentence": "livsstil",
                     "base_form": "livsstil",
-                    "position_start": 169,
-                    "position_end": 177
-                },
+                    "position_start": 37,
+                    "position_end": 45
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_31_s004",
+            "sv": "Förra veckan bestämde jag mig för att förändra varje vardaglig rutin jag hade.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "Förra veckan",
                     "base_form": "förra veckan",
-                    "position_start": 179,
-                    "position_end": 191
+                    "position_start": 0,
+                    "position_end": 12
                 },
                 {
                     "word_in_sentence": "vardaglig",
                     "base_form": "vardaglig",
-                    "position_start": 232,
-                    "position_end": 241
-                },
+                    "position_start": 53,
+                    "position_end": 62
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_31_s005",
+            "sv": "Jag hade nämligen svåra sömnproblem.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "sömnproblem",
                     "base_form": "sömnproblem",
-                    "position_start": 282,
-                    "position_end": 293
-                },
+                    "position_start": 24,
+                    "position_end": 35
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_31_s006",
+            "sv": "Min läkare gav mig ett val: antingen…eller.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "antingen…eller",
                     "base_form": "antingen…eller",
-                    "position_start": 323,
-                    "position_end": 337
-                },
+                    "position_start": 28,
+                    "position_end": 42
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_31_s007",
+            "sv": "Han tyckte jag skulle vara utomhus mer.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "vara ute",
                     "base_form": "vara ute",
-                    "position_start": 361,
-                    "position_end": 369
+                    "position_start": 22,
+                    "position_end": 30
                 },
                 {
                     "word_in_sentence": "utanför hemmet",
                     "base_form": "utanför hemmet",
-                    "position_start": 374,
-                    "position_end": 388
-                },
+                    "position_start": 35,
+                    "position_end": 49
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_31_s008",
+            "sv": "För några dagar sedan började jag promenera.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "För några dagar sedan",
                     "base_form": "för några dagar sedan",
-                    "position_start": 380,
-                    "position_end": 401
-                },
+                    "position_start": 0,
+                    "position_end": 21
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_31_s009",
+            "sv": "Jag gick till en klädbutik som hade en stor rea hela dagen.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "hela dagen",
                     "base_form": "hela dagen",
-                    "position_start": 473,
-                    "position_end": 483
+                    "position_start": 48,
+                    "position_end": 58
                 },
                 {
                     "word_in_sentence": "realisation",
                     "base_form": "realisation",
-                    "position_start": 480,
-                    "position_end": 491
-                },
+                    "position_start": 55,
+                    "position_end": 66
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_31_s010",
+            "sv": "Istället för att titta i en gammal katalog köpte jag en ny vit baddräkt och ett par extra tjocka strumpor.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "katalog",
                     "base_form": "katalog",
-                    "position_start": 520,
-                    "position_end": 527
+                    "position_start": 35,
+                    "position_end": 42
                 },
                 {
                     "word_in_sentence": "vit",
                     "base_form": "vit",
-                    "position_start": 544,
-                    "position_end": 547
+                    "position_start": 59,
+                    "position_end": 62
                 },
                 {
                     "word_in_sentence": "baddräkt",
                     "base_form": "baddräkt",
-                    "position_start": 548,
-                    "position_end": 556
-                },
+                    "position_start": 63,
+                    "position_end": 71
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_31_s011",
+            "sv": "Men plötsligt märkte jag att min plånbok var borta.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "strumpa",
                     "base_form": "strumpa",
-                    "position_start": 595,
-                    "position_end": 602
+                    "position_start": 3,
+                    "position_end": 10
                 },
                 {
                     "word_in_sentence": "plånbok",
                     "base_form": "plånbok",
-                    "position_start": 625,
-                    "position_end": 632
-                },
+                    "position_start": 33,
+                    "position_end": 40
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_31_s012",
+            "sv": "Jag ville inte råka göra något dumt eller verka som att jag försökte snatta.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "råka",
                     "base_form": "råka",
-                    "position_start": 659,
-                    "position_end": 663
+                    "position_start": 15,
+                    "position_end": 19
                 },
                 {
                     "word_in_sentence": "göra något dumt",
                     "base_form": "göra något dumt",
-                    "position_start": 664,
-                    "position_end": 679
+                    "position_start": 20,
+                    "position_end": 35
                 },
                 {
                     "word_in_sentence": "verka",
                     "base_form": "verka",
-                    "position_start": 686,
-                    "position_end": 691
+                    "position_start": 42,
+                    "position_end": 47
                 },
                 {
                     "word_in_sentence": "snatta",
                     "base_form": "snatta",
-                    "position_start": 713,
-                    "position_end": 719
-                },
+                    "position_start": 69,
+                    "position_end": 75
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_31_s013",
+            "sv": "Jag tänkte fråga någon i personalen som kunde agera.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "fråga någon",
                     "base_form": "fråga efter någon",
-                    "position_start": 732,
-                    "position_end": 743
+                    "position_start": 11,
+                    "position_end": 22
                 },
                 {
                     "word_in_sentence": "agera",
                     "base_form": "agera",
-                    "position_start": 767,
-                    "position_end": 772
-                },
+                    "position_start": 46,
+                    "position_end": 51
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_31_s014",
+            "sv": "De hittade den inte.",
+            "en": "",
+            "target_words": []
+        },
+        {
+            "sentence_id": "art_31_s015",
+            "sv": "Jag brukar inte snåla, men en dyr klocka jag hade i väskan var också borta.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "snåla",
                     "base_form": "snåla",
-                    "position_start": 811,
-                    "position_end": 816
+                    "position_start": 16,
+                    "position_end": 21
                 },
                 {
                     "word_in_sentence": "klocka",
                     "base_form": "klocka",
-                    "position_start": 829,
-                    "position_end": 835
-                },
+                    "position_start": 34,
+                    "position_end": 40
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_31_s016",
+            "sv": "Hade jag lagt den någonstans?",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "någonstans",
                     "base_form": "någonstans",
-                    "position_start": 889,
-                    "position_end": 899
-                },
+                    "position_start": 18,
+                    "position_end": 28
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_31_s017",
+            "sv": "Morgonen därpå var det iskallt och marken var isig.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "Morgonen därpå",
                     "base_form": "morgonen därpå",
-                    "position_start": 903,
-                    "position_end": 917
+                    "position_start": 0,
+                    "position_end": 14
                 },
                 {
                     "word_in_sentence": "isig",
                     "base_form": "isig",
-                    "position_start": 949,
-                    "position_end": 953
-                },
+                    "position_start": 46,
+                    "position_end": 50
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_31_s018",
+            "sv": "Jag tog en ful jacka och ett paraply.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "ful",
                     "base_form": "ful",
-                    "position_start": 966,
-                    "position_end": 969
+                    "position_start": 11,
+                    "position_end": 14
                 },
                 {
                     "word_in_sentence": "paraply",
                     "base_form": "paraply",
-                    "position_start": 984,
-                    "position_end": 991
-                },
+                    "position_start": 29,
+                    "position_end": 36
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_31_s019",
+            "sv": "Jag var inte van vid kylan och började frysa ända in i min själ.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "van vid",
                     "base_form": "van vid",
-                    "position_start": 1006,
-                    "position_end": 1013
+                    "position_start": 13,
+                    "position_end": 20
                 },
                 {
                     "word_in_sentence": "frysa",
                     "base_form": "frysa",
-                    "position_start": 1032,
-                    "position_end": 1037
+                    "position_start": 39,
+                    "position_end": 44
                 },
                 {
                     "word_in_sentence": "själ",
                     "base_form": "själ",
-                    "position_start": 1052,
-                    "position_end": 1056
-                },
+                    "position_start": 59,
+                    "position_end": 63
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_31_s020",
+            "sv": "Jag tänkte drömma mig bort.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "drömma",
                     "base_form": "drömma",
-                    "position_start": 1069,
-                    "position_end": 1075
-                },
+                    "position_start": 11,
+                    "position_end": 17
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_31_s021",
+            "sv": "Min nuvarande lägenhet är inte lika stor som huset jag bodde i när jag var 10 år gammal, men varje detalj är viktig.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "inte lika stor",
                     "base_form": "inte lika stor",
-                    "position_start": 1112,
-                    "position_end": 1126
+                    "position_start": 26,
+                    "position_end": 40
                 },
                 {
                     "word_in_sentence": "10 år gammal",
                     "base_form": "10 år gammal",
-                    "position_start": 1161,
-                    "position_end": 1173
+                    "position_start": 75,
+                    "position_end": 87
                 },
                 {
                     "word_in_sentence": "detalj",
                     "base_form": "detalj",
-                    "position_start": 1185,
-                    "position_end": 1191
-                },
+                    "position_start": 99,
+                    "position_end": 105
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_31_s022",
+            "sv": "Jag gick in i mitt sovrum för att vila i en kvart.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "sovrum",
                     "base_form": "sovrum",
-                    "position_start": 1222,
-                    "position_end": 1228
+                    "position_start": 19,
+                    "position_end": 25
                 },
                 {
                     "word_in_sentence": "kvart",
                     "base_form": "kvart",
-                    "position_start": 1247,
-                    "position_end": 1252
-                },
+                    "position_start": 44,
+                    "position_end": 49
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_31_s023",
+            "sv": "\"Förbered dig för i övermorgon!\" sa en sjungande röst i radion.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "Förbered",
                     "base_form": "förbered",
-                    "position_start": 1257,
-                    "position_end": 1265
+                    "position_start": 1,
+                    "position_end": 9
                 },
                 {
                     "word_in_sentence": "i övermorgon",
                     "base_form": "i övermorgon",
-                    "position_start": 1274,
-                    "position_end": 1286
+                    "position_start": 18,
+                    "position_end": 30
                 },
                 {
                     "word_in_sentence": "sjungande",
                     "base_form": "sjungande",
-                    "position_start": 1295,
-                    "position_end": 1304
-                },
+                    "position_start": 39,
+                    "position_end": 48
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_31_s024",
+            "sv": "Det var ett program om en duktig husmor.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "husmor",
                     "base_form": "husmor",
-                    "position_start": 1353,
-                    "position_end": 1359
-                },
+                    "position_start": 33,
+                    "position_end": 39
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_31_s025",
+            "sv": "Ett tips var att städa ur sitt kylskåp, ett annat var att bada bastu i sitt lilla badrum för att ta det lugnt.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "kylskåp",
                     "base_form": "kylskåp",
-                    "position_start": 1392,
-                    "position_end": 1399
+                    "position_start": 31,
+                    "position_end": 38
                 },
                 {
                     "word_in_sentence": "bada bastu",
                     "base_form": "bada bastu",
-                    "position_start": 1419,
-                    "position_end": 1429
+                    "position_start": 58,
+                    "position_end": 68
                 },
                 {
                     "word_in_sentence": "badrum",
                     "base_form": "badrum",
-                    "position_start": 1443,
-                    "position_end": 1449
+                    "position_start": 82,
+                    "position_end": 88
                 },
                 {
                     "word_in_sentence": "ta det lugnt",
                     "base_form": "ta det lugnt",
-                    "position_start": 1458,
-                    "position_end": 1470
-                },
+                    "position_start": 97,
+                    "position_end": 109
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_31_s026",
+            "sv": "Att bada bastu är en användbar metod för avkoppling.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "användbar",
                     "base_form": "användbar",
-                    "position_start": 1493,
-                    "position_end": 1502
-                },
+                    "position_start": 21,
+                    "position_end": 30
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_31_s027",
+            "sv": "Jag har faktiskt inte badat bastu alls, i alla fall inte på flera månader.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "faktisk",
                     "base_form": "faktisk",
-                    "position_start": 1533,
-                    "position_end": 1540
+                    "position_start": 8,
+                    "position_end": 15
                 },
                 {
                     "word_in_sentence": "inte på flera månader",
                     "base_form": "inte på flera månader",
-                    "position_start": 1577,
-                    "position_end": 1598
-                },
+                    "position_start": 52,
+                    "position_end": 73
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_31_s028",
+            "sv": "Förut badade jag flera gånger i veckan.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "flera gånger i veckan",
                     "base_form": "flera gånger i veckan",
-                    "position_start": 1617,
-                    "position_end": 1638
-                },
+                    "position_start": 17,
+                    "position_end": 38
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_31_s029",
+            "sv": "Efter ett par dagar kände jag mig bättre.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "ett par dagar",
                     "base_form": "ett par dagar",
-                    "position_start": 1648,
-                    "position_end": 1661
-                },
+                    "position_start": 6,
+                    "position_end": 19
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_31_s030",
+            "sv": "Jag slutade ge upp och bestämde mig för att släppa ut all stress.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "ge upp",
                     "base_form": "ge upp",
-                    "position_start": 1696,
-                    "position_end": 1702
+                    "position_start": 12,
+                    "position_end": 18
                 },
                 {
                     "word_in_sentence": "släppa ut",
                     "base_form": "släppa ut",
-                    "position_start": 1728,
-                    "position_end": 1737
-                },
+                    "position_start": 44,
+                    "position_end": 53
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_31_s031",
+            "sv": "Om något går sönder, vad kommer det betyda om hundra år?",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "sönder",
                     "base_form": "sönder",
-                    "position_start": 1763,
-                    "position_end": 1769
+                    "position_start": 13,
+                    "position_end": 19
                 },
                 {
                     "word_in_sentence": "betyda",
                     "base_form": "betyda",
-                    "position_start": 1786,
-                    "position_end": 1792
-                },
+                    "position_start": 36,
+                    "position_end": 42
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_31_s032",
+            "sv": "Man måste sova åtta timmar per dygn, minst en viss tid för sig själv.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "per dygn",
                     "base_form": "per dygn",
-                    "position_start": 1834,
-                    "position_end": 1842
+                    "position_start": 27,
+                    "position_end": 35
                 },
                 {
                     "word_in_sentence": "en viss tid",
                     "base_form": "en viss tid",
-                    "position_start": 1850,
-                    "position_end": 1861
-                },
+                    "position_start": 43,
+                    "position_end": 54
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_31_s033",
+            "sv": "Mitt favoritlag kom på sjunde plats i ligan, men vad gör det?",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "sjunde plats",
                     "base_form": "sjunde plats",
-                    "position_start": 1900,
-                    "position_end": 1912
+                    "position_start": 23,
+                    "position_end": 35
                 }
             ]
+        },
+        {
+            "sentence_id": "art_31_s034",
+            "sv": "Livet går vidare!",
+            "en": "",
+            "target_words": []
         }
     ],
     "primary_words_used": [

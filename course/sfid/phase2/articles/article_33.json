@@ -1,441 +1,649 @@
 {
-  "course_id": "sfid",
-  "course_title": "SFI D",
-  "stage_id": "stage_03",
-  "stage_title": "Vardagsliv",
-  "article_id": "art_33",
-  "article_title": "Läsförståelse",
-  "target_word_count": 60,
-  "sentences": [
-    {
-      "sentence_id": "art33_s001",
-      "sv": "Visste du att…? Våren är min favoritårstid, särskilt under en storhelg som påsk. Jo, det är sant! Under senare delen av… ja, våren, brukar jag ofta chilla. \"Brukar du mysa?\" frågade mitt syskon mig nyligen. Jag svarade ja, jag älskar mys, och jag älskar att mysa. Jag gillar att ligga kvar i min mjuka pyjamas i min stora soffa, eller i en bekväm fåtölj, med en intressant damtidning bredvid mig. \n\nMen på många ställen i stan gillar folk att gå ut på en barrunda. Det är en rolig variant av underhållning. Någon kanske vill flytta ut strax utanför centrum för att få lite lugn, medan andra vill vara mitt i stan. \"Jag har inte ett öre.\" sa min kompis häromdagen. Han var helt pank. Han sa att han fick panta varje tomflaska och plocka ihop varje småsak ur sitt skåp för att klara sig. Hans veckopeng var helt slut. \n\nJag ville inte hålla min egen ekonomi hemlig, så jag sa att jag måste tänka på varje grej jag köper. För att spara pengar tog jag ett klokt beslut: jag ska inte renovera mitt gamla kök nu. Det är bara viktigt att täcka mina basbehov, allt annat räknas inte just nu. Jag är inte lika flitig som en myra längre. \n\nIstället vill jag ta hand om mig själv. Du måste också lära dig att ta hand om dig själv. Man måste vara beredd på förändring i livet. När jag kom till min lokala kiosk kände jag att det började lukta gott av godis och kaffe. Jag köpte en pappersstrut med karameller och ett tuggummi och gick sedan till en kassa. Jag betalade och lade varorna i min väska. Sedan ställde jag mig i kö för att vänta på bussen. \"Det var hemskt trevligt.\" sa jag till föraren när jag klev på.\n\nNär jag kom hem ville jag ändra inredningen lite. Jag ville slå upp fönstren och låta frisk vårluft strömma in i rummet. Jag kunde peka på en vacker nyans på väggen och jämföra färgerna med min nya matta. Mitt hem är en helig plats för mig. Nästa vecka kanske en god vän ska titta förbi.",
-      "en": "",
-      "target_words": [
+    "course_id": "sfid",
+    "course_title": "SFI D",
+    "stage_id": "stage_03",
+    "stage_title": "Vardagsliv",
+    "article_id": "art_33",
+    "article_title": "Läsförståelse",
+    "target_word_count": 60,
+    "sentences": [
         {
-          "word_in_sentence": "dig själv",
-          "base_form": "dig själv",
-          "position_start": 1209,
-          "position_end": 1218
+            "sentence_id": "art_33_s001",
+            "sv": "Visste du att…?",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "Visste du att…?",
+                    "base_form": "Visste du att…?",
+                    "position_start": 0,
+                    "position_end": 15
+                }
+            ]
         },
         {
-          "word_in_sentence": "bredvid",
-          "base_form": "bredvid",
-          "position_start": 384,
-          "position_end": 391
+            "sentence_id": "art_33_s002",
+            "sv": "Våren är min favoritårstid, särskilt under en storhelg som påsk.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "storhelg",
+                    "base_form": "storhelg",
+                    "position_start": 46,
+                    "position_end": 54
+                },
+                {
+                    "word_in_sentence": "påsk",
+                    "base_form": "påsk",
+                    "position_start": 59,
+                    "position_end": 63
+                }
+            ]
         },
         {
-          "word_in_sentence": "lukta",
-          "base_form": "lukta",
-          "position_start": 1325,
-          "position_end": 1330
+            "sentence_id": "art_33_s003",
+            "sv": "Jo, det är sant!",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "Jo",
+                    "base_form": "jo",
+                    "position_start": 0,
+                    "position_end": 2
+                }
+            ]
         },
         {
-          "word_in_sentence": "titta förbi",
-          "base_form": "titta förbi",
-          "position_start": 1879,
-          "position_end": 1890
+            "sentence_id": "art_33_s004",
+            "sv": "Under senare delen av… ja, våren, brukar jag ofta chilla.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "chilla",
+                    "base_form": "chilla",
+                    "position_start": 50,
+                    "position_end": 56
+                },
+                {
+                    "word_in_sentence": "Under senare delen av…",
+                    "base_form": "under senare delen av…",
+                    "position_start": 0,
+                    "position_end": 22
+                },
+                {
+                    "word_in_sentence": "brukar",
+                    "base_form": "bruka",
+                    "position_start": 34,
+                    "position_end": 40
+                }
+            ]
         },
         {
-          "word_in_sentence": "småsak",
-          "base_form": "småsak",
-          "position_start": 747,
-          "position_end": 753
+            "sentence_id": "art_33_s005",
+            "sv": "\"Brukar du mysa?\" frågade mitt syskon mig nyligen.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "mys",
+                    "base_form": "mys",
+                    "position_start": 11,
+                    "position_end": 14
+                },
+                {
+                    "word_in_sentence": "mysa",
+                    "base_form": "mysa",
+                    "position_start": 11,
+                    "position_end": 15
+                },
+                {
+                    "word_in_sentence": "Brukar du mysa?",
+                    "base_form": "Brukar du mysa?",
+                    "position_start": 1,
+                    "position_end": 16
+                },
+                {
+                    "word_in_sentence": "syskon",
+                    "base_form": "syskon",
+                    "position_start": 31,
+                    "position_end": 37
+                }
+            ]
         },
         {
-          "word_in_sentence": "veckopeng",
-          "base_form": "veckopeng",
-          "position_start": 791,
-          "position_end": 800
+            "sentence_id": "art_33_s006",
+            "sv": "Jag svarade ja, jag älskar mys, och jag älskar att mysa.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "rad",
+                    "base_form": "rad",
+                    "position_start": 7,
+                    "position_end": 10
+                }
+            ]
         },
         {
-          "word_in_sentence": "soffa",
-          "base_form": "soffa",
-          "position_start": 322,
-          "position_end": 327
+            "sentence_id": "art_33_s007",
+            "sv": "Jag gillar att ligga kvar i min mjuka pyjamas i min stora soffa, eller i en bekväm fåtölj, med en intressant damtidning bredvid mig.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "bredvid",
+                    "base_form": "bredvid",
+                    "position_start": 120,
+                    "position_end": 127
+                },
+                {
+                    "word_in_sentence": "soffa",
+                    "base_form": "soffa",
+                    "position_start": 58,
+                    "position_end": 63
+                },
+                {
+                    "word_in_sentence": "ligga kvar",
+                    "base_form": "ligga kvar",
+                    "position_start": 15,
+                    "position_end": 25
+                },
+                {
+                    "word_in_sentence": "bekväm",
+                    "base_form": "bekväm",
+                    "position_start": 76,
+                    "position_end": 82
+                },
+                {
+                    "word_in_sentence": "fåtölj",
+                    "base_form": "fåtölj",
+                    "position_start": 83,
+                    "position_end": 89
+                },
+                {
+                    "word_in_sentence": "damtidning",
+                    "base_form": "damtidning",
+                    "position_start": 109,
+                    "position_end": 119
+                },
+                {
+                    "word_in_sentence": "pyjamas",
+                    "base_form": "pyjamas",
+                    "position_start": 38,
+                    "position_end": 45
+                }
+            ]
         },
         {
-          "word_in_sentence": "ligga kvar",
-          "base_form": "ligga kvar",
-          "position_start": 279,
-          "position_end": 289
+            "sentence_id": "art_33_s008",
+            "sv": "Men på många ställen i stan gillar folk att gå ut på en barrunda.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "stan",
+                    "base_form": "stan",
+                    "position_start": 23,
+                    "position_end": 27
+                },
+                {
+                    "word_in_sentence": "barrunda",
+                    "base_form": "barrunda",
+                    "position_start": 56,
+                    "position_end": 64
+                },
+                {
+                    "word_in_sentence": "Men",
+                    "base_form": "men",
+                    "position_start": 0,
+                    "position_end": 3
+                },
+                {
+                    "word_in_sentence": "på många ställen",
+                    "base_form": "på många ställen",
+                    "position_start": 4,
+                    "position_end": 20
+                }
+            ]
         },
         {
-          "word_in_sentence": "bekväm",
-          "base_form": "bekväm",
-          "position_start": 340,
-          "position_end": 346
+            "sentence_id": "art_33_s009",
+            "sv": "Det är en rolig variant av underhållning.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "variant av",
+                    "base_form": "variant av",
+                    "position_start": 16,
+                    "position_end": 26
+                }
+            ]
         },
         {
-          "word_in_sentence": "flytta ut",
-          "base_form": "flytta ut",
-          "position_start": 525,
-          "position_end": 534
+            "sentence_id": "art_33_s010",
+            "sv": "Någon kanske vill flytta ut strax utanför centrum för att få lite lugn, medan andra vill vara mitt i stan.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "flytta ut",
+                    "base_form": "flytta ut",
+                    "position_start": 18,
+                    "position_end": 27
+                },
+                {
+                    "word_in_sentence": "strax utanför",
+                    "base_form": "strax utanför",
+                    "position_start": 28,
+                    "position_end": 41
+                },
+                {
+                    "word_in_sentence": "Någon",
+                    "base_form": "någon",
+                    "position_start": 0,
+                    "position_end": 5
+                }
+            ]
         },
         {
-          "word_in_sentence": "väska",
-          "base_form": "väska",
-          "position_start": 1480,
-          "position_end": 1485
+            "sentence_id": "art_33_s011",
+            "sv": "\"Jag har inte ett öre.\" sa min kompis häromdagen.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "Jag har inte ett öre.",
+                    "base_form": "Jag har inte ett öre.",
+                    "position_start": 1,
+                    "position_end": 22
+                }
+            ]
         },
         {
-          "word_in_sentence": "strax utanför",
-          "base_form": "strax utanför",
-          "position_start": 535,
-          "position_end": 548
+            "sentence_id": "art_33_s012",
+            "sv": "Han var helt pank.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "pank",
+                    "base_form": "pank",
+                    "position_start": 13,
+                    "position_end": 17
+                }
+            ]
         },
         {
-          "word_in_sentence": "mys",
-          "base_form": "mys",
-          "position_start": 167,
-          "position_end": 170
+            "sentence_id": "art_33_s013",
+            "sv": "Han sa att han fick panta varje tomflaska och plocka ihop varje småsak ur sitt skåp för att klara sig.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "småsak",
+                    "base_form": "småsak",
+                    "position_start": 64,
+                    "position_end": 70
+                },
+                {
+                    "word_in_sentence": "panta",
+                    "base_form": "panta",
+                    "position_start": 20,
+                    "position_end": 25
+                },
+                {
+                    "word_in_sentence": "tomflaska",
+                    "base_form": "tomsflaska",
+                    "position_start": 32,
+                    "position_end": 41
+                },
+                {
+                    "word_in_sentence": "skåp",
+                    "base_form": "skåp",
+                    "position_start": 79,
+                    "position_end": 83
+                },
+                {
+                    "word_in_sentence": "plocka ihop",
+                    "base_form": "plocka ihop",
+                    "position_start": 46,
+                    "position_end": 57
+                }
+            ]
         },
         {
-          "word_in_sentence": "kök",
-          "base_form": "kök",
-          "position_start": 999,
-          "position_end": 1002
+            "sentence_id": "art_33_s014",
+            "sv": "Hans veckopeng var helt slut.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "veckopeng",
+                    "base_form": "veckopeng",
+                    "position_start": 5,
+                    "position_end": 14
+                }
+            ]
         },
         {
-          "word_in_sentence": "panta",
-          "base_form": "panta",
-          "position_start": 703,
-          "position_end": 708
+            "sentence_id": "art_33_s015",
+            "sv": "Jag ville inte hålla min egen ekonomi hemlig, så jag sa att jag måste tänka på varje grej jag köper.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "grej",
+                    "base_form": "grej",
+                    "position_start": 85,
+                    "position_end": 89
+                },
+                {
+                    "word_in_sentence": "hålla hemlig",
+                    "base_form": "hålla hemlig",
+                    "position_start": 16,
+                    "position_end": 28
+                }
+            ]
         },
         {
-          "word_in_sentence": "fåtölj",
-          "base_form": "fåtölj",
-          "position_start": 347,
-          "position_end": 353
+            "sentence_id": "art_33_s016",
+            "sv": "För att spara pengar tog jag ett klokt beslut: jag ska inte renovera mitt gamla kök nu.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "kök",
+                    "base_form": "kök",
+                    "position_start": 80,
+                    "position_end": 83
+                },
+                {
+                    "word_in_sentence": "renovera",
+                    "base_form": "renovera",
+                    "position_start": 60,
+                    "position_end": 68
+                },
+                {
+                    "word_in_sentence": "beslut",
+                    "base_form": "beslut",
+                    "position_start": 39,
+                    "position_end": 45
+                }
+            ]
         },
         {
-          "word_in_sentence": "basbehov",
-          "base_form": "basbehov",
-          "position_start": 1042,
-          "position_end": 1050
+            "sentence_id": "art_33_s017",
+            "sv": "Det är bara viktigt att täcka mina basbehov, allt annat räknas inte just nu.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "basbehov",
+                    "base_form": "basbehov",
+                    "position_start": 35,
+                    "position_end": 43
+                },
+                {
+                    "word_in_sentence": "räknas",
+                    "base_form": "räknas",
+                    "position_start": 56,
+                    "position_end": 62
+                }
+            ]
         },
         {
-          "word_in_sentence": "grej",
-          "base_form": "grej",
-          "position_start": 903,
-          "position_end": 907
+            "sentence_id": "art_33_s018",
+            "sv": "Jag är inte lika flitig som en myra längre.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "flitig som en myra",
+                    "base_form": "flitig som en myra",
+                    "position_start": 17,
+                    "position_end": 35
+                }
+            ]
         },
         {
-          "word_in_sentence": "tomflaska",
-          "base_form": "tomsflaska",
-          "position_start": 715,
-          "position_end": 724
+            "sentence_id": "art_33_s019",
+            "sv": "Istället vill jag ta hand om mig själv.",
+            "en": "",
+            "target_words": []
         },
         {
-          "word_in_sentence": "mysa",
-          "base_form": "mysa",
-          "position_start": 167,
-          "position_end": 171
+            "sentence_id": "art_33_s020",
+            "sv": "Du måste också lära dig att ta hand om dig själv.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "dig själv",
+                    "base_form": "dig själv",
+                    "position_start": 39,
+                    "position_end": 48
+                }
+            ]
         },
         {
-          "word_in_sentence": "Brukar du mysa?",
-          "base_form": "Brukar du mysa?",
-          "position_start": 157,
-          "position_end": 172
+            "sentence_id": "art_33_s021",
+            "sv": "Man måste vara beredd på förändring i livet.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "vara beredd",
+                    "base_form": "vara beredd",
+                    "position_start": 10,
+                    "position_end": 21
+                }
+            ]
         },
         {
-          "word_in_sentence": "damtidning",
-          "base_form": "damtidning",
-          "position_start": 373,
-          "position_end": 383
+            "sentence_id": "art_33_s022",
+            "sv": "När jag kom till min lokala kiosk kände jag att det började lukta gott av godis och kaffe.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "lukta",
+                    "base_form": "lukta",
+                    "position_start": 60,
+                    "position_end": 65
+                },
+                {
+                    "word_in_sentence": "kiosk",
+                    "base_form": "kiosk",
+                    "position_start": 28,
+                    "position_end": 33
+                }
+            ]
         },
         {
-          "word_in_sentence": "skåp",
-          "base_form": "skåp",
-          "position_start": 762,
-          "position_end": 766
+            "sentence_id": "art_33_s023",
+            "sv": "Jag köpte en pappersstrut med karameller och ett tuggummi och gick sedan till en kassa.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "kassa",
+                    "base_form": "kassa",
+                    "position_start": 81,
+                    "position_end": 86
+                },
+                {
+                    "word_in_sentence": "tuggummi",
+                    "base_form": "tuggummi",
+                    "position_start": 49,
+                    "position_end": 57
+                },
+                {
+                    "word_in_sentence": "pappersstrut",
+                    "base_form": "pappersstrut",
+                    "position_start": 13,
+                    "position_end": 25
+                }
+            ]
         },
         {
-          "word_in_sentence": "renovera",
-          "base_form": "renovera",
-          "position_start": 979,
-          "position_end": 987
+            "sentence_id": "art_33_s024",
+            "sv": "Jag betalade och lade varorna i min väska.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "väska",
+                    "base_form": "väska",
+                    "position_start": 36,
+                    "position_end": 41
+                }
+            ]
         },
         {
-          "word_in_sentence": "stan",
-          "base_form": "stan",
-          "position_start": 422,
-          "position_end": 426
+            "sentence_id": "art_33_s025",
+            "sv": "Sedan ställde jag mig i kö för att vänta på bussen.",
+            "en": "",
+            "target_words": []
         },
         {
-          "word_in_sentence": "syskon",
-          "base_form": "syskon",
-          "position_start": 187,
-          "position_end": 193
+            "sentence_id": "art_33_s026",
+            "sv": "\"Det var hemskt trevligt.\" sa jag till föraren när jag klev på.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "Det var hemskt trevligt.",
+                    "base_form": "Det var hemskt trevligt.",
+                    "position_start": 1,
+                    "position_end": 25
+                }
+            ]
         },
         {
-          "word_in_sentence": "pyjamas",
-          "base_form": "pyjamas",
-          "position_start": 302,
-          "position_end": 309
+            "sentence_id": "art_33_s027",
+            "sv": "När jag kom hem ville jag ändra inredningen lite.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "ändra",
+                    "base_form": "ändra",
+                    "position_start": 26,
+                    "position_end": 31
+                }
+            ]
         },
         {
-          "word_in_sentence": "peka på",
-          "base_form": "peka på",
-          "position_start": 1735,
-          "position_end": 1742
+            "sentence_id": "art_33_s028",
+            "sv": "Jag ville slå upp fönstren och låta frisk vårluft strömma in i rummet.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "strömma",
+                    "base_form": "strömma",
+                    "position_start": 50,
+                    "position_end": 57
+                },
+                {
+                    "word_in_sentence": "slå upp",
+                    "base_form": "slå upp",
+                    "position_start": 10,
+                    "position_end": 17
+                }
+            ]
         },
         {
-          "word_in_sentence": "storhelg",
-          "base_form": "storhelg",
-          "position_start": 62,
-          "position_end": 70
+            "sentence_id": "art_33_s029",
+            "sv": "Jag kunde peka på en vacker nyans på väggen och jämföra färgerna med min nya matta.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "peka på",
+                    "base_form": "peka på",
+                    "position_start": 10,
+                    "position_end": 17
+                },
+                {
+                    "word_in_sentence": "jämföra",
+                    "base_form": "jämföra",
+                    "position_start": 48,
+                    "position_end": 55
+                },
+                {
+                    "word_in_sentence": "nyans",
+                    "base_form": "nyans",
+                    "position_start": 28,
+                    "position_end": 33
+                }
+            ]
         },
         {
-          "word_in_sentence": "barrunda",
-          "base_form": "barrunda",
-          "position_start": 455,
-          "position_end": 463
+            "sentence_id": "art_33_s030",
+            "sv": "Mitt hem är en helig plats för mig.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "helig",
+                    "base_form": "helig",
+                    "position_start": 15,
+                    "position_end": 20
+                }
+            ]
         },
         {
-          "word_in_sentence": "plocka ihop",
-          "base_form": "plocka ihop",
-          "position_start": 729,
-          "position_end": 740
-        },
-        {
-          "word_in_sentence": "kassa",
-          "base_form": "kassa",
-          "position_start": 1437,
-          "position_end": 1442
-        },
-        {
-          "word_in_sentence": "pank",
-          "base_form": "pank",
-          "position_start": 677,
-          "position_end": 681
-        },
-        {
-          "word_in_sentence": "tuggummi",
-          "base_form": "tuggummi",
-          "position_start": 1405,
-          "position_end": 1413
-        },
-        {
-          "word_in_sentence": "pappersstrut",
-          "base_form": "pappersstrut",
-          "position_start": 1369,
-          "position_end": 1381
-        },
-        {
-          "word_in_sentence": "kiosk",
-          "base_form": "kiosk",
-          "position_start": 1293,
-          "position_end": 1298
-        },
-        {
-          "word_in_sentence": "chilla",
-          "base_form": "chilla",
-          "position_start": 148,
-          "position_end": 154
-        },
-        {
-          "word_in_sentence": "påsk",
-          "base_form": "påsk",
-          "position_start": 75,
-          "position_end": 79
-        },
-        {
-          "word_in_sentence": "Men",
-          "base_form": "men",
-          "position_start": 399,
-          "position_end": 402
-        },
-        {
-          "word_in_sentence": "beslut",
-          "base_form": "beslut",
-          "position_start": 958,
-          "position_end": 964
-        },
-        {
-          "word_in_sentence": "strömma",
-          "base_form": "strömma",
-          "position_start": 1704,
-          "position_end": 1711
-        },
-        {
-          "word_in_sentence": "Jag har inte ett öre.",
-          "base_form": "Jag har inte ett öre.",
-          "position_start": 615,
-          "position_end": 636
-        },
-        {
-          "word_in_sentence": "vara beredd",
-          "base_form": "vara beredd",
-          "position_start": 1230,
-          "position_end": 1241
-        },
-        {
-          "word_in_sentence": "helig",
-          "base_form": "helig",
-          "position_start": 1824,
-          "position_end": 1829
-        },
-        {
-          "word_in_sentence": "Det var hemskt trevligt.",
-          "base_form": "Det var hemskt trevligt.",
-          "position_start": 1540,
-          "position_end": 1564
-        },
-        {
-          "word_in_sentence": "flitig som en myra",
-          "base_form": "flitig som en myra",
-          "position_start": 1101,
-          "position_end": 1119
-        },
-        {
-          "word_in_sentence": "jämföra",
-          "base_form": "jämföra",
-          "position_start": 1773,
-          "position_end": 1780
-        },
-        {
-          "word_in_sentence": "Visste du att…?",
-          "base_form": "Visste du att…?",
-          "position_start": 0,
-          "position_end": 15
-        },
-        {
-          "word_in_sentence": "räknas",
-          "base_form": "räknas",
-          "position_start": 1063,
-          "position_end": 1069
-        },
-        {
-          "word_in_sentence": "nyans",
-          "base_form": "nyans",
-          "position_start": 1753,
-          "position_end": 1758
-        },
-        {
-          "word_in_sentence": "Under senare delen av…",
-          "base_form": "under senare delen av…",
-          "position_start": 98,
-          "position_end": 120
-        },
-        {
-          "word_in_sentence": "variant av",
-          "base_form": "variant av",
-          "position_start": 481,
-          "position_end": 491
-        },
-        {
-          "word_in_sentence": "rad",
-          "base_form": "rad",
-          "position_start": 214,
-          "position_end": 217
-        },
-        {
-          "word_in_sentence": "brukar",
-          "base_form": "bruka",
-          "position_start": 132,
-          "position_end": 138
-        },
-        {
-          "word_in_sentence": "ändra",
-          "base_form": "ändra",
-          "position_start": 1630,
-          "position_end": 1635
-        },
-        {
-          "word_in_sentence": "Jo",
-          "base_form": "jo",
-          "position_start": 81,
-          "position_end": 83
-        },
-        {
-          "word_in_sentence": "Någon",
-          "base_form": "någon",
-          "position_start": 507,
-          "position_end": 512
-        },
-        {
-          "word_in_sentence": "hålla hemlig",
-          "base_form": "hålla hemlig",
-          "position_start": 834,
-          "position_end": 846
-        },
-        {
-          "word_in_sentence": "på många ställen",
-          "base_form": "på många ställen",
-          "position_start": 403,
-          "position_end": 419
-        },
-        {
-          "word_in_sentence": "slå upp",
-          "base_form": "slå upp",
-          "position_start": 1664,
-          "position_end": 1671
+            "sentence_id": "art_33_s031",
+            "sv": "Nästa vecka kanske en god vän ska titta förbi.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "titta förbi",
+                    "base_form": "titta förbi",
+                    "position_start": 34,
+                    "position_end": 45
+                }
+            ]
         }
-      ]
-    }
-  ],
-  "primary_words_used": [
-    "dig själv",
-    "bredvid",
-    "lukta",
-    "titta förbi",
-    "småsak",
-    "veckopeng",
-    "soffa",
-    "ligga kvar",
-    "bekväm",
-    "flytta ut",
-    "väska",
-    "strax utanför",
-    "mys",
-    "kök",
-    "panta",
-    "fåtölj",
-    "basbehov",
-    "grej",
-    "tomsflaska",
-    "mysa",
-    "Brukar du mysa?",
-    "damtidning",
-    "skåp",
-    "renovera",
-    "stan",
-    "syskon",
-    "pyjamas",
-    "peka på",
-    "storhelg",
-    "barrunda",
-    "plocka ihop",
-    "kassa",
-    "pank",
-    "tuggummi",
-    "pappersstrut",
-    "kiosk",
-    "chilla",
-    "påsk",
-    "men",
-    "beslut",
-    "strömma",
-    "Jag har inte ett öre.",
-    "vara beredd",
-    "helig",
-    "Det var hemskt trevligt.",
-    "flitig som en myra",
-    "jämföra",
-    "Visste du att…?",
-    "räknas",
-    "nyans",
-    "under senare delen av…",
-    "variant av",
-    "rad",
-    "bruka",
-    "ändra",
-    "jo",
-    "någon",
-    "hålla hemlig",
-    "på många ställen",
-    "slå upp"
-  ],
-  "secondary_words_used": []
+    ],
+    "primary_words_used": [
+        "dig själv",
+        "bredvid",
+        "lukta",
+        "titta förbi",
+        "småsak",
+        "veckopeng",
+        "soffa",
+        "ligga kvar",
+        "bekväm",
+        "flytta ut",
+        "väska",
+        "strax utanför",
+        "mys",
+        "kök",
+        "panta",
+        "fåtölj",
+        "basbehov",
+        "grej",
+        "tomsflaska",
+        "mysa",
+        "Brukar du mysa?",
+        "damtidning",
+        "skåp",
+        "renovera",
+        "stan",
+        "syskon",
+        "pyjamas",
+        "peka på",
+        "storhelg",
+        "barrunda",
+        "plocka ihop",
+        "kassa",
+        "pank",
+        "tuggummi",
+        "pappersstrut",
+        "kiosk",
+        "chilla",
+        "påsk",
+        "men",
+        "beslut",
+        "strömma",
+        "Jag har inte ett öre.",
+        "vara beredd",
+        "helig",
+        "Det var hemskt trevligt.",
+        "flitig som en myra",
+        "jämföra",
+        "Visste du att…?",
+        "räknas",
+        "nyans",
+        "under senare delen av…",
+        "variant av",
+        "rad",
+        "bruka",
+        "ändra",
+        "jo",
+        "någon",
+        "hålla hemlig",
+        "på många ställen",
+        "slå upp"
+    ],
+    "secondary_words_used": []
 }

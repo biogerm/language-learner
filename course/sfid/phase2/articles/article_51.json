@@ -1,441 +1,670 @@
 {
-  "course_id": "sfid",
-  "course_title": "SFI D",
-  "stage_id": "stage_04",
-  "stage_title": "Relationer & Känslor",
-  "article_id": "art_51",
-  "article_title": "Läsförståelse",
-  "target_word_count": 60,
-  "sentences": [
-    {
-      "sentence_id": "art51_s001",
-      "sv": "\"Hur ser det ut?\" frågade min glada singelvän. Vi stod mitt i rummet och tittade ut över ett enormt arrangemang. Det var ganska länge sedan vi senast träffades. Han var min bästis, en otroligt stilig polare och en mycket nära vän ända sedan min ungdom. \n\nHan var ofta en riktig träningsnarkoman och ibland även en stressad arbetsnarkoman. Jag själv var mer som en vanlig, lugn person. Jag var nervös inför denna dag. Vi var inbjudna till en exklusiv fest för att fira min farfar och mormor. De hade totalt bjudit över hundra gäster. Både mina farföräldrar och morföräldrar tyckte mycket om att samla ihop alla små barnbarn, några trevliga bybor, lokal skolpersonal och även min äldre syster. Det kändes som ett genuint, varmt barndomsminne. Familjen var mycket känd i vårt lilla område, de var nästan som en rik gammal adelsfamilj.\n\n\"Jag minns särskilt när din farfar berättade sin långa, fascinerande släktkrönika,\" sa han. \"Historien kunde vara rätt grym, ofta med någon elak person i centrum, men sagan hade alltid ett lyckligt slut. Det är en typ av berättelse man verkligen älskar.\"\n\nUnder den långa festen åt vi god kaka med mandel och lyssnade på glad musik från en lite repig cd-skiva. En inbjuden riksdagsman och en mycket stolt same höll vackra tal till hela vårt land, ungefär som en hyllning till Moder Svea. Det hela hade en jätteviktig och seriös funktion i just detta sammanhang. \"Tror du det är okej om jag försöker blanda ihop dessa gäster lite?\" frågade min vän skämtsamt, och jag såg att han uppenbarligen var förälskad i någon ny på festen. Han ville nämligen gärna dyka upp på helt rätt plats vid rätt tid. \n\n\"Ja absolut, njut och skratta så mycket du kan,\" svarade jag. Jag ville ju inte alls hata kärleken. \"Jag tycker att romantik är härligt. Man får inte vara oförstående inför den.\" \n\n\"Det ryktas att vår granne vill gifta om sig,\" skämtade han sedan glatt. \n\n\"Tror du att min gamla berättelse från föregående år kan stämma?\" sa farfar plötsligt från ingenstans. Det var en mycket oväntad fråga från honom. \n\n\"Vem vill inte krama och pussa på någon man verkligen tycker om?\" log farfar. Han hade nyligen fått ett intressant förslag. Han ville underteckna ett viktigt papper om den gamla gården som låg vackert vid en stor korsning. Han älskade verkligen gården. \"Här kan man ibland ligga ner på det mjuka gräset, titta upp och känna sig helt osynlig i världen. Jag gillar verkligen den här typen av … tysta och fridfulla platser.\"\n\n\"Hoppas att vi ses snart!\" ropade alla de glada gästerna när de sedan var tvungna att återvända hemåt i den mörka, stjärnklara natten.",
-      "en": "",
-      "target_words": [
+    "course_id": "sfid",
+    "course_title": "SFI D",
+    "stage_id": "stage_04",
+    "stage_title": "Relationer & Känslor",
+    "article_id": "art_51",
+    "article_title": "Läsförståelse",
+    "target_word_count": 60,
+    "sentences": [
         {
-          "word_in_sentence": "singelvän",
-          "base_form": "singelvän",
-          "position_start": 36,
-          "position_end": 45
+            "sentence_id": "art_51_s001",
+            "sv": "\"Hur ser det ut?\" frågade min glada singelvän.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "singelvän",
+                    "base_form": "singelvän",
+                    "position_start": 36,
+                    "position_end": 45
+                },
+                {
+                    "word_in_sentence": "Hur ser det ut?",
+                    "base_form": "Hur ser det ut?",
+                    "position_start": 1,
+                    "position_end": 16
+                }
+            ]
         },
         {
-          "word_in_sentence": "sammanhang",
-          "base_form": "sammanhang",
-          "position_start": 1383,
-          "position_end": 1393
+            "sentence_id": "art_51_s002",
+            "sv": "Vi stod mitt i rummet och tittade ut över ett enormt arrangemang.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "arrangemang",
+                    "base_form": "arrangemang",
+                    "position_start": 53,
+                    "position_end": 64
+                },
+                {
+                    "word_in_sentence": "mitt i",
+                    "base_form": "mitt i",
+                    "position_start": 8,
+                    "position_end": 14
+                }
+            ]
         },
         {
-          "word_in_sentence": "arbetsnarkoman",
-          "base_form": "arbetsnarkoman",
-          "position_start": 323,
-          "position_end": 337
+            "sentence_id": "art_51_s003",
+            "sv": "Det var ganska länge sedan vi senast träffades.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "länge sedan",
+                    "base_form": "länge sedan",
+                    "position_start": 15,
+                    "position_end": 26
+                }
+            ]
         },
         {
-          "word_in_sentence": "träningsnarkoman",
-          "base_form": "träningsnarkoman",
-          "position_start": 278,
-          "position_end": 294
+            "sentence_id": "art_51_s004",
+            "sv": "Han var min bästis, en otroligt stilig polare och en mycket nära vän ända sedan min ungdom.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "bästis",
+                    "base_form": "bästis",
+                    "position_start": 12,
+                    "position_end": 18
+                },
+                {
+                    "word_in_sentence": "nära vän",
+                    "base_form": "nära vän",
+                    "position_start": 60,
+                    "position_end": 68
+                },
+                {
+                    "word_in_sentence": "polare",
+                    "base_form": "polare",
+                    "position_start": 39,
+                    "position_end": 45
+                },
+                {
+                    "word_in_sentence": "ungdom",
+                    "base_form": "ungdom",
+                    "position_start": 84,
+                    "position_end": 90
+                },
+                {
+                    "word_in_sentence": "stilig",
+                    "base_form": "stilig",
+                    "position_start": 32,
+                    "position_end": 38
+                }
+            ]
         },
         {
-          "word_in_sentence": "bästis",
-          "base_form": "bästis",
-          "position_start": 173,
-          "position_end": 179
+            "sentence_id": "art_51_s005",
+            "sv": "Han var ofta en riktig träningsnarkoman och ibland även en stressad arbetsnarkoman.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "arbetsnarkoman",
+                    "base_form": "arbetsnarkoman",
+                    "position_start": 68,
+                    "position_end": 82
+                },
+                {
+                    "word_in_sentence": "träningsnarkoman",
+                    "base_form": "träningsnarkoman",
+                    "position_start": 23,
+                    "position_end": 39
+                }
+            ]
         },
         {
-          "word_in_sentence": "mormor",
-          "base_form": "mormor",
-          "position_start": 483,
-          "position_end": 489
+            "sentence_id": "art_51_s006",
+            "sv": "Jag själv var mer som en vanlig, lugn person.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "vanlig",
+                    "base_form": "vanlig",
+                    "position_start": 25,
+                    "position_end": 31
+                }
+            ]
         },
         {
-          "word_in_sentence": "oväntad",
-          "base_form": "oväntad",
-          "position_start": 2007,
-          "position_end": 2014
+            "sentence_id": "art_51_s007",
+            "sv": "Jag var nervös inför denna dag.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "nervös",
+                    "base_form": "nervös",
+                    "position_start": 8,
+                    "position_end": 14
+                }
+            ]
         },
         {
-          "word_in_sentence": "mandel",
-          "base_form": "mandel",
-          "position_start": 1131,
-          "position_end": 1137
+            "sentence_id": "art_51_s008",
+            "sv": "Vi var inbjudna till en exklusiv fest för att fira min farfar och mormor.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "mormor",
+                    "base_form": "mormor",
+                    "position_start": 66,
+                    "position_end": 72
+                },
+                {
+                    "word_in_sentence": "farfar",
+                    "base_form": "farfar",
+                    "position_start": 55,
+                    "position_end": 61
+                },
+                {
+                    "word_in_sentence": "exklusiv",
+                    "base_form": "exklusiv",
+                    "position_start": 24,
+                    "position_end": 32
+                }
+            ]
         },
         {
-          "word_in_sentence": "arrangemang",
-          "base_form": "arrangemang",
-          "position_start": 100,
-          "position_end": 111
+            "sentence_id": "art_51_s009",
+            "sv": "De hade totalt bjudit över hundra gäster.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "hundra",
+                    "base_form": "hundra",
+                    "position_start": 27,
+                    "position_end": 33
+                }
+            ]
         },
         {
-          "word_in_sentence": "återvända",
-          "base_form": "återvända",
-          "position_start": 2544,
-          "position_end": 2553
+            "sentence_id": "art_51_s010",
+            "sv": "Både mina farföräldrar och morföräldrar tyckte mycket om att samla ihop alla små barnbarn, några trevliga bybor, lokal skolpersonal och även min äldre syster.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "barnbarn",
+                    "base_form": "barnbarn",
+                    "position_start": 81,
+                    "position_end": 89
+                },
+                {
+                    "word_in_sentence": "farföräldrar",
+                    "base_form": "farföräldrar",
+                    "position_start": 10,
+                    "position_end": 22
+                },
+                {
+                    "word_in_sentence": "morföräldrar",
+                    "base_form": "morföräldrar",
+                    "position_start": 27,
+                    "position_end": 39
+                },
+                {
+                    "word_in_sentence": "skolpersonal",
+                    "base_form": "skolpersonal",
+                    "position_start": 119,
+                    "position_end": 131
+                },
+                {
+                    "word_in_sentence": "syster",
+                    "base_form": "syster",
+                    "position_start": 151,
+                    "position_end": 157
+                }
+            ]
         },
         {
-          "word_in_sentence": "adelsfamilj",
-          "base_form": "adelsfamilj",
-          "position_start": 819,
-          "position_end": 830
+            "sentence_id": "art_51_s011",
+            "sv": "Det kändes som ett genuint, varmt barndomsminne.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "barndomsminne",
+                    "base_form": "barndomsminne",
+                    "position_start": 34,
+                    "position_end": 47
+                }
+            ]
         },
         {
-          "word_in_sentence": "barnbarn",
-          "base_form": "barnbarn",
-          "position_start": 614,
-          "position_end": 622
+            "sentence_id": "art_51_s012",
+            "sv": "Familjen var mycket känd i vårt lilla område, de var nästan som en rik gammal adelsfamilj.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "adelsfamilj",
+                    "base_form": "adelsfamilj",
+                    "position_start": 78,
+                    "position_end": 89
+                }
+            ]
         },
         {
-          "word_in_sentence": "nära vän",
-          "base_form": "nära vän",
-          "position_start": 221,
-          "position_end": 229
+            "sentence_id": "art_51_s013",
+            "sv": "\"Jag minns särskilt när din farfar berättade sin långa, fascinerande släktkrönika,\" sa han.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "släktkrönika",
+                    "base_form": "släktkrönika",
+                    "position_start": 69,
+                    "position_end": 81
+                }
+            ]
         },
         {
-          "word_in_sentence": "barndomsminne",
-          "base_form": "barndomsminne",
-          "position_start": 726,
-          "position_end": 739
+            "sentence_id": "art_51_s014",
+            "sv": "\"Historien kunde vara rätt grym, ofta med någon elak person i centrum, men sagan hade alltid ett lyckligt slut.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "elak",
+                    "base_form": "elak",
+                    "position_start": 48,
+                    "position_end": 52
+                },
+                {
+                    "word_in_sentence": "lyckligt slut",
+                    "base_form": "lyckligt slut",
+                    "position_start": 97,
+                    "position_end": 110
+                },
+                {
+                    "word_in_sentence": "grym",
+                    "base_form": "grym",
+                    "position_start": 27,
+                    "position_end": 31
+                }
+            ]
         },
         {
-          "word_in_sentence": "farföräldrar",
-          "base_form": "farföräldrar",
-          "position_start": 543,
-          "position_end": 555
+            "sentence_id": "art_51_s015",
+            "sv": "Det är en typ av berättelse man verkligen älskar.\"",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "en typ av",
+                    "base_form": "en typ av",
+                    "position_start": 7,
+                    "position_end": 16
+                }
+            ]
         },
         {
-          "word_in_sentence": "morföräldrar",
-          "base_form": "morföräldrar",
-          "position_start": 560,
-          "position_end": 572
+            "sentence_id": "art_51_s016",
+            "sv": "Under den långa festen åt vi god kaka med mandel och lyssnade på glad musik från en lite repig cd-skiva.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "mandel",
+                    "base_form": "mandel",
+                    "position_start": 42,
+                    "position_end": 48
+                },
+                {
+                    "word_in_sentence": "cd-skiva",
+                    "base_form": "cd-skiva",
+                    "position_start": 95,
+                    "position_end": 103
+                }
+            ]
         },
         {
-          "word_in_sentence": "polare",
-          "base_form": "polare",
-          "position_start": 200,
-          "position_end": 206
+            "sentence_id": "art_51_s017",
+            "sv": "En inbjuden riksdagsman och en mycket stolt same höll vackra tal till hela vårt land, ungefär som en hyllning till Moder Svea.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "Moder Svea",
+                    "base_form": "Moder Svea",
+                    "position_start": 115,
+                    "position_end": 125
+                },
+                {
+                    "word_in_sentence": "riksdagsman",
+                    "base_form": "riksdagsman",
+                    "position_start": 12,
+                    "position_end": 23
+                },
+                {
+                    "word_in_sentence": "same",
+                    "base_form": "same",
+                    "position_start": 44,
+                    "position_end": 48
+                }
+            ]
         },
         {
-          "word_in_sentence": "farfar",
-          "base_form": "farfar",
-          "position_start": 472,
-          "position_end": 478
+            "sentence_id": "art_51_s018",
+            "sv": "Det hela hade en jätteviktig och seriös funktion i just detta sammanhang.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "sammanhang",
+                    "base_form": "sammanhang",
+                    "position_start": 62,
+                    "position_end": 72
+                },
+                {
+                    "word_in_sentence": "jätteviktig",
+                    "base_form": "jätteviktig",
+                    "position_start": 17,
+                    "position_end": 28
+                },
+                {
+                    "word_in_sentence": "funktion",
+                    "base_form": "funktion",
+                    "position_start": 40,
+                    "position_end": 48
+                }
+            ]
         },
         {
-          "word_in_sentence": "Moder Svea",
-          "base_form": "Moder Svea",
-          "position_start": 1309,
-          "position_end": 1319
+            "sentence_id": "art_51_s019",
+            "sv": "\"Tror du det är okej om jag försöker blanda ihop dessa gäster lite?\" frågade min vän skämtsamt, och jag såg att han uppenbarligen var förälskad i någon ny på festen.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "förälskad",
+                    "base_form": "förälskad",
+                    "position_start": 134,
+                    "position_end": 143
+                },
+                {
+                    "word_in_sentence": "blanda ihop",
+                    "base_form": "blanda ihop",
+                    "position_start": 37,
+                    "position_end": 48
+                },
+                {
+                    "word_in_sentence": "dessa",
+                    "base_form": "dessa",
+                    "position_start": 49,
+                    "position_end": 54
+                }
+            ]
         },
         {
-          "word_in_sentence": "riksdagsman",
-          "base_form": "riksdagsman",
-          "position_start": 1206,
-          "position_end": 1217
+            "sentence_id": "art_51_s020",
+            "sv": "Han ville nämligen gärna dyka upp på helt rätt plats vid rätt tid.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "plats",
+                    "base_form": "plats",
+                    "position_start": 47,
+                    "position_end": 52
+                },
+                {
+                    "word_in_sentence": "dyka upp",
+                    "base_form": "dyka upp",
+                    "position_start": 25,
+                    "position_end": 33
+                },
+                {
+                    "word_in_sentence": "gärna",
+                    "base_form": "gärna",
+                    "position_start": 19,
+                    "position_end": 24
+                }
+            ]
         },
         {
-          "word_in_sentence": "nervös",
-          "base_form": "nervös",
-          "position_start": 393,
-          "position_end": 399
+            "sentence_id": "art_51_s021",
+            "sv": "\"Ja absolut, njut och skratta så mycket du kan,\" svarade jag.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "så mycket du kan",
+                    "base_form": "så mycket du kan",
+                    "position_start": 30,
+                    "position_end": 46
+                }
+            ]
         },
         {
-          "word_in_sentence": "skolpersonal",
-          "base_form": "skolpersonal",
-          "position_start": 652,
-          "position_end": 664
+            "sentence_id": "art_51_s022",
+            "sv": "Jag ville ju inte alls hata kärleken.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "hata",
+                    "base_form": "hata",
+                    "position_start": 23,
+                    "position_end": 27
+                }
+            ]
         },
         {
-          "word_in_sentence": "hata",
-          "base_form": "hata",
-          "position_start": 1715,
-          "position_end": 1719
+            "sentence_id": "art_51_s023",
+            "sv": "\"Jag tycker att romantik är härligt.",
+            "en": "",
+            "target_words": []
         },
         {
-          "word_in_sentence": "ungdom",
-          "base_form": "ungdom",
-          "position_start": 245,
-          "position_end": 251
+            "sentence_id": "art_51_s024",
+            "sv": "Man får inte vara oförstående inför den.\"",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "oförstående",
+                    "base_form": "oförstående",
+                    "position_start": 18,
+                    "position_end": 29
+                }
+            ]
         },
         {
-          "word_in_sentence": "släktkrönika",
-          "base_form": "släktkrönika",
-          "position_start": 902,
-          "position_end": 914
+            "sentence_id": "art_51_s025",
+            "sv": "\"Det ryktas att vår granne vill gifta om sig,\" skämtade han sedan glatt.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "gifta om sig",
+                    "base_form": "gifta om sig",
+                    "position_start": 32,
+                    "position_end": 44
+                }
+            ]
         },
         {
-          "word_in_sentence": "syster",
-          "base_form": "syster",
-          "position_start": 684,
-          "position_end": 690
+            "sentence_id": "art_51_s026",
+            "sv": "\"Tror du att min gamla berättelse från föregående år kan stämma?\" sa farfar plötsligt från ingenstans.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "föregående",
+                    "base_form": "föregående",
+                    "position_start": 39,
+                    "position_end": 49
+                },
+                {
+                    "word_in_sentence": "stämma",
+                    "base_form": "stämma",
+                    "position_start": 57,
+                    "position_end": 63
+                }
+            ]
         },
         {
-          "word_in_sentence": "gifta om sig",
-          "base_form": "gifta om sig",
-          "position_start": 1843,
-          "position_end": 1855
+            "sentence_id": "art_51_s027",
+            "sv": "Det var en mycket oväntad fråga från honom.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "oväntad",
+                    "base_form": "oväntad",
+                    "position_start": 18,
+                    "position_end": 25
+                }
+            ]
         },
         {
-          "word_in_sentence": "elak",
-          "base_form": "elak",
-          "position_start": 973,
-          "position_end": 977
+            "sentence_id": "art_51_s028",
+            "sv": "\"Vem vill inte krama och pussa på någon man verkligen tycker om?\" log farfar.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "pussa på",
+                    "base_form": "pussa på",
+                    "position_start": 25,
+                    "position_end": 33
+                }
+            ]
         },
         {
-          "word_in_sentence": "lyckligt slut",
-          "base_form": "lyckligt slut",
-          "position_start": 1022,
-          "position_end": 1035
+            "sentence_id": "art_51_s029",
+            "sv": "Han hade nyligen fått ett intressant förslag.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "förslag",
+                    "base_form": "förslag",
+                    "position_start": 37,
+                    "position_end": 44
+                }
+            ]
         },
         {
-          "word_in_sentence": "grym",
-          "base_form": "grym",
-          "position_start": 952,
-          "position_end": 956
+            "sentence_id": "art_51_s030",
+            "sv": "Han ville underteckna ett viktigt papper om den gamla gården som låg vackert vid en stor korsning.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "korsning",
+                    "base_form": "korsning",
+                    "position_start": 89,
+                    "position_end": 97
+                },
+                {
+                    "word_in_sentence": "underteckna",
+                    "base_form": "underteckna",
+                    "position_start": 10,
+                    "position_end": 21
+                }
+            ]
         },
         {
-          "word_in_sentence": "oförstående",
-          "base_form": "oförstående",
-          "position_start": 1785,
-          "position_end": 1796
+            "sentence_id": "art_51_s031",
+            "sv": "Han älskade verkligen gården.",
+            "en": "",
+            "target_words": []
         },
         {
-          "word_in_sentence": "pussa på",
-          "base_form": "pussa på",
-          "position_start": 2060,
-          "position_end": 2068
+            "sentence_id": "art_51_s032",
+            "sv": "\"Här kan man ibland ligga ner på det mjuka gräset, titta upp och känna sig helt osynlig i världen.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "ligga",
+                    "base_form": "ligga",
+                    "position_start": 20,
+                    "position_end": 25
+                },
+                {
+                    "word_in_sentence": "osynlig",
+                    "base_form": "osynlig",
+                    "position_start": 80,
+                    "position_end": 87
+                }
+            ]
         },
         {
-          "word_in_sentence": "same",
-          "base_form": "same",
-          "position_start": 1238,
-          "position_end": 1242
+            "sentence_id": "art_51_s033",
+            "sv": "Jag gillar verkligen den här typen av … tysta och fridfulla platser.\"",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "den här typen av …",
+                    "base_form": "den här typen av …",
+                    "position_start": 21,
+                    "position_end": 39
+                }
+            ]
         },
         {
-          "word_in_sentence": "förälskad",
-          "base_form": "förälskad",
-          "position_start": 1529,
-          "position_end": 1538
-        },
-        {
-          "word_in_sentence": "ligga",
-          "base_form": "ligga",
-          "position_start": 2308,
-          "position_end": 2313
-        },
-        {
-          "word_in_sentence": "den här typen av …",
-          "base_form": "den här typen av …",
-          "position_start": 2408,
-          "position_end": 2426
-        },
-        {
-          "word_in_sentence": "blanda ihop",
-          "base_form": "blanda ihop",
-          "position_start": 1432,
-          "position_end": 1443
-        },
-        {
-          "word_in_sentence": "en typ av",
-          "base_form": "en typ av",
-          "position_start": 1044,
-          "position_end": 1053
-        },
-        {
-          "word_in_sentence": "jätteviktig",
-          "base_form": "jätteviktig",
-          "position_start": 1338,
-          "position_end": 1349
-        },
-        {
-          "word_in_sentence": "föregående",
-          "base_form": "föregående",
-          "position_start": 1925,
-          "position_end": 1935
-        },
-        {
-          "word_in_sentence": "hundra",
-          "base_form": "hundra",
-          "position_start": 518,
-          "position_end": 524
-        },
-        {
-          "word_in_sentence": "stilig",
-          "base_form": "stilig",
-          "position_start": 193,
-          "position_end": 199
-        },
-        {
-          "word_in_sentence": "exklusiv",
-          "base_form": "exklusiv",
-          "position_start": 441,
-          "position_end": 449
-        },
-        {
-          "word_in_sentence": "korsning",
-          "base_form": "korsning",
-          "position_start": 2248,
-          "position_end": 2256
-        },
-        {
-          "word_in_sentence": "vanlig",
-          "base_form": "vanlig",
-          "position_start": 364,
-          "position_end": 370
-        },
-        {
-          "word_in_sentence": "mitt i",
-          "base_form": "mitt i",
-          "position_start": 55,
-          "position_end": 61
-        },
-        {
-          "word_in_sentence": "Hur ser det ut?",
-          "base_form": "Hur ser det ut?",
-          "position_start": 1,
-          "position_end": 16
-        },
-        {
-          "word_in_sentence": "så mycket du kan",
-          "base_form": "så mycket du kan",
-          "position_start": 1660,
-          "position_end": 1676
-        },
-        {
-          "word_in_sentence": "stämma",
-          "base_form": "stämma",
-          "position_start": 1943,
-          "position_end": 1949
-        },
-        {
-          "word_in_sentence": "dessa",
-          "base_form": "dessa",
-          "position_start": 1444,
-          "position_end": 1449
-        },
-        {
-          "word_in_sentence": "funktion",
-          "base_form": "funktion",
-          "position_start": 1361,
-          "position_end": 1369
-        },
-        {
-          "word_in_sentence": "cd-skiva",
-          "base_form": "cd-skiva",
-          "position_start": 1184,
-          "position_end": 1192
-        },
-        {
-          "word_in_sentence": "plats",
-          "base_form": "plats",
-          "position_start": 1608,
-          "position_end": 1613
-        },
-        {
-          "word_in_sentence": "dyka upp",
-          "base_form": "dyka upp",
-          "position_start": 1586,
-          "position_end": 1594
-        },
-        {
-          "word_in_sentence": "gärna",
-          "base_form": "gärna",
-          "position_start": 1580,
-          "position_end": 1585
-        },
-        {
-          "word_in_sentence": "Hoppas att vi ses snart!",
-          "base_form": "Hoppas att vi ses snart!",
-          "position_start": 2459,
-          "position_end": 2483
-        },
-        {
-          "word_in_sentence": "osynlig",
-          "base_form": "osynlig",
-          "position_start": 2368,
-          "position_end": 2375
-        },
-        {
-          "word_in_sentence": "underteckna",
-          "base_form": "underteckna",
-          "position_start": 2169,
-          "position_end": 2180
-        },
-        {
-          "word_in_sentence": "länge sedan",
-          "base_form": "länge sedan",
-          "position_start": 128,
-          "position_end": 139
-        },
-        {
-          "word_in_sentence": "förslag",
-          "base_form": "förslag",
-          "position_start": 2150,
-          "position_end": 2157
+            "sentence_id": "art_51_s034",
+            "sv": "\"Hoppas att vi ses snart!\" ropade alla de glada gästerna när de sedan var tvungna att återvända hemåt i den mörka, stjärnklara natten.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "återvända",
+                    "base_form": "återvända",
+                    "position_start": 86,
+                    "position_end": 95
+                },
+                {
+                    "word_in_sentence": "Hoppas att vi ses snart!",
+                    "base_form": "Hoppas att vi ses snart!",
+                    "position_start": 1,
+                    "position_end": 25
+                }
+            ]
         }
-      ]
-    }
-  ],
-  "primary_words_used": [
-    "singelvän",
-    "sammanhang",
-    "arbetsnarkoman",
-    "träningsnarkoman",
-    "bästis",
-    "mormor",
-    "oväntad",
-    "mandel",
-    "arrangemang",
-    "återvända",
-    "adelsfamilj",
-    "barnbarn",
-    "nära vän",
-    "barndomsminne",
-    "farföräldrar",
-    "morföräldrar",
-    "polare",
-    "farfar",
-    "Moder Svea",
-    "riksdagsman",
-    "nervös",
-    "skolpersonal",
-    "hata",
-    "ungdom",
-    "släktkrönika",
-    "syster",
-    "gifta om sig",
-    "elak",
-    "lyckligt slut",
-    "grym",
-    "oförstående",
-    "pussa på",
-    "same",
-    "förälskad",
-    "ligga",
-    "den här typen av …",
-    "blanda ihop",
-    "en typ av",
-    "jätteviktig",
-    "föregående",
-    "hundra",
-    "stilig",
-    "exklusiv",
-    "korsning",
-    "vanlig",
-    "mitt i",
-    "Hur ser det ut?",
-    "så mycket du kan",
-    "stämma",
-    "dessa",
-    "funktion",
-    "cd-skiva",
-    "plats",
-    "dyka upp",
-    "gärna",
-    "Hoppas att vi ses snart!",
-    "osynlig",
-    "underteckna",
-    "länge sedan",
-    "förslag"
-  ],
-  "secondary_words_used": []
+    ],
+    "primary_words_used": [
+        "singelvän",
+        "sammanhang",
+        "arbetsnarkoman",
+        "träningsnarkoman",
+        "bästis",
+        "mormor",
+        "oväntad",
+        "mandel",
+        "arrangemang",
+        "återvända",
+        "adelsfamilj",
+        "barnbarn",
+        "nära vän",
+        "barndomsminne",
+        "farföräldrar",
+        "morföräldrar",
+        "polare",
+        "farfar",
+        "Moder Svea",
+        "riksdagsman",
+        "nervös",
+        "skolpersonal",
+        "hata",
+        "ungdom",
+        "släktkrönika",
+        "syster",
+        "gifta om sig",
+        "elak",
+        "lyckligt slut",
+        "grym",
+        "oförstående",
+        "pussa på",
+        "same",
+        "förälskad",
+        "ligga",
+        "den här typen av …",
+        "blanda ihop",
+        "en typ av",
+        "jätteviktig",
+        "föregående",
+        "hundra",
+        "stilig",
+        "exklusiv",
+        "korsning",
+        "vanlig",
+        "mitt i",
+        "Hur ser det ut?",
+        "så mycket du kan",
+        "stämma",
+        "dessa",
+        "funktion",
+        "cd-skiva",
+        "plats",
+        "dyka upp",
+        "gärna",
+        "Hoppas att vi ses snart!",
+        "osynlig",
+        "underteckna",
+        "länge sedan",
+        "förslag"
+    ],
+    "secondary_words_used": []
 }

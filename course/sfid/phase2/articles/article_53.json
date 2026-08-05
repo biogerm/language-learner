@@ -8,8 +8,8 @@
     "target_word_count": 60,
     "sentences": [
         {
-            "sentence_id": "art53_s001",
-            "sv": "Hej … Anna!\nHur är läget? Nu är vi framme i … vår fina gamla stad, och jag mår jättebra. Jag måste berätta något … något otroligt som precis hände. \n\nHerregud, du kommer inte att tro det! En gammal nordisk släkting till mig dök plötsligt upp här. Han är känd för att vara väldigt händig och pålitlig, en genuint ordentlig man. Många brukar anse att han är enormt förmögen och rik. \"Du skojar!\" sa jag när han var spontan och kom hit. Han sa stolt att hans senaste utveckling på jobbet var en stor succé, mycket tack vare hans envishet. \n\nHan är oftast utåtriktad och pratsam, men verkade lite orolig. Han avslöjade i hemlighet att han tyckte att jag var för slarvig och kanske även ganska lat. Det var en hemsk och rentav taskig sak att säga. Han var oartig och fällde faktiskt en jättedum kommentar. Jag ville verkligen inte vara falsk, så jag blev upprörd och inte alls nöjd. Man måste kunna koncentrera sig för att alltid vara snäll. \n\nHan ville be att få mer kaffe, och passade också på att be om min hjälp för att söka ett stort jobb i stor skala åt en vän. Han brukade ofta sätta i system att utnyttja folks godhet. Jag tyckte att hans beteende var detsamma som att vara egoistisk. Förr i tiden diskuterade man ofta tydlig könsroll och utlänningar pratade om ”Den svenska synden”, men i dagens samhälle kräver all sann framgång att man har en bra inre egenskap som ett stort tålamod. Det är viktigt att vara harmonisk för att ens drömmar ska kunna bli verklighet. \n\nTill slut kunde vi ändå komma fram till en bra lösning. Han bad om ursäkt och jag lovade att besvara hans frågor för att få slut på konflikten. Vi diskuterade hans nyhet och några små problem. Jag började berätta om mina planer. Det brukar ju heta att ju mer …desto bättre, och vi pratade länge. Vi väntade tills stormen var över. Sedan stack han iväg snabbt som ett skott. \n\nJag är trots allt glad och väldigt tacksam över att vi har en mycket mer meningsfull relation, du och jag. Jag kan rekommendera att du reser hit snart. En varm hälsning till dig!\nLängtar efter dig!",
+            "sentence_id": "art_53_s001",
+            "sv": "Hej … Anna!",
             "en": "",
             "target_words": [
                 {
@@ -17,366 +17,582 @@
                     "base_form": "Hej …",
                     "position_start": 0,
                     "position_end": 5
-                },
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_53_s002",
+            "sv": "Hur är läget?",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "Hur är läget?",
                     "base_form": "Hur är läget?",
-                    "position_start": 12,
-                    "position_end": 25
-                },
+                    "position_start": 0,
+                    "position_end": 13
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_53_s003",
+            "sv": "Nu är vi framme i … vår fina gamla stad, och jag mår jättebra.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "Nu är vi framme i …",
                     "base_form": "Nu är vi framme i …",
-                    "position_start": 26,
-                    "position_end": 45
+                    "position_start": 0,
+                    "position_end": 19
                 },
                 {
                     "word_in_sentence": "jag",
                     "base_form": "jag",
-                    "position_start": 71,
-                    "position_end": 74
-                },
+                    "position_start": 45,
+                    "position_end": 48
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_53_s004",
+            "sv": "Jag måste berätta något … något otroligt som precis hände.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "Jag måste berätta något …",
                     "base_form": "Jag måste berätta något …",
-                    "position_start": 89,
-                    "position_end": 114
+                    "position_start": 0,
+                    "position_end": 25
                 },
                 {
                     "word_in_sentence": "berätta",
                     "base_form": "berätta",
-                    "position_start": 99,
-                    "position_end": 106
-                },
+                    "position_start": 10,
+                    "position_end": 17
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_53_s005",
+            "sv": "Herregud, du kommer inte att tro det!",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "Herregud",
                     "base_form": "Herregud",
-                    "position_start": 150,
-                    "position_end": 158
-                },
+                    "position_start": 0,
+                    "position_end": 8
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_53_s006",
+            "sv": "En gammal nordisk släkting till mig dök plötsligt upp här.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "nordisk",
                     "base_form": "nordisk",
-                    "position_start": 198,
-                    "position_end": 205
+                    "position_start": 10,
+                    "position_end": 17
                 },
                 {
                     "word_in_sentence": "släkting",
                     "base_form": "släkting",
-                    "position_start": 206,
-                    "position_end": 214
-                },
+                    "position_start": 18,
+                    "position_end": 26
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_53_s007",
+            "sv": "Han är känd för att vara väldigt händig och pålitlig, en genuint ordentlig man.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "händig",
                     "base_form": "händig",
-                    "position_start": 280,
-                    "position_end": 286
+                    "position_start": 33,
+                    "position_end": 39
                 },
                 {
                     "word_in_sentence": "pålitlig",
                     "base_form": "pålitlig",
-                    "position_start": 291,
-                    "position_end": 299
+                    "position_start": 44,
+                    "position_end": 52
                 },
                 {
                     "word_in_sentence": "ordentlig",
                     "base_form": "ordentlig",
-                    "position_start": 312,
-                    "position_end": 321
-                },
+                    "position_start": 65,
+                    "position_end": 74
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_53_s008",
+            "sv": "Många brukar anse att han är enormt förmögen och rik.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "anse",
                     "base_form": "anse",
-                    "position_start": 340,
-                    "position_end": 344
+                    "position_start": 13,
+                    "position_end": 17
                 },
                 {
                     "word_in_sentence": "förmögen",
                     "base_form": "förmögen",
-                    "position_start": 363,
-                    "position_end": 371
-                },
+                    "position_start": 36,
+                    "position_end": 44
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_53_s009",
+            "sv": "\"Du skojar!\" sa jag när han var spontan och kom hit.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "Du skojar!",
                     "base_form": "Du skojar!",
-                    "position_start": 382,
-                    "position_end": 392
+                    "position_start": 1,
+                    "position_end": 11
                 },
                 {
                     "word_in_sentence": "spontan",
                     "base_form": "spontan",
-                    "position_start": 413,
-                    "position_end": 420
-                },
+                    "position_start": 32,
+                    "position_end": 39
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_53_s010",
+            "sv": "Han sa stolt att hans senaste utveckling på jobbet var en stor succé, mycket tack vare hans envishet.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "utveckling",
                     "base_form": "utveckling",
-                    "position_start": 464,
-                    "position_end": 474
+                    "position_start": 30,
+                    "position_end": 40
                 },
                 {
                     "word_in_sentence": "succé",
                     "base_form": "succé",
-                    "position_start": 497,
-                    "position_end": 502
+                    "position_start": 63,
+                    "position_end": 68
                 },
                 {
                     "word_in_sentence": "tack vare",
                     "base_form": "tack vare",
-                    "position_start": 511,
-                    "position_end": 520
+                    "position_start": 77,
+                    "position_end": 86
                 },
                 {
                     "word_in_sentence": "envishet",
                     "base_form": "envishet",
-                    "position_start": 526,
-                    "position_end": 534
-                },
+                    "position_start": 92,
+                    "position_end": 100
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_53_s011",
+            "sv": "Han är oftast utåtriktad och pratsam, men verkade lite orolig.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "utåtriktad",
                     "base_form": "utåtriktad",
-                    "position_start": 552,
-                    "position_end": 562
+                    "position_start": 14,
+                    "position_end": 24
                 },
                 {
                     "word_in_sentence": "pratsam",
                     "base_form": "pratsam",
-                    "position_start": 567,
-                    "position_end": 574
+                    "position_start": 29,
+                    "position_end": 36
                 },
                 {
                     "word_in_sentence": "orolig",
                     "base_form": "orolig",
-                    "position_start": 593,
-                    "position_end": 599
-                },
+                    "position_start": 55,
+                    "position_end": 61
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_53_s012",
+            "sv": "Han avslöjade i hemlighet att han tyckte att jag var för slarvig och kanske även ganska lat.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "i hemlighet",
                     "base_form": "i hemlighet",
-                    "position_start": 615,
-                    "position_end": 626
+                    "position_start": 14,
+                    "position_end": 25
                 },
                 {
                     "word_in_sentence": "slarvig",
                     "base_form": "slarvig",
-                    "position_start": 658,
-                    "position_end": 665
+                    "position_start": 57,
+                    "position_end": 64
                 },
                 {
                     "word_in_sentence": "lat",
                     "base_form": "lat",
-                    "position_start": 689,
-                    "position_end": 692
-                },
+                    "position_start": 88,
+                    "position_end": 91
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_53_s013",
+            "sv": "Det var en hemsk och rentav taskig sak att säga.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "hemsk",
                     "base_form": "hemsk",
-                    "position_start": 705,
-                    "position_end": 710
+                    "position_start": 11,
+                    "position_end": 16
                 },
                 {
                     "word_in_sentence": "taskig",
                     "base_form": "taskig",
-                    "position_start": 722,
-                    "position_end": 728
-                },
+                    "position_start": 28,
+                    "position_end": 34
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_53_s014",
+            "sv": "Han var oartig och fällde faktiskt en jättedum kommentar.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "oartig",
                     "base_form": "oartig",
-                    "position_start": 751,
-                    "position_end": 757
+                    "position_start": 8,
+                    "position_end": 14
                 },
                 {
                     "word_in_sentence": "faktisk",
                     "base_form": "faktisk",
-                    "position_start": 769,
-                    "position_end": 776
+                    "position_start": 26,
+                    "position_end": 33
                 },
                 {
                     "word_in_sentence": "jättedum",
                     "base_form": "jättedum",
-                    "position_start": 781,
-                    "position_end": 789
-                },
+                    "position_start": 38,
+                    "position_end": 46
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_53_s015",
+            "sv": "Jag ville verkligen inte vara falsk, så jag blev upprörd och inte alls nöjd.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "falsk",
                     "base_form": "falsk",
-                    "position_start": 831,
-                    "position_end": 836
+                    "position_start": 30,
+                    "position_end": 35
                 },
                 {
                     "word_in_sentence": "nöjd",
                     "base_form": "nöjd",
-                    "position_start": 872,
-                    "position_end": 876
-                },
+                    "position_start": 71,
+                    "position_end": 75
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_53_s016",
+            "sv": "Man måste kunna koncentrera sig för att alltid vara snäll.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "koncentrera sig",
                     "base_form": "koncentrera sig",
-                    "position_start": 894,
-                    "position_end": 909
+                    "position_start": 16,
+                    "position_end": 31
                 },
                 {
                     "word_in_sentence": "snäll",
                     "base_form": "snäll",
-                    "position_start": 930,
-                    "position_end": 935
-                },
+                    "position_start": 52,
+                    "position_end": 57
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_53_s017",
+            "sv": "Han ville be att få mer kaffe, och passade också på att be om min hjälp för att söka ett stort jobb i stor skala åt en vän.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "be att få",
                     "base_form": "be att få",
-                    "position_start": 949,
-                    "position_end": 958
+                    "position_start": 10,
+                    "position_end": 19
                 },
                 {
                     "word_in_sentence": "be om",
                     "base_form": "be om",
-                    "position_start": 995,
-                    "position_end": 1000
+                    "position_start": 56,
+                    "position_end": 61
                 },
                 {
                     "word_in_sentence": "söka",
                     "base_form": "söka",
-                    "position_start": 1019,
-                    "position_end": 1023
+                    "position_start": 80,
+                    "position_end": 84
                 },
                 {
                     "word_in_sentence": "skala",
                     "base_form": "skala",
-                    "position_start": 1046,
-                    "position_end": 1051
-                },
+                    "position_start": 107,
+                    "position_end": 112
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_53_s018",
+            "sv": "Han brukade ofta sätta i system att utnyttja folks godhet.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "sätta i",
                     "base_form": "sätta i",
-                    "position_start": 1080,
-                    "position_end": 1087
-                },
+                    "position_start": 17,
+                    "position_end": 24
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_53_s019",
+            "sv": "Jag tyckte att hans beteende var detsamma som att vara egoistisk.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "detsamma som",
                     "base_form": "detsamma som",
-                    "position_start": 1155,
-                    "position_end": 1167
-                },
+                    "position_start": 33,
+                    "position_end": 45
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_53_s020",
+            "sv": "Förr i tiden diskuterade man ofta tydlig könsroll och utlänningar pratade om ”Den svenska synden”, men i dagens samhälle kräver all sann framgång att man har en bra inre egenskap som ett stort tålamod.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "könsroll",
                     "base_form": "könsroll",
-                    "position_start": 1229,
-                    "position_end": 1237
+                    "position_start": 41,
+                    "position_end": 49
                 },
                 {
                     "word_in_sentence": "”Den svenska synden”",
                     "base_form": "”Den svenska synden”",
-                    "position_start": 1265,
-                    "position_end": 1285
+                    "position_start": 77,
+                    "position_end": 97
                 },
                 {
                     "word_in_sentence": "framgång",
                     "base_form": "framgång",
-                    "position_start": 1325,
-                    "position_end": 1333
+                    "position_start": 137,
+                    "position_end": 145
                 },
                 {
                     "word_in_sentence": "egenskap",
                     "base_form": "egenskap",
-                    "position_start": 1358,
-                    "position_end": 1366
+                    "position_start": 170,
+                    "position_end": 178
                 },
                 {
                     "word_in_sentence": "tålamod",
                     "base_form": "tålamod",
-                    "position_start": 1381,
-                    "position_end": 1388
-                },
+                    "position_start": 193,
+                    "position_end": 200
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_53_s021",
+            "sv": "Det är viktigt att vara harmonisk för att ens drömmar ska kunna bli verklighet.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "harmonisk",
                     "base_form": "harmonisk",
-                    "position_start": 1414,
-                    "position_end": 1423
+                    "position_start": 24,
+                    "position_end": 33
                 },
                 {
                     "word_in_sentence": "bli verklighet",
                     "base_form": "bli verklighet",
-                    "position_start": 1454,
-                    "position_end": 1468
-                },
+                    "position_start": 64,
+                    "position_end": 78
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_53_s022",
+            "sv": "Till slut kunde vi ändå komma fram till en bra lösning.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "komma fram",
                     "base_form": "komma fram",
-                    "position_start": 1496,
-                    "position_end": 1506
-                },
+                    "position_start": 24,
+                    "position_end": 34
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_53_s023",
+            "sv": "Han bad om ursäkt och jag lovade att besvara hans frågor för att få slut på konflikten.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "besvara",
                     "base_form": "besvara",
-                    "position_start": 1565,
-                    "position_end": 1572
+                    "position_start": 37,
+                    "position_end": 44
                 },
                 {
                     "word_in_sentence": "för att få",
                     "base_form": "för att få",
-                    "position_start": 1585,
-                    "position_end": 1595
-                },
+                    "position_start": 57,
+                    "position_end": 67
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_53_s024",
+            "sv": "Vi diskuterade hans nyhet och några små problem.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "nyhet",
                     "base_form": "nyhet",
-                    "position_start": 1636,
-                    "position_end": 1641
+                    "position_start": 20,
+                    "position_end": 25
                 },
                 {
                     "word_in_sentence": "små",
                     "base_form": "små",
-                    "position_start": 1652,
-                    "position_end": 1655
-                },
+                    "position_start": 36,
+                    "position_end": 39
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_53_s025",
+            "sv": "Jag började berätta om mina planer.",
+            "en": "",
+            "target_words": []
+        },
+        {
+            "sentence_id": "art_53_s026",
+            "sv": "Det brukar ju heta att ju mer …desto bättre, och vi pratade länge.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "ju mer …desto",
                     "base_form": "ju mer …desto",
-                    "position_start": 1724,
-                    "position_end": 1737
-                },
+                    "position_start": 23,
+                    "position_end": 36
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_53_s027",
+            "sv": "Vi väntade tills stormen var över.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "tills",
                     "base_form": "tills",
-                    "position_start": 1779,
-                    "position_end": 1784
-                },
+                    "position_start": 11,
+                    "position_end": 16
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_53_s028",
+            "sv": "Sedan stack han iväg snabbt som ett skott.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "skott",
                     "base_form": "skott",
-                    "position_start": 1839,
-                    "position_end": 1844
-                },
+                    "position_start": 36,
+                    "position_end": 41
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_53_s029",
+            "sv": "Jag är trots allt glad och väldigt tacksam över att vi har en mycket mer meningsfull relation, du och jag.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "tacksam",
                     "base_form": "tacksam",
-                    "position_start": 1883,
-                    "position_end": 1890
+                    "position_start": 35,
+                    "position_end": 42
                 },
                 {
                     "word_in_sentence": "meningsfull",
                     "base_form": "meningsfull",
-                    "position_start": 1921,
-                    "position_end": 1932
-                },
+                    "position_start": 73,
+                    "position_end": 84
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_53_s030",
+            "sv": "Jag kan rekommendera att du reser hit snart.",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "rekommendera",
                     "base_form": "rekommendera",
-                    "position_start": 1963,
-                    "position_end": 1975
-                },
+                    "position_start": 8,
+                    "position_end": 20
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_53_s031",
+            "sv": "En varm hälsning till dig!",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "hälsning",
                     "base_form": "hälsning",
-                    "position_start": 2008,
-                    "position_end": 2016
-                },
+                    "position_start": 8,
+                    "position_end": 16
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_53_s032",
+            "sv": "Längtar efter dig!",
+            "en": "",
+            "target_words": [
                 {
                     "word_in_sentence": "Längtar efter dig!",
                     "base_form": "Längtar efter dig!",
-                    "position_start": 2027,
-                    "position_end": 2045
+                    "position_start": 0,
+                    "position_end": 18
                 }
             ]
         }
