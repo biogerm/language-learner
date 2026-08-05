@@ -1,10 +1,8 @@
 {
   "course_id": "sfid",
   "course_title": "SFI D",
-  "steps": [
+  "stages": [
     {
-      "step_id": "step_01",
-      "step_title": "Arbetsliv",
       "articles": [
         {
           "article_id": "art_05",
@@ -1317,11 +1315,11 @@
           ],
           "secondary_words_used": []
         }
-      ]
+      ],
+      "stage_id": "step_01",
+      "stage_title": "Arbetsliv"
     },
     {
-      "step_id": "step_02",
-      "step_title": "Samhälle & Politik",
       "articles": [
         {
           "article_id": "art_42",
@@ -4382,11 +4380,11 @@
           ],
           "secondary_words_used": []
         }
-      ]
+      ],
+      "stage_id": "step_02",
+      "stage_title": "Samhälle & Politik"
     },
     {
-      "step_id": "step_03",
-      "step_title": "Vardagsliv",
       "articles": [
         {
           "article_id": "art_28",
@@ -7447,11 +7445,11 @@
           ],
           "secondary_words_used": []
         }
-      ]
+      ],
+      "stage_id": "step_03",
+      "stage_title": "Vardagsliv"
     },
     {
-      "step_id": "step_04",
-      "step_title": "Relationer & Känslor",
       "articles": [
         {
           "article_id": "art_49",
@@ -10949,11 +10947,11 @@
           ],
           "secondary_words_used": []
         }
-      ]
+      ],
+      "stage_id": "step_04",
+      "stage_title": "Relationer & Känslor"
     },
     {
-      "step_id": "step_05",
-      "step_title": "Utbildning",
       "articles": [
         {
           "article_id": "art_08",
@@ -12703,11 +12701,11 @@
           ],
           "secondary_words_used": []
         }
-      ]
+      ],
+      "stage_id": "step_05",
+      "stage_title": "Utbildning"
     },
     {
-      "step_id": "step_06",
-      "step_title": "Hälsa & Medicin",
       "articles": [
         {
           "article_id": "art_22",
@@ -15331,11 +15329,11 @@
           ],
           "secondary_words_used": []
         }
-      ]
+      ],
+      "stage_id": "step_06",
+      "stage_title": "Hälsa & Medicin"
     },
     {
-      "step_id": "step_07",
-      "step_title": "Natur & Miljö",
       "articles": [
         {
           "article_id": "art_17",
@@ -17522,11 +17520,11 @@
           ],
           "secondary_words_used": []
         }
-      ]
+      ],
+      "stage_id": "step_07",
+      "stage_title": "Natur & Miljö"
     },
     {
-      "step_id": "step_08",
-      "step_title": "Kultur & Nöje",
       "articles": [
         {
           "article_id": "art_35",
@@ -20587,11 +20585,11 @@
           ],
           "secondary_words_used": []
         }
-      ]
+      ],
+      "stage_id": "step_08",
+      "stage_title": "Kultur & Nöje"
     },
     {
-      "step_id": "step_09",
-      "step_title": "Resor & Transport",
       "articles": [
         {
           "article_id": "art_02",
@@ -21904,11 +21902,11 @@
           ],
           "secondary_words_used": []
         }
-      ]
+      ],
+      "stage_id": "step_09",
+      "stage_title": "Resor & Transport"
     },
     {
-      "step_id": "step_10",
-      "step_title": "Mat & Matlagning",
       "articles": [
         {
           "article_id": "art_12",
@@ -24095,11 +24093,11 @@
           ],
           "secondary_words_used": []
         }
-      ]
+      ],
+      "stage_id": "step_10",
+      "stage_title": "Mat & Matlagning"
     },
     {
-      "step_id": "step_11",
-      "step_title": "Vetenskap & Teknik",
       "articles": [
         {
           "article_id": "art_00",
@@ -24975,7 +24973,9 @@
           ],
           "secondary_words_used": []
         }
-      ]
+      ],
+      "stage_id": "step_11",
+      "stage_title": "Vetenskap & Teknik"
     }
   ]
 }
