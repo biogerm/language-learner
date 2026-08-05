@@ -11,8 +11,7 @@ Phase 4 的核心目标是为所有生成的句子和独立单词生成 MP3 发�
 - **来自 Phase 2 的输入**: 包含所有句子的文章 JSON 文件。每个句子必须具有 `id` 和 `sv` (瑞典语文本) 字段。
 - **来自 Phase 1 的输入**: 包含所有独立单词的 `master_dict.json` (使用 `base_form` 键)。
 - **参数**:
-  - `voice_sentence`: 用于句子的 TTS 语音 (默认: `sv-SE-SofieNeural`, 女声)
-  - `voice_word`: 用于单词的 TTS 语音 (默认: `sv-SE-MattiasNeural`, 男声)
+  - `voices`: TTS 语音池 (默认: `["sv-SE-SofieNeural", "sv-SE-MattiasNeural"]`，即一女一男)
   - `rate`: 语速调整 (默认: `-20%`)
   - `output_format`: 音频格式 (默认: `mp3`)
   - `max_concurrent`: 最大并发请求数 (默认: 10)
@@ -23,10 +22,11 @@ Phase 4 的核心目标是为所有生成的句子和独立单词生成 MP3 发�
 
 ## 3. TTS 生成管线
 
-### 3.1 任务拆分
+### 3.1 任务拆分与语音交替
 - **句子音频任务**: 从 Phase 2 的 JSON 文件中提取所有唯一的句子。
 - **单词音频任务**: 从 Phase 1 词典中提取所有唯一的 `base_form` 条目。
 - **去重**: 在不同章节中多次出现的单词和句子只生成一次并共享。
+- **男女声交替 (Voice Alternation)**: 生成句子或单词音频时，必须在提供的语音池（男声和女声）中进行交替轮换。例如：句子 1 使用女声，句子 2 使用男声，句子 3 使用女声...；单词生成同理（词 1 女，词 2 男）。这对于防止学习者产生听觉疲劳、适应不同性别口音至关重要。
 
 ### 3.2 并发
 - 使用 Python 的 `asyncio` 和 `edge-tts` 库实现高并发生成。
@@ -79,8 +79,7 @@ Phase 4 的核心目标是为所有生成的句子和独立单词生成 MP3 发�
 {
   "metadata": {
     "generated_at": "2025-01-01T00:00:00Z",
-    "voice_sentence": "sv-SE-SofieNeural",
-    "voice_word": "sv-SE-MattiasNeural",
+    "voices": ["sv-SE-SofieNeural", "sv-SE-MattiasNeural"],
     "rate": "-20%",
     "total_sentence_files": 500,
     "total_word_files": 3433
