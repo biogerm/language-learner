@@ -1,0 +1,663 @@
+{
+    "course_id": "sfid",
+    "course_title": "SFI D",
+    "stage_id": "stage_06",
+    "stage_title": "Hälsa & Medicin",
+    "article_id": "art_24",
+    "article_title": "Läsförståelse",
+    "target_word_count": 60,
+    "sentences": [
+        {
+            "sentence_id": "art_24_s001",
+            "sv": "\"I början av … ja, på 1900-talet, såg vår hälsovård helt annorlunda ut än idag,\" sa min gamla mormor.",
+            "en": "\"In the beginning of... well, in the 20th century, our healthcare looked completely different than today,\" said my old grandmother.",
+            "target_words": [
+                {
+                    "word_in_sentence": "I början av …",
+                    "base_form": "i början av …",
+                    "position_start": 1,
+                    "position_end": 14
+                },
+                {
+                    "word_in_sentence": "hälsovård",
+                    "base_form": "hälsovård",
+                    "position_start": 42,
+                    "position_end": 51
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_24_s002",
+            "sv": "\"Viss medicinsk kunskap har visserligen funnits sedan 500 f.Kr., men samhället har förändrats.\"",
+            "en": "\"Some medical knowledge has indeed existed since 500 BC, but society has changed.\"",
+            "target_words": [
+                {
+                    "word_in_sentence": "medicinsk",
+                    "base_form": "medicinsk",
+                    "position_start": 6,
+                    "position_end": 15
+                },
+                {
+                    "word_in_sentence": "medicin",
+                    "base_form": "medicin",
+                    "position_start": 6,
+                    "position_end": 13
+                },
+                {
+                    "word_in_sentence": "f.Kr.",
+                    "base_form": "f.kr. Före Kristus",
+                    "position_start": 58,
+                    "position_end": 63
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_24_s003",
+            "sv": "Vi hade samlats i en vacker paviljong för att fira hennes födelsedag.",
+            "en": "We had gathered in a beautiful pavilion to celebrate her birthday.",
+            "target_words": [
+                {
+                    "word_in_sentence": "samlats",
+                    "base_form": "samlas",
+                    "position_start": 8,
+                    "position_end": 15
+                },
+                {
+                    "word_in_sentence": "paviljong",
+                    "base_form": "paviljong",
+                    "position_start": 28,
+                    "position_end": 37
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_24_s004",
+            "sv": "Det blev ett gripande berättande om hennes långa liv.",
+            "en": "It became a touching storytelling about her long life.",
+            "target_words": [
+                {
+                    "word_in_sentence": "gripande",
+                    "base_form": "gripande",
+                    "position_start": 13,
+                    "position_end": 21
+                },
+                {
+                    "word_in_sentence": "berättande",
+                    "base_form": "berättande",
+                    "position_start": 22,
+                    "position_end": 32
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_24_s005",
+            "sv": "\"Jo, jag lovar!\" fortsatte hon ivrigt.",
+            "en": "\"Yes, I promise!\" she continued eagerly.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Jo, jag lovar!",
+                    "base_form": "Jo, jag lovar!",
+                    "position_start": 1,
+                    "position_end": 15
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_24_s006",
+            "sv": "\"Tidigare var allt annat än lätt.\"",
+            "en": "\"In the past, everything was anything but easy.\"",
+            "target_words": [
+                {
+                    "word_in_sentence": "Tidigare",
+                    "base_form": "tidigare",
+                    "position_start": 1,
+                    "position_end": 9
+                },
+                {
+                    "word_in_sentence": "annat än",
+                    "base_form": "annat än",
+                    "position_start": 19,
+                    "position_end": 27
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_24_s007",
+            "sv": "Hon hade arbetat inom svensk sjukvård under många år.",
+            "en": "She had worked in Swedish healthcare for many years.",
+            "target_words": [
+                {
+                    "word_in_sentence": "sjukvård",
+                    "base_form": "sjukvård",
+                    "position_start": 29,
+                    "position_end": 37
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_24_s008",
+            "sv": "Byggnaderna brukade ligga nära varandra på sjukhusområdet.",
+            "en": "The buildings used to be located close to each other on the hospital grounds.",
+            "target_words": [
+                {
+                    "word_in_sentence": "ligga nära varandra",
+                    "base_form": "ligga nära varandra",
+                    "position_start": 20,
+                    "position_end": 39
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_24_s009",
+            "sv": "I ett litet rum med en väldig lukt av rök och stark medicin, tog de hand om patienterna.",
+            "en": "In a small room with a huge smell of smoke and strong medicine, they took care of the patients.",
+            "target_words": [
+                {
+                    "word_in_sentence": "medicin",
+                    "base_form": "medicin",
+                    "position_start": 52,
+                    "position_end": 59
+                },
+                {
+                    "word_in_sentence": "väldig",
+                    "base_form": "väldig",
+                    "position_start": 23,
+                    "position_end": 29
+                },
+                {
+                    "word_in_sentence": "lukt",
+                    "base_form": "lukt",
+                    "position_start": 30,
+                    "position_end": 34
+                },
+                {
+                    "word_in_sentence": "rök",
+                    "base_form": "rök",
+                    "position_start": 38,
+                    "position_end": 41
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_24_s010",
+            "sv": "Ibland fick de ge p-piller eller en smärtstillande tablett till kvinnorna.",
+            "en": "Sometimes they had to give birth control pills or a painkiller tablet to the women.",
+            "target_words": [
+                {
+                    "word_in_sentence": "p-piller",
+                    "base_form": "p-piller",
+                    "position_start": 18,
+                    "position_end": 26
+                },
+                {
+                    "word_in_sentence": "tablett",
+                    "base_form": "tablett",
+                    "position_start": 51,
+                    "position_end": 58
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_24_s011",
+            "sv": "Om en kvinna var gravid och kände ångest, fick hon vila lite till.",
+            "en": "If a woman was pregnant and felt anxiety, she was allowed to rest a little more.",
+            "target_words": [
+                {
+                    "word_in_sentence": "gravid",
+                    "base_form": "gravid",
+                    "position_start": 17,
+                    "position_end": 23
+                },
+                {
+                    "word_in_sentence": "ångest",
+                    "base_form": "ångest",
+                    "position_start": 34,
+                    "position_end": 40
+                },
+                {
+                    "word_in_sentence": "lite till",
+                    "base_form": "lite till",
+                    "position_start": 56,
+                    "position_end": 65
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_24_s012",
+            "sv": "Man fick ofta kolla med en erfaren läkare innan någon fick gå över till en ny behandling.",
+            "en": "You often had to check with an experienced doctor before anyone could switch to a new treatment.",
+            "target_words": [
+                {
+                    "word_in_sentence": "kolla med",
+                    "base_form": "kolla med",
+                    "position_start": 14,
+                    "position_end": 23
+                },
+                {
+                    "word_in_sentence": "gå över till",
+                    "base_form": "gå över till",
+                    "position_start": 59,
+                    "position_end": 71
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_24_s013",
+            "sv": "\"I en sameby i norr fanns en kvinna med ett allvarligt funktionshinder,\" mindes hon.",
+            "en": "\"In a Sami village in the north there was a woman with a severe disability,\" she remembered.",
+            "target_words": [
+                {
+                    "word_in_sentence": "sameby",
+                    "base_form": "sameby",
+                    "position_start": 6,
+                    "position_end": 12
+                },
+                {
+                    "word_in_sentence": "funktionshinder",
+                    "base_form": "funktionshinder",
+                    "position_start": 55,
+                    "position_end": 70
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_24_s014",
+            "sv": "\"Hon fick ofta gå till fots ner för berget.\"",
+            "en": "\"She often had to walk on foot down the mountain.\"",
+            "target_words": [
+                {
+                    "word_in_sentence": "till fots",
+                    "base_form": "till fots",
+                    "position_start": 18,
+                    "position_end": 27
+                },
+                {
+                    "word_in_sentence": "ner för",
+                    "base_form": "ner för",
+                    "position_start": 28,
+                    "position_end": 35
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_24_s015",
+            "sv": "Det blev en anledning till att staten ville bygga ut samhället.",
+            "en": "It became a reason why the state wanted to expand society.",
+            "target_words": [
+                {
+                    "word_in_sentence": "en anledning till",
+                    "base_form": "en anledning till",
+                    "position_start": 9,
+                    "position_end": 26
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_24_s016",
+            "sv": "Politikerna skrev ett viktigt lagförslag, som senare blev en proposition, om allas rättighet till tandvård, barnomsorg och åldringsvård.",
+            "en": "The politicians wrote an important draft law, which later became a government bill, about everyone's right to dental care, childcare and elderly care.",
+            "target_words": [
+                {
+                    "word_in_sentence": "lagförslag",
+                    "base_form": "lagförslag",
+                    "position_start": 30,
+                    "position_end": 40
+                },
+                {
+                    "word_in_sentence": "proposition",
+                    "base_form": "proposition",
+                    "position_start": 61,
+                    "position_end": 72
+                },
+                {
+                    "word_in_sentence": "tandvård",
+                    "base_form": "tandvård",
+                    "position_start": 98,
+                    "position_end": 106
+                },
+                {
+                    "word_in_sentence": "barnomsorg",
+                    "base_form": "barnomsorg",
+                    "position_start": 108,
+                    "position_end": 118
+                },
+                {
+                    "word_in_sentence": "åldringsvård",
+                    "base_form": "åldringsvård",
+                    "position_start": 123,
+                    "position_end": 135
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_24_s017",
+            "sv": "Varje medborgare skulle ha rätt till bra vård, vilket var en enorm investering för vårt land.",
+            "en": "Every citizen would have the right to good care, which was a huge investment for our country.",
+            "target_words": [
+                {
+                    "word_in_sentence": "rätt till",
+                    "base_form": "rätt till",
+                    "position_start": 27,
+                    "position_end": 36
+                },
+                {
+                    "word_in_sentence": "investering",
+                    "base_form": "investering",
+                    "position_start": 67,
+                    "position_end": 78
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_24_s018",
+            "sv": "Målet var att folkets behov skulle uppfyllas.",
+            "en": "The goal was for the people's needs to be met.",
+            "target_words": [
+                {
+                    "word_in_sentence": "uppfyllas",
+                    "base_form": "uppfyllas",
+                    "position_start": 35,
+                    "position_end": 44
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_24_s019",
+            "sv": "\"När jag var ung hade vi lagom mycket mat,\" skrattade hon när vi åt tillsammans.",
+            "en": "\"When I was young we had just enough food,\" she laughed when we ate together.",
+            "target_words": [
+                {
+                    "word_in_sentence": "lagom",
+                    "base_form": "lagom",
+                    "position_start": 25,
+                    "position_end": 30
+                },
+                {
+                    "word_in_sentence": "tillsammans",
+                    "base_form": "tillsammans",
+                    "position_start": 68,
+                    "position_end": 79
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_24_s020",
+            "sv": "Vi åt ofta traditionellt paltbröd med olika tillbehör.",
+            "en": "We often ate traditional blood bread with various side dishes.",
+            "target_words": [
+                {
+                    "word_in_sentence": "paltbröd",
+                    "base_form": "paltbröd",
+                    "position_start": 25,
+                    "position_end": 33
+                },
+                {
+                    "word_in_sentence": "tillbehör",
+                    "base_form": "tillbehör",
+                    "position_start": 44,
+                    "position_end": 53
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_24_s021",
+            "sv": "En viktig ingrediens var ofta salt skinka.",
+            "en": "An important ingredient was often salted ham.",
+            "target_words": [
+                {
+                    "word_in_sentence": "ingrediens",
+                    "base_form": "ingrediens",
+                    "position_start": 10,
+                    "position_end": 20
+                },
+                {
+                    "word_in_sentence": "skinka",
+                    "base_form": "skinka",
+                    "position_start": 35,
+                    "position_end": 41
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_24_s022",
+            "sv": "Men när jag fick ont i min mage blev min vanliga mat bortplockad.",
+            "en": "But when I got a pain in my stomach, my regular food was taken away.",
+            "target_words": [
+                {
+                    "word_in_sentence": "mage",
+                    "base_form": "mage",
+                    "position_start": 27,
+                    "position_end": 31
+                },
+                {
+                    "word_in_sentence": "bortplockad",
+                    "base_form": "bortplockad",
+                    "position_start": 53,
+                    "position_end": 64
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_24_s023",
+            "sv": "Vi åt sällan sötsaker, kanske lite god vaniljsås om vi hade tur.",
+            "en": "We rarely ate sweets, maybe a little good vanilla sauce if we were lucky.",
+            "target_words": [
+                {
+                    "word_in_sentence": "vaniljsås",
+                    "base_form": "vaniljsås",
+                    "position_start": 39,
+                    "position_end": 48
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_24_s024",
+            "sv": "Min mormors fysiska skick var dåligt cirka fem år efter kriget.",
+            "en": "My grandmother's physical condition was bad about five years after the war.",
+            "target_words": [
+                {
+                    "word_in_sentence": "skick",
+                    "base_form": "skick",
+                    "position_start": 20,
+                    "position_end": 25
+                },
+                {
+                    "word_in_sentence": "fem",
+                    "base_form": "fem",
+                    "position_start": 43,
+                    "position_end": 46
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_24_s025",
+            "sv": "Då var tallrikarna sällan fyllda av färsk mat, utan ibland enbart fyllda med varm soppa.",
+            "en": "Then the plates were rarely filled with fresh food, but sometimes only filled with warm soup.",
+            "target_words": [
+                {
+                    "word_in_sentence": "fyllda av",
+                    "base_form": "fyllda av",
+                    "position_start": 26,
+                    "position_end": 35
+                },
+                {
+                    "word_in_sentence": "fylld",
+                    "base_form": "fylld",
+                    "position_start": 26,
+                    "position_end": 31
+                },
+                {
+                    "word_in_sentence": "fyllda med",
+                    "base_form": "fylld med",
+                    "position_start": 66,
+                    "position_end": 76
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_24_s026",
+            "sv": "En gång råkade hon få schampo i ögonen när hon tvättade sig, och höll på att ramla av sin pall!",
+            "en": "Once she accidentally got shampoo in her eyes when she was washing, and almost fell off her stool!",
+            "target_words": [
+                {
+                    "word_in_sentence": "schampo i ögonen",
+                    "base_form": "schampo i ögonen",
+                    "position_start": 22,
+                    "position_end": 38
+                },
+                {
+                    "word_in_sentence": "ramla av",
+                    "base_form": "ramla av",
+                    "position_start": 77,
+                    "position_end": 85
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_24_s027",
+            "sv": "\"Min skål var i alla fall helt fylld,\" mindes hon.",
+            "en": "\"My bowl was at least completely filled,\" she remembered.",
+            "target_words": [
+                {
+                    "word_in_sentence": "fylld",
+                    "base_form": "fylld",
+                    "position_start": 31,
+                    "position_end": 36
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_24_s028",
+            "sv": "Trots all brist på pengar försökte man år efter år hjälpa de sjuka från början till slut.",
+            "en": "Despite all the lack of money, year after year they tried to help the sick from beginning to end.",
+            "target_words": [
+                {
+                    "word_in_sentence": "brist på",
+                    "base_form": "brist på",
+                    "position_start": 10,
+                    "position_end": 18
+                },
+                {
+                    "word_in_sentence": "år efter år",
+                    "base_form": "år efter år",
+                    "position_start": 39,
+                    "position_end": 50
+                },
+                {
+                    "word_in_sentence": "från början",
+                    "base_form": "från början",
+                    "position_start": 67,
+                    "position_end": 78
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_24_s029",
+            "sv": "Ett varmt hjärta kan ibland bota mycket.",
+            "en": "A warm heart can sometimes cure a lot.",
+            "target_words": [
+                {
+                    "word_in_sentence": "hjärta",
+                    "base_form": "hjärta",
+                    "position_start": 10,
+                    "position_end": 16
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_24_s030",
+            "sv": "Om någon drabbades försökte man begrava oron och prata öppet.",
+            "en": "If someone was stricken, they tried to bury the worry and talk openly.",
+            "target_words": [
+                {
+                    "word_in_sentence": "begrava",
+                    "base_form": "begrava",
+                    "position_start": 32,
+                    "position_end": 39
+                },
+                {
+                    "word_in_sentence": "öppet",
+                    "base_form": "öppet",
+                    "position_start": 55,
+                    "position_end": 60
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_24_s031",
+            "sv": "Efter rätt vård kunde de ofta gå tillbaka till det det normala.",
+            "en": "After the right care, they could often go back to normal.",
+            "target_words": [
+                {
+                    "word_in_sentence": "gå tillbaka till det det normala",
+                    "base_form": "gå tillbaka till det normala/vanliga",
+                    "position_start": 30,
+                    "position_end": 62
+                }
+            ]
+        }
+    ],
+    "primary_words_used": [
+        "medicinsk",
+        "berättande",
+        "hälsovård",
+        "sjukvård",
+        "rök",
+        "tandvård",
+        "barnomsorg",
+        "åldringsvård",
+        "funktionshinder",
+        "tablett",
+        "lagförslag",
+        "proposition",
+        "ångest",
+        "gravid",
+        "lite till",
+        "medicin",
+        "paviljong",
+        "uppfyllas",
+        "gå tillbaka till det normala/vanliga",
+        "sameby",
+        "fyllda av",
+        "ner för",
+        "till fots",
+        "år efter år",
+        "en anledning till",
+        "fylld med",
+        "tillbehör",
+        "paltbröd",
+        "ingrediens",
+        "gå över till",
+        "rätt till",
+        "p-piller",
+        "vaniljsås",
+        "mage",
+        "hjärta",
+        "fylld",
+        "skinka",
+        "fem",
+        "från början",
+        "lagom",
+        "tidigare",
+        "f.kr. Före Kristus",
+        "lukt",
+        "annat än",
+        "öppet",
+        "ligga nära varandra",
+        "väldig",
+        "bortplockad",
+        "begrava",
+        "tillsammans",
+        "skick",
+        "schampo i ögonen",
+        "kolla med",
+        "investering",
+        "Jo, jag lovar!",
+        "i början av …",
+        "samlas",
+        "ramla av",
+        "brist på",
+        "gripande"
+    ],
+    "secondary_words_used": []
+}

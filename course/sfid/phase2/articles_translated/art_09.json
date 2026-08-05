@@ -1,0 +1,618 @@
+{
+    "course_id": "sfid",
+    "course_title": "SFI D",
+    "stage_id": "stage_05",
+    "stage_title": "Utbildning",
+    "article_id": "art_09",
+    "article_title": "Läsförståelse",
+    "target_word_count": 60,
+    "sentences": [
+        {
+            "sentence_id": "art_09_s001",
+            "sv": "Att studera har blivit mer och mer viktigt för många, eftersom man ofta vill ta en examen.",
+            "en": "Studying has become more and more important for many, since you often want to get a degree.",
+            "target_words": [
+                {
+                    "word_in_sentence": "studera",
+                    "base_form": "studera",
+                    "position_start": 4,
+                    "position_end": 11
+                },
+                {
+                    "word_in_sentence": "mer och mer",
+                    "base_form": "mer och mer",
+                    "position_start": 23,
+                    "position_end": 34
+                },
+                {
+                    "word_in_sentence": "eftersom",
+                    "base_form": "eftersom",
+                    "position_start": 54,
+                    "position_end": 62
+                },
+                {
+                    "word_in_sentence": "examen",
+                    "base_form": "examen",
+                    "position_start": 83,
+                    "position_end": 89
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_09_s002",
+            "sv": "En skolelev i en vanlig skola får bra undervisning i ämnen som matte.",
+            "en": "A school student in a regular school gets good teaching in subjects like math.",
+            "target_words": [
+                {
+                    "word_in_sentence": "skolelev",
+                    "base_form": "skolelev",
+                    "position_start": 3,
+                    "position_end": 11
+                },
+                {
+                    "word_in_sentence": "skola",
+                    "base_form": "skola",
+                    "position_start": 24,
+                    "position_end": 29
+                },
+                {
+                    "word_in_sentence": "undervisning",
+                    "base_form": "undervisning",
+                    "position_start": 38,
+                    "position_end": 50
+                },
+                {
+                    "word_in_sentence": "matte",
+                    "base_form": "matte",
+                    "position_start": 63,
+                    "position_end": 68
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_09_s003",
+            "sv": "För att undvika problem måste de ofta fokusera på att räkna mycket.",
+            "en": "To avoid problems, they often have to focus on calculating a lot.",
+            "target_words": [
+                {
+                    "word_in_sentence": "undvika",
+                    "base_form": "undvika",
+                    "position_start": 8,
+                    "position_end": 15
+                },
+                {
+                    "word_in_sentence": "fokusera på",
+                    "base_form": "fokusera på",
+                    "position_start": 38,
+                    "position_end": 49
+                },
+                {
+                    "word_in_sentence": "räkna",
+                    "base_form": "räkna",
+                    "position_start": 54,
+                    "position_end": 59
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_09_s004",
+            "sv": "En duktig lärare kan hjälpa till med hjälp av en bra bok.",
+            "en": "A good teacher can help with the aid of a good book.",
+            "target_words": [
+                {
+                    "word_in_sentence": "med hjälp av",
+                    "base_form": "med hjälp av",
+                    "position_start": 33,
+                    "position_end": 45
+                },
+                {
+                    "word_in_sentence": "bok",
+                    "base_form": "bok",
+                    "position_start": 53,
+                    "position_end": 56
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_09_s005",
+            "sv": "Ibland får eleverna översätta ett gammalt ordspråk.",
+            "en": "Sometimes the students get to translate an old proverb.",
+            "target_words": [
+                {
+                    "word_in_sentence": "översätta",
+                    "base_form": "översätta",
+                    "position_start": 20,
+                    "position_end": 29
+                },
+                {
+                    "word_in_sentence": "ordspråk",
+                    "base_form": "orspråk",
+                    "position_start": 42,
+                    "position_end": 50
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_09_s006",
+            "sv": "En klassisk övning är att ringa in eller markera en understruken mening i texten och läsa med rätt betoning.",
+            "en": "A classic exercise is to circle or mark an underlined sentence in the text and read with the right emphasis.",
+            "target_words": [
+                {
+                    "word_in_sentence": "klass",
+                    "base_form": "klass",
+                    "position_start": 3,
+                    "position_end": 8
+                },
+                {
+                    "word_in_sentence": "klassisk",
+                    "base_form": "klassisk",
+                    "position_start": 3,
+                    "position_end": 11
+                },
+                {
+                    "word_in_sentence": "ringa in",
+                    "base_form": "ringa in",
+                    "position_start": 26,
+                    "position_end": 34
+                },
+                {
+                    "word_in_sentence": "markera",
+                    "base_form": "markera",
+                    "position_start": 41,
+                    "position_end": 48
+                },
+                {
+                    "word_in_sentence": "understruken",
+                    "base_form": "understuken",
+                    "position_start": 52,
+                    "position_end": 64
+                },
+                {
+                    "word_in_sentence": "betoning",
+                    "base_form": "betoning",
+                    "position_start": 99,
+                    "position_end": 107
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_09_s007",
+            "sv": "Jag bestämde mig för att prova en snabbkurs i pedagogik.",
+            "en": "I decided to try a crash course in pedagogy.",
+            "target_words": [
+                {
+                    "word_in_sentence": "prov",
+                    "base_form": "prov",
+                    "position_start": 25,
+                    "position_end": 29
+                },
+                {
+                    "word_in_sentence": "prova",
+                    "base_form": "prova",
+                    "position_start": 25,
+                    "position_end": 30
+                },
+                {
+                    "word_in_sentence": "snabbkurs",
+                    "base_form": "snabbkurs",
+                    "position_start": 34,
+                    "position_end": 43
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_09_s008",
+            "sv": "Jag ville praktisera på en förskola för att se hur en förskollärare jobbar.",
+            "en": "I wanted to do an internship at a preschool to see how a preschool teacher works.",
+            "target_words": [
+                {
+                    "word_in_sentence": "skola",
+                    "base_form": "skola",
+                    "position_start": 30,
+                    "position_end": 35
+                },
+                {
+                    "word_in_sentence": "praktisera",
+                    "base_form": "praktisera",
+                    "position_start": 10,
+                    "position_end": 20
+                },
+                {
+                    "word_in_sentence": "förskola",
+                    "base_form": "förskola",
+                    "position_start": 27,
+                    "position_end": 35
+                },
+                {
+                    "word_in_sentence": "förskollärare",
+                    "base_form": "förskollärare",
+                    "position_start": 54,
+                    "position_end": 67
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_09_s009",
+            "sv": "Den som var yngst i vår klass var bara tjugo år, men kände sig ändå sedd.",
+            "en": "The one who was youngest in our class was only twenty years old, but still felt seen.",
+            "target_words": [
+                {
+                    "word_in_sentence": "klass",
+                    "base_form": "klass",
+                    "position_start": 24,
+                    "position_end": 29
+                },
+                {
+                    "word_in_sentence": "yngst",
+                    "base_form": "yngst",
+                    "position_start": 12,
+                    "position_end": 17
+                },
+                {
+                    "word_in_sentence": "sedd",
+                    "base_form": "sedd",
+                    "position_start": 68,
+                    "position_end": 72
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_09_s010",
+            "sv": "Han behövde inte be om lov för att få en bra lektion.",
+            "en": "He did not need to ask for permission to get a good lesson.",
+            "target_words": [
+                {
+                    "word_in_sentence": "be om lov",
+                    "base_form": "be om lov",
+                    "position_start": 17,
+                    "position_end": 26
+                },
+                {
+                    "word_in_sentence": "lektion",
+                    "base_form": "lektion",
+                    "position_start": 45,
+                    "position_end": 52
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_09_s011",
+            "sv": "Senare valde han att studera på universitet för att bli gymnasielärare.",
+            "en": "Later he chose to study at a university to become a high school teacher.",
+            "target_words": [
+                {
+                    "word_in_sentence": "studera",
+                    "base_form": "studera",
+                    "position_start": 21,
+                    "position_end": 28
+                },
+                {
+                    "word_in_sentence": "studera på universitet",
+                    "base_form": "studera på universitet",
+                    "position_start": 21,
+                    "position_end": 43
+                },
+                {
+                    "word_in_sentence": "universitet",
+                    "base_form": "universitet",
+                    "position_start": 32,
+                    "position_end": 43
+                },
+                {
+                    "word_in_sentence": "gymnasielärare",
+                    "base_form": "gymnasielärare",
+                    "position_start": 56,
+                    "position_end": 70
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_09_s012",
+            "sv": "Man kan klassa honom som en framtida akademiker.",
+            "en": "You can classify him as a future academic.",
+            "target_words": [
+                {
+                    "word_in_sentence": "klass",
+                    "base_form": "klass",
+                    "position_start": 8,
+                    "position_end": 13
+                },
+                {
+                    "word_in_sentence": "klassa",
+                    "base_form": "klassa",
+                    "position_start": 8,
+                    "position_end": 14
+                },
+                {
+                    "word_in_sentence": "akademiker",
+                    "base_form": "akademiker",
+                    "position_start": 37,
+                    "position_end": 47
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_09_s013",
+            "sv": "På ett universitet kan man lära sig mycket, till och med om lyckoforskning och annan akademisk forskning.",
+            "en": "At a university you can learn a lot, even about happiness research and other academic research.",
+            "target_words": [
+                {
+                    "word_in_sentence": "universitet",
+                    "base_form": "universitet",
+                    "position_start": 7,
+                    "position_end": 18
+                },
+                {
+                    "word_in_sentence": "lyckoforskning",
+                    "base_form": "lyckoforskning",
+                    "position_start": 60,
+                    "position_end": 74
+                },
+                {
+                    "word_in_sentence": "forskning",
+                    "base_form": "forskning",
+                    "position_start": 65,
+                    "position_end": 74
+                },
+                {
+                    "word_in_sentence": "akademisk",
+                    "base_form": "akademisk",
+                    "position_start": 85,
+                    "position_end": 94
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_09_s014",
+            "sv": "Jag vet en som vill forska om hur stress kan reducera glädjen.",
+            "en": "I know someone who wants to research how stress can reduce joy.",
+            "target_words": [
+                {
+                    "word_in_sentence": "forska om",
+                    "base_form": "forska om",
+                    "position_start": 20,
+                    "position_end": 29
+                },
+                {
+                    "word_in_sentence": "reducera",
+                    "base_form": "reducera",
+                    "position_start": 45,
+                    "position_end": 53
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_09_s015",
+            "sv": "Vår rektor berättade att de skulle ta över en kurs i svenska för invandrare.",
+            "en": "Our principal told us that they were going to take over a course in Swedish for immigrants.",
+            "target_words": [
+                {
+                    "word_in_sentence": "rektor",
+                    "base_form": "rektor",
+                    "position_start": 4,
+                    "position_end": 10
+                },
+                {
+                    "word_in_sentence": "ta över",
+                    "base_form": "ta över",
+                    "position_start": 35,
+                    "position_end": 42
+                },
+                {
+                    "word_in_sentence": "svenska för invandrare",
+                    "base_form": "svenska för invandrare",
+                    "position_start": 53,
+                    "position_end": 75
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_09_s016",
+            "sv": "Min klasskompis ville protestera mot att vi skulle ha ett stort prov senast på fredag.",
+            "en": "My classmate wanted to protest against the fact that we were to have a big test by Friday at the latest.",
+            "target_words": [
+                {
+                    "word_in_sentence": "klasskompis",
+                    "base_form": "klasskompis",
+                    "position_start": 4,
+                    "position_end": 15
+                },
+                {
+                    "word_in_sentence": "protestera",
+                    "base_form": "protestera",
+                    "position_start": 22,
+                    "position_end": 32
+                },
+                {
+                    "word_in_sentence": "senast på fredag",
+                    "base_form": "senast på fredag",
+                    "position_start": 69,
+                    "position_end": 85
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_09_s017",
+            "sv": "Han kände sig nästan lika vilsen som en björn som måste lufsa in i en bur eller stå byxlös framför alla.",
+            "en": "He felt almost as lost as a bear that has to lumber into a cage or stand pantless in front of everyone.",
+            "target_words": [
+                {
+                    "word_in_sentence": "lufsa",
+                    "base_form": "lufsa",
+                    "position_start": 56,
+                    "position_end": 61
+                },
+                {
+                    "word_in_sentence": "bur",
+                    "base_form": "bur",
+                    "position_start": 70,
+                    "position_end": 73
+                },
+                {
+                    "word_in_sentence": "byxlös",
+                    "base_form": "byxlös",
+                    "position_start": 84,
+                    "position_end": 90
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_09_s018",
+            "sv": "Men man måste prioritera och till en viss grad göra sitt bästa.",
+            "en": "But you have to prioritize and to a certain degree do your best.",
+            "target_words": [
+                {
+                    "word_in_sentence": "prioritera",
+                    "base_form": "prioritera",
+                    "position_start": 14,
+                    "position_end": 24
+                },
+                {
+                    "word_in_sentence": "grad",
+                    "base_form": "grad",
+                    "position_start": 42,
+                    "position_end": 46
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_09_s019",
+            "sv": "Det mesta måste ju ske i tid.",
+            "en": "Most things have to happen on time, after all.",
+            "target_words": [
+                {
+                    "word_in_sentence": "ske",
+                    "base_form": "ske",
+                    "position_start": 19,
+                    "position_end": 22
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_09_s020",
+            "sv": "Inför provet skulle vi räkna ihop poängen inom varje område och svara på en kortfattad fråga.",
+            "en": "Before the test, we were supposed to add up the points within each area and answer a brief question.",
+            "target_words": [
+                {
+                    "word_in_sentence": "räkna ihop",
+                    "base_form": "räkna ihop",
+                    "position_start": 23,
+                    "position_end": 33
+                },
+                {
+                    "word_in_sentence": "område",
+                    "base_form": "område",
+                    "position_start": 53,
+                    "position_end": 59
+                },
+                {
+                    "word_in_sentence": "kortfattad",
+                    "base_form": "kortfattad",
+                    "position_start": 76,
+                    "position_end": 86
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_09_s021",
+            "sv": "Minst en person om året brukar få högsta betyg.",
+            "en": "At least one person a year usually gets the highest grade.",
+            "target_words": [
+                {
+                    "word_in_sentence": "en person om året",
+                    "base_form": "en person om året",
+                    "position_start": 6,
+                    "position_end": 23
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_09_s022",
+            "sv": "Sist av alla hoppas jag att jag är bättre än någonsin på att skriva, och kanske fira med en lokalproducerad måltid.",
+            "en": "Last of all, I hope that I am better than ever at writing, and maybe celebrate with a locally produced meal.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Sist",
+                    "base_form": "sist",
+                    "position_start": 0,
+                    "position_end": 4
+                },
+                {
+                    "word_in_sentence": "någonsin",
+                    "base_form": "någonsin",
+                    "position_start": 45,
+                    "position_end": 53
+                },
+                {
+                    "word_in_sentence": "lokalproducerad",
+                    "base_form": "lokalproducerad",
+                    "position_start": 92,
+                    "position_end": 107
+                }
+            ]
+        }
+    ],
+    "primary_words_used": [
+        "översätta",
+        "bok",
+        "studera",
+        "examen",
+        "undervisning",
+        "matte",
+        "förskollärare",
+        "gymnasielärare",
+        "universitet",
+        "studera på universitet",
+        "lektion",
+        "forskning",
+        "lyckoforskning",
+        "forska om",
+        "klass",
+        "akademiker",
+        "akademisk",
+        "skola",
+        "rektor",
+        "skolelev",
+        "svenska för invandrare",
+        "prov",
+        "protestera",
+        "klasskompis",
+        "klassisk",
+        "klassa",
+        "snabbkurs",
+        "praktisera",
+        "förskola",
+        "senast på fredag",
+        "grad",
+        "prova",
+        "ringa in",
+        "räkna",
+        "område",
+        "markera",
+        "understuken",
+        "räkna ihop",
+        "betoning",
+        "fokusera på",
+        "prioritera",
+        "orspråk",
+        "reducera",
+        "en person om året",
+        "ske",
+        "byxlös",
+        "undvika",
+        "eftersom",
+        "bur",
+        "be om lov",
+        "lokalproducerad",
+        "ta över",
+        "kortfattad",
+        "sedd",
+        "mer och mer",
+        "någonsin",
+        "med hjälp av",
+        "yngst",
+        "lufsa",
+        "sist"
+    ],
+    "secondary_words_used": []
+}

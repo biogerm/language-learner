@@ -1,0 +1,641 @@
+{
+    "course_id": "sfid",
+    "course_title": "SFI D",
+    "stage_id": "stage_10",
+    "stage_title": "Mat & Matlagning",
+    "article_id": "art_13",
+    "article_title": "Läsförståelse",
+    "target_word_count": 60,
+    "sentences": [
+        {
+            "sentence_id": "art_13_s001",
+            "sv": "Jag är en riktig godisgris.",
+            "en": "I am a real sweet tooth.",
+            "target_words": [
+                {
+                    "word_in_sentence": "riktig",
+                    "base_form": "riktig",
+                    "position_start": 10,
+                    "position_end": 16
+                },
+                {
+                    "word_in_sentence": "godisgris",
+                    "base_form": "godisgris",
+                    "position_start": 17,
+                    "position_end": 26
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_13_s002",
+            "sv": "För tio år sedan fick jag ofta höra av min lärare att jag hade ett sockerberoende.",
+            "en": "Ten years ago I often heard from my teacher that I had a sugar addiction.",
+            "target_words": [
+                {
+                    "word_in_sentence": "För tio år sedan",
+                    "base_form": "för…sedan",
+                    "position_start": 0,
+                    "position_end": 16
+                },
+                {
+                    "word_in_sentence": "lärare",
+                    "base_form": "lärare",
+                    "position_start": 43,
+                    "position_end": 49
+                },
+                {
+                    "word_in_sentence": "sockerberoende",
+                    "base_form": "sockerberoende",
+                    "position_start": 67,
+                    "position_end": 81
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_13_s003",
+            "sv": "Då hade vi ofta dålig skolmat och det var alltid en brist på god mat och dryck.",
+            "en": "At that time we often had bad school food and there was always a lack of good food and drink.",
+            "target_words": [
+                {
+                    "word_in_sentence": "skolmat",
+                    "base_form": "skolmat",
+                    "position_start": 22,
+                    "position_end": 29
+                },
+                {
+                    "word_in_sentence": "brist",
+                    "base_form": "brist",
+                    "position_start": 52,
+                    "position_end": 57
+                },
+                {
+                    "word_in_sentence": "mat och dryck",
+                    "base_form": "mat och dryck",
+                    "position_start": 65,
+                    "position_end": 78
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_13_s004",
+            "sv": "Därför var jag alltid jättehungrig och fikasugen när skoldagen var slut.",
+            "en": "Therefore I was always really hungry and craving a fika when the school day was over.",
+            "target_words": [
+                {
+                    "word_in_sentence": "jättehungrig",
+                    "base_form": "jättehungrig",
+                    "position_start": 22,
+                    "position_end": 34
+                },
+                {
+                    "word_in_sentence": "fikasugen",
+                    "base_form": "fikasugen",
+                    "position_start": 39,
+                    "position_end": 48
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_13_s005",
+            "sv": "Idag bor jag långt ut på landet, där vårt lokala klimat är bra för odling av sockerbetor.",
+            "en": "Today I live far out in the country, where our local climate is good for growing sugar beets.",
+            "target_words": [
+                {
+                    "word_in_sentence": "långt ut på landet",
+                    "base_form": "långt ut på landet",
+                    "position_start": 13,
+                    "position_end": 31
+                },
+                {
+                    "word_in_sentence": "klimat",
+                    "base_form": "klimat",
+                    "position_start": 49,
+                    "position_end": 55
+                },
+                {
+                    "word_in_sentence": "odling",
+                    "base_form": "odling",
+                    "position_start": 67,
+                    "position_end": 73
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_13_s006",
+            "sv": "Jag vet att bonden är stolt över sin sockerbeta.",
+            "en": "I know that the farmer is proud of his sugar beet.",
+            "target_words": [
+                {
+                    "word_in_sentence": "sockerbeta",
+                    "base_form": "sockerbeta",
+                    "position_start": 37,
+                    "position_end": 47
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_13_s007",
+            "sv": "Ibland måste jag ta kontakt med bönderna.",
+            "en": "Sometimes I have to get in touch with the farmers.",
+            "target_words": [
+                {
+                    "word_in_sentence": "ta kontakt med",
+                    "base_form": "ta kontakt med",
+                    "position_start": 17,
+                    "position_end": 31
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_13_s008",
+            "sv": "Min vän, som var en känd sockerbagare, sa att gamla traditioner måste leva vidare.",
+            "en": "My friend, who was a famous confectioner, said that old traditions must live on.",
+            "target_words": [
+                {
+                    "word_in_sentence": "sockerbagare",
+                    "base_form": "sockerbagare",
+                    "position_start": 25,
+                    "position_end": 37
+                },
+                {
+                    "word_in_sentence": "leva vidare",
+                    "base_form": "leva vidare",
+                    "position_start": 70,
+                    "position_end": 81
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_13_s009",
+            "sv": "Han brukade göra en massa fina saker, som en marsipantårta eller en liten pepparkaka full med söt karamell.",
+            "en": "He used to make a lot of nice things, like a marzipan cake or a small gingerbread full of sweet caramel.",
+            "target_words": [
+                {
+                    "word_in_sentence": "en massa",
+                    "base_form": "en massa",
+                    "position_start": 17,
+                    "position_end": 25
+                },
+                {
+                    "word_in_sentence": "marsipantårta",
+                    "base_form": "marsipantårta",
+                    "position_start": 45,
+                    "position_end": 58
+                },
+                {
+                    "word_in_sentence": "tårta",
+                    "base_form": "tårta",
+                    "position_start": 53,
+                    "position_end": 58
+                },
+                {
+                    "word_in_sentence": "pepparkaka",
+                    "base_form": "pepparkaka",
+                    "position_start": 74,
+                    "position_end": 84
+                },
+                {
+                    "word_in_sentence": "full med",
+                    "base_form": "full med",
+                    "position_start": 85,
+                    "position_end": 93
+                },
+                {
+                    "word_in_sentence": "söt",
+                    "base_form": "söt",
+                    "position_start": 94,
+                    "position_end": 97
+                },
+                {
+                    "word_in_sentence": "karamell",
+                    "base_form": "karamell",
+                    "position_start": 98,
+                    "position_end": 106
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_13_s010",
+            "sv": "Jag vet av andrahandsinformation att han en gång arbetade på en känd chokladfabrik.",
+            "en": "I know from secondhand information that he once worked at a famous chocolate factory.",
+            "target_words": [
+                {
+                    "word_in_sentence": "andrahandsinformation",
+                    "base_form": "andrahandsinformation",
+                    "position_start": 11,
+                    "position_end": 32
+                },
+                {
+                    "word_in_sentence": "chokladfabrik",
+                    "base_form": "chokladfabrik",
+                    "position_start": 69,
+                    "position_end": 82
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_13_s011",
+            "sv": "Det lät som ett underligt men fantastiskt ställe!",
+            "en": "It sounded like a strange but fantastic place!",
+            "target_words": [
+                {
+                    "word_in_sentence": "underligt",
+                    "base_form": "underlig",
+                    "position_start": 16,
+                    "position_end": 25
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_13_s012",
+            "sv": "En dag kände jag att jag måste göra en paus i arbetet.",
+            "en": "One day I felt that I had to take a break from work.",
+            "target_words": [
+                {
+                    "word_in_sentence": "göra en paus",
+                    "base_form": "göra en paus",
+                    "position_start": 31,
+                    "position_end": 43
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_13_s013",
+            "sv": "Jag bestämde mig för att skaffa något gott till vår familjemiddag.",
+            "en": "I decided to get something good for our family dinner.",
+            "target_words": [
+                {
+                    "word_in_sentence": "skaffa",
+                    "base_form": "skaffa",
+                    "position_start": 25,
+                    "position_end": 31
+                },
+                {
+                    "word_in_sentence": "familjemiddag",
+                    "base_form": "familjemiddag",
+                    "position_start": 52,
+                    "position_end": 65
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_13_s014",
+            "sv": "Jag åkte till mitt smultronställe, en mysig godisbutik.",
+            "en": "I went to my favorite hidden spot, a cozy candy store.",
+            "target_words": [
+                {
+                    "word_in_sentence": "smultronställe",
+                    "base_form": "smultronställe",
+                    "position_start": 19,
+                    "position_end": 33
+                },
+                {
+                    "word_in_sentence": "godisbutik",
+                    "base_form": "godisbutik",
+                    "position_start": 44,
+                    "position_end": 54
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_13_s015",
+            "sv": "Den såg annorlunda ut, nästan som en stor mataffär från en modern matvarukedja.",
+            "en": "It looked different, almost like a large supermarket from a modern grocery chain.",
+            "target_words": [
+                {
+                    "word_in_sentence": "annorlunda",
+                    "base_form": "annorlunda",
+                    "position_start": 8,
+                    "position_end": 18
+                },
+                {
+                    "word_in_sentence": "mataffär",
+                    "base_form": "mataffär",
+                    "position_start": 42,
+                    "position_end": 50
+                },
+                {
+                    "word_in_sentence": "matvarukedja",
+                    "base_form": "matvarukedja",
+                    "position_start": 66,
+                    "position_end": 78
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_13_s016",
+            "sv": "\"Du kan väl sätta dig en stund,\" sa ägaren.",
+            "en": "\"Why don't you sit down for a while,\" the owner said.",
+            "target_words": [
+                {
+                    "word_in_sentence": "väl",
+                    "base_form": "väl",
+                    "position_start": 8,
+                    "position_end": 11
+                },
+                {
+                    "word_in_sentence": "sätta dig",
+                    "base_form": "sätta sig",
+                    "position_start": 12,
+                    "position_end": 21
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_13_s017",
+            "sv": "Det kändes bra.",
+            "en": "It felt good.",
+            "target_words": []
+        },
+        {
+            "sentence_id": "art_13_s018",
+            "sv": "Jag gick omkring bland hyllorna medan jag tänkte på vad jag skulle välja.",
+            "en": "I walked around among the shelves while thinking about what to choose.",
+            "target_words": [
+                {
+                    "word_in_sentence": "väl",
+                    "base_form": "väl",
+                    "position_start": 67,
+                    "position_end": 70
+                },
+                {
+                    "word_in_sentence": "omkring",
+                    "base_form": "omkring",
+                    "position_start": 9,
+                    "position_end": 16
+                },
+                {
+                    "word_in_sentence": "medan",
+                    "base_form": "medan",
+                    "position_start": 32,
+                    "position_end": 37
+                },
+                {
+                    "word_in_sentence": "tänkte på",
+                    "base_form": "tänka på",
+                    "position_start": 42,
+                    "position_end": 51
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_13_s019",
+            "sv": "Jag ville ha något mer än bara frukt.",
+            "en": "I wanted something more than just fruit.",
+            "target_words": [
+                {
+                    "word_in_sentence": "frukt",
+                    "base_form": "frukt",
+                    "position_start": 31,
+                    "position_end": 36
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_13_s020",
+            "sv": "Jag hittade en ny godissort, vilket var en liten geléfisk med härlig fruktsmak.",
+            "en": "I found a new kind of candy, which was a small jelly fish with a lovely fruit flavor.",
+            "target_words": [
+                {
+                    "word_in_sentence": "frukt",
+                    "base_form": "frukt",
+                    "position_start": 69,
+                    "position_end": 74
+                },
+                {
+                    "word_in_sentence": "godissort",
+                    "base_form": "godissort",
+                    "position_start": 18,
+                    "position_end": 27
+                },
+                {
+                    "word_in_sentence": "geléfisk",
+                    "base_form": "geléfisk",
+                    "position_start": 49,
+                    "position_end": 57
+                },
+                {
+                    "word_in_sentence": "fruktsmak",
+                    "base_form": "fruktsmak",
+                    "position_start": 69,
+                    "position_end": 78
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_13_s021",
+            "sv": "Jag hittade också en fin pralin, en stor chokladkaka och en påse med polkagris.",
+            "en": "I also found a nice praline, a large chocolate bar and a bag of peppermint stick.",
+            "target_words": [
+                {
+                    "word_in_sentence": "pralin",
+                    "base_form": "pralin",
+                    "position_start": 25,
+                    "position_end": 31
+                },
+                {
+                    "word_in_sentence": "chokladkaka",
+                    "base_form": "chokladkaka",
+                    "position_start": 41,
+                    "position_end": 52
+                },
+                {
+                    "word_in_sentence": "polkagris",
+                    "base_form": "polkagris",
+                    "position_start": 69,
+                    "position_end": 78
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_13_s022",
+            "sv": "Dessutom köpte jag lördagsgodis, lite plockgodis och en rolig tablettask till barnen.",
+            "en": "In addition, I bought Saturday candy, some pick-and-mix candy and a fun box of pastilles for the children.",
+            "target_words": [
+                {
+                    "word_in_sentence": "lördagsgodis",
+                    "base_form": "lördagsgodis",
+                    "position_start": 19,
+                    "position_end": 31
+                },
+                {
+                    "word_in_sentence": "plockgodis",
+                    "base_form": "plockgodis",
+                    "position_start": 38,
+                    "position_end": 48
+                },
+                {
+                    "word_in_sentence": "tablettask",
+                    "base_form": "tablettask",
+                    "position_start": 62,
+                    "position_end": 72
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_13_s023",
+            "sv": "Det fanns till och med en sötsak som en kokosboll och en god tårta.",
+            "en": "There was even a sweet like a chocolate-covered marshmallow treat and a good cake.",
+            "target_words": [
+                {
+                    "word_in_sentence": "sötsak",
+                    "base_form": "sötsak",
+                    "position_start": 26,
+                    "position_end": 32
+                },
+                {
+                    "word_in_sentence": "kokosboll",
+                    "base_form": "kokosboll",
+                    "position_start": 40,
+                    "position_end": 49
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_13_s024",
+            "sv": "Allt detta var så långt från en texmexprodukt som man kan komma.",
+            "en": "All this was as far from a Tex-Mex product as you can get.",
+            "target_words": [
+                {
+                    "word_in_sentence": "så långt",
+                    "base_form": "så långt",
+                    "position_start": 15,
+                    "position_end": 23
+                },
+                {
+                    "word_in_sentence": "texmexprodukt",
+                    "base_form": "texmexprodukt",
+                    "position_start": 32,
+                    "position_end": 45
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_13_s025",
+            "sv": "Morgonen efter njöt jag av alltihop som en lyxig hotellfrukost.",
+            "en": "The morning after, I enjoyed it all like a luxurious hotel breakfast.",
+            "target_words": [
+                {
+                    "word_in_sentence": "hotellfrukost",
+                    "base_form": "hotellfrukost",
+                    "position_start": 49,
+                    "position_end": 62
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_13_s026",
+            "sv": "Säg vad ni vill, jag vet att det kanske får mig att inte se klok ut, men jag är så glad över mina godsaker.",
+            "en": "Say what you want, I know it might make me look foolish, but I am so happy about my goodies.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Säg",
+                    "base_form": "säg",
+                    "position_start": 0,
+                    "position_end": 3
+                },
+                {
+                    "word_in_sentence": "inte se klok ut",
+                    "base_form": "inte se klok ut",
+                    "position_start": 52,
+                    "position_end": 67
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_13_s027",
+            "sv": "Man måste sortera vad som är viktigt i livet, annars blir det tråkigt.",
+            "en": "One has to sort out what is important in life, otherwise it gets boring.",
+            "target_words": [
+                {
+                    "word_in_sentence": "sortera",
+                    "base_form": "sortera",
+                    "position_start": 10,
+                    "position_end": 17
+                },
+                {
+                    "word_in_sentence": "annars",
+                    "base_form": "annars",
+                    "position_start": 46,
+                    "position_end": 52
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_13_s028",
+            "sv": "Ibland är det roligare att bara tugga på något gott.",
+            "en": "Sometimes it is more fun to just chew on something good.",
+            "target_words": [
+                {
+                    "word_in_sentence": "tugga",
+                    "base_form": "tugga",
+                    "position_start": 32,
+                    "position_end": 37
+                }
+            ]
+        }
+    ],
+    "primary_words_used": [
+        "godisgris",
+        "mat och dryck",
+        "sockerberoende",
+        "fikasugen",
+        "familjemiddag",
+        "hotellfrukost",
+        "plockgodis",
+        "mataffär",
+        "godissort",
+        "matvarukedja",
+        "geléfisk",
+        "fruktsmak",
+        "texmexprodukt",
+        "tårta",
+        "pepparkaka",
+        "sockerbeta",
+        "odling",
+        "chokladfabrik",
+        "godisbutik",
+        "tablettask",
+        "chokladkaka",
+        "pralin",
+        "polkagris",
+        "lördagsgodis",
+        "karamell",
+        "sötsak",
+        "kokosboll",
+        "marsipantårta",
+        "tugga",
+        "söt",
+        "frukt",
+        "sockerbagare",
+        "jättehungrig",
+        "klimat",
+        "andrahandsinformation",
+        "smultronställe",
+        "lärare",
+        "skolmat",
+        "göra en paus",
+        "brist",
+        "leva vidare",
+        "riktig",
+        "annars",
+        "väl",
+        "skaffa",
+        "annorlunda",
+        "långt ut på landet",
+        "sätta sig",
+        "säg",
+        "inte se klok ut",
+        "omkring",
+        "full med",
+        "en massa",
+        "underlig",
+        "ta kontakt med",
+        "sortera",
+        "för…sedan",
+        "så långt",
+        "medan",
+        "tänka på"
+    ],
+    "secondary_words_used": []
+}

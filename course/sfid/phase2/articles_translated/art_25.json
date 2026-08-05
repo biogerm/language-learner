@@ -1,0 +1,614 @@
+{
+    "course_id": "sfid",
+    "course_title": "SFI D",
+    "stage_id": "stage_06",
+    "stage_title": "Hälsa & Medicin",
+    "article_id": "art_25",
+    "article_title": "Läsförståelse",
+    "target_word_count": 60,
+    "sentences": [
+        {
+            "sentence_id": "art_25_s001",
+            "sv": "Min lillebror och jag bodde i en liten, fredlig by.",
+            "en": "My little brother and I lived in a small, peaceful village.",
+            "target_words": [
+                {
+                    "word_in_sentence": "lillebror",
+                    "base_form": "lillebror",
+                    "position_start": 4,
+                    "position_end": 13
+                },
+                {
+                    "word_in_sentence": "fredlig",
+                    "base_form": "fredlig",
+                    "position_start": 40,
+                    "position_end": 47
+                },
+                {
+                    "word_in_sentence": "by",
+                    "base_form": "by",
+                    "position_start": 48,
+                    "position_end": 50
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_25_s002",
+            "sv": "På en skinande grön kulle kunde man titta ut över hela samhället.",
+            "en": "On a shining green hill you could look out over the whole community.",
+            "target_words": [
+                {
+                    "word_in_sentence": "skinande",
+                    "base_form": "skinande",
+                    "position_start": 6,
+                    "position_end": 14
+                },
+                {
+                    "word_in_sentence": "kulle",
+                    "base_form": "kulle",
+                    "position_start": 20,
+                    "position_end": 25
+                },
+                {
+                    "word_in_sentence": "titta ut över",
+                    "base_form": "titta ut över",
+                    "position_start": 36,
+                    "position_end": 49
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_25_s003",
+            "sv": "Men vår startpunkt var inte enkel.",
+            "en": "But our starting point was not easy.",
+            "target_words": [
+                {
+                    "word_in_sentence": "startpunkt",
+                    "base_form": "startpunkt",
+                    "position_start": 8,
+                    "position_end": 18
+                },
+                {
+                    "word_in_sentence": "enkel",
+                    "base_form": "enkel",
+                    "position_start": 28,
+                    "position_end": 33
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_25_s004",
+            "sv": "Vi fick uppleva en hemsk tid.",
+            "en": "We had to experience a terrible time.",
+            "target_words": []
+        },
+        {
+            "sentence_id": "art_25_s005",
+            "sv": "Det var en kontrast till ytan, där allt verkade bra.",
+            "en": "It was a contrast to the surface, where everything seemed fine.",
+            "target_words": [
+                {
+                    "word_in_sentence": "kontrast",
+                    "base_form": "kontrast",
+                    "position_start": 11,
+                    "position_end": 19
+                },
+                {
+                    "word_in_sentence": "till ytan",
+                    "base_form": "till ytan",
+                    "position_start": 20,
+                    "position_end": 29
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_25_s006",
+            "sv": "Fram till år… ja, fram till år 1986, då en känd kärnkraftsolycka skedde, fanns det ingen oro.",
+            "en": "Up until the year... yes, up until the year 1986, when a famous nuclear accident happened, there was no worry.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Fram till år…",
+                    "base_form": "fram till år…",
+                    "position_start": 0,
+                    "position_end": 13
+                },
+                {
+                    "word_in_sentence": "kärnkraftsolycka",
+                    "base_form": "kärnkraftsolycka",
+                    "position_start": 48,
+                    "position_end": 64
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_25_s007",
+            "sv": "\"Hur kommer det sig att…?\" frågade min bror ofta när han hörde nyheterna.",
+            "en": "\"How come...?\" my brother often asked when he heard the news.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Hur kommer det sig att…?",
+                    "base_form": "Hur kommer det sig att…?",
+                    "position_start": 1,
+                    "position_end": 25
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_25_s008",
+            "sv": "Ett populärt massmedium  rapporterade om farorna.",
+            "en": "A popular mass medium reported about the dangers.",
+            "target_words": [
+                {
+                    "word_in_sentence": "massmedium",
+                    "base_form": "massmedium",
+                    "position_start": 13,
+                    "position_end": 23
+                },
+                {
+                    "word_in_sentence": "massmedium",
+                    "base_form": "massmediet, massmedier, massmedierna)",
+                    "position_start": 13,
+                    "position_end": 23
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_25_s009",
+            "sv": "Denna katastrof kunde leda till att många blev sjuka.",
+            "en": "This disaster could lead to many getting sick.",
+            "target_words": [
+                {
+                    "word_in_sentence": "leda till att",
+                    "base_form": "leda till att",
+                    "position_start": 22,
+                    "position_end": 35
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_25_s010",
+            "sv": "En läkare i vår by blev tyvärr knivmördad och en annan kvinna hotades när någon försökte skjuta ihjäl henne i en bred backe.",
+            "en": "A doctor in our village was unfortunately stabbed to death and another woman was threatened when someone tried to shoot her to death on a wide hill.",
+            "target_words": [
+                {
+                    "word_in_sentence": "by",
+                    "base_form": "by",
+                    "position_start": 16,
+                    "position_end": 18
+                },
+                {
+                    "word_in_sentence": "knivmördad",
+                    "base_form": "knivmördad",
+                    "position_start": 31,
+                    "position_end": 41
+                },
+                {
+                    "word_in_sentence": "skjuta ihjäl",
+                    "base_form": "skjuta ihjäl",
+                    "position_start": 89,
+                    "position_end": 101
+                },
+                {
+                    "word_in_sentence": "bred",
+                    "base_form": "bred",
+                    "position_start": 113,
+                    "position_end": 117
+                },
+                {
+                    "word_in_sentence": "backe",
+                    "base_form": "backe",
+                    "position_start": 118,
+                    "position_end": 123
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_25_s011",
+            "sv": "Det var helt sjukt!",
+            "en": "It was totally sick!",
+            "target_words": [
+                {
+                    "word_in_sentence": "helt sjukt",
+                    "base_form": "helt sjukt",
+                    "position_start": 8,
+                    "position_end": 18
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_25_s012",
+            "sv": "Gärningsmannen var en hjärtlös psykopat med ett sammansatt syndrom i sin hjärna.",
+            "en": "The perpetrator was a heartless psychopath with a complex syndrome in his brain.",
+            "target_words": [
+                {
+                    "word_in_sentence": "hjärtlös",
+                    "base_form": "hjärtlös",
+                    "position_start": 22,
+                    "position_end": 30
+                },
+                {
+                    "word_in_sentence": "psykopat",
+                    "base_form": "psykopat",
+                    "position_start": 31,
+                    "position_end": 39
+                },
+                {
+                    "word_in_sentence": "sammansatt",
+                    "base_form": "sammasatt",
+                    "position_start": 48,
+                    "position_end": 58
+                },
+                {
+                    "word_in_sentence": "syndrom",
+                    "base_form": "syndrom",
+                    "position_start": 59,
+                    "position_end": 66
+                },
+                {
+                    "word_in_sentence": "hjärna",
+                    "base_form": "hjärna",
+                    "position_start": 73,
+                    "position_end": 79
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_25_s013",
+            "sv": "Han kände ingen sympati och kunde till och med ljuga och ta till en lögn i rätten.",
+            "en": "He felt no sympathy and could even lie and resort to a lie in court.",
+            "target_words": [
+                {
+                    "word_in_sentence": "ljuga",
+                    "base_form": "ljuga",
+                    "position_start": 47,
+                    "position_end": 52
+                },
+                {
+                    "word_in_sentence": "ta till en lögn",
+                    "base_form": "ta till en lögn",
+                    "position_start": 57,
+                    "position_end": 72
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_25_s014",
+            "sv": "Vi fick lära oss att alltid vara tillsammans för att trygga vår framtid.",
+            "en": "We were taught to always be together to secure our future.",
+            "target_words": [
+                {
+                    "word_in_sentence": "vara tillsammans",
+                    "base_form": "vara tillsammans",
+                    "position_start": 28,
+                    "position_end": 44
+                },
+                {
+                    "word_in_sentence": "trygga vår framtid",
+                    "base_form": "trygga sin framtid",
+                    "position_start": 53,
+                    "position_end": 71
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_25_s015",
+            "sv": "Det kunde finnas faror, och Socialstyrelsen varnade för att en ny infektionssjukdom var på väg.",
+            "en": "There could be dangers, and the National Board of Health and Welfare warned that a new infectious disease was on its way.",
+            "target_words": [
+                {
+                    "word_in_sentence": "finnas",
+                    "base_form": "finnas",
+                    "position_start": 10,
+                    "position_end": 16
+                },
+                {
+                    "word_in_sentence": "Socialstyrelsen",
+                    "base_form": "Socialstyrelsen",
+                    "position_start": 28,
+                    "position_end": 43
+                },
+                {
+                    "word_in_sentence": "infektionssjukdom",
+                    "base_form": "infektionssjukdom",
+                    "position_start": 66,
+                    "position_end": 83
+                },
+                {
+                    "word_in_sentence": "tio",
+                    "base_form": "tio",
+                    "position_start": 71,
+                    "position_end": 74
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_25_s016",
+            "sv": "En sjuksköterska som var utbildad inom akutsjukvård sa: \"Ställ frågor om du känner kramp i magen eller får en konstig pupill i ögat, och stanna hemma om du håller på att svimma.\"",
+            "en": "A nurse who was trained in emergency care said: \"Ask questions if you feel stomach cramps or get a strange pupil in your eye, and stay home if you are about to faint.\"",
+            "target_words": [
+                {
+                    "word_in_sentence": "utbildad inom",
+                    "base_form": "utbildad inom",
+                    "position_start": 25,
+                    "position_end": 38
+                },
+                {
+                    "word_in_sentence": "Ställ frågor",
+                    "base_form": "ställ frågor",
+                    "position_start": 57,
+                    "position_end": 69
+                },
+                {
+                    "word_in_sentence": "kramp",
+                    "base_form": "kramp",
+                    "position_start": 83,
+                    "position_end": 88
+                },
+                {
+                    "word_in_sentence": "pupill",
+                    "base_form": "pupill",
+                    "position_start": 118,
+                    "position_end": 124
+                },
+                {
+                    "word_in_sentence": "stanna",
+                    "base_form": "stanna",
+                    "position_start": 137,
+                    "position_end": 143
+                },
+                {
+                    "word_in_sentence": "svimma",
+                    "base_form": "svimma",
+                    "position_start": 170,
+                    "position_end": 176
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_25_s017",
+            "sv": "Medicinen hon gav kunde smaka illa, men den var noggrann, och man var väl omhändertagen.",
+            "en": "The medicine she gave could taste bad, but it was precise, and one was well taken care of.",
+            "target_words": [
+                {
+                    "word_in_sentence": "smaka illa",
+                    "base_form": "smaka illa",
+                    "position_start": 24,
+                    "position_end": 34
+                },
+                {
+                    "word_in_sentence": "noggrann",
+                    "base_form": "noggrann",
+                    "position_start": 48,
+                    "position_end": 56
+                },
+                {
+                    "word_in_sentence": "omhändertagen",
+                    "base_form": "omhändertagen",
+                    "position_start": 74,
+                    "position_end": 87
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_25_s018",
+            "sv": "Man ville minska riskerna för att bli sämre.",
+            "en": "They wanted to reduce the risks of getting worse.",
+            "target_words": [
+                {
+                    "word_in_sentence": "minska",
+                    "base_form": "minska",
+                    "position_start": 10,
+                    "position_end": 16
+                },
+                {
+                    "word_in_sentence": "sämre",
+                    "base_form": "sämre",
+                    "position_start": 38,
+                    "position_end": 43
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_25_s019",
+            "sv": "Att få vård i tid var viktigt.",
+            "en": "Getting care on time was important.",
+            "target_words": [
+                {
+                    "word_in_sentence": "få vård",
+                    "base_form": "få vård",
+                    "position_start": 4,
+                    "position_end": 11
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_25_s020",
+            "sv": "Jag minns också att man kunde göra som man vill när det gällde preventivmedel.",
+            "en": "I also remember that you could do whatever you wanted when it came to contraceptives.",
+            "target_words": [
+                {
+                    "word_in_sentence": "göra som man vill",
+                    "base_form": "göra som man vill",
+                    "position_start": 30,
+                    "position_end": 47
+                },
+                {
+                    "word_in_sentence": "preventivmedel",
+                    "base_form": "preventivmedel",
+                    "position_start": 63,
+                    "position_end": 77
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_25_s021",
+            "sv": "Men man var ibland osäker och trodde på felaktig information.",
+            "en": "But people were sometimes unsure and believed in incorrect information.",
+            "target_words": [
+                {
+                    "word_in_sentence": "osäker",
+                    "base_form": "osäker",
+                    "position_start": 19,
+                    "position_end": 25
+                },
+                {
+                    "word_in_sentence": "felaktig",
+                    "base_form": "felaktig",
+                    "position_start": 40,
+                    "position_end": 48
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_25_s022",
+            "sv": "Just det, vi var tvungna att skicka in en blankett för att få hjälp.",
+            "en": "Right, we had to send in a form to get help.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Just det",
+                    "base_form": "just det",
+                    "position_start": 0,
+                    "position_end": 8
+                },
+                {
+                    "word_in_sentence": "skicka in",
+                    "base_form": "skicka in",
+                    "position_start": 29,
+                    "position_end": 38
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_25_s023",
+            "sv": "Om någon hade ett handikapp och var funktionshindrad kunde en ambulans rulla in för att hämta dem.",
+            "en": "If someone had a handicap and was disabled, an ambulance could roll in to pick them up.",
+            "target_words": [
+                {
+                    "word_in_sentence": "handikapp",
+                    "base_form": "handikapp",
+                    "position_start": 18,
+                    "position_end": 27
+                },
+                {
+                    "word_in_sentence": "funktionshindrad",
+                    "base_form": "funktionshindrad",
+                    "position_start": 36,
+                    "position_end": 52
+                },
+                {
+                    "word_in_sentence": "rulla",
+                    "base_form": "rulla",
+                    "position_start": 71,
+                    "position_end": 76
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_25_s024",
+            "sv": "Många gånger var vi tvungna att hålla ett positivt kroppsspråk för att hjälpa dem att kalla på doktorer.",
+            "en": "Many times we had to keep a positive body language to help them call for doctors.",
+            "target_words": [
+                {
+                    "word_in_sentence": "hålla",
+                    "base_form": "hålla",
+                    "position_start": 32,
+                    "position_end": 37
+                },
+                {
+                    "word_in_sentence": "kroppsspråk",
+                    "base_form": "kroppsspråk",
+                    "position_start": 51,
+                    "position_end": 62
+                },
+                {
+                    "word_in_sentence": "kalla",
+                    "base_form": "kalla",
+                    "position_start": 86,
+                    "position_end": 91
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_25_s025",
+            "sv": "När jag nu brukar tänka tillbaka på de tio åren, vill jag tipsa alla om att värdesätta sin hälsa.",
+            "en": "Now when I usually think back on those ten years, I want to advise everyone to value their health.",
+            "target_words": [
+                {
+                    "word_in_sentence": "tänka tillbaka",
+                    "base_form": "tänka tillbaka",
+                    "position_start": 18,
+                    "position_end": 32
+                },
+                {
+                    "word_in_sentence": "tipsa",
+                    "base_form": "tipsa",
+                    "position_start": 58,
+                    "position_end": 63
+                }
+            ]
+        }
+    ],
+    "primary_words_used": [
+        "kärnkraftsolycka",
+        "skjuta ihjäl",
+        "preventivmedel",
+        "göra som man vill",
+        "infektionssjukdom",
+        "Socialstyrelsen",
+        "knivmördad",
+        "trygga sin framtid",
+        "hjärtlös",
+        "kulle",
+        "tänka tillbaka",
+        "fram till år…",
+        "handikapp",
+        "funktionshindrad",
+        "vara tillsammans",
+        "utbildad inom",
+        "massmedium",
+        "massmediet, massmedier, massmedierna)",
+        "kramp",
+        "by",
+        "lillebror",
+        "svimma",
+        "helt sjukt",
+        "hjärna",
+        "skinande",
+        "leda till att",
+        "kroppsspråk",
+        "pupill",
+        "till ytan",
+        "backe",
+        "smaka illa",
+        "psykopat",
+        "ta till en lögn",
+        "syndrom",
+        "omhändertagen",
+        "få vård",
+        "hålla",
+        "rulla",
+        "tio",
+        "ljuga",
+        "osäker",
+        "felaktig",
+        "just det",
+        "noggrann",
+        "kontrast",
+        "sämre",
+        "finnas",
+        "ställ frågor",
+        "startpunkt",
+        "minska",
+        "titta ut över",
+        "tipsa",
+        "Hur kommer det sig att…?",
+        "stanna",
+        "sammasatt",
+        "kalla",
+        "fredlig",
+        "enkel",
+        "bred",
+        "skicka in"
+    ],
+    "secondary_words_used": []
+}

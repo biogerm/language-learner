@@ -1,0 +1,631 @@
+{
+    "course_id": "sfid",
+    "course_title": "SFI D",
+    "stage_id": "stage_07",
+    "stage_title": "Natur & Miljö",
+    "article_id": "art_17",
+    "article_title": "Läsförståelse",
+    "target_word_count": 60,
+    "sentences": [
+        {
+            "sentence_id": "art_17_s001",
+            "sv": "\"Vad gjorde jag igår?\" frågade jag i ett litet brev.",
+            "en": "\"What did I do yesterday?\" I asked in a short letter.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Vad gjorde jag igår?",
+                    "base_form": "Vad gjorde jag igår?",
+                    "position_start": 1,
+                    "position_end": 21
+                },
+                {
+                    "word_in_sentence": "brev",
+                    "base_form": "brev",
+                    "position_start": 47,
+                    "position_end": 51
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_17_s002",
+            "sv": "\"Vet du vad jag gjorde igår…?\"",
+            "en": "\"Do you know what I did yesterday...?\"",
+            "target_words": [
+                {
+                    "word_in_sentence": "Vet du vad jag gjorde igår…?",
+                    "base_form": "Vet du vad jag gjorde igår…?",
+                    "position_start": 1,
+                    "position_end": 29
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_17_s003",
+            "sv": "Igår bestämde jag mig för att utforska vår vackra natur.",
+            "en": "Yesterday I decided to explore our beautiful nature.",
+            "target_words": []
+        },
+        {
+            "sentence_id": "art_17_s004",
+            "sv": "Jag lämnade min villaträdgård och min vanliga trädgård bakom mig.",
+            "en": "I left my villa garden and my regular garden behind me.",
+            "target_words": [
+                {
+                    "word_in_sentence": "villaträdgård",
+                    "base_form": "villaträdgård",
+                    "position_start": 16,
+                    "position_end": 29
+                },
+                {
+                    "word_in_sentence": "trädgård",
+                    "base_form": "trädgård",
+                    "position_start": 21,
+                    "position_end": 29
+                },
+                {
+                    "word_in_sentence": "träd",
+                    "base_form": "träd",
+                    "position_start": 21,
+                    "position_end": 25
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_17_s005",
+            "sv": "Där fanns en vacker ros med röda rosenblad som doftade underbart, men jag ville ut.",
+            "en": "There was a beautiful rose with red rose petals that smelled wonderful, but I wanted to go out.",
+            "target_words": [
+                {
+                    "word_in_sentence": "ros",
+                    "base_form": "ros",
+                    "position_start": 20,
+                    "position_end": 23
+                },
+                {
+                    "word_in_sentence": "rosenblad",
+                    "base_form": "rosenblad",
+                    "position_start": 33,
+                    "position_end": 42
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_17_s006",
+            "sv": "Jag är mycket intresserad av vår miljö och ett folkligt friluftsliv.",
+            "en": "I am very interested in our environment and a popular outdoor life.",
+            "target_words": [
+                {
+                    "word_in_sentence": "miljö",
+                    "base_form": "miljö",
+                    "position_start": 33,
+                    "position_end": 38
+                },
+                {
+                    "word_in_sentence": "folkligt",
+                    "base_form": "folklig",
+                    "position_start": 47,
+                    "position_end": 55
+                },
+                {
+                    "word_in_sentence": "friluftsliv",
+                    "base_form": "friluftsliv",
+                    "position_start": 56,
+                    "position_end": 67
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_17_s007",
+            "sv": "\"Vilken särskild händelse fick dig att åka iväg?\" undrade min vän.",
+            "en": "\"What particular event made you go away?\" my friend wondered.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Vilken",
+                    "base_form": "Vilken",
+                    "position_start": 1,
+                    "position_end": 7
+                },
+                {
+                    "word_in_sentence": "särskild",
+                    "base_form": "särskild",
+                    "position_start": 8,
+                    "position_end": 16
+                },
+                {
+                    "word_in_sentence": "händelse",
+                    "base_form": "händelse",
+                    "position_start": 17,
+                    "position_end": 25
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_17_s008",
+            "sv": "Jo, jag kände mig missnöjd med att bara sitta hemma.",
+            "en": "Well, I felt dissatisfied with just sitting at home.",
+            "target_words": [
+                {
+                    "word_in_sentence": "missnöjd",
+                    "base_form": "missnöjd",
+                    "position_start": 18,
+                    "position_end": 26
+                },
+                {
+                    "word_in_sentence": "snö",
+                    "base_form": "snö",
+                    "position_start": 21,
+                    "position_end": 24
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_17_s009",
+            "sv": "För att få ny energi, började jag att gå ut med hunden.",
+            "en": "To get new energy, I started to walk the dog.",
+            "target_words": [
+                {
+                    "word_in_sentence": "gå ut med hunden",
+                    "base_form": "gå ut med hunden",
+                    "position_start": 38,
+                    "position_end": 54
+                },
+                {
+                    "word_in_sentence": "hund",
+                    "base_form": "hund",
+                    "position_start": 48,
+                    "position_end": 52
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_17_s010",
+            "sv": "Jag köpte en fräsig jacka och vi åkte norrut.",
+            "en": "I bought a flashy jacket and we went north.",
+            "target_words": [
+                {
+                    "word_in_sentence": "fräsig",
+                    "base_form": "fräsig",
+                    "position_start": 13,
+                    "position_end": 19
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_17_s011",
+            "sv": "Vi gick en lång sträcka upp på ett fjäll, där det fortfarande fanns lite snö.",
+            "en": "We walked a long distance up a mountain, where there was still some snow.",
+            "target_words": [
+                {
+                    "word_in_sentence": "snö",
+                    "base_form": "snö",
+                    "position_start": 73,
+                    "position_end": 76
+                },
+                {
+                    "word_in_sentence": "sträcka",
+                    "base_form": "sträcka",
+                    "position_start": 16,
+                    "position_end": 23
+                },
+                {
+                    "word_in_sentence": "fjäll",
+                    "base_form": "fjäll",
+                    "position_start": 35,
+                    "position_end": 40
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_17_s012",
+            "sv": "I naturen kan man uppleva mycket.",
+            "en": "In nature you can experience a lot.",
+            "target_words": []
+        },
+        {
+            "sentence_id": "art_17_s013",
+            "sv": "En katt eller en hund är ett bra sällskapsdjur och husdjur, men att se vilda djur i en skog är bättre än i en djurpark.",
+            "en": "A cat or a dog is a good companion animal and pet, but seeing wild animals in a forest is better than in a zoo.",
+            "target_words": [
+                {
+                    "word_in_sentence": "hund",
+                    "base_form": "hund",
+                    "position_start": 17,
+                    "position_end": 21
+                },
+                {
+                    "word_in_sentence": "katt",
+                    "base_form": "katt",
+                    "position_start": 3,
+                    "position_end": 7
+                },
+                {
+                    "word_in_sentence": "sällskapsdjur",
+                    "base_form": "sällskpasdjur",
+                    "position_start": 33,
+                    "position_end": 46
+                },
+                {
+                    "word_in_sentence": "djur",
+                    "base_form": "djur",
+                    "position_start": 42,
+                    "position_end": 46
+                },
+                {
+                    "word_in_sentence": "husdjur",
+                    "base_form": "husdjur",
+                    "position_start": 51,
+                    "position_end": 58
+                },
+                {
+                    "word_in_sentence": "vilda djur",
+                    "base_form": "vilda djur",
+                    "position_start": 71,
+                    "position_end": 81
+                },
+                {
+                    "word_in_sentence": "skog",
+                    "base_form": "skog",
+                    "position_start": 87,
+                    "position_end": 91
+                },
+                {
+                    "word_in_sentence": "djurpark",
+                    "base_form": "djurpark",
+                    "position_start": 110,
+                    "position_end": 118
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_17_s014",
+            "sv": "Där fanns hundratals små djur, bland andra ett litet rådjur och en sjungande fågel.",
+            "en": "There were hundreds of small animals there, among others a small deer and a singing bird.",
+            "target_words": [
+                {
+                    "word_in_sentence": "hund",
+                    "base_form": "hund",
+                    "position_start": 10,
+                    "position_end": 14
+                },
+                {
+                    "word_in_sentence": "djur",
+                    "base_form": "djur",
+                    "position_start": 25,
+                    "position_end": 29
+                },
+                {
+                    "word_in_sentence": "hundratals",
+                    "base_form": "hundratals",
+                    "position_start": 10,
+                    "position_end": 20
+                },
+                {
+                    "word_in_sentence": "bland andra",
+                    "base_form": "bland andra",
+                    "position_start": 31,
+                    "position_end": 42
+                },
+                {
+                    "word_in_sentence": "rådjur",
+                    "base_form": "rådjur",
+                    "position_start": 53,
+                    "position_end": 59
+                },
+                {
+                    "word_in_sentence": "fågel",
+                    "base_form": "fågel",
+                    "position_start": 77,
+                    "position_end": 82
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_17_s015",
+            "sv": "Jag såg också en stor fjäril, vackrare än någon i en gammal fjärilssamling.",
+            "en": "I also saw a large butterfly, more beautiful than any in an old butterfly collection.",
+            "target_words": [
+                {
+                    "word_in_sentence": "fjäril",
+                    "base_form": "fjäril",
+                    "position_start": 22,
+                    "position_end": 28
+                },
+                {
+                    "word_in_sentence": "fjärilssamling",
+                    "base_form": "fjärilssamling",
+                    "position_start": 60,
+                    "position_end": 74
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_17_s016",
+            "sv": "Jag fick ställa mig vid ett stort träd, som var en gammal björk, och såg gul kåda.",
+            "en": "I had to stand by a large tree, which was an old birch, and saw yellow resin.",
+            "target_words": [
+                {
+                    "word_in_sentence": "ställa mig",
+                    "base_form": "ställa sig",
+                    "position_start": 9,
+                    "position_end": 19
+                },
+                {
+                    "word_in_sentence": "björk",
+                    "base_form": "björk",
+                    "position_start": 58,
+                    "position_end": 63
+                },
+                {
+                    "word_in_sentence": "kåda",
+                    "base_form": "kåda",
+                    "position_start": 77,
+                    "position_end": 81
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_17_s017",
+            "sv": "Tyvärr måste man ofta hyra plats i andrahand på en ful parkering, ibland byggd på order av en politiker.",
+            "en": "Unfortunately, you often have to sublet a space in an ugly parking lot, sometimes built by order of a politician.",
+            "target_words": [
+                {
+                    "word_in_sentence": "andrahand",
+                    "base_form": "andrahand",
+                    "position_start": 35,
+                    "position_end": 44
+                },
+                {
+                    "word_in_sentence": "parkering",
+                    "base_form": "parkering",
+                    "position_start": 55,
+                    "position_end": 64
+                },
+                {
+                    "word_in_sentence": "på order av",
+                    "base_form": "på order av",
+                    "position_start": 79,
+                    "position_end": 90
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_17_s018",
+            "sv": "Naturen är inte längre lika fri.",
+            "en": "Nature is no longer as free.",
+            "target_words": [
+                {
+                    "word_in_sentence": "inte längre",
+                    "base_form": "inte längre",
+                    "position_start": 11,
+                    "position_end": 22
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_17_s019",
+            "sv": "Vår vackra sjö bredvid ett stort hav är nästan helt tömd på fisk på grund av all förorening.",
+            "en": "Our beautiful lake next to a large sea is almost completely emptied of fish due to all the pollution.",
+            "target_words": [
+                {
+                    "word_in_sentence": "sjö",
+                    "base_form": "sjö",
+                    "position_start": 11,
+                    "position_end": 14
+                },
+                {
+                    "word_in_sentence": "hav",
+                    "base_form": "hav",
+                    "position_start": 33,
+                    "position_end": 36
+                },
+                {
+                    "word_in_sentence": "tömd",
+                    "base_form": "utfiskad",
+                    "position_start": 52,
+                    "position_end": 56
+                },
+                {
+                    "word_in_sentence": "fisk",
+                    "base_form": "fisk",
+                    "position_start": 60,
+                    "position_end": 64
+                },
+                {
+                    "word_in_sentence": "förorening",
+                    "base_form": "förorening",
+                    "position_start": 81,
+                    "position_end": 91
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_17_s020",
+            "sv": "Det är en svår situation som ibland känns som om den började på medeltiden, och nästa generation måste efterträda oss och göra det bättre.",
+            "en": "It is a difficult situation that sometimes feels as if it began in the Middle Ages, and the next generation must succeed us and do it better.",
+            "target_words": [
+                {
+                    "word_in_sentence": "svår",
+                    "base_form": "svår",
+                    "position_start": 10,
+                    "position_end": 14
+                },
+                {
+                    "word_in_sentence": "medeltiden",
+                    "base_form": "medeltiden",
+                    "position_start": 64,
+                    "position_end": 74
+                },
+                {
+                    "word_in_sentence": "efterträda",
+                    "base_form": "efterträda",
+                    "position_start": 103,
+                    "position_end": 113
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_17_s021",
+            "sv": "Vid dagens slut såg jag en magisk solnedgång och tänkte på rymden och en ljus måne.",
+            "en": "At the end of the day I saw a magical sunset and thought about space and a bright moon.",
+            "target_words": [
+                {
+                    "word_in_sentence": "solnedgång",
+                    "base_form": "solnedgång",
+                    "position_start": 34,
+                    "position_end": 44
+                },
+                {
+                    "word_in_sentence": "rymden",
+                    "base_form": "rymden",
+                    "position_start": 59,
+                    "position_end": 65
+                },
+                {
+                    "word_in_sentence": "måne",
+                    "base_form": "måne",
+                    "position_start": 78,
+                    "position_end": 82
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_17_s022",
+            "sv": "Det var lika dramatiskt som en karaktär i en klassisk Strindbergspjäs.",
+            "en": "It was as dramatic as a character in a classic Strindberg play.",
+            "target_words": [
+                {
+                    "word_in_sentence": "karaktär",
+                    "base_form": "karaktär",
+                    "position_start": 31,
+                    "position_end": 39
+                },
+                {
+                    "word_in_sentence": "Strindbergspjäs",
+                    "base_form": "Strindbergspjäs",
+                    "position_start": 54,
+                    "position_end": 69
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_17_s023",
+            "sv": "En hemgjord saft värmde mig.",
+            "en": "A homemade juice warmed me.",
+            "target_words": [
+                {
+                    "word_in_sentence": "hemgjord",
+                    "base_form": "hemgjord",
+                    "position_start": 3,
+                    "position_end": 11
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_17_s024",
+            "sv": "\"Missa inte nästa soluppgång,\" sa jag till mig själv.",
+            "en": "\"Don't miss the next sunrise,\" I said to myself.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Missa inte",
+                    "base_form": "missa inte",
+                    "position_start": 1,
+                    "position_end": 11
+                },
+                {
+                    "word_in_sentence": "soluppgång",
+                    "base_form": "soluppgång",
+                    "position_start": 18,
+                    "position_end": 28
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_17_s025",
+            "sv": "Det är viktigt att barn får växa upp i en frisk värld utan en stor grop av sopor.",
+            "en": "It is important that children get to grow up in a healthy world without a large pit of garbage.",
+            "target_words": [
+                {
+                    "word_in_sentence": "viktigt",
+                    "base_form": "viktig",
+                    "position_start": 7,
+                    "position_end": 14
+                },
+                {
+                    "word_in_sentence": "växa upp",
+                    "base_form": "växa upp",
+                    "position_start": 28,
+                    "position_end": 36
+                },
+                {
+                    "word_in_sentence": "grop",
+                    "base_form": "grop",
+                    "position_start": 67,
+                    "position_end": 71
+                }
+            ]
+        }
+    ],
+    "primary_words_used": [
+        "fjäll",
+        "fjäril",
+        "fjärilssamling",
+        "friluftsliv",
+        "husdjur",
+        "trädgård",
+        "ros",
+        "rosenblad",
+        "snö",
+        "rymden",
+        "solnedgång",
+        "hav",
+        "soluppgång",
+        "sjö",
+        "missnöjd",
+        "djur",
+        "sällskpasdjur",
+        "hund",
+        "fågel",
+        "katt",
+        "fisk",
+        "skog",
+        "träd",
+        "vilda djur",
+        "rådjur",
+        "hundratals",
+        "djurpark",
+        "hemgjord",
+        "villaträdgård",
+        "miljö",
+        "Vad gjorde jag igår?",
+        "Vet du vad jag gjorde igår…?",
+        "Strindbergspjäs",
+        "gå ut med hunden",
+        "kåda",
+        "björk",
+        "efterträda",
+        "parkering",
+        "måne",
+        "utfiskad",
+        "förorening",
+        "brev",
+        "inte längre",
+        "missa inte",
+        "viktig",
+        "grop",
+        "bland andra",
+        "sträcka",
+        "folklig",
+        "fräsig",
+        "händelse",
+        "ställa sig",
+        "karaktär",
+        "medeltiden",
+        "svår",
+        "på order av",
+        "Vilken",
+        "andrahand",
+        "växa upp",
+        "särskild"
+    ],
+    "secondary_words_used": []
+}

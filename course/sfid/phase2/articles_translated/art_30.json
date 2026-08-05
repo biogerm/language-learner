@@ -1,0 +1,641 @@
+{
+    "course_id": "sfid",
+    "course_title": "SFI D",
+    "stage_id": "stage_03",
+    "stage_title": "Vardagsliv",
+    "article_id": "art_30",
+    "article_title": "Läsförståelse",
+    "target_word_count": 60,
+    "sentences": [
+        {
+            "sentence_id": "art_30_s001",
+            "sv": "Hoppas ni alla mår bra!",
+            "en": "Hope you are all doing well!",
+            "target_words": [
+                {
+                    "word_in_sentence": "Hoppas ni alla mår bra!",
+                    "base_form": "Hoppas ni alla/du mår bra!",
+                    "position_start": 0,
+                    "position_end": 23
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_30_s002",
+            "sv": "Min vardag ser nog ut som något helt annat än din.",
+            "en": "My everyday life probably looks like something completely different from yours.",
+            "target_words": [
+                {
+                    "word_in_sentence": "vardag",
+                    "base_form": "vardag",
+                    "position_start": 4,
+                    "position_end": 10
+                },
+                {
+                    "word_in_sentence": "något helt annat",
+                    "base_form": "något helt annat",
+                    "position_start": 26,
+                    "position_end": 42
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_30_s003",
+            "sv": "Jag jobbar hemifrån i ett gammalt boende som brukade vara ett vandrarhem.",
+            "en": "I work from home in an old accommodation that used to be a hostel.",
+            "target_words": [
+                {
+                    "word_in_sentence": "hemifrån",
+                    "base_form": "hemifrån",
+                    "position_start": 11,
+                    "position_end": 19
+                },
+                {
+                    "word_in_sentence": "boende",
+                    "base_form": "boende",
+                    "position_start": 34,
+                    "position_end": 40
+                },
+                {
+                    "word_in_sentence": "vandrarhem",
+                    "base_form": "vandrarhem",
+                    "position_start": 62,
+                    "position_end": 72
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_30_s004",
+            "sv": "Byggnaden är lika stor som ett litet palats, eller kanske mer som ett stort lantställe.",
+            "en": "The building is as big as a small palace, or maybe more like a large country house.",
+            "target_words": [
+                {
+                    "word_in_sentence": "lika stor som",
+                    "base_form": "lika stor som",
+                    "position_start": 13,
+                    "position_end": 26
+                },
+                {
+                    "word_in_sentence": "palats",
+                    "base_form": "palats",
+                    "position_start": 37,
+                    "position_end": 43
+                },
+                {
+                    "word_in_sentence": "lantställe",
+                    "base_form": "lantställe",
+                    "position_start": 76,
+                    "position_end": 86
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_30_s005",
+            "sv": "I en mysig lokal nära en sluss sitter jag i mina mjukiskläder.",
+            "en": "In a cozy room near a lock, I sit in my sweatpants.",
+            "target_words": [
+                {
+                    "word_in_sentence": "lokal",
+                    "base_form": "lokal",
+                    "position_start": 11,
+                    "position_end": 16
+                },
+                {
+                    "word_in_sentence": "sluss",
+                    "base_form": "sluss",
+                    "position_start": 25,
+                    "position_end": 30
+                },
+                {
+                    "word_in_sentence": "mjukiskläder",
+                    "base_form": "mjukiskläder",
+                    "position_start": 49,
+                    "position_end": 61
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_30_s006",
+            "sv": "Jag brukar dagdrömma och ta en paus med kaffe och en hård skorpa i mitt vardagsrum.",
+            "en": "I usually daydream and take a break with coffee and a hard rusk in my living room.",
+            "target_words": [
+                {
+                    "word_in_sentence": "vardag",
+                    "base_form": "vardag",
+                    "position_start": 72,
+                    "position_end": 78
+                },
+                {
+                    "word_in_sentence": "dagdrömma",
+                    "base_form": "dagdrömma",
+                    "position_start": 11,
+                    "position_end": 20
+                },
+                {
+                    "word_in_sentence": "paus",
+                    "base_form": "paus",
+                    "position_start": 31,
+                    "position_end": 35
+                },
+                {
+                    "word_in_sentence": "skorpa",
+                    "base_form": "skorpa",
+                    "position_start": 58,
+                    "position_end": 64
+                },
+                {
+                    "word_in_sentence": "vardagsrum",
+                    "base_form": "vardagsrum",
+                    "position_start": 72,
+                    "position_end": 82
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_30_s007",
+            "sv": "Ibland brukar jag snusa.",
+            "en": "Sometimes I use snus.",
+            "target_words": [
+                {
+                    "word_in_sentence": "snusa",
+                    "base_form": "snusa",
+                    "position_start": 18,
+                    "position_end": 23
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_30_s008",
+            "sv": "På vintern, t.ex. en kall februari, brukar jag stanna hemma.",
+            "en": "In the winter, for example a cold February, I usually stay home.",
+            "target_words": [
+                {
+                    "word_in_sentence": "t.ex.",
+                    "base_form": "t.ex.",
+                    "position_start": 12,
+                    "position_end": 17
+                },
+                {
+                    "word_in_sentence": "februari",
+                    "base_form": "februari",
+                    "position_start": 26,
+                    "position_end": 34
+                },
+                {
+                    "word_in_sentence": "stanna hemma",
+                    "base_form": "stanna hemma",
+                    "position_start": 47,
+                    "position_end": 59
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_30_s009",
+            "sv": "Jag är lite som en städare och försöker hålla miljön ren överallt.",
+            "en": "I am a bit like a cleaner and try to keep the environment clean everywhere.",
+            "target_words": [
+                {
+                    "word_in_sentence": "städare",
+                    "base_form": "städare",
+                    "position_start": 19,
+                    "position_end": 26
+                },
+                {
+                    "word_in_sentence": "lla miljö",
+                    "base_form": "hålla ren",
+                    "position_start": 42,
+                    "position_end": 51
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_30_s010",
+            "sv": "Jag gillar inte att släpa på tunga kassar från ett möbelvaruhus eller handla i ett stressigt köpcentrum i centrum.",
+            "en": "I do not like dragging heavy bags from a furniture store or shopping in a stressful shopping center downtown.",
+            "target_words": [
+                {
+                    "word_in_sentence": "släpa",
+                    "base_form": "släpa",
+                    "position_start": 20,
+                    "position_end": 25
+                },
+                {
+                    "word_in_sentence": "möbelvaruhus",
+                    "base_form": "möbelvaruhus",
+                    "position_start": 51,
+                    "position_end": 63
+                },
+                {
+                    "word_in_sentence": "handla",
+                    "base_form": "handla",
+                    "position_start": 70,
+                    "position_end": 76
+                },
+                {
+                    "word_in_sentence": "köpcentrum",
+                    "base_form": "köpcentrum",
+                    "position_start": 93,
+                    "position_end": 103
+                },
+                {
+                    "word_in_sentence": "i centrum",
+                    "base_form": "i centrum",
+                    "position_start": 104,
+                    "position_end": 113
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_30_s011",
+            "sv": "I ett svenskt folkhem fanns det i alla tider en tradition att stanna hemma hos familjen.",
+            "en": "In a Swedish welfare state, there was always a tradition of staying home with the family.",
+            "target_words": [
+                {
+                    "word_in_sentence": "stanna hemma",
+                    "base_form": "stanna hemma",
+                    "position_start": 62,
+                    "position_end": 74
+                },
+                {
+                    "word_in_sentence": "folkhem",
+                    "base_form": "folkhem",
+                    "position_start": 14,
+                    "position_end": 21
+                },
+                {
+                    "word_in_sentence": "i alla tider",
+                    "base_form": "i alla tider",
+                    "position_start": 32,
+                    "position_end": 44
+                },
+                {
+                    "word_in_sentence": "hemma hos",
+                    "base_form": "hemma hos",
+                    "position_start": 69,
+                    "position_end": 78
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_30_s012",
+            "sv": "En myskväll (”en sån” = vardagligt för en sådan mysig kväll) är vad jag brukar leva för.",
+            "en": "A cozy evening (\"en sån\" = colloquial for such a cozy evening) is what I usually live for.",
+            "target_words": [
+                {
+                    "word_in_sentence": "vardag",
+                    "base_form": "vardag",
+                    "position_start": 24,
+                    "position_end": 30
+                },
+                {
+                    "word_in_sentence": "myskväll",
+                    "base_form": "myskväll",
+                    "position_start": 3,
+                    "position_end": 11
+                },
+                {
+                    "word_in_sentence": "”en sån” = vardagligt för en sådan",
+                    "base_form": "”en sån” = vardagligt för en sådan",
+                    "position_start": 13,
+                    "position_end": 47
+                },
+                {
+                    "word_in_sentence": "leva för",
+                    "base_form": "leva för",
+                    "position_start": 79,
+                    "position_end": 87
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_30_s013",
+            "sv": "Folk i mitt grannland kan ha olika syn på ett roligt nöjesliv.",
+            "en": "People in my neighboring country might have a different view of a fun nightlife.",
+            "target_words": [
+                {
+                    "word_in_sentence": "grannland",
+                    "base_form": "grannland",
+                    "position_start": 12,
+                    "position_end": 21
+                },
+                {
+                    "word_in_sentence": "ha olika syn på",
+                    "base_form": "ha olika syn på",
+                    "position_start": 26,
+                    "position_end": 41
+                },
+                {
+                    "word_in_sentence": "nöjesliv",
+                    "base_form": "nöjesliv",
+                    "position_start": 53,
+                    "position_end": 61
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_30_s014",
+            "sv": "Åtta av tio vill gå ut och roa sig.",
+            "en": "Eight out of ten want to go out and have fun.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Åtta av tio",
+                    "base_form": "åtta av tio",
+                    "position_start": 0,
+                    "position_end": 11
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_30_s015",
+            "sv": "De vill besöka ett fint societetshus under en varm sommarmånad och dansa långt in på nätterna.",
+            "en": "They want to visit a nice society house during a warm summer month and dance late into the nights.",
+            "target_words": [
+                {
+                    "word_in_sentence": "societetshus",
+                    "base_form": "societetshus",
+                    "position_start": 24,
+                    "position_end": 36
+                },
+                {
+                    "word_in_sentence": "sommarmånad",
+                    "base_form": "sommarmånad",
+                    "position_start": 51,
+                    "position_end": 62
+                },
+                {
+                    "word_in_sentence": "långt in på nätterna",
+                    "base_form": "långt in på nätterna",
+                    "position_start": 73,
+                    "position_end": 93
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_30_s016",
+            "sv": "De gillar att annonsera sina fester.",
+            "en": "They like to advertise their parties.",
+            "target_words": [
+                {
+                    "word_in_sentence": "annonsera",
+                    "base_form": "annonsera",
+                    "position_start": 14,
+                    "position_end": 23
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_30_s017",
+            "sv": "Där finns det något för alla, men ibland kan någon vara hal som en ål och luras.",
+            "en": "There is something for everyone there, but sometimes someone can be slippery as an eel and deceive.",
+            "target_words": [
+                {
+                    "word_in_sentence": "något för alla",
+                    "base_form": "något för alla",
+                    "position_start": 14,
+                    "position_end": 28
+                },
+                {
+                    "word_in_sentence": "hal som en ål",
+                    "base_form": "hal som en ål",
+                    "position_start": 56,
+                    "position_end": 69
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_30_s018",
+            "sv": "Tystnad kan vara bättre.",
+            "en": "Silence can be better.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Tystnad",
+                    "base_form": "tystnad",
+                    "position_start": 0,
+                    "position_end": 7
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_30_s019",
+            "sv": "Själv känner jag mig ibland som en gammal riddare som måste hindra kaoset.",
+            "en": "I myself sometimes feel like an old knight who must prevent the chaos.",
+            "target_words": [
+                {
+                    "word_in_sentence": "riddare",
+                    "base_form": "riddare",
+                    "position_start": 42,
+                    "position_end": 49
+                },
+                {
+                    "word_in_sentence": "hindra",
+                    "base_form": "hindra",
+                    "position_start": 60,
+                    "position_end": 66
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_30_s020",
+            "sv": "En gång kom en exotisk skorpion in i mitt sommarställe.",
+            "en": "Once an exotic scorpion came into my summer house.",
+            "target_words": [
+                {
+                    "word_in_sentence": "skorpion",
+                    "base_form": "skorpion",
+                    "position_start": 23,
+                    "position_end": 31
+                },
+                {
+                    "word_in_sentence": "sommarställe",
+                    "base_form": "sommarställe",
+                    "position_start": 42,
+                    "position_end": 54
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_30_s021",
+            "sv": "Det var tre år i rad som jag bodde där under semestern.",
+            "en": "It was three years in a row that I lived there during the holidays.",
+            "target_words": [
+                {
+                    "word_in_sentence": "tre år i rad",
+                    "base_form": "tre år i rad",
+                    "position_start": 8,
+                    "position_end": 20
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_30_s022",
+            "sv": "Jag var helt halvsovande och var tvungen att vifta bort den när den sprang runt på golvet.",
+            "en": "I was completely half-asleep and had to wave it away when it ran around on the floor.",
+            "target_words": [
+                {
+                    "word_in_sentence": "halvsovande",
+                    "base_form": "halvsovande",
+                    "position_start": 13,
+                    "position_end": 24
+                },
+                {
+                    "word_in_sentence": "vifta",
+                    "base_form": "vifta",
+                    "position_start": 45,
+                    "position_end": 50
+                },
+                {
+                    "word_in_sentence": "runt",
+                    "base_form": "runt",
+                    "position_start": 75,
+                    "position_end": 79
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_30_s023",
+            "sv": "Nu är det äntligen söndag.",
+            "en": "Now it is finally Sunday.",
+            "target_words": [
+                {
+                    "word_in_sentence": "äntligen",
+                    "base_form": "äntligen",
+                    "position_start": 10,
+                    "position_end": 18
+                },
+                {
+                    "word_in_sentence": "söndag",
+                    "base_form": "söndag",
+                    "position_start": 19,
+                    "position_end": 25
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_30_s024",
+            "sv": "Ikväll tänker jag göra av med lite energi.",
+            "en": "Tonight I intend to use up some energy.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Ikväll",
+                    "base_form": "ikväll",
+                    "position_start": 0,
+                    "position_end": 6
+                },
+                {
+                    "word_in_sentence": "göra av med",
+                    "base_form": "göra av med",
+                    "position_start": 18,
+                    "position_end": 29
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_30_s025",
+            "sv": "Kanske ska jag debutera som författare.",
+            "en": "Maybe I will debut as an author.",
+            "target_words": [
+                {
+                    "word_in_sentence": "debutera",
+                    "base_form": "debutera",
+                    "position_start": 15,
+                    "position_end": 23
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_30_s026",
+            "sv": "Jag lärde mig nyss en ny sats om grammatik och hur man använder futurum.",
+            "en": "I just learned a new clause about grammar and how to use the future tense.",
+            "target_words": [
+                {
+                    "word_in_sentence": "sats",
+                    "base_form": "sats",
+                    "position_start": 25,
+                    "position_end": 29
+                },
+                {
+                    "word_in_sentence": "futurum",
+                    "base_form": "futurum",
+                    "position_start": 64,
+                    "position_end": 71
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_30_s027",
+            "sv": "Jag brukar alltid hålla upp dörren för nya möjligheter i livet.",
+            "en": "I usually always hold the door open for new opportunities in life.",
+            "target_words": [
+                {
+                    "word_in_sentence": "hålla upp dörren",
+                    "base_form": "hålla upp dörren",
+                    "position_start": 18,
+                    "position_end": 34
+                }
+            ]
+        }
+    ],
+    "primary_words_used": [
+        "hemifrån",
+        "vardag",
+        "vandrarhem",
+        "städare",
+        "boende",
+        "hålla upp dörren",
+        "lantställe",
+        "skorpion",
+        "halvsovande",
+        "i centrum",
+        "mjukiskläder",
+        "stanna hemma",
+        "hemma hos",
+        "myskväll",
+        "”en sån” = vardagligt för en sådan",
+        "möbelvaruhus",
+        "skorpa",
+        "handla",
+        "hålla ren",
+        "köpcentrum",
+        "futurum",
+        "folkhem",
+        "snusa",
+        "tre år i rad",
+        "riddare",
+        "paus",
+        "dagdrömma",
+        "sommarställe",
+        "sats",
+        "leva för",
+        "nöjesliv",
+        "något för alla",
+        "societetshus",
+        "sommarmånad",
+        "något helt annat",
+        "långt in på nätterna",
+        "ikväll",
+        "vardagsrum",
+        "Hoppas ni alla/du mår bra!",
+        "äntligen",
+        "hal som en ål",
+        "i alla tider",
+        "palats",
+        "runt",
+        "släpa",
+        "sluss",
+        "t.ex.",
+        "annonsera",
+        "söndag",
+        "februari",
+        "lokal",
+        "göra av med",
+        "åtta av tio",
+        "grannland",
+        "tystnad",
+        "vifta",
+        "lika stor som",
+        "debutera",
+        "hindra",
+        "ha olika syn på"
+    ],
+    "secondary_words_used": []
+}

@@ -1,0 +1,697 @@
+{
+    "course_id": "sfid",
+    "course_title": "SFI D",
+    "stage_id": "stage_01",
+    "stage_title": "Arbetsliv",
+    "article_id": "art_05",
+    "article_title": "Läsförståelse",
+    "target_word_count": 60,
+    "sentences": [
+        {
+            "sentence_id": "art_05_s001",
+            "sv": "När man talar om arbetsliv, tänker många på en bra karriär.",
+            "en": "When talking about working life, many think of a good career.",
+            "target_words": [
+                {
+                    "word_in_sentence": "När",
+                    "base_form": "när",
+                    "position_start": 0,
+                    "position_end": 3
+                },
+                {
+                    "word_in_sentence": "man",
+                    "base_form": "man",
+                    "position_start": 4,
+                    "position_end": 7
+                },
+                {
+                    "word_in_sentence": "karriär",
+                    "base_form": "karriär",
+                    "position_start": 51,
+                    "position_end": 58
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_05_s002",
+            "sv": "Först tänkte jag bli bankdirektör och jobba i en stor finansvärld.",
+            "en": "At first I planned to become a bank manager and work in the large financial world.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Först",
+                    "base_form": "först",
+                    "position_start": 0,
+                    "position_end": 5
+                },
+                {
+                    "word_in_sentence": "bankdirektör",
+                    "base_form": "bankdirektör",
+                    "position_start": 21,
+                    "position_end": 33
+                },
+                {
+                    "word_in_sentence": "jobb",
+                    "base_form": "jobb",
+                    "position_start": 38,
+                    "position_end": 42
+                },
+                {
+                    "word_in_sentence": "jobba",
+                    "base_form": "jobba",
+                    "position_start": 38,
+                    "position_end": 43
+                },
+                {
+                    "word_in_sentence": "stor",
+                    "base_form": "stor",
+                    "position_start": 49,
+                    "position_end": 53
+                },
+                {
+                    "word_in_sentence": "finansvärld",
+                    "base_form": "finansvärld",
+                    "position_start": 54,
+                    "position_end": 65
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_05_s003",
+            "sv": "Men min yrkesplan ändrades gradvis.",
+            "en": "But my career plan changed gradually.",
+            "target_words": [
+                {
+                    "word_in_sentence": "yrke",
+                    "base_form": "yrke",
+                    "position_start": 8,
+                    "position_end": 12
+                },
+                {
+                    "word_in_sentence": "yrkesplan",
+                    "base_form": "yrkesplan",
+                    "position_start": 8,
+                    "position_end": 17
+                },
+                {
+                    "word_in_sentence": "gradvis",
+                    "base_form": "gradvis",
+                    "position_start": 27,
+                    "position_end": 34
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_05_s004",
+            "sv": "\"Vad jobbar hon med?\" frågade en vän.",
+            "en": "\"What does she do for a living?\" a friend asked.",
+            "target_words": [
+                {
+                    "word_in_sentence": "jobb",
+                    "base_form": "jobb",
+                    "position_start": 5,
+                    "position_end": 9
+                },
+                {
+                    "word_in_sentence": "jobba",
+                    "base_form": "jobba",
+                    "position_start": 5,
+                    "position_end": 10
+                },
+                {
+                    "word_in_sentence": "Vad jobbar hon med?",
+                    "base_form": "Vad jobbar hon med?",
+                    "position_start": 1,
+                    "position_end": 20
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_05_s005",
+            "sv": "Jag berättade att jag hade fått ett nytt jobb i en mörk källarfabrik.",
+            "en": "I told them that I had gotten a new job in a dark basement factory.",
+            "target_words": [
+                {
+                    "word_in_sentence": "jobb",
+                    "base_form": "jobb",
+                    "position_start": 41,
+                    "position_end": 45
+                },
+                {
+                    "word_in_sentence": "källarfabrik",
+                    "base_form": "källarfabrik",
+                    "position_start": 56,
+                    "position_end": 68
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_05_s006",
+            "sv": "Det var en mycket ovanlig sak att välja en industri framför att sitta på kontor.",
+            "en": "It was a very unusual thing to choose an industry over sitting in an office.",
+            "target_words": [
+                {
+                    "word_in_sentence": "ovanlig",
+                    "base_form": "ovanlig",
+                    "position_start": 18,
+                    "position_end": 25
+                },
+                {
+                    "word_in_sentence": "sak",
+                    "base_form": "sak",
+                    "position_start": 26,
+                    "position_end": 29
+                },
+                {
+                    "word_in_sentence": "industri",
+                    "base_form": "industri",
+                    "position_start": 43,
+                    "position_end": 51
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_05_s007",
+            "sv": "En vanlig arbetsdag är ofta lång och jobbig.",
+            "en": "A regular workday is often long and tough.",
+            "target_words": [
+                {
+                    "word_in_sentence": "jobb",
+                    "base_form": "jobb",
+                    "position_start": 37,
+                    "position_end": 41
+                },
+                {
+                    "word_in_sentence": "arbetsdag",
+                    "base_form": "arbetsdag",
+                    "position_start": 10,
+                    "position_end": 19
+                },
+                {
+                    "word_in_sentence": "lång",
+                    "base_form": "lång",
+                    "position_start": 28,
+                    "position_end": 32
+                },
+                {
+                    "word_in_sentence": "jobbig",
+                    "base_form": "jobbig",
+                    "position_start": 37,
+                    "position_end": 43
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_05_s008",
+            "sv": "Ibland känner jag att det är dålig miljö att arbeta i en så tuff arbetsmiljö.",
+            "en": "Sometimes I feel that it is a bad environment to work in such a tough working environment.",
+            "target_words": [
+                {
+                    "word_in_sentence": "ner",
+                    "base_form": "ner",
+                    "position_start": 10,
+                    "position_end": 13
+                },
+                {
+                    "word_in_sentence": "dålig",
+                    "base_form": "dålig",
+                    "position_start": 29,
+                    "position_end": 34
+                },
+                {
+                    "word_in_sentence": "arbeta",
+                    "base_form": "arbeta",
+                    "position_start": 45,
+                    "position_end": 51
+                },
+                {
+                    "word_in_sentence": "arbetsmiljö",
+                    "base_form": "arbetsmiljö",
+                    "position_start": 65,
+                    "position_end": 76
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_05_s009",
+            "sv": "Men jag gillar att byta uppgifter och jag har alltid sällskap av varje kollega.",
+            "en": "But I like to change tasks and I always have the company of every colleague.",
+            "target_words": [
+                {
+                    "word_in_sentence": "byta",
+                    "base_form": "byta",
+                    "position_start": 19,
+                    "position_end": 23
+                },
+                {
+                    "word_in_sentence": "sällskap",
+                    "base_form": "sällskap",
+                    "position_start": 53,
+                    "position_end": 61
+                },
+                {
+                    "word_in_sentence": "kollega",
+                    "base_form": "kollega",
+                    "position_start": 71,
+                    "position_end": 78
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_05_s010",
+            "sv": "Man kan också få nya vänner genom kollegor.",
+            "en": "You can also make new friends through colleagues.",
+            "target_words": [
+                {
+                    "word_in_sentence": "man",
+                    "base_form": "man",
+                    "position_start": 0,
+                    "position_end": 3
+                },
+                {
+                    "word_in_sentence": "ner",
+                    "base_form": "ner",
+                    "position_start": 24,
+                    "position_end": 27
+                },
+                {
+                    "word_in_sentence": "genom kollegor",
+                    "base_form": "genom kollegor",
+                    "position_start": 28,
+                    "position_end": 42
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_05_s011",
+            "sv": "Vi är alla med i samma fackförbund, vilket är viktigt.",
+            "en": "We are all part of the same trade union, which is important.",
+            "target_words": [
+                {
+                    "word_in_sentence": "alla",
+                    "base_form": "alla",
+                    "position_start": 6,
+                    "position_end": 10
+                },
+                {
+                    "word_in_sentence": "fackförbund",
+                    "base_form": "fackförbund",
+                    "position_start": 23,
+                    "position_end": 34
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_05_s012",
+            "sv": "De hjälper oss att finansiera kurser och säkerställa en rimlig arbetstid.",
+            "en": "They help us finance courses and ensure reasonable working hours.",
+            "target_words": [
+                {
+                    "word_in_sentence": "finansiera",
+                    "base_form": "finansiera",
+                    "position_start": 19,
+                    "position_end": 29
+                },
+                {
+                    "word_in_sentence": "arbetstid",
+                    "base_form": "arbetstid",
+                    "position_start": 63,
+                    "position_end": 72
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_05_s013",
+            "sv": "Vi vill inte ha en extrem arbetsvecka.",
+            "en": "We do not want an extreme workweek.",
+            "target_words": [
+                {
+                    "word_in_sentence": "arbetsvecka",
+                    "base_form": "arbetsvecka",
+                    "position_start": 26,
+                    "position_end": 37
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_05_s014",
+            "sv": "Vi har också en chef som ibland vill visa vem som bestämmer.",
+            "en": "We also have a boss who sometimes wants to show who is in charge.",
+            "target_words": [
+                {
+                    "word_in_sentence": "visa vem som bestämmer",
+                    "base_form": "visa vem som bestämmer",
+                    "position_start": 37,
+                    "position_end": 59
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_05_s015",
+            "sv": "En produktchef besöker oss ofta och säger vad vi ska göra.",
+            "en": "A product manager often visits us and tells us what to do.",
+            "target_words": [
+                {
+                    "word_in_sentence": "produktchef",
+                    "base_form": "produktchef",
+                    "position_start": 3,
+                    "position_end": 14
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_05_s016",
+            "sv": "Men vi är en arbetsam grupp och försöker skapa balans.",
+            "en": "But we are a hardworking group and try to create balance.",
+            "target_words": [
+                {
+                    "word_in_sentence": "arbetsam",
+                    "base_form": "arbetsam",
+                    "position_start": 13,
+                    "position_end": 21
+                },
+                {
+                    "word_in_sentence": "balans",
+                    "base_form": "balans",
+                    "position_start": 47,
+                    "position_end": 53
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_05_s017",
+            "sv": "Att vara högavlönad är inte lätt i denna bransch.",
+            "en": "Being high-paid is not easy in this industry.",
+            "target_words": [
+                {
+                    "word_in_sentence": "högavlönad",
+                    "base_form": "högavlönad",
+                    "position_start": 9,
+                    "position_end": 19
+                },
+                {
+                    "word_in_sentence": "lön",
+                    "base_form": "lön",
+                    "position_start": 14,
+                    "position_end": 17
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_05_s018",
+            "sv": "Jag är lågavlönad jämfört med skogsindustrin eller den tunga gruvindustrin.",
+            "en": "I am low-paid compared to the forest industry or the heavy mining industry.",
+            "target_words": [
+                {
+                    "word_in_sentence": "industri",
+                    "base_form": "industri",
+                    "position_start": 35,
+                    "position_end": 43
+                },
+                {
+                    "word_in_sentence": "lön",
+                    "base_form": "lön",
+                    "position_start": 12,
+                    "position_end": 15
+                },
+                {
+                    "word_in_sentence": "lågavlönad",
+                    "base_form": "lågavlönad",
+                    "position_start": 7,
+                    "position_end": 17
+                },
+                {
+                    "word_in_sentence": "skogsindustri",
+                    "base_form": "skogsindustri",
+                    "position_start": 30,
+                    "position_end": 43
+                },
+                {
+                    "word_in_sentence": "gruvindustri",
+                    "base_form": "gruvindustri",
+                    "position_start": 61,
+                    "position_end": 73
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_05_s019",
+            "sv": "Vi betalar också en viss skatt på allt vi kan tjäna.",
+            "en": "We also pay a certain tax on everything we can earn.",
+            "target_words": [
+                {
+                    "word_in_sentence": "viss",
+                    "base_form": "viss",
+                    "position_start": 20,
+                    "position_end": 24
+                },
+                {
+                    "word_in_sentence": "skatt",
+                    "base_form": "skatt",
+                    "position_start": 25,
+                    "position_end": 30
+                },
+                {
+                    "word_in_sentence": "tjäna",
+                    "base_form": "tjäna",
+                    "position_start": 46,
+                    "position_end": 51
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_05_s020",
+            "sv": "Vår lön räcker oftast, men ibland måste jag jobba extra.",
+            "en": "Our salary is usually enough, but sometimes I have to work extra.",
+            "target_words": [
+                {
+                    "word_in_sentence": "lön",
+                    "base_form": "lön",
+                    "position_start": 4,
+                    "position_end": 7
+                },
+                {
+                    "word_in_sentence": "jobba extra",
+                    "base_form": "jobba extra",
+                    "position_start": 44,
+                    "position_end": 55
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_05_s021",
+            "sv": "Vi har flera maskiner och vi pratade med vår arbetskamrat och frågade om en maskin: \"Vad fick ni ge för det?\"",
+            "en": "We have several machines and we talked to our coworker and asked about a machine: \"What did you have to pay for that?\"",
+            "target_words": [
+                {
+                    "word_in_sentence": "flera",
+                    "base_form": "flera",
+                    "position_start": 7,
+                    "position_end": 12
+                },
+                {
+                    "word_in_sentence": "arbetskamrat",
+                    "base_form": "arbetskamrat",
+                    "position_start": 45,
+                    "position_end": 57
+                },
+                {
+                    "word_in_sentence": "Vad fick ni ge för det?",
+                    "base_form": "Vad fick ni ge för det?",
+                    "position_start": 85,
+                    "position_end": 108
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_05_s022",
+            "sv": "Maskinerna måste funka bra för att undvika arbetslöshet.",
+            "en": "The machines have to work well to avoid unemployment.",
+            "target_words": [
+                {
+                    "word_in_sentence": "funka",
+                    "base_form": "funka",
+                    "position_start": 17,
+                    "position_end": 22
+                },
+                {
+                    "word_in_sentence": "arbetslöshet",
+                    "base_form": "arbetslöshet",
+                    "position_start": 43,
+                    "position_end": 55
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_05_s023",
+            "sv": "När vi äntligen är ledig, försöker vi njuta av en helt arbetsfri helg.",
+            "en": "When we are finally off, we try to enjoy a completely work-free weekend.",
+            "target_words": [
+                {
+                    "word_in_sentence": "ledig",
+                    "base_form": "ledig",
+                    "position_start": 19,
+                    "position_end": 24
+                },
+                {
+                    "word_in_sentence": "arbetsfri",
+                    "base_form": "arbetsfri",
+                    "position_start": 55,
+                    "position_end": 64
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_05_s024",
+            "sv": "Det är skönt att komma bort från arbetet.",
+            "en": "It is nice to get away from work.",
+            "target_words": [
+                {
+                    "word_in_sentence": "komma",
+                    "base_form": "komma",
+                    "position_start": 17,
+                    "position_end": 22
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_05_s025",
+            "sv": "Efter en halv dag av vila är det dags för hushållsarbete.",
+            "en": "After half a day of rest, it is time for household chores.",
+            "target_words": [
+                {
+                    "word_in_sentence": "halv",
+                    "base_form": "halv",
+                    "position_start": 9,
+                    "position_end": 13
+                },
+                {
+                    "word_in_sentence": "hushållsarbete",
+                    "base_form": "hushållsarbete",
+                    "position_start": 42,
+                    "position_end": 56
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_05_s026",
+            "sv": "Det är tungt att komma hem från jobbet.",
+            "en": "It is exhausting to come home from work.",
+            "target_words": [
+                {
+                    "word_in_sentence": "komma",
+                    "base_form": "komma",
+                    "position_start": 17,
+                    "position_end": 22
+                },
+                {
+                    "word_in_sentence": "komma hem från jobbet.",
+                    "base_form": "Komma hem från jobbet.",
+                    "position_start": 17,
+                    "position_end": 39
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_05_s027",
+            "sv": "Men jag är glad över mitt yrke och hoppas få en bra praktik framöver.",
+            "en": "But I am happy with my profession and hope to get a good internship in the future.",
+            "target_words": [
+                {
+                    "word_in_sentence": "praktik",
+                    "base_form": "praktik",
+                    "position_start": 52,
+                    "position_end": 59
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_05_s028",
+            "sv": "Hela min familj tycker att det är roligt, så länge jag inte går ner mig i stress.",
+            "en": "My whole family thinks it is fun, as long as I do not get bogged down in stress.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Hela",
+                    "base_form": "hela",
+                    "position_start": 0,
+                    "position_end": 4
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_05_s029",
+            "sv": "Jag hörde min vän säga att man ska älska sitt arbete.",
+            "en": "I heard my friend say that you should love your work.",
+            "target_words": [
+                {
+                    "word_in_sentence": "säga",
+                    "base_form": "säga",
+                    "position_start": 18,
+                    "position_end": 22
+                }
+            ]
+        }
+    ],
+    "primary_words_used": [
+        "jobbig",
+        "jobb",
+        "jobba",
+        "ledig",
+        "hushållsarbete",
+        "arbeta",
+        "arbetsfri",
+        "arbetsdag",
+        "industri",
+        "genom kollegor",
+        "sällskap",
+        "Komma hem från jobbet.",
+        "Vad jobbar hon med?",
+        "karriär",
+        "bankdirektör",
+        "praktik",
+        "finansiera",
+        "gruvindustri",
+        "skogsindustri",
+        "kollega",
+        "finansvärld",
+        "fackförbund",
+        "arbetsam",
+        "tjäna",
+        "arbetslöshet",
+        "skatt",
+        "Vad fick ni ge för det?",
+        "lön",
+        "funka",
+        "arbetskamrat",
+        "yrke",
+        "yrkesplan",
+        "högavlönad",
+        "lågavlönad",
+        "arbetstid",
+        "arbetsmiljö",
+        "visa vem som bestämmer",
+        "arbetsvecka",
+        "jobba extra",
+        "produktchef",
+        "källarfabrik",
+        "säga",
+        "komma",
+        "hela",
+        "byta",
+        "stor",
+        "först",
+        "ner",
+        "dålig",
+        "när",
+        "flera",
+        "alla",
+        "man",
+        "lång",
+        "sak",
+        "balans",
+        "gradvis",
+        "halv",
+        "viss",
+        "ovanlig"
+    ],
+    "secondary_words_used": []
+}

@@ -1,0 +1,614 @@
+{
+    "course_id": "sfid",
+    "course_title": "SFI D",
+    "stage_id": "stage_08",
+    "stage_title": "Kultur & Nöje",
+    "article_id": "art_41",
+    "article_title": "Läsförståelse",
+    "target_word_count": 60,
+    "sentences": [
+        {
+            "sentence_id": "art_41_s001",
+            "sv": "En vanlig lördagskväll satt vi och tittade på en spännande teveserie och började fundera över livet.",
+            "en": "On an ordinary Saturday evening we sat watching an exciting TV series and began to think about life.",
+            "target_words": [
+                {
+                    "word_in_sentence": "lördagskväll",
+                    "base_form": "lördagskväll",
+                    "position_start": 10,
+                    "position_end": 22
+                },
+                {
+                    "word_in_sentence": "teveserie",
+                    "base_form": "teveserie",
+                    "position_start": 59,
+                    "position_end": 68
+                },
+                {
+                    "word_in_sentence": "fundera",
+                    "base_form": "fundera",
+                    "position_start": 81,
+                    "position_end": 88
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_41_s002",
+            "sv": "Jag var klädd i en svart basker, precis som en klassisk målare, men den var tyvärr för liten.",
+            "en": "I was dressed in a black beret, just like a classic painter, but unfortunately it was too small.",
+            "target_words": [
+                {
+                    "word_in_sentence": "basker",
+                    "base_form": "basker",
+                    "position_start": 25,
+                    "position_end": 31
+                },
+                {
+                    "word_in_sentence": "målare",
+                    "base_form": "målare",
+                    "position_start": 56,
+                    "position_end": 62
+                },
+                {
+                    "word_in_sentence": "för liten",
+                    "base_form": "för liten",
+                    "position_start": 83,
+                    "position_end": 92
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_41_s003",
+            "sv": "\"Vad tänker du göra när…?\" frågade min kompis plötsligt, utan att avsluta meningen.",
+            "en": "\"What are you going to do when...?\" my friend asked suddenly, without finishing the sentence.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Vad tänker du göra när…?",
+                    "base_form": "Vad tänker du göra när…?",
+                    "position_start": 1,
+                    "position_end": 25
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_41_s004",
+            "sv": "Han var en duktig detektiv, fast han också gillade att blogga om arkitektur och gammalt hantverk.",
+            "en": "He was a skilled detective, although he also liked to blog about architecture and old crafts.",
+            "target_words": [
+                {
+                    "word_in_sentence": "detektiv",
+                    "base_form": "dektektiv",
+                    "position_start": 18,
+                    "position_end": 26
+                },
+                {
+                    "word_in_sentence": "blogga",
+                    "base_form": "blogga",
+                    "position_start": 55,
+                    "position_end": 61
+                },
+                {
+                    "word_in_sentence": "arkitektur",
+                    "base_form": "arkitektur",
+                    "position_start": 65,
+                    "position_end": 75
+                },
+                {
+                    "word_in_sentence": "hantverk",
+                    "base_form": "hantverk",
+                    "position_start": 88,
+                    "position_end": 96
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_41_s005",
+            "sv": "\"Jag vet inte.",
+            "en": "\"I don't know.",
+            "target_words": []
+        },
+        {
+            "sentence_id": "art_41_s006",
+            "sv": "Jag skulle vilja veta hur… man bygger en gigantisk minnesbyggnad,\" sa jag ärligt.",
+            "en": "I would like to know how... you build a gigantic memorial building,\" I said honestly.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Jag skulle vilja veta hur…",
+                    "base_form": "Jag skulle vilja veta hur…",
+                    "position_start": 0,
+                    "position_end": 26
+                },
+                {
+                    "word_in_sentence": "gigantisk",
+                    "base_form": "gigantisk",
+                    "position_start": 41,
+                    "position_end": 50
+                },
+                {
+                    "word_in_sentence": "minnesbyggnad",
+                    "base_form": "minnesbyggnad",
+                    "position_start": 51,
+                    "position_end": 64
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_41_s007",
+            "sv": "Vi var mycket intresserade av kultur, så vi bestämde oss för att passera en känd sevärdhet i staden, ett vackert slott.",
+            "en": "We were very interested in culture, so we decided to pass a famous attraction in the city, a beautiful castle.",
+            "target_words": [
+                {
+                    "word_in_sentence": "intresserade av",
+                    "base_form": "intresserade av",
+                    "position_start": 14,
+                    "position_end": 29
+                },
+                {
+                    "word_in_sentence": "passera",
+                    "base_form": "passera",
+                    "position_start": 65,
+                    "position_end": 72
+                },
+                {
+                    "word_in_sentence": "sevärdhet",
+                    "base_form": "sevärdhet",
+                    "position_start": 81,
+                    "position_end": 90
+                },
+                {
+                    "word_in_sentence": "slott",
+                    "base_form": "slott",
+                    "position_start": 113,
+                    "position_end": 118
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_41_s008",
+            "sv": "Där fanns en staty av massivt brons, en fantastisk bronsstaty.",
+            "en": "There was a statue of solid bronze, a fantastic bronze statue.",
+            "target_words": [
+                {
+                    "word_in_sentence": "brons",
+                    "base_form": "brons",
+                    "position_start": 30,
+                    "position_end": 35
+                },
+                {
+                    "word_in_sentence": "bronsstaty",
+                    "base_form": "bronsstaty",
+                    "position_start": 51,
+                    "position_end": 61
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_41_s009",
+            "sv": "Plötsligt såg vi en gammal skvallertidning på marken.",
+            "en": "Suddenly we saw an old gossip magazine on the ground.",
+            "target_words": [
+                {
+                    "word_in_sentence": "skvallertidning",
+                    "base_form": "skvallertidning",
+                    "position_start": 27,
+                    "position_end": 42
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_41_s010",
+            "sv": "\"Vad har hänt?\" sa han och plockade upp den för att hitta ledtrådar.",
+            "en": "\"What has happened?\" he said and picked it up to find clues.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Vad har hänt?",
+                    "base_form": "Vad har hänt?",
+                    "position_start": 1,
+                    "position_end": 14
+                },
+                {
+                    "word_in_sentence": "hitta",
+                    "base_form": "hitta",
+                    "position_start": 52,
+                    "position_end": 57
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_41_s011",
+            "sv": "Tidningen hade en handling som verkade handla om en gammal folksaga om ett läskigt odjur.",
+            "en": "The magazine had a story that seemed to be about an old folktale about a scary monster.",
+            "target_words": [
+                {
+                    "word_in_sentence": "handling",
+                    "base_form": "handling",
+                    "position_start": 18,
+                    "position_end": 26
+                },
+                {
+                    "word_in_sentence": "handla om",
+                    "base_form": "handla om",
+                    "position_start": 39,
+                    "position_end": 48
+                },
+                {
+                    "word_in_sentence": "folksaga",
+                    "base_form": "folksaga",
+                    "position_start": 59,
+                    "position_end": 67
+                },
+                {
+                    "word_in_sentence": "odjur",
+                    "base_form": "odjur",
+                    "position_start": 83,
+                    "position_end": 88
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_41_s012",
+            "sv": "\"Kanske kan ett riktigt odjur hoppa upp ur vattnet!\" sa han.",
+            "en": "\"Maybe a real monster can jump up out of the water!\" he said.",
+            "target_words": [
+                {
+                    "word_in_sentence": "odjur",
+                    "base_form": "odjur",
+                    "position_start": 24,
+                    "position_end": 29
+                },
+                {
+                    "word_in_sentence": "hoppa upp ur",
+                    "base_form": "hoppa upp ur",
+                    "position_start": 30,
+                    "position_end": 42
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_41_s013",
+            "sv": "\"Överdriv!\" skrek jag.",
+            "en": "\"You're exaggerating!\" I screamed.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Överdriv!",
+                    "base_form": "överdriv!",
+                    "position_start": 1,
+                    "position_end": 10
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_41_s014",
+            "sv": "\"Du är alltid så sträng och intensiv.\"",
+            "en": "\"You are always so strict and intense.\"",
+            "target_words": [
+                {
+                    "word_in_sentence": "sträng",
+                    "base_form": "sträng",
+                    "position_start": 17,
+                    "position_end": 23
+                },
+                {
+                    "word_in_sentence": "intensiv",
+                    "base_form": "intensiv",
+                    "position_start": 28,
+                    "position_end": 36
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_41_s015",
+            "sv": "Senare hörde vi musik från en scen.",
+            "en": "Later we heard music from a stage.",
+            "target_words": [
+                {
+                    "word_in_sentence": "scen",
+                    "base_form": "scen",
+                    "position_start": 30,
+                    "position_end": 34
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_41_s016",
+            "sv": "Det var en känd popgrupp som skulle spela fiol, och det såg ut som en färgstark cirkus.",
+            "en": "It was a famous pop group that was going to play the violin, and it looked like a colorful circus.",
+            "target_words": [
+                {
+                    "word_in_sentence": "popgrupp",
+                    "base_form": "popgrupp",
+                    "position_start": 16,
+                    "position_end": 24
+                },
+                {
+                    "word_in_sentence": "spela",
+                    "base_form": "spela",
+                    "position_start": 36,
+                    "position_end": 41
+                },
+                {
+                    "word_in_sentence": "fiol",
+                    "base_form": "fiol",
+                    "position_start": 42,
+                    "position_end": 46
+                },
+                {
+                    "word_in_sentence": "cirkus",
+                    "base_form": "cirkus",
+                    "position_start": 80,
+                    "position_end": 86
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_41_s017",
+            "sv": "På marken låg en lös kanonkula.",
+            "en": "On the ground lay a loose cannonball.",
+            "target_words": [
+                {
+                    "word_in_sentence": "lös",
+                    "base_form": "lös",
+                    "position_start": 17,
+                    "position_end": 20
+                },
+                {
+                    "word_in_sentence": "kanonkula",
+                    "base_form": "kanonkula",
+                    "position_start": 21,
+                    "position_end": 30
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_41_s018",
+            "sv": "\"Vi måste se till att gömma den.",
+            "en": "\"We have to make sure to hide it.",
+            "target_words": [
+                {
+                    "word_in_sentence": "se till att",
+                    "base_form": "se till att",
+                    "position_start": 10,
+                    "position_end": 21
+                },
+                {
+                    "word_in_sentence": "gömma",
+                    "base_form": "gömma",
+                    "position_start": 22,
+                    "position_end": 27
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_41_s019",
+            "sv": "Den kan orsaka skada,\" sa jag, men min vän ville bara låta den vara.",
+            "en": "It can cause harm,\" I said, but my friend just wanted to let it be.",
+            "target_words": [
+                {
+                    "word_in_sentence": "orsaka",
+                    "base_form": "orsaka",
+                    "position_start": 8,
+                    "position_end": 14
+                },
+                {
+                    "word_in_sentence": "låta",
+                    "base_form": "låta",
+                    "position_start": 54,
+                    "position_end": 58
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_41_s020",
+            "sv": "Han ville istället ta med mig till ett stort diskotek där en discokula snurrade.",
+            "en": "Instead, he wanted to take me to a large discotheque where a disco ball was spinning.",
+            "target_words": [
+                {
+                    "word_in_sentence": "ta med",
+                    "base_form": "ta med",
+                    "position_start": 19,
+                    "position_end": 25
+                },
+                {
+                    "word_in_sentence": "diskotek",
+                    "base_form": "diskotek",
+                    "position_start": 45,
+                    "position_end": 53
+                },
+                {
+                    "word_in_sentence": "discokula",
+                    "base_form": "discokula",
+                    "position_start": 61,
+                    "position_end": 70
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_41_s021",
+            "sv": "Vi dansade jättemycket, men jag valde att stå över en Tangokurs som hölls där.",
+            "en": "We danced a whole lot, but I chose to skip a Tango course that was held there.",
+            "target_words": [
+                {
+                    "word_in_sentence": "jättemycket",
+                    "base_form": "jättemycket",
+                    "position_start": 11,
+                    "position_end": 22
+                },
+                {
+                    "word_in_sentence": "stå över",
+                    "base_form": "stå över",
+                    "position_start": 42,
+                    "position_end": 50
+                },
+                {
+                    "word_in_sentence": "Tangokurs",
+                    "base_form": "Tangokurs",
+                    "position_start": 54,
+                    "position_end": 63
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_41_s022",
+            "sv": "Efteråt kände vi för ett äventyr och valde att ta ett dopp i sjön.",
+            "en": "Afterwards we felt like an adventure and chose to take a dip in the lake.",
+            "target_words": [
+                {
+                    "word_in_sentence": "äventyr",
+                    "base_form": "äventyr",
+                    "position_start": 25,
+                    "position_end": 32
+                },
+                {
+                    "word_in_sentence": "ta ett dopp",
+                    "base_form": "ta ett dopp",
+                    "position_start": 47,
+                    "position_end": 58
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_41_s023",
+            "sv": "Då började jag inse att det var mycket roligare än tråkig skidåkning eller snabbt rally.",
+            "en": "Then I began to realize that it was much more fun than boring skiing or fast rallying.",
+            "target_words": [
+                {
+                    "word_in_sentence": "inse",
+                    "base_form": "inse",
+                    "position_start": 15,
+                    "position_end": 19
+                },
+                {
+                    "word_in_sentence": "skidåkning",
+                    "base_form": "skidåkning",
+                    "position_start": 58,
+                    "position_end": 68
+                },
+                {
+                    "word_in_sentence": "rally",
+                    "base_form": "rally",
+                    "position_start": 82,
+                    "position_end": 87
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_41_s024",
+            "sv": "Vi pratade om den gamla filmen ”Fanny och Alexander”, en dokumentär vi sett hälften av, och om sjuttiotalets idéer kring fritt sex.",
+            "en": "We talked about the old movie \"Fanny and Alexander\", a documentary we had seen half of, and about the ideas of the seventies regarding free sex.",
+            "target_words": [
+                {
+                    "word_in_sentence": "”Fanny och Alexander”",
+                    "base_form": "”Fanny och Alexander”",
+                    "position_start": 31,
+                    "position_end": 52
+                },
+                {
+                    "word_in_sentence": "dokumentär",
+                    "base_form": "dokumentär",
+                    "position_start": 57,
+                    "position_end": 67
+                },
+                {
+                    "word_in_sentence": "hälften av",
+                    "base_form": "hälften av",
+                    "position_start": 76,
+                    "position_end": 86
+                },
+                {
+                    "word_in_sentence": "fritt sex",
+                    "base_form": "fri sex",
+                    "position_start": 121,
+                    "position_end": 130
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_41_s025",
+            "sv": "Allt detta inspirerade mig till att skriva en vacker dikt följande morgon, där min kompis var en sann hjälte.",
+            "en": "All this inspired me to write a beautiful poem the following morning, where my friend was a true hero.",
+            "target_words": [
+                {
+                    "word_in_sentence": "dikt",
+                    "base_form": "dikt",
+                    "position_start": 53,
+                    "position_end": 57
+                },
+                {
+                    "word_in_sentence": "följande",
+                    "base_form": "följande",
+                    "position_start": 58,
+                    "position_end": 66
+                },
+                {
+                    "word_in_sentence": "hjälte",
+                    "base_form": "hjälte",
+                    "position_start": 102,
+                    "position_end": 108
+                }
+            ]
+        }
+    ],
+    "primary_words_used": [
+        "ta ett dopp",
+        "odjur",
+        "Tangokurs",
+        "skidåkning",
+        "discokula",
+        "dikt",
+        "målare",
+        "scen",
+        "teveserie",
+        "basker",
+        "”Fanny och Alexander”",
+        "äventyr",
+        "dokumentär",
+        "handling",
+        "spela",
+        "sevärdhet",
+        "skvallertidning",
+        "bronsstaty",
+        "folksaga",
+        "popgrupp",
+        "slott",
+        "brons",
+        "dektektiv",
+        "cirkus",
+        "diskotek",
+        "fiol",
+        "hjälte",
+        "hantverk",
+        "minnesbyggnad",
+        "fri sex",
+        "rally",
+        "arkitektur",
+        "kanonkula",
+        "blogga",
+        "handla om",
+        "låta",
+        "lördagskväll",
+        "passera",
+        "hitta",
+        "ta med",
+        "Vad har hänt?",
+        "för liten",
+        "hälften av",
+        "intresserade av",
+        "stå över",
+        "inse",
+        "gigantisk",
+        "hoppa upp ur",
+        "lös",
+        "orsaka",
+        "överdriv!",
+        "jättemycket",
+        "Jag skulle vilja veta hur…",
+        "fundera",
+        "följande",
+        "se till att",
+        "gömma",
+        "Vad tänker du göra när…?",
+        "sträng",
+        "intensiv"
+    ],
+    "secondary_words_used": []
+}

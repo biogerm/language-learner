@@ -1,0 +1,689 @@
+{
+    "course_id": "sfid",
+    "course_title": "SFI D",
+    "stage_id": "stage_03",
+    "stage_title": "Vardagsliv",
+    "article_id": "art_34",
+    "article_title": "Läsförståelse",
+    "target_word_count": 60,
+    "sentences": [
+        {
+            "sentence_id": "art_34_s001",
+            "sv": "En nödvändig paus från staden är viktig när man jobbar mycket.",
+            "en": "A necessary break from the city is important when you work a lot.",
+            "target_words": [
+                {
+                    "word_in_sentence": "nödvändig",
+                    "base_form": "nödvändig",
+                    "position_start": 3,
+                    "position_end": 12
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_34_s002",
+            "sv": "Därför bestämde jag mig för att hyra en rustik stuga vid en gammal bondgård över en helg.",
+            "en": "Therefore, I decided to rent a rustic cottage at an old farm over a weekend.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Därför",
+                    "base_form": "därför",
+                    "position_start": 0,
+                    "position_end": 6
+                },
+                {
+                    "word_in_sentence": "hyra",
+                    "base_form": "hyra",
+                    "position_start": 32,
+                    "position_end": 36
+                },
+                {
+                    "word_in_sentence": "rustik",
+                    "base_form": "rustik",
+                    "position_start": 40,
+                    "position_end": 46
+                },
+                {
+                    "word_in_sentence": "stuga",
+                    "base_form": "stuga",
+                    "position_start": 47,
+                    "position_end": 52
+                },
+                {
+                    "word_in_sentence": "vid",
+                    "base_form": "vid",
+                    "position_start": 53,
+                    "position_end": 56
+                },
+                {
+                    "word_in_sentence": "bondgård",
+                    "base_form": "bondgård",
+                    "position_start": 67,
+                    "position_end": 75
+                },
+                {
+                    "word_in_sentence": "helg",
+                    "base_form": "helg",
+                    "position_start": 84,
+                    "position_end": 88
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_34_s003",
+            "sv": "Jag ville logga ut och inte stressa.",
+            "en": "I wanted to log out and not stress.",
+            "target_words": [
+                {
+                    "word_in_sentence": "logga ut",
+                    "base_form": "logga ut",
+                    "position_start": 10,
+                    "position_end": 18
+                },
+                {
+                    "word_in_sentence": "stressa",
+                    "base_form": "stressa",
+                    "position_start": 28,
+                    "position_end": 35
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_34_s004",
+            "sv": "Innan jag åkte fick jag en inbjudan till en rolig utekväll med ett par vänner.",
+            "en": "Before I left, I received an invitation to a fun night out with a couple of friends.",
+            "target_words": [
+                {
+                    "word_in_sentence": "inbjudan",
+                    "base_form": "inbjudan",
+                    "position_start": 27,
+                    "position_end": 35
+                },
+                {
+                    "word_in_sentence": "utekväll",
+                    "base_form": "utekväll",
+                    "position_start": 50,
+                    "position_end": 58
+                },
+                {
+                    "word_in_sentence": "par",
+                    "base_form": "par",
+                    "position_start": 67,
+                    "position_end": 70
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_34_s005",
+            "sv": "Men jag tackade nej.",
+            "en": "But I declined.",
+            "target_words": []
+        },
+        {
+            "sentence_id": "art_34_s006",
+            "sv": "En gäst i mitt hus i staden var en snäll gammal änka som gillade att sätta guldkant på tillvaron.",
+            "en": "A guest in my house in the city was a kind old widow who liked to put a silver lining on existence.",
+            "target_words": [
+                {
+                    "word_in_sentence": "gäst",
+                    "base_form": "gäst",
+                    "position_start": 3,
+                    "position_end": 7
+                },
+                {
+                    "word_in_sentence": "änka",
+                    "base_form": "änka",
+                    "position_start": 48,
+                    "position_end": 52
+                },
+                {
+                    "word_in_sentence": "sätta guldkant på",
+                    "base_form": "sätta guldkant på",
+                    "position_start": 69,
+                    "position_end": 86
+                },
+                {
+                    "word_in_sentence": "guldkant",
+                    "base_form": "guldkant",
+                    "position_start": 75,
+                    "position_end": 83
+                },
+                {
+                    "word_in_sentence": "kant",
+                    "base_form": "kant",
+                    "position_start": 79,
+                    "position_end": 83
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_34_s007",
+            "sv": "Vi brukade ha en guldkant på lördagskvällen med en lyxig pralinask.",
+            "en": "We used to have a silver lining on Saturday evenings with a luxurious box of chocolates.",
+            "target_words": [
+                {
+                    "word_in_sentence": "guldkant",
+                    "base_form": "guldkant",
+                    "position_start": 17,
+                    "position_end": 25
+                },
+                {
+                    "word_in_sentence": "kant",
+                    "base_form": "kant",
+                    "position_start": 21,
+                    "position_end": 25
+                },
+                {
+                    "word_in_sentence": "pralinask",
+                    "base_form": "pralinask",
+                    "position_start": 57,
+                    "position_end": 66
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_34_s008",
+            "sv": "Det kunde säkert ersätta utekvällen ett tag, men nu behövde jag vila.",
+            "en": "It could certainly replace the night out for a while, but now I needed to rest.",
+            "target_words": [
+                {
+                    "word_in_sentence": "utekväll",
+                    "base_form": "utekväll",
+                    "position_start": 25,
+                    "position_end": 33
+                },
+                {
+                    "word_in_sentence": "kund",
+                    "base_form": "kund",
+                    "position_start": 4,
+                    "position_end": 8
+                },
+                {
+                    "word_in_sentence": "säkert",
+                    "base_form": "säkert",
+                    "position_start": 10,
+                    "position_end": 16
+                },
+                {
+                    "word_in_sentence": "ersätta",
+                    "base_form": "ersätta",
+                    "position_start": 17,
+                    "position_end": 24
+                },
+                {
+                    "word_in_sentence": "ett tag",
+                    "base_form": "ett tag",
+                    "position_start": 36,
+                    "position_end": 43
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_34_s009",
+            "sv": "I stugan, ovanför en mörk källare, fanns det en liten lucka i golvet.",
+            "en": "In the cottage, above a dark cellar, there was a small hatch in the floor.",
+            "target_words": [
+                {
+                    "word_in_sentence": "stuga",
+                    "base_form": "stuga",
+                    "position_start": 2,
+                    "position_end": 7
+                },
+                {
+                    "word_in_sentence": "ovanför",
+                    "base_form": "ovanför",
+                    "position_start": 10,
+                    "position_end": 17
+                },
+                {
+                    "word_in_sentence": "källare",
+                    "base_form": "källare",
+                    "position_start": 26,
+                    "position_end": 33
+                },
+                {
+                    "word_in_sentence": "lucka",
+                    "base_form": "lucka",
+                    "position_start": 54,
+                    "position_end": 59
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_34_s010",
+            "sv": "Jag ville inte alls öppna den, och inte heller gå ner dit.",
+            "en": "I didn't want to open it at all, nor go down there.",
+            "target_words": [
+                {
+                    "word_in_sentence": "inte alls",
+                    "base_form": "inte alls",
+                    "position_start": 10,
+                    "position_end": 19
+                },
+                {
+                    "word_in_sentence": "inte heller",
+                    "base_form": "inte heller",
+                    "position_start": 35,
+                    "position_end": 46
+                },
+                {
+                    "word_in_sentence": "dit",
+                    "base_form": "dit",
+                    "position_start": 54,
+                    "position_end": 57
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_34_s011",
+            "sv": "Har du hört talas om historien om råttan i pizzan?",
+            "en": "Have you heard of the story about the rat in the pizza?",
+            "target_words": [
+                {
+                    "word_in_sentence": "hört talas om",
+                    "base_form": "hört talas om",
+                    "position_start": 7,
+                    "position_end": 20
+                },
+                {
+                    "word_in_sentence": "råttan i pizzan",
+                    "base_form": "råttan i pizzan",
+                    "position_start": 34,
+                    "position_end": 49
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_34_s012",
+            "sv": "Vandringssägner brukar fascinera mig, och källaren kändes som en läskig plats.",
+            "en": "Urban legends usually fascinate me, and the cellar felt like a scary place.",
+            "target_words": [
+                {
+                    "word_in_sentence": "källare",
+                    "base_form": "källare",
+                    "position_start": 42,
+                    "position_end": 49
+                },
+                {
+                    "word_in_sentence": "fascinera",
+                    "base_form": "fascinera",
+                    "position_start": 23,
+                    "position_end": 32
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_34_s013",
+            "sv": "Istället stannade jag uppe och läste en dagstidning en lång stund.",
+            "en": "Instead, I stayed upstairs and read a daily newspaper for a long time.",
+            "target_words": [
+                {
+                    "word_in_sentence": "dagstidning",
+                    "base_form": "dagstidning",
+                    "position_start": 40,
+                    "position_end": 51
+                },
+                {
+                    "word_in_sentence": "en lång stund",
+                    "base_form": "en lång stund",
+                    "position_start": 52,
+                    "position_end": 65
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_34_s014",
+            "sv": "För riktig avkoppling hade stugan en gammal färgteve och en mikro, men ingen annan modern pryl.",
+            "en": "For real relaxation, the cottage had an old color TV and a microwave, but no other modern gadget.",
+            "target_words": [
+                {
+                    "word_in_sentence": "stuga",
+                    "base_form": "stuga",
+                    "position_start": 27,
+                    "position_end": 32
+                },
+                {
+                    "word_in_sentence": "avkoppling",
+                    "base_form": "avkoppling",
+                    "position_start": 11,
+                    "position_end": 21
+                },
+                {
+                    "word_in_sentence": "färgteve",
+                    "base_form": "färgteve",
+                    "position_start": 44,
+                    "position_end": 52
+                },
+                {
+                    "word_in_sentence": "mikro",
+                    "base_form": "mikro",
+                    "position_start": 60,
+                    "position_end": 65
+                },
+                {
+                    "word_in_sentence": "pryl",
+                    "base_form": "pryl",
+                    "position_start": 90,
+                    "position_end": 94
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_34_s015",
+            "sv": "På gården träffade jag en kund till bonden, en kvinna med en fin frisyr och en stor hatt.",
+            "en": "In the yard, I met a customer of the farmer, a woman with a nice hairstyle and a big hat.",
+            "target_words": [
+                {
+                    "word_in_sentence": "kund",
+                    "base_form": "kund",
+                    "position_start": 26,
+                    "position_end": 30
+                },
+                {
+                    "word_in_sentence": "frisyr",
+                    "base_form": "frisyr",
+                    "position_start": 65,
+                    "position_end": 71
+                },
+                {
+                    "word_in_sentence": "hatt",
+                    "base_form": "hatt",
+                    "position_start": 84,
+                    "position_end": 88
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_34_s016",
+            "sv": "Vi hade faktiskt samma efternamn.",
+            "en": "We actually had the same last name.",
+            "target_words": [
+                {
+                    "word_in_sentence": "faktisk",
+                    "base_form": "faktisk",
+                    "position_start": 8,
+                    "position_end": 15
+                },
+                {
+                    "word_in_sentence": "efternamn",
+                    "base_form": "efternamn",
+                    "position_start": 23,
+                    "position_end": 32
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_34_s017",
+            "sv": "Vi stod vid kanten av åkern och pratade.",
+            "en": "We stood at the edge of the field and talked.",
+            "target_words": [
+                {
+                    "word_in_sentence": "kant",
+                    "base_form": "kant",
+                    "position_start": 12,
+                    "position_end": 16
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_34_s018",
+            "sv": "Jag märkte att hon hade en ovana att bita på naglarna.",
+            "en": "I noticed that she had a bad habit of biting her nails.",
+            "target_words": [
+                {
+                    "word_in_sentence": "ovana",
+                    "base_form": "ovana",
+                    "position_start": 27,
+                    "position_end": 32
+                },
+                {
+                    "word_in_sentence": "bita på naglarna",
+                    "base_form": "bita på naglarna",
+                    "position_start": 37,
+                    "position_end": 53
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_34_s019",
+            "sv": "Hon hade ett fult tuggmärke på sitt finger.",
+            "en": "She had an ugly bite mark on her finger.",
+            "target_words": [
+                {
+                    "word_in_sentence": "tuggmärke",
+                    "base_form": "tuggmärke",
+                    "position_start": 18,
+                    "position_end": 27
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_34_s020",
+            "sv": "Hon brukade också smaska när hon åt och ibland svära.",
+            "en": "She also used to smack her lips when she ate and sometimes swear.",
+            "target_words": [
+                {
+                    "word_in_sentence": "smaska",
+                    "base_form": "smaska",
+                    "position_start": 18,
+                    "position_end": 24
+                },
+                {
+                    "word_in_sentence": "svära",
+                    "base_form": "svära",
+                    "position_start": 47,
+                    "position_end": 52
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_34_s021",
+            "sv": "Vissa människor brukar även peta sig i näsan, vilket är en annan tråkig grej.",
+            "en": "Some people also tend to pick their noses, which is another unpleasant thing.",
+            "target_words": [
+                {
+                    "word_in_sentence": "peta sig i näsan",
+                    "base_form": "peta sig i näsan",
+                    "position_start": 28,
+                    "position_end": 44
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_34_s022",
+            "sv": "I jämförelse med staden fanns det ingen gräns för naturen.",
+            "en": "In comparison to the city, there was no limit to nature.",
+            "target_words": [
+                {
+                    "word_in_sentence": "jämförelse",
+                    "base_form": "jämförelse",
+                    "position_start": 2,
+                    "position_end": 12
+                },
+                {
+                    "word_in_sentence": "gräns",
+                    "base_form": "gräns",
+                    "position_start": 40,
+                    "position_end": 45
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_34_s023",
+            "sv": "Jag hittade en tung yxa för att hugga ved.",
+            "en": "I found a heavy axe to chop wood.",
+            "target_words": [
+                {
+                    "word_in_sentence": "yxa",
+                    "base_form": "yxa",
+                    "position_start": 20,
+                    "position_end": 23
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_34_s024",
+            "sv": "Man kunde spendera ytterligare många timmar på detta arbete.",
+            "en": "You could spend many more hours on this work.",
+            "target_words": [
+                {
+                    "word_in_sentence": "spendera",
+                    "base_form": "spendera",
+                    "position_start": 10,
+                    "position_end": 18
+                },
+                {
+                    "word_in_sentence": "ytterligare",
+                    "base_form": "ytterligare",
+                    "position_start": 19,
+                    "position_end": 30
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_34_s025",
+            "sv": "Att vara myndig betyder att man får bestämma själv, men jag ville bara vara här och laga en fin middag för en billig penning, om man nu hade råd att laga mat billigt.",
+            "en": "Being of age means that you get to decide for yourself, but I just wanted to be here and cook a nice dinner for a cheap penny, if you could afford to cook cheaply.",
+            "target_words": [
+                {
+                    "word_in_sentence": "myndig",
+                    "base_form": "myndig",
+                    "position_start": 9,
+                    "position_end": 15
+                },
+                {
+                    "word_in_sentence": " laga en",
+                    "base_form": "göra fin",
+                    "position_start": 83,
+                    "position_end": 91
+                },
+                {
+                    "word_in_sentence": " en b",
+                    "base_form": "krona",
+                    "position_start": 106,
+                    "position_end": 111
+                },
+                {
+                    "word_in_sentence": "råd",
+                    "base_form": "råd",
+                    "position_start": 141,
+                    "position_end": 144
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_34_s026",
+            "sv": "Kanske fanns det ett gemensamt dam- och herrbad i byn som man kunde besöka?",
+            "en": "Maybe there was a communal women's and men's bath in the village that you could visit?",
+            "target_words": [
+                {
+                    "word_in_sentence": "dam- och herrbad",
+                    "base_form": "dam- och herrbad",
+                    "position_start": 31,
+                    "position_end": 47
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_34_s027",
+            "sv": "Men stugan var helt klart bäst.",
+            "en": "But the cottage was clearly the best.",
+            "target_words": [
+                {
+                    "word_in_sentence": "helt klart",
+                    "base_form": "helt klart",
+                    "position_start": 15,
+                    "position_end": 25
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_34_s028",
+            "sv": "Innan vi skulle stänga för kvällen fick jag spola ner en liten spindel i toaletten.",
+            "en": "Before we were going to close for the evening, I had to flush a little spider down the toilet.",
+            "target_words": [
+                {
+                    "word_in_sentence": "stänga",
+                    "base_form": "stänga",
+                    "position_start": 16,
+                    "position_end": 22
+                },
+                {
+                    "word_in_sentence": "spola ner",
+                    "base_form": "spola ner",
+                    "position_start": 44,
+                    "position_end": 53
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_34_s029",
+            "sv": "Sedan somnade jag gott.",
+            "en": "Then I slept soundly.",
+            "target_words": []
+        }
+    ],
+    "primary_words_used": [
+        "lucka",
+        "källare",
+        "hatt",
+        "smaska",
+        "bita på naglarna",
+        "utekväll",
+        "tuggmärke",
+        "pralinask",
+        "kund",
+        "peta sig i näsan",
+        "pryl",
+        "krona",
+        "svära",
+        "ovana",
+        "gäst",
+        "guldkant",
+        "inbjudan",
+        "yxa",
+        "avkoppling",
+        "rustik",
+        "kant",
+        "dam- och herrbad",
+        "frisyr",
+        "hyra",
+        "bondgård",
+        "stuga",
+        "färgteve",
+        "efternamn",
+        "mikro",
+        "myndig",
+        "stressa",
+        "logga ut",
+        "sätta guldkant på",
+        "dagstidning",
+        "nödvändig",
+        "ett tag",
+        "råttan i pizzan",
+        "spola ner",
+        "ersätta",
+        "helg",
+        "gräns",
+        "göra fin",
+        "ytterligare",
+        "säkert",
+        "inte alls",
+        "helt klart",
+        "stänga",
+        "inte heller",
+        "vid",
+        "fascinera",
+        "jämförelse",
+        "en lång stund",
+        "hört talas om",
+        "dit",
+        "råd",
+        "ovanför",
+        "därför",
+        "spendera",
+        "par",
+        "änka"
+    ],
+    "secondary_words_used": []
+}

@@ -1,0 +1,704 @@
+{
+    "course_id": "sfid",
+    "course_title": "SFI D",
+    "stage_id": "stage_04",
+    "stage_title": "Relationer & Känslor",
+    "article_id": "art_54",
+    "article_title": "Läsförståelse",
+    "target_word_count": 60,
+    "sentences": [
+        {
+            "sentence_id": "art_54_s001",
+            "sv": "Hejsan …\nKära … Anna,\nAllt väl?",
+            "en": "Hi ...\nDear ... Anna,\nAll well?",
+            "target_words": [
+                {
+                    "word_in_sentence": "Hejsan …",
+                    "base_form": "Hejsan …",
+                    "position_start": 0,
+                    "position_end": 8
+                },
+                {
+                    "word_in_sentence": "Kära …",
+                    "base_form": "Kära …",
+                    "position_start": 9,
+                    "position_end": 15
+                },
+                {
+                    "word_in_sentence": "Allt väl?",
+                    "base_form": "Allt väl?",
+                    "position_start": 22,
+                    "position_end": 31
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_54_s002",
+            "sv": "Är allt bra med dig?",
+            "en": "Is everything good with you?",
+            "target_words": [
+                {
+                    "word_in_sentence": "Är allt bra med dig?",
+                    "base_form": "Är allt bra med dig?",
+                    "position_start": 0,
+                    "position_end": 20
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_54_s003",
+            "sv": "Här är allting toppen på min nya semester.",
+            "en": "Everything is great here on my new vacation.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Här är allting toppen",
+                    "base_form": "Här är allting toppen/underbart/härligt",
+                    "position_start": 0,
+                    "position_end": 21
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_54_s004",
+            "sv": "Har du hört vad som har hänt?",
+            "en": "Have you heard what happened?",
+            "target_words": [
+                {
+                    "word_in_sentence": "Har du hört vad som har hänt?",
+                    "base_form": "Har du hört vad som har hänt?",
+                    "position_start": 0,
+                    "position_end": 29
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_54_s005",
+            "sv": "Det hände en så rolig sak … i lördags när jag skulle slå en signal till en gammal bekant.",
+            "en": "Such a funny thing happened... last Saturday when I was going to give an old acquaintance a ring.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Det hände en så rolig sak …",
+                    "base_form": "Det hände en så rolig sak …",
+                    "position_start": 0,
+                    "position_end": 27
+                },
+                {
+                    "word_in_sentence": "slå en signal",
+                    "base_form": "slå en signal",
+                    "position_start": 53,
+                    "position_end": 66
+                },
+                {
+                    "word_in_sentence": "bekant",
+                    "base_form": "bekant",
+                    "position_start": 82,
+                    "position_end": 88
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_54_s006",
+            "sv": "Vet du vem jag träffade?",
+            "en": "Do you know who I met?",
+            "target_words": [
+                {
+                    "word_in_sentence": "Vet du vem jag träffade?",
+                    "base_form": "Vet du vem jag träffade?",
+                    "position_start": 0,
+                    "position_end": 24
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_54_s007",
+            "sv": "Jag mötte Peter!",
+            "en": "I met Peter!",
+            "target_words": []
+        },
+        {
+            "sentence_id": "art_54_s008",
+            "sv": "Vet du inte varför…?",
+            "en": "Don't you know why...?",
+            "target_words": [
+                {
+                    "word_in_sentence": "Vet du inte varför…?",
+                    "base_form": "Vet du inte varför…?",
+                    "position_start": 0,
+                    "position_end": 20
+                },
+                {
+                    "word_in_sentence": "varför",
+                    "base_form": "Varför",
+                    "position_start": 12,
+                    "position_end": 18
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_54_s009",
+            "sv": "Han har ju flyttat tillbaka, fastän han trivdes bra utomlands.",
+            "en": "He has actually moved back, even though he enjoyed it abroad.",
+            "target_words": [
+                {
+                    "word_in_sentence": "fastän",
+                    "base_form": "fastän",
+                    "position_start": 29,
+                    "position_end": 35
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_54_s010",
+            "sv": "\"Är det sant?\" frågade jag honom.",
+            "en": "\"Is it true?\" I asked him.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Är det sant?",
+                    "base_form": "Är det sant?",
+                    "position_start": 1,
+                    "position_end": 13
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_54_s011",
+            "sv": "Han var snabb som en vessla på att hälsa på mig med en artig och trevlig bugning.",
+            "en": "He was quick as a weasel to greet me with a polite and pleasant bow.",
+            "target_words": [
+                {
+                    "word_in_sentence": "snabb som en vessla",
+                    "base_form": "snabb som en vessla",
+                    "position_start": 8,
+                    "position_end": 27
+                },
+                {
+                    "word_in_sentence": "hälsa",
+                    "base_form": "hälsa",
+                    "position_start": 35,
+                    "position_end": 40
+                },
+                {
+                    "word_in_sentence": "artig",
+                    "base_form": "artig",
+                    "position_start": 55,
+                    "position_end": 60
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_54_s012",
+            "sv": "Han sa att nuförtiden ser han väldigt trendig och äventyrlig ut.",
+            "en": "He said that nowadays he looks very trendy and adventurous.",
+            "target_words": [
+                {
+                    "word_in_sentence": "nuförtiden",
+                    "base_form": "nuförtiden",
+                    "position_start": 11,
+                    "position_end": 21
+                },
+                {
+                    "word_in_sentence": "trendig",
+                    "base_form": "trendig",
+                    "position_start": 38,
+                    "position_end": 45
+                },
+                {
+                    "word_in_sentence": "äventyrlig",
+                    "base_form": "äventyrlig",
+                    "position_start": 50,
+                    "position_end": 60
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_54_s013",
+            "sv": "Det var en riktig ljuspunkt på dagen, en känsla av ren lycka att se honom.",
+            "en": "It was a real highlight of the day, a feeling of pure happiness to see him.",
+            "target_words": [
+                {
+                    "word_in_sentence": "ljuspunkt",
+                    "base_form": "ljuspunkt",
+                    "position_start": 18,
+                    "position_end": 27
+                },
+                {
+                    "word_in_sentence": "lycka",
+                    "base_form": "lycka",
+                    "position_start": 55,
+                    "position_end": 60
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_54_s014",
+            "sv": "Jag kunde inte låta bli att fantisera om gamla tider, allt kändes som historia i koncentrat.",
+            "en": "I couldn't help but fantasize about old times, everything felt like history concentrated.",
+            "target_words": [
+                {
+                    "word_in_sentence": "fantisera",
+                    "base_form": "fantisera",
+                    "position_start": 28,
+                    "position_end": 37
+                },
+                {
+                    "word_in_sentence": "i koncentrat",
+                    "base_form": "i koncentrat",
+                    "position_start": 79,
+                    "position_end": 91
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_54_s015",
+            "sv": "Vi brukade alltid stötta varandra och han var en modig förebild för mig.",
+            "en": "We used to always support each other and he was a brave role model for me.",
+            "target_words": [
+                {
+                    "word_in_sentence": "stötta",
+                    "base_form": "stötta",
+                    "position_start": 18,
+                    "position_end": 24
+                },
+                {
+                    "word_in_sentence": "modig",
+                    "base_form": "modig",
+                    "position_start": 49,
+                    "position_end": 54
+                },
+                {
+                    "word_in_sentence": "förebild",
+                    "base_form": "förebild",
+                    "position_start": 55,
+                    "position_end": 63
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_54_s016",
+            "sv": "Han ville utveckla sina idéer och var mycket lojal och extremt ärlig.",
+            "en": "He wanted to develop his ideas and was very loyal and extremely honest.",
+            "target_words": [
+                {
+                    "word_in_sentence": "utveckla",
+                    "base_form": "utveckla",
+                    "position_start": 10,
+                    "position_end": 18
+                },
+                {
+                    "word_in_sentence": "lojal",
+                    "base_form": "lojal",
+                    "position_start": 45,
+                    "position_end": 50
+                },
+                {
+                    "word_in_sentence": "ärlig",
+                    "base_form": "ärlig",
+                    "position_start": 63,
+                    "position_end": 68
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_54_s017",
+            "sv": "\"Tänker ni… flytta hit nu?\" frågade jag.",
+            "en": "\"Are you... planning to move here now?\" I asked.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Tänker ni…",
+                    "base_form": "Tänker ni…",
+                    "position_start": 1,
+                    "position_end": 11
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_54_s018",
+            "sv": "Han sa ja, men han hade en tendens att snabbt ångra sig.",
+            "en": "He said yes, but he had a tendency to quickly change his mind.",
+            "target_words": [
+                {
+                    "word_in_sentence": "tendens",
+                    "base_form": "tendens",
+                    "position_start": 27,
+                    "position_end": 34
+                },
+                {
+                    "word_in_sentence": "ångra sig",
+                    "base_form": "ångra sig",
+                    "position_start": 46,
+                    "position_end": 55
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_54_s019",
+            "sv": "Man måste akta sig för att förlora sig själv helt och hållet i en stad.",
+            "en": "You have to be careful not to completely lose yourself in a city.",
+            "target_words": [
+                {
+                    "word_in_sentence": "akta sig",
+                    "base_form": "akta sig",
+                    "position_start": 10,
+                    "position_end": 18
+                },
+                {
+                    "word_in_sentence": "förlora",
+                    "base_form": "förlora",
+                    "position_start": 27,
+                    "position_end": 34
+                },
+                {
+                    "word_in_sentence": "helt och hållet",
+                    "base_form": "helt och hållet",
+                    "position_start": 45,
+                    "position_end": 60
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_54_s020",
+            "sv": "Han tyckte att staden blivit väldigt omodern och att han inte hittat lugnet någonstans, varken här eller ingen annanstans.",
+            "en": "He thought the city had become very old-fashioned and that he had not found peace anywhere, neither here nor anywhere else.",
+            "target_words": [
+                {
+                    "word_in_sentence": "omodern",
+                    "base_form": "omodern",
+                    "position_start": 37,
+                    "position_end": 44
+                },
+                {
+                    "word_in_sentence": "ingen annanstans",
+                    "base_form": "ingen annanstans",
+                    "position_start": 105,
+                    "position_end": 121
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_54_s021",
+            "sv": "\"Man kan inte leva på andra,\" sa jag.",
+            "en": "\"You can't live off others,\" I said.",
+            "target_words": [
+                {
+                    "word_in_sentence": "leva på andra",
+                    "base_form": "leva på andra",
+                    "position_start": 14,
+                    "position_end": 27
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_54_s022",
+            "sv": "\"Du måste vara bussig och inte usel.\"",
+            "en": "\"You have to be kind and not lousy.\"",
+            "target_words": [
+                {
+                    "word_in_sentence": "bussig",
+                    "base_form": "bussig",
+                    "position_start": 15,
+                    "position_end": 21
+                },
+                {
+                    "word_in_sentence": "usel",
+                    "base_form": "usel",
+                    "position_start": 31,
+                    "position_end": 35
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_54_s023",
+            "sv": "\"Nej, fy.\" sa han.",
+            "en": "\"No, ugh.\" he said.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Nej, fy.",
+                    "base_form": "Nej, fy.",
+                    "position_start": 1,
+                    "position_end": 9
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_54_s024",
+            "sv": "\"Jag skulle aldrig vara ofin.",
+            "en": "\"I would never be impolite.",
+            "target_words": [
+                {
+                    "word_in_sentence": "ofin",
+                    "base_form": "ofin",
+                    "position_start": 24,
+                    "position_end": 28
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_54_s025",
+            "sv": "Det är icke en bra egenskap.\"",
+            "en": "That is not a good trait.\"",
+            "target_words": [
+                {
+                    "word_in_sentence": "icke",
+                    "base_form": "icke",
+                    "position_start": 7,
+                    "position_end": 11
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_54_s026",
+            "sv": "Han var inte glad att behöva vara utan pengar.",
+            "en": "He was not happy having to be without money.",
+            "target_words": [
+                {
+                    "word_in_sentence": "vara utan",
+                    "base_form": "vara utan",
+                    "position_start": 29,
+                    "position_end": 38
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_54_s027",
+            "sv": "Plötsligt kom en hysterisk kvinna fram och kastade en påse rakt i knät på honom!",
+            "en": "Suddenly a hysterical woman came up and threw a bag right in his lap!",
+            "target_words": [
+                {
+                    "word_in_sentence": "hysterisk",
+                    "base_form": "hysterisk",
+                    "position_start": 17,
+                    "position_end": 26
+                },
+                {
+                    "word_in_sentence": "i knät",
+                    "base_form": "i knät",
+                    "position_start": 64,
+                    "position_end": 70
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_54_s028",
+            "sv": "Hon bar en märklig, stickande parfym.",
+            "en": "She wore a strange, pungent perfume.",
+            "target_words": [
+                {
+                    "word_in_sentence": "stickande",
+                    "base_form": "stickande",
+                    "position_start": 20,
+                    "position_end": 29
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_54_s029",
+            "sv": "\"Lägg av!\" skrek han.",
+            "en": "\"Stop it!\" he yelled.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Lägg av!",
+                    "base_form": "Lägg av!",
+                    "position_start": 1,
+                    "position_end": 9
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_54_s030",
+            "sv": "Han berättade att kvinnan trodde att han ville ha en affär med henne.",
+            "en": "He explained that the woman thought he wanted to have an affair with her.",
+            "target_words": [
+                {
+                    "word_in_sentence": "ha en affär",
+                    "base_form": "ha en affär",
+                    "position_start": 47,
+                    "position_end": 58
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_54_s031",
+            "sv": "Det är ibland svårt att lära känna människor ordentligt och man hinner inte känna någon väl innan det uppstår problem.",
+            "en": "It is sometimes difficult to get to know people properly and you don't have time to know someone well before problems arise.",
+            "target_words": [
+                {
+                    "word_in_sentence": "lära känna",
+                    "base_form": "lära känna",
+                    "position_start": 24,
+                    "position_end": 34
+                },
+                {
+                    "word_in_sentence": "känna någon väl",
+                    "base_form": "känna någon väl",
+                    "position_start": 76,
+                    "position_end": 91
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_54_s032",
+            "sv": "\"Hur länge?\" frågade jag honom förvånat.",
+            "en": "\"For how long?\" I asked him surprised.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Hur länge?",
+                    "base_form": "Hur länge?",
+                    "position_start": 1,
+                    "position_end": 11
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_54_s033",
+            "sv": "\"Ett bra tag,\" suckade han tyst.",
+            "en": "\"A good while,\" he sighed quietly.",
+            "target_words": []
+        },
+        {
+            "sentence_id": "art_54_s034",
+            "sv": "\"Bry dig inte om … henne.",
+            "en": "\"Don't pay attention to... her.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Bry dig inte om …",
+                    "base_form": "Bry dig inte om …",
+                    "position_start": 1,
+                    "position_end": 18
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_54_s035",
+            "sv": "Hon är en etablerad men helt hopplös person, ja, tänk dig att alltid behöva bråka.\"",
+            "en": "She is an established but completely hopeless person, yes, imagine always having to argue.\"",
+            "target_words": [
+                {
+                    "word_in_sentence": "etablerad",
+                    "base_form": "etablerad",
+                    "position_start": 10,
+                    "position_end": 19
+                },
+                {
+                    "word_in_sentence": "hopplös",
+                    "base_form": "hopplös",
+                    "position_start": 29,
+                    "position_end": 36
+                },
+                {
+                    "word_in_sentence": "tänk dig",
+                    "base_form": "tänk dig/er",
+                    "position_start": 49,
+                    "position_end": 57
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_54_s036",
+            "sv": "Jag kände mig tvungen att sjunka ner i min stol och fundera vidare.",
+            "en": "I felt compelled to sink down in my chair and think further.",
+            "target_words": [
+                {
+                    "word_in_sentence": "sjunka",
+                    "base_form": "sjunka",
+                    "position_start": 26,
+                    "position_end": 32
+                },
+                {
+                    "word_in_sentence": "vidare",
+                    "base_form": "vidare",
+                    "position_start": 60,
+                    "position_end": 66
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_54_s037",
+            "sv": "Jag hoppas att vi snart kan ses och njuta av en mysig fika.",
+            "en": "I hope we can meet soon and enjoy a cozy fika.",
+            "target_words": [
+                {
+                    "word_in_sentence": "njuta av",
+                    "base_form": "njuta av",
+                    "position_start": 36,
+                    "position_end": 44
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_54_s038",
+            "sv": "\"Ha det så bra!\" och \"Du med /Du också.\" brukar vi ju skriva.",
+            "en": "\"Take care!\" and \"You too.\" is what we usually write.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Du med /Du också.",
+                    "base_form": "Du med /Du också.",
+                    "position_start": 22,
+                    "position_end": 39
+                }
+            ]
+        }
+    ],
+    "primary_words_used": [
+        "slå en signal",
+        "lycka",
+        "ofin",
+        "ljuspunkt",
+        "Du med /Du också.",
+        "Kära …",
+        "lojal",
+        "stötta",
+        "modig",
+        "bekant",
+        "hälsa",
+        "Nej, fy.",
+        "hopplös",
+        "äventyrlig",
+        "Allt väl?",
+        "fantisera",
+        "förlora",
+        "helt och hållet",
+        "känna någon väl",
+        "Det hände en så rolig sak …",
+        "Här är allting toppen/underbart/härligt",
+        "bussig",
+        "lära känna",
+        "omodern",
+        "ärlig",
+        "usel",
+        "Är allt bra med dig?",
+        "Har du hört vad som har hänt?",
+        "ångra sig",
+        "Hejsan …",
+        "Vet du vem jag träffade?",
+        "förebild",
+        "ha en affär",
+        "akta sig",
+        "hysterisk",
+        "Bry dig inte om …",
+        "njuta av",
+        "artig",
+        "tendens",
+        "i knät",
+        "ingen annanstans",
+        "leva på andra",
+        "nuförtiden",
+        "fastän",
+        "trendig",
+        "utveckla",
+        "Hur länge?",
+        "icke",
+        "i koncentrat",
+        "stickande",
+        "vara utan",
+        "Vet du inte varför…?",
+        "etablerad",
+        "snabb som en vessla",
+        "Tänker ni…",
+        "sjunka",
+        "tänk dig/er",
+        "vidare",
+        "Är det sant?",
+        "Lägg av!"
+    ],
+    "secondary_words_used": []
+}

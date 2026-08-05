@@ -1,0 +1,652 @@
+{
+    "course_id": "sfid",
+    "course_title": "SFI D",
+    "stage_id": "stage_06",
+    "stage_title": "Hälsa & Medicin",
+    "article_id": "art_26",
+    "article_title": "Läsförståelse",
+    "target_word_count": 60,
+    "sentences": [
+        {
+            "sentence_id": "art_26_s001",
+            "sv": "En kall januari träffade jag en typisk hurtbulle.",
+            "en": "A cold January I met a typical fitness fanatic.",
+            "target_words": [
+                {
+                    "word_in_sentence": "januari",
+                    "base_form": "januari",
+                    "position_start": 8,
+                    "position_end": 15
+                },
+                {
+                    "word_in_sentence": "typisk",
+                    "base_form": "typisk",
+                    "position_start": 32,
+                    "position_end": 38
+                },
+                {
+                    "word_in_sentence": "hurtbulle",
+                    "base_form": "hurtbulle",
+                    "position_start": 39,
+                    "position_end": 48
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_26_s002",
+            "sv": "Han verkade född för att röra på sig.",
+            "en": "He seemed born to move.",
+            "target_words": [
+                {
+                    "word_in_sentence": "född",
+                    "base_form": "född",
+                    "position_start": 12,
+                    "position_end": 16
+                },
+                {
+                    "word_in_sentence": "röra på sig",
+                    "base_form": "röra på sig",
+                    "position_start": 25,
+                    "position_end": 36
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_26_s003",
+            "sv": "Varje morgon, jämt och helt utan uppehåll, brukade han jogga i skogen.",
+            "en": "Every morning, constantly and completely without pause, he used to jog in the forest.",
+            "target_words": [
+                {
+                    "word_in_sentence": "jämt",
+                    "base_form": "jämt",
+                    "position_start": 14,
+                    "position_end": 18
+                },
+                {
+                    "word_in_sentence": "uppehåll",
+                    "base_form": "uppehåll",
+                    "position_start": 33,
+                    "position_end": 41
+                },
+                {
+                    "word_in_sentence": "jogga",
+                    "base_form": "jogga",
+                    "position_start": 55,
+                    "position_end": 60
+                },
+                {
+                    "word_in_sentence": "ge",
+                    "base_form": "giva",
+                    "position_start": 66,
+                    "position_end": 68
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_26_s004",
+            "sv": "Hans motto var: \"Ju … desto!\" vilket för honom betydde: ju snabbare, desto friskare.",
+            "en": "His motto was: \"The ... the!\" which for him meant: the faster, the healthier.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Ju … desto",
+                    "base_form": "Ju … desto",
+                    "position_start": 17,
+                    "position_end": 27
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_26_s005",
+            "sv": "Han hade bestämt sig för att sätta upp ett stort mål och springa ett maraton.",
+            "en": "He had decided to set a big goal and run a marathon.",
+            "target_words": [
+                {
+                    "word_in_sentence": "sätta upp",
+                    "base_form": "sätta upp",
+                    "position_start": 29,
+                    "position_end": 38
+                },
+                {
+                    "word_in_sentence": "maraton",
+                    "base_form": "maraton",
+                    "position_start": 69,
+                    "position_end": 76
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_26_s006",
+            "sv": "Han älskade att vara aktiv och ville komma ut för att bygga upp sin uthållighet, sin styrka och sin snabbhet.",
+            "en": "He loved being active and wanted to get out to build up his endurance, his strength and his speed.",
+            "target_words": [
+                {
+                    "word_in_sentence": "aktiv",
+                    "base_form": "aktiv",
+                    "position_start": 21,
+                    "position_end": 26
+                },
+                {
+                    "word_in_sentence": "komma ut",
+                    "base_form": "komma ut",
+                    "position_start": 37,
+                    "position_end": 45
+                },
+                {
+                    "word_in_sentence": "uthållighet",
+                    "base_form": "uthållighet",
+                    "position_start": 68,
+                    "position_end": 79
+                },
+                {
+                    "word_in_sentence": "styrka",
+                    "base_form": "styrka",
+                    "position_start": 85,
+                    "position_end": 91
+                },
+                {
+                    "word_in_sentence": "snabbhet",
+                    "base_form": "snabbhet",
+                    "position_start": 100,
+                    "position_end": 108
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_26_s007",
+            "sv": "Han kunde vara duktig på att köra trettio armhävningar i sträck.",
+            "en": "He could be good at doing thirty push-ups in a row.",
+            "target_words": [
+                {
+                    "word_in_sentence": "vara duktig på",
+                    "base_form": "vara duktig på",
+                    "position_start": 10,
+                    "position_end": 24
+                },
+                {
+                    "word_in_sentence": "köra",
+                    "base_form": "köra",
+                    "position_start": 29,
+                    "position_end": 33
+                },
+                {
+                    "word_in_sentence": "armhävningar",
+                    "base_form": "armhävning",
+                    "position_start": 42,
+                    "position_end": 54
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_26_s008",
+            "sv": "Trots att han var smal var han mycket stark och alltid pigg.",
+            "en": "Even though he was thin he was very strong and always alert.",
+            "target_words": [
+                {
+                    "word_in_sentence": "smal",
+                    "base_form": "smal",
+                    "position_start": 18,
+                    "position_end": 22
+                },
+                {
+                    "word_in_sentence": "pigg",
+                    "base_form": "pigg",
+                    "position_start": 55,
+                    "position_end": 59
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_26_s009",
+            "sv": "Han trodde aldrig att han skulle bli intagen på ett sjukhus.",
+            "en": "He never thought he would be admitted to a hospital.",
+            "target_words": [
+                {
+                    "word_in_sentence": "ge",
+                    "base_form": "giva",
+                    "position_start": 41,
+                    "position_end": 43
+                },
+                {
+                    "word_in_sentence": "intagen",
+                    "base_form": "intagen",
+                    "position_start": 37,
+                    "position_end": 44
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_26_s010",
+            "sv": "Han var registrerad på ett privat gym som säkert tjänade en miljard, eftersom branschen var enorm.",
+            "en": "He was registered at a private gym that surely earned a billion, since the industry was enormous.",
+            "target_words": [
+                {
+                    "word_in_sentence": "registrerad",
+                    "base_form": "registrerad",
+                    "position_start": 8,
+                    "position_end": 19
+                },
+                {
+                    "word_in_sentence": "privat",
+                    "base_form": "privat",
+                    "position_start": 27,
+                    "position_end": 33
+                },
+                {
+                    "word_in_sentence": "miljard",
+                    "base_form": "miljard",
+                    "position_start": 60,
+                    "position_end": 67
+                },
+                {
+                    "word_in_sentence": "enorm",
+                    "base_form": "enorm",
+                    "position_start": 92,
+                    "position_end": 97
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_26_s011",
+            "sv": "Han skötte sina matvanor perfekt och drack absolut ingen alkohol, han var alltså aldrig berusad.",
+            "en": "He managed his eating habits perfectly and drank absolutely no alcohol, so he was never intoxicated.",
+            "target_words": [
+                {
+                    "word_in_sentence": "ge",
+                    "base_form": "giva",
+                    "position_start": 53,
+                    "position_end": 55
+                },
+                {
+                    "word_in_sentence": "matvanor",
+                    "base_form": "matvana",
+                    "position_start": 16,
+                    "position_end": 24
+                },
+                {
+                    "word_in_sentence": "alkohol",
+                    "base_form": "alkohol",
+                    "position_start": 57,
+                    "position_end": 64
+                },
+                {
+                    "word_in_sentence": "berusad",
+                    "base_form": "berusad",
+                    "position_start": 88,
+                    "position_end": 95
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_26_s012",
+            "sv": "Han gillade att intervjua sina vänner och ge dem träningsråd.",
+            "en": "He liked to interview his friends and give them training advice.",
+            "target_words": [
+                {
+                    "word_in_sentence": "ge",
+                    "base_form": "giva",
+                    "position_start": 42,
+                    "position_end": 44
+                },
+                {
+                    "word_in_sentence": "intervjua",
+                    "base_form": "intervjua",
+                    "position_start": 16,
+                    "position_end": 25
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_26_s013",
+            "sv": "Han visste hur man kunde rädda en ond rygg med rätt skydd, och hur en snabb uppfräschning kunde överraska kroppen positivt.",
+            "en": "He knew how to save a bad back with the right protection, and how a quick freshening up could positively surprise the body.",
+            "target_words": [
+                {
+                    "word_in_sentence": "rädda",
+                    "base_form": "rädda",
+                    "position_start": 25,
+                    "position_end": 30
+                },
+                {
+                    "word_in_sentence": "rygg",
+                    "base_form": "rygg",
+                    "position_start": 38,
+                    "position_end": 42
+                },
+                {
+                    "word_in_sentence": "skydd",
+                    "base_form": "skydd",
+                    "position_start": 52,
+                    "position_end": 57
+                },
+                {
+                    "word_in_sentence": "uppfräschning",
+                    "base_form": "uppfräschning",
+                    "position_start": 76,
+                    "position_end": 89
+                },
+                {
+                    "word_in_sentence": "fräsch",
+                    "base_form": "fräsch",
+                    "position_start": 79,
+                    "position_end": 85
+                },
+                {
+                    "word_in_sentence": "överraska",
+                    "base_form": "överraska",
+                    "position_start": 96,
+                    "position_end": 105
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_26_s014",
+            "sv": "Han älskade att känna sig fräsch och vägrade att lukta illa även om han var svettig.",
+            "en": "He loved to feel fresh and refused to smell bad even if he was sweaty.",
+            "target_words": [
+                {
+                    "word_in_sentence": "fräsch",
+                    "base_form": "fräsch",
+                    "position_start": 26,
+                    "position_end": 32
+                },
+                {
+                    "word_in_sentence": "lukta illa",
+                    "base_form": "lukta illa",
+                    "position_start": 49,
+                    "position_end": 59
+                },
+                {
+                    "word_in_sentence": "svettig",
+                    "base_form": "svettig",
+                    "position_start": 76,
+                    "position_end": 83
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_26_s015",
+            "sv": "Men en dag hände något som fick honom att fatta att hälsa är skört.",
+            "en": "But one day something happened that made him understand that health is fragile.",
+            "target_words": [
+                {
+                    "word_in_sentence": "fatta",
+                    "base_form": "fatta",
+                    "position_start": 42,
+                    "position_end": 47
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_26_s016",
+            "sv": "Han skulle tyvärr bli tvungen att vila.",
+            "en": "He would unfortunately be forced to rest.",
+            "target_words": [
+                {
+                    "word_in_sentence": "bli tvungen",
+                    "base_form": "bli tvungen",
+                    "position_start": 18,
+                    "position_end": 29
+                },
+                {
+                    "word_in_sentence": "vila",
+                    "base_form": "vila",
+                    "position_start": 34,
+                    "position_end": 38
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_26_s017",
+            "sv": "Han blev plötsligt biten av en hund som var rabiessmittad!",
+            "en": "He was suddenly bitten by a dog that was infected with rabies!",
+            "target_words": [
+                {
+                    "word_in_sentence": "rabiessmittad",
+                    "base_form": "rabies-smittad",
+                    "position_start": 44,
+                    "position_end": 57
+                },
+                {
+                    "word_in_sentence": "smittad",
+                    "base_form": "smittad",
+                    "position_start": 50,
+                    "position_end": 57
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_26_s018",
+            "sv": "Han blev snabbt smittad och fick en allvarlig infektion.",
+            "en": "He quickly became infected and got a serious infection.",
+            "target_words": [
+                {
+                    "word_in_sentence": "smittad",
+                    "base_form": "smittad",
+                    "position_start": 16,
+                    "position_end": 23
+                },
+                {
+                    "word_in_sentence": "infektion",
+                    "base_form": "infektion",
+                    "position_start": 46,
+                    "position_end": 55
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_26_s019",
+            "sv": "Det var inte som en vanlig allergi, utan kroppen reagerade som vid en kraftig allergichock med svår hosta.",
+            "en": "It was not like a normal allergy, but the body reacted like a severe allergic shock with a severe cough.",
+            "target_words": [
+                {
+                    "word_in_sentence": "allergi",
+                    "base_form": "allergi",
+                    "position_start": 27,
+                    "position_end": 34
+                },
+                {
+                    "word_in_sentence": "allergichock",
+                    "base_form": "allergichock",
+                    "position_start": 78,
+                    "position_end": 90
+                },
+                {
+                    "word_in_sentence": "hosta",
+                    "base_form": "hosta",
+                    "position_start": 100,
+                    "position_end": 105
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_26_s020",
+            "sv": "Smärtan spred sig i varje nerv.",
+            "en": "The pain spread in every nerve.",
+            "target_words": [
+                {
+                    "word_in_sentence": "nerv",
+                    "base_form": "nerv",
+                    "position_start": 26,
+                    "position_end": 30
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_26_s021",
+            "sv": "Han började lida enormt.",
+            "en": "He began to suffer enormously.",
+            "target_words": [
+                {
+                    "word_in_sentence": "lida",
+                    "base_form": "lida",
+                    "position_start": 12,
+                    "position_end": 16
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_26_s022",
+            "sv": "Hans lidande var hemskt och han fick till och med en partiell ansiktsförlamning.",
+            "en": "His suffering was terrible and he even got a partial facial paralysis.",
+            "target_words": [
+                {
+                    "word_in_sentence": "lida",
+                    "base_form": "lida",
+                    "position_start": 5,
+                    "position_end": 9
+                },
+                {
+                    "word_in_sentence": "lidande",
+                    "base_form": "lidande",
+                    "position_start": 5,
+                    "position_end": 12
+                },
+                {
+                    "word_in_sentence": "ansiktsförlamning",
+                    "base_form": "ansiktsförlamning",
+                    "position_start": 62,
+                    "position_end": 79
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_26_s023",
+            "sv": "Han fick genomgå en lång behandling och var ofta stressad över förlorad inkomst efter sin första karensdag.",
+            "en": "He had to undergo a long treatment and was often stressed about lost income after his first waiting day.",
+            "target_words": [
+                {
+                    "word_in_sentence": "behandling",
+                    "base_form": "behandling",
+                    "position_start": 25,
+                    "position_end": 35
+                },
+                {
+                    "word_in_sentence": "stressad",
+                    "base_form": "stressad",
+                    "position_start": 49,
+                    "position_end": 57
+                },
+                {
+                    "word_in_sentence": "karensdag",
+                    "base_form": "karensdag",
+                    "position_start": 97,
+                    "position_end": 106
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_26_s024",
+            "sv": "Han kunde inte aktivera sig som vanligt.",
+            "en": "He could not activate himself as usual.",
+            "target_words": [
+                {
+                    "word_in_sentence": "aktivera sig",
+                    "base_form": "aktivera sig",
+                    "position_start": 15,
+                    "position_end": 27
+                },
+                {
+                    "word_in_sentence": "som vanligt",
+                    "base_form": "som vanligt",
+                    "position_start": 28,
+                    "position_end": 39
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_26_s025",
+            "sv": "Efter vad som kändes som ett helt sekel i sängen, kunde han till slut korsa en osynlig linje tillbaka till hälsa.",
+            "en": "After what felt like an entire century in bed, he could finally cross an invisible line back to health.",
+            "target_words": [
+                {
+                    "word_in_sentence": "sekel",
+                    "base_form": "sekel",
+                    "position_start": 34,
+                    "position_end": 39
+                },
+                {
+                    "word_in_sentence": "linje",
+                    "base_form": "linje",
+                    "position_start": 87,
+                    "position_end": 92
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_26_s026",
+            "sv": "Han menar nu att förmågan att stanna upp ibland symboliserar sann visdom.",
+            "en": "He now believes that the ability to stop sometimes symbolizes true wisdom.",
+            "target_words": [
+                {
+                    "word_in_sentence": "symboliserar",
+                    "base_form": "symbolisera",
+                    "position_start": 48,
+                    "position_end": 60
+                }
+            ]
+        }
+    ],
+    "primary_words_used": [
+        "miljard",
+        "rygg",
+        "maraton",
+        "skydd",
+        "jogga",
+        "stressad",
+        "hurtbulle",
+        "alkohol",
+        "snabbhet",
+        "pigg",
+        "uthållighet",
+        "styrka",
+        "vila",
+        "armhävning",
+        "svettig",
+        "smal",
+        "röra på sig",
+        "matvana",
+        "köra",
+        "fräsch",
+        "lukta illa",
+        "nerv",
+        "lida",
+        "aktivera sig",
+        "karensdag",
+        "uppfräschning",
+        "intagen",
+        "ansiktsförlamning",
+        "rabies-smittad",
+        "behandling",
+        "allergichock",
+        "lidande",
+        "hosta",
+        "berusad",
+        "infektion",
+        "smittad",
+        "allergi",
+        "linje",
+        "komma ut",
+        "bli tvungen",
+        "född",
+        "registrerad",
+        "sätta upp",
+        "som vanligt",
+        "vara duktig på",
+        "aktiv",
+        "privat",
+        "fatta",
+        "januari",
+        "sekel",
+        "intervjua",
+        "enorm",
+        "rädda",
+        "Ju … desto",
+        "symbolisera",
+        "överraska",
+        "giva",
+        "typisk",
+        "jämt",
+        "uppehåll"
+    ],
+    "secondary_words_used": []
+}

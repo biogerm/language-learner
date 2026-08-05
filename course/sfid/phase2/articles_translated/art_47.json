@@ -1,0 +1,624 @@
+{
+    "course_id": "sfid",
+    "course_title": "SFI D",
+    "stage_id": "stage_02",
+    "stage_title": "Samhälle & Politik",
+    "article_id": "art_47",
+    "article_title": "Läsförståelse",
+    "target_word_count": 60,
+    "sentences": [
+        {
+            "sentence_id": "art_47_s001",
+            "sv": "Jag mötte min vän Sami på ett stort torg i staden.",
+            "en": "I met my friend Sami at a large square in the city.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Sami",
+                    "base_form": "Sami",
+                    "position_start": 18,
+                    "position_end": 22
+                },
+                {
+                    "word_in_sentence": "torg",
+                    "base_form": "torg",
+                    "position_start": 36,
+                    "position_end": 40
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_47_s002",
+            "sv": "Han var trettiotre år gammal och hade precis flyttat till Sverige för att bosätta sig här.",
+            "en": "He was thirty-three years old and had just moved to Sweden to settle here.",
+            "target_words": [
+                {
+                    "word_in_sentence": "trettiotre",
+                    "base_form": "trettiotre",
+                    "position_start": 8,
+                    "position_end": 18
+                },
+                {
+                    "word_in_sentence": "bosätta sig",
+                    "base_form": "bosätta sig",
+                    "position_start": 74,
+                    "position_end": 85
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_47_s003",
+            "sv": "\"Kan du prata lite långsammare?\" bad han vänligt.",
+            "en": "\"Can you speak a little slower?\" he asked kindly.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Kan du prata lite långsammare?",
+                    "base_form": "Kan du prata lite långsammare?",
+                    "position_start": 1,
+                    "position_end": 31
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_47_s004",
+            "sv": "\"Jag vill förstå bättre och lära mig mer.\"",
+            "en": "\"I want to understand better and learn more.\"",
+            "target_words": [
+                {
+                    "word_in_sentence": "mer",
+                    "base_form": "mer",
+                    "position_start": 37,
+                    "position_end": 40
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_47_s005",
+            "sv": "Vi diskuterade landets framtid och historia.",
+            "en": "We discussed the country's future and history.",
+            "target_words": [
+                {
+                    "word_in_sentence": "framtid",
+                    "base_form": "framtid",
+                    "position_start": 23,
+                    "position_end": 30
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_47_s006",
+            "sv": "Sami berättade: \"Under 1800-talet och början av 1900-talet levde många européer i en stark monarki eller i ett mäktigt kejsardöme som var styrt av en grym kejsare.",
+            "en": "Sami said: \"During the 19th century and the beginning of the 20th century, many Europeans lived in a strong monarchy or in a powerful empire that was ruled by a cruel emperor.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Sami",
+                    "base_form": "Sami",
+                    "position_start": 0,
+                    "position_end": 4
+                },
+                {
+                    "word_in_sentence": "1800-talet",
+                    "base_form": "1800-talet",
+                    "position_start": 23,
+                    "position_end": 33
+                },
+                {
+                    "word_in_sentence": "1900-talet",
+                    "base_form": "1900-talet",
+                    "position_start": 48,
+                    "position_end": 58
+                },
+                {
+                    "word_in_sentence": "monarki",
+                    "base_form": "monarki",
+                    "position_start": 91,
+                    "position_end": 98
+                },
+                {
+                    "word_in_sentence": "kejsardöme",
+                    "base_form": "kejsardöme",
+                    "position_start": 119,
+                    "position_end": 129
+                },
+                {
+                    "word_in_sentence": "kejsare",
+                    "base_form": "kejsare",
+                    "position_start": 155,
+                    "position_end": 162
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_47_s007",
+            "sv": "Vissa invånare tvingades konvertera till en specifik tro, till exempel bli lutherskt kristen, annars uppstod snabbt hot och stor otrygghet.\"",
+            "en": "Some residents were forced to convert to a specific faith, for example become Lutheran Christian, otherwise threats and great insecurity quickly arose.\"",
+            "target_words": [
+                {
+                    "word_in_sentence": "konvertera",
+                    "base_form": "konvertera",
+                    "position_start": 25,
+                    "position_end": 35
+                },
+                {
+                    "word_in_sentence": "lutherskt kristen",
+                    "base_form": "lutherskt kristen",
+                    "position_start": 75,
+                    "position_end": 92
+                },
+                {
+                    "word_in_sentence": "hot",
+                    "base_form": "hot",
+                    "position_start": 116,
+                    "position_end": 119
+                },
+                {
+                    "word_in_sentence": "otrygghet",
+                    "base_form": "otrygghet",
+                    "position_start": 129,
+                    "position_end": 138
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_47_s008",
+            "sv": "\"Ja, verkligen,\" sa jag.",
+            "en": "\"Yes, indeed,\" I said.",
+            "target_words": []
+        },
+        {
+            "sentence_id": "art_47_s009",
+            "sv": "\"Och i en ren diktatur var det mycket våld.",
+            "en": "\"And in a pure dictatorship there was a lot of violence.",
+            "target_words": [
+                {
+                    "word_in_sentence": "diktatur",
+                    "base_form": "diktatur",
+                    "position_start": 14,
+                    "position_end": 22
+                },
+                {
+                    "word_in_sentence": "våld",
+                    "base_form": "våld",
+                    "position_start": 38,
+                    "position_end": 42
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_47_s010",
+            "sv": "Om en radikal socialistisk eller nationalistisk ledare ville förändra landet för snabbt, kunde ett farligt krig starta.",
+            "en": "If a radical socialist or nationalist leader wanted to change the country too fast, a dangerous war could start.",
+            "target_words": [
+                {
+                    "word_in_sentence": "socialistisk",
+                    "base_form": "socialistisk",
+                    "position_start": 14,
+                    "position_end": 26
+                },
+                {
+                    "word_in_sentence": "nationalistisk",
+                    "base_form": "nationalistisk",
+                    "position_start": 33,
+                    "position_end": 47
+                },
+                {
+                    "word_in_sentence": "förändra",
+                    "base_form": "förändra",
+                    "position_start": 61,
+                    "position_end": 69
+                },
+                {
+                    "word_in_sentence": "krig",
+                    "base_form": "krig",
+                    "position_start": 107,
+                    "position_end": 111
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_47_s011",
+            "sv": "Till och med i vårt fredliga land regleras makten i en lag som kallas successionsordningen.",
+            "en": "Even in our peaceful country, power is regulated in a law called the Act of Succession.",
+            "target_words": [
+                {
+                    "word_in_sentence": "successionsordningen",
+                    "base_form": "successionsordningen",
+                    "position_start": 70,
+                    "position_end": 90
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_47_s012",
+            "sv": "Många unga engagerar sig idag i ett ungdomsförbund för att kämpa för jämlikhet och regionalt självstyre.\"",
+            "en": "Many young people today get involved in a youth league to fight for equality and regional self-government.\"",
+            "target_words": [
+                {
+                    "word_in_sentence": "ungdomsförbund",
+                    "base_form": "ungdomsförbund",
+                    "position_start": 36,
+                    "position_end": 50
+                },
+                {
+                    "word_in_sentence": "jämlikhet",
+                    "base_form": "jämlikhet",
+                    "position_start": 69,
+                    "position_end": 78
+                },
+                {
+                    "word_in_sentence": "självstyre",
+                    "base_form": "självstyre",
+                    "position_start": 93,
+                    "position_end": 103
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_47_s013",
+            "sv": "Sami nickade förstående.",
+            "en": "Sami nodded understandingly.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Sami",
+                    "base_form": "Sami",
+                    "position_start": 0,
+                    "position_end": 4
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_47_s014",
+            "sv": "\"Vad gör du helst?\" frågade han nyfiket.",
+            "en": "\"What do you prefer to do?\" he asked curiously.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Vad gör du helst?",
+                    "base_form": "Vad gör du helst?",
+                    "position_start": 1,
+                    "position_end": 18
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_47_s015",
+            "sv": "\"Jag tycker att det är skönt att ibland vara för sig själv ute på en tyst brygga, men jag gillar också en bra politisk debatt,\" svarade jag.",
+            "en": "\"I think it is nice to sometimes be by myself out on a quiet jetty, but I also like a good political debate,\" I answered.",
+            "target_words": [
+                {
+                    "word_in_sentence": "vara för sig själv",
+                    "base_form": "vara för sig själv",
+                    "position_start": 40,
+                    "position_end": 58
+                },
+                {
+                    "word_in_sentence": "brygga",
+                    "base_form": "brygga",
+                    "position_start": 74,
+                    "position_end": 80
+                },
+                {
+                    "word_in_sentence": "debatt",
+                    "base_form": "debatt",
+                    "position_start": 119,
+                    "position_end": 125
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_47_s016",
+            "sv": "\"Mycket politik handlar just nu om en ökad global import och hur vi kan exportera säkert till USA, hitta en tysk allians, eller undersöka en thailändsk marknad.",
+            "en": "\"A lot of politics right now is about an increased global import and how we can export safely to the USA, find a German alliance, or investigate a Thai market.",
+            "target_words": [
+                {
+                    "word_in_sentence": "import",
+                    "base_form": "import",
+                    "position_start": 50,
+                    "position_end": 56
+                },
+                {
+                    "word_in_sentence": "exportera",
+                    "base_form": "exportera",
+                    "position_start": 72,
+                    "position_end": 81
+                },
+                {
+                    "word_in_sentence": "USA",
+                    "base_form": "USA",
+                    "position_start": 94,
+                    "position_end": 97
+                },
+                {
+                    "word_in_sentence": "tysk",
+                    "base_form": "tysk",
+                    "position_start": 108,
+                    "position_end": 112
+                },
+                {
+                    "word_in_sentence": "allians",
+                    "base_form": "allians",
+                    "position_start": 113,
+                    "position_end": 120
+                },
+                {
+                    "word_in_sentence": "thailändsk",
+                    "base_form": "thailändsk",
+                    "position_start": 141,
+                    "position_end": 151
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_47_s017",
+            "sv": "Detta kräver en enormt bra samhällsplanering.",
+            "en": "This requires enormously good societal planning.",
+            "target_words": [
+                {
+                    "word_in_sentence": "samhällsplanering",
+                    "base_form": "samhällsplanering",
+                    "position_start": 27,
+                    "position_end": 44
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_47_s018",
+            "sv": "Som man säger på engelska, det handlar om ekonomi.\"",
+            "en": "As they say in English, it is about the economy.\"",
+            "target_words": [
+                {
+                    "word_in_sentence": "om ek",
+                    "base_form": "about",
+                    "position_start": 39,
+                    "position_end": 44
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_47_s019",
+            "sv": "\"Va?!",
+            "en": "\"What?! You're joking!\" exclaimed Sami and laughed.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Va?! Du skojar!",
+                    "base_form": "Va?! Du skojar!",
+                    "position_start": 1,
+                    "position_end": 16
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_47_s020",
+            "sv": "Du skojar!\" utbrast Sami och skrattade.",
+            "en": "\"It sounds very complicated.",
+            "target_words": []
+        },
+        {
+            "sentence_id": "art_47_s021",
+            "sv": "\"Det låter väldigt komplicerat.",
+            "en": "I thought only expensive food would be on the menu today.\"",
+            "target_words": [
+                {
+                    "word_in_sentence": "dyr",
+                    "base_form": "dyr",
+                    "position_start": 20,
+                    "position_end": 23
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_47_s022",
+            "sv": "Jag trodde att bara dyr mat skulle stå på menyn idag.\"",
+            "en": "Suddenly we heard a scream.",
+            "target_words": []
+        },
+        {
+            "sentence_id": "art_47_s023",
+            "sv": "Plötsligt hörde vi ett skrik.",
+            "en": "A criminal thief had tried to rob a store nearby and then tried to escape.",
+            "target_words": [
+                {
+                    "word_in_sentence": "kriminell",
+                    "base_form": "kriminell",
+                    "position_start": 3,
+                    "position_end": 12
+                },
+                {
+                    "word_in_sentence": "tjuv",
+                    "base_form": "tjuv",
+                    "position_start": 13,
+                    "position_end": 17
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_47_s024",
+            "sv": "En kriminell tjuv hade försökt råna en butik i närheten och sedan försökt rymma.",
+            "en": "In the panic, chaos arose in all local traffic.",
+            "target_words": [
+                {
+                    "word_in_sentence": "trafik",
+                    "base_form": "trafik",
+                    "position_start": 35,
+                    "position_end": 41
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_47_s025",
+            "sv": "I paniken uppstod kaos i all lokal trafik.",
+            "en": "Two cars, of which one vehicle belonged to the Swedish military, happened to crash, which caused a serious traffic accident.",
+            "target_words": []
+        },
+        {
+            "sentence_id": "art_47_s026",
+            "sv": "Två bilar, varav ett fordon tillhörde svensk militär, råkade krocka, vilket orsakade en allvarlig trafikolycka.",
+            "en": "We saw a shocking accident happen before our eyes.",
+            "target_words": [
+                {
+                    "word_in_sentence": "olycka",
+                    "base_form": "olycka",
+                    "position_start": 22,
+                    "position_end": 28
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_47_s027",
+            "sv": "Vi såg en chockerande olycka hända framför våra ögon.",
+            "en": "A high-ranking police superintendent came there to try to handle the situation.",
+            "target_words": [
+                {
+                    "word_in_sentence": "polisintendent",
+                    "base_form": "polisintendent",
+                    "position_start": 16,
+                    "position_end": 30
+                },
+                {
+                    "word_in_sentence": "försöka",
+                    "base_form": "försöka",
+                    "position_start": 47,
+                    "position_end": 54
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_47_s028",
+            "sv": "En högt uppsatt polisintendent kom dit för att försöka hantera situationen.",
+            "en": "It was hard to know who was who among all the screaming witnesses.",
+            "target_words": [
+                {
+                    "word_in_sentence": "vem som är vem",
+                    "base_form": "vem som är vem",
+                    "position_start": 23,
+                    "position_end": 37
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_47_s029",
+            "sv": "Det var svårt att veta vem som är vem bland alla skrikande vittnen.",
+            "en": "Someone claimed that a man had been murdered by a known murderer and then been shot, and that there had been great enmity between them.",
+            "target_words": [
+                {
+                    "word_in_sentence": "mördad",
+                    "base_form": "mördad",
+                    "position_start": 32,
+                    "position_end": 38
+                },
+                {
+                    "word_in_sentence": "mördare",
+                    "base_form": "mördare",
+                    "position_start": 50,
+                    "position_end": 57
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_47_s030",
+            "sv": "Någon hävdade att en man blivit mördad av en känd mördare och sedan blivit skjuten, och att det funnits stor fiendskap dem emellan.",
+            "en": "This turned out to be a pure untruth, however.",
+            "target_words": [
+                {
+                    "word_in_sentence": "osanning",
+                    "base_form": "osanning",
+                    "position_start": 34,
+                    "position_end": 42
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_47_s031",
+            "sv": "Detta visade sig dock vara en ren osanning.",
+            "en": "The police arrested three suspects at the scene, and chose to immediately invite everyone involved to the police station for questioning.",
+            "target_words": [
+                {
+                    "word_in_sentence": "stycken",
+                    "base_form": "stycken",
+                    "position_start": 17,
+                    "position_end": 24
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_47_s032",
+            "sv": "Polisen grep tre stycken misstänkta personer på platsen, och valde att genast bjuda in alla inblandade till polisstationen för förhör.",
+            "en": "",
+            "target_words": [
+                {
+                    "word_in_sentence": "stycken",
+                    "base_form": "stycken",
+                    "position_start": 17,
+                    "position_end": 24
+                },
+                {
+                    "word_in_sentence": "bjuda in",
+                    "base_form": "bjuda in",
+                    "position_start": 78,
+                    "position_end": 86
+                }
+            ]
+        }
+    ],
+    "primary_words_used": [
+        "våld",
+        "trafik",
+        "krocka",
+        "polisintendent",
+        "exportera",
+        "USA",
+        "otrygghet",
+        "diktatur",
+        "olycka",
+        "råna",
+        "trafikolycka",
+        "allians",
+        "konvertera",
+        "samhällsplanering",
+        "militär",
+        "rymma",
+        "1900-talet",
+        "nationalistisk",
+        "debatt",
+        "tysk",
+        "jämlikhet",
+        "mördad",
+        "socialistisk",
+        "thailändsk",
+        "lutherskt kristen",
+        "självstyre",
+        "ungdomsförbund",
+        "1800-talet",
+        "mördare",
+        "import",
+        "kriminell",
+        "torg",
+        "krig",
+        "monarki",
+        "tjuv",
+        "kejsardöme",
+        "kejsare",
+        "hot",
+        "successionsordningen",
+        "Sami",
+        "brygga",
+        "trettiotre",
+        "framtid",
+        "Va?! Du skojar!",
+        "bosätta sig",
+        "emellan",
+        "försöka",
+        "vara för sig själv",
+        "stycken",
+        "about",
+        "stå på menyn",
+        "Vad gör du helst?",
+        "förändra",
+        "mer",
+        "bjuda in",
+        "dyr",
+        "skjuten",
+        "osanning",
+        "vem som är vem",
+        "Kan du prata lite långsammare?"
+    ],
+    "secondary_words_used": []
+}

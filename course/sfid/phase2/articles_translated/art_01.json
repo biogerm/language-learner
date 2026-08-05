@@ -1,0 +1,712 @@
+{
+    "course_id": "sfid",
+    "course_title": "SFI D",
+    "stage_id": "stage_11",
+    "stage_title": "Vetenskap & Teknik",
+    "article_id": "art_01",
+    "article_title": "Läsförståelse",
+    "target_word_count": 60,
+    "sentences": [
+        {
+            "sentence_id": "art_01_s001",
+            "sv": "När du går till jobbet är det säkert en vanlig rutin att sätta på datorn som det allra första du gör.",
+            "en": "When you go to work, it is surely a common routine to turn on the computer as the very first thing you do.",
+            "target_words": [
+                {
+                    "word_in_sentence": "sätta på datorn",
+                    "base_form": "sätta på datorn",
+                    "position_start": 57,
+                    "position_end": 72
+                },
+                {
+                    "word_in_sentence": "för",
+                    "base_form": "för",
+                    "position_start": 87,
+                    "position_end": 90
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_01_s002",
+            "sv": "Men har du någonsin funderat över hur allting inuti maskinen egentligen fungerar?",
+            "en": "But have you ever wondered how everything inside the machine actually works?",
+            "target_words": [
+                {
+                    "word_in_sentence": "över",
+                    "base_form": "över",
+                    "position_start": 29,
+                    "position_end": 33
+                },
+                {
+                    "word_in_sentence": "allting",
+                    "base_form": "allting",
+                    "position_start": 38,
+                    "position_end": 45
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_01_s003",
+            "sv": "Innan jag valde att gå en praktisk datakurs visste jag nästan ingenting om den moderna teknikens detaljer.",
+            "en": "Before I chose to take a practical computer course, I knew almost nothing about the details of modern technology.",
+            "target_words": [
+                {
+                    "word_in_sentence": "datakurs",
+                    "base_form": "datakurs",
+                    "position_start": 35,
+                    "position_end": 43
+                },
+                {
+                    "word_in_sentence": "nästa",
+                    "base_form": "nästa",
+                    "position_start": 55,
+                    "position_end": 60
+                },
+                {
+                    "word_in_sentence": "nästan",
+                    "base_form": "nästan",
+                    "position_start": 55,
+                    "position_end": 61
+                },
+                {
+                    "word_in_sentence": "ingenting",
+                    "base_form": "ingenting",
+                    "position_start": 62,
+                    "position_end": 71
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_01_s004",
+            "sv": "Nu förstår jag att det handlar om mer än bara en enkel skärm; det är ett helt system av information.",
+            "en": "Now I understand that it is about more than just a simple screen; it is an entire system of information.",
+            "target_words": [
+                {
+                    "word_in_sentence": "för",
+                    "base_form": "för",
+                    "position_start": 3,
+                    "position_end": 6
+                },
+                {
+                    "word_in_sentence": "mer än",
+                    "base_form": "mer än",
+                    "position_start": 34,
+                    "position_end": 40
+                },
+                {
+                    "word_in_sentence": "av",
+                    "base_form": "av",
+                    "position_start": 85,
+                    "position_end": 87
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_01_s005",
+            "sv": "Varje år försöker tusentals experter att uppfinna ny utrustning som ska göra våra liv enklare.",
+            "en": "Every year thousands of experts try to invent new equipment that will make our lives easier.",
+            "target_words": [
+                {
+                    "word_in_sentence": "för",
+                    "base_form": "för",
+                    "position_start": 9,
+                    "position_end": 12
+                },
+                {
+                    "word_in_sentence": "Varje",
+                    "base_form": "varje",
+                    "position_start": 0,
+                    "position_end": 5
+                },
+                {
+                    "word_in_sentence": "sen",
+                    "base_form": "sen",
+                    "position_start": 20,
+                    "position_end": 23
+                },
+                {
+                    "word_in_sentence": "uppfinna",
+                    "base_form": "uppfinna",
+                    "position_start": 41,
+                    "position_end": 49
+                },
+                {
+                    "word_in_sentence": "upp",
+                    "base_form": "upp",
+                    "position_start": 41,
+                    "position_end": 44
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_01_s006",
+            "sv": "En mycket känd vetenskapsman arbetade för många hundra år sedan med att observera och systematisera ny kunskap.",
+            "en": "A very famous scientist worked many hundreds of years ago on observing and systematizing new knowledge.",
+            "target_words": [
+                {
+                    "word_in_sentence": "för",
+                    "base_form": "för",
+                    "position_start": 38,
+                    "position_end": 41
+                },
+                {
+                    "word_in_sentence": "mycket",
+                    "base_form": "mycket",
+                    "position_start": 3,
+                    "position_end": 9
+                },
+                {
+                    "word_in_sentence": "vetenskapsman",
+                    "base_form": "vetenskapsman",
+                    "position_start": 15,
+                    "position_end": 28
+                },
+                {
+                    "word_in_sentence": "systematisera",
+                    "base_form": "systematisera",
+                    "position_start": 86,
+                    "position_end": 99
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_01_s007",
+            "sv": "Genom att använda en speciell och noggrann metod kunde han snabbt beräkna avstånd i rymden och uppmäta exakta temperaturer.",
+            "en": "By using a special and careful method, he could quickly calculate distances in space and measure exact temperatures.",
+            "target_words": [
+                {
+                    "word_in_sentence": "av",
+                    "base_form": "av",
+                    "position_start": 74,
+                    "position_end": 76
+                },
+                {
+                    "word_in_sentence": "upp",
+                    "base_form": "upp",
+                    "position_start": 95,
+                    "position_end": 98
+                },
+                {
+                    "word_in_sentence": "Genom",
+                    "base_form": "genom",
+                    "position_start": 0,
+                    "position_end": 5
+                },
+                {
+                    "word_in_sentence": "speciell",
+                    "base_form": "speciell",
+                    "position_start": 21,
+                    "position_end": 29
+                },
+                {
+                    "word_in_sentence": "metod",
+                    "base_form": "metod",
+                    "position_start": 43,
+                    "position_end": 48
+                },
+                {
+                    "word_in_sentence": "beräkna",
+                    "base_form": "beräkna",
+                    "position_start": 66,
+                    "position_end": 73
+                },
+                {
+                    "word_in_sentence": "uppmäta",
+                    "base_form": "uppmäta",
+                    "position_start": 95,
+                    "position_end": 102
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_01_s008",
+            "sv": "Han studerade ofta stjärnornas ljus noga genom ett stort teleskop.",
+            "en": "He often studied the light of the stars carefully through a large telescope.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Genom",
+                    "base_form": "genom",
+                    "position_start": 41,
+                    "position_end": 46
+                },
+                {
+                    "word_in_sentence": "teleskop",
+                    "base_form": "teleskop",
+                    "position_start": 57,
+                    "position_end": 65
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_01_s009",
+            "sv": "Han var en riktigt duktig astronom som varje kväll stod och tittade upp mot en vacker stjärnhimmel.",
+            "en": "He was a really good astronomer who stood every evening and looked up at a beautiful starry sky.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Varje",
+                    "base_form": "varje",
+                    "position_start": 39,
+                    "position_end": 44
+                },
+                {
+                    "word_in_sentence": "upp",
+                    "base_form": "upp",
+                    "position_start": 68,
+                    "position_end": 71
+                },
+                {
+                    "word_in_sentence": "astronom",
+                    "base_form": "astronom",
+                    "position_start": 26,
+                    "position_end": 34
+                },
+                {
+                    "word_in_sentence": "titta",
+                    "base_form": "titta",
+                    "position_start": 60,
+                    "position_end": 65
+                },
+                {
+                    "word_in_sentence": "vacker",
+                    "base_form": "vacker",
+                    "position_start": 79,
+                    "position_end": 85
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_01_s010",
+            "sv": "I mitten av det mörka rummet stod hans fina arbetsverktyg.",
+            "en": "In the middle of the dark room stood his fine working tool.",
+            "target_words": [
+                {
+                    "word_in_sentence": "av",
+                    "base_form": "av",
+                    "position_start": 9,
+                    "position_end": 11
+                },
+                {
+                    "word_in_sentence": "I mitten av",
+                    "base_form": "i mitten av",
+                    "position_start": 0,
+                    "position_end": 11
+                },
+                {
+                    "word_in_sentence": "mitten",
+                    "base_form": "mitten",
+                    "position_start": 2,
+                    "position_end": 8
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_01_s011",
+            "sv": "Forskning är inte alltid en lätt process.",
+            "en": "Research is not always an easy process.",
+            "target_words": []
+        },
+        {
+            "sentence_id": "art_01_s012",
+            "sv": "Ofta sker en osynlig maktkamp mellan olika nya idéer, där en oprövad teori måste stå mot en annan.",
+            "en": "Often there is an invisible power struggle between different new ideas, where an untested theory must stand against another.",
+            "target_words": [
+                {
+                    "word_in_sentence": "maktkamp",
+                    "base_form": "maktkamp",
+                    "position_start": 21,
+                    "position_end": 29
+                },
+                {
+                    "word_in_sentence": "teori",
+                    "base_form": "teori",
+                    "position_start": 69,
+                    "position_end": 74
+                },
+                {
+                    "word_in_sentence": "måste",
+                    "base_form": "måste",
+                    "position_start": 75,
+                    "position_end": 80
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_01_s013",
+            "sv": "Forskare bygger alltid sitt hårda arbete på riktig fakta, inte på fantasier.",
+            "en": "Researchers always build their hard work on real facts, not on fantasies.",
+            "target_words": [
+                {
+                    "word_in_sentence": "fakta",
+                    "base_form": "fakta",
+                    "position_start": 51,
+                    "position_end": 56
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_01_s014",
+            "sv": "De flesta är djupt intresserade av att lösa svåra problem för att på bästa sätt hjälpa varandra.",
+            "en": "Most are deeply interested in solving difficult problems to help each other in the best way.",
+            "target_words": [
+                {
+                    "word_in_sentence": "för",
+                    "base_form": "för",
+                    "position_start": 58,
+                    "position_end": 61
+                },
+                {
+                    "word_in_sentence": "av",
+                    "base_form": "av",
+                    "position_start": 32,
+                    "position_end": 34
+                },
+                {
+                    "word_in_sentence": "De flesta",
+                    "base_form": "de flesta",
+                    "position_start": 0,
+                    "position_end": 9
+                },
+                {
+                    "word_in_sentence": "varandra",
+                    "base_form": "varandra",
+                    "position_start": 87,
+                    "position_end": 95
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_01_s015",
+            "sv": "Enligt svensk statistik är resultatet säkert till hundra procent.",
+            "en": "According to Swedish statistics, the result is one hundred percent certain.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Enligt",
+                    "base_form": "enligt",
+                    "position_start": 0,
+                    "position_end": 6
+                },
+                {
+                    "word_in_sentence": "procent",
+                    "base_form": "procent",
+                    "position_start": 57,
+                    "position_end": 64
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_01_s016",
+            "sv": "Faktum är att cirka tjugo procent av försöken kanske misslyckas, men man lär sig otroligt mycket av dem också.",
+            "en": "The fact is that about twenty percent of the attempts might fail, but you learn an incredible amount from them as well.",
+            "target_words": [
+                {
+                    "word_in_sentence": "av",
+                    "base_form": "av",
+                    "position_start": 34,
+                    "position_end": 36
+                },
+                {
+                    "word_in_sentence": "mycket",
+                    "base_form": "mycket",
+                    "position_start": 90,
+                    "position_end": 96
+                },
+                {
+                    "word_in_sentence": "procent",
+                    "base_form": "procent",
+                    "position_start": 26,
+                    "position_end": 33
+                },
+                {
+                    "word_in_sentence": "procent av",
+                    "base_form": "procent av",
+                    "position_start": 26,
+                    "position_end": 36
+                },
+                {
+                    "word_in_sentence": "också",
+                    "base_form": "också",
+                    "position_start": 104,
+                    "position_end": 109
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_01_s017",
+            "sv": "I dag lever vi i en värld där vi ständigt är uppkopplade mot internet.",
+            "en": "Today we live in a world where we are constantly connected to the internet.",
+            "target_words": [
+                {
+                    "word_in_sentence": "uppkopplade",
+                    "base_form": "uppkopplad",
+                    "position_start": 45,
+                    "position_end": 56
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_01_s018",
+            "sv": "Det finns någon typ av elektrisk liten motor i nästan alla våra maskiner hemma.",
+            "en": "There is some type of small electric motor in almost all our machines at home.",
+            "target_words": [
+                {
+                    "word_in_sentence": "typ",
+                    "base_form": "typ",
+                    "position_start": 16,
+                    "position_end": 19
+                },
+                {
+                    "word_in_sentence": "elektrisk",
+                    "base_form": "elektrisk",
+                    "position_start": 23,
+                    "position_end": 32
+                },
+                {
+                    "word_in_sentence": "motor",
+                    "base_form": "motor",
+                    "position_start": 39,
+                    "position_end": 44
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_01_s019",
+            "sv": "Vi kan i dag simulera mycket komplicerade processer direkt på skärmen, långt innan vi bygger dem i verkligheten.",
+            "en": "Today we can simulate very complicated processes directly on the screen, long before we build them in reality.",
+            "target_words": [
+                {
+                    "word_in_sentence": "simulera",
+                    "base_form": "simulera",
+                    "position_start": 13,
+                    "position_end": 21
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_01_s020",
+            "sv": "Detta moderna arbete kräver ibland hög intelligens och en fantastisk intellektuell förmåga.",
+            "en": "This modern work sometimes requires high intelligence and a fantastic intellectual ability.",
+            "target_words": [
+                {
+                    "word_in_sentence": "intelligens",
+                    "base_form": "intelligens",
+                    "position_start": 39,
+                    "position_end": 50
+                },
+                {
+                    "word_in_sentence": "intellektuell",
+                    "base_form": "intellektuell",
+                    "position_start": 69,
+                    "position_end": 82
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_01_s021",
+            "sv": "Man kan nu sitta bekvämt och titta igenom information från hela jorden, helt utan att lämna sin stol.",
+            "en": "You can now sit comfortably and look through information from all over the world, completely without leaving your chair.",
+            "target_words": [
+                {
+                    "word_in_sentence": "igenom",
+                    "base_form": "igenom",
+                    "position_start": 35,
+                    "position_end": 41
+                },
+                {
+                    "word_in_sentence": "lämna",
+                    "base_form": "lämna",
+                    "position_start": 86,
+                    "position_end": 91
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_01_s022",
+            "sv": "I genomsnitt spenderar moderna människor mycket tid online.",
+            "en": "On average, modern people spend a lot of time online.",
+            "target_words": [
+                {
+                    "word_in_sentence": "genomsnitt",
+                    "base_form": "genomsnitt",
+                    "position_start": 2,
+                    "position_end": 12
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_01_s023",
+            "sv": "En ganska vanlig fråga är om vi utvecklas för fort, eller om vi tvärtom är för långsamma.",
+            "en": "A fairly common question is whether we are developing too fast, or if on the contrary we are too slow.",
+            "target_words": [
+                {
+                    "word_in_sentence": "fråga",
+                    "base_form": "fråga",
+                    "position_start": 17,
+                    "position_end": 22
+                },
+                {
+                    "word_in_sentence": "eller",
+                    "base_form": "eller",
+                    "position_start": 52,
+                    "position_end": 57
+                },
+                {
+                    "word_in_sentence": "långsamma",
+                    "base_form": "långsam",
+                    "position_start": 79,
+                    "position_end": 88
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_01_s024",
+            "sv": "Oavsett vad vi kan tycka om saken, fortsätter tekniken att gå framåt.",
+            "en": "Regardless of what we might think about the matter, technology continues to move forward.",
+            "target_words": [
+                {
+                    "word_in_sentence": "tycka",
+                    "base_form": "tycka",
+                    "position_start": 19,
+                    "position_end": 24
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_01_s025",
+            "sv": "Du kan mäta ett föremåls längd, vikt och bredd, men framtiden är svårare att mäta.",
+            "en": "You can measure an object's length, weight and width, but the future is harder to measure.",
+            "target_words": [
+                {
+                    "word_in_sentence": "före",
+                    "base_form": "före",
+                    "position_start": 16,
+                    "position_end": 20
+                },
+                {
+                    "word_in_sentence": "längd",
+                    "base_form": "längd",
+                    "position_start": 25,
+                    "position_end": 30
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_01_s026",
+            "sv": "Vi kan bland annat se att vår populära teknik, inklusive våra telefoner, är det mest användbara vi har.",
+            "en": "We can see, among other things, that our popular technology, including our phones, is the most useful thing we have.",
+            "target_words": [
+                {
+                    "word_in_sentence": "bland annat",
+                    "base_form": "bland annat",
+                    "position_start": 7,
+                    "position_end": 18
+                },
+                {
+                    "word_in_sentence": "populära",
+                    "base_form": "populär",
+                    "position_start": 30,
+                    "position_end": 38
+                },
+                {
+                    "word_in_sentence": "inklusive",
+                    "base_form": "inklusive",
+                    "position_start": 47,
+                    "position_end": 56
+                },
+                {
+                    "word_in_sentence": "mest",
+                    "base_form": "mest",
+                    "position_start": 80,
+                    "position_end": 84
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_01_s027",
+            "sv": "Du kan lugnt avsluta din dag med att visa roliga filmer, sen är du redo för nästa spännande dag.",
+            "en": "You can calmly finish your day by watching funny movies, then you are ready for the next exciting day.",
+            "target_words": [
+                {
+                    "word_in_sentence": "avsluta",
+                    "base_form": "avsluta",
+                    "position_start": 13,
+                    "position_end": 20
+                },
+                {
+                    "word_in_sentence": "din",
+                    "base_form": "din",
+                    "position_start": 21,
+                    "position_end": 24
+                },
+                {
+                    "word_in_sentence": "visa",
+                    "base_form": "visa",
+                    "position_start": 37,
+                    "position_end": 41
+                }
+            ]
+        }
+    ],
+    "primary_words_used": [
+        "sätta på datorn",
+        "maktkamp",
+        "datakurs",
+        "uppfinna",
+        "uppmäta",
+        "beräkna",
+        "uppkopplad",
+        "procent av",
+        "intelligens",
+        "intellektuell",
+        "längd",
+        "procent",
+        "genomsnitt",
+        "metod",
+        "elektrisk",
+        "fakta",
+        "teori",
+        "systematisera",
+        "teleskop",
+        "astronom",
+        "motor",
+        "vetenskapsman",
+        "simulera",
+        "avsluta",
+        "lämna",
+        "din",
+        "igenom",
+        "sen",
+        "titta",
+        "vacker",
+        "speciell",
+        "genom",
+        "populär",
+        "allting",
+        "före",
+        "mitten",
+        "typ",
+        "upp",
+        "över",
+        "måste",
+        "ingenting",
+        "långsam",
+        "de flesta",
+        "tycka",
+        "av",
+        "visa",
+        "nästa",
+        "bland annat",
+        "varandra",
+        "enligt",
+        "inklusive",
+        "mer än",
+        "fråga",
+        "nästan",
+        "eller",
+        "för",
+        "mest",
+        "varje",
+        "också",
+        "mycket"
+    ],
+    "secondary_words_used": []
+}

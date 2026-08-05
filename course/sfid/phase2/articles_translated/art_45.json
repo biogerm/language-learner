@@ -1,0 +1,691 @@
+{
+    "course_id": "sfid",
+    "course_title": "SFI D",
+    "stage_id": "stage_02",
+    "stage_title": "Samhälle & Politik",
+    "article_id": "art_45",
+    "article_title": "Läsförståelse",
+    "target_word_count": 60,
+    "sentences": [
+        {
+            "sentence_id": "art_45_s001",
+            "sv": "Min vän och jag hade lagat middag tillsammans.",
+            "en": "My friend and I had cooked dinner together.",
+            "target_words": []
+        },
+        {
+            "sentence_id": "art_45_s002",
+            "sv": "Medan vi höll på med vår matlagning i ett chockrosa kök, började vi diskutera hur vårt samhälle har förändrats.",
+            "en": "While we were busy with our cooking in a shocking pink kitchen, we started discussing how our society has changed.",
+            "target_words": [
+                {
+                    "word_in_sentence": "matlagning",
+                    "base_form": "matlagning",
+                    "position_start": 25,
+                    "position_end": 35
+                },
+                {
+                    "word_in_sentence": "chockrosa",
+                    "base_form": "chockrosa",
+                    "position_start": 42,
+                    "position_end": 51
+                },
+                {
+                    "word_in_sentence": "samhälle",
+                    "base_form": "samhälle",
+                    "position_start": 87,
+                    "position_end": 95
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_45_s003",
+            "sv": "Vi var givetvis lite trötta, men också glada över ett trevligt mottagande från gästerna tidigare.",
+            "en": "We were of course a little tired, but also happy about a nice reception from the guests earlier.",
+            "target_words": [
+                {
+                    "word_in_sentence": "givetvis",
+                    "base_form": "givetvis",
+                    "position_start": 7,
+                    "position_end": 15
+                },
+                {
+                    "word_in_sentence": "mottagande",
+                    "base_form": "mottagande",
+                    "position_start": 63,
+                    "position_end": 73
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_45_s004",
+            "sv": "\"Vad tänker du på?\" frågade min vän, som alltid är väldigt öppensinnad i sina åsikter.",
+            "en": "\"What are you thinking about?\" asked my friend, who is always very open-minded in her opinions.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Vad tänker du på?",
+                    "base_form": "Vad tänker du på?",
+                    "position_start": 1,
+                    "position_end": 18
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_45_s005",
+            "sv": "\"Jag tänker på hur det var historiskt sett,\" sa jag.",
+            "en": "\"I am thinking about how it was historically,\" I said.",
+            "target_words": [
+                {
+                    "word_in_sentence": "historiskt sett",
+                    "base_form": "historiskt sett",
+                    "position_start": 27,
+                    "position_end": 42
+                },
+                {
+                    "word_in_sentence": "historisk",
+                    "base_form": "historisk",
+                    "position_start": 27,
+                    "position_end": 36
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_45_s006",
+            "sv": "\"Under frihetstiden och tidigare fick varje kvinna och oskyldig människa lida när landets armé tvingades ut för att kriga och försvara ett stort rike.\"",
+            "en": "\"During the Age of Liberty and earlier, every woman and innocent person suffered when the country's army was forced out to fight and defend a large empire.\"",
+            "target_words": [
+                {
+                    "word_in_sentence": "frihetstiden",
+                    "base_form": "frihetstiden",
+                    "position_start": 7,
+                    "position_end": 19
+                },
+                {
+                    "word_in_sentence": "kvinna",
+                    "base_form": "kvinna",
+                    "position_start": 44,
+                    "position_end": 50
+                },
+                {
+                    "word_in_sentence": "människa",
+                    "base_form": "människa",
+                    "position_start": 64,
+                    "position_end": 72
+                },
+                {
+                    "word_in_sentence": "armé",
+                    "base_form": "armé",
+                    "position_start": 90,
+                    "position_end": 94
+                },
+                {
+                    "word_in_sentence": "kriga",
+                    "base_form": "kriga",
+                    "position_start": 116,
+                    "position_end": 121
+                },
+                {
+                    "word_in_sentence": "rike",
+                    "base_form": "rike",
+                    "position_start": 145,
+                    "position_end": 149
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_45_s007",
+            "sv": "\"Det är sant.",
+            "en": "\"It is true.",
+            "target_words": []
+        },
+        {
+            "sentence_id": "art_45_s008",
+            "sv": "En medveten majoritet av folket, eller snarare en stor del av vår folkmängd, drabbades ofta när gamla kungar skulle dra streck på kartan och bestämma över landets tronföljd.",
+            "en": "A conscious majority of the people, or rather a large part of our population, often suffered when old kings were to draw lines on the map and decide on the country's succession to the throne.",
+            "target_words": [
+                {
+                    "word_in_sentence": "medveten",
+                    "base_form": "medveten",
+                    "position_start": 3,
+                    "position_end": 11
+                },
+                {
+                    "word_in_sentence": "majoritet",
+                    "base_form": "majoritet",
+                    "position_start": 12,
+                    "position_end": 21
+                },
+                {
+                    "word_in_sentence": "folkmängd",
+                    "base_form": "folkmängd",
+                    "position_start": 66,
+                    "position_end": 75
+                },
+                {
+                    "word_in_sentence": "dra streck",
+                    "base_form": "dra streck",
+                    "position_start": 116,
+                    "position_end": 126
+                },
+                {
+                    "word_in_sentence": "tronföljd",
+                    "base_form": "tronföljd",
+                    "position_start": 163,
+                    "position_end": 172
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_45_s009",
+            "sv": "Men det var ännu värre för en utländsk minoritet,\" sa hon.",
+            "en": "But it was even worse for a foreign minority,\" she said.",
+            "target_words": [
+                {
+                    "word_in_sentence": "minoritet",
+                    "base_form": "minoritet",
+                    "position_start": 39,
+                    "position_end": 48
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_45_s010",
+            "sv": "\"Är vi lyckligare idag?\"",
+            "en": "\"Are we happier today?\"",
+            "target_words": []
+        },
+        {
+            "sentence_id": "art_45_s011",
+            "sv": "\"Det beror på.\" sa jag.",
+            "en": "\"It depends.\" I said.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Det beror på.",
+                    "base_form": "Det beror på.",
+                    "position_start": 1,
+                    "position_end": 14
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_45_s012",
+            "sv": "\"Många tycker att det blivit mycket bättre.",
+            "en": "\"Many think that it has gotten much better.",
+            "target_words": [
+                {
+                    "word_in_sentence": "bättre",
+                    "base_form": "bättre",
+                    "position_start": 36,
+                    "position_end": 42
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_45_s013",
+            "sv": "Efter en lång historisk process och en snabb industrialisering såg vi en industriell tillväxt växa fram.",
+            "en": "After a long historical process and rapid industrialization, we saw industrial growth emerge.",
+            "target_words": [
+                {
+                    "word_in_sentence": "historisk",
+                    "base_form": "historisk",
+                    "position_start": 14,
+                    "position_end": 23
+                },
+                {
+                    "word_in_sentence": "industrialisering",
+                    "base_form": "industrialisering",
+                    "position_start": 45,
+                    "position_end": 62
+                },
+                {
+                    "word_in_sentence": "industriell",
+                    "base_form": "industriell",
+                    "position_start": 73,
+                    "position_end": 84
+                },
+                {
+                    "word_in_sentence": "växa fram",
+                    "base_form": "växa fram",
+                    "position_start": 94,
+                    "position_end": 103
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_45_s014",
+            "sv": "Vi fick en europeisk utveckling som gav fler och fler människor stabilitet.\"",
+            "en": "We had a European development that gave more and more people stability.\"",
+            "target_words": [
+                {
+                    "word_in_sentence": "europeisk",
+                    "base_form": "europeisk",
+                    "position_start": 11,
+                    "position_end": 20
+                },
+                {
+                    "word_in_sentence": "fler och fler",
+                    "base_form": "fler och fler",
+                    "position_start": 40,
+                    "position_end": 53
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_45_s015",
+            "sv": "Vi pratade också om lag och rätt.",
+            "en": "We also talked about law and justice.",
+            "target_words": []
+        },
+        {
+            "sentence_id": "art_45_s016",
+            "sv": "Idag har vi ett modernt institut för juridik och en rättvis domare som kan döma om någon skulle begå ett brott.",
+            "en": "Today we have a modern institute for law and a fair judge who can pass sentence if someone were to commit a crime.",
+            "target_words": [
+                {
+                    "word_in_sentence": "institut",
+                    "base_form": "institut",
+                    "position_start": 24,
+                    "position_end": 32
+                },
+                {
+                    "word_in_sentence": "juridik",
+                    "base_form": "juridik",
+                    "position_start": 37,
+                    "position_end": 44
+                },
+                {
+                    "word_in_sentence": "domare",
+                    "base_form": "domare",
+                    "position_start": 60,
+                    "position_end": 66
+                },
+                {
+                    "word_in_sentence": "begå",
+                    "base_form": "begå",
+                    "position_start": 96,
+                    "position_end": 100
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_45_s017",
+            "sv": "Förr i tiden var man ofta helt omedveten om sina rättigheter, och ett straff delades snabbt ut, medan en belöning bara gick till makteliten.",
+            "en": "In the past, people were often completely unaware of their rights, and a punishment was quickly handed out, while a reward only went to the power elite.",
+            "target_words": [
+                {
+                    "word_in_sentence": "medveten",
+                    "base_form": "medveten",
+                    "position_start": 32,
+                    "position_end": 40
+                },
+                {
+                    "word_in_sentence": "omedveten",
+                    "base_form": "omedveten",
+                    "position_start": 31,
+                    "position_end": 40
+                },
+                {
+                    "word_in_sentence": "straff",
+                    "base_form": "straff",
+                    "position_start": 70,
+                    "position_end": 76
+                },
+                {
+                    "word_in_sentence": "belöning",
+                    "base_form": "belöning",
+                    "position_start": 105,
+                    "position_end": 113
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_45_s018",
+            "sv": "\"Jaha, då ska vi se …\" sa min vän ironiskt.",
+            "en": "\"Oh, well let's see...\" my friend said ironically.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Jaha, då ska vi se …",
+                    "base_form": "Jaha, då ska vi se …",
+                    "position_start": 1,
+                    "position_end": 21
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_45_s019",
+            "sv": "\"Dagens makthavare försöker åtminstone publicera sina beslut.\"",
+            "en": "\"Today's people in power at least try to publish their decisions.\"",
+            "target_words": [
+                {
+                    "word_in_sentence": "publicera",
+                    "base_form": "publicera",
+                    "position_start": 39,
+                    "position_end": 48
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_45_s020",
+            "sv": "\"På tal om skyldigheter, har du skickat in din deklaration?\" frågade jag.",
+            "en": "\"Speaking of obligations, have you submitted your tax return?\" I asked.",
+            "target_words": [
+                {
+                    "word_in_sentence": "deklaration",
+                    "base_form": "deklaration",
+                    "position_start": 47,
+                    "position_end": 58
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_45_s021",
+            "sv": "\"Nej, jag måste deklarera imorgon,\" svarade hon.",
+            "en": "\"No, I have to file my taxes tomorrow,\" she answered.",
+            "target_words": [
+                {
+                    "word_in_sentence": "deklarera",
+                    "base_form": "deklarera",
+                    "position_start": 16,
+                    "position_end": 25
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_45_s022",
+            "sv": "\"Men jag måste varna för att prata mer om staten.",
+            "en": "\"But I must warn against talking more about the state.",
+            "target_words": [
+                {
+                    "word_in_sentence": "varna för",
+                    "base_form": "varna för",
+                    "position_start": 15,
+                    "position_end": 24
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_45_s023",
+            "sv": "Jag känner att jag tagit en… för mycket av vinet.\"",
+            "en": "I feel like I've had one... too many glasses of wine.\"",
+            "target_words": [
+                {
+                    "word_in_sentence": "en… för mycket",
+                    "base_form": "en… för mycket",
+                    "position_start": 25,
+                    "position_end": 39
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_45_s024",
+            "sv": "Vi bytte ämne.",
+            "en": "We changed the subject.",
+            "target_words": []
+        },
+        {
+            "sentence_id": "art_45_s025",
+            "sv": "\"Vad fick ni?\" frågade jag plötsligt, och syftade på en tävling.",
+            "en": "\"What did you get?\" I asked suddenly, referring to a competition.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Vad fick ni?",
+                    "base_form": "Vad fick ni?",
+                    "position_start": 1,
+                    "position_end": 13
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_45_s026",
+            "sv": "Hon hade fått nio poäng.",
+            "en": "She had gotten nine points.",
+            "target_words": [
+                {
+                    "word_in_sentence": "nio",
+                    "base_form": "nio",
+                    "position_start": 14,
+                    "position_end": 17
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_45_s027",
+            "sv": "Vi pratade även om en tidigare resa.",
+            "en": "We also talked about a previous trip.",
+            "target_words": []
+        },
+        {
+            "sentence_id": "art_45_s028",
+            "sv": "\"En snäll schweizare erbjöd oss lift när vi reste söderut nära den norska gränsen,\" berättade hon.",
+            "en": "\"A kind Swiss offered us a ride when we were traveling south near the Norwegian border,\" she recounted.",
+            "target_words": [
+                {
+                    "word_in_sentence": "schweizare",
+                    "base_form": "schweizare",
+                    "position_start": 10,
+                    "position_end": 20
+                },
+                {
+                    "word_in_sentence": "lift",
+                    "base_form": "lift",
+                    "position_start": 32,
+                    "position_end": 36
+                },
+                {
+                    "word_in_sentence": "söderut",
+                    "base_form": "söderut",
+                    "position_start": 50,
+                    "position_end": 57
+                },
+                {
+                    "word_in_sentence": "norska gränsen",
+                    "base_form": "norska gränsen",
+                    "position_start": 67,
+                    "position_end": 81
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_45_s029",
+            "sv": "\"Senare bodde vi i en stuga på landet.\"",
+            "en": "\"Later we lived in a cabin in the countryside.\"",
+            "target_words": [
+                {
+                    "word_in_sentence": "på landet",
+                    "base_form": "på landet",
+                    "position_start": 28,
+                    "position_end": 37
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_45_s030",
+            "sv": "Vi diskuterade sedan vad som händer efter livet.",
+            "en": "We then discussed what happens after life.",
+            "target_words": []
+        },
+        {
+            "sentence_id": "art_45_s031",
+            "sv": "\"Tror du på reinkarnation?\" frågade hon.",
+            "en": "\"Do you believe in reincarnation?\" she asked.",
+            "target_words": [
+                {
+                    "word_in_sentence": "reinkarnation",
+                    "base_form": "reinkarnation",
+                    "position_start": 12,
+                    "position_end": 25
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_45_s032",
+            "sv": "\"Att man föds igen efteråt?\"",
+            "en": "\"That you are born again afterwards?\"",
+            "target_words": [
+                {
+                    "word_in_sentence": "efteråt",
+                    "base_form": "efteråt",
+                    "position_start": 19,
+                    "position_end": 26
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_45_s033",
+            "sv": "\"Jag blev lite skrämd av den tanken,\" sa jag, \"men till slut insåg jag att det är fascinerande.",
+            "en": "\"I was a bit frightened by the thought,\" I said, \"but finally I realized that it is fascinating.",
+            "target_words": [
+                {
+                    "word_in_sentence": "skrämd",
+                    "base_form": "skrämd",
+                    "position_start": 15,
+                    "position_end": 21
+                },
+                {
+                    "word_in_sentence": "till slut",
+                    "base_form": "till slut",
+                    "position_start": 51,
+                    "position_end": 60
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_45_s034",
+            "sv": "Mer än hälften av jordens befolkning tror på något sådant, medan resten av dem föredrar att hävda något annat.",
+            "en": "More than half of the earth's population believes in something like that, while the rest of them prefer to claim something else.",
+            "target_words": [
+                {
+                    "word_in_sentence": "hälft",
+                    "base_form": "hälft",
+                    "position_start": 7,
+                    "position_end": 12
+                },
+                {
+                    "word_in_sentence": "resten av",
+                    "base_form": "resten av",
+                    "position_start": 65,
+                    "position_end": 74
+                },
+                {
+                    "word_in_sentence": "hävda",
+                    "base_form": "hävda",
+                    "position_start": 92,
+                    "position_end": 97
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_45_s035",
+            "sv": "Det finns dock inga bevis just nu.\"",
+            "en": "There is however no evidence right now.\"",
+            "target_words": [
+                {
+                    "word_in_sentence": "dock",
+                    "base_form": "dock",
+                    "position_start": 10,
+                    "position_end": 14
+                },
+                {
+                    "word_in_sentence": "just nu",
+                    "base_form": "just nu",
+                    "position_start": 26,
+                    "position_end": 33
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_45_s036",
+            "sv": "När två bråkiga katter plötsligt började slåss i hallen, fick jag gå emellan och dela ut lite mat för att lugna dem.",
+            "en": "When two rowdy cats suddenly started fighting in the hallway, I had to step in and hand out some food to calm them down.",
+            "target_words": [
+                {
+                    "word_in_sentence": "gå emellan",
+                    "base_form": "gå emellan",
+                    "position_start": 66,
+                    "position_end": 76
+                },
+                {
+                    "word_in_sentence": "dela ut",
+                    "base_form": "dela ut",
+                    "position_start": 81,
+                    "position_end": 88
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_45_s037",
+            "sv": "Min vän ville genast följa med ut och hjälpa till.",
+            "en": "My friend immediately wanted to follow me out and help.",
+            "target_words": [
+                {
+                    "word_in_sentence": "följa med",
+                    "base_form": "följa med",
+                    "position_start": 21,
+                    "position_end": 30
+                }
+            ]
+        }
+    ],
+    "primary_words_used": [
+        "samhälle",
+        "tronföljd",
+        "matlagning",
+        "chockrosa",
+        "söderut",
+        "kriga",
+        "historiskt sett",
+        "frihetstiden",
+        "juridik",
+        "rike",
+        "Vad tänker du på?",
+        "reinkarnation",
+        "varna för",
+        "lift",
+        "minoritet",
+        "Jaha, då ska vi se …",
+        "deklaration",
+        "deklarera",
+        "omedveten",
+        "belöning",
+        "straff",
+        "efteråt",
+        "skrämd",
+        "folkmängd",
+        "publicera",
+        "medveten",
+        "begå",
+        "armé",
+        "domare",
+        "kvinna",
+        "industriell",
+        "historisk",
+        "schweizare",
+        "växa fram",
+        "gå emellan",
+        "industrialisering",
+        "europeisk",
+        "människa",
+        "majoritet",
+        "institut",
+        "dock",
+        "Det beror på.",
+        "nio",
+        "givetvis",
+        "till slut",
+        "mottagande",
+        "Vad fick ni?",
+        "fler och fler",
+        "bättre",
+        "följa med",
+        "på landet",
+        "hävda",
+        "norska gränsen",
+        "just nu",
+        "hälft",
+        "dela ut",
+        "resten av",
+        "dra streck",
+        "en… för mycket"
+    ],
+    "secondary_words_used": []
+}

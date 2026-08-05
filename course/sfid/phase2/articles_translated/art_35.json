@@ -1,0 +1,664 @@
+{
+    "course_id": "sfid",
+    "course_title": "SFI D",
+    "stage_id": "stage_08",
+    "stage_title": "Kultur & Nöje",
+    "article_id": "art_35",
+    "article_title": "Läsförståelse",
+    "target_word_count": 60,
+    "sentences": [
+        {
+            "sentence_id": "art_35_s001",
+            "sv": "När man reser norrut i landet, kan man besöka en känd kulturattraktion som har överlevt mer än ett årtionde.",
+            "en": "When you travel north in the country, you can visit a famous cultural attraction that has survived more than a decade.",
+            "target_words": [
+                {
+                    "word_in_sentence": "norrut",
+                    "base_form": "norrut",
+                    "position_start": 14,
+                    "position_end": 20
+                },
+                {
+                    "word_in_sentence": "Kultur",
+                    "base_form": "kultur",
+                    "position_start": 54,
+                    "position_end": 60
+                },
+                {
+                    "word_in_sentence": "kulturattraktion",
+                    "base_form": "kulturattraktion",
+                    "position_start": 54,
+                    "position_end": 70
+                },
+                {
+                    "word_in_sentence": "årtionde",
+                    "base_form": "årtionde",
+                    "position_start": 99,
+                    "position_end": 107
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_35_s002",
+            "sv": "Kultur är viktigt för många, och när det gäller nöje är denna plats mer eller mindre fantastisk.",
+            "en": "Culture is important to many, and when it comes to entertainment, this place is more or less fantastic.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Kultur",
+                    "base_form": "kultur",
+                    "position_start": 0,
+                    "position_end": 6
+                },
+                {
+                    "word_in_sentence": "när det gäller",
+                    "base_form": "när det gäller",
+                    "position_start": 33,
+                    "position_end": 47
+                },
+                {
+                    "word_in_sentence": "mer eller mindre",
+                    "base_form": "mer eller mindre",
+                    "position_start": 68,
+                    "position_end": 84
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_35_s003",
+            "sv": "Det gamla huset var en gång i tiden knutet till ett lokalt jordbruk, men nu vill man bidra till att vi får uppleva mycket roligt.",
+            "en": "The old house was once tied to local agriculture, but now they want to contribute to letting us experience a lot of fun.",
+            "target_words": [
+                {
+                    "word_in_sentence": "jordbruk",
+                    "base_form": "jordbruk",
+                    "position_start": 59,
+                    "position_end": 67
+                },
+                {
+                    "word_in_sentence": "bidra till",
+                    "base_form": "bidra till",
+                    "position_start": 85,
+                    "position_end": 95
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_35_s004",
+            "sv": "Vissa personer är absolut en nolla på att sjunga och dansa, men här kan man ändå vara med i en stor kör.",
+            "en": "Some people are an absolute zero at singing and dancing, but here you can still join a large choir.",
+            "target_words": [
+                {
+                    "word_in_sentence": "absolut",
+                    "base_form": "absolut",
+                    "position_start": 18,
+                    "position_end": 25
+                },
+                {
+                    "word_in_sentence": "nolla",
+                    "base_form": "nolla",
+                    "position_start": 29,
+                    "position_end": 34
+                },
+                {
+                    "word_in_sentence": "sjunga",
+                    "base_form": "sjunga",
+                    "position_start": 42,
+                    "position_end": 48
+                },
+                {
+                    "word_in_sentence": "dans",
+                    "base_form": "dans",
+                    "position_start": 53,
+                    "position_end": 57
+                },
+                {
+                    "word_in_sentence": "dansa",
+                    "base_form": "dansa",
+                    "position_start": 53,
+                    "position_end": 58
+                },
+                {
+                    "word_in_sentence": "vara med i",
+                    "base_form": "vara med i",
+                    "position_start": 81,
+                    "position_end": 91
+                },
+                {
+                    "word_in_sentence": "vara med",
+                    "base_form": "vara med",
+                    "position_start": 81,
+                    "position_end": 89
+                },
+                {
+                    "word_in_sentence": "kör",
+                    "base_form": "kör",
+                    "position_start": 100,
+                    "position_end": 103
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_35_s005",
+            "sv": "Ibland spelas vacker musik och folk bjuds in till en traditionell dans eller till och med en spännande maskeradbal.",
+            "en": "Sometimes beautiful music is played and people are invited to a traditional dance or even an exciting masquerade ball.",
+            "target_words": [
+                {
+                    "word_in_sentence": "dans",
+                    "base_form": "dans",
+                    "position_start": 66,
+                    "position_end": 70
+                },
+                {
+                    "word_in_sentence": "musik",
+                    "base_form": "musik",
+                    "position_start": 21,
+                    "position_end": 26
+                },
+                {
+                    "word_in_sentence": "maskeradbal",
+                    "base_form": "maskeradbal",
+                    "position_start": 103,
+                    "position_end": 114
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_35_s006",
+            "sv": "En känd kulturpersonlighet brukar ofta söka kontakt med unga artister här.",
+            "en": "A famous cultural personality often seeks contact with young artists here.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Kultur",
+                    "base_form": "kultur",
+                    "position_start": 8,
+                    "position_end": 14
+                },
+                {
+                    "word_in_sentence": "kulturpersonlighet",
+                    "base_form": "kulturpersonlighet",
+                    "position_start": 8,
+                    "position_end": 26
+                },
+                {
+                    "word_in_sentence": "söka kontakt",
+                    "base_form": "söka kontakt",
+                    "position_start": 39,
+                    "position_end": 51
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_35_s007",
+            "sv": "Andra gillar konst.",
+            "en": "Others like art.",
+            "target_words": []
+        },
+        {
+            "sentence_id": "art_35_s008",
+            "sv": "I en stor sal finns en imponerande konstsamling.",
+            "en": "In a large hall there is an impressive art collection.",
+            "target_words": [
+                {
+                    "word_in_sentence": "konstsamling",
+                    "base_form": "konstsamling",
+                    "position_start": 35,
+                    "position_end": 47
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_35_s009",
+            "sv": "Du kan få en utställningskatalog för att lära dig mer om varje utställning.",
+            "en": "You can get an exhibition catalog to learn more about each exhibition.",
+            "target_words": [
+                {
+                    "word_in_sentence": "utställning",
+                    "base_form": "utställning",
+                    "position_start": 13,
+                    "position_end": 24
+                },
+                {
+                    "word_in_sentence": "utställningskatalog",
+                    "base_form": "utställningskatalog",
+                    "position_start": 13,
+                    "position_end": 32
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_35_s010",
+            "sv": "En berömd dansk konstnär har sin bästa målning här.",
+            "en": "A famous Danish artist has his best painting here.",
+            "target_words": [
+                {
+                    "word_in_sentence": "dans",
+                    "base_form": "dans",
+                    "position_start": 10,
+                    "position_end": 14
+                },
+                {
+                    "word_in_sentence": "dansk",
+                    "base_form": "dansk",
+                    "position_start": 10,
+                    "position_end": 15
+                },
+                {
+                    "word_in_sentence": "konstnär",
+                    "base_form": "konstnär",
+                    "position_start": 16,
+                    "position_end": 24
+                },
+                {
+                    "word_in_sentence": "målning",
+                    "base_form": "målning",
+                    "position_start": 39,
+                    "position_end": 46
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_35_s011",
+            "sv": "Att måla en vacker tavla eller att bara rita med blyerts är en tyst och skön upplevelse.",
+            "en": "Painting a beautiful picture or just drawing with pencil is a quiet and nice experience.",
+            "target_words": [
+                {
+                    "word_in_sentence": "måla",
+                    "base_form": "måla",
+                    "position_start": 4,
+                    "position_end": 8
+                },
+                {
+                    "word_in_sentence": "tavla",
+                    "base_form": "tavla",
+                    "position_start": 19,
+                    "position_end": 24
+                },
+                {
+                    "word_in_sentence": "rita",
+                    "base_form": "rita",
+                    "position_start": 40,
+                    "position_end": 44
+                },
+                {
+                    "word_in_sentence": "tyst",
+                    "base_form": "tyst",
+                    "position_start": 63,
+                    "position_end": 67
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_35_s012",
+            "sv": "Ibland kan man också titta på ett fint foto eller ett gammalt historiskt dokument.",
+            "en": "Sometimes you can also look at a nice photo or an old historical document.",
+            "target_words": [
+                {
+                    "word_in_sentence": "foto",
+                    "base_form": "foto",
+                    "position_start": 39,
+                    "position_end": 43
+                },
+                {
+                    "word_in_sentence": "dokument",
+                    "base_form": "dokument",
+                    "position_start": 73,
+                    "position_end": 81
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_35_s013",
+            "sv": "\"Man kan verkligen undra vem som gjorde den här?\", brukar besökare säga.",
+            "en": "\"You can really wonder who made this one?\", visitors usually say.",
+            "target_words": [
+                {
+                    "word_in_sentence": "verkligen",
+                    "base_form": "verkligen",
+                    "position_start": 9,
+                    "position_end": 18
+                },
+                {
+                    "word_in_sentence": "undra",
+                    "base_form": "undra",
+                    "position_start": 19,
+                    "position_end": 24
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_35_s014",
+            "sv": "Men det finns en annan del också.",
+            "en": "But there is another part too.",
+            "target_words": []
+        },
+        {
+            "sentence_id": "art_35_s015",
+            "sv": "Kanske vill du vara med?",
+            "en": "Maybe you want to join in?",
+            "target_words": [
+                {
+                    "word_in_sentence": "vara med",
+                    "base_form": "vara med",
+                    "position_start": 15,
+                    "position_end": 23
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_35_s016",
+            "sv": "Vissa går till en schackklubb för att spela schack tillsammans.",
+            "en": "Some go to a chess club to play chess together.",
+            "target_words": [
+                {
+                    "word_in_sentence": "schackklubb",
+                    "base_form": "schackklubb",
+                    "position_start": 18,
+                    "position_end": 29
+                },
+                {
+                    "word_in_sentence": "klubb",
+                    "base_form": "klubb",
+                    "position_start": 24,
+                    "position_end": 29
+                },
+                {
+                    "word_in_sentence": "spela schack",
+                    "base_form": "spela schack",
+                    "position_start": 38,
+                    "position_end": 50
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_35_s017",
+            "sv": "Det spelas även brädspel och folk brukar spela kort på fredagskvällarna.",
+            "en": "Board games are also played, and people usually play cards on Friday evenings.",
+            "target_words": [
+                {
+                    "word_in_sentence": "spela kort",
+                    "base_form": "spela kort",
+                    "position_start": 41,
+                    "position_end": 51
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_35_s018",
+            "sv": "Andra gillar att spela dataspel hela natten.",
+            "en": "Others like to play video games all night.",
+            "target_words": [
+                {
+                    "word_in_sentence": "spela dataspel",
+                    "base_form": "spela dataspel",
+                    "position_start": 17,
+                    "position_end": 31
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_35_s019",
+            "sv": "En del vill hellre spela teater och drömmer om att bli en bra skådespelare en dag.",
+            "en": "Some would rather play theater and dream of becoming a good actor one day.",
+            "target_words": [
+                {
+                    "word_in_sentence": "En del",
+                    "base_form": "en del",
+                    "position_start": 0,
+                    "position_end": 6
+                },
+                {
+                    "word_in_sentence": "spela teater",
+                    "base_form": "spela teater",
+                    "position_start": 19,
+                    "position_end": 31
+                },
+                {
+                    "word_in_sentence": "skådespelare",
+                    "base_form": "skådelspelare",
+                    "position_start": 62,
+                    "position_end": 74
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_35_s020",
+            "sv": "Även om det finns en syn på konst som något strikt, är det viktigt att veta att alla intressen får ta plats.",
+            "en": "Even if there is a view of art as something strict, it is important to know that all interests are given space.",
+            "target_words": [
+                {
+                    "word_in_sentence": "syn",
+                    "base_form": "syn",
+                    "position_start": 21,
+                    "position_end": 24
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_35_s021",
+            "sv": "Kulturen ska inte dö ut.",
+            "en": "Culture should not die out.",
+            "target_words": [
+                {
+                    "word_in_sentence": "dö ut",
+                    "base_form": "dö ut",
+                    "position_start": 18,
+                    "position_end": 23
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_35_s022",
+            "sv": "Kanske gillar du sport?",
+            "en": "Maybe you like sports?",
+            "target_words": []
+        },
+        {
+            "sentence_id": "art_35_s023",
+            "sv": "På husets egen sportbar kan man se en viktig match på tv.",
+            "en": "At the house's own sports bar you can watch an important match on TV.",
+            "target_words": [
+                {
+                    "word_in_sentence": "sportbar",
+                    "base_form": "sportbar",
+                    "position_start": 15,
+                    "position_end": 23
+                },
+                {
+                    "word_in_sentence": "match",
+                    "base_form": "match",
+                    "position_start": 45,
+                    "position_end": 50
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_35_s024",
+            "sv": "En person äter en god proteinkaka medan den andra har druckit mycket och nästan brutit sin pinne mitt itu.",
+            "en": "One person eats a tasty protein bar while the other has drunk a lot and almost broken his stick in half.",
+            "target_words": [
+                {
+                    "word_in_sentence": "proteinkaka",
+                    "base_form": "proteinkaka",
+                    "position_start": 22,
+                    "position_end": 33
+                },
+                {
+                    "word_in_sentence": "den andra",
+                    "base_form": "den andra",
+                    "position_start": 40,
+                    "position_end": 49
+                },
+                {
+                    "word_in_sentence": "mitt itu",
+                    "base_form": "mitt itu",
+                    "position_start": 97,
+                    "position_end": 105
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_35_s025",
+            "sv": "Man behöver inte ha någon bra bollkänsla för att heja, och man behöver inte ens en boll för att ha kul.",
+            "en": "You don't need to have any good ball sense to cheer, and you don't even need a ball to have fun.",
+            "target_words": [
+                {
+                    "word_in_sentence": "bollkänsla",
+                    "base_form": "bollkänsla",
+                    "position_start": 30,
+                    "position_end": 40
+                },
+                {
+                    "word_in_sentence": "boll",
+                    "base_form": "boll",
+                    "position_start": 30,
+                    "position_end": 34
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_35_s026",
+            "sv": "Ibland visas även kampsport, och det verkar inte spela roll vad du gillar.",
+            "en": "Sometimes martial arts are also shown, and it doesn't seem to matter what you like.",
+            "target_words": [
+                {
+                    "word_in_sentence": "kampsport",
+                    "base_form": "kampsport",
+                    "position_start": 18,
+                    "position_end": 27
+                },
+                {
+                    "word_in_sentence": "spela roll",
+                    "base_form": "spela roll",
+                    "position_start": 49,
+                    "position_end": 59
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_35_s027",
+            "sv": "Det finns en kulturell mix för alla, och allt detta är en liten utgift för mycket glädje.",
+            "en": "There is a cultural mix for everyone, and all of this is a small expense for a lot of joy.",
+            "target_words": [
+                {
+                    "word_in_sentence": "kulturell",
+                    "base_form": "kulturell",
+                    "position_start": 13,
+                    "position_end": 22
+                },
+                {
+                    "word_in_sentence": "utgift",
+                    "base_form": "utgift",
+                    "position_start": 64,
+                    "position_end": 70
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_35_s028",
+            "sv": "Det är alltså en klubb och plats där poesi möter vild fest.",
+            "en": "It is thus a club and place where poetry meets wild partying.",
+            "target_words": [
+                {
+                    "word_in_sentence": "alltså",
+                    "base_form": "alltså",
+                    "position_start": 7,
+                    "position_end": 13
+                },
+                {
+                    "word_in_sentence": "poesi",
+                    "base_form": "poesi",
+                    "position_start": 37,
+                    "position_end": 42
+                },
+                {
+                    "word_in_sentence": "fest",
+                    "base_form": "fest",
+                    "position_start": 54,
+                    "position_end": 58
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_35_s029",
+            "sv": "Jag gick därifrån med ett leende, full av inspiration och en villkorslös kärlek till kultur.",
+            "en": "I walked away with a smile, full of inspiration and an unconditional love for culture.",
+            "target_words": [
+                {
+                    "word_in_sentence": "därifrån",
+                    "base_form": "därifrån",
+                    "position_start": 9,
+                    "position_end": 17
+                },
+                {
+                    "word_in_sentence": "villkorslös",
+                    "base_form": "konditional",
+                    "position_start": 61,
+                    "position_end": 72
+                }
+            ]
+        }
+    ],
+    "primary_words_used": [
+        "sportbar",
+        "vara med i",
+        "kultur",
+        "kulturattraktion",
+        "proteinkaka",
+        "sjunga",
+        "musik",
+        "match",
+        "dans",
+        "kampsport",
+        "bollkänsla",
+        "boll",
+        "vara med",
+        "spela teater",
+        "kör",
+        "poesi",
+        "kulturell",
+        "en del",
+        "jordbruk",
+        "utställning",
+        "utställningskatalog",
+        "klubb",
+        "spela schack",
+        "schackklubb",
+        "spela dataspel",
+        "spela roll",
+        "kulturpersonlighet",
+        "konstnär",
+        "fest",
+        "konstsamling",
+        "rita",
+        "spela kort",
+        "tavla",
+        "måla",
+        "målning",
+        "maskeradbal",
+        "skådelspelare",
+        "dansa",
+        "foto",
+        "norrut",
+        "när det gäller",
+        "mer eller mindre",
+        "dansk",
+        "bidra till",
+        "söka kontakt",
+        "undra",
+        "mitt itu",
+        "årtionde",
+        "syn",
+        "nolla",
+        "tyst",
+        "dokument",
+        "dö ut",
+        "utgift",
+        "den andra",
+        "absolut",
+        "därifrån",
+        "verkligen",
+        "konditional",
+        "alltså"
+    ],
+    "secondary_words_used": []
+}

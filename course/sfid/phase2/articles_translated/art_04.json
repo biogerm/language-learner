@@ -1,0 +1,660 @@
+{
+    "course_id": "sfid",
+    "course_title": "SFI D",
+    "stage_id": "stage_09",
+    "stage_title": "Resor & Transport",
+    "article_id": "art_04",
+    "article_title": "Läsförståelse",
+    "target_word_count": 60,
+    "sentences": [
+        {
+            "sentence_id": "art_04_s001",
+            "sv": "Min vän, som ursprungligen är från en liten by norrut, gillar att resa.",
+            "en": "My friend, who is originally from a small village up north, likes to travel.",
+            "target_words": [
+                {
+                    "word_in_sentence": "ursprungligen",
+                    "base_form": "ursprungligen",
+                    "position_start": 13,
+                    "position_end": 26
+                },
+                {
+                    "word_in_sentence": "norrut",
+                    "base_form": "norrut",
+                    "position_start": 47,
+                    "position_end": 53
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_04_s002",
+            "sv": "Hon ville komma ifrån sin vanliga stad, eftersom hon kände en stor förändring närma sig med stora steg.",
+            "en": "She wanted to get away from her usual city, because she felt a big change approaching with rapid steps.",
+            "target_words": [
+                {
+                    "word_in_sentence": "komma ifrån",
+                    "base_form": "komma ifrån",
+                    "position_start": 10,
+                    "position_end": 21
+                },
+                {
+                    "word_in_sentence": "komma",
+                    "base_form": "komma",
+                    "position_start": 10,
+                    "position_end": 15
+                },
+                {
+                    "word_in_sentence": "stor",
+                    "base_form": "stor",
+                    "position_start": 62,
+                    "position_end": 66
+                },
+                {
+                    "word_in_sentence": "närma sig med stora steg",
+                    "base_form": "närma sig med stora steg",
+                    "position_start": 78,
+                    "position_end": 102
+                },
+                {
+                    "word_in_sentence": "när",
+                    "base_form": "när",
+                    "position_start": 78,
+                    "position_end": 81
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_04_s003",
+            "sv": "Hon hade varit bortrest flera gånger och nu var det dags för en ny lång vistelse.",
+            "en": "She had been away several times and now it was time for a new long stay.",
+            "target_words": [
+                {
+                    "word_in_sentence": "bortrest",
+                    "base_form": "bortrest",
+                    "position_start": 15,
+                    "position_end": 23
+                },
+                {
+                    "word_in_sentence": "flera",
+                    "base_form": "flera",
+                    "position_start": 24,
+                    "position_end": 29
+                },
+                {
+                    "word_in_sentence": "lång",
+                    "base_form": "lång",
+                    "position_start": 67,
+                    "position_end": 71
+                },
+                {
+                    "word_in_sentence": "vistelse",
+                    "base_form": "vistelse",
+                    "position_start": 72,
+                    "position_end": 80
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_04_s004",
+            "sv": "Som nyinflyttad i en ny stad kände hon sig ofta ensam, så resor gav henne stöd.",
+            "en": "As a newcomer in a new city, she often felt lonely, so travelling gave her support.",
+            "target_words": [
+                {
+                    "word_in_sentence": "nyinflyttad",
+                    "base_form": "nyinflyttad",
+                    "position_start": 4,
+                    "position_end": 15
+                },
+                {
+                    "word_in_sentence": "stöd",
+                    "base_form": "stöd",
+                    "position_start": 74,
+                    "position_end": 78
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_04_s005",
+            "sv": "\"Jag vill uppleva en milsvid utsikt och besöka en gammal fästning,\" började hon säga.",
+            "en": "\"I want to experience a view stretching for miles and visit an old fortress,\" she started saying.",
+            "target_words": [
+                {
+                    "word_in_sentence": "mil",
+                    "base_form": "mil",
+                    "position_start": 21,
+                    "position_end": 24
+                },
+                {
+                    "word_in_sentence": "milsvid",
+                    "base_form": "milsvid",
+                    "position_start": 21,
+                    "position_end": 28
+                },
+                {
+                    "word_in_sentence": "Sök",
+                    "base_form": "sök",
+                    "position_start": 42,
+                    "position_end": 45
+                },
+                {
+                    "word_in_sentence": "fästning",
+                    "base_form": "fästning",
+                    "position_start": 57,
+                    "position_end": 65
+                },
+                {
+                    "word_in_sentence": "säga",
+                    "base_form": "säga",
+                    "position_start": 80,
+                    "position_end": 84
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_04_s006",
+            "sv": "\"Nähä!",
+            "en": "\"Oh, really!",
+            "target_words": [
+                {
+                    "word_in_sentence": "Nähä!",
+                    "base_form": "Nähä!",
+                    "position_start": 1,
+                    "position_end": 6
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_04_s007",
+            "sv": "Vill du verkligen det?\" frågade jag.",
+            "en": "Do you really want to?\" I asked.",
+            "target_words": []
+        },
+        {
+            "sentence_id": "art_04_s008",
+            "sv": "Hon nickade.",
+            "en": "She nodded.",
+            "target_words": []
+        },
+        {
+            "sentence_id": "art_04_s009",
+            "sv": "Först skulle hon ta ett flyg, landa med en mellanlandning och sedan ta en passagerarfärja.",
+            "en": "First she would take a flight, have a layover, and then take a passenger ferry.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Först",
+                    "base_form": "först",
+                    "position_start": 0,
+                    "position_end": 5
+                },
+                {
+                    "word_in_sentence": "landa",
+                    "base_form": "landa",
+                    "position_start": 30,
+                    "position_end": 35
+                },
+                {
+                    "word_in_sentence": "mellanlandning",
+                    "base_form": "mellanlandning",
+                    "position_start": 43,
+                    "position_end": 57
+                },
+                {
+                    "word_in_sentence": "passagerarfärja",
+                    "base_form": "passagerarfärja",
+                    "position_start": 74,
+                    "position_end": 89
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_04_s010",
+            "sv": "Efter hennes ankomst skulle hon hyra ett fordon för att åka många mil till kusten.",
+            "en": "After her arrival she would rent a vehicle to travel many miles to the coast.",
+            "target_words": [
+                {
+                    "word_in_sentence": "mil",
+                    "base_form": "mil",
+                    "position_start": 66,
+                    "position_end": 69
+                },
+                {
+                    "word_in_sentence": "ankomst",
+                    "base_form": "ankomst",
+                    "position_start": 13,
+                    "position_end": 20
+                },
+                {
+                    "word_in_sentence": "fordon",
+                    "base_form": "fordon",
+                    "position_start": 41,
+                    "position_end": 47
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_04_s011",
+            "sv": "\"Blunda,\" sa hon när vi lyssnade på en lokal radiosändning om resor.",
+            "en": "\"Close your eyes,\" she said when we listened to a local radio broadcast about travel.",
+            "target_words": [
+                {
+                    "word_in_sentence": "när",
+                    "base_form": "när",
+                    "position_start": 17,
+                    "position_end": 20
+                },
+                {
+                    "word_in_sentence": "radiosändning",
+                    "base_form": "radiosändning",
+                    "position_start": 45,
+                    "position_end": 58
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_04_s012",
+            "sv": "När hon äntligen var framme vid vattnet, bestämde hon sig för att hyra en kajak.",
+            "en": "When she finally arrived at the water, she decided to rent a kayak.",
+            "target_words": [
+                {
+                    "word_in_sentence": "när",
+                    "base_form": "när",
+                    "position_start": 0,
+                    "position_end": 3
+                },
+                {
+                    "word_in_sentence": "kajak",
+                    "base_form": "kajak",
+                    "position_start": 74,
+                    "position_end": 79
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_04_s013",
+            "sv": "\"Man måste ha bra balans i en kajak för att inte drunkna,\" sa en trevlig hotellägare.",
+            "en": "\"You must have good balance in a kayak so as not to drown,\" a nice hotel owner said.",
+            "target_words": [
+                {
+                    "word_in_sentence": "kajak",
+                    "base_form": "kajak",
+                    "position_start": 30,
+                    "position_end": 35
+                },
+                {
+                    "word_in_sentence": "Man",
+                    "base_form": "man",
+                    "position_start": 1,
+                    "position_end": 4
+                },
+                {
+                    "word_in_sentence": "balans",
+                    "base_form": "balans",
+                    "position_start": 18,
+                    "position_end": 24
+                },
+                {
+                    "word_in_sentence": "drunkna",
+                    "base_form": "drunkna",
+                    "position_start": 49,
+                    "position_end": 56
+                },
+                {
+                    "word_in_sentence": "hotellägare",
+                    "base_form": "hotellägare",
+                    "position_start": 73,
+                    "position_end": 84
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_04_s014",
+            "sv": "Det fanns alla sorters båtar där, till och med en gammal långbåt och ett stort skepp.",
+            "en": "There were all sorts of boats there, even an old longboat and a large ship.",
+            "target_words": [
+                {
+                    "word_in_sentence": "stor",
+                    "base_form": "stor",
+                    "position_start": 73,
+                    "position_end": 77
+                },
+                {
+                    "word_in_sentence": "lång",
+                    "base_form": "lång",
+                    "position_start": 57,
+                    "position_end": 61
+                },
+                {
+                    "word_in_sentence": "alla",
+                    "base_form": "alla",
+                    "position_start": 10,
+                    "position_end": 14
+                },
+                {
+                    "word_in_sentence": "långbåt",
+                    "base_form": "långbåt",
+                    "position_start": 57,
+                    "position_end": 64
+                },
+                {
+                    "word_in_sentence": "skepp",
+                    "base_form": "skepp",
+                    "position_start": 79,
+                    "position_end": 84
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_04_s015",
+            "sv": "Hon lät kajaken glida fram över vattnet.",
+            "en": "She let the kayak glide forward across the water.",
+            "target_words": [
+                {
+                    "word_in_sentence": "kajak",
+                    "base_form": "kajak",
+                    "position_start": 8,
+                    "position_end": 13
+                },
+                {
+                    "word_in_sentence": "glida fram",
+                    "base_form": "glida fram",
+                    "position_start": 16,
+                    "position_end": 26
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_04_s016",
+            "sv": "Hon valde att bara flyta med strömmen och gradvis slappna av.",
+            "en": "She chose to just go with the flow and gradually relax.",
+            "target_words": [
+                {
+                    "word_in_sentence": "flyta med",
+                    "base_form": "flyta med",
+                    "position_start": 19,
+                    "position_end": 28
+                },
+                {
+                    "word_in_sentence": "gradvis",
+                    "base_form": "gradvis",
+                    "position_start": 42,
+                    "position_end": 49
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_04_s017",
+            "sv": "Hon kunde se barn springa runt på stranden och en hund springa lös.",
+            "en": "She could see children running around on the beach and a dog running loose.",
+            "target_words": [
+                {
+                    "word_in_sentence": "springa runt",
+                    "base_form": "springa runt",
+                    "position_start": 18,
+                    "position_end": 30
+                },
+                {
+                    "word_in_sentence": "springa lös",
+                    "base_form": "springa lös",
+                    "position_start": 55,
+                    "position_end": 66
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_04_s018",
+            "sv": "På kvällen åt hon katrinplommon och tänkte på sitt uppbrott från sitt gamla liv.",
+            "en": "In the evening she ate prunes and thought about her departure from her old life.",
+            "target_words": [
+                {
+                    "word_in_sentence": "katrinplommon",
+                    "base_form": "katrinplommon",
+                    "position_start": 18,
+                    "position_end": 31
+                },
+                {
+                    "word_in_sentence": "uppbrott",
+                    "base_form": "uppbrott",
+                    "position_start": 51,
+                    "position_end": 59
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_04_s019",
+            "sv": "En äldre man, klädd som en kardinal, berättade om män som brukade rista namn i stenar och grunda nya städer i hela världen.",
+            "en": "An older man, dressed like a cardinal, told stories about men who used to carve names into stones and found new cities all over the world.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Man",
+                    "base_form": "man",
+                    "position_start": 9,
+                    "position_end": 12
+                },
+                {
+                    "word_in_sentence": "kardinal",
+                    "base_form": "kardinal",
+                    "position_start": 27,
+                    "position_end": 35
+                },
+                {
+                    "word_in_sentence": "rista",
+                    "base_form": "rista",
+                    "position_start": 66,
+                    "position_end": 71
+                },
+                {
+                    "word_in_sentence": "grunda",
+                    "base_form": "grunda",
+                    "position_start": 90,
+                    "position_end": 96
+                },
+                {
+                    "word_in_sentence": "hela",
+                    "base_form": "hela",
+                    "position_start": 110,
+                    "position_end": 114
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_04_s020",
+            "sv": "\"Sök i dig själv,\" sa han.",
+            "en": "\"Search within yourself,\" he said.",
+            "target_words": []
+        },
+        {
+            "sentence_id": "art_04_s021",
+            "sv": "Allt verkade flyta på väldigt bra och det kändes aldrig som en katastrof.",
+            "en": "Everything seemed to flow very well and it never felt like a disaster.",
+            "target_words": [
+                {
+                    "word_in_sentence": "flyta på",
+                    "base_form": "flyta på",
+                    "position_start": 13,
+                    "position_end": 21
+                },
+                {
+                    "word_in_sentence": "katastrof",
+                    "base_form": "katastrof",
+                    "position_start": 63,
+                    "position_end": 72
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_04_s022",
+            "sv": "Hon ville inte ha en halv semester, utan en helt underbar tid.",
+            "en": "She didn't want a half vacation, but an absolutely wonderful time.",
+            "target_words": [
+                {
+                    "word_in_sentence": "halv",
+                    "base_form": "halv",
+                    "position_start": 21,
+                    "position_end": 25
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_04_s023",
+            "sv": "En ovanlig resenär vill alltid gå lite längre bort.",
+            "en": "An unusual traveler always wants to go a little further away.",
+            "target_words": [
+                {
+                    "word_in_sentence": "ovanlig",
+                    "base_form": "ovanlig",
+                    "position_start": 3,
+                    "position_end": 10
+                },
+                {
+                    "word_in_sentence": "resenär",
+                    "base_form": "resenär",
+                    "position_start": 11,
+                    "position_end": 18
+                },
+                {
+                    "word_in_sentence": "längre bort",
+                    "base_form": "längre bort",
+                    "position_start": 39,
+                    "position_end": 50
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_04_s024",
+            "sv": "På det sättet blir det aldrig tråkigt i längden.",
+            "en": "In that way it never gets boring in the long run.",
+            "target_words": [
+                {
+                    "word_in_sentence": "På det sättet",
+                    "base_form": "på det sättet",
+                    "position_start": 0,
+                    "position_end": 13
+                },
+                {
+                    "word_in_sentence": "i längden",
+                    "base_form": "i längden",
+                    "position_start": 38,
+                    "position_end": 47
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_04_s025",
+            "sv": "Jag hoppas att hon vill komma tillbaka och göra ett återbesök hos mig.",
+            "en": "I hope she wants to come back and make a return visit to me.",
+            "target_words": [
+                {
+                    "word_in_sentence": "komma tillbaka",
+                    "base_form": "komma tillbaka",
+                    "position_start": 24,
+                    "position_end": 38
+                },
+                {
+                    "word_in_sentence": "återbesök",
+                    "base_form": "återbesök",
+                    "position_start": 52,
+                    "position_end": 61
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_04_s026",
+            "sv": "Det vore synd att byta ut en viss del av livet när det inte är en dålig sak, men jag förstod att hon var lycklig när hon gick ner till havet.",
+            "en": "It would be a shame to replace a certain part of life when it is not a bad thing, but I understood that she was happy when she went down to the sea.",
+            "target_words": [
+                {
+                    "word_in_sentence": "byta",
+                    "base_form": "byta",
+                    "position_start": 18,
+                    "position_end": 22
+                },
+                {
+                    "word_in_sentence": "viss",
+                    "base_form": "viss",
+                    "position_start": 29,
+                    "position_end": 33
+                },
+                {
+                    "word_in_sentence": "dålig",
+                    "base_form": "dålig",
+                    "position_start": 66,
+                    "position_end": 71
+                },
+                {
+                    "word_in_sentence": "sak",
+                    "base_form": "sak",
+                    "position_start": 72,
+                    "position_end": 75
+                },
+                {
+                    "word_in_sentence": "ner",
+                    "base_form": "ner",
+                    "position_start": 126,
+                    "position_end": 129
+                }
+            ]
+        }
+    ],
+    "primary_words_used": [
+        "komma ifrån",
+        "ursprungligen",
+        "katrinplommon",
+        "radiosändning",
+        "närma sig med stora steg",
+        "längre bort",
+        "passagerarfärja",
+        "drunkna",
+        "kardinal",
+        "grunda",
+        "rista",
+        "skepp",
+        "långbåt",
+        "uppbrott",
+        "stöd",
+        "Nähä!",
+        "springa runt",
+        "återbesök",
+        "bortrest",
+        "springa lös",
+        "nyinflyttad",
+        "flyta på",
+        "i längden",
+        "resenär",
+        "flyta med",
+        "vistelse",
+        "hotellägare",
+        "fordon",
+        "på det sättet",
+        "mil",
+        "kajak",
+        "norrut",
+        "milsvid",
+        "fästning",
+        "glida fram",
+        "mellanlandning",
+        "landa",
+        "ankomst",
+        "säga",
+        "komma",
+        "hela",
+        "byta",
+        "stor",
+        "först",
+        "ner",
+        "dålig",
+        "när",
+        "flera",
+        "alla",
+        "man",
+        "lång",
+        "sak",
+        "balans",
+        "gradvis",
+        "halv",
+        "viss",
+        "ovanlig",
+        "sök",
+        "katastrof"
+    ],
+    "secondary_words_used": []
+}

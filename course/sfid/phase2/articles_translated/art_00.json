@@ -1,0 +1,719 @@
+{
+    "course_id": "sfid",
+    "course_title": "SFI D",
+    "stage_id": "stage_11",
+    "stage_title": "Vetenskap & Teknik",
+    "article_id": "art_00",
+    "article_title": "Läsförståelse",
+    "target_word_count": 60,
+    "sentences": [
+        {
+            "sentence_id": "art_00_s001",
+            "sv": "Varje morgon börjar vi en ny dag i en fantastisk värld full av tekniska lösningar.",
+            "en": "Every morning we start a new day in a fantastic world full of technological solutions.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Varje",
+                    "base_form": "Varje",
+                    "position_start": 0,
+                    "position_end": 5
+                },
+                {
+                    "word_in_sentence": "börjar",
+                    "base_form": "börja",
+                    "position_start": 13,
+                    "position_end": 19
+                },
+                {
+                    "word_in_sentence": "ny",
+                    "base_form": "ny",
+                    "position_start": 26,
+                    "position_end": 28
+                },
+                {
+                    "word_in_sentence": "fantastisk",
+                    "base_form": "fantastisk",
+                    "position_start": 38,
+                    "position_end": 48
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_00_s002",
+            "sv": "Det är otroligt att se hur mycket den moderna tekniken kan påverka vårt liv och vår vardag.",
+            "en": "It is incredible to see how much modern technology can affect our lives and our everyday lives.",
+            "target_words": [
+                {
+                    "word_in_sentence": "otroligt",
+                    "base_form": "otrolig",
+                    "position_start": 7,
+                    "position_end": 15
+                },
+                {
+                    "word_in_sentence": "rolig",
+                    "base_form": "rolig",
+                    "position_start": 9,
+                    "position_end": 14
+                },
+                {
+                    "word_in_sentence": "påverka",
+                    "base_form": "påverka",
+                    "position_start": 59,
+                    "position_end": 66
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_00_s003",
+            "sv": "För många år sedan var kroppsarbete mycket vanligt i samhället, och människor fick använda mycket energi från sin egen kropp för att överleva och sköta sitt jobb.",
+            "en": "Many years ago, physical labor was very common in society, and people had to use a lot of energy from their own bodies to survive and manage their jobs.",
+            "target_words": [
+                {
+                    "word_in_sentence": "kroppsarbete",
+                    "base_form": "kroppsarbete",
+                    "position_start": 23,
+                    "position_end": 35
+                },
+                {
+                    "word_in_sentence": "fick",
+                    "base_form": "få",
+                    "position_start": 78,
+                    "position_end": 82
+                },
+                {
+                    "word_in_sentence": "energi",
+                    "base_form": "energi",
+                    "position_start": 98,
+                    "position_end": 104
+                },
+                {
+                    "word_in_sentence": "sin",
+                    "base_form": "sin",
+                    "position_start": 110,
+                    "position_end": 113
+                },
+                {
+                    "word_in_sentence": "egen",
+                    "base_form": "egen",
+                    "position_start": 114,
+                    "position_end": 118
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_00_s004",
+            "sv": "I dag behöver vi egentligen inte arbeta lika hårt fysiskt, på grund av våra smarta maskiner och system som gör jobbet åt oss.",
+            "en": "Today we don't really need to work as hard physically, because of our smart machines and systems that do the job for us.",
+            "target_words": [
+                {
+                    "word_in_sentence": "egen",
+                    "base_form": "egen",
+                    "position_start": 17,
+                    "position_end": 21
+                },
+                {
+                    "word_in_sentence": "egentligen",
+                    "base_form": "egentligen",
+                    "position_start": 17,
+                    "position_end": 27
+                },
+                {
+                    "word_in_sentence": "hårt",
+                    "base_form": "hård",
+                    "position_start": 45,
+                    "position_end": 49
+                },
+                {
+                    "word_in_sentence": "på grund av",
+                    "base_form": "på grund av",
+                    "position_start": 59,
+                    "position_end": 70
+                },
+                {
+                    "word_in_sentence": "Om",
+                    "base_form": "om",
+                    "position_start": 104,
+                    "position_end": 106
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_00_s005",
+            "sv": "Nu för tiden är det i stället så att många sitter framför en dator hela dagen på kontoret.",
+            "en": "Nowadays, instead, many sit in front of a computer all day at the office.",
+            "target_words": [
+                {
+                    "word_in_sentence": "dator",
+                    "base_form": "dator",
+                    "position_start": 61,
+                    "position_end": 66
+                },
+                {
+                    "word_in_sentence": "hela",
+                    "base_form": "hel",
+                    "position_start": 67,
+                    "position_end": 71
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_00_s006",
+            "sv": "Min gode vän är civilingenjör och han har utvecklat en helt egen metod för att jobba mer effektivt.",
+            "en": "My good friend is a civil engineer and he has developed his very own method for working more efficiently.",
+            "target_words": [
+                {
+                    "word_in_sentence": "egen",
+                    "base_form": "egen",
+                    "position_start": 60,
+                    "position_end": 64
+                },
+                {
+                    "word_in_sentence": "civilingenjör",
+                    "base_form": "civilingenjör",
+                    "position_start": 16,
+                    "position_end": 29
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_00_s007",
+            "sv": "Han använder avancerad matematik och olika digitala redskap för att lösa komplexa problem i sitt projekt.",
+            "en": "He uses advanced mathematics and various digital tools to solve complex problems in his project.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Om",
+                    "base_form": "om",
+                    "position_start": 74,
+                    "position_end": 76
+                },
+                {
+                    "word_in_sentence": "matematik",
+                    "base_form": "matematik",
+                    "position_start": 23,
+                    "position_end": 32
+                },
+                {
+                    "word_in_sentence": "redskap",
+                    "base_form": "redskap",
+                    "position_start": 52,
+                    "position_end": 59
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_00_s008",
+            "sv": "Hans fru är geolog och hon undersöker naturen.",
+            "en": "His wife is a geologist and she examines nature.",
+            "target_words": [
+                {
+                    "word_in_sentence": "geolog",
+                    "base_form": "geolog",
+                    "position_start": 12,
+                    "position_end": 18
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_00_s009",
+            "sv": "Det är en rolig hobby, så de gillar både geologi och astronomi på fritiden.",
+            "en": "It is a fun hobby, so they both like geology and astronomy in their spare time.",
+            "target_words": [
+                {
+                    "word_in_sentence": "rolig",
+                    "base_form": "rolig",
+                    "position_start": 10,
+                    "position_end": 15
+                },
+                {
+                    "word_in_sentence": "Om",
+                    "base_form": "om",
+                    "position_start": 59,
+                    "position_end": 61
+                },
+                {
+                    "word_in_sentence": "geolog",
+                    "base_form": "geolog",
+                    "position_start": 41,
+                    "position_end": 47
+                },
+                {
+                    "word_in_sentence": "både",
+                    "base_form": "både",
+                    "position_start": 36,
+                    "position_end": 40
+                },
+                {
+                    "word_in_sentence": "astronomi",
+                    "base_form": "astronomi",
+                    "position_start": 53,
+                    "position_end": 62
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_00_s010",
+            "sv": "Det skulle verkligen vara oerhört svårt att fungera i samhället utan elektricitet i dag.",
+            "en": "It would really be extremely difficult to function in society without electricity today.",
+            "target_words": [
+                {
+                    "word_in_sentence": "skulle",
+                    "base_form": "skulle",
+                    "position_start": 4,
+                    "position_end": 10
+                },
+                {
+                    "word_in_sentence": "elektricitet",
+                    "base_form": "elektricitet",
+                    "position_start": 69,
+                    "position_end": 81
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_00_s011",
+            "sv": "Om vi till exempel inte hade snabbt bredband, skulle vi tvingas vänta väldigt länge på all möjlig information från omvärlden.",
+            "en": "If, for example, we did not have fast broadband, we would be forced to wait a very long time for all kinds of information from the outside world.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Om",
+                    "base_form": "om",
+                    "position_start": 0,
+                    "position_end": 2
+                },
+                {
+                    "word_in_sentence": "skulle",
+                    "base_form": "skulle",
+                    "position_start": 46,
+                    "position_end": 52
+                },
+                {
+                    "word_in_sentence": "till exempel",
+                    "base_form": "till exempel",
+                    "position_start": 6,
+                    "position_end": 18
+                },
+                {
+                    "word_in_sentence": "bredband",
+                    "base_form": "bredband",
+                    "position_start": 36,
+                    "position_end": 44
+                },
+                {
+                    "word_in_sentence": "vänta",
+                    "base_form": "vänta",
+                    "position_start": 64,
+                    "position_end": 69
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_00_s012",
+            "sv": "Jag gissar att mindre än hälften av oss vanligt folk faktiskt förstår all den komplicerade teknik vi använder.",
+            "en": "I guess that less than half of us regular people actually understand all the complicated technology we use.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Om",
+                    "base_form": "om",
+                    "position_start": 79,
+                    "position_end": 81
+                },
+                {
+                    "word_in_sentence": "gissar",
+                    "base_form": "gissa",
+                    "position_start": 4,
+                    "position_end": 10
+                },
+                {
+                    "word_in_sentence": "mindre än",
+                    "base_form": "mindre än",
+                    "position_start": 15,
+                    "position_end": 24
+                },
+                {
+                    "word_in_sentence": "faktisk",
+                    "base_form": "faktisk",
+                    "position_start": 53,
+                    "position_end": 60
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_00_s013",
+            "sv": "Man kan lätt göra fel när man ska välja ett bra verktyg för sitt arbete.",
+            "en": "You can easily make a mistake when choosing a good tool for your work.",
+            "target_words": [
+                {
+                    "word_in_sentence": "göra",
+                    "base_form": "göra",
+                    "position_start": 13,
+                    "position_end": 17
+                },
+                {
+                    "word_in_sentence": "fel",
+                    "base_form": "fel",
+                    "position_start": 18,
+                    "position_end": 21
+                },
+                {
+                    "word_in_sentence": "välja",
+                    "base_form": "välja",
+                    "position_start": 34,
+                    "position_end": 39
+                },
+                {
+                    "word_in_sentence": "verktyg",
+                    "base_form": "verktyg",
+                    "position_start": 48,
+                    "position_end": 55
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_00_s014",
+            "sv": "Ibland känns det som att det finns för mycket information överallt.",
+            "en": "Sometimes it feels like there is too much information everywhere.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Om",
+                    "base_form": "om",
+                    "position_start": 18,
+                    "position_end": 20
+                },
+                {
+                    "word_in_sentence": "för mycket",
+                    "base_form": "för mycket",
+                    "position_start": 35,
+                    "position_end": 45
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_00_s015",
+            "sv": "I går kväll satt jag och surfade, och jag hittade mycket information på nätet.",
+            "en": "Last night I sat surfing, and I found a lot of information online.",
+            "target_words": [
+                {
+                    "word_in_sentence": "jag hittade mycket information på nätet",
+                    "base_form": "jag hittade … på nätet",
+                    "position_start": 38,
+                    "position_end": 77
+                },
+                {
+                    "word_in_sentence": "hitta",
+                    "base_form": "hitta på",
+                    "position_start": 42,
+                    "position_end": 47
+                },
+                {
+                    "word_in_sentence": "nätet",
+                    "base_form": "nätet",
+                    "position_start": 72,
+                    "position_end": 77
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_00_s016",
+            "sv": "Det var en spännande statistik som visade tydligt att spenderar vi i genomsnitt ungefär tre timmar varje kväll framför en teveskärm i vardagsrummet.",
+            "en": "There was an exciting statistic that clearly showed that we spend on average about three hours every evening in front of a TV screen in the living room.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Om",
+                    "base_form": "om",
+                    "position_start": 32,
+                    "position_end": 34
+                },
+                {
+                    "word_in_sentence": "statistik",
+                    "base_form": "statistik",
+                    "position_start": 21,
+                    "position_end": 30
+                },
+                {
+                    "word_in_sentence": "ungefär",
+                    "base_form": "ungefär",
+                    "position_start": 80,
+                    "position_end": 87
+                },
+                {
+                    "word_in_sentence": "teveskärm",
+                    "base_form": "teveskärm",
+                    "position_start": 122,
+                    "position_end": 131
+                },
+                {
+                    "word_in_sentence": "teve",
+                    "base_form": "teve",
+                    "position_start": 122,
+                    "position_end": 126
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_00_s017",
+            "sv": "Många människor gillar verkligen att titta på teve på kvällen för att slappna av efter jobbet.",
+            "en": "Many people really like to watch TV in the evening to relax after work.",
+            "target_words": [
+                {
+                    "word_in_sentence": "teve",
+                    "base_form": "teve",
+                    "position_start": 46,
+                    "position_end": 50
+                },
+                {
+                    "word_in_sentence": "titta på teve",
+                    "base_form": "titta på teve",
+                    "position_start": 37,
+                    "position_end": 50
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_00_s018",
+            "sv": "En modern teve eller en smart teveapparat har numera väldigt många fantastiska funktioner, men man kan undra vilken man ska köpa för att få bäst bild.",
+            "en": "A modern TV or a smart television set now has very many fantastic features, but you might wonder which one to buy to get the best picture.",
+            "target_words": [
+                {
+                    "word_in_sentence": "teve",
+                    "base_form": "teve",
+                    "position_start": 10,
+                    "position_end": 14
+                },
+                {
+                    "word_in_sentence": "teveapparat",
+                    "base_form": "teveapparat",
+                    "position_start": 30,
+                    "position_end": 41
+                },
+                {
+                    "word_in_sentence": "vilken",
+                    "base_form": "vilken",
+                    "position_start": 109,
+                    "position_end": 115
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_00_s019",
+            "sv": "Vi har också en stor möjlighet att lära oss nya spännande saker via nätet, till exempel helt nya språk eller kulturer.",
+            "en": "We also have a great opportunity to learn new exciting things via the internet, for example completely new languages or cultures.",
+            "target_words": [
+                {
+                    "word_in_sentence": "till exempel",
+                    "base_form": "till exempel",
+                    "position_start": 75,
+                    "position_end": 87
+                },
+                {
+                    "word_in_sentence": "nätet",
+                    "base_form": "nätet",
+                    "position_start": 68,
+                    "position_end": 73
+                },
+                {
+                    "word_in_sentence": "möjlighet",
+                    "base_form": "möjlighet",
+                    "position_start": 21,
+                    "position_end": 30
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_00_s020",
+            "sv": "Tidigt på morgonen läser jag ofta ett mejl från jobbet.",
+            "en": "Early in the morning I often read an email from work.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Tidigt",
+                    "base_form": "tidig",
+                    "position_start": 0,
+                    "position_end": 6
+                },
+                {
+                    "word_in_sentence": "mejl",
+                    "base_form": "mejl",
+                    "position_start": 38,
+                    "position_end": 42
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_00_s021",
+            "sv": "Sedan, när jag går till bussen, kan jag snabbt skicka sms till min familj eller ringa ett viktigt telefonsamtal till en kollega.",
+            "en": "Then, when I walk to the bus, I can quickly send a text message to my family or make an important phone call to a colleague.",
+            "target_words": [
+                {
+                    "word_in_sentence": "skicka sms",
+                    "base_form": "skicka sms",
+                    "position_start": 47,
+                    "position_end": 57
+                },
+                {
+                    "word_in_sentence": "telefonsamtal",
+                    "base_form": "telefonsamtal",
+                    "position_start": 98,
+                    "position_end": 111
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_00_s022",
+            "sv": "Mitt i all denna teknik är det mycket viktigt att inte glömma sin kropp.",
+            "en": "In the midst of all this technology, it is very important not to forget your body.",
+            "target_words": [
+                {
+                    "word_in_sentence": "glömma",
+                    "base_form": "glömma",
+                    "position_start": 55,
+                    "position_end": 61
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_00_s023",
+            "sv": "Du kan med fördel delta i olika idrotter på helgerna, eftersom regelbunden fysisk aktivitet är avgörande för vår hälsa.",
+            "en": "You can benefit from participating in various sports on the weekends, since regular physical activity is crucial for our health.",
+            "target_words": [
+                {
+                    "word_in_sentence": "delta",
+                    "base_form": "delta",
+                    "position_start": 18,
+                    "position_end": 23
+                },
+                {
+                    "word_in_sentence": "fysisk aktivitet",
+                    "base_form": "fysisk aktivitet",
+                    "position_start": 75,
+                    "position_end": 91
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_00_s024",
+            "sv": "Alla människor har naturligtvis inte samma styrka och alla orkar inte träna precis varje dag i veckan.",
+            "en": "Naturally, not all people have the same strength and not everyone has the energy to exercise absolutely every day of the week.",
+            "target_words": [
+                {
+                    "word_in_sentence": "samma",
+                    "base_form": "samma",
+                    "position_start": 37,
+                    "position_end": 42
+                },
+                {
+                    "word_in_sentence": "orkar",
+                    "base_form": "orka",
+                    "position_start": 59,
+                    "position_end": 64
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_00_s025",
+            "sv": "Man måste helt enkelt hitta rätt balans i livet för att må bra långsiktigt.",
+            "en": "You simply have to find the right balance in life to feel good in the long term.",
+            "target_words": [
+                {
+                    "word_in_sentence": "rätt",
+                    "base_form": "rätt",
+                    "position_start": 28,
+                    "position_end": 32
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_00_s026",
+            "sv": "Det kan förstås variera mycket hur man mår från dag till dag.",
+            "en": "Of course, how you feel can vary a lot from day to day.",
+            "target_words": [
+                {
+                    "word_in_sentence": "variera",
+                    "base_form": "variera",
+                    "position_start": 16,
+                    "position_end": 23
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_00_s027",
+            "sv": "Men genom att kunna använda tekniken på en hög nivå och samtidigt röra på sig, får vi mer tid över till varandra.",
+            "en": "But by being able to use technology at a high level and at the same time moving around, we get more time left over for each other.",
+            "target_words": [
+                {
+                    "word_in_sentence": "kunna",
+                    "base_form": "kunna",
+                    "position_start": 14,
+                    "position_end": 19
+                },
+                {
+                    "word_in_sentence": "hög",
+                    "base_form": "hög",
+                    "position_start": 43,
+                    "position_end": 46
+                }
+            ]
+        }
+    ],
+    "primary_words_used": [
+        "teveskärm",
+        "teve",
+        "energi",
+        "orka",
+        "titta på teve",
+        "hitta på",
+        "dator",
+        "jag hittade … på nätet",
+        "mejl",
+        "telefonsamtal",
+        "skicka sms",
+        "nätet",
+        "civilingenjör",
+        "teveapparat",
+        "statistik",
+        "geolog",
+        "fysisk aktivitet",
+        "kroppsarbete",
+        "elektricitet",
+        "bredband",
+        "verktyg",
+        "matematik",
+        "astronomi",
+        "Varje",
+        "börja",
+        "ny",
+        "fantastisk",
+        "otrolig",
+        "påverka",
+        "få",
+        "egentligen",
+        "hård",
+        "på grund av",
+        "hel",
+        "egen",
+        "redskap",
+        "både",
+        "skulle",
+        "om",
+        "vänta",
+        "gissa",
+        "mindre än",
+        "göra",
+        "fel",
+        "välja",
+        "för mycket",
+        "rolig",
+        "ungefär",
+        "vilken",
+        "möjlighet",
+        "till exempel",
+        "tidig",
+        "glömma",
+        "delta",
+        "samma",
+        "rätt",
+        "variera",
+        "sin",
+        "kunna",
+        "hög"
+    ],
+    "secondary_words_used": []
+}

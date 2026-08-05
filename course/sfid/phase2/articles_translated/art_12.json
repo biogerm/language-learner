@@ -1,0 +1,668 @@
+{
+    "course_id": "sfid",
+    "course_title": "SFI D",
+    "stage_id": "stage_10",
+    "stage_title": "Mat & Matlagning",
+    "article_id": "art_12",
+    "article_title": "Läsförståelse",
+    "target_word_count": 60,
+    "sentences": [
+        {
+            "sentence_id": "art_12_s001",
+            "sv": "Jag älskar mat.",
+            "en": "I love food.",
+            "target_words": [
+                {
+                    "word_in_sentence": "mat",
+                    "base_form": "mat",
+                    "position_start": 11,
+                    "position_end": 14
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_12_s002",
+            "sv": "I många år har jag tyckt om att baka och laga goda rätter.",
+            "en": "For many years I have liked to bake and cook good dishes.",
+            "target_words": [
+                {
+                    "word_in_sentence": "år",
+                    "base_form": "år",
+                    "position_start": 8,
+                    "position_end": 10
+                },
+                {
+                    "word_in_sentence": "baka",
+                    "base_form": "baka",
+                    "position_start": 32,
+                    "position_end": 36
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_12_s003",
+            "sv": "Min vän, som är en känd dramatiker, älskar mycket dramatik i köket.",
+            "en": "My friend, who is a famous playwright, loves a lot of drama in the kitchen.",
+            "target_words": [
+                {
+                    "word_in_sentence": "mat",
+                    "base_form": "mat",
+                    "position_start": 27,
+                    "position_end": 30
+                },
+                {
+                    "word_in_sentence": "dramatik",
+                    "base_form": "dramatik",
+                    "position_start": 24,
+                    "position_end": 32
+                },
+                {
+                    "word_in_sentence": "dramatiker",
+                    "base_form": "dramatiker",
+                    "position_start": 24,
+                    "position_end": 34
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_12_s004",
+            "sv": "Efter att ha jobbat hela dagen var han hungrig som en varg.",
+            "en": "After working all day he was hungry as a wolf.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Efter att ha",
+                    "base_form": "efter att ha",
+                    "position_start": 0,
+                    "position_end": 12
+                },
+                {
+                    "word_in_sentence": "hungrig som en varg",
+                    "base_form": "hungrig som en varg",
+                    "position_start": 39,
+                    "position_end": 58
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_12_s005",
+            "sv": "Han brukar säga att han gillar att äta som en häst när magen är tom.",
+            "en": "He usually says that he likes to eat like a horse when his stomach is empty.",
+            "target_words": [
+                {
+                    "word_in_sentence": "att äta som en häst",
+                    "base_form": "att äta som en häst",
+                    "position_start": 31,
+                    "position_end": 50
+                },
+                {
+                    "word_in_sentence": "tom",
+                    "base_form": "tom",
+                    "position_start": 64,
+                    "position_end": 67
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_12_s006",
+            "sv": "Jag tänkte föreslå att vi kunde gå ut och äta.",
+            "en": "I thought about suggesting that we could go out and eat.",
+            "target_words": [
+                {
+                    "word_in_sentence": "gå ut och äta",
+                    "base_form": "gå ut och äta",
+                    "position_start": 32,
+                    "position_end": 45
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_12_s007",
+            "sv": "För en stund tänkte jag att vi skulle köpa hämtmat.",
+            "en": "For a while I thought we should buy takeout.",
+            "target_words": [
+                {
+                    "word_in_sentence": "mat",
+                    "base_form": "mat",
+                    "position_start": 47,
+                    "position_end": 50
+                },
+                {
+                    "word_in_sentence": "För en stund",
+                    "base_form": "för en stund",
+                    "position_start": 0,
+                    "position_end": 12
+                },
+                {
+                    "word_in_sentence": "hämtmat",
+                    "base_form": "hämtmat",
+                    "position_start": 43,
+                    "position_end": 50
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_12_s008",
+            "sv": "Men hallen var trång och jag kände mig mentalt trött efter jobbet.",
+            "en": "But the hallway was cramped and I felt mentally tired after work.",
+            "target_words": [
+                {
+                    "word_in_sentence": "trång",
+                    "base_form": "trång",
+                    "position_start": 15,
+                    "position_end": 20
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_12_s009",
+            "sv": "Vi valde att stanna hemma.",
+            "en": "We chose to stay home.",
+            "target_words": []
+        },
+        {
+            "sentence_id": "art_12_s010",
+            "sv": "Istället för att… gå på restaurang, började vi laga lättlagad plockmat och skära upp varje grönsak samt frukt som äpple och banan.",
+            "en": "Instead of... going to a restaurant, we started making easy finger food and slicing up every vegetable as well as fruit like apple and banana.",
+            "target_words": [
+                {
+                    "word_in_sentence": "mat",
+                    "base_form": "mat",
+                    "position_start": 67,
+                    "position_end": 70
+                },
+                {
+                    "word_in_sentence": "Istället för att…",
+                    "base_form": "Istället för att…",
+                    "position_start": 0,
+                    "position_end": 17
+                },
+                {
+                    "word_in_sentence": "restaurang",
+                    "base_form": "restaurang",
+                    "position_start": 24,
+                    "position_end": 34
+                },
+                {
+                    "word_in_sentence": "lättlagad",
+                    "base_form": "lättlagad",
+                    "position_start": 52,
+                    "position_end": 61
+                },
+                {
+                    "word_in_sentence": "plockmat",
+                    "base_form": "plockmat",
+                    "position_start": 62,
+                    "position_end": 70
+                },
+                {
+                    "word_in_sentence": "grönsak",
+                    "base_form": "grönsak",
+                    "position_start": 91,
+                    "position_end": 98
+                },
+                {
+                    "word_in_sentence": "äpple",
+                    "base_form": "äpple",
+                    "position_start": 114,
+                    "position_end": 119
+                },
+                {
+                    "word_in_sentence": "banan",
+                    "base_form": "banan",
+                    "position_start": 124,
+                    "position_end": 129
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_12_s011",
+            "sv": "\"Det är inte sant!\" ropade min vän plötsligt.",
+            "en": "\"It is not true!\" my friend shouted suddenly.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Det är inte sant!",
+                    "base_form": "Det är inte sant!",
+                    "position_start": 1,
+                    "position_end": 18
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_12_s012",
+            "sv": "En blodtörstig mygga hade gett honom ett getingstick.",
+            "en": "A bloodthirsty mosquito had given him a wasp sting.",
+            "target_words": [
+                {
+                    "word_in_sentence": "blodtörstig",
+                    "base_form": "blodtörstig",
+                    "position_start": 3,
+                    "position_end": 14
+                },
+                {
+                    "word_in_sentence": "getingstick",
+                    "base_form": "getingstick",
+                    "position_start": 41,
+                    "position_end": 52
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_12_s013",
+            "sv": "\"En kommentar till,\" sa han, \"och jag dör.",
+            "en": "\"One more comment,\" he said, \"and I'll die.",
+            "target_words": [
+                {
+                    "word_in_sentence": "kommentar",
+                    "base_form": "kommentar",
+                    "position_start": 4,
+                    "position_end": 13
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_12_s014",
+            "sv": "Jag känner mig obekväm och behöver mer kolhydrat.",
+            "en": "I feel uncomfortable and need more carbohydrate.",
+            "target_words": [
+                {
+                    "word_in_sentence": "obekväm",
+                    "base_form": "obekväm",
+                    "position_start": 15,
+                    "position_end": 22
+                },
+                {
+                    "word_in_sentence": "kolhydrat",
+                    "base_form": "kolhydrat",
+                    "position_start": 39,
+                    "position_end": 48
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_12_s015",
+            "sv": "Jag vill inte vara kritisk, men jag måste äta.\"",
+            "en": "I don't want to be critical, but I have to eat.\"",
+            "target_words": [
+                {
+                    "word_in_sentence": "kritisk",
+                    "base_form": "kritisk",
+                    "position_start": 19,
+                    "position_end": 26
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_12_s016",
+            "sv": "Jag bad honom att provsmaka lite salamikorv.",
+            "en": "I asked him to taste a little salami sausage.",
+            "target_words": [
+                {
+                    "word_in_sentence": "provsmaka",
+                    "base_form": "provsmaka",
+                    "position_start": 18,
+                    "position_end": 27
+                },
+                {
+                    "word_in_sentence": "salamikorv",
+                    "base_form": "salamikorv",
+                    "position_start": 33,
+                    "position_end": 43
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_12_s017",
+            "sv": "\"Du måste äta ordentligt för att inte sakna föda,\" sa jag.",
+            "en": "\"You must eat properly so as not to lack food,\" I said.",
+            "target_words": [
+                {
+                    "word_in_sentence": "sakna",
+                    "base_form": "sakna",
+                    "position_start": 38,
+                    "position_end": 43
+                },
+                {
+                    "word_in_sentence": "föda",
+                    "base_form": "föda",
+                    "position_start": 44,
+                    "position_end": 48
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_12_s018",
+            "sv": "För att slippa ett misslyckande serverade jag rätten på en hög nivå.",
+            "en": "To avoid a failure, I served the dish at a high level.",
+            "target_words": [
+                {
+                    "word_in_sentence": "misslyckande",
+                    "base_form": "misslyckande",
+                    "position_start": 19,
+                    "position_end": 31
+                },
+                {
+                    "word_in_sentence": "nivå",
+                    "base_form": "nivå",
+                    "position_start": 63,
+                    "position_end": 67
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_12_s019",
+            "sv": "Doften av vitlök började sprida sig.",
+            "en": "The scent of garlic began to spread.",
+            "target_words": [
+                {
+                    "word_in_sentence": "sprida sig",
+                    "base_form": "sprida sig",
+                    "position_start": 25,
+                    "position_end": 35
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_12_s020",
+            "sv": "Var och en fick en tallrik.",
+            "en": "Everyone got a plate.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Var och en",
+                    "base_form": "var och en",
+                    "position_start": 0,
+                    "position_end": 10
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_12_s021",
+            "sv": "Vi ville dricka något gott.",
+            "en": "We wanted to drink something good.",
+            "target_words": [
+                {
+                    "word_in_sentence": "dricka",
+                    "base_form": "dricka",
+                    "position_start": 9,
+                    "position_end": 15
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_12_s022",
+            "sv": "Jag drack kall läsk medan han tog en ljus öl.",
+            "en": "I drank cold soda while he had a light beer.",
+            "target_words": [
+                {
+                    "word_in_sentence": "läsk",
+                    "base_form": "läsk",
+                    "position_start": 15,
+                    "position_end": 19
+                },
+                {
+                    "word_in_sentence": "öl",
+                    "base_form": "öl",
+                    "position_start": 42,
+                    "position_end": 44
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_12_s023",
+            "sv": "Ibland blandar han en drink, kanske en stor paraplydrink, men nu drack vi utan mycket socker.",
+            "en": "Sometimes he mixes a drink, maybe a large umbrella drink, but now we drank without much sugar.",
+            "target_words": [
+                {
+                    "word_in_sentence": "drink",
+                    "base_form": "drink",
+                    "position_start": 22,
+                    "position_end": 27
+                },
+                {
+                    "word_in_sentence": "paraplydrink",
+                    "base_form": "paraplydrink",
+                    "position_start": 44,
+                    "position_end": 56
+                },
+                {
+                    "word_in_sentence": "socker",
+                    "base_form": "socker",
+                    "position_start": 86,
+                    "position_end": 92
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_12_s024",
+            "sv": "Vatten är annars bäst, för dricker man havsvatten blir man bara törstigare.",
+            "en": "Water is otherwise best, because if you drink seawater you only get thirstier.",
+            "target_words": [
+                {
+                    "word_in_sentence": "havsvatten",
+                    "base_form": "havsvatten",
+                    "position_start": 39,
+                    "position_end": 49
+                },
+                {
+                    "word_in_sentence": "törstigare",
+                    "base_form": "törstigare",
+                    "position_start": 64,
+                    "position_end": 74
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_12_s025",
+            "sv": "Jag kunde vara säker på att min vän var nöjd.",
+            "en": "I could be sure that my friend was satisfied.",
+            "target_words": [
+                {
+                    "word_in_sentence": "vara säker på",
+                    "base_form": "vara säker på",
+                    "position_start": 10,
+                    "position_end": 23
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_12_s026",
+            "sv": "Efter middagen undrade jag: \"Ska vi ta en fika?\"",
+            "en": "After dinner I wondered: \"Should we have a fika?\"",
+            "target_words": [
+                {
+                    "word_in_sentence": "Ska vi ta en fika?",
+                    "base_form": "Ska vi ta en fika?",
+                    "position_start": 29,
+                    "position_end": 47
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_12_s027",
+            "sv": "Jag ville hellre baka en kaka än att äta köpt godis eller smågodis.",
+            "en": "I would rather bake a cake than eat store-bought candy or loose candy.",
+            "target_words": [
+                {
+                    "word_in_sentence": "hellre baka en kaka än",
+                    "base_form": "hellre … än",
+                    "position_start": 10,
+                    "position_end": 32
+                },
+                {
+                    "word_in_sentence": "kaka",
+                    "base_form": "kaka",
+                    "position_start": 25,
+                    "position_end": 29
+                },
+                {
+                    "word_in_sentence": "godis",
+                    "base_form": "godis",
+                    "position_start": 46,
+                    "position_end": 51
+                },
+                {
+                    "word_in_sentence": "smågodis",
+                    "base_form": "smågodis",
+                    "position_start": 58,
+                    "position_end": 66
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_12_s028",
+            "sv": "Vi hade choklad hemma.",
+            "en": "We had chocolate at home.",
+            "target_words": [
+                {
+                    "word_in_sentence": "choklad",
+                    "base_form": "choklad",
+                    "position_start": 8,
+                    "position_end": 15
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_12_s029",
+            "sv": "Min vän ville dock bara ha en skål med lättyoghurt.",
+            "en": "My friend however just wanted a bowl of low-fat yogurt.",
+            "target_words": [
+                {
+                    "word_in_sentence": "lättyoghurt",
+                    "base_form": "lättyoghurt",
+                    "position_start": 39,
+                    "position_end": 50
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_12_s030",
+            "sv": "Han tyckte att min mat för dagen var lite för dramatisk.",
+            "en": "He thought that my food for the day was a little too dramatic.",
+            "target_words": [
+                {
+                    "word_in_sentence": "mat för dagen",
+                    "base_form": "mat för dagen",
+                    "position_start": 19,
+                    "position_end": 32
+                },
+                {
+                    "word_in_sentence": "dramatisk",
+                    "base_form": "dramatisk",
+                    "position_start": 46,
+                    "position_end": 55
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_12_s031",
+            "sv": "Vi talade om att odla bär och hur man brukade sylta och safta förr i tiden, eller liknande saker.",
+            "en": "We talked about growing berries and how people used to make jam and juice in the past, or similar things.",
+            "target_words": [
+                {
+                    "word_in_sentence": "odla",
+                    "base_form": "odla",
+                    "position_start": 17,
+                    "position_end": 21
+                },
+                {
+                    "word_in_sentence": "sylta",
+                    "base_form": "sylta",
+                    "position_start": 46,
+                    "position_end": 51
+                },
+                {
+                    "word_in_sentence": "safta",
+                    "base_form": "safta",
+                    "position_start": 56,
+                    "position_end": 61
+                },
+                {
+                    "word_in_sentence": "liknande",
+                    "base_form": "liknande",
+                    "position_start": 82,
+                    "position_end": 90
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_12_s032",
+            "sv": "Jag hoppas vi kan ses nästnästa vecka igen, innan all glädje hinner försvinna.",
+            "en": "I hope we can meet again the week after next, before all the joy has time to disappear.",
+            "target_words": [
+                {
+                    "word_in_sentence": "nästnästa",
+                    "base_form": "nästnästa",
+                    "position_start": 22,
+                    "position_end": 31
+                },
+                {
+                    "word_in_sentence": "försvinna",
+                    "base_form": "försvinna",
+                    "position_start": 68,
+                    "position_end": 77
+                }
+            ]
+        }
+    ],
+    "primary_words_used": [
+        "öl",
+        "läsk",
+        "dricka",
+        "drink",
+        "paraplydrink",
+        "mat",
+        "choklad",
+        "banan",
+        "kolhydrat",
+        "kaka",
+        "lättyoghurt",
+        "grönsak",
+        "odla",
+        "baka",
+        "sylta",
+        "safta",
+        "salamikorv",
+        "gå ut och äta",
+        "havsvatten",
+        "törstigare",
+        "restaurang",
+        "mat för dagen",
+        "dramatisk",
+        "hungrig som en varg",
+        "att äta som en häst",
+        "föda",
+        "dramatik",
+        "dramatiker",
+        "provsmaka",
+        "blodtörstig",
+        "lättlagad",
+        "plockmat",
+        "hämtmat",
+        "godis",
+        "smågodis",
+        "äpple",
+        "socker",
+        "Ska vi ta en fika?",
+        "för en stund",
+        "nivå",
+        "tom",
+        "hellre … än",
+        "trång",
+        "nästnästa",
+        "försvinna",
+        "Det är inte sant!",
+        "obekväm",
+        "getingstick",
+        "Istället för att…",
+        "kritisk",
+        "sprida sig",
+        "vara säker på",
+        "misslyckande",
+        "var och en",
+        "kommentar",
+        "sakna",
+        "år",
+        "efter att ha",
+        "liknande"
+    ],
+    "secondary_words_used": []
+}

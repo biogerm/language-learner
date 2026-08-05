@@ -1,0 +1,620 @@
+{
+    "course_id": "sfid",
+    "course_title": "SFI D",
+    "stage_id": "stage_07",
+    "stage_title": "Natur & Miljö",
+    "article_id": "art_20",
+    "article_title": "Läsförståelse",
+    "target_word_count": 60,
+    "sentences": [
+        {
+            "sentence_id": "art_20_s001",
+            "sv": "Jag har inte något emot att vara ute i naturen, särskilt när vi för en månad sedan besökte en ny miljöcertifierad park.",
+            "en": "I do not mind being out in nature, especially when a month ago we visited a new eco-certified park.",
+            "target_words": [
+                {
+                    "word_in_sentence": "har inte något emot",
+                    "base_form": "har inte något emot",
+                    "position_start": 4,
+                    "position_end": 23
+                },
+                {
+                    "word_in_sentence": "månad",
+                    "base_form": "månad",
+                    "position_start": 71,
+                    "position_end": 76
+                },
+                {
+                    "word_in_sentence": "miljöcertifierad",
+                    "base_form": "miljöcertifierad",
+                    "position_start": 97,
+                    "position_end": 113
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_20_s002",
+            "sv": "Den ligger tusen meter över havet, med en underbar utsikt över en klar himmel.",
+            "en": "It is located a thousand meters above sea level, with a wonderful view of a clear sky.",
+            "target_words": [
+                {
+                    "word_in_sentence": "meter över havet",
+                    "base_form": "meter över havet",
+                    "position_start": 17,
+                    "position_end": 33
+                },
+                {
+                    "word_in_sentence": "utsikt",
+                    "base_form": "utsikt",
+                    "position_start": 51,
+                    "position_end": 57
+                },
+                {
+                    "word_in_sentence": "himmel",
+                    "base_form": "himmel",
+                    "position_start": 71,
+                    "position_end": 77
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_20_s003",
+            "sv": "Vi bodde i en stor trädkoja byggd i gediget trä.",
+            "en": "We stayed in a large treehouse built of solid wood.",
+            "target_words": [
+                {
+                    "word_in_sentence": "trä",
+                    "base_form": "trä",
+                    "position_start": 19,
+                    "position_end": 22
+                },
+                {
+                    "word_in_sentence": "trädkoja",
+                    "base_form": "trädkoja",
+                    "position_start": 19,
+                    "position_end": 27
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_20_s004",
+            "sv": "Stämningen var informell och man tar hållbarhet på allvar.",
+            "en": "The atmosphere was informal and they take sustainability seriously.",
+            "target_words": [
+                {
+                    "word_in_sentence": "informell",
+                    "base_form": "informell",
+                    "position_start": 15,
+                    "position_end": 24
+                },
+                {
+                    "word_in_sentence": "hållbarhet",
+                    "base_form": "hållbarhet",
+                    "position_start": 37,
+                    "position_end": 47
+                },
+                {
+                    "word_in_sentence": "på allvar",
+                    "base_form": "på allvar",
+                    "position_start": 48,
+                    "position_end": 57
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_20_s005",
+            "sv": "\"Detta verkar vara en fantastisk plats,\" sa jag.",
+            "en": "\"This seems to be a fantastic place,\" I said.",
+            "target_words": [
+                {
+                    "word_in_sentence": "verkar vara",
+                    "base_form": "verka vara",
+                    "position_start": 7,
+                    "position_end": 18
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_20_s006",
+            "sv": "\"Det tycker jag också.\" svarade min vän.",
+            "en": "\"I think so too,\" my friend replied.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Det tycker jag också.",
+                    "base_form": "Det tycker jag också.",
+                    "position_start": 1,
+                    "position_end": 22
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_20_s007",
+            "sv": "Min vän är en känd idrottsstjärna som vill vara miljömedveten.",
+            "en": "My friend is a famous sports star who wants to be environmentally conscious.",
+            "target_words": [
+                {
+                    "word_in_sentence": "idrottsstjärna",
+                    "base_form": "idrottsstjärna",
+                    "position_start": 19,
+                    "position_end": 33
+                },
+                {
+                    "word_in_sentence": "miljömedveten",
+                    "base_form": "miljömedveten",
+                    "position_start": 48,
+                    "position_end": 61
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_20_s008",
+            "sv": "\"Naturen här är en riktig berg- och dalbana,\" skrattade han, eftersom landskapet går mycket upp och ner.",
+            "en": "\"Nature here is a real roller coaster,\" he laughed, because the landscape goes up and down a lot.",
+            "target_words": [
+                {
+                    "word_in_sentence": "berg- och dalbana",
+                    "base_form": "berg -och dalbana",
+                    "position_start": 26,
+                    "position_end": 43
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_20_s009",
+            "sv": "Vi hade en diskussion om miljö.",
+            "en": "We had a discussion about the environment.",
+            "target_words": []
+        },
+        {
+            "sentence_id": "art_20_s010",
+            "sv": "Det finns en viktig skillnad mellan gammal och ny forskning om djurens beteende.",
+            "en": "There is an important difference between old and new research on animal behavior.",
+            "target_words": [
+                {
+                    "word_in_sentence": "skillnad",
+                    "base_form": "skillnad",
+                    "position_start": 20,
+                    "position_end": 28
+                },
+                {
+                    "word_in_sentence": "forskning",
+                    "base_form": "forkning",
+                    "position_start": 50,
+                    "position_end": 59
+                },
+                {
+                    "word_in_sentence": "beteende",
+                    "base_form": "beteende",
+                    "position_start": 71,
+                    "position_end": 79
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_20_s011",
+            "sv": "Däremot är alla överens om att vår ursprungliga natur är bäst.",
+            "en": "On the other hand, everyone agrees that our original nature is best.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Däremot",
+                    "base_form": "däremot",
+                    "position_start": 0,
+                    "position_end": 7
+                },
+                {
+                    "word_in_sentence": "ursprungliga",
+                    "base_form": "ursprunglig",
+                    "position_start": 35,
+                    "position_end": 47
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_20_s012",
+            "sv": "Inom parken försöker man driva ett stort reningsverk på högvarv för att minska alla utsläpp som gör att vår flod kan bli förorenad.",
+            "en": "Within the park, they try to run a large treatment plant at full speed to reduce all emissions that cause our river to become polluted.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Inom",
+                    "base_form": "inom",
+                    "position_start": 0,
+                    "position_end": 4
+                },
+                {
+                    "word_in_sentence": "reningsverk",
+                    "base_form": "reningsverk",
+                    "position_start": 41,
+                    "position_end": 52
+                },
+                {
+                    "word_in_sentence": "högvarv",
+                    "base_form": "högvarv",
+                    "position_start": 56,
+                    "position_end": 63
+                },
+                {
+                    "word_in_sentence": "utsläpp",
+                    "base_form": "utsläpp",
+                    "position_start": 84,
+                    "position_end": 91
+                },
+                {
+                    "word_in_sentence": "som gör att",
+                    "base_form": "som gör att",
+                    "position_start": 92,
+                    "position_end": 103
+                },
+                {
+                    "word_in_sentence": "flod",
+                    "base_form": "flod",
+                    "position_start": 108,
+                    "position_end": 112
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_20_s013",
+            "sv": "Sällan ser man en så ren vattenyta som här, och den kommer ofta på första plats i landet.",
+            "en": "Rarely do you see such a clean water surface as here, and it often comes in first place in the country.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Sällan",
+                    "base_form": "sällan",
+                    "position_start": 0,
+                    "position_end": 6
+                },
+                {
+                    "word_in_sentence": "vattenyta",
+                    "base_form": "vattenyta",
+                    "position_start": 25,
+                    "position_end": 34
+                },
+                {
+                    "word_in_sentence": "på första plats",
+                    "base_form": "på första plats",
+                    "position_start": 64,
+                    "position_end": 79
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_20_s014",
+            "sv": "Många vill vara en miljövänlig besökare, vilket är en klok åsikt.",
+            "en": "Many want to be an environmentally friendly visitor, which is a wise opinion.",
+            "target_words": [
+                {
+                    "word_in_sentence": "miljövänlig",
+                    "base_form": "miljövänlig",
+                    "position_start": 19,
+                    "position_end": 30
+                },
+                {
+                    "word_in_sentence": "åsikt",
+                    "base_form": "åsikt",
+                    "position_start": 59,
+                    "position_end": 64
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_20_s015",
+            "sv": "I somras kunde vi se skogen växa under en varm sommar.",
+            "en": "Last summer we could see the forest grow during a warm summer.",
+            "target_words": [
+                {
+                    "word_in_sentence": "I somras",
+                    "base_form": "i somras",
+                    "position_start": 0,
+                    "position_end": 8
+                },
+                {
+                    "word_in_sentence": "växa",
+                    "base_form": "växa",
+                    "position_start": 28,
+                    "position_end": 32
+                },
+                {
+                    "word_in_sentence": "sommar",
+                    "base_form": "sommar",
+                    "position_start": 47,
+                    "position_end": 53
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_20_s016",
+            "sv": "Nu, från kall gryning till mörk skymning, är själva skogen helt fantastisk.",
+            "en": "Now, from cold dawn to dark dusk, the forest itself is absolutely fantastic.",
+            "target_words": [
+                {
+                    "word_in_sentence": "kall",
+                    "base_form": "kall",
+                    "position_start": 9,
+                    "position_end": 13
+                },
+                {
+                    "word_in_sentence": "gryning",
+                    "base_form": "gryning",
+                    "position_start": 14,
+                    "position_end": 21
+                },
+                {
+                    "word_in_sentence": "skymning",
+                    "base_form": "skymning",
+                    "position_start": 32,
+                    "position_end": 40
+                },
+                {
+                    "word_in_sentence": "själva",
+                    "base_form": "själva",
+                    "position_start": 45,
+                    "position_end": 51
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_20_s017",
+            "sv": "Där brukar man ha gott om vilda djur.",
+            "en": "There they usually have plenty of wild animals.",
+            "target_words": [
+                {
+                    "word_in_sentence": "ha gott om",
+                    "base_form": "ha gott om",
+                    "position_start": 15,
+                    "position_end": 25
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_20_s018",
+            "sv": "Jag kan avslöja att vi såg en skadad höna som blev räddad.",
+            "en": "I can reveal that we saw an injured hen that was rescued.",
+            "target_words": [
+                {
+                    "word_in_sentence": "avslöja",
+                    "base_form": "avslöja",
+                    "position_start": 8,
+                    "position_end": 15
+                },
+                {
+                    "word_in_sentence": "skadad",
+                    "base_form": "skadad",
+                    "position_start": 30,
+                    "position_end": 36
+                },
+                {
+                    "word_in_sentence": "höna",
+                    "base_form": "höna",
+                    "position_start": 37,
+                    "position_end": 41
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_20_s019",
+            "sv": "En vild kanin reste sig på sina bakben och bredvid den satt en liten mus och en råtta nära en sten.",
+            "en": "A wild rabbit stood up on its hind legs and next to it sat a little mouse and a rat near a rock.",
+            "target_words": [
+                {
+                    "word_in_sentence": "kanin",
+                    "base_form": "kanin",
+                    "position_start": 8,
+                    "position_end": 13
+                },
+                {
+                    "word_in_sentence": "bakben",
+                    "base_form": "bakben",
+                    "position_start": 32,
+                    "position_end": 38
+                },
+                {
+                    "word_in_sentence": "mus",
+                    "base_form": "mus",
+                    "position_start": 69,
+                    "position_end": 72
+                },
+                {
+                    "word_in_sentence": "råtta",
+                    "base_form": "råtta",
+                    "position_start": 80,
+                    "position_end": 85
+                },
+                {
+                    "word_in_sentence": "sten",
+                    "base_form": "sten",
+                    "position_start": 94,
+                    "position_end": 98
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_20_s020",
+            "sv": "Man har valt att plantera in vissa djur för att rädda den lokala faunan.",
+            "en": "They have chosen to introduce certain animals to save the local fauna.",
+            "target_words": [
+                {
+                    "word_in_sentence": "plantera in",
+                    "base_form": "plantera in",
+                    "position_start": 17,
+                    "position_end": 28
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_20_s021",
+            "sv": "En lokal älgstam frodas och vi såg en stolt älgko.",
+            "en": "A local moose population is thriving and we saw a proud cow moose.",
+            "target_words": [
+                {
+                    "word_in_sentence": "älgstam",
+                    "base_form": "älgstam",
+                    "position_start": 9,
+                    "position_end": 16
+                },
+                {
+                    "word_in_sentence": "älgko",
+                    "base_form": "älgko",
+                    "position_start": 44,
+                    "position_end": 49
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_20_s022",
+            "sv": "Dessutom fanns det en grävling, en liten vessla och till och med en flitig bäver.",
+            "en": "In addition, there was a badger, a small weasel and even a diligent beaver.",
+            "target_words": [
+                {
+                    "word_in_sentence": "grävling",
+                    "base_form": "grävling",
+                    "position_start": 22,
+                    "position_end": 30
+                },
+                {
+                    "word_in_sentence": "vessla",
+                    "base_form": "vessla",
+                    "position_start": 41,
+                    "position_end": 47
+                },
+                {
+                    "word_in_sentence": "bäver",
+                    "base_form": "bäver",
+                    "position_start": 75,
+                    "position_end": 80
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_20_s023",
+            "sv": "Man varnade oss för en giftig huggorm, men vi plockade ändå blåa bär medan ett surrande bi flög förbi.",
+            "en": "We were warned about a venomous viper, but we still picked blueberries while a buzzing bee flew by.",
+            "target_words": [
+                {
+                    "word_in_sentence": "giftig",
+                    "base_form": "giftig",
+                    "position_start": 23,
+                    "position_end": 29
+                },
+                {
+                    "word_in_sentence": "huggorm",
+                    "base_form": "huggorm",
+                    "position_start": 30,
+                    "position_end": 37
+                },
+                {
+                    "word_in_sentence": "bär",
+                    "base_form": "bär",
+                    "position_start": 65,
+                    "position_end": 68
+                },
+                {
+                    "word_in_sentence": "bi",
+                    "base_form": "bi",
+                    "position_start": 88,
+                    "position_end": 90
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_20_s024",
+            "sv": "Min vän sa skämtsamt att han ville ta med sig en åsna nästa gång för att bära allt.",
+            "en": "My friend jokingly said that he wanted to bring a donkey next time to carry everything.",
+            "target_words": [
+                {
+                    "word_in_sentence": "bär",
+                    "base_form": "bär",
+                    "position_start": 73,
+                    "position_end": 76
+                },
+                {
+                    "word_in_sentence": "åsna",
+                    "base_form": "åsna",
+                    "position_start": 49,
+                    "position_end": 53
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_20_s025",
+            "sv": "Det var en fantastisk upplevelse.",
+            "en": "It was a fantastic experience.",
+            "target_words": []
+        },
+        {
+            "sentence_id": "art_20_s026",
+            "sv": "Ta reda på mer!",
+            "en": "Find out more!",
+            "target_words": [
+                {
+                    "word_in_sentence": "Ta reda på mer!",
+                    "base_form": "Ta reda på mer!",
+                    "position_start": 0,
+                    "position_end": 15
+                }
+            ]
+        }
+    ],
+    "primary_words_used": [
+        "har inte något emot",
+        "meter över havet",
+        "berg -och dalbana",
+        "trä",
+        "idrottsstjärna",
+        "forkning",
+        "beteende",
+        "flod",
+        "vattenyta",
+        "ha gott om",
+        "utsläpp",
+        "reningsverk",
+        "miljömedveten",
+        "miljövänlig",
+        "trädkoja",
+        "hållbarhet",
+        "miljöcertifierad",
+        "kall",
+        "växa",
+        "sommar",
+        "utsikt",
+        "himmel",
+        "skymning",
+        "gryning",
+        "höna",
+        "bär",
+        "huggorm",
+        "älgko",
+        "vessla",
+        "ursprunglig",
+        "åsna",
+        "mus",
+        "bi",
+        "älgstam",
+        "kanin",
+        "giftig",
+        "grävling",
+        "bäver",
+        "råtta",
+        "sten",
+        "plantera in",
+        "månad",
+        "däremot",
+        "själva",
+        "informell",
+        "skillnad",
+        "skadad",
+        "på allvar",
+        "åsikt",
+        "inom",
+        "på första plats",
+        "Det tycker jag också.",
+        "sällan",
+        "som gör att",
+        "verka vara",
+        "avslöja",
+        "bakben",
+        "högvarv",
+        "i somras",
+        "Ta reda på mer!"
+    ],
+    "secondary_words_used": []
+}

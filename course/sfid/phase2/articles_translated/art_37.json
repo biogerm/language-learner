@@ -1,0 +1,657 @@
+{
+    "course_id": "sfid",
+    "course_title": "SFI D",
+    "stage_id": "stage_08",
+    "stage_title": "Kultur & Nöje",
+    "article_id": "art_37",
+    "article_title": "Läsförståelse",
+    "target_word_count": 60,
+    "sentences": [
+        {
+            "sentence_id": "art_37_s001",
+            "sv": "När sommaren började närma sig, ville jag fira och festa varje helg.",
+            "en": "When summer was approaching, I wanted to celebrate and party every weekend.",
+            "target_words": [
+                {
+                    "word_in_sentence": "närma sig",
+                    "base_form": "närma sig",
+                    "position_start": 21,
+                    "position_end": 30
+                },
+                {
+                    "word_in_sentence": "fira",
+                    "base_form": "fira",
+                    "position_start": 42,
+                    "position_end": 46
+                },
+                {
+                    "word_in_sentence": "festa",
+                    "base_form": "festa",
+                    "position_start": 51,
+                    "position_end": 56
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_37_s002",
+            "sv": "Efter många lata dagar var jag extremt partysugen och ville starta min semester på en stor musikfestival.",
+            "en": "After many lazy days, I was extremely eager to party and wanted to start my vacation at a big music festival.",
+            "target_words": [
+                {
+                    "word_in_sentence": "lata dagar",
+                    "base_form": "lata dagar",
+                    "position_start": 12,
+                    "position_end": 22
+                },
+                {
+                    "word_in_sentence": "partysugen",
+                    "base_form": "partysugen",
+                    "position_start": 39,
+                    "position_end": 49
+                },
+                {
+                    "word_in_sentence": "starta",
+                    "base_form": "starta",
+                    "position_start": 60,
+                    "position_end": 66
+                },
+                {
+                    "word_in_sentence": "musikfestival",
+                    "base_form": "musikfestival",
+                    "position_start": 91,
+                    "position_end": 104
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_37_s003",
+            "sv": "Först var jag tvungen att boka boende i god tid.",
+            "en": "First I had to book accommodation in good time.",
+            "target_words": [
+                {
+                    "word_in_sentence": "boka boende",
+                    "base_form": "boka boende",
+                    "position_start": 26,
+                    "position_end": 37
+                },
+                {
+                    "word_in_sentence": "bok",
+                    "base_form": "book",
+                    "position_start": 26,
+                    "position_end": 29
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_37_s004",
+            "sv": "Jag hittade en plats bakom ett stort varuhus i närheten, och min plan var att ställa en vagn där ifall det skulle börja regna.",
+            "en": "I found a spot behind a large department store nearby, and my plan was to park a wagon there in case it started to rain.",
+            "target_words": [
+                {
+                    "word_in_sentence": "varuhus",
+                    "base_form": "varuhus",
+                    "position_start": 37,
+                    "position_end": 44
+                },
+                {
+                    "word_in_sentence": "i närheten",
+                    "base_form": "i närheten",
+                    "position_start": 45,
+                    "position_end": 55
+                },
+                {
+                    "word_in_sentence": "vagn",
+                    "base_form": "vagn",
+                    "position_start": 88,
+                    "position_end": 92
+                },
+                {
+                    "word_in_sentence": "ifall",
+                    "base_form": "ifall",
+                    "position_start": 97,
+                    "position_end": 102
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_37_s005",
+            "sv": "\"Gillar du festivaler?\" frågade min vän, som var en känd finlandssvensk sångare och artist.",
+            "en": "\"Do you like festivals?\" asked my friend, who was a famous Swedish-speaking Finnish singer and artist.",
+            "target_words": [
+                {
+                    "word_in_sentence": "finlandssvensk",
+                    "base_form": "finlandssvensk",
+                    "position_start": 57,
+                    "position_end": 71
+                },
+                {
+                    "word_in_sentence": "sångare",
+                    "base_form": "sångare",
+                    "position_start": 72,
+                    "position_end": 79
+                },
+                {
+                    "word_in_sentence": "artist",
+                    "base_form": "artist",
+                    "position_start": 84,
+                    "position_end": 90
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_37_s006",
+            "sv": "\"Jo, det är helt okej.\" sa jag och log stort.",
+            "en": "\"Well, it's totally okay.\" I said and smiled broadly.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Jo, det är helt okej.",
+                    "base_form": "Jo, det är helt okej.",
+                    "position_start": 1,
+                    "position_end": 22
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_37_s007",
+            "sv": "\"På vilket sätt?\" frågade han då.",
+            "en": "\"In what way?\" he then asked.",
+            "target_words": [
+                {
+                    "word_in_sentence": "På vilket sätt?",
+                    "base_form": "På vilket sätt?",
+                    "position_start": 1,
+                    "position_end": 16
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_37_s008",
+            "sv": "\"Festivaler är en del av min identitet, och ungdomskultur är viktig för mig på många olika sätt\", svarade jag.",
+            "en": "\"Festivals are a part of my identity, and youth culture is important to me in many different ways,\" I answered.",
+            "target_words": [
+                {
+                    "word_in_sentence": "en del av",
+                    "base_form": "en del av",
+                    "position_start": 15,
+                    "position_end": 24
+                },
+                {
+                    "word_in_sentence": "ungdomskultur",
+                    "base_form": "ungdomskultur",
+                    "position_start": 44,
+                    "position_end": 57
+                },
+                {
+                    "word_in_sentence": "på många olika sätt",
+                    "base_form": "på många olika sätt",
+                    "position_start": 76,
+                    "position_end": 95
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_37_s009",
+            "sv": "Denna festival var som en mäktig konst- och industriutställning, och här fanns även spännande matkultur.",
+            "en": "This festival was like a mighty art and industry exhibition, and here there was also exciting food culture.",
+            "target_words": [
+                {
+                    "word_in_sentence": "mäktig",
+                    "base_form": "mäktig",
+                    "position_start": 26,
+                    "position_end": 32
+                },
+                {
+                    "word_in_sentence": "konst- och industriutställning",
+                    "base_form": "konst- och industriutställning",
+                    "position_start": 33,
+                    "position_end": 63
+                },
+                {
+                    "word_in_sentence": "matkultur",
+                    "base_form": "matkultur",
+                    "position_start": 94,
+                    "position_end": 103
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_37_s010",
+            "sv": "Man kunde äta en stor festmåltid med lokalt kött och färskt bröd.",
+            "en": "You could eat a big feast with local meat and fresh bread.",
+            "target_words": [
+                {
+                    "word_in_sentence": "festmåltid",
+                    "base_form": "festmåltid",
+                    "position_start": 22,
+                    "position_end": 32
+                },
+                {
+                    "word_in_sentence": "bröd",
+                    "base_form": "bröd",
+                    "position_start": 60,
+                    "position_end": 64
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_37_s011",
+            "sv": "Det kunde ofta tillkomma avgifter för maten, men det var guld värt ändå.",
+            "en": "Fees for the food could often be added, but it was worth its weight in gold anyway.",
+            "target_words": [
+                {
+                    "word_in_sentence": "tillkomma",
+                    "base_form": "tillkomma",
+                    "position_start": 15,
+                    "position_end": 24
+                },
+                {
+                    "word_in_sentence": "guld",
+                    "base_form": "guld",
+                    "position_start": 57,
+                    "position_end": 61
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_37_s012",
+            "sv": "I slutet av kvällen skulle en känd musiker som hette Stry spela hög punkmusik.",
+            "en": "At the end of the evening, a famous musician named Stry would play loud punk music.",
+            "target_words": [
+                {
+                    "word_in_sentence": "I slutet av",
+                    "base_form": "i slutet av",
+                    "position_start": 0,
+                    "position_end": 11
+                },
+                {
+                    "word_in_sentence": "Stry",
+                    "base_form": "stry",
+                    "position_start": 53,
+                    "position_end": 57
+                },
+                {
+                    "word_in_sentence": "punkmusik",
+                    "base_form": "punkmusik",
+                    "position_start": 68,
+                    "position_end": 77
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_37_s013",
+            "sv": "Hans röst var kristallklar och energin var enorm.",
+            "en": "His voice was crystal clear and the energy was enormous.",
+            "target_words": [
+                {
+                    "word_in_sentence": "kristallklar",
+                    "base_form": "kristallklar",
+                    "position_start": 14,
+                    "position_end": 26
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_37_s014",
+            "sv": "\"Det låter hemskt!\" ropade min andra kompis med viss skepsis.",
+            "en": "\"That sounds awful!\" my other friend shouted with some skepticism.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Det låter hemskt!",
+                    "base_form": "Det låter hemskt!",
+                    "position_start": 1,
+                    "position_end": 18
+                },
+                {
+                    "word_in_sentence": "skepsis",
+                    "base_form": "skepsis",
+                    "position_start": 53,
+                    "position_end": 60
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_37_s015",
+            "sv": "Han gillade absolut inte hög musik.",
+            "en": "He absolutely did not like loud music.",
+            "target_words": [
+                {
+                    "word_in_sentence": "absolut inte",
+                    "base_form": "absolut inte",
+                    "position_start": 12,
+                    "position_end": 24
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_37_s016",
+            "sv": "Istället för att lyssna, föredrog han att gå på en tyst biograf.",
+            "en": "Instead of listening, he preferred going to a silent cinema.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Istället för",
+                    "base_form": "istället för",
+                    "position_start": 0,
+                    "position_end": 12
+                },
+                {
+                    "word_in_sentence": "biograf",
+                    "base_form": "biograf",
+                    "position_start": 56,
+                    "position_end": 63
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_37_s017",
+            "sv": "Han gjorde en jättesnabb sökning på sin smarta mobil, tittade på en digital karta och visade oss vägen.",
+            "en": "He did a super fast search on his smartphone, looked at a digital map and showed us the way.",
+            "target_words": [
+                {
+                    "word_in_sentence": "jättesnabb",
+                    "base_form": "jättesnabb",
+                    "position_start": 14,
+                    "position_end": 24
+                },
+                {
+                    "word_in_sentence": "smarta mobil",
+                    "base_form": "smart mobil",
+                    "position_start": 40,
+                    "position_end": 52
+                },
+                {
+                    "word_in_sentence": "karta",
+                    "base_form": "karta",
+                    "position_start": 76,
+                    "position_end": 81
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_37_s018",
+            "sv": "Vi hade rest genom stora delar av norra Sverige.",
+            "en": "We had traveled through large parts of northern Sweden.",
+            "target_words": [
+                {
+                    "word_in_sentence": "stora delar av",
+                    "base_form": "stora delar av",
+                    "position_start": 19,
+                    "position_end": 33
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_37_s019",
+            "sv": "\"Jag såg en fantastisk deckare nyligen.",
+            "en": "\"I saw a fantastic detective film recently.",
+            "target_words": [
+                {
+                    "word_in_sentence": "deckare",
+                    "base_form": "deckare",
+                    "position_start": 23,
+                    "position_end": 30
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_37_s020",
+            "sv": "Det var min favoritfilm,\" sa han entusiastiskt.",
+            "en": "It was my favorite movie,\" he said enthusiastically.",
+            "target_words": [
+                {
+                    "word_in_sentence": "favoritfilm",
+                    "base_form": "favoritfilm",
+                    "position_start": 12,
+                    "position_end": 23
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_37_s021",
+            "sv": "\"Filmen utspelar sig i kallaste Norrland.",
+            "en": "\"The film takes place in the coldest part of Norrland.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Filmen utspelar sig i",
+                    "base_form": "Filmen utspelar sig i",
+                    "position_start": 1,
+                    "position_end": 22
+                },
+                {
+                    "word_in_sentence": "Norrland",
+                    "base_form": "Norrland",
+                    "position_start": 32,
+                    "position_end": 40
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_37_s022",
+            "sv": "Filmen handlar om… ett allvarligt brott.",
+            "en": "The film is about... a serious crime.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Filmen handlar om…",
+                    "base_form": "Filmen handlar om…",
+                    "position_start": 0,
+                    "position_end": 18
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_37_s023",
+            "sv": "Filmen bygger på en bok av… en känd författare.",
+            "en": "The film is based on a book by... a famous author.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Filmen bygger på en bok av…",
+                    "base_form": "Filmen bygger på en bok av…",
+                    "position_start": 0,
+                    "position_end": 27
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_37_s024",
+            "sv": "Filmen bygger på en verklig händelse.\"",
+            "en": "The film is based on a true story.\"",
+            "target_words": [
+                {
+                    "word_in_sentence": "Filmen bygger på en verklig händelse.",
+                    "base_form": "Filmen bygger på en verklig händelse.",
+                    "position_start": 0,
+                    "position_end": 37
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_37_s025",
+            "sv": "\"Spännande!\" sa jag.",
+            "en": "\"Exciting!\" I said.",
+            "target_words": []
+        },
+        {
+            "sentence_id": "art_37_s026",
+            "sv": "\"Själv gillar jag komedi och läskig skräckfilm.\"",
+            "en": "\"I myself like comedies and scary horror movies.\"",
+            "target_words": [
+                {
+                    "word_in_sentence": "komedi",
+                    "base_form": "komedi",
+                    "position_start": 18,
+                    "position_end": 24
+                },
+                {
+                    "word_in_sentence": "skräckfilm",
+                    "base_form": "skräckfilm",
+                    "position_start": 36,
+                    "position_end": 46
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_37_s027",
+            "sv": "\"Den var urkul,\" sa min vän.",
+            "en": "\"It was hilarious,\" my friend said.",
+            "target_words": [
+                {
+                    "word_in_sentence": "urkul",
+                    "base_form": "urkul",
+                    "position_start": 9,
+                    "position_end": 14
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_37_s028",
+            "sv": "Dagen efter deltog vi i en traditionell bryggdans.",
+            "en": "The day after we participated in a traditional dock dance.",
+            "target_words": [
+                {
+                    "word_in_sentence": "bryggdans",
+                    "base_form": "bryggdans",
+                    "position_start": 40,
+                    "position_end": 49
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_37_s029",
+            "sv": "All denna festlighet kunde fungera som en positiv förändring i våra liv.",
+            "en": "All this festivity could act as a positive change in our lives.",
+            "target_words": [
+                {
+                    "word_in_sentence": "festlighet",
+                    "base_form": "festlighet",
+                    "position_start": 10,
+                    "position_end": 20
+                },
+                {
+                    "word_in_sentence": "fungera som",
+                    "base_form": "fungera som",
+                    "position_start": 27,
+                    "position_end": 38
+                },
+                {
+                    "word_in_sentence": "förändring",
+                    "base_form": "förändring",
+                    "position_start": 50,
+                    "position_end": 60
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_37_s030",
+            "sv": "Vid kontakt med så mycket glädje kände jag att glädjen kunde ta fart på riktigt.",
+            "en": "Upon contact with so much joy, I felt that the joy could really take off.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Vid kontakt med",
+                    "base_form": "vid kontakt med",
+                    "position_start": 0,
+                    "position_end": 15
+                },
+                {
+                    "word_in_sentence": "ta fart",
+                    "base_form": "ta fart",
+                    "position_start": 61,
+                    "position_end": 68
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_37_s031",
+            "sv": "Jag började till och med skriva om en gammal dikt, och tänkte på svensk grammatik och vad ett perfekt particip är.",
+            "en": "I even started rewriting an old poem, and thought about Swedish grammar and what a past participle is.",
+            "target_words": [
+                {
+                    "word_in_sentence": "skriva om",
+                    "base_form": "skriva om",
+                    "position_start": 25,
+                    "position_end": 34
+                },
+                {
+                    "word_in_sentence": "perfekt particip",
+                    "base_form": "perfekt particip",
+                    "position_start": 94,
+                    "position_end": 110
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_37_s032",
+            "sv": "Om jag var ekonomiskt oberoende skulle jag leva så här för alltid.",
+            "en": "If I was financially independent, I would live like this forever.",
+            "target_words": [
+                {
+                    "word_in_sentence": "ekonomiskt oberoende",
+                    "base_form": "ekonomiskt oberoende",
+                    "position_start": 11,
+                    "position_end": 31
+                }
+            ]
+        }
+    ],
+    "primary_words_used": [
+        "komedi",
+        "deckare",
+        "skräckfilm",
+        "favoritfilm",
+        "urkul",
+        "bryggdans",
+        "en del av",
+        "musikfestival",
+        "lata dagar",
+        "festa",
+        "boka boende",
+        "fungera som",
+        "stora delar av",
+        "Norrland",
+        "bröd",
+        "partysugen",
+        "konst- och industriutställning",
+        "stry",
+        "fira",
+        "karta",
+        "matkultur",
+        "Filmen handlar om…",
+        "Filmen utspelar sig i",
+        "Filmen bygger på en bok av…",
+        "book",
+        "Filmen bygger på en verklig händelse.",
+        "skriva om",
+        "biograf",
+        "festmåltid",
+        "perfekt particip",
+        "punkmusik",
+        "ta fart",
+        "smart mobil",
+        "varuhus",
+        "artist",
+        "festlighet",
+        "vagn",
+        "sångare",
+        "ungdomskultur",
+        "starta",
+        "absolut inte",
+        "Det låter hemskt!",
+        "förändring",
+        "på många olika sätt",
+        "mäktig",
+        "kristallklar",
+        "istället för",
+        "jättesnabb",
+        "i slutet av",
+        "guld",
+        "Jo, det är helt okej.",
+        "i närheten",
+        "ifall",
+        "närma sig",
+        "finlandssvensk",
+        "ekonomiskt oberoende",
+        "På vilket sätt?",
+        "vid kontakt med",
+        "skepsis",
+        "tillkomma"
+    ],
+    "secondary_words_used": []
+}

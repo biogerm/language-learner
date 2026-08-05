@@ -1,0 +1,773 @@
+{
+    "course_id": "sfid",
+    "course_title": "SFI D",
+    "stage_id": "stage_08",
+    "stage_title": "Kultur & Nöje",
+    "article_id": "art_36",
+    "article_title": "Läsförståelse",
+    "target_word_count": 60,
+    "sentences": [
+        {
+            "sentence_id": "art_36_s001",
+            "sv": "Jag älskar konst.",
+            "en": "I love art.",
+            "target_words": [
+                {
+                    "word_in_sentence": "konst",
+                    "base_form": "konst",
+                    "position_start": 11,
+                    "position_end": 16
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_36_s002",
+            "sv": "Jag har alltid varit en person som vill utforska konsthistoria.",
+            "en": "I have always been a person who wants to explore art history.",
+            "target_words": [
+                {
+                    "word_in_sentence": "konst",
+                    "base_form": "konst",
+                    "position_start": 49,
+                    "position_end": 54
+                },
+                {
+                    "word_in_sentence": "en",
+                    "base_form": "en",
+                    "position_start": 21,
+                    "position_end": 23
+                },
+                {
+                    "word_in_sentence": "konsthistoria",
+                    "base_form": "konsthistoria",
+                    "position_start": 49,
+                    "position_end": 62
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_36_s003",
+            "sv": "Därför bestämde jag mig för att gå en konstutbildning.",
+            "en": "Therefore I decided to take an art course.",
+            "target_words": [
+                {
+                    "word_in_sentence": "konst",
+                    "base_form": "konst",
+                    "position_start": 38,
+                    "position_end": 43
+                },
+                {
+                    "word_in_sentence": "en",
+                    "base_form": "en",
+                    "position_start": 35,
+                    "position_end": 37
+                },
+                {
+                    "word_in_sentence": "konstutbildning",
+                    "base_form": "konstutbildning",
+                    "position_start": 38,
+                    "position_end": 53
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_36_s004",
+            "sv": "Till en början var det svårt att minnas varje bokstav i den teoretiska boken, men jag gillade att sitta i min ateljé och rita i min övningsbok.",
+            "en": "At first it was hard to remember every letter in the theoretical book, but I liked sitting in my studio and drawing in my exercise book.",
+            "target_words": [
+                {
+                    "word_in_sentence": "en",
+                    "base_form": "en",
+                    "position_start": 5,
+                    "position_end": 7
+                },
+                {
+                    "word_in_sentence": "Till en början",
+                    "base_form": "till en början",
+                    "position_start": 0,
+                    "position_end": 14
+                },
+                {
+                    "word_in_sentence": "bokstav",
+                    "base_form": "bokstav",
+                    "position_start": 46,
+                    "position_end": 53
+                },
+                {
+                    "word_in_sentence": "ateljé",
+                    "base_form": "ateljé",
+                    "position_start": 110,
+                    "position_end": 116
+                },
+                {
+                    "word_in_sentence": "övningsbok",
+                    "base_form": "övningsbok",
+                    "position_start": 132,
+                    "position_end": 142
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_36_s005",
+            "sv": "Jag försökte även göra en teckning och lite nakenmåleri.",
+            "en": "I also tried to make a drawing and some nude painting.",
+            "target_words": [
+                {
+                    "word_in_sentence": "en",
+                    "base_form": "en",
+                    "position_start": 15,
+                    "position_end": 17
+                },
+                {
+                    "word_in_sentence": "teckning",
+                    "base_form": "teckning",
+                    "position_start": 26,
+                    "position_end": 34
+                },
+                {
+                    "word_in_sentence": "nakenmåleri",
+                    "base_form": "nakenmåleri",
+                    "position_start": 44,
+                    "position_end": 55
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_36_s006",
+            "sv": "Varje besökare i mitt lilla galleri brukade ofta nämna hur mycket de älskade mitt vackra landskap.",
+            "en": "Every visitor in my little gallery often used to mention how much they loved my beautiful landscape.",
+            "target_words": [
+                {
+                    "word_in_sentence": "besökare",
+                    "base_form": "besökare",
+                    "position_start": 6,
+                    "position_end": 14
+                },
+                {
+                    "word_in_sentence": "galleri",
+                    "base_form": "galleri",
+                    "position_start": 28,
+                    "position_end": 35
+                },
+                {
+                    "word_in_sentence": "nämna",
+                    "base_form": "nämna",
+                    "position_start": 49,
+                    "position_end": 54
+                },
+                {
+                    "word_in_sentence": "landskap",
+                    "base_form": "landskap",
+                    "position_start": 89,
+                    "position_end": 97
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_36_s007",
+            "sv": "De kunde upptäcka spännande detaljer.",
+            "en": "They could discover exciting details.",
+            "target_words": [
+                {
+                    "word_in_sentence": "upptäcka",
+                    "base_form": "upptäcka",
+                    "position_start": 9,
+                    "position_end": 17
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_36_s008",
+            "sv": "\"Visst låter det kul?\" frågade jag min vän.",
+            "en": "\"Doesn't it sound fun?\" I asked my friend.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Visst låter det kul?",
+                    "base_form": "Visst låter det kul?",
+                    "position_start": 1,
+                    "position_end": 21
+                },
+                {
+                    "word_in_sentence": "kul",
+                    "base_form": "kul",
+                    "position_start": 17,
+                    "position_end": 20
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_36_s009",
+            "sv": "\"Det var väldigt kul att arbeta med det.\"",
+            "en": "\"It was very fun to work with it.\"",
+            "target_words": [
+                {
+                    "word_in_sentence": "kul",
+                    "base_form": "kul",
+                    "position_start": 17,
+                    "position_end": 20
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_36_s010",
+            "sv": "Men för att tjäna pengar fick jag ibland erbjuda mig att dekorera hus med mina tavlor.",
+            "en": "But to earn money I sometimes had to offer to decorate houses with my paintings.",
+            "target_words": [
+                {
+                    "word_in_sentence": "en",
+                    "base_form": "en",
+                    "position_start": 1,
+                    "position_end": 3
+                },
+                {
+                    "word_in_sentence": "erbjuda",
+                    "base_form": "erbjuda",
+                    "position_start": 41,
+                    "position_end": 48
+                },
+                {
+                    "word_in_sentence": "dekorera",
+                    "base_form": "dekorera",
+                    "position_start": 57,
+                    "position_end": 65
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_36_s011",
+            "sv": "Livet handlade inte bara om konst.",
+            "en": "Life was not just about art.",
+            "target_words": [
+                {
+                    "word_in_sentence": "konst",
+                    "base_form": "konst",
+                    "position_start": 28,
+                    "position_end": 33
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_36_s012",
+            "sv": "Jag var också regissör.",
+            "en": "I was also a director.",
+            "target_words": [
+                {
+                    "word_in_sentence": "regissör",
+                    "base_form": "regissör",
+                    "position_start": 14,
+                    "position_end": 22
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_36_s013",
+            "sv": "Jag försökte spela in en musikvideo med min bror.",
+            "en": "I tried to shoot a music video with my brother.",
+            "target_words": [
+                {
+                    "word_in_sentence": "en",
+                    "base_form": "en",
+                    "position_start": 22,
+                    "position_end": 24
+                },
+                {
+                    "word_in_sentence": "spela in",
+                    "base_form": "spela in",
+                    "position_start": 13,
+                    "position_end": 21
+                },
+                {
+                    "word_in_sentence": "musikvideo",
+                    "base_form": "musikvideo",
+                    "position_start": 25,
+                    "position_end": 35
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_36_s014",
+            "sv": "Han brukade ofta leka skådespelare och ville alltid leka skådespelare framför kameran.",
+            "en": "He often used to play actor and always wanted to play actor in front of the camera.",
+            "target_words": [
+                {
+                    "word_in_sentence": "leka",
+                    "base_form": "leka",
+                    "position_start": 17,
+                    "position_end": 21
+                },
+                {
+                    "word_in_sentence": "skådespelare",
+                    "base_form": "skådespelare",
+                    "position_start": 22,
+                    "position_end": 34
+                },
+                {
+                    "word_in_sentence": "skådespelare",
+                    "base_form": "spela död",
+                    "position_start": 22,
+                    "position_end": 34
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_36_s015",
+            "sv": "Vi skrev ett filmmanus som var en blandning av en mystisk myt, en actionfilm och en kärleksfilm.",
+            "en": "We wrote a movie script that was a mix of a mysterious myth, an action movie, and a romance movie.",
+            "target_words": [
+                {
+                    "word_in_sentence": "en",
+                    "base_form": "en",
+                    "position_start": 31,
+                    "position_end": 33
+                },
+                {
+                    "word_in_sentence": "filmmanus",
+                    "base_form": "filmmanus",
+                    "position_start": 13,
+                    "position_end": 22
+                },
+                {
+                    "word_in_sentence": "mystisk",
+                    "base_form": "mystisk",
+                    "position_start": 50,
+                    "position_end": 57
+                },
+                {
+                    "word_in_sentence": "myt",
+                    "base_form": "myt",
+                    "position_start": 58,
+                    "position_end": 61
+                },
+                {
+                    "word_in_sentence": "actionfilm",
+                    "base_form": "actionfilm",
+                    "position_start": 66,
+                    "position_end": 76
+                },
+                {
+                    "word_in_sentence": "kärleksfilm",
+                    "base_form": "kärleksfilm",
+                    "position_start": 84,
+                    "position_end": 95
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_36_s016",
+            "sv": "Den blev inspelad i svartvit färg, vilket var en konstig men snygg detalj.",
+            "en": "It was filmed in black and white color, which was a strange but nice detail.",
+            "target_words": [
+                {
+                    "word_in_sentence": "konst",
+                    "base_form": "konst",
+                    "position_start": 49,
+                    "position_end": 54
+                },
+                {
+                    "word_in_sentence": "en",
+                    "base_form": "en",
+                    "position_start": 1,
+                    "position_end": 3
+                },
+                {
+                    "word_in_sentence": "svartvit",
+                    "base_form": "svartvit",
+                    "position_start": 20,
+                    "position_end": 28
+                },
+                {
+                    "word_in_sentence": "konstig",
+                    "base_form": "konstig",
+                    "position_start": 49,
+                    "position_end": 56
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_36_s017",
+            "sv": "I ena scenen fick han trä upp pärlor på en hårig tråd.",
+            "en": "In one scene he had to string beads on a hairy thread.",
+            "target_words": [
+                {
+                    "word_in_sentence": "en",
+                    "base_form": "en",
+                    "position_start": 2,
+                    "position_end": 4
+                },
+                {
+                    "word_in_sentence": "ena",
+                    "base_form": "ena",
+                    "position_start": 2,
+                    "position_end": 5
+                },
+                {
+                    "word_in_sentence": "trä upp",
+                    "base_form": "trä upp",
+                    "position_start": 22,
+                    "position_end": 29
+                },
+                {
+                    "word_in_sentence": "hårig",
+                    "base_form": "hårig",
+                    "position_start": 43,
+                    "position_end": 48
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_36_s018",
+            "sv": "Troligtvis skulle filmen bli bra.",
+            "en": "Probably the movie would turn out well.",
+            "target_words": [
+                {
+                    "word_in_sentence": "kul",
+                    "base_form": "kul",
+                    "position_start": 12,
+                    "position_end": 15
+                },
+                {
+                    "word_in_sentence": "Troligtvis",
+                    "base_form": "troligtvis",
+                    "position_start": 0,
+                    "position_end": 10
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_36_s019",
+            "sv": "Senare skrev jag också en teaterpjäs.",
+            "en": "Later I also wrote a theatrical play.",
+            "target_words": [
+                {
+                    "word_in_sentence": "ena",
+                    "base_form": "ena",
+                    "position_start": 1,
+                    "position_end": 4
+                },
+                {
+                    "word_in_sentence": "teaterpjäs",
+                    "base_form": "teaterpjäs",
+                    "position_start": 26,
+                    "position_end": 36
+                },
+                {
+                    "word_in_sentence": "pjäs",
+                    "base_form": "pjäs",
+                    "position_start": 32,
+                    "position_end": 36
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_36_s020",
+            "sv": "En känd skådespelerska, som för övrigt är singel, ville ha huvudrollen i min pjäs.",
+            "en": "A famous actress, who by the way is single, wanted the lead role in my play.",
+            "target_words": [
+                {
+                    "word_in_sentence": "pjäs",
+                    "base_form": "pjäs",
+                    "position_start": 77,
+                    "position_end": 81
+                },
+                {
+                    "word_in_sentence": "skådespelerska",
+                    "base_form": "skådespelerska",
+                    "position_start": 8,
+                    "position_end": 22
+                },
+                {
+                    "word_in_sentence": "singel",
+                    "base_form": "singel",
+                    "position_start": 42,
+                    "position_end": 48
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_36_s021",
+            "sv": "Hon hade stor respekt för landets teatertradition, och hennes prestation skulle motsvara alla förväntningar.",
+            "en": "She had great respect for the country's theater tradition, and her performance would meet all expectations.",
+            "target_words": [
+                {
+                    "word_in_sentence": "kul",
+                    "base_form": "kul",
+                    "position_start": 74,
+                    "position_end": 77
+                },
+                {
+                    "word_in_sentence": "teatertradition",
+                    "base_form": "teatertradition",
+                    "position_start": 34,
+                    "position_end": 49
+                },
+                {
+                    "word_in_sentence": "motsvara",
+                    "base_form": "motsvara",
+                    "position_start": 80,
+                    "position_end": 88
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_36_s022",
+            "sv": "Men tyvärr blev hon sjuk.",
+            "en": "But unfortunately she got sick.",
+            "target_words": []
+        },
+        {
+            "sentence_id": "art_36_s023",
+            "sv": "Hon fick ta antibiotika i flera veckor för att inte dö av infektionen.",
+            "en": "She had to take antibiotics for several weeks so as not to die from the infection.",
+            "target_words": [
+                {
+                    "word_in_sentence": "antibiotika",
+                    "base_form": "antibiotika",
+                    "position_start": 12,
+                    "position_end": 23
+                },
+                {
+                    "word_in_sentence": "dö",
+                    "base_form": "dö",
+                    "position_start": 52,
+                    "position_end": 54
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_36_s024",
+            "sv": "Hon var tvungen att gå ur projektet och vi fick byta namn på produktionen.",
+            "en": "She was forced to leave the project and we had to change the name of the production.",
+            "target_words": [
+                {
+                    "word_in_sentence": "gå ur",
+                    "base_form": "gå ur",
+                    "position_start": 20,
+                    "position_end": 25
+                },
+                {
+                    "word_in_sentence": "byta namn",
+                    "base_form": "byta namn",
+                    "position_start": 48,
+                    "position_end": 57
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_36_s025",
+            "sv": "Sådan är branschen.",
+            "en": "Such is the industry.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Sådan",
+                    "base_form": "sådan",
+                    "position_start": 0,
+                    "position_end": 5
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_36_s026",
+            "sv": "Det brukar vara så här ibland.",
+            "en": "It usually is like this sometimes.",
+            "target_words": [
+                {
+                    "word_in_sentence": "så här",
+                    "base_form": "så här",
+                    "position_start": 16,
+                    "position_end": 22
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_36_s027",
+            "sv": "När jag inte jobbar älskar jag fredagsmys.",
+            "en": "When I'm not working, I love Friday coziness.",
+            "target_words": [
+                {
+                    "word_in_sentence": "fredagsmys",
+                    "base_form": "fredagsmys",
+                    "position_start": 31,
+                    "position_end": 41
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_36_s028",
+            "sv": "Istället för att gå på bio gillar jag att spela ett parti schack.",
+            "en": "Instead of going to the cinema, I like to play a game of chess.",
+            "target_words": [
+                {
+                    "word_in_sentence": "gå på bio",
+                    "base_form": "gå på bio",
+                    "position_start": 17,
+                    "position_end": 26
+                },
+                {
+                    "word_in_sentence": "ett parti schack",
+                    "base_form": "ett parti schack",
+                    "position_start": 48,
+                    "position_end": 64
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_36_s029",
+            "sv": "Jag har också skrivit en bra roman.",
+            "en": "I have also written a good novel.",
+            "target_words": [
+                {
+                    "word_in_sentence": "roman",
+                    "base_form": "roman",
+                    "position_start": 29,
+                    "position_end": 34
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_36_s030",
+            "sv": "En kollega frågade: \"Vad tycker du om konstitutionell rätt, eller OS som hålls vart fjärde år?\"",
+            "en": "A colleague asked: \"What do you think about constitutional law, or the Olympics being held every four years?\"",
+            "target_words": [
+                {
+                    "word_in_sentence": "konstitutionell",
+                    "base_form": "konstitutionell",
+                    "position_start": 38,
+                    "position_end": 53
+                },
+                {
+                    "word_in_sentence": "vart fjärde år",
+                    "base_form": "vart fjärde år",
+                    "position_start": 79,
+                    "position_end": 93
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_36_s031",
+            "sv": "Jag svarade: \"Nja… Jag vill bara tänka på kultur.",
+            "en": "I answered: \"Well... I just want to think about culture.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Nja…",
+                    "base_form": "Nja…",
+                    "position_start": 14,
+                    "position_end": 18
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_36_s032",
+            "sv": "Kommer du förresten att komma ihåg vår roliga julfest ännu om tio år?",
+            "en": "By the way, will you remember our fun Christmas party even ten years from now?",
+            "target_words": [
+                {
+                    "word_in_sentence": "komma ihåg",
+                    "base_form": "komma ihåg",
+                    "position_start": 24,
+                    "position_end": 34
+                },
+                {
+                    "word_in_sentence": "julfest",
+                    "base_form": "julfest",
+                    "position_start": 46,
+                    "position_end": 53
+                },
+                {
+                    "word_in_sentence": "ännu",
+                    "base_form": "ännu",
+                    "position_start": 54,
+                    "position_end": 58
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_36_s033",
+            "sv": "Du då?\"",
+            "en": "What about you?\"",
+            "target_words": [
+                {
+                    "word_in_sentence": "Du då?",
+                    "base_form": "Du då?",
+                    "position_start": 0,
+                    "position_end": 6
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_36_s034",
+            "sv": "Jag log och tänkte att det var en härlig bit av mitt liv.",
+            "en": "I smiled and thought that it was a wonderful piece of my life.",
+            "target_words": [
+                {
+                    "word_in_sentence": "bit",
+                    "base_form": "bit",
+                    "position_start": 41,
+                    "position_end": 44
+                }
+            ]
+        }
+    ],
+    "primary_words_used": [
+        "galleri",
+        "ateljé",
+        "konstutbildning",
+        "teckning",
+        "konsthistoria",
+        "nakenmåleri",
+        "roman",
+        "singel",
+        "skådespelare",
+        "konstig",
+        "leka",
+        "troligtvis",
+        "antibiotika",
+        "spela in",
+        "spela död",
+        "fredagsmys",
+        "Visst låter det kul?",
+        "musikvideo",
+        "gå på bio",
+        "bokstav",
+        "konstitutionell",
+        "övningsbok",
+        "kul",
+        "vart fjärde år",
+        "teatertradition",
+        "regissör",
+        "filmmanus",
+        "teaterpjäs",
+        "pjäs",
+        "svartvit",
+        "myt",
+        "ett parti schack",
+        "skådespelerska",
+        "trä upp",
+        "gå ur",
+        "julfest",
+        "konst",
+        "actionfilm",
+        "kärleksfilm",
+        "Nja…",
+        "bit",
+        "dekorera",
+        "mystisk",
+        "byta namn",
+        "nämna",
+        "så här",
+        "erbjuda",
+        "landskap",
+        "dö",
+        "sådan",
+        "upptäcka",
+        "en",
+        "komma ihåg",
+        "Du då?",
+        "till en början",
+        "ena",
+        "ännu",
+        "besökare",
+        "hårig",
+        "motsvara"
+    ],
+    "secondary_words_used": []
+}

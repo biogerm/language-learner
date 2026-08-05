@@ -1,0 +1,770 @@
+{
+    "course_id": "sfid",
+    "course_title": "SFI D",
+    "stage_id": "stage_03",
+    "stage_title": "Vardagsliv",
+    "article_id": "art_28",
+    "article_title": "Läsförståelse",
+    "target_word_count": 60,
+    "sentences": [
+        {
+            "sentence_id": "art_28_s001",
+            "sv": "För länge sedan hade jag en ganska dålig vana.",
+            "en": "A long time ago I had a pretty bad habit.",
+            "target_words": [
+                {
+                    "word_in_sentence": "För länge sedan",
+                    "base_form": "för länge sedan",
+                    "position_start": 0,
+                    "position_end": 15
+                },
+                {
+                    "word_in_sentence": "länge",
+                    "base_form": "länge",
+                    "position_start": 4,
+                    "position_end": 9
+                },
+                {
+                    "word_in_sentence": "vana",
+                    "base_form": "vana",
+                    "position_start": 41,
+                    "position_end": 45
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_28_s002",
+            "sv": "Jag brukade städa mitt hem och diska mitt i natten.",
+            "en": "I used to clean my home and wash the dishes in the middle of the night.",
+            "target_words": [
+                {
+                    "word_in_sentence": "städa",
+                    "base_form": "städa",
+                    "position_start": 12,
+                    "position_end": 17
+                },
+                {
+                    "word_in_sentence": "hem",
+                    "base_form": "hem",
+                    "position_start": 23,
+                    "position_end": 26
+                },
+                {
+                    "word_in_sentence": "diska",
+                    "base_form": "diska",
+                    "position_start": 31,
+                    "position_end": 36
+                },
+                {
+                    "word_in_sentence": "natt",
+                    "base_form": "natt",
+                    "position_start": 44,
+                    "position_end": 48
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_28_s003",
+            "sv": "Jag var vaken varje natt.",
+            "en": "I was awake every night.",
+            "target_words": [
+                {
+                    "word_in_sentence": "natt",
+                    "base_form": "natt",
+                    "position_start": 20,
+                    "position_end": 24
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_28_s004",
+            "sv": "Det var ett helt obegripligt fenomen.",
+            "en": "It was a completely incomprehensible phenomenon.",
+            "target_words": [
+                {
+                    "word_in_sentence": "fenomen",
+                    "base_form": "fenomen",
+                    "position_start": 29,
+                    "position_end": 36
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_28_s005",
+            "sv": "\"Hur ofta?\" frågade en vän mig igår.",
+            "en": "\"How often?\" a friend asked me yesterday.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Hur ofta?",
+                    "base_form": "Hur ofta?",
+                    "position_start": 1,
+                    "position_end": 10
+                },
+                {
+                    "word_in_sentence": "Ofta",
+                    "base_form": "Ofta",
+                    "position_start": 5,
+                    "position_end": 9
+                },
+                {
+                    "word_in_sentence": "igår",
+                    "base_form": "igår",
+                    "position_start": 31,
+                    "position_end": 35
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_28_s006",
+            "sv": "Ofta, svarade jag.",
+            "en": "Often, I answered.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Ofta",
+                    "base_form": "Ofta",
+                    "position_start": 0,
+                    "position_end": 4
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_28_s007",
+            "sv": "Jag ville ha ett tyst ljud i mitt hus.",
+            "en": "I wanted to have a quiet sound in my house.",
+            "target_words": [
+                {
+                    "word_in_sentence": "ljud",
+                    "base_form": "ljud",
+                    "position_start": 22,
+                    "position_end": 26
+                },
+                {
+                    "word_in_sentence": "hus",
+                    "base_form": "hus",
+                    "position_start": 34,
+                    "position_end": 37
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_28_s008",
+            "sv": "Men jag bestämde mig för att ändra på mitt liv och bygga upp en ny rutin.",
+            "en": "But I decided to change my life and build up a new routine.",
+            "target_words": [
+                {
+                    "word_in_sentence": "liv",
+                    "base_form": "liv",
+                    "position_start": 43,
+                    "position_end": 46
+                },
+                {
+                    "word_in_sentence": "bygga upp",
+                    "base_form": "bygga upp",
+                    "position_start": 51,
+                    "position_end": 60
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_28_s009",
+            "sv": "Jag ville vakna mycket bättre och ha mer energi.",
+            "en": "I wanted to wake up much better and have more energy.",
+            "target_words": [
+                {
+                    "word_in_sentence": "vakna",
+                    "base_form": "vakna",
+                    "position_start": 10,
+                    "position_end": 15
+                },
+                {
+                    "word_in_sentence": "mycket bättre",
+                    "base_form": "mycket bättre",
+                    "position_start": 16,
+                    "position_end": 29
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_28_s010",
+            "sv": "Numera sover jag bra på natten, och därmed mår jag toppen.",
+            "en": "Nowadays I sleep well at night, and thus I feel great.",
+            "target_words": [
+                {
+                    "word_in_sentence": "natt",
+                    "base_form": "natt",
+                    "position_start": 24,
+                    "position_end": 28
+                },
+                {
+                    "word_in_sentence": "på natten",
+                    "base_form": "på natten",
+                    "position_start": 21,
+                    "position_end": 30
+                },
+                {
+                    "word_in_sentence": "därmed",
+                    "base_form": "därmed",
+                    "position_start": 36,
+                    "position_end": 42
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_28_s011",
+            "sv": "Jag vaknar tidigt varje dag.",
+            "en": "I wake up early every day.",
+            "target_words": [
+                {
+                    "word_in_sentence": "vakna",
+                    "base_form": "vakna",
+                    "position_start": 4,
+                    "position_end": 9
+                },
+                {
+                    "word_in_sentence": "tid",
+                    "base_form": "tid",
+                    "position_start": 11,
+                    "position_end": 14
+                },
+                {
+                    "word_in_sentence": "dag",
+                    "base_form": "dag",
+                    "position_start": 24,
+                    "position_end": 27
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_28_s012",
+            "sv": "Ibland tar min morgonrutin bara någon minut.",
+            "en": "Sometimes my morning routine only takes a minute.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Ibland",
+                    "base_form": "ibland",
+                    "position_start": 0,
+                    "position_end": 6
+                },
+                {
+                    "word_in_sentence": "minut",
+                    "base_form": "minut",
+                    "position_start": 38,
+                    "position_end": 43
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_28_s013",
+            "sv": "Jag brukar genast ta en dusch.",
+            "en": "I usually take a shower immediately.",
+            "target_words": [
+                {
+                    "word_in_sentence": "ta en dusch",
+                    "base_form": "ta en dusch",
+                    "position_start": 18,
+                    "position_end": 29
+                },
+                {
+                    "word_in_sentence": "dusch",
+                    "base_form": "dusch",
+                    "position_start": 24,
+                    "position_end": 29
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_28_s014",
+            "sv": "Att stå i en varm dusch är avkopplande.",
+            "en": "Standing in a warm shower is relaxing.",
+            "target_words": [
+                {
+                    "word_in_sentence": "dusch",
+                    "base_form": "dusch",
+                    "position_start": 18,
+                    "position_end": 23
+                },
+                {
+                    "word_in_sentence": "koppla",
+                    "base_form": "koppla",
+                    "position_start": 29,
+                    "position_end": 35
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_28_s015",
+            "sv": "Sen tar jag på mig passande kläder, eller till och med badkläder om jag ska bada, och fixar mitt hår.",
+            "en": "Then I put on suitable clothes, or even swimwear if I am going swimming, and fix my hair.",
+            "target_words": [
+                {
+                    "word_in_sentence": "passande",
+                    "base_form": "passande",
+                    "position_start": 19,
+                    "position_end": 27
+                },
+                {
+                    "word_in_sentence": "kläder",
+                    "base_form": "kläder",
+                    "position_start": 28,
+                    "position_end": 34
+                },
+                {
+                    "word_in_sentence": "badkläder",
+                    "base_form": "badkläder",
+                    "position_start": 55,
+                    "position_end": 64
+                },
+                {
+                    "word_in_sentence": "hår",
+                    "base_form": "hår",
+                    "position_start": 97,
+                    "position_end": 100
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_28_s016",
+            "sv": "\"Jag har inte tid.\" brukade jag säga.",
+            "en": "\"I don't have time,\" I used to say.",
+            "target_words": [
+                {
+                    "word_in_sentence": "tid",
+                    "base_form": "tid",
+                    "position_start": 14,
+                    "position_end": 17
+                },
+                {
+                    "word_in_sentence": "Jag har inte tid.",
+                    "base_form": "Jag har inte tid.",
+                    "position_start": 1,
+                    "position_end": 18
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_28_s017",
+            "sv": "Hela tiden kände jag mig stressad och valde att exkludera viktiga saker.",
+            "en": "All the time I felt stressed and chose to exclude important things.",
+            "target_words": [
+                {
+                    "word_in_sentence": "tid",
+                    "base_form": "tid",
+                    "position_start": 5,
+                    "position_end": 8
+                },
+                {
+                    "word_in_sentence": "Hela tiden",
+                    "base_form": "hela tiden",
+                    "position_start": 0,
+                    "position_end": 10
+                },
+                {
+                    "word_in_sentence": "exkludera",
+                    "base_form": "exkludera",
+                    "position_start": 48,
+                    "position_end": 57
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_28_s018",
+            "sv": "Men jag vill aldrig gå igenom den perioden igen.",
+            "en": "But I never want to go through that period again.",
+            "target_words": [
+                {
+                    "word_in_sentence": "aldrig",
+                    "base_form": "aldrig",
+                    "position_start": 13,
+                    "position_end": 19
+                },
+                {
+                    "word_in_sentence": "gå igenom",
+                    "base_form": "gå igenom",
+                    "position_start": 20,
+                    "position_end": 29
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_28_s019",
+            "sv": "Jag drack ibland sprit, vilket var dåligt.",
+            "en": "I sometimes drank liquor, which was bad.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Ibland",
+                    "base_form": "ibland",
+                    "position_start": 10,
+                    "position_end": 16
+                },
+                {
+                    "word_in_sentence": "sprit",
+                    "base_form": "sprit",
+                    "position_start": 17,
+                    "position_end": 22
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_28_s020",
+            "sv": "Nu vill jag istället koppla av på rätt sätt.",
+            "en": "Now I want to relax in the right way instead.",
+            "target_words": [
+                {
+                    "word_in_sentence": "koppla",
+                    "base_form": "koppla",
+                    "position_start": 21,
+                    "position_end": 27
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_28_s021",
+            "sv": "Min gamla period är idag helt bortglömd.",
+            "en": "My old period is today completely forgotten.",
+            "target_words": [
+                {
+                    "word_in_sentence": "dag",
+                    "base_form": "dag",
+                    "position_start": 21,
+                    "position_end": 24
+                },
+                {
+                    "word_in_sentence": "bortglömd",
+                    "base_form": "bortglömd",
+                    "position_start": 30,
+                    "position_end": 39
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_28_s022",
+            "sv": "På fritiden har jag börjat springa utomhus.",
+            "en": "In my spare time I have started running outdoors.",
+            "target_words": [
+                {
+                    "word_in_sentence": "hus",
+                    "base_form": "hus",
+                    "position_start": 39,
+                    "position_end": 42
+                },
+                {
+                    "word_in_sentence": "tid",
+                    "base_form": "tid",
+                    "position_start": 6,
+                    "position_end": 9
+                },
+                {
+                    "word_in_sentence": "På fritiden",
+                    "base_form": "på fritiden",
+                    "position_start": 0,
+                    "position_end": 11
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_28_s023",
+            "sv": "Jag köpte nyligen ett par dyra löparskor.",
+            "en": "I recently bought a pair of expensive running shoes.",
+            "target_words": [
+                {
+                    "word_in_sentence": " par dy",
+                    "base_form": "form av",
+                    "position_start": 21,
+                    "position_end": 28
+                },
+                {
+                    "word_in_sentence": "löparsko",
+                    "base_form": "löparsko",
+                    "position_start": 31,
+                    "position_end": 39
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_28_s024",
+            "sv": "Trots en otroligt hög prisnivå var det ett bra alternativ på vår marknad.",
+            "en": "Despite an incredibly high price level, it was a good option on our market.",
+            "target_words": [
+                {
+                    "word_in_sentence": "prisnivå",
+                    "base_form": "prisnivå",
+                    "position_start": 22,
+                    "position_end": 30
+                },
+                {
+                    "word_in_sentence": "alternativ",
+                    "base_form": "alternativ",
+                    "position_start": 47,
+                    "position_end": 57
+                },
+                {
+                    "word_in_sentence": "marknad",
+                    "base_form": "marknad",
+                    "position_start": 65,
+                    "position_end": 72
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_28_s025",
+            "sv": "Jag springer inte varje gång jag är ledig, men minst en gång varje vecka.",
+            "en": "I don't run every time I am off, but at least once every week.",
+            "target_words": [
+                {
+                    "word_in_sentence": "varje gång",
+                    "base_form": "varje gång",
+                    "position_start": 18,
+                    "position_end": 28
+                },
+                {
+                    "word_in_sentence": "gång",
+                    "base_form": "gång",
+                    "position_start": 24,
+                    "position_end": 28
+                },
+                {
+                    "word_in_sentence": "vecka",
+                    "base_form": "vecka",
+                    "position_start": 67,
+                    "position_end": 72
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_28_s026",
+            "sv": "Egentligen har jag som mål att springa exakt en gång i veckan enligt mitt träningsschema.",
+            "en": "Actually, my goal is to run exactly once a week according to my training schedule.",
+            "target_words": [
+                {
+                    "word_in_sentence": "gång",
+                    "base_form": "gång",
+                    "position_start": 48,
+                    "position_end": 52
+                },
+                {
+                    "word_in_sentence": "vecka",
+                    "base_form": "vecka",
+                    "position_start": 55,
+                    "position_end": 60
+                },
+                {
+                    "word_in_sentence": "en gång i veckan",
+                    "base_form": "en gång i månaden/veckan",
+                    "position_start": 45,
+                    "position_end": 61
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_28_s027",
+            "sv": "\"Jag har ingen aning om…\" sa jag till mig själv när jag började.",
+            "en": "\"I have no idea about...\" I said to myself when I started.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Jag har ingen aning om…",
+                    "base_form": "Jag har ingen aning om…",
+                    "position_start": 1,
+                    "position_end": 24
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_28_s028",
+            "sv": "Jag visste inte om jag kunde springa länge, men jag accepterar den tid det tar.",
+            "en": "I didn't know if I could run for a long time, but I accept the time it takes.",
+            "target_words": [
+                {
+                    "word_in_sentence": "den tid det tar",
+                    "base_form": "den tid det tar",
+                    "position_start": 63,
+                    "position_end": 78
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_28_s029",
+            "sv": "Det får ta den tid det behöver.",
+            "en": "It can take the time it needs.",
+            "target_words": [
+                {
+                    "word_in_sentence": "et behöver.",
+                    "base_form": "så lång tid",
+                    "position_start": 20,
+                    "position_end": 31
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_28_s030",
+            "sv": "Så småningom vill jag springa närmare milen.",
+            "en": "Eventually I want to run closer to ten kilometers.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Så småningom",
+                    "base_form": "så småningom",
+                    "position_start": 0,
+                    "position_end": 12
+                },
+                {
+                    "word_in_sentence": "närmare",
+                    "base_form": "närmare",
+                    "position_start": 30,
+                    "position_end": 37
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_28_s031",
+            "sv": "Kanske om en månad kan jag klara fem kilometer, eller om ett halvår.",
+            "en": "Maybe in a month I can manage five kilometers, or in half a year.",
+            "target_words": [
+                {
+                    "word_in_sentence": "om en månad",
+                    "base_form": "om en månad",
+                    "position_start": 7,
+                    "position_end": 18
+                },
+                {
+                    "word_in_sentence": "halvår",
+                    "base_form": "halvår",
+                    "position_start": 61,
+                    "position_end": 67
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_28_s032",
+            "sv": "Nästa år kanske jag klarar hela vägen.",
+            "en": "Next year maybe I'll manage the whole way.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Nästa år",
+                    "base_form": "nästa år",
+                    "position_start": 0,
+                    "position_end": 8
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_28_s033",
+            "sv": "Jag hoppas kunna behålla denna fantastiska rutin alltid.",
+            "en": "I hope to be able to keep this fantastic routine always.",
+            "target_words": [
+                {
+                    "word_in_sentence": "behålla",
+                    "base_form": "behålla",
+                    "position_start": 17,
+                    "position_end": 24
+                },
+                {
+                    "word_in_sentence": "alltid",
+                    "base_form": "alltid",
+                    "position_start": 49,
+                    "position_end": 55
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_28_s034",
+            "sv": "På kvällskursen i svenska lär vi oss vilken tidspreposition man ska använda när man pratar om tid.",
+            "en": "In the evening course in Swedish we learn which time preposition to use when talking about time.",
+            "target_words": [
+                {
+                    "word_in_sentence": "tidspreposition",
+                    "base_form": "tidspreposition",
+                    "position_start": 44,
+                    "position_end": 59
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_28_s035",
+            "sv": "Vi lär oss också att böja verb.",
+            "en": "We also learn to conjugate verbs.",
+            "target_words": [
+                {
+                    "word_in_sentence": "böja",
+                    "base_form": "böja",
+                    "position_start": 21,
+                    "position_end": 25
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_28_s036",
+            "sv": "När en vän brukar ringa på min dörr numera, har jag redan sprungit och är full av energi!",
+            "en": "When a friend usually rings my doorbell nowadays, I have already run and am full of energy!",
+            "target_words": [
+                {
+                    "word_in_sentence": "ringa på",
+                    "base_form": "ringa på",
+                    "position_start": 18,
+                    "position_end": 26
+                }
+            ]
+        }
+    ],
+    "primary_words_used": [
+        "ibland",
+        "hem",
+        "städa",
+        "hus",
+        "löparsko",
+        "Ofta",
+        "Hur ofta?",
+        "gång",
+        "en gång i månaden/veckan",
+        "länge",
+        "så lång tid",
+        "den tid det tar",
+        "minut",
+        "hela tiden",
+        "alltid",
+        "om en månad",
+        "halvår",
+        "nästa år",
+        "liv",
+        "aldrig",
+        "kläder",
+        "hår",
+        "tid",
+        "natt",
+        "på natten",
+        "vakna",
+        "dusch",
+        "ta en dusch",
+        "tidspreposition",
+        "vecka",
+        "diska",
+        "vana",
+        "varje gång",
+        "Jag har inte tid.",
+        "igår",
+        "badkläder",
+        "på fritiden",
+        "dag",
+        "därmed",
+        "prisnivå",
+        "så småningom",
+        "passande",
+        "för länge sedan",
+        "alternativ",
+        "närmare",
+        "Jag har ingen aning om…",
+        "sprit",
+        "koppla",
+        "gå igenom",
+        "form av",
+        "behålla",
+        "marknad",
+        "ljud",
+        "bortglömd",
+        "ringa på",
+        "bygga upp",
+        "fenomen",
+        "mycket bättre",
+        "böja",
+        "exkludera"
+    ],
+    "secondary_words_used": []
+}

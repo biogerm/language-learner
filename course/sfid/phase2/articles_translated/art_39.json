@@ -1,0 +1,650 @@
+{
+    "course_id": "sfid",
+    "course_title": "SFI D",
+    "stage_id": "stage_08",
+    "stage_title": "Kultur & Nöje",
+    "article_id": "art_39",
+    "article_title": "Läsförståelse",
+    "target_word_count": 60,
+    "sentences": [
+        {
+            "sentence_id": "art_39_s001",
+            "sv": "Att ha ett roligt intresse kan visa sig på olika sätt.",
+            "en": "Having a fun interest can show itself in different ways.",
+            "target_words": [
+                {
+                    "word_in_sentence": "intresse",
+                    "base_form": "intresse",
+                    "position_start": 18,
+                    "position_end": 26
+                },
+                {
+                    "word_in_sentence": "visa sig",
+                    "base_form": "visa sig",
+                    "position_start": 31,
+                    "position_end": 39
+                },
+                {
+                    "word_in_sentence": "på olika sätt",
+                    "base_form": "på olika sätt",
+                    "position_start": 40,
+                    "position_end": 53
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_39_s002",
+            "sv": "Vissa älskar litteratur, vilket är ett vackert uttryck för tankar.",
+            "en": "Some love literature, which is a beautiful expression for thoughts.",
+            "target_words": [
+                {
+                    "word_in_sentence": "litteratur",
+                    "base_form": "litteratur",
+                    "position_start": 13,
+                    "position_end": 23
+                },
+                {
+                    "word_in_sentence": "uttryck",
+                    "base_form": "uttryck",
+                    "position_start": 47,
+                    "position_end": 54
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_39_s003",
+            "sv": "De kanske vill ställa ut en fin bild på ett museum.",
+            "en": "They might want to exhibit a nice picture at a museum.",
+            "target_words": [
+                {
+                    "word_in_sentence": "ställa ut",
+                    "base_form": "ställa ut",
+                    "position_start": 15,
+                    "position_end": 24
+                },
+                {
+                    "word_in_sentence": "bild",
+                    "base_form": "bild",
+                    "position_start": 32,
+                    "position_end": 36
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_39_s004",
+            "sv": "Andra vill sticka iväg och leta efter ett ovanligt frimärke.",
+            "en": "Others want to take off and look for an unusual stamp.",
+            "target_words": [
+                {
+                    "word_in_sentence": "sticka iväg",
+                    "base_form": "sticka iväg",
+                    "position_start": 11,
+                    "position_end": 22
+                },
+                {
+                    "word_in_sentence": "frimärke",
+                    "base_form": "frimärke",
+                    "position_start": 51,
+                    "position_end": 59
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_39_s005",
+            "sv": "Kanske vill de skapa en dialog om kultur.",
+            "en": "Maybe they want to create a dialogue about culture.",
+            "target_words": [
+                {
+                    "word_in_sentence": "dialog",
+                    "base_form": "dialog",
+                    "position_start": 24,
+                    "position_end": 30
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_39_s006",
+            "sv": "Men för mig är idrott det viktigaste i min värld.",
+            "en": "But for me, sports is the most important thing in my world.",
+            "target_words": [
+                {
+                    "word_in_sentence": "idrott",
+                    "base_form": "idrott",
+                    "position_start": 15,
+                    "position_end": 21
+                },
+                {
+                    "word_in_sentence": "värld",
+                    "base_form": "värld",
+                    "position_start": 43,
+                    "position_end": 48
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_39_s007",
+            "sv": "\"Jag älskar att springa. –Själv då?\" frågade en vän mig en kall höst.",
+            "en": "\"I love running. -What about you?\" a friend asked me a cold autumn.",
+            "target_words": [
+                {
+                    "word_in_sentence": "–Själv då?",
+                    "base_form": "–Själv då?",
+                    "position_start": 25,
+                    "position_end": 35
+                },
+                {
+                    "word_in_sentence": "höst",
+                    "base_form": "höst",
+                    "position_start": 64,
+                    "position_end": 68
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_39_s008",
+            "sv": "\"Vad gillar du för aktivitet?\"",
+            "en": "\"What kind of activity do you like?\"",
+            "target_words": [
+                {
+                    "word_in_sentence": "aktivitet",
+                    "base_form": "aktivitet",
+                    "position_start": 19,
+                    "position_end": 28
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_39_s009",
+            "sv": "Jag gillar löpning och lätt joggning.",
+            "en": "I like running and light jogging.",
+            "target_words": [
+                {
+                    "word_in_sentence": "löpning",
+                    "base_form": "löpning",
+                    "position_start": 11,
+                    "position_end": 18
+                },
+                {
+                    "word_in_sentence": "joggning",
+                    "base_form": "joggning",
+                    "position_start": 28,
+                    "position_end": 36
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_39_s010",
+            "sv": "Ibland brukar jag springa ett långt lopp, som till exempel ett ultramaraton.",
+            "en": "Sometimes I usually run a long race, like for example an ultramarathon.",
+            "target_words": [
+                {
+                    "word_in_sentence": "lopp",
+                    "base_form": "lopp",
+                    "position_start": 36,
+                    "position_end": 40
+                },
+                {
+                    "word_in_sentence": "ultramaraton",
+                    "base_form": "ultramaraton",
+                    "position_start": 63,
+                    "position_end": 75
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_39_s011",
+            "sv": "Men det finns annat jag gör.",
+            "en": "But there are other things I do.",
+            "target_words": [
+                {
+                    "word_in_sentence": "annat",
+                    "base_form": "annat",
+                    "position_start": 14,
+                    "position_end": 19
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_39_s012",
+            "sv": "Jag gillar cykling och orientering i skogen, där mitt skarpa luktsinne får njuta av frisk luft.",
+            "en": "I like cycling and orienteering in the forest, where my sharp sense of smell gets to enjoy fresh air.",
+            "target_words": [
+                {
+                    "word_in_sentence": "cykling",
+                    "base_form": "cykling",
+                    "position_start": 11,
+                    "position_end": 18
+                },
+                {
+                    "word_in_sentence": "orientering",
+                    "base_form": "orientering",
+                    "position_start": 23,
+                    "position_end": 34
+                },
+                {
+                    "word_in_sentence": "luktsinne",
+                    "base_form": "luktsinne",
+                    "position_start": 61,
+                    "position_end": 70
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_39_s013",
+            "sv": "När jag var på ett sommarläger förra året fick jag pröva rolig segling och tuff surfning.",
+            "en": "When I was at a summer camp last year, I got to try fun sailing and tough surfing.",
+            "target_words": [
+                {
+                    "word_in_sentence": "sommarläger",
+                    "base_form": "sommarläger",
+                    "position_start": 19,
+                    "position_end": 30
+                },
+                {
+                    "word_in_sentence": "öva",
+                    "base_form": "öva",
+                    "position_start": 53,
+                    "position_end": 56
+                },
+                {
+                    "word_in_sentence": "segling",
+                    "base_form": "segling",
+                    "position_start": 63,
+                    "position_end": 70
+                },
+                {
+                    "word_in_sentence": "surfning",
+                    "base_form": "surfning",
+                    "position_start": 80,
+                    "position_end": 88
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_39_s014",
+            "sv": "Vi fick även bada och öva på simning mycket i sjön.",
+            "en": "We also got to swim and practice swimming a lot in the lake.",
+            "target_words": [
+                {
+                    "word_in_sentence": "öva",
+                    "base_form": "öva",
+                    "position_start": 22,
+                    "position_end": 25
+                },
+                {
+                    "word_in_sentence": "bada",
+                    "base_form": "bada",
+                    "position_start": 13,
+                    "position_end": 17
+                },
+                {
+                    "word_in_sentence": "simning",
+                    "base_form": "simning",
+                    "position_start": 29,
+                    "position_end": 36
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_39_s015",
+            "sv": "Ibland spelade vi volleyboll vid stranden, och handboll eller fotboll på gräset.",
+            "en": "Sometimes we played volleyball by the beach, and handball or football on the grass.",
+            "target_words": [
+                {
+                    "word_in_sentence": "volleyboll",
+                    "base_form": "volleyboll",
+                    "position_start": 18,
+                    "position_end": 28
+                },
+                {
+                    "word_in_sentence": "handboll",
+                    "base_form": "handboll",
+                    "position_start": 47,
+                    "position_end": 55
+                },
+                {
+                    "word_in_sentence": "fotboll",
+                    "base_form": "fotboll",
+                    "position_start": 62,
+                    "position_end": 69
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_39_s016",
+            "sv": "Vi testade även basket.",
+            "en": "We even tested basketball.",
+            "target_words": [
+                {
+                    "word_in_sentence": "basket",
+                    "base_form": "basket",
+                    "position_start": 16,
+                    "position_end": 22
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_39_s017",
+            "sv": "Allt detta har en positiv effekt på mig, och ingen sport är skadlig om man är försiktig.",
+            "en": "All this has a positive effect on me, and no sport is harmful if you are careful.",
+            "target_words": [
+                {
+                    "word_in_sentence": "effekt",
+                    "base_form": "effekt",
+                    "position_start": 26,
+                    "position_end": 32
+                },
+                {
+                    "word_in_sentence": "skadlig",
+                    "base_form": "skadlig",
+                    "position_start": 60,
+                    "position_end": 67
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_39_s018",
+            "sv": "Man måste helt enkelt välkomna alla chanser till lek.",
+            "en": "You simply have to welcome all chances for play.",
+            "target_words": [
+                {
+                    "word_in_sentence": "välkomna",
+                    "base_form": "välkomna",
+                    "position_start": 22,
+                    "position_end": 30
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_39_s019",
+            "sv": "Vintertid byter jag sporter.",
+            "en": "During wintertime I switch sports.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Vintertid",
+                    "base_form": "vintertid",
+                    "position_start": 0,
+                    "position_end": 9
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_39_s020",
+            "sv": "Jag åker mycket längdskidåkning och tar fram mina bästa skidor.",
+            "en": "I do a lot of cross-country skiing and take out my best skis.",
+            "target_words": [
+                {
+                    "word_in_sentence": "längdskidåkning",
+                    "base_form": "längdskidåkning",
+                    "position_start": 16,
+                    "position_end": 31
+                },
+                {
+                    "word_in_sentence": "skidor",
+                    "base_form": "skidor",
+                    "position_start": 56,
+                    "position_end": 62
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_39_s021",
+            "sv": "Det är också kul med snowboardåkning, men man måste alltid ha en hjälm för att skydda huvudet.",
+            "en": "It is also fun with snowboarding, but you always have to have a helmet to protect your head.",
+            "target_words": [
+                {
+                    "word_in_sentence": "snowboardåkning",
+                    "base_form": "snowboardåkning",
+                    "position_start": 21,
+                    "position_end": 36
+                },
+                {
+                    "word_in_sentence": "hjälm",
+                    "base_form": "hjälm",
+                    "position_start": 65,
+                    "position_end": 70
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_39_s022",
+            "sv": "Jag gillar också ishockey.",
+            "en": "I also like ice hockey.",
+            "target_words": [
+                {
+                    "word_in_sentence": "ishockey",
+                    "base_form": "ishockey",
+                    "position_start": 17,
+                    "position_end": 25
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_39_s023",
+            "sv": "Man slår pucken i ett nät med en klubba för att få poäng och vinna.",
+            "en": "You hit the puck into a net with a stick to score points and win.",
+            "target_words": [
+                {
+                    "word_in_sentence": "nät",
+                    "base_form": "nät",
+                    "position_start": 22,
+                    "position_end": 25
+                },
+                {
+                    "word_in_sentence": "klubba",
+                    "base_form": "klubba",
+                    "position_start": 33,
+                    "position_end": 39
+                },
+                {
+                    "word_in_sentence": "poäng",
+                    "base_form": "poäng",
+                    "position_start": 51,
+                    "position_end": 56
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_39_s024",
+            "sv": "\"Det skulle vara bättre att… inte attackera varandra så hårt på isen,\" brukar jag skoja.",
+            "en": "\"It would be better to... not attack each other so hard on the ice,\" I usually joke.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Det skulle vara bättre att…",
+                    "base_form": "Det skulle vara bättre att…",
+                    "position_start": 1,
+                    "position_end": 28
+                },
+                {
+                    "word_in_sentence": "attackera",
+                    "base_form": "attackera",
+                    "position_start": 34,
+                    "position_end": 43
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_39_s025",
+            "sv": "Man har idrottat sedan år 1 e.Kr., och jag är glad för mitt val av livsstil.",
+            "en": "People have played sports since 1 AD, and I am happy with my choice of lifestyle.",
+            "target_words": [
+                {
+                    "word_in_sentence": "e.Kr.",
+                    "base_form": "e.kr. Efter Kristus",
+                    "position_start": 28,
+                    "position_end": 33
+                },
+                {
+                    "word_in_sentence": "val",
+                    "base_form": "val",
+                    "position_start": 60,
+                    "position_end": 63
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_39_s026",
+            "sv": "Jag kan ha hand om min egen träning och halvera min stressnivå.",
+            "en": "I can manage my own training and halve my stress level.",
+            "target_words": [
+                {
+                    "word_in_sentence": "ha hand om",
+                    "base_form": "ha hand om",
+                    "position_start": 8,
+                    "position_end": 18
+                },
+                {
+                    "word_in_sentence": "halvera",
+                    "base_form": "halvera",
+                    "position_start": 40,
+                    "position_end": 47
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_39_s027",
+            "sv": "Ibland lyfter jag en skivstång på gymmet, eller gör lite intensiv gympa med bra taktkänsla.",
+            "en": "Sometimes I lift a barbell at the gym, or do some intensive aerobics with a good sense of rhythm.",
+            "target_words": [
+                {
+                    "word_in_sentence": "skivstång",
+                    "base_form": "skivstång",
+                    "position_start": 21,
+                    "position_end": 30
+                },
+                {
+                    "word_in_sentence": "gympa",
+                    "base_form": "gympa",
+                    "position_start": 66,
+                    "position_end": 71
+                },
+                {
+                    "word_in_sentence": "taktkänsla",
+                    "base_form": "taktkänsla",
+                    "position_start": 80,
+                    "position_end": 90
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_39_s028",
+            "sv": "Det går också jättebra att spela bordtennis eller gå ut på en lång promenad med stavgång.",
+            "en": "It also works really well to play table tennis or go out for a long walk with Nordic walking.",
+            "target_words": [
+                {
+                    "word_in_sentence": "bordtennis",
+                    "base_form": "bordtennis",
+                    "position_start": 33,
+                    "position_end": 43
+                },
+                {
+                    "word_in_sentence": "stavgång",
+                    "base_form": "stavgång",
+                    "position_start": 80,
+                    "position_end": 88
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_39_s029",
+            "sv": "Till och med e-sport eller ett spännande lajv kan locka mig, om jag vill stanna inne.",
+            "en": "Even e-sports or an exciting LARP can attract me, if I want to stay indoors.",
+            "target_words": [
+                {
+                    "word_in_sentence": "e-sport",
+                    "base_form": "e-sport",
+                    "position_start": 13,
+                    "position_end": 20
+                },
+                {
+                    "word_in_sentence": "lajv",
+                    "base_form": "lajv",
+                    "position_start": 41,
+                    "position_end": 45
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_39_s030",
+            "sv": "Ibland måste jag boka och ta mig tid för vila, men jag gör allt i ett och samma liv!",
+            "en": "Sometimes I have to book and take time for rest, but I do it all in one and the same life!",
+            "target_words": [
+                {
+                    "word_in_sentence": "ta mig tid",
+                    "base_form": "beställa tid",
+                    "position_start": 26,
+                    "position_end": 36
+                },
+                {
+                    "word_in_sentence": "ett och samma",
+                    "base_form": "ett och samma",
+                    "position_start": 66,
+                    "position_end": 79
+                }
+            ]
+        }
+    ],
+    "primary_words_used": [
+        "litteratur",
+        "bada",
+        "surfning",
+        "uttryck",
+        "längdskidåkning",
+        "skivstång",
+        "ishockey",
+        "klubba",
+        "poäng",
+        "volleyboll",
+        "e-sport",
+        "idrott",
+        "löpning",
+        "ultramaraton",
+        "stavgång",
+        "gympa",
+        "orientering",
+        "intresse",
+        "basket",
+        "bild",
+        "fotboll",
+        "handboll",
+        "sommarläger",
+        "lajv",
+        "joggning",
+        "bordtennis",
+        "frimärke",
+        "nät",
+        "simning",
+        "segling",
+        "aktivitet",
+        "dialog",
+        "lopp",
+        "cykling",
+        "snowboardåkning",
+        "taktkänsla",
+        "hjälm",
+        "skidor",
+        "ställa ut",
+        "visa sig",
+        "öva",
+        "annat",
+        "luktsinne",
+        "värld",
+        "på olika sätt",
+        "Det skulle vara bättre att…",
+        "attackera",
+        "halvera",
+        "vintertid",
+        "effekt",
+        "–Själv då?",
+        "skadlig",
+        "ett och samma",
+        "välkomna",
+        "e.kr. Efter Kristus",
+        "val",
+        "höst",
+        "beställa tid",
+        "sticka iväg",
+        "ha hand om"
+    ],
+    "secondary_words_used": []
+}

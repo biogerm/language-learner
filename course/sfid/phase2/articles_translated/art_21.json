@@ -1,0 +1,714 @@
+{
+    "course_id": "sfid",
+    "course_title": "SFI D",
+    "stage_id": "stage_07",
+    "stage_title": "Natur & Miljö",
+    "article_id": "art_21",
+    "article_title": "Läsförståelse",
+    "target_word_count": 60,
+    "sentences": [
+        {
+            "sentence_id": "art_21_s001",
+            "sv": "Vi befann oss i en vacker och nästan orörd del av Norden.",
+            "en": "We were in a beautiful and almost untouched part of the Nordic region.",
+            "target_words": [
+                {
+                    "word_in_sentence": "orörd",
+                    "base_form": "orörd",
+                    "position_start": 37,
+                    "position_end": 42
+                },
+                {
+                    "word_in_sentence": "Norden",
+                    "base_form": "Norden",
+                    "position_start": 50,
+                    "position_end": 56
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_21_s002",
+            "sv": "Det var en suggestiv miljö.",
+            "en": "It was an evocative environment.",
+            "target_words": [
+                {
+                    "word_in_sentence": "suggestiv",
+                    "base_form": "himla",
+                    "position_start": 11,
+                    "position_end": 20
+                },
+                {
+                    "word_in_sentence": "suggestiv",
+                    "base_form": "suggestiv",
+                    "position_start": 11,
+                    "position_end": 20
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_21_s003",
+            "sv": "Vi började dagen vid en vacker näckrosdamm i en grön dal.",
+            "en": "We started the day by a beautiful water lily pond in a green valley.",
+            "target_words": [
+                {
+                    "word_in_sentence": "näckrosdamm",
+                    "base_form": "näckrosdamm",
+                    "position_start": 31,
+                    "position_end": 42
+                },
+                {
+                    "word_in_sentence": "dal",
+                    "base_form": "dal",
+                    "position_start": 53,
+                    "position_end": 56
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_21_s004",
+            "sv": "Det var en suggestiv miljö, och vi kunde andas frisk luft.",
+            "en": "It was an evocative environment, and we could breathe fresh air.",
+            "target_words": [
+                {
+                    "word_in_sentence": "suggestiv",
+                    "base_form": "himla",
+                    "position_start": 11,
+                    "position_end": 20
+                },
+                {
+                    "word_in_sentence": "suggestiv",
+                    "base_form": "suggestiv",
+                    "position_start": 11,
+                    "position_end": 20
+                },
+                {
+                    "word_in_sentence": "is",
+                    "base_form": "is",
+                    "position_start": 49,
+                    "position_end": 51
+                },
+                {
+                    "word_in_sentence": "luft",
+                    "base_form": "luft",
+                    "position_start": 53,
+                    "position_end": 57
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_21_s005",
+            "sv": "På ett litet grässtrå kröp en myra.",
+            "en": "On a small blade of grass crawled an ant.",
+            "target_words": [
+                {
+                    "word_in_sentence": "grässtrå",
+                    "base_form": "grässtrå",
+                    "position_start": 13,
+                    "position_end": 21
+                },
+                {
+                    "word_in_sentence": "myra",
+                    "base_form": "myra",
+                    "position_start": 30,
+                    "position_end": 34
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_21_s006",
+            "sv": "På bergets sydsida lyste solen.",
+            "en": "On the south side of the mountain the sun was shining.",
+            "target_words": [
+                {
+                    "word_in_sentence": "sydsida",
+                    "base_form": "sydsida",
+                    "position_start": 11,
+                    "position_end": 18
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_21_s007",
+            "sv": "\"Oj då,\" sa vår guide, \"titta där!\"",
+            "en": "\"Oh my,\" said our guide, \"look there!\"",
+            "target_words": [
+                {
+                    "word_in_sentence": "Oj då",
+                    "base_form": "oj då",
+                    "position_start": 1,
+                    "position_end": 6
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_21_s008",
+            "sv": "En stor björn, närmare bestämt en brunbjörn, rörde sig i skogen.",
+            "en": "A large bear, more specifically a brown bear, was moving in the forest.",
+            "target_words": [
+                {
+                    "word_in_sentence": "björn",
+                    "base_form": "björn",
+                    "position_start": 8,
+                    "position_end": 13
+                },
+                {
+                    "word_in_sentence": "brunbjörn",
+                    "base_form": "brunbjörn",
+                    "position_start": 34,
+                    "position_end": 43
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_21_s009",
+            "sv": "Bredvid låg ett kadaver som den skulle äta.",
+            "en": "Next to it lay a carcass that it was going to eat.",
+            "target_words": [
+                {
+                    "word_in_sentence": "kadaver",
+                    "base_form": "kadaver",
+                    "position_start": 16,
+                    "position_end": 23
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_21_s010",
+            "sv": "\"Det är i princip omöjligt att se dem så här,\" sa vår zoolog.",
+            "en": "\"It is basically impossible to see them like this,\" said our zoologist.",
+            "target_words": [
+                {
+                    "word_in_sentence": "i princip",
+                    "base_form": "i princip",
+                    "position_start": 8,
+                    "position_end": 17
+                },
+                {
+                    "word_in_sentence": "zoolog",
+                    "base_form": "zoolog",
+                    "position_start": 54,
+                    "position_end": 60
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_21_s011",
+            "sv": "Han tyckte om både…och när det gällde växter och djur.",
+            "en": "He liked both... and when it came to plants and animals.",
+            "target_words": [
+                {
+                    "word_in_sentence": "både…och",
+                    "base_form": "både…och",
+                    "position_start": 14,
+                    "position_end": 22
+                },
+                {
+                    "word_in_sentence": "växt",
+                    "base_form": "växt",
+                    "position_start": 38,
+                    "position_end": 42
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_21_s012",
+            "sv": "Vi såg också en ren och ett litet får.",
+            "en": "We also saw a reindeer and a small sheep.",
+            "target_words": [
+                {
+                    "word_in_sentence": "ren",
+                    "base_form": "ren",
+                    "position_start": 16,
+                    "position_end": 19
+                },
+                {
+                    "word_in_sentence": "får",
+                    "base_form": "får",
+                    "position_start": 34,
+                    "position_end": 37
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_21_s013",
+            "sv": "En ståtlig älg och en liten älgkalv stod i skogsbrynet.",
+            "en": "A majestic moose and a small moose calf stood at the edge of the forest.",
+            "target_words": [
+                {
+                    "word_in_sentence": "älg",
+                    "base_form": "älg",
+                    "position_start": 11,
+                    "position_end": 14
+                },
+                {
+                    "word_in_sentence": "älgkalv",
+                    "base_form": "älgkalv",
+                    "position_start": 28,
+                    "position_end": 35
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_21_s014",
+            "sv": "En varg, eller ulv som man förr sa, ylade i fjärran.",
+            "en": "A wolf, or 'ulv' as they used to say, howled in the distance.",
+            "target_words": [
+                {
+                    "word_in_sentence": "ulv",
+                    "base_form": "ulv",
+                    "position_start": 15,
+                    "position_end": 18
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_21_s015",
+            "sv": "Skogen var så tät att man var tvungen att be om hjälp för att hitta ut.",
+            "en": "The forest was so dense that you had to ask for help to find your way out.",
+            "target_words": [
+                {
+                    "word_in_sentence": "tät",
+                    "base_form": "tät",
+                    "position_start": 14,
+                    "position_end": 17
+                },
+                {
+                    "word_in_sentence": "be om hjälp",
+                    "base_form": "be om hjälp",
+                    "position_start": 42,
+                    "position_end": 53
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_21_s016",
+            "sv": "Jag fick lust att gå närmare kanten, men jag stannade strax innan en brant klippa.",
+            "en": "I felt like walking closer to the edge, but I stopped just before a steep cliff.",
+            "target_words": [
+                {
+                    "word_in_sentence": "fick lust",
+                    "base_form": "få lust",
+                    "position_start": 4,
+                    "position_end": 13
+                },
+                {
+                    "word_in_sentence": "strax innan",
+                    "base_form": "strax innan",
+                    "position_start": 54,
+                    "position_end": 65
+                },
+                {
+                    "word_in_sentence": "brant",
+                    "base_form": "brant",
+                    "position_start": 69,
+                    "position_end": 74
+                },
+                {
+                    "word_in_sentence": "klippa",
+                    "base_form": "klippa",
+                    "position_start": 75,
+                    "position_end": 81
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_21_s017",
+            "sv": "Där fanns is på marken.",
+            "en": "There was ice on the ground there.",
+            "target_words": [
+                {
+                    "word_in_sentence": "is",
+                    "base_form": "is",
+                    "position_start": 10,
+                    "position_end": 12
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_21_s018",
+            "sv": "Vår botaniker visade oss en sällsynt växt, en vacker kaprifol.",
+            "en": "Our botanist showed us a rare plant, a beautiful honeysuckle.",
+            "target_words": [
+                {
+                    "word_in_sentence": "is",
+                    "base_form": "is",
+                    "position_start": 15,
+                    "position_end": 17
+                },
+                {
+                    "word_in_sentence": "växt",
+                    "base_form": "växt",
+                    "position_start": 37,
+                    "position_end": 41
+                },
+                {
+                    "word_in_sentence": "botaniker",
+                    "base_form": "botaniker",
+                    "position_start": 4,
+                    "position_end": 13
+                },
+                {
+                    "word_in_sentence": "kaprifol",
+                    "base_form": "kaprifol",
+                    "position_start": 53,
+                    "position_end": 61
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_21_s019",
+            "sv": "Han berättade hur man kunde skydda den.",
+            "en": "He told us how you could protect it.",
+            "target_words": [
+                {
+                    "word_in_sentence": "skydda",
+                    "base_form": "skydda",
+                    "position_start": 28,
+                    "position_end": 34
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_21_s020",
+            "sv": "\"Vi måste öva på att ta hand om naturen utan att förstöra den.\"",
+            "en": "\"We must practice taking care of nature without destroying it.\"",
+            "target_words": [
+                {
+                    "word_in_sentence": "ren",
+                    "base_form": "ren",
+                    "position_start": 36,
+                    "position_end": 39
+                },
+                {
+                    "word_in_sentence": "öva på",
+                    "base_form": "öva på",
+                    "position_start": 10,
+                    "position_end": 16
+                },
+                {
+                    "word_in_sentence": "utan att",
+                    "base_form": "utan att",
+                    "position_start": 40,
+                    "position_end": 48
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_21_s021",
+            "sv": "Han ritade ett mönster på ett papper.",
+            "en": "He drew a pattern on a piece of paper.",
+            "target_words": [
+                {
+                    "word_in_sentence": "papper",
+                    "base_form": "papper",
+                    "position_start": 30,
+                    "position_end": 36
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_21_s022",
+            "sv": "Han förklarade skillnaden mellan en hanne och en hona hos vissa blommor.",
+            "en": "He explained the difference between a male and a female in some flowers.",
+            "target_words": [
+                {
+                    "word_in_sentence": "hanne",
+                    "base_form": "hanne",
+                    "position_start": 36,
+                    "position_end": 41
+                },
+                {
+                    "word_in_sentence": "hona",
+                    "base_form": "hona",
+                    "position_start": 49,
+                    "position_end": 53
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_21_s023",
+            "sv": "I vattnet nedanför simmade en ål, men som tur var ingen krokodil!",
+            "en": "In the water below swam an eel, but luckily no crocodile!",
+            "target_words": [
+                {
+                    "word_in_sentence": "ål",
+                    "base_form": "ål",
+                    "position_start": 30,
+                    "position_end": 32
+                },
+                {
+                    "word_in_sentence": "krokodil",
+                    "base_form": "krokodil",
+                    "position_start": 56,
+                    "position_end": 64
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_21_s024",
+            "sv": "I havet långt borta kunde vi se en delfin.",
+            "en": "In the sea far away we could see a dolphin.",
+            "target_words": [
+                {
+                    "word_in_sentence": "delfin",
+                    "base_form": "delfin",
+                    "position_start": 35,
+                    "position_end": 41
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_21_s025",
+            "sv": "Vi hade med oss en hund, en glad pudel, och såg en färgglad påfågel vid en gård.",
+            "en": "We had a dog with us, a happy poodle, and saw a colorful peacock at a farm.",
+            "target_words": [
+                {
+                    "word_in_sentence": "pudel",
+                    "base_form": "pudel",
+                    "position_start": 33,
+                    "position_end": 38
+                },
+                {
+                    "word_in_sentence": "påfågel",
+                    "base_form": "påfågel",
+                    "position_start": 60,
+                    "position_end": 67
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_21_s026",
+            "sv": "Vi upptäckte också en spindel, en fästing och en surrande geting.",
+            "en": "We also discovered a spider, a tick and a buzzing wasp.",
+            "target_words": [
+                {
+                    "word_in_sentence": "spindel",
+                    "base_form": "spindel",
+                    "position_start": 22,
+                    "position_end": 29
+                },
+                {
+                    "word_in_sentence": "fästing",
+                    "base_form": "fästing",
+                    "position_start": 34,
+                    "position_end": 41
+                },
+                {
+                    "word_in_sentence": "geting",
+                    "base_form": "geting",
+                    "position_start": 58,
+                    "position_end": 64
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_21_s027",
+            "sv": "Plötsligt såg vi en orm och en stor oxe på fältet.",
+            "en": "Suddenly we saw a snake and a large ox in the field.",
+            "target_words": [
+                {
+                    "word_in_sentence": "orm",
+                    "base_form": "orm",
+                    "position_start": 20,
+                    "position_end": 23
+                },
+                {
+                    "word_in_sentence": "oxe",
+                    "base_form": "oxe",
+                    "position_start": 36,
+                    "position_end": 39
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_21_s028",
+            "sv": "\"Ett stort antal av de djur vi sett är däggdjur,\" sa guiden.",
+            "en": "\"A large number of the animals we have seen are mammals,\" the guide said.",
+            "target_words": [
+                {
+                    "word_in_sentence": "antal",
+                    "base_form": "antal",
+                    "position_start": 11,
+                    "position_end": 16
+                },
+                {
+                    "word_in_sentence": "däggdjur",
+                    "base_form": "däggdjur",
+                    "position_start": 39,
+                    "position_end": 47
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_21_s029",
+            "sv": "Man ville behålla rätt temperatur i stugan, men ute började det sjunka redan på eftermiddagen.",
+            "en": "They wanted to keep the right temperature in the cabin, but outside it began to drop already in the afternoon.",
+            "target_words": [
+                {
+                    "word_in_sentence": "ål",
+                    "base_form": "ål",
+                    "position_start": 13,
+                    "position_end": 15
+                },
+                {
+                    "word_in_sentence": "temperatur",
+                    "base_form": "temperatur",
+                    "position_start": 23,
+                    "position_end": 33
+                },
+                {
+                    "word_in_sentence": "redan",
+                    "base_form": "redan",
+                    "position_start": 71,
+                    "position_end": 76
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_21_s030",
+            "sv": "Vi fick se en stor andel av detta område på tjugo kvadratkilometer.",
+            "en": "We got to see a large portion of this area of twenty square kilometers.",
+            "target_words": [
+                {
+                    "word_in_sentence": "andel",
+                    "base_form": "andel",
+                    "position_start": 19,
+                    "position_end": 24
+                },
+                {
+                    "word_in_sentence": "kvadratkilometer",
+                    "base_form": "kvadratkilometer",
+                    "position_start": 50,
+                    "position_end": 66
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_21_s031",
+            "sv": "En spansk turist var med oss.",
+            "en": "A Spanish tourist was with us.",
+            "target_words": [
+                {
+                    "word_in_sentence": "spansk",
+                    "base_form": "spanske",
+                    "position_start": 3,
+                    "position_end": 9
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_21_s032",
+            "sv": "Han var nykterist och drack bara vatten, en fantastisk lokal råvara.",
+            "en": "He was a teetotaler and only drank water, a fantastic local raw material.",
+            "target_words": [
+                {
+                    "word_in_sentence": "nykterist",
+                    "base_form": "nykterist",
+                    "position_start": 8,
+                    "position_end": 17
+                },
+                {
+                    "word_in_sentence": "råvara",
+                    "base_form": "råvara",
+                    "position_start": 61,
+                    "position_end": 67
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_21_s033",
+            "sv": "När dagen var slut bad han oss att ge respons på hans svenska.",
+            "en": "When the day was over he asked us to give feedback on his Swedish.",
+            "target_words": [
+                {
+                    "word_in_sentence": "ge respons",
+                    "base_form": "ge respons",
+                    "position_start": 35,
+                    "position_end": 45
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_21_s034",
+            "sv": "Detta var min femte resa hit, och jag kommer åka hit igen!",
+            "en": "This was my fifth trip here, and I will come here again!",
+            "target_words": [
+                {
+                    "word_in_sentence": "femte",
+                    "base_form": "femte",
+                    "position_start": 14,
+                    "position_end": 19
+                },
+                {
+                    "word_in_sentence": "igen",
+                    "base_form": "igen",
+                    "position_start": 53,
+                    "position_end": 57
+                }
+            ]
+        }
+    ],
+    "primary_words_used": [
+        "växt",
+        "hanne",
+        "ren",
+        "ål",
+        "spindel",
+        "älgkalv",
+        "myra",
+        "får",
+        "orm",
+        "oxe",
+        "älg",
+        "geting",
+        "kadaver",
+        "hona",
+        "björn",
+        "fästing",
+        "brunbjörn",
+        "ulv",
+        "krokodil",
+        "zoolog",
+        "klippa",
+        "brant",
+        "kaprifol",
+        "delfin",
+        "botaniker",
+        "tät",
+        "grässtrå",
+        "is",
+        "kvadratkilometer",
+        "dal",
+        "luft",
+        "sydsida",
+        "påfågel",
+        "pudel",
+        "orörd",
+        "däggdjur",
+        "råvara",
+        "temperatur",
+        "näckrosdamm",
+        "spanske",
+        "strax innan",
+        "Norden",
+        "himla",
+        "öva på",
+        "antal",
+        "ge respons",
+        "redan",
+        "be om hjälp",
+        "utan att",
+        "både…och",
+        "i princip",
+        "skydda",
+        "andel",
+        "papper",
+        "suggestiv",
+        "få lust",
+        "femte",
+        "igen",
+        "nykterist",
+        "oj då"
+    ],
+    "secondary_words_used": []
+}

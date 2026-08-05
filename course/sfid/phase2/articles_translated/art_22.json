@@ -1,0 +1,671 @@
+{
+    "course_id": "sfid",
+    "course_title": "SFI D",
+    "stage_id": "stage_06",
+    "stage_title": "Hälsa & Medicin",
+    "article_id": "art_22",
+    "article_title": "Läsförståelse",
+    "target_word_count": 60,
+    "sentences": [
+        {
+            "sentence_id": "art_22_s001",
+            "sv": "För några år sedan mådde jag väldigt dåligt.",
+            "en": "A few years ago I felt very bad.",
+            "target_words": []
+        },
+        {
+            "sentence_id": "art_22_s002",
+            "sv": "Jag hade problem med min vikt och jag fortsatte att gå upp i vikt.",
+            "en": "I had problems with my weight and I continued to gain weight.",
+            "target_words": [
+                {
+                    "word_in_sentence": "vikt",
+                    "base_form": "vikt",
+                    "position_start": 25,
+                    "position_end": 29
+                },
+                {
+                    "word_in_sentence": "gå upp i vikt",
+                    "base_form": "gå upp i vikt",
+                    "position_start": 52,
+                    "position_end": 65
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_22_s003",
+            "sv": "Jag var trött hela tiden, ibland helt dödstrött.",
+            "en": "I was tired all the time, sometimes completely dead tired.",
+            "target_words": [
+                {
+                    "word_in_sentence": "trött",
+                    "base_form": "trött",
+                    "position_start": 8,
+                    "position_end": 13
+                },
+                {
+                    "word_in_sentence": "dödstrött",
+                    "base_form": "dödstrött",
+                    "position_start": 38,
+                    "position_end": 47
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_22_s004",
+            "sv": "Jag hade svårt att sova och det kändes som en parasit i min kropp.",
+            "en": "I had trouble sleeping and it felt like a parasite in my body.",
+            "target_words": [
+                {
+                    "word_in_sentence": "sova",
+                    "base_form": "sova",
+                    "position_start": 19,
+                    "position_end": 23
+                },
+                {
+                    "word_in_sentence": "parasit",
+                    "base_form": "parasit",
+                    "position_start": 46,
+                    "position_end": 53
+                },
+                {
+                    "word_in_sentence": "kropp",
+                    "base_form": "kropp",
+                    "position_start": 60,
+                    "position_end": 65
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_22_s005",
+            "sv": "En läkare tvingade mig till och med att lägga in mig på ett sinnessjukhus på grund av risken för självmord efter en oavsiktlig överdos av medicin.",
+            "en": "A doctor even forced me to admit myself to a mental hospital because of the risk of suicide after an accidental overdose of medicine.",
+            "target_words": [
+                {
+                    "word_in_sentence": "tvingade",
+                    "base_form": "tvinga",
+                    "position_start": 10,
+                    "position_end": 18
+                },
+                {
+                    "word_in_sentence": "sinnessjukhus",
+                    "base_form": "sinnessjukhus",
+                    "position_start": 60,
+                    "position_end": 73
+                },
+                {
+                    "word_in_sentence": "självmord",
+                    "base_form": "självmord",
+                    "position_start": 97,
+                    "position_end": 106
+                },
+                {
+                    "word_in_sentence": "överdos",
+                    "base_form": "överdos",
+                    "position_start": 127,
+                    "position_end": 134
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_22_s006",
+            "sv": "Det var en hemsk tid.",
+            "en": "It was a terrible time.",
+            "target_words": []
+        },
+        {
+            "sentence_id": "art_22_s007",
+            "sv": "Jag fick ibland råd per brev, men inget verkade passa mig.",
+            "en": "I sometimes received advice by letter, but nothing seemed to suit me.",
+            "target_words": [
+                {
+                    "word_in_sentence": "per brev",
+                    "base_form": "per brev",
+                    "position_start": 20,
+                    "position_end": 28
+                },
+                {
+                    "word_in_sentence": "passa",
+                    "base_form": "passa",
+                    "position_start": 48,
+                    "position_end": 53
+                },
+                {
+                    "word_in_sentence": "pass",
+                    "base_form": "pass",
+                    "position_start": 48,
+                    "position_end": 52
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_22_s008",
+            "sv": "Men en dag läste jag ett tips på en vägg intill sjukhuset: \"Lyssna till ditt hjärta.\"",
+            "en": "But one day I read a tip on a wall next to the hospital: \"Listen to your heart.\"",
+            "target_words": [
+                {
+                    "word_in_sentence": "vägg",
+                    "base_form": "vägg",
+                    "position_start": 36,
+                    "position_end": 40
+                },
+                {
+                    "word_in_sentence": "intill",
+                    "base_form": "intill",
+                    "position_start": 41,
+                    "position_end": 47
+                },
+                {
+                    "word_in_sentence": "Lyssna till ditt hjärta.",
+                    "base_form": "Lyssna till ditt hjärta.",
+                    "position_start": 60,
+                    "position_end": 84
+                },
+                {
+                    "word_in_sentence": "lyssna",
+                    "base_form": "lyssna",
+                    "position_start": 60,
+                    "position_end": 66
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_22_s009",
+            "sv": "Jag bestämde mig för att bli frisk och att det är viktigt att bry sig om sin hälsa.",
+            "en": "I decided to get well and that it is important to care about one's health.",
+            "target_words": [
+                {
+                    "word_in_sentence": "vikt",
+                    "base_form": "vikt",
+                    "position_start": 50,
+                    "position_end": 54
+                },
+                {
+                    "word_in_sentence": "frisk",
+                    "base_form": "frisk",
+                    "position_start": 29,
+                    "position_end": 34
+                },
+                {
+                    "word_in_sentence": "bry sig om",
+                    "base_form": "bry sig om",
+                    "position_start": 62,
+                    "position_end": 72
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_22_s010",
+            "sv": "Jag ville inte bara sitta och slappa.",
+            "en": "I didn't want to just sit and laze around.",
+            "target_words": [
+                {
+                    "word_in_sentence": "slappa",
+                    "base_form": "slappa",
+                    "position_start": 30,
+                    "position_end": 36
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_22_s011",
+            "sv": "Det var i samband med detta jag anmälde mig till en exotisk träningsresa.",
+            "en": "It was in connection with this I signed up for an exotic fitness trip.",
+            "target_words": [
+                {
+                    "word_in_sentence": "i samband med",
+                    "base_form": "i samband med",
+                    "position_start": 8,
+                    "position_end": 21
+                },
+                {
+                    "word_in_sentence": "exotisk",
+                    "base_form": "exotisk",
+                    "position_start": 52,
+                    "position_end": 59
+                },
+                {
+                    "word_in_sentence": "träningsresa",
+                    "base_form": "träningsresa",
+                    "position_start": 60,
+                    "position_end": 72
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_22_s012",
+            "sv": "Evenemanget skulle äga rum i Spanien.",
+            "en": "The event was to take place in Spain.",
+            "target_words": [
+                {
+                    "word_in_sentence": "äga rum",
+                    "base_form": "äga rum",
+                    "position_start": 19,
+                    "position_end": 26
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_22_s013",
+            "sv": "Jag packade mina träningskläder och träningsskor.",
+            "en": "I packed my workout clothes and running shoes.",
+            "target_words": [
+                {
+                    "word_in_sentence": "träningskläder",
+                    "base_form": "träningskläder",
+                    "position_start": 17,
+                    "position_end": 31
+                },
+                {
+                    "word_in_sentence": "träningsskor",
+                    "base_form": "träningsskor",
+                    "position_start": 36,
+                    "position_end": 48
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_22_s014",
+            "sv": "Där började ett nära samarbete med en sportig gyminstruktör.",
+            "en": "There began a close collaboration with a sporty gym instructor.",
+            "target_words": [
+                {
+                    "word_in_sentence": "nära samarbete",
+                    "base_form": "nära samarbete",
+                    "position_start": 16,
+                    "position_end": 30
+                },
+                {
+                    "word_in_sentence": "sportig",
+                    "base_form": "sportig",
+                    "position_start": 38,
+                    "position_end": 45
+                },
+                {
+                    "word_in_sentence": "gyminstruktör",
+                    "base_form": "gyminstruktör",
+                    "position_start": 46,
+                    "position_end": 59
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_22_s015",
+            "sv": "Han förklarade att all motion är nyttig.",
+            "en": "He explained that all exercise is useful.",
+            "target_words": [
+                {
+                    "word_in_sentence": "motion",
+                    "base_form": "motion",
+                    "position_start": 23,
+                    "position_end": 29
+                },
+                {
+                    "word_in_sentence": "nyttig",
+                    "base_form": "nyttig",
+                    "position_start": 33,
+                    "position_end": 39
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_22_s016",
+            "sv": "Han sa att \"motionera\" ger en hälsosam livsstil.",
+            "en": "He said that \"exercising\" provides a healthy lifestyle.",
+            "target_words": [
+                {
+                    "word_in_sentence": "motion",
+                    "base_form": "motion",
+                    "position_start": 12,
+                    "position_end": 18
+                },
+                {
+                    "word_in_sentence": "motionera",
+                    "base_form": "motienera",
+                    "position_start": 12,
+                    "position_end": 21
+                },
+                {
+                    "word_in_sentence": "hälsosam",
+                    "base_form": "hälsosam",
+                    "position_start": 30,
+                    "position_end": 38
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_22_s017",
+            "sv": "Vi tränade i en serie av korta pass.",
+            "en": "We trained in a series of short sessions.",
+            "target_words": [
+                {
+                    "word_in_sentence": "pass",
+                    "base_form": "pass",
+                    "position_start": 31,
+                    "position_end": 35
+                },
+                {
+                    "word_in_sentence": "träna",
+                    "base_form": "träna",
+                    "position_start": 3,
+                    "position_end": 8
+                },
+                {
+                    "word_in_sentence": "serie",
+                    "base_form": "serie",
+                    "position_start": 16,
+                    "position_end": 21
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_22_s018",
+            "sv": "Det var en motionsform som byggde på intensiv styrketräning.",
+            "en": "It was a form of exercise that was based on intensive strength training.",
+            "target_words": [
+                {
+                    "word_in_sentence": "motion",
+                    "base_form": "motion",
+                    "position_start": 11,
+                    "position_end": 17
+                },
+                {
+                    "word_in_sentence": "motionsform",
+                    "base_form": "motionsform",
+                    "position_start": 11,
+                    "position_end": 22
+                },
+                {
+                    "word_in_sentence": "styrketräning",
+                    "base_form": "styrketräning",
+                    "position_start": 46,
+                    "position_end": 59
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_22_s019",
+            "sv": "I början fick jag väldigt ont i ett knä och i varje muskel i mina ben.",
+            "en": "At first I got a very bad pain in a knee and in every muscle in my legs.",
+            "target_words": [
+                {
+                    "word_in_sentence": "ont",
+                    "base_form": "ont",
+                    "position_start": 26,
+                    "position_end": 29
+                },
+                {
+                    "word_in_sentence": "knä",
+                    "base_form": "knä",
+                    "position_start": 36,
+                    "position_end": 39
+                },
+                {
+                    "word_in_sentence": "muskel",
+                    "base_form": "muskel",
+                    "position_start": 52,
+                    "position_end": 58
+                },
+                {
+                    "word_in_sentence": "ben",
+                    "base_form": "ben",
+                    "position_start": 66,
+                    "position_end": 69
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_22_s020",
+            "sv": "Ibland blev jag delvis döv av ansträngning, men jag lärde mig att stretcha efter varje träningspass.",
+            "en": "Sometimes I became partially deaf from exertion, but I learned to stretch after every workout.",
+            "target_words": [
+                {
+                    "word_in_sentence": "pass",
+                    "base_form": "pass",
+                    "position_start": 95,
+                    "position_end": 99
+                },
+                {
+                    "word_in_sentence": "delvis",
+                    "base_form": "delvis",
+                    "position_start": 16,
+                    "position_end": 22
+                },
+                {
+                    "word_in_sentence": "döv",
+                    "base_form": "döv",
+                    "position_start": 23,
+                    "position_end": 26
+                },
+                {
+                    "word_in_sentence": "stretcha",
+                    "base_form": "stretcha",
+                    "position_start": 66,
+                    "position_end": 74
+                },
+                {
+                    "word_in_sentence": "träningspass",
+                    "base_form": "träningspass",
+                    "position_start": 87,
+                    "position_end": 99
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_22_s021",
+            "sv": "Fastän jag fick extrem träningsvärk, kändes det ändå bra att svettas och förbättra min kondition.",
+            "en": "Even though I got extreme muscle soreness, it still felt good to sweat and improve my fitness.",
+            "target_words": [
+                {
+                    "word_in_sentence": "träningsvärk",
+                    "base_form": "träningsvärk",
+                    "position_start": 23,
+                    "position_end": 35
+                },
+                {
+                    "word_in_sentence": "ändå",
+                    "base_form": "ändå",
+                    "position_start": 48,
+                    "position_end": 52
+                },
+                {
+                    "word_in_sentence": "svettas",
+                    "base_form": "svettas",
+                    "position_start": 61,
+                    "position_end": 68
+                },
+                {
+                    "word_in_sentence": "kondition",
+                    "base_form": "kondition",
+                    "position_start": 87,
+                    "position_end": 96
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_22_s022",
+            "sv": "Allt handlar inte bara om att träna stenhårt, man måste också koppla av.",
+            "en": "It's not all just about training really hard, you also have to relax.",
+            "target_words": [
+                {
+                    "word_in_sentence": "träna",
+                    "base_form": "träna",
+                    "position_start": 30,
+                    "position_end": 35
+                },
+                {
+                    "word_in_sentence": "koppla av",
+                    "base_form": "koppla av",
+                    "position_start": 62,
+                    "position_end": 71
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_22_s023",
+            "sv": "Att vila är inte en halvsanning – det är jätteviktigt!",
+            "en": "Resting is not a half-truth - it is very important!",
+            "target_words": [
+                {
+                    "word_in_sentence": "halvsanning",
+                    "base_form": "halvsanning",
+                    "position_start": 20,
+                    "position_end": 31
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_22_s024",
+            "sv": "Min form förbättrades mycket snabbare än jag någonsin sett.",
+            "en": "My form improved much faster than I had ever seen.",
+            "target_words": [
+                {
+                    "word_in_sentence": "snabbare än",
+                    "base_form": "snabbare än",
+                    "position_start": 29,
+                    "position_end": 40
+                },
+                {
+                    "word_in_sentence": "sett",
+                    "base_form": "sett",
+                    "position_start": 54,
+                    "position_end": 58
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_22_s025",
+            "sv": "Pulsen var som lägst när vi mediterade.",
+            "en": "The heart rate was at its lowest when we meditated.",
+            "target_words": [
+                {
+                    "word_in_sentence": "lägst",
+                    "base_form": "lägst",
+                    "position_start": 15,
+                    "position_end": 20
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_22_s026",
+            "sv": "Vi lärde oss att lyssna på kroppen, som fungerar lite… för sig, på ett fantastiskt sätt.",
+            "en": "We learned to listen to the body, which works a bit... on its own, in a fantastic way.",
+            "target_words": [
+                {
+                    "word_in_sentence": "… för sig",
+                    "base_form": "… för sig",
+                    "position_start": 53,
+                    "position_end": 62
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_22_s027",
+            "sv": "Om någon hade sagt att jag skulle träna i fin frack hade jag skrattat.",
+            "en": "If someone had said that I would train in a fine tailcoat I would have laughed.",
+            "target_words": [
+                {
+                    "word_in_sentence": "frack",
+                    "base_form": "frack",
+                    "position_start": 46,
+                    "position_end": 51
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_22_s028",
+            "sv": "Alla ville hänga med.",
+            "en": "Everyone wanted to tag along.",
+            "target_words": [
+                {
+                    "word_in_sentence": "hänga med",
+                    "base_form": "hänga med",
+                    "position_start": 11,
+                    "position_end": 20
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_22_s029",
+            "sv": "När jag till slut bad om att få svar på vad hälsa kallas för, sa min tränare: \"Det är livet.\"",
+            "en": "When I finally asked to get an answer to what health is called, my trainer said: \"It is life.\"",
+            "target_words": [
+                {
+                    "word_in_sentence": "få svar",
+                    "base_form": "få svar",
+                    "position_start": 29,
+                    "position_end": 36
+                },
+                {
+                    "word_in_sentence": "kallas för",
+                    "base_form": "kallas för",
+                    "position_start": 50,
+                    "position_end": 60
+                }
+            ]
+        }
+    ],
+    "primary_words_used": [
+        "passa",
+        "träna",
+        "trött",
+        "dödstrött",
+        "svettas",
+        "kondition",
+        "nyttig",
+        "kropp",
+        "slappa",
+        "träningsresa",
+        "vikt",
+        "gå upp i vikt",
+        "pass",
+        "träningspass",
+        "träningskläder",
+        "sova",
+        "frisk",
+        "ont",
+        "knä",
+        "muskel",
+        "ben",
+        "motion",
+        "motionsform",
+        "träningsvärk",
+        "stretcha",
+        "styrketräning",
+        "träningsskor",
+        "motienera",
+        "hälsosam",
+        "koppla av",
+        "gyminstruktör",
+        "sportig",
+        "bry sig om",
+        "Lyssna till ditt hjärta.",
+        "överdos",
+        "självmord",
+        "sinnessjukhus",
+        "exotisk",
+        "per brev",
+        "lyssna",
+        "tvinga",
+        "parasit",
+        "äga rum",
+        "sett",
+        "ändå",
+        "lägst",
+        "kallas för",
+        "frack",
+        "hänga med",
+        "intill",
+        "i samband med",
+        "få svar",
+        "vägg",
+        "delvis",
+        "döv",
+        "snabbare än",
+        "serie",
+        "nära samarbete",
+        "halvsanning",
+        "… för sig"
+    ],
+    "secondary_words_used": []
+}

@@ -1,0 +1,633 @@
+{
+    "course_id": "sfid",
+    "course_title": "SFI D",
+    "stage_id": "stage_05",
+    "stage_title": "Utbildning",
+    "article_id": "art_11",
+    "article_title": "Läsförståelse",
+    "target_word_count": 60,
+    "sentences": [
+        {
+            "sentence_id": "art_11_s001",
+            "sv": "Jag studerar ett nytt ämne på en spännande folkhögskola i staden.",
+            "en": "I am studying a new subject at an exciting folk high school in the city.",
+            "target_words": [
+                {
+                    "word_in_sentence": "ämne",
+                    "base_form": "ämne",
+                    "position_start": 22,
+                    "position_end": 26
+                },
+                {
+                    "word_in_sentence": "folkhögskola",
+                    "base_form": "folkhögskola",
+                    "position_start": 43,
+                    "position_end": 55
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_11_s002",
+            "sv": "Varje dag har vi en föreläsning om olika historiska språk, och förra veckan lärde vi oss mycket om den indoeuropeiska språkfamiljen.",
+            "en": "Every day we have a lecture about different historical languages, and last week we learned a lot about the Indo-European language family.",
+            "target_words": [
+                {
+                    "word_in_sentence": "föreläsning",
+                    "base_form": "föreläsning",
+                    "position_start": 20,
+                    "position_end": 31
+                },
+                {
+                    "word_in_sentence": "indoeuropeiska",
+                    "base_form": "indoeuropeiska",
+                    "position_start": 103,
+                    "position_end": 117
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_11_s003",
+            "sv": "I den familjen är det välkänt att germanska språk som urnordiska, isländska och färöiska ingår.",
+            "en": "In that family it is well known that Germanic languages such as Proto-Norse, Icelandic and Faroese are included.",
+            "target_words": [
+                {
+                    "word_in_sentence": "germanska",
+                    "base_form": "germanska",
+                    "position_start": 34,
+                    "position_end": 43
+                },
+                {
+                    "word_in_sentence": "urnordiska",
+                    "base_form": "urnordiska",
+                    "position_start": 54,
+                    "position_end": 64
+                },
+                {
+                    "word_in_sentence": "isländska",
+                    "base_form": "isländska",
+                    "position_start": 66,
+                    "position_end": 75
+                },
+                {
+                    "word_in_sentence": "färöiska",
+                    "base_form": "färöiska",
+                    "position_start": 80,
+                    "position_end": 88
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_11_s004",
+            "sv": "Även om de är besläktade, och har liknande grammatik, låter de ofta väldigt olika när de talas.",
+            "en": "Even though they are related, and have similar grammar, they often sound very different when spoken.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Även om",
+                    "base_form": "även om",
+                    "position_start": 0,
+                    "position_end": 7
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_11_s005",
+            "sv": "Andra kända språk i Europa som estniska, samiska och ungerska tillhör nämligen den finsk-ugriska familjen.",
+            "en": "Other famous languages in Europe like Estonian, Sami and Hungarian actually belong to the Finno-Ugric family.",
+            "target_words": [
+                {
+                    "word_in_sentence": "estniska",
+                    "base_form": "estniska",
+                    "position_start": 31,
+                    "position_end": 39
+                },
+                {
+                    "word_in_sentence": "samiska",
+                    "base_form": "samiska",
+                    "position_start": 41,
+                    "position_end": 48
+                },
+                {
+                    "word_in_sentence": "ungerska",
+                    "base_form": "ungerska",
+                    "position_start": 53,
+                    "position_end": 61
+                },
+                {
+                    "word_in_sentence": "nämligen",
+                    "base_form": "nämligen",
+                    "position_start": 70,
+                    "position_end": 78
+                },
+                {
+                    "word_in_sentence": "finsk-ugriska",
+                    "base_form": "finsk-ugriska",
+                    "position_start": 83,
+                    "position_end": 96
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_11_s006",
+            "sv": "Dessutom talade vi om inuitspråk på Grönland och hur en rysk dialekt kan påverka en hel grupp av människor i gränsområden.",
+            "en": "In addition we talked about Inuit languages in Greenland and how a Russian dialect can affect an entire group of people in border areas.",
+            "target_words": [
+                {
+                    "word_in_sentence": "inuitspråk",
+                    "base_form": "inuitspråk",
+                    "position_start": 22,
+                    "position_end": 32
+                },
+                {
+                    "word_in_sentence": "rysk",
+                    "base_form": "rysk",
+                    "position_start": 56,
+                    "position_end": 60
+                },
+                {
+                    "word_in_sentence": "grupp",
+                    "base_form": "grupp",
+                    "position_start": 88,
+                    "position_end": 93
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_11_s007",
+            "sv": "\"Kommer du ihåg?\" frågade en äldre dam i min klass när vi diskuterade.",
+            "en": "\"Do you remember?\" an older lady in my class asked when we discussed.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Kommer du ihåg?",
+                    "base_form": "Kommer du ihåg?",
+                    "position_start": 1,
+                    "position_end": 16
+                },
+                {
+                    "word_in_sentence": "dam",
+                    "base_form": "dam",
+                    "position_start": 35,
+                    "position_end": 38
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_11_s008",
+            "sv": "\"Läraren sa att det finns en gigantisk summa språk i världen, över sex tusen totalt!\"",
+            "en": "\"The teacher said that there is a gigantic sum of languages in the world, over six thousand in total!\"",
+            "target_words": [
+                {
+                    "word_in_sentence": "gigantisk",
+                    "base_form": "giantisk",
+                    "position_start": 29,
+                    "position_end": 38
+                },
+                {
+                    "word_in_sentence": "summa",
+                    "base_form": "summa",
+                    "position_start": 39,
+                    "position_end": 44
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_11_s009",
+            "sv": "Vi fick därefter i uppgift att skriva en artikel om grammatik.",
+            "en": "We were then given the task of writing an article about grammar.",
+            "target_words": [
+                {
+                    "word_in_sentence": "artikel",
+                    "base_form": "artikel",
+                    "position_start": 41,
+                    "position_end": 48
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_11_s010",
+            "sv": "Läraren sa att vi skulle välja en röd rubrik och skriva en bra inledning för att locka läsaren.",
+            "en": "The teacher said we should choose a red headline and write a good introduction to attract the reader.",
+            "target_words": [
+                {
+                    "word_in_sentence": "röd",
+                    "base_form": "röd",
+                    "position_start": 34,
+                    "position_end": 37
+                },
+                {
+                    "word_in_sentence": "rubrik",
+                    "base_form": "rubrik",
+                    "position_start": 38,
+                    "position_end": 44
+                },
+                {
+                    "word_in_sentence": "inledning",
+                    "base_form": "inledning",
+                    "position_start": 63,
+                    "position_end": 72
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_11_s011",
+            "sv": "Förutom det måste vi följa en kursiverad språkkonvention för alla exempelord.",
+            "en": "Besides that, we had to follow an italicized language convention for all example words.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Förutom",
+                    "base_form": "förutom",
+                    "position_start": 0,
+                    "position_end": 7
+                },
+                {
+                    "word_in_sentence": "kursiverad",
+                    "base_form": "kursiverad",
+                    "position_start": 30,
+                    "position_end": 40
+                },
+                {
+                    "word_in_sentence": "språkkonvention",
+                    "base_form": "språkkonvention",
+                    "position_start": 41,
+                    "position_end": 56
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_11_s012",
+            "sv": "Ett råd var att \"Säga något högt\" när man skriver.",
+            "en": "A piece of advice was to \"Say something out loud\" when writing.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Säga något högt",
+                    "base_form": "Säga något högt",
+                    "position_start": 17,
+                    "position_end": 32
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_11_s013",
+            "sv": "Vi skulle nämligen redovisa allt detta skriftligt inför hela klassen.",
+            "en": "We were namely to present all of this in writing to the whole class.",
+            "target_words": [
+                {
+                    "word_in_sentence": "nämligen",
+                    "base_form": "nämligen",
+                    "position_start": 10,
+                    "position_end": 18
+                },
+                {
+                    "word_in_sentence": "redovisa",
+                    "base_form": "redovisa",
+                    "position_start": 19,
+                    "position_end": 27
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_11_s014",
+            "sv": "För att göra det tydligare: man kan till exempel… sätta ett sammansatt ord inom parentes för att förklara dess betydelse.",
+            "en": "To make it clearer: you can for example... put a compound word in parentheses to explain its meaning.",
+            "target_words": [
+                {
+                    "word_in_sentence": "man kan till exempel…",
+                    "base_form": "man kan till exempel…",
+                    "position_start": 28,
+                    "position_end": 49
+                },
+                {
+                    "word_in_sentence": "sammansatt",
+                    "base_form": "sammansatt",
+                    "position_start": 60,
+                    "position_end": 70
+                },
+                {
+                    "word_in_sentence": "inom parentes",
+                    "base_form": "inom parentes",
+                    "position_start": 75,
+                    "position_end": 88
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_11_s015",
+            "sv": "\"Har du provat/försökt att…?\" frågade läraren när jag verkade osäker.",
+            "en": "\"Have you tried/attempted to...?\" the teacher asked when I seemed unsure.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Har du provat/försökt att…?",
+                    "base_form": "Har du provat/försökt att…?",
+                    "position_start": 1,
+                    "position_end": 28
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_11_s016",
+            "sv": "Hon gav mig mycket stöd.",
+            "en": "She gave me a lot of support.",
+            "target_words": []
+        },
+        {
+            "sentence_id": "art_11_s017",
+            "sv": "I vår text skulle vi framförallt visa att vi förstår grundläggande grammatik.",
+            "en": "In our text we were primarily to show that we understand basic grammar.",
+            "target_words": []
+        },
+        {
+            "sentence_id": "art_11_s018",
+            "sv": "Vi fyllde noggrant en kolumn i boken med verb i infinitiv, presens och preteritum.",
+            "en": "We carefully filled a column in the book with verbs in the infinitive, present and preterite.",
+            "target_words": [
+                {
+                    "word_in_sentence": "kolumn",
+                    "base_form": "kolumn",
+                    "position_start": 22,
+                    "position_end": 28
+                },
+                {
+                    "word_in_sentence": "infinitiv",
+                    "base_form": "infinitiv",
+                    "position_start": 48,
+                    "position_end": 57
+                },
+                {
+                    "word_in_sentence": "presens",
+                    "base_form": "presens",
+                    "position_start": 59,
+                    "position_end": 66
+                },
+                {
+                    "word_in_sentence": "preteritum",
+                    "base_form": "preteritum",
+                    "position_start": 71,
+                    "position_end": 81
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_11_s019",
+            "sv": "Vi lärde oss också att böja varje verbgrupp i rätt tempus, som till exempel konditionalis, vilket kan vara ganska svårt för många.",
+            "en": "We also learned to conjugate each verb group in the correct tense, such as the conditional, which can be quite difficult for many.",
+            "target_words": [
+                {
+                    "word_in_sentence": "grupp",
+                    "base_form": "grupp",
+                    "position_start": 38,
+                    "position_end": 43
+                },
+                {
+                    "word_in_sentence": "verbgrupp",
+                    "base_form": "verbgrupp",
+                    "position_start": 34,
+                    "position_end": 43
+                },
+                {
+                    "word_in_sentence": "tempus",
+                    "base_form": "tempus",
+                    "position_start": 51,
+                    "position_end": 57
+                },
+                {
+                    "word_in_sentence": "konditionalis",
+                    "base_form": "konditionalis",
+                    "position_start": 76,
+                    "position_end": 89
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_11_s020",
+            "sv": "En komplett verbfras är viktig, precis som att använda bra sambandsord och förstå hur direkt och indirekt tal fungerar i dialoger.",
+            "en": "A complete verb phrase is important, just like using good linking words and understanding how direct and indirect speech works in dialogues.",
+            "target_words": [
+                {
+                    "word_in_sentence": "verbfras",
+                    "base_form": "verbfras",
+                    "position_start": 12,
+                    "position_end": 20
+                },
+                {
+                    "word_in_sentence": "sambandsord",
+                    "base_form": "sambandsord",
+                    "position_start": 59,
+                    "position_end": 70
+                },
+                {
+                    "word_in_sentence": "indirekt tal",
+                    "base_form": "indirekt tal",
+                    "position_start": 97,
+                    "position_end": 109
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_11_s021",
+            "sv": "Vi lärde oss även skillnaden mellan vad som är en kort stavelse och en lång stavelse när man pratar.",
+            "en": "We also learned the difference between what is a short syllable and a long syllable when speaking.",
+            "target_words": [
+                {
+                    "word_in_sentence": "kort stavelse",
+                    "base_form": "kort stavelse",
+                    "position_start": 50,
+                    "position_end": 63
+                },
+                {
+                    "word_in_sentence": "lång stavelse",
+                    "base_form": "lång stavelse",
+                    "position_start": 71,
+                    "position_end": 84
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_11_s022",
+            "sv": "Vi fick i uppdrag att meddela varandra omedelbart om vi såg en felaktig genetivform eller ett adjektiv i superlativ.",
+            "en": "We were tasked with notifying each other immediately if we saw an incorrect genitive form or an adjective in the superlative.",
+            "target_words": [
+                {
+                    "word_in_sentence": "meddela",
+                    "base_form": "meddela",
+                    "position_start": 22,
+                    "position_end": 29
+                },
+                {
+                    "word_in_sentence": "genetivform",
+                    "base_form": "genetivform",
+                    "position_start": 72,
+                    "position_end": 83
+                },
+                {
+                    "word_in_sentence": "superlativ",
+                    "base_form": "superlativ",
+                    "position_start": 105,
+                    "position_end": 115
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_11_s023",
+            "sv": "Slutligen berättade läraren om hur nuvarande och samtida regler ständigt har utvecklats genom åren.",
+            "en": "Finally, the teacher talked about how current and contemporary rules have constantly evolved over the years.",
+            "target_words": [
+                {
+                    "word_in_sentence": "nuvarande",
+                    "base_form": "nuvarande",
+                    "position_start": 35,
+                    "position_end": 44
+                },
+                {
+                    "word_in_sentence": "samtida",
+                    "base_form": "samtida",
+                    "position_start": 49,
+                    "position_end": 56
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_11_s024",
+            "sv": "Svenska akademien arbetar mycket aktivt för att möta nya behov i samhället.",
+            "en": "The Swedish Academy works very actively to meet new needs in society.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Svenska akademien",
+                    "base_form": "Svenska akademien",
+                    "position_start": 0,
+                    "position_end": 17
+                },
+                {
+                    "word_in_sentence": "möta",
+                    "base_form": "möta",
+                    "position_start": 48,
+                    "position_end": 52
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_11_s025",
+            "sv": "Ett politiskt beslut eller en negativ debatt mot vissa förändringar påverkar också hur språket växer.",
+            "en": "A political decision or a negative debate against certain changes also affects how the language grows.",
+            "target_words": [
+                {
+                    "word_in_sentence": "politiskt",
+                    "base_form": "politisk",
+                    "position_start": 4,
+                    "position_end": 13
+                },
+                {
+                    "word_in_sentence": "negativ",
+                    "base_form": "negativ",
+                    "position_start": 30,
+                    "position_end": 37
+                },
+                {
+                    "word_in_sentence": "mot",
+                    "base_form": "mot",
+                    "position_start": 45,
+                    "position_end": 48
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_11_s026",
+            "sv": "Nya ord kan ständigt födas ur vardagen, medan andra kan falla bort, nästan på samma sätt som gamla kläder säljs på extrapris.",
+            "en": "New words can constantly be born out of everyday life, while others can fall away, almost in the same way as old clothes are sold at a discount.",
+            "target_words": [
+                {
+                    "word_in_sentence": "födas",
+                    "base_form": "födas",
+                    "position_start": 21,
+                    "position_end": 26
+                },
+                {
+                    "word_in_sentence": "falla",
+                    "base_form": "falla",
+                    "position_start": 56,
+                    "position_end": 61
+                },
+                {
+                    "word_in_sentence": "extrapris",
+                    "base_form": "extrapris",
+                    "position_start": 115,
+                    "position_end": 124
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_11_s027",
+            "sv": "Det kändes otroligt bra när texten slutligen blev helt färdig efter allt hårt arbete.",
+            "en": "It felt incredibly good when the text was finally completely finished after all the hard work.",
+            "target_words": [
+                {
+                    "word_in_sentence": "färdig",
+                    "base_form": "färdig",
+                    "position_start": 55,
+                    "position_end": 61
+                }
+            ]
+        }
+    ],
+    "primary_words_used": [
+        "rubrik",
+        "artikel",
+        "verbfras",
+        "lång stavelse",
+        "kort stavelse",
+        "inledning",
+        "sambandsord",
+        "presens",
+        "kolumn",
+        "verbgrupp",
+        "infinitiv",
+        "indirekt tal",
+        "preteritum",
+        "inom parentes",
+        "redovisa",
+        "genetivform",
+        "ämne",
+        "konditionalis",
+        "tempus",
+        "superlativ",
+        "finsk-ugriska",
+        "föreläsning",
+        "inuitspråk",
+        "folkhögskola",
+        "kursiverad",
+        "urnordiska",
+        "estniska",
+        "Svenska akademien",
+        "färöiska",
+        "germanska",
+        "indoeuropeiska",
+        "isländska",
+        "samiska",
+        "ungerska",
+        "sammansatt",
+        "språkkonvention",
+        "rysk",
+        "nuvarande",
+        "dam",
+        "summa",
+        "Säga något högt",
+        "födas",
+        "falla",
+        "färdig",
+        "meddela",
+        "man kan till exempel…",
+        "samtida",
+        "Kommer du ihåg?",
+        "giantisk",
+        "negativ",
+        "extrapris",
+        "mot",
+        "röd",
+        "nämligen",
+        "politisk",
+        "även om",
+        "förutom",
+        "grupp",
+        "Har du provat/försökt att…?",
+        "möta"
+    ],
+    "secondary_words_used": []
+}

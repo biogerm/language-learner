@@ -1,0 +1,651 @@
+{
+    "course_id": "sfid",
+    "course_title": "SFI D",
+    "stage_id": "stage_02",
+    "stage_title": "Samhälle & Politik",
+    "article_id": "art_48",
+    "article_title": "Läsförståelse",
+    "target_word_count": 60,
+    "sentences": [
+        {
+            "sentence_id": "art_48_s001",
+            "sv": "En fredag pratade min lärare, en trevlig engelsman, mycket om svensk politik och historia, om förr och nu.",
+            "en": "One Friday my teacher, a nice Englishman, talked a lot about Swedish politics and history, about past and present.",
+            "target_words": [
+                {
+                    "word_in_sentence": "fredag",
+                    "base_form": "fredag",
+                    "position_start": 3,
+                    "position_end": 9
+                },
+                {
+                    "word_in_sentence": "engelsman",
+                    "base_form": "engelsman",
+                    "position_start": 41,
+                    "position_end": 50
+                },
+                {
+                    "word_in_sentence": "förr och nu",
+                    "base_form": "förr och nu",
+                    "position_start": 94,
+                    "position_end": 105
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_48_s002",
+            "sv": "\"Hänger du med?\" frågade han och såg på oss.",
+            "en": "\"Are you following along?\" he asked and looked at us.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Hänger du med?",
+                    "base_form": "Hänger du med?",
+                    "position_start": 1,
+                    "position_end": 15
+                },
+                {
+                    "word_in_sentence": "oss",
+                    "base_form": "oss",
+                    "position_start": 40,
+                    "position_end": 43
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_48_s003",
+            "sv": "\"Redan som ung hörde jag ofta en berättelse om hur gamla länder fungerade,\" började han.",
+            "en": "\"Even when I was young I often heard a story about how old countries functioned,\" he began.",
+            "target_words": [
+                {
+                    "word_in_sentence": "som ung",
+                    "base_form": "som ung",
+                    "position_start": 7,
+                    "position_end": 14
+                },
+                {
+                    "word_in_sentence": "berättelse",
+                    "base_form": "berättelse",
+                    "position_start": 33,
+                    "position_end": 43
+                },
+                {
+                    "word_in_sentence": "län",
+                    "base_form": "län",
+                    "position_start": 57,
+                    "position_end": 60
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_48_s004",
+            "sv": "\"Vissa länder hade länge ett mäktigt styre under en bestämd kejsarinna.",
+            "en": "\"Some countries had for a long time a powerful rule under a specific empress.",
+            "target_words": [
+                {
+                    "word_in_sentence": "län",
+                    "base_form": "län",
+                    "position_start": 7,
+                    "position_end": 10
+                },
+                {
+                    "word_in_sentence": "styre",
+                    "base_form": "styre",
+                    "position_start": 37,
+                    "position_end": 42
+                },
+                {
+                    "word_in_sentence": "kejsarinna",
+                    "base_form": "kejsarinna",
+                    "position_start": 60,
+                    "position_end": 70
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_48_s005",
+            "sv": "På den tiden skulle man kröna en härskare under pompa och ståt för att hen skulle sitta på en tron.",
+            "en": "At that time you would crown a ruler with pomp and circumstance so that they would sit on a throne.",
+            "target_words": [
+                {
+                    "word_in_sentence": "kröna",
+                    "base_form": "kröna",
+                    "position_start": 24,
+                    "position_end": 29
+                },
+                {
+                    "word_in_sentence": "tron",
+                    "base_form": "tron",
+                    "position_start": 94,
+                    "position_end": 98
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_48_s006",
+            "sv": "Ibland fanns det också en religiös ledare, som en katolsk påve, eller en representant för en luthersk trosinriktning inom vår tidiga kristendom.\"",
+            "en": "Sometimes there was also a religious leader, like a Catholic pope, or a representative for a Lutheran denomination within our early Christianity.\"",
+            "target_words": [
+                {
+                    "word_in_sentence": "påve",
+                    "base_form": "påve",
+                    "position_start": 58,
+                    "position_end": 62
+                },
+                {
+                    "word_in_sentence": "representant",
+                    "base_form": "representant",
+                    "position_start": 73,
+                    "position_end": 85
+                },
+                {
+                    "word_in_sentence": "luthersk",
+                    "base_form": "lutheransk",
+                    "position_start": 93,
+                    "position_end": 101
+                },
+                {
+                    "word_in_sentence": "trosinriktning",
+                    "base_form": "trosinriktning",
+                    "position_start": 102,
+                    "position_end": 116
+                },
+                {
+                    "word_in_sentence": "kristendom",
+                    "base_form": "kristendom",
+                    "position_start": 133,
+                    "position_end": 143
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_48_s007",
+            "sv": "Han berättade att det ofta var farligt att lägga sig i makten på den tiden.",
+            "en": "He recounted that it was often dangerous to meddle in power at that time.",
+            "target_words": [
+                {
+                    "word_in_sentence": "lägga sig i",
+                    "base_form": "lägga sig i",
+                    "position_start": 43,
+                    "position_end": 54
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_48_s008",
+            "sv": "En okänd utlänning eller en politisk motståndare kunde snabbt hamna på en galgbacke för en blodig avrättning.",
+            "en": "An unknown foreigner or a political opponent could quickly end up on a gallows hill for a bloody execution.",
+            "target_words": [
+                {
+                    "word_in_sentence": "län",
+                    "base_form": "län",
+                    "position_start": 11,
+                    "position_end": 14
+                },
+                {
+                    "word_in_sentence": "utlänning",
+                    "base_form": "utlänning",
+                    "position_start": 9,
+                    "position_end": 18
+                },
+                {
+                    "word_in_sentence": "galgbacke",
+                    "base_form": "galgbacke",
+                    "position_start": 74,
+                    "position_end": 83
+                },
+                {
+                    "word_in_sentence": "avrättning",
+                    "base_form": "avrättning",
+                    "position_start": 98,
+                    "position_end": 108
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_48_s009",
+            "sv": "Man kunde också bli tvingad att rulla ihop sig i fosterställning om någon hotade att skjuta en tung järnkula mot en under ett krig.",
+            "en": "You could also be forced to curl up into a fetal position if someone threatened to shoot a heavy iron ball at you during a war.",
+            "target_words": [
+                {
+                    "word_in_sentence": "fosterställning",
+                    "base_form": "fosterställning",
+                    "position_start": 49,
+                    "position_end": 64
+                },
+                {
+                    "word_in_sentence": "skjuta",
+                    "base_form": "skjuta",
+                    "position_start": 85,
+                    "position_end": 91
+                },
+                {
+                    "word_in_sentence": "järnkula",
+                    "base_form": "järnkula",
+                    "position_start": 100,
+                    "position_end": 108
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_48_s010",
+            "sv": "\"Hur dum får man vara?\" sa en klasskamrat och började stirra på en hemsk bild i en tidning om gamla vapen.",
+            "en": "\"How stupid can you be?\" a classmate said and began staring at a terrible picture in a magazine about old weapons.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Hur dum får man vara?",
+                    "base_form": "Hur dum får man vara?",
+                    "position_start": 1,
+                    "position_end": 22
+                },
+                {
+                    "word_in_sentence": "stirra",
+                    "base_form": "stirra",
+                    "position_start": 54,
+                    "position_end": 60
+                },
+                {
+                    "word_in_sentence": "tidning",
+                    "base_form": "tidning",
+                    "position_start": 83,
+                    "position_end": 90
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_48_s011",
+            "sv": "\"En tvåkilos kula är ju jättetung och livsfarlig.\"",
+            "en": "\"A two-kilo ball is super heavy and life-threatening.\"",
+            "target_words": [
+                {
+                    "word_in_sentence": "tvåkilos",
+                    "base_form": "tvåkilos",
+                    "position_start": 4,
+                    "position_end": 12
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_48_s012",
+            "sv": "Sedan ändrades samhället drastiskt.",
+            "en": "Then society changed drastically.",
+            "target_words": []
+        },
+        {
+            "sentence_id": "art_48_s013",
+            "sv": "Vi gick från manuellt arbete till industriell masstillverkning och en ökad konsumtion i sig, mycket tack vare tidig globalisering.",
+            "en": "We went from manual labor to industrial mass production and an increased consumption in itself, much thanks to early globalization.",
+            "target_words": [
+                {
+                    "word_in_sentence": "masstillverkning",
+                    "base_form": "masstillverkning",
+                    "position_start": 46,
+                    "position_end": 62
+                },
+                {
+                    "word_in_sentence": "konsumtion",
+                    "base_form": "konsumtion",
+                    "position_start": 75,
+                    "position_end": 85
+                },
+                {
+                    "word_in_sentence": "i sig",
+                    "base_form": "i sig",
+                    "position_start": 86,
+                    "position_end": 91
+                },
+                {
+                    "word_in_sentence": "globalisering",
+                    "base_form": "globalisering",
+                    "position_start": 116,
+                    "position_end": 129
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_48_s014",
+            "sv": "Vårt eget land fick ett nytt politiskt system.",
+            "en": "Our own country got a new political system.",
+            "target_words": []
+        },
+        {
+            "sentence_id": "art_48_s015",
+            "sv": "Ett lokalt förbund från varje län samlades för att skapa en demokratisk stat.",
+            "en": "A local association from each county gathered to create a democratic state.",
+            "target_words": [
+                {
+                    "word_in_sentence": "län",
+                    "base_form": "län",
+                    "position_start": 30,
+                    "position_end": 33
+                },
+                {
+                    "word_in_sentence": "förbund",
+                    "base_form": "förbund",
+                    "position_start": 11,
+                    "position_end": 18
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_48_s016",
+            "sv": "Idag styrs mycket lagstiftning av en riksdagsledamot i Stockholm och varje lokal ledamot i våra olika kommittéer.",
+            "en": "Today much legislation is governed by a member of parliament in Stockholm and every local member in our various committees.",
+            "target_words": [
+                {
+                    "word_in_sentence": "riksdagsledamot",
+                    "base_form": "riksdagsledamot",
+                    "position_start": 37,
+                    "position_end": 52
+                },
+                {
+                    "word_in_sentence": "ledamot",
+                    "base_form": "ledamot",
+                    "position_start": 45,
+                    "position_end": 52
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_48_s017",
+            "sv": "En viktig representant för folket bör ha en modern syn på allas jämlikhet, helt oavsett kön eller sexuell läggning.",
+            "en": "An important representative for the people should have a modern view of everyone's equality, completely regardless of gender or sexual orientation.",
+            "target_words": [
+                {
+                    "word_in_sentence": "representant",
+                    "base_form": "representant",
+                    "position_start": 10,
+                    "position_end": 22
+                },
+                {
+                    "word_in_sentence": "bör ha",
+                    "base_form": "bör ha",
+                    "position_start": 34,
+                    "position_end": 40
+                },
+                {
+                    "word_in_sentence": "kön",
+                    "base_form": "kön",
+                    "position_start": 88,
+                    "position_end": 91
+                },
+                {
+                    "word_in_sentence": "sexuell läggning",
+                    "base_form": "sexuell läggning",
+                    "position_start": 98,
+                    "position_end": 114
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_48_s018",
+            "sv": "Samtidigt kan en stor folkomröstning eller en mer vanlig omröstning handla om väldigt svåra frågor.",
+            "en": "At the same time, a large referendum or a more ordinary vote can be about very difficult issues.",
+            "target_words": [
+                {
+                    "word_in_sentence": "folkomröstning",
+                    "base_form": "folkomröstning",
+                    "position_start": 22,
+                    "position_end": 36
+                },
+                {
+                    "word_in_sentence": "omröstning",
+                    "base_form": "omröstning",
+                    "position_start": 26,
+                    "position_end": 36
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_48_s019",
+            "sv": "Även tolv år senare minns man kanske ett historiskt beslut om till exempel ett nationellt spritförbud och hur svårt det var att hålla reda på alla olika politiska åsikter.",
+            "en": "Even twelve years later you might remember a historic decision about for example a national liquor prohibition and how hard it was to keep track of all the different political opinions.",
+            "target_words": [
+                {
+                    "word_in_sentence": "tolv år senare",
+                    "base_form": "tolv år senare",
+                    "position_start": 5,
+                    "position_end": 19
+                },
+                {
+                    "word_in_sentence": "spritförbud",
+                    "base_form": "spritförbud",
+                    "position_start": 90,
+                    "position_end": 101
+                },
+                {
+                    "word_in_sentence": "hålla reda på",
+                    "base_form": "hålla reda på",
+                    "position_start": 128,
+                    "position_end": 141
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_48_s020",
+            "sv": "Idag diskuterar vi moderna faror som rasism och högerextremism.",
+            "en": "Today we discuss modern dangers like racism and right-wing extremism.",
+            "target_words": [
+                {
+                    "word_in_sentence": "högerextremism",
+                    "base_form": "högerextremism",
+                    "position_start": 48,
+                    "position_end": 62
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_48_s021",
+            "sv": "Ibland går en känd kvinnlig partiledare ut i ett stort nyhetsprogram för att påminna om vikten av ett politiskt samförstånd mellan två stora politiska block.",
+            "en": "Sometimes a famous female party leader goes out on a major news program to remind of the importance of a political consensus between two major political blocs.",
+            "target_words": [
+                {
+                    "word_in_sentence": "kvinnlig",
+                    "base_form": "kvinnlig",
+                    "position_start": 19,
+                    "position_end": 27
+                },
+                {
+                    "word_in_sentence": "nyhetsprogram",
+                    "base_form": "nyhetsprogram",
+                    "position_start": 55,
+                    "position_end": 68
+                },
+                {
+                    "word_in_sentence": "påminna om",
+                    "base_form": "påminna om",
+                    "position_start": 77,
+                    "position_end": 87
+                },
+                {
+                    "word_in_sentence": "samförstånd",
+                    "base_form": "samförstånd",
+                    "position_start": 112,
+                    "position_end": 123
+                },
+                {
+                    "word_in_sentence": "block",
+                    "base_form": "block",
+                    "position_start": 151,
+                    "position_end": 156
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_48_s022",
+            "sv": "Då krävs det ofta en stark koalition.",
+            "en": "Then a strong coalition is often required.",
+            "target_words": [
+                {
+                    "word_in_sentence": "koalition",
+                    "base_form": "koalition",
+                    "position_start": 27,
+                    "position_end": 36
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_48_s023",
+            "sv": "Man försöker gemensamt bekämpa farliga idéer som extrem kommunism.",
+            "en": "You try to jointly fight dangerous ideas like extreme communism.",
+            "target_words": [
+                {
+                    "word_in_sentence": "kommunism",
+                    "base_form": "kommuism",
+                    "position_start": 56,
+                    "position_end": 65
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_48_s024",
+            "sv": "Om folket vill klaga, väljer de ofta att demonstrera i en fredlig demonstration.",
+            "en": "If the people want to complain, they often choose to demonstrate in a peaceful demonstration.",
+            "target_words": [
+                {
+                    "word_in_sentence": "demonstrera",
+                    "base_form": "demonstrera",
+                    "position_start": 41,
+                    "position_end": 52
+                },
+                {
+                    "word_in_sentence": "demonstration",
+                    "base_form": "demonstration",
+                    "position_start": 66,
+                    "position_end": 79
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_48_s025",
+            "sv": "Det stora torget brukar vara nere på stan, och det fungerar som en mycket bra samlingsplats.",
+            "en": "The main square is usually down in town, and it serves as a very good gathering place.",
+            "target_words": [
+                {
+                    "word_in_sentence": "vara nere på",
+                    "base_form": "vara nere på",
+                    "position_start": 24,
+                    "position_end": 36
+                },
+                {
+                    "word_in_sentence": "samlingsplats",
+                    "base_form": "samlingsplats",
+                    "position_start": 78,
+                    "position_end": 91
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_48_s026",
+            "sv": "Nyligen hörde jag en schweizisk politiker som var envis som en åsna inför ett nytt lagförslag om framtidens familjer.",
+            "en": "Recently I heard a Swiss politician who was stubborn as a mule facing a new bill about the families of the future.",
+            "target_words": [
+                {
+                    "word_in_sentence": "schweizisk",
+                    "base_form": "schweizisk",
+                    "position_start": 21,
+                    "position_end": 31
+                },
+                {
+                    "word_in_sentence": "envis som en åsna",
+                    "base_form": "envis som en åsna",
+                    "position_start": 50,
+                    "position_end": 67
+                },
+                {
+                    "word_in_sentence": "inför",
+                    "base_form": "inför",
+                    "position_start": 68,
+                    "position_end": 73
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_48_s027",
+            "sv": "Han diskuterade bland annat rätten att adoptera små barn från ett utsatt barnhem.",
+            "en": "He discussed among other things the right to adopt small children from a vulnerable orphanage.",
+            "target_words": [
+                {
+                    "word_in_sentence": "adoptera",
+                    "base_form": "adoptera",
+                    "position_start": 39,
+                    "position_end": 47
+                },
+                {
+                    "word_in_sentence": "barnhem",
+                    "base_form": "barnhem",
+                    "position_start": 73,
+                    "position_end": 80
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_48_s028",
+            "sv": "Det visade tydligt att politik alltid är och förblir viktigt för vår vardag.",
+            "en": "It clearly showed that politics always is and remains important for our everyday life.",
+            "target_words": []
+        }
+    ],
+    "primary_words_used": [
+        "representant",
+        "block",
+        "masstillverkning",
+        "kejsarinna",
+        "koalition",
+        "högerextremism",
+        "samförstånd",
+        "tvåkilos",
+        "styre",
+        "konsumtion",
+        "schweizisk",
+        "skjuta",
+        "barnhem",
+        "järnkula",
+        "län",
+        "globalisering",
+        "kvinnlig",
+        "sexuell läggning",
+        "demonstration",
+        "lutheransk",
+        "demonstrera",
+        "spritförbud",
+        "engelsman",
+        "förbund",
+        "omröstning",
+        "trosinriktning",
+        "kommuism",
+        "kröna",
+        "folkomröstning",
+        "utlänning",
+        "påve",
+        "riksdagsledamot",
+        "kristendom",
+        "nyhetsprogram",
+        "galgbacke",
+        "avrättning",
+        "adoptera",
+        "ledamot",
+        "tron",
+        "kön",
+        "Hur dum får man vara?",
+        "tolv år senare",
+        "envis som en åsna",
+        "som ung",
+        "tidning",
+        "vara nere på",
+        "berättelse",
+        "bör ha",
+        "stirra",
+        "i sig",
+        "inför",
+        "hålla reda på",
+        "fredag",
+        "Hänger du med?",
+        "fosterställning",
+        "samlingsplats",
+        "oss",
+        "förr och nu",
+        "lägga sig i",
+        "påminna om"
+    ],
+    "secondary_words_used": []
+}

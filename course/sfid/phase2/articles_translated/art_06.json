@@ -1,0 +1,642 @@
+{
+    "course_id": "sfid",
+    "course_title": "SFI D",
+    "stage_id": "stage_01",
+    "stage_title": "Arbetsliv",
+    "article_id": "art_06",
+    "article_title": "Läsförståelse",
+    "target_word_count": 60,
+    "sentences": [
+        {
+            "sentence_id": "art_06_s001",
+            "sv": "För många börjar ett arbetsliv när de ska söka jobb för första gången.",
+            "en": "For many, a working life begins when they look for a job for the first time.",
+            "target_words": [
+                {
+                    "word_in_sentence": "arbetsliv",
+                    "base_form": "arbetsliv",
+                    "position_start": 21,
+                    "position_end": 30
+                },
+                {
+                    "word_in_sentence": "söka jobb",
+                    "base_form": "söka jobb",
+                    "position_start": 42,
+                    "position_end": 51
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_06_s002",
+            "sv": "\"Vad ville hon bli?\" frågade min chef.",
+            "en": "\"What did she want to be?\" my boss asked.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Vad ville hon bli?",
+                    "base_form": "Vad ville hon bli?",
+                    "position_start": 1,
+                    "position_end": 19
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_06_s003",
+            "sv": "Min vän var från en vanlig arbetarfamilj utanför staden, vars föräldrar var arbetare.",
+            "en": "My friend was from a regular working-class family outside the city, whose parents were workers.",
+            "target_words": [
+                {
+                    "word_in_sentence": "arbetarfamilj",
+                    "base_form": "arbetarfamilj",
+                    "position_start": 27,
+                    "position_end": 40
+                },
+                {
+                    "word_in_sentence": "utanför",
+                    "base_form": "utanför",
+                    "position_start": 41,
+                    "position_end": 48
+                },
+                {
+                    "word_in_sentence": "vars",
+                    "base_form": "vars",
+                    "position_start": 57,
+                    "position_end": 61
+                },
+                {
+                    "word_in_sentence": "arbetare",
+                    "base_form": "arbetare",
+                    "position_start": 76,
+                    "position_end": 84
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_06_s004",
+            "sv": "Hon ville inte bli präst, utan ville jobba på en fabrik.",
+            "en": "She didn't want to become a priest, but wanted to work at a factory.",
+            "target_words": [
+                {
+                    "word_in_sentence": "präst",
+                    "base_form": "präst",
+                    "position_start": 19,
+                    "position_end": 24
+                },
+                {
+                    "word_in_sentence": "fabrik",
+                    "base_form": "fabrik",
+                    "position_start": 49,
+                    "position_end": 55
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_06_s005",
+            "sv": "Hon började som sommarjobbare.",
+            "en": "She started as a summer worker.",
+            "target_words": [
+                {
+                    "word_in_sentence": "sommarjobbare",
+                    "base_form": "sommarjobbare",
+                    "position_start": 16,
+                    "position_end": 29
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_06_s006",
+            "sv": "Det var möjligt att de skulle anställa henne permanent direkt efter sommaren.",
+            "en": "It was possible that they would hire her permanently immediately after the summer.",
+            "target_words": [
+                {
+                    "word_in_sentence": "möjligt",
+                    "base_form": "möjlig",
+                    "position_start": 8,
+                    "position_end": 15
+                },
+                {
+                    "word_in_sentence": "anställa",
+                    "base_form": "anställa",
+                    "position_start": 30,
+                    "position_end": 38
+                },
+                {
+                    "word_in_sentence": "direkt efter",
+                    "base_form": "direkt efter",
+                    "position_start": 55,
+                    "position_end": 67
+                },
+                {
+                    "word_in_sentence": "efter",
+                    "base_form": "efter",
+                    "position_start": 62,
+                    "position_end": 67
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_06_s007",
+            "sv": "\"Hur många år har hon jobbat här?\" frågade jag.",
+            "en": "\"How many years has she worked here?\" I asked.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Hur många år har hon jobbat här?",
+                    "base_form": "Hur många år har du/han/hon jobbat här?",
+                    "position_start": 1,
+                    "position_end": 33
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_06_s008",
+            "sv": "Hon var nyss anställd.",
+            "en": "She was newly hired.",
+            "target_words": [
+                {
+                    "word_in_sentence": "anställd",
+                    "base_form": "anställd",
+                    "position_start": 13,
+                    "position_end": 21
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_06_s009",
+            "sv": "Fabriken var ett stort livsmedelsföretag.",
+            "en": "The factory was a large food company.",
+            "target_words": [
+                {
+                    "word_in_sentence": "fabrik",
+                    "base_form": "fabrik",
+                    "position_start": 0,
+                    "position_end": 6
+                },
+                {
+                    "word_in_sentence": "livsmedelsföretag",
+                    "base_form": "livmedelsföretag",
+                    "position_start": 23,
+                    "position_end": 40
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_06_s010",
+            "sv": "De hade ett gott samarbete med ett stort tevebolag.",
+            "en": "They had a good collaboration with a large television company.",
+            "target_words": [
+                {
+                    "word_in_sentence": "samarbete",
+                    "base_form": "samarbete",
+                    "position_start": 17,
+                    "position_end": 26
+                },
+                {
+                    "word_in_sentence": "tevebolag",
+                    "base_form": "tevebolag",
+                    "position_start": 41,
+                    "position_end": 50
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_06_s011",
+            "sv": "Det fanns ingen annan arbetsgivare som kunde konkurrera med deras resultat.",
+            "en": "There was no other employer who could compete with their results.",
+            "target_words": [
+                {
+                    "word_in_sentence": "ingen",
+                    "base_form": "ingen",
+                    "position_start": 10,
+                    "position_end": 15
+                },
+                {
+                    "word_in_sentence": "arbetsgivare",
+                    "base_form": "arbetsgivare",
+                    "position_start": 22,
+                    "position_end": 34
+                },
+                {
+                    "word_in_sentence": "konkurrera",
+                    "base_form": "konkurrera",
+                    "position_start": 45,
+                    "position_end": 55
+                },
+                {
+                    "word_in_sentence": "resultat",
+                    "base_form": "resultat",
+                    "position_start": 66,
+                    "position_end": 74
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_06_s012",
+            "sv": "Företaget var kanske en tredjedel så stort som de största i världen, men de var ändå framgångsrika.",
+            "en": "The company was perhaps a third as large as the largest in the world, but they were successful nonetheless.",
+            "target_words": [
+                {
+                    "word_in_sentence": "en tredjedel så stort som",
+                    "base_form": "en tredjedel så stort som",
+                    "position_start": 21,
+                    "position_end": 46
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_06_s013",
+            "sv": "De planerade att ingå partnerskap med en utländsk partner, trots att de behövde en bra taktik.",
+            "en": "They planned to enter a partnership with a foreign partner, even though they needed a good tactic.",
+            "target_words": [
+                {
+                    "word_in_sentence": "planerade",
+                    "base_form": "planera",
+                    "position_start": 3,
+                    "position_end": 12
+                },
+                {
+                    "word_in_sentence": "ingå partnerskap",
+                    "base_form": "ingå partnerskap",
+                    "position_start": 17,
+                    "position_end": 33
+                },
+                {
+                    "word_in_sentence": "trots att",
+                    "base_form": "trots att",
+                    "position_start": 59,
+                    "position_end": 68
+                },
+                {
+                    "word_in_sentence": "taktik",
+                    "base_form": "taktik",
+                    "position_start": 87,
+                    "position_end": 93
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_06_s014",
+            "sv": "För att prestera högst upp, var de tvungna att sätta upp ett tydligt mål.",
+            "en": "In order to perform at the highest level, they had to set a clear goal.",
+            "target_words": [
+                {
+                    "word_in_sentence": "prestera",
+                    "base_form": "prestera",
+                    "position_start": 8,
+                    "position_end": 16
+                },
+                {
+                    "word_in_sentence": "högst",
+                    "base_form": "högst",
+                    "position_start": 17,
+                    "position_end": 22
+                },
+                {
+                    "word_in_sentence": "mål",
+                    "base_form": "mål",
+                    "position_start": 69,
+                    "position_end": 72
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_06_s015",
+            "sv": "Men det var inte…förrän en ny chef tog över som problem började drabba dem.",
+            "en": "But it was not... until a new boss took over that problems began to hit them.",
+            "target_words": [
+                {
+                    "word_in_sentence": "inte…förrän",
+                    "base_form": "inte…förrän",
+                    "position_start": 12,
+                    "position_end": 23
+                },
+                {
+                    "word_in_sentence": "drabba",
+                    "base_form": "drabba",
+                    "position_start": 64,
+                    "position_end": 70
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_06_s016",
+            "sv": "Vissa regler saknade logisk mening.",
+            "en": "Some rules lacked logical sense.",
+            "target_words": [
+                {
+                    "word_in_sentence": "logisk",
+                    "base_form": "logisk",
+                    "position_start": 21,
+                    "position_end": 27
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_06_s017",
+            "sv": "De hade post som alltid kom sent och de glömde beställa kontorsmaterial.",
+            "en": "They had mail that always arrived late and they forgot to order office supplies.",
+            "target_words": [
+                {
+                    "word_in_sentence": "post",
+                    "base_form": "post",
+                    "position_start": 8,
+                    "position_end": 12
+                },
+                {
+                    "word_in_sentence": "kontorsmaterial",
+                    "base_form": "kontormaterial",
+                    "position_start": 56,
+                    "position_end": 71
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_06_s018",
+            "sv": "Det var viktigt att fack och personal fick bra arbetsvillkor och lika lön för lika arbete.",
+            "en": "It was important that unions and staff got good working conditions and equal pay for equal work.",
+            "target_words": [
+                {
+                    "word_in_sentence": "fack",
+                    "base_form": "fack",
+                    "position_start": 20,
+                    "position_end": 24
+                },
+                {
+                    "word_in_sentence": "arbetsvillkor",
+                    "base_form": "arbetsvillkor",
+                    "position_start": 47,
+                    "position_end": 60
+                },
+                {
+                    "word_in_sentence": "lika lön för lika arbete",
+                    "base_form": "lika lön för lika arbete",
+                    "position_start": 65,
+                    "position_end": 89
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_06_s019",
+            "sv": "Annars kunde de avskeda folk.",
+            "en": "Otherwise they could fire people.",
+            "target_words": [
+                {
+                    "word_in_sentence": "avskeda",
+                    "base_form": "avskeda",
+                    "position_start": 16,
+                    "position_end": 23
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_06_s020",
+            "sv": "En chef sa: \"Jag har en dröm.\"",
+            "en": "A boss said: \"I have a dream.\"",
+            "target_words": []
+        },
+        {
+            "sentence_id": "art_06_s021",
+            "sv": "Han talade om passfrihet och att man skulle referera till franska metoder.",
+            "en": "He talked about freedom of movement and that one should refer to French methods.",
+            "target_words": [
+                {
+                    "word_in_sentence": "passfrihet",
+                    "base_form": "passfrihet",
+                    "position_start": 14,
+                    "position_end": 24
+                },
+                {
+                    "word_in_sentence": "referera",
+                    "base_form": "referera",
+                    "position_start": 44,
+                    "position_end": 52
+                },
+                {
+                    "word_in_sentence": "franska",
+                    "base_form": "franska",
+                    "position_start": 58,
+                    "position_end": 65
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_06_s022",
+            "sv": "\"Det passar bra.\" sa en kollega.",
+            "en": "\"That fits well,\" a colleague said.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Det passar bra.",
+                    "base_form": "Det passar bra.",
+                    "position_start": 1,
+                    "position_end": 16
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_06_s023",
+            "sv": "\"Vi måste rapportera allt vi gör.",
+            "en": "\"We have to report everything we do.",
+            "target_words": [
+                {
+                    "word_in_sentence": "rapportera",
+                    "base_form": "rapportera",
+                    "position_start": 10,
+                    "position_end": 20
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_06_s024",
+            "sv": "Vi ska skapa nya regler under min mandatperiod och skicka ut dem.\"",
+            "en": "We will create new rules during my term of office and send them out.\"",
+            "target_words": [
+                {
+                    "word_in_sentence": "skapa",
+                    "base_form": "skapa",
+                    "position_start": 7,
+                    "position_end": 12
+                },
+                {
+                    "word_in_sentence": "mandatperiod",
+                    "base_form": "mandatperiod",
+                    "position_start": 34,
+                    "position_end": 46
+                },
+                {
+                    "word_in_sentence": "skicka",
+                    "base_form": "skicka",
+                    "position_start": 51,
+                    "position_end": 57
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_06_s025",
+            "sv": "Han tog mycket ansvar för sin nya roll.",
+            "en": "He took a lot of responsibility for his new role.",
+            "target_words": [
+                {
+                    "word_in_sentence": "ansvar",
+                    "base_form": "ansvar",
+                    "position_start": 15,
+                    "position_end": 21
+                },
+                {
+                    "word_in_sentence": "roll",
+                    "base_form": "roll",
+                    "position_start": 34,
+                    "position_end": 38
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_06_s026",
+            "sv": "Han sa också till de anställda: \"Vänligen följ varje instruktion noga.\"",
+            "en": "He also told the employees: \"Please follow every instruction carefully.\"",
+            "target_words": [
+                {
+                    "word_in_sentence": "Vänligen",
+                    "base_form": "vänligen",
+                    "position_start": 33,
+                    "position_end": 41
+                },
+                {
+                    "word_in_sentence": "instruktion",
+                    "base_form": "instruktion",
+                    "position_start": 53,
+                    "position_end": 64
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_06_s027",
+            "sv": "Han bad oss vara mer kreativ och att vi måste lämna tillbaka allt vi lånar.",
+            "en": "He asked us to be more creative and said that we must return everything we borrow.",
+            "target_words": [
+                {
+                    "word_in_sentence": "kreativ",
+                    "base_form": "kreativ",
+                    "position_start": 21,
+                    "position_end": 28
+                },
+                {
+                    "word_in_sentence": "lämna tillbaka",
+                    "base_form": "lämna tillbaka",
+                    "position_start": 46,
+                    "position_end": 60
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_06_s028",
+            "sv": "Jag skrev ett mejl till honom: \"Jag vore tacksam om … ni kunde ge mig mer tid.",
+            "en": "I wrote an email to him: \"I would be grateful if... you could give me more time.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Jag vore tacksam om …",
+                    "base_form": "Jag vore tacksam om …",
+                    "position_start": 32,
+                    "position_end": 53
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_06_s029",
+            "sv": "Skulle ni kunna skicka…? mer information efter mötet?",
+            "en": "Could you send...? more information after the meeting?",
+            "target_words": [
+                {
+                    "word_in_sentence": "Skulle ni kunna skicka…?",
+                    "base_form": "Skulle ni kunna skicka…?",
+                    "position_start": 0,
+                    "position_end": 24
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_06_s030",
+            "sv": "Med vänliga hälsningar, en som försöker vara ett proffs längst bak i rummet.\"",
+            "en": "Best regards, someone trying to be a professional at the back of the room.\"",
+            "target_words": [
+                {
+                    "word_in_sentence": "vänliga hälsningar",
+                    "base_form": "vänliga hälsningar",
+                    "position_start": 4,
+                    "position_end": 22
+                },
+                {
+                    "word_in_sentence": "proffs",
+                    "base_form": "proffs",
+                    "position_start": 49,
+                    "position_end": 55
+                },
+                {
+                    "word_in_sentence": "längst",
+                    "base_form": "längst",
+                    "position_start": 56,
+                    "position_end": 62
+                }
+            ]
+        }
+    ],
+    "primary_words_used": [
+        "anställa",
+        "sommarjobbare",
+        "samarbete",
+        "mandatperiod",
+        "post",
+        "tevebolag",
+        "Hur många år har du/han/hon jobbat här?",
+        "lika lön för lika arbete",
+        "fabrik",
+        "arbetarfamilj",
+        "arbetare",
+        "arbetsgivare",
+        "fack",
+        "arbetsvillkor",
+        "avskeda",
+        "livmedelsföretag",
+        "ingå partnerskap",
+        "arbetsliv",
+        "drabba",
+        "passfrihet",
+        "Det passar bra.",
+        "söka jobb",
+        "anställd",
+        "kontormaterial",
+        "proffs",
+        "ansvar",
+        "vänliga hälsningar",
+        "roll",
+        "resultat",
+        "mål",
+        "planera",
+        "Jag vore tacksam om …",
+        "vänligen",
+        "instruktion",
+        "skapa",
+        "skicka",
+        "Skulle ni kunna skicka…?",
+        "taktik",
+        "prestera",
+        "präst",
+        "möjlig",
+        "konkurrera",
+        "referera",
+        "efter",
+        "kreativ",
+        "vars",
+        "ingen",
+        "franska",
+        "rapportera",
+        "längst",
+        "en tredjedel så stort som",
+        "logisk",
+        "lämna tillbaka",
+        "direkt efter",
+        "inte…förrän",
+        "Vad ville hon bli?",
+        "högst",
+        "utanför",
+        "trots att"
+    ],
+    "secondary_words_used": []
+}

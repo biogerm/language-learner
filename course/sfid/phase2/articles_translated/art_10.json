@@ -1,0 +1,661 @@
+{
+    "course_id": "sfid",
+    "course_title": "SFI D",
+    "stage_id": "stage_05",
+    "stage_title": "Utbildning",
+    "article_id": "art_10",
+    "article_title": "Läsförståelse",
+    "target_word_count": 60,
+    "sentences": [
+        {
+            "sentence_id": "art_10_s001",
+            "sv": "Jag och min kurskompis bestämde oss för att gå till ett bibliotek för att repetera inför ett stort prov.",
+            "en": "My course mate and I decided to go to a library to revise for a big test.",
+            "target_words": [
+                {
+                    "word_in_sentence": "kurskompis",
+                    "base_form": "kurskompis",
+                    "position_start": 12,
+                    "position_end": 22
+                },
+                {
+                    "word_in_sentence": "bibliotek",
+                    "base_form": "bibliotek",
+                    "position_start": 56,
+                    "position_end": 65
+                },
+                {
+                    "word_in_sentence": "repetera",
+                    "base_form": "repetera",
+                    "position_start": 74,
+                    "position_end": 82
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_10_s002",
+            "sv": "\"Har du lust att…?\" frågade hon, och ville föreslå att vi skulle studera på en klämdag.",
+            "en": "\"Would you like to...?\" she asked, and wanted to suggest that we should study on a bridge day.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Har du lust att…?",
+                    "base_form": "Har du lust att…?",
+                    "position_start": 1,
+                    "position_end": 18
+                },
+                {
+                    "word_in_sentence": "föreslå",
+                    "base_form": "föreslå",
+                    "position_start": 43,
+                    "position_end": 50
+                },
+                {
+                    "word_in_sentence": "klämdag",
+                    "base_form": "klämdag",
+                    "position_start": 79,
+                    "position_end": 86
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_10_s003",
+            "sv": "\"Vad säger du?\"",
+            "en": "\"What do you say?\"",
+            "target_words": [
+                {
+                    "word_in_sentence": "Vad säger du?",
+                    "base_form": "Vad säger du?",
+                    "position_start": 1,
+                    "position_end": 14
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_10_s004",
+            "sv": "Jag tyckte det lät bra, så vi kunde få så många timmar som möjligt att läsa.",
+            "en": "I thought it sounded good, so we could get as many hours as possible to read.",
+            "target_words": [
+                {
+                    "word_in_sentence": "så många timmar som möjligt",
+                    "base_form": "så många som möjligt",
+                    "position_start": 39,
+                    "position_end": 66
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_10_s005",
+            "sv": "Vi valde att diskutera svensk grammatik.",
+            "en": "We chose to discuss Swedish grammar.",
+            "target_words": [
+                {
+                    "word_in_sentence": "diskutera",
+                    "base_form": "diskutera",
+                    "position_start": 13,
+                    "position_end": 22
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_10_s006",
+            "sv": "Vår uppgift skulle bestå av en skriftlig del och en muntlig redovisning.",
+            "en": "Our assignment would consist of a written part and an oral presentation.",
+            "target_words": [
+                {
+                    "word_in_sentence": "bestå av",
+                    "base_form": "bestå av",
+                    "position_start": 19,
+                    "position_end": 27
+                },
+                {
+                    "word_in_sentence": "skriftlig",
+                    "base_form": "skriftlig",
+                    "position_start": 31,
+                    "position_end": 40
+                },
+                {
+                    "word_in_sentence": "muntlig",
+                    "base_form": "muntlig",
+                    "position_start": 52,
+                    "position_end": 59
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_10_s007",
+            "sv": "En fördel var att vi hade en lång ordlista att öva på.",
+            "en": "An advantage was that we had a long glossary to practice on.",
+            "target_words": [
+                {
+                    "word_in_sentence": "fördel",
+                    "base_form": "fördel",
+                    "position_start": 3,
+                    "position_end": 9
+                },
+                {
+                    "word_in_sentence": "ordlista",
+                    "base_form": "ordlista",
+                    "position_start": 34,
+                    "position_end": 42
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_10_s008",
+            "sv": "Vi fick en lapp där varje ruta innehöll ett påstående.",
+            "en": "We received a piece of paper where each box contained a statement.",
+            "target_words": [
+                {
+                    "word_in_sentence": "lapp",
+                    "base_form": "lapp",
+                    "position_start": 11,
+                    "position_end": 15
+                },
+                {
+                    "word_in_sentence": "ruta",
+                    "base_form": "ruta",
+                    "position_start": 26,
+                    "position_end": 30
+                },
+                {
+                    "word_in_sentence": "påstående",
+                    "base_form": "påstående",
+                    "position_start": 44,
+                    "position_end": 53
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_10_s009",
+            "sv": "Varje mening hade ett viktigt begrepp.",
+            "en": "Every sentence had an important concept.",
+            "target_words": [
+                {
+                    "word_in_sentence": "begrepp",
+                    "base_form": "begrepp",
+                    "position_start": 30,
+                    "position_end": 37
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_10_s010",
+            "sv": "Vi fick i uppdrag att stryka under varje nyckelord och sedan sammanfatta allt.",
+            "en": "We were tasked with underlining every keyword and then summarizing everything.",
+            "target_words": [
+                {
+                    "word_in_sentence": "stryka under",
+                    "base_form": "stryka under",
+                    "position_start": 22,
+                    "position_end": 34
+                },
+                {
+                    "word_in_sentence": "nyckelord",
+                    "base_form": "nyckelord",
+                    "position_start": 41,
+                    "position_end": 50
+                },
+                {
+                    "word_in_sentence": "sammanfatta",
+                    "base_form": "sammanfatta",
+                    "position_start": 61,
+                    "position_end": 72
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_10_s011",
+            "sv": "Vi började med en ordkunskapsövning.",
+            "en": "We started with a vocabulary exercise.",
+            "target_words": [
+                {
+                    "word_in_sentence": "ordkunskapsövning",
+                    "base_form": "ordkunkskapsövning",
+                    "position_start": 18,
+                    "position_end": 35
+                },
+                {
+                    "word_in_sentence": "ordkunskap",
+                    "base_form": "ordkunskap",
+                    "position_start": 18,
+                    "position_end": 28
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_10_s012",
+            "sv": "Vi tränade ordkunskap genom att titta på en vokal, en konsonant och varje stavelse.",
+            "en": "We practiced vocabulary by looking at a vowel, a consonant and every syllable.",
+            "target_words": [
+                {
+                    "word_in_sentence": "ordkunskap",
+                    "base_form": "ordkunskap",
+                    "position_start": 11,
+                    "position_end": 21
+                },
+                {
+                    "word_in_sentence": "vokal",
+                    "base_form": "vokal",
+                    "position_start": 44,
+                    "position_end": 49
+                },
+                {
+                    "word_in_sentence": "konsonant",
+                    "base_form": "konsonant",
+                    "position_start": 54,
+                    "position_end": 63
+                },
+                {
+                    "word_in_sentence": "stavelse",
+                    "base_form": "stavelse",
+                    "position_start": 74,
+                    "position_end": 82
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_10_s013",
+            "sv": "Det var roligt.",
+            "en": "It was fun.",
+            "target_words": []
+        },
+        {
+            "sentence_id": "art_10_s014",
+            "sv": "\"Du är skicklig,\" poängterade hon.",
+            "en": "\"You are skillful,\" she pointed out.",
+            "target_words": [
+                {
+                    "word_in_sentence": "skicklig",
+                    "base_form": "skicklig",
+                    "position_start": 7,
+                    "position_end": 15
+                },
+                {
+                    "word_in_sentence": "poängterade",
+                    "base_form": "poängtera",
+                    "position_start": 18,
+                    "position_end": 29
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_10_s015",
+            "sv": "Vi pratade också om ljudförändringar, som svag reduktion och assimilation.",
+            "en": "We also talked about sound changes, like weak reduction and assimilation.",
+            "target_words": [
+                {
+                    "word_in_sentence": "svag",
+                    "base_form": "svag",
+                    "position_start": 42,
+                    "position_end": 46
+                },
+                {
+                    "word_in_sentence": "reduktion",
+                    "base_form": "reduktion",
+                    "position_start": 47,
+                    "position_end": 56
+                },
+                {
+                    "word_in_sentence": "assimilation",
+                    "base_form": "asssimilation",
+                    "position_start": 61,
+                    "position_end": 73
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_10_s016",
+            "sv": "Vi ville bevisa vad vi hade lärt oss.",
+            "en": "We wanted to prove what we had learned.",
+            "target_words": [
+                {
+                    "word_in_sentence": "bevisa",
+                    "base_form": "bevisa",
+                    "position_start": 9,
+                    "position_end": 15
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_10_s017",
+            "sv": "Sedan gick vi igenom olika ordklasser och satsdelar.",
+            "en": "Then we went through different parts of speech and parts of a sentence.",
+            "target_words": []
+        },
+        {
+            "sentence_id": "art_10_s018",
+            "sv": "Vi lärde oss att hitta ett subjekt.",
+            "en": "We learned to find a subject.",
+            "target_words": [
+                {
+                    "word_in_sentence": "subjekt",
+                    "base_form": "subjekt",
+                    "position_start": 27,
+                    "position_end": 34
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_10_s019",
+            "sv": "Vi jämförde bestämd form med obestämd form, och tränade på adjektivets komparativ.",
+            "en": "We compared definite form with indefinite form, and practiced the comparative of the adjective.",
+            "target_words": [
+                {
+                    "word_in_sentence": "bestämd form",
+                    "base_form": "bestämd form",
+                    "position_start": 12,
+                    "position_end": 24
+                },
+                {
+                    "word_in_sentence": "obestämd form",
+                    "base_form": "obestämd form",
+                    "position_start": 29,
+                    "position_end": 42
+                },
+                {
+                    "word_in_sentence": "komparativ",
+                    "base_form": "komparativ",
+                    "position_start": 71,
+                    "position_end": 81
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_10_s020",
+            "sv": "Vi tittade på reflexiva pronomen, och lärde oss när man använder supinum och imperativ.",
+            "en": "We looked at reflexive pronouns, and learned when to use the supine and imperative.",
+            "target_words": [
+                {
+                    "word_in_sentence": "reflexiv",
+                    "base_form": "reflexiv",
+                    "position_start": 14,
+                    "position_end": 22
+                },
+                {
+                    "word_in_sentence": "supinum",
+                    "base_form": "supinum",
+                    "position_start": 65,
+                    "position_end": 72
+                },
+                {
+                    "word_in_sentence": "imperativ",
+                    "base_form": "imperativ",
+                    "position_start": 77,
+                    "position_end": 86
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_10_s021",
+            "sv": "Vi försökte också att betona rätt.",
+            "en": "We also tried to emphasize correctly.",
+            "target_words": [
+                {
+                    "word_in_sentence": "betona",
+                    "base_form": "betona",
+                    "position_start": 22,
+                    "position_end": 28
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_10_s022",
+            "sv": "Vi tränade på att bygga meningar.",
+            "en": "We practiced building sentences.",
+            "target_words": []
+        },
+        {
+            "sentence_id": "art_10_s023",
+            "sv": "En mening kan börja med en huvudsats och följas av en bisats.",
+            "en": "A sentence can begin with a main clause and be followed by a subordinate clause.",
+            "target_words": [
+                {
+                    "word_in_sentence": "huvudsats",
+                    "base_form": "huvudsats",
+                    "position_start": 27,
+                    "position_end": 36
+                },
+                {
+                    "word_in_sentence": "bisats",
+                    "base_form": "bisats",
+                    "position_start": 54,
+                    "position_end": 60
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_10_s024",
+            "sv": "Vi såg hur en konjunktion, en subjunktion eller en prepostion kan förändra allt.",
+            "en": "We saw how a conjunction, a subjunction or a preposition can change everything.",
+            "target_words": [
+                {
+                    "word_in_sentence": "konjunktion",
+                    "base_form": "konjunktion",
+                    "position_start": 14,
+                    "position_end": 25
+                },
+                {
+                    "word_in_sentence": "subjunktion",
+                    "base_form": "subjunktion",
+                    "position_start": 30,
+                    "position_end": 41
+                },
+                {
+                    "word_in_sentence": "prepostion",
+                    "base_form": "prepostion",
+                    "position_start": 51,
+                    "position_end": 61
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_10_s025",
+            "sv": "Vi lärde oss att skriva direkt tal.",
+            "en": "We learned to write direct speech.",
+            "target_words": [
+                {
+                    "word_in_sentence": "direkt tal",
+                    "base_form": "direkt tal",
+                    "position_start": 24,
+                    "position_end": 34
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_10_s026",
+            "sv": "En nackdel med grammatik är att det finns så många regler att komma ihåg.",
+            "en": "A disadvantage of grammar is that there are so many rules to remember.",
+            "target_words": [
+                {
+                    "word_in_sentence": "nackdel",
+                    "base_form": "nackdel",
+                    "position_start": 3,
+                    "position_end": 10
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_10_s027",
+            "sv": "Min kusin som arbetar på en känd akademi gav mig ett bra tips.",
+            "en": "My cousin who works at a famous academy gave me a good tip.",
+            "target_words": [
+                {
+                    "word_in_sentence": "kusin",
+                    "base_form": "kusin",
+                    "position_start": 4,
+                    "position_end": 9
+                },
+                {
+                    "word_in_sentence": "akademi",
+                    "base_form": "akademi",
+                    "position_start": 33,
+                    "position_end": 40
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_10_s028",
+            "sv": "Han sa att språket är ett arv, nästan som en nyfångad fisk som man måste blanda i en gryta.",
+            "en": "He said that language is a heritage, almost like a newly caught fish that you have to mix in a pot.",
+            "target_words": [
+                {
+                    "word_in_sentence": "arv",
+                    "base_form": "arv",
+                    "position_start": 26,
+                    "position_end": 29
+                },
+                {
+                    "word_in_sentence": "nyfångad",
+                    "base_form": "nyfångad",
+                    "position_start": 45,
+                    "position_end": 53
+                },
+                {
+                    "word_in_sentence": "blanda i",
+                    "base_form": "blanda i",
+                    "position_start": 73,
+                    "position_end": 81
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_10_s029",
+            "sv": "Det engelska ordet other kan översättas till \"andra\".",
+            "en": "The English word 'other' can be translated to \"andra\".",
+            "target_words": [
+                {
+                    "word_in_sentence": "other",
+                    "base_form": "other",
+                    "position_start": 19,
+                    "position_end": 24
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_10_s030",
+            "sv": "Den enda regeln är att ha en livlig avslutning och en tydlig slutsats.",
+            "en": "The only rule is to have a lively ending and a clear conclusion.",
+            "target_words": [
+                {
+                    "word_in_sentence": "enda",
+                    "base_form": "enda",
+                    "position_start": 4,
+                    "position_end": 8
+                },
+                {
+                    "word_in_sentence": "livlig",
+                    "base_form": "livlig",
+                    "position_start": 29,
+                    "position_end": 35
+                },
+                {
+                    "word_in_sentence": "avslutning",
+                    "base_form": "avslutning",
+                    "position_start": 36,
+                    "position_end": 46
+                },
+                {
+                    "word_in_sentence": "slutsats",
+                    "base_form": "slutsats",
+                    "position_start": 61,
+                    "position_end": 69
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_10_s031",
+            "sv": "Siffran är uppe i hundra regler, men jag kände att jag började förstå dem.",
+            "en": "The number is up to a hundred rules, but I felt that I began to understand them.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Siffran är uppe i",
+                    "base_form": "siffran är uppe i",
+                    "position_start": 0,
+                    "position_end": 17
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_10_s032",
+            "sv": "\"Jag skulle föredra att ta en rast nu och betala för lite fika,\" sa jag.",
+            "en": "\"I would prefer to take a break now and pay for some fika,\" I said.",
+            "target_words": [
+                {
+                    "word_in_sentence": "föredra",
+                    "base_form": "föredra",
+                    "position_start": 12,
+                    "position_end": 19
+                },
+                {
+                    "word_in_sentence": "betala",
+                    "base_form": "betala",
+                    "position_start": 42,
+                    "position_end": 48
+                }
+            ]
+        }
+    ],
+    "primary_words_used": [
+        "begrepp",
+        "påstående",
+        "ruta",
+        "diskutera",
+        "stryka under",
+        "bibliotek",
+        "fördel",
+        "reduktion",
+        "konjunktion",
+        "komparativ",
+        "kurskompis",
+        "skriftlig",
+        "muntlig",
+        "poängtera",
+        "subjekt",
+        "obestämd form",
+        "asssimilation",
+        "bisats",
+        "huvudsats",
+        "repetera",
+        "nyckelord",
+        "nackdel",
+        "bestämd form",
+        "reflexiv",
+        "sammanfatta",
+        "avslutning",
+        "akademi",
+        "slutsats",
+        "prepostion",
+        "supinum",
+        "imperativ",
+        "ordkunkskapsövning",
+        "subjunktion",
+        "ordlista",
+        "vokal",
+        "direkt tal",
+        "konsonant",
+        "ordkunskap",
+        "stavelse",
+        "lapp",
+        "så många som möjligt",
+        "kusin",
+        "svag",
+        "livlig",
+        "siffran är uppe i",
+        "föreslå",
+        "nyfångad",
+        "bestå av",
+        "Har du lust att…?",
+        "föredra",
+        "betala",
+        "arv",
+        "betona",
+        "bevisa",
+        "skicklig",
+        "other",
+        "enda",
+        "Vad säger du?",
+        "blanda i",
+        "klämdag"
+    ],
+    "secondary_words_used": []
+}

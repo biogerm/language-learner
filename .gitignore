@@ -15,3 +15,7 @@ env/
 .obsidian/
 
 # Temp processing directories
+
+# Large archive files
+*.tar
+*.tar.gz

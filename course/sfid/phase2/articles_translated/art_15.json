@@ -1,0 +1,643 @@
+{
+    "course_id": "sfid",
+    "course_title": "SFI D",
+    "stage_id": "stage_10",
+    "stage_title": "Mat & Matlagning",
+    "article_id": "art_15",
+    "article_title": "Läsförståelse",
+    "target_word_count": 60,
+    "sentences": [
+        {
+            "sentence_id": "art_15_s001",
+            "sv": "Förr i tiden var det viktigt att kunna koka sylt och konservera mat för att ha mat under hela vintern.",
+            "en": "In the past, it was important to be able to make jam and preserve food to have food throughout the winter.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Förr",
+                    "base_form": "förr",
+                    "position_start": 0,
+                    "position_end": 4
+                },
+                {
+                    "word_in_sentence": "koka sylt",
+                    "base_form": "koka sylt",
+                    "position_start": 39,
+                    "position_end": 48
+                },
+                {
+                    "word_in_sentence": "sylt",
+                    "base_form": "sylt",
+                    "position_start": 44,
+                    "position_end": 48
+                },
+                {
+                    "word_in_sentence": "konservera",
+                    "base_form": "konservera",
+                    "position_start": 53,
+                    "position_end": 63
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_15_s002",
+            "sv": "\"Det hade jag ingen aning om.\" sa min vän från Spanien.",
+            "en": "\"I had no idea about that,\" said my friend from Spain.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Det hade jag ingen aning om.",
+                    "base_form": "Det hade jag ingen aning om.",
+                    "position_start": 1,
+                    "position_end": 29
+                },
+                {
+                    "word_in_sentence": "än",
+                    "base_form": "än",
+                    "position_start": 39,
+                    "position_end": 41
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_15_s003",
+            "sv": "För att imponera på honom bestämde jag mig för att lära honom om svensk mat.",
+            "en": "To impress him, I decided to teach him about Swedish food.",
+            "target_words": [
+                {
+                    "word_in_sentence": "imponera",
+                    "base_form": "imponera",
+                    "position_start": 8,
+                    "position_end": 16
+                },
+                {
+                    "word_in_sentence": "lära",
+                    "base_form": "lära",
+                    "position_start": 51,
+                    "position_end": 55
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_15_s004",
+            "sv": "Det fanns många stora matprojekt innan vi ens började äta, som karamellkokning.",
+            "en": "There were many large food projects before we even started eating, like caramel making.",
+            "target_words": [
+                {
+                    "word_in_sentence": "innan",
+                    "base_form": "innan",
+                    "position_start": 33,
+                    "position_end": 38
+                },
+                {
+                    "word_in_sentence": "karamellkokning",
+                    "base_form": "karamellkokning",
+                    "position_start": 63,
+                    "position_end": 78
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_15_s005",
+            "sv": "Allt hände i köket och jag ville nästan uppfostra honom i vår kultur.",
+            "en": "Everything happened in the kitchen and I almost wanted to educate him in our culture.",
+            "target_words": [
+                {
+                    "word_in_sentence": "än",
+                    "base_form": "än",
+                    "position_start": 6,
+                    "position_end": 8
+                },
+                {
+                    "word_in_sentence": "uppfostra",
+                    "base_form": "uppfostra",
+                    "position_start": 40,
+                    "position_end": 49
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_15_s006",
+            "sv": "I vintras brukade vi baka en bulle med jäst och äta marmelad med smak av apelsin.",
+            "en": "Last winter we used to bake a bun with yeast and eat marmalade with an orange flavor.",
+            "target_words": [
+                {
+                    "word_in_sentence": "I vintras",
+                    "base_form": "i vintras",
+                    "position_start": 0,
+                    "position_end": 9
+                },
+                {
+                    "word_in_sentence": "bulle",
+                    "base_form": "bulle",
+                    "position_start": 29,
+                    "position_end": 34
+                },
+                {
+                    "word_in_sentence": "jäst",
+                    "base_form": "jäst",
+                    "position_start": 39,
+                    "position_end": 43
+                },
+                {
+                    "word_in_sentence": "marmelad",
+                    "base_form": "marmelad",
+                    "position_start": 52,
+                    "position_end": 60
+                },
+                {
+                    "word_in_sentence": "apelsin",
+                    "base_form": "apelsin",
+                    "position_start": 73,
+                    "position_end": 80
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_15_s007",
+            "sv": "Det var en lätt och färsk frukost.",
+            "en": "It was a light and fresh breakfast.",
+            "target_words": [
+                {
+                    "word_in_sentence": "lätt",
+                    "base_form": "lätt",
+                    "position_start": 11,
+                    "position_end": 15
+                },
+                {
+                    "word_in_sentence": "färsk",
+                    "base_form": "färsk",
+                    "position_start": 20,
+                    "position_end": 25
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_15_s008",
+            "sv": "Men han ville hellre gå på restaurang för att äta en god sallad med kyckling och ägg.",
+            "en": "But he would rather go to a restaurant to eat a good salad with chicken and egg.",
+            "target_words": [
+                {
+                    "word_in_sentence": "gå på restaurang",
+                    "base_form": "gå på restaurang",
+                    "position_start": 21,
+                    "position_end": 37
+                },
+                {
+                    "word_in_sentence": "kyckling",
+                    "base_form": "kyckling",
+                    "position_start": 68,
+                    "position_end": 76
+                },
+                {
+                    "word_in_sentence": "ägg",
+                    "base_form": "ägg",
+                    "position_start": 81,
+                    "position_end": 84
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_15_s009",
+            "sv": "\"Okej då\", sa jag, och vi åt ute istället.",
+            "en": "\"Okay then\", I said, and we ate out instead.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Okej då",
+                    "base_form": "Okej då.",
+                    "position_start": 1,
+                    "position_end": 8
+                },
+                {
+                    "word_in_sentence": "istället",
+                    "base_form": "istället",
+                    "position_start": 33,
+                    "position_end": 41
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_15_s010",
+            "sv": "Jag ville visa att svensk matkultur också kan förändras och vara progressiv.",
+            "en": "I wanted to show that Swedish food culture can also change and be progressive.",
+            "target_words": [
+                {
+                    "word_in_sentence": "än",
+                    "base_form": "än",
+                    "position_start": 49,
+                    "position_end": 51
+                },
+                {
+                    "word_in_sentence": "förändras",
+                    "base_form": "förändras",
+                    "position_start": 46,
+                    "position_end": 55
+                },
+                {
+                    "word_in_sentence": "progressiv",
+                    "base_form": "progressiv",
+                    "position_start": 65,
+                    "position_end": 75
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_15_s011",
+            "sv": "\"Kom igen!\" ropade jag.",
+            "en": "\"Come on!\" I shouted.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Kom igen!",
+                    "base_form": "Kom igen!",
+                    "position_start": 1,
+                    "position_end": 10
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_15_s012",
+            "sv": "Vi gick till en marknad.",
+            "en": "We went to a market.",
+            "target_words": []
+        },
+        {
+            "sentence_id": "art_15_s013",
+            "sv": "Landets regerande snackstillverkare sålde en underbar blandning av bränd nöt och kanderad viol eller syren.",
+            "en": "The country's reigning snack manufacturer sold a wonderful mixture of roasted nut and candied violet or lilac.",
+            "target_words": [
+                {
+                    "word_in_sentence": "än",
+                    "base_form": "än",
+                    "position_start": 69,
+                    "position_end": 71
+                },
+                {
+                    "word_in_sentence": "regerande",
+                    "base_form": "regerande",
+                    "position_start": 8,
+                    "position_end": 17
+                },
+                {
+                    "word_in_sentence": "snackstillverkare",
+                    "base_form": "snackstillverkare",
+                    "position_start": 18,
+                    "position_end": 35
+                },
+                {
+                    "word_in_sentence": "blandning",
+                    "base_form": "blandning",
+                    "position_start": 54,
+                    "position_end": 63
+                },
+                {
+                    "word_in_sentence": "bränd",
+                    "base_form": "bränd",
+                    "position_start": 67,
+                    "position_end": 72
+                },
+                {
+                    "word_in_sentence": "nöt",
+                    "base_form": "nöt",
+                    "position_start": 73,
+                    "position_end": 76
+                },
+                {
+                    "word_in_sentence": "kanderad",
+                    "base_form": "kanderad",
+                    "position_start": 81,
+                    "position_end": 89
+                },
+                {
+                    "word_in_sentence": "viol",
+                    "base_form": "viol",
+                    "position_start": 90,
+                    "position_end": 94
+                },
+                {
+                    "word_in_sentence": "syren",
+                    "base_form": "syren",
+                    "position_start": 101,
+                    "position_end": 106
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_15_s014",
+            "sv": "Efter en tid valde vi att köpa en mjuk och seg gräddkola.",
+            "en": "After a while we chose to buy a soft and chewy cream toffee.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Efter en tid",
+                    "base_form": "efter en tid",
+                    "position_start": 0,
+                    "position_end": 12
+                },
+                {
+                    "word_in_sentence": "seg",
+                    "base_form": "seg",
+                    "position_start": 43,
+                    "position_end": 46
+                },
+                {
+                    "word_in_sentence": "gräddkola",
+                    "base_form": "gräddkola",
+                    "position_start": 47,
+                    "position_end": 56
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_15_s015",
+            "sv": "Vi köpte också lite salt sill och en burk surströmming.",
+            "en": "We also bought some salted herring and a can of fermented herring.",
+            "target_words": [
+                {
+                    "word_in_sentence": "salt",
+                    "base_form": "salt",
+                    "position_start": 20,
+                    "position_end": 24
+                },
+                {
+                    "word_in_sentence": "sill",
+                    "base_form": "sill",
+                    "position_start": 25,
+                    "position_end": 29
+                },
+                {
+                    "word_in_sentence": "surströmming",
+                    "base_form": "surströmming",
+                    "position_start": 42,
+                    "position_end": 54
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_15_s016",
+            "sv": "Under lång tid brukade man stanna upp på kvällen för att äta något gott.",
+            "en": "For a long time, people used to stop in the evening to eat something good.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Under lång tid",
+                    "base_form": "under lång tid",
+                    "position_start": 0,
+                    "position_end": 14
+                },
+                {
+                    "word_in_sentence": "stanna upp",
+                    "base_form": "stanna upp",
+                    "position_start": 27,
+                    "position_end": 37
+                },
+                {
+                    "word_in_sentence": "gott",
+                    "base_form": "gott",
+                    "position_start": 67,
+                    "position_end": 71
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_15_s017",
+            "sv": "Man kunde blanda lite svamp och salta ordentligt.",
+            "en": "You could mix some mushrooms and salt thoroughly.",
+            "target_words": [
+                {
+                    "word_in_sentence": "salt",
+                    "base_form": "salt",
+                    "position_start": 32,
+                    "position_end": 36
+                },
+                {
+                    "word_in_sentence": "blanda",
+                    "base_form": "blanda",
+                    "position_start": 10,
+                    "position_end": 16
+                },
+                {
+                    "word_in_sentence": "svamp",
+                    "base_form": "svamp",
+                    "position_start": 22,
+                    "position_end": 27
+                },
+                {
+                    "word_in_sentence": "salta",
+                    "base_form": "salta",
+                    "position_start": 32,
+                    "position_end": 37
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_15_s018",
+            "sv": "Man sparade allt i sitt skafferi.",
+            "en": "You saved everything in your pantry.",
+            "target_words": [
+                {
+                    "word_in_sentence": "skafferi",
+                    "base_form": "skafferi",
+                    "position_start": 24,
+                    "position_end": 32
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_15_s019",
+            "sv": "Idag är maten ofta producerad utomlands, och lastbilar trafikerar vägarna till och från affärerna för att ge oss färdiga varor.",
+            "en": "Today food is often produced abroad, and trucks ply the roads to and from the stores to give us ready-made goods.",
+            "target_words": [
+                {
+                    "word_in_sentence": "producerad",
+                    "base_form": "producerad",
+                    "position_start": 19,
+                    "position_end": 29
+                },
+                {
+                    "word_in_sentence": "trafikerar",
+                    "base_form": "trafikera",
+                    "position_start": 55,
+                    "position_end": 65
+                },
+                {
+                    "word_in_sentence": "till och från",
+                    "base_form": "till och från",
+                    "position_start": 74,
+                    "position_end": 87
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_15_s020",
+            "sv": "Det är mycket enklare nu än förr.",
+            "en": "It is much easier now than in the past.",
+            "target_words": []
+        },
+        {
+            "sentence_id": "art_15_s021",
+            "sv": "Efter middagen bjöd jag på fryst glass med lite grädde, honung och lite sylt på toppen.",
+            "en": "After dinner I offered frozen ice cream with some cream, honey and a little jam on top.",
+            "target_words": [
+                {
+                    "word_in_sentence": "fryst",
+                    "base_form": "fryst",
+                    "position_start": 27,
+                    "position_end": 32
+                },
+                {
+                    "word_in_sentence": "glass",
+                    "base_form": "glass",
+                    "position_start": 33,
+                    "position_end": 38
+                },
+                {
+                    "word_in_sentence": "grädde",
+                    "base_form": "grädde",
+                    "position_start": 48,
+                    "position_end": 54
+                },
+                {
+                    "word_in_sentence": "honung",
+                    "base_form": "honung",
+                    "position_start": 56,
+                    "position_end": 62
+                },
+                {
+                    "word_in_sentence": "toppen",
+                    "base_form": "toppen",
+                    "position_start": 80,
+                    "position_end": 86
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_15_s022",
+            "sv": "Han älskade det.",
+            "en": "He loved it.",
+            "target_words": []
+        },
+        {
+            "sentence_id": "art_15_s023",
+            "sv": "Svensk mat är fantastisk.",
+            "en": "Swedish food is fantastic.",
+            "target_words": []
+        },
+        {
+            "sentence_id": "art_15_s024",
+            "sv": "\"Är du med?\" frågade jag.",
+            "en": "\"Are you with me?\" I asked.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Är du med?",
+                    "base_form": "Är du med?",
+                    "position_start": 1,
+                    "position_end": 11
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_15_s025",
+            "sv": "Han nickade instämmande och ville att jag skulle upprepa receptet, eftersom olika typer av mat fascinerade honom.",
+            "en": "He nodded in agreement and wanted me to repeat the recipe, because different types of food fascinated him.",
+            "target_words": [
+                {
+                    "word_in_sentence": "upprepa",
+                    "base_form": "upprepa",
+                    "position_start": 49,
+                    "position_end": 56
+                },
+                {
+                    "word_in_sentence": "olika",
+                    "base_form": "olik",
+                    "position_start": 76,
+                    "position_end": 81
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_15_s026",
+            "sv": "En av landets största utmaningar är att bevara det gamla, men detta gick bra.",
+            "en": "One of the country's biggest challenges is to preserve the old, but this went well.",
+            "target_words": [
+                {
+                    "word_in_sentence": "största",
+                    "base_form": "störst",
+                    "position_start": 14,
+                    "position_end": 21
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_15_s027",
+            "sv": "Hälsningar …\nAnna",
+            "en": "Greetings ...\nAnna",
+            "target_words": [
+                {
+                    "word_in_sentence": "Hälsningar …",
+                    "base_form": "Hälsningar …",
+                    "position_start": 0,
+                    "position_end": 12
+                }
+            ]
+        }
+    ],
+    "primary_words_used": [
+        "lära",
+        "toppen",
+        "gå på restaurang",
+        "kyckling",
+        "istället",
+        "upprepa",
+        "trafikera",
+        "lätt",
+        "gott",
+        "marmelad",
+        "bulle",
+        "ägg",
+        "svamp",
+        "koka sylt",
+        "konservera",
+        "skafferi",
+        "blandning",
+        "blanda",
+        "salta",
+        "jäst",
+        "apelsin",
+        "nöt",
+        "karamellkokning",
+        "gräddkola",
+        "honung",
+        "seg",
+        "fryst",
+        "glass",
+        "syren",
+        "viol",
+        "färsk",
+        "sylt",
+        "sill",
+        "surströmming",
+        "salt",
+        "kanderad",
+        "bränd",
+        "grädde",
+        "Hälsningar …",
+        "regerande",
+        "Det hade jag ingen aning om.",
+        "stanna upp",
+        "i vintras",
+        "innan",
+        "olik",
+        "störst",
+        "snackstillverkare",
+        "Okej då.",
+        "efter en tid",
+        "till och från",
+        "under lång tid",
+        "än",
+        "producerad",
+        "imponera",
+        "progressiv",
+        "Kom igen!",
+        "förändras",
+        "förr",
+        "uppfostra",
+        "Är du med?"
+    ],
+    "secondary_words_used": []
+}
