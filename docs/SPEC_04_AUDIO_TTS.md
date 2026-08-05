@@ -23,9 +23,9 @@ Furthermore, this phase incorporates an Automatic Speech Recognition (ASR) loopb
 ## 3. TTS Generation Pipeline
 
 ### 3.1 Task Breakdown and Voice Alternation
-- **Sentence Audio Task**: Extract all unique sentences from Phase 2 JSONs.
-- **Word Audio Task**: Extract all unique `base_form` entries from Phase 1 dictionary.
-- **Deduplication**: Words and sentences appearing across multiple chapters are only generated once.
+- **Sentence Audio Task**: Extract all unique sentences from the Phase 2 JSON files.
+- **Word Audio Task**: Extract all unique `base_form` entries from the Phase 1 dictionary.
+- **Deduplicate**: Words and sentences appearing multiple times across chapters are generated only once and shared.
 - **Voice Alternation (Male/Female)**: When generating sentence or word audio, the script MUST alternate between the voices in the voice pool (e.g., Sentence 1 uses Female, Sentence 2 uses Male, Sentence 3 uses Female; same for Words). This is crucial to prevent auditory fatigue and help learners adapt to different accents and genders.
 
 ### 3.2 Concurrency
