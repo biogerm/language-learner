@@ -11,15 +11,18 @@
 
 ```mermaid
 graph TD
-    A[输入: master_dict.json] --> B[预处理: 单词分组与聚类]
-    B --> C[AI 文章生成引擎]
-    C --> D[结构化的 3 层 JSON]
-    D --> E{校验规则}
-    E -- 失败 (遗漏单词/格式错误) --> F[错误处理与重试]
-    F --> C
-    E -- 成功 --> G[AI 教师批改环节]
+    A[输入: master_dict.json] --> B[Sub-step 2.1: 语义聚类]
+    B --> C[Sub-step 2.2: 瑞典语文章生成]
+    C --> G[Sub-step 2.3: 瑞典语教师批改]
     G -- 失败 (重写) --> C
-    G -- 成功 --> H[最终 JSON 归档]
+    G -- 成功 --> H[Sub-step 2.4: 独立逐句翻译与词汇提取]
+    H --> I[Sub-step 2.5: 双语对齐与翻译校验]
+    I -- 失败 (重译) --> H
+    I -- 成功 --> D[组装结构化的 3 层 JSON]
+    D --> E{最终格式与规则校验}
+    E -- 失败 --> F[格式修复]
+    F --> D
+    E -- 成功 --> J[最终 JSON 归档]
 ```
 
 ## 2. 输入规范
@@ -157,44 +160,41 @@ AI 生成的结果必须被序列化为严格遵循三层嵌套架构的 JSON �
 4.  **ID 唯一性**: `sentence_id` 和 `article_id` 必须在全局唯一。
 5.  **翻译完整性**: `sentences` 数组中的 `sv` 和 `en` 字段不能为空字符串。
 
-## 8. AI 教师批改环节
+## 8. 独立逐句翻译与双语校验 (Sub-step 2.4 & 2.5)
 
 > [!IMPORTANT]
-> 为了确保生成的内容符合严格的教育标准，生成的每一篇文章都必须交由一个扮演“专业 SFI D 级语言教师”的次级 AI 智能体进行评审。
+> 翻译任务绝对不能与文章生成任务混在一起让 AI 一次性完成。文章的撰写、目标词提取以及全文双语翻译必须拆分为流水线上的独立步骤。
 
-对于每一篇生成的文章，教师智能体必须输出一份 Markdown 格式的批改报告，包含以下四项内容：
-1. **整体印象 (Helhetsintryck)**
-2. **语法和词汇 (Grammatik och Ordförråd)**：纠正任何不自然的表达或使用不当的动词短语。
-3. **结构和连贯度 (Struktur och Flyt)**
-4. **评分/建议 (Betyg/Rekommendation)**
+**Sub-step 2.4: 独立逐句翻译**
+当纯瑞典语文章通过了 2.3 环节的教师批改后，交由翻译 AI 进行逐句翻译。
+翻译时的核心原则：**结构对齐与语法正确**。
+*   必须保证瑞典语原句与英语翻译在“句式结构”上尽可能保持相同（高度镜像对齐）。
+*   在保证句式对齐的同时，必须确保输出的英文符合绝对正确的英文语法。
+*   在此阶段，同时要求 AI 为句子中的 `target_words` 和 `secondary_words` 生成基于当前句子精确语境的 `contextual_en`。
 
-**精炼循环 (Refinement Loop)**：如果教师智能体给出了不及格的评分，或者指出了严重的行文不自然，这些反馈必须返回给生成智能体，强制其重写该文章。只有当教师智能体批准该文章（例如给出 Godkänt 或 Väl godkänt 评分）后，最终的 JSON 才会被保存。
+**Sub-step 2.5: 翻译校验环节**
+翻译完成后，交由一位扮演“双语 SFI 教师”的验证模型进行审查。
+*   **审查内容**：对比瑞典语原句和英文翻译，检查是否遗漏了子句、是否保持了相同的句式结构，以及英文语法是否正确。同时审查 `contextual_en` 是否精准。
+*   **精炼循环**：如果教师发现翻译与原句句式差异过大，或者存在英语语法错误，必须给出具体的修改建议，并打回给翻译模型强制重译。只有在教师完全批准后，才能组装最终的 JSON。
 
-## 9. AI Prompt 模板
+## 9. AI Prompt 模板参考
 
-调用 LLM 时，应使用具备函数调用/结构化输出功能的模型。更新 Prompt 模板以严格强制执行 B1 级别和三层架构：
+由于任务被拆分，调用 LLM 时应根据具体步骤发送专属 Prompt。以下是针对“翻译与词汇提取 (Sub-step 2.4)”环节的提示词更新：
 
 ```text
-You are an expert Swedish language teacher specializing in CEFR Level B1 (SFI Level D). 
-Your task is to write a highly coherent, natural-sounding article in Swedish that seamlessly incorporates a specific list of target vocabulary words.
+You are an expert bilingual translator (Swedish to English) assisting a CEFR Level B1 (SFI Level D) language teacher.
+You will receive a Swedish text. Your task is to process it sentence by sentence, providing translations and extracting specific words.
 
-# WRITING STANDARDS:
-1. Target Level: STRICTLY CEFR B1. Use grammatical structures appropriate for this level (e.g., subordinate clauses with 'att', 'eftersom', 'om'). Avoid overly academic C1/C2 phrasing.
-2. Context Clues: When using a target word, provide enough context so a learner can guess its meaning. Do not just make a list of disconnected sentences.
-3. Length & Flow: Write between 300-500 words. The article must have a clear beginning, middle, and end. 
-4. Sentence Length: Average 10-15 words per sentence. Mix short and long sentences naturally.
-5. Topic: Create an engaging story or essay about: {THEMATIC_STAGE_TITLE}. Give the article a meaningful title.
+# TRANSLATION STANDARDS:
+1. Structural Alignment: You MUST translate each sentence in a way that closely mirrors the original Swedish sentence structure. 
+2. Grammatical Correctness: While mirroring the Swedish structure, the resulting English MUST still follow strictly correct English grammar.
+3. Sentence-by-Sentence: You must process and output the exact Swedish sentence ("sv") alongside its full English translation ("en").
 
-# TARGET VOCABULARY (MUST USE 100%):
-{TARGET_WORDS_JSON}
+# WORD EXTRACTION & CONTEXTUAL TRANSLATION:
+- "target_words": For each requested target word present in the sentence, extract its inflected form ("word_in_sentence"), base form ("base_form"), character bounds ("position_start", "position_end"), and MOST IMPORTANTLY: its precise contextual English translation ("contextual_en") as used strictly in this sentence.
+- "secondary_words": Voluntarily select 20-30 non-target, moderately difficult words across the whole text. Extract them using the exact same strict schema (including `contextual_en`). Never extract trivial A1 words (och, att, är).
 
-# CONSTRAINTS & OUTPUT FORMAT:
-You must output strictly in JSON format matching the requested 3-layer schema (Course -> Stage -> Article).
-- "sv": The Swedish sentence string MUST be plain text. DO NOT use markdown, HTML, or **bold** tags.
-- "en": You MUST provide the English translation for the ENTIRE Swedish sentence. Do not just translate the isolated target words.
-- "target_words": For each target word used in the sentence, identify its exact inflected form ("word_in_sentence"), its original base form ("base_form"), its contextual English translation ("contextual_en"), and its precise 0-indexed character positions ("position_start" and "position_end") in the "sv" string.
-- "secondary_words": In addition to the target words, voluntarily select 20-30 other moderately difficult or useful B1-level words across the article. Extract them into this array using the exact same fields as target_words (including `contextual_en`). Do not extract trivial A1 words (like "och", "att", "är").
-- You are strictly FORBIDDEN from skipping any word from the target vocabulary list. All target words must have their primary appearance.
+You must output strictly in the designated JSON schema.
 ```
 
 ## 10. 错误处理
