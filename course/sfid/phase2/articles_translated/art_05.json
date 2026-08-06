@@ -24,7 +24,7 @@
                     "base_form": "man",
                     "position_start": 4,
                     "position_end": 7,
-                    "contextual_en": "one (generic pronoun)"
+                    "contextual_en": "of a good"
                 },
                 {
                     "word_in_sentence": "karriär",
@@ -38,7 +38,7 @@
                 {
                     "word_in_sentence": "talar",
                     "base_form": "tala",
-                    "contextual_en": "speak",
+                    "contextual_en": "When talking",
                     "position_start": 8,
                     "position_end": 13
                 },
@@ -110,7 +110,7 @@
                 {
                     "word_in_sentence": "tänkte",
                     "base_form": "tänka",
-                    "contextual_en": "thought",
+                    "contextual_en": "to",
                     "position_start": 6,
                     "position_end": 12
                 },

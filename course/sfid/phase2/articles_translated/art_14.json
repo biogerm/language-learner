@@ -505,7 +505,7 @@
                 {
                     "word_in_sentence": "mycket",
                     "base_form": "mycket",
-                    "contextual_en": "a lot of",
+                    "contextual_en": "lots of",
                     "position_start": 17,
                     "position_end": 23
                 }
@@ -549,14 +549,14 @@
                 {
                     "word_in_sentence": "började",
                     "base_form": "börja",
-                    "contextual_en": "started",
+                    "contextual_en": "friend",
                     "position_start": 30,
                     "position_end": 37
                 },
                 {
                     "word_in_sentence": "jättegott",
                     "base_form": "jättegod",
-                    "contextual_en": "very tasty",
+                    "contextual_en": "other hand",
                     "position_start": 55,
                     "position_end": 64
                 }
@@ -593,7 +593,7 @@
                 {
                     "word_in_sentence": "trötthet",
                     "base_form": "trötthet",
-                    "contextual_en": "tiredness",
+                    "contextual_en": "fatigue, we",
                     "position_start": 38,
                     "position_end": 46
                 }

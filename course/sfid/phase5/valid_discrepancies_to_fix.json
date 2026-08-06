@@ -1,0 +1,1466 @@
+[
+    {
+        "discrepancy": {
+            "article": "art_00",
+            "sentence_id": "art_00_s002",
+            "type": "Secondary",
+            "sv_word": "vardag",
+            "contextual_en": "everyday life",
+            "sentence_en": "It is incredible to see how much modern technology can affect our lives and our everyday lives."
+        },
+        "sv_text": "Det är otroligt att se hur mycket den moderna tekniken kan påverka vårt liv och vår vardag.",
+        "word_in_sentence": "vardag"
+    },
+    {
+        "discrepancy": {
+            "article": "art_00",
+            "sentence_id": "art_00_s015",
+            "type": "Secondary",
+            "sv_word": "surfa",
+            "contextual_en": "surfed",
+            "sentence_en": "Last night I sat surfing, and I found a lot of information online."
+        },
+        "sv_text": "I går kväll satt jag och surfade, och jag hittade mycket information på nätet.",
+        "word_in_sentence": "surfade"
+    },
+    {
+        "discrepancy": {
+            "article": "art_01",
+            "sentence_id": "art_01_s002",
+            "type": "Target",
+            "sv_word": "över",
+            "contextual_en": "about",
+            "sentence_en": "But have you ever wondered how everything inside the machine actually works?"
+        },
+        "sv_text": "Men har du någonsin funderat över hur allting inuti maskinen egentligen fungerar?",
+        "word_in_sentence": "över"
+    },
+    {
+        "discrepancy": {
+            "article": "art_01",
+            "sentence_id": "art_01_s006",
+            "type": "Target",
+            "sv_word": "för",
+            "contextual_en": "for",
+            "sentence_en": "A very famous scientist worked many hundreds of years ago on observing and systematizing new knowledge."
+        },
+        "sv_text": "En mycket känd vetenskapsman arbetade för många hundra år sedan med att observera och systematisera ny kunskap.",
+        "word_in_sentence": "för"
+    },
+    {
+        "discrepancy": {
+            "article": "art_01",
+            "sentence_id": "art_01_s009",
+            "type": "Secondary",
+            "sv_word": "duktig",
+            "contextual_en": "skilled",
+            "sentence_en": "He was a really good astronomer who stood every evening and looked up at a beautiful starry sky."
+        },
+        "sv_text": "Han var en riktigt duktig astronom som varje kväll stod och tittade upp mot en vacker stjärnhimmel.",
+        "word_in_sentence": "duktig"
+    },
+    {
+        "discrepancy": {
+            "article": "art_01",
+            "sentence_id": "art_01_s014",
+            "type": "Target",
+            "sv_word": "för",
+            "contextual_en": "for",
+            "sentence_en": "Most are deeply interested in solving difficult problems to help each other in the best way."
+        },
+        "sv_text": "De flesta är djupt intresserade av att lösa svåra problem för att på bästa sätt hjälpa varandra.",
+        "word_in_sentence": "för"
+    },
+    {
+        "discrepancy": {
+            "article": "art_01",
+            "sentence_id": "art_01_s014",
+            "type": "Target",
+            "sv_word": "av",
+            "contextual_en": "of",
+            "sentence_en": "Most are deeply interested in solving difficult problems to help each other in the best way."
+        },
+        "sv_text": "De flesta är djupt intresserade av att lösa svåra problem för att på bästa sätt hjälpa varandra.",
+        "word_in_sentence": "av"
+    },
+    {
+        "discrepancy": {
+            "article": "art_02",
+            "sentence_id": "art_02_s016",
+            "type": "Secondary",
+            "sv_word": "stad",
+            "contextual_en": "city/town",
+            "sentence_en": "\"I have to know what is in the city,\" she thought and rented a practical room in the center."
+        },
+        "sv_text": "\"Jag måste veta vad som finns i stan,\" tänkte hon och hyrde ett praktiskt rum i centrum.",
+        "word_in_sentence": "stan"
+    },
+    {
+        "discrepancy": {
+            "article": "art_03",
+            "sentence_id": "art_03_s014",
+            "type": "Target",
+            "sv_word": "gå",
+            "contextual_en": "go",
+            "sentence_en": "But suddenly a bear came out of the forest and seemed to attack, although it was really just scared."
+        },
+        "sv_text": "Men plötsligt kom en björn ut ur skogen och verkade gå till attack, fast den egentligen bara var rädd.",
+        "word_in_sentence": "gå"
+    },
+    {
+        "discrepancy": {
+            "article": "art_03",
+            "sentence_id": "art_03_s015",
+            "type": "Target",
+            "sv_word": "gå",
+            "contextual_en": "go",
+            "sentence_en": "\"Bears usually hibernate in winter,\" the guide said and calmed us down."
+        },
+        "sv_text": "\"Björnar brukar gå i ide på vintern,\" sa guiden och lugnade oss.",
+        "word_in_sentence": "gå"
+    },
+    {
+        "discrepancy": {
+            "article": "art_04",
+            "sentence_id": "art_04_s004",
+            "type": "Secondary",
+            "sv_word": "resa",
+            "contextual_en": "travels",
+            "sentence_en": "As a newcomer in a new city, she often felt lonely, so travelling gave her support."
+        },
+        "sv_text": "Som nyinflyttad i en ny stad kände hon sig ofta ensam, så resor gav henne stöd.",
+        "word_in_sentence": "resor"
+    },
+    {
+        "discrepancy": {
+            "article": "art_04",
+            "sentence_id": "art_04_s009",
+            "type": "Target",
+            "sv_word": "landa",
+            "contextual_en": "land",
+            "sentence_en": "First she would take a flight, have a layover, and then take a passenger ferry."
+        },
+        "sv_text": "Först skulle hon ta ett flyg, landa med en mellanlandning och sedan ta en passagerarfärja.",
+        "word_in_sentence": "landa"
+    },
+    {
+        "discrepancy": {
+            "article": "art_04",
+            "sentence_id": "art_04_s011",
+            "type": "Secondary",
+            "sv_word": "blunda",
+            "contextual_en": "close eyes",
+            "sentence_en": "\"Close your eyes,\" she said when we listened to a local radio broadcast about travel."
+        },
+        "sv_text": "\"Blunda,\" sa hon när vi lyssnade på en lokal radiosändning om resor.",
+        "word_in_sentence": "Blunda"
+    },
+    {
+        "discrepancy": {
+            "article": "art_05",
+            "sentence_id": "art_05_s001",
+            "type": "Target",
+            "sv_word": "man",
+            "contextual_en": "one (generic pronoun)",
+            "sentence_en": "When talking about working life, many think of a good career."
+        },
+        "sv_text": "När man talar om arbetsliv, tänker många på en bra karriär.",
+        "word_in_sentence": "man"
+    },
+    {
+        "discrepancy": {
+            "article": "art_05",
+            "sentence_id": "art_05_s001",
+            "type": "Secondary",
+            "sv_word": "tala",
+            "contextual_en": "speak",
+            "sentence_en": "When talking about working life, many think of a good career."
+        },
+        "sv_text": "När man talar om arbetsliv, tänker många på en bra karriär.",
+        "word_in_sentence": "talar"
+    },
+    {
+        "discrepancy": {
+            "article": "art_05",
+            "sentence_id": "art_05_s002",
+            "type": "Secondary",
+            "sv_word": "tänka",
+            "contextual_en": "thought",
+            "sentence_en": "At first I planned to become a bank manager and work in the large financial world."
+        },
+        "sv_text": "Först tänkte jag bli bankdirektör och jobba i en stor finansvärld.",
+        "word_in_sentence": "tänkte"
+    },
+    {
+        "discrepancy": {
+            "article": "art_06",
+            "sentence_id": "art_06_s014",
+            "type": "Secondary",
+            "sv_word": "tvungen",
+            "contextual_en": "forced",
+            "sentence_en": "In order to perform at the highest level, they had to set a clear goal."
+        },
+        "sv_text": "För att prestera högst upp, var de tvungna att sätta upp ett tydligt mål.",
+        "word_in_sentence": "tvungna"
+    },
+    {
+        "discrepancy": {
+            "article": "art_07",
+            "sentence_id": "art_07_s006",
+            "type": "Target",
+            "sv_word": "fet",
+            "contextual_en": "fat",
+            "sentence_en": "The factory would manufacture an expensive luxury item and hoped that it would become a bestseller."
+        },
+        "sv_text": "Fabriken skulle tillverka en dyr lyxvara och hoppades att den skulle bli en storsäljare.",
+        "word_in_sentence": "dyr"
+    },
+    {
+        "discrepancy": {
+            "article": "art_07",
+            "sentence_id": "art_07_s012",
+            "type": "Secondary",
+            "sv_word": "rätt",
+            "contextual_en": "right",
+            "sentence_en": "I was careful not to arrive late, but arrived exactly on time."
+        },
+        "sv_text": "Jag var noga med att inte komma försent, utan kom precis i rätt tid.",
+        "word_in_sentence": "rätt"
+    },
+    {
+        "discrepancy": {
+            "article": "art_08",
+            "sentence_id": "art_08_s004",
+            "type": "Target",
+            "sv_word": "utbilda",
+            "contextual_en": "educate",
+            "sentence_en": "We had read a survey from the 18th century about how different groups of people could get an education."
+        },
+        "sv_text": "Vi hade läst en undersökning från 1700-talet om hur olika grupper av människor kunde utbilda sig.",
+        "word_in_sentence": "utbilda"
+    },
+    {
+        "discrepancy": {
+            "article": "art_08",
+            "sentence_id": "art_08_s020",
+            "type": "Target",
+            "sv_word": "bita",
+            "contextual_en": "bite",
+            "sentence_en": "It could almost make your head hurt from all the new rules and you sometimes felt like gritting your teeth."
+        },
+        "sv_text": "Det kunde nästan göra ont i huvudet av alla nya regler och man kände ibland för att bita ihop.",
+        "word_in_sentence": "bita"
+    },
+    {
+        "discrepancy": {
+            "article": "art_12",
+            "sentence_id": "art_12_s002",
+            "type": "Secondary",
+            "sv_word": "god",
+            "contextual_en": "delicious",
+            "sentence_en": "For many years I have liked to bake and cook good dishes."
+        },
+        "sv_text": "I många år har jag tyckt om att baka och laga goda rätter.",
+        "word_in_sentence": "goda"
+    },
+    {
+        "discrepancy": {
+            "article": "art_12",
+            "sentence_id": "art_12_s004",
+            "type": "Secondary",
+            "sv_word": "jobba",
+            "contextual_en": "worked",
+            "sentence_en": "After working all day he was hungry as a wolf."
+        },
+        "sv_text": "Efter att ha jobbat hela dagen var han hungrig som en varg.",
+        "word_in_sentence": "jobbat"
+    },
+    {
+        "discrepancy": {
+            "article": "art_12",
+            "sentence_id": "art_12_s005",
+            "type": "Secondary",
+            "sv_word": "mage",
+            "contextual_en": "the stomach",
+            "sentence_en": "He usually says that he likes to eat like a horse when his stomach is empty."
+        },
+        "sv_text": "Han brukar säga att han gillar att äta som en häst när magen är tom.",
+        "word_in_sentence": "magen"
+    },
+    {
+        "discrepancy": {
+            "article": "art_12",
+            "sentence_id": "art_12_s010",
+            "type": "Secondary",
+            "sv_word": "varje",
+            "contextual_en": "each",
+            "sentence_en": "Instead of... going to a restaurant, we started making easy finger food and slicing up every vegetable as well as fruit like apple and banana."
+        },
+        "sv_text": "Istället för att… gå på restaurang, började vi laga lättlagad plockmat och skära upp varje grönsak samt frukt som äpple och banan.",
+        "word_in_sentence": "varje"
+    },
+    {
+        "discrepancy": {
+            "article": "art_12",
+            "sentence_id": "art_12_s015",
+            "type": "Secondary",
+            "sv_word": "måste",
+            "contextual_en": "must",
+            "sentence_en": "I don't want to be critical, but I have to eat.\""
+        },
+        "sv_text": "Jag vill inte vara kritisk, men jag måste äta.\"",
+        "word_in_sentence": "måste"
+    },
+    {
+        "discrepancy": {
+            "article": "art_12",
+            "sentence_id": "art_12_s019",
+            "type": "Secondary",
+            "sv_word": "doft",
+            "contextual_en": "the smell",
+            "sentence_en": "The scent of garlic began to spread."
+        },
+        "sv_text": "Doften av vitlök började sprida sig.",
+        "word_in_sentence": "doften"
+    },
+    {
+        "discrepancy": {
+            "article": "art_13",
+            "sentence_id": "art_13_s004",
+            "type": "Secondary",
+            "sv_word": "slut",
+            "contextual_en": "finished",
+            "sentence_en": "Therefore I was always really hungry and craving a fika when the school day was over."
+        },
+        "sv_text": "Därför var jag alltid jättehungrig och fikasugen när skoldagen var slut.",
+        "word_in_sentence": "slut"
+    },
+    {
+        "discrepancy": {
+            "article": "art_13",
+            "sentence_id": "art_13_s012",
+            "type": "Secondary",
+            "sv_word": "arbete",
+            "contextual_en": "the work",
+            "sentence_en": "One day I felt that I had to take a break from work."
+        },
+        "sv_text": "En dag kände jag att jag måste göra en paus i arbetet.",
+        "word_in_sentence": "arbetet"
+    },
+    {
+        "discrepancy": {
+            "article": "art_13",
+            "sentence_id": "art_13_s024",
+            "type": "Secondary",
+            "sv_word": "all",
+            "contextual_en": "everything",
+            "sentence_en": "All this was as far from a Tex-Mex product as you can get."
+        },
+        "sv_text": "Allt detta var så långt från en texmexprodukt som man kan komma.",
+        "word_in_sentence": "allt"
+    },
+    {
+        "discrepancy": {
+            "article": "art_13",
+            "sentence_id": "art_13_s026",
+            "type": "Secondary",
+            "sv_word": "godsak",
+            "contextual_en": "treats",
+            "sentence_en": "Say what you want, I know it might make me look foolish, but I am so happy about my goodies."
+        },
+        "sv_text": "Säg vad ni vill, jag vet att det kanske får mig att inte se klok ut, men jag är så glad över mina godsaker.",
+        "word_in_sentence": "godsaker"
+    },
+    {
+        "discrepancy": {
+            "article": "art_14",
+            "sentence_id": "art_14_s014",
+            "type": "Secondary",
+            "sv_word": "mycket",
+            "contextual_en": "a lot of",
+            "sentence_en": "It is served with lots of butter and lingonberry jam."
+        },
+        "sv_text": "Den serveras med mycket smör och lingonsylt.",
+        "word_in_sentence": "mycket"
+    },
+    {
+        "discrepancy": {
+            "article": "art_14",
+            "sentence_id": "art_14_s015",
+            "type": "Secondary",
+            "sv_word": "börja",
+            "contextual_en": "started",
+            "sentence_en": "\"On the one hand... on the other hand,\" my friend began, \"it is delicious, but you get a food coma.\""
+        },
+        "sv_text": "\"Å ena sidan… å andra sidan,\" började min vän, \"är det jättegott, men man får ju paltkoma.\"",
+        "word_in_sentence": "började"
+    },
+    {
+        "discrepancy": {
+            "article": "art_14",
+            "sentence_id": "art_14_s015",
+            "type": "Secondary",
+            "sv_word": "jättegod",
+            "contextual_en": "very tasty",
+            "sentence_en": "\"On the one hand... on the other hand,\" my friend began, \"it is delicious, but you get a food coma.\""
+        },
+        "sv_text": "\"Å ena sidan… å andra sidan,\" började min vän, \"är det jättegott, men man får ju paltkoma.\"",
+        "word_in_sentence": "jättegott"
+    },
+    {
+        "discrepancy": {
+            "article": "art_14",
+            "sentence_id": "art_14_s016",
+            "type": "Secondary",
+            "sv_word": "trötthet",
+            "contextual_en": "tiredness",
+            "sentence_en": "So that she wouldn't be overcome by fatigue, we decided to go out."
+        },
+        "sv_text": "För att hon inte skulle bli slagen av trötthet, så bestämde vi oss för att gå ut.",
+        "word_in_sentence": "trötthet"
+    },
+    {
+        "discrepancy": {
+            "article": "art_15",
+            "sentence_id": "art_15_s001",
+            "type": "Secondary",
+            "sv_word": "hel",
+            "contextual_en": "whole",
+            "sentence_en": "In the past, it was important to be able to make jam and preserve food to have food throughout the winter."
+        },
+        "sv_text": "Förr i tiden var det viktigt att kunna koka sylt och konservera mat för att ha mat under hela vintern.",
+        "word_in_sentence": "hela"
+    },
+    {
+        "discrepancy": {
+            "article": "art_15",
+            "sentence_id": "art_15_s004",
+            "type": "Secondary",
+            "sv_word": "stor",
+            "contextual_en": "big",
+            "sentence_en": "There were many large food projects before we even started eating, like caramel making."
+        },
+        "sv_text": "Det fanns många stora matprojekt innan vi ens började äta, som karamellkokning.",
+        "word_in_sentence": "stora"
+    },
+    {
+        "discrepancy": {
+            "article": "art_15",
+            "sentence_id": "art_15_s006",
+            "type": "Secondary",
+            "sv_word": "smak",
+            "contextual_en": "taste",
+            "sentence_en": "Last winter we used to bake a bun with yeast and eat marmalade with an orange flavor."
+        },
+        "sv_text": "I vintras brukade vi baka en bulle med jäst och äta marmelad med smak av apelsin.",
+        "word_in_sentence": "smak"
+    },
+    {
+        "discrepancy": {
+            "article": "art_15",
+            "sentence_id": "art_15_s008",
+            "type": "Secondary",
+            "sv_word": "god",
+            "contextual_en": "tasty",
+            "sentence_en": "But he would rather go to a restaurant to eat a good salad with chicken and egg."
+        },
+        "sv_text": "Men han ville hellre gå på restaurang för att äta en god sallad med kyckling och ägg.",
+        "word_in_sentence": "god"
+    },
+    {
+        "discrepancy": {
+            "article": "art_15",
+            "sentence_id": "art_15_s015",
+            "type": "Secondary",
+            "sv_word": "burk",
+            "contextual_en": "can/jar",
+            "sentence_en": "We also bought some salted herring and a can of fermented herring."
+        },
+        "sv_text": "Vi köpte också lite salt sill och en burk surströmming.",
+        "word_in_sentence": "burk"
+    },
+    {
+        "discrepancy": {
+            "article": "art_15",
+            "sentence_id": "art_15_s017",
+            "type": "Secondary",
+            "sv_word": "lite",
+            "contextual_en": "a little",
+            "sentence_en": "You could mix some mushrooms and salt thoroughly."
+        },
+        "sv_text": "Man kunde blanda lite svamp och salta ordentligt.",
+        "word_in_sentence": "lite"
+    },
+    {
+        "discrepancy": {
+            "article": "art_15",
+            "sentence_id": "art_15_s027",
+            "type": "Secondary",
+            "sv_word": "hälsning",
+            "contextual_en": "regards",
+            "sentence_en": "Greetings ...\nAnna"
+        },
+        "sv_text": "Hälsningar …\nAnna",
+        "word_in_sentence": "hälsningar"
+    },
+    {
+        "discrepancy": {
+            "article": "art_16",
+            "sentence_id": "art_16_s013",
+            "type": "Secondary",
+            "sv_word": "verkade",
+            "contextual_en": "seemed",
+            "sentence_en": "My neighbor did not seem to be infected by any cold, because he had a good appetite."
+        },
+        "sv_text": "Min granne verkade inte vara smittad av någon förkylning, för han hade en god aptit.",
+        "word_in_sentence": "verkade"
+    },
+    {
+        "discrepancy": {
+            "article": "art_17",
+            "sentence_id": "art_17_s017",
+            "type": "Secondary",
+            "sv_word": "hyra",
+            "contextual_en": "rent",
+            "sentence_en": "Unfortunately, you often have to sublet a space in an ugly parking lot, sometimes built by order of a politician."
+        },
+        "sv_text": "Tyvärr måste man ofta hyra plats i andrahand på en ful parkering, ibland byggd på order av en politiker.",
+        "word_in_sentence": "hyra"
+    },
+    {
+        "discrepancy": {
+            "article": "art_18",
+            "sentence_id": "art_18_s001",
+            "type": "Secondary",
+            "sv_word": "cyklade",
+            "contextual_en": "were biking",
+            "sentence_en": "\"Help me!\" shouted my friend when we were mountain biking."
+        },
+        "sv_text": "\"Hjälp mig!\" ropade min vän när vi cyklade mountainbike.",
+        "word_in_sentence": "cyklade"
+    },
+    {
+        "discrepancy": {
+            "article": "art_19",
+            "sentence_id": "art_19_s020",
+            "type": "Secondary",
+            "sv_word": "smaka",
+            "contextual_en": "taste",
+            "sentence_en": "She couldn't resist tasting it."
+        },
+        "sv_text": "Hon kunde inte låta bli att smaka.",
+        "word_in_sentence": "smaka"
+    },
+    {
+        "discrepancy": {
+            "article": "art_19",
+            "sentence_id": "art_19_s032",
+            "type": "Secondary",
+            "sv_word": "hopp",
+            "contextual_en": "the hope",
+            "sentence_en": "It felt good to name the problems and hopefully get hope back."
+        },
+        "sv_text": "Det kändes bra att döpa problemen och förhoppningsvis få tillbaka hoppet.",
+        "word_in_sentence": "hoppet"
+    },
+    {
+        "discrepancy": {
+            "article": "art_20",
+            "sentence_id": "art_20_s010",
+            "type": "Secondary",
+            "sv_word": "djurens",
+            "contextual_en": "animal's",
+            "sentence_en": "There is an important difference between old and new research on animal behavior."
+        },
+        "sv_text": "Det finns en viktig skillnad mellan gammal och ny forskning om djurens beteende.",
+        "word_in_sentence": "djurens"
+    },
+    {
+        "discrepancy": {
+            "article": "art_21",
+            "sentence_id": "art_21_s002",
+            "type": "Target",
+            "sv_word": "himla",
+            "contextual_en": "really",
+            "sentence_en": "It was an evocative environment."
+        },
+        "sv_text": "Det var en suggestiv miljö.",
+        "word_in_sentence": "suggestiv"
+    },
+    {
+        "discrepancy": {
+            "article": "art_21",
+            "sentence_id": "art_21_s004",
+            "type": "Target",
+            "sv_word": "himla",
+            "contextual_en": "really",
+            "sentence_en": "It was an evocative environment, and we could breathe fresh air."
+        },
+        "sv_text": "Det var en suggestiv miljö, och vi kunde andas frisk luft.",
+        "word_in_sentence": "suggestiv"
+    },
+    {
+        "discrepancy": {
+            "article": "art_21",
+            "sentence_id": "art_21_s006",
+            "type": "Secondary",
+            "sv_word": "bergets",
+            "contextual_en": "the mountain's",
+            "sentence_en": "On the south side of the mountain the sun was shining."
+        },
+        "sv_text": "På bergets sydsida lyste solen.",
+        "word_in_sentence": "bergets"
+    },
+    {
+        "discrepancy": {
+            "article": "art_25",
+            "sentence_id": "art_25_s023",
+            "type": "Secondary",
+            "sv_word": "hämta",
+            "contextual_en": "pick up",
+            "sentence_en": "If someone had a handicap and was disabled, an ambulance could roll in to pick them up."
+        },
+        "sv_text": "Om någon hade ett handikapp och var funktionshindrad kunde en ambulans rulla in för att hämta dem.",
+        "word_in_sentence": "hämta"
+    },
+    {
+        "discrepancy": {
+            "article": "art_28",
+            "sentence_id": "art_28_s026",
+            "type": "Target",
+            "sv_word": "gång",
+            "contextual_en": "time",
+            "sentence_en": "Actually, my goal is to run exactly once a week according to my training schedule."
+        },
+        "sv_text": "Egentligen har jag som mål att springa exakt en gång i veckan enligt mitt träningsschema.",
+        "word_in_sentence": "gång"
+    },
+    {
+        "discrepancy": {
+            "article": "art_31",
+            "sentence_id": "art_31_s008",
+            "type": "Secondary",
+            "sv_word": "promenera",
+            "contextual_en": "walking",
+            "sentence_en": "I went to a clothing store that had a big sale all day. Instead of looking in an old catalog, I bought a new white swimsuit and a pair of extra thick socks."
+        },
+        "sv_text": "För några dagar sedan började jag promenera.",
+        "word_in_sentence": "promenera"
+    },
+    {
+        "discrepancy": {
+            "article": "art_31",
+            "sentence_id": "art_31_s009",
+            "type": "Target",
+            "sv_word": "strumpa",
+            "contextual_en": "sock",
+            "sentence_en": "But suddenly I noticed that my wallet was gone. suddenly. wallet."
+        },
+        "sv_text": "Jag gick till en klädbutik som hade en stor rea hela dagen. strumpa. plånbok.",
+        "word_in_sentence": "strumpa"
+    },
+    {
+        "discrepancy": {
+            "article": "art_31",
+            "sentence_id": "art_31_s009",
+            "type": "Secondary",
+            "sv_word": "klädbutik",
+            "contextual_en": "clothing store",
+            "sentence_en": "But suddenly I noticed that my wallet was gone. suddenly. wallet."
+        },
+        "sv_text": "Jag gick till en klädbutik som hade en stor rea hela dagen. strumpa. plånbok.",
+        "word_in_sentence": "klädbutik"
+    },
+    {
+        "discrepancy": {
+            "article": "art_31",
+            "sentence_id": "art_31_s009",
+            "type": "Secondary",
+            "sv_word": "rea",
+            "contextual_en": "sale",
+            "sentence_en": "But suddenly I noticed that my wallet was gone. suddenly. wallet."
+        },
+        "sv_text": "Jag gick till en klädbutik som hade en stor rea hela dagen. strumpa. plånbok.",
+        "word_in_sentence": "rea"
+    },
+    {
+        "discrepancy": {
+            "article": "art_31",
+            "sentence_id": "art_31_s010",
+            "type": "Secondary",
+            "sv_word": "baddräkt",
+            "contextual_en": "swimsuit",
+            "sentence_en": "I didn't want to accidentally do something stupid or seem like I was trying to shoplift. accidentally. do something stupid. seem. shoplift."
+        },
+        "sv_text": "Istället för att titta i en gammal katalog köpte jag en ny vit baddräkt och ett par extra tjocka strumpor. råka. göra något dumt. verka. snatta.",
+        "word_in_sentence": "baddräkt"
+    },
+    {
+        "discrepancy": {
+            "article": "art_31",
+            "sentence_id": "art_31_s010",
+            "type": "Secondary",
+            "sv_word": "strumpor",
+            "contextual_en": "socks",
+            "sentence_en": "I didn't want to accidentally do something stupid or seem like I was trying to shoplift. accidentally. do something stupid. seem. shoplift."
+        },
+        "sv_text": "Istället för att titta i en gammal katalog köpte jag en ny vit baddräkt och ett par extra tjocka strumpor. råka. göra något dumt. verka. snatta.",
+        "word_in_sentence": "strumpor"
+    },
+    {
+        "discrepancy": {
+            "article": "art_31",
+            "sentence_id": "art_31_s013",
+            "type": "Secondary",
+            "sv_word": "personalen",
+            "contextual_en": "staff",
+            "sentence_en": "I don't usually skimp, but an expensive watch I had in my bag was also gone. skimp. watch."
+        },
+        "sv_text": "Jag tänkte fråga någon i personalen som kunde agera. snåla. klocka.",
+        "word_in_sentence": "personalen"
+    },
+    {
+        "discrepancy": {
+            "article": "art_31",
+            "sentence_id": "art_31_s014",
+            "type": "Secondary",
+            "sv_word": "hittade",
+            "contextual_en": "find",
+            "sentence_en": "Had I put it somewhere? somewhere."
+        },
+        "sv_text": "De hittade den inte. någonstans.",
+        "word_in_sentence": "hittade"
+    },
+    {
+        "discrepancy": {
+            "article": "art_31",
+            "sentence_id": "art_31_s015",
+            "type": "Secondary",
+            "sv_word": "väskan",
+            "contextual_en": "bag",
+            "sentence_en": "The next morning it was freezing cold and the ground was icy. The next morning. icy."
+        },
+        "sv_text": "Jag brukar inte snåla, men en dyr klocka jag hade i väskan var också borta. morgonen därpå. isig.",
+        "word_in_sentence": "väskan"
+    },
+    {
+        "discrepancy": {
+            "article": "art_31",
+            "sentence_id": "art_31_s015",
+            "type": "Secondary",
+            "sv_word": "dyr",
+            "contextual_en": "expensive",
+            "sentence_en": "The next morning it was freezing cold and the ground was icy. The next morning. icy."
+        },
+        "sv_text": "Jag brukar inte snåla, men en dyr klocka jag hade i väskan var också borta. morgonen därpå. isig.",
+        "word_in_sentence": "dyr"
+    },
+    {
+        "discrepancy": {
+            "article": "art_31",
+            "sentence_id": "art_31_s016",
+            "type": "Secondary",
+            "sv_word": "lagt",
+            "contextual_en": "put",
+            "sentence_en": "I took an ugly jacket and an umbrella. ugly."
+        },
+        "sv_text": "Hade jag lagt den någonstans? ful.",
+        "word_in_sentence": "lagt"
+    },
+    {
+        "discrepancy": {
+            "article": "art_31",
+            "sentence_id": "art_31_s017",
+            "type": "Secondary",
+            "sv_word": "iskallt",
+            "contextual_en": "freezing cold",
+            "sentence_en": "I was not used to the cold and started freezing right to my soul. used to. freezing."
+        },
+        "sv_text": "Morgonen därpå var det iskallt och marken var isig. van vid. frysa.",
+        "word_in_sentence": "iskallt"
+    },
+    {
+        "discrepancy": {
+            "article": "art_31",
+            "sentence_id": "art_31_s017",
+            "type": "Secondary",
+            "sv_word": "marken",
+            "contextual_en": "ground",
+            "sentence_en": "I was not used to the cold and started freezing right to my soul. used to. freezing."
+        },
+        "sv_text": "Morgonen därpå var det iskallt och marken var isig. van vid. frysa.",
+        "word_in_sentence": "marken"
+    },
+    {
+        "discrepancy": {
+            "article": "art_31",
+            "sentence_id": "art_31_s018",
+            "type": "Secondary",
+            "sv_word": "paraply",
+            "contextual_en": "umbrella",
+            "sentence_en": "I thought about daydreaming away. daydreaming."
+        },
+        "sv_text": "Jag tog en ful jacka och ett paraply. drömma.",
+        "word_in_sentence": "paraply"
+    },
+    {
+        "discrepancy": {
+            "article": "art_31",
+            "sentence_id": "art_31_s019",
+            "type": "Secondary",
+            "sv_word": "kylan",
+            "contextual_en": "the cold",
+            "sentence_en": "My current apartment is not as big as the house I lived in when I was 10 years old, but every detail is important."
+        },
+        "sv_text": "Jag var inte van vid kylan och började frysa ända in i min själ.",
+        "word_in_sentence": "kylan"
+    },
+    {
+        "discrepancy": {
+            "article": "art_31",
+            "sentence_id": "art_31_s019",
+            "type": "Secondary",
+            "sv_word": "själ",
+            "contextual_en": "soul",
+            "sentence_en": "My current apartment is not as big as the house I lived in when I was 10 years old, but every detail is important."
+        },
+        "sv_text": "Jag var inte van vid kylan och började frysa ända in i min själ.",
+        "word_in_sentence": "själ"
+    },
+    {
+        "discrepancy": {
+            "article": "art_31",
+            "sentence_id": "art_31_s020",
+            "type": "Secondary",
+            "sv_word": "bort",
+            "contextual_en": "away",
+            "sentence_en": "I went into my bedroom to rest for a quarter of an hour. bedroom."
+        },
+        "sv_text": "Jag tänkte drömma mig bort. sovrum.",
+        "word_in_sentence": "bort"
+    },
+    {
+        "discrepancy": {
+            "article": "art_31",
+            "sentence_id": "art_31_s021",
+            "type": "Secondary",
+            "sv_word": "nuvarande",
+            "contextual_en": "current",
+            "sentence_en": "\"Prepare yourself for the day after tomorrow!\" said a singing voice on the radio. Prepare. singing."
+        },
+        "sv_text": "Min nuvarande lägenhet är inte lika stor som huset jag bodde i när jag var 10 år gammal, men varje detalj är viktig. förbered. sjungande.",
+        "word_in_sentence": "nuvarande"
+    },
+    {
+        "discrepancy": {
+            "article": "art_31",
+            "sentence_id": "art_31_s021",
+            "type": "Secondary",
+            "sv_word": "detalj",
+            "contextual_en": "detail",
+            "sentence_en": "\"Prepare yourself for the day after tomorrow!\" said a singing voice on the radio. Prepare. singing."
+        },
+        "sv_text": "Min nuvarande lägenhet är inte lika stor som huset jag bodde i när jag var 10 år gammal, men varje detalj är viktig. förbered. sjungande.",
+        "word_in_sentence": "detalj"
+    },
+    {
+        "discrepancy": {
+            "article": "art_31",
+            "sentence_id": "art_31_s022",
+            "type": "Secondary",
+            "sv_word": "kvart",
+            "contextual_en": "quarter of an hour",
+            "sentence_en": "It was a program about a capable housewife. housewife."
+        },
+        "sv_text": "Jag gick in i mitt sovrum för att vila i en kvart. husmor.",
+        "word_in_sentence": "kvart"
+    },
+    {
+        "discrepancy": {
+            "article": "art_31",
+            "sentence_id": "art_31_s022",
+            "type": "Secondary",
+            "sv_word": "vila",
+            "contextual_en": "rest",
+            "sentence_en": "It was a program about a capable housewife. housewife."
+        },
+        "sv_text": "Jag gick in i mitt sovrum för att vila i en kvart. husmor.",
+        "word_in_sentence": "vila"
+    },
+    {
+        "discrepancy": {
+            "article": "art_31",
+            "sentence_id": "art_31_s023",
+            "type": "Secondary",
+            "sv_word": "röst",
+            "contextual_en": "voice",
+            "sentence_en": "One tip was to clean out your fridge, another was to take a sauna in your little bathroom to relax. fridge. take a sauna."
+        },
+        "sv_text": "\"Förbered dig för i övermorgon!\" sa en sjungande röst i radion. kylskåp. bada bastu.",
+        "word_in_sentence": "röst"
+    },
+    {
+        "discrepancy": {
+            "article": "art_31",
+            "sentence_id": "art_31_s023",
+            "type": "Secondary",
+            "sv_word": "radion",
+            "contextual_en": "radio",
+            "sentence_en": "One tip was to clean out your fridge, another was to take a sauna in your little bathroom to relax. fridge. take a sauna."
+        },
+        "sv_text": "\"Förbered dig för i övermorgon!\" sa en sjungande röst i radion. kylskåp. bada bastu.",
+        "word_in_sentence": "radion"
+    },
+    {
+        "discrepancy": {
+            "article": "art_31",
+            "sentence_id": "art_31_s024",
+            "type": "Secondary",
+            "sv_word": "program",
+            "contextual_en": "program",
+            "sentence_en": "Taking a sauna is a useful method for relaxation. Taking a sauna. useful."
+        },
+        "sv_text": "Det var ett program om en duktig husmor. bada bastu. användbar.",
+        "word_in_sentence": "program"
+    },
+    {
+        "discrepancy": {
+            "article": "art_31",
+            "sentence_id": "art_31_s024",
+            "type": "Secondary",
+            "sv_word": "duktig",
+            "contextual_en": "capable",
+            "sentence_en": "Taking a sauna is a useful method for relaxation. Taking a sauna. useful."
+        },
+        "sv_text": "Det var ett program om en duktig husmor. bada bastu. användbar.",
+        "word_in_sentence": "duktig"
+    },
+    {
+        "discrepancy": {
+            "article": "art_31",
+            "sentence_id": "art_31_s025",
+            "type": "Secondary",
+            "sv_word": "lugnt",
+            "contextual_en": "relax",
+            "sentence_en": "I actually haven't taken a sauna at all, at least not for several months. actually. not for several months."
+        },
+        "sv_text": "Ett tips var att städa ur sitt kylskåp, ett annat var att bada bastu i sitt lilla badrum för att ta det lugnt. faktisk. inte på flera månader.",
+        "word_in_sentence": "lugnt"
+    },
+    {
+        "discrepancy": {
+            "article": "art_31",
+            "sentence_id": "art_31_s026",
+            "type": "Secondary",
+            "sv_word": "metod",
+            "contextual_en": "method",
+            "sentence_en": "Before, I took a sauna several times a week. several times a week."
+        },
+        "sv_text": "Att bada bastu är en användbar metod för avkoppling. flera gånger i veckan.",
+        "word_in_sentence": "metod"
+    },
+    {
+        "discrepancy": {
+            "article": "art_31",
+            "sentence_id": "art_31_s026",
+            "type": "Secondary",
+            "sv_word": "avkoppling",
+            "contextual_en": "relaxation",
+            "sentence_en": "Before, I took a sauna several times a week. several times a week."
+        },
+        "sv_text": "Att bada bastu är en användbar metod för avkoppling. flera gånger i veckan.",
+        "word_in_sentence": "avkoppling"
+    },
+    {
+        "discrepancy": {
+            "article": "art_31",
+            "sentence_id": "art_31_s027",
+            "type": "Secondary",
+            "sv_word": "alls",
+            "contextual_en": "at all",
+            "sentence_en": "After a couple of days, I felt better. a couple of days."
+        },
+        "sv_text": "Jag har faktiskt inte badat bastu alls, i alla fall inte på flera månader. ett par dagar.",
+        "word_in_sentence": "alls"
+    },
+    {
+        "discrepancy": {
+            "article": "art_31",
+            "sentence_id": "art_31_s028",
+            "type": "Secondary",
+            "sv_word": "förut",
+            "contextual_en": "Before",
+            "sentence_en": "I stopped giving up and decided to let out all the stress."
+        },
+        "sv_text": "Förut badade jag flera gånger i veckan.",
+        "word_in_sentence": "Förut"
+    },
+    {
+        "discrepancy": {
+            "article": "art_31",
+            "sentence_id": "art_31_s029",
+            "type": "Secondary",
+            "sv_word": "bättre",
+            "contextual_en": "better",
+            "sentence_en": "If something breaks, what will it mean in a hundred years? breaks. mean."
+        },
+        "sv_text": "Efter ett par dagar kände jag mig bättre. sönder. betyda.",
+        "word_in_sentence": "bättre"
+    },
+    {
+        "discrepancy": {
+            "article": "art_31",
+            "sentence_id": "art_31_s030",
+            "type": "Secondary",
+            "sv_word": "slutade",
+            "contextual_en": "stopped",
+            "sentence_en": "You have to sleep eight hours a day, at least some time for yourself. a day. some time."
+        },
+        "sv_text": "Jag slutade ge upp och bestämde mig för att släppa ut all stress. per dygn. en viss tid.",
+        "word_in_sentence": "slutade"
+    },
+    {
+        "discrepancy": {
+            "article": "art_31",
+            "sentence_id": "art_31_s032",
+            "type": "Secondary",
+            "sv_word": "timmar",
+            "contextual_en": "hours",
+            "sentence_en": "Life goes on!"
+        },
+        "sv_text": "Man måste sova åtta timmar per dygn, minst en viss tid för sig själv.",
+        "word_in_sentence": "timmar"
+    },
+    {
+        "discrepancy": {
+            "article": "art_31",
+            "sentence_id": "art_31_s033",
+            "type": "Secondary",
+            "sv_word": "favoritlag",
+            "contextual_en": "favorite team",
+            "sentence_en": ""
+        },
+        "sv_text": "Mitt favoritlag kom på sjunde plats i ligan, men vad gör det?",
+        "word_in_sentence": "favoritlag"
+    },
+    {
+        "discrepancy": {
+            "article": "art_35",
+            "sentence_id": "art_35_s026",
+            "type": "Secondary",
+            "sv_word": "visas",
+            "contextual_en": "are shown",
+            "sentence_en": "Sometimes martial arts are also shown, and it doesn't seem to matter what you like."
+        },
+        "sv_text": "Ibland visas även kampsport, och det verkar inte spela roll vad du gillar.",
+        "word_in_sentence": "visas"
+    },
+    {
+        "discrepancy": {
+            "article": "art_36",
+            "sentence_id": "art_36_s011",
+            "type": "Secondary",
+            "sv_word": "handlade",
+            "contextual_en": "was about",
+            "sentence_en": "Life was not just about art."
+        },
+        "sv_text": "Livet handlade inte bara om konst.",
+        "word_in_sentence": "handlade"
+    },
+    {
+        "discrepancy": {
+            "article": "art_36",
+            "sentence_id": "art_36_s014",
+            "type": "Target",
+            "sv_word": "spela död",
+            "contextual_en": "play dead",
+            "sentence_en": "He often used to play actor and always wanted to play actor in front of the camera."
+        },
+        "sv_text": "Han brukade ofta leka skådespelare och ville alltid leka skådespelare framför kameran.",
+        "word_in_sentence": "skådespelare"
+    },
+    {
+        "discrepancy": {
+            "article": "art_38",
+            "sentence_id": "art_38_s012",
+            "type": "Secondary",
+            "sv_word": "gillade",
+            "contextual_en": "liked",
+            "sentence_en": "She explained that she didn't like just lying around and lazing."
+        },
+        "sv_text": "Hon förklarade att hon inte gillade att bara ligga och lata sig.",
+        "word_in_sentence": "gillade"
+    },
+    {
+        "discrepancy": {
+            "article": "art_40",
+            "sentence_id": "art_40_s030",
+            "type": "Secondary",
+            "sv_word": "gärna",
+            "contextual_en": "gladly",
+            "sentence_en": "He also wanted to watch the old Swedish movie \"Summer with Monika\" with his big idol."
+        },
+        "sv_text": "Han ville också gärna titta på den gamla svenska filmen ”Sommaren med Monica” med sin stora idol.",
+        "word_in_sentence": "gärna"
+    },
+    {
+        "discrepancy": {
+            "article": "art_43",
+            "sentence_id": "art_43_s006",
+            "type": "Secondary",
+            "sv_word": "styrs",
+            "contextual_en": "is governed",
+            "sentence_en": "A democratic country is often governed by a parliament."
+        },
+        "sv_text": "Ett demokratiskt land styrs ofta av ett parlament.",
+        "word_in_sentence": "styrs"
+    },
+    {
+        "discrepancy": {
+            "article": "art_47",
+            "sentence_id": "art_47_s021",
+            "type": "Secondary",
+            "sv_word": "komplicerat",
+            "contextual_en": "complicated",
+            "sentence_en": "I thought only expensive food would be on the menu today.\" expensive."
+        },
+        "sv_text": "\"Det låter väldigt komplicerat. dyr.",
+        "word_in_sentence": "komplicerat"
+    },
+    {
+        "discrepancy": {
+            "article": "art_47",
+            "sentence_id": "art_47_s022",
+            "type": "Secondary",
+            "sv_word": "menyn",
+            "contextual_en": "menu",
+            "sentence_en": "Suddenly we heard a scream."
+        },
+        "sv_text": "Jag trodde att bara dyr mat skulle stå på menyn idag.\"",
+        "word_in_sentence": "menyn"
+    },
+    {
+        "discrepancy": {
+            "article": "art_47",
+            "sentence_id": "art_47_s023",
+            "type": "Secondary",
+            "sv_word": "skrik",
+            "contextual_en": "scream",
+            "sentence_en": "A criminal thief had tried to rob a store nearby and then tried to escape. criminal. thief."
+        },
+        "sv_text": "Plötsligt hörde vi ett skrik. kriminell. tjuv.",
+        "word_in_sentence": "skrik"
+    },
+    {
+        "discrepancy": {
+            "article": "art_47",
+            "sentence_id": "art_47_s024",
+            "type": "Secondary",
+            "sv_word": "råna",
+            "contextual_en": "rob",
+            "sentence_en": "In the panic, chaos arose in all local traffic. traffic."
+        },
+        "sv_text": "En kriminell tjuv hade försökt råna en butik i närheten och sedan försökt rymma. trafik.",
+        "word_in_sentence": "råna"
+    },
+    {
+        "discrepancy": {
+            "article": "art_47",
+            "sentence_id": "art_47_s024",
+            "type": "Secondary",
+            "sv_word": "rymma",
+            "contextual_en": "escape",
+            "sentence_en": "In the panic, chaos arose in all local traffic. traffic."
+        },
+        "sv_text": "En kriminell tjuv hade försökt råna en butik i närheten och sedan försökt rymma. trafik.",
+        "word_in_sentence": "rymma"
+    },
+    {
+        "discrepancy": {
+            "article": "art_47",
+            "sentence_id": "art_47_s025",
+            "type": "Secondary",
+            "sv_word": "paniken",
+            "contextual_en": "panic",
+            "sentence_en": "Two cars, of which one vehicle belonged to the Swedish military, happened to crash, which caused a serious traffic accident."
+        },
+        "sv_text": "I paniken uppstod kaos i all lokal trafik.",
+        "word_in_sentence": "paniken"
+    },
+    {
+        "discrepancy": {
+            "article": "art_47",
+            "sentence_id": "art_47_s025",
+            "type": "Secondary",
+            "sv_word": "kaos",
+            "contextual_en": "chaos",
+            "sentence_en": "Two cars, of which one vehicle belonged to the Swedish military, happened to crash, which caused a serious traffic accident."
+        },
+        "sv_text": "I paniken uppstod kaos i all lokal trafik.",
+        "word_in_sentence": "kaos"
+    },
+    {
+        "discrepancy": {
+            "article": "art_47",
+            "sentence_id": "art_47_s026",
+            "type": "Secondary",
+            "sv_word": "fordon",
+            "contextual_en": "vehicle",
+            "sentence_en": "We saw a shocking accident happen before our eyes."
+        },
+        "sv_text": "Två bilar, varav ett fordon tillhörde svensk militär, råkade krocka, vilket orsakade en allvarlig trafikolycka.",
+        "word_in_sentence": "fordon"
+    },
+    {
+        "discrepancy": {
+            "article": "art_47",
+            "sentence_id": "art_47_s026",
+            "type": "Secondary",
+            "sv_word": "krocka",
+            "contextual_en": "crash",
+            "sentence_en": "We saw a shocking accident happen before our eyes."
+        },
+        "sv_text": "Två bilar, varav ett fordon tillhörde svensk militär, råkade krocka, vilket orsakade en allvarlig trafikolycka.",
+        "word_in_sentence": "krocka"
+    },
+    {
+        "discrepancy": {
+            "article": "art_47",
+            "sentence_id": "art_47_s027",
+            "type": "Secondary",
+            "sv_word": "chockerande",
+            "contextual_en": "shocking",
+            "sentence_en": "A high-ranking police superintendent came there to try to handle the situation. police superintendent. try."
+        },
+        "sv_text": "Vi såg en chockerande olycka hända framför våra ögon. polisintendent. försöka.",
+        "word_in_sentence": "chockerande"
+    },
+    {
+        "discrepancy": {
+            "article": "art_47",
+            "sentence_id": "art_47_s027",
+            "type": "Secondary",
+            "sv_word": "framför",
+            "contextual_en": "before",
+            "sentence_en": "A high-ranking police superintendent came there to try to handle the situation. police superintendent. try."
+        },
+        "sv_text": "Vi såg en chockerande olycka hända framför våra ögon. polisintendent. försöka.",
+        "word_in_sentence": "framför"
+    },
+    {
+        "discrepancy": {
+            "article": "art_47",
+            "sentence_id": "art_47_s028",
+            "type": "Secondary",
+            "sv_word": "hantera",
+            "contextual_en": "handle",
+            "sentence_en": "It was hard to know who was who among all the screaming witnesses. who was who."
+        },
+        "sv_text": "En högt uppsatt polisintendent kom dit för att försöka hantera situationen. vem som är vem.",
+        "word_in_sentence": "hantera"
+    },
+    {
+        "discrepancy": {
+            "article": "art_47",
+            "sentence_id": "art_47_s029",
+            "type": "Secondary",
+            "sv_word": "skrikande",
+            "contextual_en": "screaming",
+            "sentence_en": "Someone claimed that a man had been murdered by a known murderer and then been shot, and that there had been great enmity between them. murdered. murderer."
+        },
+        "sv_text": "Det var svårt att veta vem som är vem bland alla skrikande vittnen. mördad. mördare.",
+        "word_in_sentence": "skrikande"
+    },
+    {
+        "discrepancy": {
+            "article": "art_47",
+            "sentence_id": "art_47_s029",
+            "type": "Secondary",
+            "sv_word": "vittnen",
+            "contextual_en": "witnesses",
+            "sentence_en": "Someone claimed that a man had been murdered by a known murderer and then been shot, and that there had been great enmity between them. murdered. murderer."
+        },
+        "sv_text": "Det var svårt att veta vem som är vem bland alla skrikande vittnen. mördad. mördare.",
+        "word_in_sentence": "vittnen"
+    },
+    {
+        "discrepancy": {
+            "article": "art_47",
+            "sentence_id": "art_47_s030",
+            "type": "Secondary",
+            "sv_word": "hävdade",
+            "contextual_en": "claimed",
+            "sentence_en": "This turned out to be a pure untruth, however. untruth."
+        },
+        "sv_text": "Någon hävdade att en man blivit mördad av en känd mördare och sedan blivit skjuten, och att det funnits stor fiendskap dem emellan. osanning.",
+        "word_in_sentence": "hävdade"
+    },
+    {
+        "discrepancy": {
+            "article": "art_47",
+            "sentence_id": "art_47_s030",
+            "type": "Secondary",
+            "sv_word": "fiendskap",
+            "contextual_en": "enmity",
+            "sentence_en": "This turned out to be a pure untruth, however. untruth."
+        },
+        "sv_text": "Någon hävdade att en man blivit mördad av en känd mördare och sedan blivit skjuten, och att det funnits stor fiendskap dem emellan. osanning.",
+        "word_in_sentence": "fiendskap"
+    },
+    {
+        "discrepancy": {
+            "article": "art_47",
+            "sentence_id": "art_47_s031",
+            "type": "Secondary",
+            "sv_word": "ren",
+            "contextual_en": "pure",
+            "sentence_en": "The police arrested three suspects at the scene, and chose to immediately invite everyone involved to the police station for questioning. arrested."
+        },
+        "sv_text": "Detta visade sig dock vara en ren osanning. stycken.",
+        "word_in_sentence": "ren"
+    },
+    {
+        "discrepancy": {
+            "article": "art_47",
+            "sentence_id": "art_47_s032",
+            "type": "Target",
+            "sv_word": "stycken",
+            "contextual_en": "three",
+            "sentence_en": ""
+        },
+        "sv_text": "Polisen grep tre stycken misstänkta personer på platsen, och valde att genast bjuda in alla inblandade till polisstationen för förhör.",
+        "word_in_sentence": "stycken"
+    },
+    {
+        "discrepancy": {
+            "article": "art_47",
+            "sentence_id": "art_47_s032",
+            "type": "Secondary",
+            "sv_word": "misstänkta",
+            "contextual_en": "suspects",
+            "sentence_en": ""
+        },
+        "sv_text": "Polisen grep tre stycken misstänkta personer på platsen, och valde att genast bjuda in alla inblandade till polisstationen för förhör.",
+        "word_in_sentence": "misstänkta"
+    },
+    {
+        "discrepancy": {
+            "article": "art_47",
+            "sentence_id": "art_47_s032",
+            "type": "Secondary",
+            "sv_word": "inblandade",
+            "contextual_en": "involved",
+            "sentence_en": ""
+        },
+        "sv_text": "Polisen grep tre stycken misstänkta personer på platsen, och valde att genast bjuda in alla inblandade till polisstationen för förhör.",
+        "word_in_sentence": "inblandade"
+    },
+    {
+        "discrepancy": {
+            "article": "art_48",
+            "sentence_id": "art_48_s022",
+            "type": "Secondary",
+            "sv_word": "krävs",
+            "contextual_en": "is required",
+            "sentence_en": "Then a strong coalition is often required."
+        },
+        "sv_text": "Då krävs det ofta en stark koalition.",
+        "word_in_sentence": "krävs"
+    },
+    {
+        "discrepancy": {
+            "article": "art_51",
+            "sentence_id": "art_51_s010",
+            "type": "Target",
+            "sv_word": "farföräldrar",
+            "contextual_en": "paternal grandparents",
+            "sentence_en": "Both my paternal and maternal grandparents really liked gathering all the small grandchildren, some nice villagers, local school staff, and also my older sister."
+        },
+        "sv_text": "Både mina farföräldrar och morföräldrar tyckte mycket om att samla ihop alla små barnbarn, några trevliga bybor, lokal skolpersonal och även min äldre syster.",
+        "word_in_sentence": "farföräldrar"
+    },
+    {
+        "discrepancy": {
+            "article": "art_51",
+            "sentence_id": "art_51_s020",
+            "type": "Target",
+            "sv_word": "gärna",
+            "contextual_en": "want to",
+            "sentence_en": "He wanted to show up in exactly the right place at the right time."
+        },
+        "sv_text": "Han ville nämligen gärna dyka upp på helt rätt plats vid rätt tid.",
+        "word_in_sentence": "gärna"
+    },
+    {
+        "discrepancy": {
+            "article": "art_51",
+            "sentence_id": "art_51_s020",
+            "type": "Secondary",
+            "sv_word": "nämligen",
+            "contextual_en": "namely",
+            "sentence_en": "He wanted to show up in exactly the right place at the right time."
+        },
+        "sv_text": "Han ville nämligen gärna dyka upp på helt rätt plats vid rätt tid.",
+        "word_in_sentence": "nämligen"
+    },
+    {
+        "discrepancy": {
+            "article": "art_51",
+            "sentence_id": "art_51_s033",
+            "type": "Secondary",
+            "sv_word": "platser",
+            "contextual_en": "places",
+            "sentence_en": "I really like this kind of... quiet and peaceful place.\""
+        },
+        "sv_text": "Jag gillar verkligen den här typen av … tysta och fridfulla platser.\"",
+        "word_in_sentence": "platser"
+    },
+    {
+        "discrepancy": {
+            "article": "art_52",
+            "sentence_id": "art_52_s018",
+            "type": "Secondary",
+            "sv_word": "överdrev",
+            "contextual_en": "was exaggerating",
+            "sentence_en": "\"It is a shame for... well, for our entire family,\" my dad said, although he was probably exaggerating a bit."
+        },
+        "sv_text": "\"Det är en skam för … ja, för hela vår familj,\" sa min pappa, fast han förmodligen överdrev lite.",
+        "word_in_sentence": "överdrev"
+    },
+    {
+        "discrepancy": {
+            "article": "art_52",
+            "sentence_id": "art_52_s023",
+            "type": "Secondary",
+            "sv_word": "tråkigt",
+            "contextual_en": "sad",
+            "sentence_en": "\"We have to try to make the best of a bad situation,\" I said."
+        },
+        "sv_text": "\"Vi får försöka göra det bästa av något som är tråkigt,\" sa jag.",
+        "word_in_sentence": "tråkigt"
+    },
+    {
+        "discrepancy": {
+            "article": "art_53",
+            "sentence_id": "art_53_s028",
+            "type": "Target",
+            "sv_word": "skott",
+            "contextual_en": "shot",
+            "sentence_en": "Then he took off quick as a flash."
+        },
+        "sv_text": "Sedan stack han iväg snabbt som ett skott.",
+        "word_in_sentence": "skott"
+    },
+    {
+        "discrepancy": {
+            "article": "art_56",
+            "sentence_id": "art_56_s015",
+            "type": "Target",
+            "sv_word": "med",
+            "contextual_en": "with",
+            "sentence_en": "He even used to light a candle for those he thought of and wanted to admire."
+        },
+        "sv_text": "Han brukade till och med tända ett ljus för dem han tänkt på och ville beundra.",
+        "word_in_sentence": "med"
+    }
+]

@@ -308,7 +308,7 @@
                     "base_form": "farföräldrar",
                     "position_start": 10,
                     "position_end": 22,
-                    "contextual_en": "paternal grandparents"
+                    "contextual_en": "maternal grandparents"
                 },
                 {
                     "word_in_sentence": "morföräldrar",
@@ -657,7 +657,7 @@
                     "base_form": "gärna",
                     "position_start": 19,
                     "position_end": 24,
-                    "contextual_en": "want to"
+                    "contextual_en": "wanted to"
                 },
                 {
                     "word_in_sentence": "dyka upp",
@@ -680,7 +680,7 @@
                     "base_form": "nämligen",
                     "position_start": 10,
                     "position_end": 18,
-                    "contextual_en": "namely"
+                    "contextual_en": "in exactly"
                 }
             ]
         },
@@ -1019,7 +1019,7 @@
                     "base_form": "platser",
                     "position_start": 60,
                     "position_end": 67,
-                    "contextual_en": "places"
+                    "contextual_en": "place"
                 }
             ]
         },
