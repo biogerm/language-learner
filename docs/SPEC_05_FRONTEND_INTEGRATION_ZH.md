@@ -81,11 +81,31 @@ window.APP_DATA = {
 };
 ```
 
-## 3. 可打印 HTML 生成
+## 3. Web App UI 与 FSRS 逻辑
+
+前端应用程序不仅需要加载 `data.js` 展示静态内容，还需要提供高度交互的阅读体验并集成 FSRS 间隔重复记忆算法。
+
+### 3.1 独立存储与翻译重组 (FSRS)
+当单词正式落户 FSRS 库时，系统会为其创建独立档案并存入 `localStorage("customVocab")`。写入逻辑必须重写为：
+*   **对于 Target Words (考点词)**：组合写入 `[语境精准翻译] ([主词典全局翻译])`。示例：`couch potato (someone who lies on the sofa, inactive)`。
+*   **对于 Secondary Words (副词汇)**：直接写入 `[语境精准翻译]`，即仅保留大模型根据当前句子生成的释义。
+
+### 3.2 双端双语高亮渲染 (Bilingual Highlighting)
+在阅读模式的 UI 层（例如 `renderSentences` 中），必须实现严丝合缝的中瑞双语对齐高亮：
+*   **Target Words (考点词)**：
+    *   **瑞典语侧 (sv)**：匹配 `word_in_sentence` 字段，进行醒目渲染（例如：**加粗+金色**）。
+    *   **英语侧 (en)**：匹配大模型提取的 `contextual_en` 字符串，进行完全对应的同款渲染（**加粗+金色**）。
+*   **Secondary Words (副词汇)**：
+    *   **瑞典语侧 (sv)**：匹配 `word_in_sentence` 字段，进行次级渲染（例如：蓝色虚线下划线）。
+    *   **英语侧 (en)**：匹配 `contextual_en` 字符串，进行对应的次级渲染（蓝色虚线下划线）。
+
+这样学生在阅读时，视线在上下两行扫过，立刻就能将语境严丝合缝地对齐，极大提升双语对照学习的效率。
+
+## 4. 可打印 HTML 生成
 
 为了满足提供物理学习资料的打印需求，流水线必须生成一个独立的 HTML 文件，包含所有格式化为适合 A4 打印的文章。
 
-### 3.1 布局与排版要求
+### 4.1 布局与排版要求
 
 *   **打印目标**: A4 纸张 (`size: A4`)。
 *   **分页**: 每篇文章**必须**使用 CSS `page-break-before: always;` 在新的物理页面上开始。
@@ -95,10 +115,10 @@ window.APP_DATA = {
 *   **翻译处理**: 英文翻译 (`en`) 应直接打印在瑞典语句子 (`sv`) 下方，使用较小、较浅的字体，或者采用左右对照的表格格式。
 *   **元数据页眉**: 首页顶部应包含课程标题、级别 (SFI D / B1) 和生成日期。
 
-### 3.2 HTML 输出路径
+### 4.2 HTML 输出路径
 *   **文件路径**: `print/sfid_b1_articles.html`
 
-### 3.3 CSS 打印样式示例
+### 4.3 CSS 打印样式示例
 生成器脚本必须将以下 CSS 块注入生成的 HTML 中：
 ```html
 <style>
@@ -114,7 +134,7 @@ window.APP_DATA = {
 </style>
 ```
 
-## 4. 执行步骤
+## 5. 执行步骤
 
 1.  读取 `master_dict.json`。
 2.  格式化为 Key-Value 键值对，并包裹在 `window.globalDictionary = ...` 中。
