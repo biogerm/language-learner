@@ -3,7 +3,7 @@
     "course_title": "SFI D",
     "stage_id": "stage_08",
     "stage_title": "Kultur & Nöje",
-    "article_id": "art_38",
+    "article_id": "article_38",
     "article_title": "En Passion För Aktiv Fritid",
     "target_word_count": 60,
     "sentences": [
@@ -29,6 +29,20 @@
                     "base_form": "telefon",
                     "position_start": 52,
                     "position_end": 59
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "frågade",
+                    "base_form": "frågade",
+                    "position_start": 27,
+                    "position_end": 34
+                },
+                {
+                    "word_in_sentence": "vän",
+                    "base_form": "vän",
+                    "position_start": 43,
+                    "position_end": 46
                 }
             ]
         },
@@ -61,6 +75,20 @@
                     "position_start": 85,
                     "position_end": 97
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "spännande",
+                    "base_form": "spännande",
+                    "position_start": 12,
+                    "position_end": 21
+                },
+                {
+                    "word_in_sentence": "brukar",
+                    "base_form": "brukar",
+                    "position_start": 55,
+                    "position_end": 61
+                }
             ]
         },
         {
@@ -92,6 +120,20 @@
                     "position_start": 106,
                     "position_end": 121
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "rolig",
+                    "base_form": "rolig",
+                    "position_start": 10,
+                    "position_end": 15
+                },
+                {
+                    "word_in_sentence": "ringde",
+                    "base_form": "ringde",
+                    "position_start": 66,
+                    "position_end": 72
+                }
             ]
         },
         {
@@ -105,6 +147,20 @@
                     "position_start": 24,
                     "position_end": 33
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "nära",
+                    "base_form": "nära",
+                    "position_start": 19,
+                    "position_end": 23
+                },
+                {
+                    "word_in_sentence": "kungen",
+                    "base_form": "kungen",
+                    "position_start": 34,
+                    "position_end": 40
+                }
             ]
         },
         {
@@ -112,6 +168,12 @@
             "sv": "\"Det var underhållande, men vad hände sedan?\" undrade hon.",
             "en": "",
             "target_words": [
+                {
+                    "word_in_sentence": "vad",
+                    "base_form": "vad",
+                    "position_start": 28,
+                    "position_end": 31
+                },
                 {
                     "word_in_sentence": "underhållande",
                     "base_form": "underhållande",
@@ -124,6 +186,20 @@
                     "position_start": 48,
                     "position_end": 51
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "hände",
+                    "base_form": "hände",
+                    "position_start": 32,
+                    "position_end": 37
+                },
+                {
+                    "word_in_sentence": "undrade",
+                    "base_form": "undrade",
+                    "position_start": 46,
+                    "position_end": 53
+                }
             ]
         },
         {
@@ -131,6 +207,12 @@
             "sv": "\"Jo, det var egentligen bara ett roligt skämt, typ ett stort aprilskämt\", sa jag för att dra ut på historien.",
             "en": "",
             "target_words": [
+                {
+                    "word_in_sentence": "dra",
+                    "base_form": "dra",
+                    "position_start": 89,
+                    "position_end": 92
+                },
                 {
                     "word_in_sentence": "skämt",
                     "base_form": "skämt",
@@ -142,6 +224,20 @@
                     "base_form": "aprilskämt",
                     "position_start": 61,
                     "position_end": 71
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "egentligen",
+                    "base_form": "egentligen",
+                    "position_start": 13,
+                    "position_end": 23
+                },
+                {
+                    "word_in_sentence": "typ",
+                    "base_form": "typ",
+                    "position_start": 47,
+                    "position_end": 50
                 }
             ]
         },
@@ -162,6 +258,20 @@
                     "position_start": 96,
                     "position_end": 106
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "följa med",
+                    "base_form": "följa med",
+                    "position_start": 37,
+                    "position_end": 46
+                },
+                {
+                    "word_in_sentence": "staden",
+                    "base_form": "staden",
+                    "position_start": 72,
+                    "position_end": 78
+                }
             ]
         },
         {
@@ -175,6 +285,20 @@
                     "position_start": 1,
                     "position_end": 26
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "svarade",
+                    "base_form": "svarade",
+                    "position_start": 28,
+                    "position_end": 35
+                },
+                {
+                    "word_in_sentence": "snabbt",
+                    "base_form": "snabbt",
+                    "position_start": 40,
+                    "position_end": 46
+                }
             ]
         },
         {
@@ -183,10 +307,30 @@
             "en": "",
             "target_words": [
                 {
+                    "word_in_sentence": "vad",
+                    "base_form": "vad",
+                    "position_start": 1,
+                    "position_end": 4
+                },
+                {
                     "word_in_sentence": "Vad ville hon ha?",
                     "base_form": "Vad ville hon ha?",
                     "position_start": 1,
                     "position_end": 18
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "tänkte",
+                    "base_form": "tänkte",
+                    "position_start": 20,
+                    "position_end": 26
+                },
+                {
+                    "word_in_sentence": "tyst",
+                    "base_form": "tyst",
+                    "position_start": 31,
+                    "position_end": 35
                 }
             ]
         },
@@ -201,13 +345,48 @@
                     "position_start": 1,
                     "position_end": 19
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "frågade",
+                    "base_form": "frågade",
+                    "position_start": 21,
+                    "position_end": 28
+                },
+                {
+                    "word_in_sentence": "istället",
+                    "base_form": "istället",
+                    "position_start": 33,
+                    "position_end": 41
+                }
             ]
         },
         {
             "sentence_id": "art_38_s011",
             "sv": "\"Vad gör du hela dagarna?\"",
             "en": "",
-            "target_words": []
+            "target_words": [
+                {
+                    "word_in_sentence": "vad",
+                    "base_form": "vad",
+                    "position_start": 1,
+                    "position_end": 4
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "gör",
+                    "base_form": "gör",
+                    "position_start": 5,
+                    "position_end": 8
+                },
+                {
+                    "word_in_sentence": "hela",
+                    "base_form": "hela",
+                    "position_start": 12,
+                    "position_end": 16
+                }
+            ]
         },
         {
             "sentence_id": "art_38_s012",
@@ -219,6 +398,20 @@
                     "base_form": "ligga och lata sig",
                     "position_start": 45,
                     "position_end": 63
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "förklarade",
+                    "base_form": "förklarade",
+                    "position_start": 4,
+                    "position_end": 14
+                },
+                {
+                    "word_in_sentence": "gillade",
+                    "base_form": "gillade",
+                    "position_start": 28,
+                    "position_end": 35
                 }
             ]
         },
@@ -239,6 +432,20 @@
                     "position_start": 43,
                     "position_end": 49
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "Istället",
+                    "base_form": "istället",
+                    "position_start": 0,
+                    "position_end": 8
+                },
+                {
+                    "word_in_sentence": "aktiv",
+                    "base_form": "aktiv",
+                    "position_start": 37,
+                    "position_end": 42
+                }
             ]
         },
         {
@@ -258,6 +465,20 @@
                     "position_start": 31,
                     "position_end": 38
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "stor",
+                    "base_form": "stor",
+                    "position_start": 26,
+                    "position_end": 30
+                },
+                {
+                    "word_in_sentence": "träningsutrustning",
+                    "base_form": "träningsutrustning",
+                    "position_start": 42,
+                    "position_end": 60
+                }
             ]
         },
         {
@@ -265,6 +486,12 @@
             "sv": "Hennes absolut bästa fritidsaktivitet var utförsåkning under en kall vinter.",
             "en": "",
             "target_words": [
+                {
+                    "word_in_sentence": "fritid",
+                    "base_form": "fritidsvana",
+                    "position_start": 21,
+                    "position_end": 27
+                },
                 {
                     "word_in_sentence": "fritidsaktivitet",
                     "base_form": "fritidsaktivitet",
@@ -283,6 +510,20 @@
                     "position_start": 69,
                     "position_end": 75
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "absolut",
+                    "base_form": "absolut",
+                    "position_start": 7,
+                    "position_end": 14
+                },
+                {
+                    "word_in_sentence": "kall",
+                    "base_form": "kall",
+                    "position_start": 64,
+                    "position_end": 68
+                }
             ]
         },
         {
@@ -295,6 +536,20 @@
                     "base_form": "timme",
                     "position_start": 6,
                     "position_end": 11
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "berget",
+                    "base_form": "berget",
+                    "position_start": 15,
+                    "position_end": 21
+                },
+                {
+                    "word_in_sentence": "viktig",
+                    "base_form": "viktig",
+                    "position_start": 26,
+                    "position_end": 32
                 }
             ]
         },
@@ -321,6 +576,20 @@
                     "position_start": 48,
                     "position_end": 52
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "garaget",
+                    "base_form": "garaget",
+                    "position_start": 58,
+                    "position_end": 65
+                },
+                {
+                    "word_in_sentence": "drömma",
+                    "base_form": "drömma",
+                    "position_start": 70,
+                    "position_end": 76
+                }
             ]
         },
         {
@@ -333,6 +602,20 @@
                     "base_form": "omöjlig",
                     "position_start": 23,
                     "position_end": 30
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "uppgift",
+                    "base_form": "uppgift",
+                    "position_start": 31,
+                    "position_end": 38
+                },
+                {
+                    "word_in_sentence": "utan",
+                    "base_form": "utan",
+                    "position_start": 48,
+                    "position_end": 52
                 }
             ]
         },
@@ -352,6 +635,20 @@
                     "base_form": "fantasi",
                     "position_start": 43,
                     "position_end": 50
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "fanns",
+                    "base_form": "fanns",
+                    "position_start": 12,
+                    "position_end": 17
+                },
+                {
+                    "word_in_sentence": "väldigt",
+                    "base_form": "väldigt",
+                    "position_start": 28,
+                    "position_end": 35
                 }
             ]
         },
@@ -384,6 +681,20 @@
                     "position_start": 80,
                     "position_end": 87
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "väl",
+                    "base_form": "väl",
+                    "position_start": 35,
+                    "position_end": 38
+                },
+                {
+                    "word_in_sentence": "annan",
+                    "base_form": "annan",
+                    "position_start": 42,
+                    "position_end": 47
+                }
             ]
         },
         {
@@ -403,6 +714,20 @@
                     "position_start": 27,
                     "position_end": 35
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "Kanske",
+                    "base_form": "kanske",
+                    "position_start": 0,
+                    "position_end": 6
+                },
+                {
+                    "word_in_sentence": "snabb",
+                    "base_form": "snabb",
+                    "position_start": 21,
+                    "position_end": 26
+                }
             ]
         },
         {
@@ -415,6 +740,20 @@
                     "base_form": "innebandy",
                     "position_start": 12,
                     "position_end": 21
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "spela",
+                    "base_form": "spela",
+                    "position_start": 6,
+                    "position_end": 11
+                },
+                {
+                    "word_in_sentence": "kompisar",
+                    "base_form": "kompisar",
+                    "position_start": 26,
+                    "position_end": 34
                 }
             ]
         },
@@ -441,13 +780,42 @@
                     "position_start": 25,
                     "position_end": 39
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "älskar",
+                    "base_form": "älskar",
+                    "position_start": 14,
+                    "position_end": 20
+                }
             ]
         },
         {
             "sentence_id": "art_38_s024",
             "sv": "Jag sätter på mig mina skridskor och åker på isen\", svarade hon.",
             "en": "",
-            "target_words": []
+            "target_words": [
+                {
+                    "word_in_sentence": "skridsko",
+                    "base_form": "skridsko",
+                    "position_start": 23,
+                    "position_end": 31
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "sätter på",
+                    "base_form": "sätter på",
+                    "position_start": 4,
+                    "position_end": 13
+                },
+                {
+                    "word_in_sentence": "isen",
+                    "base_form": "isen",
+                    "position_start": 45,
+                    "position_end": 49
+                }
+            ]
         },
         {
             "sentence_id": "art_38_s025",
@@ -455,10 +823,30 @@
             "en": "",
             "target_words": [
                 {
+                    "word_in_sentence": "sport",
+                    "base_form": "sport",
+                    "position_start": 30,
+                    "position_end": 35
+                },
+                {
                     "word_in_sentence": "motorsport",
                     "base_form": "motorsport",
                     "position_start": 25,
                     "position_end": 35
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "gillar",
+                    "base_form": "gillar",
+                    "position_start": 9,
+                    "position_end": 15
+                },
+                {
+                    "word_in_sentence": "inte",
+                    "base_form": "inte",
+                    "position_start": 16,
+                    "position_end": 20
                 }
             ]
         },
@@ -467,6 +855,12 @@
             "sv": "Jag skulle aldrig köra en sportbil snabbt eller vara en av de så kallade tysta golfspelarna som går runt.\"",
             "en": "",
             "target_words": [
+                {
+                    "word_in_sentence": "sport",
+                    "base_form": "sport",
+                    "position_start": 26,
+                    "position_end": 31
+                },
                 {
                     "word_in_sentence": "sportbil",
                     "base_form": "sportbil",
@@ -485,6 +879,20 @@
                     "position_start": 79,
                     "position_end": 91
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "aldrig",
+                    "base_form": "aldrig",
+                    "position_start": 11,
+                    "position_end": 17
+                },
+                {
+                    "word_in_sentence": "köra",
+                    "base_form": "köra",
+                    "position_start": 18,
+                    "position_end": 22
+                }
             ]
         },
         {
@@ -497,6 +905,20 @@
                     "base_form": "tydlig",
                     "position_start": 13,
                     "position_end": 19
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "åsikt",
+                    "base_form": "åsikt",
+                    "position_start": 20,
+                    "position_end": 25
+                },
+                {
+                    "word_in_sentence": "val",
+                    "base_form": "val",
+                    "position_start": 35,
+                    "position_end": 38
                 }
             ]
         },
@@ -517,6 +939,20 @@
                     "position_start": 69,
                     "position_end": 74
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "passioner",
+                    "base_form": "passioner",
+                    "position_start": 27,
+                    "position_end": 36
+                },
+                {
+                    "word_in_sentence": "aktivt",
+                    "base_form": "aktivt",
+                    "position_start": 62,
+                    "position_end": 68
+                }
             ]
         },
         {
@@ -524,6 +960,12 @@
             "sv": "Lång transport till ett sådant läger var ibland svårt, särskilt när kläderna var täckta av jord.",
             "en": "",
             "target_words": [
+                {
+                    "word_in_sentence": "läger",
+                    "base_form": "läger",
+                    "position_start": 31,
+                    "position_end": 36
+                },
                 {
                     "word_in_sentence": "transport",
                     "base_form": "transport",
@@ -535,6 +977,20 @@
                     "base_form": "jordig",
                     "position_start": 91,
                     "position_end": 95
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "särskilt",
+                    "base_form": "särskilt",
+                    "position_start": 55,
+                    "position_end": 63
+                },
+                {
+                    "word_in_sentence": "täckta",
+                    "base_form": "täckta",
+                    "position_start": 81,
+                    "position_end": 87
                 }
             ]
         },
@@ -549,6 +1005,20 @@
                     "position_start": 5,
                     "position_end": 11
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "kom hem",
+                    "base_form": "kom hem",
+                    "position_start": 16,
+                    "position_end": 23
+                },
+                {
+                    "word_in_sentence": "trött",
+                    "base_form": "trött",
+                    "position_start": 38,
+                    "position_end": 43
+                }
             ]
         },
         {
@@ -561,6 +1031,20 @@
                     "base_form": "citat",
                     "position_start": 21,
                     "position_end": 26
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "sade",
+                    "base_form": "sade",
+                    "position_start": 4,
+                    "position_end": 8
+                },
+                {
+                    "word_in_sentence": "hälsa",
+                    "base_form": "hälsa",
+                    "position_start": 30,
+                    "position_end": 35
                 }
             ]
         },
@@ -581,6 +1065,20 @@
                     "position_start": 31,
                     "position_end": 40
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "vill",
+                    "base_form": "vill",
+                    "position_start": 5,
+                    "position_end": 9
+                },
+                {
+                    "word_in_sentence": "frågade",
+                    "base_form": "frågade",
+                    "position_start": 43,
+                    "position_end": 50
+                }
             ]
         },
         {
@@ -599,6 +1097,20 @@
                     "base_form": "avskaffa",
                     "position_start": 68,
                     "position_end": 76
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "skratt",
+                    "base_form": "skratt",
+                    "position_start": 25,
+                    "position_end": 31
+                },
+                {
+                    "word_in_sentence": "stillasittande",
+                    "base_form": "stillasittande",
+                    "position_start": 82,
+                    "position_end": 96
                 }
             ]
         }

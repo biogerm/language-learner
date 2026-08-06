@@ -3,7 +3,7 @@
     "course_title": "SFI D",
     "stage_id": "stage_08",
     "stage_title": "Kultur & Nöje",
-    "article_id": "art_35",
+    "article_id": "article_35",
     "article_title": "Kultur och Gemenskap för Alla",
     "target_word_count": 60,
     "sentences": [
@@ -12,6 +12,12 @@
             "sv": "När man reser norrut i landet, kan man besöka en känd kulturattraktion som har överlevt mer än ett årtionde.",
             "en": "",
             "target_words": [
+                {
+                    "word_in_sentence": "norrut",
+                    "base_form": "norrut",
+                    "position_start": 14,
+                    "position_end": 20
+                },
                 {
                     "word_in_sentence": "Kultur",
                     "base_form": "kultur",
@@ -25,16 +31,24 @@
                     "position_end": 70
                 },
                 {
-                    "word_in_sentence": "norrut",
-                    "base_form": "norrut",
-                    "position_start": 14,
-                    "position_end": 20
-                },
-                {
                     "word_in_sentence": "årtionde",
                     "base_form": "årtionde",
                     "position_start": 99,
                     "position_end": 107
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "överlevt",
+                    "base_form": "överlevt",
+                    "position_start": 79,
+                    "position_end": 87
+                },
+                {
+                    "word_in_sentence": "känd",
+                    "base_form": "känd",
+                    "position_start": 49,
+                    "position_end": 53
                 }
             ]
         },
@@ -43,6 +57,12 @@
             "sv": "Kultur är viktigt för många, och när det gäller nöje är denna plats mer eller mindre fantastisk.",
             "en": "",
             "target_words": [
+                {
+                    "word_in_sentence": "Kultur",
+                    "base_form": "kultur",
+                    "position_start": 0,
+                    "position_end": 6
+                },
                 {
                     "word_in_sentence": "när det gäller",
                     "base_form": "när det gäller",
@@ -54,6 +74,20 @@
                     "base_form": "mer eller mindre",
                     "position_start": 68,
                     "position_end": 84
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "nöje",
+                    "base_form": "nöje",
+                    "position_start": 48,
+                    "position_end": 52
+                },
+                {
+                    "word_in_sentence": "fantastisk",
+                    "base_form": "fantastisk",
+                    "position_start": 85,
+                    "position_end": 95
                 }
             ]
         },
@@ -74,6 +108,20 @@
                     "position_start": 85,
                     "position_end": 95
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "knutet",
+                    "base_form": "knutet",
+                    "position_start": 36,
+                    "position_end": 42
+                },
+                {
+                    "word_in_sentence": "uppleva",
+                    "base_form": "uppleva",
+                    "position_start": 107,
+                    "position_end": 114
+                }
             ]
         },
         {
@@ -82,10 +130,16 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "vara med i",
-                    "base_form": "vara med i",
-                    "position_start": 81,
-                    "position_end": 91
+                    "word_in_sentence": "absolut",
+                    "base_form": "absolut",
+                    "position_start": 18,
+                    "position_end": 25
+                },
+                {
+                    "word_in_sentence": "nolla",
+                    "base_form": "nolla",
+                    "position_start": 29,
+                    "position_end": 34
                 },
                 {
                     "word_in_sentence": "sjunga",
@@ -100,6 +154,18 @@
                     "position_end": 57
                 },
                 {
+                    "word_in_sentence": "dansa",
+                    "base_form": "dansa",
+                    "position_start": 53,
+                    "position_end": 58
+                },
+                {
+                    "word_in_sentence": "vara med i",
+                    "base_form": "vara med i",
+                    "position_start": 81,
+                    "position_end": 91
+                },
+                {
                     "word_in_sentence": "vara med",
                     "base_form": "vara med",
                     "position_start": 81,
@@ -110,24 +176,14 @@
                     "base_form": "kör",
                     "position_start": 100,
                     "position_end": 103
-                },
+                }
+            ],
+            "secondary_words": [
                 {
-                    "word_in_sentence": "dansa",
-                    "base_form": "dansa",
-                    "position_start": 53,
-                    "position_end": 58
-                },
-                {
-                    "word_in_sentence": "nolla",
-                    "base_form": "nolla",
-                    "position_start": 29,
-                    "position_end": 34
-                },
-                {
-                    "word_in_sentence": "absolut",
-                    "base_form": "absolut",
-                    "position_start": 18,
-                    "position_end": 25
+                    "word_in_sentence": "ändå",
+                    "base_form": "ändå",
+                    "position_start": 76,
+                    "position_end": 80
                 }
             ]
         },
@@ -136,6 +192,12 @@
             "sv": "Ibland spelas vacker musik och folk bjuds in till en traditionell dans eller till och med en spännande maskeradbal.",
             "en": "",
             "target_words": [
+                {
+                    "word_in_sentence": "dans",
+                    "base_form": "dans",
+                    "position_start": 66,
+                    "position_end": 70
+                },
                 {
                     "word_in_sentence": "musik",
                     "base_form": "musik",
@@ -148,6 +210,20 @@
                     "position_start": 103,
                     "position_end": 114
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "bjuds in",
+                    "base_form": "bjuds in",
+                    "position_start": 36,
+                    "position_end": 44
+                },
+                {
+                    "word_in_sentence": "traditionell",
+                    "base_form": "traditionell",
+                    "position_start": 53,
+                    "position_end": 65
+                }
             ]
         },
         {
@@ -155,6 +231,12 @@
             "sv": "En känd kulturpersonlighet brukar ofta söka kontakt med unga artister här.",
             "en": "",
             "target_words": [
+                {
+                    "word_in_sentence": "Kultur",
+                    "base_form": "kultur",
+                    "position_start": 8,
+                    "position_end": 14
+                },
                 {
                     "word_in_sentence": "kulturpersonlighet",
                     "base_form": "kulturpersonlighet",
@@ -167,13 +249,29 @@
                     "position_start": 39,
                     "position_end": 51
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "artister",
+                    "base_form": "artister",
+                    "position_start": 61,
+                    "position_end": 69
+                }
             ]
         },
         {
             "sentence_id": "art_35_s007",
             "sv": "Andra gillar konst.",
             "en": "",
-            "target_words": []
+            "target_words": [],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "konst",
+                    "base_form": "konst",
+                    "position_start": 13,
+                    "position_end": 18
+                }
+            ]
         },
         {
             "sentence_id": "art_35_s008",
@@ -185,6 +283,20 @@
                     "base_form": "konstsamling",
                     "position_start": 35,
                     "position_end": 47
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "sal",
+                    "base_form": "sal",
+                    "position_start": 10,
+                    "position_end": 13
+                },
+                {
+                    "word_in_sentence": "imponerande",
+                    "base_form": "imponerande",
+                    "position_start": 23,
+                    "position_end": 34
                 }
             ]
         },
@@ -205,6 +317,14 @@
                     "position_start": 13,
                     "position_end": 32
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "lära dig",
+                    "base_form": "lära dig",
+                    "position_start": 41,
+                    "position_end": 49
+                }
             ]
         },
         {
@@ -212,6 +332,18 @@
             "sv": "En berömd dansk konstnär har sin bästa målning här.",
             "en": "",
             "target_words": [
+                {
+                    "word_in_sentence": "dans",
+                    "base_form": "dans",
+                    "position_start": 10,
+                    "position_end": 14
+                },
+                {
+                    "word_in_sentence": "dansk",
+                    "base_form": "dansk",
+                    "position_start": 10,
+                    "position_end": 15
+                },
                 {
                     "word_in_sentence": "konstnär",
                     "base_form": "konstnär",
@@ -223,12 +355,14 @@
                     "base_form": "målning",
                     "position_start": 39,
                     "position_end": 46
-                },
+                }
+            ],
+            "secondary_words": [
                 {
-                    "word_in_sentence": "dansk",
-                    "base_form": "dansk",
-                    "position_start": 10,
-                    "position_end": 15
+                    "word_in_sentence": "berömd",
+                    "base_form": "berömd",
+                    "position_start": 3,
+                    "position_end": 9
                 }
             ]
         },
@@ -238,10 +372,10 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "rita",
-                    "base_form": "rita",
-                    "position_start": 40,
-                    "position_end": 44
+                    "word_in_sentence": "måla",
+                    "base_form": "måla",
+                    "position_start": 4,
+                    "position_end": 8
                 },
                 {
                     "word_in_sentence": "tavla",
@@ -250,16 +384,30 @@
                     "position_end": 24
                 },
                 {
-                    "word_in_sentence": "måla",
-                    "base_form": "måla",
-                    "position_start": 4,
-                    "position_end": 8
+                    "word_in_sentence": "rita",
+                    "base_form": "rita",
+                    "position_start": 40,
+                    "position_end": 44
                 },
                 {
                     "word_in_sentence": "tyst",
                     "base_form": "tyst",
                     "position_start": 63,
                     "position_end": 67
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "blyerts",
+                    "base_form": "blyerts",
+                    "position_start": 49,
+                    "position_end": 56
+                },
+                {
+                    "word_in_sentence": "upplevelse",
+                    "base_form": "upplevelse",
+                    "position_start": 77,
+                    "position_end": 87
                 }
             ]
         },
@@ -280,6 +428,14 @@
                     "position_start": 73,
                     "position_end": 81
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "historiskt",
+                    "base_form": "historiskt",
+                    "position_start": 62,
+                    "position_end": 72
+                }
             ]
         },
         {
@@ -288,16 +444,30 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "undra",
-                    "base_form": "undra",
-                    "position_start": 19,
-                    "position_end": 24
-                },
-                {
                     "word_in_sentence": "verkligen",
                     "base_form": "verkligen",
                     "position_start": 9,
                     "position_end": 18
+                },
+                {
+                    "word_in_sentence": "undra",
+                    "base_form": "undra",
+                    "position_start": 19,
+                    "position_end": 24
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "besökare",
+                    "base_form": "besökare",
+                    "position_start": 58,
+                    "position_end": 66
+                },
+                {
+                    "word_in_sentence": "gjorde",
+                    "base_form": "gjorde",
+                    "position_start": 33,
+                    "position_end": 39
                 }
             ]
         },
@@ -305,19 +475,54 @@
             "sentence_id": "art_35_s014",
             "sv": "Men det finns en annan del också.",
             "en": "",
-            "target_words": []
+            "target_words": [],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "annan",
+                    "base_form": "annan",
+                    "position_start": 17,
+                    "position_end": 22
+                },
+                {
+                    "word_in_sentence": "del",
+                    "base_form": "del",
+                    "position_start": 23,
+                    "position_end": 26
+                }
+            ]
         },
         {
             "sentence_id": "art_35_s015",
             "sv": "Kanske vill du vara med?",
             "en": "",
-            "target_words": []
+            "target_words": [
+                {
+                    "word_in_sentence": "vara med",
+                    "base_form": "vara med",
+                    "position_start": 15,
+                    "position_end": 23
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "vill du",
+                    "base_form": "vill du",
+                    "position_start": 7,
+                    "position_end": 14
+                }
+            ]
         },
         {
             "sentence_id": "art_35_s016",
             "sv": "Vissa går till en schackklubb för att spela schack tillsammans.",
             "en": "",
             "target_words": [
+                {
+                    "word_in_sentence": "schackklubb",
+                    "base_form": "schackklubb",
+                    "position_start": 18,
+                    "position_end": 29
+                },
                 {
                     "word_in_sentence": "klubb",
                     "base_form": "klubb",
@@ -329,12 +534,14 @@
                     "base_form": "spela schack",
                     "position_start": 38,
                     "position_end": 50
-                },
+                }
+            ],
+            "secondary_words": [
                 {
-                    "word_in_sentence": "schackklubb",
-                    "base_form": "schackklubb",
-                    "position_start": 18,
-                    "position_end": 29
+                    "word_in_sentence": "tillsammans",
+                    "base_form": "tillsammans",
+                    "position_start": 51,
+                    "position_end": 62
                 }
             ]
         },
@@ -349,6 +556,20 @@
                     "position_start": 41,
                     "position_end": 51
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "brädspel",
+                    "base_form": "brädspel",
+                    "position_start": 16,
+                    "position_end": 24
+                },
+                {
+                    "word_in_sentence": "fredagskvällarna",
+                    "base_form": "fredagskvällarna",
+                    "position_start": 55,
+                    "position_end": 71
+                }
             ]
         },
         {
@@ -362,6 +583,14 @@
                     "position_start": 17,
                     "position_end": 31
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "hela natten",
+                    "base_form": "hela natten",
+                    "position_start": 32,
+                    "position_end": 43
+                }
             ]
         },
         {
@@ -370,22 +599,36 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "spela teater",
-                    "base_form": "spela teater",
-                    "position_start": 19,
-                    "position_end": 31
-                },
-                {
                     "word_in_sentence": "En del",
                     "base_form": "en del",
                     "position_start": 0,
                     "position_end": 6
                 },
                 {
+                    "word_in_sentence": "spela teater",
+                    "base_form": "spela teater",
+                    "position_start": 19,
+                    "position_end": 31
+                },
+                {
                     "word_in_sentence": "skådespelare",
                     "base_form": "skådelspelare",
                     "position_start": 62,
                     "position_end": 74
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "hellre",
+                    "base_form": "hellre",
+                    "position_start": 12,
+                    "position_end": 18
+                },
+                {
+                    "word_in_sentence": "drömmer om",
+                    "base_form": "drömmer om",
+                    "position_start": 36,
+                    "position_end": 46
                 }
             ]
         },
@@ -400,6 +643,20 @@
                     "position_start": 21,
                     "position_end": 24
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "strikt",
+                    "base_form": "strikt",
+                    "position_start": 44,
+                    "position_end": 50
+                },
+                {
+                    "word_in_sentence": "intressen",
+                    "base_form": "intressen",
+                    "position_start": 85,
+                    "position_end": 94
+                }
             ]
         },
         {
@@ -413,13 +670,29 @@
                     "position_start": 18,
                     "position_end": 23
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "Kulturen",
+                    "base_form": "kulturen",
+                    "position_start": 0,
+                    "position_end": 8
+                }
             ]
         },
         {
             "sentence_id": "art_35_s022",
             "sv": "Kanske gillar du sport?",
             "en": "",
-            "target_words": []
+            "target_words": [],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "sport",
+                    "base_form": "sport",
+                    "position_start": 17,
+                    "position_end": 22
+                }
+            ]
         },
         {
             "sentence_id": "art_35_s023",
@@ -438,6 +711,20 @@
                     "position_start": 45,
                     "position_end": 50
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "egen",
+                    "base_form": "egen",
+                    "position_start": 10,
+                    "position_end": 14
+                },
+                {
+                    "word_in_sentence": "viktig",
+                    "base_form": "viktig",
+                    "position_start": 38,
+                    "position_end": 44
+                }
             ]
         },
         {
@@ -452,16 +739,30 @@
                     "position_end": 33
                 },
                 {
-                    "word_in_sentence": "mitt itu",
-                    "base_form": "mitt itu",
-                    "position_start": 97,
-                    "position_end": 105
-                },
-                {
                     "word_in_sentence": "den andra",
                     "base_form": "den andra",
                     "position_start": 40,
                     "position_end": 49
+                },
+                {
+                    "word_in_sentence": "mitt itu",
+                    "base_form": "mitt itu",
+                    "position_start": 97,
+                    "position_end": 105
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "druckit",
+                    "base_form": "druckit",
+                    "position_start": 54,
+                    "position_end": 61
+                },
+                {
+                    "word_in_sentence": "brutit",
+                    "base_form": "brutit",
+                    "position_start": 80,
+                    "position_end": 86
                 }
             ]
         },
@@ -482,6 +783,20 @@
                     "position_start": 30,
                     "position_end": 34
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "heja",
+                    "base_form": "heja",
+                    "position_start": 49,
+                    "position_end": 53
+                },
+                {
+                    "word_in_sentence": "ens",
+                    "base_form": "ens",
+                    "position_start": 76,
+                    "position_end": 79
+                }
             ]
         },
         {
@@ -500,6 +815,14 @@
                     "base_form": "spela roll",
                     "position_start": 49,
                     "position_end": 59
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "visas",
+                    "base_form": "visas",
+                    "position_start": 7,
+                    "position_end": 12
                 }
             ]
         },
@@ -520,6 +843,20 @@
                     "position_start": 64,
                     "position_end": 70
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "mix",
+                    "base_form": "mix",
+                    "position_start": 23,
+                    "position_end": 26
+                },
+                {
+                    "word_in_sentence": "glädje",
+                    "base_form": "glädje",
+                    "position_start": 82,
+                    "position_end": 88
+                }
             ]
         },
         {
@@ -527,6 +864,12 @@
             "sv": "Det är alltså en klubb och plats där poesi möter vild fest.",
             "en": "",
             "target_words": [
+                {
+                    "word_in_sentence": "alltså",
+                    "base_form": "alltså",
+                    "position_start": 7,
+                    "position_end": 13
+                },
                 {
                     "word_in_sentence": "poesi",
                     "base_form": "poesi",
@@ -538,12 +881,20 @@
                     "base_form": "fest",
                     "position_start": 54,
                     "position_end": 58
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "klubb",
+                    "base_form": "klubb",
+                    "position_start": 17,
+                    "position_end": 22
                 },
                 {
-                    "word_in_sentence": "alltså",
-                    "base_form": "alltså",
-                    "position_start": 7,
-                    "position_end": 13
+                    "word_in_sentence": "möter",
+                    "base_form": "möter",
+                    "position_start": 43,
+                    "position_end": 48
                 }
             ]
         },
@@ -563,6 +914,20 @@
                     "base_form": "konditional",
                     "position_start": 61,
                     "position_end": 72
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "leende",
+                    "base_form": "leende",
+                    "position_start": 26,
+                    "position_end": 32
+                },
+                {
+                    "word_in_sentence": "inspiration",
+                    "base_form": "inspiration",
+                    "position_start": 42,
+                    "position_end": 53
                 }
             ]
         }

@@ -3,7 +3,7 @@
     "course_title": "SFI D",
     "stage_id": "stage_01",
     "stage_title": "Arbetsliv",
-    "article_id": "art_06",
+    "article_id": "article_06",
     "article_title": "Nya Regler på Arbetsplatsen",
     "target_word_count": 60,
     "sentences": [
@@ -24,6 +24,26 @@
                     "position_start": 42,
                     "position_end": 51
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "börjar",
+                    "base_form": "börja",
+                    "position_start": 10,
+                    "position_end": 16
+                },
+                {
+                    "word_in_sentence": "första",
+                    "base_form": "första",
+                    "position_start": 56,
+                    "position_end": 62
+                },
+                {
+                    "word_in_sentence": "gången",
+                    "base_form": "gång",
+                    "position_start": 63,
+                    "position_end": 69
+                }
             ]
         },
         {
@@ -36,6 +56,14 @@
                     "base_form": "Vad ville hon bli?",
                     "position_start": 1,
                     "position_end": 19
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "chef",
+                    "base_form": "chef",
+                    "position_start": 33,
+                    "position_end": 37
                 }
             ]
         },
@@ -51,10 +79,10 @@
                     "position_end": 40
                 },
                 {
-                    "word_in_sentence": "arbetare",
-                    "base_form": "arbetare",
-                    "position_start": 76,
-                    "position_end": 84
+                    "word_in_sentence": "utanför",
+                    "base_form": "utanför",
+                    "position_start": 41,
+                    "position_end": 48
                 },
                 {
                     "word_in_sentence": "vars",
@@ -63,10 +91,30 @@
                     "position_end": 61
                 },
                 {
-                    "word_in_sentence": "utanför",
-                    "base_form": "utanför",
-                    "position_start": 41,
-                    "position_end": 48
+                    "word_in_sentence": "arbetare",
+                    "base_form": "arbetare",
+                    "position_start": 76,
+                    "position_end": 84
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "vanlig",
+                    "base_form": "vanlig",
+                    "position_start": 20,
+                    "position_end": 26
+                },
+                {
+                    "word_in_sentence": "staden",
+                    "base_form": "stad",
+                    "position_start": 49,
+                    "position_end": 55
+                },
+                {
+                    "word_in_sentence": "föräldrar",
+                    "base_form": "förälder",
+                    "position_start": 62,
+                    "position_end": 71
                 }
             ]
         },
@@ -76,16 +124,24 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "fabrik",
-                    "base_form": "fabrik",
-                    "position_start": 49,
-                    "position_end": 55
-                },
-                {
                     "word_in_sentence": "präst",
                     "base_form": "präst",
                     "position_start": 19,
                     "position_end": 24
+                },
+                {
+                    "word_in_sentence": "fabrik",
+                    "base_form": "fabrik",
+                    "position_start": 49,
+                    "position_end": 55
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "ville",
+                    "base_form": "vilja",
+                    "position_start": 4,
+                    "position_end": 9
                 }
             ]
         },
@@ -100,6 +156,14 @@
                     "position_start": 16,
                     "position_end": 29
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "började",
+                    "base_form": "börja",
+                    "position_start": 4,
+                    "position_end": 11
+                }
             ]
         },
         {
@@ -108,28 +172,42 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "anställa",
-                    "base_form": "anställa",
-                    "position_start": 30,
-                    "position_end": 38
-                },
-                {
                     "word_in_sentence": "möjligt",
                     "base_form": "möjlig",
                     "position_start": 8,
                     "position_end": 15
                 },
                 {
-                    "word_in_sentence": "efter",
-                    "base_form": "efter",
-                    "position_start": 62,
-                    "position_end": 67
+                    "word_in_sentence": "anställa",
+                    "base_form": "anställa",
+                    "position_start": 30,
+                    "position_end": 38
                 },
                 {
                     "word_in_sentence": "direkt efter",
                     "base_form": "direkt efter",
                     "position_start": 55,
                     "position_end": 67
+                },
+                {
+                    "word_in_sentence": "efter",
+                    "base_form": "efter",
+                    "position_start": 62,
+                    "position_end": 67
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "permanent",
+                    "base_form": "permanent",
+                    "position_start": 45,
+                    "position_end": 54
+                },
+                {
+                    "word_in_sentence": "sommaren",
+                    "base_form": "sommar",
+                    "position_start": 68,
+                    "position_end": 76
                 }
             ]
         },
@@ -137,12 +215,19 @@
             "sentence_id": "art_06_s007",
             "sv": "\"Hur många år har hon jobbat här?\" frågade jag.",
             "en": "",
-            "target_words": [
+            "target_words": [],
+            "secondary_words": [
                 {
-                    "word_in_sentence": "Hur många år har hon jobbat här?",
-                    "base_form": "Hur många år har du/han/hon jobbat här?",
-                    "position_start": 1,
-                    "position_end": 33
+                    "word_in_sentence": "år",
+                    "base_form": "år",
+                    "position_start": 11,
+                    "position_end": 13
+                },
+                {
+                    "word_in_sentence": "jobbat",
+                    "base_form": "jobba",
+                    "position_start": 22,
+                    "position_end": 28
                 }
             ]
         },
@@ -157,6 +242,14 @@
                     "position_start": 13,
                     "position_end": 21
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "nyss",
+                    "base_form": "nyss",
+                    "position_start": 8,
+                    "position_end": 12
+                }
             ]
         },
         {
@@ -165,10 +258,24 @@
             "en": "",
             "target_words": [
                 {
+                    "word_in_sentence": "fabrik",
+                    "base_form": "fabrik",
+                    "position_start": 0,
+                    "position_end": 6
+                },
+                {
                     "word_in_sentence": "livsmedelsföretag",
                     "base_form": "livmedelsföretag",
                     "position_start": 23,
                     "position_end": 40
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "stort",
+                    "base_form": "stor",
+                    "position_start": 17,
+                    "position_end": 22
                 }
             ]
         },
@@ -189,6 +296,14 @@
                     "position_start": 41,
                     "position_end": 50
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "gott",
+                    "base_form": "god",
+                    "position_start": 12,
+                    "position_end": 16
+                }
             ]
         },
         {
@@ -197,16 +312,16 @@
             "en": "",
             "target_words": [
                 {
+                    "word_in_sentence": "ingen",
+                    "base_form": "ingen",
+                    "position_start": 10,
+                    "position_end": 15
+                },
+                {
                     "word_in_sentence": "arbetsgivare",
                     "base_form": "arbetsgivare",
                     "position_start": 22,
                     "position_end": 34
-                },
-                {
-                    "word_in_sentence": "resultat",
-                    "base_form": "resultat",
-                    "position_start": 66,
-                    "position_end": 74
                 },
                 {
                     "word_in_sentence": "konkurrera",
@@ -215,10 +330,24 @@
                     "position_end": 55
                 },
                 {
-                    "word_in_sentence": "ingen",
-                    "base_form": "ingen",
-                    "position_start": 10,
-                    "position_end": 15
+                    "word_in_sentence": "resultat",
+                    "base_form": "resultat",
+                    "position_start": 66,
+                    "position_end": 74
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "annan",
+                    "base_form": "annan",
+                    "position_start": 16,
+                    "position_end": 21
+                },
+                {
+                    "word_in_sentence": "kunde",
+                    "base_form": "kunna",
+                    "position_start": 39,
+                    "position_end": 44
                 }
             ]
         },
@@ -233,6 +362,26 @@
                     "position_start": 21,
                     "position_end": 46
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "världen",
+                    "base_form": "värld",
+                    "position_start": 60,
+                    "position_end": 67
+                },
+                {
+                    "word_in_sentence": "ändå",
+                    "base_form": "ändå",
+                    "position_start": 80,
+                    "position_end": 84
+                },
+                {
+                    "word_in_sentence": "framgångsrika",
+                    "base_form": "framgångsrik",
+                    "position_start": 85,
+                    "position_end": 98
+                }
             ]
         },
         {
@@ -241,28 +390,48 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "ingå partnerskap",
-                    "base_form": "ingå partnerskap",
-                    "position_start": 17,
-                    "position_end": 33
-                },
-                {
                     "word_in_sentence": "planerade",
                     "base_form": "planera",
                     "position_start": 3,
                     "position_end": 12
                 },
                 {
-                    "word_in_sentence": "taktik",
-                    "base_form": "taktik",
-                    "position_start": 87,
-                    "position_end": 93
+                    "word_in_sentence": "ingå partnerskap",
+                    "base_form": "ingå partnerskap",
+                    "position_start": 17,
+                    "position_end": 33
                 },
                 {
                     "word_in_sentence": "trots att",
                     "base_form": "trots att",
                     "position_start": 59,
                     "position_end": 68
+                },
+                {
+                    "word_in_sentence": "taktik",
+                    "base_form": "taktik",
+                    "position_start": 87,
+                    "position_end": 93
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "utländsk",
+                    "base_form": "utländsk",
+                    "position_start": 41,
+                    "position_end": 49
+                },
+                {
+                    "word_in_sentence": "partner",
+                    "base_form": "partner",
+                    "position_start": 22,
+                    "position_end": 29
+                },
+                {
+                    "word_in_sentence": "behövde",
+                    "base_form": "behöva",
+                    "position_start": 72,
+                    "position_end": 79
                 }
             ]
         },
@@ -271,12 +440,6 @@
             "sv": "För att prestera högst upp, var de tvungna att sätta upp ett tydligt mål.",
             "en": "",
             "target_words": [
-                {
-                    "word_in_sentence": "mål",
-                    "base_form": "mål",
-                    "position_start": 69,
-                    "position_end": 72
-                },
                 {
                     "word_in_sentence": "prestera",
                     "base_form": "prestera",
@@ -288,6 +451,26 @@
                     "base_form": "högst",
                     "position_start": 17,
                     "position_end": 22
+                },
+                {
+                    "word_in_sentence": "mål",
+                    "base_form": "mål",
+                    "position_start": 69,
+                    "position_end": 72
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "tvungna",
+                    "base_form": "tvungen",
+                    "position_start": 35,
+                    "position_end": 42
+                },
+                {
+                    "word_in_sentence": "tydligt",
+                    "base_form": "tydlig",
+                    "position_start": 61,
+                    "position_end": 68
                 }
             ]
         },
@@ -297,16 +480,30 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "drabba",
-                    "base_form": "drabba",
-                    "position_start": 64,
-                    "position_end": 70
-                },
-                {
                     "word_in_sentence": "inte…förrän",
                     "base_form": "inte…förrän",
                     "position_start": 12,
                     "position_end": 23
+                },
+                {
+                    "word_in_sentence": "drabba",
+                    "base_form": "drabba",
+                    "position_start": 64,
+                    "position_end": 70
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "tog över",
+                    "base_form": "ta över",
+                    "position_start": 35,
+                    "position_end": 43
+                },
+                {
+                    "word_in_sentence": "problem",
+                    "base_form": "problem",
+                    "position_start": 48,
+                    "position_end": 55
                 }
             ]
         },
@@ -320,6 +517,26 @@
                     "base_form": "logisk",
                     "position_start": 21,
                     "position_end": 27
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "regler",
+                    "base_form": "regel",
+                    "position_start": 6,
+                    "position_end": 12
+                },
+                {
+                    "word_in_sentence": "saknade",
+                    "base_form": "sakna",
+                    "position_start": 13,
+                    "position_end": 20
+                },
+                {
+                    "word_in_sentence": "mening",
+                    "base_form": "mening",
+                    "position_start": 28,
+                    "position_end": 34
                 }
             ]
         },
@@ -340,6 +557,26 @@
                     "position_start": 56,
                     "position_end": 71
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "sent",
+                    "base_form": "sen",
+                    "position_start": 28,
+                    "position_end": 32
+                },
+                {
+                    "word_in_sentence": "glömde",
+                    "base_form": "glömma",
+                    "position_start": 40,
+                    "position_end": 46
+                },
+                {
+                    "word_in_sentence": "beställa",
+                    "base_form": "beställa",
+                    "position_start": 47,
+                    "position_end": 55
+                }
             ]
         },
         {
@@ -347,12 +584,6 @@
             "sv": "Det var viktigt att fack och personal fick bra arbetsvillkor och lika lön för lika arbete.",
             "en": "",
             "target_words": [
-                {
-                    "word_in_sentence": "lika lön för lika arbete",
-                    "base_form": "lika lön för lika arbete",
-                    "position_start": 65,
-                    "position_end": 89
-                },
                 {
                     "word_in_sentence": "fack",
                     "base_form": "fack",
@@ -364,6 +595,20 @@
                     "base_form": "arbetsvillkor",
                     "position_start": 47,
                     "position_end": 60
+                },
+                {
+                    "word_in_sentence": "lika lön för lika arbete",
+                    "base_form": "lika lön för lika arbete",
+                    "position_start": 65,
+                    "position_end": 89
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "viktigt",
+                    "base_form": "viktig",
+                    "position_start": 8,
+                    "position_end": 15
                 }
             ]
         },
@@ -378,13 +623,35 @@
                     "position_start": 16,
                     "position_end": 23
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "Annars",
+                    "base_form": "annars",
+                    "position_start": 0,
+                    "position_end": 6
+                },
+                {
+                    "word_in_sentence": "folk",
+                    "base_form": "folk",
+                    "position_start": 24,
+                    "position_end": 28
+                }
             ]
         },
         {
             "sentence_id": "art_06_s020",
             "sv": "En chef sa: \"Jag har en dröm.\"",
             "en": "",
-            "target_words": []
+            "target_words": [],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "dröm",
+                    "base_form": "dröm",
+                    "position_start": 24,
+                    "position_end": 28
+                }
+            ]
         },
         {
             "sentence_id": "art_06_s021",
@@ -409,6 +676,20 @@
                     "position_start": 58,
                     "position_end": 65
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "talade",
+                    "base_form": "tala",
+                    "position_start": 4,
+                    "position_end": 10
+                },
+                {
+                    "word_in_sentence": "metoder",
+                    "base_form": "metod",
+                    "position_start": 66,
+                    "position_end": 73
+                }
             ]
         },
         {
@@ -421,6 +702,14 @@
                     "base_form": "Det passar bra.",
                     "position_start": 1,
                     "position_end": 16
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "kollega",
+                    "base_form": "kollega",
+                    "position_start": 24,
+                    "position_end": 31
                 }
             ]
         },
@@ -435,6 +724,14 @@
                     "position_start": 10,
                     "position_end": 20
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "måste",
+                    "base_form": "måste",
+                    "position_start": 4,
+                    "position_end": 9
+                }
             ]
         },
         {
@@ -443,22 +740,36 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "mandatperiod",
-                    "base_form": "mandatperiod",
-                    "position_start": 34,
-                    "position_end": 46
-                },
-                {
                     "word_in_sentence": "skapa",
                     "base_form": "skapa",
                     "position_start": 7,
                     "position_end": 12
                 },
                 {
+                    "word_in_sentence": "mandatperiod",
+                    "base_form": "mandatperiod",
+                    "position_start": 34,
+                    "position_end": 46
+                },
+                {
                     "word_in_sentence": "skicka",
                     "base_form": "skicka",
                     "position_start": 51,
                     "position_end": 57
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "nya",
+                    "base_form": "ny",
+                    "position_start": 13,
+                    "position_end": 16
+                },
+                {
+                    "word_in_sentence": "under",
+                    "base_form": "under",
+                    "position_start": 24,
+                    "position_end": 29
                 }
             ]
         },
@@ -479,6 +790,14 @@
                     "position_start": 34,
                     "position_end": 38
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "mycket",
+                    "base_form": "mycket",
+                    "position_start": 8,
+                    "position_end": 14
+                }
             ]
         },
         {
@@ -497,6 +816,26 @@
                     "base_form": "instruktion",
                     "position_start": 53,
                     "position_end": 64
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "anställda",
+                    "base_form": "anställd",
+                    "position_start": 21,
+                    "position_end": 30
+                },
+                {
+                    "word_in_sentence": "följ",
+                    "base_form": "följa",
+                    "position_start": 42,
+                    "position_end": 46
+                },
+                {
+                    "word_in_sentence": "noga",
+                    "base_form": "noga",
+                    "position_start": 65,
+                    "position_end": 69
                 }
             ]
         },
@@ -517,6 +856,20 @@
                     "position_start": 46,
                     "position_end": 60
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "bad",
+                    "base_form": "be",
+                    "position_start": 4,
+                    "position_end": 7
+                },
+                {
+                    "word_in_sentence": "lånar",
+                    "base_form": "låna",
+                    "position_start": 69,
+                    "position_end": 74
+                }
             ]
         },
         {
@@ -529,6 +882,26 @@
                     "base_form": "Jag vore tacksam om …",
                     "position_start": 32,
                     "position_end": 53
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "skrev",
+                    "base_form": "skriva",
+                    "position_start": 4,
+                    "position_end": 9
+                },
+                {
+                    "word_in_sentence": "mejl",
+                    "base_form": "mejl",
+                    "position_start": 14,
+                    "position_end": 18
+                },
+                {
+                    "word_in_sentence": "tid",
+                    "base_form": "tid",
+                    "position_start": 74,
+                    "position_end": 77
                 }
             ]
         },
@@ -543,6 +916,20 @@
                     "position_start": 0,
                     "position_end": 24
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "information",
+                    "base_form": "information",
+                    "position_start": 29,
+                    "position_end": 40
+                },
+                {
+                    "word_in_sentence": "mötet",
+                    "base_form": "möte",
+                    "position_start": 47,
+                    "position_end": 52
+                }
             ]
         },
         {
@@ -551,22 +938,30 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "proffs",
-                    "base_form": "proffs",
-                    "position_start": 49,
-                    "position_end": 55
-                },
-                {
                     "word_in_sentence": "vänliga hälsningar",
                     "base_form": "vänliga hälsningar",
                     "position_start": 4,
                     "position_end": 22
                 },
                 {
+                    "word_in_sentence": "proffs",
+                    "base_form": "proffs",
+                    "position_start": 49,
+                    "position_end": 55
+                },
+                {
                     "word_in_sentence": "längst",
                     "base_form": "längst",
                     "position_start": 56,
                     "position_end": 62
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "rummet",
+                    "base_form": "rum",
+                    "position_start": 69,
+                    "position_end": 75
                 }
             ]
         }

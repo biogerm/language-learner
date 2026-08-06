@@ -11,15 +11,7 @@
             "sentence_id": "art_30_s001",
             "sv": "Hoppas ni alla mår bra!",
             "en": "Hope you are all doing well!",
-            "target_words": [
-                {
-                    "word_in_sentence": "Hoppas ni alla mår bra!",
-                    "base_form": "Hoppas ni alla/du mår bra!",
-                    "position_start": 0,
-                    "position_end": 23,
-                    "contextual_en": "Hope you are all doing well!"
-                }
-            ],
+            "target_words": [],
             "secondary_words": []
         },
         {

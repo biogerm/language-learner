@@ -2,7 +2,7 @@
   "metadata": {
     "level": "B1",
     "source": "rivstart_b1",
-    "total_words": 3418,
+    "total_words": 3378,
     "generated_at": "2026-08-03T22:59:52Z"
   },
   "words": {
@@ -38,11 +38,6 @@
     },
     "bild": {
       "en": "picture",
-      "word_class": null,
-      "gender": null
-    },
-    "skriva": {
-      "en": "write",
       "word_class": null,
       "gender": null
     },
@@ -83,11 +78,6 @@
     },
     "din": {
       "en": "your",
-      "word_class": null,
-      "gender": null
-    },
-    "annat/annan": {
-      "en": "other",
       "word_class": null,
       "gender": null
     },
@@ -446,11 +436,6 @@
       "word_class": null,
       "gender": null
     },
-    "en gång i månaden/veckan": {
-      "en": "once a month/week",
-      "word_class": null,
-      "gender": null
-    },
     "mer": {
       "en": "more",
       "word_class": null,
@@ -628,11 +613,6 @@
     },
     "för två veckor sedan": {
       "en": "two weeks ago",
-      "word_class": null,
-      "gender": null
-    },
-    "ska/skall": {
-      "en": "shall",
       "word_class": null,
       "gender": null
     },
@@ -1461,22 +1441,12 @@
       "word_class": null,
       "gender": null
     },
-    "än att …": {
-      "en": "than to",
-      "word_class": null,
-      "gender": null
-    },
     "smal": {
       "en": "thin",
       "word_class": null,
       "gender": null
     },
     "känna": {
-      "en": "feel",
-      "word_class": null,
-      "gender": null
-    },
-    "känna sig/mig": {
       "en": "feel",
       "word_class": null,
       "gender": null
@@ -1736,11 +1706,6 @@
       "word_class": null,
       "gender": null
     },
-    "jaha": {
-      "en": "oh, I see",
-      "word_class": null,
-      "gender": null
-    },
     "hård": {
       "en": "hard",
       "word_class": null,
@@ -1916,11 +1881,6 @@
       "word_class": null,
       "gender": null
     },
-    "respektive": {
-      "en": "respective",
-      "word_class": null,
-      "gender": null
-    },
     "hitta på": {
       "en": "invent, think of",
       "word_class": null,
@@ -2023,11 +1983,6 @@
     },
     "gissa": {
       "en": "guess",
-      "word_class": null,
-      "gender": null
-    },
-    "Hur många?": {
-      "en": "How many?",
       "word_class": null,
       "gender": null
     },
@@ -2156,11 +2111,6 @@
       "word_class": null,
       "gender": null
     },
-    "lika många": {
-      "en": "as many",
-      "word_class": null,
-      "gender": null
-    },
     "kvinna": {
       "en": "woman",
       "word_class": null,
@@ -2271,11 +2221,6 @@
       "word_class": null,
       "gender": null
     },
-    "Hur många…?": {
-      "en": "How many?",
-      "word_class": null,
-      "gender": null
-    },
     "längd": {
       "en": "length",
       "word_class": null,
@@ -2293,11 +2238,6 @@
     },
     "halv": {
       "en": "half",
-      "word_class": null,
-      "gender": null
-    },
-    "en och en halv": {
-      "en": "one and a half",
       "word_class": null,
       "gender": null
     },
@@ -2531,11 +2471,6 @@
       "word_class": null,
       "gender": null
     },
-    "lämplig": {
-      "en": "suitable",
-      "word_class": null,
-      "gender": null
-    },
     "frimärke": {
       "en": "stamp",
       "word_class": null,
@@ -2643,11 +2578,6 @@
     },
     "resa": {
       "en": "travel, trip",
-      "word_class": null,
-      "gender": null
-    },
-    "toppa": {
-      "en": "top",
       "word_class": null,
       "gender": null
     },
@@ -3111,16 +3041,6 @@
       "word_class": null,
       "gender": null
     },
-    "och så vidare": {
-      "en": "and so on",
-      "word_class": null,
-      "gender": null
-    },
-    "med mera": {
-      "en": "et cetera",
-      "word_class": null,
-      "gender": null
-    },
     "på grund av": {
       "en": "because of",
       "word_class": null,
@@ -3128,16 +3048,6 @@
     },
     "bland annat": {
       "en": "among other things",
-      "word_class": null,
-      "gender": null
-    },
-    "det vill säga": {
-      "en": "that is to say",
-      "word_class": null,
-      "gender": null
-    },
-    "så kallad": {
-      "en": "so-called",
       "word_class": null,
       "gender": null
     },
@@ -3538,11 +3448,6 @@
     },
     "höra av sig": {
       "en": "be in touch",
-      "word_class": null,
-      "gender": null
-    },
-    "Du med /Du också.": {
-      "en": "You too.",
       "word_class": null,
       "gender": null
     },
@@ -4013,11 +3918,6 @@
     },
     "Det skulle vara bättre att…": {
       "en": "It would be better to…",
-      "word_class": null,
-      "gender": null
-    },
-    "Skulle det inte vara bättre att?": {
-      "en": "Wouldn’t it be better to…",
       "word_class": null,
       "gender": null
     },
@@ -5101,11 +5001,6 @@
       "word_class": null,
       "gender": null
     },
-    "till och med": {
-      "en": "even",
-      "word_class": null,
-      "gender": null
-    },
     "rum": {
       "en": "room",
       "word_class": null,
@@ -5258,11 +5153,6 @@
     },
     "Nu är vi framme i …": {
       "en": "Now, we’ve arrived at…",
-      "word_class": null,
-      "gender": null
-    },
-    "Här är allting toppen/underbart/härligt": {
-      "en": "Everything is great",
       "word_class": null,
       "gender": null
     },
@@ -5541,11 +5431,6 @@
       "word_class": null,
       "gender": null
     },
-    "frihet": {
-      "en": "freedom",
-      "word_class": null,
-      "gender": null
-    },
     "idol": {
       "en": "idol, role model",
       "word_class": null,
@@ -5788,11 +5673,6 @@
     },
     "avslutningsfras": {
       "en": "closing phrase",
-      "word_class": null,
-      "gender": null
-    },
-    "Hoppas ni alla/du mår bra!": {
-      "en": "Hope you are all well!",
       "word_class": null,
       "gender": null
     },
@@ -6248,11 +6128,6 @@
     },
     "höna": {
       "en": "hen",
-      "word_class": null,
-      "gender": null
-    },
-    "plocka": {
-      "en": "pick",
       "word_class": null,
       "gender": null
     },
@@ -7378,11 +7253,6 @@
     },
     "Varför fick hon ingen…?": {
       "en": "Why didn’t she get any…?",
-      "word_class": null,
-      "gender": null
-    },
-    "tioårsåldern": {
-      "en": "around ten years old",
       "word_class": null,
       "gender": null
     },
@@ -9626,28 +9496,13 @@
       "word_class": null,
       "gender": null
     },
-    "Du skulle kunna prova/försöka.": {
-      "en": "You could try.",
-      "word_class": null,
-      "gender": null
-    },
     "Istället för att…": {
       "en": "Instead of…",
       "word_class": null,
       "gender": null
     },
-    "Har du provat/försökt att…?": {
-      "en": "Have you tried to…?",
-      "word_class": null,
-      "gender": null
-    },
     "allihop": {
       "en": "everyone",
-      "word_class": null,
-      "gender": null
-    },
-    "alkis /alkoholist": {
-      "en": "alcoholic",
       "word_class": null,
       "gender": null
     },
@@ -9658,11 +9513,6 @@
     },
     "bästis": {
       "en": "best friend",
-      "word_class": null,
-      "gender": null
-    },
-    "flintis /flintskallig": {
-      "en": "someone who is bald",
       "word_class": null,
       "gender": null
     },
@@ -11086,11 +10936,6 @@
       "word_class": null,
       "gender": null
     },
-    "sitta": {
-      "en": "to sit, to have a place",
-      "word_class": null,
-      "gender": null
-    },
     "socialdemokratisk": {
       "en": "social democratic",
       "word_class": null,
@@ -12271,11 +12116,6 @@
       "word_class": null,
       "gender": null
     },
-    "tänk dig/er": {
-      "en": "imagine",
-      "word_class": null,
-      "gender": null
-    },
     "turisinformation": {
       "en": "tourist information",
       "word_class": null,
@@ -12441,11 +12281,6 @@
       "word_class": null,
       "gender": null
     },
-    "gå tillbaka till det normala/vanliga": {
-      "en": "go back to normal, to",
-      "word_class": null,
-      "gender": null
-    },
     "julfest": {
       "en": "Christmas party",
       "word_class": null,
@@ -12458,11 +12293,6 @@
     },
     "ett och samma": {
       "en": "one and the same",
-      "word_class": null,
-      "gender": null
-    },
-    "högsta dröm": {
-      "en": "biggest dream",
       "word_class": null,
       "gender": null
     },
@@ -12783,11 +12613,6 @@
     },
     "finnas": {
       "en": "exist",
-      "word_class": null,
-      "gender": null
-    },
-    "sedan urminnes tider": {
-      "en": "since time immemorial",
       "word_class": null,
       "gender": null
     },
@@ -13386,11 +13211,6 @@
       "word_class": null,
       "gender": null
     },
-    "handla med": {
-      "en": "trade with",
-      "word_class": null,
-      "gender": null
-    },
     "krydda": {
       "en": "spice",
       "word_class": null,
@@ -13668,11 +13488,6 @@
     },
     "Det låter hemskt!": {
       "en": "It sounds horrible!",
-      "word_class": null,
-      "gender": null
-    },
-    "Hur många år har du/han/hon jobbat här?": {
-      "en": "How many years",
       "word_class": null,
       "gender": null
     },
@@ -15461,11 +15276,6 @@
       "word_class": null,
       "gender": null
     },
-    "Jag måste berätta en sak/en grej…": {
-      "en": "I have to tell you something…",
-      "word_class": null,
-      "gender": null
-    },
     "Visste du att…?": {
       "en": "Did you know that…?",
       "word_class": null,
@@ -15473,11 +15283,6 @@
     },
     "Har du hört talas om …?": {
       "en": "Have you heard (spoken) of…?",
-      "word_class": null,
-      "gender": null
-    },
-    "Har du/ni hört att?": {
-      "en": "Have you heard that…?",
       "word_class": null,
       "gender": null
     },
@@ -15858,11 +15663,6 @@
     },
     "påminna": {
       "en": "remind",
-      "word_class": null,
-      "gender": null
-    },
-    "Vilken tur att du påminde mig": {
-      "en": "How fortunate that you reminded me",
       "word_class": null,
       "gender": null
     },

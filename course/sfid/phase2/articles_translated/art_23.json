@@ -50,13 +50,6 @@
                     "contextual_en": "nurse"
                 },
                 {
-                    "word_in_sentence": "ska",
-                    "base_form": "ska/skall",
-                    "position_start": 20,
-                    "position_end": 23,
-                    "contextual_en": "will"
-                },
-                {
                     "word_in_sentence": "trivs",
                     "base_form": "trivas",
                     "position_start": 32,
@@ -404,13 +397,6 @@
             "en": "Before that he had also been craving a smoke and used to smoke three packs of cigarettes a day.",
             "target_words": [
                 {
-                    "word_in_sentence": "ska",
-                    "base_form": "ska/skall",
-                    "position_start": 63,
-                    "position_end": 66,
-                    "contextual_en": "shall"
-                },
-                {
                     "word_in_sentence": "tre",
                     "base_form": "tre",
                     "position_start": 58,
@@ -549,13 +535,6 @@
             "sv": "En stor hälsodebatt i samhället handlar om hur man ska skydda människor från att komma för nära droger.",
             "en": "A major health debate in society is about how to protect people from getting too close to drugs.",
             "target_words": [
-                {
-                    "word_in_sentence": "ska",
-                    "base_form": "ska/skall",
-                    "position_start": 51,
-                    "position_end": 54,
-                    "contextual_en": "to"
-                },
                 {
                     "word_in_sentence": "hälsodebatt",
                     "base_form": "hälsodebatt",

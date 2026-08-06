@@ -3,7 +3,7 @@
     "course_title": "SFI D",
     "stage_id": "stage_11",
     "stage_title": "Vetenskap & Teknik",
-    "article_id": "art_01",
+    "article_id": "article_01",
     "article_title": "Forskning och Teknikens Utveckling",
     "target_word_count": 60,
     "sentences": [
@@ -24,6 +24,20 @@
                     "position_start": 87,
                     "position_end": 90
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "säkert",
+                    "base_form": "säker",
+                    "position_start": 30,
+                    "position_end": 36
+                },
+                {
+                    "word_in_sentence": "rutin",
+                    "base_form": "rutin",
+                    "position_start": 47,
+                    "position_end": 52
+                }
             ]
         },
         {
@@ -42,6 +56,20 @@
                     "base_form": "allting",
                     "position_start": 38,
                     "position_end": 45
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "någonsin",
+                    "base_form": "någonsin",
+                    "position_start": 11,
+                    "position_end": 19
+                },
+                {
+                    "word_in_sentence": "funderat",
+                    "base_form": "fundera",
+                    "position_start": 20,
+                    "position_end": 28
                 }
             ]
         },
@@ -74,6 +102,20 @@
                     "position_start": 62,
                     "position_end": 71
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "praktisk",
+                    "base_form": "praktisk",
+                    "position_start": 26,
+                    "position_end": 34
+                },
+                {
+                    "word_in_sentence": "detaljer",
+                    "base_form": "detalj",
+                    "position_start": 97,
+                    "position_end": 105
+                }
             ]
         },
         {
@@ -81,6 +123,12 @@
             "sv": "Nu förstår jag att det handlar om mer än bara en enkel skärm; det är ett helt system av information.",
             "en": "",
             "target_words": [
+                {
+                    "word_in_sentence": "för",
+                    "base_form": "för",
+                    "position_start": 3,
+                    "position_end": 6
+                },
                 {
                     "word_in_sentence": "mer än",
                     "base_form": "mer än",
@@ -93,6 +141,20 @@
                     "position_start": 85,
                     "position_end": 87
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "handlar om",
+                    "base_form": "handla om",
+                    "position_start": 23,
+                    "position_end": 33
+                },
+                {
+                    "word_in_sentence": "enkel",
+                    "base_form": "enkel",
+                    "position_start": 49,
+                    "position_end": 54
+                }
             ]
         },
         {
@@ -100,6 +162,12 @@
             "sv": "Varje år försöker tusentals experter att uppfinna ny utrustning som ska göra våra liv enklare.",
             "en": "",
             "target_words": [
+                {
+                    "word_in_sentence": "för",
+                    "base_form": "för",
+                    "position_start": 9,
+                    "position_end": 12
+                },
                 {
                     "word_in_sentence": "Varje",
                     "base_form": "varje",
@@ -124,6 +192,20 @@
                     "position_start": 41,
                     "position_end": 44
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "tusentals",
+                    "base_form": "tusental",
+                    "position_start": 18,
+                    "position_end": 27
+                },
+                {
+                    "word_in_sentence": "utrustning",
+                    "base_form": "utrustning",
+                    "position_start": 53,
+                    "position_end": 63
+                }
             ]
         },
         {
@@ -131,6 +213,12 @@
             "sv": "En mycket känd vetenskapsman arbetade för många hundra år sedan med att observera och systematisera ny kunskap.",
             "en": "",
             "target_words": [
+                {
+                    "word_in_sentence": "för",
+                    "base_form": "för",
+                    "position_start": 38,
+                    "position_end": 41
+                },
                 {
                     "word_in_sentence": "mycket",
                     "base_form": "mycket",
@@ -149,6 +237,20 @@
                     "position_start": 86,
                     "position_end": 99
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "känd",
+                    "base_form": "känd",
+                    "position_start": 10,
+                    "position_end": 14
+                },
+                {
+                    "word_in_sentence": "kunskap",
+                    "base_form": "kunskap",
+                    "position_start": 103,
+                    "position_end": 110
+                }
             ]
         },
         {
@@ -156,6 +258,18 @@
             "sv": "Genom att använda en speciell och noggrann metod kunde han snabbt beräkna avstånd i rymden och uppmäta exakta temperaturer.",
             "en": "",
             "target_words": [
+                {
+                    "word_in_sentence": "av",
+                    "base_form": "av",
+                    "position_start": 74,
+                    "position_end": 76
+                },
+                {
+                    "word_in_sentence": "upp",
+                    "base_form": "upp",
+                    "position_start": 95,
+                    "position_end": 98
+                },
                 {
                     "word_in_sentence": "Genom",
                     "base_form": "genom",
@@ -186,6 +300,20 @@
                     "position_start": 95,
                     "position_end": 102
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "noggrann",
+                    "base_form": "noggrann",
+                    "position_start": 34,
+                    "position_end": 42
+                },
+                {
+                    "word_in_sentence": "exakta",
+                    "base_form": "exakt",
+                    "position_start": 103,
+                    "position_end": 109
+                }
             ]
         },
         {
@@ -194,10 +322,30 @@
             "en": "",
             "target_words": [
                 {
+                    "word_in_sentence": "Genom",
+                    "base_form": "genom",
+                    "position_start": 41,
+                    "position_end": 46
+                },
+                {
                     "word_in_sentence": "teleskop",
                     "base_form": "teleskop",
                     "position_start": 57,
                     "position_end": 65
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "ljus",
+                    "base_form": "ljus",
+                    "position_start": 31,
+                    "position_end": 35
+                },
+                {
+                    "word_in_sentence": "noga",
+                    "base_form": "noga",
+                    "position_start": 36,
+                    "position_end": 40
                 }
             ]
         },
@@ -206,6 +354,18 @@
             "sv": "Han var en riktigt duktig astronom som varje kväll stod och tittade upp mot en vacker stjärnhimmel.",
             "en": "",
             "target_words": [
+                {
+                    "word_in_sentence": "Varje",
+                    "base_form": "varje",
+                    "position_start": 39,
+                    "position_end": 44
+                },
+                {
+                    "word_in_sentence": "upp",
+                    "base_form": "upp",
+                    "position_start": 68,
+                    "position_end": 71
+                },
                 {
                     "word_in_sentence": "astronom",
                     "base_form": "astronom",
@@ -224,6 +384,20 @@
                     "position_start": 79,
                     "position_end": 85
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "duktig",
+                    "base_form": "duktig",
+                    "position_start": 19,
+                    "position_end": 25
+                },
+                {
+                    "word_in_sentence": "stjärnhimmel",
+                    "base_form": "stjärnhimmel",
+                    "position_start": 86,
+                    "position_end": 98
+                }
             ]
         },
         {
@@ -231,6 +405,12 @@
             "sv": "I mitten av det mörka rummet stod hans fina arbetsverktyg.",
             "en": "",
             "target_words": [
+                {
+                    "word_in_sentence": "av",
+                    "base_form": "av",
+                    "position_start": 9,
+                    "position_end": 11
+                },
                 {
                     "word_in_sentence": "I mitten av",
                     "base_form": "i mitten av",
@@ -243,13 +423,41 @@
                     "position_start": 2,
                     "position_end": 8
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "mörka",
+                    "base_form": "mörk",
+                    "position_start": 16,
+                    "position_end": 21
+                },
+                {
+                    "word_in_sentence": "fina",
+                    "base_form": "fin",
+                    "position_start": 39,
+                    "position_end": 43
+                }
             ]
         },
         {
             "sentence_id": "art_01_s011",
             "sv": "Forskning är inte alltid en lätt process.",
             "en": "",
-            "target_words": []
+            "target_words": [],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "Forskning",
+                    "base_form": "forskning",
+                    "position_start": 0,
+                    "position_end": 9
+                },
+                {
+                    "word_in_sentence": "process",
+                    "base_form": "process",
+                    "position_start": 33,
+                    "position_end": 40
+                }
+            ]
         },
         {
             "sentence_id": "art_01_s012",
@@ -274,6 +482,20 @@
                     "position_start": 75,
                     "position_end": 80
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "osynlig",
+                    "base_form": "osynlig",
+                    "position_start": 13,
+                    "position_end": 20
+                },
+                {
+                    "word_in_sentence": "idéer",
+                    "base_form": "idé",
+                    "position_start": 47,
+                    "position_end": 52
+                }
             ]
         },
         {
@@ -287,6 +509,20 @@
                     "position_start": 51,
                     "position_end": 56
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "bygger",
+                    "base_form": "bygga",
+                    "position_start": 9,
+                    "position_end": 15
+                },
+                {
+                    "word_in_sentence": "riktig",
+                    "base_form": "riktig",
+                    "position_start": 44,
+                    "position_end": 50
+                }
             ]
         },
         {
@@ -294,6 +530,18 @@
             "sv": "De flesta är djupt intresserade av att lösa svåra problem för att på bästa sätt hjälpa varandra.",
             "en": "",
             "target_words": [
+                {
+                    "word_in_sentence": "för",
+                    "base_form": "för",
+                    "position_start": 58,
+                    "position_end": 61
+                },
+                {
+                    "word_in_sentence": "av",
+                    "base_form": "av",
+                    "position_start": 32,
+                    "position_end": 34
+                },
                 {
                     "word_in_sentence": "De flesta",
                     "base_form": "de flesta",
@@ -305,6 +553,20 @@
                     "base_form": "varandra",
                     "position_start": 87,
                     "position_end": 95
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "djupt",
+                    "base_form": "djup",
+                    "position_start": 13,
+                    "position_end": 18
+                },
+                {
+                    "word_in_sentence": "intresserade",
+                    "base_form": "intresserad",
+                    "position_start": 19,
+                    "position_end": 31
                 }
             ]
         },
@@ -325,6 +587,20 @@
                     "position_start": 57,
                     "position_end": 64
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "resultatet",
+                    "base_form": "resultat",
+                    "position_start": 27,
+                    "position_end": 37
+                },
+                {
+                    "word_in_sentence": "hundra",
+                    "base_form": "hundra",
+                    "position_start": 50,
+                    "position_end": 56
+                }
             ]
         },
         {
@@ -332,6 +608,24 @@
             "sv": "Faktum är att cirka tjugo procent av försöken kanske misslyckas, men man lär sig otroligt mycket av dem också.",
             "en": "",
             "target_words": [
+                {
+                    "word_in_sentence": "av",
+                    "base_form": "av",
+                    "position_start": 34,
+                    "position_end": 36
+                },
+                {
+                    "word_in_sentence": "mycket",
+                    "base_form": "mycket",
+                    "position_start": 90,
+                    "position_end": 96
+                },
+                {
+                    "word_in_sentence": "procent",
+                    "base_form": "procent",
+                    "position_start": 26,
+                    "position_end": 33
+                },
                 {
                     "word_in_sentence": "procent av",
                     "base_form": "procent av",
@@ -343,6 +637,20 @@
                     "base_form": "också",
                     "position_start": 104,
                     "position_end": 109
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "försöken",
+                    "base_form": "försök",
+                    "position_start": 37,
+                    "position_end": 45
+                },
+                {
+                    "word_in_sentence": "misslyckas",
+                    "base_form": "misslyckas",
+                    "position_start": 53,
+                    "position_end": 63
                 }
             ]
         },
@@ -356,6 +664,20 @@
                     "base_form": "uppkopplad",
                     "position_start": 45,
                     "position_end": 56
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "ständigt",
+                    "base_form": "ständig",
+                    "position_start": 33,
+                    "position_end": 41
+                },
+                {
+                    "word_in_sentence": "lever",
+                    "base_form": "leva",
+                    "position_start": 6,
+                    "position_end": 11
                 }
             ]
         },
@@ -382,6 +704,20 @@
                     "position_start": 39,
                     "position_end": 44
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "liten",
+                    "base_form": "liten",
+                    "position_start": 33,
+                    "position_end": 38
+                },
+                {
+                    "word_in_sentence": "hemma",
+                    "base_form": "hemma",
+                    "position_start": 73,
+                    "position_end": 78
+                }
             ]
         },
         {
@@ -394,6 +730,20 @@
                     "base_form": "simulera",
                     "position_start": 13,
                     "position_end": 21
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "direkt",
+                    "base_form": "direkt",
+                    "position_start": 52,
+                    "position_end": 58
+                },
+                {
+                    "word_in_sentence": "verkligheten",
+                    "base_form": "verklighet",
+                    "position_start": 99,
+                    "position_end": 111
                 }
             ]
         },
@@ -414,6 +764,20 @@
                     "position_start": 69,
                     "position_end": 82
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "kräver",
+                    "base_form": "kräva",
+                    "position_start": 21,
+                    "position_end": 27
+                },
+                {
+                    "word_in_sentence": "förmåga",
+                    "base_form": "förmåga",
+                    "position_start": 83,
+                    "position_end": 90
+                }
             ]
         },
         {
@@ -433,6 +797,20 @@
                     "position_start": 86,
                     "position_end": 91
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "bekvämt",
+                    "base_form": "bekväm",
+                    "position_start": 17,
+                    "position_end": 24
+                },
+                {
+                    "word_in_sentence": "jorden",
+                    "base_form": "jord",
+                    "position_start": 64,
+                    "position_end": 70
+                }
             ]
         },
         {
@@ -445,6 +823,20 @@
                     "base_form": "genomsnitt",
                     "position_start": 2,
                     "position_end": 12
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "spenderar",
+                    "base_form": "spendera",
+                    "position_start": 13,
+                    "position_end": 22
+                },
+                {
+                    "word_in_sentence": "människor",
+                    "base_form": "människa",
+                    "position_start": 31,
+                    "position_end": 40
                 }
             ]
         },
@@ -471,6 +863,20 @@
                     "position_start": 79,
                     "position_end": 88
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "utvecklas",
+                    "base_form": "utvecklas",
+                    "position_start": 32,
+                    "position_end": 41
+                },
+                {
+                    "word_in_sentence": "tvärtom",
+                    "base_form": "tvärtom",
+                    "position_start": 64,
+                    "position_end": 71
+                }
             ]
         },
         {
@@ -483,6 +889,20 @@
                     "base_form": "tycka",
                     "position_start": 19,
                     "position_end": 24
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "Oavsett",
+                    "base_form": "oavsett",
+                    "position_start": 0,
+                    "position_end": 7
+                },
+                {
+                    "word_in_sentence": "fortsätter",
+                    "base_form": "fortsätta",
+                    "position_start": 35,
+                    "position_end": 45
                 }
             ]
         },
@@ -502,6 +922,20 @@
                     "base_form": "längd",
                     "position_start": 25,
                     "position_end": 30
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "mäta",
+                    "base_form": "mäta",
+                    "position_start": 7,
+                    "position_end": 11
+                },
+                {
+                    "word_in_sentence": "framtiden",
+                    "base_form": "framtid",
+                    "position_start": 52,
+                    "position_end": 61
                 }
             ]
         },
@@ -534,6 +968,20 @@
                     "position_start": 80,
                     "position_end": 84
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "användbara",
+                    "base_form": "användbar",
+                    "position_start": 85,
+                    "position_end": 95
+                },
+                {
+                    "word_in_sentence": "telefoner",
+                    "base_form": "telefon",
+                    "position_start": 62,
+                    "position_end": 71
+                }
             ]
         },
         {
@@ -558,6 +1006,20 @@
                     "base_form": "visa",
                     "position_start": 37,
                     "position_end": 41
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "lugnt",
+                    "base_form": "lugn",
+                    "position_start": 7,
+                    "position_end": 12
+                },
+                {
+                    "word_in_sentence": "redo",
+                    "base_form": "redo",
+                    "position_start": 67,
+                    "position_end": 71
                 }
             ]
         }

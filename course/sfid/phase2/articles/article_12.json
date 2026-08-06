@@ -3,7 +3,7 @@
     "course_title": "SFI D",
     "stage_id": "stage_10",
     "stage_title": "Mat & Matlagning",
-    "article_id": "art_12",
+    "article_id": "article_12",
     "article_title": "Mycket Dramatik i Köket",
     "target_word_count": 60,
     "sentences": [
@@ -18,6 +18,14 @@
                     "position_start": 11,
                     "position_end": 14
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "älskar",
+                    "base_form": "älska",
+                    "position_start": 4,
+                    "position_end": 10
+                }
             ]
         },
         {
@@ -26,16 +34,30 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "baka",
-                    "base_form": "baka",
-                    "position_start": 32,
-                    "position_end": 36
-                },
-                {
                     "word_in_sentence": "år",
                     "base_form": "år",
                     "position_start": 8,
                     "position_end": 10
+                },
+                {
+                    "word_in_sentence": "baka",
+                    "base_form": "baka",
+                    "position_start": 32,
+                    "position_end": 36
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "goda",
+                    "base_form": "god",
+                    "position_start": 46,
+                    "position_end": 50
+                },
+                {
+                    "word_in_sentence": "tyckt om",
+                    "base_form": "tycka om",
+                    "position_start": 19,
+                    "position_end": 27
                 }
             ]
         },
@@ -44,6 +66,12 @@
             "sv": "Min vän, som är en känd dramatiker, älskar mycket dramatik i köket.",
             "en": "",
             "target_words": [
+                {
+                    "word_in_sentence": "mat",
+                    "base_form": "mat",
+                    "position_start": 27,
+                    "position_end": 30
+                },
                 {
                     "word_in_sentence": "dramatik",
                     "base_form": "dramatik",
@@ -56,6 +84,20 @@
                     "position_start": 24,
                     "position_end": 34
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "känd",
+                    "base_form": "känd",
+                    "position_start": 19,
+                    "position_end": 23
+                },
+                {
+                    "word_in_sentence": "köket",
+                    "base_form": "kök",
+                    "position_start": 61,
+                    "position_end": 66
+                }
             ]
         },
         {
@@ -64,16 +106,30 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "hungrig som en varg",
-                    "base_form": "hungrig som en varg",
-                    "position_start": 39,
-                    "position_end": 58
-                },
-                {
                     "word_in_sentence": "Efter att ha",
                     "base_form": "efter att ha",
                     "position_start": 0,
                     "position_end": 12
+                },
+                {
+                    "word_in_sentence": "hungrig som en varg",
+                    "base_form": "hungrig som en varg",
+                    "position_start": 39,
+                    "position_end": 58
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "jobbat",
+                    "base_form": "jobba",
+                    "position_start": 13,
+                    "position_end": 19
+                },
+                {
+                    "word_in_sentence": "hela dagen",
+                    "base_form": "hela dagen",
+                    "position_start": 20,
+                    "position_end": 30
                 }
             ]
         },
@@ -94,6 +150,20 @@
                     "position_start": 64,
                     "position_end": 67
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "brukar",
+                    "base_form": "bruka",
+                    "position_start": 4,
+                    "position_end": 10
+                },
+                {
+                    "word_in_sentence": "magen",
+                    "base_form": "mage",
+                    "position_start": 55,
+                    "position_end": 60
+                }
             ]
         },
         {
@@ -107,6 +177,14 @@
                     "position_start": 32,
                     "position_end": 45
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "föreslå",
+                    "base_form": "föreslå",
+                    "position_start": 11,
+                    "position_end": 18
+                }
             ]
         },
         {
@@ -115,9 +193,9 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "hämtmat",
-                    "base_form": "hämtmat",
-                    "position_start": 43,
+                    "word_in_sentence": "mat",
+                    "base_form": "mat",
+                    "position_start": 47,
                     "position_end": 50
                 },
                 {
@@ -125,6 +203,20 @@
                     "base_form": "för en stund",
                     "position_start": 0,
                     "position_end": 12
+                },
+                {
+                    "word_in_sentence": "hämtmat",
+                    "base_form": "hämtmat",
+                    "position_start": 43,
+                    "position_end": 50
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "köpa",
+                    "base_form": "köpa",
+                    "position_start": 38,
+                    "position_end": 42
                 }
             ]
         },
@@ -139,13 +231,41 @@
                     "position_start": 15,
                     "position_end": 20
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "hallen",
+                    "base_form": "hall",
+                    "position_start": 4,
+                    "position_end": 10
+                },
+                {
+                    "word_in_sentence": "mentalt",
+                    "base_form": "mental",
+                    "position_start": 39,
+                    "position_end": 46
+                }
             ]
         },
         {
             "sentence_id": "art_12_s009",
             "sv": "Vi valde att stanna hemma.",
             "en": "",
-            "target_words": []
+            "target_words": [],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "valde",
+                    "base_form": "välja",
+                    "position_start": 3,
+                    "position_end": 8
+                },
+                {
+                    "word_in_sentence": "stanna",
+                    "base_form": "stanna",
+                    "position_start": 13,
+                    "position_end": 19
+                }
+            ]
         },
         {
             "sentence_id": "art_12_s010",
@@ -153,16 +273,16 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "banan",
-                    "base_form": "banan",
-                    "position_start": 124,
-                    "position_end": 129
+                    "word_in_sentence": "mat",
+                    "base_form": "mat",
+                    "position_start": 67,
+                    "position_end": 70
                 },
                 {
-                    "word_in_sentence": "grönsak",
-                    "base_form": "grönsak",
-                    "position_start": 91,
-                    "position_end": 98
+                    "word_in_sentence": "Istället för att…",
+                    "base_form": "Istället för att…",
+                    "position_start": 0,
+                    "position_end": 17
                 },
                 {
                     "word_in_sentence": "restaurang",
@@ -183,16 +303,36 @@
                     "position_end": 70
                 },
                 {
+                    "word_in_sentence": "grönsak",
+                    "base_form": "grönsak",
+                    "position_start": 91,
+                    "position_end": 98
+                },
+                {
                     "word_in_sentence": "äpple",
                     "base_form": "äpple",
                     "position_start": 114,
                     "position_end": 119
                 },
                 {
-                    "word_in_sentence": "Istället för att…",
-                    "base_form": "Istället för att…",
-                    "position_start": 0,
-                    "position_end": 17
+                    "word_in_sentence": "banan",
+                    "base_form": "banan",
+                    "position_start": 124,
+                    "position_end": 129
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "skära upp",
+                    "base_form": "skära upp",
+                    "position_start": 75,
+                    "position_end": 84
+                },
+                {
+                    "word_in_sentence": "varje",
+                    "base_form": "varje",
+                    "position_start": 85,
+                    "position_end": 90
                 }
             ]
         },
@@ -206,6 +346,20 @@
                     "base_form": "Det är inte sant!",
                     "position_start": 1,
                     "position_end": 18
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "ropade",
+                    "base_form": "ropa",
+                    "position_start": 20,
+                    "position_end": 26
+                },
+                {
+                    "word_in_sentence": "plötsligt",
+                    "base_form": "plötsligt",
+                    "position_start": 35,
+                    "position_end": 44
                 }
             ]
         },
@@ -226,6 +380,14 @@
                     "position_start": 41,
                     "position_end": 52
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "mygga",
+                    "base_form": "mygga",
+                    "position_start": 15,
+                    "position_end": 20
+                }
             ]
         },
         {
@@ -239,6 +401,14 @@
                     "position_start": 4,
                     "position_end": 13
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "dör",
+                    "base_form": "dö",
+                    "position_start": 38,
+                    "position_end": 41
+                }
             ]
         },
         {
@@ -247,16 +417,24 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "kolhydrat",
-                    "base_form": "kolhydrat",
-                    "position_start": 39,
-                    "position_end": 48
-                },
-                {
                     "word_in_sentence": "obekväm",
                     "base_form": "obekväm",
                     "position_start": 15,
                     "position_end": 22
+                },
+                {
+                    "word_in_sentence": "kolhydrat",
+                    "base_form": "kolhydrat",
+                    "position_start": 39,
+                    "position_end": 48
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "känner mig",
+                    "base_form": "känna sig",
+                    "position_start": 4,
+                    "position_end": 14
                 }
             ]
         },
@@ -271,6 +449,14 @@
                     "position_start": 19,
                     "position_end": 26
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "måste",
+                    "base_form": "måste",
+                    "position_start": 36,
+                    "position_end": 41
+                }
             ]
         },
         {
@@ -279,16 +465,24 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "salamikorv",
-                    "base_form": "salamikorv",
-                    "position_start": 33,
-                    "position_end": 43
-                },
-                {
                     "word_in_sentence": "provsmaka",
                     "base_form": "provsmaka",
                     "position_start": 18,
                     "position_end": 27
+                },
+                {
+                    "word_in_sentence": "salamikorv",
+                    "base_form": "salamikorv",
+                    "position_start": 33,
+                    "position_end": 43
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "bad",
+                    "base_form": "be",
+                    "position_start": 4,
+                    "position_end": 7
                 }
             ]
         },
@@ -298,16 +492,24 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "föda",
-                    "base_form": "föda",
-                    "position_start": 44,
-                    "position_end": 48
-                },
-                {
                     "word_in_sentence": "sakna",
                     "base_form": "sakna",
                     "position_start": 38,
                     "position_end": 43
+                },
+                {
+                    "word_in_sentence": "föda",
+                    "base_form": "föda",
+                    "position_start": 44,
+                    "position_end": 48
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "ordentligt",
+                    "base_form": "ordentlig",
+                    "position_start": 14,
+                    "position_end": 24
                 }
             ]
         },
@@ -317,16 +519,30 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "nivå",
-                    "base_form": "nivå",
-                    "position_start": 63,
-                    "position_end": 67
-                },
-                {
                     "word_in_sentence": "misslyckande",
                     "base_form": "misslyckande",
                     "position_start": 19,
                     "position_end": 31
+                },
+                {
+                    "word_in_sentence": "nivå",
+                    "base_form": "nivå",
+                    "position_start": 63,
+                    "position_end": 67
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "slippa",
+                    "base_form": "slippa",
+                    "position_start": 8,
+                    "position_end": 14
+                },
+                {
+                    "word_in_sentence": "serverade",
+                    "base_form": "servera",
+                    "position_start": 32,
+                    "position_end": 41
                 }
             ]
         },
@@ -341,6 +557,20 @@
                     "position_start": 25,
                     "position_end": 35
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "doften",
+                    "base_form": "doft",
+                    "position_start": -1,
+                    "position_end": -1
+                },
+                {
+                    "word_in_sentence": "vitlök",
+                    "base_form": "vitlök",
+                    "position_start": 10,
+                    "position_end": 16
+                }
             ]
         },
         {
@@ -353,6 +583,14 @@
                     "base_form": "var och en",
                     "position_start": 0,
                     "position_end": 10
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "tallrik",
+                    "base_form": "tallrik",
+                    "position_start": 19,
+                    "position_end": 26
                 }
             ]
         },
@@ -367,6 +605,14 @@
                     "position_start": 9,
                     "position_end": 15
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "något",
+                    "base_form": "någon",
+                    "position_start": 16,
+                    "position_end": 21
+                }
             ]
         },
         {
@@ -375,16 +621,30 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "öl",
-                    "base_form": "öl",
-                    "position_start": 42,
-                    "position_end": 44
-                },
-                {
                     "word_in_sentence": "läsk",
                     "base_form": "läsk",
                     "position_start": 15,
                     "position_end": 19
+                },
+                {
+                    "word_in_sentence": "öl",
+                    "base_form": "öl",
+                    "position_start": 42,
+                    "position_end": 44
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "kall",
+                    "base_form": "kall",
+                    "position_start": 10,
+                    "position_end": 14
+                },
+                {
+                    "word_in_sentence": "ljus",
+                    "base_form": "ljus",
+                    "position_start": 37,
+                    "position_end": 41
                 }
             ]
         },
@@ -411,6 +671,14 @@
                     "position_start": 86,
                     "position_end": 92
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "ibland",
+                    "base_form": "ibland",
+                    "position_start": -1,
+                    "position_end": -1
+                }
             ]
         },
         {
@@ -430,6 +698,20 @@
                     "position_start": 64,
                     "position_end": 74
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "vatten",
+                    "base_form": "vatten",
+                    "position_start": 43,
+                    "position_end": 49
+                },
+                {
+                    "word_in_sentence": "bäst",
+                    "base_form": "bäst",
+                    "position_start": 17,
+                    "position_end": 21
+                }
             ]
         },
         {
@@ -442,6 +724,14 @@
                     "base_form": "vara säker på",
                     "position_start": 10,
                     "position_end": 23
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "nöjd",
+                    "base_form": "nöjd",
+                    "position_start": 40,
+                    "position_end": 44
                 }
             ]
         },
@@ -456,6 +746,14 @@
                     "position_start": 29,
                     "position_end": 47
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "undrade",
+                    "base_form": "undra",
+                    "position_start": 15,
+                    "position_end": 22
+                }
             ]
         },
         {
@@ -463,6 +761,12 @@
             "sv": "Jag ville hellre baka en kaka än att äta köpt godis eller smågodis.",
             "en": "",
             "target_words": [
+                {
+                    "word_in_sentence": "hellre baka en kaka än",
+                    "base_form": "hellre … än",
+                    "position_start": 10,
+                    "position_end": 32
+                },
                 {
                     "word_in_sentence": "kaka",
                     "base_form": "kaka",
@@ -480,12 +784,14 @@
                     "base_form": "smågodis",
                     "position_start": 58,
                     "position_end": 66
-                },
+                }
+            ],
+            "secondary_words": [
                 {
-                    "word_in_sentence": "hellre baka en kaka än",
-                    "base_form": "hellre … än",
-                    "position_start": 10,
-                    "position_end": 32
+                    "word_in_sentence": "köpt",
+                    "base_form": "köpa",
+                    "position_start": 41,
+                    "position_end": 45
                 }
             ]
         },
@@ -500,6 +806,14 @@
                     "position_start": 8,
                     "position_end": 15
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "hemma",
+                    "base_form": "hemma",
+                    "position_start": 16,
+                    "position_end": 21
+                }
             ]
         },
         {
@@ -512,6 +826,14 @@
                     "base_form": "lättyoghurt",
                     "position_start": 39,
                     "position_end": 50
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "skål",
+                    "base_form": "skål",
+                    "position_start": 30,
+                    "position_end": 34
                 }
             ]
         },
@@ -531,6 +853,14 @@
                     "base_form": "dramatisk",
                     "position_start": 46,
                     "position_end": 55
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "tyckte",
+                    "base_form": "tycka",
+                    "position_start": 4,
+                    "position_end": 10
                 }
             ]
         },
@@ -563,6 +893,14 @@
                     "position_start": 82,
                     "position_end": 90
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "talade om",
+                    "base_form": "tala om",
+                    "position_start": 3,
+                    "position_end": 12
+                }
             ]
         },
         {
@@ -581,6 +919,20 @@
                     "base_form": "försvinna",
                     "position_start": 68,
                     "position_end": 77
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "hoppas",
+                    "base_form": "hoppas",
+                    "position_start": 4,
+                    "position_end": 10
+                },
+                {
+                    "word_in_sentence": "glädje",
+                    "base_form": "glädje",
+                    "position_start": 54,
+                    "position_end": 60
                 }
             ]
         }

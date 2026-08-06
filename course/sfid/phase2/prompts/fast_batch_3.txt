@@ -1,0 +1,2951 @@
+--- BATCH 3 ---
+
+Your task is to provide contextual_en translations for target_words and pick 2-3 secondary_words per sentence.
+Output a SINGLE JSON object exactly like this format. Do NOT wrap it in markdown block, or if you do, ensure it's valid JSON:
+{
+  "art_00_s001": {
+    "target_words": {"sv_word1": "en_translation", "sv_word2": "en_translation"},
+    "secondary_words": {"sv_challenging_word1": "en_translation", "sv_challenging_word2": "en_translation"}
+  }
+}
+
+[art_38_s001]
+sv: "Vet du vad jag har läst?" frågade jag min vän över telefon.
+en: "Do you know what I have read?" I asked my friend over the phone.
+target_words_to_translate: Vet du vad jag har läst?, vad, telefon
+
+[art_38_s002]
+sv: "Det var en spännande tidningsartikel om en skröna som brukar sprida sig på internet vartannat år.
+en: "It was an exciting newspaper article about a tall tale that usually spreads on the internet every two years.
+target_words_to_translate: tidningsartikel, skröna, sprida, vartannat år
+
+[art_38_s003]
+sv: Det är en rolig vandringshistoria om en svensk charterresenär som ringde till ett utrikesdepartement bara för skojs skull.
+en: It is a funny urban legend about a Swedish charter traveler who called a foreign ministry just for fun.
+target_words_to_translate: vandringshistoria, charterresenär, utrikesdepartement, för skojs skull
+
+[art_38_s004]
+sv: Han sa att han var nära släkt med kungen."
+en: He said he was a close relative of the king."
+target_words_to_translate: släkt med
+
+[art_38_s005]
+sv: "Det var underhållande, men vad hände sedan?" undrade hon.
+en: "That was entertaining, but what happened then?" she wondered.
+target_words_to_translate: vad, underhållande, dra
+
+[art_38_s006]
+sv: "Jo, det var egentligen bara ett roligt skämt, typ ett stort aprilskämt", sa jag för att dra ut på historien.
+en: "Well, it was really just a funny joke, kind of a big April Fool's joke", I said to drag out the story.
+target_words_to_translate: dra, skämt, aprilskämt
+
+[art_38_s007]
+sv: Sedan frågade jag henne om hon ville följa med till en stor nöjespark i staden för att se en ny attraktion.
+en: Then I asked her if she wanted to come along to a big amusement park in the city to see a new attraction.
+target_words_to_translate: nöjespark, attraktion
+
+[art_38_s008]
+sv: "Jag kan tyvärr inte idag." svarade hon snabbt.
+en: "Unfortunately I can't today." she answered quickly.
+target_words_to_translate: Jag kan tyvärr inte idag.
+
+[art_38_s009]
+sv: "Vad ville hon ha?" tänkte jag tyst för mig själv.
+en: "What did she want?" I thought quietly to myself.
+target_words_to_translate: vad, Vad ville hon ha?
+
+[art_38_s010]
+sv: "Hur klarar du dig?" frågade jag istället.
+en: "How do you manage?" I asked instead.
+target_words_to_translate: Hur klarar du dig?
+
+[art_38_s011]
+sv: "Vad gör du hela dagarna?"
+en: "What do you do all day long?"
+target_words_to_translate: vad
+
+[art_38_s012]
+sv: Hon förklarade att hon inte gillade att bara ligga och lata sig.
+en: She explained that she didn't like just lying around and lazing.
+target_words_to_translate: ligga och lata sig
+
+[art_38_s013]
+sv: Istället ville hon idrotta och ha en aktiv fritid.
+en: Instead she wanted to do sports and have an active leisure time.
+target_words_to_translate: idrotta, fritid
+
+[art_38_s014]
+sv: Hon hade en förvånansvärt stor samling av träningsutrustning.
+en: She had a surprisingly large collection of training equipment.
+target_words_to_translate: förvånansvärt, samling
+
+[art_38_s015]
+sv: Hennes absolut bästa fritidsaktivitet var utförsåkning under en kall vinter.
+en: Her absolutely best leisure activity was downhill skiing during a cold winter.
+target_words_to_translate: fritid, fritidsaktivitet, utförsåkning, vinter
+
+[art_38_s016]
+sv: Varje timme på berget var viktig.
+en: Every hour on the mountain was important.
+target_words_to_translate: timme
+
+[art_38_s017]
+sv: Ibland kunde hon ta fram en gammal pjäxa och en stav från garaget och drömma om backen.
+en: Sometimes she could take out an old ski boot and a ski pole from the garage and dream of the slope.
+target_words_to_translate: ta fram, pjäxa, stav
+
+[art_38_s018]
+sv: "Det känns som en helt omöjlig uppgift att leva utan snön", sa hon.
+en: "It feels like a completely impossible task to live without the snow", she said.
+target_words_to_translate: omöjlig
+
+[art_38_s019]
+sv: Inuti henne fanns det också väldigt mycket fantasi.
+en: Inside her there was also a great deal of imagination.
+target_words_to_translate: Inuti, fantasi
+
+[art_38_s020]
+sv: "Men när snön saknas, så gillar du väl en annan sport där man kan vinna en stor tävling?
+en: "But when the snow is missing, surely you like another sport where you can win a big competition?
+target_words_to_translate: saknas, sport, vinna, tävling
+
+[art_38_s021]
+sv: Kanske ridning eller snabb hästpolo?
+en: Maybe horseback riding or fast horse polo?
+target_words_to_translate: ridning, hästpolo
+
+[art_38_s022]
+sv: Eller spela innebandy med kompisar?"
+en: Or playing floorball with friends?"
+target_words_to_translate: innebandy
+
+[art_38_s023]
+sv: "Ja, dessutom älskar jag skridskoåkning.
+en: "Yes, furthermore I love ice skating.
+target_words_to_translate: dessutom, skridsko, skridskoåkning
+
+[art_38_s024]
+sv: Jag sätter på mig mina skridskor och åker på isen", svarade hon.
+en: I put on my skates and glide on the ice", she answered.
+target_words_to_translate: skridsko
+
+[art_38_s025]
+sv: "Men jag gillar inte all motorsport.
+en: "But I don't like all motorsports.
+target_words_to_translate: sport, motorsport
+
+[art_38_s026]
+sv: Jag skulle aldrig köra en sportbil snabbt eller vara en av de så kallade tysta golfspelarna som går runt."
+en: I would never drive a sports car fast or be one of those so-called quiet golfers who walk around."
+target_words_to_translate: sport, sportbil, så kallade, golfspelarna
+
+[art_38_s027]
+sv: Det fanns en tydlig åsikt i hennes val.
+en: There was a clear opinion in her choices.
+target_words_to_translate: tydlig
+
+[art_38_s028]
+sv: Det verkade som att hennes passioner skulle höra hemma på ett aktivt läger.
+en: It seemed that her passions would belong in an active camp.
+target_words_to_translate: höra hemma, läger
+
+[art_38_s029]
+sv: Lång transport till ett sådant läger var ibland svårt, särskilt när kläderna var täckta av jord.
+en: Long transport to such a camp was sometimes hard, especially when clothes were covered in dirt.
+target_words_to_translate: läger, transport, jord
+
+[art_38_s030]
+sv: Inte förrän hon kom hem kände hon sig trött.
+en: Not until she got home did she feel tired.
+target_words_to_translate: förrän
+
+[art_38_s031]
+sv: Hon sade ett gammalt citat om hälsa.
+en: She said an old quote about health.
+target_words_to_translate: citat
+
+[art_38_s032]
+sv: "Men vill du inte gå på teater då och då?" frågade jag henne.
+en: "But don't you want to go to the theater every now and then?" I asked her.
+target_words_to_translate: gå på teater, då och då
+
+[art_38_s033]
+sv: "Kanske", sa hon med ett skratt, "men jag tycker faktiskt man borde avskaffa allt stillasittande i världen!"
+en: "Maybe", she said with a laugh, "but I actually think they should abolish all sedentary behavior in the world!"
+target_words_to_translate: faktisk, avskaffa
+
+[art_39_s001]
+sv: Att ha ett roligt intresse kan visa sig på olika sätt.
+en: Having a fun interest can show itself in different ways.
+target_words_to_translate: intresse, visa sig, på olika sätt
+
+[art_39_s002]
+sv: Vissa älskar litteratur, vilket är ett vackert uttryck för tankar.
+en: Some love literature, which is a beautiful expression for thoughts.
+target_words_to_translate: litteratur, uttryck
+
+[art_39_s003]
+sv: De kanske vill ställa ut en fin bild på ett museum.
+en: They might want to exhibit a nice picture at a museum.
+target_words_to_translate: ställa ut, bild
+
+[art_39_s004]
+sv: Andra vill sticka iväg och leta efter ett ovanligt frimärke.
+en: Others want to take off and look for an unusual stamp.
+target_words_to_translate: sticka iväg, frimärke
+
+[art_39_s005]
+sv: Kanske vill de skapa en dialog om kultur.
+en: Maybe they want to create a dialogue about culture.
+target_words_to_translate: dialog
+
+[art_39_s006]
+sv: Men för mig är idrott det viktigaste i min värld.
+en: But for me, sports is the most important thing in my world.
+target_words_to_translate: idrott, värld
+
+[art_39_s007]
+sv: "Jag älskar att springa. –Själv då?" frågade en vän mig en kall höst.
+en: "I love running. -What about you?" a friend asked me a cold autumn.
+target_words_to_translate: –Själv då?, höst
+
+[art_39_s008]
+sv: "Vad gillar du för aktivitet?"
+en: "What kind of activity do you like?"
+target_words_to_translate: aktivitet
+
+[art_39_s009]
+sv: Jag gillar löpning och lätt joggning.
+en: I like running and light jogging.
+target_words_to_translate: löpning, joggning
+
+[art_39_s010]
+sv: Ibland brukar jag springa ett långt lopp, som till exempel ett ultramaraton.
+en: Sometimes I usually run a long race, like for example an ultramarathon.
+target_words_to_translate: lopp, ultramaraton
+
+[art_39_s011]
+sv: Men det finns annat jag gör.
+en: But there are other things I do.
+target_words_to_translate: annat
+
+[art_39_s012]
+sv: Jag gillar cykling och orientering i skogen, där mitt skarpa luktsinne får njuta av frisk luft.
+en: I like cycling and orienteering in the forest, where my sharp sense of smell gets to enjoy fresh air.
+target_words_to_translate: cykling, orientering, luktsinne
+
+[art_39_s013]
+sv: När jag var på ett sommarläger förra året fick jag pröva rolig segling och tuff surfning.
+en: When I was at a summer camp last year, I got to try fun sailing and tough surfing.
+target_words_to_translate: sommarläger, öva, segling, surfning
+
+[art_39_s014]
+sv: Vi fick även bada och öva på simning mycket i sjön.
+en: We also got to swim and practice swimming a lot in the lake.
+target_words_to_translate: öva, bada, simning
+
+[art_39_s015]
+sv: Ibland spelade vi volleyboll vid stranden, och handboll eller fotboll på gräset.
+en: Sometimes we played volleyball by the beach, and handball or football on the grass.
+target_words_to_translate: volleyboll, handboll, fotboll
+
+[art_39_s016]
+sv: Vi testade även basket.
+en: We even tested basketball.
+target_words_to_translate: basket
+
+[art_39_s017]
+sv: Allt detta har en positiv effekt på mig, och ingen sport är skadlig om man är försiktig.
+en: All this has a positive effect on me, and no sport is harmful if you are careful.
+target_words_to_translate: effekt, skadlig
+
+[art_39_s018]
+sv: Man måste helt enkelt välkomna alla chanser till lek.
+en: You simply have to welcome all chances for play.
+target_words_to_translate: välkomna
+
+[art_39_s019]
+sv: Vintertid byter jag sporter.
+en: During wintertime I switch sports.
+target_words_to_translate: Vintertid
+
+[art_39_s020]
+sv: Jag åker mycket längdskidåkning och tar fram mina bästa skidor.
+en: I do a lot of cross-country skiing and take out my best skis.
+target_words_to_translate: längdskidåkning, skidor
+
+[art_39_s021]
+sv: Det är också kul med snowboardåkning, men man måste alltid ha en hjälm för att skydda huvudet.
+en: It is also fun with snowboarding, but you always have to have a helmet to protect your head.
+target_words_to_translate: snowboardåkning, hjälm
+
+[art_39_s022]
+sv: Jag gillar också ishockey.
+en: I also like ice hockey.
+target_words_to_translate: ishockey
+
+[art_39_s023]
+sv: Man slår pucken i ett nät med en klubba för att få poäng och vinna.
+en: You hit the puck into a net with a stick to score points and win.
+target_words_to_translate: nät, klubba, poäng
+
+[art_39_s024]
+sv: "Det skulle vara bättre att… inte attackera varandra så hårt på isen," brukar jag skoja.
+en: "It would be better to... not attack each other so hard on the ice," I usually joke.
+target_words_to_translate: Det skulle vara bättre att…, attackera
+
+[art_39_s025]
+sv: Man har idrottat sedan år 1 e.Kr., och jag är glad för mitt val av livsstil.
+en: People have played sports since 1 AD, and I am happy with my choice of lifestyle.
+target_words_to_translate: e.Kr., val
+
+[art_39_s026]
+sv: Jag kan ha hand om min egen träning och halvera min stressnivå.
+en: I can manage my own training and halve my stress level.
+target_words_to_translate: ha hand om, halvera
+
+[art_39_s027]
+sv: Ibland lyfter jag en skivstång på gymmet, eller gör lite intensiv gympa med bra taktkänsla.
+en: Sometimes I lift a barbell at the gym, or do some intensive aerobics with a good sense of rhythm.
+target_words_to_translate: skivstång, gympa, taktkänsla
+
+[art_39_s028]
+sv: Det går också jättebra att spela bordtennis eller gå ut på en lång promenad med stavgång.
+en: It also works really well to play table tennis or go out for a long walk with Nordic walking.
+target_words_to_translate: bordtennis, stavgång
+
+[art_39_s029]
+sv: Till och med e-sport eller ett spännande lajv kan locka mig, om jag vill stanna inne.
+en: Even e-sports or an exciting LARP can attract me, if I want to stay indoors.
+target_words_to_translate: e-sport, lajv
+
+[art_39_s030]
+sv: Ibland måste jag boka och ta mig tid för vila, men jag gör allt i ett och samma liv!
+en: Sometimes I have to book and take time for rest, but I do it all in one and the same life!
+target_words_to_translate: ta mig tid, ett och samma
+
+[art_40_s001]
+sv: "Vad för sorts… person är du egentligen?" frågade min vän, som är en känd arkitekt.
+en: "What kind of... person are you really?" asked my friend, who is a famous architect.
+target_words_to_translate: Vad för sorts…, arkitekt
+
+[art_40_s002]
+sv: Han är också en mycket modeintresserad man, precis som sin syster.
+en: He is also a very fashion-conscious man, just like his sister.
+target_words_to_translate: modeintresserad, precis som
+
+[art_40_s003]
+sv: "Det spelar ingen roll." svarade jag lugnt och hällde upp lite vatten i ett vackert glas.
+en: "It doesn't matter," I answered calmly and poured some water into a beautiful glass.
+target_words_to_translate: Det spelar ingen roll., glas
+
+[art_40_s004]
+sv: "Jag är bara en glad människa som gillar att ha skoj och roa sig varje dag."
+en: "I am just a happy person who likes to have fun and enjoy myself every day."
+target_words_to_translate: ha skoj, roa sig
+
+[art_40_s005]
+sv: Vårt lilla gäng var ett ganska brokigt sällskap.
+en: Our little gang was quite a motley crew.
+
+[art_40_s006]
+sv: Vi bestod av en känd författare, en smart filosof, en smidig akrobat och en fantastisk musiker med extremt stor musikalisk talang, som ofta spelade saxofon och var en duktig trubadur.
+en: We consisted of a famous author, a smart philosopher, an agile acrobat and a fantastic musician with extremely great musical talent, who often played the saxophone and was a skilled troubadour.
+target_words_to_translate: författare, filosof, akrobat, musiker, musikalisk, saxofon, trubadur
+
+[art_40_s007]
+sv: En av oss brukade samla på en unik vinylskiva från varje nytt decennium.
+en: One of us used to collect a unique vinyl record from each new decade.
+target_words_to_translate: samla, vinylskiva, decennium
+
+[art_40_s008]
+sv: Vi kom från Sverige och från andra länder, ungefär som en självstyrande liten familj.
+en: We came from Sweden and from other countries, somewhat like an autonomous little family.
+target_words_to_translate: andra länder, självstyrande
+
+[art_40_s009]
+sv: Vi brukade ofta campa, men vår gamla bil var alltid överbelastad.
+en: We often used to camp, but our old car was always overloaded.
+target_words_to_translate: överbelastad
+
+[art_40_s010]
+sv: Ibland kändes det som ett helvete att packa.
+en: Sometimes packing felt like hell.
+target_words_to_translate: helvete
+
+[art_40_s011]
+sv: Vårt stora tält låg längst ner under all packning, men vi ville se världen innan dagarna blev ljusare och varmare.
+en: Our large tent was at the bottom under all the packing, but we wanted to see the world before the days got lighter and warmer.
+target_words_to_translate: tält, längst ner, ljusare
+
+[art_40_s012]
+sv: Ibland gick vi på ett stort lajv utomhus där vi fick tävla om en glänsande guldnyckel.
+en: Sometimes we went to a large outdoor LARP where we got to compete for a shiny golden key.
+target_words_to_translate: lajv, tävla, guldnyckel
+
+[art_40_s013]
+sv: En av deltagarna var en rolig kille som såg ut som en naken sumobrottare.
+en: One of the participants was a funny guy who looked like a naked sumo wrestler.
+target_words_to_translate: naken, sumobrottare
+
+[art_40_s014]
+sv: Han hade mycket naturlig komik i sig.
+en: He had a lot of natural comedy in him.
+target_words_to_translate: komik
+
+[art_40_s015]
+sv: Han var nästan som en populär komiker och skapade ofta en komisk stämning.
+en: He was almost like a popular comedian and often created a comical atmosphere.
+target_words_to_translate: komik, komiker, komisk
+
+[art_40_s016]
+sv: Jag skrev om det i min dagbok.
+en: I wrote about it in my diary.
+target_words_to_translate: dagbok
+
+[art_40_s017]
+sv: Det var nästan som en spännande saga.
+en: It was almost like an exciting fairy tale.
+target_words_to_translate: saga
+
+[art_40_s018]
+sv: Vi älskade också naturen.
+en: We also loved nature.
+
+[art_40_s019]
+sv: Vi brukade cykla i skogen på sommaren, eller åka skidor på vintern.
+en: We used to cycle in the forest in the summer, or ski in the winter.
+target_words_to_translate: cykla, cykla, åka skidor
+
+[art_40_s020]
+sv: Min vän ville spela golf och letade ständigt efter sin bästa golfklubba.
+en: My friend wanted to play golf and constantly looked for his best golf club.
+target_words_to_translate: golfklubba
+
+[art_40_s021]
+sv: En dag såg vi en tyst jägare som skulle ut och jaga i skogen för att döda vilda djur.
+en: One day we saw a quiet hunter who was going out to hunt in the forest to kill wild animals.
+target_words_to_translate: jägare, jaga, döda
+
+[art_40_s022]
+sv: Ett litet djur hade en bruten vinge.
+en: A small animal had a broken wing.
+target_words_to_translate: vinge
+
+[art_40_s023]
+sv: "Akta dig för huggormsbett framför stugan," varnade jägaren och pekade på en specifik punkt i gräset.
+en: "Watch out for viper bites in front of the cabin," the hunter warned and pointed to a specific spot in the grass.
+target_words_to_translate: jägare, huggormsbett, framför, punkt
+
+[art_40_s024]
+sv: Trots farorna tänkte vi stanna.
+en: Despite the dangers, we intended to stay.
+
+[art_40_s025]
+sv: "Vi ska fira jul i den här skogen," sa jag glatt.
+en: "We will celebrate Christmas in this forest," I said happily.
+target_words_to_translate: fira jul
+
+[art_40_s026]
+sv: Min kompis var en extremt kulturintresserad person.
+en: My friend was a person extremely interested in culture.
+target_words_to_translate: kulturintresserad
+
+[art_40_s027]
+sv: Han gillade vacker konst med naturinspirerade motiv för att komplettera sin samling.
+en: He liked beautiful art with nature-inspired motifs to complement his collection.
+target_words_to_translate: motiv, komplettera
+
+[art_40_s028]
+sv: I sin väska hade han en liten burk med god färg och ville måla.
+en: In his bag he had a small jar of good paint and wanted to paint.
+target_words_to_translate: burk, god
+
+[art_40_s029]
+sv: Han brukade säga ett gammalt ordspråk: "Man ska aldrig bränna sina broar."
+en: He used to say an old proverb: "You should never burn your bridges."
+target_words_to_translate: ordspråk, bränna
+
+[art_40_s030]
+sv: Han ville också gärna titta på den gamla svenska filmen ”Sommaren med Monica” med sin stora idol.
+en: He also wanted to watch the old Swedish movie "Summer with Monika" with his big idol.
+target_words_to_translate: ”Sommaren med Monica”, idol
+
+[art_40_s031]
+sv: Han tyckte att varje vacker rörelse i filmen var djupt romantisk.
+en: He thought every beautiful movement in the movie was deeply romantic.
+target_words_to_translate: rörelse, romantisk
+
+[art_40_s032]
+sv: En annan person i gruppen ville bara skrapa på en liten trisslott eller hoppa från ett högt hopptorn vid sjön.
+en: Another person in the group just wanted to scratch a small lottery ticket or jump from a high diving tower by the lake.
+target_words_to_translate: skrapa, hopptorn
+
+[art_40_s033]
+sv: Det fanns alltid något trevligt att göra, vare sig man ville simma eller bara cykla runt på vägarna.
+en: There was always something nice to do, whether you wanted to swim or just cycle around on the roads.
+
+[art_41_s001]
+sv: En vanlig lördagskväll satt vi och tittade på en spännande teveserie och började fundera över livet.
+en: On an ordinary Saturday evening we sat watching an exciting TV series and began to think about life.
+target_words_to_translate: lördagskväll, teveserie, fundera
+
+[art_41_s002]
+sv: Jag var klädd i en svart basker, precis som en klassisk målare, men den var tyvärr för liten.
+en: I was dressed in a black beret, just like a classic painter, but unfortunately it was too small.
+target_words_to_translate: basker, målare, för liten
+
+[art_41_s003]
+sv: "Vad tänker du göra när…?" frågade min kompis plötsligt, utan att avsluta meningen.
+en: "What are you going to do when...?" my friend asked suddenly, without finishing the sentence.
+target_words_to_translate: Vad tänker du göra när…?
+
+[art_41_s004]
+sv: Han var en duktig detektiv, fast han också gillade att blogga om arkitektur och gammalt hantverk.
+en: He was a skilled detective, although he also liked to blog about architecture and old crafts.
+target_words_to_translate: detektiv, blogga, arkitektur, hantverk
+
+[art_41_s005]
+sv: "Jag vet inte.
+en: "I don't know.
+
+[art_41_s006]
+sv: Jag skulle vilja veta hur… man bygger en gigantisk minnesbyggnad," sa jag ärligt.
+en: I would like to know how... you build a gigantic memorial building," I said honestly.
+target_words_to_translate: Jag skulle vilja veta hur…, gigantisk, minnesbyggnad
+
+[art_41_s007]
+sv: Vi var mycket intresserade av kultur, så vi bestämde oss för att passera en känd sevärdhet i staden, ett vackert slott.
+en: We were very interested in culture, so we decided to pass a famous attraction in the city, a beautiful castle.
+target_words_to_translate: intresserade av, passera, sevärdhet, slott
+
+[art_41_s008]
+sv: Där fanns en staty av massivt brons, en fantastisk bronsstaty.
+en: There was a statue of solid bronze, a fantastic bronze statue.
+target_words_to_translate: brons, bronsstaty
+
+[art_41_s009]
+sv: Plötsligt såg vi en gammal skvallertidning på marken.
+en: Suddenly we saw an old gossip magazine on the ground.
+target_words_to_translate: skvallertidning
+
+[art_41_s010]
+sv: "Vad har hänt?" sa han och plockade upp den för att hitta ledtrådar.
+en: "What has happened?" he said and picked it up to find clues.
+target_words_to_translate: Vad har hänt?, hitta
+
+[art_41_s011]
+sv: Tidningen hade en handling som verkade handla om en gammal folksaga om ett läskigt odjur.
+en: The magazine had a story that seemed to be about an old folktale about a scary monster.
+target_words_to_translate: handling, handla om, folksaga, odjur
+
+[art_41_s012]
+sv: "Kanske kan ett riktigt odjur hoppa upp ur vattnet!" sa han.
+en: "Maybe a real monster can jump up out of the water!" he said.
+target_words_to_translate: odjur, hoppa upp ur
+
+[art_41_s013]
+sv: "Överdriv!" skrek jag.
+en: "You're exaggerating!" I screamed.
+target_words_to_translate: Överdriv!
+
+[art_41_s014]
+sv: "Du är alltid så sträng och intensiv."
+en: "You are always so strict and intense."
+target_words_to_translate: sträng, intensiv
+
+[art_41_s015]
+sv: Senare hörde vi musik från en scen.
+en: Later we heard music from a stage.
+target_words_to_translate: scen
+
+[art_41_s016]
+sv: Det var en känd popgrupp som skulle spela fiol, och det såg ut som en färgstark cirkus.
+en: It was a famous pop group that was going to play the violin, and it looked like a colorful circus.
+target_words_to_translate: popgrupp, spela, fiol, cirkus
+
+[art_41_s017]
+sv: På marken låg en lös kanonkula.
+en: On the ground lay a loose cannonball.
+target_words_to_translate: lös, kanonkula
+
+[art_41_s018]
+sv: "Vi måste se till att gömma den.
+en: "We have to make sure to hide it.
+target_words_to_translate: se till att, gömma
+
+[art_41_s019]
+sv: Den kan orsaka skada," sa jag, men min vän ville bara låta den vara.
+en: It can cause harm," I said, but my friend just wanted to let it be.
+target_words_to_translate: orsaka, låta
+
+[art_41_s020]
+sv: Han ville istället ta med mig till ett stort diskotek där en discokula snurrade.
+en: Instead, he wanted to take me to a large discotheque where a disco ball was spinning.
+target_words_to_translate: ta med, diskotek, discokula
+
+[art_41_s021]
+sv: Vi dansade jättemycket, men jag valde att stå över en Tangokurs som hölls där.
+en: We danced a whole lot, but I chose to skip a Tango course that was held there.
+target_words_to_translate: jättemycket, stå över, Tangokurs
+
+[art_41_s022]
+sv: Efteråt kände vi för ett äventyr och valde att ta ett dopp i sjön.
+en: Afterwards we felt like an adventure and chose to take a dip in the lake.
+target_words_to_translate: äventyr, ta ett dopp
+
+[art_41_s023]
+sv: Då började jag inse att det var mycket roligare än tråkig skidåkning eller snabbt rally.
+en: Then I began to realize that it was much more fun than boring skiing or fast rallying.
+target_words_to_translate: inse, skidåkning, rally
+
+[art_41_s024]
+sv: Vi pratade om den gamla filmen ”Fanny och Alexander”, en dokumentär vi sett hälften av, och om sjuttiotalets idéer kring fritt sex.
+en: We talked about the old movie "Fanny and Alexander", a documentary we had seen half of, and about the ideas of the seventies regarding free sex.
+target_words_to_translate: ”Fanny och Alexander”, dokumentär, hälften av, fritt sex
+
+[art_41_s025]
+sv: Allt detta inspirerade mig till att skriva en vacker dikt följande morgon, där min kompis var en sann hjälte.
+en: All this inspired me to write a beautiful poem the following morning, where my friend was a true hero.
+target_words_to_translate: dikt, följande, hjälte
+
+[art_42_s001]
+sv: Sverige är en parlamentarisk demokrati med en lång historia.
+en: Sweden is a parliamentary democracy with a long history.
+target_words_to_translate: parlamentarisk, demokrati, historia
+
+[art_42_s002]
+sv: Tidigare hade man en stark kungamakt.
+en: Previously, there was a strong royal power.
+target_words_to_translate: kungamakt, makt
+
+[art_42_s003]
+sv: Idag har monarkin ingen politisk makt.
+en: Today the monarchy has no political power.
+target_words_to_translate: makt
+
+[art_42_s004]
+sv: Vår statschef är en kung eller en drottning, men det är en statsminister och vår riksdag som beslutar om varje lag och styr vår stat.
+en: Our head of state is a king or a queen, but it is a prime minister and our parliament that decides on every law and governs our state.
+target_words_to_translate: stat, statschef, drottning, statsminister, riksdag, lag
+
+[art_42_s005]
+sv: En blivande kronprinsessa, en prins eller en prinsessa har ett välkomnande leende men stiftar inga lagar.
+en: A future crown princess, a prince or a princess has a welcoming smile but makes no laws.
+target_words_to_translate: lag, kronprinsessa, prins, prinsessa, välkomnande
+
+[art_42_s006]
+sv: "Ska vi…?" frågade en vän plötsligt, när vi stod vid en stor järnvägsstation för att pricka in ett tåg.
+en: "Should we...?" a friend asked suddenly, as we stood at a large railway station to catch a train.
+target_words_to_translate: stat, Ska vi…?, plötslig, järnvägsstation, pricka in
+
+[art_42_s007]
+sv: "Prata om aktuell politik, menar jag."
+en: "Talk about current politics, I mean."
+target_words_to_translate: aktuell, politik
+
+[art_42_s008]
+sv: Han var en ambitiös klättrare inom en stor borgerlig organisation.
+en: He was an ambitious climber within a large bourgeois organization.
+target_words_to_translate: klättrare, borgerlig, organisation
+
+[art_42_s009]
+sv: Han ville få tag på en roll som en viktig ledare och känd politiker.
+en: He wanted to get hold of a role as an important leader and famous politician.
+target_words_to_translate: politik, få tag på, ledare, politiker
+
+[art_42_s010]
+sv: "Okej, Varifrån?" frågade jag.
+en: "Okay, from where?" I asked.
+target_words_to_translate: Varifrån?
+
+[art_42_s011]
+sv: "Var ska vi börja?"
+en: "Where should we begin?"
+
+[art_42_s012]
+sv: "Jo, vi kan återberätta en plötslig skandal," föreslog han.
+en: "Well, we can retell a sudden scandal," he suggested.
+target_words_to_translate: plötslig, återberätta, skandal
+
+[art_42_s013]
+sv: "Någon ville låna ut mycket statlig valuta till en rik affärsman så han blev rik som ett troll.
+en: "Someone wanted to lend a lot of state currency to a rich businessman so he became rich as a troll.
+target_words_to_translate: stat, låna ut, valuta, rik som ett troll
+
+[art_42_s014]
+sv: Det orsakade en ekonomisk kris, ett dåligt resultat av fel värdering."
+en: It caused an economic crisis, a bad result of incorrect valuation."
+target_words_to_translate: ekonomisk, resultat av, värdering
+
+[art_42_s015]
+sv: Vi pratade också om mörkare händelser i vårt samhälle.
+en: We also talked about darker events in our society.
+
+[art_42_s016]
+sv: Förr i tiden kunde en elit utföra en maktdemonstration.
+en: In the past, an elite could carry out a demonstration of power.
+target_words_to_translate: makt, maktdemonstration
+
+[art_42_s017]
+sv: Då kunde hemskheter hända, till och med ett mord.
+en: Then terrible things could happen, even a murder.
+target_words_to_translate: hända, mord
+
+[art_42_s018]
+sv: Någon kunde mörda sin konkurrent.
+en: Someone could murder their competitor.
+target_words_to_translate: mörda
+
+[art_42_s019]
+sv: Idag har vi en bra polis som ska stå för säkerheten.
+en: Today we have a good police force that is to stand for security.
+target_words_to_translate: polis, stå för
+
+[art_42_s020]
+sv: Det är viktigt att varje judisk, muslimsk eller kristen grupp ska känna sig trygg.
+en: It is important that every Jewish, Muslim or Christian group should feel safe.
+target_words_to_translate: judisk
+
+[art_42_s021]
+sv: I en modern kyrka ska man kunna fira en religiös gudstjänst i fred.
+en: In a modern church, you should be able to celebrate a religious service in peace.
+target_words_to_translate: kyrka, religiös, gudstjänst
+
+[art_42_s022]
+sv: En laglig rättighet och en rättvis regel skapar möjligheter av olika slag, vilket ger en bättre livskvalitet för alla.
+en: A legal right and a fair rule create opportunities of various kinds, which provides a better quality of life for everyone.
+target_words_to_translate: laglig, regel, av olika slag, livskvalitet
+
+[art_42_s023]
+sv: Medan vi pratade satt en söt liten valp på marken och gnydde.
+en: While we were talking, a cute little puppy sat on the ground and whined.
+target_words_to_translate: valp, på marken
+
+[art_42_s024]
+sv: En flicka försökte trösta hunden eftersom den hade blivit skrämd av en högljudd hårtork inifrån en frisersalong.
+en: A girl tried to comfort the dog because it had been frightened by a loud hairdryer from inside a hair salon.
+target_words_to_translate: trösta, hårtork
+
+[art_42_s025]
+sv: Jag började klappa i händerna för att locka på hunden.
+en: I started clapping my hands to attract the dog.
+target_words_to_translate: klappa i händerna
+
+[art_42_s026]
+sv: Det är roligt hur man ibland kan tröttna på samhällsproblem och istället prata om svensk grammatik.
+en: It is funny how you can sometimes tire of social problems and instead talk about Swedish grammar.
+target_words_to_translate: tröttna
+
+[art_42_s027]
+sv: "I svenskan finns det något som kallas partikelverb," sa min vän.
+en: "In Swedish there is something called phrasal verbs," my friend said.
+target_words_to_translate: partikelverb, partikel
+
+[art_42_s028]
+sv: "Man kombinerar ett verb med en partikel.
+en: "You combine a verb with a particle.
+target_words_to_translate: partikel, kombinera
+
+[art_42_s029]
+sv: Du kan också använda ett presens particip."
+en: You can also use a present participle."
+target_words_to_translate: presens particip
+
+[art_42_s030]
+sv: Jag suckade.
+en: I sighed.
+
+[art_42_s031]
+sv: Vi behövde hitta en bra avslutningsfras för att sluta samtalet innan tåget rullade in.
+en: We needed to find a good closing phrase to end the conversation before the train rolled in.
+target_words_to_translate: avslutningsfras
+
+[art_43_s001]
+sv: Ett land kan ha olika statsskick.
+en: A country can have different forms of government.
+target_words_to_translate: statsskick
+
+[art_43_s002]
+sv: Vissa länder är en republik med en president och ibland en premiärminister, medan andra har en kung och en kronprins som måste tillhöra en stor kungafamilj.
+en: Some countries are a republic with a president and sometimes a prime minister, while others have a king and a crown prince who must belong to a large royal family.
+target_words_to_translate: republik, premiärminister, kung, kronprins, tillhöra, kungafamilj
+
+[art_43_s003]
+sv: Tyvärr finns det också länder där en maktgalen diktator lyckas ta kontrollen genom en brutal statskupp.
+en: Unfortunately, there are also countries where a power-mad dictator manages to take control through a brutal coup d'état.
+target_words_to_translate: diktator, lyckas, statskupp
+
+[art_43_s004]
+sv: Då tvingas ofta en interimsregering att avgå, och politiska ledare kan till och med bli skjutna på öppen gata.
+en: Then an interim government is often forced to resign, and political leaders can even be shot in the open street.
+target_words_to_translate: interimsregering, regering, på öppen gata
+
+[art_43_s005]
+sv: I en demokrati måste man däremot bli vald av folket för att få sitta vid makten.
+en: In a democracy, on the other hand, you must be elected by the people to be in power.
+target_words_to_translate: bli vald, sitta vid makten
+
+[art_43_s006]
+sv: Ett demokratiskt land styrs ofta av ett parlament.
+en: A democratic country is often governed by a parliament.
+target_words_to_translate: parlament
+
+[art_43_s007]
+sv: En parlamentsledamot representerar ett politiskt parti, och varje röst från en allmän folkomröstning räknas.
+en: A Member of Parliament represents a political party, and every vote from a general referendum counts.
+target_words_to_translate: parlament, parlamentsledamot, parti, röst, allmän
+
+[art_43_s008]
+sv: Vissa väljare gillar ett stort, traditionellt parti, men andra väljer att placera sin röst på ett litet enfrågeparti.
+en: Some voters like a large, traditional party, but others choose to place their vote on a small single-issue party.
+target_words_to_translate: parti, röst, placera, enfrågeparti
+
+[art_43_s009]
+sv: Vad har de för löften?
+en: What kind of promises do they have?
+target_words_to_translate: Vad
+
+[art_43_s010]
+sv: Jo, i sitt valmanifest kan en partiledare lova jättemycket, till exempel förändringar om energi som kärnkraft eller om offentlig ekonomi.
+en: Well, in their election manifesto, a party leader can promise a whole lot, for example changes concerning energy like nuclear power or public finances.
+target_words_to_translate: parti, valmanifest, partiledare, kärnkraft, offentlig, ekonomi
+
+[art_43_s011]
+sv: Vår kända regering består av många ministrar.
+en: Our famous government consists of many ministers.
+target_words_to_translate: regering
+
+[art_43_s012]
+sv: Där finns en finansminister, en utrikesminister, en utbildningsminister, en kulturminister och andra viktiga statsråd.
+en: There is a Minister of Finance, a Minister for Foreign Affairs, a Minister for Education, a Minister for Culture and other important cabinet ministers.
+target_words_to_translate: finansminister, utrikesminister, utbildningsminister, kulturminister, statsråd
+
+[art_43_s013]
+sv: Deras uppgift är att hålla ordning och samarbeta med varje statlig myndighet.
+en: Their task is to keep order and cooperate with every government agency.
+target_words_to_translate: ordning, myndighet
+
+[art_43_s014]
+sv: För sextio år sedan var samhället mycket mer ojämlikt, ett typiskt klassamhälle.
+en: Sixty years ago, society was much more unequal, a typical class society.
+target_words_to_translate: sextio, klassamhälle
+
+[art_43_s015]
+sv: Men sedan utvecklades en berömd välfärdsstat.
+en: But then a famous welfare state developed.
+target_words_to_translate: berömd, välfärd, välfärdsstat
+
+[art_43_s016]
+sv: En välkänd socialdemokratisk rörelse ville bygga en bättre välfärd för varje medborgare i landet.
+en: A well-known social democratic movement wanted to build better welfare for every citizen in the country.
+target_words_to_translate: välfärd, välkänd, socialdemokratisk, medborgare
+
+[art_43_s017]
+sv: Alla som hade barn fick barnbidrag, och de äldre fick en tilläggspension plus andra olika bidrag.
+en: Everyone who had children received a child allowance, and the elderly received a supplementary pension plus other various benefits.
+target_words_to_translate: barnbidrag, bidrag, tilläggspension
+
+[art_43_s018]
+sv: Även om vi har ett relativt högt skattetryck i Sverige idag, så ger den typen av system en stor grundläggande trygghet.
+en: Even though we have a relatively high tax burden in Sweden today, that kind of system provides a great basic security.
+target_words_to_translate: skattetryck, den typen av
+
+[art_43_s019]
+sv: Politiken måste ständigt utvecklas i samband med tiden.
+en: Politics must constantly develop in connection with the times.
+target_words_to_translate: samband
+
+[art_43_s020]
+sv: Det är viktigt att stödja en samkönad familj, värna om miljön vid vår vackra kust, o.s.v.
+en: It is important to support a same-sex family, protect the environment on our beautiful coast, etc.
+target_words_to_translate: samkönad, kust, o.s.v.
+
+[art_43_s021]
+sv: Jag brukar ofta associera politik med ansvar, eftersom politiska beslut lätt kan sluta väldigt illa om de är oförberedda.
+en: I often associate politics with responsibility, because political decisions can easily end very badly if they are unprepared.
+target_words_to_translate: associera, sluta
+
+[art_43_s022]
+sv: Man ska inte bara stå bredbent och göra en grandios entré som om man vore kung för en dag.
+en: One should not just stand with legs apart and make a grandiose entrance as if one were king for a day.
+target_words_to_translate: bredbent, entré, kung för en dag
+
+[art_43_s023]
+sv: Förresten, visste du att en republikansk rörelse ofta kan ha rötterna i gamla historiska traditioner?
+en: By the way, did you know that a republican movement can often have its roots in old historical traditions?
+target_words_to_translate: Förresten, republikansk, ha rötterna i
+
+[art_44_s001]
+sv: Min svärdotter kom på besök i slutet på sommaren.
+en: My daughter-in-law came for a visit at the end of the summer.
+target_words_to_translate: svärdotter, i slutet på
+
+[art_44_s002]
+sv: Hon var politiskt aktiv i sitt hemland, en gammal bonderepublik, men hon ville flytta hit.
+en: She was politically active in her home country, an old peasant republic, but she wanted to move here.
+target_words_to_translate: politiskt aktiv, bonderepublik
+
+[art_44_s003]
+sv: Hon funderade på att emigrera för att få mer modern frihet och ett bättre liv.
+en: She thought about emigrating to get more modern freedom and a better life.
+target_words_to_translate: emigrera
+
+[art_44_s004]
+sv: Hon ställde många frågor om hur det var att styra vårt land.
+en: She asked many questions about what it was like to govern our country.
+target_words_to_translate: styra
+
+[art_44_s005]
+sv: "Sverige är indelat i många områden," började jag.
+en: "Sweden is divided into many areas," I began.
+target_words_to_translate: indelat
+
+[art_44_s006]
+sv: "Varje kommun och landsting har ansvar för sin befolkning.
+en: "Each municipality and county council has responsibility for its population.
+target_words_to_translate: kommun, landsting, befolkning
+
+[art_44_s007]
+sv: De tar till exempel hand om lokal kollektivtrafik och all kommunal service.
+en: They take care of, for example, local public transport and all municipal services.
+target_words_to_translate: kommun, kollektivtrafik, kommunal
+
+[art_44_s008]
+sv: Om en vuxen invånare behöver hjälp, finns en effektiv socialtjänst som kan ge ett bra socialbidrag."
+en: If an adult resident needs help, there is an efficient social service that can provide a good social allowance."
+target_words_to_translate: vuxen, invånare, socialtjänst, socialbidrag
+
+[art_44_s009]
+sv: Hon hade en djup blick och började genast anteckna.
+en: She had a deep gaze and immediately began to take notes.
+target_words_to_translate: djup, blick, anteckna
+
+[art_44_s010]
+sv: "Vem bestämmer över riket?" frågade hon.
+en: "Who rules over the kingdom?" she asked.
+
+[art_44_s011]
+sv: "Det finns en länsstyrelse regionalt, men i huvudstaden sitter vår stadsminister och bestämmer mycket.
+en: "There is a county administrative board regionally, but in the capital sits our prime minister and decides a lot.
+target_words_to_translate: länsstyrelse, stadsminister
+
+[art_44_s012]
+sv: En viktig försvarsminister och en grön miljöminister arbetar på varsitt departement.
+en: An important minister of defense and a green minister of environment work at their respective ministries.
+target_words_to_translate: försvarsminister, miljöminister, departement
+
+[art_44_s013]
+sv: Varje ministerpost är viktig.
+en: Every ministerial post is important.
+target_words_to_translate: ministerpost
+
+[art_44_s014]
+sv: Folket får rösta i allmänna val, eftersom allmän rösträtt är en självklar rättighet.
+en: The people get to vote in general elections, since universal suffrage is a self-evident right.
+target_words_to_translate: rösta, rösträtt, rättighet
+
+[art_44_s015]
+sv: Vi skyddar medborgarna mot orättvis diskriminering genom våra grundlagar, som regeringsformen, tryckfrihetsförordningen och yttrandefrihetsgrundlagen."
+en: We protect the citizens against unfair discrimination through our fundamental laws, such as the Instrument of Government, the Freedom of the Press Act, and the Fundamental Law on Freedom of Expression."
+target_words_to_translate: diskriminering, regeringsformen, tryckfrihetsförordningen, yttrandefrihetsgrundlagen
+
+[art_44_s016]
+sv: Hon var tyst en stund, likt en tyst fånge inuti sin egen bubbla av tankar.
+en: She was quiet for a while, like a silent prisoner inside her own bubble of thoughts.
+target_words_to_translate: fånge, bubbla
+
+[art_44_s017]
+sv: "Det låter som ett ganska tryggt land.
+en: "It sounds like a pretty safe country.
+
+[art_44_s018]
+sv: Det är möjligt." sa hon.
+en: It's possible." she said.
+target_words_to_translate: Det är möjligt.
+
+[art_44_s019]
+sv: "Ja, och om en politiker bryter mot lagen kan folket sparka honom med omedelbar verkan vid nästa val," sa jag och skrattade.
+en: "Yes, and if a politician breaks the law, the people can fire him with immediate effect at the next election," I said and laughed.
+target_words_to_translate: sparka, erkan
+
+[art_44_s020]
+sv: "Men är allt bara svår politik?" frågade hon.
+en: "But is everything just difficult politics?" she asked.
+
+[art_44_s021]
+sv: "Finns det någon rofylld och vilsam plats att besöka här i landet?"
+en: "Is there any peaceful and restful place to visit here in the country?"
+target_words_to_translate: rofylld, vilsam
+
+[art_44_s022]
+sv: "Självklart," sa jag.
+en: "Of course," I said.
+
+[art_44_s023]
+sv: "Här långt ifrån all politik finns vacker natur.
+en: "Here far away from all politics there is beautiful nature.
+target_words_to_translate: långt ifrån
+
+[art_44_s024]
+sv: Man kan hitta lugn och ro i en varm och solig nationalpark.
+en: You can find peace and quiet in a warm and sunny national park.
+target_words_to_translate: lugn och ro, varm, nationalpark
+
+[art_44_s025]
+sv: Kanske se en känd kunglighet eller en berömd världsartist på någon populär turistort.
+en: Maybe see a famous royal or a famous world artist at some popular tourist resort.
+target_words_to_translate: kunglighet, världsartist, turistort
+
+[art_44_s026]
+sv: Staden Vimmerby är till exempel ett väldigt bra resmål där barnen kan träffa Pippi Långstrump.
+en: The town of Vimmerby, for example, is a very good travel destination where children can meet Pippi Longstocking.
+target_words_to_translate: resmål, Pippi Långstrump
+
+[art_44_s027]
+sv: I landet finns till och med gamla statyer av en historisk nationalskald."
+en: In the country there are even old statues of a historical national poet."
+target_words_to_translate: nationalskald
+
+[art_44_s028]
+sv: "Låter skönt," sa hon.
+en: "Sounds nice," she said.
+
+[art_44_s029]
+sv: "Man skulle kunna…istället bara sitta och äta god husmanskost på en restaurang?
+en: "Could one... instead just sit and eat good traditional home cooking at a restaurant?
+target_words_to_translate: Man skulle kunna…istället, husmanskost
+
+[art_44_s030]
+sv: Jag känner mig ganska utvilad nu efter resan."
+en: I feel quite rested now after the trip."
+target_words_to_translate: utvilad
+
+[art_44_s031]
+sv: "Absolut," sa jag och gav en liten varning.
+en: "Absolutely," I said and gave a small warning.
+target_words_to_translate: varning
+
+[art_44_s032]
+sv: "Men kom ihåg att vi har haft högertrafik sedan 1967 när du kör bil hit."
+en: "But remember that we have had right-hand traffic since 1967 when you drive here."
+target_words_to_translate: högertrafik
+
+[art_44_s033]
+sv: Varje liten faktor spelar roll när man byter land, och vi hoppades verkligen att hon skulle återkomma någon gång.
+en: Every little factor plays a role when you change countries, and we really hoped that she would return sometime.
+target_words_to_translate: faktor, återkomma, någon gång
+
+[art_44_s034]
+sv: Hon ville nu först lugna ner sig med en god matbit och beställde sin favorit från caféet.
+en: She now first wanted to calm down with a good bite to eat and ordered her favorite from the café.
+target_words_to_translate: lugna, favorit
+
+[art_45_s001]
+sv: Min vän och jag hade lagat middag tillsammans.
+en: My friend and I had cooked dinner together.
+
+[art_45_s002]
+sv: Medan vi höll på med vår matlagning i ett chockrosa kök, började vi diskutera hur vårt samhälle har förändrats.
+en: While we were busy with our cooking in a shocking pink kitchen, we started discussing how our society has changed.
+target_words_to_translate: matlagning, chockrosa, samhälle
+
+[art_45_s003]
+sv: Vi var givetvis lite trötta, men också glada över ett trevligt mottagande från gästerna tidigare.
+en: We were of course a little tired, but also happy about a nice reception from the guests earlier.
+target_words_to_translate: givetvis, mottagande
+
+[art_45_s004]
+sv: "Vad tänker du på?" frågade min vän, som alltid är väldigt öppensinnad i sina åsikter.
+en: "What are you thinking about?" asked my friend, who is always very open-minded in her opinions.
+target_words_to_translate: Vad tänker du på?
+
+[art_45_s005]
+sv: "Jag tänker på hur det var historiskt sett," sa jag.
+en: "I am thinking about how it was historically," I said.
+target_words_to_translate: historiskt sett, historisk
+
+[art_45_s006]
+sv: "Under frihetstiden och tidigare fick varje kvinna och oskyldig människa lida när landets armé tvingades ut för att kriga och försvara ett stort rike."
+en: "During the Age of Liberty and earlier, every woman and innocent person suffered when the country's army was forced out to fight and defend a large empire."
+target_words_to_translate: frihetstiden, kvinna, människa, armé, kriga, rike
+
+[art_45_s007]
+sv: "Det är sant.
+en: "It is true.
+
+[art_45_s008]
+sv: En medveten majoritet av folket, eller snarare en stor del av vår folkmängd, drabbades ofta när gamla kungar skulle dra streck på kartan och bestämma över landets tronföljd.
+en: A conscious majority of the people, or rather a large part of our population, often suffered when old kings were to draw lines on the map and decide on the country's succession to the throne.
+target_words_to_translate: medveten, majoritet, folkmängd, dra streck, tronföljd
+
+[art_45_s009]
+sv: Men det var ännu värre för en utländsk minoritet," sa hon.
+en: But it was even worse for a foreign minority," she said.
+target_words_to_translate: minoritet
+
+[art_45_s010]
+sv: "Är vi lyckligare idag?"
+en: "Are we happier today?"
+
+[art_45_s011]
+sv: "Det beror på." sa jag.
+en: "It depends." I said.
+target_words_to_translate: Det beror på.
+
+[art_45_s012]
+sv: "Många tycker att det blivit mycket bättre.
+en: "Many think that it has gotten much better.
+target_words_to_translate: bättre
+
+[art_45_s013]
+sv: Efter en lång historisk process och en snabb industrialisering såg vi en industriell tillväxt växa fram.
+en: After a long historical process and rapid industrialization, we saw industrial growth emerge.
+target_words_to_translate: historisk, industrialisering, industriell, växa fram
+
+[art_45_s014]
+sv: Vi fick en europeisk utveckling som gav fler och fler människor stabilitet."
+en: We had a European development that gave more and more people stability."
+target_words_to_translate: europeisk, fler och fler
+
+[art_45_s015]
+sv: Vi pratade också om lag och rätt.
+en: We also talked about law and justice.
+
+[art_45_s016]
+sv: Idag har vi ett modernt institut för juridik och en rättvis domare som kan döma om någon skulle begå ett brott.
+en: Today we have a modern institute for law and a fair judge who can pass sentence if someone were to commit a crime.
+target_words_to_translate: institut, juridik, domare, begå
+
+[art_45_s017]
+sv: Förr i tiden var man ofta helt omedveten om sina rättigheter, och ett straff delades snabbt ut, medan en belöning bara gick till makteliten.
+en: In the past, people were often completely unaware of their rights, and a punishment was quickly handed out, while a reward only went to the power elite.
+target_words_to_translate: medveten, omedveten, straff, belöning
+
+[art_45_s018]
+sv: "Jaha, då ska vi se …" sa min vän ironiskt.
+en: "Oh, well let's see..." my friend said ironically.
+target_words_to_translate: Jaha, då ska vi se …
+
+[art_45_s019]
+sv: "Dagens makthavare försöker åtminstone publicera sina beslut."
+en: "Today's people in power at least try to publish their decisions."
+target_words_to_translate: publicera
+
+[art_45_s020]
+sv: "På tal om skyldigheter, har du skickat in din deklaration?" frågade jag.
+en: "Speaking of obligations, have you submitted your tax return?" I asked.
+target_words_to_translate: deklaration
+
+[art_45_s021]
+sv: "Nej, jag måste deklarera imorgon," svarade hon.
+en: "No, I have to file my taxes tomorrow," she answered.
+target_words_to_translate: deklarera
+
+[art_45_s022]
+sv: "Men jag måste varna för att prata mer om staten.
+en: "But I must warn against talking more about the state.
+target_words_to_translate: varna för
+
+[art_45_s023]
+sv: Jag känner att jag tagit en… för mycket av vinet."
+en: I feel like I've had one... too many glasses of wine."
+target_words_to_translate: en… för mycket
+
+[art_45_s024]
+sv: Vi bytte ämne.
+en: We changed the subject.
+
+[art_45_s025]
+sv: "Vad fick ni?" frågade jag plötsligt, och syftade på en tävling.
+en: "What did you get?" I asked suddenly, referring to a competition.
+target_words_to_translate: Vad fick ni?
+
+[art_45_s026]
+sv: Hon hade fått nio poäng.
+en: She had gotten nine points.
+target_words_to_translate: nio
+
+[art_45_s027]
+sv: Vi pratade även om en tidigare resa.
+en: We also talked about a previous trip.
+
+[art_45_s028]
+sv: "En snäll schweizare erbjöd oss lift när vi reste söderut nära den norska gränsen," berättade hon.
+en: "A kind Swiss offered us a ride when we were traveling south near the Norwegian border," she recounted.
+target_words_to_translate: schweizare, lift, söderut, norska gränsen
+
+[art_45_s029]
+sv: "Senare bodde vi i en stuga på landet."
+en: "Later we lived in a cabin in the countryside."
+target_words_to_translate: på landet
+
+[art_45_s030]
+sv: Vi diskuterade sedan vad som händer efter livet.
+en: We then discussed what happens after life.
+
+[art_45_s031]
+sv: "Tror du på reinkarnation?" frågade hon.
+en: "Do you believe in reincarnation?" she asked.
+target_words_to_translate: reinkarnation
+
+[art_45_s032]
+sv: "Att man föds igen efteråt?"
+en: "That you are born again afterwards?"
+target_words_to_translate: efteråt
+
+[art_45_s033]
+sv: "Jag blev lite skrämd av den tanken," sa jag, "men till slut insåg jag att det är fascinerande.
+en: "I was a bit frightened by the thought," I said, "but finally I realized that it is fascinating.
+target_words_to_translate: skrämd, till slut
+
+[art_45_s034]
+sv: Mer än hälften av jordens befolkning tror på något sådant, medan resten av dem föredrar att hävda något annat.
+en: More than half of the earth's population believes in something like that, while the rest of them prefer to claim something else.
+target_words_to_translate: hälft, resten av, hävda
+
+[art_45_s035]
+sv: Det finns dock inga bevis just nu."
+en: There is however no evidence right now."
+target_words_to_translate: dock, just nu
+
+[art_45_s036]
+sv: När två bråkiga katter plötsligt började slåss i hallen, fick jag gå emellan och dela ut lite mat för att lugna dem.
+en: When two rowdy cats suddenly started fighting in the hallway, I had to step in and hand out some food to calm them down.
+target_words_to_translate: gå emellan, dela ut
+
+[art_45_s037]
+sv: Min vän ville genast följa med ut och hjälpa till.
+en: My friend immediately wanted to follow me out and help.
+target_words_to_translate: följa med
+
+[art_46_s001]
+sv: "Vad sägs om att…?
+en: "How about...?
+target_words_to_translate: Vad sägs om att…?
+
+[art_46_s002]
+sv: Vi kanske borde läsa en ny bok," föreslog jag för en svensk kompis.
+en: Maybe we should read a new book," I suggested to a Swedish friend.
+target_words_to_translate: svensk
+
+[art_46_s003]
+sv: Han höll redan en tjock bok i handen.
+en: He was already holding a thick book in his hand.
+
+[art_46_s004]
+sv: "Vad handlar den om?" undrade han.
+en: "What is it about?" he wondered.
+target_words_to_translate: Vad handlar den om?
+
+[art_46_s005]
+sv: "Det är en känd faktoid om makt och politik på tjugotalet och början av 1930-talet," förklarade jag.
+en: "It is a famous factoid about power and politics in the twenties and early 1930s," I explained.
+target_words_to_translate: känd, faktoid, tjugotalet, 1930-talet
+
+[art_46_s006]
+sv: Boken handlade om en oärlig finansman som nyligen var skild och valde att flytta hit från utlandet.
+en: The book was about a dishonest financier who was recently divorced and chose to move here from abroad.
+target_words_to_translate: oärlig, skild, hit, land
+
+[art_46_s007]
+sv: Han ville introducera en helt ny typ av fond och en dyr aktie.
+en: He wanted to introduce a completely new type of fund and an expensive stock.
+target_words_to_translate: introducera, fond, aktie
+
+[art_46_s008]
+sv: Mannen var extremt fräck och använde sig av oschyst korruption.
+en: The man was extremely impudent and used unfair corruption.
+target_words_to_translate: fräck, oschyst, korruption
+
+[art_46_s009]
+sv: Han lyckades övertala flera förmögna investerare, till och med en italiensk greve och en rik rik norsk företagare.
+en: He managed to persuade several wealthy investors, even an Italian count and a very rich Norwegian entrepreneur.
+target_words_to_translate: övertala, italiensk, rik,  rik n
+
+[art_46_s010]
+sv: Många av dessa var nära släkt med den tidens maktelit.
+en: Many of these were closely related to the power elite of that time.
+target_words_to_translate: nära släkt
+
+[art_46_s011]
+sv: "Hur mycket tjänar du?" frågade de ofta honom, och han lovade alltid att öka summan på deras bankkonto.
+en: "How much do you earn?" they often asked him, and he always promised to increase the amount in their bank account.
+target_words_to_translate: Hur mycket tjänar du?, ur, öka, bankkonto
+
+[art_46_s012]
+sv: De flesta av dem kunde bara se en framtida enorm rikedom.
+en: Most of them could only see a future enormous wealth.
+target_words_to_translate: rik, bara, rikedom
+
+[art_46_s013]
+sv: Finansmannen ville ur sin gamla fattigdom och valde tyvärr att stjäla från folket istället för att arbeta ärligt.
+en: The financier wanted out of his old poverty and unfortunately chose to steal from the people instead of working honestly.
+target_words_to_translate: ur, stjäla
+
+[art_46_s014]
+sv: Snart uppstod en nationell ekonomisk kris.
+en: Soon a national economic crisis arose.
+target_words_to_translate: nationell, kris
+
+[art_46_s015]
+sv: Det var svårt att veta vem som skulle tala för folket när staten ville höja varje litet pris.
+en: It was hard to know who would speak for the people when the state wanted to raise every little price.
+target_words_to_translate: tala för, höja, pris
+
+[art_46_s016]
+sv: En vanlig arbetare hade nästan aldrig några besparingar, och få människor kunde ha råd att ens leva drägligt.
+en: An ordinary worker almost never had any savings, and few people could afford to even live tolerably.
+target_words_to_translate: nästan aldrig, ha råd, leva
+
+[art_46_s017]
+sv: Om man inte kunde uppge en stadig inkomst, kunde maten kosta mer än man någonsin hade tjänat.
+en: If you couldn't state a steady income, food could cost more than you had ever earned.
+target_words_to_translate: uppge, kosta
+
+[art_46_s018]
+sv: I varje land fanns det också en moralisk sanning som makthavarna blundade för.
+en: In every country there was also a moral truth that those in power turned a blind eye to.
+target_words_to_translate: moralisk, sanning
+
+[art_46_s019]
+sv: Det existerade ett hårt förtryck.
+en: There existed a harsh oppression.
+target_words_to_translate: förtryck
+
+[art_46_s020]
+sv: Till exempel, under stora delar av 40-talet var homosexualitet fortfarande strängt förbjudet i Sverige.
+en: For example, during large parts of the 40s homosexuality was still strictly forbidden in Sweden.
+target_words_to_translate: 40-talet, homosexualitet, förbjudet
+
+[art_46_s021]
+sv: Att vara sig själv innebar att man skulle riskera att hamna i fängelse.
+en: To be yourself meant that you would risk ending up in prison.
+target_words_to_translate: riskera, hamna, fängelse
+
+[art_46_s022]
+sv: Man kunde lätt gå vilse i lagboken och plötsligt vara skyldig till ett allvarligt brott.
+en: You could easily get lost in the law book and suddenly be guilty of a serious crime.
+target_words_to_translate: gå vilse, vara skyldig
+
+[art_46_s023]
+sv: Det var verkligen en skamlig period i historien.
+en: It was truly a shameful period in history.
+target_words_to_translate: skamlig
+
+[art_46_s024]
+sv: En samtidig politiker försökte ge ett vettigt motargument i riksdagen, men det dröjde tyvärr innan folket fick riktig frihet.
+en: A contemporary politician tried to give a sensible counterargument in the parliament, but unfortunately it took a while before the people got real freedom.
+target_words_to_translate: samtidig, motargument
+
+[art_46_s025]
+sv: "Jag vet inte riktigt." sa min kompis tyst och började klappa sin trötta hund.
+en: "I don't really know." my friend said quietly and started petting his tired dog.
+target_words_to_translate: Jag vet inte riktigt., klappa
+
+[art_46_s026]
+sv: "Det låter väldigt tungt.
+en: "It sounds very heavy.
+
+[art_46_s027]
+sv: Men det är bra att staten slutade anmäla folk för kärlek.
+en: But it is good that the state stopped reporting people for love.
+target_words_to_translate: anmäla
+
+[art_46_s028]
+sv: Idag kan man åtminstone leva öppet, vara stolt medlem i en vanlig idrottsförening eller donera en miljon till välgörenhet utan att det nödvändigtvis behöver synas i pressen."
+en: Today you can at least live openly, be a proud member of an ordinary sports club or donate a million to charity without it necessarily having to appear in the press."
+target_words_to_translate: idrottsförening, miljon, synas
+
+[art_47_s001]
+sv: Jag mötte min vän Sami på ett stort torg i staden.
+en: I met my friend Sami at a large square in the city.
+target_words_to_translate: Sami, torg
+
+[art_47_s002]
+sv: Han var trettiotre år gammal och hade precis flyttat till Sverige för att bosätta sig här.
+en: He was thirty-three years old and had just moved to Sweden to settle here.
+target_words_to_translate: trettiotre, bosätta sig
+
+[art_47_s003]
+sv: "Kan du prata lite långsammare?" bad han vänligt.
+en: "Can you speak a little slower?" he asked kindly.
+target_words_to_translate: Kan du prata lite långsammare?
+
+[art_47_s004]
+sv: "Jag vill förstå bättre och lära mig mer."
+en: "I want to understand better and learn more."
+target_words_to_translate: mer
+
+[art_47_s005]
+sv: Vi diskuterade landets framtid och historia.
+en: We discussed the country's future and history.
+target_words_to_translate: framtid
+
+[art_47_s006]
+sv: Sami berättade: "Under 1800-talet och början av 1900-talet levde många européer i en stark monarki eller i ett mäktigt kejsardöme som var styrt av en grym kejsare.
+en: Sami said: "During the 19th century and the beginning of the 20th century, many Europeans lived in a strong monarchy or in a powerful empire that was ruled by a cruel emperor.
+target_words_to_translate: Sami, 1800-talet, 1900-talet, monarki, kejsardöme, kejsare
+
+[art_47_s007]
+sv: Vissa invånare tvingades konvertera till en specifik tro, till exempel bli lutherskt kristen, annars uppstod snabbt hot och stor otrygghet."
+en: Some residents were forced to convert to a specific faith, for example become Lutheran Christian, otherwise threats and great insecurity quickly arose."
+target_words_to_translate: konvertera, lutherskt kristen, hot, otrygghet
+
+[art_47_s008]
+sv: "Ja, verkligen," sa jag.
+en: "Yes, indeed," I said.
+
+[art_47_s009]
+sv: "Och i en ren diktatur var det mycket våld.
+en: "And in a pure dictatorship there was a lot of violence.
+target_words_to_translate: diktatur, våld
+
+[art_47_s010]
+sv: Om en radikal socialistisk eller nationalistisk ledare ville förändra landet för snabbt, kunde ett farligt krig starta.
+en: If a radical socialist or nationalist leader wanted to change the country too fast, a dangerous war could start.
+target_words_to_translate: socialistisk, nationalistisk, förändra, krig
+
+[art_47_s011]
+sv: Till och med i vårt fredliga land regleras makten i en lag som kallas successionsordningen.
+en: Even in our peaceful country, power is regulated in a law called the Act of Succession.
+target_words_to_translate: successionsordningen
+
+[art_47_s012]
+sv: Många unga engagerar sig idag i ett ungdomsförbund för att kämpa för jämlikhet och regionalt självstyre."
+en: Many young people today get involved in a youth league to fight for equality and regional self-government."
+target_words_to_translate: ungdomsförbund, jämlikhet, självstyre
+
+[art_47_s013]
+sv: Sami nickade förstående.
+en: Sami nodded understandingly.
+target_words_to_translate: Sami
+
+[art_47_s014]
+sv: "Vad gör du helst?" frågade han nyfiket.
+en: "What do you prefer to do?" he asked curiously.
+target_words_to_translate: Vad gör du helst?
+
+[art_47_s015]
+sv: "Jag tycker att det är skönt att ibland vara för sig själv ute på en tyst brygga, men jag gillar också en bra politisk debatt," svarade jag.
+en: "I think it is nice to sometimes be by myself out on a quiet jetty, but I also like a good political debate," I answered.
+target_words_to_translate: vara för sig själv, brygga, debatt
+
+[art_47_s016]
+sv: "Mycket politik handlar just nu om en ökad global import och hur vi kan exportera säkert till USA, hitta en tysk allians, eller undersöka en thailändsk marknad.
+en: "A lot of politics right now is about an increased global import and how we can export safely to the USA, find a German alliance, or investigate a Thai market.
+target_words_to_translate: import, exportera, USA, tysk, allians, thailändsk
+
+[art_47_s017]
+sv: Detta kräver en enormt bra samhällsplanering.
+en: This requires enormously good societal planning.
+target_words_to_translate: samhällsplanering
+
+[art_47_s018]
+sv: Som man säger på engelska, det handlar om ekonomi."
+en: As they say in English, it is about the economy."
+target_words_to_translate: om ek
+
+[art_47_s019]
+sv: "Va?!
+en: "What?! You're joking!" exclaimed Sami and laughed.
+target_words_to_translate: Va?! Du skojar!
+
+[art_47_s020]
+sv: Du skojar!" utbrast Sami och skrattade.
+en: "It sounds very complicated.
+
+[art_47_s021]
+sv: "Det låter väldigt komplicerat.
+en: I thought only expensive food would be on the menu today."
+target_words_to_translate: dyr
+
+[art_47_s022]
+sv: Jag trodde att bara dyr mat skulle stå på menyn idag."
+en: Suddenly we heard a scream.
+
+[art_47_s023]
+sv: Plötsligt hörde vi ett skrik.
+en: A criminal thief had tried to rob a store nearby and then tried to escape.
+target_words_to_translate: kriminell, tjuv
+
+[art_47_s024]
+sv: En kriminell tjuv hade försökt råna en butik i närheten och sedan försökt rymma.
+en: In the panic, chaos arose in all local traffic.
+target_words_to_translate: trafik
+
+[art_47_s025]
+sv: I paniken uppstod kaos i all lokal trafik.
+en: Two cars, of which one vehicle belonged to the Swedish military, happened to crash, which caused a serious traffic accident.
+
+[art_47_s026]
+sv: Två bilar, varav ett fordon tillhörde svensk militär, råkade krocka, vilket orsakade en allvarlig trafikolycka.
+en: We saw a shocking accident happen before our eyes.
+target_words_to_translate: olycka
+
+[art_47_s027]
+sv: Vi såg en chockerande olycka hända framför våra ögon.
+en: A high-ranking police superintendent came there to try to handle the situation.
+target_words_to_translate: polisintendent, försöka
+
+[art_47_s028]
+sv: En högt uppsatt polisintendent kom dit för att försöka hantera situationen.
+en: It was hard to know who was who among all the screaming witnesses.
+target_words_to_translate: vem som är vem
+
+[art_47_s029]
+sv: Det var svårt att veta vem som är vem bland alla skrikande vittnen.
+en: Someone claimed that a man had been murdered by a known murderer and then been shot, and that there had been great enmity between them.
+target_words_to_translate: mördad, mördare
+
+[art_47_s030]
+sv: Någon hävdade att en man blivit mördad av en känd mördare och sedan blivit skjuten, och att det funnits stor fiendskap dem emellan.
+en: This turned out to be a pure untruth, however.
+target_words_to_translate: osanning
+
+[art_47_s031]
+sv: Detta visade sig dock vara en ren osanning.
+en: The police arrested three suspects at the scene, and chose to immediately invite everyone involved to the police station for questioning.
+target_words_to_translate: stycken
+
+[art_47_s032]
+sv: Polisen grep tre stycken misstänkta personer på platsen, och valde att genast bjuda in alla inblandade till polisstationen för förhör.
+en: 
+target_words_to_translate: stycken, bjuda in
+
+[art_48_s001]
+sv: En fredag pratade min lärare, en trevlig engelsman, mycket om svensk politik och historia, om förr och nu.
+en: One Friday my teacher, a nice Englishman, talked a lot about Swedish politics and history, about past and present.
+target_words_to_translate: fredag, engelsman, förr och nu
+
+[art_48_s002]
+sv: "Hänger du med?" frågade han och såg på oss.
+en: "Are you following along?" he asked and looked at us.
+target_words_to_translate: Hänger du med?, oss
+
+[art_48_s003]
+sv: "Redan som ung hörde jag ofta en berättelse om hur gamla länder fungerade," började han.
+en: "Even when I was young I often heard a story about how old countries functioned," he began.
+target_words_to_translate: som ung, berättelse, län
+
+[art_48_s004]
+sv: "Vissa länder hade länge ett mäktigt styre under en bestämd kejsarinna.
+en: "Some countries had for a long time a powerful rule under a specific empress.
+target_words_to_translate: län, styre, kejsarinna
+
+[art_48_s005]
+sv: På den tiden skulle man kröna en härskare under pompa och ståt för att hen skulle sitta på en tron.
+en: At that time you would crown a ruler with pomp and circumstance so that they would sit on a throne.
+target_words_to_translate: kröna, tron
+
+[art_48_s006]
+sv: Ibland fanns det också en religiös ledare, som en katolsk påve, eller en representant för en luthersk trosinriktning inom vår tidiga kristendom."
+en: Sometimes there was also a religious leader, like a Catholic pope, or a representative for a Lutheran denomination within our early Christianity."
+target_words_to_translate: påve, representant, luthersk, trosinriktning, kristendom
+
+[art_48_s007]
+sv: Han berättade att det ofta var farligt att lägga sig i makten på den tiden.
+en: He recounted that it was often dangerous to meddle in power at that time.
+target_words_to_translate: lägga sig i
+
+[art_48_s008]
+sv: En okänd utlänning eller en politisk motståndare kunde snabbt hamna på en galgbacke för en blodig avrättning.
+en: An unknown foreigner or a political opponent could quickly end up on a gallows hill for a bloody execution.
+target_words_to_translate: län, utlänning, galgbacke, avrättning
+
+[art_48_s009]
+sv: Man kunde också bli tvingad att rulla ihop sig i fosterställning om någon hotade att skjuta en tung järnkula mot en under ett krig.
+en: You could also be forced to curl up into a fetal position if someone threatened to shoot a heavy iron ball at you during a war.
+target_words_to_translate: fosterställning, skjuta, järnkula
+
+[art_48_s010]
+sv: "Hur dum får man vara?" sa en klasskamrat och började stirra på en hemsk bild i en tidning om gamla vapen.
+en: "How stupid can you be?" a classmate said and began staring at a terrible picture in a magazine about old weapons.
+target_words_to_translate: Hur dum får man vara?, stirra, tidning
+
+[art_48_s011]
+sv: "En tvåkilos kula är ju jättetung och livsfarlig."
+en: "A two-kilo ball is super heavy and life-threatening."
+target_words_to_translate: tvåkilos
+
+[art_48_s012]
+sv: Sedan ändrades samhället drastiskt.
+en: Then society changed drastically.
+
+[art_48_s013]
+sv: Vi gick från manuellt arbete till industriell masstillverkning och en ökad konsumtion i sig, mycket tack vare tidig globalisering.
+en: We went from manual labor to industrial mass production and an increased consumption in itself, much thanks to early globalization.
+target_words_to_translate: masstillverkning, konsumtion, i sig, globalisering
+
+[art_48_s014]
+sv: Vårt eget land fick ett nytt politiskt system.
+en: Our own country got a new political system.
+
+[art_48_s015]
+sv: Ett lokalt förbund från varje län samlades för att skapa en demokratisk stat.
+en: A local association from each county gathered to create a democratic state.
+target_words_to_translate: län, förbund
+
+[art_48_s016]
+sv: Idag styrs mycket lagstiftning av en riksdagsledamot i Stockholm och varje lokal ledamot i våra olika kommittéer.
+en: Today much legislation is governed by a member of parliament in Stockholm and every local member in our various committees.
+target_words_to_translate: riksdagsledamot, ledamot
+
+[art_48_s017]
+sv: En viktig representant för folket bör ha en modern syn på allas jämlikhet, helt oavsett kön eller sexuell läggning.
+en: An important representative for the people should have a modern view of everyone's equality, completely regardless of gender or sexual orientation.
+target_words_to_translate: representant, bör ha, kön, sexuell läggning
+
+[art_48_s018]
+sv: Samtidigt kan en stor folkomröstning eller en mer vanlig omröstning handla om väldigt svåra frågor.
+en: At the same time, a large referendum or a more ordinary vote can be about very difficult issues.
+target_words_to_translate: folkomröstning, omröstning
+
+[art_48_s019]
+sv: Även tolv år senare minns man kanske ett historiskt beslut om till exempel ett nationellt spritförbud och hur svårt det var att hålla reda på alla olika politiska åsikter.
+en: Even twelve years later you might remember a historic decision about for example a national liquor prohibition and how hard it was to keep track of all the different political opinions.
+target_words_to_translate: tolv år senare, spritförbud, hålla reda på
+
+[art_48_s020]
+sv: Idag diskuterar vi moderna faror som rasism och högerextremism.
+en: Today we discuss modern dangers like racism and right-wing extremism.
+target_words_to_translate: högerextremism
+
+[art_48_s021]
+sv: Ibland går en känd kvinnlig partiledare ut i ett stort nyhetsprogram för att påminna om vikten av ett politiskt samförstånd mellan två stora politiska block.
+en: Sometimes a famous female party leader goes out on a major news program to remind of the importance of a political consensus between two major political blocs.
+target_words_to_translate: kvinnlig, nyhetsprogram, påminna om, samförstånd, block
+
+[art_48_s022]
+sv: Då krävs det ofta en stark koalition.
+en: Then a strong coalition is often required.
+target_words_to_translate: koalition
+
+[art_48_s023]
+sv: Man försöker gemensamt bekämpa farliga idéer som extrem kommunism.
+en: You try to jointly fight dangerous ideas like extreme communism.
+target_words_to_translate: kommunism
+
+[art_48_s024]
+sv: Om folket vill klaga, väljer de ofta att demonstrera i en fredlig demonstration.
+en: If the people want to complain, they often choose to demonstrate in a peaceful demonstration.
+target_words_to_translate: demonstrera, demonstration
+
+[art_48_s025]
+sv: Det stora torget brukar vara nere på stan, och det fungerar som en mycket bra samlingsplats.
+en: The main square is usually down in town, and it serves as a very good gathering place.
+target_words_to_translate: vara nere på, samlingsplats
+
+[art_48_s026]
+sv: Nyligen hörde jag en schweizisk politiker som var envis som en åsna inför ett nytt lagförslag om framtidens familjer.
+en: Recently I heard a Swiss politician who was stubborn as a mule facing a new bill about the families of the future.
+target_words_to_translate: schweizisk, envis som en åsna, inför
+
+[art_48_s027]
+sv: Han diskuterade bland annat rätten att adoptera små barn från ett utsatt barnhem.
+en: He discussed among other things the right to adopt small children from a vulnerable orphanage.
+target_words_to_translate: adoptera, barnhem
+
+[art_48_s028]
+sv: Det visade tydligt att politik alltid är och förblir viktigt för vår vardag.
+en: It clearly showed that politics always is and remains important for our everyday life.
+
+[art_49_s001]
+sv: Jag sa tack på förhand till min bästa vän för att han ville komma.
+en: I said thanks in advance to my best friend because he wanted to come.
+target_words_to_translate: tack på förhand, till, bästa vän, vän
+
+[art_49_s002]
+sv: Vi hade bestämt oss för att träffas och prata om relationer och hur vi brukar må.
+en: We had decided to meet and talk about relationships and how we usually feel.
+target_words_to_translate: träffas, prata, må
+
+[art_49_s003]
+sv: Han sa att han naturligtvis skulle ställa upp.
+en: He said that he would of course be there.
+target_words_to_translate: naturligtvis, tur
+
+[art_49_s004]
+sv: Han var min bästa kompis, en person som jag alltid kunde chatta med.
+en: He was my best friend, a person that I could always chat with.
+target_words_to_translate: bästa kompis, kompis, som, chatta
+
+[art_49_s005]
+sv: Vi började diskutera vad vi tyckte var viktigt.
+en: We started discussing what we thought was important.
+
+[art_49_s006]
+sv: "Vad brukar du tycka bäst om i en familj?" frågade jag.
+en: "What do you usually like best in a family?" I asked.
+target_words_to_translate: tycka bäst om, familj
+
+[art_49_s007]
+sv: "Och vad brukar du tycka sämst om?"
+en: "And what do you usually like least?"
+target_words_to_translate: tycka sämst om
+
+[art_49_s008]
+sv: "Man bör gilla ärlighet," svarade han och såg glad ut.
+en: "You should like honesty," he answered and looked happy.
+target_words_to_translate: gilla, glad
+
+[art_49_s009]
+sv: "Ett trevligt samtal är alltid bra, oavsett om det är djupt snack eller bara lite sportsnack."
+en: "A pleasant conversation is always good, whether it's deep talk or just a little sports talk."
+target_words_to_translate: snack, sportsnack
+
+[art_49_s010]
+sv: "Jag håller med." svarade jag snabbt.
+en: "I agree." I answered quickly.
+target_words_to_translate: Jag håller med.
+
+[art_49_s011]
+sv: "Och att man kan förlåta en annan vän.
+en: "And that you can forgive another friend.
+target_words_to_translate: vän, förlåta
+
+[art_49_s012]
+sv: En stark vänskap är oerhört viktig för att man ska må bra och känna sig lycklig."
+en: A strong friendship is extremely important to feel good and feel happy."
+target_words_to_translate: vän, må, vänskap, må bra, känna, lycklig
+
+[art_49_s013]
+sv: Vi pratade sedan om varför folk ibland väljer att skilja sig och plötsligt kan bli som en fiende till varandra.
+en: We then talked about why people sometimes choose to divorce and suddenly can become like an enemy to each other.
+target_words_to_translate: till, prata, som, varför, skilja sig, fiende
+
+[art_49_s014]
+sv: Det är alltid tråkigt när ett långt förhållande tar slut.
+en: It is always sad when a long relationship ends.
+target_words_to_translate: slut
+
+[art_49_s015]
+sv: Minnen från ett vackert bröllop eller en fin bröllopsdag kan kännas långt borta.
+en: Memories from a beautiful wedding or a nice wedding anniversary can feel far away.
+target_words_to_translate: känna, bröllop, bröllopsdag
+
+[art_49_s016]
+sv: Människor kan tyvärr skilja sig åt med tiden.
+en: People can unfortunately separate over time.
+target_words_to_translate: skilja sig, skilja sig åt, med tiden
+
+[art_49_s017]
+sv: Vissa väljer då att bo separat, och konflikter kan förekomma.
+en: Some then choose to live separately, and conflicts can occur.
+target_words_to_translate: separat, förekomma
+
+[art_49_s018]
+sv: "Då måste man ibland lämna över ansvaret och låta den andra personen gå fri från kritik," sa han.
+en: "Then you sometimes have to hand over the responsibility and let the other person go free from criticism," he said.
+target_words_to_translate: lämna över, gå fri
+
+[art_49_s019]
+sv: "Man ska inte behöva gå runt och känna ilska."
+en: "You shouldn't have to walk around feeling anger."
+target_words_to_translate: känna, behöva
+
+[art_49_s020]
+sv: Han berättade därefter om sin egen flickvän.
+en: He then told me about his own girlfriend.
+target_words_to_translate: flickvän
+
+[art_49_s021]
+sv: "Hon är en enorm djurvän, och vi försöker informera andra om en ny kampanj för utsatta djur, både stora och små."
+en: "She is an enormous animal lover, and we try to inform others about a new campaign for vulnerable animals, both big and small."
+target_words_to_translate: djurvän, informera, kampanj, stora och små
+
+[art_49_s022]
+sv: "Är du riktigt kär i henne?" frågade jag.
+en: "Are you really in love with her?" I asked.
+target_words_to_translate: kär
+
+[art_49_s023]
+sv: "Ja, jag kan verkligen älska vårt lugna familjeliv.
+en: "Yes, I can really love our quiet family life.
+target_words_to_translate: älska, familjeliv
+
+[art_49_s024]
+sv: Men ibland kan jag ändå känna mig ensam när hon reser mycket."
+en: But sometimes I can still feel lonely when she travels a lot."
+target_words_to_translate: känna mig, ensam
+
+[art_49_s025]
+sv: "Det är ungefär så för mig också ibland," sa jag för att hålla med.
+en: "It is roughly like that for me too sometimes," I said to agree.
+target_words_to_translate: ungefär så, hålla med
+
+[art_49_s026]
+sv: "Vi får väl se." sa han lugnt.
+en: "I guess we'll see." he said calmly.
+target_words_to_translate: Vi får väl se.
+
+[art_49_s027]
+sv: "Det ordnar sig."
+en: "It will work out."
+target_words_to_translate: Det ordnar sig.
+
+[art_49_s028]
+sv: Och efter det var vi båda trötta.
+en: And after that we were both tired.
+target_words_to_translate: efter det
+
+[art_49_s029]
+sv: Klockan var mycket, det var en jättesen kväll, och ungdomar utanför fönstret skrek ord med prefixet jätte- framför allt.
+en: It was late, it was a super late evening, and young people outside the window shouted words with the prefix jätte- in front of everything.
+target_words_to_translate: jättesen, jätte-
+
+[art_49_s030]
+sv: Jag försökte vara tyst som en mus och började smyga mot dörren.
+en: I tried to be as quiet as a mouse and started to sneak towards the door.
+target_words_to_translate: tyst som en mus, smyga
+
+[art_49_s031]
+sv: "Du har tur som kan somna snabbt," log han.
+en: "You're lucky to be able to fall asleep fast," he smiled.
+target_words_to_translate: somna
+
+[art_49_s032]
+sv: "Kärleken kommer att räcka långt, om man bara vågar vilja ha den.
+en: "Love will go a long way, if you just dare to want it."
+target_words_to_translate: räcka, vilja
+
+[art_50_s001]
+sv: Hej Maria!
+en: Hello Maria!
+
+[art_50_s002]
+sv: Vet du vad?
+en: Guess what?
+target_words_to_translate: Vet du vad?
+
+[art_50_s003]
+sv: Det är sant att tiderna förändras verkligen snabbt.
+en: It is true that times really change fast.
+target_words_to_translate: tiderna förändras
+
+[art_50_s004]
+sv: Tidigt i morse drack jag kaffe i min varma morgonrock.
+en: Early this morning I drank coffee in my warm bathrobe.
+target_words_to_translate: i morse, morgonrock
+
+[art_50_s005]
+sv: Min pojkvän sa då att han ville gifta sig nästa år.
+en: My boyfriend then said that he wanted to get married next year.
+target_words_to_translate: pojkvän, gifta sig, gift
+
+[art_50_s006]
+sv: Vi har ett starkt förhållande och en väldigt bra relation, men vi pratar också om hur vanligt det tyvärr är med en skilsmässa.
+en: We have a strong relationship and a very good connection, but we also talk about how common divorce unfortunately is.
+target_words_to_translate: förhållande, relation, prat, skilsmässa
+
+[art_50_s007]
+sv: Folk vill umgås, men mycket är ändå inte som förr.
+en: People want to socialize, but a lot is still not like before.
+target_words_to_translate: umgås, som förr
+
+[art_50_s008]
+sv: Det blev plötsligt mycket prat om hans stora släkt och alla deras barn.
+en: There was suddenly a lot of talk about his large extended family and all their children.
+target_words_to_translate: prat, släkt, barn
+
+[art_50_s009]
+sv: Varje förälder vill ju alltid det bästa.
+en: Every parent always wants the best, of course.
+target_words_to_translate: förälder
+
+[art_50_s010]
+sv: Jag hoppas att vi får vara lyckliga.
+en: I hope that we get to be happy.
+target_words_to_translate: hoppas
+
+[art_50_s011]
+sv: Han var gift tidigare, och hans före detta fru blev visst arg som ett bi när hon trodde att han hade träffat en ny älskare.
+en: He was married before, and his ex-wife apparently got mad as a hornet when she thought he had met a new lover.
+target_words_to_translate: gift, fru, arg som ett bi, älskare
+
+[art_50_s012]
+sv: Man kan ibland bli ilsken och behöva vänja mig vid situationen, för det tar tid att vänja sig vid nya saker.
+en: You can sometimes get angry and need to get used to the situation, because it takes time to get used to new things.
+target_words_to_translate: ilsken, vänja,  vid, vänja sig vid
+
+[art_50_s013]
+sv: Under vår senaste långhelg åkte vi allihop upp till landet.
+en: During our last long weekend we all went up to the country.
+target_words_to_translate: långhelg, allihop
+
+[art_50_s014]
+sv: Vi hade anställt en ung barnvakt till några små skolbarn från en annan barnfamilj.
+en: We had hired a young babysitter for some small schoolchildren from another family with children.
+target_words_to_translate: barn, barnvakt, skolbarn, barnfamilj
+
+[art_50_s015]
+sv: Barnen älskade gamla sagor.
+en: The children loved old fairy tales.
+target_words_to_translate: barn
+
+[art_50_s016]
+sv: Vi brukade ofta påminna dem om berättelser som Rödluvan och vargen och även Peter och vargen.
+en: We used to often remind them of stories like Little Red Riding Hood and the Wolf and also Peter and the Wolf.
+target_words_to_translate: påminna, Rödluvan och vargen, varg, Peter och vargen
+
+[art_50_s017]
+sv: Kanske en av er också minns hur spännande det var?
+en: Maybe one of you also remembers how exciting it was?
+target_words_to_translate: en av er
+
+[art_50_s018]
+sv: En riktig varg kan ju se farlig och rentav livsfarlig ut, med en imponerande stor mankhöjd.
+en: A real wolf can of course look dangerous and even lethal, with an impressively large height at the withers.
+target_words_to_translate: varg, farlig, livsfarlig, mankhöjd
+
+[art_50_s019]
+sv: Om man möter en kan man behöva vända bilen snabbt eller vända sig om i skogen.
+en: If you meet one, you might need to turn the car around quickly or turn around in the forest.
+target_words_to_translate: vända, vända sig om
+
+[art_50_s020]
+sv: Som tur är syns de ganska sällan i allmänhet.
+en: Luckily, they are quite rarely seen in general.
+target_words_to_translate: ganska, i allmänhet
+
+[art_50_s021]
+sv: Vargen är ju hundens kända stamfader.
+en: The wolf is, as you know, the dog's famous ancestor.
+target_words_to_translate: varg, stamfader
+
+[art_50_s022]
+sv: Sedan besökte vi en lokal älgfarm tillsammans.
+en: Then we visited a local moose farm together.
+target_words_to_translate: älgfarm
+
+[art_50_s023]
+sv: Deras absolut bästa säljargument var att besökare fick klappa älgarna under regelbundna tider.
+en: Their absolute best selling point was that visitors got to pet the moose at regular times.
+target_words_to_translate: säljargument, ndna tider.
+
+[art_50_s024]
+sv: Det är tydligen en expanderande turistnäring med en snabbt ökad popularitet.
+en: It is apparently an expanding tourism industry with rapidly increasing popularity.
+target_words_to_translate: expanderande, ökad
+
+[art_50_s025]
+sv: Det var tolv personer där samtidigt.
+en: There were twelve people there at the same time.
+target_words_to_translate: tolv
+
+[art_50_s026]
+sv: Ingen kände sig rädd, med ett enda undantag.
+en: No one felt afraid, with one single exception.
+target_words_to_translate: undantag
+
+[art_50_s027]
+sv: Det fanns en inofficiell regel där som sa att man måste ha en godkänd djurskötare med sig för att kunna kontrollera allt.
+en: There was an unofficial rule there that said you must have an approved zookeeper with you to be able to control everything.
+target_words_to_translate: inofficiell, man måste ha, godkänd, kontrollera
+
+[art_50_s028]
+sv: Då kunde man plötsligt komma på att deras gamla valspråk var att djuren fortfarande ska ha full respekt.
+en: Then you could suddenly remember that their old motto was that the animals must still be treated with full respect.
+target_words_to_translate: komma på, valspråk, fortfarande
+
+[art_50_s029]
+sv: I slutet… av hela dagen var vi alla extremt trötta och nöjda.
+en: At the end... of the whole day we were all extremely tired and satisfied.
+target_words_to_translate: I slutet…
+
+[art_50_s030]
+sv: Hör av dig snart!
+en: Keep in touch!
+target_words_to_translate: Hör av dig snart!
+
+[art_50_s031]
+sv: Puss och kram …
+Kramar …
+en: Hugs and kisses ...
+target_words_to_translate: Puss och kram …, Kramar …
+
+[art_51_s001]
+sv: "Hur ser det ut?" frågade min glada singelvän.
+en: "How does it look?" asked my happy single friend.
+target_words_to_translate: Hur ser det ut?, singelvän
+
+[art_51_s002]
+sv: Vi stod mitt i rummet och tittade ut över ett enormt arrangemang.
+en: We stood in the middle of the room and looked out over an enormous arrangement.
+target_words_to_translate: mitt i, arrangemang
+
+[art_51_s003]
+sv: Det var ganska länge sedan vi senast träffades.
+en: It had been quite a long time since we last met.
+target_words_to_translate: länge sedan
+
+[art_51_s004]
+sv: Han var min bästis, en otroligt stilig polare och en mycket nära vän ända sedan min ungdom.
+en: He was my bestie, an incredibly handsome buddy and a very close friend ever since my youth.
+target_words_to_translate: bästis, stilig, polare, nära vän, ungdom
+
+[art_51_s005]
+sv: Han var ofta en riktig träningsnarkoman och ibland även en stressad arbetsnarkoman.
+en: He was often a real exercise addict and sometimes even a stressed workaholic.
+target_words_to_translate: träningsnarkoman, arbetsnarkoman
+
+[art_51_s006]
+sv: Jag själv var mer som en vanlig, lugn person.
+en: I myself was more like a normal, calm person.
+target_words_to_translate: vanlig
+
+[art_51_s007]
+sv: Jag var nervös inför denna dag.
+en: I was nervous about this day.
+target_words_to_translate: nervös
+
+[art_51_s008]
+sv: Vi var inbjudna till en exklusiv fest för att fira min farfar och mormor.
+en: We were invited to an exclusive party to celebrate my grandfather and grandmother.
+target_words_to_translate: exklusiv, farfar, mormor
+
+[art_51_s009]
+sv: De hade totalt bjudit över hundra gäster.
+en: They had invited over a hundred guests in total.
+target_words_to_translate: hundra
+
+[art_51_s010]
+sv: Både mina farföräldrar och morföräldrar tyckte mycket om att samla ihop alla små barnbarn, några trevliga bybor, lokal skolpersonal och även min äldre syster.
+en: Both my paternal and maternal grandparents really liked gathering all the small grandchildren, some nice villagers, local school staff, and also my older sister.
+target_words_to_translate: farföräldrar, morföräldrar, barnbarn, skolpersonal, syster
+
+[art_51_s011]
+sv: Det kändes som ett genuint, varmt barndomsminne.
+en: It felt like a genuine, warm childhood memory.
+target_words_to_translate: barndomsminne
+
+[art_51_s012]
+sv: Familjen var mycket känd i vårt lilla område, de var nästan som en rik gammal adelsfamilj.
+en: The family was very well known in our small area, they were almost like a rich old noble family.
+target_words_to_translate: adelsfamilj
+
+[art_51_s013]
+sv: "Jag minns särskilt när din farfar berättade sin långa, fascinerande släktkrönika," sa han.
+en: "I especially remember when your grandfather told his long, fascinating family chronicle," he said.
+target_words_to_translate: farfar, släktkrönika
+
+[art_51_s014]
+sv: "Historien kunde vara rätt grym, ofta med någon elak person i centrum, men sagan hade alltid ett lyckligt slut.
+en: "The story could be quite cruel, often with some mean person in the center, but the fairy tale always had a happy ending.
+target_words_to_translate: grym, elak, lyckligt slut
+
+[art_51_s015]
+sv: Det är en typ av berättelse man verkligen älskar."
+en: It is a type of story you really love."
+target_words_to_translate: en typ av
+
+[art_51_s016]
+sv: Under den långa festen åt vi god kaka med mandel och lyssnade på glad musik från en lite repig cd-skiva.
+en: During the long party we ate delicious cake with almonds and listened to happy music from a slightly scratched CD.
+target_words_to_translate: mandel, cd-skiva
+
+[art_51_s017]
+sv: En inbjuden riksdagsman och en mycket stolt same höll vackra tal till hela vårt land, ungefär som en hyllning till Moder Svea.
+en: An invited member of parliament and a very proud Sami gave beautiful speeches to our entire country, much like a tribute to Mother Svea.
+target_words_to_translate: riksdagsman, same, Moder Svea
+
+[art_51_s018]
+sv: Det hela hade en jätteviktig och seriös funktion i just detta sammanhang.
+en: The whole thing had a very important and serious function in this exact context.
+target_words_to_translate: jätteviktig, funktion, sammanhang
+
+[art_51_s019]
+sv: "Tror du det är okej om jag försöker blanda ihop dessa gäster lite?" frågade min vän skämtsamt, och jag såg att han uppenbarligen var förälskad i någon ny på festen.
+en: "Do you think it's okay if I try to mix up these guests a bit?" my friend asked jokingly, and I saw that he was obviously in love with someone new at the party.
+target_words_to_translate: blanda ihop, dessa, förälskad
+
+[art_51_s020]
+sv: Han ville nämligen gärna dyka upp på helt rätt plats vid rätt tid.
+en: He wanted to show up in exactly the right place at the right time.
+target_words_to_translate: gärna, dyka upp, plats
+
+[art_51_s021]
+sv: "Ja absolut, njut och skratta så mycket du kan," svarade jag.
+en: "Yes absolutely, enjoy and laugh as much as you can," I replied.
+target_words_to_translate: så mycket du kan
+
+[art_51_s022]
+sv: Jag ville ju inte alls hata kärleken.
+en: I didn't want to hate love at all, of course.
+target_words_to_translate: hata
+
+[art_51_s023]
+sv: "Jag tycker att romantik är härligt.
+en: "I think romance is wonderful.
+
+[art_51_s024]
+sv: Man får inte vara oförstående inför den."
+en: One must not be uncomprehending of it."
+target_words_to_translate: oförstående
+
+[art_51_s025]
+sv: "Det ryktas att vår granne vill gifta om sig," skämtade han sedan glatt.
+en: "Rumor has it that our neighbor wants to remarry," he then joked happily.
+target_words_to_translate: gifta om sig
+
+[art_51_s026]
+sv: "Tror du att min gamla berättelse från föregående år kan stämma?" sa farfar plötsligt från ingenstans.
+en: "Do you think my old story from the previous year could be true?" Grandpa suddenly said out of nowhere.
+target_words_to_translate: föregående, stämma
+
+[art_51_s027]
+sv: Det var en mycket oväntad fråga från honom.
+en: It was a very unexpected question from him.
+target_words_to_translate: oväntad
+
+[art_51_s028]
+sv: "Vem vill inte krama och pussa på någon man verkligen tycker om?" log farfar.
+en: "Who doesn't want to hug and kiss someone they really like?" Grandpa smiled.
+target_words_to_translate: pussa på
+
+[art_51_s029]
+sv: Han hade nyligen fått ett intressant förslag.
+en: He had recently received an interesting proposal.
+target_words_to_translate: förslag
+
+[art_51_s030]
+sv: Han ville underteckna ett viktigt papper om den gamla gården som låg vackert vid en stor korsning.
+en: He wanted to sign an important paper about the old farm that was beautifully located by a large intersection.
+target_words_to_translate: underteckna, korsning
+
+[art_51_s031]
+sv: Han älskade verkligen gården.
+en: He really loved the farm.
+
+[art_51_s032]
+sv: "Här kan man ibland ligga ner på det mjuka gräset, titta upp och känna sig helt osynlig i världen.
+en: "Here you can sometimes lie down on the soft grass, look up and feel completely invisible in the world.
+target_words_to_translate: ligga, osynlig
+
+[art_51_s033]
+sv: Jag gillar verkligen den här typen av … tysta och fridfulla platser."
+en: I really like this kind of... quiet and peaceful place."
+target_words_to_translate: den här typen av …
+
+[art_51_s034]
+sv: "Hoppas att vi ses snart!" ropade alla de glada gästerna när de sedan var tvungna att återvända hemåt i den mörka, stjärnklara natten.
+en: "Hope to see you soon!" shouted all the happy guests when they then had to return home in the dark, starry night.
+target_words_to_translate: Hoppas att vi ses snart!, återvända
+
+[art_52_s001]
+sv: "Vad gör du där?" ropade min pappa när han kom in i rummet.
+en: "What are you doing there?" my dad shouted when he came into the room.
+target_words_to_translate: Vad gör du där?, pappa
+
+[art_52_s002]
+sv: Jag var i egna tankar, jag satt och försökte filosofera över min hemliga dröm om framtiden.
+en: I was in my own thoughts, sitting and trying to philosophize about my secret dream of the future.
+target_words_to_translate: tankar, filosofera, dröm
+
+[art_52_s003]
+sv: Det fanns en stark framtidstro inom mig.
+en: There was a strong belief in the future inside me.
+target_words_to_translate: framtidstro
+
+[art_52_s004]
+sv: "Jag försöker leta efter ett gammalt paket som jag tappat bort," svarade jag.
+en: "I am trying to look for an old package that I lost," I answered.
+target_words_to_translate: leta efter, paket
+
+[art_52_s005]
+sv: "Du kommer inte att tro dina öron!" fortsatte pappa med stor förvåning i rösten.
+en: "You won't believe your ears!" Dad continued with great surprise in his voice.
+target_words_to_translate: pappa, Du kommer inte att tro dina öron!, förvåning
+
+[art_52_s006]
+sv: En ordförande från en internationell förening hade just ringt.
+en: A chairman from an international association had just called.
+target_words_to_translate: ordförande, internationell
+
+[art_52_s007]
+sv: Min gamla farbror, som egentligen jobbade med grafisk formgivning och ofta reste för att skaffa kontakter, hade skickat ett märkligt brev.
+en: My old uncle, who actually worked in graphic design and often traveled to make contacts, had sent a strange letter.
+target_words_to_translate: far, farbror, grafisk formgivning, skaffa kontakter
+
+[art_52_s008]
+sv: Farbror var en mycket lugn nordbo, närmare bestämt en stolt norrman.
+en: Uncle was a very calm northerner, more specifically a proud Norwegian.
+target_words_to_translate: far, farbror, lugn, nordbo, norrman
+
+[art_52_s009]
+sv: Han hade i sin ungdom ibland arbetat som försöksperson i olika studier, och var ofta en central huvudperson i familjens mest dramatiska historier.
+en: In his youth he had sometimes worked as a test subject in various studies, and was often a central protagonist in the family's most dramatic stories.
+target_words_to_translate: försöksperson, huvudperson
+
+[art_52_s010]
+sv: Vi började prata om vår stora språkfamilj och glädjen i att bevara vårt modersmål.
+en: We started talking about our large language family and the joy of preserving our mother tongue.
+target_words_to_translate: språkfamilj, modersmål
+
+[art_52_s011]
+sv: Jag försökte minnas när min far och mor alltid sa att ett djupt intresse för språk måste ligga i släkten.
+en: I tried to remember when my father and mother always said that a deep interest in languages must run in the family.
+target_words_to_translate: far, minnas, mor, ligga i släkten
+
+[art_52_s012]
+sv: Men min farbror hade en helt annan anledning att höra av sig nu.
+en: But my uncle had a completely different reason to get in touch now.
+target_words_to_translate: far, farbror, anledning
+
+[art_52_s013]
+sv: Dessutom hade min systerdotter och en annan dotter till min bror kommit för att lyssna.
+en: Furthermore, my niece and another daughter of my brother had come to listen.
+target_words_to_translate: systerdotter, dotter
+
+[art_52_s014]
+sv: Farbror hade tydligen ingått ett viktigt avtal med en känd japan om att ge bort en unik vänskapsgåva, en sällsynt nejlika, men han hade sagt en liten vit lögn om dess egentliga ursprung.
+en: Uncle had apparently entered into an important agreement with a famous Japanese person to give away a unique friendship gift, a rare carnation, but he had told a little white lie about its true origin.
+target_words_to_translate: far, farbror, avtal, japan, vänskapsgåva, nejlika, vit lögn, lögn
+
+[art_52_s015]
+sv: Farbror var i vanliga fall mycket noga med att aldrig flacka med blicken när han talade, utan han ville tvärtom alltid möta blicken tryggt.
+en: Uncle was usually very careful never to shift his gaze when he spoke, but quite the contrary, he always wanted to meet one's gaze confidently.
+target_words_to_translate: far, farbror, noga, flacka med blicken, utan, möta blicken
+
+[art_52_s016]
+sv: Han brukade stolt säga: "Man måste alltid kunna lita på mig."
+en: He used to proudly say, "You must always be able to trust me."
+target_words_to_translate: lita på
+
+[art_52_s017]
+sv: Han kände emellertid nu en djup skam över lögnen och han hade börjat känna skuld.
+en: However, he now felt a deep shame over the lie and he had begun to feel guilt.
+target_words_to_translate: lögn, emellertid, skam, känna skuld
+
+[art_52_s018]
+sv: "Det är en skam för … ja, för hela vår familj," sa min pappa, fast han förmodligen överdrev lite.
+en: "It is a shame for... well, for our entire family," my dad said, although he was probably exaggerating a bit.
+target_words_to_translate: skam, en skam för …
+
+[art_52_s019]
+sv: Han sa att det kändes som en väldigt feg lögn.
+en: He said it felt like a very cowardly lie.
+target_words_to_translate: lögn
+
+[art_52_s020]
+sv: Det var såklart inte ett hemskt brott, absolut inte hets mot folkgrupp, men ändå fel.
+en: It was of course not a terrible crime, absolutely not hate speech, but still wrong.
+target_words_to_translate: hets mot folkgrupp
+
+[art_52_s021]
+sv: Pappa ville absolut inte strida med farbror, men det fanns ju en tydlig orsak till att jag var lite besviken på honom.
+en: Dad absolutely did not want to fight with Uncle, but there was a clear reason why I was a bit disappointed in him.
+target_words_to_translate: strida, orsak, besviken
+
+[art_52_s022]
+sv: Min pappa bad oss att hjälpa till att servera kaffe och försöka komma överens om hur vi skulle beskriva detta för farbror när han väl kom tillbaka.
+en: My dad asked us to help serve coffee and try to agree on how we would describe this to Uncle once he returned.
+target_words_to_translate: hjälpa, servera, komma överens, beskriva, detta, tillbaka
+
+[art_52_s023]
+sv: "Vi får försöka göra det bästa av något som är tråkigt," sa jag.
+en: "We have to try to make the best of a bad situation," I said.
+target_words_to_translate: göra det bästa av något
+
+[art_52_s024]
+sv: Vår huvudfråga var hur vi skulle kunna få honom att släppa sin tunga ångest.
+en: Our main question was how we could get him to let go of his heavy anxiety.
+target_words_to_translate: huvudfråga, släppa
+
+[art_52_s025]
+sv: Vi ville att han skulle känna sig älskad trots sitt misstag.
+en: We wanted him to feel loved despite his mistake.
+target_words_to_translate: älskad
+
+[art_52_s026]
+sv: Även om man känner att man har kniven mot sin hals, ska man inte döma för snabbt, tyckte vår kloka talare till mor.
+en: Even if you feel like you have a knife to your throat, you shouldn't judge too quickly, thought our wise speaker of a mother.
+target_words_to_translate: hals, talare
+
+[art_53_s001]
+sv: Hej … Anna!
+en: Hi ... Anna!
+target_words_to_translate: Hej …
+
+[art_53_s002]
+sv: Hur är läget?
+en: How's it going?
+target_words_to_translate: Hur är läget?
+
+[art_53_s003]
+sv: Nu är vi framme i … vår fina gamla stad, och jag mår jättebra.
+en: Now we have arrived in... our beautiful old city, and I feel great.
+target_words_to_translate: Nu är vi framme i …, jag
+
+[art_53_s004]
+sv: Jag måste berätta något … något otroligt som precis hände.
+en: I have to tell you something... something incredible that just happened.
+target_words_to_translate: jag, Jag måste berätta något …, berätta
+
+[art_53_s005]
+sv: Herregud, du kommer inte att tro det!
+en: Oh my god, you won't believe it!
+target_words_to_translate: Herregud
+
+[art_53_s006]
+sv: En gammal nordisk släkting till mig dök plötsligt upp här.
+en: An old Nordic relative of mine suddenly showed up here.
+target_words_to_translate: nordisk, släkting
+
+[art_53_s007]
+sv: Han är känd för att vara väldigt händig och pålitlig, en genuint ordentlig man.
+en: He is known to be very handy and reliable, a genuinely decent man.
+target_words_to_translate: händig, pålitlig, ordentlig
+
+[art_53_s008]
+sv: Många brukar anse att han är enormt förmögen och rik.
+en: Many usually consider him to be enormously wealthy and rich.
+target_words_to_translate: anse, förmögen
+
+[art_53_s009]
+sv: "Du skojar!" sa jag när han var spontan och kom hit.
+en: "You're kidding!" I said when he spontaneously came here.
+target_words_to_translate: jag, Du skojar!, spontan
+
+[art_53_s010]
+sv: Han sa stolt att hans senaste utveckling på jobbet var en stor succé, mycket tack vare hans envishet.
+en: He proudly said that his latest development at work was a great success, much thanks to his stubbornness.
+target_words_to_translate: utveckling, succé, tack vare, envishet
+
+[art_53_s011]
+sv: Han är oftast utåtriktad och pratsam, men verkade lite orolig.
+en: He is usually extroverted and talkative, but seemed a bit worried.
+target_words_to_translate: utåtriktad, pratsam, orolig
+
+[art_53_s012]
+sv: Han avslöjade i hemlighet att han tyckte att jag var för slarvig och kanske även ganska lat.
+en: He secretly revealed that he thought I was too careless and maybe even quite lazy.
+target_words_to_translate: jag, i hemlighet, slarvig, lat
+
+[art_53_s013]
+sv: Det var en hemsk och rentav taskig sak att säga.
+en: It was a terrible and downright mean thing to say.
+target_words_to_translate: hemsk, taskig
+
+[art_53_s014]
+sv: Han var oartig och fällde faktiskt en jättedum kommentar.
+en: He was impolite and actually made a really stupid comment.
+target_words_to_translate: oartig, faktisk, jättedum
+
+[art_53_s015]
+sv: Jag ville verkligen inte vara falsk, så jag blev upprörd och inte alls nöjd.
+en: I really didn't want to be fake, so I got upset and not happy at all.
+target_words_to_translate: jag, falsk, nöjd
+
+[art_53_s016]
+sv: Man måste kunna koncentrera sig för att alltid vara snäll.
+en: One has to be able to concentrate to always be kind.
+target_words_to_translate: koncentrera sig, snäll
+
+[art_53_s017]
+sv: Han ville be att få mer kaffe, och passade också på att be om min hjälp för att söka ett stort jobb i stor skala åt en vän.
+en: He wanted to ask for more coffee, and also took the opportunity to ask for my help in applying for a big job on a large scale for a friend.
+target_words_to_translate: be att få, be om, söka, skala
+
+[art_53_s018]
+sv: Han brukade ofta sätta i system att utnyttja folks godhet.
+en: He often used to make a habit of exploiting people's kindness.
+target_words_to_translate: sätta i
+
+[art_53_s019]
+sv: Jag tyckte att hans beteende var detsamma som att vara egoistisk.
+en: I thought his behavior was the same as being selfish.
+target_words_to_translate: detsamma som
+
+[art_53_s020]
+sv: Förr i tiden diskuterade man ofta tydlig könsroll och utlänningar pratade om ”Den svenska synden”, men i dagens samhälle kräver all sann framgång att man har en bra inre egenskap som ett stort tålamod.
+en: In the past, people often discussed clear gender roles and foreigners talked about "The Swedish sin", but in today's society, all true success requires having a good inner trait like great patience.
+target_words_to_translate: könsroll, ”Den svenska synden”, framgång, egenskap, tålamod
+
+[art_53_s021]
+sv: Det är viktigt att vara harmonisk för att ens drömmar ska kunna bli verklighet.
+en: It is important to be harmonious in order for one's dreams to become a reality.
+target_words_to_translate: harmonisk, bli verklighet
+
+[art_53_s022]
+sv: Till slut kunde vi ändå komma fram till en bra lösning.
+en: In the end, we were still able to come up with a good solution.
+target_words_to_translate: komma fram
+
+[art_53_s023]
+sv: Han bad om ursäkt och jag lovade att besvara hans frågor för att få slut på konflikten.
+en: He apologized and I promised to answer his questions to put an end to the conflict.
+target_words_to_translate: besvara, för att få
+
+[art_53_s024]
+sv: Vi diskuterade hans nyhet och några små problem.
+en: We discussed his news and some small problems.
+target_words_to_translate: nyhet, små
+
+[art_53_s025]
+sv: Jag började berätta om mina planer.
+en: I started telling him about my plans.
+
+[art_53_s026]
+sv: Det brukar ju heta att ju mer …desto bättre, och vi pratade länge.
+en: It is usually said that the more... the better, and we talked for a long time.
+target_words_to_translate: ju mer …desto
+
+[art_53_s027]
+sv: Vi väntade tills stormen var över.
+en: We waited until the storm was over.
+target_words_to_translate: tills
+
+[art_53_s028]
+sv: Sedan stack han iväg snabbt som ett skott.
+en: Then he took off quick as a flash.
+target_words_to_translate: skott
+
+[art_53_s029]
+sv: Jag är trots allt glad och väldigt tacksam över att vi har en mycket mer meningsfull relation, du och jag.
+en: I am, after all, happy and very grateful that we have a much more meaningful relationship, you and I.
+target_words_to_translate: tacksam, meningsfull
+
+[art_53_s030]
+sv: Jag kan rekommendera att du reser hit snart.
+en: I can recommend that you travel here soon.
+target_words_to_translate: rekommendera
+
+[art_53_s031]
+sv: En varm hälsning till dig!
+en: Warm greetings to you!
+target_words_to_translate: hälsning
+
+[art_53_s032]
+sv: Längtar efter dig!
+en: Miss you!
+target_words_to_translate: Längtar efter dig!
+
+[art_54_s001]
+sv: Hejsan …
+Kära … Anna,
+Allt väl?
+en: Hi ...
+Dear ... Anna,
+All well?
+target_words_to_translate: Hejsan …, Kära …, Allt väl?
+
+[art_54_s002]
+sv: Är allt bra med dig?
+en: Is everything good with you?
+target_words_to_translate: Är allt bra med dig?
+
+[art_54_s003]
+sv: Här är allting toppen på min nya semester.
+en: Everything is great here on my new vacation.
+target_words_to_translate: Här är allting toppen
+
+[art_54_s004]
+sv: Har du hört vad som har hänt?
+en: Have you heard what happened?
+target_words_to_translate: Har du hört vad som har hänt?
+
+[art_54_s005]
+sv: Det hände en så rolig sak … i lördags när jag skulle slå en signal till en gammal bekant.
+en: Such a funny thing happened... last Saturday when I was going to give an old acquaintance a ring.
+target_words_to_translate: Det hände en så rolig sak …, slå en signal, bekant
+
+[art_54_s006]
+sv: Vet du vem jag träffade?
+en: Do you know who I met?
+target_words_to_translate: Vet du vem jag träffade?
+
+[art_54_s007]
+sv: Jag mötte Peter!
+en: I met Peter!
+
+[art_54_s008]
+sv: Vet du inte varför…?
+en: Don't you know why...?
+target_words_to_translate: Vet du inte varför…?, varför
+
+[art_54_s009]
+sv: Han har ju flyttat tillbaka, fastän han trivdes bra utomlands.
+en: He has actually moved back, even though he enjoyed it abroad.
+target_words_to_translate: fastän
+
+[art_54_s010]
+sv: "Är det sant?" frågade jag honom.
+en: "Is it true?" I asked him.
+target_words_to_translate: Är det sant?
+
+[art_54_s011]
+sv: Han var snabb som en vessla på att hälsa på mig med en artig och trevlig bugning.
+en: He was quick as a weasel to greet me with a polite and pleasant bow.
+target_words_to_translate: snabb som en vessla, hälsa, artig
+
+[art_54_s012]
+sv: Han sa att nuförtiden ser han väldigt trendig och äventyrlig ut.
+en: He said that nowadays he looks very trendy and adventurous.
+target_words_to_translate: nuförtiden, trendig, äventyrlig
+
+[art_54_s013]
+sv: Det var en riktig ljuspunkt på dagen, en känsla av ren lycka att se honom.
+en: It was a real highlight of the day, a feeling of pure happiness to see him.
+target_words_to_translate: ljuspunkt, lycka
+
+[art_54_s014]
+sv: Jag kunde inte låta bli att fantisera om gamla tider, allt kändes som historia i koncentrat.
+en: I couldn't help but fantasize about old times, everything felt like history concentrated.
+target_words_to_translate: fantisera, i koncentrat
+
+[art_54_s015]
+sv: Vi brukade alltid stötta varandra och han var en modig förebild för mig.
+en: We used to always support each other and he was a brave role model for me.
+target_words_to_translate: stötta, modig, förebild
+
+[art_54_s016]
+sv: Han ville utveckla sina idéer och var mycket lojal och extremt ärlig.
+en: He wanted to develop his ideas and was very loyal and extremely honest.
+target_words_to_translate: utveckla, lojal, ärlig
+
+[art_54_s017]
+sv: "Tänker ni… flytta hit nu?" frågade jag.
+en: "Are you... planning to move here now?" I asked.
+target_words_to_translate: Tänker ni…
+
+[art_54_s018]
+sv: Han sa ja, men han hade en tendens att snabbt ångra sig.
+en: He said yes, but he had a tendency to quickly change his mind.
+target_words_to_translate: tendens, ångra sig
+
+[art_54_s019]
+sv: Man måste akta sig för att förlora sig själv helt och hållet i en stad.
+en: You have to be careful not to completely lose yourself in a city.
+target_words_to_translate: akta sig, förlora, helt och hållet
+
+[art_54_s020]
+sv: Han tyckte att staden blivit väldigt omodern och att han inte hittat lugnet någonstans, varken här eller ingen annanstans.
+en: He thought the city had become very old-fashioned and that he had not found peace anywhere, neither here nor anywhere else.
+target_words_to_translate: omodern, ingen annanstans
+
+[art_54_s021]
+sv: "Man kan inte leva på andra," sa jag.
+en: "You can't live off others," I said.
+target_words_to_translate: leva på andra
+
+[art_54_s022]
+sv: "Du måste vara bussig och inte usel."
+en: "You have to be kind and not lousy."
+target_words_to_translate: bussig, usel
+
+[art_54_s023]
+sv: "Nej, fy." sa han.
+en: "No, ugh." he said.
+target_words_to_translate: Nej, fy.
+
+[art_54_s024]
+sv: "Jag skulle aldrig vara ofin.
+en: "I would never be impolite.
+target_words_to_translate: ofin
+
+[art_54_s025]
+sv: Det är icke en bra egenskap."
+en: That is not a good trait."
+target_words_to_translate: icke
+
+[art_54_s026]
+sv: Han var inte glad att behöva vara utan pengar.
+en: He was not happy having to be without money.
+target_words_to_translate: vara utan
+
+[art_54_s027]
+sv: Plötsligt kom en hysterisk kvinna fram och kastade en påse rakt i knät på honom!
+en: Suddenly a hysterical woman came up and threw a bag right in his lap!
+target_words_to_translate: hysterisk, i knät
+
+[art_54_s028]
+sv: Hon bar en märklig, stickande parfym.
+en: She wore a strange, pungent perfume.
+target_words_to_translate: stickande
+
+[art_54_s029]
+sv: "Lägg av!" skrek han.
+en: "Stop it!" he yelled.
+target_words_to_translate: Lägg av!
+
+[art_54_s030]
+sv: Han berättade att kvinnan trodde att han ville ha en affär med henne.
+en: He explained that the woman thought he wanted to have an affair with her.
+target_words_to_translate: ha en affär
+
+[art_54_s031]
+sv: Det är ibland svårt att lära känna människor ordentligt och man hinner inte känna någon väl innan det uppstår problem.
+en: It is sometimes difficult to get to know people properly and you don't have time to know someone well before problems arise.
+target_words_to_translate: lära känna, känna någon väl
+
+[art_54_s032]
+sv: "Hur länge?" frågade jag honom förvånat.
+en: "For how long?" I asked him surprised.
+target_words_to_translate: Hur länge?
+
+[art_54_s033]
+sv: "Ett bra tag," suckade han tyst.
+en: "A good while," he sighed quietly.
+
+[art_54_s034]
+sv: "Bry dig inte om … henne.
+en: "Don't pay attention to... her.
+target_words_to_translate: Bry dig inte om …
+
+[art_54_s035]
+sv: Hon är en etablerad men helt hopplös person, ja, tänk dig att alltid behöva bråka."
+en: She is an established but completely hopeless person, yes, imagine always having to argue."
+target_words_to_translate: etablerad, hopplös, tänk dig
+
+[art_54_s036]
+sv: Jag kände mig tvungen att sjunka ner i min stol och fundera vidare.
+en: I felt compelled to sink down in my chair and think further.
+target_words_to_translate: sjunka, vidare
+
+[art_54_s037]
+sv: Jag hoppas att vi snart kan ses och njuta av en mysig fika.
+en: I hope we can meet soon and enjoy a cozy fika.
+target_words_to_translate: njuta av
+
+[art_54_s038]
+sv: "Ha det så bra!" och "Du med /Du också." brukar vi ju skriva.
+en: "Take care!" and "You too." is what we usually write.
+target_words_to_translate: Du med /Du också.
+
+[art_55_s001]
+sv: Ett nytt liv med en vän
+
+I min tidiga barndom kände jag en snäll, gammal gumma.
+en: A new life with a friend
+
+In my early childhood I knew a kind, old woman.
+target_words_to_translate: barndom, gumma
+
+[art_55_s002]
+sv: Hennes liv var mycket fascinerande.
+en: Her life was very fascinating.
+target_words_to_translate: fascinerande
+
+[art_55_s003]
+sv: Hon brukade skriva ett långt inlägg i sin dagbok varje kväll om sina tankar.
+en: She used to write a long entry in her diary every evening about her thoughts.
+target_words_to_translate: inlägg
+
+[art_55_s004]
+sv: Hennes man brukade tyvärr ofta vara borta på resor, och det brukade ibland gå dåligt för honom i hans affärer.
+en: Unfortunately, her husband was often away on trips, and his business sometimes went badly.
+target_words_to_translate: vara borta, gå dåligt för
+
+[art_55_s005]
+sv: Han var ganska opålitlig och ofta olycklig över detta.
+en: He was quite unreliable and often unhappy about this.
+target_words_to_translate: opålitlig, olycklig
+
+[art_55_s006]
+sv: För att inte vara ensam valde hon att köpa en hund.
+en: To avoid being alone, she chose to buy a dog.
+
+[art_55_s007]
+sv: Det var en traditionell och lojal ras.
+en: It was a traditional and loyal breed.
+target_words_to_translate: traditionell
+
+[art_55_s008]
+sv: Den nya hunden gav henne en oerhörd glädje, en riktig lyckokick i vardagen.
+en: The new dog gave her immense joy, a real boost of happiness in everyday life.
+target_words_to_translate: oerhörd, lyckokick
+
+[art_55_s009]
+sv: Hunden var trofast, sällskaplig och otroligt hjälpsam hemma.
+en: The dog was faithful, sociable, and incredibly helpful at home.
+target_words_to_translate: trofast, sällskaplig, hjälpsam
+
+[art_55_s010]
+sv: Han var hur lugn som helst inomhus och var aldrig någonsin aggressiv.
+en: He was as calm as could be indoors and was never ever aggressive.
+target_words_to_translate: hur lugn som helst, aggressiv
+
+[art_55_s011]
+sv: Hon ville att allt i livet skulle vara så… som möjligt, nästan perfekt.
+en: She wanted everything in life to be as... as possible, almost perfect.
+target_words_to_translate: le, så… som möjligt
+
+[art_55_s012]
+sv: Hunden hade en enorm betydelse för hennes gemenskap med andra människor.
+en: The dog had a huge significance for her fellowship with other people.
+target_words_to_translate: betydelse, gemenskap
+
+[art_55_s013]
+sv: Hon brukade tjata på hunden att alltid vara lydig och ibland graciös, men hunden var istället ganska klumpig och mycket lekfull.
+en: She used to nag the dog to always be obedient and sometimes graceful, but the dog was instead quite clumsy and very playful.
+target_words_to_translate: le, tjata, lydig, graciös, klumpig, lekfull
+
+[art_55_s014]
+sv: Han var busig och stack ofta iväg, för att strax därefter snabbt följa efter henne hem igen.
+en: He was mischievous and often ran off, only to quickly follow her home again shortly after.
+target_words_to_translate: busig, följa efter
+
+[art_55_s015]
+sv: Han var nyfiken på allt nytt, men ibland framstod han som lite korkad.
+en: He was curious about everything new, but sometimes he seemed a bit stupid.
+target_words_to_translate: nyfiken, korkad
+
+[art_55_s016]
+sv: Gummans alla vänner, och även hennes nära och kära, tyckte direkt att hunden var gullig.
+en: All the old woman's friends, and also her loved ones, immediately thought the dog was cute.
+target_words_to_translate: gumma, nära och kära, gullig
+
+[art_55_s017]
+sv: Han var självständig, men kunde också ibland skrämma grannarna när han plötsligt blev galen och sprang runt i cirklar.
+en: He was independent, but could also sometimes scare the neighbors when he suddenly went crazy and ran around in circles.
+target_words_to_translate: le, självständig, skrämma, galen
+
+[art_55_s018]
+sv: En gång hittade de en gammal, smutsig hundrakronorssedel som hunden glatt drog fram ur en buske med sin blöta näsa.
+en: Once they found an old, dirty hundred-krona bill that the dog happily pulled out of a bush with his wet nose.
+target_words_to_translate: hundrakronorssedel, näsa
+
+[art_55_s019]
+sv: De fick sedan var sin glass.
+en: They then each got an ice cream.
+target_words_to_translate: var sin
+
+[art_55_s020]
+sv: Gumman var alltid generös och hon brukade regelbundet betala ut en del pengar till välgörenhet.
+en: The old woman was always generous and she used to regularly pay out some money to charity.
+target_words_to_translate: generös, betala ut, välgörenhet
+
+[art_55_s021]
+sv: Hon var kanske gammal men ändå väldigt påhittig.
+en: She might have been old but still very inventive.
+target_words_to_translate: påhittig
+
+[art_55_s022]
+sv: Ett riktigt spännande genombrott kom faktiskt när hon plötsligt blev en mycket framgångsrik lokal hundtränare.
+en: A really exciting breakthrough actually came when she suddenly became a very successful local dog trainer.
+target_words_to_translate: le, genombrott, faktisk, framgångsrik
+
+[art_55_s023]
+sv: Hon kunde på så sätt fördubbla sina små inkomster, vilket skapade en fortsatt stabil och bra ekonomi för henne.
+en: That way she could double her small income, which created a continued stable and good economy for her.
+target_words_to_translate: fördubbla, fortsatt
+
+[art_55_s024]
+sv: "Man behöver aldrig vara rädd för en trevlig hund," sa hon ofta.
+en: "You never need to be afraid of a nice dog," she often said.
+target_words_to_translate: vara rädd, rädd
+
+[art_55_s025]
+sv: Hunden blev aldrig stressad eller desperat, och hon själv var aldrig rädd i hans trygga sällskap.
+en: The dog never got stressed or desperate, and she herself was never afraid in his safe company.
+target_words_to_translate: rädd, desperat
+
+[art_55_s026]
+sv: "Ibland kan en vanlig dag kännas tråkig," sa hon ofta.
+en: "Sometimes a normal day can feel boring," she often said.
+target_words_to_translate: tråkig
+
+[art_55_s027]
+sv: "Men då måste man helt enkelt gilla läget och försöka se ljust på något trevligt som ändå händer.
+en: "But then you simply have to accept the situation and try to look on the bright side of something nice that is still happening.
+target_words_to_translate: gilla läget, se ljust på något
+
+[art_55_s028]
+sv: En bra hund är verkligen en sann vän.
+en: A good dog is truly a true friend.
+target_words_to_translate: sann
+
+[art_55_s029]
+sv: Allt kändes precis som förut när han var där."
+en: Everything felt just like before when he was there."
+target_words_to_translate: förut
+
+[art_55_s030]
+sv: Ett fint minne jag har är hur hon brukade viska tyst till hunden och le stort mot honom.
+en: A nice memory I have is how she used to whisper quietly to the dog and smile broadly at him.
+target_words_to_translate: minne, viska
+
+[art_55_s031]
+sv: "Vi kommer alltid att längta efter dig när du reser bort," sa hon till mig, och jag kände absolut detsamma för henne.
+en: "We will always miss you when you go away," she told me, and I felt exactly the same about her.
+target_words_to_translate: längta efter, detsamma
+
+[art_55_s032]
+sv: Hon var alltid väldigt förstående och enormt positiv.
+en: She was always very understanding and enormously positive.
+target_words_to_translate: förstående, positiv
+
+[art_55_s033]
+sv: Hon avslutade alltid sina fina små brev till mig med orden puss puss.
+en: She always ended her nice little letters to me with the words kiss kiss.
+target_words_to_translate: puss puss
+
+[art_56_s001]
+sv: Mannen på vår lilla ö
+
+Det sägs att… man lätt kan ha det tråkigt på landsbygden.
+en: The man on our little island
+
+It is said that... one can easily be bored in the countryside.
+target_words_to_translate: ö, Det sägs att…, ha det tråkigt
+
+[art_56_s002]
+sv: Jag bor på en härlig ö, och jag är stolt över att vara en lantis.
+en: I live on a lovely island, and I am proud to be a country person.
+target_words_to_translate: ö, härlig, lantis
+
+[art_56_s003]
+sv: Här finns en man som brukar bjuda in till middag under sitt stora, blå tak.
+en: There is a man here who usually invites people for dinner under his large, blue roof.
+target_words_to_translate: bjuda, blå, tak
+
+[art_56_s004]
+sv: Han är känd som byns flintskallig man.
+en: He is known as the village's bald man.
+target_words_to_translate: flintskallig
+
+[art_56_s005]
+sv: Han var gift med en trevlig kvinna, och deras långa äktenskap kändes som en sjungande vacker dröm.
+en: He was married to a nice woman, and their long marriage felt like a singing beautiful dream.
+target_words_to_translate: ö, gift med, med, äktenskap, sjungande
+
+[art_56_s006]
+sv: Hon flyttade och sedan dess känner han en stor sorg.
+en: She moved and since then he feels a great sorrow.
+target_words_to_translate: sedan dess, sorg
+
+[art_56_s007]
+sv: Det var synd om honom, tyckte många grannar.
+en: Many neighbors felt sorry for him.
+target_words_to_translate: synd
+
+[art_56_s008]
+sv: Han ville laga god mat för alla och försöka locka gäster för att skapa en bra stämning i huset.
+en: He wanted to cook good food for everyone and try to attract guests to create a good atmosphere in the house.
+target_words_to_translate: ö, laga, locka, stämning
+
+[art_56_s009]
+sv: Han sa att faktum är att han verkligen ville vara en hedersman och hjälpa till med byns utveckling.
+en: He said that the fact is he really wanted to be a man of honor and help with the village's development.
+target_words_to_translate: med, faktum är att, hedersman, hedersman
+
+[art_56_s010]
+sv: Man kan kalla honom en fantastisk hedersman på många sätt.
+en: You can call him a fantastic man of honor in many ways.
+target_words_to_translate: hedersman, hedersman
+
+[art_56_s011]
+sv: Hans starka identitet byggde på att alltid tala sanning.
+en: His strong identity was built on always telling the truth.
+target_words_to_translate: identitet, tala sanning
+
+[art_56_s012]
+sv: Han sa ofta: "Förstår du?
+en: He often said: "Do you understand?
+target_words_to_translate: ö, Förstår du?
+
+[art_56_s013]
+sv: Man får aldrig skvallra om sina grannar."
+en: You must never gossip about your neighbors."
+target_words_to_translate: skvallra
+
+[art_56_s014]
+sv: Han kunde ge råd till exakt alla som behövde det.
+en: He could give advice to exactly everyone who needed it.
+target_words_to_translate: ö, ge råd
+
+[art_56_s015]
+sv: Han brukade till och med tända ett ljus för dem han tänkt på och ville beundra.
+en: He even used to light a candle for those he thought of and wanted to admire.
+target_words_to_translate: ö, med, ljus, tänkt, beundra
+
+[art_56_s016]
+sv: Men en ny man flyttade till byn.
+en: But a new man moved to the village.
+
+[art_56_s017]
+sv: Han var en riktig mytoman och en farlig lögnare.
+en: He was a real mythomaniac and a dangerous liar.
+target_words_to_translate: ö, mytoman, lögnare
+
+[art_56_s018]
+sv: Han ville bara luras och bråka.
+en: He just wanted to trick and fight.
+target_words_to_translate: luras
+
+[art_56_s019]
+sv: Han var väldigt snabbtänkt och verkade seriös på ytan, men var ganska otrevlig inuti.
+en: He was very quick-thinking and seemed serious on the surface, but was quite unpleasant on the inside.
+target_words_to_translate: ö, tänkt, snabbtänkt, seriös, otrevlig
+
+[art_56_s020]
+sv: Han började genast skruva på sig när man ställde djupa frågor.
+en: He immediately started squirming when asked deep questions.
+target_words_to_translate: skruva på sig
+
+[art_56_s021]
+sv: Hans konstiga beteende var mycket irriterande, men ändå blev man tyvärr lite lockad av hans vilda historier.
+en: His strange behavior was very annoying, but still you unfortunately became a little intrigued by his wild stories.
+target_words_to_translate: locka, irriterande, lockad
+
+[art_56_s022]
+sv: "Hur snabbt?" frågade vi ofta när han stolt berättade en osannolik variant av en händelse.
+en: "How fast?" we often asked when he proudly told an unlikely version of an event.
+target_words_to_translate: Hur snabbt?, osannolik, variant
+
+[art_56_s023]
+sv: Han var en icke-rökare, och han ville aldrig hålla sin aggressiva hund kopplad.
+en: He was a non-smoker, and he never wanted to keep his aggressive dog on a leash.
+target_words_to_translate: icke-rökare, kopplad
+
+[art_56_s024]
+sv: Han var inte alls kontrollerad.
+en: He was not at all controlled.
+target_words_to_translate: kontrollerad, tro
+
+[art_56_s025]
+sv: Det kunde ganska snart visa sig att hans ord inte alls var en självklar sanning.
+en: It soon turned out that his words were not an obvious truth at all.
+target_words_to_translate: visa sig, självklar
+
+[art_56_s026]
+sv: Vi slutade helt att tro på hans berättelser.
+en: We completely stopped believing his stories.
+target_words_to_translate: tro
+
+[art_56_s027]
+sv: Han tyckte om att använda engelska uttryck och pratade ofta med ord som "one’s" för att verka internationell.
+en: He liked to use English expressions and often spoke with words like "one's" to appear international.
+target_words_to_translate: one’s
+
+[art_56_s028]
+sv: "Är det en acceptabel prognos för vår by?" sa ordföranden med en djup suck.
+en: "Is that an acceptable forecast for our village?" said the chairman with a deep sigh.
+target_words_to_translate: acceptabel, prognos, suck
+
+[art_56_s029]
+sv: Allt var definitivt inte frid och fröjd längre.
+en: Everything was definitely not all peace and joy anymore.
+target_words_to_translate: frid och fröjd
+
+[art_56_s030]
+sv: Han ville ofta lova att vara snäll, men han blev bara sur när vi ifrågasatte honom.
+en: He often wanted to promise to be kind, but he only got sulky when we questioned him.
+target_words_to_translate: lova, sur
+
+[art_56_s031]
+sv: "Helt otroligt!" sa vi.
+en: "Absolutely incredible!" we said.
+target_words_to_translate: Helt otroligt!
+
+[art_56_s032]
+sv: Han ville vara lik en god människa, och vi bar på ett litet hopp om att han skulle ändra sig.
+en: He wanted to be like a good person, and we carried a little hope that he would change.
+target_words_to_translate: vara lik, hopp
+
+[art_56_s033]
+sv: Men han vågade inte stanna, och därför blev en obligatorisk flytt det enda valet.
+en: But he didn't dare to stay, and therefore a mandatory move became the only choice.
+target_words_to_translate: våga, obligatorisk
+

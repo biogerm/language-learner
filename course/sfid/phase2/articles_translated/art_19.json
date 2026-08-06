@@ -8,39 +8,1055 @@
     "target_word_count": 60,
     "sentences": [
         {
-            "sentence_id": "art19_s001",
-            "sv": "\"–Hej! Det var länge sedan!\" sa jag när jag mötte min gamla vän i skogen.\n\"Va?\" sa hon. Sedan kände hon igen mig.\n\"Jag måste berätta en sak/en grej…\" började hon. \"Har du hört vad XX gjort?\" frågade hon och log. \n\"Nej, jag har ingen åsikt om kändisar,\" svarade jag bestämt. \n\"Har du/ni hört att?\" skämtade hon, \"han ska ha planer på att abdikera från sitt jobb som personlig tränare!\" Hennes berättelse kändes som en rolig abdikation från allvaret, men det var skönt att vara ute i naturen.\n\n\"Har du hört talas om …?\" frågade hon och pekade på en gammal stenhäll. \"Där finns en hällristning från ett tidigt århundrade. Det fanns en katolik som var känd för att ha rest hit dragen av sex hästar.\"\n\nHon hade en röd- och vitrandig jacka och en mintgrön mössa. Vi satte oss bland träden. \"Det finns en missuppfattning om skogen. Vissa tror att djur kommer att anfalla, men de är ofta oskyldiga,\" sa hon. Vi köpte lite godis i lösvikt och lade en klick sylt på en bit bröd. Hon frågade om min vegan-korv gjord på havre. \n\"Har du ätit det någon gång?\" frågade jag. \n\"Nej, det har jag aldrig gjort!\" skrattade hon. Hon kunde inte låta bli att smaka. Smaken var jättestark och fick hennes ögon att svida.\n\nSedan pratade vi om vår natur. \"På 70-talet under en högkonjunktur började den gröna vågen slå igenom. Folk ville ha ett naturligt kretslopp för allt från regn till avlopp,\" sa hon. Idag är en modern miljörörelse viktig i varje miljö- och klimatdebatt. Ordet klimat syns i varje taggmoln online. \n\nMånga unga vill engagera sig i miljön. Även min lilla guldfisk verkar vilja ha rent vatten! \"Det är svårt att hinna med att bygga ett starkt skydd mot föroreningar, men vi måste motivera fler att acceptera fakta och inte överdriva rädslan,\" sa hon. Ibland känns det som om vi pratar på grönländska, ingen förstår varandra. Ett namn på problemet är okunskap. Det kändes bra att döpa problemen och förhoppningsvis få tillbaka hoppet. Innan vi gick kastade vi en snöboll mot ett litet apelsinträd i ett växthus. Vi riskerar att få problem om vi inte agerar, men vi kämpar på!",
+            "sentence_id": "art_19_s001",
+            "sv": "\"–Hej! Det var länge sedan!\" sa jag när jag mötte min gamla vän i skogen.",
             "en": "\"Hello! It's been a long time!\" I said when I met my old friend in the forest.",
             "target_words": [
                 {
                     "word_in_sentence": "–Hej! Det var länge sedan!",
                     "base_form": "–Hej! Det var länge sedan!",
+                    "contextual_en": "Hello! It's been a long time!",
                     "position_start": 1,
-                    "position_end": 27,
-                    "contextual_en": "\"Hello! It's been a long time!\""
+                    "position_end": 27
                 }
             ],
             "secondary_words": [
                 {
-                    "word_in_sentence": "kände hon igen mig",
-                    "base_form": "kände hon igen mig",
-                    "position_start": 94,
-                    "position_end": 112,
-                    "contextual_en": "she recognized me"
+                    "word_in_sentence": "skogen",
+                    "base_form": "skog",
+                    "contextual_en": "the forest",
+                    "position_start": 66,
+                    "position_end": 72
                 },
                 {
-                    "word_in_sentence": "skämtade",
-                    "base_form": "skämtade",
-                    "position_start": 297,
-                    "position_end": 305,
-                    "contextual_en": "joked"
+                    "word_in_sentence": "mötte",
+                    "base_form": "möta",
+                    "contextual_en": "met",
+                    "position_start": 44,
+                    "position_end": 49
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_19_s002",
+            "sv": "\"Va?\" sa hon.",
+            "en": "\"What?\" she said.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Va?",
+                    "base_form": "Va?",
+                    "contextual_en": "What?",
+                    "position_start": 1,
+                    "position_end": 4
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "sa",
+                    "base_form": "säga",
+                    "contextual_en": "said",
+                    "position_start": 6,
+                    "position_end": 8
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_19_s003",
+            "sv": "Sedan kände hon igen mig.",
+            "en": "Then she recognized me.",
+            "target_words": [
+                {
+                    "word_in_sentence": "kände hon igen",
+                    "base_form": "känna igen",
+                    "contextual_en": "recognized",
+                    "position_start": 6,
+                    "position_end": 20
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "sedan",
+                    "base_form": "sedan",
+                    "contextual_en": "then",
+                    "position_start": -1,
+                    "position_end": -1
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_19_s004",
+            "sv": "\"Jag måste berätta en sak/en grej…\" började hon.",
+            "en": "\"I have to tell you something/a thing...\" she started.",
+            "target_words": [],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "började",
+                    "base_form": "börja",
+                    "contextual_en": "started",
+                    "position_start": 36,
+                    "position_end": 43
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_19_s005",
+            "sv": "\"Har du hört vad XX gjort?\" frågade hon och log.",
+            "en": "\"Have you heard what XX did?\" she asked and smiled.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Har du hört vad XX gjort?",
+                    "base_form": "Har du hört vad XX gjort?",
+                    "contextual_en": "Have you heard what XX did?",
+                    "position_start": 1,
+                    "position_end": 26
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "log",
+                    "base_form": "le",
+                    "contextual_en": "smiled",
+                    "position_start": 44,
+                    "position_end": 47
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_19_s006",
+            "sv": "\"Nej, jag har ingen åsikt om kändisar,\" svarade jag bestämt.",
+            "en": "\"No, I have no opinion about celebrities,\" I answered firmly.",
+            "target_words": [
+                {
+                    "word_in_sentence": "ingen åsikt",
+                    "base_form": "ingen åsikt",
+                    "contextual_en": "no opinion",
+                    "position_start": 14,
+                    "position_end": 25
                 },
+                {
+                    "word_in_sentence": "bestämt",
+                    "base_form": "bestämd",
+                    "contextual_en": "firmly",
+                    "position_start": 52,
+                    "position_end": 59
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "kändisar",
+                    "base_form": "kändis",
+                    "contextual_en": "celebrities",
+                    "position_start": 29,
+                    "position_end": 37
+                },
+                {
+                    "word_in_sentence": "svarade",
+                    "base_form": "svara",
+                    "contextual_en": "answered",
+                    "position_start": 40,
+                    "position_end": 47
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_19_s007",
+            "sv": "\"Har du/ni hört att?\" skämtade hon, \"han ska ha planer på att abdikera från sitt jobb som personlig tränare!\"",
+            "en": "\"Have you heard that?\" she joked, \"he allegedly has plans to abdicate from his job as a personal trainer!\"",
+            "target_words": [
+                {
+                    "word_in_sentence": "ha planer",
+                    "base_form": "ha planer",
+                    "contextual_en": "has plans",
+                    "position_start": 45,
+                    "position_end": 54
+                },
+                {
+                    "word_in_sentence": "abdikera",
+                    "base_form": "abdikera",
+                    "contextual_en": "abdicate",
+                    "position_start": 62,
+                    "position_end": 70
+                },
+                {
+                    "word_in_sentence": "personlig tränare",
+                    "base_form": "personlig tränare",
+                    "contextual_en": "personal trainer",
+                    "position_start": 90,
+                    "position_end": 107
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "skämtade",
+                    "base_form": "skämta",
+                    "contextual_en": "joked",
+                    "position_start": 22,
+                    "position_end": 30
+                },
+                {
+                    "word_in_sentence": "jobb",
+                    "base_form": "jobb",
+                    "contextual_en": "job",
+                    "position_start": 81,
+                    "position_end": 85
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_19_s008",
+            "sv": "Hennes berättelse kändes som en rolig abdikation från allvaret, men det var skönt att vara ute i naturen.",
+            "en": "Her story felt like a fun abdication from seriousness, but it was nice to be out in nature.",
+            "target_words": [
+                {
+                    "word_in_sentence": "abdikation",
+                    "base_form": "abdikation",
+                    "contextual_en": "abdication",
+                    "position_start": 38,
+                    "position_end": 48
+                },
+                {
+                    "word_in_sentence": "vara",
+                    "base_form": "vara",
+                    "contextual_en": "to be",
+                    "position_start": 86,
+                    "position_end": 90
+                },
+                {
+                    "word_in_sentence": "ute i naturen",
+                    "base_form": "ute i naturen",
+                    "contextual_en": "out in nature",
+                    "position_start": 91,
+                    "position_end": 104
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "berättelse",
+                    "base_form": "berättelse",
+                    "contextual_en": "story",
+                    "position_start": 7,
+                    "position_end": 17
+                },
+                {
+                    "word_in_sentence": "skönt",
+                    "base_form": "skön",
+                    "contextual_en": "nice",
+                    "position_start": 76,
+                    "position_end": 81
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_19_s009",
+            "sv": "\"Har du hört talas om …?\" frågade hon och pekade på en gammal stenhäll.",
+            "en": "\"Have you heard of...?\" she asked and pointed at an old rock slab.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Har du hört talas om …?",
+                    "base_form": "Har du hört talas om …?",
+                    "contextual_en": "Have you heard of...?",
+                    "position_start": 1,
+                    "position_end": 24
+                },
+                {
+                    "word_in_sentence": "stenhäll",
+                    "base_form": "stenhäll",
+                    "contextual_en": "rock slab",
+                    "position_start": 62,
+                    "position_end": 70
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "pekade",
+                    "base_form": "peka",
+                    "contextual_en": "pointed",
+                    "position_start": 42,
+                    "position_end": 48
+                },
+                {
+                    "word_in_sentence": "gammal",
+                    "base_form": "gammal",
+                    "contextual_en": "old",
+                    "position_start": 55,
+                    "position_end": 61
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_19_s010",
+            "sv": "\"Där finns en hällristning från ett tidigt århundrade.",
+            "en": "\"There is a petroglyph from an early century.",
+            "target_words": [
                 {
                     "word_in_sentence": "hällristning",
                     "base_form": "hällristning",
-                    "position_start": 578,
-                    "position_end": 590,
-                    "contextual_en": "rock carving"
+                    "contextual_en": "petroglyph",
+                    "position_start": 14,
+                    "position_end": 26
+                },
+                {
+                    "word_in_sentence": "århundrade",
+                    "base_form": "århundrade",
+                    "contextual_en": "century",
+                    "position_start": 43,
+                    "position_end": 53
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "tidigt",
+                    "base_form": "tidig",
+                    "contextual_en": "early",
+                    "position_start": 36,
+                    "position_end": 42
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_19_s011",
+            "sv": "Det fanns en katolik som var känd för att ha rest hit dragen av sex hästar.\"",
+            "en": "There was a Catholic who was known to have traveled here drawn by six horses.\"",
+            "target_words": [
+                {
+                    "word_in_sentence": "katolik",
+                    "base_form": "katolik",
+                    "contextual_en": "Catholic",
+                    "position_start": 13,
+                    "position_end": 20
+                },
+                {
+                    "word_in_sentence": "känd för att ha",
+                    "base_form": "känd för att ha",
+                    "contextual_en": "known to have",
+                    "position_start": 29,
+                    "position_end": 44
+                },
+                {
+                    "word_in_sentence": "dragen av sex hästar",
+                    "base_form": "dragen av sex hästar",
+                    "contextual_en": "drawn by six horses",
+                    "position_start": 54,
+                    "position_end": 74
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "rest",
+                    "base_form": "resa",
+                    "contextual_en": "traveled",
+                    "position_start": 45,
+                    "position_end": 49
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_19_s012",
+            "sv": "Hon hade en röd- och vitrandig jacka och en mintgrön mössa.",
+            "en": "She had a red- and white-striped jacket and a mint green beanie.",
+            "target_words": [
+                {
+                    "word_in_sentence": "röd- och vitrandig",
+                    "base_form": "röd- och vitrandig",
+                    "contextual_en": "red- and white-striped",
+                    "position_start": 12,
+                    "position_end": 30
+                },
+                {
+                    "word_in_sentence": "mintgrön",
+                    "base_form": "mintgrön",
+                    "contextual_en": "mint green",
+                    "position_start": 44,
+                    "position_end": 52
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "jacka",
+                    "base_form": "jacka",
+                    "contextual_en": "jacket",
+                    "position_start": 31,
+                    "position_end": 36
+                },
+                {
+                    "word_in_sentence": "mössa",
+                    "base_form": "mössa",
+                    "contextual_en": "beanie",
+                    "position_start": 53,
+                    "position_end": 58
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_19_s013",
+            "sv": "Vi satte oss bland träden.",
+            "en": "We sat down among the trees.",
+            "target_words": [
+                {
+                    "word_in_sentence": "bland",
+                    "base_form": "bland",
+                    "contextual_en": "among",
+                    "position_start": 13,
+                    "position_end": 18
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "träden",
+                    "base_form": "träd",
+                    "contextual_en": "the trees",
+                    "position_start": 19,
+                    "position_end": 25
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_19_s014",
+            "sv": "\"Det finns en missuppfattning om skogen.",
+            "en": "\"There is a misconception about the forest.",
+            "target_words": [
+                {
+                    "word_in_sentence": "missuppfattning",
+                    "base_form": "missuppfattning",
+                    "contextual_en": "misconception",
+                    "position_start": 14,
+                    "position_end": 29
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "skogen",
+                    "base_form": "skog",
+                    "contextual_en": "the forest",
+                    "position_start": 33,
+                    "position_end": 39
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_19_s015",
+            "sv": "Vissa tror att djur kommer att anfalla, men de är ofta oskyldiga,\" sa hon.",
+            "en": "Some believe that animals will attack, but they are often innocent,\" she said.",
+            "target_words": [
+                {
+                    "word_in_sentence": "anfalla",
+                    "base_form": "anfalla",
+                    "contextual_en": "attack",
+                    "position_start": 31,
+                    "position_end": 38
+                },
+                {
+                    "word_in_sentence": "oskyldiga",
+                    "base_form": "oskyldig",
+                    "contextual_en": "innocent",
+                    "position_start": 55,
+                    "position_end": 64
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "djur",
+                    "base_form": "djur",
+                    "contextual_en": "animals",
+                    "position_start": 15,
+                    "position_end": 19
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_19_s016",
+            "sv": "Vi köpte lite godis i lösvikt och lade en klick sylt på en bit bröd.",
+            "en": "We bought some candy in bulk and put a dollop of jam on a piece of bread.",
+            "target_words": [
+                {
+                    "word_in_sentence": "lösvikt",
+                    "base_form": "lösvikt",
+                    "contextual_en": "in bulk",
+                    "position_start": 22,
+                    "position_end": 29
+                },
+                {
+                    "word_in_sentence": "klick",
+                    "base_form": "klick",
+                    "contextual_en": "dollop",
+                    "position_start": 42,
+                    "position_end": 47
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "godis",
+                    "base_form": "godis",
+                    "contextual_en": "candy",
+                    "position_start": 14,
+                    "position_end": 19
+                },
+                {
+                    "word_in_sentence": "bröd",
+                    "base_form": "bröd",
+                    "contextual_en": "bread",
+                    "position_start": 63,
+                    "position_end": 67
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_19_s017",
+            "sv": "Hon frågade om min vegan-korv gjord på havre.",
+            "en": "She asked about my vegan sausage made of oats.",
+            "target_words": [
+                {
+                    "word_in_sentence": "korv",
+                    "base_form": "korv",
+                    "contextual_en": "sausage",
+                    "position_start": 25,
+                    "position_end": 29
+                },
+                {
+                    "word_in_sentence": "havre",
+                    "base_form": "havre",
+                    "contextual_en": "oats",
+                    "position_start": 39,
+                    "position_end": 44
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "gjord",
+                    "base_form": "gjord",
+                    "contextual_en": "made",
+                    "position_start": 30,
+                    "position_end": 35
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_19_s018",
+            "sv": "\"Har du ätit det någon gång?\" frågade jag.",
+            "en": "\"Have you ever eaten that?\" I asked.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Har du ätit det någon gång?",
+                    "base_form": "Har du ätit det någon gång?",
+                    "contextual_en": "Have you ever eaten that?",
+                    "position_start": 1,
+                    "position_end": 28
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "frågade",
+                    "base_form": "fråga",
+                    "contextual_en": "asked",
+                    "position_start": 30,
+                    "position_end": 37
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_19_s019",
+            "sv": "\"Nej, det har jag aldrig gjort!\" skrattade hon.",
+            "en": "\"No, I have never done that!\" she laughed.",
+            "target_words": [
+                {
+                    "word_in_sentence": "Nej, det har jag aldrig gjort!",
+                    "base_form": "Nej, det har jag aldrig gjort!",
+                    "contextual_en": "No, I have never done that!",
+                    "position_start": 1,
+                    "position_end": 31
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "skrattade",
+                    "base_form": "skratta",
+                    "contextual_en": "laughed",
+                    "position_start": 33,
+                    "position_end": 42
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_19_s020",
+            "sv": "Hon kunde inte låta bli att smaka.",
+            "en": "She couldn't resist tasting it.",
+            "target_words": [
+                {
+                    "word_in_sentence": "låta bli",
+                    "base_form": "låta bli",
+                    "contextual_en": "resist",
+                    "position_start": 15,
+                    "position_end": 23
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "smaka",
+                    "base_form": "smaka",
+                    "contextual_en": "taste",
+                    "position_start": 28,
+                    "position_end": 33
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_19_s021",
+            "sv": "Smaken var jättestark och fick hennes ögon att svida.",
+            "en": "The taste was very strong and made her eyes sting.",
+            "target_words": [
+                {
+                    "word_in_sentence": "jättestark",
+                    "base_form": "jättestark",
+                    "contextual_en": "very strong",
+                    "position_start": 11,
+                    "position_end": 21
+                },
+                {
+                    "word_in_sentence": "svida",
+                    "base_form": "svida",
+                    "contextual_en": "sting",
+                    "position_start": 47,
+                    "position_end": 52
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "smaken",
+                    "base_form": "smak",
+                    "contextual_en": "the taste",
+                    "position_start": -1,
+                    "position_end": -1
+                },
+                {
+                    "word_in_sentence": "ögon",
+                    "base_form": "öga",
+                    "contextual_en": "eyes",
+                    "position_start": 38,
+                    "position_end": 42
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_19_s022",
+            "sv": "Sedan pratade vi om vår natur.",
+            "en": "Then we talked about our nature.",
+            "target_words": [],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "pratade",
+                    "base_form": "prata",
+                    "contextual_en": "talked",
+                    "position_start": 6,
+                    "position_end": 13
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_19_s023",
+            "sv": "\"På 70-talet under en högkonjunktur började den gröna vågen slå igenom.",
+            "en": "\"In the 70s during an economic boom, the green wave started to break through.",
+            "target_words": [
+                {
+                    "word_in_sentence": "högkonjunktur",
+                    "base_form": "högkonjunktur",
+                    "contextual_en": "economic boom",
+                    "position_start": 22,
+                    "position_end": 35
+                },
+                {
+                    "word_in_sentence": "gröna vågen",
+                    "base_form": "gröna vågen",
+                    "contextual_en": "green wave",
+                    "position_start": 48,
+                    "position_end": 59
+                },
+                {
+                    "word_in_sentence": "slå igenom",
+                    "base_form": "slå igenom",
+                    "contextual_en": "break through",
+                    "position_start": 60,
+                    "position_end": 70
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "började",
+                    "base_form": "börja",
+                    "contextual_en": "started",
+                    "position_start": 36,
+                    "position_end": 43
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_19_s024",
+            "sv": "Folk ville ha ett naturligt kretslopp för allt från regn till avlopp,\" sa hon.",
+            "en": "People wanted a natural cycle for everything from rain to sewage,\" she said.",
+            "target_words": [
+                {
+                    "word_in_sentence": "kretslopp",
+                    "base_form": "kretslopp",
+                    "contextual_en": "cycle",
+                    "position_start": 28,
+                    "position_end": 37
+                },
+                {
+                    "word_in_sentence": "avlopp",
+                    "base_form": "avlopp",
+                    "contextual_en": "sewage",
+                    "position_start": 62,
+                    "position_end": 68
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "regn",
+                    "base_form": "regn",
+                    "contextual_en": "rain",
+                    "position_start": 52,
+                    "position_end": 56
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_19_s025",
+            "sv": "Idag är en modern miljörörelse viktig i varje miljö- och klimatdebatt.",
+            "en": "Today a modern environmental movement is important in every environmental and climate debate.",
+            "target_words": [
+                {
+                    "word_in_sentence": "miljörörelse",
+                    "base_form": "miljörörelse",
+                    "contextual_en": "environmental movement",
+                    "position_start": 18,
+                    "position_end": 30
+                },
+                {
+                    "word_in_sentence": "miljö- och klimatdebatt",
+                    "base_form": "miljö- och klimatdebatt",
+                    "contextual_en": "environmental and climate debate",
+                    "position_start": 46,
+                    "position_end": 69
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "modern",
+                    "base_form": "modern",
+                    "contextual_en": "modern",
+                    "position_start": 11,
+                    "position_end": 17
+                },
+                {
+                    "word_in_sentence": "viktig",
+                    "base_form": "viktig",
+                    "contextual_en": "important",
+                    "position_start": 31,
+                    "position_end": 37
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_19_s026",
+            "sv": "Ordet klimat syns i varje taggmoln online.",
+            "en": "The word climate appears in every tag cloud online.",
+            "target_words": [
+                {
+                    "word_in_sentence": "klimat",
+                    "base_form": "klimat",
+                    "contextual_en": "climate",
+                    "position_start": 6,
+                    "position_end": 12
+                },
+                {
+                    "word_in_sentence": "taggmoln",
+                    "base_form": "taggmoln",
+                    "contextual_en": "tag cloud",
+                    "position_start": 26,
+                    "position_end": 34
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "syns",
+                    "base_form": "synas",
+                    "contextual_en": "appears",
+                    "position_start": 13,
+                    "position_end": 17
+                },
+                {
+                    "word_in_sentence": "ordet",
+                    "base_form": "ord",
+                    "contextual_en": "the word",
+                    "position_start": -1,
+                    "position_end": -1
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_19_s027",
+            "sv": "Många unga vill engagera sig i miljön.",
+            "en": "Many young people want to get involved in the environment.",
+            "target_words": [
+                {
+                    "word_in_sentence": "unga",
+                    "base_form": "ung",
+                    "contextual_en": "young people",
+                    "position_start": 6,
+                    "position_end": 10
+                },
+                {
+                    "word_in_sentence": "engagera sig i",
+                    "base_form": "engagera sig i",
+                    "contextual_en": "get involved in",
+                    "position_start": 16,
+                    "position_end": 30
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "miljön",
+                    "base_form": "miljö",
+                    "contextual_en": "the environment",
+                    "position_start": 31,
+                    "position_end": 37
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_19_s028",
+            "sv": "Även min lilla guldfisk verkar vilja ha rent vatten!",
+            "en": "Even my little goldfish seems to want clean water!",
+            "target_words": [
+                {
+                    "word_in_sentence": "guldfisk",
+                    "base_form": "guldfisk",
+                    "contextual_en": "goldfish",
+                    "position_start": 15,
+                    "position_end": 23
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "rent",
+                    "base_form": "ren",
+                    "contextual_en": "clean",
+                    "position_start": 40,
+                    "position_end": 44
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_19_s029",
+            "sv": "\"Det är svårt att hinna med att bygga ett starkt skydd mot föroreningar, men vi måste motivera fler att acceptera fakta och inte överdriva rädslan,\" sa hon.",
+            "en": "\"It is hard to keep up with building strong protection against pollution, but we must motivate more people to accept facts and not exaggerate fear,\" she said.",
+            "target_words": [
+                {
+                    "word_in_sentence": "hinna med",
+                    "base_form": "hinna med",
+                    "contextual_en": "keep up with",
+                    "position_start": 18,
+                    "position_end": 27
+                },
+                {
+                    "word_in_sentence": "skydd mot",
+                    "base_form": "skydd mot",
+                    "contextual_en": "protection against",
+                    "position_start": 49,
+                    "position_end": 58
+                },
+                {
+                    "word_in_sentence": "motivera",
+                    "base_form": "motivera",
+                    "contextual_en": "motivate",
+                    "position_start": 86,
+                    "position_end": 94
+                },
+                {
+                    "word_in_sentence": "acceptera",
+                    "base_form": "acceptera",
+                    "contextual_en": "accept",
+                    "position_start": 104,
+                    "position_end": 113
+                },
+                {
+                    "word_in_sentence": "överdriva",
+                    "base_form": "överdriva",
+                    "contextual_en": "exaggerate",
+                    "position_start": 129,
+                    "position_end": 138
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "bygga",
+                    "base_form": "bygga",
+                    "contextual_en": "build",
+                    "position_start": 32,
+                    "position_end": 37
+                },
+                {
+                    "word_in_sentence": "fakta",
+                    "base_form": "fakta",
+                    "contextual_en": "facts",
+                    "position_start": 114,
+                    "position_end": 119
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_19_s030",
+            "sv": "Ibland känns det som om vi pratar på grönländska, ingen förstår varandra.",
+            "en": "Sometimes it feels like we are talking in Greenlandic, nobody understands each other.",
+            "target_words": [
+                {
+                    "word_in_sentence": "grönländska",
+                    "base_form": "grönländska",
+                    "contextual_en": "Greenlandic",
+                    "position_start": 37,
+                    "position_end": 48
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "ibland",
+                    "base_form": "ibland",
+                    "contextual_en": "sometimes",
+                    "position_start": -1,
+                    "position_end": -1
+                },
+                {
+                    "word_in_sentence": "förstår",
+                    "base_form": "förstå",
+                    "contextual_en": "understands",
+                    "position_start": 56,
+                    "position_end": 63
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_19_s031",
+            "sv": "Ett namn på problemet är okunskap.",
+            "en": "One name for the problem is ignorance.",
+            "target_words": [
+                {
+                    "word_in_sentence": "namn",
+                    "base_form": "namn",
+                    "contextual_en": "name",
+                    "position_start": 4,
+                    "position_end": 8
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "problemet",
+                    "base_form": "problem",
+                    "contextual_en": "the problem",
+                    "position_start": 12,
+                    "position_end": 21
+                },
+                {
+                    "word_in_sentence": "okunskap",
+                    "base_form": "okunskap",
+                    "contextual_en": "ignorance",
+                    "position_start": 25,
+                    "position_end": 33
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_19_s032",
+            "sv": "Det kändes bra att döpa problemen och förhoppningsvis få tillbaka hoppet.",
+            "en": "It felt good to name the problems and hopefully get hope back.",
+            "target_words": [
+                {
+                    "word_in_sentence": "döpa",
+                    "base_form": "döpa",
+                    "contextual_en": "name",
+                    "position_start": 19,
+                    "position_end": 23
+                },
+                {
+                    "word_in_sentence": "få tillbaka",
+                    "base_form": "få tillbaka",
+                    "contextual_en": "get hope back",
+                    "position_start": 54,
+                    "position_end": 65
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "hoppet",
+                    "base_form": "hopp",
+                    "contextual_en": "the hope",
+                    "position_start": 66,
+                    "position_end": 72
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_19_s033",
+            "sv": "Innan vi gick kastade vi en snöboll mot ett litet apelsinträd i ett växthus.",
+            "en": "Before we left, we threw a snowball at a small orange tree in a greenhouse.",
+            "target_words": [
+                {
+                    "word_in_sentence": "snöboll",
+                    "base_form": "snöboll",
+                    "contextual_en": "snowball",
+                    "position_start": 28,
+                    "position_end": 35
+                },
+                {
+                    "word_in_sentence": "apelsinträd",
+                    "base_form": "apelsinträd",
+                    "contextual_en": "orange tree",
+                    "position_start": 50,
+                    "position_end": 61
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "kastade",
+                    "base_form": "kasta",
+                    "contextual_en": "threw",
+                    "position_start": 14,
+                    "position_end": 21
+                },
+                {
+                    "word_in_sentence": "växthus",
+                    "base_form": "växthus",
+                    "contextual_en": "greenhouse",
+                    "position_start": 68,
+                    "position_end": 75
+                }
+            ]
+        },
+        {
+            "sentence_id": "art_19_s034",
+            "sv": "Vi riskerar att få problem om vi inte agerar, men vi kämpar på!",
+            "en": "We risk getting into trouble if we do not act, but we keep fighting!",
+            "target_words": [
+                {
+                    "word_in_sentence": "få problem",
+                    "base_form": "få problem",
+                    "contextual_en": "getting into trouble",
+                    "position_start": 16,
+                    "position_end": 26
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "riskerar",
+                    "base_form": "riskera",
+                    "contextual_en": "risk",
+                    "position_start": 3,
+                    "position_end": 11
+                },
+                {
+                    "word_in_sentence": "kämpar",
+                    "base_form": "kämpa",
+                    "contextual_en": "fight",
+                    "position_start": 53,
+                    "position_end": 59
                 }
             ]
         }
@@ -62,7 +1078,7 @@
         "gröna vågen",
         "slå igenom",
         "miljö- och klimatdebatt",
-        "climate",
+        "klimat",
         "hinna med",
         "skydd mot",
         "ute i naturen",

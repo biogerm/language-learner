@@ -27,7 +27,29 @@
                     "contextual_en": "up north"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "vän",
+                    "base_form": "vän",
+                    "contextual_en": "friend",
+                    "position_start": 4,
+                    "position_end": 7
+                },
+                {
+                    "word_in_sentence": "liten",
+                    "base_form": "liten",
+                    "contextual_en": "small",
+                    "position_start": 38,
+                    "position_end": 43
+                },
+                {
+                    "word_in_sentence": "resa",
+                    "base_form": "resa",
+                    "contextual_en": "travel",
+                    "position_start": 66,
+                    "position_end": 70
+                }
+            ]
         },
         {
             "sentence_id": "art_04_s002",
@@ -70,7 +92,29 @@
                     "contextual_en": "when"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "vanliga",
+                    "base_form": "vanlig",
+                    "contextual_en": "usual",
+                    "position_start": 26,
+                    "position_end": 33
+                },
+                {
+                    "word_in_sentence": "eftersom",
+                    "base_form": "eftersom",
+                    "contextual_en": "because",
+                    "position_start": 40,
+                    "position_end": 48
+                },
+                {
+                    "word_in_sentence": "förändring",
+                    "base_form": "förändring",
+                    "contextual_en": "change",
+                    "position_start": 67,
+                    "position_end": 77
+                }
+            ]
         },
         {
             "sentence_id": "art_04_s003",
@@ -106,7 +150,29 @@
                     "contextual_en": "stay"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "gånger",
+                    "base_form": "gång",
+                    "contextual_en": "times",
+                    "position_start": 30,
+                    "position_end": 36
+                },
+                {
+                    "word_in_sentence": "dags",
+                    "base_form": "dags",
+                    "contextual_en": "time",
+                    "position_start": 52,
+                    "position_end": 56
+                },
+                {
+                    "word_in_sentence": "ny",
+                    "base_form": "ny",
+                    "contextual_en": "new",
+                    "position_start": 64,
+                    "position_end": 66
+                }
+            ]
         },
         {
             "sentence_id": "art_04_s004",
@@ -128,7 +194,29 @@
                     "contextual_en": "support"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "ensam",
+                    "base_form": "ensam",
+                    "contextual_en": "lonely",
+                    "position_start": 48,
+                    "position_end": 53
+                },
+                {
+                    "word_in_sentence": "ofta",
+                    "base_form": "ofta",
+                    "contextual_en": "often",
+                    "position_start": 43,
+                    "position_end": 47
+                },
+                {
+                    "word_in_sentence": "resor",
+                    "base_form": "resa",
+                    "contextual_en": "travels",
+                    "position_start": 58,
+                    "position_end": 63
+                }
+            ]
         },
         {
             "sentence_id": "art_04_s005",
@@ -171,7 +259,29 @@
                     "contextual_en": "saying"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "uppleva",
+                    "base_form": "uppleva",
+                    "contextual_en": "experience",
+                    "position_start": 10,
+                    "position_end": 17
+                },
+                {
+                    "word_in_sentence": "utsikt",
+                    "base_form": "utsikt",
+                    "contextual_en": "view",
+                    "position_start": 29,
+                    "position_end": 35
+                },
+                {
+                    "word_in_sentence": "gammal",
+                    "base_form": "gammal",
+                    "contextual_en": "old",
+                    "position_start": 50,
+                    "position_end": 56
+                }
+            ]
         },
         {
             "sentence_id": "art_04_s006",
@@ -193,14 +303,37 @@
             "sv": "Vill du verkligen det?\" frågade jag.",
             "en": "Do you really want to?\" I asked.",
             "target_words": [],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "verkligen",
+                    "base_form": "verkligen",
+                    "contextual_en": "really",
+                    "position_start": 8,
+                    "position_end": 17
+                },
+                {
+                    "word_in_sentence": "frågade",
+                    "base_form": "fråga",
+                    "contextual_en": "asked",
+                    "position_start": 24,
+                    "position_end": 31
+                }
+            ]
         },
         {
             "sentence_id": "art_04_s008",
             "sv": "Hon nickade.",
             "en": "She nodded.",
             "target_words": [],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "nickade",
+                    "base_form": "nicka",
+                    "contextual_en": "nodded",
+                    "position_start": 4,
+                    "position_end": 11
+                }
+            ]
         },
         {
             "sentence_id": "art_04_s009",
@@ -236,7 +369,22 @@
                     "contextual_en": "passenger ferry"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "flyg",
+                    "base_form": "flyg",
+                    "contextual_en": "flight",
+                    "position_start": 24,
+                    "position_end": 28
+                },
+                {
+                    "word_in_sentence": "sedan",
+                    "base_form": "sedan",
+                    "contextual_en": "then",
+                    "position_start": 62,
+                    "position_end": 67
+                }
+            ]
         },
         {
             "sentence_id": "art_04_s010",
@@ -265,7 +413,29 @@
                     "contextual_en": "vehicle"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "hyra",
+                    "base_form": "hyra",
+                    "contextual_en": "rent",
+                    "position_start": 32,
+                    "position_end": 36
+                },
+                {
+                    "word_in_sentence": "kusten",
+                    "base_form": "kust",
+                    "contextual_en": "coast",
+                    "position_start": 75,
+                    "position_end": 81
+                },
+                {
+                    "word_in_sentence": "åka",
+                    "base_form": "åka",
+                    "contextual_en": "travel",
+                    "position_start": 56,
+                    "position_end": 59
+                }
+            ]
         },
         {
             "sentence_id": "art_04_s011",
@@ -287,7 +457,29 @@
                     "contextual_en": "radio broadcast"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "Blunda",
+                    "base_form": "blunda",
+                    "contextual_en": "close eyes",
+                    "position_start": 1,
+                    "position_end": 7
+                },
+                {
+                    "word_in_sentence": "lyssnade",
+                    "base_form": "lyssna",
+                    "contextual_en": "listened",
+                    "position_start": 24,
+                    "position_end": 32
+                },
+                {
+                    "word_in_sentence": "lokal",
+                    "base_form": "lokal",
+                    "contextual_en": "local",
+                    "position_start": 39,
+                    "position_end": 44
+                }
+            ]
         },
         {
             "sentence_id": "art_04_s012",
@@ -309,7 +501,29 @@
                     "contextual_en": "kayak"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "äntligen",
+                    "base_form": "äntligen",
+                    "contextual_en": "finally",
+                    "position_start": 8,
+                    "position_end": 16
+                },
+                {
+                    "word_in_sentence": "framme",
+                    "base_form": "framme",
+                    "contextual_en": "arrived",
+                    "position_start": 21,
+                    "position_end": 27
+                },
+                {
+                    "word_in_sentence": "bestämde",
+                    "base_form": "bestämma",
+                    "contextual_en": "decided",
+                    "position_start": 41,
+                    "position_end": 49
+                }
+            ]
         },
         {
             "sentence_id": "art_04_s013",
@@ -352,7 +566,22 @@
                     "contextual_en": "hotel owner"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "måste",
+                    "base_form": "måste",
+                    "contextual_en": "must",
+                    "position_start": 5,
+                    "position_end": 10
+                },
+                {
+                    "word_in_sentence": "trevlig",
+                    "base_form": "trevlig",
+                    "contextual_en": "nice",
+                    "position_start": 65,
+                    "position_end": 72
+                }
+            ]
         },
         {
             "sentence_id": "art_04_s014",
@@ -395,7 +624,29 @@
                     "contextual_en": "ship"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "fanns",
+                    "base_form": "finnas",
+                    "contextual_en": "were",
+                    "position_start": 4,
+                    "position_end": 9
+                },
+                {
+                    "word_in_sentence": "sorters",
+                    "base_form": "sort",
+                    "contextual_en": "sorts of",
+                    "position_start": 15,
+                    "position_end": 22
+                },
+                {
+                    "word_in_sentence": "båtar",
+                    "base_form": "båt",
+                    "contextual_en": "boats",
+                    "position_start": 23,
+                    "position_end": 28
+                }
+            ]
         },
         {
             "sentence_id": "art_04_s015",
@@ -417,7 +668,22 @@
                     "contextual_en": "glide forward"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "lät",
+                    "base_form": "låta",
+                    "contextual_en": "let",
+                    "position_start": 4,
+                    "position_end": 7
+                },
+                {
+                    "word_in_sentence": "vattnet",
+                    "base_form": "vatten",
+                    "contextual_en": "water",
+                    "position_start": 32,
+                    "position_end": 39
+                }
+            ]
         },
         {
             "sentence_id": "art_04_s016",
@@ -439,7 +705,29 @@
                     "contextual_en": "gradually"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "valde",
+                    "base_form": "välja",
+                    "contextual_en": "chose",
+                    "position_start": 4,
+                    "position_end": 9
+                },
+                {
+                    "word_in_sentence": "strömmen",
+                    "base_form": "ström",
+                    "contextual_en": "flow",
+                    "position_start": 29,
+                    "position_end": 37
+                },
+                {
+                    "word_in_sentence": "slappna av",
+                    "base_form": "slappna av",
+                    "contextual_en": "relax",
+                    "position_start": 50,
+                    "position_end": 60
+                }
+            ]
         },
         {
             "sentence_id": "art_04_s017",
@@ -461,7 +749,29 @@
                     "contextual_en": "running loose"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "barn",
+                    "base_form": "barn",
+                    "contextual_en": "children",
+                    "position_start": 13,
+                    "position_end": 17
+                },
+                {
+                    "word_in_sentence": "stranden",
+                    "base_form": "strand",
+                    "contextual_en": "beach",
+                    "position_start": 34,
+                    "position_end": 42
+                },
+                {
+                    "word_in_sentence": "hund",
+                    "base_form": "hund",
+                    "contextual_en": "dog",
+                    "position_start": 50,
+                    "position_end": 54
+                }
+            ]
         },
         {
             "sentence_id": "art_04_s018",
@@ -483,7 +793,29 @@
                     "contextual_en": "departure"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "kvällen",
+                    "base_form": "kväll",
+                    "contextual_en": "evening",
+                    "position_start": 3,
+                    "position_end": 10
+                },
+                {
+                    "word_in_sentence": "tänkte",
+                    "base_form": "tänka",
+                    "contextual_en": "thought",
+                    "position_start": 36,
+                    "position_end": 42
+                },
+                {
+                    "word_in_sentence": "gamla",
+                    "base_form": "gammal",
+                    "contextual_en": "old",
+                    "position_start": 70,
+                    "position_end": 75
+                }
+            ]
         },
         {
             "sentence_id": "art_04_s019",
@@ -526,14 +858,51 @@
                     "contextual_en": "all over the"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "äldre",
+                    "base_form": "äldre",
+                    "contextual_en": "older",
+                    "position_start": 3,
+                    "position_end": 8
+                },
+                {
+                    "word_in_sentence": "stenar",
+                    "base_form": "sten",
+                    "contextual_en": "stones",
+                    "position_start": 79,
+                    "position_end": 85
+                },
+                {
+                    "word_in_sentence": "världen",
+                    "base_form": "värld",
+                    "contextual_en": "world",
+                    "position_start": 115,
+                    "position_end": 122
+                }
+            ]
         },
         {
             "sentence_id": "art_04_s020",
             "sv": "\"Sök i dig själv,\" sa han.",
             "en": "\"Search within yourself,\" he said.",
             "target_words": [],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "Sök",
+                    "base_form": "söka",
+                    "contextual_en": "search",
+                    "position_start": 1,
+                    "position_end": 4
+                },
+                {
+                    "word_in_sentence": "själv",
+                    "base_form": "själv",
+                    "contextual_en": "yourself",
+                    "position_start": 11,
+                    "position_end": 16
+                }
+            ]
         },
         {
             "sentence_id": "art_04_s021",
@@ -555,7 +924,29 @@
                     "contextual_en": "disaster"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "verkade",
+                    "base_form": "verka",
+                    "contextual_en": "seemed",
+                    "position_start": 5,
+                    "position_end": 12
+                },
+                {
+                    "word_in_sentence": "väldigt",
+                    "base_form": "väldigt",
+                    "contextual_en": "very",
+                    "position_start": 22,
+                    "position_end": 29
+                },
+                {
+                    "word_in_sentence": "kändes",
+                    "base_form": "kännas",
+                    "contextual_en": "felt",
+                    "position_start": 42,
+                    "position_end": 48
+                }
+            ]
         },
         {
             "sentence_id": "art_04_s022",
@@ -570,7 +961,29 @@
                     "contextual_en": "half"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "semester",
+                    "base_form": "semester",
+                    "contextual_en": "vacation",
+                    "position_start": 26,
+                    "position_end": 34
+                },
+                {
+                    "word_in_sentence": "underbar",
+                    "base_form": "underbar",
+                    "contextual_en": "wonderful",
+                    "position_start": 49,
+                    "position_end": 57
+                },
+                {
+                    "word_in_sentence": "tid",
+                    "base_form": "tid",
+                    "contextual_en": "time",
+                    "position_start": 58,
+                    "position_end": 61
+                }
+            ]
         },
         {
             "sentence_id": "art_04_s023",
@@ -599,7 +1012,22 @@
                     "contextual_en": "further away"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "alltid",
+                    "base_form": "alltid",
+                    "contextual_en": "always",
+                    "position_start": 24,
+                    "position_end": 30
+                },
+                {
+                    "word_in_sentence": "lite",
+                    "base_form": "lite",
+                    "contextual_en": "a little",
+                    "position_start": 34,
+                    "position_end": 38
+                }
+            ]
         },
         {
             "sentence_id": "art_04_s024",
@@ -621,7 +1049,22 @@
                     "contextual_en": "in the long run"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "aldrig",
+                    "base_form": "aldrig",
+                    "contextual_en": "never",
+                    "position_start": 23,
+                    "position_end": 29
+                },
+                {
+                    "word_in_sentence": "tråkigt",
+                    "base_form": "tråkig",
+                    "contextual_en": "boring",
+                    "position_start": 30,
+                    "position_end": 37
+                }
+            ]
         },
         {
             "sentence_id": "art_04_s025",
@@ -643,7 +1086,22 @@
                     "contextual_en": "return visit"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "hoppas",
+                    "base_form": "hoppas",
+                    "contextual_en": "hope",
+                    "position_start": 4,
+                    "position_end": 10
+                },
+                {
+                    "word_in_sentence": "göra",
+                    "base_form": "göra",
+                    "contextual_en": "make",
+                    "position_start": 43,
+                    "position_end": 47
+                }
+            ]
         },
         {
             "sentence_id": "art_04_s026",
@@ -686,7 +1144,29 @@
                     "contextual_en": "down"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "synd",
+                    "base_form": "synd",
+                    "contextual_en": "shame",
+                    "position_start": 9,
+                    "position_end": 13
+                },
+                {
+                    "word_in_sentence": "lycklig",
+                    "base_form": "lycklig",
+                    "contextual_en": "happy",
+                    "position_start": 105,
+                    "position_end": 112
+                },
+                {
+                    "word_in_sentence": "havet",
+                    "base_form": "hav",
+                    "contextual_en": "sea",
+                    "position_start": 135,
+                    "position_end": 140
+                }
+            ]
         }
     ],
     "primary_words_used": [

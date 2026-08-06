@@ -27,7 +27,22 @@
                     "contextual_en": "for"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "säkert",
+                    "base_form": "säker",
+                    "contextual_en": "surely",
+                    "position_start": 30,
+                    "position_end": 36
+                },
+                {
+                    "word_in_sentence": "rutin",
+                    "base_form": "rutin",
+                    "contextual_en": "routine",
+                    "position_start": 47,
+                    "position_end": 52
+                }
+            ]
         },
         {
             "sentence_id": "art_01_s002",
@@ -49,7 +64,22 @@
                     "contextual_en": "everything"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "någonsin",
+                    "base_form": "någonsin",
+                    "contextual_en": "ever",
+                    "position_start": 11,
+                    "position_end": 19
+                },
+                {
+                    "word_in_sentence": "funderat",
+                    "base_form": "fundera",
+                    "contextual_en": "wondered",
+                    "position_start": 20,
+                    "position_end": 28
+                }
+            ]
         },
         {
             "sentence_id": "art_01_s003",
@@ -85,7 +115,22 @@
                     "contextual_en": "nothing"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "praktisk",
+                    "base_form": "praktisk",
+                    "contextual_en": "practical",
+                    "position_start": 26,
+                    "position_end": 34
+                },
+                {
+                    "word_in_sentence": "detaljer",
+                    "base_form": "detalj",
+                    "contextual_en": "details",
+                    "position_start": 97,
+                    "position_end": 105
+                }
+            ]
         },
         {
             "sentence_id": "art_01_s004",
@@ -114,7 +159,22 @@
                     "contextual_en": "of"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "handlar om",
+                    "base_form": "handla om",
+                    "contextual_en": "is about",
+                    "position_start": 23,
+                    "position_end": 33
+                },
+                {
+                    "word_in_sentence": "enkel",
+                    "base_form": "enkel",
+                    "contextual_en": "simple",
+                    "position_start": 49,
+                    "position_end": 54
+                }
+            ]
         },
         {
             "sentence_id": "art_01_s005",
@@ -157,7 +217,22 @@
                     "contextual_en": "up"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "tusentals",
+                    "base_form": "tusental",
+                    "contextual_en": "thousands",
+                    "position_start": 18,
+                    "position_end": 27
+                },
+                {
+                    "word_in_sentence": "utrustning",
+                    "base_form": "utrustning",
+                    "contextual_en": "equipment",
+                    "position_start": 53,
+                    "position_end": 63
+                }
+            ]
         },
         {
             "sentence_id": "art_01_s006",
@@ -193,7 +268,22 @@
                     "contextual_en": "systematizing"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "känd",
+                    "base_form": "känd",
+                    "contextual_en": "famous",
+                    "position_start": 10,
+                    "position_end": 14
+                },
+                {
+                    "word_in_sentence": "kunskap",
+                    "base_form": "kunskap",
+                    "contextual_en": "knowledge",
+                    "position_start": 103,
+                    "position_end": 110
+                }
+            ]
         },
         {
             "sentence_id": "art_01_s007",
@@ -250,7 +340,22 @@
                     "contextual_en": "measure"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "noggrann",
+                    "base_form": "noggrann",
+                    "contextual_en": "careful",
+                    "position_start": 34,
+                    "position_end": 42
+                },
+                {
+                    "word_in_sentence": "exakta",
+                    "base_form": "exakt",
+                    "contextual_en": "exact",
+                    "position_start": 103,
+                    "position_end": 109
+                }
+            ]
         },
         {
             "sentence_id": "art_01_s008",
@@ -272,7 +377,22 @@
                     "contextual_en": "telescope"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "ljus",
+                    "base_form": "ljus",
+                    "contextual_en": "light",
+                    "position_start": 31,
+                    "position_end": 35
+                },
+                {
+                    "word_in_sentence": "noga",
+                    "base_form": "noga",
+                    "contextual_en": "carefully",
+                    "position_start": 36,
+                    "position_end": 40
+                }
+            ]
         },
         {
             "sentence_id": "art_01_s009",
@@ -315,7 +435,22 @@
                     "contextual_en": "beautiful"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "duktig",
+                    "base_form": "duktig",
+                    "contextual_en": "skilled",
+                    "position_start": 19,
+                    "position_end": 25
+                },
+                {
+                    "word_in_sentence": "stjärnhimmel",
+                    "base_form": "stjärnhimmel",
+                    "contextual_en": "starry sky",
+                    "position_start": 86,
+                    "position_end": 98
+                }
+            ]
         },
         {
             "sentence_id": "art_01_s010",
@@ -344,14 +479,44 @@
                     "contextual_en": "middle"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "mörka",
+                    "base_form": "mörk",
+                    "contextual_en": "dark",
+                    "position_start": 16,
+                    "position_end": 21
+                },
+                {
+                    "word_in_sentence": "fina",
+                    "base_form": "fin",
+                    "contextual_en": "fine",
+                    "position_start": 39,
+                    "position_end": 43
+                }
+            ]
         },
         {
             "sentence_id": "art_01_s011",
             "sv": "Forskning är inte alltid en lätt process.",
             "en": "Research is not always an easy process.",
             "target_words": [],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "Forskning",
+                    "base_form": "forskning",
+                    "contextual_en": "Research",
+                    "position_start": 0,
+                    "position_end": 9
+                },
+                {
+                    "word_in_sentence": "process",
+                    "base_form": "process",
+                    "contextual_en": "process",
+                    "position_start": 33,
+                    "position_end": 40
+                }
+            ]
         },
         {
             "sentence_id": "art_01_s012",
@@ -380,7 +545,22 @@
                     "contextual_en": "must"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "osynlig",
+                    "base_form": "osynlig",
+                    "contextual_en": "invisible",
+                    "position_start": 13,
+                    "position_end": 20
+                },
+                {
+                    "word_in_sentence": "idéer",
+                    "base_form": "idé",
+                    "contextual_en": "ideas",
+                    "position_start": 47,
+                    "position_end": 52
+                }
+            ]
         },
         {
             "sentence_id": "art_01_s013",
@@ -395,7 +575,22 @@
                     "contextual_en": "facts"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "bygger",
+                    "base_form": "bygga",
+                    "contextual_en": "build",
+                    "position_start": 9,
+                    "position_end": 15
+                },
+                {
+                    "word_in_sentence": "riktig",
+                    "base_form": "riktig",
+                    "contextual_en": "real",
+                    "position_start": 44,
+                    "position_end": 50
+                }
+            ]
         },
         {
             "sentence_id": "art_01_s014",
@@ -431,7 +626,22 @@
                     "contextual_en": "each other"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "djupt",
+                    "base_form": "djup",
+                    "contextual_en": "deeply",
+                    "position_start": 13,
+                    "position_end": 18
+                },
+                {
+                    "word_in_sentence": "intresserade",
+                    "base_form": "intresserad",
+                    "contextual_en": "interested",
+                    "position_start": 19,
+                    "position_end": 31
+                }
+            ]
         },
         {
             "sentence_id": "art_01_s015",
@@ -453,7 +663,22 @@
                     "contextual_en": "percent"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "resultatet",
+                    "base_form": "resultat",
+                    "contextual_en": "result",
+                    "position_start": 27,
+                    "position_end": 37
+                },
+                {
+                    "word_in_sentence": "hundra",
+                    "base_form": "hundra",
+                    "contextual_en": "hundred",
+                    "position_start": 50,
+                    "position_end": 56
+                }
+            ]
         },
         {
             "sentence_id": "art_01_s016",
@@ -496,7 +721,22 @@
                     "contextual_en": "as well"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "försöken",
+                    "base_form": "försök",
+                    "contextual_en": "attempts",
+                    "position_start": 37,
+                    "position_end": 45
+                },
+                {
+                    "word_in_sentence": "misslyckas",
+                    "base_form": "misslyckas",
+                    "contextual_en": "fail",
+                    "position_start": 53,
+                    "position_end": 63
+                }
+            ]
         },
         {
             "sentence_id": "art_01_s017",
@@ -511,7 +751,22 @@
                     "contextual_en": "connected"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "ständigt",
+                    "base_form": "ständig",
+                    "contextual_en": "constantly",
+                    "position_start": 33,
+                    "position_end": 41
+                },
+                {
+                    "word_in_sentence": "lever",
+                    "base_form": "leva",
+                    "contextual_en": "live",
+                    "position_start": 6,
+                    "position_end": 11
+                }
+            ]
         },
         {
             "sentence_id": "art_01_s018",
@@ -540,7 +795,22 @@
                     "contextual_en": "motor"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "liten",
+                    "base_form": "liten",
+                    "contextual_en": "small",
+                    "position_start": 33,
+                    "position_end": 38
+                },
+                {
+                    "word_in_sentence": "hemma",
+                    "base_form": "hemma",
+                    "contextual_en": "at home",
+                    "position_start": 73,
+                    "position_end": 78
+                }
+            ]
         },
         {
             "sentence_id": "art_01_s019",
@@ -555,7 +825,22 @@
                     "contextual_en": "simulate"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "direkt",
+                    "base_form": "direkt",
+                    "contextual_en": "directly",
+                    "position_start": 52,
+                    "position_end": 58
+                },
+                {
+                    "word_in_sentence": "verkligheten",
+                    "base_form": "verklighet",
+                    "contextual_en": "reality",
+                    "position_start": 99,
+                    "position_end": 111
+                }
+            ]
         },
         {
             "sentence_id": "art_01_s020",
@@ -577,7 +862,22 @@
                     "contextual_en": "intellectual"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "kräver",
+                    "base_form": "kräva",
+                    "contextual_en": "requires",
+                    "position_start": 21,
+                    "position_end": 27
+                },
+                {
+                    "word_in_sentence": "förmåga",
+                    "base_form": "förmåga",
+                    "contextual_en": "ability",
+                    "position_start": 83,
+                    "position_end": 90
+                }
+            ]
         },
         {
             "sentence_id": "art_01_s021",
@@ -599,7 +899,22 @@
                     "contextual_en": "leaving"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "bekvämt",
+                    "base_form": "bekväm",
+                    "contextual_en": "comfortably",
+                    "position_start": 17,
+                    "position_end": 24
+                },
+                {
+                    "word_in_sentence": "jorden",
+                    "base_form": "jord",
+                    "contextual_en": "world",
+                    "position_start": 64,
+                    "position_end": 70
+                }
+            ]
         },
         {
             "sentence_id": "art_01_s022",
@@ -614,7 +929,22 @@
                     "contextual_en": "average"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "spenderar",
+                    "base_form": "spendera",
+                    "contextual_en": "spend",
+                    "position_start": 13,
+                    "position_end": 22
+                },
+                {
+                    "word_in_sentence": "människor",
+                    "base_form": "människa",
+                    "contextual_en": "people",
+                    "position_start": 31,
+                    "position_end": 40
+                }
+            ]
         },
         {
             "sentence_id": "art_01_s023",
@@ -643,7 +973,22 @@
                     "contextual_en": "slow"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "utvecklas",
+                    "base_form": "utvecklas",
+                    "contextual_en": "developing",
+                    "position_start": 32,
+                    "position_end": 41
+                },
+                {
+                    "word_in_sentence": "tvärtom",
+                    "base_form": "tvärtom",
+                    "contextual_en": "on the contrary",
+                    "position_start": 64,
+                    "position_end": 71
+                }
+            ]
         },
         {
             "sentence_id": "art_01_s024",
@@ -658,7 +1003,22 @@
                     "contextual_en": "think"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "Oavsett",
+                    "base_form": "oavsett",
+                    "contextual_en": "Regardless",
+                    "position_start": 0,
+                    "position_end": 7
+                },
+                {
+                    "word_in_sentence": "fortsätter",
+                    "base_form": "fortsätta",
+                    "contextual_en": "continues",
+                    "position_start": 35,
+                    "position_end": 45
+                }
+            ]
         },
         {
             "sentence_id": "art_01_s025",
@@ -680,7 +1040,22 @@
                     "contextual_en": "length"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "mäta",
+                    "base_form": "mäta",
+                    "contextual_en": "measure",
+                    "position_start": 7,
+                    "position_end": 11
+                },
+                {
+                    "word_in_sentence": "framtiden",
+                    "base_form": "framtid",
+                    "contextual_en": "future",
+                    "position_start": 52,
+                    "position_end": 61
+                }
+            ]
         },
         {
             "sentence_id": "art_01_s026",
@@ -716,7 +1091,22 @@
                     "contextual_en": "most"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "användbara",
+                    "base_form": "användbar",
+                    "contextual_en": "useful",
+                    "position_start": 85,
+                    "position_end": 95
+                },
+                {
+                    "word_in_sentence": "telefoner",
+                    "base_form": "telefon",
+                    "contextual_en": "phones",
+                    "position_start": 62,
+                    "position_end": 71
+                }
+            ]
         },
         {
             "sentence_id": "art_01_s027",
@@ -745,7 +1135,22 @@
                     "contextual_en": "watching"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "lugnt",
+                    "base_form": "lugn",
+                    "contextual_en": "calmly",
+                    "position_start": 7,
+                    "position_end": 12
+                },
+                {
+                    "word_in_sentence": "redo",
+                    "base_form": "redo",
+                    "contextual_en": "ready",
+                    "position_start": 67,
+                    "position_end": 71
+                }
+            ]
         }
     ],
     "primary_words_used": [

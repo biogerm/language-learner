@@ -71,7 +71,15 @@
                     "contextual_en": "bridge day"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "frågade",
+                    "base_form": "fråga",
+                    "contextual_en": "asked",
+                    "position_start": 20,
+                    "position_end": 27
+                }
+            ]
         },
         {
             "sentence_id": "art_10_s003",
@@ -86,7 +94,15 @@
                     "contextual_en": "What do you say?"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "säger",
+                    "base_form": "säga",
+                    "contextual_en": "say",
+                    "position_start": 5,
+                    "position_end": 10
+                }
+            ]
         },
         {
             "sentence_id": "art_10_s004",
@@ -101,7 +117,15 @@
                     "contextual_en": "as many hours as possible"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "tyckte",
+                    "base_form": "tycka",
+                    "contextual_en": "thought",
+                    "position_start": 4,
+                    "position_end": 10
+                }
+            ]
         },
         {
             "sentence_id": "art_10_s005",
@@ -116,7 +140,15 @@
                     "contextual_en": "discuss"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "valde",
+                    "base_form": "välja",
+                    "contextual_en": "chose",
+                    "position_start": 3,
+                    "position_end": 8
+                }
+            ]
         },
         {
             "sentence_id": "art_10_s006",
@@ -212,7 +244,15 @@
                     "contextual_en": "statement"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "innehöll",
+                    "base_form": "innehålla",
+                    "contextual_en": "contained",
+                    "position_start": 31,
+                    "position_end": 39
+                }
+            ]
         },
         {
             "sentence_id": "art_10_s009",
@@ -264,7 +304,15 @@
                     "contextual_en": "summarizing"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "uppdrag",
+                    "base_form": "uppdrag",
+                    "contextual_en": "task",
+                    "position_start": 10,
+                    "position_end": 17
+                }
+            ]
         },
         {
             "sentence_id": "art_10_s011",
@@ -286,7 +334,15 @@
                     "contextual_en": "vocabulary"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "började",
+                    "base_form": "börja",
+                    "contextual_en": "started",
+                    "position_start": 3,
+                    "position_end": 10
+                }
+            ]
         },
         {
             "sentence_id": "art_10_s012",
@@ -322,14 +378,30 @@
                     "contextual_en": "syllable"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "tränade",
+                    "base_form": "träna",
+                    "contextual_en": "practiced",
+                    "position_start": 3,
+                    "position_end": 10
+                }
+            ]
         },
         {
             "sentence_id": "art_10_s013",
             "sv": "Det var roligt.",
             "en": "It was fun.",
             "target_words": [],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "roligt",
+                    "base_form": "rolig",
+                    "contextual_en": "fun",
+                    "position_start": 8,
+                    "position_end": 14
+                }
+            ]
         },
         {
             "sentence_id": "art_10_s014",
@@ -351,7 +423,15 @@
                     "contextual_en": "pointed out"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "hon",
+                    "base_form": "hon",
+                    "contextual_en": "she",
+                    "position_start": 30,
+                    "position_end": 33
+                }
+            ]
         },
         {
             "sentence_id": "art_10_s015",
@@ -403,14 +483,30 @@
                     "contextual_en": "prove"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "lärt",
+                    "base_form": "lära",
+                    "contextual_en": "learned",
+                    "position_start": 28,
+                    "position_end": 32
+                }
+            ]
         },
         {
             "sentence_id": "art_10_s017",
             "sv": "Sedan gick vi igenom olika ordklasser och satsdelar.",
             "en": "Then we went through different parts of speech and parts of a sentence.",
             "target_words": [],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "olika",
+                    "base_form": "olika",
+                    "contextual_en": "different",
+                    "position_start": 21,
+                    "position_end": 26
+                }
+            ]
         },
         {
             "sentence_id": "art_10_s018",
@@ -425,7 +521,15 @@
                     "contextual_en": "subject"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "hitta",
+                    "base_form": "hitta",
+                    "contextual_en": "find",
+                    "position_start": 17,
+                    "position_end": 22
+                }
+            ]
         },
         {
             "sentence_id": "art_10_s019",
@@ -514,14 +618,30 @@
                     "contextual_en": "emphasize"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "försökte",
+                    "base_form": "försöka",
+                    "contextual_en": "tried",
+                    "position_start": 3,
+                    "position_end": 11
+                }
+            ]
         },
         {
             "sentence_id": "art_10_s022",
             "sv": "Vi tränade på att bygga meningar.",
             "en": "We practiced building sentences.",
             "target_words": [],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "bygga",
+                    "base_form": "bygga",
+                    "contextual_en": "building",
+                    "position_start": 18,
+                    "position_end": 23
+                }
+            ]
         },
         {
             "sentence_id": "art_10_s023",
@@ -543,7 +663,15 @@
                     "contextual_en": "subordinate clause"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "börja",
+                    "base_form": "börja",
+                    "contextual_en": "begin",
+                    "position_start": 14,
+                    "position_end": 19
+                }
+            ]
         },
         {
             "sentence_id": "art_10_s024",
@@ -595,7 +723,15 @@
                     "contextual_en": "direct speech"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "skriva",
+                    "base_form": "skriva",
+                    "contextual_en": "write",
+                    "position_start": 17,
+                    "position_end": 23
+                }
+            ]
         },
         {
             "sentence_id": "art_10_s026",
@@ -640,7 +776,15 @@
                     "contextual_en": "academy"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "arbetar",
+                    "base_form": "arbeta",
+                    "contextual_en": "works",
+                    "position_start": 14,
+                    "position_end": 21
+                }
+            ]
         },
         {
             "sentence_id": "art_10_s028",
@@ -736,7 +880,15 @@
                     "contextual_en": "conclusion"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "tydlig",
+                    "base_form": "tydlig",
+                    "contextual_en": "clear",
+                    "position_start": 54,
+                    "position_end": 60
+                }
+            ]
         },
         {
             "sentence_id": "art_10_s031",

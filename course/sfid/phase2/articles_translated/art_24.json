@@ -1128,15 +1128,7 @@
             "sentence_id": "art_24_s031",
             "sv": "Efter rätt vård kunde de ofta gå tillbaka till det det normala.",
             "en": "After the right care, they could often go back to normal.",
-            "target_words": [
-                {
-                    "word_in_sentence": "gå tillbaka till det det normala",
-                    "base_form": "gå tillbaka till det normala/vanliga",
-                    "position_start": 30,
-                    "position_end": 62,
-                    "contextual_en": "go back to normal"
-                }
-            ],
+            "target_words": [],
             "secondary_words": [
                 {
                     "word_in_sentence": "rätt",

@@ -3,7 +3,7 @@
     "course_title": "SFI D",
     "stage_id": "stage_04",
     "stage_title": "Relationer & Känslor",
-    "article_id": "art_53",
+    "article_id": "article_53",
     "article_title": "Ett Möte Med En Svår Släkting",
     "target_word_count": 60,
     "sentences": [
@@ -18,7 +18,8 @@
                     "position_start": 0,
                     "position_end": 5
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_53_s002",
@@ -31,7 +32,8 @@
                     "position_start": 0,
                     "position_end": 13
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_53_s003",
@@ -50,6 +52,14 @@
                     "position_start": 45,
                     "position_end": 48
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "mår",
+                    "base_form": "mår",
+                    "position_start": 49,
+                    "position_end": 52
+                }
             ]
         },
         {
@@ -57,6 +67,12 @@
             "sv": "Jag måste berätta något … något otroligt som precis hände.",
             "en": "",
             "target_words": [
+                {
+                    "word_in_sentence": "jag",
+                    "base_form": "jag",
+                    "position_start": 0,
+                    "position_end": 3
+                },
                 {
                     "word_in_sentence": "Jag måste berätta något …",
                     "base_form": "Jag måste berätta något …",
@@ -68,6 +84,14 @@
                     "base_form": "berätta",
                     "position_start": 10,
                     "position_end": 17
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "otroligt",
+                    "base_form": "otroligt",
+                    "position_start": 32,
+                    "position_end": 40
                 }
             ]
         },
@@ -82,6 +106,14 @@
                     "position_start": 0,
                     "position_end": 8
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "tro",
+                    "base_form": "tro",
+                    "position_start": 29,
+                    "position_end": 32
+                }
             ]
         },
         {
@@ -89,6 +121,20 @@
             "sv": "En gammal nordisk släkting till mig dök plötsligt upp här.",
             "en": "",
             "target_words": [
+                {
+                    "word_in_sentence": "nordisk",
+                    "base_form": "nordisk",
+                    "position_start": 10,
+                    "position_end": 17
+                },
+                {
+                    "word_in_sentence": "släkting",
+                    "base_form": "släkting",
+                    "position_start": 18,
+                    "position_end": 26
+                }
+            ],
+            "secondary_words": [
                 {
                     "word_in_sentence": "nordisk",
                     "base_form": "nordisk",
@@ -126,6 +172,14 @@
                     "position_start": 65,
                     "position_end": 74
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "genuint",
+                    "base_form": "genuint",
+                    "position_start": 57,
+                    "position_end": 64
+                }
             ]
         },
         {
@@ -145,6 +199,14 @@
                     "position_start": 36,
                     "position_end": 44
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "enormt",
+                    "base_form": "enormt",
+                    "position_start": 29,
+                    "position_end": 35
+                }
             ]
         },
         {
@@ -152,6 +214,12 @@
             "sv": "\"Du skojar!\" sa jag när han var spontan och kom hit.",
             "en": "",
             "target_words": [
+                {
+                    "word_in_sentence": "jag",
+                    "base_form": "jag",
+                    "position_start": 16,
+                    "position_end": 19
+                },
                 {
                     "word_in_sentence": "Du skojar!",
                     "base_form": "Du skojar!",
@@ -164,7 +232,8 @@
                     "position_start": 32,
                     "position_end": 39
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_53_s010",
@@ -195,6 +264,14 @@
                     "position_start": 92,
                     "position_end": 100
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "senaste",
+                    "base_form": "senaste",
+                    "position_start": 22,
+                    "position_end": 29
+                }
             ]
         },
         {
@@ -220,6 +297,14 @@
                     "position_start": 55,
                     "position_end": 61
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "oftast",
+                    "base_form": "oftast",
+                    "position_start": 7,
+                    "position_end": 13
+                }
             ]
         },
         {
@@ -227,6 +312,12 @@
             "sv": "Han avslöjade i hemlighet att han tyckte att jag var för slarvig och kanske även ganska lat.",
             "en": "",
             "target_words": [
+                {
+                    "word_in_sentence": "jag",
+                    "base_form": "jag",
+                    "position_start": 45,
+                    "position_end": 48
+                },
                 {
                     "word_in_sentence": "i hemlighet",
                     "base_form": "i hemlighet",
@@ -244,6 +335,14 @@
                     "base_form": "lat",
                     "position_start": 88,
                     "position_end": 91
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "avslöjade",
+                    "base_form": "avslöjade",
+                    "position_start": 4,
+                    "position_end": 13
                 }
             ]
         },
@@ -263,6 +362,14 @@
                     "base_form": "taskig",
                     "position_start": 28,
                     "position_end": 34
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "rentav",
+                    "base_form": "rentav",
+                    "position_start": 21,
+                    "position_end": 27
                 }
             ]
         },
@@ -289,6 +396,20 @@
                     "position_start": 38,
                     "position_end": 46
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "fällde",
+                    "base_form": "fällde",
+                    "position_start": 19,
+                    "position_end": 25
+                },
+                {
+                    "word_in_sentence": "kommentar",
+                    "base_form": "kommentar",
+                    "position_start": 47,
+                    "position_end": 56
+                }
             ]
         },
         {
@@ -296,6 +417,12 @@
             "sv": "Jag ville verkligen inte vara falsk, så jag blev upprörd och inte alls nöjd.",
             "en": "",
             "target_words": [
+                {
+                    "word_in_sentence": "jag",
+                    "base_form": "jag",
+                    "position_start": 40,
+                    "position_end": 43
+                },
                 {
                     "word_in_sentence": "falsk",
                     "base_form": "falsk",
@@ -307,6 +434,14 @@
                     "base_form": "nöjd",
                     "position_start": 71,
                     "position_end": 75
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "upprörd",
+                    "base_form": "upprörd",
+                    "position_start": 49,
+                    "position_end": 56
                 }
             ]
         },
@@ -326,6 +461,14 @@
                     "base_form": "snäll",
                     "position_start": 52,
                     "position_end": 57
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "alltid",
+                    "base_form": "alltid",
+                    "position_start": 40,
+                    "position_end": 46
                 }
             ]
         },
@@ -358,6 +501,20 @@
                     "position_start": 107,
                     "position_end": 112
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "passade också på",
+                    "base_form": "passade också på",
+                    "position_start": 35,
+                    "position_end": 51
+                },
+                {
+                    "word_in_sentence": "stor skala",
+                    "base_form": "stor skala",
+                    "position_start": 102,
+                    "position_end": 112
+                }
             ]
         },
         {
@@ -371,6 +528,20 @@
                     "position_start": 17,
                     "position_end": 24
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "utnyttja",
+                    "base_form": "utnyttja",
+                    "position_start": 36,
+                    "position_end": 44
+                },
+                {
+                    "word_in_sentence": "godhet",
+                    "base_form": "godhet",
+                    "position_start": 51,
+                    "position_end": 57
+                }
             ]
         },
         {
@@ -383,6 +554,20 @@
                     "base_form": "detsamma som",
                     "position_start": 33,
                     "position_end": 45
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "beteende",
+                    "base_form": "beteende",
+                    "position_start": 20,
+                    "position_end": 28
+                },
+                {
+                    "word_in_sentence": "egoistisk",
+                    "base_form": "egoistisk",
+                    "position_start": 55,
+                    "position_end": 64
                 }
             ]
         },
@@ -421,6 +606,14 @@
                     "position_start": 193,
                     "position_end": 200
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "inre",
+                    "base_form": "inre",
+                    "position_start": 165,
+                    "position_end": 169
+                }
             ]
         },
         {
@@ -440,6 +633,14 @@
                     "position_start": 64,
                     "position_end": 78
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "drömmar",
+                    "base_form": "drömmar",
+                    "position_start": 46,
+                    "position_end": 53
+                }
             ]
         },
         {
@@ -452,6 +653,20 @@
                     "base_form": "komma fram",
                     "position_start": 24,
                     "position_end": 34
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "Till slut",
+                    "base_form": "till slut",
+                    "position_start": 0,
+                    "position_end": 9
+                },
+                {
+                    "word_in_sentence": "lösning",
+                    "base_form": "lösning",
+                    "position_start": 47,
+                    "position_end": 54
                 }
             ]
         },
@@ -472,6 +687,20 @@
                     "position_start": 57,
                     "position_end": 67
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "bad om ursäkt",
+                    "base_form": "bad om ursäkt",
+                    "position_start": 4,
+                    "position_end": 17
+                },
+                {
+                    "word_in_sentence": "konflikten",
+                    "base_form": "konflikten",
+                    "position_start": 76,
+                    "position_end": 86
+                }
             ]
         },
         {
@@ -491,13 +720,35 @@
                     "position_start": 36,
                     "position_end": 39
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "problem",
+                    "base_form": "problem",
+                    "position_start": 40,
+                    "position_end": 47
+                }
             ]
         },
         {
             "sentence_id": "art_53_s025",
             "sv": "Jag började berätta om mina planer.",
             "en": "",
-            "target_words": []
+            "target_words": [],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "berätta",
+                    "base_form": "berätta",
+                    "position_start": 12,
+                    "position_end": 19
+                },
+                {
+                    "word_in_sentence": "planer",
+                    "base_form": "planer",
+                    "position_start": 28,
+                    "position_end": 34
+                }
+            ]
         },
         {
             "sentence_id": "art_53_s026",
@@ -509,6 +760,14 @@
                     "base_form": "ju mer …desto",
                     "position_start": 23,
                     "position_end": 36
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "ju mer …desto bättre",
+                    "base_form": "ju mer …desto bättre",
+                    "position_start": 23,
+                    "position_end": 43
                 }
             ]
         },
@@ -523,7 +782,8 @@
                     "position_start": 11,
                     "position_end": 16
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_53_s028",
@@ -534,6 +794,20 @@
                     "word_in_sentence": "skott",
                     "base_form": "skott",
                     "position_start": 36,
+                    "position_end": 41
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "stack han iväg",
+                    "base_form": "stack han iväg",
+                    "position_start": 6,
+                    "position_end": 20
+                },
+                {
+                    "word_in_sentence": "snabbt som ett skott",
+                    "base_form": "snabbt som ett skott",
+                    "position_start": 21,
                     "position_end": 41
                 }
             ]
@@ -555,6 +829,14 @@
                     "position_start": 73,
                     "position_end": 84
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "trots allt",
+                    "base_form": "trots allt",
+                    "position_start": 7,
+                    "position_end": 17
+                }
             ]
         },
         {
@@ -567,6 +849,20 @@
                     "base_form": "rekommendera",
                     "position_start": 8,
                     "position_end": 20
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "reser",
+                    "base_form": "reser",
+                    "position_start": 28,
+                    "position_end": 33
+                },
+                {
+                    "word_in_sentence": "hit",
+                    "base_form": "hit",
+                    "position_start": 34,
+                    "position_end": 37
                 }
             ]
         },
@@ -581,6 +877,14 @@
                     "position_start": 8,
                     "position_end": 16
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "varm",
+                    "base_form": "varm",
+                    "position_start": 3,
+                    "position_end": 7
+                }
             ]
         },
         {
@@ -594,7 +898,8 @@
                     "position_start": 0,
                     "position_end": 18
                 }
-            ]
+            ],
+            "secondary_words": []
         }
     ],
     "primary_words_used": [

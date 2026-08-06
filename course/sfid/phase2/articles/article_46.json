@@ -3,7 +3,7 @@
     "course_title": "SFI D",
     "stage_id": "stage_02",
     "stage_title": "Samhälle & Politik",
-    "article_id": "art_46",
+    "article_id": "article_46",
     "article_title": "Historisk Finanskris och Skamligt Förtryck",
     "target_word_count": 60,
     "sentences": [
@@ -18,7 +18,8 @@
                     "position_start": 1,
                     "position_end": 18
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_46_s002",
@@ -31,13 +32,35 @@
                     "position_start": 53,
                     "position_end": 59
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "föreslog",
+                    "base_form": "föreslog",
+                    "position_start": 33,
+                    "position_end": 41
+                }
             ]
         },
         {
             "sentence_id": "art_46_s003",
             "sv": "Han höll redan en tjock bok i handen.",
             "en": "",
-            "target_words": []
+            "target_words": [],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "tjock",
+                    "base_form": "tjock",
+                    "position_start": 18,
+                    "position_end": 23
+                },
+                {
+                    "word_in_sentence": "handen",
+                    "base_form": "handen",
+                    "position_start": 30,
+                    "position_end": 36
+                }
+            ]
         },
         {
             "sentence_id": "art_46_s004",
@@ -49,6 +72,14 @@
                     "base_form": "Vad handlar den om?",
                     "position_start": 1,
                     "position_end": 20
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "undrade",
+                    "base_form": "undrade",
+                    "position_start": 22,
+                    "position_end": 29
                 }
             ]
         },
@@ -64,10 +95,10 @@
                     "position_end": 15
                 },
                 {
-                    "word_in_sentence": "1930-talet",
-                    "base_form": "1930-talet",
-                    "position_start": 72,
-                    "position_end": 82
+                    "word_in_sentence": "faktoid",
+                    "base_form": "faktoid",
+                    "position_start": 16,
+                    "position_end": 23
                 },
                 {
                     "word_in_sentence": "tjugotalet",
@@ -76,10 +107,24 @@
                     "position_end": 57
                 },
                 {
-                    "word_in_sentence": "faktoid",
-                    "base_form": "faktoid",
-                    "position_start": 16,
-                    "position_end": 23
+                    "word_in_sentence": "1930-talet",
+                    "base_form": "1930-talet",
+                    "position_start": 72,
+                    "position_end": 82
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "makt",
+                    "base_form": "makt",
+                    "position_start": 27,
+                    "position_end": 31
+                },
+                {
+                    "word_in_sentence": "förklarade",
+                    "base_form": "förklarade",
+                    "position_start": 85,
+                    "position_end": 95
                 }
             ]
         },
@@ -88,12 +133,6 @@
             "sv": "Boken handlade om en oärlig finansman som nyligen var skild och valde att flytta hit från utlandet.",
             "en": "",
             "target_words": [
-                {
-                    "word_in_sentence": "land",
-                    "base_form": "land",
-                    "position_start": 92,
-                    "position_end": 96
-                },
                 {
                     "word_in_sentence": "oärlig",
                     "base_form": "oärlig",
@@ -111,6 +150,26 @@
                     "base_form": "hit",
                     "position_start": 81,
                     "position_end": 84
+                },
+                {
+                    "word_in_sentence": "land",
+                    "base_form": "land",
+                    "position_start": 92,
+                    "position_end": 96
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "nyligen",
+                    "base_form": "nyligen",
+                    "position_start": 42,
+                    "position_end": 49
+                },
+                {
+                    "word_in_sentence": "utlandet",
+                    "base_form": "utlandet",
+                    "position_start": 90,
+                    "position_end": 98
                 }
             ]
         },
@@ -120,10 +179,10 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "aktie",
-                    "base_form": "aktie",
-                    "position_start": 56,
-                    "position_end": 61
+                    "word_in_sentence": "introducera",
+                    "base_form": "introducera",
+                    "position_start": 10,
+                    "position_end": 21
                 },
                 {
                     "word_in_sentence": "fond",
@@ -132,10 +191,18 @@
                     "position_end": 44
                 },
                 {
-                    "word_in_sentence": "introducera",
-                    "base_form": "introducera",
-                    "position_start": 10,
-                    "position_end": 21
+                    "word_in_sentence": "aktie",
+                    "base_form": "aktie",
+                    "position_start": 56,
+                    "position_end": 61
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "dyr",
+                    "base_form": "dyr",
+                    "position_start": 52,
+                    "position_end": 55
                 }
             ]
         },
@@ -162,6 +229,14 @@
                     "position_start": 52,
                     "position_end": 62
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "använde sig",
+                    "base_form": "använde sig",
+                    "position_start": 29,
+                    "position_end": 40
+                }
             ]
         },
         {
@@ -170,16 +245,16 @@
             "en": "",
             "target_words": [
                 {
+                    "word_in_sentence": "övertala",
+                    "base_form": "övertala",
+                    "position_start": 13,
+                    "position_end": 21
+                },
+                {
                     "word_in_sentence": "italiensk",
                     "base_form": "italiensk",
                     "position_start": 66,
                     "position_end": 75
-                },
-                {
-                    "word_in_sentence": "norske",
-                    "base_form": "norske",
-                    "position_start": 92,
-                    "position_end": 98
                 },
                 {
                     "word_in_sentence": "rik",
@@ -188,10 +263,24 @@
                     "position_end": 92
                 },
                 {
-                    "word_in_sentence": "övertala",
-                    "base_form": "övertala",
-                    "position_start": 13,
-                    "position_end": 21
+                    "word_in_sentence": " rik n",
+                    "base_form": "norske",
+                    "position_start": 92,
+                    "position_end": 98
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "förmögna",
+                    "base_form": "förmögna",
+                    "position_start": 28,
+                    "position_end": 36
+                },
+                {
+                    "word_in_sentence": "greve",
+                    "base_form": "greve",
+                    "position_start": 76,
+                    "position_end": 81
                 }
             ]
         },
@@ -205,6 +294,14 @@
                     "base_form": "nära släkt",
                     "position_start": 19,
                     "position_end": 29
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "maktelit",
+                    "base_form": "maktelit",
+                    "position_start": 45,
+                    "position_end": 53
                 }
             ]
         },
@@ -220,12 +317,6 @@
                     "position_end": 22
                 },
                 {
-                    "word_in_sentence": "bankkonto",
-                    "base_form": "bankkonto",
-                    "position_start": 93,
-                    "position_end": 102
-                },
-                {
                     "word_in_sentence": "ur",
                     "base_form": "ur",
                     "position_start": 2,
@@ -236,6 +327,26 @@
                     "base_form": "öka",
                     "position_start": 73,
                     "position_end": 76
+                },
+                {
+                    "word_in_sentence": "bankkonto",
+                    "base_form": "bankkonto",
+                    "position_start": 93,
+                    "position_end": 102
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "lovade",
+                    "base_form": "lovade",
+                    "position_start": 55,
+                    "position_end": 61
+                },
+                {
+                    "word_in_sentence": "summan",
+                    "base_form": "summan",
+                    "position_start": 77,
+                    "position_end": 83
                 }
             ]
         },
@@ -245,16 +356,36 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "rikedom",
-                    "base_form": "rikedom",
+                    "word_in_sentence": "rik",
+                    "base_form": "rik",
                     "position_start": 49,
-                    "position_end": 56
+                    "position_end": 52
                 },
                 {
                     "word_in_sentence": "bara",
                     "base_form": "bara",
                     "position_start": 23,
                     "position_end": 27
+                },
+                {
+                    "word_in_sentence": "rikedom",
+                    "base_form": "rikedom",
+                    "position_start": 49,
+                    "position_end": 56
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "framtida",
+                    "base_form": "framtida",
+                    "position_start": 34,
+                    "position_end": 42
+                },
+                {
+                    "word_in_sentence": "enorm",
+                    "base_form": "enorm",
+                    "position_start": 43,
+                    "position_end": 48
                 }
             ]
         },
@@ -264,10 +395,30 @@
             "en": "",
             "target_words": [
                 {
+                    "word_in_sentence": "ur",
+                    "base_form": "ur",
+                    "position_start": 19,
+                    "position_end": 21
+                },
+                {
                     "word_in_sentence": "stjäla",
                     "base_form": "stjäla",
                     "position_start": 63,
                     "position_end": 69
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "fattigdom",
+                    "base_form": "fattigdom",
+                    "position_start": 32,
+                    "position_end": 41
+                },
+                {
+                    "word_in_sentence": "ärligt",
+                    "base_form": "ärligt",
+                    "position_start": 106,
+                    "position_end": 112
                 }
             ]
         },
@@ -288,6 +439,14 @@
                     "position_start": 37,
                     "position_end": 41
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "uppstod",
+                    "base_form": "uppstod",
+                    "position_start": 6,
+                    "position_end": 13
+                }
             ]
         },
         {
@@ -295,6 +454,12 @@
             "sv": "Det var svårt att veta vem som skulle tala för folket när staten ville höja varje litet pris.",
             "en": "",
             "target_words": [
+                {
+                    "word_in_sentence": "tala för",
+                    "base_form": "tala för",
+                    "position_start": 38,
+                    "position_end": 46
+                },
                 {
                     "word_in_sentence": "höja",
                     "base_form": "höja",
@@ -306,12 +471,14 @@
                     "base_form": "pris",
                     "position_start": 88,
                     "position_end": 92
-                },
+                }
+            ],
+            "secondary_words": [
                 {
-                    "word_in_sentence": "tala för",
-                    "base_form": "tala för",
-                    "position_start": 38,
-                    "position_end": 46
+                    "word_in_sentence": "svårt",
+                    "base_form": "svårt",
+                    "position_start": 8,
+                    "position_end": 13
                 }
             ]
         },
@@ -321,22 +488,36 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "ha råd",
-                    "base_form": "ha råd",
-                    "position_start": 80,
-                    "position_end": 86
-                },
-                {
                     "word_in_sentence": "nästan aldrig",
                     "base_form": "nästan aldrig",
                     "position_start": 24,
                     "position_end": 37
                 },
                 {
+                    "word_in_sentence": "ha råd",
+                    "base_form": "ha råd",
+                    "position_start": 80,
+                    "position_end": 86
+                },
+                {
                     "word_in_sentence": "leva",
                     "base_form": "leva",
                     "position_start": 95,
                     "position_end": 99
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "besparingar",
+                    "base_form": "besparingar",
+                    "position_start": 44,
+                    "position_end": 55
+                },
+                {
+                    "word_in_sentence": "drägligt",
+                    "base_form": "drägligt",
+                    "position_start": 100,
+                    "position_end": 108
                 }
             ]
         },
@@ -346,16 +527,30 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "kosta",
-                    "base_form": "kosta",
-                    "position_start": 55,
-                    "position_end": 60
-                },
-                {
                     "word_in_sentence": "uppge",
                     "base_form": "uppge",
                     "position_start": 18,
                     "position_end": 23
+                },
+                {
+                    "word_in_sentence": "kosta",
+                    "base_form": "kosta",
+                    "position_start": 55,
+                    "position_end": 60
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "stadig",
+                    "base_form": "stadig",
+                    "position_start": 27,
+                    "position_end": 33
+                },
+                {
+                    "word_in_sentence": "inkomst",
+                    "base_form": "inkomst",
+                    "position_start": 34,
+                    "position_end": 41
                 }
             ]
         },
@@ -376,6 +571,20 @@
                     "position_start": 41,
                     "position_end": 48
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "makthavarna",
+                    "base_form": "makthavarna",
+                    "position_start": 53,
+                    "position_end": 64
+                },
+                {
+                    "word_in_sentence": "blundade för",
+                    "base_form": "blundade för",
+                    "position_start": 65,
+                    "position_end": 77
+                }
             ]
         },
         {
@@ -388,6 +597,20 @@
                     "base_form": "förtryck",
                     "position_start": 24,
                     "position_end": 32
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "existerade",
+                    "base_form": "existerade",
+                    "position_start": 4,
+                    "position_end": 14
+                },
+                {
+                    "word_in_sentence": "hårt",
+                    "base_form": "hårt",
+                    "position_start": 19,
+                    "position_end": 23
                 }
             ]
         },
@@ -414,6 +637,14 @@
                     "position_start": 83,
                     "position_end": 92
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "strängt",
+                    "base_form": "strängt",
+                    "position_start": 75,
+                    "position_end": 82
+                }
             ]
         },
         {
@@ -439,6 +670,14 @@
                     "position_start": 62,
                     "position_end": 70
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "innebar",
+                    "base_form": "innebar",
+                    "position_start": 19,
+                    "position_end": 26
+                }
             ]
         },
         {
@@ -447,16 +686,30 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "vara skyldig",
-                    "base_form": "vara skyldig",
-                    "position_start": 49,
-                    "position_end": 61
-                },
-                {
                     "word_in_sentence": "gå vilse",
                     "base_form": "gå vilse",
                     "position_start": 15,
                     "position_end": 23
+                },
+                {
+                    "word_in_sentence": "vara skyldig",
+                    "base_form": "vara skyldig",
+                    "position_start": 49,
+                    "position_end": 61
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "lagboken",
+                    "base_form": "lagboken",
+                    "position_start": 26,
+                    "position_end": 34
+                },
+                {
+                    "word_in_sentence": "allvarligt",
+                    "base_form": "allvarligt",
+                    "position_start": 71,
+                    "position_end": 81
                 }
             ]
         },
@@ -471,6 +724,14 @@
                     "position_start": 21,
                     "position_end": 28
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "period",
+                    "base_form": "period",
+                    "position_start": 29,
+                    "position_end": 35
+                }
             ]
         },
         {
@@ -479,16 +740,30 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "motargument",
-                    "base_form": "motargument",
-                    "position_start": 46,
-                    "position_end": 57
-                },
-                {
                     "word_in_sentence": "samtidig",
                     "base_form": "samtidig",
                     "position_start": 3,
                     "position_end": 11
+                },
+                {
+                    "word_in_sentence": "motargument",
+                    "base_form": "motargument",
+                    "position_start": 46,
+                    "position_end": 57
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "vettigt",
+                    "base_form": "vettigt",
+                    "position_start": 38,
+                    "position_end": 45
+                },
+                {
+                    "word_in_sentence": "dröjde",
+                    "base_form": "dröjde",
+                    "position_start": 79,
+                    "position_end": 85
                 }
             ]
         },
@@ -498,16 +773,24 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "klappa",
-                    "base_form": "klappa",
-                    "position_start": 55,
-                    "position_end": 61
-                },
-                {
                     "word_in_sentence": "Jag vet inte riktigt.",
                     "base_form": "Jag vet inte riktigt.",
                     "position_start": 1,
                     "position_end": 22
+                },
+                {
+                    "word_in_sentence": "klappa",
+                    "base_form": "klappa",
+                    "position_start": 55,
+                    "position_end": 61
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "tyst",
+                    "base_form": "tyst",
+                    "position_start": 38,
+                    "position_end": 42
                 }
             ]
         },
@@ -515,7 +798,15 @@
             "sentence_id": "art_46_s026",
             "sv": "\"Det låter väldigt tungt.",
             "en": "",
-            "target_words": []
+            "target_words": [],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "tungt",
+                    "base_form": "tungt",
+                    "position_start": 19,
+                    "position_end": 24
+                }
+            ]
         },
         {
             "sentence_id": "art_46_s027",
@@ -528,6 +819,14 @@
                     "position_start": 34,
                     "position_end": 40
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "kärlek",
+                    "base_form": "kärlek",
+                    "position_start": 50,
+                    "position_end": 56
+                }
             ]
         },
         {
@@ -536,22 +835,36 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "miljon",
-                    "base_form": "miljon",
-                    "position_start": 98,
-                    "position_end": 104
-                },
-                {
                     "word_in_sentence": "idrottsförening",
                     "base_form": "idrottsförening",
                     "position_start": 66,
                     "position_end": 81
                 },
                 {
+                    "word_in_sentence": "miljon",
+                    "base_form": "miljon",
+                    "position_start": 98,
+                    "position_end": 104
+                },
+                {
                     "word_in_sentence": "synas",
                     "base_form": "synas",
                     "position_start": 157,
                     "position_end": 162
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "öppet",
+                    "base_form": "öppet",
+                    "position_start": 29,
+                    "position_end": 34
+                },
+                {
+                    "word_in_sentence": "välgörenhet",
+                    "base_form": "välgörenhet",
+                    "position_start": 110,
+                    "position_end": 121
                 }
             ]
         }

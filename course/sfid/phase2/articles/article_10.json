@@ -3,7 +3,7 @@
     "course_title": "SFI D",
     "stage_id": "stage_05",
     "stage_title": "Utbildning",
-    "article_id": "art_10",
+    "article_id": "article_10",
     "article_title": "Att Bemästra Svensk Grammatik",
     "target_word_count": 60,
     "sentences": [
@@ -13,22 +13,30 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "bibliotek",
-                    "base_form": "bibliotek",
-                    "position_start": 56,
-                    "position_end": 65
-                },
-                {
                     "word_in_sentence": "kurskompis",
                     "base_form": "kurskompis",
                     "position_start": 12,
                     "position_end": 22
                 },
                 {
+                    "word_in_sentence": "bibliotek",
+                    "base_form": "bibliotek",
+                    "position_start": 56,
+                    "position_end": 65
+                },
+                {
                     "word_in_sentence": "repetera",
                     "base_form": "repetera",
                     "position_start": 74,
                     "position_end": 82
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "prov",
+                    "base_form": "prov",
+                    "position_start": 99,
+                    "position_end": 103
                 }
             ]
         },
@@ -38,22 +46,30 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "föreslå",
-                    "base_form": "föreslå",
-                    "position_start": 43,
-                    "position_end": 50
-                },
-                {
                     "word_in_sentence": "Har du lust att…?",
                     "base_form": "Har du lust att…?",
                     "position_start": 1,
                     "position_end": 18
                 },
                 {
+                    "word_in_sentence": "föreslå",
+                    "base_form": "föreslå",
+                    "position_start": 43,
+                    "position_end": 50
+                },
+                {
                     "word_in_sentence": "klämdag",
                     "base_form": "klämdag",
                     "position_start": 79,
                     "position_end": 86
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "frågade",
+                    "base_form": "fråga",
+                    "position_start": 20,
+                    "position_end": 27
                 }
             ]
         },
@@ -68,6 +84,14 @@
                     "position_start": 1,
                     "position_end": 14
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "säger",
+                    "base_form": "säga",
+                    "position_start": 5,
+                    "position_end": 10
+                }
             ]
         },
         {
@@ -80,6 +104,14 @@
                     "base_form": "så många som möjligt",
                     "position_start": 39,
                     "position_end": 66
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "tyckte",
+                    "base_form": "tycka",
+                    "position_start": 4,
+                    "position_end": 10
                 }
             ]
         },
@@ -94,6 +126,14 @@
                     "position_start": 13,
                     "position_end": 22
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "valde",
+                    "base_form": "välja",
+                    "position_start": 3,
+                    "position_end": 8
+                }
             ]
         },
         {
@@ -101,6 +141,12 @@
             "sv": "Vår uppgift skulle bestå av en skriftlig del och en muntlig redovisning.",
             "en": "",
             "target_words": [
+                {
+                    "word_in_sentence": "bestå av",
+                    "base_form": "bestå av",
+                    "position_start": 19,
+                    "position_end": 27
+                },
                 {
                     "word_in_sentence": "skriftlig",
                     "base_form": "skriftlig",
@@ -112,12 +158,14 @@
                     "base_form": "muntlig",
                     "position_start": 52,
                     "position_end": 59
-                },
+                }
+            ],
+            "secondary_words": [
                 {
-                    "word_in_sentence": "bestå av",
-                    "base_form": "bestå av",
-                    "position_start": 19,
-                    "position_end": 27
+                    "word_in_sentence": "redovisning",
+                    "base_form": "redovisning",
+                    "position_start": 60,
+                    "position_end": 71
                 }
             ]
         },
@@ -138,6 +186,14 @@
                     "position_start": 34,
                     "position_end": 42
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "öva på",
+                    "base_form": "öva på",
+                    "position_start": 47,
+                    "position_end": 53
+                }
             ]
         },
         {
@@ -146,10 +202,10 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "påstående",
-                    "base_form": "påstående",
-                    "position_start": 44,
-                    "position_end": 53
+                    "word_in_sentence": "lapp",
+                    "base_form": "lapp",
+                    "position_start": 11,
+                    "position_end": 15
                 },
                 {
                     "word_in_sentence": "ruta",
@@ -158,10 +214,18 @@
                     "position_end": 30
                 },
                 {
-                    "word_in_sentence": "lapp",
-                    "base_form": "lapp",
-                    "position_start": 11,
-                    "position_end": 15
+                    "word_in_sentence": "påstående",
+                    "base_form": "påstående",
+                    "position_start": 44,
+                    "position_end": 53
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "innehöll",
+                    "base_form": "innehålla",
+                    "position_start": 31,
+                    "position_end": 39
                 }
             ]
         },
@@ -175,6 +239,14 @@
                     "base_form": "begrepp",
                     "position_start": 30,
                     "position_end": 37
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "viktigt",
+                    "base_form": "viktigt",
+                    "position_start": 22,
+                    "position_end": 29
                 }
             ]
         },
@@ -201,6 +273,14 @@
                     "position_start": 61,
                     "position_end": 72
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "uppdrag",
+                    "base_form": "uppdrag",
+                    "position_start": 10,
+                    "position_end": 17
+                }
             ]
         },
         {
@@ -220,6 +300,14 @@
                     "position_start": 18,
                     "position_end": 28
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "började",
+                    "base_form": "börja",
+                    "position_start": 3,
+                    "position_end": 10
+                }
             ]
         },
         {
@@ -227,6 +315,12 @@
             "sv": "Vi tränade ordkunskap genom att titta på en vokal, en konsonant och varje stavelse.",
             "en": "",
             "target_words": [
+                {
+                    "word_in_sentence": "ordkunskap",
+                    "base_form": "ordkunskap",
+                    "position_start": 11,
+                    "position_end": 21
+                },
                 {
                     "word_in_sentence": "vokal",
                     "base_form": "vokal",
@@ -245,13 +339,29 @@
                     "position_start": 74,
                     "position_end": 82
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "tränade",
+                    "base_form": "träna",
+                    "position_start": 3,
+                    "position_end": 10
+                }
             ]
         },
         {
             "sentence_id": "art_10_s013",
             "sv": "Det var roligt.",
             "en": "",
-            "target_words": []
+            "target_words": [],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "roligt",
+                    "base_form": "rolig",
+                    "position_start": 8,
+                    "position_end": 14
+                }
+            ]
         },
         {
             "sentence_id": "art_10_s014",
@@ -259,16 +369,24 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "poängterade",
-                    "base_form": "poängtera",
-                    "position_start": 18,
-                    "position_end": 29
-                },
-                {
                     "word_in_sentence": "skicklig",
                     "base_form": "skicklig",
                     "position_start": 7,
                     "position_end": 15
+                },
+                {
+                    "word_in_sentence": "poängterade",
+                    "base_form": "poängtera",
+                    "position_start": 18,
+                    "position_end": 29
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "hon",
+                    "base_form": "hon",
+                    "position_start": 30,
+                    "position_end": 33
                 }
             ]
         },
@@ -277,6 +395,12 @@
             "sv": "Vi pratade också om ljudförändringar, som svag reduktion och assimilation.",
             "en": "",
             "target_words": [
+                {
+                    "word_in_sentence": "svag",
+                    "base_form": "svag",
+                    "position_start": 42,
+                    "position_end": 46
+                },
                 {
                     "word_in_sentence": "reduktion",
                     "base_form": "reduktion",
@@ -288,12 +412,14 @@
                     "base_form": "asssimilation",
                     "position_start": 61,
                     "position_end": 73
-                },
+                }
+            ],
+            "secondary_words": [
                 {
-                    "word_in_sentence": "svag",
-                    "base_form": "svag",
-                    "position_start": 42,
-                    "position_end": 46
+                    "word_in_sentence": "ljudförändringar",
+                    "base_form": "ljudförändringar",
+                    "position_start": 20,
+                    "position_end": 36
                 }
             ]
         },
@@ -308,13 +434,29 @@
                     "position_start": 9,
                     "position_end": 15
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "lärt",
+                    "base_form": "lära",
+                    "position_start": 28,
+                    "position_end": 32
+                }
             ]
         },
         {
             "sentence_id": "art_10_s017",
             "sv": "Sedan gick vi igenom olika ordklasser och satsdelar.",
             "en": "",
-            "target_words": []
+            "target_words": [],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "olika",
+                    "base_form": "olika",
+                    "position_start": 21,
+                    "position_end": 26
+                }
+            ]
         },
         {
             "sentence_id": "art_10_s018",
@@ -327,6 +469,14 @@
                     "position_start": 27,
                     "position_end": 34
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "hitta",
+                    "base_form": "hitta",
+                    "position_start": 17,
+                    "position_end": 22
+                }
             ]
         },
         {
@@ -335,10 +485,10 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "komparativ",
-                    "base_form": "komparativ",
-                    "position_start": 71,
-                    "position_end": 81
+                    "word_in_sentence": "bestämd form",
+                    "base_form": "bestämd form",
+                    "position_start": 12,
+                    "position_end": 24
                 },
                 {
                     "word_in_sentence": "obestämd form",
@@ -347,10 +497,18 @@
                     "position_end": 42
                 },
                 {
-                    "word_in_sentence": "bestämd form",
-                    "base_form": "bestämd form",
-                    "position_start": 12,
-                    "position_end": 24
+                    "word_in_sentence": "komparativ",
+                    "base_form": "komparativ",
+                    "position_start": 71,
+                    "position_end": 81
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "jämförde",
+                    "base_form": "jämförde",
+                    "position_start": 3,
+                    "position_end": 11
                 }
             ]
         },
@@ -377,6 +535,14 @@
                     "position_start": 77,
                     "position_end": 86
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "pronomen",
+                    "base_form": "pronomen",
+                    "position_start": 24,
+                    "position_end": 32
+                }
             ]
         },
         {
@@ -390,13 +556,29 @@
                     "position_start": 22,
                     "position_end": 28
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "försökte",
+                    "base_form": "försöka",
+                    "position_start": 3,
+                    "position_end": 11
+                }
             ]
         },
         {
             "sentence_id": "art_10_s022",
             "sv": "Vi tränade på att bygga meningar.",
             "en": "",
-            "target_words": []
+            "target_words": [],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "bygga",
+                    "base_form": "bygga",
+                    "position_start": 18,
+                    "position_end": 23
+                }
+            ]
         },
         {
             "sentence_id": "art_10_s023",
@@ -404,16 +586,24 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "bisats",
-                    "base_form": "bisats",
-                    "position_start": 54,
-                    "position_end": 60
-                },
-                {
                     "word_in_sentence": "huvudsats",
                     "base_form": "huvudsats",
                     "position_start": 27,
                     "position_end": 36
+                },
+                {
+                    "word_in_sentence": "bisats",
+                    "base_form": "bisats",
+                    "position_start": 54,
+                    "position_end": 60
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "börja",
+                    "base_form": "börja",
+                    "position_start": 14,
+                    "position_end": 19
                 }
             ]
         },
@@ -429,16 +619,24 @@
                     "position_end": 25
                 },
                 {
-                    "word_in_sentence": "prepostion",
-                    "base_form": "prepostion",
-                    "position_start": 51,
-                    "position_end": 61
-                },
-                {
                     "word_in_sentence": "subjunktion",
                     "base_form": "subjunktion",
                     "position_start": 30,
                     "position_end": 41
+                },
+                {
+                    "word_in_sentence": "prepostion",
+                    "base_form": "prepostion",
+                    "position_start": 51,
+                    "position_end": 61
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "förändra",
+                    "base_form": "förändra",
+                    "position_start": 66,
+                    "position_end": 74
                 }
             ]
         },
@@ -453,6 +651,14 @@
                     "position_start": 24,
                     "position_end": 34
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "skriva",
+                    "base_form": "skriva",
+                    "position_start": 17,
+                    "position_end": 23
+                }
             ]
         },
         {
@@ -466,6 +672,14 @@
                     "position_start": 3,
                     "position_end": 10
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "regler",
+                    "base_form": "regler",
+                    "position_start": 51,
+                    "position_end": 57
+                }
             ]
         },
         {
@@ -474,16 +688,24 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "akademi",
-                    "base_form": "akademi",
-                    "position_start": 33,
-                    "position_end": 40
-                },
-                {
                     "word_in_sentence": "kusin",
                     "base_form": "kusin",
                     "position_start": 4,
                     "position_end": 9
+                },
+                {
+                    "word_in_sentence": "akademi",
+                    "base_form": "akademi",
+                    "position_start": 33,
+                    "position_end": 40
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "arbetar",
+                    "base_form": "arbeta",
+                    "position_start": 14,
+                    "position_end": 21
                 }
             ]
         },
@@ -493,22 +715,30 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "nyfångad",
-                    "base_form": "nyfångad",
-                    "position_start": 45,
-                    "position_end": 53
-                },
-                {
                     "word_in_sentence": "arv",
                     "base_form": "arv",
                     "position_start": 26,
                     "position_end": 29
                 },
                 {
+                    "word_in_sentence": "nyfångad",
+                    "base_form": "nyfångad",
+                    "position_start": 45,
+                    "position_end": 53
+                },
+                {
                     "word_in_sentence": "blanda i",
                     "base_form": "blanda i",
                     "position_start": 73,
                     "position_end": 81
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "gryta",
+                    "base_form": "gryta",
+                    "position_start": 85,
+                    "position_end": 90
                 }
             ]
         },
@@ -523,6 +753,14 @@
                     "position_start": 19,
                     "position_end": 24
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "översättas",
+                    "base_form": "översättas",
+                    "position_start": 29,
+                    "position_end": 39
+                }
             ]
         },
         {
@@ -530,6 +768,18 @@
             "sv": "Den enda regeln är att ha en livlig avslutning och en tydlig slutsats.",
             "en": "",
             "target_words": [
+                {
+                    "word_in_sentence": "enda",
+                    "base_form": "enda",
+                    "position_start": 4,
+                    "position_end": 8
+                },
+                {
+                    "word_in_sentence": "livlig",
+                    "base_form": "livlig",
+                    "position_start": 29,
+                    "position_end": 35
+                },
                 {
                     "word_in_sentence": "avslutning",
                     "base_form": "avslutning",
@@ -541,18 +791,14 @@
                     "base_form": "slutsats",
                     "position_start": 61,
                     "position_end": 69
-                },
+                }
+            ],
+            "secondary_words": [
                 {
-                    "word_in_sentence": "livlig",
-                    "base_form": "livlig",
-                    "position_start": 29,
-                    "position_end": 35
-                },
-                {
-                    "word_in_sentence": "enda",
-                    "base_form": "enda",
-                    "position_start": 4,
-                    "position_end": 8
+                    "word_in_sentence": "tydlig",
+                    "base_form": "tydlig",
+                    "position_start": 54,
+                    "position_end": 60
                 }
             ]
         },
@@ -566,6 +812,14 @@
                     "base_form": "siffran är uppe i",
                     "position_start": 0,
                     "position_end": 17
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "förstå",
+                    "base_form": "förstå",
+                    "position_start": 63,
+                    "position_end": 69
                 }
             ]
         },
@@ -585,6 +839,14 @@
                     "base_form": "betala",
                     "position_start": 42,
                     "position_end": 48
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "rast",
+                    "base_form": "rast",
+                    "position_start": 30,
+                    "position_end": 34
                 }
             ]
         }

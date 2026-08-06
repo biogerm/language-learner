@@ -3,7 +3,7 @@
     "course_title": "SFI D",
     "stage_id": "stage_10",
     "stage_title": "Mat & Matlagning",
-    "article_id": "art_13",
+    "article_id": "article_13",
     "article_title": "Ett Härligt Besök i Godisbutiken",
     "target_word_count": 60,
     "sentences": [
@@ -13,16 +13,24 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "godisgris",
-                    "base_form": "godisgris",
-                    "position_start": 17,
-                    "position_end": 26
-                },
-                {
                     "word_in_sentence": "riktig",
                     "base_form": "riktig",
                     "position_start": 10,
                     "position_end": 16
+                },
+                {
+                    "word_in_sentence": "godisgris",
+                    "base_form": "godisgris",
+                    "position_start": 17,
+                    "position_end": 26
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "är",
+                    "base_form": "vara",
+                    "position_start": 4,
+                    "position_end": 6
                 }
             ]
         },
@@ -32,10 +40,10 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "sockerberoende",
-                    "base_form": "sockerberoende",
-                    "position_start": 67,
-                    "position_end": 81
+                    "word_in_sentence": "För tio år sedan",
+                    "base_form": "för…sedan",
+                    "position_start": 0,
+                    "position_end": 16
                 },
                 {
                     "word_in_sentence": "lärare",
@@ -44,10 +52,18 @@
                     "position_end": 49
                 },
                 {
-                    "word_in_sentence": "För tio år sedan",
-                    "base_form": "för…sedan",
-                    "position_start": 0,
-                    "position_end": 16
+                    "word_in_sentence": "sockerberoende",
+                    "base_form": "sockerberoende",
+                    "position_start": 67,
+                    "position_end": 81
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "ofta",
+                    "base_form": "ofta",
+                    "position_start": 26,
+                    "position_end": 30
                 }
             ]
         },
@@ -56,12 +72,6 @@
             "sv": "Då hade vi ofta dålig skolmat och det var alltid en brist på god mat och dryck.",
             "en": "",
             "target_words": [
-                {
-                    "word_in_sentence": "mat och dryck",
-                    "base_form": "mat och dryck",
-                    "position_start": 65,
-                    "position_end": 78
-                },
                 {
                     "word_in_sentence": "skolmat",
                     "base_form": "skolmat",
@@ -73,6 +83,26 @@
                     "base_form": "brist",
                     "position_start": 52,
                     "position_end": 57
+                },
+                {
+                    "word_in_sentence": "mat och dryck",
+                    "base_form": "mat och dryck",
+                    "position_start": 65,
+                    "position_end": 78
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "dålig",
+                    "base_form": "dålig",
+                    "position_start": 16,
+                    "position_end": 21
+                },
+                {
+                    "word_in_sentence": "alltid",
+                    "base_form": "alltid",
+                    "position_start": 42,
+                    "position_end": 48
                 }
             ]
         },
@@ -82,16 +112,30 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "fikasugen",
-                    "base_form": "fikasugen",
-                    "position_start": 39,
-                    "position_end": 48
-                },
-                {
                     "word_in_sentence": "jättehungrig",
                     "base_form": "jättehungrig",
                     "position_start": 22,
                     "position_end": 34
+                },
+                {
+                    "word_in_sentence": "fikasugen",
+                    "base_form": "fikasugen",
+                    "position_start": 39,
+                    "position_end": 48
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "därför",
+                    "base_form": "därför",
+                    "position_start": -1,
+                    "position_end": -1
+                },
+                {
+                    "word_in_sentence": "slut",
+                    "base_form": "slut",
+                    "position_start": 67,
+                    "position_end": 71
                 }
             ]
         },
@@ -101,10 +145,10 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "odling",
-                    "base_form": "odling",
-                    "position_start": 67,
-                    "position_end": 73
+                    "word_in_sentence": "långt ut på landet",
+                    "base_form": "långt ut på landet",
+                    "position_start": 13,
+                    "position_end": 31
                 },
                 {
                     "word_in_sentence": "klimat",
@@ -113,10 +157,24 @@
                     "position_end": 55
                 },
                 {
-                    "word_in_sentence": "långt ut på landet",
-                    "base_form": "långt ut på landet",
-                    "position_start": 13,
-                    "position_end": 31
+                    "word_in_sentence": "odling",
+                    "base_form": "odling",
+                    "position_start": 67,
+                    "position_end": 73
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "lokala",
+                    "base_form": "lokal",
+                    "position_start": 42,
+                    "position_end": 48
+                },
+                {
+                    "word_in_sentence": "bra",
+                    "base_form": "bra",
+                    "position_start": 59,
+                    "position_end": 62
                 }
             ]
         },
@@ -131,6 +189,20 @@
                     "position_start": 37,
                     "position_end": 47
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "vet",
+                    "base_form": "veta",
+                    "position_start": 4,
+                    "position_end": 7
+                },
+                {
+                    "word_in_sentence": "stolt",
+                    "base_form": "stolt",
+                    "position_start": 22,
+                    "position_end": 27
+                }
             ]
         },
         {
@@ -143,6 +215,14 @@
                     "base_form": "ta kontakt med",
                     "position_start": 17,
                     "position_end": 31
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "bönderna",
+                    "base_form": "bonde",
+                    "position_start": 32,
+                    "position_end": 40
                 }
             ]
         },
@@ -163,6 +243,20 @@
                     "position_start": 70,
                     "position_end": 81
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "gamla",
+                    "base_form": "gammal",
+                    "position_start": 46,
+                    "position_end": 51
+                },
+                {
+                    "word_in_sentence": "traditioner",
+                    "base_form": "tradition",
+                    "position_start": 52,
+                    "position_end": 63
+                }
             ]
         },
         {
@@ -170,6 +264,18 @@
             "sv": "Han brukade göra en massa fina saker, som en marsipantårta eller en liten pepparkaka full med söt karamell.",
             "en": "",
             "target_words": [
+                {
+                    "word_in_sentence": "en massa",
+                    "base_form": "en massa",
+                    "position_start": 17,
+                    "position_end": 25
+                },
+                {
+                    "word_in_sentence": "marsipantårta",
+                    "base_form": "marsipantårta",
+                    "position_start": 45,
+                    "position_end": 58
+                },
                 {
                     "word_in_sentence": "tårta",
                     "base_form": "tårta",
@@ -183,16 +289,10 @@
                     "position_end": 84
                 },
                 {
-                    "word_in_sentence": "karamell",
-                    "base_form": "karamell",
-                    "position_start": 98,
-                    "position_end": 106
-                },
-                {
-                    "word_in_sentence": "marsipantårta",
-                    "base_form": "marsipantårta",
-                    "position_start": 45,
-                    "position_end": 58
+                    "word_in_sentence": "full med",
+                    "base_form": "full med",
+                    "position_start": 85,
+                    "position_end": 93
                 },
                 {
                     "word_in_sentence": "söt",
@@ -201,16 +301,24 @@
                     "position_end": 97
                 },
                 {
-                    "word_in_sentence": "full med",
-                    "base_form": "full med",
-                    "position_start": 85,
-                    "position_end": 93
+                    "word_in_sentence": "karamell",
+                    "base_form": "karamell",
+                    "position_start": 98,
+                    "position_end": 106
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "fina",
+                    "base_form": "fin",
+                    "position_start": 26,
+                    "position_end": 30
                 },
                 {
-                    "word_in_sentence": "en massa",
-                    "base_form": "en massa",
-                    "position_start": 17,
-                    "position_end": 25
+                    "word_in_sentence": "saker",
+                    "base_form": "sak",
+                    "position_start": 31,
+                    "position_end": 36
                 }
             ]
         },
@@ -220,16 +328,30 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "chokladfabrik",
-                    "base_form": "chokladfabrik",
-                    "position_start": 69,
-                    "position_end": 82
-                },
-                {
                     "word_in_sentence": "andrahandsinformation",
                     "base_form": "andrahandsinformation",
                     "position_start": 11,
                     "position_end": 32
+                },
+                {
+                    "word_in_sentence": "chokladfabrik",
+                    "base_form": "chokladfabrik",
+                    "position_start": 69,
+                    "position_end": 82
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "en gång",
+                    "base_form": "en gång",
+                    "position_start": 41,
+                    "position_end": 48
+                },
+                {
+                    "word_in_sentence": "arbetade",
+                    "base_form": "arbeta",
+                    "position_start": 49,
+                    "position_end": 57
                 }
             ]
         },
@@ -244,6 +366,20 @@
                     "position_start": 16,
                     "position_end": 25
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "fantastiskt",
+                    "base_form": "fantastisk",
+                    "position_start": 30,
+                    "position_end": 41
+                },
+                {
+                    "word_in_sentence": "ställe",
+                    "base_form": "ställe",
+                    "position_start": 42,
+                    "position_end": 48
+                }
             ]
         },
         {
@@ -257,6 +393,20 @@
                     "position_start": 31,
                     "position_end": 43
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "kände",
+                    "base_form": "känna",
+                    "position_start": 7,
+                    "position_end": 12
+                },
+                {
+                    "word_in_sentence": "arbetet",
+                    "base_form": "arbete",
+                    "position_start": 46,
+                    "position_end": 53
+                }
             ]
         },
         {
@@ -265,16 +415,24 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "familjemiddag",
-                    "base_form": "familjemiddag",
-                    "position_start": 52,
-                    "position_end": 65
-                },
-                {
                     "word_in_sentence": "skaffa",
                     "base_form": "skaffa",
                     "position_start": 25,
                     "position_end": 31
+                },
+                {
+                    "word_in_sentence": "familjemiddag",
+                    "base_form": "familjemiddag",
+                    "position_start": 52,
+                    "position_end": 65
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "bestämde mig",
+                    "base_form": "bestämma sig",
+                    "position_start": 4,
+                    "position_end": 16
                 }
             ]
         },
@@ -284,16 +442,30 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "godisbutik",
-                    "base_form": "godisbutik",
-                    "position_start": 44,
-                    "position_end": 54
-                },
-                {
                     "word_in_sentence": "smultronställe",
                     "base_form": "smultronställe",
                     "position_start": 19,
                     "position_end": 33
+                },
+                {
+                    "word_in_sentence": "godisbutik",
+                    "base_form": "godisbutik",
+                    "position_start": 44,
+                    "position_end": 54
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "åkte",
+                    "base_form": "åka",
+                    "position_start": 4,
+                    "position_end": 8
+                },
+                {
+                    "word_in_sentence": "mysig",
+                    "base_form": "mysig",
+                    "position_start": 38,
+                    "position_end": 43
                 }
             ]
         },
@@ -302,6 +474,12 @@
             "sv": "Den såg annorlunda ut, nästan som en stor mataffär från en modern matvarukedja.",
             "en": "",
             "target_words": [
+                {
+                    "word_in_sentence": "annorlunda",
+                    "base_form": "annorlunda",
+                    "position_start": 8,
+                    "position_end": 18
+                },
                 {
                     "word_in_sentence": "mataffär",
                     "base_form": "mataffär",
@@ -313,12 +491,20 @@
                     "base_form": "matvarukedja",
                     "position_start": 66,
                     "position_end": 78
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "nästan",
+                    "base_form": "nästan",
+                    "position_start": 23,
+                    "position_end": 29
                 },
                 {
-                    "word_in_sentence": "annorlunda",
-                    "base_form": "annorlunda",
-                    "position_start": 8,
-                    "position_end": 18
+                    "word_in_sentence": "modern",
+                    "base_form": "modern",
+                    "position_start": 59,
+                    "position_end": 65
                 }
             ]
         },
@@ -339,19 +525,41 @@
                     "position_start": 12,
                     "position_end": 21
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "ägaren",
+                    "base_form": "ägare",
+                    "position_start": 36,
+                    "position_end": 42
+                }
             ]
         },
         {
             "sentence_id": "art_13_s017",
             "sv": "Det kändes bra.",
             "en": "",
-            "target_words": []
+            "target_words": [],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "kändes",
+                    "base_form": "kännas",
+                    "position_start": 4,
+                    "position_end": 10
+                }
+            ]
         },
         {
             "sentence_id": "art_13_s018",
             "sv": "Jag gick omkring bland hyllorna medan jag tänkte på vad jag skulle välja.",
             "en": "",
             "target_words": [
+                {
+                    "word_in_sentence": "väl",
+                    "base_form": "väl",
+                    "position_start": 67,
+                    "position_end": 70
+                },
                 {
                     "word_in_sentence": "omkring",
                     "base_form": "omkring",
@@ -370,6 +578,20 @@
                     "position_start": 42,
                     "position_end": 51
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "hyllorna",
+                    "base_form": "hylla",
+                    "position_start": 23,
+                    "position_end": 31
+                },
+                {
+                    "word_in_sentence": "välja",
+                    "base_form": "välja",
+                    "position_start": 67,
+                    "position_end": 72
+                }
             ]
         },
         {
@@ -383,6 +605,14 @@
                     "position_start": 31,
                     "position_end": 36
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "mer",
+                    "base_form": "mycket",
+                    "position_start": 19,
+                    "position_end": 22
+                }
             ]
         },
         {
@@ -390,6 +620,12 @@
             "sv": "Jag hittade en ny godissort, vilket var en liten geléfisk med härlig fruktsmak.",
             "en": "",
             "target_words": [
+                {
+                    "word_in_sentence": "frukt",
+                    "base_form": "frukt",
+                    "position_start": 69,
+                    "position_end": 74
+                },
                 {
                     "word_in_sentence": "godissort",
                     "base_form": "godissort",
@@ -408,6 +644,20 @@
                     "position_start": 69,
                     "position_end": 78
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "hittade",
+                    "base_form": "hitta",
+                    "position_start": 4,
+                    "position_end": 11
+                },
+                {
+                    "word_in_sentence": "härlig",
+                    "base_form": "härlig",
+                    "position_start": 62,
+                    "position_end": 68
+                }
             ]
         },
         {
@@ -416,22 +666,36 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "chokladkaka",
-                    "base_form": "chokladkaka",
-                    "position_start": 41,
-                    "position_end": 52
-                },
-                {
                     "word_in_sentence": "pralin",
                     "base_form": "pralin",
                     "position_start": 25,
                     "position_end": 31
                 },
                 {
+                    "word_in_sentence": "chokladkaka",
+                    "base_form": "chokladkaka",
+                    "position_start": 41,
+                    "position_end": 52
+                },
+                {
                     "word_in_sentence": "polkagris",
                     "base_form": "polkagris",
                     "position_start": 69,
                     "position_end": 78
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "också",
+                    "base_form": "också",
+                    "position_start": 12,
+                    "position_end": 17
+                },
+                {
+                    "word_in_sentence": "påse",
+                    "base_form": "påse",
+                    "position_start": 60,
+                    "position_end": 64
                 }
             ]
         },
@@ -440,6 +704,12 @@
             "sv": "Dessutom köpte jag lördagsgodis, lite plockgodis och en rolig tablettask till barnen.",
             "en": "",
             "target_words": [
+                {
+                    "word_in_sentence": "lördagsgodis",
+                    "base_form": "lördagsgodis",
+                    "position_start": 19,
+                    "position_end": 31
+                },
                 {
                     "word_in_sentence": "plockgodis",
                     "base_form": "plockgodis",
@@ -451,12 +721,20 @@
                     "base_form": "tablettask",
                     "position_start": 62,
                     "position_end": 72
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "köpte",
+                    "base_form": "köpa",
+                    "position_start": 9,
+                    "position_end": 14
                 },
                 {
-                    "word_in_sentence": "lördagsgodis",
-                    "base_form": "lördagsgodis",
-                    "position_start": 19,
-                    "position_end": 31
+                    "word_in_sentence": "rolig",
+                    "base_form": "rolig",
+                    "position_start": 56,
+                    "position_end": 61
                 }
             ]
         },
@@ -477,6 +755,14 @@
                     "position_start": 40,
                     "position_end": 49
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "till och med",
+                    "base_form": "till och med",
+                    "position_start": 10,
+                    "position_end": 22
+                }
             ]
         },
         {
@@ -485,16 +771,24 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "texmexprodukt",
-                    "base_form": "texmexprodukt",
-                    "position_start": 32,
-                    "position_end": 45
-                },
-                {
                     "word_in_sentence": "så långt",
                     "base_form": "så långt",
                     "position_start": 15,
                     "position_end": 23
+                },
+                {
+                    "word_in_sentence": "texmexprodukt",
+                    "base_form": "texmexprodukt",
+                    "position_start": 32,
+                    "position_end": 45
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "allt",
+                    "base_form": "all",
+                    "position_start": -1,
+                    "position_end": -1
                 }
             ]
         },
@@ -508,6 +802,20 @@
                     "base_form": "hotellfrukost",
                     "position_start": 49,
                     "position_end": 62
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "njöt",
+                    "base_form": "njuta",
+                    "position_start": 15,
+                    "position_end": 19
+                },
+                {
+                    "word_in_sentence": "lyxig",
+                    "base_form": "lyxig",
+                    "position_start": 43,
+                    "position_end": 48
                 }
             ]
         },
@@ -528,6 +836,20 @@
                     "position_start": 52,
                     "position_end": 67
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "glad",
+                    "base_form": "glad",
+                    "position_start": 83,
+                    "position_end": 87
+                },
+                {
+                    "word_in_sentence": "godsaker",
+                    "base_form": "godsak",
+                    "position_start": 98,
+                    "position_end": 106
+                }
             ]
         },
         {
@@ -536,16 +858,30 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "annars",
-                    "base_form": "annars",
-                    "position_start": 46,
-                    "position_end": 52
-                },
-                {
                     "word_in_sentence": "sortera",
                     "base_form": "sortera",
                     "position_start": 10,
                     "position_end": 17
+                },
+                {
+                    "word_in_sentence": "annars",
+                    "base_form": "annars",
+                    "position_start": 46,
+                    "position_end": 52
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "viktigt",
+                    "base_form": "viktig",
+                    "position_start": 29,
+                    "position_end": 36
+                },
+                {
+                    "word_in_sentence": "livet",
+                    "base_form": "liv",
+                    "position_start": 39,
+                    "position_end": 44
                 }
             ]
         },
@@ -559,6 +895,14 @@
                     "base_form": "tugga",
                     "position_start": 32,
                     "position_end": 37
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "roligare",
+                    "base_form": "rolig",
+                    "position_start": 14,
+                    "position_end": 22
                 }
             ]
         }

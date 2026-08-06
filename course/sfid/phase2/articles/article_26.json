@@ -3,7 +3,7 @@
     "course_title": "SFI D",
     "stage_id": "stage_06",
     "stage_title": "Hälsa & Medicin",
-    "article_id": "art_26",
+    "article_id": "article_26",
     "article_title": "När Hälsan Plötsligt Sviker",
     "target_word_count": 60,
     "sentences": [
@@ -12,12 +12,6 @@
             "sv": "En kall januari träffade jag en typisk hurtbulle.",
             "en": "",
             "target_words": [
-                {
-                    "word_in_sentence": "hurtbulle",
-                    "base_form": "hurtbulle",
-                    "position_start": 39,
-                    "position_end": 48
-                },
                 {
                     "word_in_sentence": "januari",
                     "base_form": "januari",
@@ -29,6 +23,26 @@
                     "base_form": "typisk",
                     "position_start": 32,
                     "position_end": 38
+                },
+                {
+                    "word_in_sentence": "hurtbulle",
+                    "base_form": "hurtbulle",
+                    "position_start": 39,
+                    "position_end": 48
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "kall",
+                    "base_form": "kall",
+                    "position_start": 3,
+                    "position_end": 7
+                },
+                {
+                    "word_in_sentence": "träffade",
+                    "base_form": "träffade",
+                    "position_start": 16,
+                    "position_end": 24
                 }
             ]
         },
@@ -38,16 +52,24 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "röra på sig",
-                    "base_form": "röra på sig",
-                    "position_start": 25,
-                    "position_end": 36
-                },
-                {
                     "word_in_sentence": "född",
                     "base_form": "född",
                     "position_start": 12,
                     "position_end": 16
+                },
+                {
+                    "word_in_sentence": "röra på sig",
+                    "base_form": "röra på sig",
+                    "position_start": 25,
+                    "position_end": 36
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "verkade",
+                    "base_form": "verkade",
+                    "position_start": 4,
+                    "position_end": 11
                 }
             ]
         },
@@ -56,18 +78,6 @@
             "sv": "Varje morgon, jämt och helt utan uppehåll, brukade han jogga i skogen.",
             "en": "",
             "target_words": [
-                {
-                    "word_in_sentence": "jogga",
-                    "base_form": "jogga",
-                    "position_start": 55,
-                    "position_end": 60
-                },
-                {
-                    "word_in_sentence": "ge",
-                    "base_form": "giva",
-                    "position_start": 66,
-                    "position_end": 68
-                },
                 {
                     "word_in_sentence": "jämt",
                     "base_form": "jämt",
@@ -79,6 +89,32 @@
                     "base_form": "uppehåll",
                     "position_start": 33,
                     "position_end": 41
+                },
+                {
+                    "word_in_sentence": "jogga",
+                    "base_form": "jogga",
+                    "position_start": 55,
+                    "position_end": 60
+                },
+                {
+                    "word_in_sentence": "ge",
+                    "base_form": "giva",
+                    "position_start": 66,
+                    "position_end": 68
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "morgon",
+                    "base_form": "morgon",
+                    "position_start": 6,
+                    "position_end": 12
+                },
+                {
+                    "word_in_sentence": "helt utan",
+                    "base_form": "helt utan",
+                    "position_start": 23,
+                    "position_end": 32
                 }
             ]
         },
@@ -93,6 +129,20 @@
                     "position_start": 17,
                     "position_end": 27
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "motto",
+                    "base_form": "motto",
+                    "position_start": 5,
+                    "position_end": 10
+                },
+                {
+                    "word_in_sentence": "betydde",
+                    "base_form": "betydde",
+                    "position_start": 47,
+                    "position_end": 54
+                }
             ]
         },
         {
@@ -101,16 +151,30 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "maraton",
-                    "base_form": "maraton",
-                    "position_start": 69,
-                    "position_end": 76
-                },
-                {
                     "word_in_sentence": "sätta upp",
                     "base_form": "sätta upp",
                     "position_start": 29,
                     "position_end": 38
+                },
+                {
+                    "word_in_sentence": "maraton",
+                    "base_form": "maraton",
+                    "position_start": 69,
+                    "position_end": 76
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "bestämt sig",
+                    "base_form": "bestämt sig",
+                    "position_start": 9,
+                    "position_end": 20
+                },
+                {
+                    "word_in_sentence": "mål",
+                    "base_form": "mål",
+                    "position_start": 49,
+                    "position_end": 52
                 }
             ]
         },
@@ -120,10 +184,16 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "snabbhet",
-                    "base_form": "snabbhet",
-                    "position_start": 100,
-                    "position_end": 108
+                    "word_in_sentence": "aktiv",
+                    "base_form": "aktiv",
+                    "position_start": 21,
+                    "position_end": 26
+                },
+                {
+                    "word_in_sentence": "komma ut",
+                    "base_form": "komma ut",
+                    "position_start": 37,
+                    "position_end": 45
                 },
                 {
                     "word_in_sentence": "uthållighet",
@@ -138,16 +208,24 @@
                     "position_end": 91
                 },
                 {
-                    "word_in_sentence": "komma ut",
-                    "base_form": "komma ut",
-                    "position_start": 37,
-                    "position_end": 45
+                    "word_in_sentence": "snabbhet",
+                    "base_form": "snabbhet",
+                    "position_start": 100,
+                    "position_end": 108
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "älskade",
+                    "base_form": "älskade",
+                    "position_start": 4,
+                    "position_end": 11
                 },
                 {
-                    "word_in_sentence": "aktiv",
-                    "base_form": "aktiv",
-                    "position_start": 21,
-                    "position_end": 26
+                    "word_in_sentence": "bygga upp",
+                    "base_form": "bygga upp",
+                    "position_start": 54,
+                    "position_end": 63
                 }
             ]
         },
@@ -157,10 +235,10 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "armhävningar",
-                    "base_form": "armhävning",
-                    "position_start": 42,
-                    "position_end": 54
+                    "word_in_sentence": "vara duktig på",
+                    "base_form": "vara duktig på",
+                    "position_start": 10,
+                    "position_end": 24
                 },
                 {
                     "word_in_sentence": "köra",
@@ -169,10 +247,24 @@
                     "position_end": 33
                 },
                 {
-                    "word_in_sentence": "vara duktig på",
-                    "base_form": "vara duktig på",
-                    "position_start": 10,
-                    "position_end": 24
+                    "word_in_sentence": "armhävningar",
+                    "base_form": "armhävning",
+                    "position_start": 42,
+                    "position_end": 54
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "trettio",
+                    "base_form": "trettio",
+                    "position_start": 34,
+                    "position_end": 41
+                },
+                {
+                    "word_in_sentence": "i sträck",
+                    "base_form": "i sträck",
+                    "position_start": 55,
+                    "position_end": 63
                 }
             ]
         },
@@ -182,16 +274,30 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "pigg",
-                    "base_form": "pigg",
-                    "position_start": 55,
-                    "position_end": 59
-                },
-                {
                     "word_in_sentence": "smal",
                     "base_form": "smal",
                     "position_start": 18,
                     "position_end": 22
+                },
+                {
+                    "word_in_sentence": "pigg",
+                    "base_form": "pigg",
+                    "position_start": 55,
+                    "position_end": 59
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "stark",
+                    "base_form": "stark",
+                    "position_start": 38,
+                    "position_end": 43
+                },
+                {
+                    "word_in_sentence": "alltid",
+                    "base_form": "alltid",
+                    "position_start": 48,
+                    "position_end": 54
                 }
             ]
         },
@@ -201,10 +307,30 @@
             "en": "",
             "target_words": [
                 {
+                    "word_in_sentence": "ge",
+                    "base_form": "giva",
+                    "position_start": 41,
+                    "position_end": 43
+                },
+                {
                     "word_in_sentence": "intagen",
                     "base_form": "intagen",
                     "position_start": 37,
                     "position_end": 44
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "trodde",
+                    "base_form": "trodde",
+                    "position_start": 4,
+                    "position_end": 10
+                },
+                {
+                    "word_in_sentence": "sjukhus",
+                    "base_form": "sjukhus",
+                    "position_start": 52,
+                    "position_end": 59
                 }
             ]
         },
@@ -213,12 +339,6 @@
             "sv": "Han var registrerad på ett privat gym som säkert tjänade en miljard, eftersom branschen var enorm.",
             "en": "",
             "target_words": [
-                {
-                    "word_in_sentence": "miljard",
-                    "base_form": "miljard",
-                    "position_start": 60,
-                    "position_end": 67
-                },
                 {
                     "word_in_sentence": "registrerad",
                     "base_form": "registrerad",
@@ -232,10 +352,30 @@
                     "position_end": 33
                 },
                 {
+                    "word_in_sentence": "miljard",
+                    "base_form": "miljard",
+                    "position_start": 60,
+                    "position_end": 67
+                },
+                {
                     "word_in_sentence": "enorm",
                     "base_form": "enorm",
                     "position_start": 92,
                     "position_end": 97
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "tjänade",
+                    "base_form": "tjänade",
+                    "position_start": 49,
+                    "position_end": 56
+                },
+                {
+                    "word_in_sentence": "branschen",
+                    "base_form": "branschen",
+                    "position_start": 78,
+                    "position_end": 87
                 }
             ]
         },
@@ -245,10 +385,10 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "alkohol",
-                    "base_form": "alkohol",
-                    "position_start": 57,
-                    "position_end": 64
+                    "word_in_sentence": "ge",
+                    "base_form": "giva",
+                    "position_start": 53,
+                    "position_end": 55
                 },
                 {
                     "word_in_sentence": "matvanor",
@@ -257,10 +397,30 @@
                     "position_end": 24
                 },
                 {
+                    "word_in_sentence": "alkohol",
+                    "base_form": "alkohol",
+                    "position_start": 57,
+                    "position_end": 64
+                },
+                {
                     "word_in_sentence": "berusad",
                     "base_form": "berusad",
                     "position_start": 88,
                     "position_end": 95
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "skötte",
+                    "base_form": "skötte",
+                    "position_start": 4,
+                    "position_end": 10
+                },
+                {
+                    "word_in_sentence": "perfekt",
+                    "base_form": "perfekt",
+                    "position_start": 25,
+                    "position_end": 32
                 }
             ]
         },
@@ -270,10 +430,30 @@
             "en": "",
             "target_words": [
                 {
+                    "word_in_sentence": "ge",
+                    "base_form": "giva",
+                    "position_start": 42,
+                    "position_end": 44
+                },
+                {
                     "word_in_sentence": "intervjua",
                     "base_form": "intervjua",
                     "position_start": 16,
                     "position_end": 25
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "gillade",
+                    "base_form": "gillade",
+                    "position_start": 4,
+                    "position_end": 11
+                },
+                {
+                    "word_in_sentence": "träningsråd",
+                    "base_form": "träningsråd",
+                    "position_start": 49,
+                    "position_end": 60
                 }
             ]
         },
@@ -282,6 +462,12 @@
             "sv": "Han visste hur man kunde rädda en ond rygg med rätt skydd, och hur en snabb uppfräschning kunde överraska kroppen positivt.",
             "en": "",
             "target_words": [
+                {
+                    "word_in_sentence": "rädda",
+                    "base_form": "rädda",
+                    "position_start": 25,
+                    "position_end": 30
+                },
                 {
                     "word_in_sentence": "rygg",
                     "base_form": "rygg",
@@ -295,28 +481,36 @@
                     "position_end": 57
                 },
                 {
-                    "word_in_sentence": "fräsch",
-                    "base_form": "fräsch",
-                    "position_start": 79,
-                    "position_end": 85
-                },
-                {
                     "word_in_sentence": "uppfräschning",
                     "base_form": "uppfräschning",
                     "position_start": 76,
                     "position_end": 89
                 },
                 {
-                    "word_in_sentence": "rädda",
-                    "base_form": "rädda",
-                    "position_start": 25,
-                    "position_end": 30
+                    "word_in_sentence": "fräsch",
+                    "base_form": "fräsch",
+                    "position_start": 79,
+                    "position_end": 85
                 },
                 {
                     "word_in_sentence": "överraska",
                     "base_form": "överraska",
                     "position_start": 96,
                     "position_end": 105
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "ond",
+                    "base_form": "ond",
+                    "position_start": 34,
+                    "position_end": 37
+                },
+                {
+                    "word_in_sentence": "positivt",
+                    "base_form": "positivt",
+                    "position_start": 114,
+                    "position_end": 122
                 }
             ]
         },
@@ -326,16 +520,36 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "svettig",
-                    "base_form": "svettig",
-                    "position_start": 76,
-                    "position_end": 83
+                    "word_in_sentence": "fräsch",
+                    "base_form": "fräsch",
+                    "position_start": 26,
+                    "position_end": 32
                 },
                 {
                     "word_in_sentence": "lukta illa",
                     "base_form": "lukta illa",
                     "position_start": 49,
                     "position_end": 59
+                },
+                {
+                    "word_in_sentence": "svettig",
+                    "base_form": "svettig",
+                    "position_start": 76,
+                    "position_end": 83
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "vägrade",
+                    "base_form": "vägrade",
+                    "position_start": 37,
+                    "position_end": 44
+                },
+                {
+                    "word_in_sentence": "även om",
+                    "base_form": "även om",
+                    "position_start": 60,
+                    "position_end": 67
                 }
             ]
         },
@@ -350,6 +564,20 @@
                     "position_start": 42,
                     "position_end": 47
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "hände",
+                    "base_form": "hände",
+                    "position_start": 11,
+                    "position_end": 16
+                },
+                {
+                    "word_in_sentence": "skört",
+                    "base_form": "skört",
+                    "position_start": 61,
+                    "position_end": 66
+                }
             ]
         },
         {
@@ -358,16 +586,24 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "vila",
-                    "base_form": "vila",
-                    "position_start": 34,
-                    "position_end": 38
-                },
-                {
                     "word_in_sentence": "bli tvungen",
                     "base_form": "bli tvungen",
                     "position_start": 18,
                     "position_end": 29
+                },
+                {
+                    "word_in_sentence": "vila",
+                    "base_form": "vila",
+                    "position_start": 34,
+                    "position_end": 38
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "tyvärr",
+                    "base_form": "tyvärr",
+                    "position_start": 11,
+                    "position_end": 17
                 }
             ]
         },
@@ -388,6 +624,20 @@
                     "position_start": 50,
                     "position_end": 57
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "biten",
+                    "base_form": "biten",
+                    "position_start": 19,
+                    "position_end": 24
+                },
+                {
+                    "word_in_sentence": "hund",
+                    "base_form": "hund",
+                    "position_start": 31,
+                    "position_end": 35
+                }
             ]
         },
         {
@@ -396,10 +646,30 @@
             "en": "",
             "target_words": [
                 {
+                    "word_in_sentence": "smittad",
+                    "base_form": "smittad",
+                    "position_start": 16,
+                    "position_end": 23
+                },
+                {
                     "word_in_sentence": "infektion",
                     "base_form": "infektion",
                     "position_start": 46,
                     "position_end": 55
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "snabbt",
+                    "base_form": "snabbt",
+                    "position_start": 9,
+                    "position_end": 15
+                },
+                {
+                    "word_in_sentence": "allvarlig",
+                    "base_form": "allvarlig",
+                    "position_start": 36,
+                    "position_end": 45
                 }
             ]
         },
@@ -408,6 +678,12 @@
             "sv": "Det var inte som en vanlig allergi, utan kroppen reagerade som vid en kraftig allergichock med svår hosta.",
             "en": "",
             "target_words": [
+                {
+                    "word_in_sentence": "allergi",
+                    "base_form": "allergi",
+                    "position_start": 27,
+                    "position_end": 34
+                },
                 {
                     "word_in_sentence": "allergichock",
                     "base_form": "allergichock",
@@ -419,12 +695,20 @@
                     "base_form": "hosta",
                     "position_start": 100,
                     "position_end": 105
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "reagerade",
+                    "base_form": "reagerade",
+                    "position_start": 49,
+                    "position_end": 58
                 },
                 {
-                    "word_in_sentence": "allergi",
-                    "base_form": "allergi",
-                    "position_start": 27,
-                    "position_end": 34
+                    "word_in_sentence": "kraftig",
+                    "base_form": "kraftig",
+                    "position_start": 70,
+                    "position_end": 77
                 }
             ]
         },
@@ -439,6 +723,20 @@
                     "position_start": 26,
                     "position_end": 30
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "Smärtan",
+                    "base_form": "smärtan",
+                    "position_start": 0,
+                    "position_end": 7
+                },
+                {
+                    "word_in_sentence": "spred sig",
+                    "base_form": "spred sig",
+                    "position_start": 8,
+                    "position_end": 17
+                }
             ]
         },
         {
@@ -452,6 +750,14 @@
                     "position_start": 12,
                     "position_end": 16
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "enormt",
+                    "base_form": "enormt",
+                    "position_start": 17,
+                    "position_end": 23
+                }
             ]
         },
         {
@@ -460,16 +766,36 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "ansiktsförlamning",
-                    "base_form": "ansiktsförlamning",
-                    "position_start": 62,
-                    "position_end": 79
+                    "word_in_sentence": "lida",
+                    "base_form": "lida",
+                    "position_start": 5,
+                    "position_end": 9
                 },
                 {
                     "word_in_sentence": "lidande",
                     "base_form": "lidande",
                     "position_start": 5,
                     "position_end": 12
+                },
+                {
+                    "word_in_sentence": "ansiktsförlamning",
+                    "base_form": "ansiktsförlamning",
+                    "position_start": 62,
+                    "position_end": 79
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "hemskt",
+                    "base_form": "hemskt",
+                    "position_start": 17,
+                    "position_end": 23
+                },
+                {
+                    "word_in_sentence": "partiell",
+                    "base_form": "partiell",
+                    "position_start": 53,
+                    "position_end": 61
                 }
             ]
         },
@@ -478,6 +804,12 @@
             "sv": "Han fick genomgå en lång behandling och var ofta stressad över förlorad inkomst efter sin första karensdag.",
             "en": "",
             "target_words": [
+                {
+                    "word_in_sentence": "behandling",
+                    "base_form": "behandling",
+                    "position_start": 25,
+                    "position_end": 35
+                },
                 {
                     "word_in_sentence": "stressad",
                     "base_form": "stressad",
@@ -489,12 +821,20 @@
                     "base_form": "karensdag",
                     "position_start": 97,
                     "position_end": 106
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "genomgå",
+                    "base_form": "genomgå",
+                    "position_start": 9,
+                    "position_end": 16
                 },
                 {
-                    "word_in_sentence": "behandling",
-                    "base_form": "behandling",
-                    "position_start": 25,
-                    "position_end": 35
+                    "word_in_sentence": "inkomst",
+                    "base_form": "inkomst",
+                    "position_start": 72,
+                    "position_end": 79
                 }
             ]
         },
@@ -515,7 +855,8 @@
                     "position_start": 28,
                     "position_end": 39
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_26_s025",
@@ -523,16 +864,30 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "linje",
-                    "base_form": "linje",
-                    "position_start": 87,
-                    "position_end": 92
-                },
-                {
                     "word_in_sentence": "sekel",
                     "base_form": "sekel",
                     "position_start": 34,
                     "position_end": 39
+                },
+                {
+                    "word_in_sentence": "linje",
+                    "base_form": "linje",
+                    "position_start": 87,
+                    "position_end": 92
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "korsa",
+                    "base_form": "korsa",
+                    "position_start": 70,
+                    "position_end": 75
+                },
+                {
+                    "word_in_sentence": "osynlig",
+                    "base_form": "osynlig",
+                    "position_start": 79,
+                    "position_end": 86
                 }
             ]
         },
@@ -546,6 +901,20 @@
                     "base_form": "symbolisera",
                     "position_start": 48,
                     "position_end": 60
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "förmågan",
+                    "base_form": "förmågan",
+                    "position_start": 17,
+                    "position_end": 25
+                },
+                {
+                    "word_in_sentence": "stanna upp",
+                    "base_form": "stanna upp",
+                    "position_start": 30,
+                    "position_end": 40
                 }
             ]
         }

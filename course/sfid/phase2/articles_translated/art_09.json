@@ -41,7 +41,15 @@
                     "contextual_en": "degree"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "viktigt",
+                    "base_form": "viktig",
+                    "contextual_en": "important",
+                    "position_start": 35,
+                    "position_end": 42
+                }
+            ]
         },
         {
             "sentence_id": "art_09_s002",
@@ -77,7 +85,15 @@
                     "contextual_en": "math"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "vanlig",
+                    "base_form": "vanlig",
+                    "contextual_en": "regular",
+                    "position_start": 17,
+                    "position_end": 23
+                }
+            ]
         },
         {
             "sentence_id": "art_09_s003",
@@ -106,7 +122,15 @@
                     "contextual_en": "calculating"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "problem",
+                    "base_form": "problem",
+                    "contextual_en": "problems",
+                    "position_start": 16,
+                    "position_end": 23
+                }
+            ]
         },
         {
             "sentence_id": "art_09_s004",
@@ -128,7 +152,15 @@
                     "contextual_en": "book"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "duktig",
+                    "base_form": "duktig",
+                    "contextual_en": "good",
+                    "position_start": 3,
+                    "position_end": 9
+                }
+            ]
         },
         {
             "sentence_id": "art_09_s005",
@@ -150,7 +182,15 @@
                     "contextual_en": "proverb"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "gammalt",
+                    "base_form": "gammal",
+                    "contextual_en": "old",
+                    "position_start": 34,
+                    "position_end": 41
+                }
+            ]
         },
         {
             "sentence_id": "art_09_s006",
@@ -200,7 +240,15 @@
                     "contextual_en": "emphasis"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "övning",
+                    "base_form": "övning",
+                    "contextual_en": "exercise",
+                    "position_start": 12,
+                    "position_end": 18
+                }
+            ]
         },
         {
             "sentence_id": "art_09_s007",
@@ -273,7 +321,15 @@
                     "contextual_en": "preschool teacher"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "jobbar",
+                    "base_form": "jobba",
+                    "contextual_en": "works",
+                    "position_start": 68,
+                    "position_end": 74
+                }
+            ]
         },
         {
             "sentence_id": "art_09_s009",
@@ -302,7 +358,15 @@
                     "contextual_en": "seen"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "kände",
+                    "base_form": "känna",
+                    "contextual_en": "felt",
+                    "position_start": 53,
+                    "position_end": 58
+                }
+            ]
         },
         {
             "sentence_id": "art_09_s010",
@@ -324,7 +388,15 @@
                     "contextual_en": "lesson"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "behövde",
+                    "base_form": "behöva",
+                    "contextual_en": "need",
+                    "position_start": 4,
+                    "position_end": 11
+                }
+            ]
         },
         {
             "sentence_id": "art_09_s011",
@@ -360,7 +432,15 @@
                     "contextual_en": "high school teacher"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "valde",
+                    "base_form": "välja",
+                    "contextual_en": "chose",
+                    "position_start": 7,
+                    "position_end": 12
+                }
+            ]
         },
         {
             "sentence_id": "art_09_s012",
@@ -433,7 +513,15 @@
                     "contextual_en": "academic"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "annan",
+                    "base_form": "annan",
+                    "contextual_en": "other",
+                    "position_start": 79,
+                    "position_end": 84
+                }
+            ]
         },
         {
             "sentence_id": "art_09_s014",
@@ -492,7 +580,15 @@
                     "contextual_en": "Swedish for immigrants"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "berättade",
+                    "base_form": "berätta",
+                    "contextual_en": "told",
+                    "position_start": 11,
+                    "position_end": 20
+                }
+            ]
         },
         {
             "sentence_id": "art_09_s016",
@@ -521,7 +617,15 @@
                     "contextual_en": "by Friday at the latest"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "stort",
+                    "base_form": "stor",
+                    "contextual_en": "big",
+                    "position_start": 58,
+                    "position_end": 63
+                }
+            ]
         },
         {
             "sentence_id": "art_09_s017",
@@ -580,7 +684,15 @@
                     "contextual_en": "degree"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "bästa",
+                    "base_form": "bäst",
+                    "contextual_en": "best",
+                    "position_start": 57,
+                    "position_end": 62
+                }
+            ]
         },
         {
             "sentence_id": "art_09_s019",
@@ -632,7 +744,15 @@
                     "contextual_en": "brief"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "fråga",
+                    "base_form": "fråga",
+                    "contextual_en": "question",
+                    "position_start": 87,
+                    "position_end": 92
+                }
+            ]
         },
         {
             "sentence_id": "art_09_s021",
@@ -684,7 +804,15 @@
                     "contextual_en": "locally produced"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "hoppas",
+                    "base_form": "hoppas",
+                    "contextual_en": "hope",
+                    "position_start": 13,
+                    "position_end": 19
+                }
+            ]
         }
     ],
     "primary_words_used": [

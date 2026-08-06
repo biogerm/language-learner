@@ -41,6 +41,27 @@
                     "position_start": 99,
                     "position_end": 103,
                     "contextual_en": "letter"
+                },
+                {
+                    "word_in_sentence": "vecka",
+                    "base_form": "vecka",
+                    "contextual_en": "week",
+                    "position_start": 13,
+                    "position_end": 18
+                },
+                {
+                    "word_in_sentence": "kontoret",
+                    "base_form": "kontor",
+                    "contextual_en": "office",
+                    "position_start": 22,
+                    "position_end": 30
+                },
+                {
+                    "word_in_sentence": "läsa",
+                    "base_form": "läsa",
+                    "contextual_en": "read",
+                    "position_start": 87,
+                    "position_end": 91
                 }
             ]
         },
@@ -78,7 +99,15 @@
                     "contextual_en": "project"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "nytt",
+                    "base_form": "ny",
+                    "contextual_en": "new",
+                    "position_start": 55,
+                    "position_end": 59
+                }
+            ]
         },
         {
             "sentence_id": "art_07_s003",
@@ -114,7 +143,15 @@
                     "contextual_en": "shopping center"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "bredvid",
+                    "base_form": "bredvid",
+                    "contextual_en": "next to",
+                    "position_start": 34,
+                    "position_end": 41
+                }
+            ]
         },
         {
             "sentence_id": "art_07_s004",
@@ -143,7 +180,15 @@
                     "contextual_en": "CEO"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "staden",
+                    "base_form": "stad",
+                    "contextual_en": "city",
+                    "position_start": 32,
+                    "position_end": 38
+                }
+            ]
         },
         {
             "sentence_id": "art_07_s005",
@@ -165,7 +210,15 @@
                     "contextual_en": "product"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "planerade",
+                    "base_form": "planera",
+                    "contextual_en": "planned",
+                    "position_start": 4,
+                    "position_end": 13
+                }
+            ]
         },
         {
             "sentence_id": "art_07_s006",
@@ -201,7 +254,15 @@
                     "contextual_en": "bestseller"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "hoppades",
+                    "base_form": "hoppas",
+                    "contextual_en": "hoped",
+                    "position_start": 45,
+                    "position_end": 53
+                }
+            ]
         },
         {
             "sentence_id": "art_07_s007",
@@ -237,7 +298,15 @@
                     "contextual_en": "sales"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "behövde",
+                    "base_form": "behöva",
+                    "contextual_en": "needed",
+                    "position_start": 24,
+                    "position_end": 31
+                }
+            ]
         },
         {
             "sentence_id": "art_07_s008",
@@ -252,22 +321,30 @@
                     "contextual_en": "contact someone"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "hjälpa till",
+                    "base_form": "hjälpa till",
+                    "contextual_en": "help",
+                    "position_start": 33,
+                    "position_end": 44
+                }
+            ]
         },
         {
             "sentence_id": "art_07_s009",
             "sv": "\"Du skulle kunna försöka.\"",
             "en": "\"You could try.\"",
-            "target_words": [
+            "target_words": [],
+            "secondary_words": [
                 {
-                    "word_in_sentence": "Du skulle kunna försöka.",
-                    "base_form": "Du skulle kunna prova/försöka.",
-                    "position_start": 1,
-                    "position_end": 25,
-                    "contextual_en": "You could try."
+                    "word_in_sentence": "försöka",
+                    "base_form": "försöka",
+                    "contextual_en": "try",
+                    "position_start": 17,
+                    "position_end": 24
                 }
-            ],
-            "secondary_words": []
+            ]
         },
         {
             "sentence_id": "art_07_s010",
@@ -296,7 +373,15 @@
                     "contextual_en": "task"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "min",
+                    "base_form": "min",
+                    "contextual_en": "my",
+                    "position_start": 37,
+                    "position_end": 40
+                }
+            ]
         },
         {
             "sentence_id": "art_07_s011",
@@ -311,7 +396,15 @@
                     "contextual_en": "meeting"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "viktigt",
+                    "base_form": "viktig",
+                    "contextual_en": "important",
+                    "position_start": 12,
+                    "position_end": 19
+                }
+            ]
         },
         {
             "sentence_id": "art_07_s012",
@@ -333,7 +426,22 @@
                     "contextual_en": "exactly"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "noga",
+                    "base_form": "noga",
+                    "contextual_en": "careful",
+                    "position_start": 8,
+                    "position_end": 12
+                },
+                {
+                    "word_in_sentence": "rätt",
+                    "base_form": "rätt",
+                    "contextual_en": "right",
+                    "position_start": 59,
+                    "position_end": 63
+                }
+            ]
         },
         {
             "sentence_id": "art_07_s013",
@@ -362,7 +470,29 @@
                     "contextual_en": "below"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "skrivit",
+                    "base_form": "skriva",
+                    "contextual_en": "written",
+                    "position_start": 31,
+                    "position_end": 38
+                },
+                {
+                    "word_in_sentence": "tavla",
+                    "base_form": "tavla",
+                    "contextual_en": "board",
+                    "position_start": 59,
+                    "position_end": 64
+                },
+                {
+                    "word_in_sentence": "skärmen",
+                    "base_form": "skärm",
+                    "contextual_en": "screen",
+                    "position_start": 74,
+                    "position_end": 81
+                }
+            ]
         },
         {
             "sentence_id": "art_07_s014",
@@ -391,7 +521,15 @@
                     "contextual_en": "title"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "använda",
+                    "base_form": "använda",
+                    "contextual_en": "use",
+                    "position_start": 20,
+                    "position_end": 27
+                }
+            ]
         },
         {
             "sentence_id": "art_07_s015",
@@ -406,7 +544,15 @@
                     "contextual_en": "decide on"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "framtiden",
+                    "base_form": "framtid",
+                    "contextual_en": "future",
+                    "position_start": 19,
+                    "position_end": 28
+                }
+            ]
         },
         {
             "sentence_id": "art_07_s016",
@@ -435,7 +581,15 @@
                     "contextual_en": "collaborate"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "mer",
+                    "base_form": "mer",
+                    "contextual_en": "more",
+                    "position_start": 50,
+                    "position_end": 53
+                }
+            ]
         },
         {
             "sentence_id": "art_07_s017",
@@ -471,7 +625,22 @@
                     "contextual_en": "construction site"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "säkerhet",
+                    "base_form": "säkerhet",
+                    "contextual_en": "safety",
+                    "position_start": 61,
+                    "position_end": 69
+                },
+                {
+                    "word_in_sentence": "varje",
+                    "base_form": "varje",
+                    "contextual_en": "every",
+                    "position_start": 73,
+                    "position_end": 78
+                }
+            ]
         },
         {
             "sentence_id": "art_07_s018",
@@ -500,7 +669,22 @@
                     "contextual_en": "sign"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "behöver",
+                    "base_form": "behöva",
+                    "contextual_en": "need",
+                    "position_start": 4,
+                    "position_end": 11
+                },
+                {
+                    "word_in_sentence": "avtal",
+                    "base_form": "avtal",
+                    "contextual_en": "contracts",
+                    "position_start": 59,
+                    "position_end": 64
+                }
+            ]
         },
         {
             "sentence_id": "art_07_s019",
@@ -522,7 +706,15 @@
                     "contextual_en": "stressful"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "tid",
+                    "base_form": "tid",
+                    "contextual_en": "time",
+                    "position_start": 35,
+                    "position_end": 38
+                }
+            ]
         },
         {
             "sentence_id": "art_07_s020",
@@ -544,7 +736,22 @@
                     "contextual_en": "good"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "arbetet",
+                    "base_form": "arbete",
+                    "contextual_en": "work",
+                    "position_start": 22,
+                    "position_end": 29
+                },
+                {
+                    "word_in_sentence": "månad",
+                    "base_form": "månad",
+                    "contextual_en": "month",
+                    "position_start": 45,
+                    "position_end": 50
+                }
+            ]
         },
         {
             "sentence_id": "art_07_s021",
@@ -566,7 +773,15 @@
                     "contextual_en": "inspector"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "säkerhetsfrågor",
+                    "base_form": "säkerhetsfråga",
+                    "contextual_en": "security issues",
+                    "position_start": 64,
+                    "position_end": 79
+                }
+            ]
         },
         {
             "sentence_id": "art_07_s022",
@@ -595,7 +810,22 @@
                     "contextual_en": "waitress"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "anställa",
+                    "base_form": "anställa",
+                    "contextual_en": "hiring",
+                    "position_start": 24,
+                    "position_end": 32
+                },
+                {
+                    "word_in_sentence": "kantinen",
+                    "base_form": "kantin",
+                    "contextual_en": "canteen",
+                    "position_start": 78,
+                    "position_end": 86
+                }
+            ]
         },
         {
             "sentence_id": "art_07_s023",
@@ -610,7 +840,15 @@
                     "contextual_en": "either... or"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "just nu",
+                    "base_form": "just nu",
+                    "contextual_en": "right now",
+                    "position_start": 57,
+                    "position_end": 64
+                }
+            ]
         },
         {
             "sentence_id": "art_07_s024",
@@ -632,7 +870,15 @@
                     "contextual_en": "get a chance"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "chans",
+                    "base_form": "chans",
+                    "contextual_en": "chance",
+                    "position_start": 38,
+                    "position_end": 43
+                }
+            ]
         },
         {
             "sentence_id": "art_07_s025",
@@ -661,7 +907,29 @@
                     "contextual_en": "paid"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "klubben",
+                    "base_form": "klubb",
+                    "contextual_en": "club",
+                    "position_start": 28,
+                    "position_end": 35
+                },
+                {
+                    "word_in_sentence": "plats",
+                    "base_form": "plats",
+                    "contextual_en": "place",
+                    "position_start": 51,
+                    "position_end": 56
+                },
+                {
+                    "word_in_sentence": "nöjd",
+                    "base_form": "nöjd",
+                    "contextual_en": "satisfied",
+                    "position_start": 79,
+                    "position_end": 83
+                }
+            ]
         }
     ],
     "primary_words_used": [

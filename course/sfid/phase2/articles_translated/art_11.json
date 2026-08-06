@@ -480,15 +480,7 @@
             "sentence_id": "art_11_s015",
             "sv": "\"Har du provat/försökt att…?\" frågade läraren när jag verkade osäker.",
             "en": "\"Have you tried/attempted to...?\" the teacher asked when I seemed unsure.",
-            "target_words": [
-                {
-                    "word_in_sentence": "Har du provat/försökt att…?",
-                    "base_form": "Har du provat/försökt att…?",
-                    "position_start": 1,
-                    "position_end": 28,
-                    "contextual_en": "Have you tried/attempted to...?"
-                }
-            ],
+            "target_words": [],
             "secondary_words": [
                 {
                     "word_in_sentence": "osäker",
@@ -504,14 +496,30 @@
             "sv": "Hon gav mig mycket stöd.",
             "en": "She gave me a lot of support.",
             "target_words": [],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "stöd",
+                    "base_form": "stöd",
+                    "contextual_en": "support",
+                    "position_start": 19,
+                    "position_end": 23
+                }
+            ]
         },
         {
             "sentence_id": "art_11_s017",
             "sv": "I vår text skulle vi framförallt visa att vi förstår grundläggande grammatik.",
             "en": "In our text we were primarily to show that we understand basic grammar.",
             "target_words": [],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "visa",
+                    "base_form": "visa",
+                    "contextual_en": "show",
+                    "position_start": 33,
+                    "position_end": 37
+                }
+            ]
         },
         {
             "sentence_id": "art_11_s018",

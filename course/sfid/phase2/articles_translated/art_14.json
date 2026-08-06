@@ -27,7 +27,15 @@
                     "contextual_en": "theme"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "speciellt",
+                    "base_form": "speciell",
+                    "contextual_en": "special",
+                    "position_start": 31,
+                    "position_end": 40
+                }
+            ]
         },
         {
             "sentence_id": "art_14_s002",
@@ -56,7 +64,15 @@
                     "contextual_en": "fika"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "har",
+                    "base_form": "ha",
+                    "contextual_en": "have",
+                    "position_start": 17,
+                    "position_end": 20
+                }
+            ]
         },
         {
             "sentence_id": "art_14_s003",
@@ -92,7 +108,22 @@
                     "contextual_en": "sandwich"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "enkelt",
+                    "base_form": "enkel",
+                    "contextual_en": "simple",
+                    "position_start": 21,
+                    "position_end": 27
+                },
+                {
+                    "word_in_sentence": "glas",
+                    "base_form": "glas",
+                    "contextual_en": "glass",
+                    "position_start": 47,
+                    "position_end": 51
+                }
+            ]
         },
         {
             "sentence_id": "art_14_s004",
@@ -121,7 +152,22 @@
                     "contextual_en": "dinner"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "föredrar",
+                    "base_form": "föredra",
+                    "contextual_en": "prefer",
+                    "position_start": 6,
+                    "position_end": 14
+                },
+                {
+                    "word_in_sentence": "sen",
+                    "base_form": "sen",
+                    "contextual_en": "late",
+                    "position_start": 64,
+                    "position_end": 67
+                }
+            ]
         },
         {
             "sentence_id": "art_14_s005",
@@ -143,7 +189,22 @@
                     "contextual_en": "home-cooked"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "utlandet",
+                    "base_form": "utland",
+                    "contextual_en": "abroad",
+                    "position_start": 35,
+                    "position_end": 43
+                },
+                {
+                    "word_in_sentence": "såg",
+                    "base_form": "se",
+                    "contextual_en": "saw",
+                    "position_start": 52,
+                    "position_end": 55
+                }
+            ]
         },
         {
             "sentence_id": "art_14_s006",
@@ -179,7 +240,15 @@
                     "contextual_en": "meatball"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "typisk",
+                    "base_form": "typisk",
+                    "contextual_en": "typical",
+                    "position_start": 3,
+                    "position_end": 9
+                }
+            ]
         },
         {
             "sentence_id": "art_14_s007",
@@ -201,7 +270,15 @@
                     "contextual_en": "allspice"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "till exempel",
+                    "base_form": "till exempel",
+                    "contextual_en": "for example",
+                    "position_start": 26,
+                    "position_end": 38
+                }
+            ]
         },
         {
             "sentence_id": "art_14_s008",
@@ -216,7 +293,15 @@
                     "contextual_en": "horse meat"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "äter",
+                    "base_form": "äta",
+                    "contextual_en": "eat",
+                    "position_start": 8,
+                    "position_end": 12
+                }
+            ]
         },
         {
             "sentence_id": "art_14_s009",
@@ -231,7 +316,15 @@
                     "contextual_en": "Yes, it is true!"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "sant",
+                    "base_form": "sann",
+                    "contextual_en": "true",
+                    "position_start": 12,
+                    "position_end": 16
+                }
+            ]
         },
         {
             "sentence_id": "art_14_s010",
@@ -260,7 +353,22 @@
                     "contextual_en": "oil crisis"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "särskilt",
+                    "base_form": "särskild",
+                    "contextual_en": "especially",
+                    "position_start": 80,
+                    "position_end": 88
+                },
+                {
+                    "word_in_sentence": "historisk",
+                    "base_form": "historisk",
+                    "contextual_en": "historic",
+                    "position_start": 98,
+                    "position_end": 107
+                }
+            ]
         },
         {
             "sentence_id": "art_14_s011",
@@ -275,7 +383,15 @@
                     "contextual_en": "be afraid of"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "nu",
+                    "base_form": "nu",
+                    "contextual_en": "now",
+                    "position_start": 32,
+                    "position_end": 34
+                }
+            ]
         },
         {
             "sentence_id": "art_14_s012",
@@ -297,7 +413,15 @@
                     "contextual_en": "crazy"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "idén",
+                    "base_form": "idé",
+                    "contextual_en": "the idea",
+                    "position_start": 37,
+                    "position_end": 41
+                }
+            ]
         },
         {
             "sentence_id": "art_14_s013",
@@ -333,7 +457,22 @@
                     "contextual_en": "wheat flour"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "gammal",
+                    "base_form": "gammal",
+                    "contextual_en": "old",
+                    "position_start": 26,
+                    "position_end": 32
+                },
+                {
+                    "word_in_sentence": "rätt",
+                    "base_form": "rätt",
+                    "contextual_en": "dish",
+                    "position_start": 33,
+                    "position_end": 37
+                }
+            ]
         },
         {
             "sentence_id": "art_14_s014",
@@ -355,7 +494,22 @@
                     "contextual_en": "lingonberry jam"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "serveras",
+                    "base_form": "servera",
+                    "contextual_en": "is served",
+                    "position_start": 4,
+                    "position_end": 12
+                },
+                {
+                    "word_in_sentence": "mycket",
+                    "base_form": "mycket",
+                    "contextual_en": "a lot of",
+                    "position_start": 17,
+                    "position_end": 23
+                }
+            ]
         },
         {
             "sentence_id": "art_14_s015",
@@ -391,7 +545,22 @@
                     "contextual_en": "food coma"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "började",
+                    "base_form": "börja",
+                    "contextual_en": "started",
+                    "position_start": 30,
+                    "position_end": 37
+                },
+                {
+                    "word_in_sentence": "jättegott",
+                    "base_form": "jättegod",
+                    "contextual_en": "very tasty",
+                    "position_start": 55,
+                    "position_end": 64
+                }
+            ]
         },
         {
             "sentence_id": "art_14_s016",
@@ -420,14 +589,30 @@
                     "contextual_en": "go out"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "trötthet",
+                    "base_form": "trötthet",
+                    "contextual_en": "tiredness",
+                    "position_start": 38,
+                    "position_end": 46
+                }
+            ]
         },
         {
             "sentence_id": "art_14_s017",
             "sv": "Vi tog ett dopp.",
             "en": "We took a dip.",
             "target_words": [],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "dopp",
+                    "base_form": "dopp",
+                    "contextual_en": "dip",
+                    "position_start": 11,
+                    "position_end": 15
+                }
+            ]
         },
         {
             "sentence_id": "art_14_s018",
@@ -442,7 +627,22 @@
                     "contextual_en": "salty baths"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "flera",
+                    "base_form": "flera",
+                    "contextual_en": "several",
+                    "position_start": 6,
+                    "position_end": 11
+                },
+                {
+                    "word_in_sentence": "energi",
+                    "base_form": "energi",
+                    "contextual_en": "energy",
+                    "position_start": 33,
+                    "position_end": 39
+                }
+            ]
         },
         {
             "sentence_id": "art_14_s019",
@@ -457,7 +657,22 @@
                     "contextual_en": "June"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "firade",
+                    "base_form": "fira",
+                    "contextual_en": "celebrated",
+                    "position_start": 3,
+                    "position_end": 9
+                },
+                {
+                    "word_in_sentence": "varma",
+                    "base_form": "varm",
+                    "contextual_en": "warm",
+                    "position_start": 14,
+                    "position_end": 19
+                }
+            ]
         },
         {
             "sentence_id": "art_14_s020",
@@ -479,7 +694,22 @@
                     "contextual_en": "angle"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "solens",
+                    "base_form": "sol",
+                    "contextual_en": "the sun's",
+                    "position_start": -1,
+                    "position_end": -1
+                },
+                {
+                    "word_in_sentence": "vacker",
+                    "base_form": "vacker",
+                    "contextual_en": "beautiful",
+                    "position_start": 38,
+                    "position_end": 44
+                }
+            ]
         },
         {
             "sentence_id": "art_14_s021",
@@ -494,7 +724,22 @@
                     "contextual_en": "tearjerker"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "tittade",
+                    "base_form": "titta",
+                    "contextual_en": "watched",
+                    "position_start": 3,
+                    "position_end": 10
+                },
+                {
+                    "word_in_sentence": "film",
+                    "base_form": "film",
+                    "contextual_en": "movie",
+                    "position_start": 24,
+                    "position_end": 28
+                }
+            ]
         },
         {
             "sentence_id": "art_14_s022",
@@ -523,7 +768,22 @@
                     "contextual_en": "egg cheese"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "gjort",
+                    "base_form": "göra",
+                    "contextual_en": "made",
+                    "position_start": 9,
+                    "position_end": 14
+                },
+                {
+                    "word_in_sentence": "klick",
+                    "base_form": "klick",
+                    "contextual_en": "dollop",
+                    "position_start": 46,
+                    "position_end": 51
+                }
+            ]
         },
         {
             "sentence_id": "art_14_s023",
@@ -559,7 +819,15 @@
                     "contextual_en": "apple wedge"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "kanel",
+                    "base_form": "kanel",
+                    "contextual_en": "cinnamon",
+                    "position_start": 39,
+                    "position_end": 44
+                }
+            ]
         },
         {
             "sentence_id": "art_14_s024",
@@ -588,7 +856,22 @@
                     "contextual_en": "buried"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "färsk",
+                    "base_form": "färsk",
+                    "contextual_en": "fresh",
+                    "position_start": 15,
+                    "position_end": 20
+                },
+                {
+                    "word_in_sentence": "några",
+                    "base_form": "någon",
+                    "contextual_en": "some",
+                    "position_start": 35,
+                    "position_end": 40
+                }
+            ]
         },
         {
             "sentence_id": "art_14_s025",
@@ -610,7 +893,15 @@
                     "contextual_en": "official"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "meny",
+                    "base_form": "meny",
+                    "contextual_en": "menu",
+                    "position_start": 39,
+                    "position_end": 43
+                }
+            ]
         },
         {
             "sentence_id": "art_14_s026",
@@ -660,7 +951,22 @@
                     "contextual_en": "step"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "nästa gång",
+                    "base_form": "nästa gång",
+                    "contextual_en": "next time",
+                    "position_start": 11,
+                    "position_end": 21
+                },
+                {
+                    "word_in_sentence": "skrattade",
+                    "base_form": "skratta",
+                    "contextual_en": "laughed",
+                    "position_start": 176,
+                    "position_end": 185
+                }
+            ]
         }
     ],
     "primary_words_used": [

@@ -55,15 +55,7 @@
             "sentence_id": "art_54_s003",
             "sv": "Här är allting toppen på min nya semester.",
             "en": "Everything is great here on my new vacation.",
-            "target_words": [
-                {
-                    "word_in_sentence": "Här är allting toppen",
-                    "base_form": "Här är allting toppen/underbart/härligt",
-                    "position_start": 0,
-                    "position_end": 21,
-                    "contextual_en": "Everything is great here"
-                }
-            ],
+            "target_words": [],
             "secondary_words": [
                 {
                     "word_in_sentence": "semester",
@@ -921,13 +913,6 @@
                     "position_start": 29,
                     "position_end": 36,
                     "contextual_en": "hopeless"
-                },
-                {
-                    "word_in_sentence": "tänk dig",
-                    "base_form": "tänk dig/er",
-                    "position_start": 49,
-                    "position_end": 57,
-                    "contextual_en": "imagine"
                 }
             ],
             "secondary_words": [
@@ -1011,15 +996,7 @@
             "sentence_id": "art_54_s038",
             "sv": "\"Ha det så bra!\" och \"Du med /Du också.\" brukar vi ju skriva.",
             "en": "\"Take care!\" and \"You too.\" is what we usually write.",
-            "target_words": [
-                {
-                    "word_in_sentence": "Du med /Du också.",
-                    "base_form": "Du med /Du också.",
-                    "position_start": 22,
-                    "position_end": 39,
-                    "contextual_en": "You too."
-                }
-            ],
+            "target_words": [],
             "secondary_words": [
                 {
                     "word_in_sentence": "skriva",

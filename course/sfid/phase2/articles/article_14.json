@@ -3,7 +3,7 @@
     "course_title": "SFI D",
     "stage_id": "stage_10",
     "stage_title": "Mat & Matlagning",
-    "article_id": "art_14",
+    "article_id": "article_14",
     "article_title": "Svensk Husmanskost och Matkultur",
     "target_word_count": 60,
     "sentences": [
@@ -24,6 +24,14 @@
                     "position_start": 41,
                     "position_end": 45
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "speciellt",
+                    "base_form": "speciell",
+                    "position_start": 31,
+                    "position_end": 40
+                }
             ]
         },
         {
@@ -31,6 +39,12 @@
             "sv": "Först och främst har vi fika.",
             "en": "",
             "target_words": [
+                {
+                    "word_in_sentence": "Först och främst",
+                    "base_form": "först och främst",
+                    "position_start": 0,
+                    "position_end": 16
+                },
                 {
                     "word_in_sentence": "fik",
                     "base_form": "fik",
@@ -42,12 +56,14 @@
                     "base_form": "fika",
                     "position_start": 24,
                     "position_end": 28
-                },
+                }
+            ],
+            "secondary_words": [
                 {
-                    "word_in_sentence": "Först och främst",
-                    "base_form": "först och främst",
-                    "position_start": 0,
-                    "position_end": 16
+                    "word_in_sentence": "har",
+                    "base_form": "ha",
+                    "position_start": 17,
+                    "position_end": 20
                 }
             ]
         },
@@ -56,6 +72,18 @@
             "sv": "Att fika kan vara så enkelt som att dricka ett glas saft och äta en macka på ett litet fik.",
             "en": "",
             "target_words": [
+                {
+                    "word_in_sentence": "fik",
+                    "base_form": "fik",
+                    "position_start": 4,
+                    "position_end": 7
+                },
+                {
+                    "word_in_sentence": "fika",
+                    "base_form": "fika",
+                    "position_start": 4,
+                    "position_end": 8
+                },
                 {
                     "word_in_sentence": "saft",
                     "base_form": "saft",
@@ -67,6 +95,20 @@
                     "base_form": "macka",
                     "position_start": 68,
                     "position_end": 73
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "enkelt",
+                    "base_form": "enkel",
+                    "position_start": 21,
+                    "position_end": 27
+                },
+                {
+                    "word_in_sentence": "glas",
+                    "base_form": "glas",
+                    "position_start": 47,
+                    "position_end": 51
                 }
             ]
         },
@@ -93,6 +135,20 @@
                     "position_start": 68,
                     "position_end": 74
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "föredrar",
+                    "base_form": "föredra",
+                    "position_start": 6,
+                    "position_end": 14
+                },
+                {
+                    "word_in_sentence": "sen",
+                    "base_form": "sen",
+                    "position_start": 64,
+                    "position_end": 67
+                }
             ]
         },
         {
@@ -101,16 +157,30 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "hemlagade",
-                    "base_form": "hemlagad",
-                    "position_start": 60,
-                    "position_end": 69
-                },
-                {
                     "word_in_sentence": "Det är fint?",
                     "base_form": "Det är fint?",
                     "position_start": 1,
                     "position_end": 13
+                },
+                {
+                    "word_in_sentence": "hemlagade",
+                    "base_form": "hemlagad",
+                    "position_start": 60,
+                    "position_end": 69
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "utlandet",
+                    "base_form": "utland",
+                    "position_start": 35,
+                    "position_end": 43
+                },
+                {
+                    "word_in_sentence": "såg",
+                    "base_form": "se",
+                    "position_start": 52,
+                    "position_end": 55
                 }
             ]
         },
@@ -119,6 +189,12 @@
             "sv": "En typisk svensk vardagsmat är kokt potatis och en köttbulle.",
             "en": "",
             "target_words": [
+                {
+                    "word_in_sentence": "vardagsmat",
+                    "base_form": "vardagsmat",
+                    "position_start": 17,
+                    "position_end": 27
+                },
                 {
                     "word_in_sentence": "kokt",
                     "base_form": "kokt",
@@ -132,16 +208,18 @@
                     "position_end": 43
                 },
                 {
-                    "word_in_sentence": "vardagsmat",
-                    "base_form": "vardagsmat",
-                    "position_start": 17,
-                    "position_end": 27
-                },
-                {
                     "word_in_sentence": "köttbulle",
                     "base_form": "köttbulle",
                     "position_start": 51,
                     "position_end": 60
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "typisk",
+                    "base_form": "typisk",
+                    "position_start": 3,
+                    "position_end": 9
                 }
             ]
         },
@@ -162,6 +240,14 @@
                     "position_start": 39,
                     "position_end": 50
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "till exempel",
+                    "base_form": "till exempel",
+                    "position_start": 26,
+                    "position_end": 38
+                }
             ]
         },
         {
@@ -174,6 +260,14 @@
                     "base_form": "hästkött",
                     "position_start": 22,
                     "position_end": 30
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "äter",
+                    "base_form": "äta",
+                    "position_start": 8,
+                    "position_end": 12
                 }
             ]
         },
@@ -188,6 +282,14 @@
                     "position_start": 1,
                     "position_end": 17
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "sant",
+                    "base_form": "sann",
+                    "position_start": 12,
+                    "position_end": 16
+                }
             ]
         },
         {
@@ -195,12 +297,6 @@
             "sv": "Förr fanns inget förbud mot det, även om man var tvungen att äta vad som fanns, särskilt under en historisk oljekris.",
             "en": "",
             "target_words": [
-                {
-                    "word_in_sentence": "oljekris",
-                    "base_form": "oljekris",
-                    "position_start": 108,
-                    "position_end": 116
-                },
                 {
                     "word_in_sentence": "förbud",
                     "base_form": "förbud",
@@ -212,6 +308,26 @@
                     "base_form": "tvungen att",
                     "position_start": 49,
                     "position_end": 60
+                },
+                {
+                    "word_in_sentence": "oljekris",
+                    "base_form": "oljekris",
+                    "position_start": 108,
+                    "position_end": 116
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "särskilt",
+                    "base_form": "särskild",
+                    "position_start": 80,
+                    "position_end": 88
+                },
+                {
+                    "word_in_sentence": "historisk",
+                    "base_form": "historisk",
+                    "position_start": 98,
+                    "position_end": 107
                 }
             ]
         },
@@ -226,6 +342,14 @@
                     "position_start": 14,
                     "position_end": 27
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "nu",
+                    "base_form": "nu",
+                    "position_start": 32,
+                    "position_end": 34
+                }
             ]
         },
         {
@@ -234,16 +358,24 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "knäpp",
-                    "base_form": "knäppt",
-                    "position_start": 51,
-                    "position_end": 56
-                },
-                {
                     "word_in_sentence": "kritik",
                     "base_form": "kritik",
                     "position_start": 18,
                     "position_end": 24
+                },
+                {
+                    "word_in_sentence": "knäpp",
+                    "base_form": "knäppt",
+                    "position_start": 51,
+                    "position_end": 56
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "idén",
+                    "base_form": "idé",
+                    "position_start": 37,
+                    "position_end": 41
                 }
             ]
         },
@@ -253,22 +385,42 @@
             "en": "",
             "target_words": [
                 {
+                    "word_in_sentence": "potatis",
+                    "base_form": "potatis",
+                    "position_start": 60,
+                    "position_end": 67
+                },
+                {
                     "word_in_sentence": "palt",
                     "base_form": "palt",
                     "position_start": 17,
                     "position_end": 21
                 },
                 {
-                    "word_in_sentence": "vetemjöl",
-                    "base_form": "vetemjöl",
-                    "position_start": 47,
-                    "position_end": 55
-                },
-                {
                     "word_in_sentence": "bakad på",
                     "base_form": "bakad på",
                     "position_start": 38,
                     "position_end": 46
+                },
+                {
+                    "word_in_sentence": "vetemjöl",
+                    "base_form": "vetemjöl",
+                    "position_start": 47,
+                    "position_end": 55
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "gammal",
+                    "base_form": "gammal",
+                    "position_start": 26,
+                    "position_end": 32
+                },
+                {
+                    "word_in_sentence": "rätt",
+                    "base_form": "rätt",
+                    "position_start": 33,
+                    "position_end": 37
                 }
             ]
         },
@@ -289,6 +441,20 @@
                     "position_start": 33,
                     "position_end": 43
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "serveras",
+                    "base_form": "servera",
+                    "position_start": 4,
+                    "position_end": 12
+                },
+                {
+                    "word_in_sentence": "mycket",
+                    "base_form": "mycket",
+                    "position_start": 17,
+                    "position_end": 23
+                }
             ]
         },
         {
@@ -297,10 +463,16 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "paltkoma",
-                    "base_form": "paltkoma",
+                    "word_in_sentence": "palt",
+                    "base_form": "palt",
                     "position_start": 81,
-                    "position_end": 89
+                    "position_end": 85
+                },
+                {
+                    "word_in_sentence": "Å ena sidan… å andra sidan",
+                    "base_form": "å ena sidan… å andra sidan",
+                    "position_start": 1,
+                    "position_end": 27
                 },
                 {
                     "word_in_sentence": "bör",
@@ -309,10 +481,24 @@
                     "position_end": 33
                 },
                 {
-                    "word_in_sentence": "Å ena sidan… å andra sidan",
-                    "base_form": "å ena sidan… å andra sidan",
-                    "position_start": 1,
-                    "position_end": 27
+                    "word_in_sentence": "paltkoma",
+                    "base_form": "paltkoma",
+                    "position_start": 81,
+                    "position_end": 89
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "började",
+                    "base_form": "börja",
+                    "position_start": 30,
+                    "position_end": 37
+                },
+                {
+                    "word_in_sentence": "jättegott",
+                    "base_form": "jättegod",
+                    "position_start": 55,
+                    "position_end": 64
                 }
             ]
         },
@@ -328,16 +514,24 @@
                     "position_end": 34
                 },
                 {
-                    "word_in_sentence": "gå ut",
-                    "base_form": "gå ut",
-                    "position_start": 75,
-                    "position_end": 80
-                },
-                {
                     "word_in_sentence": "bestämde",
                     "base_form": "bestämma",
                     "position_start": 51,
                     "position_end": 59
+                },
+                {
+                    "word_in_sentence": "gå ut",
+                    "base_form": "gå ut",
+                    "position_start": 75,
+                    "position_end": 80
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "trötthet",
+                    "base_form": "trötthet",
+                    "position_start": 38,
+                    "position_end": 46
                 }
             ]
         },
@@ -345,7 +539,15 @@
             "sentence_id": "art_14_s017",
             "sv": "Vi tog ett dopp.",
             "en": "",
-            "target_words": []
+            "target_words": [],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "dopp",
+                    "base_form": "dopp",
+                    "position_start": 11,
+                    "position_end": 15
+                }
+            ]
         },
         {
             "sentence_id": "art_14_s018",
@@ -357,6 +559,20 @@
                     "base_form": "salta bad",
                     "position_start": 12,
                     "position_end": 21
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "flera",
+                    "base_form": "flera",
+                    "position_start": 6,
+                    "position_end": 11
+                },
+                {
+                    "word_in_sentence": "energi",
+                    "base_form": "energi",
+                    "position_start": 33,
+                    "position_end": 39
                 }
             ]
         },
@@ -370,6 +586,20 @@
                     "base_form": "juni",
                     "position_start": 28,
                     "position_end": 32
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "firade",
+                    "base_form": "fira",
+                    "position_start": 3,
+                    "position_end": 9
+                },
+                {
+                    "word_in_sentence": "varma",
+                    "base_form": "varm",
+                    "position_start": 14,
+                    "position_end": 19
                 }
             ]
         },
@@ -390,6 +620,20 @@
                     "position_start": 12,
                     "position_end": 22
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "solens",
+                    "base_form": "sol",
+                    "position_start": -1,
+                    "position_end": -1
+                },
+                {
+                    "word_in_sentence": "vacker",
+                    "base_form": "vacker",
+                    "position_start": 38,
+                    "position_end": 44
+                }
             ]
         },
         {
@@ -402,6 +646,20 @@
                     "base_form": "snyftare",
                     "position_start": 40,
                     "position_end": 48
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "tittade",
+                    "base_form": "titta",
+                    "position_start": 3,
+                    "position_end": 10
+                },
+                {
+                    "word_in_sentence": "film",
+                    "base_form": "film",
+                    "position_start": 24,
+                    "position_end": 28
                 }
             ]
         },
@@ -428,6 +686,20 @@
                     "position_start": 52,
                     "position_end": 58
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "gjort",
+                    "base_form": "göra",
+                    "position_start": 9,
+                    "position_end": 14
+                },
+                {
+                    "word_in_sentence": "klick",
+                    "base_form": "klick",
+                    "position_start": 46,
+                    "position_end": 51
+                }
             ]
         },
         {
@@ -448,16 +720,24 @@
                     "position_end": 38
                 },
                 {
-                    "word_in_sentence": "äppelklyfta",
-                    "base_form": "äppelklyfta",
-                    "position_start": 68,
-                    "position_end": 79
-                },
-                {
                     "word_in_sentence": "minst",
                     "base_form": "minst",
                     "position_start": 59,
                     "position_end": 64
+                },
+                {
+                    "word_in_sentence": "äppelklyfta",
+                    "base_form": "äppelklyfta",
+                    "position_start": 68,
+                    "position_end": 79
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "kanel",
+                    "base_form": "kanel",
+                    "position_start": 39,
+                    "position_end": 44
                 }
             ]
         },
@@ -484,6 +764,20 @@
                     "position_start": 67,
                     "position_end": 74
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "färsk",
+                    "base_form": "färsk",
+                    "position_start": 15,
+                    "position_end": 20
+                },
+                {
+                    "word_in_sentence": "några",
+                    "base_form": "någon",
+                    "position_start": 35,
+                    "position_end": 40
+                }
             ]
         },
         {
@@ -502,6 +796,14 @@
                     "base_form": "officiell",
                     "position_start": 29,
                     "position_end": 38
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "meny",
+                    "base_form": "meny",
+                    "position_start": 39,
+                    "position_end": 43
                 }
             ]
         },
@@ -529,6 +831,12 @@
                     "position_end": 90
                 },
                 {
+                    "word_in_sentence": "förklaring",
+                    "base_form": "förklaring",
+                    "position_start": 129,
+                    "position_end": 139
+                },
+                {
                     "word_in_sentence": "recept",
                     "base_form": "recept",
                     "position_start": 153,
@@ -539,12 +847,20 @@
                     "base_form": "steg",
                     "position_start": 160,
                     "position_end": 164
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "nästa gång",
+                    "base_form": "nästa gång",
+                    "position_start": 11,
+                    "position_end": 21
                 },
                 {
-                    "word_in_sentence": "förklaring",
-                    "base_form": "förklaring",
-                    "position_start": 129,
-                    "position_end": 139
+                    "word_in_sentence": "skrattade",
+                    "base_form": "skratta",
+                    "position_start": 176,
+                    "position_end": 185
                 }
             ]
         }

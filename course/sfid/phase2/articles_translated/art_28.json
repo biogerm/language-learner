@@ -674,8 +674,8 @@
                 {
                     "word_in_sentence": "igen",
                     "base_form": "igen",
-                    "position_start": 43,
-                    "position_end": 47,
+                    "position_start": 23,
+                    "position_end": 27,
                     "contextual_en": "again"
                 }
             ]
@@ -971,13 +971,6 @@
                     "position_start": 55,
                     "position_end": 60,
                     "contextual_en": "week"
-                },
-                {
-                    "word_in_sentence": "en gång i veckan",
-                    "base_form": "en gång i månaden/veckan",
-                    "position_start": 45,
-                    "position_end": 61,
-                    "contextual_en": "once a week"
                 }
             ],
             "secondary_words": [

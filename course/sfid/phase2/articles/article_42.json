@@ -3,7 +3,7 @@
     "course_title": "SFI D",
     "stage_id": "stage_02",
     "stage_title": "Samhälle & Politik",
-    "article_id": "art_42",
+    "article_id": "article_42",
     "article_title": "Politik och Det Svenska Samhället",
     "target_word_count": 60,
     "sentences": [
@@ -30,6 +30,14 @@
                     "position_start": 51,
                     "position_end": 59
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "lång",
+                    "base_form": "lång",
+                    "position_start": 46,
+                    "position_end": 50
+                }
             ]
         },
         {
@@ -49,13 +57,48 @@
                     "position_start": 32,
                     "position_end": 36
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "Tidigare",
+                    "base_form": "tidigare",
+                    "position_start": 0,
+                    "position_end": 8
+                },
+                {
+                    "word_in_sentence": "stark",
+                    "base_form": "stark",
+                    "position_start": 21,
+                    "position_end": 26
+                }
             ]
         },
         {
             "sentence_id": "art_42_s003",
             "sv": "Idag har monarkin ingen politisk makt.",
             "en": "",
-            "target_words": []
+            "target_words": [
+                {
+                    "word_in_sentence": "makt",
+                    "base_form": "makt",
+                    "position_start": 33,
+                    "position_end": 37
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "Idag",
+                    "base_form": "idag",
+                    "position_start": 0,
+                    "position_end": 4
+                },
+                {
+                    "word_in_sentence": "monarkin",
+                    "base_form": "monarkin",
+                    "position_start": 9,
+                    "position_end": 17
+                }
+            ]
         },
         {
             "sentence_id": "art_42_s004",
@@ -98,6 +141,20 @@
                     "position_start": 111,
                     "position_end": 114
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "beslutar om",
+                    "base_form": "beslutar om",
+                    "position_start": 93,
+                    "position_end": 104
+                },
+                {
+                    "word_in_sentence": "styr",
+                    "base_form": "styr",
+                    "position_start": 119,
+                    "position_end": 123
+                }
             ]
         },
         {
@@ -105,6 +162,12 @@
             "sv": "En blivande kronprinsessa, en prins eller en prinsessa har ett välkomnande leende men stiftar inga lagar.",
             "en": "",
             "target_words": [
+                {
+                    "word_in_sentence": "lag",
+                    "base_form": "lag",
+                    "position_start": 99,
+                    "position_end": 102
+                },
                 {
                     "word_in_sentence": "kronprinsessa",
                     "base_form": "kronprinsessa",
@@ -129,6 +192,20 @@
                     "position_start": 63,
                     "position_end": 74
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "blivande",
+                    "base_form": "blivande",
+                    "position_start": 3,
+                    "position_end": 11
+                },
+                {
+                    "word_in_sentence": "stiftar",
+                    "base_form": "stiftar",
+                    "position_start": 86,
+                    "position_end": 93
+                }
             ]
         },
         {
@@ -136,6 +213,12 @@
             "sv": "\"Ska vi…?\" frågade en vän plötsligt, när vi stod vid en stor järnvägsstation för att pricka in ett tåg.",
             "en": "",
             "target_words": [
+                {
+                    "word_in_sentence": "stat",
+                    "base_form": "stat",
+                    "position_start": 69,
+                    "position_end": 73
+                },
                 {
                     "word_in_sentence": "Ska vi…?",
                     "base_form": "Ska vi…?",
@@ -160,6 +243,14 @@
                     "position_start": 85,
                     "position_end": 94
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "stod",
+                    "base_form": "stod",
+                    "position_start": 44,
+                    "position_end": 48
+                }
             ]
         },
         {
@@ -178,6 +269,20 @@
                     "base_form": "politik",
                     "position_start": 18,
                     "position_end": 25
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "Prata",
+                    "base_form": "prata",
+                    "position_start": 1,
+                    "position_end": 6
+                },
+                {
+                    "word_in_sentence": "menar jag",
+                    "base_form": "menar jag",
+                    "position_start": 27,
+                    "position_end": 36
                 }
             ]
         },
@@ -204,6 +309,14 @@
                     "position_start": 53,
                     "position_end": 65
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "ambitiös",
+                    "base_form": "ambitiös",
+                    "position_start": 11,
+                    "position_end": 19
+                }
             ]
         },
         {
@@ -211,6 +324,12 @@
             "sv": "Han ville få tag på en roll som en viktig ledare och känd politiker.",
             "en": "",
             "target_words": [
+                {
+                    "word_in_sentence": "politik",
+                    "base_form": "politik",
+                    "position_start": 58,
+                    "position_end": 65
+                },
                 {
                     "word_in_sentence": "få tag på",
                     "base_form": "få tag på",
@@ -229,6 +348,20 @@
                     "position_start": 58,
                     "position_end": 67
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "roll",
+                    "base_form": "roll",
+                    "position_start": 23,
+                    "position_end": 27
+                },
+                {
+                    "word_in_sentence": "viktig",
+                    "base_form": "viktig",
+                    "position_start": 35,
+                    "position_end": 41
+                }
             ]
         },
         {
@@ -242,19 +375,47 @@
                     "position_start": 7,
                     "position_end": 16
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "Okej",
+                    "base_form": "okej",
+                    "position_start": 1,
+                    "position_end": 5
+                }
             ]
         },
         {
             "sentence_id": "art_42_s011",
             "sv": "\"Var ska vi börja?\"",
             "en": "",
-            "target_words": []
+            "target_words": [],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "Var",
+                    "base_form": "var",
+                    "position_start": 1,
+                    "position_end": 4
+                },
+                {
+                    "word_in_sentence": "börja",
+                    "base_form": "börja",
+                    "position_start": 12,
+                    "position_end": 17
+                }
+            ]
         },
         {
             "sentence_id": "art_42_s012",
             "sv": "\"Jo, vi kan återberätta en plötslig skandal,\" föreslog han.",
             "en": "",
             "target_words": [
+                {
+                    "word_in_sentence": "plötslig",
+                    "base_form": "plötslig",
+                    "position_start": 27,
+                    "position_end": 35
+                },
                 {
                     "word_in_sentence": "återberätta",
                     "base_form": "återberätta",
@@ -267,6 +428,14 @@
                     "position_start": 36,
                     "position_end": 43
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "föreslog",
+                    "base_form": "föreslog",
+                    "position_start": 46,
+                    "position_end": 54
+                }
             ]
         },
         {
@@ -274,6 +443,12 @@
             "sv": "\"Någon ville låna ut mycket statlig valuta till en rik affärsman så han blev rik som ett troll.",
             "en": "",
             "target_words": [
+                {
+                    "word_in_sentence": "stat",
+                    "base_form": "stat",
+                    "position_start": 28,
+                    "position_end": 32
+                },
                 {
                     "word_in_sentence": "låna ut",
                     "base_form": "låna ut",
@@ -291,6 +466,14 @@
                     "base_form": "rik som ett troll",
                     "position_start": 77,
                     "position_end": 94
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "affärsman",
+                    "base_form": "affärsman",
+                    "position_start": 55,
+                    "position_end": 64
                 }
             ]
         },
@@ -317,13 +500,47 @@
                     "position_start": 59,
                     "position_end": 68
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "orsakade",
+                    "base_form": "orsakade",
+                    "position_start": 4,
+                    "position_end": 12
+                },
+                {
+                    "word_in_sentence": "kris",
+                    "base_form": "kris",
+                    "position_start": 26,
+                    "position_end": 30
+                }
             ]
         },
         {
             "sentence_id": "art_42_s015",
             "sv": "Vi pratade också om mörkare händelser i vårt samhälle.",
             "en": "",
-            "target_words": []
+            "target_words": [],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "mörkare",
+                    "base_form": "mörkare",
+                    "position_start": 20,
+                    "position_end": 27
+                },
+                {
+                    "word_in_sentence": "händelser",
+                    "base_form": "händelser",
+                    "position_start": 28,
+                    "position_end": 37
+                },
+                {
+                    "word_in_sentence": "samhälle",
+                    "base_form": "samhälle",
+                    "position_start": 45,
+                    "position_end": 53
+                }
+            ]
         },
         {
             "sentence_id": "art_42_s016",
@@ -331,10 +548,30 @@
             "en": "",
             "target_words": [
                 {
+                    "word_in_sentence": "makt",
+                    "base_form": "makt",
+                    "position_start": 37,
+                    "position_end": 41
+                },
+                {
                     "word_in_sentence": "maktdemonstration",
                     "base_form": "maktdemonstration",
                     "position_start": 37,
                     "position_end": 54
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "Förr i tiden",
+                    "base_form": "förr i tiden",
+                    "position_start": 0,
+                    "position_end": 12
+                },
+                {
+                    "word_in_sentence": "utföra",
+                    "base_form": "utföra",
+                    "position_start": 27,
+                    "position_end": 33
                 }
             ]
         },
@@ -355,6 +592,20 @@
                     "position_start": 44,
                     "position_end": 48
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "hemskheter",
+                    "base_form": "hemskheter",
+                    "position_start": 9,
+                    "position_end": 19
+                },
+                {
+                    "word_in_sentence": "till och med",
+                    "base_form": "till och med",
+                    "position_start": 27,
+                    "position_end": 39
+                }
             ]
         },
         {
@@ -367,6 +618,20 @@
                     "base_form": "mörda",
                     "position_start": 12,
                     "position_end": 17
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "Någon",
+                    "base_form": "någon",
+                    "position_start": 0,
+                    "position_end": 5
+                },
+                {
+                    "word_in_sentence": "konkurrent",
+                    "base_form": "konkurrent",
+                    "position_start": 22,
+                    "position_end": 32
                 }
             ]
         },
@@ -387,6 +652,14 @@
                     "position_start": 33,
                     "position_end": 40
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "säkerheten",
+                    "base_form": "säkerheten",
+                    "position_start": 41,
+                    "position_end": 51
+                }
             ]
         },
         {
@@ -399,6 +672,20 @@
                     "base_form": "judisk",
                     "position_start": 25,
                     "position_end": 31
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "känna sig",
+                    "base_form": "känna sig",
+                    "position_start": 66,
+                    "position_end": 75
+                },
+                {
+                    "word_in_sentence": "trygg",
+                    "base_form": "trygg",
+                    "position_start": 76,
+                    "position_end": 81
                 }
             ]
         },
@@ -424,6 +711,20 @@
                     "base_form": "gudstjänst",
                     "position_start": 49,
                     "position_end": 59
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "fira",
+                    "base_form": "fira",
+                    "position_start": 32,
+                    "position_end": 36
+                },
+                {
+                    "word_in_sentence": "fred",
+                    "base_form": "fred",
+                    "position_start": 62,
+                    "position_end": 66
                 }
             ]
         },
@@ -456,6 +757,20 @@
                     "position_start": 96,
                     "position_end": 108
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "rättighet",
+                    "base_form": "rättighet",
+                    "position_start": 10,
+                    "position_end": 19
+                },
+                {
+                    "word_in_sentence": "rättvis",
+                    "base_form": "rättvis",
+                    "position_start": 27,
+                    "position_end": 34
+                }
             ]
         },
         {
@@ -474,6 +789,20 @@
                     "base_form": "på marken",
                     "position_start": 40,
                     "position_end": 49
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "Medan",
+                    "base_form": "medan",
+                    "position_start": 0,
+                    "position_end": 5
+                },
+                {
+                    "word_in_sentence": "gnydde",
+                    "base_form": "gnydde",
+                    "position_start": 54,
+                    "position_end": 60
                 }
             ]
         },
@@ -494,6 +823,20 @@
                     "position_start": 80,
                     "position_end": 87
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "skrämd",
+                    "base_form": "skrämd",
+                    "position_start": 58,
+                    "position_end": 64
+                },
+                {
+                    "word_in_sentence": "inifrån",
+                    "base_form": "inifrån",
+                    "position_start": 88,
+                    "position_end": 95
+                }
             ]
         },
         {
@@ -507,6 +850,14 @@
                     "position_start": 12,
                     "position_end": 29
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "locka på",
+                    "base_form": "locka på",
+                    "position_start": 38,
+                    "position_end": 46
+                }
             ]
         },
         {
@@ -519,6 +870,20 @@
                     "base_form": "tröttna",
                     "position_start": 33,
                     "position_end": 40
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "samhällsproblem",
+                    "base_form": "samhällsproblem",
+                    "position_start": 44,
+                    "position_end": 59
+                },
+                {
+                    "word_in_sentence": "grammatik",
+                    "base_form": "grammatik",
+                    "position_start": 89,
+                    "position_end": 98
                 }
             ]
         },
@@ -539,6 +904,20 @@
                     "position_start": 39,
                     "position_end": 47
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "finns",
+                    "base_form": "finns",
+                    "position_start": 12,
+                    "position_end": 17
+                },
+                {
+                    "word_in_sentence": "kallas",
+                    "base_form": "kallas",
+                    "position_start": 32,
+                    "position_end": 38
+                }
             ]
         },
         {
@@ -547,10 +926,24 @@
             "en": "",
             "target_words": [
                 {
+                    "word_in_sentence": "partikel",
+                    "base_form": "partikel",
+                    "position_start": 32,
+                    "position_end": 40
+                },
+                {
                     "word_in_sentence": "kombinera",
                     "base_form": "kombinera",
                     "position_start": 5,
                     "position_end": 14
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "Man",
+                    "base_form": "man",
+                    "position_start": 1,
+                    "position_end": 4
                 }
             ]
         },
@@ -565,13 +958,29 @@
                     "position_start": 25,
                     "position_end": 41
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "använda",
+                    "base_form": "använda",
+                    "position_start": 13,
+                    "position_end": 20
+                }
             ]
         },
         {
             "sentence_id": "art_42_s030",
             "sv": "Jag suckade.",
             "en": "",
-            "target_words": []
+            "target_words": [],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "suckade",
+                    "base_form": "suckade",
+                    "position_start": 4,
+                    "position_end": 11
+                }
+            ]
         },
         {
             "sentence_id": "art_42_s031",
@@ -583,6 +992,20 @@
                     "base_form": "avslutningsfras",
                     "position_start": 24,
                     "position_end": 39
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "behövde",
+                    "base_form": "behövde",
+                    "position_start": 3,
+                    "position_end": 10
+                },
+                {
+                    "word_in_sentence": "sluta",
+                    "base_form": "sluta",
+                    "position_start": 48,
+                    "position_end": 53
                 }
             ]
         }

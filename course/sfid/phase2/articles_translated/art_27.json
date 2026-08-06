@@ -162,13 +162,6 @@
             "en": "He was, as he himself said, an alcoholic and used to abuse a dangerous drug over time.",
             "target_words": [
                 {
-                    "word_in_sentence": "alkoholist",
-                    "base_form": "alkis /alkoholist",
-                    "position_start": 30,
-                    "position_end": 40,
-                    "contextual_en": "alcoholic"
-                },
-                {
                     "word_in_sentence": "missbruka",
                     "base_form": "missbruka",
                     "position_start": 53,

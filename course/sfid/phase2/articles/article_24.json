@@ -3,7 +3,7 @@
     "course_title": "SFI D",
     "stage_id": "stage_06",
     "stage_title": "Hälsa & Medicin",
-    "article_id": "art_24",
+    "article_id": "article_24",
     "article_title": "Sjukvårdens Utveckling Genom Tiderna",
     "target_word_count": 60,
     "sentences": [
@@ -13,16 +13,30 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "hälsovård",
-                    "base_form": "hälsovård",
-                    "position_start": 42,
-                    "position_end": 51
-                },
-                {
                     "word_in_sentence": "I början av …",
                     "base_form": "i början av …",
                     "position_start": 1,
                     "position_end": 14
+                },
+                {
+                    "word_in_sentence": "hälsovård",
+                    "base_form": "hälsovård",
+                    "position_start": 42,
+                    "position_end": 51
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "helt annorlunda",
+                    "base_form": "helt annorlunda",
+                    "position_start": 52,
+                    "position_end": 67
+                },
+                {
+                    "word_in_sentence": "mormor",
+                    "base_form": "mormor",
+                    "position_start": 94,
+                    "position_end": 100
                 }
             ]
         },
@@ -49,6 +63,20 @@
                     "position_start": 58,
                     "position_end": 63
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "kunskap",
+                    "base_form": "kunskap",
+                    "position_start": 16,
+                    "position_end": 23
+                },
+                {
+                    "word_in_sentence": "visserligen",
+                    "base_form": "visserligen",
+                    "position_start": 28,
+                    "position_end": 39
+                }
             ]
         },
         {
@@ -57,16 +85,30 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "paviljong",
-                    "base_form": "paviljong",
-                    "position_start": 28,
-                    "position_end": 37
-                },
-                {
                     "word_in_sentence": "samlats",
                     "base_form": "samlas",
                     "position_start": 8,
                     "position_end": 15
+                },
+                {
+                    "word_in_sentence": "paviljong",
+                    "base_form": "paviljong",
+                    "position_start": 28,
+                    "position_end": 37
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "fira",
+                    "base_form": "fira",
+                    "position_start": 46,
+                    "position_end": 50
+                },
+                {
+                    "word_in_sentence": "födelsedag",
+                    "base_form": "födelsedag",
+                    "position_start": 58,
+                    "position_end": 68
                 }
             ]
         },
@@ -76,16 +118,30 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "berättande",
-                    "base_form": "berättande",
-                    "position_start": 22,
-                    "position_end": 32
-                },
-                {
                     "word_in_sentence": "gripande",
                     "base_form": "gripande",
                     "position_start": 13,
                     "position_end": 21
+                },
+                {
+                    "word_in_sentence": "berättande",
+                    "base_form": "berättande",
+                    "position_start": 22,
+                    "position_end": 32
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "långa",
+                    "base_form": "långa",
+                    "position_start": 43,
+                    "position_end": 48
+                },
+                {
+                    "word_in_sentence": "liv",
+                    "base_form": "liv",
+                    "position_start": 49,
+                    "position_end": 52
                 }
             ]
         },
@@ -99,6 +155,20 @@
                     "base_form": "Jo, jag lovar!",
                     "position_start": 1,
                     "position_end": 15
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "fortsatte",
+                    "base_form": "fortsatte",
+                    "position_start": 17,
+                    "position_end": 26
+                },
+                {
+                    "word_in_sentence": "ivrigt",
+                    "base_form": "ivrigt",
+                    "position_start": 31,
+                    "position_end": 37
                 }
             ]
         },
@@ -119,6 +189,20 @@
                     "position_start": 19,
                     "position_end": 27
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "allt",
+                    "base_form": "allt",
+                    "position_start": 14,
+                    "position_end": 18
+                },
+                {
+                    "word_in_sentence": "lätt",
+                    "base_form": "lätt",
+                    "position_start": 28,
+                    "position_end": 32
+                }
             ]
         },
         {
@@ -131,6 +215,20 @@
                     "base_form": "sjukvård",
                     "position_start": 29,
                     "position_end": 37
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "arbetat",
+                    "base_form": "arbetat",
+                    "position_start": 9,
+                    "position_end": 16
+                },
+                {
+                    "word_in_sentence": "många år",
+                    "base_form": "många år",
+                    "position_start": 44,
+                    "position_end": 52
                 }
             ]
         },
@@ -145,6 +243,20 @@
                     "position_start": 20,
                     "position_end": 39
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "Byggnaderna",
+                    "base_form": "byggnaderna",
+                    "position_start": 0,
+                    "position_end": 11
+                },
+                {
+                    "word_in_sentence": "sjukhusområdet",
+                    "base_form": "sjukhusområdet",
+                    "position_start": 43,
+                    "position_end": 57
+                }
             ]
         },
         {
@@ -153,10 +265,16 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "rök",
-                    "base_form": "rök",
-                    "position_start": 38,
-                    "position_end": 41
+                    "word_in_sentence": "medicin",
+                    "base_form": "medicin",
+                    "position_start": 52,
+                    "position_end": 59
+                },
+                {
+                    "word_in_sentence": "väldig",
+                    "base_form": "väldig",
+                    "position_start": 23,
+                    "position_end": 29
                 },
                 {
                     "word_in_sentence": "lukt",
@@ -165,10 +283,24 @@
                     "position_end": 34
                 },
                 {
-                    "word_in_sentence": "väldig",
-                    "base_form": "väldig",
-                    "position_start": 23,
-                    "position_end": 29
+                    "word_in_sentence": "rök",
+                    "base_form": "rök",
+                    "position_start": 38,
+                    "position_end": 41
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "tog de hand om",
+                    "base_form": "tog de hand om",
+                    "position_start": 61,
+                    "position_end": 75
+                },
+                {
+                    "word_in_sentence": "patienterna",
+                    "base_form": "patienterna",
+                    "position_start": 76,
+                    "position_end": 87
                 }
             ]
         },
@@ -178,16 +310,30 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "tablett",
-                    "base_form": "tablett",
-                    "position_start": 51,
-                    "position_end": 58
-                },
-                {
                     "word_in_sentence": "p-piller",
                     "base_form": "p-piller",
                     "position_start": 18,
                     "position_end": 26
+                },
+                {
+                    "word_in_sentence": "tablett",
+                    "base_form": "tablett",
+                    "position_start": 51,
+                    "position_end": 58
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "smärtstillande",
+                    "base_form": "smärtstillande",
+                    "position_start": 36,
+                    "position_end": 50
+                },
+                {
+                    "word_in_sentence": "kvinnorna",
+                    "base_form": "kvinnorna",
+                    "position_start": 64,
+                    "position_end": 73
                 }
             ]
         },
@@ -197,22 +343,36 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "ångest",
-                    "base_form": "ångest",
-                    "position_start": 34,
-                    "position_end": 40
-                },
-                {
                     "word_in_sentence": "gravid",
                     "base_form": "gravid",
                     "position_start": 17,
                     "position_end": 23
                 },
                 {
+                    "word_in_sentence": "ångest",
+                    "base_form": "ångest",
+                    "position_start": 34,
+                    "position_end": 40
+                },
+                {
                     "word_in_sentence": "lite till",
                     "base_form": "lite till",
                     "position_start": 56,
                     "position_end": 65
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "kände",
+                    "base_form": "kände",
+                    "position_start": 28,
+                    "position_end": 33
+                },
+                {
+                    "word_in_sentence": "vila",
+                    "base_form": "vila",
+                    "position_start": 51,
+                    "position_end": 55
                 }
             ]
         },
@@ -222,16 +382,30 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "gå över till",
-                    "base_form": "gå över till",
-                    "position_start": 59,
-                    "position_end": 71
-                },
-                {
                     "word_in_sentence": "kolla med",
                     "base_form": "kolla med",
                     "position_start": 14,
                     "position_end": 23
+                },
+                {
+                    "word_in_sentence": "gå över till",
+                    "base_form": "gå över till",
+                    "position_start": 59,
+                    "position_end": 71
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "erfaren",
+                    "base_form": "erfaren",
+                    "position_start": 27,
+                    "position_end": 34
+                },
+                {
+                    "word_in_sentence": "behandling",
+                    "base_form": "behandling",
+                    "position_start": 78,
+                    "position_end": 88
                 }
             ]
         },
@@ -241,16 +415,30 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "funktionshinder",
-                    "base_form": "funktionshinder",
-                    "position_start": 55,
-                    "position_end": 70
-                },
-                {
                     "word_in_sentence": "sameby",
                     "base_form": "sameby",
                     "position_start": 6,
                     "position_end": 12
+                },
+                {
+                    "word_in_sentence": "funktionshinder",
+                    "base_form": "funktionshinder",
+                    "position_start": 55,
+                    "position_end": 70
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "allvarligt",
+                    "base_form": "allvarligt",
+                    "position_start": 44,
+                    "position_end": 54
+                },
+                {
+                    "word_in_sentence": "mindes",
+                    "base_form": "mindes",
+                    "position_start": 73,
+                    "position_end": 79
                 }
             ]
         },
@@ -260,16 +448,30 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "ner för",
-                    "base_form": "ner för",
-                    "position_start": 28,
-                    "position_end": 35
-                },
-                {
                     "word_in_sentence": "till fots",
                     "base_form": "till fots",
                     "position_start": 18,
                     "position_end": 27
+                },
+                {
+                    "word_in_sentence": "ner för",
+                    "base_form": "ner för",
+                    "position_start": 28,
+                    "position_end": 35
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "fick",
+                    "base_form": "fick",
+                    "position_start": 5,
+                    "position_end": 9
+                },
+                {
+                    "word_in_sentence": "berget",
+                    "base_form": "berget",
+                    "position_start": 36,
+                    "position_end": 42
                 }
             ]
         },
@@ -284,6 +486,20 @@
                     "position_start": 9,
                     "position_end": 26
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "staten",
+                    "base_form": "staten",
+                    "position_start": 31,
+                    "position_end": 37
+                },
+                {
+                    "word_in_sentence": "bygga ut",
+                    "base_form": "bygga ut",
+                    "position_start": 44,
+                    "position_end": 52
+                }
             ]
         },
         {
@@ -291,6 +507,18 @@
             "sv": "Politikerna skrev ett viktigt lagförslag, som senare blev en proposition, om allas rättighet till tandvård, barnomsorg och åldringsvård.",
             "en": "",
             "target_words": [
+                {
+                    "word_in_sentence": "lagförslag",
+                    "base_form": "lagförslag",
+                    "position_start": 30,
+                    "position_end": 40
+                },
+                {
+                    "word_in_sentence": "proposition",
+                    "base_form": "proposition",
+                    "position_start": 61,
+                    "position_end": 72
+                },
                 {
                     "word_in_sentence": "tandvård",
                     "base_form": "tandvård",
@@ -308,18 +536,20 @@
                     "base_form": "åldringsvård",
                     "position_start": 123,
                     "position_end": 135
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "rättighet",
+                    "base_form": "rättighet",
+                    "position_start": 83,
+                    "position_end": 92
                 },
                 {
-                    "word_in_sentence": "lagförslag",
-                    "base_form": "lagförslag",
-                    "position_start": 30,
-                    "position_end": 40
-                },
-                {
-                    "word_in_sentence": "proposition",
-                    "base_form": "proposition",
-                    "position_start": 61,
-                    "position_end": 72
+                    "word_in_sentence": "skrev",
+                    "base_form": "skrev",
+                    "position_start": 12,
+                    "position_end": 17
                 }
             ]
         },
@@ -340,6 +570,20 @@
                     "position_start": 67,
                     "position_end": 78
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "medborgare",
+                    "base_form": "medborgare",
+                    "position_start": 6,
+                    "position_end": 16
+                },
+                {
+                    "word_in_sentence": "enorm",
+                    "base_form": "enorm",
+                    "position_start": 61,
+                    "position_end": 66
+                }
             ]
         },
         {
@@ -352,6 +596,20 @@
                     "base_form": "uppfyllas",
                     "position_start": 35,
                     "position_end": 44
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "Målet",
+                    "base_form": "målet",
+                    "position_start": 0,
+                    "position_end": 5
+                },
+                {
+                    "word_in_sentence": "behov",
+                    "base_form": "behov",
+                    "position_start": 22,
+                    "position_end": 27
                 }
             ]
         },
@@ -372,6 +630,20 @@
                     "position_start": 68,
                     "position_end": 79
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "ung",
+                    "base_form": "ung",
+                    "position_start": 13,
+                    "position_end": 16
+                },
+                {
+                    "word_in_sentence": "skrattade",
+                    "base_form": "skrattade",
+                    "position_start": 44,
+                    "position_end": 53
+                }
             ]
         },
         {
@@ -380,16 +652,30 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "tillbehör",
-                    "base_form": "tillbehör",
-                    "position_start": 44,
-                    "position_end": 53
-                },
-                {
                     "word_in_sentence": "paltbröd",
                     "base_form": "paltbröd",
                     "position_start": 25,
                     "position_end": 33
+                },
+                {
+                    "word_in_sentence": "tillbehör",
+                    "base_form": "tillbehör",
+                    "position_start": 44,
+                    "position_end": 53
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "traditionellt",
+                    "base_form": "traditionellt",
+                    "position_start": 11,
+                    "position_end": 24
+                },
+                {
+                    "word_in_sentence": "olika",
+                    "base_form": "olika",
+                    "position_start": 38,
+                    "position_end": 43
                 }
             ]
         },
@@ -410,6 +696,20 @@
                     "position_start": 35,
                     "position_end": 41
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "viktig",
+                    "base_form": "viktig",
+                    "position_start": 3,
+                    "position_end": 9
+                },
+                {
+                    "word_in_sentence": "salt",
+                    "base_form": "salt",
+                    "position_start": 30,
+                    "position_end": 34
+                }
             ]
         },
         {
@@ -429,6 +729,20 @@
                     "position_start": 53,
                     "position_end": 64
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "ont i",
+                    "base_form": "ont i",
+                    "position_start": 17,
+                    "position_end": 22
+                },
+                {
+                    "word_in_sentence": "vanliga",
+                    "base_form": "vanliga",
+                    "position_start": 41,
+                    "position_end": 48
+                }
             ]
         },
         {
@@ -442,6 +756,20 @@
                     "position_start": 39,
                     "position_end": 48
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "sötsaker",
+                    "base_form": "sötsaker",
+                    "position_start": 13,
+                    "position_end": 21
+                },
+                {
+                    "word_in_sentence": "hade tur",
+                    "base_form": "hade tur",
+                    "position_start": 55,
+                    "position_end": 63
+                }
             ]
         },
         {
@@ -450,16 +778,30 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "fem",
-                    "base_form": "fem",
-                    "position_start": 43,
-                    "position_end": 46
-                },
-                {
                     "word_in_sentence": "skick",
                     "base_form": "skick",
                     "position_start": 20,
                     "position_end": 25
+                },
+                {
+                    "word_in_sentence": "fem",
+                    "base_form": "fem",
+                    "position_start": 43,
+                    "position_end": 46
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "fysiska",
+                    "base_form": "fysiska",
+                    "position_start": 12,
+                    "position_end": 19
+                },
+                {
+                    "word_in_sentence": "kriget",
+                    "base_form": "kriget",
+                    "position_start": 56,
+                    "position_end": 62
                 }
             ]
         },
@@ -475,16 +817,30 @@
                     "position_end": 35
                 },
                 {
-                    "word_in_sentence": "fyllda med",
-                    "base_form": "fylld med",
-                    "position_start": 66,
-                    "position_end": 76
-                },
-                {
                     "word_in_sentence": "fylld",
                     "base_form": "fylld",
                     "position_start": 26,
                     "position_end": 31
+                },
+                {
+                    "word_in_sentence": "fyllda med",
+                    "base_form": "fylld med",
+                    "position_start": 66,
+                    "position_end": 76
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "tallrikarna",
+                    "base_form": "tallrikarna",
+                    "position_start": 7,
+                    "position_end": 18
+                },
+                {
+                    "word_in_sentence": "enbart",
+                    "base_form": "enbart",
+                    "position_start": 59,
+                    "position_end": 65
                 }
             ]
         },
@@ -505,19 +861,60 @@
                     "position_start": 77,
                     "position_end": 85
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "råkade",
+                    "base_form": "råkade",
+                    "position_start": 8,
+                    "position_end": 14
+                },
+                {
+                    "word_in_sentence": "pall",
+                    "base_form": "pall",
+                    "position_start": 90,
+                    "position_end": 94
+                }
             ]
         },
         {
             "sentence_id": "art_24_s027",
             "sv": "\"Min skål var i alla fall helt fylld,\" mindes hon.",
             "en": "",
-            "target_words": []
+            "target_words": [
+                {
+                    "word_in_sentence": "fylld",
+                    "base_form": "fylld",
+                    "position_start": 31,
+                    "position_end": 36
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "skål",
+                    "base_form": "skål",
+                    "position_start": 5,
+                    "position_end": 9
+                },
+                {
+                    "word_in_sentence": "i alla fall",
+                    "base_form": "i alla fall",
+                    "position_start": 14,
+                    "position_end": 25
+                }
+            ]
         },
         {
             "sentence_id": "art_24_s028",
             "sv": "Trots all brist på pengar försökte man år efter år hjälpa de sjuka från början till slut.",
             "en": "",
             "target_words": [
+                {
+                    "word_in_sentence": "brist på",
+                    "base_form": "brist på",
+                    "position_start": 10,
+                    "position_end": 18
+                },
                 {
                     "word_in_sentence": "år efter år",
                     "base_form": "år efter år",
@@ -529,12 +926,20 @@
                     "base_form": "från början",
                     "position_start": 67,
                     "position_end": 78
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "Trots",
+                    "base_form": "trots",
+                    "position_start": 0,
+                    "position_end": 5
                 },
                 {
-                    "word_in_sentence": "brist på",
-                    "base_form": "brist på",
-                    "position_start": 10,
-                    "position_end": 18
+                    "word_in_sentence": "sjuka",
+                    "base_form": "sjuka",
+                    "position_start": 61,
+                    "position_end": 66
                 }
             ]
         },
@@ -549,6 +954,20 @@
                     "position_start": 10,
                     "position_end": 16
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "varmt",
+                    "base_form": "varmt",
+                    "position_start": 4,
+                    "position_end": 9
+                },
+                {
+                    "word_in_sentence": "bota",
+                    "base_form": "bota",
+                    "position_start": 28,
+                    "position_end": 32
+                }
             ]
         },
         {
@@ -557,16 +976,30 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "öppet",
-                    "base_form": "öppet",
-                    "position_start": 55,
-                    "position_end": 60
-                },
-                {
                     "word_in_sentence": "begrava",
                     "base_form": "begrava",
                     "position_start": 32,
                     "position_end": 39
+                },
+                {
+                    "word_in_sentence": "öppet",
+                    "base_form": "öppet",
+                    "position_start": 55,
+                    "position_end": 60
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "drabbades",
+                    "base_form": "drabbades",
+                    "position_start": 9,
+                    "position_end": 18
+                },
+                {
+                    "word_in_sentence": "oron",
+                    "base_form": "oron",
+                    "position_start": 40,
+                    "position_end": 44
                 }
             ]
         },
@@ -574,12 +1007,19 @@
             "sentence_id": "art_24_s031",
             "sv": "Efter rätt vård kunde de ofta gå tillbaka till det det normala.",
             "en": "",
-            "target_words": [
+            "target_words": [],
+            "secondary_words": [
                 {
-                    "word_in_sentence": "gå tillbaka till det det normala",
-                    "base_form": "gå tillbaka till det normala/vanliga",
-                    "position_start": 30,
-                    "position_end": 62
+                    "word_in_sentence": "rätt",
+                    "base_form": "rätt",
+                    "position_start": 6,
+                    "position_end": 10
+                },
+                {
+                    "word_in_sentence": "vård",
+                    "base_form": "vård",
+                    "position_start": 11,
+                    "position_end": 15
                 }
             ]
         }

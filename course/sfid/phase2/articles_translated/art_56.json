@@ -122,15 +122,7 @@
             "sentence_id": "art_56_s004",
             "sv": "Han är känd som byns flintskallig man.",
             "en": "He is known as the village's bald man.",
-            "target_words": [
-                {
-                    "word_in_sentence": "flintskallig",
-                    "base_form": "flintis /flintskallig",
-                    "position_start": 21,
-                    "position_end": 33,
-                    "contextual_en": "bald"
-                }
-            ],
+            "target_words": [],
             "secondary_words": [
                 {
                     "word_in_sentence": "byns",

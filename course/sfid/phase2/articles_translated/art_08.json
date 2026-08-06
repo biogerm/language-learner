@@ -34,7 +34,15 @@
                     "contextual_en": "language"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "intressant",
+                    "base_form": "intressant",
+                    "contextual_en": "interesting",
+                    "position_start": 69,
+                    "position_end": 79
+                }
+            ]
         },
         {
             "sentence_id": "art_08_s002",
@@ -49,7 +57,15 @@
                     "contextual_en": "course mate"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "bestämde",
+                    "base_form": "bestämma",
+                    "contextual_en": "decided",
+                    "position_start": 23,
+                    "position_end": 31
+                }
+            ]
         },
         {
             "sentence_id": "art_08_s003",
@@ -78,7 +94,15 @@
                     "contextual_en": "private tutor"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "tänkte",
+                    "base_form": "tänka",
+                    "contextual_en": "planned",
+                    "position_start": 36,
+                    "position_end": 42
+                }
+            ]
         },
         {
             "sentence_id": "art_08_s004",
@@ -107,7 +131,15 @@
                     "contextual_en": "educate"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "människor",
+                    "base_form": "människa",
+                    "contextual_en": "people",
+                    "position_start": 69,
+                    "position_end": 78
+                }
+            ]
         },
         {
             "sentence_id": "art_08_s005",
@@ -150,7 +182,15 @@
                     "contextual_en": "social classes"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "chans",
+                    "base_form": "chans",
+                    "contextual_en": "chance",
+                    "position_start": 128,
+                    "position_end": 133
+                }
+            ]
         },
         {
             "sentence_id": "art_08_s006",
@@ -202,7 +242,15 @@
                     "contextual_en": "educate yourself to be"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "helst",
+                    "base_form": "helst",
+                    "contextual_en": "whatever",
+                    "position_start": 38,
+                    "position_end": 43
+                }
+            ]
         },
         {
             "sentence_id": "art_08_s008",
@@ -231,7 +279,15 @@
                     "contextual_en": "sentence"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "vända",
+                    "base_form": "vända",
+                    "contextual_en": "turn",
+                    "position_start": 21,
+                    "position_end": 26
+                }
+            ]
         },
         {
             "sentence_id": "art_08_s009",
@@ -253,7 +309,15 @@
                     "contextual_en": "phrase"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "rätt",
+                    "base_form": "rätt",
+                    "contextual_en": "correctly",
+                    "position_start": 28,
+                    "position_end": 32
+                }
+            ]
         },
         {
             "sentence_id": "art_08_s010",
@@ -296,7 +360,15 @@
                     "contextual_en": "word class"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "brukade",
+                    "base_form": "bruka",
+                    "contextual_en": "used to",
+                    "position_start": 4,
+                    "position_end": 11
+                }
+            ]
         },
         {
             "sentence_id": "art_08_s011",
@@ -325,7 +397,15 @@
                     "contextual_en": "pronouns"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "skillnaden",
+                    "base_form": "skillnad",
+                    "contextual_en": "difference",
+                    "position_start": 13,
+                    "position_end": 23
+                }
+            ]
         },
         {
             "sentence_id": "art_08_s012",
@@ -354,7 +434,15 @@
                     "contextual_en": "hen"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "pratade",
+                    "base_form": "prata",
+                    "contextual_en": "talked",
+                    "position_start": 3,
+                    "position_end": 10
+                }
+            ]
         },
         {
             "sentence_id": "art_08_s013",
@@ -376,7 +464,15 @@
                     "contextual_en": "answer"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "frågor",
+                    "base_form": "fråga",
+                    "contextual_en": "questions",
+                    "position_start": 42,
+                    "position_end": 48
+                }
+            ]
         },
         {
             "sentence_id": "art_08_s014",
@@ -419,7 +515,15 @@
                     "contextual_en": "note"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "ville",
+                    "base_form": "vilja",
+                    "contextual_en": "wanted",
+                    "position_start": 8,
+                    "position_end": 13
+                }
+            ]
         },
         {
             "sentence_id": "art_08_s015",
@@ -471,7 +575,15 @@
                     "contextual_en": "write emails"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "uppgift",
+                    "base_form": "uppgift",
+                    "contextual_en": "assignment",
+                    "position_start": 15,
+                    "position_end": 22
+                }
+            ]
         },
         {
             "sentence_id": "art_08_s017",
@@ -486,14 +598,30 @@
                     "contextual_en": "What do you think?"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "frågade",
+                    "base_form": "fråga",
+                    "contextual_en": "asked",
+                    "position_start": 17,
+                    "position_end": 24
+                }
+            ]
         },
         {
             "sentence_id": "art_08_s018",
             "sv": "\"Är det svårt?\"",
             "en": "\"Is it difficult?\"",
             "target_words": [],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "svårt",
+                    "base_form": "svår",
+                    "contextual_en": "difficult",
+                    "position_start": 8,
+                    "position_end": 13
+                }
+            ]
         },
         {
             "sentence_id": "art_08_s019",
@@ -536,7 +664,15 @@
                     "contextual_en": "see"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "bra",
+                    "base_form": "bra",
+                    "contextual_en": "good",
+                    "position_start": 48,
+                    "position_end": 51
+                }
+            ]
         },
         {
             "sentence_id": "art_08_s020",
@@ -588,7 +724,15 @@
                     "contextual_en": "dance class"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "ibland",
+                    "base_form": "ibland",
+                    "contextual_en": "sometimes",
+                    "position_start": -1,
+                    "position_end": -1
+                }
+            ]
         },
         {
             "sentence_id": "art_08_s022",
@@ -610,7 +754,15 @@
                     "contextual_en": "a crowd"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "människor",
+                    "base_form": "människa",
+                    "contextual_en": "people",
+                    "position_start": 25,
+                    "position_end": 34
+                }
+            ]
         },
         {
             "sentence_id": "art_08_s023",
@@ -655,7 +807,15 @@
                     "contextual_en": "last"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "kommer",
+                    "base_form": "komma",
+                    "contextual_en": "comes",
+                    "position_start": 30,
+                    "position_end": 36
+                }
+            ]
         },
         {
             "sentence_id": "art_08_s025",
@@ -670,7 +830,15 @@
                     "contextual_en": "Who asked for you?"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "åkte",
+                    "base_form": "åka",
+                    "contextual_en": "went",
+                    "position_start": 7,
+                    "position_end": 11
+                }
+            ]
         },
         {
             "sentence_id": "art_08_s026",
@@ -722,7 +890,15 @@
                     "contextual_en": "kind"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "veckan",
+                    "base_form": "vecka",
+                    "contextual_en": "week",
+                    "position_start": 12,
+                    "position_end": 18
+                }
+            ]
         }
     ],
     "primary_words_used": [

@@ -34,7 +34,29 @@
                     "contextual_en": "career"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "talar",
+                    "base_form": "tala",
+                    "contextual_en": "speak",
+                    "position_start": 8,
+                    "position_end": 13
+                },
+                {
+                    "word_in_sentence": "många",
+                    "base_form": "många",
+                    "contextual_en": "many",
+                    "position_start": 35,
+                    "position_end": 40
+                },
+                {
+                    "word_in_sentence": "bra",
+                    "base_form": "bra",
+                    "contextual_en": "good",
+                    "position_start": 47,
+                    "position_end": 50
+                }
+            ]
         },
         {
             "sentence_id": "art_05_s002",
@@ -84,7 +106,22 @@
                     "contextual_en": "financial world"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "tänkte",
+                    "base_form": "tänka",
+                    "contextual_en": "thought",
+                    "position_start": 6,
+                    "position_end": 12
+                },
+                {
+                    "word_in_sentence": "bli",
+                    "base_form": "bli",
+                    "contextual_en": "become",
+                    "position_start": 17,
+                    "position_end": 20
+                }
+            ]
         },
         {
             "sentence_id": "art_05_s003",
@@ -113,7 +150,15 @@
                     "contextual_en": "gradually"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "ändrades",
+                    "base_form": "ändras",
+                    "contextual_en": "changed",
+                    "position_start": 18,
+                    "position_end": 26
+                }
+            ]
         },
         {
             "sentence_id": "art_05_s004",
@@ -142,7 +187,15 @@
                     "contextual_en": "What does she do for a living?"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "vän",
+                    "base_form": "vän",
+                    "contextual_en": "friend",
+                    "position_start": 33,
+                    "position_end": 36
+                }
+            ]
         },
         {
             "sentence_id": "art_05_s005",
@@ -164,7 +217,22 @@
                     "contextual_en": "basement factory"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "berättade",
+                    "base_form": "berätta",
+                    "contextual_en": "told",
+                    "position_start": 4,
+                    "position_end": 13
+                },
+                {
+                    "word_in_sentence": "mörk",
+                    "base_form": "mörk",
+                    "contextual_en": "dark",
+                    "position_start": 51,
+                    "position_end": 55
+                }
+            ]
         },
         {
             "sentence_id": "art_05_s006",
@@ -193,7 +261,29 @@
                     "contextual_en": "industry"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "välja",
+                    "base_form": "välja",
+                    "contextual_en": "choose",
+                    "position_start": 34,
+                    "position_end": 39
+                },
+                {
+                    "word_in_sentence": "sitta",
+                    "base_form": "sitta",
+                    "contextual_en": "sit",
+                    "position_start": 64,
+                    "position_end": 69
+                },
+                {
+                    "word_in_sentence": "kontor",
+                    "base_form": "kontor",
+                    "contextual_en": "office",
+                    "position_start": 73,
+                    "position_end": 79
+                }
+            ]
         },
         {
             "sentence_id": "art_05_s007",
@@ -229,7 +319,22 @@
                     "contextual_en": "tough"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "vanlig",
+                    "base_form": "vanlig",
+                    "contextual_en": "regular",
+                    "position_start": 3,
+                    "position_end": 9
+                },
+                {
+                    "word_in_sentence": "ofta",
+                    "base_form": "ofta",
+                    "contextual_en": "often",
+                    "position_start": 23,
+                    "position_end": 27
+                }
+            ]
         },
         {
             "sentence_id": "art_05_s008",
@@ -265,7 +370,29 @@
                     "contextual_en": "working environment"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "Ibland",
+                    "base_form": "ibland",
+                    "contextual_en": "sometimes",
+                    "position_start": 0,
+                    "position_end": 6
+                },
+                {
+                    "word_in_sentence": "miljö",
+                    "base_form": "miljö",
+                    "contextual_en": "environment",
+                    "position_start": 35,
+                    "position_end": 40
+                },
+                {
+                    "word_in_sentence": "tuff",
+                    "base_form": "tuff",
+                    "contextual_en": "tough",
+                    "position_start": 60,
+                    "position_end": 64
+                }
+            ]
         },
         {
             "sentence_id": "art_05_s009",
@@ -294,7 +421,29 @@
                     "contextual_en": "colleague"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "gillar",
+                    "base_form": "gilla",
+                    "contextual_en": "like",
+                    "position_start": 8,
+                    "position_end": 14
+                },
+                {
+                    "word_in_sentence": "uppgifter",
+                    "base_form": "uppgift",
+                    "contextual_en": "tasks",
+                    "position_start": 24,
+                    "position_end": 33
+                },
+                {
+                    "word_in_sentence": "alltid",
+                    "base_form": "alltid",
+                    "contextual_en": "always",
+                    "position_start": 46,
+                    "position_end": 52
+                }
+            ]
         },
         {
             "sentence_id": "art_05_s010",
@@ -323,7 +472,15 @@
                     "contextual_en": "through colleagues"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "vänner",
+                    "base_form": "vän",
+                    "contextual_en": "friends",
+                    "position_start": 21,
+                    "position_end": 27
+                }
+            ]
         },
         {
             "sentence_id": "art_05_s011",
@@ -345,7 +502,22 @@
                     "contextual_en": "trade union"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "samma",
+                    "base_form": "samma",
+                    "contextual_en": "same",
+                    "position_start": 17,
+                    "position_end": 22
+                },
+                {
+                    "word_in_sentence": "viktigt",
+                    "base_form": "viktig",
+                    "contextual_en": "important",
+                    "position_start": 46,
+                    "position_end": 53
+                }
+            ]
         },
         {
             "sentence_id": "art_05_s012",
@@ -367,7 +539,29 @@
                     "contextual_en": "working hours"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "hjälper",
+                    "base_form": "hjälpa",
+                    "contextual_en": "help",
+                    "position_start": 3,
+                    "position_end": 10
+                },
+                {
+                    "word_in_sentence": "kurser",
+                    "base_form": "kurs",
+                    "contextual_en": "courses",
+                    "position_start": 30,
+                    "position_end": 36
+                },
+                {
+                    "word_in_sentence": "rimlig",
+                    "base_form": "rimlig",
+                    "contextual_en": "reasonable",
+                    "position_start": 56,
+                    "position_end": 62
+                }
+            ]
         },
         {
             "sentence_id": "art_05_s013",
@@ -382,7 +576,15 @@
                     "contextual_en": "workweek"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "extrem",
+                    "base_form": "extrem",
+                    "contextual_en": "extreme",
+                    "position_start": 19,
+                    "position_end": 25
+                }
+            ]
         },
         {
             "sentence_id": "art_05_s014",
@@ -397,7 +599,22 @@
                     "contextual_en": "show who is in charge"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "chef",
+                    "base_form": "chef",
+                    "contextual_en": "boss",
+                    "position_start": 16,
+                    "position_end": 20
+                },
+                {
+                    "word_in_sentence": "ibland",
+                    "base_form": "ibland",
+                    "contextual_en": "sometimes",
+                    "position_start": 25,
+                    "position_end": 31
+                }
+            ]
         },
         {
             "sentence_id": "art_05_s015",
@@ -412,7 +629,22 @@
                     "contextual_en": "product manager"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "besöker",
+                    "base_form": "besöka",
+                    "contextual_en": "visits",
+                    "position_start": 15,
+                    "position_end": 22
+                },
+                {
+                    "word_in_sentence": "göra",
+                    "base_form": "göra",
+                    "contextual_en": "do",
+                    "position_start": 53,
+                    "position_end": 57
+                }
+            ]
         },
         {
             "sentence_id": "art_05_s016",
@@ -434,7 +666,29 @@
                     "contextual_en": "balance"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "grupp",
+                    "base_form": "grupp",
+                    "contextual_en": "group",
+                    "position_start": 22,
+                    "position_end": 27
+                },
+                {
+                    "word_in_sentence": "försöker",
+                    "base_form": "försöka",
+                    "contextual_en": "try",
+                    "position_start": 32,
+                    "position_end": 40
+                },
+                {
+                    "word_in_sentence": "skapa",
+                    "base_form": "skapa",
+                    "contextual_en": "create",
+                    "position_start": 41,
+                    "position_end": 46
+                }
+            ]
         },
         {
             "sentence_id": "art_05_s017",
@@ -456,7 +710,22 @@
                     "contextual_en": "pay"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "lätt",
+                    "base_form": "lätt",
+                    "contextual_en": "easy",
+                    "position_start": 28,
+                    "position_end": 32
+                },
+                {
+                    "word_in_sentence": "bransch",
+                    "base_form": "bransch",
+                    "contextual_en": "industry",
+                    "position_start": 41,
+                    "position_end": 48
+                }
+            ]
         },
         {
             "sentence_id": "art_05_s018",
@@ -499,7 +768,22 @@
                     "contextual_en": "mining industry"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "jämfört",
+                    "base_form": "jämföra",
+                    "contextual_en": "compared",
+                    "position_start": 18,
+                    "position_end": 25
+                },
+                {
+                    "word_in_sentence": "tunga",
+                    "base_form": "tung",
+                    "contextual_en": "heavy",
+                    "position_start": 55,
+                    "position_end": 60
+                }
+            ]
         },
         {
             "sentence_id": "art_05_s019",
@@ -528,7 +812,22 @@
                     "contextual_en": "earn"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "betalar",
+                    "base_form": "betala",
+                    "contextual_en": "pay",
+                    "position_start": 3,
+                    "position_end": 10
+                },
+                {
+                    "word_in_sentence": "allt",
+                    "base_form": "allt",
+                    "contextual_en": "everything",
+                    "position_start": 34,
+                    "position_end": 38
+                }
+            ]
         },
         {
             "sentence_id": "art_05_s020",
@@ -550,7 +849,22 @@
                     "contextual_en": "work extra"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "räcker",
+                    "base_form": "räcka",
+                    "contextual_en": "enough",
+                    "position_start": 8,
+                    "position_end": 14
+                },
+                {
+                    "word_in_sentence": "oftast",
+                    "base_form": "oftast",
+                    "contextual_en": "usually",
+                    "position_start": 15,
+                    "position_end": 21
+                }
+            ]
         },
         {
             "sentence_id": "art_05_s021",
@@ -579,7 +893,22 @@
                     "contextual_en": "What did you have to pay for that?"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "maskiner",
+                    "base_form": "maskin",
+                    "contextual_en": "machines",
+                    "position_start": 13,
+                    "position_end": 21
+                },
+                {
+                    "word_in_sentence": "pratade",
+                    "base_form": "prata",
+                    "contextual_en": "talked",
+                    "position_start": 29,
+                    "position_end": 36
+                }
+            ]
         },
         {
             "sentence_id": "art_05_s022",
@@ -601,7 +930,15 @@
                     "contextual_en": "unemployment"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "undvika",
+                    "base_form": "undvika",
+                    "contextual_en": "avoid",
+                    "position_start": 35,
+                    "position_end": 42
+                }
+            ]
         },
         {
             "sentence_id": "art_05_s023",
@@ -623,7 +960,22 @@
                     "contextual_en": "work-free"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "njuta",
+                    "base_form": "njuta",
+                    "contextual_en": "enjoy",
+                    "position_start": 38,
+                    "position_end": 43
+                },
+                {
+                    "word_in_sentence": "helg",
+                    "base_form": "helg",
+                    "contextual_en": "weekend",
+                    "position_start": 65,
+                    "position_end": 69
+                }
+            ]
         },
         {
             "sentence_id": "art_05_s024",
@@ -638,7 +990,22 @@
                     "contextual_en": "get"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "skönt",
+                    "base_form": "skön",
+                    "contextual_en": "nice",
+                    "position_start": 7,
+                    "position_end": 12
+                },
+                {
+                    "word_in_sentence": "bort",
+                    "base_form": "bort",
+                    "contextual_en": "away",
+                    "position_start": 23,
+                    "position_end": 27
+                }
+            ]
         },
         {
             "sentence_id": "art_05_s025",
@@ -660,7 +1027,22 @@
                     "contextual_en": "household chores"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "vila",
+                    "base_form": "vila",
+                    "contextual_en": "rest",
+                    "position_start": 21,
+                    "position_end": 25
+                },
+                {
+                    "word_in_sentence": "dags",
+                    "base_form": "dags",
+                    "contextual_en": "time",
+                    "position_start": 33,
+                    "position_end": 37
+                }
+            ]
         },
         {
             "sentence_id": "art_05_s026",
@@ -682,7 +1064,22 @@
                     "contextual_en": "come home from work."
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "tungt",
+                    "base_form": "tung",
+                    "contextual_en": "exhausting",
+                    "position_start": 7,
+                    "position_end": 12
+                },
+                {
+                    "word_in_sentence": "hem",
+                    "base_form": "hem",
+                    "contextual_en": "home",
+                    "position_start": 23,
+                    "position_end": 26
+                }
+            ]
         },
         {
             "sentence_id": "art_05_s027",
@@ -697,7 +1094,29 @@
                     "contextual_en": "internship"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "glad",
+                    "base_form": "glad",
+                    "contextual_en": "happy",
+                    "position_start": 11,
+                    "position_end": 15
+                },
+                {
+                    "word_in_sentence": "hoppas",
+                    "base_form": "hoppas",
+                    "contextual_en": "hope",
+                    "position_start": 35,
+                    "position_end": 41
+                },
+                {
+                    "word_in_sentence": "framöver",
+                    "base_form": "framöver",
+                    "contextual_en": "in the future",
+                    "position_start": 60,
+                    "position_end": 68
+                }
+            ]
         },
         {
             "sentence_id": "art_05_s028",
@@ -712,7 +1131,29 @@
                     "contextual_en": "whole"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "familj",
+                    "base_form": "familj",
+                    "contextual_en": "family",
+                    "position_start": 9,
+                    "position_end": 15
+                },
+                {
+                    "word_in_sentence": "roligt",
+                    "base_form": "rolig",
+                    "contextual_en": "fun",
+                    "position_start": 34,
+                    "position_end": 40
+                },
+                {
+                    "word_in_sentence": "stress",
+                    "base_form": "stress",
+                    "contextual_en": "stress",
+                    "position_start": 74,
+                    "position_end": 80
+                }
+            ]
         },
         {
             "sentence_id": "art_05_s029",
@@ -727,7 +1168,22 @@
                     "contextual_en": "say"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "hörde",
+                    "base_form": "höra",
+                    "contextual_en": "heard",
+                    "position_start": 4,
+                    "position_end": 9
+                },
+                {
+                    "word_in_sentence": "älska",
+                    "base_form": "älska",
+                    "contextual_en": "love",
+                    "position_start": 35,
+                    "position_end": 40
+                }
+            ]
         }
     ],
     "primary_words_used": [

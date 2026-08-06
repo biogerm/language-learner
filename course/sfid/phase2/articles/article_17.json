@@ -3,7 +3,7 @@
     "course_title": "SFI D",
     "stage_id": "stage_07",
     "stage_title": "Natur & Miljö",
-    "article_id": "art_17",
+    "article_id": "article_17",
     "article_title": "Ett Uppfriskande Äventyr i Naturen",
     "target_word_count": 60,
     "sentences": [
@@ -24,6 +24,20 @@
                     "position_start": 47,
                     "position_end": 51
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "frågade",
+                    "base_form": "frågade",
+                    "position_start": 23,
+                    "position_end": 30
+                },
+                {
+                    "word_in_sentence": "litet",
+                    "base_form": "litet",
+                    "position_start": 41,
+                    "position_end": 46
+                }
             ]
         },
         {
@@ -37,19 +51,58 @@
                     "position_start": 1,
                     "position_end": 29
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_17_s003",
             "sv": "Igår bestämde jag mig för att utforska vår vackra natur.",
             "en": "",
-            "target_words": []
+            "target_words": [],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "Igår",
+                    "base_form": "igår",
+                    "position_start": 0,
+                    "position_end": 4
+                },
+                {
+                    "word_in_sentence": "bestämde",
+                    "base_form": "bestämde",
+                    "position_start": 5,
+                    "position_end": 13
+                },
+                {
+                    "word_in_sentence": "utforska",
+                    "base_form": "utforska",
+                    "position_start": 30,
+                    "position_end": 38
+                },
+                {
+                    "word_in_sentence": "vackra",
+                    "base_form": "vackra",
+                    "position_start": 43,
+                    "position_end": 49
+                },
+                {
+                    "word_in_sentence": "natur",
+                    "base_form": "natur",
+                    "position_start": 50,
+                    "position_end": 55
+                }
+            ]
         },
         {
             "sentence_id": "art_17_s004",
             "sv": "Jag lämnade min villaträdgård och min vanliga trädgård bakom mig.",
             "en": "",
             "target_words": [
+                {
+                    "word_in_sentence": "villaträdgård",
+                    "base_form": "villaträdgård",
+                    "position_start": 16,
+                    "position_end": 29
+                },
                 {
                     "word_in_sentence": "trädgård",
                     "base_form": "trädgård",
@@ -61,12 +114,26 @@
                     "base_form": "träd",
                     "position_start": 21,
                     "position_end": 25
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "lämnade",
+                    "base_form": "lämnade",
+                    "position_start": 4,
+                    "position_end": 11
                 },
                 {
-                    "word_in_sentence": "villaträdgård",
-                    "base_form": "villaträdgård",
-                    "position_start": 16,
-                    "position_end": 29
+                    "word_in_sentence": "vanliga",
+                    "base_form": "vanliga",
+                    "position_start": 38,
+                    "position_end": 45
+                },
+                {
+                    "word_in_sentence": "bakom",
+                    "base_form": "bakom",
+                    "position_start": 55,
+                    "position_end": 60
                 }
             ]
         },
@@ -87,6 +154,32 @@
                     "position_start": 33,
                     "position_end": 42
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "vacker",
+                    "base_form": "vacker",
+                    "position_start": 13,
+                    "position_end": 19
+                },
+                {
+                    "word_in_sentence": "röda",
+                    "base_form": "röda",
+                    "position_start": 28,
+                    "position_end": 32
+                },
+                {
+                    "word_in_sentence": "doftade",
+                    "base_form": "doftade",
+                    "position_start": 47,
+                    "position_end": 54
+                },
+                {
+                    "word_in_sentence": "underbart",
+                    "base_form": "underbart",
+                    "position_start": 55,
+                    "position_end": 64
+                }
             ]
         },
         {
@@ -94,12 +187,6 @@
             "sv": "Jag är mycket intresserad av vår miljö och ett folkligt friluftsliv.",
             "en": "",
             "target_words": [
-                {
-                    "word_in_sentence": "friluftsliv",
-                    "base_form": "friluftsliv",
-                    "position_start": 56,
-                    "position_end": 67
-                },
                 {
                     "word_in_sentence": "miljö",
                     "base_form": "miljö",
@@ -111,6 +198,20 @@
                     "base_form": "folklig",
                     "position_start": 47,
                     "position_end": 55
+                },
+                {
+                    "word_in_sentence": "friluftsliv",
+                    "base_form": "friluftsliv",
+                    "position_start": 56,
+                    "position_end": 67
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "intresserad",
+                    "base_form": "intresserad",
+                    "position_start": 14,
+                    "position_end": 25
                 }
             ]
         },
@@ -119,12 +220,6 @@
             "sv": "\"Vilken särskild händelse fick dig att åka iväg?\" undrade min vän.",
             "en": "",
             "target_words": [
-                {
-                    "word_in_sentence": "händelse",
-                    "base_form": "händelse",
-                    "position_start": 17,
-                    "position_end": 25
-                },
                 {
                     "word_in_sentence": "Vilken",
                     "base_form": "Vilken",
@@ -136,6 +231,38 @@
                     "base_form": "särskild",
                     "position_start": 8,
                     "position_end": 16
+                },
+                {
+                    "word_in_sentence": "händelse",
+                    "base_form": "händelse",
+                    "position_start": 17,
+                    "position_end": 25
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "fick",
+                    "base_form": "fick",
+                    "position_start": 26,
+                    "position_end": 30
+                },
+                {
+                    "word_in_sentence": "åka iväg",
+                    "base_form": "åka iväg",
+                    "position_start": 39,
+                    "position_end": 47
+                },
+                {
+                    "word_in_sentence": "undrade",
+                    "base_form": "undrade",
+                    "position_start": 50,
+                    "position_end": 57
+                },
+                {
+                    "word_in_sentence": "vän",
+                    "base_form": "vän",
+                    "position_start": 62,
+                    "position_end": 65
                 }
             ]
         },
@@ -145,16 +272,36 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "snö",
-                    "base_form": "snö",
-                    "position_start": 21,
-                    "position_end": 24
-                },
-                {
                     "word_in_sentence": "missnöjd",
                     "base_form": "missnöjd",
                     "position_start": 18,
                     "position_end": 26
+                },
+                {
+                    "word_in_sentence": "snö",
+                    "base_form": "snö",
+                    "position_start": 21,
+                    "position_end": 24
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "kände",
+                    "base_form": "kände",
+                    "position_start": 8,
+                    "position_end": 13
+                },
+                {
+                    "word_in_sentence": "sitta",
+                    "base_form": "sitta",
+                    "position_start": 40,
+                    "position_end": 45
+                },
+                {
+                    "word_in_sentence": "hemma",
+                    "base_form": "hemma",
+                    "position_start": 46,
+                    "position_end": 51
                 }
             ]
         },
@@ -164,16 +311,30 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "hund",
-                    "base_form": "hund",
-                    "position_start": 48,
-                    "position_end": 52
-                },
-                {
                     "word_in_sentence": "gå ut med hunden",
                     "base_form": "gå ut med hunden",
                     "position_start": 38,
                     "position_end": 54
+                },
+                {
+                    "word_in_sentence": "hund",
+                    "base_form": "hund",
+                    "position_start": 48,
+                    "position_end": 52
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "energi",
+                    "base_form": "energi",
+                    "position_start": 14,
+                    "position_end": 20
+                },
+                {
+                    "word_in_sentence": "började",
+                    "base_form": "började",
+                    "position_start": 22,
+                    "position_end": 29
                 }
             ]
         },
@@ -188,6 +349,32 @@
                     "position_start": 13,
                     "position_end": 19
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "köpte",
+                    "base_form": "köpte",
+                    "position_start": 4,
+                    "position_end": 9
+                },
+                {
+                    "word_in_sentence": "jacka",
+                    "base_form": "jacka",
+                    "position_start": 20,
+                    "position_end": 25
+                },
+                {
+                    "word_in_sentence": "åkte",
+                    "base_form": "åkte",
+                    "position_start": 33,
+                    "position_end": 37
+                },
+                {
+                    "word_in_sentence": "norrut",
+                    "base_form": "norrut",
+                    "position_start": 38,
+                    "position_end": 44
+                }
             ]
         },
         {
@@ -196,16 +383,42 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "fjäll",
-                    "base_form": "fjäll",
-                    "position_start": 35,
-                    "position_end": 40
+                    "word_in_sentence": "snö",
+                    "base_form": "snö",
+                    "position_start": 73,
+                    "position_end": 76
                 },
                 {
                     "word_in_sentence": "sträcka",
                     "base_form": "sträcka",
                     "position_start": 16,
                     "position_end": 23
+                },
+                {
+                    "word_in_sentence": "fjäll",
+                    "base_form": "fjäll",
+                    "position_start": 35,
+                    "position_end": 40
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "gick",
+                    "base_form": "gick",
+                    "position_start": 3,
+                    "position_end": 7
+                },
+                {
+                    "word_in_sentence": "lång",
+                    "base_form": "lång",
+                    "position_start": 11,
+                    "position_end": 15
+                },
+                {
+                    "word_in_sentence": "fortfarande",
+                    "base_form": "fortfarande",
+                    "position_start": 50,
+                    "position_end": 61
                 }
             ]
         },
@@ -213,7 +426,27 @@
             "sentence_id": "art_17_s012",
             "sv": "I naturen kan man uppleva mycket.",
             "en": "",
-            "target_words": []
+            "target_words": [],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "naturen",
+                    "base_form": "naturen",
+                    "position_start": 2,
+                    "position_end": 9
+                },
+                {
+                    "word_in_sentence": "uppleva",
+                    "base_form": "uppleva",
+                    "position_start": 18,
+                    "position_end": 25
+                },
+                {
+                    "word_in_sentence": "mycket",
+                    "base_form": "mycket",
+                    "position_start": 26,
+                    "position_end": 32
+                }
+            ]
         },
         {
             "sentence_id": "art_17_s013",
@@ -221,22 +454,10 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "husdjur",
-                    "base_form": "husdjur",
-                    "position_start": 51,
-                    "position_end": 58
-                },
-                {
-                    "word_in_sentence": "djur",
-                    "base_form": "djur",
-                    "position_start": 42,
-                    "position_end": 46
-                },
-                {
-                    "word_in_sentence": "sällskapsdjur",
-                    "base_form": "sällskpasdjur",
-                    "position_start": 33,
-                    "position_end": 46
+                    "word_in_sentence": "hund",
+                    "base_form": "hund",
+                    "position_start": 17,
+                    "position_end": 21
                 },
                 {
                     "word_in_sentence": "katt",
@@ -245,10 +466,22 @@
                     "position_end": 7
                 },
                 {
-                    "word_in_sentence": "skog",
-                    "base_form": "skog",
-                    "position_start": 87,
-                    "position_end": 91
+                    "word_in_sentence": "sällskapsdjur",
+                    "base_form": "sällskpasdjur",
+                    "position_start": 33,
+                    "position_end": 46
+                },
+                {
+                    "word_in_sentence": "djur",
+                    "base_form": "djur",
+                    "position_start": 42,
+                    "position_end": 46
+                },
+                {
+                    "word_in_sentence": "husdjur",
+                    "base_form": "husdjur",
+                    "position_start": 51,
+                    "position_end": 58
                 },
                 {
                     "word_in_sentence": "vilda djur",
@@ -257,10 +490,30 @@
                     "position_end": 81
                 },
                 {
+                    "word_in_sentence": "skog",
+                    "base_form": "skog",
+                    "position_start": 87,
+                    "position_end": 91
+                },
+                {
                     "word_in_sentence": "djurpark",
                     "base_form": "djurpark",
                     "position_start": 110,
                     "position_end": 118
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "bra",
+                    "base_form": "bra",
+                    "position_start": 29,
+                    "position_end": 32
+                },
+                {
+                    "word_in_sentence": "bättre",
+                    "base_form": "bättre",
+                    "position_start": 95,
+                    "position_end": 101
                 }
             ]
         },
@@ -270,16 +523,16 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "fågel",
-                    "base_form": "fågel",
-                    "position_start": 77,
-                    "position_end": 82
+                    "word_in_sentence": "hund",
+                    "base_form": "hund",
+                    "position_start": 10,
+                    "position_end": 14
                 },
                 {
-                    "word_in_sentence": "rådjur",
-                    "base_form": "rådjur",
-                    "position_start": 53,
-                    "position_end": 59
+                    "word_in_sentence": "djur",
+                    "base_form": "djur",
+                    "position_start": 25,
+                    "position_end": 29
                 },
                 {
                     "word_in_sentence": "hundratals",
@@ -292,6 +545,38 @@
                     "base_form": "bland andra",
                     "position_start": 31,
                     "position_end": 42
+                },
+                {
+                    "word_in_sentence": "rådjur",
+                    "base_form": "rådjur",
+                    "position_start": 53,
+                    "position_end": 59
+                },
+                {
+                    "word_in_sentence": "fågel",
+                    "base_form": "fågel",
+                    "position_start": 77,
+                    "position_end": 82
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "små",
+                    "base_form": "små",
+                    "position_start": 21,
+                    "position_end": 24
+                },
+                {
+                    "word_in_sentence": "litet",
+                    "base_form": "litet",
+                    "position_start": 47,
+                    "position_end": 52
+                },
+                {
+                    "word_in_sentence": "sjungande",
+                    "base_form": "sjungande",
+                    "position_start": 67,
+                    "position_end": 76
                 }
             ]
         },
@@ -312,6 +597,32 @@
                     "position_start": 60,
                     "position_end": 74
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "såg",
+                    "base_form": "såg",
+                    "position_start": 4,
+                    "position_end": 7
+                },
+                {
+                    "word_in_sentence": "stor",
+                    "base_form": "stor",
+                    "position_start": 17,
+                    "position_end": 21
+                },
+                {
+                    "word_in_sentence": "vackrare",
+                    "base_form": "vackrare",
+                    "position_start": 30,
+                    "position_end": 38
+                },
+                {
+                    "word_in_sentence": "gammal",
+                    "base_form": "gammal",
+                    "position_start": 53,
+                    "position_end": 59
+                }
             ]
         },
         {
@@ -320,10 +631,10 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "kåda",
-                    "base_form": "kåda",
-                    "position_start": 77,
-                    "position_end": 81
+                    "word_in_sentence": "ställa mig",
+                    "base_form": "ställa sig",
+                    "position_start": 9,
+                    "position_end": 19
                 },
                 {
                     "word_in_sentence": "björk",
@@ -332,10 +643,36 @@
                     "position_end": 63
                 },
                 {
-                    "word_in_sentence": "ställa mig",
-                    "base_form": "ställa sig",
-                    "position_start": 9,
-                    "position_end": 19
+                    "word_in_sentence": "kåda",
+                    "base_form": "kåda",
+                    "position_start": 77,
+                    "position_end": 81
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "träd",
+                    "base_form": "träd",
+                    "position_start": 34,
+                    "position_end": 38
+                },
+                {
+                    "word_in_sentence": "gammal",
+                    "base_form": "gammal",
+                    "position_start": 51,
+                    "position_end": 57
+                },
+                {
+                    "word_in_sentence": "såg",
+                    "base_form": "såg",
+                    "position_start": 69,
+                    "position_end": 72
+                },
+                {
+                    "word_in_sentence": "gul",
+                    "base_form": "gul",
+                    "position_start": 73,
+                    "position_end": 76
                 }
             ]
         },
@@ -344,6 +681,12 @@
             "sv": "Tyvärr måste man ofta hyra plats i andrahand på en ful parkering, ibland byggd på order av en politiker.",
             "en": "",
             "target_words": [
+                {
+                    "word_in_sentence": "andrahand",
+                    "base_form": "andrahand",
+                    "position_start": 35,
+                    "position_end": 44
+                },
                 {
                     "word_in_sentence": "parkering",
                     "base_form": "parkering",
@@ -355,12 +698,38 @@
                     "base_form": "på order av",
                     "position_start": 79,
                     "position_end": 90
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "Tyvärr",
+                    "base_form": "tyvärr",
+                    "position_start": 0,
+                    "position_end": 6
                 },
                 {
-                    "word_in_sentence": "andrahand",
-                    "base_form": "andrahand",
-                    "position_start": 35,
-                    "position_end": 44
+                    "word_in_sentence": "hyra",
+                    "base_form": "hyra",
+                    "position_start": 22,
+                    "position_end": 26
+                },
+                {
+                    "word_in_sentence": "plats",
+                    "base_form": "plats",
+                    "position_start": 27,
+                    "position_end": 32
+                },
+                {
+                    "word_in_sentence": "ful",
+                    "base_form": "ful",
+                    "position_start": 51,
+                    "position_end": 54
+                },
+                {
+                    "word_in_sentence": "politiker",
+                    "base_form": "politiker",
+                    "position_start": 94,
+                    "position_end": 103
                 }
             ]
         },
@@ -375,6 +744,20 @@
                     "position_start": 11,
                     "position_end": 22
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "Naturen",
+                    "base_form": "naturen",
+                    "position_start": 0,
+                    "position_end": 7
+                },
+                {
+                    "word_in_sentence": "fri",
+                    "base_form": "fri",
+                    "position_start": 28,
+                    "position_end": 31
+                }
             ]
         },
         {
@@ -383,22 +766,16 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "hav",
-                    "base_form": "hav",
-                    "position_start": 33,
-                    "position_end": 36
-                },
-                {
                     "word_in_sentence": "sjö",
                     "base_form": "sjö",
                     "position_start": 11,
                     "position_end": 14
                 },
                 {
-                    "word_in_sentence": "fisk",
-                    "base_form": "fisk",
-                    "position_start": 60,
-                    "position_end": 64
+                    "word_in_sentence": "hav",
+                    "base_form": "hav",
+                    "position_start": 33,
+                    "position_end": 36
                 },
                 {
                     "word_in_sentence": "tömd",
@@ -407,10 +784,54 @@
                     "position_end": 56
                 },
                 {
+                    "word_in_sentence": "fisk",
+                    "base_form": "fisk",
+                    "position_start": 60,
+                    "position_end": 64
+                },
+                {
                     "word_in_sentence": "förorening",
                     "base_form": "förorening",
                     "position_start": 81,
                     "position_end": 91
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "vackra",
+                    "base_form": "vackra",
+                    "position_start": 4,
+                    "position_end": 10
+                },
+                {
+                    "word_in_sentence": "bredvid",
+                    "base_form": "bredvid",
+                    "position_start": 15,
+                    "position_end": 22
+                },
+                {
+                    "word_in_sentence": "stort",
+                    "base_form": "stort",
+                    "position_start": 27,
+                    "position_end": 32
+                },
+                {
+                    "word_in_sentence": "nästan",
+                    "base_form": "nästan",
+                    "position_start": 40,
+                    "position_end": 46
+                },
+                {
+                    "word_in_sentence": "helt",
+                    "base_form": "helt",
+                    "position_start": 47,
+                    "position_end": 51
+                },
+                {
+                    "word_in_sentence": "på grund av",
+                    "base_form": "på grund av",
+                    "position_start": 65,
+                    "position_end": 76
                 }
             ]
         },
@@ -420,10 +841,10 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "efterträda",
-                    "base_form": "efterträda",
-                    "position_start": 103,
-                    "position_end": 113
+                    "word_in_sentence": "svår",
+                    "base_form": "svår",
+                    "position_start": 10,
+                    "position_end": 14
                 },
                 {
                     "word_in_sentence": "medeltiden",
@@ -432,10 +853,36 @@
                     "position_end": 74
                 },
                 {
-                    "word_in_sentence": "svår",
-                    "base_form": "svår",
-                    "position_start": 10,
-                    "position_end": 14
+                    "word_in_sentence": "efterträda",
+                    "base_form": "efterträda",
+                    "position_start": 103,
+                    "position_end": 113
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "situation",
+                    "base_form": "situation",
+                    "position_start": 15,
+                    "position_end": 24
+                },
+                {
+                    "word_in_sentence": "känns",
+                    "base_form": "känns",
+                    "position_start": 36,
+                    "position_end": 41
+                },
+                {
+                    "word_in_sentence": "generation",
+                    "base_form": "generation",
+                    "position_start": 86,
+                    "position_end": 96
+                },
+                {
+                    "word_in_sentence": "bättre",
+                    "base_form": "bättre",
+                    "position_start": 131,
+                    "position_end": 137
                 }
             ]
         },
@@ -445,22 +892,48 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "rymden",
-                    "base_form": "rymden",
-                    "position_start": 59,
-                    "position_end": 65
-                },
-                {
                     "word_in_sentence": "solnedgång",
                     "base_form": "solnedgång",
                     "position_start": 34,
                     "position_end": 44
                 },
                 {
+                    "word_in_sentence": "rymden",
+                    "base_form": "rymden",
+                    "position_start": 59,
+                    "position_end": 65
+                },
+                {
                     "word_in_sentence": "måne",
                     "base_form": "måne",
                     "position_start": 78,
                     "position_end": 82
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "dagens",
+                    "base_form": "dagens",
+                    "position_start": 4,
+                    "position_end": 10
+                },
+                {
+                    "word_in_sentence": "slut",
+                    "base_form": "slut",
+                    "position_start": 11,
+                    "position_end": 15
+                },
+                {
+                    "word_in_sentence": "magisk",
+                    "base_form": "magisk",
+                    "position_start": 27,
+                    "position_end": 33
+                },
+                {
+                    "word_in_sentence": "ljus",
+                    "base_form": "ljus",
+                    "position_start": 73,
+                    "position_end": 77
                 }
             ]
         },
@@ -470,16 +943,30 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "Strindbergspjäs",
-                    "base_form": "Strindbergspjäs",
-                    "position_start": 54,
-                    "position_end": 69
-                },
-                {
                     "word_in_sentence": "karaktär",
                     "base_form": "karaktär",
                     "position_start": 31,
                     "position_end": 39
+                },
+                {
+                    "word_in_sentence": "Strindbergspjäs",
+                    "base_form": "Strindbergspjäs",
+                    "position_start": 54,
+                    "position_end": 69
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "dramatiskt",
+                    "base_form": "dramatiskt",
+                    "position_start": 13,
+                    "position_end": 23
+                },
+                {
+                    "word_in_sentence": "klassisk",
+                    "base_form": "klassisk",
+                    "position_start": 45,
+                    "position_end": 53
                 }
             ]
         },
@@ -494,6 +981,20 @@
                     "position_start": 3,
                     "position_end": 11
                 }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "saft",
+                    "base_form": "saft",
+                    "position_start": 12,
+                    "position_end": 16
+                },
+                {
+                    "word_in_sentence": "värmde",
+                    "base_form": "värmde",
+                    "position_start": 17,
+                    "position_end": 23
+                }
             ]
         },
         {
@@ -502,18 +1003,19 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "soluppgång",
-                    "base_form": "soluppgång",
-                    "position_start": 18,
-                    "position_end": 28
-                },
-                {
                     "word_in_sentence": "Missa inte",
                     "base_form": "missa inte",
                     "position_start": 1,
                     "position_end": 11
+                },
+                {
+                    "word_in_sentence": "soluppgång",
+                    "base_form": "soluppgång",
+                    "position_start": 18,
+                    "position_end": 28
                 }
-            ]
+            ],
+            "secondary_words": []
         },
         {
             "sentence_id": "art_17_s025",
@@ -527,16 +1029,42 @@
                     "position_end": 14
                 },
                 {
-                    "word_in_sentence": "grop",
-                    "base_form": "grop",
-                    "position_start": 67,
-                    "position_end": 71
-                },
-                {
                     "word_in_sentence": "växa upp",
                     "base_form": "växa upp",
                     "position_start": 28,
                     "position_end": 36
+                },
+                {
+                    "word_in_sentence": "grop",
+                    "base_form": "grop",
+                    "position_start": 67,
+                    "position_end": 71
+                }
+            ],
+            "secondary_words": [
+                {
+                    "word_in_sentence": "barn",
+                    "base_form": "barn",
+                    "position_start": 19,
+                    "position_end": 23
+                },
+                {
+                    "word_in_sentence": "frisk",
+                    "base_form": "frisk",
+                    "position_start": 42,
+                    "position_end": 47
+                },
+                {
+                    "word_in_sentence": "värld",
+                    "base_form": "värld",
+                    "position_start": 48,
+                    "position_end": 53
+                },
+                {
+                    "word_in_sentence": "sopor",
+                    "base_form": "sopor",
+                    "position_start": 75,
+                    "position_end": 80
                 }
             ]
         }

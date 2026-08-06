@@ -27,7 +27,15 @@
                     "contextual_en": "sweet tooth"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "är",
+                    "base_form": "vara",
+                    "contextual_en": "am",
+                    "position_start": 4,
+                    "position_end": 6
+                }
+            ]
         },
         {
             "sentence_id": "art_13_s002",
@@ -56,7 +64,15 @@
                     "contextual_en": "sugar addiction"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "ofta",
+                    "base_form": "ofta",
+                    "contextual_en": "often",
+                    "position_start": 26,
+                    "position_end": 30
+                }
+            ]
         },
         {
             "sentence_id": "art_13_s003",
@@ -85,7 +101,22 @@
                     "contextual_en": "food and drink"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "dålig",
+                    "base_form": "dålig",
+                    "contextual_en": "bad",
+                    "position_start": 16,
+                    "position_end": 21
+                },
+                {
+                    "word_in_sentence": "alltid",
+                    "base_form": "alltid",
+                    "contextual_en": "always",
+                    "position_start": 42,
+                    "position_end": 48
+                }
+            ]
         },
         {
             "sentence_id": "art_13_s004",
@@ -107,7 +138,22 @@
                     "contextual_en": "craving a fika"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "därför",
+                    "base_form": "därför",
+                    "contextual_en": "therefore",
+                    "position_start": -1,
+                    "position_end": -1
+                },
+                {
+                    "word_in_sentence": "slut",
+                    "base_form": "slut",
+                    "contextual_en": "finished",
+                    "position_start": 67,
+                    "position_end": 71
+                }
+            ]
         },
         {
             "sentence_id": "art_13_s005",
@@ -136,7 +182,22 @@
                     "contextual_en": "growing"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "lokala",
+                    "base_form": "lokal",
+                    "contextual_en": "local",
+                    "position_start": 42,
+                    "position_end": 48
+                },
+                {
+                    "word_in_sentence": "bra",
+                    "base_form": "bra",
+                    "contextual_en": "good",
+                    "position_start": 59,
+                    "position_end": 62
+                }
+            ]
         },
         {
             "sentence_id": "art_13_s006",
@@ -151,7 +212,22 @@
                     "contextual_en": "sugar beet"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "vet",
+                    "base_form": "veta",
+                    "contextual_en": "know",
+                    "position_start": 4,
+                    "position_end": 7
+                },
+                {
+                    "word_in_sentence": "stolt",
+                    "base_form": "stolt",
+                    "contextual_en": "proud",
+                    "position_start": 22,
+                    "position_end": 27
+                }
+            ]
         },
         {
             "sentence_id": "art_13_s007",
@@ -166,7 +242,15 @@
                     "contextual_en": "get in touch with"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "bönderna",
+                    "base_form": "bonde",
+                    "contextual_en": "the farmers",
+                    "position_start": 32,
+                    "position_end": 40
+                }
+            ]
         },
         {
             "sentence_id": "art_13_s008",
@@ -188,7 +272,22 @@
                     "contextual_en": "live on"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "gamla",
+                    "base_form": "gammal",
+                    "contextual_en": "old",
+                    "position_start": 46,
+                    "position_end": 51
+                },
+                {
+                    "word_in_sentence": "traditioner",
+                    "base_form": "tradition",
+                    "contextual_en": "traditions",
+                    "position_start": 52,
+                    "position_end": 63
+                }
+            ]
         },
         {
             "sentence_id": "art_13_s009",
@@ -245,7 +344,22 @@
                     "contextual_en": "caramel"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "fina",
+                    "base_form": "fin",
+                    "contextual_en": "nice",
+                    "position_start": 26,
+                    "position_end": 30
+                },
+                {
+                    "word_in_sentence": "saker",
+                    "base_form": "sak",
+                    "contextual_en": "things",
+                    "position_start": 31,
+                    "position_end": 36
+                }
+            ]
         },
         {
             "sentence_id": "art_13_s010",
@@ -267,7 +381,22 @@
                     "contextual_en": "chocolate factory"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "en gång",
+                    "base_form": "en gång",
+                    "contextual_en": "once",
+                    "position_start": 41,
+                    "position_end": 48
+                },
+                {
+                    "word_in_sentence": "arbetade",
+                    "base_form": "arbeta",
+                    "contextual_en": "worked",
+                    "position_start": 49,
+                    "position_end": 57
+                }
+            ]
         },
         {
             "sentence_id": "art_13_s011",
@@ -282,7 +411,22 @@
                     "contextual_en": "strange"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "fantastiskt",
+                    "base_form": "fantastisk",
+                    "contextual_en": "fantastic",
+                    "position_start": 30,
+                    "position_end": 41
+                },
+                {
+                    "word_in_sentence": "ställe",
+                    "base_form": "ställe",
+                    "contextual_en": "place",
+                    "position_start": 42,
+                    "position_end": 48
+                }
+            ]
         },
         {
             "sentence_id": "art_13_s012",
@@ -297,7 +441,22 @@
                     "contextual_en": "take a break"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "kände",
+                    "base_form": "känna",
+                    "contextual_en": "felt",
+                    "position_start": 7,
+                    "position_end": 12
+                },
+                {
+                    "word_in_sentence": "arbetet",
+                    "base_form": "arbete",
+                    "contextual_en": "the work",
+                    "position_start": 46,
+                    "position_end": 53
+                }
+            ]
         },
         {
             "sentence_id": "art_13_s013",
@@ -319,7 +478,15 @@
                     "contextual_en": "family dinner"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "bestämde mig",
+                    "base_form": "bestämma sig",
+                    "contextual_en": "decided",
+                    "position_start": 4,
+                    "position_end": 16
+                }
+            ]
         },
         {
             "sentence_id": "art_13_s014",
@@ -341,7 +508,22 @@
                     "contextual_en": "candy store"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "åkte",
+                    "base_form": "åka",
+                    "contextual_en": "went",
+                    "position_start": 4,
+                    "position_end": 8
+                },
+                {
+                    "word_in_sentence": "mysig",
+                    "base_form": "mysig",
+                    "contextual_en": "cozy",
+                    "position_start": 38,
+                    "position_end": 43
+                }
+            ]
         },
         {
             "sentence_id": "art_13_s015",
@@ -370,7 +552,22 @@
                     "contextual_en": "grocery chain"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "nästan",
+                    "base_form": "nästan",
+                    "contextual_en": "almost",
+                    "position_start": 23,
+                    "position_end": 29
+                },
+                {
+                    "word_in_sentence": "modern",
+                    "base_form": "modern",
+                    "contextual_en": "modern",
+                    "position_start": 59,
+                    "position_end": 65
+                }
+            ]
         },
         {
             "sentence_id": "art_13_s016",
@@ -392,14 +589,30 @@
                     "contextual_en": "sit down"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "ägaren",
+                    "base_form": "ägare",
+                    "contextual_en": "the owner",
+                    "position_start": 36,
+                    "position_end": 42
+                }
+            ]
         },
         {
             "sentence_id": "art_13_s017",
             "sv": "Det kändes bra.",
             "en": "It felt good.",
             "target_words": [],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "kändes",
+                    "base_form": "kännas",
+                    "contextual_en": "felt",
+                    "position_start": 4,
+                    "position_end": 10
+                }
+            ]
         },
         {
             "sentence_id": "art_13_s018",
@@ -435,7 +648,22 @@
                     "contextual_en": "thinking about"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "hyllorna",
+                    "base_form": "hylla",
+                    "contextual_en": "the shelves",
+                    "position_start": 23,
+                    "position_end": 31
+                },
+                {
+                    "word_in_sentence": "välja",
+                    "base_form": "välja",
+                    "contextual_en": "choose",
+                    "position_start": 67,
+                    "position_end": 72
+                }
+            ]
         },
         {
             "sentence_id": "art_13_s019",
@@ -450,7 +678,15 @@
                     "contextual_en": "fruit"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "mer",
+                    "base_form": "mycket",
+                    "contextual_en": "more",
+                    "position_start": 19,
+                    "position_end": 22
+                }
+            ]
         },
         {
             "sentence_id": "art_13_s020",
@@ -486,7 +722,22 @@
                     "contextual_en": "fruit flavor"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "hittade",
+                    "base_form": "hitta",
+                    "contextual_en": "found",
+                    "position_start": 4,
+                    "position_end": 11
+                },
+                {
+                    "word_in_sentence": "härlig",
+                    "base_form": "härlig",
+                    "contextual_en": "lovely",
+                    "position_start": 62,
+                    "position_end": 68
+                }
+            ]
         },
         {
             "sentence_id": "art_13_s021",
@@ -515,7 +766,22 @@
                     "contextual_en": "peppermint stick"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "också",
+                    "base_form": "också",
+                    "contextual_en": "also",
+                    "position_start": 12,
+                    "position_end": 17
+                },
+                {
+                    "word_in_sentence": "påse",
+                    "base_form": "påse",
+                    "contextual_en": "bag",
+                    "position_start": 60,
+                    "position_end": 64
+                }
+            ]
         },
         {
             "sentence_id": "art_13_s022",
@@ -544,7 +810,22 @@
                     "contextual_en": "box of pastilles"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "köpte",
+                    "base_form": "köpa",
+                    "contextual_en": "bought",
+                    "position_start": 9,
+                    "position_end": 14
+                },
+                {
+                    "word_in_sentence": "rolig",
+                    "base_form": "rolig",
+                    "contextual_en": "fun",
+                    "position_start": 56,
+                    "position_end": 61
+                }
+            ]
         },
         {
             "sentence_id": "art_13_s023",
@@ -566,7 +847,15 @@
                     "contextual_en": "chocolate-covered marshmallow treat"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "till och med",
+                    "base_form": "till och med",
+                    "contextual_en": "even",
+                    "position_start": 10,
+                    "position_end": 22
+                }
+            ]
         },
         {
             "sentence_id": "art_13_s024",
@@ -588,7 +877,15 @@
                     "contextual_en": "Tex-Mex product"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "allt",
+                    "base_form": "all",
+                    "contextual_en": "everything",
+                    "position_start": -1,
+                    "position_end": -1
+                }
+            ]
         },
         {
             "sentence_id": "art_13_s025",
@@ -603,7 +900,22 @@
                     "contextual_en": "hotel breakfast"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "njöt",
+                    "base_form": "njuta",
+                    "contextual_en": "enjoyed",
+                    "position_start": 15,
+                    "position_end": 19
+                },
+                {
+                    "word_in_sentence": "lyxig",
+                    "base_form": "lyxig",
+                    "contextual_en": "luxurious",
+                    "position_start": 43,
+                    "position_end": 48
+                }
+            ]
         },
         {
             "sentence_id": "art_13_s026",
@@ -625,7 +937,22 @@
                     "contextual_en": "look foolish"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "glad",
+                    "base_form": "glad",
+                    "contextual_en": "happy",
+                    "position_start": 83,
+                    "position_end": 87
+                },
+                {
+                    "word_in_sentence": "godsaker",
+                    "base_form": "godsak",
+                    "contextual_en": "treats",
+                    "position_start": 98,
+                    "position_end": 106
+                }
+            ]
         },
         {
             "sentence_id": "art_13_s027",
@@ -647,7 +974,22 @@
                     "contextual_en": "otherwise"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "viktigt",
+                    "base_form": "viktig",
+                    "contextual_en": "important",
+                    "position_start": 29,
+                    "position_end": 36
+                },
+                {
+                    "word_in_sentence": "livet",
+                    "base_form": "liv",
+                    "contextual_en": "life",
+                    "position_start": 39,
+                    "position_end": 44
+                }
+            ]
         },
         {
             "sentence_id": "art_13_s028",
@@ -662,7 +1004,15 @@
                     "contextual_en": "chew"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "roligare",
+                    "base_form": "rolig",
+                    "contextual_en": "more fun",
+                    "position_start": 14,
+                    "position_end": 22
+                }
+            ]
         }
     ],
     "primary_words_used": [

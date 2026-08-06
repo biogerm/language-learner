@@ -41,7 +41,22 @@
                     "contextual_en": "fantastic"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "värld",
+                    "base_form": "värld",
+                    "contextual_en": "world",
+                    "position_start": 49,
+                    "position_end": 54
+                },
+                {
+                    "word_in_sentence": "lösningar",
+                    "base_form": "lösning",
+                    "contextual_en": "solutions",
+                    "position_start": 72,
+                    "position_end": 81
+                }
+            ]
         },
         {
             "sentence_id": "art_00_s002",
@@ -70,7 +85,22 @@
                     "contextual_en": "affect"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "moderna",
+                    "base_form": "modern",
+                    "contextual_en": "modern",
+                    "position_start": 38,
+                    "position_end": 45
+                },
+                {
+                    "word_in_sentence": "vardag",
+                    "base_form": "vardag",
+                    "contextual_en": "everyday life",
+                    "position_start": 84,
+                    "position_end": 90
+                }
+            ]
         },
         {
             "sentence_id": "art_00_s003",
@@ -113,7 +143,22 @@
                     "contextual_en": "own"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "samhället",
+                    "base_form": "samhälle",
+                    "contextual_en": "society",
+                    "position_start": 53,
+                    "position_end": 62
+                },
+                {
+                    "word_in_sentence": "överleva",
+                    "base_form": "överleva",
+                    "contextual_en": "survive",
+                    "position_start": 133,
+                    "position_end": 141
+                }
+            ]
         },
         {
             "sentence_id": "art_00_s004",
@@ -156,7 +201,22 @@
                     "contextual_en": "If"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "maskiner",
+                    "base_form": "maskin",
+                    "contextual_en": "machines",
+                    "position_start": 83,
+                    "position_end": 91
+                },
+                {
+                    "word_in_sentence": "system",
+                    "base_form": "system",
+                    "contextual_en": "systems",
+                    "position_start": 96,
+                    "position_end": 102
+                }
+            ]
         },
         {
             "sentence_id": "art_00_s005",
@@ -178,7 +238,22 @@
                     "contextual_en": "all"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "sitter",
+                    "base_form": "sitta",
+                    "contextual_en": "sit",
+                    "position_start": 43,
+                    "position_end": 49
+                },
+                {
+                    "word_in_sentence": "kontoret",
+                    "base_form": "kontor",
+                    "contextual_en": "office",
+                    "position_start": 81,
+                    "position_end": 89
+                }
+            ]
         },
         {
             "sentence_id": "art_00_s006",
@@ -200,7 +275,22 @@
                     "contextual_en": "civil engineer"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "utvecklat",
+                    "base_form": "utveckla",
+                    "contextual_en": "developed",
+                    "position_start": 42,
+                    "position_end": 51
+                },
+                {
+                    "word_in_sentence": "effektivt",
+                    "base_form": "effektiv",
+                    "contextual_en": "efficiently",
+                    "position_start": 89,
+                    "position_end": 98
+                }
+            ]
         },
         {
             "sentence_id": "art_00_s007",
@@ -229,7 +319,22 @@
                     "contextual_en": "tools"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "avancerad",
+                    "base_form": "avancerad",
+                    "contextual_en": "advanced",
+                    "position_start": 13,
+                    "position_end": 22
+                },
+                {
+                    "word_in_sentence": "lösa",
+                    "base_form": "lösa",
+                    "contextual_en": "solve",
+                    "position_start": 68,
+                    "position_end": 72
+                }
+            ]
         },
         {
             "sentence_id": "art_00_s008",
@@ -244,7 +349,22 @@
                     "contextual_en": "geologist"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "fru",
+                    "base_form": "fru",
+                    "contextual_en": "wife",
+                    "position_start": 5,
+                    "position_end": 8
+                },
+                {
+                    "word_in_sentence": "undersöker",
+                    "base_form": "undersöka",
+                    "contextual_en": "examines",
+                    "position_start": 27,
+                    "position_end": 37
+                }
+            ]
         },
         {
             "sentence_id": "art_00_s009",
@@ -287,7 +407,22 @@
                     "contextual_en": "astronomy"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "fritiden",
+                    "base_form": "fritid",
+                    "contextual_en": "spare time",
+                    "position_start": 66,
+                    "position_end": 74
+                },
+                {
+                    "word_in_sentence": "gillar",
+                    "base_form": "gilla",
+                    "contextual_en": "like",
+                    "position_start": 29,
+                    "position_end": 35
+                }
+            ]
         },
         {
             "sentence_id": "art_00_s010",
@@ -309,7 +444,22 @@
                     "contextual_en": "electricity"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "oerhört",
+                    "base_form": "oerhörd",
+                    "contextual_en": "extremely",
+                    "position_start": 26,
+                    "position_end": 33
+                },
+                {
+                    "word_in_sentence": "svårt",
+                    "base_form": "svår",
+                    "contextual_en": "difficult",
+                    "position_start": 34,
+                    "position_end": 39
+                }
+            ]
         },
         {
             "sentence_id": "art_00_s011",
@@ -352,7 +502,22 @@
                     "contextual_en": "wait"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "snabbt",
+                    "base_form": "snabb",
+                    "contextual_en": "fast",
+                    "position_start": 29,
+                    "position_end": 35
+                },
+                {
+                    "word_in_sentence": "omvärlden",
+                    "base_form": "omvärld",
+                    "contextual_en": "outside world",
+                    "position_start": 115,
+                    "position_end": 124
+                }
+            ]
         },
         {
             "sentence_id": "art_00_s012",
@@ -388,7 +553,22 @@
                     "contextual_en": "actually"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "hälften",
+                    "base_form": "hälft",
+                    "contextual_en": "half",
+                    "position_start": 25,
+                    "position_end": 32
+                },
+                {
+                    "word_in_sentence": "komplicerade",
+                    "base_form": "komplicerad",
+                    "contextual_en": "complicated",
+                    "position_start": 78,
+                    "position_end": 90
+                }
+            ]
         },
         {
             "sentence_id": "art_00_s013",
@@ -424,7 +604,22 @@
                     "contextual_en": "tool"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "lätt",
+                    "base_form": "lätt",
+                    "contextual_en": "easily",
+                    "position_start": 8,
+                    "position_end": 12
+                },
+                {
+                    "word_in_sentence": "arbete",
+                    "base_form": "arbete",
+                    "contextual_en": "work",
+                    "position_start": 65,
+                    "position_end": 71
+                }
+            ]
         },
         {
             "sentence_id": "art_00_s014",
@@ -446,7 +641,22 @@
                     "contextual_en": "too much"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "Ibland",
+                    "base_form": "ibland",
+                    "contextual_en": "Sometimes",
+                    "position_start": 0,
+                    "position_end": 6
+                },
+                {
+                    "word_in_sentence": "överallt",
+                    "base_form": "överallt",
+                    "contextual_en": "everywhere",
+                    "position_start": 58,
+                    "position_end": 66
+                }
+            ]
         },
         {
             "sentence_id": "art_00_s015",
@@ -475,7 +685,22 @@
                     "contextual_en": "online"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "kväll",
+                    "base_form": "kväll",
+                    "contextual_en": "night",
+                    "position_start": 6,
+                    "position_end": 11
+                },
+                {
+                    "word_in_sentence": "surfade",
+                    "base_form": "surfa",
+                    "contextual_en": "surfed",
+                    "position_start": 25,
+                    "position_end": 32
+                }
+            ]
         },
         {
             "sentence_id": "art_00_s016",
@@ -518,7 +743,22 @@
                     "contextual_en": "TV"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "tydligt",
+                    "base_form": "tydlig",
+                    "contextual_en": "clearly",
+                    "position_start": 42,
+                    "position_end": 49
+                },
+                {
+                    "word_in_sentence": "vardagsrummet",
+                    "base_form": "vardagsrum",
+                    "contextual_en": "living room",
+                    "position_start": 134,
+                    "position_end": 147
+                }
+            ]
         },
         {
             "sentence_id": "art_00_s017",
@@ -540,7 +780,22 @@
                     "contextual_en": "watch TV"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "slappna av",
+                    "base_form": "slappna av",
+                    "contextual_en": "relax",
+                    "position_start": 70,
+                    "position_end": 80
+                },
+                {
+                    "word_in_sentence": "verkligen",
+                    "base_form": "verklig",
+                    "contextual_en": "really",
+                    "position_start": 23,
+                    "position_end": 32
+                }
+            ]
         },
         {
             "sentence_id": "art_00_s018",
@@ -569,7 +824,22 @@
                     "contextual_en": "which"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "funktioner",
+                    "base_form": "funktion",
+                    "contextual_en": "features",
+                    "position_start": 79,
+                    "position_end": 89
+                },
+                {
+                    "word_in_sentence": "bild",
+                    "base_form": "bild",
+                    "contextual_en": "picture",
+                    "position_start": 145,
+                    "position_end": 149
+                }
+            ]
         },
         {
             "sentence_id": "art_00_s019",
@@ -598,7 +868,22 @@
                     "contextual_en": "opportunity"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "spännande",
+                    "base_form": "spännande",
+                    "contextual_en": "exciting",
+                    "position_start": 48,
+                    "position_end": 57
+                },
+                {
+                    "word_in_sentence": "kulturer",
+                    "base_form": "kultur",
+                    "contextual_en": "cultures",
+                    "position_start": 109,
+                    "position_end": 117
+                }
+            ]
         },
         {
             "sentence_id": "art_00_s020",
@@ -620,7 +905,22 @@
                     "contextual_en": "email"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "ofta",
+                    "base_form": "ofta",
+                    "contextual_en": "often",
+                    "position_start": 29,
+                    "position_end": 33
+                },
+                {
+                    "word_in_sentence": "jobbet",
+                    "base_form": "jobb",
+                    "contextual_en": "work",
+                    "position_start": 48,
+                    "position_end": 54
+                }
+            ]
         },
         {
             "sentence_id": "art_00_s021",
@@ -642,7 +942,22 @@
                     "contextual_en": "phone call"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "viktigt",
+                    "base_form": "viktig",
+                    "contextual_en": "important",
+                    "position_start": 90,
+                    "position_end": 97
+                },
+                {
+                    "word_in_sentence": "kollega",
+                    "base_form": "kollega",
+                    "contextual_en": "colleague",
+                    "position_start": 120,
+                    "position_end": 127
+                }
+            ]
         },
         {
             "sentence_id": "art_00_s022",
@@ -657,7 +972,22 @@
                     "contextual_en": "forget"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "Mitt i",
+                    "base_form": "mitt i",
+                    "contextual_en": "In the midst of",
+                    "position_start": 0,
+                    "position_end": 6
+                },
+                {
+                    "word_in_sentence": "kropp",
+                    "base_form": "kropp",
+                    "contextual_en": "body",
+                    "position_start": 66,
+                    "position_end": 71
+                }
+            ]
         },
         {
             "sentence_id": "art_00_s023",
@@ -679,7 +1009,22 @@
                     "contextual_en": "physical activity"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "regelbunden",
+                    "base_form": "regelbunden",
+                    "contextual_en": "regular",
+                    "position_start": 63,
+                    "position_end": 74
+                },
+                {
+                    "word_in_sentence": "avgörande",
+                    "base_form": "avgörande",
+                    "contextual_en": "crucial",
+                    "position_start": 95,
+                    "position_end": 104
+                }
+            ]
         },
         {
             "sentence_id": "art_00_s024",
@@ -701,7 +1046,22 @@
                     "contextual_en": "energy"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "naturligtvis",
+                    "base_form": "naturligtvis",
+                    "contextual_en": "naturally",
+                    "position_start": 19,
+                    "position_end": 31
+                },
+                {
+                    "word_in_sentence": "styrka",
+                    "base_form": "styrka",
+                    "contextual_en": "strength",
+                    "position_start": 43,
+                    "position_end": 49
+                }
+            ]
         },
         {
             "sentence_id": "art_00_s025",
@@ -716,7 +1076,22 @@
                     "contextual_en": "right"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "balans",
+                    "base_form": "balans",
+                    "contextual_en": "balance",
+                    "position_start": 33,
+                    "position_end": 39
+                },
+                {
+                    "word_in_sentence": "långsiktigt",
+                    "base_form": "långsiktig",
+                    "contextual_en": "in the long term",
+                    "position_start": 63,
+                    "position_end": 74
+                }
+            ]
         },
         {
             "sentence_id": "art_00_s026",
@@ -731,7 +1106,22 @@
                     "contextual_en": "vary"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "förstås",
+                    "base_form": "förstås",
+                    "contextual_en": "of course",
+                    "position_start": 8,
+                    "position_end": 15
+                },
+                {
+                    "word_in_sentence": "mår",
+                    "base_form": "må",
+                    "contextual_en": "feel",
+                    "position_start": 39,
+                    "position_end": 42
+                }
+            ]
         },
         {
             "sentence_id": "art_00_s027",
@@ -753,7 +1143,22 @@
                     "contextual_en": "high"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "samtidigt",
+                    "base_form": "samtidig",
+                    "contextual_en": "at the same time",
+                    "position_start": 56,
+                    "position_end": 65
+                },
+                {
+                    "word_in_sentence": "nivå",
+                    "base_form": "nivå",
+                    "contextual_en": "level",
+                    "position_start": 47,
+                    "position_end": 51
+                }
+            ]
         }
     ],
     "primary_words_used": [

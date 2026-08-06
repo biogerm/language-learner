@@ -27,7 +27,29 @@
                     "contextual_en": "look for a job"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "börjar",
+                    "base_form": "börja",
+                    "contextual_en": "begins",
+                    "position_start": 10,
+                    "position_end": 16
+                },
+                {
+                    "word_in_sentence": "första",
+                    "base_form": "första",
+                    "contextual_en": "first",
+                    "position_start": 56,
+                    "position_end": 62
+                },
+                {
+                    "word_in_sentence": "gången",
+                    "base_form": "gång",
+                    "contextual_en": "time",
+                    "position_start": 63,
+                    "position_end": 69
+                }
+            ]
         },
         {
             "sentence_id": "art_06_s002",
@@ -42,7 +64,15 @@
                     "contextual_en": "What did she want to be?"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "chef",
+                    "base_form": "chef",
+                    "contextual_en": "boss",
+                    "position_start": 33,
+                    "position_end": 37
+                }
+            ]
         },
         {
             "sentence_id": "art_06_s003",
@@ -78,7 +108,29 @@
                     "contextual_en": "workers"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "vanlig",
+                    "base_form": "vanlig",
+                    "contextual_en": "regular",
+                    "position_start": 20,
+                    "position_end": 26
+                },
+                {
+                    "word_in_sentence": "staden",
+                    "base_form": "stad",
+                    "contextual_en": "city",
+                    "position_start": 49,
+                    "position_end": 55
+                },
+                {
+                    "word_in_sentence": "föräldrar",
+                    "base_form": "förälder",
+                    "contextual_en": "parents",
+                    "position_start": 62,
+                    "position_end": 71
+                }
+            ]
         },
         {
             "sentence_id": "art_06_s004",
@@ -100,7 +152,15 @@
                     "contextual_en": "factory"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "ville",
+                    "base_form": "vilja",
+                    "contextual_en": "wanted",
+                    "position_start": 4,
+                    "position_end": 9
+                }
+            ]
         },
         {
             "sentence_id": "art_06_s005",
@@ -115,7 +175,15 @@
                     "contextual_en": "summer worker"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "började",
+                    "base_form": "börja",
+                    "contextual_en": "started",
+                    "position_start": 4,
+                    "position_end": 11
+                }
+            ]
         },
         {
             "sentence_id": "art_06_s006",
@@ -151,22 +219,44 @@
                     "contextual_en": "after"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "permanent",
+                    "base_form": "permanent",
+                    "contextual_en": "permanently",
+                    "position_start": 45,
+                    "position_end": 54
+                },
+                {
+                    "word_in_sentence": "sommaren",
+                    "base_form": "sommar",
+                    "contextual_en": "summer",
+                    "position_start": 68,
+                    "position_end": 76
+                }
+            ]
         },
         {
             "sentence_id": "art_06_s007",
             "sv": "\"Hur många år har hon jobbat här?\" frågade jag.",
             "en": "\"How many years has she worked here?\" I asked.",
-            "target_words": [
+            "target_words": [],
+            "secondary_words": [
                 {
-                    "word_in_sentence": "Hur många år har hon jobbat här?",
-                    "base_form": "Hur många år har du/han/hon jobbat här?",
-                    "position_start": 1,
-                    "position_end": 33,
-                    "contextual_en": "How many years has she worked here?"
+                    "word_in_sentence": "år",
+                    "base_form": "år",
+                    "contextual_en": "years",
+                    "position_start": 11,
+                    "position_end": 13
+                },
+                {
+                    "word_in_sentence": "jobbat",
+                    "base_form": "jobba",
+                    "contextual_en": "worked",
+                    "position_start": 22,
+                    "position_end": 28
                 }
-            ],
-            "secondary_words": []
+            ]
         },
         {
             "sentence_id": "art_06_s008",
@@ -181,7 +271,15 @@
                     "contextual_en": "hired"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "nyss",
+                    "base_form": "nyss",
+                    "contextual_en": "newly",
+                    "position_start": 8,
+                    "position_end": 12
+                }
+            ]
         },
         {
             "sentence_id": "art_06_s009",
@@ -203,7 +301,15 @@
                     "contextual_en": "food company"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "stort",
+                    "base_form": "stor",
+                    "contextual_en": "large",
+                    "position_start": 17,
+                    "position_end": 22
+                }
+            ]
         },
         {
             "sentence_id": "art_06_s010",
@@ -225,7 +331,15 @@
                     "contextual_en": "television company"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "gott",
+                    "base_form": "god",
+                    "contextual_en": "good",
+                    "position_start": 12,
+                    "position_end": 16
+                }
+            ]
         },
         {
             "sentence_id": "art_06_s011",
@@ -261,7 +375,22 @@
                     "contextual_en": "results"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "annan",
+                    "base_form": "annan",
+                    "contextual_en": "other",
+                    "position_start": 16,
+                    "position_end": 21
+                },
+                {
+                    "word_in_sentence": "kunde",
+                    "base_form": "kunna",
+                    "contextual_en": "could",
+                    "position_start": 39,
+                    "position_end": 44
+                }
+            ]
         },
         {
             "sentence_id": "art_06_s012",
@@ -276,7 +405,29 @@
                     "contextual_en": "a third as large as"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "världen",
+                    "base_form": "värld",
+                    "contextual_en": "world",
+                    "position_start": 60,
+                    "position_end": 67
+                },
+                {
+                    "word_in_sentence": "ändå",
+                    "base_form": "ändå",
+                    "contextual_en": "nonetheless",
+                    "position_start": 80,
+                    "position_end": 84
+                },
+                {
+                    "word_in_sentence": "framgångsrika",
+                    "base_form": "framgångsrik",
+                    "contextual_en": "successful",
+                    "position_start": 85,
+                    "position_end": 98
+                }
+            ]
         },
         {
             "sentence_id": "art_06_s013",
@@ -312,7 +463,29 @@
                     "contextual_en": "tactic"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "utländsk",
+                    "base_form": "utländsk",
+                    "contextual_en": "foreign",
+                    "position_start": 41,
+                    "position_end": 49
+                },
+                {
+                    "word_in_sentence": "partner",
+                    "base_form": "partner",
+                    "contextual_en": "partner",
+                    "position_start": 22,
+                    "position_end": 29
+                },
+                {
+                    "word_in_sentence": "behövde",
+                    "base_form": "behöva",
+                    "contextual_en": "needed",
+                    "position_start": 72,
+                    "position_end": 79
+                }
+            ]
         },
         {
             "sentence_id": "art_06_s014",
@@ -341,7 +514,22 @@
                     "contextual_en": "goal"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "tvungna",
+                    "base_form": "tvungen",
+                    "contextual_en": "forced",
+                    "position_start": 35,
+                    "position_end": 42
+                },
+                {
+                    "word_in_sentence": "tydligt",
+                    "base_form": "tydlig",
+                    "contextual_en": "clear",
+                    "position_start": 61,
+                    "position_end": 68
+                }
+            ]
         },
         {
             "sentence_id": "art_06_s015",
@@ -363,7 +551,22 @@
                     "contextual_en": "hit"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "tog över",
+                    "base_form": "ta över",
+                    "contextual_en": "took over",
+                    "position_start": 35,
+                    "position_end": 43
+                },
+                {
+                    "word_in_sentence": "problem",
+                    "base_form": "problem",
+                    "contextual_en": "problems",
+                    "position_start": 48,
+                    "position_end": 55
+                }
+            ]
         },
         {
             "sentence_id": "art_06_s016",
@@ -378,7 +581,29 @@
                     "contextual_en": "logical"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "regler",
+                    "base_form": "regel",
+                    "contextual_en": "rules",
+                    "position_start": 6,
+                    "position_end": 12
+                },
+                {
+                    "word_in_sentence": "saknade",
+                    "base_form": "sakna",
+                    "contextual_en": "lacked",
+                    "position_start": 13,
+                    "position_end": 20
+                },
+                {
+                    "word_in_sentence": "mening",
+                    "base_form": "mening",
+                    "contextual_en": "sense",
+                    "position_start": 28,
+                    "position_end": 34
+                }
+            ]
         },
         {
             "sentence_id": "art_06_s017",
@@ -400,7 +625,29 @@
                     "contextual_en": "office supplies"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "sent",
+                    "base_form": "sen",
+                    "contextual_en": "late",
+                    "position_start": 28,
+                    "position_end": 32
+                },
+                {
+                    "word_in_sentence": "glömde",
+                    "base_form": "glömma",
+                    "contextual_en": "forgot",
+                    "position_start": 40,
+                    "position_end": 46
+                },
+                {
+                    "word_in_sentence": "beställa",
+                    "base_form": "beställa",
+                    "contextual_en": "order",
+                    "position_start": 47,
+                    "position_end": 55
+                }
+            ]
         },
         {
             "sentence_id": "art_06_s018",
@@ -429,7 +676,15 @@
                     "contextual_en": "equal pay for equal work"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "viktigt",
+                    "base_form": "viktig",
+                    "contextual_en": "important",
+                    "position_start": 8,
+                    "position_end": 15
+                }
+            ]
         },
         {
             "sentence_id": "art_06_s019",
@@ -444,14 +699,37 @@
                     "contextual_en": "fire"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "Annars",
+                    "base_form": "annars",
+                    "contextual_en": "otherwise",
+                    "position_start": 0,
+                    "position_end": 6
+                },
+                {
+                    "word_in_sentence": "folk",
+                    "base_form": "folk",
+                    "contextual_en": "people",
+                    "position_start": 24,
+                    "position_end": 28
+                }
+            ]
         },
         {
             "sentence_id": "art_06_s020",
             "sv": "En chef sa: \"Jag har en dröm.\"",
             "en": "A boss said: \"I have a dream.\"",
             "target_words": [],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "dröm",
+                    "base_form": "dröm",
+                    "contextual_en": "dream",
+                    "position_start": 24,
+                    "position_end": 28
+                }
+            ]
         },
         {
             "sentence_id": "art_06_s021",
@@ -480,7 +758,22 @@
                     "contextual_en": "French"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "talade",
+                    "base_form": "tala",
+                    "contextual_en": "talked",
+                    "position_start": 4,
+                    "position_end": 10
+                },
+                {
+                    "word_in_sentence": "metoder",
+                    "base_form": "metod",
+                    "contextual_en": "methods",
+                    "position_start": 66,
+                    "position_end": 73
+                }
+            ]
         },
         {
             "sentence_id": "art_06_s022",
@@ -495,7 +788,15 @@
                     "contextual_en": "That fits well."
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "kollega",
+                    "base_form": "kollega",
+                    "contextual_en": "colleague",
+                    "position_start": 24,
+                    "position_end": 31
+                }
+            ]
         },
         {
             "sentence_id": "art_06_s023",
@@ -510,7 +811,15 @@
                     "contextual_en": "report"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "måste",
+                    "base_form": "måste",
+                    "contextual_en": "have to",
+                    "position_start": 4,
+                    "position_end": 9
+                }
+            ]
         },
         {
             "sentence_id": "art_06_s024",
@@ -539,7 +848,22 @@
                     "contextual_en": "send"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "nya",
+                    "base_form": "ny",
+                    "contextual_en": "new",
+                    "position_start": 13,
+                    "position_end": 16
+                },
+                {
+                    "word_in_sentence": "under",
+                    "base_form": "under",
+                    "contextual_en": "during",
+                    "position_start": 24,
+                    "position_end": 29
+                }
+            ]
         },
         {
             "sentence_id": "art_06_s025",
@@ -561,7 +885,15 @@
                     "contextual_en": "role"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "mycket",
+                    "base_form": "mycket",
+                    "contextual_en": "a lot of",
+                    "position_start": 8,
+                    "position_end": 14
+                }
+            ]
         },
         {
             "sentence_id": "art_06_s026",
@@ -583,7 +915,29 @@
                     "contextual_en": "instruction"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "anställda",
+                    "base_form": "anställd",
+                    "contextual_en": "employees",
+                    "position_start": 21,
+                    "position_end": 30
+                },
+                {
+                    "word_in_sentence": "följ",
+                    "base_form": "följa",
+                    "contextual_en": "follow",
+                    "position_start": 42,
+                    "position_end": 46
+                },
+                {
+                    "word_in_sentence": "noga",
+                    "base_form": "noga",
+                    "contextual_en": "carefully",
+                    "position_start": 65,
+                    "position_end": 69
+                }
+            ]
         },
         {
             "sentence_id": "art_06_s027",
@@ -605,7 +959,22 @@
                     "contextual_en": "return"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "bad",
+                    "base_form": "be",
+                    "contextual_en": "asked",
+                    "position_start": 4,
+                    "position_end": 7
+                },
+                {
+                    "word_in_sentence": "lånar",
+                    "base_form": "låna",
+                    "contextual_en": "borrow",
+                    "position_start": 69,
+                    "position_end": 74
+                }
+            ]
         },
         {
             "sentence_id": "art_06_s028",
@@ -620,7 +989,29 @@
                     "contextual_en": "I would be grateful if..."
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "skrev",
+                    "base_form": "skriva",
+                    "contextual_en": "wrote",
+                    "position_start": 4,
+                    "position_end": 9
+                },
+                {
+                    "word_in_sentence": "mejl",
+                    "base_form": "mejl",
+                    "contextual_en": "email",
+                    "position_start": 14,
+                    "position_end": 18
+                },
+                {
+                    "word_in_sentence": "tid",
+                    "base_form": "tid",
+                    "contextual_en": "time",
+                    "position_start": 74,
+                    "position_end": 77
+                }
+            ]
         },
         {
             "sentence_id": "art_06_s029",
@@ -635,7 +1026,22 @@
                     "contextual_en": "Could you send...?"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "information",
+                    "base_form": "information",
+                    "contextual_en": "information",
+                    "position_start": 29,
+                    "position_end": 40
+                },
+                {
+                    "word_in_sentence": "mötet",
+                    "base_form": "möte",
+                    "contextual_en": "meeting",
+                    "position_start": 47,
+                    "position_end": 52
+                }
+            ]
         },
         {
             "sentence_id": "art_06_s030",
@@ -664,7 +1070,15 @@
                     "contextual_en": "back"
                 }
             ],
-            "secondary_words": []
+            "secondary_words": [
+                {
+                    "word_in_sentence": "rummet",
+                    "base_form": "rum",
+                    "contextual_en": "room",
+                    "position_start": 69,
+                    "position_end": 75
+                }
+            ]
         }
     ],
     "primary_words_used": [
