@@ -164,7 +164,7 @@ For each generated article, the Teacher Agent must output a Markdown-formatted r
 
 **Refinement Loop**: If the Teacher Agent assigns a failing grade or identifies severe unnaturalness, the feedback must be routed back to the Generation Agent to rewrite the article. The final JSON is only saved when the Teacher Agent approves the text (e.g., Godkänt or Väl godkänt).
 
-## 9. Independent Bilingual Translation & Validation (Sub-step 2.4 & 2.5)
+## 9. Independent Bilingual Translation & Validation (Sub-steps 2.4 - 2.6)
 
 > [!IMPORTANT]
 > The translation task must absolutely not be mixed with the article generation task for the AI to complete in one shot. Writing the article must be split from the full bilingual translation into independent steps in the pipeline.
@@ -180,6 +180,12 @@ Core principles for translation: **Structural Alignment and Grammatical Correctn
 Once translated, it is reviewed by a validation model acting as a "Bilingual SFI Teacher".
 *   **Review Scope**: Compare the Swedish original and English translation to check for missing clauses, structural alignment, and grammatical correctness. Also verify the accuracy of `contextual_en`.
 *   **Refinement Loop**: If the teacher finds the translation structure deviates too much from the original, or there are grammatical errors, it must provide specific correction advice and send it back to the translation model for a mandatory retranslation. The final JSON can only be assembled after full teacher approval.
+
+**Sub-step 2.6: Statistical Verification (Table Output)**
+To solve the issue of LLMs occasionally skipping or hallucinating extractions (especially for `secondary_words`), an explicit statistical summary step MUST be enforced at the end of the generation/extraction phase.
+*   **Action**: Force the LLM to output a statistical summary table for the current article(s) containing columns for: `Article ID`, `Total Sentences`, `Total Target Words`, `Total Secondary Words`, and `Total EN Translations`.
+*   **Evaluation Rule**: The controller script/agent must parse this table. If an article has too few `secondary_words` (e.g., less than 20) or if any sentence is missing an English translation, the controller must pinpoint the exact failing sentences/articles.
+*   **Repair Loop**: Send a targeted prompt back to the LLM indicating exactly which article failed the threshold (e.g., "Article X only extracted 5 secondary words. You need 20-30. Please re-process Article X to extract more secondary words.") and force a regeneration/repair of the missing data before proceeding to the final JSON save.
 
 ## 10. AI Prompt Template Reference
 
