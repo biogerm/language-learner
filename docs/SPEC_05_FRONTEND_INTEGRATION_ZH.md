@@ -85,10 +85,11 @@ window.APP_DATA = {
 
 前端应用程序不仅需要加载 `data.js` 展示静态内容，还需要提供高度交互的阅读体验并集成 FSRS 间隔重复记忆算法。
 
-### 3.1 独立存储与翻译重组 (FSRS)
-当单词正式落户 FSRS 库时，系统会为其创建独立档案并存入 `localStorage("customVocab")`。写入逻辑必须重写为：
-*   **对于 Target Words (考点词)**：组合写入 `[语境精准翻译] ([主词典全局翻译])`。示例：`couch potato (someone who lies on the sofa, inactive)`。
-*   **对于 Secondary Words (副词汇)**：直接写入 `[语境精准翻译]`，即仅保留大模型根据当前句子生成的释义。
+### 3.1 学习队列与 FSRS 准入门槛
+为了确保前端记忆库的数据质量，前端的交互和存储必须遵循以下严格规则：
+*   **Target Words (考点词)**：随文章自动进入“初始学习队列”。
+*   **Secondary Words (副词汇) / 查词保存**：在阅读中，如果用户通过 📖 按钮查词并选中了某个词点击“保存”，该词才会进入“初始学习队列”。此时，系统必须从当前句子的 JSON 中提取该词的 `contextual_en`（语境精准翻译），同时从 `global_dict.js` 中提取全量翻译，将二者组合为 `[语境精准翻译] ([主词典全局翻译])` 的格式（例如：`couch potato (someone who lies on the sofa, inactive)`）加入队列。
+*   **双重准入门槛 (FSRS 写入限制)**：上述两种词汇**绝对不能立刻进入 FSRS 库**！它们必须在前端完成**“听写模式 100% 正确 + 翻译模式 100% 正确”**的双重考核后，才会被系统正式打上掌握印记，写入浏览器的 `localStorage("customVocab")`（即 FSRS 抗遗忘库）。
 
 ### 3.2 双端双语高亮渲染 (Bilingual Highlighting)
 在阅读模式的 UI 层（例如 `renderSentences` 中），必须实现严丝合缝的中瑞双语对齐高亮：
@@ -138,9 +139,9 @@ window.APP_DATA = {
 
 1.  读取 `master_dict.json`。
 2.  格式化为 Key-Value 键值对，并包裹在 `window.globalDictionary = ...` 中。
-3.  写入到 `frontend/js/global_dict.js`。
+3.  写入到外部应用目录 `<web_app_dir>/js/global_dict.js`。
 4.  读取 `chapters/` 目录下的所有文章 JSON。
 5.  将它们合并为嵌套的 `Course -> Stage -> Article` 结构。
 6.  包裹在 `window.APP_DATA = ...` 中。
-7.  写入到 `frontend/js/data.js`。
+7.  写入到外部应用目录 `<web_app_dir>/js/data.js`。
 8.  将文章 JSON 传递给 HTML 模板引擎（如 Jinja2 或自定义字符串插值），并写入 `print/sfid_b1_articles.html`。
