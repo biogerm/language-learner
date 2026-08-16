@@ -81,6 +81,34 @@ window.APP_DATA = {
 };
 ```
 
+### 2.3 Dictation Data Interface (`dictation_data.js`)
+
+Phase 5 must extract all `target_words` with their context from the Phase 2 Article JSONs to generate the dataset for the frontend's "Dictation" and "Flashcard" modes.
+To allow the frontend to display both the contextual meaning and the standard dictionary definition, this interface **must** cross-reference the master dictionary during generation:
+
+**Assembly Logic:**
+1. Iterate over all sentences in the articles and extract all `target_words`.
+2. Extract the Swedish base form (`base_form`) and the contextual translation (`contextual_en` mapped to `en`).
+3. Use the `base_form` to look up the standard global translation in `master_dict.json`.
+4. Inject this global translation as a new field named `dictionary_en`.
+5. When rendering in the frontend App, `dictionary_en` should be displayed in parentheses next to the original explanation.
+
+**Output Specification (`dictation_data.js`):**
+```javascript
+// Auto-generated from articles and master_dict.json. DO NOT EDIT.
+window.DICTATION_WORDS = [
+  {
+    "sv": "gå",
+    "en": "went",
+    "dictionary_en": "go, walk",
+    "context_sv": "Han gick hem.",
+    "stage": "Daily Life and Health",
+    "article": "En dag på gymmet",
+    "course_id": "sfid"
+  }
+];
+```
+
 ## 3. Web App UI & FSRS Logic
 
 The frontend web application must process the generated `data.js` to provide an interactive reading experience and integrate with the Spaced Repetition System (FSRS).
@@ -144,4 +172,6 @@ The generator script must inject the following CSS block into the generated HTML
 5.  Combine them into the nested `Course -> Stage -> Article` structure.
 6.  Wrap in `window.APP_DATA = ...`.
 7.  Write to the external application directory `<web_app_dir>/js/data.js`.
-8.  Pass the Article JSONs to an HTML templating engine (e.g., Jinja2 or custom string interpolation) and write `print/sfid_b1_articles.html`.
+8.  Extract `target_words` from articles and cross-reference with `master_dict.json` to generate an array of vocabulary objects with a `dictionary_en` field.
+9.  Wrap in `window.DICTATION_WORDS = ...` and write to `<web_app_dir>/js/dictation_data.js`.
+10. Pass the Article JSONs to an HTML templating engine (e.g., Jinja2 or custom string interpolation) and write `print/sfid_b1_articles.html`.

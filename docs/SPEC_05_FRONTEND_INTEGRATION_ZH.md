@@ -81,6 +81,34 @@ window.APP_DATA = {
 };
 ```
 
+### 2.3 听写题库接口 (`dictation_data.js`)
+
+Phase 5 需要从 Phase 2 输出的所有文章中提取出带语境的 `target_words`，并生成供前端“听写模式”和“闪卡模式”使用的数据集。
+为了在前端显示时既能展示语境释义，又能展示标准字典释义，该接口在生成时**必须**跨表联查主词典：
+
+**组装逻辑:**
+1. 遍历所有文章中的句子，提取所有的 `target_words`。
+2. 提取其瑞典语原形 (`base_form`) 和语境翻译 (`contextual_en` 映射为 `en`)。
+3. 拿着 `base_form` 去 `master_dict.json` 中查询标准的全局解释。
+4. 将查到的全局解释作为新字段 `dictionary_en` 一并注入。
+5. 前端 App 在显示时，应将 `dictionary_en` 用括号包裹显示在原本释义的旁边。
+
+**输出规范 (`dictation_data.js`):**
+```javascript
+// Auto-generated from articles and master_dict.json. DO NOT EDIT.
+window.DICTATION_WORDS = [
+  {
+    "sv": "gå",
+    "en": "went",
+    "dictionary_en": "go, walk",
+    "context_sv": "Han gick hem.",
+    "stage": "Daily Life and Health",
+    "article": "En dag på gymmet",
+    "course_id": "sfid"
+  }
+];
+```
+
 ## 3. Web App UI 与 FSRS 逻辑
 
 前端应用程序不仅需要加载 `data.js` 展示静态内容，还需要提供高度交互的阅读体验并集成 FSRS 间隔重复记忆算法。
@@ -144,4 +172,6 @@ window.APP_DATA = {
 5.  将它们合并为嵌套的 `Course -> Stage -> Article` 结构。
 6.  包裹在 `window.APP_DATA = ...` 中。
 7.  写入到外部应用目录 `<web_app_dir>/js/data.js`。
-8.  将文章 JSON 传递给 HTML 模板引擎（如 Jinja2 或自定义字符串插值），并写入 `print/sfid_b1_articles.html`。
+8.  提取文章中的 `target_words` 并结合 `master_dict.json` 生成带 `dictionary_en` 字段的词汇数组。
+9.  包裹在 `window.DICTATION_WORDS = ...` 中，并写入到 `<web_app_dir>/js/dictation_data.js`。
+10. 将文章 JSON 传递给 HTML 模板引擎（如 Jinja2 或自定义字符串插值），并写入 `print/sfid_b1_articles.html`。
