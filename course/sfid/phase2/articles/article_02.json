@@ -16,7 +16,8 @@
                     "word_in_sentence": "bibliotekarie",
                     "base_form": "biliotekarie",
                     "position_start": 19,
-                    "position_end": 32
+                    "position_end": 32,
+                    "contextual_en": "librarian"
                 }
             ],
             "secondary_words": [
@@ -43,31 +44,36 @@
                     "word_in_sentence": "åka iväg",
                     "base_form": "åka iväg",
                     "position_start": 42,
-                    "position_end": 50
+                    "position_end": 50,
+                    "contextual_en": "go away"
                 },
                 {
-                    "word_in_sentence": "väg",
+                    "word_in_sentence": "iväg",
                     "base_form": "väg",
-                    "position_start": 47,
-                    "position_end": 50
+                    "position_start": 46,
+                    "position_end": 50,
+                    "contextual_en": "way"
                 },
                 {
                     "word_in_sentence": "resa",
                     "base_form": "resa",
                     "position_start": 62,
-                    "position_end": 66
+                    "position_end": 66,
+                    "contextual_en": "trip"
                 },
                 {
                     "word_in_sentence": "utomlands",
                     "base_form": "utomlands",
                     "position_start": 67,
-                    "position_end": 76
+                    "position_end": 76,
+                    "contextual_en": "abroad"
                 },
                 {
                     "word_in_sentence": "ledighet",
                     "base_form": "ledighet",
                     "position_start": 87,
-                    "position_end": 95
+                    "position_end": 95,
+                    "contextual_en": "time off"
                 }
             ],
             "secondary_words": [
@@ -94,13 +100,15 @@
                     "word_in_sentence": "åka på",
                     "base_form": "åka på",
                     "position_start": 17,
-                    "position_end": 23
+                    "position_end": 23,
+                    "contextual_en": "go on"
                 },
                 {
                     "word_in_sentence": "semester",
                     "base_form": "semester",
                     "position_start": 34,
-                    "position_end": 42
+                    "position_end": 42,
+                    "contextual_en": "vacation"
                 }
             ],
             "secondary_words": [
@@ -127,13 +135,15 @@
                     "word_in_sentence": "packning",
                     "base_form": "packning",
                     "position_start": 24,
-                    "position_end": 32
+                    "position_end": 32,
+                    "contextual_en": "luggage"
                 },
                 {
                     "word_in_sentence": "vandra",
                     "base_form": "vandra",
                     "position_start": 60,
-                    "position_end": 66
+                    "position_end": 66,
+                    "contextual_en": "hike"
                 }
             ],
             "secondary_words": [
@@ -157,22 +167,18 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "väg",
-                    "base_form": "väg",
-                    "position_start": 21,
-                    "position_end": 24
-                },
-                {
                     "word_in_sentence": "gå iväg",
                     "base_form": "gå iväg",
                     "position_start": 17,
-                    "position_end": 24
+                    "position_end": 24,
+                    "contextual_en": "walk"
                 },
                 {
                     "word_in_sentence": "kompass",
                     "base_form": "kompass",
                     "position_start": 82,
-                    "position_end": 89
+                    "position_end": 89,
+                    "contextual_en": "compass"
                 }
             ],
             "secondary_words": [
@@ -196,40 +202,32 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "vandra",
-                    "base_form": "vandra",
-                    "position_start": 62,
-                    "position_end": 68
-                },
-                {
                     "word_in_sentence": "Priserna har gått upp.",
                     "base_form": "Priserna har gått upp.",
                     "position_start": 1,
-                    "position_end": 23
+                    "position_end": 23,
+                    "contextual_en": "Prices have gone up."
                 },
                 {
                     "word_in_sentence": "billigt",
                     "base_form": "billig",
                     "position_start": 54,
-                    "position_end": 61
-                },
-                {
-                    "word_in_sentence": "bil",
-                    "base_form": "bil",
-                    "position_start": 54,
-                    "position_end": 57
+                    "position_end": 61,
+                    "contextual_en": "cheap"
                 },
                 {
                     "word_in_sentence": "stad",
                     "base_form": "stad",
                     "position_start": 84,
-                    "position_end": 88
+                    "position_end": 88,
+                    "contextual_en": "town"
                 },
                 {
                     "word_in_sentence": "lyxhotell",
                     "base_form": "lyxhotell",
                     "position_start": 111,
-                    "position_end": 120
+                    "position_end": 120,
+                    "contextual_en": "luxury hotel"
                 }
             ],
             "secondary_words": [
@@ -253,28 +251,32 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "väg",
+                    "word_in_sentence": "järnvägslinje",
                     "base_form": "väg",
-                    "position_start": 79,
-                    "position_end": 82
+                    "position_start": 75,
+                    "position_end": 88,
+                    "contextual_en": "way"
                 },
                 {
                     "word_in_sentence": "ta tåget",
                     "base_form": "ta tåget",
                     "position_start": 21,
-                    "position_end": 29
+                    "position_end": 29,
+                    "contextual_en": "take the train"
                 },
                 {
                     "word_in_sentence": "sätt",
                     "base_form": "sätt",
                     "position_start": 55,
-                    "position_end": 59
+                    "position_end": 59,
+                    "contextual_en": "way"
                 },
                 {
                     "word_in_sentence": "järnvägslinje",
                     "base_form": "järnvägslinje",
                     "position_start": 75,
-                    "position_end": 88
+                    "position_end": 88,
+                    "contextual_en": "railway line"
                 }
             ],
             "secondary_words": [
@@ -301,13 +303,15 @@
                     "word_in_sentence": "ta bussen",
                     "base_form": "ta bussen",
                     "position_start": 54,
-                    "position_end": 63
+                    "position_end": 63,
+                    "contextual_en": "take the bus"
                 },
                 {
-                    "word_in_sentence": "buss",
+                    "word_in_sentence": "bussen",
                     "base_form": "buss",
                     "position_start": 57,
-                    "position_end": 61
+                    "position_end": 63,
+                    "contextual_en": "bus"
                 }
             ],
             "secondary_words": [
@@ -333,14 +337,16 @@
                 {
                     "word_in_sentence": "buss",
                     "base_form": "buss",
-                    "position_start": 9,
-                    "position_end": 13
+                    "position_start": 67,
+                    "position_end": 71,
+                    "contextual_en": "bus"
                 },
                 {
                     "word_in_sentence": "busschaufför",
                     "base_form": "busschaufför",
                     "position_start": 9,
-                    "position_end": 21
+                    "position_end": 21,
+                    "contextual_en": "bus driver"
                 }
             ],
             "secondary_words": [
@@ -367,7 +373,8 @@
                     "word_in_sentence": "Snart",
                     "base_form": "snart",
                     "position_start": 0,
-                    "position_end": 5
+                    "position_end": 5,
+                    "contextual_en": "Soon"
                 }
             ],
             "secondary_words": [
@@ -388,13 +395,15 @@
                     "word_in_sentence": "väg",
                     "base_form": "väg",
                     "position_start": 14,
-                    "position_end": 17
+                    "position_end": 17,
+                    "contextual_en": "way"
                 },
                 {
                     "word_in_sentence": "är på väg",
                     "base_form": "vara på väg",
                     "position_start": 8,
-                    "position_end": 17
+                    "position_end": 17,
+                    "contextual_en": "are on your way"
                 }
             ],
             "secondary_words": [
@@ -421,13 +430,15 @@
                     "word_in_sentence": "gå ner till",
                     "base_form": "gå ner till",
                     "position_start": 32,
-                    "position_end": 43
+                    "position_end": 43,
+                    "contextual_en": "go down to"
                 },
                 {
                     "word_in_sentence": "strand",
                     "base_form": "strand",
                     "position_start": 53,
-                    "position_end": 59
+                    "position_end": 59,
+                    "contextual_en": "beach"
                 }
             ],
             "secondary_words": [
@@ -454,13 +465,15 @@
                     "word_in_sentence": "sätt",
                     "base_form": "sätt",
                     "position_start": 6,
-                    "position_end": 10
+                    "position_end": 10,
+                    "contextual_en": "way"
                 },
                 {
                     "word_in_sentence": "På så sätt",
                     "base_form": "på så sätt",
                     "position_start": 0,
-                    "position_end": 10
+                    "position_end": 10,
+                    "contextual_en": "That way"
                 }
             ],
             "secondary_words": [
@@ -484,28 +497,32 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "stad",
+                    "word_in_sentence": "storstad",
                     "base_form": "stad",
-                    "position_start": 32,
-                    "position_end": 36
+                    "position_start": 28,
+                    "position_end": 36,
+                    "contextual_en": "city"
                 },
                 {
                     "word_in_sentence": "åka till",
                     "base_form": "åka till",
                     "position_start": 16,
-                    "position_end": 24
+                    "position_end": 24,
+                    "contextual_en": "go to"
                 },
                 {
                     "word_in_sentence": "storstad",
                     "base_form": "storstad",
                     "position_start": 28,
-                    "position_end": 36
+                    "position_end": 36,
+                    "contextual_en": "big city"
                 },
                 {
                     "word_in_sentence": "gå på museum",
                     "base_form": "gå på museum",
                     "position_start": 45,
-                    "position_end": 57
+                    "position_end": 57,
+                    "contextual_en": "visit museums"
                 }
             ],
             "secondary_words": [
@@ -532,13 +549,15 @@
                     "word_in_sentence": "fyra",
                     "base_form": "fyra",
                     "position_start": 6,
-                    "position_end": 10
+                    "position_end": 10,
+                    "contextual_en": "four"
                 },
                 {
                     "word_in_sentence": "klar",
                     "base_form": "klar",
                     "position_start": 46,
-                    "position_end": 50
+                    "position_end": 50,
+                    "contextual_en": "done"
                 }
             ],
             "secondary_words": [
@@ -565,19 +584,22 @@
                     "word_in_sentence": "veta",
                     "base_form": "veta",
                     "position_start": 11,
-                    "position_end": 15
+                    "position_end": 15,
+                    "contextual_en": "know"
                 },
                 {
                     "word_in_sentence": "praktiskt",
                     "base_form": "praktisk",
                     "position_start": 64,
-                    "position_end": 73
+                    "position_end": 73,
+                    "contextual_en": "practical"
                 },
                 {
                     "word_in_sentence": "rum",
                     "base_form": "rum",
                     "position_start": 74,
-                    "position_end": 77
+                    "position_end": 77,
+                    "contextual_en": "room"
                 }
             ],
             "secondary_words": [
@@ -604,19 +626,22 @@
                     "word_in_sentence": "rum",
                     "base_form": "rum",
                     "position_start": 11,
-                    "position_end": 14
+                    "position_end": 14,
+                    "contextual_en": "room"
                 },
                 {
-                    "word_in_sentence": "faktisk",
+                    "word_in_sentence": "faktiskt",
                     "base_form": "faktisk",
                     "position_start": 19,
-                    "position_end": 26
+                    "position_end": 27,
+                    "contextual_en": "actually"
                 },
                 {
                     "word_in_sentence": "mindre",
                     "base_form": "mindre",
                     "position_start": 33,
-                    "position_end": 39
+                    "position_end": 39,
+                    "contextual_en": "smaller"
                 }
             ],
             "secondary_words": [
@@ -643,13 +668,15 @@
                     "word_in_sentence": "besöka",
                     "base_form": "besöka",
                     "position_start": 41,
-                    "position_end": 47
+                    "position_end": 47,
+                    "contextual_en": "visit"
                 },
                 {
-                    "word_in_sentence": "besök",
+                    "word_in_sentence": "besöka",
                     "base_form": "besök",
                     "position_start": 41,
-                    "position_end": 46
+                    "position_end": 47,
+                    "contextual_en": "visit"
                 }
             ],
             "secondary_words": [
@@ -670,13 +697,15 @@
                     "word_in_sentence": "springa",
                     "base_form": "springa",
                     "position_start": 30,
-                    "position_end": 37
+                    "position_end": 37,
+                    "contextual_en": "run"
                 },
                 {
-                    "word_in_sentence": "gata",
+                    "word_in_sentence": "gatan",
                     "base_form": "gata",
                     "position_start": 50,
-                    "position_end": 54
+                    "position_end": 55,
+                    "contextual_en": "street"
                 }
             ],
             "secondary_words": [
@@ -703,13 +732,15 @@
                     "word_in_sentence": "gata",
                     "base_form": "gata",
                     "position_start": 52,
-                    "position_end": 56
+                    "position_end": 56,
+                    "contextual_en": "street"
                 },
                 {
                     "word_in_sentence": "gå ut med",
                     "base_form": "gå ut med",
                     "position_start": 20,
-                    "position_end": 29
+                    "position_end": 29,
+                    "contextual_en": "go out with"
                 }
             ],
             "secondary_words": [
@@ -730,7 +761,8 @@
                     "word_in_sentence": "rida",
                     "base_form": "rida",
                     "position_start": 18,
-                    "position_end": 22
+                    "position_end": 22,
+                    "contextual_en": "riding"
                 }
             ],
             "secondary_words": [
@@ -757,13 +789,15 @@
                     "word_in_sentence": "perfekt",
                     "base_form": "perfekt",
                     "position_start": 11,
-                    "position_end": 18
+                    "position_end": 18,
+                    "contextual_en": "perfect"
                 },
                 {
                     "word_in_sentence": "förstå",
                     "base_form": "förstå",
                     "position_start": 56,
-                    "position_end": 62
+                    "position_end": 62,
+                    "contextual_en": "understand"
                 }
             ],
             "secondary_words": [
@@ -790,7 +824,8 @@
                     "word_in_sentence": "spara",
                     "base_form": "spara",
                     "position_start": 13,
-                    "position_end": 18
+                    "position_end": 18,
+                    "contextual_en": "save"
                 }
             ],
             "secondary_words": [
@@ -817,19 +852,22 @@
                     "word_in_sentence": "Senare",
                     "base_form": "senare",
                     "position_start": 0,
-                    "position_end": 6
+                    "position_end": 6,
+                    "contextual_en": "Later"
                 },
                 {
                     "word_in_sentence": "komma och hälsa på",
                     "base_form": "komma och hälsa på",
                     "position_start": 58,
-                    "position_end": 76
+                    "position_end": 76,
+                    "contextual_en": "come and visit"
                 },
                 {
                     "word_in_sentence": "hälsa på",
                     "base_form": "hälsa på",
                     "position_start": 68,
-                    "position_end": 76
+                    "position_end": 76,
+                    "contextual_en": "visit"
                 }
             ],
             "secondary_words": [
@@ -856,19 +894,22 @@
                     "word_in_sentence": "besök",
                     "base_form": "besök",
                     "position_start": 63,
-                    "position_end": 68
+                    "position_end": 68,
+                    "contextual_en": "visit"
                 },
                 {
                     "word_in_sentence": "hälsa på",
                     "base_form": "hälsa på",
                     "position_start": 36,
-                    "position_end": 44
+                    "position_end": 44,
+                    "contextual_en": "visit"
                 },
                 {
                     "word_in_sentence": "kort",
                     "base_form": "kort",
                     "position_start": 58,
-                    "position_end": 62
+                    "position_end": 62,
+                    "contextual_en": "short"
                 }
             ],
             "secondary_words": [
@@ -889,7 +930,8 @@
                     "word_in_sentence": "Ta samma väg som du kom.",
                     "base_form": "Ta samma väg som du kom.",
                     "position_start": 1,
-                    "position_end": 25
+                    "position_end": 25,
+                    "contextual_en": "Take the same route you came."
                 }
             ],
             "secondary_words": [
@@ -916,7 +958,8 @@
                     "word_in_sentence": "fylla",
                     "base_form": "fylla",
                     "position_start": 44,
-                    "position_end": 49
+                    "position_end": 49,
+                    "contextual_en": "fill"
                 }
             ],
             "secondary_words": [
@@ -943,7 +986,8 @@
                     "word_in_sentence": "ta slut",
                     "base_form": "ta slut",
                     "position_start": 20,
-                    "position_end": 27
+                    "position_end": 27,
+                    "contextual_en": "run out"
                 }
             ],
             "secondary_words": [
@@ -964,19 +1008,22 @@
                     "word_in_sentence": "kontakt",
                     "base_form": "kontakt",
                     "position_start": 20,
-                    "position_end": 27
+                    "position_end": 27,
+                    "contextual_en": "touch"
                 },
                 {
                     "word_in_sentence": "kontakta",
                     "base_form": "kontakta",
                     "position_start": 40,
-                    "position_end": 48
+                    "position_end": 48,
+                    "contextual_en": "contact"
                 },
                 {
                     "word_in_sentence": "direkt",
                     "base_form": "direkt",
                     "position_start": 55,
-                    "position_end": 61
+                    "position_end": 61,
+                    "contextual_en": "directly"
                 }
             ],
             "secondary_words": [
@@ -1003,25 +1050,29 @@
                     "word_in_sentence": "deras",
                     "base_form": "deras",
                     "position_start": 13,
-                    "position_end": 18
+                    "position_end": 18,
+                    "contextual_en": "their"
                 },
                 {
                     "word_in_sentence": "bäst",
                     "base_form": "bäst",
                     "position_start": 50,
-                    "position_end": 54
+                    "position_end": 54,
+                    "contextual_en": "best"
                 },
                 {
                     "word_in_sentence": "öppna",
                     "base_form": "öppna",
                     "position_start": 62,
-                    "position_end": 67
+                    "position_end": 67,
+                    "contextual_en": "open"
                 },
                 {
                     "word_in_sentence": "gå förbi",
                     "base_form": "gå förbi",
                     "position_start": 82,
-                    "position_end": 90
+                    "position_end": 90,
+                    "contextual_en": "walk past"
                 }
             ],
             "secondary_words": [

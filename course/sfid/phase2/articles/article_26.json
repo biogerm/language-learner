@@ -487,10 +487,10 @@
                     "position_end": 89
                 },
                 {
-                    "word_in_sentence": "fräsch",
+                    "word_in_sentence": "uppfräschning",
                     "base_form": "fräsch",
-                    "position_start": 79,
-                    "position_end": 85
+                    "position_start": 76,
+                    "position_end": 89
                 },
                 {
                     "word_in_sentence": "överraska",
@@ -619,9 +619,9 @@
                     "position_end": 57
                 },
                 {
-                    "word_in_sentence": "smittad",
+                    "word_in_sentence": "rabiessmittad",
                     "base_form": "smittad",
-                    "position_start": 50,
+                    "position_start": 44,
                     "position_end": 57
                 }
             ],
@@ -766,10 +766,10 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "lida",
+                    "word_in_sentence": "lidande",
                     "base_form": "lida",
                     "position_start": 5,
-                    "position_end": 9
+                    "position_end": 12
                 },
                 {
                     "word_in_sentence": "lidande",

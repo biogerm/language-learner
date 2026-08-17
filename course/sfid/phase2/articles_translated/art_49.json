@@ -99,13 +99,6 @@
                     "position_start": 15,
                     "position_end": 27,
                     "contextual_en": "of course"
-                },
-                {
-                    "word_in_sentence": "tur",
-                    "base_form": "tur",
-                    "position_start": 17,
-                    "position_end": 20,
-                    "contextual_en": "turn"
                 }
             ],
             "secondary_words": [
@@ -356,10 +349,10 @@
             "en": "A strong friendship is extremely important to feel good and feel happy.\"",
             "target_words": [
                 {
-                    "word_in_sentence": "vän",
+                    "word_in_sentence": "vänskap",
                     "base_form": "vän",
                     "position_start": 9,
-                    "position_end": 12,
+                    "position_end": 16,
                     "contextual_en": "friend"
                 },
                 {
@@ -421,10 +414,10 @@
                     "contextual_en": "to"
                 },
                 {
-                    "word_in_sentence": "prata",
+                    "word_in_sentence": "pratade",
                     "base_form": "prata",
                     "position_start": 3,
-                    "position_end": 8,
+                    "position_end": 10,
                     "contextual_en": "talked"
                 },
                 {
@@ -502,10 +495,10 @@
             "en": "Memories from a beautiful wedding or a nice wedding anniversary can feel far away.",
             "target_words": [
                 {
-                    "word_in_sentence": "känna",
+                    "word_in_sentence": "kännas",
                     "base_form": "känna",
                     "position_start": 61,
-                    "position_end": 66,
+                    "position_end": 67,
                     "contextual_en": "feel"
                 },
                 {

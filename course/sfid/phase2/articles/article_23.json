@@ -16,7 +16,8 @@
                     "word_in_sentence": "För två veckor sedan",
                     "base_form": "för två veckor sedan",
                     "position_start": 0,
-                    "position_end": 20
+                    "position_end": 20,
+                    "contextual_en": "Two weeks ago"
                 }
             ],
             "secondary_words": [
@@ -43,13 +44,15 @@
                     "word_in_sentence": "sjuksköterska",
                     "base_form": "sjuksköterska",
                     "position_start": 10,
-                    "position_end": 23
+                    "position_end": 23,
+                    "contextual_en": "nurse"
                 },
                 {
                     "word_in_sentence": "trivs",
                     "base_form": "trivas",
                     "position_start": 32,
-                    "position_end": 37
+                    "position_end": 37,
+                    "contextual_en": "enjoy it"
                 }
             ],
             "secondary_words": [
@@ -67,28 +70,18 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "tre",
-                    "base_form": "tre",
-                    "position_start": 12,
-                    "position_end": 15
-                },
-                {
                     "word_in_sentence": "tredje",
                     "base_form": "tredje",
                     "position_start": 12,
-                    "position_end": 18
+                    "position_end": 18,
+                    "contextual_en": "third"
                 },
                 {
                     "word_in_sentence": "30-årsålder",
                     "base_form": "30-årsålder",
                     "position_start": 30,
-                    "position_end": 41
-                },
-                {
-                    "word_in_sentence": "så",
-                    "base_form": "så",
-                    "position_start": 35,
-                    "position_end": 37
+                    "position_end": 41,
+                    "contextual_en": "30s"
                 }
             ],
             "secondary_words": [
@@ -115,19 +108,22 @@
                     "word_in_sentence": "läkare",
                     "base_form": "läkare",
                     "position_start": 15,
-                    "position_end": 21
+                    "position_end": 21,
+                    "contextual_en": "physician"
                 },
                 {
                     "word_in_sentence": "även kallad",
                     "base_form": "även kallad",
                     "position_start": 23,
-                    "position_end": 34
+                    "position_end": 34,
+                    "contextual_en": "also called"
                 },
                 {
                     "word_in_sentence": "doktor",
                     "base_form": "doktor",
                     "position_start": 35,
-                    "position_end": 41
+                    "position_end": 41,
+                    "contextual_en": "doctor"
                 }
             ],
             "secondary_words": [
@@ -154,7 +150,8 @@
                     "word_in_sentence": "vishet",
                     "base_form": "vishet",
                     "position_start": 16,
-                    "position_end": 22
+                    "position_end": 22,
+                    "contextual_en": "wisdom"
                 }
             ],
             "secondary_words": [
@@ -175,19 +172,22 @@
                     "word_in_sentence": "ta hand om",
                     "base_form": "ta hand om",
                     "position_start": 9,
-                    "position_end": 19
+                    "position_end": 19,
+                    "contextual_en": "take care of"
                 },
                 {
                     "word_in_sentence": "sjuka",
                     "base_form": "sjuk",
                     "position_start": 37,
-                    "position_end": 42
+                    "position_end": 42,
+                    "contextual_en": "sick"
                 },
                 {
                     "word_in_sentence": "utan avbrott",
                     "base_form": "utan avbrott",
                     "position_start": 43,
-                    "position_end": 55
+                    "position_end": 55,
+                    "contextual_en": "without interruption"
                 }
             ],
             "secondary_words": [
@@ -214,13 +214,15 @@
                     "word_in_sentence": "sjöman",
                     "base_form": "sjöman",
                     "position_start": 22,
-                    "position_end": 28
+                    "position_end": 28,
+                    "contextual_en": "sailor"
                 },
                 {
                     "word_in_sentence": "problem med hjärtat",
                     "base_form": "problem med hjärtat",
                     "position_start": 46,
-                    "position_end": 65
+                    "position_end": 65,
+                    "contextual_en": "problems with his heart"
                 }
             ],
             "secondary_words": [
@@ -244,34 +246,39 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "så",
+                    "word_in_sentence": "också",
                     "base_form": "så",
-                    "position_start": 11,
-                    "position_end": 13
+                    "position_start": 8,
+                    "position_end": 13,
+                    "contextual_en": "so"
                 },
                 {
                     "word_in_sentence": "psykiskt sjuk",
                     "base_form": "psykiskt sjuk",
                     "position_start": 14,
-                    "position_end": 27
+                    "position_end": 27,
+                    "contextual_en": "mentally ill"
                 },
                 {
                     "word_in_sentence": "spelberoende",
                     "base_form": "spelberoende",
                     "position_start": 47,
-                    "position_end": 59
+                    "position_end": 59,
+                    "contextual_en": "gambling addiction"
                 },
                 {
-                    "word_in_sentence": "beroende",
+                    "word_in_sentence": "spelberoende",
                     "base_form": "beroende",
-                    "position_start": 51,
-                    "position_end": 59
+                    "position_start": 47,
+                    "position_end": 59,
+                    "contextual_en": "addiction"
                 },
                 {
                     "word_in_sentence": "narkotikaberoende",
                     "base_form": "narkotikaberoende",
                     "position_start": 77,
-                    "position_end": 94
+                    "position_end": 94,
+                    "contextual_en": "drug addiction"
                 }
             ],
             "secondary_words": [
@@ -298,7 +305,8 @@
                     "word_in_sentence": "narkoman",
                     "base_form": "narkoman",
                     "position_start": 36,
-                    "position_end": 44
+                    "position_end": 44,
+                    "contextual_en": "drug addict"
                 }
             ],
             "secondary_words": [
@@ -325,13 +333,15 @@
                     "word_in_sentence": "beroende",
                     "base_form": "beroende",
                     "position_start": 18,
-                    "position_end": 26
+                    "position_end": 26,
+                    "contextual_en": "addiction"
                 },
                 {
                     "word_in_sentence": "indirekt",
                     "base_form": "indirekt",
                     "position_start": 31,
-                    "position_end": 39
+                    "position_end": 39,
+                    "contextual_en": "indirectly"
                 }
             ],
             "secondary_words": [
@@ -358,37 +368,43 @@
                     "word_in_sentence": "tre",
                     "base_form": "tre",
                     "position_start": 58,
-                    "position_end": 61
+                    "position_end": 61,
+                    "contextual_en": "three"
                 },
                 {
-                    "word_in_sentence": "så",
+                    "word_in_sentence": "också",
                     "base_form": "så",
-                    "position_start": 23,
-                    "position_end": 25
+                    "position_start": 20,
+                    "position_end": 25,
+                    "contextual_en": "so"
                 },
                 {
                     "word_in_sentence": "Innan dess",
                     "base_form": "innan dess",
                     "position_start": 0,
-                    "position_end": 10
+                    "position_end": 10,
+                    "contextual_en": "Before that"
                 },
                 {
                     "word_in_sentence": "röksugen",
                     "base_form": "röksugen",
                     "position_start": 32,
-                    "position_end": 40
+                    "position_end": 40,
+                    "contextual_en": "craving a smoke"
                 },
                 {
                     "word_in_sentence": "röka",
                     "base_form": "röka",
                     "position_start": 53,
-                    "position_end": 57
+                    "position_end": 57,
+                    "contextual_en": "smoke"
                 },
                 {
                     "word_in_sentence": "cigaretter",
                     "base_form": "cigarett",
                     "position_start": 68,
-                    "position_end": 78
+                    "position_end": 78,
+                    "contextual_en": "cigarettes"
                 }
             ],
             "secondary_words": [
@@ -412,28 +428,25 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "tre",
-                    "base_form": "tre",
-                    "position_start": 21,
-                    "position_end": 24
-                },
-                {
                     "word_in_sentence": "tandhälsa",
                     "base_form": "tandhälsa",
                     "position_start": 5,
-                    "position_end": 14
+                    "position_end": 14,
+                    "contextual_en": "dental health"
                 },
                 {
                     "word_in_sentence": "tand",
                     "base_form": "tand",
-                    "position_start": 5,
-                    "position_end": 9
+                    "position_start": 59,
+                    "position_end": 63,
+                    "contextual_en": "tooth"
                 },
                 {
                     "word_in_sentence": "karies",
                     "base_form": "karies",
                     "position_start": 44,
-                    "position_end": 50
+                    "position_end": 50,
+                    "contextual_en": "cavities"
                 }
             ],
             "secondary_words": [
@@ -454,13 +467,15 @@
                     "word_in_sentence": "bestämma sig",
                     "base_form": "bestämma sig",
                     "position_start": 10,
-                    "position_end": 22
+                    "position_end": 22,
+                    "contextual_en": "decide"
                 },
                 {
                     "word_in_sentence": "ändra på",
                     "base_form": "ändra på",
                     "position_start": 31,
-                    "position_end": 39
+                    "position_end": 39,
+                    "contextual_en": "change"
                 }
             ],
             "secondary_words": [
@@ -481,13 +496,15 @@
                     "word_in_sentence": "hälsodebatt",
                     "base_form": "hälsodebatt",
                     "position_start": 8,
-                    "position_end": 19
+                    "position_end": 19,
+                    "contextual_en": "health debate"
                 },
                 {
                     "word_in_sentence": "komma för nära",
                     "base_form": "komma för nära",
                     "position_start": 81,
-                    "position_end": 95
+                    "position_end": 95,
+                    "contextual_en": "getting too close to"
                 }
             ],
             "secondary_words": [
@@ -511,28 +528,25 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "beroende",
-                    "base_form": "beroende",
-                    "position_start": 5,
-                    "position_end": 13
-                },
-                {
                     "word_in_sentence": "oberoende av",
                     "base_form": "oberoende av",
                     "position_start": 4,
-                    "position_end": 16
+                    "position_end": 16,
+                    "contextual_en": "regardless of"
                 },
                 {
                     "word_in_sentence": "tålmodiga",
                     "base_form": "tålmodig",
                     "position_start": 38,
-                    "position_end": 47
+                    "position_end": 47,
+                    "contextual_en": "patient"
                 },
                 {
                     "word_in_sentence": "sköta om",
                     "base_form": "sköta om",
                     "position_start": 52,
-                    "position_end": 60
+                    "position_end": 60,
+                    "contextual_en": "take care of"
                 }
             ],
             "secondary_words": [
@@ -556,28 +570,25 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "tre",
-                    "base_form": "tre",
-                    "position_start": 66,
-                    "position_end": 69
-                },
-                {
                     "word_in_sentence": "virussjukdom",
                     "base_form": "virussjukdom",
                     "position_start": 47,
-                    "position_end": 59
+                    "position_end": 59,
+                    "contextual_en": "viral disease"
                 },
                 {
-                    "word_in_sentence": "sjukdom",
+                    "word_in_sentence": "virussjukdom",
                     "base_form": "sjukdom",
-                    "position_start": 52,
-                    "position_end": 59
+                    "position_start": 47,
+                    "position_end": 59,
+                    "contextual_en": "disease"
                 },
                 {
                     "word_in_sentence": "kroppstemperatur",
                     "base_form": "kroppstemperatur",
                     "position_start": 76,
-                    "position_end": 92
+                    "position_end": 92,
+                    "contextual_en": "body temperature"
                 }
             ],
             "secondary_words": [
@@ -601,28 +612,25 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "tand",
-                    "base_form": "tand",
-                    "position_start": 58,
-                    "position_end": 62
-                },
-                {
-                    "word_in_sentence": "sjukdom",
+                    "word_in_sentence": "fästingsjukdom",
                     "base_form": "sjukdom",
-                    "position_start": 25,
-                    "position_end": 32
+                    "position_start": 18,
+                    "position_end": 32,
+                    "contextual_en": "disease"
                 },
                 {
                     "word_in_sentence": "fästingsjukdom",
                     "base_form": "fästingsjukdom",
                     "position_start": 18,
-                    "position_end": 32
+                    "position_end": 32,
+                    "contextual_en": "tick-borne disease"
                 },
                 {
                     "word_in_sentence": "bitande",
                     "base_form": "bitande",
                     "position_start": 56,
-                    "position_end": 63
+                    "position_end": 63,
+                    "contextual_en": "biting"
                 }
             ],
             "secondary_words": [
@@ -649,13 +657,15 @@
                     "word_in_sentence": "djurblod",
                     "base_form": "djurblod",
                     "position_start": 31,
-                    "position_end": 39
+                    "position_end": 39,
+                    "contextual_en": "animal blood"
                 },
                 {
                     "word_in_sentence": "blod",
                     "base_form": "blod",
-                    "position_start": 35,
-                    "position_end": 39
+                    "position_start": 62,
+                    "position_end": 66,
+                    "contextual_en": "blood"
                 }
             ],
             "secondary_words": [
@@ -679,22 +689,18 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "blod",
-                    "base_form": "blod",
-                    "position_start": 37,
-                    "position_end": 41
-                },
-                {
                     "word_in_sentence": "blodåder",
                     "base_form": "blodåder",
                     "position_start": 37,
-                    "position_end": 45
+                    "position_end": 45,
+                    "contextual_en": "vein"
                 },
                 {
                     "word_in_sentence": "värk",
                     "base_form": "värk",
                     "position_start": 72,
-                    "position_end": 76
+                    "position_end": 76,
+                    "contextual_en": "ache"
                 }
             ],
             "secondary_words": [
@@ -721,7 +727,8 @@
                     "word_in_sentence": "explodera",
                     "base_form": "explodera",
                     "position_start": 33,
-                    "position_end": 42
+                    "position_end": 42,
+                    "contextual_en": "explode"
                 }
             ],
             "secondary_words": [
@@ -748,7 +755,8 @@
                     "word_in_sentence": "sjukdom",
                     "base_form": "sjukdom",
                     "position_start": 7,
-                    "position_end": 14
+                    "position_end": 14,
+                    "contextual_en": "disease"
                 }
             ],
             "secondary_words": [
@@ -775,13 +783,15 @@
                     "word_in_sentence": "ointresserad",
                     "base_form": "ointresserad",
                     "position_start": 27,
-                    "position_end": 39
+                    "position_end": 39,
+                    "contextual_en": "uninterested"
                 },
                 {
                     "word_in_sentence": "sjukhus",
                     "base_form": "sjukhus",
                     "position_start": 82,
-                    "position_end": 89
+                    "position_end": 89,
+                    "contextual_en": "hospital"
                 }
             ],
             "secondary_words": [
@@ -808,7 +818,8 @@
                     "word_in_sentence": "pratande",
                     "base_form": "pratande",
                     "position_start": 23,
-                    "position_end": 31
+                    "position_end": 31,
+                    "contextual_en": "talking"
                 }
             ],
             "secondary_words": [
@@ -835,19 +846,22 @@
                     "word_in_sentence": "tröttna på",
                     "base_form": "tröttna på",
                     "position_start": 15,
-                    "position_end": 25
+                    "position_end": 25,
+                    "contextual_en": "get tired of"
                 },
                 {
                     "word_in_sentence": "sjuklön",
                     "base_form": "sjuklön",
                     "position_start": 44,
-                    "position_end": 51
+                    "position_end": 51,
+                    "contextual_en": "sick pay"
                 },
                 {
                     "word_in_sentence": "streck",
                     "base_form": "streck",
                     "position_start": 84,
-                    "position_end": 90
+                    "position_end": 90,
+                    "contextual_en": "line"
                 }
             ],
             "secondary_words": [
@@ -874,13 +888,15 @@
                     "word_in_sentence": "vart åttonde år",
                     "base_form": "vart åttonde år",
                     "position_start": 4,
-                    "position_end": 19
+                    "position_end": 19,
+                    "contextual_en": "every eighth year"
                 },
                 {
                     "word_in_sentence": "genast",
                     "base_form": "genast",
                     "position_start": 59,
-                    "position_end": 65
+                    "position_end": 65,
+                    "contextual_en": "immediately"
                 }
             ],
             "secondary_words": [
@@ -907,13 +923,15 @@
                     "word_in_sentence": "sätta på",
                     "base_form": "sätta på",
                     "position_start": 10,
-                    "position_end": 18
+                    "position_end": 18,
+                    "contextual_en": "put on"
                 },
                 {
                     "word_in_sentence": "hudkräm",
                     "base_form": "hudkräm",
                     "position_start": 52,
-                    "position_end": 59
+                    "position_end": 59,
+                    "contextual_en": "skin cream"
                 }
             ],
             "secondary_words": [
@@ -940,7 +958,8 @@
                     "word_in_sentence": "Sköt om dig!",
                     "base_form": "Sköt om dig!",
                     "position_start": 31,
-                    "position_end": 43
+                    "position_end": 43,
+                    "contextual_en": "Take care of yourself!"
                 }
             ],
             "secondary_words": [
@@ -967,7 +986,8 @@
                     "word_in_sentence": "Hälsa …!",
                     "base_form": "Hälsa …!",
                     "position_start": 22,
-                    "position_end": 30
+                    "position_end": 30,
+                    "contextual_en": "Say hello to...!"
                 }
             ],
             "secondary_words": [
@@ -994,7 +1014,8 @@
                     "word_in_sentence": "nedan",
                     "base_form": "nedan",
                     "position_start": 18,
-                    "position_end": 23
+                    "position_end": 23,
+                    "contextual_en": "below"
                 }
             ],
             "secondary_words": [

@@ -131,13 +131,6 @@
                     "contextual_en": "evocative"
                 },
                 {
-                    "word_in_sentence": "is",
-                    "base_form": "is",
-                    "position_start": 49,
-                    "position_end": 51,
-                    "contextual_en": "ice"
-                },
-                {
                     "word_in_sentence": "luft",
                     "base_form": "luft",
                     "position_start": 53,
@@ -376,10 +369,10 @@
                     "contextual_en": "both... and"
                 },
                 {
-                    "word_in_sentence": "växt",
+                    "word_in_sentence": "växter",
                     "base_form": "växt",
                     "position_start": 38,
-                    "position_end": 42,
+                    "position_end": 44,
                     "contextual_en": "plants"
                 }
             ],
@@ -628,13 +621,6 @@
             "en": "Our botanist showed us a rare plant, a beautiful honeysuckle.",
             "target_words": [
                 {
-                    "word_in_sentence": "is",
-                    "base_form": "is",
-                    "position_start": 15,
-                    "position_end": 17,
-                    "contextual_en": "ice"
-                },
-                {
                     "word_in_sentence": "växt",
                     "base_form": "växt",
                     "position_start": 37,
@@ -708,13 +694,6 @@
             "sv": "\"Vi måste öva på att ta hand om naturen utan att förstöra den.\"",
             "en": "\"We must practice taking care of nature without destroying it.\"",
             "target_words": [
-                {
-                    "word_in_sentence": "ren",
-                    "base_form": "ren",
-                    "position_start": 36,
-                    "position_end": 39,
-                    "contextual_en": "reindeer"
-                },
                 {
                     "word_in_sentence": "öva på",
                     "base_form": "öva på",
@@ -1041,13 +1020,6 @@
             "sv": "Man ville behålla rätt temperatur i stugan, men ute började det sjunka redan på eftermiddagen.",
             "en": "They wanted to keep the right temperature in the cabin, but outside it began to drop already in the afternoon.",
             "target_words": [
-                {
-                    "word_in_sentence": "ål",
-                    "base_form": "ål",
-                    "position_start": 13,
-                    "position_end": 15,
-                    "contextual_en": "eel"
-                },
                 {
                     "word_in_sentence": "temperatur",
                     "base_form": "temperatur",

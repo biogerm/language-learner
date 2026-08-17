@@ -16,13 +16,15 @@
                     "word_in_sentence": "Vad gör du där?",
                     "base_form": "Vad gör du där?",
                     "position_start": 1,
-                    "position_end": 16
+                    "position_end": 16,
+                    "contextual_en": "What are you doing there?"
                 },
                 {
                     "word_in_sentence": "pappa",
                     "base_form": "pappa",
                     "position_start": 29,
-                    "position_end": 34
+                    "position_end": 34,
+                    "contextual_en": "dad"
                 }
             ],
             "secondary_words": [
@@ -43,19 +45,22 @@
                     "word_in_sentence": "tankar",
                     "base_form": "tanke",
                     "position_start": 15,
-                    "position_end": 21
+                    "position_end": 21,
+                    "contextual_en": "thoughts"
                 },
                 {
                     "word_in_sentence": "filosofera",
                     "base_form": "filosofera",
                     "position_start": 45,
-                    "position_end": 55
+                    "position_end": 55,
+                    "contextual_en": "philosophize"
                 },
                 {
                     "word_in_sentence": "dröm",
                     "base_form": "dröm",
                     "position_start": 73,
-                    "position_end": 77
+                    "position_end": 77,
+                    "contextual_en": "dream"
                 }
             ],
             "secondary_words": [
@@ -76,7 +81,8 @@
                     "word_in_sentence": "framtidstro",
                     "base_form": "framtidstro",
                     "position_start": 19,
-                    "position_end": 30
+                    "position_end": 30,
+                    "contextual_en": "belief in the future"
                 }
             ],
             "secondary_words": [
@@ -97,13 +103,15 @@
                     "word_in_sentence": "leta efter",
                     "base_form": "leta efter",
                     "position_start": 14,
-                    "position_end": 24
+                    "position_end": 24,
+                    "contextual_en": "look for"
                 },
                 {
                     "word_in_sentence": "paket",
                     "base_form": "paket",
                     "position_start": 37,
-                    "position_end": 42
+                    "position_end": 42,
+                    "contextual_en": "package"
                 }
             ],
             "secondary_words": [
@@ -124,19 +132,22 @@
                     "word_in_sentence": "pappa",
                     "base_form": "pappa",
                     "position_start": 46,
-                    "position_end": 51
+                    "position_end": 51,
+                    "contextual_en": "Dad"
                 },
                 {
                     "word_in_sentence": "Du kommer inte att tro dina öron!",
                     "base_form": "Du kommer inte att tro dina öron!",
                     "position_start": 1,
-                    "position_end": 34
+                    "position_end": 34,
+                    "contextual_en": "You won't believe your ears!"
                 },
                 {
                     "word_in_sentence": "förvåning",
                     "base_form": "förvåning",
                     "position_start": 61,
-                    "position_end": 70
+                    "position_end": 70,
+                    "contextual_en": "surprise"
                 }
             ],
             "secondary_words": [
@@ -163,13 +174,15 @@
                     "word_in_sentence": "ordförande",
                     "base_form": "ordförande",
                     "position_start": 3,
-                    "position_end": 13
+                    "position_end": 13,
+                    "contextual_en": "chairman"
                 },
                 {
                     "word_in_sentence": "internationell",
                     "base_form": "internationell",
                     "position_start": 22,
-                    "position_end": 36
+                    "position_end": 36,
+                    "contextual_en": "international"
                 }
             ],
             "secondary_words": [
@@ -193,28 +206,32 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "far",
+                    "word_in_sentence": "farbror",
                     "base_form": "far",
                     "position_start": 10,
-                    "position_end": 13
+                    "position_end": 17,
+                    "contextual_en": "uncle"
                 },
                 {
                     "word_in_sentence": "farbror",
                     "base_form": "farbror",
                     "position_start": 10,
-                    "position_end": 17
+                    "position_end": 17,
+                    "contextual_en": "uncle"
                 },
                 {
                     "word_in_sentence": "grafisk formgivning",
                     "base_form": "grafisk formgivning",
                     "position_start": 46,
-                    "position_end": 65
+                    "position_end": 65,
+                    "contextual_en": "graphic design"
                 },
                 {
                     "word_in_sentence": "skaffa kontakter",
                     "base_form": "skaffa kontakter",
                     "position_start": 89,
-                    "position_end": 105
+                    "position_end": 105,
+                    "contextual_en": "make contacts"
                 }
             ],
             "secondary_words": [
@@ -238,34 +255,39 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "far",
+                    "word_in_sentence": "Farbror",
                     "base_form": "far",
                     "position_start": 0,
-                    "position_end": 3
+                    "position_end": 7,
+                    "contextual_en": "Uncle"
                 },
                 {
                     "word_in_sentence": "farbror",
                     "base_form": "farbror",
                     "position_start": 0,
-                    "position_end": 7
+                    "position_end": 7,
+                    "contextual_en": "Uncle"
                 },
                 {
                     "word_in_sentence": "lugn",
                     "base_form": "lugn",
                     "position_start": 22,
-                    "position_end": 26
+                    "position_end": 26,
+                    "contextual_en": "calm"
                 },
                 {
                     "word_in_sentence": "nordbo",
                     "base_form": "nordbo",
                     "position_start": 27,
-                    "position_end": 33
+                    "position_end": 33,
+                    "contextual_en": "northerner"
                 },
                 {
                     "word_in_sentence": "norrman",
                     "base_form": "norrman",
                     "position_start": 60,
-                    "position_end": 67
+                    "position_end": 67,
+                    "contextual_en": "Norwegian"
                 }
             ],
             "secondary_words": [
@@ -286,13 +308,15 @@
                     "word_in_sentence": "försöksperson",
                     "base_form": "försöksperson",
                     "position_start": 41,
-                    "position_end": 54
+                    "position_end": 54,
+                    "contextual_en": "test subject"
                 },
                 {
                     "word_in_sentence": "huvudperson",
                     "base_form": "huvudperson",
                     "position_start": 96,
-                    "position_end": 107
+                    "position_end": 107,
+                    "contextual_en": "protagonist"
                 }
             ],
             "secondary_words": [
@@ -319,13 +343,15 @@
                     "word_in_sentence": "språkfamilj",
                     "base_form": "språkfamilj",
                     "position_start": 30,
-                    "position_end": 41
+                    "position_end": 41,
+                    "contextual_en": "language family"
                 },
                 {
                     "word_in_sentence": "modersmål",
                     "base_form": "modersmål",
                     "position_start": 72,
-                    "position_end": 81
+                    "position_end": 81,
+                    "contextual_en": "mother tongue"
                 }
             ],
             "secondary_words": [
@@ -352,25 +378,29 @@
                     "word_in_sentence": "far",
                     "base_form": "far",
                     "position_start": 28,
-                    "position_end": 31
+                    "position_end": 31,
+                    "contextual_en": "father"
                 },
                 {
                     "word_in_sentence": "minnas",
                     "base_form": "minnas",
                     "position_start": 13,
-                    "position_end": 19
+                    "position_end": 19,
+                    "contextual_en": "remember"
                 },
                 {
                     "word_in_sentence": "mor",
                     "base_form": "mor",
                     "position_start": 36,
-                    "position_end": 39
+                    "position_end": 39,
+                    "contextual_en": "mother"
                 },
                 {
                     "word_in_sentence": "ligga i släkten",
                     "base_form": "ligga i släkten",
                     "position_start": 89,
-                    "position_end": 104
+                    "position_end": 104,
+                    "contextual_en": "run in the family"
                 }
             ],
             "secondary_words": [
@@ -388,22 +418,25 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "far",
+                    "word_in_sentence": "farbror",
                     "base_form": "far",
                     "position_start": 8,
-                    "position_end": 11
+                    "position_end": 15,
+                    "contextual_en": "uncle"
                 },
                 {
                     "word_in_sentence": "farbror",
                     "base_form": "farbror",
                     "position_start": 8,
-                    "position_end": 15
+                    "position_end": 15,
+                    "contextual_en": "uncle"
                 },
                 {
                     "word_in_sentence": "anledning",
                     "base_form": "anledning",
                     "position_start": 35,
-                    "position_end": 44
+                    "position_end": 44,
+                    "contextual_en": "reason"
                 }
             ],
             "secondary_words": [
@@ -424,13 +457,15 @@
                     "word_in_sentence": "systerdotter",
                     "base_form": "systerdotter",
                     "position_start": 18,
-                    "position_end": 30
+                    "position_end": 30,
+                    "contextual_en": "niece"
                 },
                 {
                     "word_in_sentence": "dotter",
                     "base_form": "dotter",
-                    "position_start": 24,
-                    "position_end": 30
+                    "position_start": 44,
+                    "position_end": 50,
+                    "contextual_en": "daughter"
                 }
             ],
             "secondary_words": [
@@ -454,52 +489,60 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "far",
+                    "word_in_sentence": "Farbror",
                     "base_form": "far",
                     "position_start": 0,
-                    "position_end": 3
+                    "position_end": 7,
+                    "contextual_en": "Uncle"
                 },
                 {
                     "word_in_sentence": "farbror",
                     "base_form": "farbror",
                     "position_start": 0,
-                    "position_end": 7
+                    "position_end": 7,
+                    "contextual_en": "Uncle"
                 },
                 {
                     "word_in_sentence": "avtal",
                     "base_form": "avtal",
                     "position_start": 41,
-                    "position_end": 46
+                    "position_end": 46,
+                    "contextual_en": "agreement"
                 },
                 {
                     "word_in_sentence": "japan",
                     "base_form": "japan",
                     "position_start": 59,
-                    "position_end": 64
+                    "position_end": 64,
+                    "contextual_en": "Japanese person"
                 },
                 {
                     "word_in_sentence": "vänskapsgåva",
                     "base_form": "vänskapsgåva",
                     "position_start": 88,
-                    "position_end": 100
+                    "position_end": 100,
+                    "contextual_en": "friendship gift"
                 },
                 {
                     "word_in_sentence": "nejlika",
                     "base_form": "nejlika",
                     "position_start": 114,
-                    "position_end": 121
+                    "position_end": 121,
+                    "contextual_en": "carnation"
                 },
                 {
                     "word_in_sentence": "vit lögn",
                     "base_form": "vit lögn",
                     "position_start": 150,
-                    "position_end": 158
+                    "position_end": 158,
+                    "contextual_en": "white lie"
                 },
                 {
                     "word_in_sentence": "lögn",
                     "base_form": "lögn",
                     "position_start": 154,
-                    "position_end": 158
+                    "position_end": 158,
+                    "contextual_en": "lie"
                 }
             ],
             "secondary_words": [
@@ -523,40 +566,46 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "far",
+                    "word_in_sentence": "Farbror",
                     "base_form": "far",
                     "position_start": 0,
-                    "position_end": 3
+                    "position_end": 7,
+                    "contextual_en": "Uncle"
                 },
                 {
                     "word_in_sentence": "farbror",
                     "base_form": "farbror",
                     "position_start": 0,
-                    "position_end": 7
+                    "position_end": 7,
+                    "contextual_en": "Uncle"
                 },
                 {
                     "word_in_sentence": "noga",
                     "base_form": "noga",
                     "position_start": 34,
-                    "position_end": 38
+                    "position_end": 38,
+                    "contextual_en": "careful"
                 },
                 {
                     "word_in_sentence": "flacka med blicken",
                     "base_form": "flacka med blicken",
                     "position_start": 54,
-                    "position_end": 72
+                    "position_end": 72,
+                    "contextual_en": "shift his gaze"
                 },
                 {
                     "word_in_sentence": "utan",
                     "base_form": "utan",
                     "position_start": 89,
-                    "position_end": 93
+                    "position_end": 93,
+                    "contextual_en": "but"
                 },
                 {
                     "word_in_sentence": "möta blicken",
                     "base_form": "möta blicken",
                     "position_start": 119,
-                    "position_end": 131
+                    "position_end": 131,
+                    "contextual_en": "meet one's gaze"
                 }
             ],
             "secondary_words": [
@@ -583,7 +632,8 @@
                     "word_in_sentence": "lita på",
                     "base_form": "lita på",
                     "position_start": 48,
-                    "position_end": 55
+                    "position_end": 55,
+                    "contextual_en": "trust"
                 }
             ],
             "secondary_words": [
@@ -601,28 +651,32 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "lögn",
+                    "word_in_sentence": "lögnen",
                     "base_form": "lögn",
                     "position_start": 42,
-                    "position_end": 46
+                    "position_end": 48,
+                    "contextual_en": "lie"
                 },
                 {
                     "word_in_sentence": "emellertid",
                     "base_form": "emellertid",
                     "position_start": 10,
-                    "position_end": 20
+                    "position_end": 20,
+                    "contextual_en": "However"
                 },
                 {
                     "word_in_sentence": "skam",
                     "base_form": "skam",
                     "position_start": 32,
-                    "position_end": 36
+                    "position_end": 36,
+                    "contextual_en": "shame"
                 },
                 {
                     "word_in_sentence": "känna skuld",
                     "base_form": "känna skuld",
                     "position_start": 69,
-                    "position_end": 80
+                    "position_end": 80,
+                    "contextual_en": "feel guilt"
                 }
             ],
             "secondary_words": [
@@ -643,13 +697,15 @@
                     "word_in_sentence": "skam",
                     "base_form": "skam",
                     "position_start": 11,
-                    "position_end": 15
+                    "position_end": 15,
+                    "contextual_en": "shame"
                 },
                 {
                     "word_in_sentence": "en skam för …",
                     "base_form": "en skam för …",
                     "position_start": 8,
-                    "position_end": 21
+                    "position_end": 21,
+                    "contextual_en": "a shame for..."
                 }
             ],
             "secondary_words": [
@@ -676,7 +732,8 @@
                     "word_in_sentence": "lögn",
                     "base_form": "lögn",
                     "position_start": 41,
-                    "position_end": 45
+                    "position_end": 45,
+                    "contextual_en": "lie"
                 }
             ],
             "secondary_words": [
@@ -697,7 +754,8 @@
                     "word_in_sentence": "hets mot folkgrupp",
                     "base_form": "hets mot folkgrupp",
                     "position_start": 52,
-                    "position_end": 70
+                    "position_end": 70,
+                    "contextual_en": "hate speech"
                 }
             ],
             "secondary_words": [
@@ -724,19 +782,22 @@
                     "word_in_sentence": "strida",
                     "base_form": "strida",
                     "position_start": 25,
-                    "position_end": 31
+                    "position_end": 31,
+                    "contextual_en": "fight"
                 },
                 {
                     "word_in_sentence": "orsak",
                     "base_form": "orsak",
                     "position_start": 72,
-                    "position_end": 77
+                    "position_end": 77,
+                    "contextual_en": "reason"
                 },
                 {
                     "word_in_sentence": "besviken",
                     "base_form": "besviken",
                     "position_start": 100,
-                    "position_end": 108
+                    "position_end": 108,
+                    "contextual_en": "disappointed"
                 }
             ],
             "secondary_words": [
@@ -757,37 +818,43 @@
                     "word_in_sentence": "hjälpa",
                     "base_form": "hjälpa",
                     "position_start": 22,
-                    "position_end": 28
+                    "position_end": 28,
+                    "contextual_en": "help"
                 },
                 {
                     "word_in_sentence": "servera",
                     "base_form": "servera",
                     "position_start": 38,
-                    "position_end": 45
+                    "position_end": 45,
+                    "contextual_en": "serve"
                 },
                 {
                     "word_in_sentence": "komma överens",
                     "base_form": "komma överens",
                     "position_start": 64,
-                    "position_end": 77
+                    "position_end": 77,
+                    "contextual_en": "agree"
                 },
                 {
                     "word_in_sentence": "beskriva",
                     "base_form": "beskriva",
                     "position_start": 95,
-                    "position_end": 103
+                    "position_end": 103,
+                    "contextual_en": "describe"
                 },
                 {
                     "word_in_sentence": "detta",
                     "base_form": "detta",
                     "position_start": 104,
-                    "position_end": 109
+                    "position_end": 109,
+                    "contextual_en": "this"
                 },
                 {
                     "word_in_sentence": "tillbaka",
                     "base_form": "tillbaka",
                     "position_start": 138,
-                    "position_end": 146
+                    "position_end": 146,
+                    "contextual_en": "returned"
                 }
             ],
             "secondary_words": [
@@ -808,7 +875,8 @@
                     "word_in_sentence": "göra det bästa av något",
                     "base_form": "göra det bästa av något",
                     "position_start": 16,
-                    "position_end": 39
+                    "position_end": 39,
+                    "contextual_en": "make the best of a bad situation"
                 }
             ],
             "secondary_words": [
@@ -829,13 +897,15 @@
                     "word_in_sentence": "huvudfråga",
                     "base_form": "huvudfråga",
                     "position_start": 4,
-                    "position_end": 14
+                    "position_end": 14,
+                    "contextual_en": "main question"
                 },
                 {
                     "word_in_sentence": "släppa",
                     "base_form": "släppa",
                     "position_start": 52,
-                    "position_end": 58
+                    "position_end": 58,
+                    "contextual_en": "let go"
                 }
             ],
             "secondary_words": [
@@ -856,7 +926,8 @@
                     "word_in_sentence": "älskad",
                     "base_form": "älskad",
                     "position_start": 34,
-                    "position_end": 40
+                    "position_end": 40,
+                    "contextual_en": "loved"
                 }
             ],
             "secondary_words": [
@@ -883,13 +954,15 @@
                     "word_in_sentence": "hals",
                     "base_form": "hals",
                     "position_start": 46,
-                    "position_end": 50
+                    "position_end": 50,
+                    "contextual_en": "throat"
                 },
                 {
                     "word_in_sentence": "talare",
                     "base_form": "talare",
                     "position_start": 99,
-                    "position_end": 105
+                    "position_end": 105,
+                    "contextual_en": "speaker"
                 }
             ],
             "secondary_words": [

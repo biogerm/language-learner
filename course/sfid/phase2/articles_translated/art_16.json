@@ -20,13 +20,6 @@
                     "contextual_en": "What's up?"
                 },
                 {
-                    "word_in_sentence": "rå",
-                    "base_form": "rå",
-                    "position_start": 10,
-                    "position_end": 12,
-                    "contextual_en": "raw"
-                },
-                {
                     "word_in_sentence": "titta in",
                     "base_form": "titta in",
                     "position_start": 57,
@@ -753,13 +746,6 @@
             "en": "As a side dish I served oven-baked salmon with a dollop of cream sauce.",
             "target_words": [
                 {
-                    "word_in_sentence": "stekt",
-                    "base_form": "stekt",
-                    "position_start": 32,
-                    "position_end": 37,
-                    "contextual_en": "fried"
-                },
-                {
                     "word_in_sentence": "ugnsstekt",
                     "base_form": "ugnstekt",
                     "position_start": 28,
@@ -813,8 +799,8 @@
                 {
                     "word_in_sentence": "saffran",
                     "base_form": "saffran",
-                    "position_start": 21,
-                    "position_end": 28,
+                    "position_start": 63,
+                    "position_end": 70,
                     "contextual_en": "saffron"
                 },
                 {

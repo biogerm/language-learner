@@ -16,7 +16,8 @@
                     "word_in_sentence": "statsskick",
                     "base_form": "statsskick",
                     "position_start": 22,
-                    "position_end": 32
+                    "position_end": 32,
+                    "contextual_en": "forms of government"
                 }
             ],
             "secondary_words": [
@@ -43,37 +44,43 @@
                     "word_in_sentence": "republik",
                     "base_form": "republik",
                     "position_start": 19,
-                    "position_end": 27
+                    "position_end": 27,
+                    "contextual_en": "republic"
                 },
                 {
                     "word_in_sentence": "premiärminister",
                     "base_form": "premiärminister",
                     "position_start": 59,
-                    "position_end": 74
+                    "position_end": 74,
+                    "contextual_en": "prime minister"
                 },
                 {
                     "word_in_sentence": "kung",
                     "base_form": "kung",
                     "position_start": 95,
-                    "position_end": 99
+                    "position_end": 99,
+                    "contextual_en": "king"
                 },
                 {
                     "word_in_sentence": "kronprins",
                     "base_form": "kronprins",
                     "position_start": 107,
-                    "position_end": 116
+                    "position_end": 116,
+                    "contextual_en": "crown prince"
                 },
                 {
                     "word_in_sentence": "tillhöra",
                     "base_form": "tillhöra",
                     "position_start": 127,
-                    "position_end": 135
+                    "position_end": 135,
+                    "contextual_en": "belong"
                 },
                 {
                     "word_in_sentence": "kungafamilj",
                     "base_form": "kungafamilj",
                     "position_start": 144,
-                    "position_end": 155
+                    "position_end": 155,
+                    "contextual_en": "royal family"
                 }
             ],
             "secondary_words": [
@@ -100,19 +107,22 @@
                     "word_in_sentence": "diktator",
                     "base_form": "diktator",
                     "position_start": 47,
-                    "position_end": 55
+                    "position_end": 55,
+                    "contextual_en": "dictator"
                 },
                 {
                     "word_in_sentence": "lyckas",
                     "base_form": "lyckas",
                     "position_start": 56,
-                    "position_end": 62
+                    "position_end": 62,
+                    "contextual_en": "manages"
                 },
                 {
                     "word_in_sentence": "statskupp",
                     "base_form": "statskupp",
                     "position_start": 93,
-                    "position_end": 102
+                    "position_end": 102,
+                    "contextual_en": "coup d'état"
                 }
             ],
             "secondary_words": [
@@ -139,19 +149,22 @@
                     "word_in_sentence": "interimsregering",
                     "base_form": "interimsregering",
                     "position_start": 19,
-                    "position_end": 35
+                    "position_end": 35,
+                    "contextual_en": "interim government"
                 },
                 {
-                    "word_in_sentence": "regering",
+                    "word_in_sentence": "interimsregering",
                     "base_form": "regering",
-                    "position_start": 27,
-                    "position_end": 35
+                    "position_start": 19,
+                    "position_end": 35,
+                    "contextual_en": "government"
                 },
                 {
                     "word_in_sentence": "på öppen gata",
                     "base_form": "på öppen gata",
                     "position_start": 96,
-                    "position_end": 109
+                    "position_end": 109,
+                    "contextual_en": "in the open street"
                 }
             ],
             "secondary_words": [
@@ -178,13 +191,15 @@
                     "word_in_sentence": "bli vald",
                     "base_form": "bli vald",
                     "position_start": 33,
-                    "position_end": 41
+                    "position_end": 41,
+                    "contextual_en": "be elected"
                 },
                 {
                     "word_in_sentence": "sitta vid makten",
                     "base_form": "sitta vid makten",
                     "position_start": 63,
-                    "position_end": 79
+                    "position_end": 79,
+                    "contextual_en": "be in power"
                 }
             ],
             "secondary_words": [
@@ -211,7 +226,8 @@
                     "word_in_sentence": "parlament",
                     "base_form": "parlament",
                     "position_start": 40,
-                    "position_end": 49
+                    "position_end": 49,
+                    "contextual_en": "parliament"
                 }
             ],
             "secondary_words": [
@@ -235,34 +251,39 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "parlament",
+                    "word_in_sentence": "parlamentsledamot",
                     "base_form": "parlament",
                     "position_start": 3,
-                    "position_end": 12
+                    "position_end": 20,
+                    "contextual_en": "parliament"
                 },
                 {
                     "word_in_sentence": "parlamentsledamot",
                     "base_form": "parlamentsledamot",
                     "position_start": 3,
-                    "position_end": 20
+                    "position_end": 20,
+                    "contextual_en": "Member of Parliament"
                 },
                 {
                     "word_in_sentence": "parti",
                     "base_form": "parti",
                     "position_start": 49,
-                    "position_end": 54
+                    "position_end": 54,
+                    "contextual_en": "party"
                 },
                 {
                     "word_in_sentence": "röst",
                     "base_form": "röst",
                     "position_start": 66,
-                    "position_end": 70
+                    "position_end": 70,
+                    "contextual_en": "vote"
                 },
                 {
                     "word_in_sentence": "allmän",
                     "base_form": "allmän",
                     "position_start": 79,
-                    "position_end": 85
+                    "position_end": 85,
+                    "contextual_en": "general"
                 }
             ],
             "secondary_words": [
@@ -289,25 +310,29 @@
                     "word_in_sentence": "parti",
                     "base_form": "parti",
                     "position_start": 46,
-                    "position_end": 51
+                    "position_end": 51,
+                    "contextual_en": "party"
                 },
                 {
                     "word_in_sentence": "röst",
                     "base_form": "röst",
                     "position_start": 86,
-                    "position_end": 90
+                    "position_end": 90,
+                    "contextual_en": "vote"
                 },
                 {
                     "word_in_sentence": "placera",
                     "base_form": "placera",
                     "position_start": 74,
-                    "position_end": 81
+                    "position_end": 81,
+                    "contextual_en": "place"
                 },
                 {
                     "word_in_sentence": "enfrågeparti",
                     "base_form": "enfrågeparti",
                     "position_start": 104,
-                    "position_end": 116
+                    "position_end": 116,
+                    "contextual_en": "single-issue party"
                 }
             ],
             "secondary_words": [
@@ -334,7 +359,8 @@
                     "word_in_sentence": "Vad",
                     "base_form": "Vad",
                     "position_start": 0,
-                    "position_end": 3
+                    "position_end": 3,
+                    "contextual_en": "What"
                 }
             ],
             "secondary_words": [
@@ -352,40 +378,46 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "parti",
+                    "word_in_sentence": "partiledare",
                     "base_form": "parti",
                     "position_start": 30,
-                    "position_end": 35
+                    "position_end": 41,
+                    "contextual_en": "party"
                 },
                 {
                     "word_in_sentence": "valmanifest",
                     "base_form": "valmanifest",
                     "position_start": 11,
-                    "position_end": 22
+                    "position_end": 22,
+                    "contextual_en": "election manifesto"
                 },
                 {
                     "word_in_sentence": "partiledare",
                     "base_form": "partiledare",
                     "position_start": 30,
-                    "position_end": 41
+                    "position_end": 41,
+                    "contextual_en": "party leader"
                 },
                 {
                     "word_in_sentence": "kärnkraft",
                     "base_form": "kärnkraft",
                     "position_start": 100,
-                    "position_end": 109
+                    "position_end": 109,
+                    "contextual_en": "nuclear power"
                 },
                 {
                     "word_in_sentence": "offentlig",
                     "base_form": "offentlig",
                     "position_start": 119,
-                    "position_end": 128
+                    "position_end": 128,
+                    "contextual_en": "public"
                 },
                 {
                     "word_in_sentence": "ekonomi",
                     "base_form": "ekonomi",
                     "position_start": 129,
-                    "position_end": 136
+                    "position_end": 136,
+                    "contextual_en": "finances"
                 }
             ],
             "secondary_words": [
@@ -412,7 +444,8 @@
                     "word_in_sentence": "regering",
                     "base_form": "regering",
                     "position_start": 10,
-                    "position_end": 18
+                    "position_end": 18,
+                    "contextual_en": "government"
                 }
             ],
             "secondary_words": [
@@ -439,31 +472,36 @@
                     "word_in_sentence": "finansminister",
                     "base_form": "finansminister",
                     "position_start": 13,
-                    "position_end": 27
+                    "position_end": 27,
+                    "contextual_en": "Minister of Finance"
                 },
                 {
                     "word_in_sentence": "utrikesminister",
                     "base_form": "utrikesminister",
                     "position_start": 32,
-                    "position_end": 47
+                    "position_end": 47,
+                    "contextual_en": "Minister for Foreign Affairs"
                 },
                 {
                     "word_in_sentence": "utbildningsminister",
                     "base_form": "utbildningsminister",
                     "position_start": 52,
-                    "position_end": 71
+                    "position_end": 71,
+                    "contextual_en": "Minister for Education"
                 },
                 {
                     "word_in_sentence": "kulturminister",
                     "base_form": "kulturminister",
                     "position_start": 76,
-                    "position_end": 90
+                    "position_end": 90,
+                    "contextual_en": "Minister for Culture"
                 },
                 {
                     "word_in_sentence": "statsråd",
                     "base_form": "statsråd",
                     "position_start": 109,
-                    "position_end": 117
+                    "position_end": 117,
+                    "contextual_en": "cabinet ministers"
                 }
             ],
             "secondary_words": [
@@ -490,13 +528,15 @@
                     "word_in_sentence": "ordning",
                     "base_form": "ordning",
                     "position_start": 27,
-                    "position_end": 34
+                    "position_end": 34,
+                    "contextual_en": "order"
                 },
                 {
                     "word_in_sentence": "myndighet",
                     "base_form": "myndighet",
                     "position_start": 67,
-                    "position_end": 76
+                    "position_end": 76,
+                    "contextual_en": "agency"
                 }
             ],
             "secondary_words": [
@@ -523,13 +563,15 @@
                     "word_in_sentence": "sextio",
                     "base_form": "sextio",
                     "position_start": 4,
-                    "position_end": 10
+                    "position_end": 10,
+                    "contextual_en": "Sixty"
                 },
                 {
                     "word_in_sentence": "klassamhälle",
                     "base_form": "klassamhälle",
                     "position_start": 67,
-                    "position_end": 79
+                    "position_end": 79,
+                    "contextual_en": "class society"
                 }
             ],
             "secondary_words": [
@@ -556,19 +598,22 @@
                     "word_in_sentence": "berömd",
                     "base_form": "berömd",
                     "position_start": 25,
-                    "position_end": 31
+                    "position_end": 31,
+                    "contextual_en": "famous"
                 },
                 {
-                    "word_in_sentence": "välfärd",
+                    "word_in_sentence": "välfärdsstat",
                     "base_form": "välfärd",
                     "position_start": 32,
-                    "position_end": 39
+                    "position_end": 44,
+                    "contextual_en": "welfare"
                 },
                 {
                     "word_in_sentence": "välfärdsstat",
                     "base_form": "välfärdststat",
                     "position_start": 32,
-                    "position_end": 44
+                    "position_end": 44,
+                    "contextual_en": "welfare state"
                 }
             ],
             "secondary_words": [
@@ -589,25 +634,29 @@
                     "word_in_sentence": "välfärd",
                     "base_form": "välfärd",
                     "position_start": 59,
-                    "position_end": 66
+                    "position_end": 66,
+                    "contextual_en": "welfare"
                 },
                 {
                     "word_in_sentence": "välkänd",
                     "base_form": "välkänd",
                     "position_start": 3,
-                    "position_end": 10
+                    "position_end": 10,
+                    "contextual_en": "well-known"
                 },
                 {
                     "word_in_sentence": "socialdemokratisk",
                     "base_form": "socialdemokratisk",
                     "position_start": 11,
-                    "position_end": 28
+                    "position_end": 28,
+                    "contextual_en": "social democratic"
                 },
                 {
                     "word_in_sentence": "medborgare",
                     "base_form": "medborgare",
                     "position_start": 77,
-                    "position_end": 87
+                    "position_end": 87,
+                    "contextual_en": "citizen"
                 }
             ],
             "secondary_words": [
@@ -634,19 +683,22 @@
                     "word_in_sentence": "barnbidrag",
                     "base_form": "barnbidrag",
                     "position_start": 24,
-                    "position_end": 34
+                    "position_end": 34,
+                    "contextual_en": "child allowance"
                 },
                 {
                     "word_in_sentence": "bidrag",
                     "base_form": "bidrag",
-                    "position_start": 28,
-                    "position_end": 34
+                    "position_start": 90,
+                    "position_end": 96,
+                    "contextual_en": "benefits"
                 },
                 {
                     "word_in_sentence": "tilläggspension",
                     "base_form": "tilläggspension",
                     "position_start": 57,
-                    "position_end": 72
+                    "position_end": 72,
+                    "contextual_en": "supplementary pension"
                 }
             ],
             "secondary_words": [
@@ -673,13 +725,15 @@
                     "word_in_sentence": "skattetryck",
                     "base_form": "skattetryck",
                     "position_start": 33,
-                    "position_end": 44
+                    "position_end": 44,
+                    "contextual_en": "tax burden"
                 },
                 {
                     "word_in_sentence": "den typen av",
                     "base_form": "den typen av",
                     "position_start": 68,
-                    "position_end": 80
+                    "position_end": 80,
+                    "contextual_en": "that kind of"
                 }
             ],
             "secondary_words": [
@@ -706,7 +760,8 @@
                     "word_in_sentence": "samband",
                     "base_form": "samband",
                     "position_start": 37,
-                    "position_end": 44
+                    "position_end": 44,
+                    "contextual_en": "connection"
                 }
             ],
             "secondary_words": [
@@ -733,19 +788,22 @@
                     "word_in_sentence": "samkönad",
                     "base_form": "samkönad",
                     "position_start": 29,
-                    "position_end": 37
+                    "position_end": 37,
+                    "contextual_en": "same-sex"
                 },
                 {
                     "word_in_sentence": "kust",
                     "base_form": "kust",
                     "position_start": 77,
-                    "position_end": 81
+                    "position_end": 81,
+                    "contextual_en": "coast"
                 },
                 {
                     "word_in_sentence": "o.s.v.",
                     "base_form": "o.s.v.",
                     "position_start": 83,
-                    "position_end": 89
+                    "position_end": 89,
+                    "contextual_en": "etc."
                 }
             ],
             "secondary_words": [
@@ -772,13 +830,15 @@
                     "word_in_sentence": "associera",
                     "base_form": "associera",
                     "position_start": 16,
-                    "position_end": 25
+                    "position_end": 25,
+                    "contextual_en": "associate"
                 },
                 {
                     "word_in_sentence": "sluta",
                     "base_form": "sluta",
                     "position_start": 81,
-                    "position_end": 86
+                    "position_end": 86,
+                    "contextual_en": "end"
                 }
             ],
             "secondary_words": [
@@ -805,19 +865,22 @@
                     "word_in_sentence": "bredbent",
                     "base_form": "bredbent",
                     "position_start": 22,
-                    "position_end": 30
+                    "position_end": 30,
+                    "contextual_en": "legs apart"
                 },
                 {
                     "word_in_sentence": "entré",
                     "base_form": "entré",
                     "position_start": 52,
-                    "position_end": 57
+                    "position_end": 57,
+                    "contextual_en": "entrance"
                 },
                 {
                     "word_in_sentence": "kung för en dag",
                     "base_form": "kung för en dag",
                     "position_start": 74,
-                    "position_end": 89
+                    "position_end": 89,
+                    "contextual_en": "king for a day"
                 }
             ],
             "secondary_words": [
@@ -838,19 +901,22 @@
                     "word_in_sentence": "Förresten",
                     "base_form": "förresten",
                     "position_start": 0,
-                    "position_end": 9
+                    "position_end": 9,
+                    "contextual_en": "By the way"
                 },
                 {
                     "word_in_sentence": "republikansk",
                     "base_form": "republikansk",
                     "position_start": 28,
-                    "position_end": 40
+                    "position_end": 40,
+                    "contextual_en": "republican"
                 },
                 {
                     "word_in_sentence": "ha rötterna i",
                     "base_form": "ha rötterna i",
                     "position_start": 58,
-                    "position_end": 71
+                    "position_end": 71,
+                    "contextual_en": "have its roots in"
                 }
             ],
             "secondary_words": [

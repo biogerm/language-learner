@@ -124,10 +124,10 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "för",
+                    "word_in_sentence": "förstår",
                     "base_form": "för",
                     "position_start": 3,
-                    "position_end": 6
+                    "position_end": 10
                 },
                 {
                     "word_in_sentence": "mer än",
@@ -373,10 +373,10 @@
                     "position_end": 34
                 },
                 {
-                    "word_in_sentence": "titta",
+                    "word_in_sentence": "tittade",
                     "base_form": "titta",
                     "position_start": 60,
-                    "position_end": 65
+                    "position_end": 67
                 },
                 {
                     "word_in_sentence": "vacker",

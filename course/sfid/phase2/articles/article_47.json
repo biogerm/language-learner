@@ -555,10 +555,10 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "om ek",
+                    "word_in_sentence": "om",
                     "base_form": "about",
                     "position_start": 39,
-                    "position_end": 44
+                    "position_end": 41
                 }
             ],
             "secondary_words": [
@@ -713,9 +713,9 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "olycka",
+                    "word_in_sentence": "trafikolycka",
                     "base_form": "olycka",
-                    "position_start": 104,
+                    "position_start": 98,
                     "position_end": 110
                 }
             ],

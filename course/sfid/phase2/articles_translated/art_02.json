@@ -50,9 +50,9 @@
                     "contextual_en": "go away"
                 },
                 {
-                    "word_in_sentence": "väg",
+                    "word_in_sentence": "iväg",
                     "base_form": "väg",
-                    "position_start": 47,
+                    "position_start": 46,
                     "position_end": 50,
                     "contextual_en": "way"
                 },
@@ -175,13 +175,6 @@
             "en": "Before she was to walk to the station, she carefully packed a map and a compass in her bag.",
             "target_words": [
                 {
-                    "word_in_sentence": "väg",
-                    "base_form": "väg",
-                    "position_start": 21,
-                    "position_end": 24,
-                    "contextual_en": "way"
-                },
-                {
                     "word_in_sentence": "gå iväg",
                     "base_form": "gå iväg",
                     "position_start": 17,
@@ -219,13 +212,6 @@
             "en": "\"Prices have gone up,\" she thought, so she chose a cheap hostel in a small town instead of an expensive luxury hotel.",
             "target_words": [
                 {
-                    "word_in_sentence": "vandra",
-                    "base_form": "vandra",
-                    "position_start": 62,
-                    "position_end": 68,
-                    "contextual_en": "hike"
-                },
-                {
                     "word_in_sentence": "Priserna har gått upp.",
                     "base_form": "Priserna har gått upp.",
                     "position_start": 1,
@@ -238,13 +224,6 @@
                     "position_start": 54,
                     "position_end": 61,
                     "contextual_en": "cheap"
-                },
-                {
-                    "word_in_sentence": "bil",
-                    "base_form": "bil",
-                    "position_start": 54,
-                    "position_end": 57,
-                    "contextual_en": "car"
                 },
                 {
                     "word_in_sentence": "stad",
@@ -284,10 +263,10 @@
             "en": "She had also planned to take the train, since it is a good way to see a long railway line.",
             "target_words": [
                 {
-                    "word_in_sentence": "väg",
+                    "word_in_sentence": "järnvägslinje",
                     "base_form": "väg",
-                    "position_start": 79,
-                    "position_end": 82,
+                    "position_start": 75,
+                    "position_end": 88,
                     "contextual_en": "way"
                 },
                 {
@@ -342,10 +321,10 @@
                     "contextual_en": "take the bus"
                 },
                 {
-                    "word_in_sentence": "buss",
+                    "word_in_sentence": "bussen",
                     "base_form": "buss",
                     "position_start": 57,
-                    "position_end": 61,
+                    "position_end": 63,
                     "contextual_en": "bus"
                 }
             ],
@@ -374,8 +353,8 @@
                 {
                     "word_in_sentence": "buss",
                     "base_form": "buss",
-                    "position_start": 9,
-                    "position_end": 13,
+                    "position_start": 67,
+                    "position_end": 71,
                     "contextual_en": "bus"
                 },
                 {
@@ -543,9 +522,9 @@
             "en": "Then she wanted to go to a big city to visit museums and see historical exhibitions.",
             "target_words": [
                 {
-                    "word_in_sentence": "stad",
+                    "word_in_sentence": "storstad",
                     "base_form": "stad",
-                    "position_start": 32,
+                    "position_start": 28,
                     "position_end": 36,
                     "contextual_en": "city"
                 },
@@ -682,10 +661,10 @@
                     "contextual_en": "room"
                 },
                 {
-                    "word_in_sentence": "faktisk",
+                    "word_in_sentence": "faktiskt",
                     "base_form": "faktisk",
                     "position_start": 19,
-                    "position_end": 26,
+                    "position_end": 27,
                     "contextual_en": "actually"
                 },
                 {
@@ -726,10 +705,10 @@
                     "contextual_en": "visit"
                 },
                 {
-                    "word_in_sentence": "besök",
+                    "word_in_sentence": "besöka",
                     "base_form": "besök",
                     "position_start": 41,
-                    "position_end": 46,
+                    "position_end": 47,
                     "contextual_en": "visit"
                 }
             ],
@@ -756,10 +735,10 @@
                     "contextual_en": "run"
                 },
                 {
-                    "word_in_sentence": "gata",
+                    "word_in_sentence": "gatan",
                     "base_form": "gata",
                     "position_start": 50,
-                    "position_end": 54,
+                    "position_end": 55,
                     "contextual_en": "street"
                 }
             ],

@@ -83,13 +83,6 @@
                     "position_start": 78,
                     "position_end": 102,
                     "contextual_en": "approaching with rapid steps"
-                },
-                {
-                    "word_in_sentence": "när",
-                    "base_form": "när",
-                    "position_start": 78,
-                    "position_end": 81,
-                    "contextual_en": "when"
                 }
             ],
             "secondary_words": [
@@ -224,10 +217,10 @@
             "en": "\"I want to experience a view stretching for miles and visit an old fortress,\" she started saying.",
             "target_words": [
                 {
-                    "word_in_sentence": "mil",
+                    "word_in_sentence": "milsvid",
                     "base_form": "mil",
                     "position_start": 21,
-                    "position_end": 24,
+                    "position_end": 28,
                     "contextual_en": "miles"
                 },
                 {
@@ -236,13 +229,6 @@
                     "position_start": 21,
                     "position_end": 28,
                     "contextual_en": "stretching for miles"
-                },
-                {
-                    "word_in_sentence": "Sök",
-                    "base_form": "sök",
-                    "position_start": 42,
-                    "position_end": 45,
-                    "contextual_en": "Search"
                 },
                 {
                     "word_in_sentence": "fästning",
@@ -589,17 +575,17 @@
             "en": "There were all sorts of boats there, even an old longboat and a large ship.",
             "target_words": [
                 {
-                    "word_in_sentence": "stor",
+                    "word_in_sentence": "stort",
                     "base_form": "stor",
                     "position_start": 73,
-                    "position_end": 77,
+                    "position_end": 78,
                     "contextual_en": "large"
                 },
                 {
-                    "word_in_sentence": "lång",
+                    "word_in_sentence": "långbåt",
                     "base_form": "lång",
                     "position_start": 57,
-                    "position_end": 61,
+                    "position_end": 64,
                     "contextual_en": "long"
                 },
                 {
@@ -654,10 +640,10 @@
             "en": "She let the kayak glide forward across the water.",
             "target_words": [
                 {
-                    "word_in_sentence": "kajak",
+                    "word_in_sentence": "kajaken",
                     "base_form": "kajak",
                     "position_start": 8,
-                    "position_end": 13,
+                    "position_end": 15,
                     "contextual_en": "kayak"
                 },
                 {

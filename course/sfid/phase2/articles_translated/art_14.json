@@ -50,13 +50,6 @@
                     "contextual_en": "First and foremost"
                 },
                 {
-                    "word_in_sentence": "fik",
-                    "base_form": "fik",
-                    "position_start": 24,
-                    "position_end": 27,
-                    "contextual_en": "café"
-                },
-                {
                     "word_in_sentence": "fika",
                     "base_form": "fika",
                     "position_start": 24,
@@ -82,8 +75,8 @@
                 {
                     "word_in_sentence": "fik",
                     "base_form": "fik",
-                    "position_start": 4,
-                    "position_end": 7,
+                    "position_start": 87,
+                    "position_end": 90,
                     "contextual_en": "café"
                 },
                 {
@@ -517,25 +510,11 @@
             "en": "\"On the one hand... on the other hand,\" my friend began, \"it is delicious, but you get a food coma.\"",
             "target_words": [
                 {
-                    "word_in_sentence": "palt",
-                    "base_form": "palt",
-                    "position_start": 81,
-                    "position_end": 85,
-                    "contextual_en": "palt"
-                },
-                {
                     "word_in_sentence": "Å ena sidan… å andra sidan",
                     "base_form": "å ena sidan… å andra sidan",
                     "position_start": 1,
                     "position_end": 27,
                     "contextual_en": "On the one hand... on the other hand"
-                },
-                {
-                    "word_in_sentence": "bör",
-                    "base_form": "bör",
-                    "position_start": 30,
-                    "position_end": 33,
-                    "contextual_en": "should"
                 },
                 {
                     "word_in_sentence": "paltkoma",
@@ -699,8 +678,8 @@
                     "word_in_sentence": "solens",
                     "base_form": "sol",
                     "contextual_en": "the sun's",
-                    "position_start": -1,
-                    "position_end": -1
+                    "position_start": 0,
+                    "position_end": 6
                 },
                 {
                     "word_in_sentence": "vacker",
@@ -849,10 +828,10 @@
                     "contextual_en": "blackberries"
                 },
                 {
-                    "word_in_sentence": "begravd",
+                    "word_in_sentence": "begravda",
                     "base_form": "begravd",
                     "position_start": 67,
-                    "position_end": 74,
+                    "position_end": 75,
                     "contextual_en": "buried"
                 }
             ],

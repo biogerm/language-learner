@@ -193,10 +193,10 @@
             "en": "They take care of, for example, local public transport and all municipal services.",
             "target_words": [
                 {
-                    "word_in_sentence": "kommun",
+                    "word_in_sentence": "kommunal",
                     "base_form": "kommun",
                     "position_start": 58,
-                    "position_end": 64,
+                    "position_end": 66,
                     "contextual_en": "municipal"
                 },
                 {
@@ -628,9 +628,9 @@
                     "contextual_en": "fire"
                 },
                 {
-                    "word_in_sentence": "erkan",
+                    "word_in_sentence": "verkan",
                     "base_form": "följd",
-                    "position_start": 81,
+                    "position_start": 80,
                     "position_end": 86,
                     "contextual_en": "effect"
                 }

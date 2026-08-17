@@ -569,10 +569,10 @@
                     "position_end": 35
                 },
                 {
-                    "word_in_sentence": "träna",
+                    "word_in_sentence": "tränade",
                     "base_form": "träna",
                     "position_start": 3,
-                    "position_end": 8
+                    "position_end": 10
                 },
                 {
                     "word_in_sentence": "serie",
@@ -602,10 +602,10 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "motion",
+                    "word_in_sentence": "motionsform",
                     "base_form": "motion",
                     "position_start": 11,
-                    "position_end": 17
+                    "position_end": 22
                 },
                 {
                     "word_in_sentence": "motionsform",
@@ -902,10 +902,10 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "… för sig",
+                    "word_in_sentence": "lite",
                     "base_form": "… för sig",
-                    "position_start": 53,
-                    "position_end": 62
+                    "position_start": 49,
+                    "position_end": 53
                 }
             ],
             "secondary_words": [

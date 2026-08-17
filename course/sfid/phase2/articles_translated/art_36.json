@@ -36,10 +36,10 @@
             "en": "I have always been a person who wants to explore art history.",
             "target_words": [
                 {
-                    "word_in_sentence": "konst",
+                    "word_in_sentence": "konsthistoria",
                     "base_form": "konst",
                     "position_start": 49,
-                    "position_end": 54,
+                    "position_end": 62,
                     "contextual_en": "art"
                 },
                 {
@@ -73,10 +73,10 @@
             "en": "Therefore I decided to take an art course.",
             "target_words": [
                 {
-                    "word_in_sentence": "konst",
+                    "word_in_sentence": "konstutbildning",
                     "base_form": "konst",
                     "position_start": 38,
-                    "position_end": 43,
+                    "position_end": 53,
                     "contextual_en": "art"
                 },
                 {
@@ -177,8 +177,8 @@
                 {
                     "word_in_sentence": "en",
                     "base_form": "en",
-                    "position_start": 15,
-                    "position_end": 17,
+                    "position_start": 23,
+                    "position_end": 25,
                     "contextual_en": "a"
                 },
                 {
@@ -345,13 +345,6 @@
             "sv": "Men för att tjäna pengar fick jag ibland erbjuda mig att dekorera hus med mina tavlor.",
             "en": "But to earn money I sometimes had to offer to decorate houses with my paintings.",
             "target_words": [
-                {
-                    "word_in_sentence": "en",
-                    "base_form": "en",
-                    "position_start": 1,
-                    "position_end": 3,
-                    "contextual_en": "sådan, ett sådant one such"
-                },
                 {
                     "word_in_sentence": "erbjuda",
                     "base_form": "erbjuda",
@@ -567,17 +560,10 @@
             "en": "It was filmed in black and white color, which was a strange but nice detail.",
             "target_words": [
                 {
-                    "word_in_sentence": "konst",
-                    "base_form": "konst",
-                    "position_start": 49,
-                    "position_end": 54,
-                    "contextual_en": "art"
-                },
-                {
                     "word_in_sentence": "en",
                     "base_form": "en",
-                    "position_start": 1,
-                    "position_end": 3,
+                    "position_start": 46,
+                    "position_end": 48,
                     "contextual_en": "a"
                 },
                 {
@@ -620,8 +606,8 @@
                 {
                     "word_in_sentence": "en",
                     "base_form": "en",
-                    "position_start": 2,
-                    "position_end": 4,
+                    "position_start": 40,
+                    "position_end": 42,
                     "contextual_en": "a"
                 },
                 {
@@ -669,13 +655,6 @@
             "en": "Probably the movie would turn out well.",
             "target_words": [
                 {
-                    "word_in_sentence": "kul",
-                    "base_form": "kul",
-                    "position_start": 12,
-                    "position_end": 15,
-                    "contextual_en": "fun"
-                },
-                {
                     "word_in_sentence": "Troligtvis",
                     "base_form": "troligtvis",
                     "position_start": 0,
@@ -706,13 +685,6 @@
             "en": "Later I also wrote a theatrical play.",
             "target_words": [
                 {
-                    "word_in_sentence": "ena",
-                    "base_form": "ena",
-                    "position_start": 1,
-                    "position_end": 4,
-                    "contextual_en": "one (of several)"
-                },
-                {
                     "word_in_sentence": "teaterpjäs",
                     "base_form": "teaterpjäs",
                     "position_start": 26,
@@ -720,9 +692,9 @@
                     "contextual_en": "theatrical play"
                 },
                 {
-                    "word_in_sentence": "pjäs",
+                    "word_in_sentence": "teaterpjäs",
                     "base_form": "pjäs",
-                    "position_start": 32,
+                    "position_start": 26,
                     "position_end": 36,
                     "contextual_en": "play"
                 }
@@ -793,13 +765,6 @@
             "sv": "Hon hade stor respekt för landets teatertradition, och hennes prestation skulle motsvara alla förväntningar.",
             "en": "She had great respect for the country's theater tradition, and her performance would meet all expectations.",
             "target_words": [
-                {
-                    "word_in_sentence": "kul",
-                    "base_form": "kul",
-                    "position_start": 74,
-                    "position_end": 77,
-                    "contextual_en": "fun"
-                },
                 {
                     "word_in_sentence": "teatertradition",
                     "base_form": "teatertradition",

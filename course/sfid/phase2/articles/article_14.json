@@ -16,13 +16,15 @@
                     "word_in_sentence": "måltid",
                     "base_form": "måltid",
                     "position_start": 17,
-                    "position_end": 23
+                    "position_end": 23,
+                    "contextual_en": "meal"
                 },
                 {
                     "word_in_sentence": "tema",
                     "base_form": "tema",
                     "position_start": 41,
-                    "position_end": 45
+                    "position_end": 45,
+                    "contextual_en": "theme"
                 }
             ],
             "secondary_words": [
@@ -43,19 +45,15 @@
                     "word_in_sentence": "Först och främst",
                     "base_form": "först och främst",
                     "position_start": 0,
-                    "position_end": 16
-                },
-                {
-                    "word_in_sentence": "fik",
-                    "base_form": "fik",
-                    "position_start": 24,
-                    "position_end": 27
+                    "position_end": 16,
+                    "contextual_en": "First and foremost"
                 },
                 {
                     "word_in_sentence": "fika",
                     "base_form": "fika",
                     "position_start": 24,
-                    "position_end": 28
+                    "position_end": 28,
+                    "contextual_en": "fika"
                 }
             ],
             "secondary_words": [
@@ -75,26 +73,30 @@
                 {
                     "word_in_sentence": "fik",
                     "base_form": "fik",
-                    "position_start": 4,
-                    "position_end": 7
+                    "position_start": 87,
+                    "position_end": 90,
+                    "contextual_en": "café"
                 },
                 {
                     "word_in_sentence": "fika",
                     "base_form": "fika",
                     "position_start": 4,
-                    "position_end": 8
+                    "position_end": 8,
+                    "contextual_en": "fika"
                 },
                 {
                     "word_in_sentence": "saft",
                     "base_form": "saft",
                     "position_start": 52,
-                    "position_end": 56
+                    "position_end": 56,
+                    "contextual_en": "juice"
                 },
                 {
                     "word_in_sentence": "macka",
                     "base_form": "macka",
                     "position_start": 68,
-                    "position_end": 73
+                    "position_end": 73,
+                    "contextual_en": "sandwich"
                 }
             ],
             "secondary_words": [
@@ -121,19 +123,22 @@
                     "word_in_sentence": "mjölk",
                     "base_form": "mjölk",
                     "position_start": 20,
-                    "position_end": 25
+                    "position_end": 25,
+                    "contextual_en": "milk"
                 },
                 {
                     "word_in_sentence": "vin",
                     "base_form": "vin",
                     "position_start": 52,
-                    "position_end": 55
+                    "position_end": 55,
+                    "contextual_en": "wine"
                 },
                 {
                     "word_in_sentence": "middag",
                     "base_form": "middag",
                     "position_start": 68,
-                    "position_end": 74
+                    "position_end": 74,
+                    "contextual_en": "dinner"
                 }
             ],
             "secondary_words": [
@@ -160,13 +165,15 @@
                     "word_in_sentence": "Det är fint?",
                     "base_form": "Det är fint?",
                     "position_start": 1,
-                    "position_end": 13
+                    "position_end": 13,
+                    "contextual_en": "That's nice?"
                 },
                 {
                     "word_in_sentence": "hemlagade",
                     "base_form": "hemlagad",
                     "position_start": 60,
-                    "position_end": 69
+                    "position_end": 69,
+                    "contextual_en": "home-cooked"
                 }
             ],
             "secondary_words": [
@@ -193,25 +200,29 @@
                     "word_in_sentence": "vardagsmat",
                     "base_form": "vardagsmat",
                     "position_start": 17,
-                    "position_end": 27
+                    "position_end": 27,
+                    "contextual_en": "everyday food"
                 },
                 {
                     "word_in_sentence": "kokt",
                     "base_form": "kokt",
                     "position_start": 31,
-                    "position_end": 35
+                    "position_end": 35,
+                    "contextual_en": "boiled"
                 },
                 {
                     "word_in_sentence": "potatis",
                     "base_form": "potatis",
                     "position_start": 36,
-                    "position_end": 43
+                    "position_end": 43,
+                    "contextual_en": "potatoes"
                 },
                 {
                     "word_in_sentence": "köttbulle",
                     "base_form": "köttbulle",
                     "position_start": 51,
-                    "position_end": 60
+                    "position_end": 60,
+                    "contextual_en": "meatball"
                 }
             ],
             "secondary_words": [
@@ -232,13 +243,15 @@
                     "word_in_sentence": "krydda",
                     "base_form": "krydda",
                     "position_start": 18,
-                    "position_end": 24
+                    "position_end": 24,
+                    "contextual_en": "spice"
                 },
                 {
                     "word_in_sentence": "kryddpeppar",
                     "base_form": "kryddpeppar",
                     "position_start": 39,
-                    "position_end": 50
+                    "position_end": 50,
+                    "contextual_en": "allspice"
                 }
             ],
             "secondary_words": [
@@ -259,7 +272,8 @@
                     "word_in_sentence": "hästkött",
                     "base_form": "hästkött",
                     "position_start": 22,
-                    "position_end": 30
+                    "position_end": 30,
+                    "contextual_en": "horse meat"
                 }
             ],
             "secondary_words": [
@@ -280,7 +294,8 @@
                     "word_in_sentence": "Jo, det är sant!",
                     "base_form": "Jo, det är sant!",
                     "position_start": 1,
-                    "position_end": 17
+                    "position_end": 17,
+                    "contextual_en": "Yes, it is true!"
                 }
             ],
             "secondary_words": [
@@ -301,19 +316,22 @@
                     "word_in_sentence": "förbud",
                     "base_form": "förbud",
                     "position_start": 17,
-                    "position_end": 23
+                    "position_end": 23,
+                    "contextual_en": "ban"
                 },
                 {
                     "word_in_sentence": "tvungen att",
                     "base_form": "tvungen att",
                     "position_start": 49,
-                    "position_end": 60
+                    "position_end": 60,
+                    "contextual_en": "had to"
                 },
                 {
                     "word_in_sentence": "oljekris",
                     "base_form": "oljekris",
                     "position_start": 108,
-                    "position_end": 116
+                    "position_end": 116,
+                    "contextual_en": "oil crisis"
                 }
             ],
             "secondary_words": [
@@ -340,7 +358,8 @@
                     "word_in_sentence": "vara rädd för",
                     "base_form": "vara rädd för",
                     "position_start": 14,
-                    "position_end": 27
+                    "position_end": 27,
+                    "contextual_en": "be afraid of"
                 }
             ],
             "secondary_words": [
@@ -361,13 +380,15 @@
                     "word_in_sentence": "kritik",
                     "base_form": "kritik",
                     "position_start": 18,
-                    "position_end": 24
+                    "position_end": 24,
+                    "contextual_en": "criticize"
                 },
                 {
                     "word_in_sentence": "knäpp",
                     "base_form": "knäppt",
                     "position_start": 51,
-                    "position_end": 56
+                    "position_end": 56,
+                    "contextual_en": "crazy"
                 }
             ],
             "secondary_words": [
@@ -388,25 +409,29 @@
                     "word_in_sentence": "potatis",
                     "base_form": "potatis",
                     "position_start": 60,
-                    "position_end": 67
+                    "position_end": 67,
+                    "contextual_en": "potatoes"
                 },
                 {
                     "word_in_sentence": "palt",
                     "base_form": "palt",
                     "position_start": 17,
-                    "position_end": 21
+                    "position_end": 21,
+                    "contextual_en": "palt"
                 },
                 {
                     "word_in_sentence": "bakad på",
                     "base_form": "bakad på",
                     "position_start": 38,
-                    "position_end": 46
+                    "position_end": 46,
+                    "contextual_en": "baked with"
                 },
                 {
                     "word_in_sentence": "vetemjöl",
                     "base_form": "vetemjöl",
                     "position_start": 47,
-                    "position_end": 55
+                    "position_end": 55,
+                    "contextual_en": "wheat flour"
                 }
             ],
             "secondary_words": [
@@ -433,13 +458,15 @@
                     "word_in_sentence": "smör",
                     "base_form": "smör",
                     "position_start": 24,
-                    "position_end": 28
+                    "position_end": 28,
+                    "contextual_en": "butter"
                 },
                 {
                     "word_in_sentence": "lingonsylt",
                     "base_form": "lingonsylt",
                     "position_start": 33,
-                    "position_end": 43
+                    "position_end": 43,
+                    "contextual_en": "lingonberry jam"
                 }
             ],
             "secondary_words": [
@@ -463,28 +490,18 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "palt",
-                    "base_form": "palt",
-                    "position_start": 81,
-                    "position_end": 85
-                },
-                {
                     "word_in_sentence": "Å ena sidan… å andra sidan",
                     "base_form": "å ena sidan… å andra sidan",
                     "position_start": 1,
-                    "position_end": 27
-                },
-                {
-                    "word_in_sentence": "bör",
-                    "base_form": "bör",
-                    "position_start": 30,
-                    "position_end": 33
+                    "position_end": 27,
+                    "contextual_en": "On the one hand... on the other hand"
                 },
                 {
                     "word_in_sentence": "paltkoma",
                     "base_form": "paltkoma",
                     "position_start": 81,
-                    "position_end": 89
+                    "position_end": 89,
+                    "contextual_en": "food coma"
                 }
             ],
             "secondary_words": [
@@ -511,19 +528,22 @@
                     "word_in_sentence": "bli slagen",
                     "base_form": "bli slagen",
                     "position_start": 24,
-                    "position_end": 34
+                    "position_end": 34,
+                    "contextual_en": "be overcome"
                 },
                 {
                     "word_in_sentence": "bestämde",
                     "base_form": "bestämma",
                     "position_start": 51,
-                    "position_end": 59
+                    "position_end": 59,
+                    "contextual_en": "decided"
                 },
                 {
                     "word_in_sentence": "gå ut",
                     "base_form": "gå ut",
                     "position_start": 75,
-                    "position_end": 80
+                    "position_end": 80,
+                    "contextual_en": "go out"
                 }
             ],
             "secondary_words": [
@@ -558,7 +578,8 @@
                     "word_in_sentence": "salta bad",
                     "base_form": "salta bad",
                     "position_start": 12,
-                    "position_end": 21
+                    "position_end": 21,
+                    "contextual_en": "salty baths"
                 }
             ],
             "secondary_words": [
@@ -585,7 +606,8 @@
                     "word_in_sentence": "juni",
                     "base_form": "juni",
                     "position_start": 28,
-                    "position_end": 32
+                    "position_end": 32,
+                    "contextual_en": "June"
                 }
             ],
             "secondary_words": [
@@ -612,21 +634,23 @@
                     "word_in_sentence": "låga",
                     "base_form": "låg",
                     "position_start": 7,
-                    "position_end": 11
+                    "position_end": 11,
+                    "contextual_en": "low"
                 },
                 {
                     "word_in_sentence": "fallvinkel",
                     "base_form": "fallvinkel",
                     "position_start": 12,
-                    "position_end": 22
+                    "position_end": 22,
+                    "contextual_en": "angle"
                 }
             ],
             "secondary_words": [
                 {
                     "word_in_sentence": "solens",
                     "base_form": "sol",
-                    "position_start": -1,
-                    "position_end": -1
+                    "position_start": 0,
+                    "position_end": 6
                 },
                 {
                     "word_in_sentence": "vacker",
@@ -645,7 +669,8 @@
                     "word_in_sentence": "snyftare",
                     "base_form": "snyftare",
                     "position_start": 40,
-                    "position_end": 48
+                    "position_end": 48,
+                    "contextual_en": "tearjerker"
                 }
             ],
             "secondary_words": [
@@ -672,19 +697,22 @@
                     "word_in_sentence": "ugnsgräddad",
                     "base_form": "ugnsgräddad",
                     "position_start": 18,
-                    "position_end": 29
+                    "position_end": 29,
+                    "contextual_en": "oven-baked"
                 },
                 {
                     "word_in_sentence": "pannkaka",
                     "base_form": "pannkaka",
                     "position_start": 30,
-                    "position_end": 38
+                    "position_end": 38,
+                    "contextual_en": "pancake"
                 },
                 {
                     "word_in_sentence": "äggost",
                     "base_form": "äggost",
                     "position_start": 52,
-                    "position_end": 58
+                    "position_end": 58,
+                    "contextual_en": "egg cheese"
                 }
             ],
             "secondary_words": [
@@ -711,25 +739,29 @@
                     "word_in_sentence": "äppelkaka",
                     "base_form": "äppelkaka",
                     "position_start": 17,
-                    "position_end": 26
+                    "position_end": 26,
+                    "contextual_en": "apple cake"
                 },
                 {
                     "word_in_sentence": "kryddad med",
                     "base_form": "kryddad med",
                     "position_start": 27,
-                    "position_end": 38
+                    "position_end": 38,
+                    "contextual_en": "spiced with"
                 },
                 {
                     "word_in_sentence": "minst",
                     "base_form": "minst",
                     "position_start": 59,
-                    "position_end": 64
+                    "position_end": 64,
+                    "contextual_en": "at least"
                 },
                 {
                     "word_in_sentence": "äppelklyfta",
                     "base_form": "äppelklyfta",
                     "position_start": 68,
-                    "position_end": 79
+                    "position_end": 79,
+                    "contextual_en": "apple wedge"
                 }
             ],
             "secondary_words": [
@@ -750,19 +782,22 @@
                     "word_in_sentence": "jordgubbe",
                     "base_form": "jordgubbe",
                     "position_start": 21,
-                    "position_end": 30
+                    "position_end": 30,
+                    "contextual_en": "strawberry"
                 },
                 {
                     "word_in_sentence": "björnbär",
                     "base_form": "björnbär",
                     "position_start": 41,
-                    "position_end": 49
+                    "position_end": 49,
+                    "contextual_en": "blackberries"
                 },
                 {
-                    "word_in_sentence": "begravd",
+                    "word_in_sentence": "begravda",
                     "base_form": "begravd",
                     "position_start": 67,
-                    "position_end": 74
+                    "position_end": 75,
+                    "contextual_en": "buried"
                 }
             ],
             "secondary_words": [
@@ -789,13 +824,15 @@
                     "word_in_sentence": "höra till",
                     "base_form": "höra till",
                     "position_start": 16,
-                    "position_end": 25
+                    "position_end": 25,
+                    "contextual_en": "belong to"
                 },
                 {
                     "word_in_sentence": "officiell",
                     "base_form": "officiell",
                     "position_start": 29,
-                    "position_end": 38
+                    "position_end": 38,
+                    "contextual_en": "official"
                 }
             ],
             "secondary_words": [
@@ -816,37 +853,43 @@
                     "word_in_sentence": "thaimat",
                     "base_form": "thaimat",
                     "position_start": 47,
-                    "position_end": 54
+                    "position_end": 54,
+                    "contextual_en": "Thai food"
                 },
                 {
                     "word_in_sentence": "paprika",
                     "base_form": "paprika",
                     "position_start": 59,
-                    "position_end": 66
+                    "position_end": 66,
+                    "contextual_en": "bell pepper"
                 },
                 {
                     "word_in_sentence": "parmesan",
                     "base_form": "parmesan",
                     "position_start": 82,
-                    "position_end": 90
+                    "position_end": 90,
+                    "contextual_en": "parmesan"
                 },
                 {
                     "word_in_sentence": "förklaring",
                     "base_form": "förklaring",
                     "position_start": 129,
-                    "position_end": 139
+                    "position_end": 139,
+                    "contextual_en": "explanation"
                 },
                 {
                     "word_in_sentence": "recept",
                     "base_form": "recept",
                     "position_start": 153,
-                    "position_end": 159
+                    "position_end": 159,
+                    "contextual_en": "recipe"
                 },
                 {
                     "word_in_sentence": "steg",
                     "base_form": "steg",
                     "position_start": 160,
-                    "position_end": 164
+                    "position_end": 164,
+                    "contextual_en": "step"
                 }
             ],
             "secondary_words": [

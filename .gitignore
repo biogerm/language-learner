@@ -1,21 +1,12 @@
-# OS Files
-.DS_Store
-*.swp
-*.swo
+# Node
+node_modules/
+dist/
+build/
+.env
+.env.local
 
-# Python
-__pycache__/
-*.pyc
-*.pyo
-venv/
-env/
-.pytest_cache/
-
-# Obsidian (per user request, ignore the entire vault config)
-.obsidian/
-
-# Temp processing directories
-
-# Large archive files
-*.tar
-*.tar.gz
+# Build output
+*.log
+*.webm
+scratch/
+brain/

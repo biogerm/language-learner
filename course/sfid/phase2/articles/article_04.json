@@ -199,10 +199,10 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "mil",
+                    "word_in_sentence": "milsvid",
                     "base_form": "mil",
                     "position_start": 21,
-                    "position_end": 24
+                    "position_end": 28
                 },
                 {
                     "word_in_sentence": "milsvid",
@@ -523,16 +523,16 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "stor",
+                    "word_in_sentence": "stort",
                     "base_form": "stor",
                     "position_start": 73,
-                    "position_end": 77
+                    "position_end": 78
                 },
                 {
-                    "word_in_sentence": "lång",
+                    "word_in_sentence": "långbåt",
                     "base_form": "lång",
                     "position_start": 57,
-                    "position_end": 61
+                    "position_end": 64
                 },
                 {
                     "word_in_sentence": "alla",
@@ -580,10 +580,10 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "kajak",
+                    "word_in_sentence": "kajaken",
                     "base_form": "kajak",
                     "position_start": 8,
-                    "position_end": 13
+                    "position_end": 15
                 },
                 {
                     "word_in_sentence": "glida fram",

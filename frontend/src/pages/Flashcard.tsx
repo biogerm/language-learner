@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, useMemo } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useParams } from 'react-router-dom';
 import { db } from '../db/dexie';
 import { submitGatePass } from '../utils/fsrs';
@@ -7,7 +7,7 @@ import { useData } from '../contexts/DataContext';
 
 export default function Flashcard() {
   const { courseId } = useParams();
-  const { courseData, dictionary, loadCourse } = useData();
+  const { courseData, dictionary, loadCourse, selectedStage, selectedArticleId } = useData();
   const [queue, setQueue] = useState<any[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [input, setInput] = useState('');
@@ -17,10 +17,9 @@ export default function Flashcard() {
   const [showAnswer, setShowAnswer] = useState(false);
   const [loading, setLoading] = useState(true);
   
-  const [selectedStage, setSelectedStage] = useState('');
-  const [selectedArticleId, setSelectedArticleId] = useState('');
   const [inputState, setInputState] = useState<'default' | 'correct' | 'incorrect'>('default');
   const [timerFill, setTimerFill] = useState('0%');
+  const [stats, setStats] = useState({ total: 0, mastered: 0, remaining: 0 });
 
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const timerRef = useRef<any>(null);
@@ -48,40 +47,6 @@ export default function Flashcard() {
     if (courseId) loadCourse(courseId);
   }, [courseId, loadCourse]);
 
-  const stages = useMemo(() => {
-    if (!courseData) return [];
-    const baseStages = Object.keys(courseData).map(stageName => {
-      const stageObj = courseData[stageName];
-      return {
-        id: stageName,
-        title: stageName,
-        articles: Object.keys(stageObj).map(articleTitle => ({
-          id: articleTitle,
-          title: articleTitle
-        }))
-      };
-    });
-    baseStages.push({ id: 'review', title: 'Review (Mistakes)', articles: [] });
-    return baseStages;
-  }, [courseData]);
-
-  useEffect(() => {
-    if (stages.length > 0 && !selectedStage) {
-      setSelectedStage(stages[0]?.id || '');
-      setSelectedArticleId(stages[0]?.articles?.[0]?.id || '');
-    }
-  }, [stages, selectedStage]);
-
-  const handleStageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    const stageId = e.target.value;
-    setSelectedStage(stageId);
-    const stage = stages.find(s => s.id === stageId);
-    if (stage && stage.articles && stage.articles.length > 0) {
-      setSelectedArticleId(stage.articles[0].id);
-    } else {
-      setSelectedArticleId('');
-    }
-  };
 
   const updateMasteryAndVocab = (wordId: string, isCorrect: boolean) => {
     let vb = JSON.parse(localStorage.getItem('vocabBook') || '[]');
@@ -139,8 +104,14 @@ export default function Flashcard() {
           .filter(([w]) => !mw.includes(w))
           .map(([w, data]) => ({ word_id: w, en: data.en, sentence: data.sentence }));
         setQueue(queueItems.sort(() => 0.5 - Math.random()));
+        
+        const total = wordsMap.size;
+        const remaining = queueItems.length;
+        const mastered = total - remaining;
+        setStats({ total, mastered, remaining });
       } else {
         setQueue([]);
+        setStats({ total: 0, mastered: 0, remaining: 0 });
       }
     }
     setCurrentIndex(0);
@@ -224,10 +195,14 @@ export default function Flashcard() {
   const handleRate = async (rating: number) => {
     if (!currentWord || !courseId) return;
     const timeSpent = (Date.now() - startTime) / 1000;
-    const res = await submitGatePass(courseId, currentWord.id, 'flashcard', wrongCount, timeSpent, true, rating);
-    if (res.completed) {
-      window.dispatchEvent(new CustomEvent('fsrs-sync', { detail: `Rated: ${res.rating}` }));
+    
+    if (appMode === 'review') {
+        const res = await submitGatePass(courseId, currentWord.id, 'flashcard', wrongCount, timeSpent, true, rating);
+        if (res.completed) {
+          window.dispatchEvent(new CustomEvent('fsrs-sync', { detail: `Rated: ${res.rating}` }));
+        }
     }
+    
     proceedToNext();
   };
   
@@ -372,34 +347,26 @@ export default function Flashcard() {
     </div>
   );
 
-  const showSelectors = appMode === 'study' && stages.length > 0;
-
   return (
     <div className="glass-panel view-container" style={{ position: 'relative', overflow: 'hidden' }}>
       {nextWordTimeoutRunning.current && (
         <div style={{ position: 'absolute', top: 0, left: 0, height: '4px', background: 'var(--success, #28a745)', width: timerFill, transition: 'width 16ms linear' }}></div>
       )}
       
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        {!showSelectors && <h3 style={{ margin: 0, fontSize: '24px' }}>Flashcard ({appMode})</h3>}
-        {showSelectors && (
-          <div style={{ display: 'flex', gap: '8px', width: '100%', justifyContent: 'space-between', alignItems: 'center' }}>
-            <div style={{ display: 'flex', gap: '16px', marginBottom: '24px' }}>
-              <select className="module-selector" value={selectedStage} onChange={handleStageChange}>
-                <option value="review">Review Ready ({Math.max(0, Object.keys(dictionary || {}).length - JSON.parse(localStorage.getItem('flashcardMasteredWords') || '[]').length)})</option>
-                {stages.map(s => <option key={s.id} value={s.id}>{s.title}</option>)}
-              </select>
-              {selectedStage !== 'review' && (
-                <select className="module-selector" value={selectedArticleId} onChange={e => setSelectedArticleId(e.target.value)}>
-                  {stages.find(s => s.id === selectedStage)?.articles?.map(a => <option key={a.id} value={a.id}>{a.title}</option>)}
-                </select>
-              )}
-            </div>
-            <button className="btn-primary" onClick={handleResetProgress} style={{ fontSize: '14px', padding: '6px 12px' }}>Reset Progress</button>
+      {appMode === 'study' && selectedStage !== 'review' && (
+          <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '16px' }}>
+              <div id="progress-stats" style={{ display: 'flex', alignItems: 'center', fontSize: '14px', color: 'var(--text-muted)' }}>
+                  Total: {stats.total} | <span style={{ color: 'var(--success)', margin: '0 4px' }}>Mastered: {stats.mastered}</span> | <span style={{ color: 'var(--accent)', margin: '0 4px' }}>Remaining: {stats.remaining}</span>
+                  <button id="reset-progress" onClick={handleResetProgress} title="Reset Progress" style={{
+                      background: 'rgba(255,255,255,0.1)', border: 'none', color: 'var(--text)', 
+                      borderRadius: '50%', width: '24px', height: '24px', display: 'flex', 
+                      alignItems: 'center', justifyContent: 'center', cursor: 'pointer', marginLeft: '8px'
+                  }}>
+                      ↻
+                  </button>
+              </div>
           </div>
-        )}
-      </div>
-      <div className="flashcard-progress" style={{ marginTop: '16px' }}>Card {currentIndex + 1} of {queue.length}</div>
+      )}
       
       <div style={{ padding: '32px 0', fontSize: '24px', fontWeight: 'bold', color: 'var(--text-h)' }}>
         {currentWord?.definition}

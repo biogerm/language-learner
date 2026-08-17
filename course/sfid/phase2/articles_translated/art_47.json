@@ -620,10 +620,10 @@
             "en": "As they say in English, it is about the economy.\"",
             "target_words": [
                 {
-                    "word_in_sentence": "om ek",
+                    "word_in_sentence": "om",
                     "base_form": "about",
                     "position_start": 39,
-                    "position_end": 44,
+                    "position_end": 41,
                     "contextual_en": "about the economy"
                 }
             ],
@@ -793,9 +793,9 @@
             "en": "We saw a shocking accident happen before our eyes.",
             "target_words": [
                 {
-                    "word_in_sentence": "olycka",
+                    "word_in_sentence": "trafikolycka",
                     "base_form": "olycka",
-                    "position_start": 104,
+                    "position_start": 98,
                     "position_end": 110,
                     "contextual_en": "accident"
                 }
@@ -868,13 +868,6 @@
                 }
             ],
             "secondary_words": [
-                {
-                    "word_in_sentence": "högt uppsatt",
-                    "base_form": "högt uppsatt",
-                    "position_start": 3,
-                    "position_end": 15,
-                    "contextual_en": "high-ranking"
-                },
                 {
                     "word_in_sentence": "hantera",
                     "base_form": "hantera",
@@ -966,13 +959,6 @@
             ],
             "secondary_words": [
                 {
-                    "word_in_sentence": "visade sig",
-                    "base_form": "visade sig",
-                    "position_start": 6,
-                    "position_end": 16,
-                    "contextual_en": "turned out"
-                },
-                {
                     "word_in_sentence": "ren",
                     "base_form": "ren",
                     "position_start": 30,
@@ -992,13 +978,6 @@
                     "position_start": 17,
                     "position_end": 24,
                     "contextual_en": ""
-                },
-                {
-                    "word_in_sentence": "bjuda in",
-                    "base_form": "bjuda in",
-                    "position_start": 78,
-                    "position_end": 86,
-                    "contextual_en": "invite"
                 }
             ],
             "secondary_words": [

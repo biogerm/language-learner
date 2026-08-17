@@ -1,4 +1,4 @@
-import { createContext, useContext, useState, useCallback, type ReactNode } from 'react';
+import { createContext, useContext, useState, useCallback, useEffect, type ReactNode } from 'react';
 import { fetchCourseData } from '../services/r2';
 import { supabase } from '../services/supabase';
 import { db } from '../db/dexie';
@@ -8,6 +8,10 @@ interface DataContextType {
   dictionary: Record<string, string>;
   courseData: Record<string, Record<string, any>> | null;
   loadCourse: (courseId: string) => Promise<void>;
+  selectedStage: string;
+  setSelectedStage: (stage: string) => void;
+  selectedArticleId: string;
+  setSelectedArticleId: (article: string) => void;
 }
 
 const DataContext = createContext<DataContextType | undefined>(undefined);
@@ -15,6 +19,13 @@ const DataContext = createContext<DataContextType | undefined>(undefined);
 export function DataProvider({ children }: { children: ReactNode }) {
   const [courseData, setCourseData] = useState<Record<string, Record<string, any>> | null>(null);
   const [currentCourse, setCurrentCourse] = useState<string | null>(null);
+  const [selectedStage, setSelectedStage] = useState(localStorage.getItem('selectedStage') || '');
+  const [selectedArticleId, setSelectedArticleId] = useState(localStorage.getItem('selectedArticleId') || '');
+
+  useEffect(() => {
+    localStorage.setItem('selectedStage', selectedStage);
+    localStorage.setItem('selectedArticleId', selectedArticleId);
+  }, [selectedStage, selectedArticleId]);
 
   const loadCourse = useCallback(async (courseId: string) => {
     if (currentCourse === courseId && courseData) return;
@@ -65,7 +76,13 @@ export function DataProvider({ children }: { children: ReactNode }) {
   }, [currentCourse, courseData]);
 
   return (
-    <DataContext.Provider value={{ dictionary: global_dict as Record<string, string>, courseData, loadCourse }}>
+    <DataContext.Provider value={{ 
+      dictionary: global_dict as Record<string, string>, 
+      courseData, 
+      loadCourse,
+      selectedStage, setSelectedStage,
+      selectedArticleId, setSelectedArticleId
+    }}>
       {children}
     </DataContext.Provider>
   );

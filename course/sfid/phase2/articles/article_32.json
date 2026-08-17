@@ -93,10 +93,10 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "skön",
+                    "word_in_sentence": "skönt",
                     "base_form": "skön",
                     "position_start": 36,
-                    "position_end": 40
+                    "position_end": 41
                 },
                 {
                     "word_in_sentence": "lata sig",
@@ -234,10 +234,10 @@
                     "position_end": 21
                 },
                 {
-                    "word_in_sentence": "skynda mi",
+                    "word_in_sentence": "skynda",
                     "base_form": "skynda på",
                     "position_start": 39,
-                    "position_end": 48
+                    "position_end": 45
                 }
             ],
             "secondary_words": [
@@ -524,10 +524,10 @@
                     "position_end": 22
                 },
                 {
-                    "word_in_sentence": "ar enor",
+                    "word_in_sentence": "var",
                     "base_form": "storlek",
-                    "position_start": 46,
-                    "position_end": 53
+                    "position_start": 45,
+                    "position_end": 48
                 }
             ],
             "secondary_words": [
@@ -578,10 +578,10 @@
                     "position_end": 30
                 },
                 {
-                    "word_in_sentence": "nog",
+                    "word_in_sentence": "noggrant",
                     "base_form": "nog",
                     "position_start": 31,
-                    "position_end": 34
+                    "position_end": 39
                 }
             ],
             "secondary_words": [

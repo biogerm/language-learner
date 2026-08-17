@@ -103,8 +103,8 @@
                 {
                     "word_in_sentence": "trä",
                     "base_form": "trä",
-                    "position_start": 19,
-                    "position_end": 22,
+                    "position_start": 44,
+                    "position_end": 47,
                     "contextual_en": "wood"
                 },
                 {
@@ -947,10 +947,10 @@
             "en": "My friend jokingly said that he wanted to bring a donkey next time to carry everything.",
             "target_words": [
                 {
-                    "word_in_sentence": "bär",
+                    "word_in_sentence": "bära",
                     "base_form": "bär",
                     "position_start": 73,
-                    "position_end": 76,
+                    "position_end": 77,
                     "contextual_en": "carry"
                 },
                 {

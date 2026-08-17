@@ -78,10 +78,10 @@
                     "contextual_en": "bank manager"
                 },
                 {
-                    "word_in_sentence": "jobb",
+                    "word_in_sentence": "jobba",
                     "base_form": "jobb",
                     "position_start": 38,
-                    "position_end": 42,
+                    "position_end": 43,
                     "contextual_en": "work"
                 },
                 {
@@ -129,10 +129,10 @@
             "en": "But my career plan changed gradually.",
             "target_words": [
                 {
-                    "word_in_sentence": "yrke",
+                    "word_in_sentence": "yrkesplan",
                     "base_form": "yrke",
                     "position_start": 8,
-                    "position_end": 12,
+                    "position_end": 17,
                     "contextual_en": "career"
                 },
                 {
@@ -166,17 +166,17 @@
             "en": "\"What does she do for a living?\" a friend asked.",
             "target_words": [
                 {
-                    "word_in_sentence": "jobb",
+                    "word_in_sentence": "jobbar",
                     "base_form": "jobb",
                     "position_start": 5,
-                    "position_end": 9,
+                    "position_end": 11,
                     "contextual_en": "living"
                 },
                 {
-                    "word_in_sentence": "jobba",
+                    "word_in_sentence": "jobbar",
                     "base_form": "jobba",
                     "position_start": 5,
-                    "position_end": 10,
+                    "position_end": 11,
                     "contextual_en": "do"
                 },
                 {
@@ -291,10 +291,10 @@
             "en": "A regular workday is often long and tough.",
             "target_words": [
                 {
-                    "word_in_sentence": "jobb",
+                    "word_in_sentence": "jobbig",
                     "base_form": "jobb",
                     "position_start": 37,
-                    "position_end": 41,
+                    "position_end": 43,
                     "contextual_en": "work"
                 },
                 {
@@ -341,13 +341,6 @@
             "sv": "Ibland känner jag att det är dålig miljö att arbeta i en så tuff arbetsmiljö.",
             "en": "Sometimes I feel that it is a bad environment to work in such a tough working environment.",
             "target_words": [
-                {
-                    "word_in_sentence": "ner",
-                    "base_form": "ner",
-                    "position_start": 10,
-                    "position_end": 13,
-                    "contextual_en": "down"
-                },
                 {
                     "word_in_sentence": "dålig",
                     "base_form": "dålig",
@@ -456,13 +449,6 @@
                     "position_start": 0,
                     "position_end": 3,
                     "contextual_en": "You"
-                },
-                {
-                    "word_in_sentence": "ner",
-                    "base_form": "ner",
-                    "position_start": 24,
-                    "position_end": 27,
-                    "contextual_en": "down"
                 },
                 {
                     "word_in_sentence": "genom kollegor",
@@ -701,13 +687,6 @@
                     "position_start": 9,
                     "position_end": 19,
                     "contextual_en": "high-paid"
-                },
-                {
-                    "word_in_sentence": "lön",
-                    "base_form": "lön",
-                    "position_start": 14,
-                    "position_end": 17,
-                    "contextual_en": "pay"
                 }
             ],
             "secondary_words": [
@@ -733,17 +712,17 @@
             "en": "I am low-paid compared to the forest industry or the heavy mining industry.",
             "target_words": [
                 {
-                    "word_in_sentence": "industri",
+                    "word_in_sentence": "skogsindustrin",
                     "base_form": "industri",
-                    "position_start": 35,
-                    "position_end": 43,
+                    "position_start": 30,
+                    "position_end": 44,
                     "contextual_en": "industry"
                 },
                 {
-                    "word_in_sentence": "lön",
+                    "word_in_sentence": "lågavlönad",
                     "base_form": "lön",
-                    "position_start": 12,
-                    "position_end": 15,
+                    "position_start": 7,
+                    "position_end": 17,
                     "contextual_en": "paid"
                 },
                 {
@@ -754,17 +733,17 @@
                     "contextual_en": "low-paid"
                 },
                 {
-                    "word_in_sentence": "skogsindustri",
+                    "word_in_sentence": "skogsindustrin",
                     "base_form": "skogsindustri",
                     "position_start": 30,
-                    "position_end": 43,
+                    "position_end": 44,
                     "contextual_en": "forest industry"
                 },
                 {
-                    "word_in_sentence": "gruvindustri",
+                    "word_in_sentence": "gruvindustrin",
                     "base_form": "gruvindustri",
                     "position_start": 61,
-                    "position_end": 73,
+                    "position_end": 74,
                     "contextual_en": "mining industry"
                 }
             ],

@@ -487,10 +487,10 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "fritid",
+                    "word_in_sentence": "fritidsaktivitet",
                     "base_form": "fritidsvana",
                     "position_start": 21,
-                    "position_end": 27
+                    "position_end": 37
                 },
                 {
                     "word_in_sentence": "fritidsaktivitet",
@@ -796,10 +796,10 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "skridsko",
+                    "word_in_sentence": "skridskor",
                     "base_form": "skridsko",
                     "position_start": 23,
-                    "position_end": 31
+                    "position_end": 32
                 }
             ],
             "secondary_words": [
@@ -823,9 +823,9 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "sport",
+                    "word_in_sentence": "motorsport",
                     "base_form": "sport",
-                    "position_start": 30,
+                    "position_start": 25,
                     "position_end": 35
                 },
                 {
@@ -856,10 +856,10 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "sport",
+                    "word_in_sentence": "sportbil",
                     "base_form": "sport",
                     "position_start": 26,
-                    "position_end": 31
+                    "position_end": 34
                 },
                 {
                     "word_in_sentence": "sportbil",
@@ -1087,10 +1087,10 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "faktisk",
+                    "word_in_sentence": "faktiskt",
                     "base_form": "faktisk",
                     "position_start": 49,
-                    "position_end": 56
+                    "position_end": 57
                 },
                 {
                     "word_in_sentence": "avskaffa",

@@ -159,9 +159,9 @@
                     "contextual_en": "interim government"
                 },
                 {
-                    "word_in_sentence": "regering",
+                    "word_in_sentence": "interimsregering",
                     "base_form": "regering",
-                    "position_start": 27,
+                    "position_start": 19,
                     "position_end": 35,
                     "contextual_en": "government"
                 },
@@ -263,10 +263,10 @@
             "en": "A Member of Parliament represents a political party, and every vote from a general referendum counts.",
             "target_words": [
                 {
-                    "word_in_sentence": "parlament",
+                    "word_in_sentence": "parlamentsledamot",
                     "base_form": "parlament",
                     "position_start": 3,
-                    "position_end": 12,
+                    "position_end": 20,
                     "contextual_en": "parliament"
                 },
                 {
@@ -395,10 +395,10 @@
             "en": "Well, in their election manifesto, a party leader can promise a whole lot, for example changes concerning energy like nuclear power or public finances.",
             "target_words": [
                 {
-                    "word_in_sentence": "parti",
+                    "word_in_sentence": "partiledare",
                     "base_form": "parti",
                     "position_start": 30,
-                    "position_end": 35,
+                    "position_end": 41,
                     "contextual_en": "party"
                 },
                 {
@@ -629,10 +629,10 @@
                     "contextual_en": "famous"
                 },
                 {
-                    "word_in_sentence": "välfärd",
+                    "word_in_sentence": "välfärdsstat",
                     "base_form": "välfärd",
                     "position_start": 32,
-                    "position_end": 39,
+                    "position_end": 44,
                     "contextual_en": "welfare"
                 },
                 {
@@ -719,8 +719,8 @@
                 {
                     "word_in_sentence": "bidrag",
                     "base_form": "bidrag",
-                    "position_start": 28,
-                    "position_end": 34,
+                    "position_start": 90,
+                    "position_end": 96,
                     "contextual_en": "benefits"
                 },
                 {

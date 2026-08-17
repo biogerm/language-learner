@@ -69,13 +69,6 @@
                     "position_start": 1,
                     "position_end": 29,
                     "contextual_en": "I had no idea about that."
-                },
-                {
-                    "word_in_sentence": "än",
-                    "base_form": "än",
-                    "position_start": 39,
-                    "position_end": 41,
-                    "contextual_en": "than"
                 }
             ],
             "secondary_words": [
@@ -160,13 +153,6 @@
             "sv": "Allt hände i köket och jag ville nästan uppfostra honom i vår kultur.",
             "en": "Everything happened in the kitchen and I almost wanted to educate him in our culture.",
             "target_words": [
-                {
-                    "word_in_sentence": "än",
-                    "base_form": "än",
-                    "position_start": 6,
-                    "position_end": 8,
-                    "contextual_en": "than"
-                },
                 {
                     "word_in_sentence": "uppfostra",
                     "base_form": "uppfostra",
@@ -353,13 +339,6 @@
             "en": "I wanted to show that Swedish food culture can also change and be progressive.",
             "target_words": [
                 {
-                    "word_in_sentence": "än",
-                    "base_form": "än",
-                    "position_start": 49,
-                    "position_end": 51,
-                    "contextual_en": "than"
-                },
-                {
                     "word_in_sentence": "förändras",
                     "base_form": "förändras",
                     "position_start": 46,
@@ -441,13 +420,6 @@
             "sv": "Landets regerande snackstillverkare sålde en underbar blandning av bränd nöt och kanderad viol eller syren.",
             "en": "The country's reigning snack manufacturer sold a wonderful mixture of roasted nut and candied violet or lilac.",
             "target_words": [
-                {
-                    "word_in_sentence": "än",
-                    "base_form": "än",
-                    "position_start": 69,
-                    "position_end": 71,
-                    "contextual_en": "than"
-                },
                 {
                     "word_in_sentence": "regerande",
                     "base_form": "regerande",
@@ -639,10 +611,10 @@
             "en": "You could mix some mushrooms and salt thoroughly.",
             "target_words": [
                 {
-                    "word_in_sentence": "salt",
+                    "word_in_sentence": "salta",
                     "base_form": "salt",
                     "position_start": 32,
-                    "position_end": 36,
+                    "position_end": 37,
                     "contextual_en": "salt"
                 },
                 {
@@ -955,8 +927,8 @@
                     "word_in_sentence": "hälsningar",
                     "base_form": "hälsning",
                     "contextual_en": "greetings",
-                    "position_start": -1,
-                    "position_end": -1
+                    "position_start": 0,
+                    "position_end": 10
                 }
             ]
         }

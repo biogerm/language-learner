@@ -46,10 +46,10 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "affisch",
+                    "word_in_sentence": "affischen",
                     "base_form": "affisch",
                     "position_start": 3,
-                    "position_end": 10
+                    "position_end": 12
                 },
                 {
                     "word_in_sentence": "Varför inte?",
@@ -198,10 +198,10 @@
                     "position_end": 65
                 },
                 {
-                    "word_in_sentence": "nacke",
+                    "word_in_sentence": "nacken",
                     "base_form": "nacke",
                     "position_start": 59,
-                    "position_end": 64
+                    "position_end": 65
                 }
             ],
             "secondary_words": [
@@ -351,10 +351,10 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "fylle",
+                    "word_in_sentence": "fyllemisstag",
                     "base_form": "fylle-",
                     "position_start": 34,
-                    "position_end": 39
+                    "position_end": 46
                 },
                 {
                     "word_in_sentence": "något i den stilen",
@@ -371,9 +371,9 @@
                     "position_end": 13
                 },
                 {
-                    "word_in_sentence": "misstag",
+                    "word_in_sentence": "fyllemisstag",
                     "base_form": "misstag",
-                    "position_start": 39,
+                    "position_start": 34,
                     "position_end": 46
                 }
             ]
@@ -411,16 +411,16 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "led",
+                    "word_in_sentence": "ledde",
                     "base_form": "led",
                     "position_start": 95,
-                    "position_end": 98
+                    "position_end": 100
                 },
                 {
-                    "word_in_sentence": "faktisk",
+                    "word_in_sentence": "faktiskt",
                     "base_form": "faktisk",
                     "position_start": 8,
-                    "position_end": 15
+                    "position_end": 16
                 },
                 {
                     "word_in_sentence": "allergiker",

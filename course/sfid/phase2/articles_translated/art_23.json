@@ -73,13 +73,6 @@
             "en": "It is my third job in my 30s.",
             "target_words": [
                 {
-                    "word_in_sentence": "tre",
-                    "base_form": "tre",
-                    "position_start": 12,
-                    "position_end": 15,
-                    "contextual_en": "three"
-                },
-                {
                     "word_in_sentence": "tredje",
                     "base_form": "tredje",
                     "position_start": 12,
@@ -92,13 +85,6 @@
                     "position_start": 30,
                     "position_end": 41,
                     "contextual_en": "30s"
-                },
-                {
-                    "word_in_sentence": "så",
-                    "base_form": "så",
-                    "position_start": 35,
-                    "position_end": 37,
-                    "contextual_en": "so"
                 }
             ],
             "secondary_words": [
@@ -272,9 +258,9 @@
             "en": "He was also mentally ill and had a severe gambling addiction as well as an old drug addiction.",
             "target_words": [
                 {
-                    "word_in_sentence": "så",
+                    "word_in_sentence": "också",
                     "base_form": "så",
-                    "position_start": 11,
+                    "position_start": 8,
                     "position_end": 13,
                     "contextual_en": "so"
                 },
@@ -293,9 +279,9 @@
                     "contextual_en": "gambling addiction"
                 },
                 {
-                    "word_in_sentence": "beroende",
+                    "word_in_sentence": "spelberoende",
                     "base_form": "beroende",
-                    "position_start": 51,
+                    "position_start": 47,
                     "position_end": 59,
                     "contextual_en": "addiction"
                 },
@@ -404,9 +390,9 @@
                     "contextual_en": "three"
                 },
                 {
-                    "word_in_sentence": "så",
+                    "word_in_sentence": "också",
                     "base_form": "så",
-                    "position_start": 23,
+                    "position_start": 20,
                     "position_end": 25,
                     "contextual_en": "so"
                 },
@@ -462,13 +448,6 @@
             "en": "His dental health was extremely bad with a lot of cavities in every tooth.",
             "target_words": [
                 {
-                    "word_in_sentence": "tre",
-                    "base_form": "tre",
-                    "position_start": 21,
-                    "position_end": 24,
-                    "contextual_en": "three"
-                },
-                {
                     "word_in_sentence": "tandhälsa",
                     "base_form": "tandhälsa",
                     "position_start": 5,
@@ -478,8 +457,8 @@
                 {
                     "word_in_sentence": "tand",
                     "base_form": "tand",
-                    "position_start": 5,
-                    "position_end": 9,
+                    "position_start": 59,
+                    "position_end": 63,
                     "contextual_en": "tooth"
                 },
                 {
@@ -573,13 +552,6 @@
             "en": "But regardless of the cause, we must be patient and take care of everyone equally well.",
             "target_words": [
                 {
-                    "word_in_sentence": "beroende",
-                    "base_form": "beroende",
-                    "position_start": 5,
-                    "position_end": 13,
-                    "contextual_en": "depending"
-                },
-                {
                     "word_in_sentence": "oberoende av",
                     "base_form": "oberoende av",
                     "position_start": 4,
@@ -624,13 +596,6 @@
             "en": "In another room lay a woman with a serious viral disease and an extremely high body temperature.",
             "target_words": [
                 {
-                    "word_in_sentence": "tre",
-                    "base_form": "tre",
-                    "position_start": 66,
-                    "position_end": 69,
-                    "contextual_en": "three"
-                },
-                {
                     "word_in_sentence": "virussjukdom",
                     "base_form": "virussjukdom",
                     "position_start": 47,
@@ -638,9 +603,9 @@
                     "contextual_en": "viral disease"
                 },
                 {
-                    "word_in_sentence": "sjukdom",
+                    "word_in_sentence": "virussjukdom",
                     "base_form": "sjukdom",
-                    "position_start": 52,
+                    "position_start": 47,
                     "position_end": 59,
                     "contextual_en": "disease"
                 },
@@ -675,16 +640,9 @@
             "en": "It was perhaps a tick-borne disease because she had had biting insects on her.",
             "target_words": [
                 {
-                    "word_in_sentence": "tand",
-                    "base_form": "tand",
-                    "position_start": 58,
-                    "position_end": 62,
-                    "contextual_en": "tooth"
-                },
-                {
-                    "word_in_sentence": "sjukdom",
+                    "word_in_sentence": "fästingsjukdom",
                     "base_form": "sjukdom",
-                    "position_start": 25,
+                    "position_start": 18,
                     "position_end": 32,
                     "contextual_en": "disease"
                 },
@@ -735,8 +693,8 @@
                 {
                     "word_in_sentence": "blod",
                     "base_form": "blod",
-                    "position_start": 35,
-                    "position_end": 39,
+                    "position_start": 62,
+                    "position_end": 66,
                     "contextual_en": "blood"
                 }
             ],
@@ -762,13 +720,6 @@
             "sv": "En insekt hade bitit henne rakt i en blodåder, vilket gav henne en svår värk.",
             "en": "An insect had bitten her straight in a vein, which gave her a severe ache.",
             "target_words": [
-                {
-                    "word_in_sentence": "blod",
-                    "base_form": "blod",
-                    "position_start": 37,
-                    "position_end": 41,
-                    "contextual_en": "blood"
-                },
                 {
                     "word_in_sentence": "blodåder",
                     "base_form": "blodåder",

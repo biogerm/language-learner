@@ -20,10 +20,10 @@
                     "contextual_en": "north"
                 },
                 {
-                    "word_in_sentence": "Kultur",
+                    "word_in_sentence": "kulturattraktion",
                     "base_form": "kultur",
                     "position_start": 54,
-                    "position_end": 60,
+                    "position_end": 70,
                     "contextual_en": "Cultural"
                 },
                 {
@@ -166,10 +166,10 @@
                     "contextual_en": "singing"
                 },
                 {
-                    "word_in_sentence": "dans",
+                    "word_in_sentence": "dansa",
                     "base_form": "dans",
                     "position_start": 53,
-                    "position_end": 57,
+                    "position_end": 58,
                     "contextual_en": "dancing"
                 },
                 {
@@ -261,10 +261,10 @@
             "en": "A famous cultural personality often seeks contact with young artists here.",
             "target_words": [
                 {
-                    "word_in_sentence": "Kultur",
+                    "word_in_sentence": "kulturpersonlighet",
                     "base_form": "kultur",
                     "position_start": 8,
-                    "position_end": 14,
+                    "position_end": 26,
                     "contextual_en": "Cultural"
                 },
                 {
@@ -345,8 +345,8 @@
                 {
                     "word_in_sentence": "utställning",
                     "base_form": "utställning",
-                    "position_start": 13,
-                    "position_end": 24,
+                    "position_start": 63,
+                    "position_end": 74,
                     "contextual_en": "exhibition"
                 },
                 {
@@ -372,13 +372,6 @@
             "sv": "En berömd dansk konstnär har sin bästa målning här.",
             "en": "A famous Danish artist has his best painting here.",
             "target_words": [
-                {
-                    "word_in_sentence": "dans",
-                    "base_form": "dans",
-                    "position_start": 10,
-                    "position_end": 14,
-                    "contextual_en": "dance"
-                },
                 {
                     "word_in_sentence": "dansk",
                     "base_form": "dansk",
@@ -587,9 +580,9 @@
                     "contextual_en": "chess club"
                 },
                 {
-                    "word_in_sentence": "klubb",
+                    "word_in_sentence": "schackklubb",
                     "base_form": "klubb",
-                    "position_start": 24,
+                    "position_start": 18,
                     "position_end": 29,
                     "contextual_en": "club"
                 },
@@ -872,8 +865,8 @@
                 {
                     "word_in_sentence": "boll",
                     "base_form": "boll",
-                    "position_start": 30,
-                    "position_end": 34,
+                    "position_start": 83,
+                    "position_end": 87,
                     "contextual_en": "ball"
                 }
             ],

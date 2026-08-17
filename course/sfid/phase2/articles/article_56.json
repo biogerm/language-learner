@@ -556,9 +556,9 @@
                     "position_end": 44
                 },
                 {
-                    "word_in_sentence": "tänkt",
+                    "word_in_sentence": "snabbtänkt",
                     "base_form": "tänkt",
-                    "position_start": 21,
+                    "position_start": 16,
                     "position_end": 26
                 },
                 {
@@ -628,10 +628,10 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "locka",
+                    "word_in_sentence": "lockad",
                     "base_form": "locka",
                     "position_start": 77,
-                    "position_end": 82
+                    "position_end": 83
                 },
                 {
                     "word_in_sentence": "irriterande",
@@ -957,10 +957,10 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "våga",
+                    "word_in_sentence": "vågade",
                     "base_form": "våga",
                     "position_start": 8,
-                    "position_end": 12
+                    "position_end": 14
                 },
                 {
                     "word_in_sentence": "obligatorisk",

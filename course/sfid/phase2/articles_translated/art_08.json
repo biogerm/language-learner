@@ -339,10 +339,10 @@
                     "contextual_en": "grammar"
                 },
                 {
-                    "word_in_sentence": "ord",
+                    "word_in_sentence": "ordföljd",
                     "base_form": "ord",
                     "position_start": 36,
-                    "position_end": 39,
+                    "position_end": 44,
                     "contextual_en": "word"
                 },
                 {
@@ -457,10 +457,10 @@
                     "contextual_en": "answer"
                 },
                 {
-                    "word_in_sentence": "svar",
+                    "word_in_sentence": "svara",
                     "base_form": "svar",
                     "position_start": 33,
-                    "position_end": 37,
+                    "position_end": 38,
                     "contextual_en": "answer"
                 }
             ],
@@ -482,8 +482,8 @@
                 {
                     "word_in_sentence": "svar",
                     "base_form": "svar",
-                    "position_start": 46,
-                    "position_end": 50,
+                    "position_start": 78,
+                    "position_end": 82,
                     "contextual_en": "answer"
                 },
                 {
@@ -629,17 +629,17 @@
             "en": "I answered that it was of course a little difficult, but good for testing one's limits.",
             "target_words": [
                 {
-                    "word_in_sentence": "svara",
+                    "word_in_sentence": "svarade",
                     "base_form": "svara",
                     "position_start": 4,
-                    "position_end": 9,
+                    "position_end": 11,
                     "contextual_en": "answered"
                 },
                 {
-                    "word_in_sentence": "svar",
+                    "word_in_sentence": "svarade",
                     "base_form": "svar",
                     "position_start": 4,
-                    "position_end": 8,
+                    "position_end": 11,
                     "contextual_en": "answered"
                 },
                 {
@@ -655,13 +655,6 @@
                     "position_start": 60,
                     "position_end": 78,
                     "contextual_en": "testing one's limits"
-                },
-                {
-                    "word_in_sentence": "se",
-                    "base_form": "se",
-                    "position_start": 75,
-                    "position_end": 77,
-                    "contextual_en": "see"
                 }
             ],
             "secondary_words": [
@@ -729,8 +722,8 @@
                     "word_in_sentence": "ibland",
                     "base_form": "ibland",
                     "contextual_en": "sometimes",
-                    "position_start": -1,
-                    "position_end": -1
+                    "position_start": 0,
+                    "position_end": 6
                 }
             ]
         },

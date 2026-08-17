@@ -138,10 +138,10 @@
                     "position_end": 42
                 },
                 {
-                    "word_in_sentence": "historisk",
+                    "word_in_sentence": "historiskt",
                     "base_form": "historisk",
                     "position_start": 27,
-                    "position_end": 36
+                    "position_end": 37
                 }
             ],
             "secondary_words": [
@@ -513,9 +513,9 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "medveten",
+                    "word_in_sentence": "omedveten",
                     "base_form": "medveten",
-                    "position_start": 32,
+                    "position_start": 31,
                     "position_end": 40
                 },
                 {
@@ -951,10 +951,10 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "hälft",
+                    "word_in_sentence": "hälften",
                     "base_form": "hälft",
                     "position_start": 7,
-                    "position_end": 12
+                    "position_end": 14
                 },
                 {
                     "word_in_sentence": "resten av",

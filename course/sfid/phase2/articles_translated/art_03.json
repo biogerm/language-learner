@@ -20,25 +20,11 @@
                     "contextual_en": "What happened yesterday?"
                 },
                 {
-                    "word_in_sentence": "gå",
-                    "base_form": "gå",
-                    "position_start": 12,
-                    "position_end": 14,
-                    "contextual_en": "go"
-                },
-                {
                     "word_in_sentence": "ressugen",
                     "base_form": "ressugen",
                     "position_start": 51,
                     "position_end": 59,
                     "contextual_en": "eager to travel"
-                },
-                {
-                    "word_in_sentence": "ge",
-                    "base_form": "ge",
-                    "position_start": 56,
-                    "position_end": 58,
-                    "contextual_en": "give"
                 }
             ],
             "secondary_words": [
@@ -64,13 +50,6 @@
             "en": "\"Do you know what happened yesterday?\" she then asked quickly.",
             "target_words": [
                 {
-                    "word_in_sentence": "gå",
-                    "base_form": "gå",
-                    "position_start": 23,
-                    "position_end": 25,
-                    "contextual_en": "go"
-                },
-                {
                     "word_in_sentence": "Vet du vad som hände igår?",
                     "base_form": "Vet du vad som hände igår?",
                     "position_start": 1,
@@ -85,10 +64,10 @@
                     "contextual_en": "then"
                 },
                 {
-                    "word_in_sentence": "snabb",
+                    "word_in_sentence": "snabbt",
                     "base_form": "snabb",
                     "position_start": 47,
-                    "position_end": 52,
+                    "position_end": 53,
                     "contextual_en": "quickly"
                 }
             ],
@@ -225,24 +204,17 @@
             "en": "The Swedish tourism industry is strong, and every tourist can get help at a local tourist information center.",
             "target_words": [
                 {
-                    "word_in_sentence": "ge",
-                    "base_form": "ge",
-                    "position_start": 23,
-                    "position_end": 25,
-                    "contextual_en": "give"
-                },
-                {
                     "word_in_sentence": "turist",
                     "base_form": "turist",
-                    "position_start": 12,
-                    "position_end": 18,
+                    "position_start": 47,
+                    "position_end": 53,
                     "contextual_en": "tourist"
                 },
                 {
-                    "word_in_sentence": "turistnäring",
+                    "word_in_sentence": "turistnäringen",
                     "base_form": "turistnäring",
                     "position_start": 12,
-                    "position_end": 24,
+                    "position_end": 26,
                     "contextual_en": "tourism industry"
                 },
                 {
@@ -283,10 +255,10 @@
             "en": "We started our trip with a long walk in a beautiful archipelago.",
             "target_words": [
                 {
-                    "word_in_sentence": "gå",
+                    "word_in_sentence": "skärgård",
                     "base_form": "gå",
-                    "position_start": 56,
-                    "position_end": 58,
+                    "position_start": 52,
+                    "position_end": 60,
                     "contextual_en": "walk"
                 },
                 {
@@ -496,13 +468,6 @@
             "en": "They said that the mountains began to rise out of the sea.",
             "target_words": [
                 {
-                    "word_in_sentence": "ge",
-                    "base_form": "ge",
-                    "position_start": 20,
-                    "position_end": 22,
-                    "contextual_en": "give"
-                },
-                {
                     "word_in_sentence": "resa sig",
                     "base_form": "resa sig",
                     "position_start": 32,
@@ -568,13 +533,6 @@
                     "position_start": 52,
                     "position_end": 54,
                     "contextual_en": "of"
-                },
-                {
-                    "word_in_sentence": "ge",
-                    "base_form": "ge",
-                    "position_start": 36,
-                    "position_end": 38,
-                    "contextual_en": "give"
                 },
                 {
                     "word_in_sentence": "gå till attack",

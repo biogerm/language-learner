@@ -168,10 +168,10 @@
                     "contextual_en": "here"
                 },
                 {
-                    "word_in_sentence": "land",
+                    "word_in_sentence": "utlandet",
                     "base_form": "land",
-                    "position_start": 92,
-                    "position_end": 96,
+                    "position_start": 90,
+                    "position_end": 98,
                     "contextual_en": "abroad"
                 }
             ],
@@ -293,10 +293,10 @@
                     "contextual_en": "rich"
                 },
                 {
-                    "word_in_sentence": " rik n",
+                    "word_in_sentence": "rik",
                     "base_form": "norske",
-                    "position_start": 92,
-                    "position_end": 98,
+                    "position_start": 89,
+                    "position_end": 92,
                     "contextual_en": "Norwegian"
                 }
             ],
@@ -353,13 +353,6 @@
                     "contextual_en": "How much do you earn?"
                 },
                 {
-                    "word_in_sentence": "ur",
-                    "base_form": "ur",
-                    "position_start": 2,
-                    "position_end": 4,
-                    "contextual_en": "out of"
-                },
-                {
                     "word_in_sentence": "öka",
                     "base_form": "öka",
                     "position_start": 73,
@@ -397,10 +390,10 @@
             "en": "Most of them could only see a future enormous wealth.",
             "target_words": [
                 {
-                    "word_in_sentence": "rik",
+                    "word_in_sentence": "rikedom",
                     "base_form": "rik",
                     "position_start": 49,
-                    "position_end": 52,
+                    "position_end": 56,
                     "contextual_en": "wealth"
                 },
                 {

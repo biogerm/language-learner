@@ -50,10 +50,10 @@
             "en": "On the poster it said: \"Why not?",
             "target_words": [
                 {
-                    "word_in_sentence": "affisch",
+                    "word_in_sentence": "affischen",
                     "base_form": "affisch",
                     "position_start": 3,
-                    "position_end": 10,
+                    "position_end": 12,
                     "contextual_en": "poster"
                 },
                 {
@@ -220,10 +220,10 @@
                     "contextual_en": "break his neck"
                 },
                 {
-                    "word_in_sentence": "nacke",
+                    "word_in_sentence": "nacken",
                     "base_form": "nacke",
                     "position_start": 59,
-                    "position_end": 64,
+                    "position_end": 65,
                     "contextual_en": "neck"
                 }
             ],
@@ -391,10 +391,10 @@
             "en": "He said that the accident was a drunken mistake or something like that.",
             "target_words": [
                 {
-                    "word_in_sentence": "fylle",
+                    "word_in_sentence": "fyllemisstag",
                     "base_form": "fylle-",
                     "position_start": 34,
-                    "position_end": 39,
+                    "position_end": 46,
                     "contextual_en": "drunken"
                 },
                 {
@@ -414,9 +414,9 @@
                     "contextual_en": "said"
                 },
                 {
-                    "word_in_sentence": "misstag",
+                    "word_in_sentence": "fyllemisstag",
                     "base_form": "misstag",
-                    "position_start": 39,
+                    "position_start": 34,
                     "position_end": 46,
                     "contextual_en": "mistake"
                 }
@@ -458,17 +458,17 @@
             "en": "He was actually an allergy sufferer and was very allergic to certain unhealthy foods, which ironically led to overweight.",
             "target_words": [
                 {
-                    "word_in_sentence": "led",
+                    "word_in_sentence": "ledde",
                     "base_form": "led",
                     "position_start": 95,
-                    "position_end": 98,
+                    "position_end": 100,
                     "contextual_en": "led"
                 },
                 {
-                    "word_in_sentence": "faktisk",
+                    "word_in_sentence": "faktiskt",
                     "base_form": "faktisk",
                     "position_start": 8,
-                    "position_end": 15,
+                    "position_end": 16,
                     "contextual_en": "actually"
                 },
                 {

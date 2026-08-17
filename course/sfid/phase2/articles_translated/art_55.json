@@ -81,13 +81,6 @@
             "en": "Unfortunately, her husband was often away on trips, and his business sometimes went badly.",
             "target_words": [
                 {
-                    "word_in_sentence": "vara borta",
-                    "base_form": "vara borta",
-                    "position_start": 31,
-                    "position_end": 41,
-                    "contextual_en": "be away"
-                },
-                {
                     "word_in_sentence": "gå dåligt för",
                     "base_form": "gå dåligt för",
                     "position_start": 75,
@@ -296,13 +289,6 @@
             "en": "She wanted everything in life to be as... as possible, almost perfect.",
             "target_words": [
                 {
-                    "word_in_sentence": "le",
-                    "base_form": "le",
-                    "position_start": 7,
-                    "position_end": 9,
-                    "contextual_en": "smile"
-                },
-                {
                     "word_in_sentence": "så… som möjligt",
                     "base_form": "så… som möjligt",
                     "position_start": 39,
@@ -355,13 +341,6 @@
             "sv": "Hon brukade tjata på hunden att alltid vara lydig och ibland graciös, men hunden var istället ganska klumpig och mycket lekfull.",
             "en": "She used to nag the dog to always be obedient and sometimes graceful, but the dog was instead quite clumsy and very playful.",
             "target_words": [
-                {
-                    "word_in_sentence": "le",
-                    "base_form": "le",
-                    "position_start": 90,
-                    "position_end": 92,
-                    "contextual_en": "smile"
-                },
                 {
                     "word_in_sentence": "tjata",
                     "base_form": "tjata",
@@ -473,10 +452,10 @@
             "en": "All the old woman's friends, and also her loved ones, immediately thought the dog was cute.",
             "target_words": [
                 {
-                    "word_in_sentence": "gumma",
+                    "word_in_sentence": "Gummans",
                     "base_form": "gumma",
                     "position_start": 0,
-                    "position_end": 5,
+                    "position_end": 7,
                     "contextual_en": "old woman's"
                 },
                 {
@@ -509,13 +488,6 @@
             "sv": "Han var självständig, men kunde också ibland skrämma grannarna när han plötsligt blev galen och sprang runt i cirklar.",
             "en": "He was independent, but could also sometimes scare the neighbors when he suddenly went crazy and ran around in circles.",
             "target_words": [
-                {
-                    "word_in_sentence": "le",
-                    "base_form": "le",
-                    "position_start": 82,
-                    "position_end": 84,
-                    "contextual_en": "smile"
-                },
                 {
                     "word_in_sentence": "självständig",
                     "base_form": "självständig",
@@ -674,13 +646,6 @@
             "en": "A really exciting breakthrough actually came when she suddenly became a very successful local dog trainer.",
             "target_words": [
                 {
-                    "word_in_sentence": "le",
-                    "base_form": "le",
-                    "position_start": 65,
-                    "position_end": 67,
-                    "contextual_en": "smile"
-                },
-                {
                     "word_in_sentence": "genombrott",
                     "base_form": "genombrott",
                     "position_start": 22,
@@ -688,10 +653,10 @@
                     "contextual_en": "breakthrough"
                 },
                 {
-                    "word_in_sentence": "faktisk",
+                    "word_in_sentence": "faktiskt",
                     "base_form": "faktisk",
                     "position_start": 37,
-                    "position_end": 44,
+                    "position_end": 45,
                     "contextual_en": "actually"
                 },
                 {

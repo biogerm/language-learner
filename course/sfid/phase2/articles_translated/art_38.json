@@ -201,13 +201,6 @@
                     "position_start": 9,
                     "position_end": 22,
                     "contextual_en": "entertaining"
-                },
-                {
-                    "word_in_sentence": "dra",
-                    "base_form": "dra",
-                    "position_start": 48,
-                    "position_end": 51,
-                    "contextual_en": "drag"
                 }
             ],
             "secondary_words": [
@@ -545,10 +538,10 @@
             "en": "Her absolutely best leisure activity was downhill skiing during a cold winter.",
             "target_words": [
                 {
-                    "word_in_sentence": "fritid",
+                    "word_in_sentence": "fritidsaktivitet",
                     "base_form": "fritidsvana",
                     "position_start": 21,
-                    "position_end": 27,
+                    "position_end": 37,
                     "contextual_en": "leisure"
                 },
                 {
@@ -862,13 +855,6 @@
                     "contextual_en": "furthermore"
                 },
                 {
-                    "word_in_sentence": "skridsko",
-                    "base_form": "skridsko",
-                    "position_start": 25,
-                    "position_end": 33,
-                    "contextual_en": "skate"
-                },
-                {
                     "word_in_sentence": "skridskoåkning",
                     "base_form": "skridskoåkning",
                     "position_start": 25,
@@ -892,10 +878,10 @@
             "en": "I put on my skates and glide on the ice\", she answered.",
             "target_words": [
                 {
-                    "word_in_sentence": "skridsko",
+                    "word_in_sentence": "skridskor",
                     "base_form": "skridsko",
                     "position_start": 23,
-                    "position_end": 31,
+                    "position_end": 32,
                     "contextual_en": "skates"
                 }
             ],
@@ -922,9 +908,9 @@
             "en": "\"But I don't like all motorsports.",
             "target_words": [
                 {
-                    "word_in_sentence": "sport",
+                    "word_in_sentence": "motorsport",
                     "base_form": "sport",
-                    "position_start": 30,
+                    "position_start": 25,
                     "position_end": 35,
                     "contextual_en": "sports"
                 },
@@ -959,10 +945,10 @@
             "en": "I would never drive a sports car fast or be one of those so-called quiet golfers who walk around.\"",
             "target_words": [
                 {
-                    "word_in_sentence": "sport",
+                    "word_in_sentence": "sportbil",
                     "base_form": "sport",
                     "position_start": 26,
-                    "position_end": 31,
+                    "position_end": 34,
                     "contextual_en": "sports"
                 },
                 {
@@ -1218,10 +1204,10 @@
             "en": "\"Maybe\", she said with a laugh, \"but I actually think they should abolish all sedentary behavior in the world!\"",
             "target_words": [
                 {
-                    "word_in_sentence": "faktisk",
+                    "word_in_sentence": "faktiskt",
                     "base_form": "faktisk",
                     "position_start": 49,
-                    "position_end": 56,
+                    "position_end": 57,
                     "contextual_en": "actually"
                 },
                 {

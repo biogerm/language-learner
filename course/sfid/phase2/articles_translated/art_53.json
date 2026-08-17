@@ -428,10 +428,10 @@
                     "contextual_en": "impolite"
                 },
                 {
-                    "word_in_sentence": "faktisk",
+                    "word_in_sentence": "faktiskt",
                     "base_form": "faktisk",
                     "position_start": 26,
-                    "position_end": 33,
+                    "position_end": 34,
                     "contextual_en": "actually"
                 },
                 {
@@ -581,15 +581,7 @@
             "sentence_id": "art_53_s018",
             "sv": "Han brukade ofta sätta i system att utnyttja folks godhet.",
             "en": "He often used to make a habit of exploiting people's kindness.",
-            "target_words": [
-                {
-                    "word_in_sentence": "sätta i",
-                    "base_form": "sätta i",
-                    "position_start": 17,
-                    "position_end": 24,
-                    "contextual_en": "place"
-                }
-            ],
+            "target_words": [],
             "secondary_words": [
                 {
                     "word_in_sentence": "utnyttja",
@@ -759,13 +751,6 @@
                     "position_start": 37,
                     "position_end": 44,
                     "contextual_en": "answer"
-                },
-                {
-                    "word_in_sentence": "för att få",
-                    "base_form": "för att få",
-                    "position_start": 57,
-                    "position_end": 67,
-                    "contextual_en": "in order to receive"
                 }
             ],
             "secondary_words": [

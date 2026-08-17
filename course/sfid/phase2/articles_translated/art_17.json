@@ -117,16 +117,9 @@
                 {
                     "word_in_sentence": "trädgård",
                     "base_form": "trädgård",
-                    "position_start": 21,
-                    "position_end": 29,
+                    "position_start": 46,
+                    "position_end": 54,
                     "contextual_en": "garden"
-                },
-                {
-                    "word_in_sentence": "träd",
-                    "base_form": "träd",
-                    "position_start": 21,
-                    "position_end": 25,
-                    "contextual_en": "tree"
                 }
             ],
             "secondary_words": [
@@ -310,13 +303,6 @@
                     "position_start": 18,
                     "position_end": 26,
                     "contextual_en": "dissatisfied"
-                },
-                {
-                    "word_in_sentence": "snö",
-                    "base_form": "snö",
-                    "position_start": 21,
-                    "position_end": 24,
-                    "contextual_en": "snow"
                 }
             ],
             "secondary_words": [
@@ -356,10 +342,10 @@
                     "contextual_en": "walk the dog"
                 },
                 {
-                    "word_in_sentence": "hund",
+                    "word_in_sentence": "hunden",
                     "base_form": "hund",
                     "position_start": 48,
-                    "position_end": 52,
+                    "position_end": 54,
                     "contextual_en": "dog"
                 }
             ],
@@ -533,8 +519,8 @@
                 {
                     "word_in_sentence": "djur",
                     "base_form": "djur",
-                    "position_start": 42,
-                    "position_end": 46,
+                    "position_start": 77,
+                    "position_end": 81,
                     "contextual_en": "animal"
                 },
                 {
@@ -588,13 +574,6 @@
             "sv": "Där fanns hundratals små djur, bland andra ett litet rådjur och en sjungande fågel.",
             "en": "There were hundreds of small animals there, among others a small deer and a singing bird.",
             "target_words": [
-                {
-                    "word_in_sentence": "hund",
-                    "base_form": "hund",
-                    "position_start": 10,
-                    "position_end": 14,
-                    "contextual_en": "dog"
-                },
                 {
                     "word_in_sentence": "djur",
                     "base_form": "djur",

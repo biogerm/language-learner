@@ -41,15 +41,7 @@
             "sentence_id": "art_50_s003",
             "sv": "Det är sant att tiderna förändras verkligen snabbt.",
             "en": "It is true that times really change fast.",
-            "target_words": [
-                {
-                    "word_in_sentence": "tiderna förändras",
-                    "base_form": "tiderna förändras",
-                    "position_start": 16,
-                    "position_end": 33,
-                    "contextual_en": "times change"
-                }
-            ],
+            "target_words": [],
             "secondary_words": [
                 {
                     "word_in_sentence": "verkligen",
@@ -110,10 +102,10 @@
                     "contextual_en": "get married"
                 },
                 {
-                    "word_in_sentence": "gift",
+                    "word_in_sentence": "gifta",
                     "base_form": "gift",
                     "position_start": 32,
-                    "position_end": 36,
+                    "position_end": 37,
                     "contextual_en": "married"
                 }
             ],
@@ -147,10 +139,10 @@
                     "contextual_en": "connection"
                 },
                 {
-                    "word_in_sentence": "prat",
+                    "word_in_sentence": "pratar",
                     "base_form": "prat",
                     "position_start": 66,
-                    "position_end": 70,
+                    "position_end": 72,
                     "contextual_en": "talk"
                 },
                 {
@@ -348,10 +340,10 @@
                     "contextual_en": "get used"
                 },
                 {
-                    "word_in_sentence": " vid",
+                    "word_in_sentence": "mig",
                     "base_form": "bror",
-                    "position_start": 46,
-                    "position_end": 50,
+                    "position_start": 43,
+                    "position_end": 46,
                     "contextual_en": "to"
                 },
                 {
@@ -415,10 +407,10 @@
             "en": "We had hired a young babysitter for some small schoolchildren from another family with children.",
             "target_words": [
                 {
-                    "word_in_sentence": "barn",
+                    "word_in_sentence": "barnvakt",
                     "base_form": "barn",
                     "position_start": 24,
-                    "position_end": 28,
+                    "position_end": 32,
                     "contextual_en": "children"
                 },
                 {
@@ -459,10 +451,10 @@
             "en": "The children loved old fairy tales.",
             "target_words": [
                 {
-                    "word_in_sentence": "barn",
+                    "word_in_sentence": "Barnen",
                     "base_form": "barn",
                     "position_start": 0,
-                    "position_end": 4,
+                    "position_end": 6,
                     "contextual_en": "children"
                 }
             ],
@@ -496,10 +488,10 @@
                     "contextual_en": "Little Red Riding Hood and the Wolf"
                 },
                 {
-                    "word_in_sentence": "varg",
+                    "word_in_sentence": "vargen",
                     "base_form": "varg",
                     "position_start": 60,
-                    "position_end": 64,
+                    "position_end": 66,
                     "contextual_en": "wolf"
                 },
                 {
@@ -660,10 +652,10 @@
             "en": "The wolf is, as you know, the dog's famous ancestor.",
             "target_words": [
                 {
-                    "word_in_sentence": "varg",
+                    "word_in_sentence": "Vargen",
                     "base_form": "varg",
                     "position_start": 0,
-                    "position_end": 4,
+                    "position_end": 6,
                     "contextual_en": "wolf"
                 },
                 {
@@ -720,10 +712,10 @@
                     "contextual_en": "selling point"
                 },
                 {
-                    "word_in_sentence": "ndna tider.",
+                    "word_in_sentence": "regelbundna",
                     "base_form": "regelbunden",
-                    "position_start": 83,
-                    "position_end": 94,
+                    "position_start": 76,
+                    "position_end": 87,
                     "contextual_en": "regular times."
                 }
             ],

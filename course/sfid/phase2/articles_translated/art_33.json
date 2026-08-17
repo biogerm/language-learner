@@ -146,10 +146,10 @@
                     "contextual_en": "Do you usually have a cozy time?"
                 },
                 {
-                    "word_in_sentence": "mys",
+                    "word_in_sentence": "mysa",
                     "base_form": "mys",
                     "position_start": 11,
-                    "position_end": 14,
+                    "position_end": 15,
                     "contextual_en": "cozy time"
                 },
                 {
@@ -195,13 +195,6 @@
                     "position_start": 51,
                     "position_end": 55,
                     "contextual_en": "get cozy"
-                },
-                {
-                    "word_in_sentence": "rad",
-                    "base_form": "rad",
-                    "position_start": 7,
-                    "position_end": 10,
-                    "contextual_en": "line"
                 }
             ],
             "secondary_words": [
@@ -551,10 +544,10 @@
             "en": "I didn't want to keep my own finances a secret, so I said that I have to think about every thing I buy.",
             "target_words": [
                 {
-                    "word_in_sentence": "ålla min ege",
+                    "word_in_sentence": "hålla",
                     "base_form": "hålla hemlig",
-                    "position_start": 16,
-                    "position_end": 28,
+                    "position_start": 15,
+                    "position_end": 20,
                     "contextual_en": "keep my own"
                 },
                 {

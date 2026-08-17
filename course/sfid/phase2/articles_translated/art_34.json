@@ -230,13 +230,6 @@
                     "position_start": 75,
                     "position_end": 83,
                     "contextual_en": "silver lining"
-                },
-                {
-                    "word_in_sentence": "kant",
-                    "base_form": "kant",
-                    "position_start": 79,
-                    "position_end": 83,
-                    "contextual_en": "edge"
                 }
             ],
             "secondary_words": [
@@ -269,13 +262,6 @@
                     "contextual_en": "silver lining"
                 },
                 {
-                    "word_in_sentence": "kant",
-                    "base_form": "kant",
-                    "position_start": 21,
-                    "position_end": 25,
-                    "contextual_en": "edge"
-                },
-                {
                     "word_in_sentence": "pralinask",
                     "base_form": "pralinask",
                     "position_start": 57,
@@ -306,18 +292,11 @@
             "en": "It could certainly replace the night out for a while, but now I needed to rest.",
             "target_words": [
                 {
-                    "word_in_sentence": "utekväll",
+                    "word_in_sentence": "utekvällen",
                     "base_form": "utekväll",
                     "position_start": 25,
-                    "position_end": 33,
+                    "position_end": 35,
                     "contextual_en": "night out"
-                },
-                {
-                    "word_in_sentence": "kund",
-                    "base_form": "kund",
-                    "position_start": 4,
-                    "position_end": 8,
-                    "contextual_en": "customer"
                 },
                 {
                     "word_in_sentence": "säkert",
@@ -364,10 +343,10 @@
             "en": "In the cottage, above a dark cellar, there was a small hatch in the floor.",
             "target_words": [
                 {
-                    "word_in_sentence": "stuga",
+                    "word_in_sentence": "stugan",
                     "base_form": "stuga",
                     "position_start": 2,
-                    "position_end": 7,
+                    "position_end": 8,
                     "contextual_en": "cottage"
                 },
                 {
@@ -414,13 +393,6 @@
             "sv": "Jag ville inte alls öppna den, och inte heller gå ner dit.",
             "en": "I didn't want to open it at all, nor go down there.",
             "target_words": [
-                {
-                    "word_in_sentence": "inte alls",
-                    "base_form": "inte alls",
-                    "position_start": 10,
-                    "position_end": 19,
-                    "contextual_en": "not at all"
-                },
                 {
                     "word_in_sentence": "inte heller",
                     "base_form": "inte heller",
@@ -489,10 +461,10 @@
             "en": "Urban legends usually fascinate me, and the cellar felt like a scary place.",
             "target_words": [
                 {
-                    "word_in_sentence": "källare",
+                    "word_in_sentence": "källaren",
                     "base_form": "källare",
                     "position_start": 42,
-                    "position_end": 49,
+                    "position_end": 50,
                     "contextual_en": "cellar"
                 },
                 {
@@ -563,10 +535,10 @@
             "en": "For real relaxation, the cottage had an old color TV and a microwave, but no other modern gadget.",
             "target_words": [
                 {
-                    "word_in_sentence": "stuga",
+                    "word_in_sentence": "stugan",
                     "base_form": "stuga",
                     "position_start": 27,
-                    "position_end": 32,
+                    "position_end": 33,
                     "contextual_en": "cottage"
                 },
                 {
@@ -665,10 +637,10 @@
             "en": "We actually had the same last name.",
             "target_words": [
                 {
-                    "word_in_sentence": "faktisk",
+                    "word_in_sentence": "faktiskt",
                     "base_form": "faktisk",
                     "position_start": 8,
-                    "position_end": 15,
+                    "position_end": 16,
                     "contextual_en": "actually"
                 },
                 {
@@ -695,10 +667,10 @@
             "en": "We stood at the edge of the field and talked.",
             "target_words": [
                 {
-                    "word_in_sentence": "kant",
+                    "word_in_sentence": "kanten",
                     "base_form": "kant",
                     "position_start": 12,
-                    "position_end": 16,
+                    "position_end": 18,
                     "contextual_en": "edge"
                 }
             ],
@@ -963,20 +935,6 @@
                     "contextual_en": "of age"
                 },
                 {
-                    "word_in_sentence": " laga en",
-                    "base_form": "göra fin",
-                    "position_start": 83,
-                    "position_end": 91,
-                    "contextual_en": "make pretty"
-                },
-                {
-                    "word_in_sentence": " en b",
-                    "base_form": "krona",
-                    "position_start": 106,
-                    "position_end": 111,
-                    "contextual_en": "crown"
-                },
-                {
                     "word_in_sentence": "råd",
                     "base_form": "råd",
                     "position_start": 141,
@@ -1072,13 +1030,6 @@
                     "position_start": 16,
                     "position_end": 22,
                     "contextual_en": "close"
-                },
-                {
-                    "word_in_sentence": "spola ner",
-                    "base_form": "spola ner",
-                    "position_start": 44,
-                    "position_end": 53,
-                    "contextual_en": "flush down"
                 }
             ],
             "secondary_words": [

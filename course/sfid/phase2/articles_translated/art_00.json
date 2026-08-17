@@ -71,13 +71,6 @@
                     "contextual_en": "incredible"
                 },
                 {
-                    "word_in_sentence": "rolig",
-                    "base_form": "rolig",
-                    "position_start": 9,
-                    "position_end": 14,
-                    "contextual_en": "fun"
-                },
-                {
                     "word_in_sentence": "påverka",
                     "base_form": "påverka",
                     "position_start": 59,
@@ -166,13 +159,6 @@
             "en": "Today we don't really need to work as hard physically, because of our smart machines and systems that do the job for us.",
             "target_words": [
                 {
-                    "word_in_sentence": "egen",
-                    "base_form": "egen",
-                    "position_start": 17,
-                    "position_end": 21,
-                    "contextual_en": "own"
-                },
-                {
                     "word_in_sentence": "egentligen",
                     "base_form": "egentligen",
                     "position_start": 17,
@@ -192,13 +178,6 @@
                     "position_start": 59,
                     "position_end": 70,
                     "contextual_en": "because of"
-                },
-                {
-                    "word_in_sentence": "Om",
-                    "base_form": "om",
-                    "position_start": 104,
-                    "position_end": 106,
-                    "contextual_en": "If"
                 }
             ],
             "secondary_words": [
@@ -298,13 +277,6 @@
             "en": "He uses advanced mathematics and various digital tools to solve complex problems in his project.",
             "target_words": [
                 {
-                    "word_in_sentence": "Om",
-                    "base_form": "om",
-                    "position_start": 74,
-                    "position_end": 76,
-                    "contextual_en": "If"
-                },
-                {
                     "word_in_sentence": "matematik",
                     "base_form": "matematik",
                     "position_start": 23,
@@ -379,17 +351,10 @@
                     "contextual_en": "fun"
                 },
                 {
-                    "word_in_sentence": "Om",
-                    "base_form": "om",
-                    "position_start": 59,
-                    "position_end": 61,
-                    "contextual_en": "If"
-                },
-                {
-                    "word_in_sentence": "geolog",
+                    "word_in_sentence": "geologi",
                     "base_form": "geolog",
                     "position_start": 41,
-                    "position_end": 47,
+                    "position_end": 48,
                     "contextual_en": "geology"
                 },
                 {
@@ -525,13 +490,6 @@
             "en": "I guess that less than half of us regular people actually understand all the complicated technology we use.",
             "target_words": [
                 {
-                    "word_in_sentence": "Om",
-                    "base_form": "om",
-                    "position_start": 79,
-                    "position_end": 81,
-                    "contextual_en": "If"
-                },
-                {
                     "word_in_sentence": "gissar",
                     "base_form": "gissa",
                     "position_start": 4,
@@ -546,10 +504,10 @@
                     "contextual_en": "less than"
                 },
                 {
-                    "word_in_sentence": "faktisk",
+                    "word_in_sentence": "faktiskt",
                     "base_form": "faktisk",
                     "position_start": 53,
-                    "position_end": 60,
+                    "position_end": 61,
                     "contextual_en": "actually"
                 }
             ],
@@ -627,13 +585,6 @@
             "en": "Sometimes it feels like there is too much information everywhere.",
             "target_words": [
                 {
-                    "word_in_sentence": "Om",
-                    "base_form": "om",
-                    "position_start": 18,
-                    "position_end": 20,
-                    "contextual_en": "If"
-                },
-                {
                     "word_in_sentence": "för mycket",
                     "base_form": "för mycket",
                     "position_start": 35,
@@ -671,13 +622,6 @@
                     "contextual_en": "I found a lot of information online"
                 },
                 {
-                    "word_in_sentence": "hitta",
-                    "base_form": "hitta på",
-                    "position_start": 42,
-                    "position_end": 47,
-                    "contextual_en": "invent, think of"
-                },
-                {
                     "word_in_sentence": "nätet",
                     "base_form": "nätet",
                     "position_start": 72,
@@ -708,13 +652,6 @@
             "en": "There was an exciting statistic that clearly showed that we spend on average about three hours every evening in front of a TV screen in the living room.",
             "target_words": [
                 {
-                    "word_in_sentence": "Om",
-                    "base_form": "om",
-                    "position_start": 32,
-                    "position_end": 34,
-                    "contextual_en": "If"
-                },
-                {
                     "word_in_sentence": "statistik",
                     "base_form": "statistik",
                     "position_start": 21,
@@ -736,10 +673,10 @@
                     "contextual_en": "TV screen"
                 },
                 {
-                    "word_in_sentence": "teve",
+                    "word_in_sentence": "teveskärm",
                     "base_form": "teve",
                     "position_start": 122,
-                    "position_end": 126,
+                    "position_end": 131,
                     "contextual_en": "TV"
                 }
             ],

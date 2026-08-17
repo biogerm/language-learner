@@ -198,10 +198,10 @@
             "en": "A classic exercise is to circle or mark an underlined sentence in the text and read with the right emphasis.",
             "target_words": [
                 {
-                    "word_in_sentence": "klass",
+                    "word_in_sentence": "klassisk",
                     "base_form": "klass",
                     "position_start": 3,
-                    "position_end": 8,
+                    "position_end": 11,
                     "contextual_en": "class"
                 },
                 {
@@ -256,13 +256,6 @@
             "en": "I decided to try a crash course in pedagogy.",
             "target_words": [
                 {
-                    "word_in_sentence": "prov",
-                    "base_form": "prov",
-                    "position_start": 25,
-                    "position_end": 29,
-                    "contextual_en": "test"
-                },
-                {
                     "word_in_sentence": "prova",
                     "base_form": "prova",
                     "position_start": 25,
@@ -293,9 +286,9 @@
             "en": "I wanted to do an internship at a preschool to see how a preschool teacher works.",
             "target_words": [
                 {
-                    "word_in_sentence": "skola",
+                    "word_in_sentence": "förskola",
                     "base_form": "skola",
-                    "position_start": 30,
+                    "position_start": 27,
                     "position_end": 35,
                     "contextual_en": "school"
                 },
@@ -448,10 +441,10 @@
             "en": "You can classify him as a future academic.",
             "target_words": [
                 {
-                    "word_in_sentence": "klass",
+                    "word_in_sentence": "klassa",
                     "base_form": "klass",
                     "position_start": 8,
-                    "position_end": 13,
+                    "position_end": 14,
                     "contextual_en": "class"
                 },
                 {
@@ -501,8 +494,8 @@
                 {
                     "word_in_sentence": "forskning",
                     "base_form": "forskning",
-                    "position_start": 65,
-                    "position_end": 74,
+                    "position_start": 95,
+                    "position_end": 104,
                     "contextual_en": "research"
                 },
                 {

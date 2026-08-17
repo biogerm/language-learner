@@ -287,10 +287,10 @@
             "en": "The factory was a large food company.",
             "target_words": [
                 {
-                    "word_in_sentence": "fabrik",
+                    "word_in_sentence": "Fabriken",
                     "base_form": "fabrik",
                     "position_start": 0,
-                    "position_end": 6,
+                    "position_end": 8,
                     "contextual_en": "factory"
                 },
                 {
@@ -475,8 +475,8 @@
                     "word_in_sentence": "partner",
                     "base_form": "partner",
                     "contextual_en": "partner",
-                    "position_start": 22,
-                    "position_end": 29
+                    "position_start": 50,
+                    "position_end": 57
                 },
                 {
                     "word_in_sentence": "behövde",

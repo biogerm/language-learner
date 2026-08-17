@@ -73,17 +73,10 @@
             "en": "My friend, who is a famous playwright, loves a lot of drama in the kitchen.",
             "target_words": [
                 {
-                    "word_in_sentence": "mat",
-                    "base_form": "mat",
-                    "position_start": 27,
-                    "position_end": 30,
-                    "contextual_en": "food"
-                },
-                {
                     "word_in_sentence": "dramatik",
                     "base_form": "dramatik",
-                    "position_start": 24,
-                    "position_end": 32,
+                    "position_start": 50,
+                    "position_end": 58,
                     "contextual_en": "drama"
                 },
                 {
@@ -214,13 +207,6 @@
             "en": "For a while I thought we should buy takeout.",
             "target_words": [
                 {
-                    "word_in_sentence": "mat",
-                    "base_form": "mat",
-                    "position_start": 47,
-                    "position_end": 50,
-                    "contextual_en": "food"
-                },
-                {
                     "word_in_sentence": "För en stund",
                     "base_form": "för en stund",
                     "position_start": 0,
@@ -303,9 +289,9 @@
             "en": "Instead of... going to a restaurant, we started making easy finger food and slicing up every vegetable as well as fruit like apple and banana.",
             "target_words": [
                 {
-                    "word_in_sentence": "mat",
+                    "word_in_sentence": "plockmat",
                     "base_form": "mat",
-                    "position_start": 67,
+                    "position_start": 62,
                     "position_end": 70,
                     "contextual_en": "food"
                 },
@@ -360,13 +346,6 @@
                 }
             ],
             "secondary_words": [
-                {
-                    "word_in_sentence": "skära upp",
-                    "base_form": "skära upp",
-                    "contextual_en": "cut up",
-                    "position_start": 75,
-                    "position_end": 84
-                },
                 {
                     "word_in_sentence": "varje",
                     "base_form": "varje",
@@ -627,8 +606,8 @@
                     "word_in_sentence": "doften",
                     "base_form": "doft",
                     "contextual_en": "The scent",
-                    "position_start": -1,
-                    "position_end": -1
+                    "position_start": 0,
+                    "position_end": 6
                 },
                 {
                     "word_in_sentence": "vitlök",
@@ -754,8 +733,8 @@
                     "word_in_sentence": "ibland",
                     "base_form": "ibland",
                     "contextual_en": "sometimes",
-                    "position_start": -1,
-                    "position_end": -1
+                    "position_start": 0,
+                    "position_end": 6
                 }
             ]
         },
@@ -784,8 +763,8 @@
                     "word_in_sentence": "vatten",
                     "base_form": "vatten",
                     "contextual_en": "water",
-                    "position_start": 43,
-                    "position_end": 49
+                    "position_start": 0,
+                    "position_end": 6
                 },
                 {
                     "word_in_sentence": "bäst",

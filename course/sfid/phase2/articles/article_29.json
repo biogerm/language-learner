@@ -19,10 +19,10 @@
                     "position_end": 18
                 },
                 {
-                    "word_in_sentence": "bo",
+                    "word_in_sentence": "bodde",
                     "base_form": "bo",
                     "position_start": 19,
-                    "position_end": 21
+                    "position_end": 24
                 },
                 {
                     "word_in_sentence": "gammal",
@@ -172,10 +172,10 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "bo",
+                    "word_in_sentence": "bostad",
                     "base_form": "bo",
                     "position_start": 46,
-                    "position_end": 48
+                    "position_end": 52
                 },
                 {
                     "word_in_sentence": "på senare tid",
@@ -798,9 +798,9 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "morgon",
+                    "word_in_sentence": "imorgon",
                     "base_form": "morgon",
-                    "position_start": 12,
+                    "position_start": 11,
                     "position_end": 18
                 },
                 {
@@ -935,10 +935,10 @@
                     "position_end": 40
                 },
                 {
-                    "word_in_sentence": "lik",
+                    "word_in_sentence": "liknande",
                     "base_form": "lik",
                     "position_start": 61,
-                    "position_end": 64
+                    "position_end": 69
                 }
             ],
             "secondary_words": [

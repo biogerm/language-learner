@@ -106,13 +106,6 @@
                     "position_start": 55,
                     "position_end": 60,
                     "contextual_en": "jog"
-                },
-                {
-                    "word_in_sentence": "ge",
-                    "base_form": "giva",
-                    "position_start": 66,
-                    "position_end": 68,
-                    "contextual_en": "give"
                 }
             ],
             "secondary_words": [
@@ -344,13 +337,6 @@
             "en": "He never thought he would be admitted to a hospital.",
             "target_words": [
                 {
-                    "word_in_sentence": "ge",
-                    "base_form": "giva",
-                    "position_start": 41,
-                    "position_end": 43,
-                    "contextual_en": "give"
-                },
-                {
                     "word_in_sentence": "intagen",
                     "base_form": "intagen",
                     "position_start": 37,
@@ -431,13 +417,6 @@
             "sv": "Han skötte sina matvanor perfekt och drack absolut ingen alkohol, han var alltså aldrig berusad.",
             "en": "He managed his eating habits perfectly and drank absolutely no alcohol, so he was never intoxicated.",
             "target_words": [
-                {
-                    "word_in_sentence": "ge",
-                    "base_form": "giva",
-                    "position_start": 53,
-                    "position_end": 55,
-                    "contextual_en": "give"
-                },
                 {
                     "word_in_sentence": "matvanor",
                     "base_form": "matvana",
@@ -548,10 +527,10 @@
                     "contextual_en": "freshening up"
                 },
                 {
-                    "word_in_sentence": "fräsch",
+                    "word_in_sentence": "uppfräschning",
                     "base_form": "fräsch",
-                    "position_start": 79,
-                    "position_end": 85,
+                    "position_start": 76,
+                    "position_end": 89,
                     "contextual_en": "fresh"
                 },
                 {
@@ -696,9 +675,9 @@
                     "contextual_en": "infected with rabies"
                 },
                 {
-                    "word_in_sentence": "smittad",
+                    "word_in_sentence": "rabiessmittad",
                     "base_form": "smittad",
-                    "position_start": 50,
+                    "position_start": 44,
                     "position_end": 57,
                     "contextual_en": "infected"
                 }
@@ -860,10 +839,10 @@
             "en": "His suffering was terrible and he even got a partial facial paralysis.",
             "target_words": [
                 {
-                    "word_in_sentence": "lida",
+                    "word_in_sentence": "lidande",
                     "base_form": "lida",
                     "position_start": 5,
-                    "position_end": 9,
+                    "position_end": 12,
                     "contextual_en": "suffer"
                 },
                 {

@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, useMemo, useCallback } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import { useParams } from 'react-router-dom';
 import { db } from '../db/dexie';
 import { submitGatePass } from '../utils/fsrs';
@@ -7,7 +7,7 @@ import { useData } from '../contexts/DataContext';
 
 export default function Dictation() {
   const { courseId } = useParams();
-  const { courseData, loadCourse } = useData();
+  const { courseData, loadCourse, selectedStage, selectedArticleId } = useData();
   const [queue, setQueue] = useState<any[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [input, setInput] = useState('');
@@ -21,8 +21,7 @@ export default function Dictation() {
   
   const [loading, setLoading] = useState(true);
 
-  const [selectedStage, setSelectedStage] = useState('');
-  const [selectedArticleId, setSelectedArticleId] = useState('');
+  const [stats, setStats] = useState({ total: 0, mastered: 0, remaining: 0 });
   
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const timerRef = useRef<number | null>(null);
@@ -44,39 +43,6 @@ export default function Dictation() {
   useEffect(() => {
     if (courseId) loadCourse(courseId);
   }, [courseId, loadCourse]);
-
-  const stages = useMemo(() => {
-    if (!courseData) return [];
-    return Object.keys(courseData).map(stageName => {
-      const stageObj = courseData[stageName];
-      return {
-        id: stageName,
-        title: stageName,
-        articles: Object.keys(stageObj).map(articleTitle => ({
-          id: articleTitle,
-          title: articleTitle
-        }))
-      };
-    });
-  }, [courseData]);
-
-  useEffect(() => {
-    if (stages.length > 0 && !selectedStage) {
-      setSelectedStage(stages[0]?.id || '');
-      setSelectedArticleId(stages[0]?.articles?.[0]?.id || '');
-    }
-  }, [stages, selectedStage]);
-
-  const handleStageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    const stageId = e.target.value;
-    setSelectedStage(stageId);
-    const stage = stages.find(s => s.id === stageId);
-    if (stage && stage.articles.length > 0) {
-      setSelectedArticleId(stage.articles[0].id);
-    } else {
-      setSelectedArticleId('');
-    }
-  };
 
   useEffect(() => {
     const fetchQueue = async () => {
@@ -106,14 +72,27 @@ export default function Dictation() {
           const customStr = localStorage.getItem('customVocab');
           if (customStr) {
              const cv = JSON.parse(customStr);
-             Object.keys(cv).forEach(k => {
-               if (cv[k] !== 'none') words.add(k.toLowerCase());
+             cv.forEach((v: any) => {
+                 if (v.stage === selectedStage && v.article === selectedArticleId) {
+                     words.add(v.sv.toLowerCase());
+                 }
              });
           }
-          const queueItems = Array.from(words).map(w => ({ word_id: w }));
+          const mw = JSON.parse(localStorage.getItem('dictationMasteredWords') || '[]');
+          
+          const total = words.size;
+          const queueItems = Array.from(words)
+              .filter(w => !mw.includes(w))
+              .map(w => ({ word_id: w }));
+          
           setQueue(queueItems.sort(() => 0.5 - Math.random()));
+          
+          const remaining = queueItems.length;
+          const mastered = total - remaining;
+          setStats({ total, mastered, remaining });
         } else {
           setQueue([]);
+          setStats({ total: 0, mastered: 0, remaining: 0 });
         }
       }
       setCurrentIndex(0);
@@ -141,9 +120,23 @@ export default function Dictation() {
     }
   }, [currentWord]);
 
-  // Clean text function
   const cleanText = (text: string) => {
     return text.replace(/[.,!?"':;()\-\u2019\u2018]/g, '').trim().toLowerCase();
+  };
+
+  const updateMastery = (wordId: string, correct: boolean) => {
+    const mw = JSON.parse(localStorage.getItem('dictationMasteredWords') || '[]');
+    if (correct) {
+        if (!mw.includes(wordId.toLowerCase())) {
+            mw.push(wordId.toLowerCase());
+            localStorage.setItem('dictationMasteredWords', JSON.stringify(mw));
+        }
+    } else {
+        const newMw = mw.filter((w: string) => w !== wordId.toLowerCase());
+        if (newMw.length !== mw.length) {
+            localStorage.setItem('dictationMasteredWords', JSON.stringify(newMw));
+        }
+    }
   };
 
   const proceedToNext = useCallback(() => {
@@ -173,8 +166,12 @@ export default function Dictation() {
     setFeedbackMsg('Correct!');
     playAudio();
     
+    if (appMode === 'study' && currentWord) {
+        updateMastery(currentWord.word, true);
+    }
+
     const timeSpent = (Date.now() - startTime) / 1000;
-    if (courseId && currentRecord) {
+    if (appMode === 'review' && courseId && currentRecord) {
        const res = await submitGatePass(courseId, currentRecord.word_id, 'dictation', wrongCount, timeSpent, false, 0);
        if (res.completed) {
          window.dispatchEvent(new CustomEvent('fsrs-sync', { detail: `Rated: ${res.rating}` }));
@@ -190,6 +187,11 @@ export default function Dictation() {
     
     setStatus('revealed');
     setFeedbackMsg('已Reveal Answer');
+    
+    if (appMode === 'study') {
+        updateMastery(currentWord.word, false);
+    }
+
     playAudio();
     
     const timeSpent = (Date.now() - startTime) / 1000;
@@ -251,32 +253,59 @@ export default function Dictation() {
     }
   };
 
+  const handleResetProgress = () => {
+    if (appMode !== 'study') return;
+    const mw = JSON.parse(localStorage.getItem('dictationMasteredWords') || '[]');
+    let currentScopeWords: string[] = [];
+    
+    if (courseData && selectedStage && selectedArticleId) {
+      const sentences = courseData[selectedStage]?.[selectedArticleId] || [];
+      let sentsArray = sentences;
+      if (!Array.isArray(sentences) && typeof sentences === 'object') {
+        sentsArray = Object.keys(sentences).sort((a,b) => Number(a) - Number(b)).map(k => (sentences as any)[k]);
+      }
+      sentsArray.forEach((s: any) => {
+        if (s.target_words) {
+          s.target_words.forEach((w: any) => {
+            currentScopeWords.push((w.base_form || w.word_in_sentence).toLowerCase());
+          });
+        }
+      });
+      const customStr = localStorage.getItem('customVocab');
+      if (customStr) {
+         const cv = JSON.parse(customStr);
+         cv.forEach((v: any) => {
+             if (v.stage === selectedStage && v.article === selectedArticleId) {
+                 currentScopeWords.push(v.sv.toLowerCase());
+             }
+         });
+      }
+    }
+    const newMw = mw.filter((w: string) => !currentScopeWords.includes(w));
+    localStorage.setItem('dictationMasteredWords', JSON.stringify(newMw));
+    window.location.reload();
+  };
+
   if (loading) return <div className="glass-panel view-container" style={{ padding: '48px', fontSize: '20px', textAlign: 'center' }}>Loading dictation...</div>;
   if (!queue.length) return <div className="glass-panel view-container" style={{ padding: '48px', fontSize: '20px', textAlign: 'center' }}>No words available!</div>;
   if (currentIndex >= queue.length) return <div className="glass-panel view-container" style={{ padding: '48px', fontSize: '20px', textAlign: 'center' }}>Session complete!</div>;
 
-  const showSelectors = appMode === 'study' && stages.length > 0;
   const inputBorderColor = status === 'correct' ? 'var(--success)' : status === 'revealed' || wrongCount > 0 ? 'var(--error)' : 'var(--border)';
   const inputBgColor = status === 'correct' ? 'rgba(0, 255, 0, 0.1)' : status === 'revealed' ? 'rgba(255, 0, 0, 0.1)' : 'transparent';
 
   return (
     <div className="glass-panel view-container">
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px' }}>
-        {!showSelectors && <h3 style={{ margin: 0, fontSize: '24px' }}>Dictation ({appMode})</h3>}
-        {showSelectors && (
-          <div style={{ display: 'flex', gap: '16px', marginBottom: '24px' }}>
-            <select className="module-selector" value={selectedStage} onChange={handleStageChange}>
-              {stages.map(s => <option key={s.id} value={s.id}>{s.title}</option>)}
-            </select>
-            <select className="module-selector" value={selectedArticleId} onChange={e => setSelectedArticleId(e.target.value)}>
-              {stages.find(s => s.id === selectedStage)?.articles?.map(a => <option key={a.id} value={a.id}>{a.title}</option>)}
-            </select>
+
+      {appMode === 'study' && (
+          <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '16px' }}>
+              <div id="progress-stats" style={{ display: 'flex', alignItems: 'center', fontSize: '14px', color: 'var(--text-muted)' }}>
+                  Total: {stats.total} | <span style={{ color: 'var(--success)', margin: '0 4px' }}>Mastered: {stats.mastered}</span> | <span style={{ color: 'var(--accent)', margin: '0 4px' }}>Remaining: {stats.remaining}</span>
+                  <button onClick={handleResetProgress} title="Reset Progress" style={{ background: 'rgba(255,255,255,0.1)', border: 'none', color: 'var(--text)', borderRadius: '50%', width: '24px', height: '24px', cursor: 'pointer', marginLeft: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>↻</button>
+              </div>
           </div>
-        )}
-      </div>
+      )}
       
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <p style={{ margin: 0, color: 'var(--text)' }}>Card {currentIndex + 1} of {queue.length}</p>
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         <button 
           onClick={playAudio} 
           style={{ 
@@ -292,7 +321,7 @@ export default function Dictation() {
           onMouseEnter={e => e.currentTarget.style.opacity = '1'}
           onMouseLeave={e => e.currentTarget.style.opacity = '0.8'}
         >
-          🔊
+          ▶ Tab
         </button>
       </div>
 
@@ -305,7 +334,7 @@ export default function Dictation() {
             if (status === 'typing') setInput(e.target.value);
           }} 
           onKeyDown={handleKeyDown}
-          placeholder="Type what you hear..."
+          placeholder="Type here and hit Enter"
           disabled={status !== 'typing'}
           style={{ 
             width: '100%', 

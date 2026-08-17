@@ -214,10 +214,10 @@
             "en": "My old uncle, who actually worked in graphic design and often traveled to make contacts, had sent a strange letter.",
             "target_words": [
                 {
-                    "word_in_sentence": "far",
+                    "word_in_sentence": "farbror",
                     "base_form": "far",
                     "position_start": 10,
-                    "position_end": 13,
+                    "position_end": 17,
                     "contextual_en": "uncle"
                 },
                 {
@@ -265,10 +265,10 @@
             "en": "Uncle was a very calm northerner, more specifically a proud Norwegian.",
             "target_words": [
                 {
-                    "word_in_sentence": "far",
+                    "word_in_sentence": "Farbror",
                     "base_form": "far",
                     "position_start": 0,
-                    "position_end": 3,
+                    "position_end": 7,
                     "contextual_en": "Uncle"
                 },
                 {
@@ -434,10 +434,10 @@
             "en": "But my uncle had a completely different reason to get in touch now.",
             "target_words": [
                 {
-                    "word_in_sentence": "far",
+                    "word_in_sentence": "farbror",
                     "base_form": "far",
                     "position_start": 8,
-                    "position_end": 11,
+                    "position_end": 15,
                     "contextual_en": "uncle"
                 },
                 {
@@ -480,8 +480,8 @@
                 {
                     "word_in_sentence": "dotter",
                     "base_form": "dotter",
-                    "position_start": 24,
-                    "position_end": 30,
+                    "position_start": 44,
+                    "position_end": 50,
                     "contextual_en": "daughter"
                 }
             ],
@@ -508,10 +508,10 @@
             "en": "Uncle had apparently entered into an important agreement with a famous Japanese person to give away a unique friendship gift, a rare carnation, but he had told a little white lie about its true origin.",
             "target_words": [
                 {
-                    "word_in_sentence": "far",
+                    "word_in_sentence": "Farbror",
                     "base_form": "far",
                     "position_start": 0,
-                    "position_end": 3,
+                    "position_end": 7,
                     "contextual_en": "Uncle"
                 },
                 {
@@ -587,10 +587,10 @@
             "en": "Uncle was usually very careful never to shift his gaze when he spoke, but quite the contrary, he always wanted to meet one's gaze confidently.",
             "target_words": [
                 {
-                    "word_in_sentence": "far",
+                    "word_in_sentence": "Farbror",
                     "base_form": "far",
                     "position_start": 0,
-                    "position_end": 3,
+                    "position_end": 7,
                     "contextual_en": "Uncle"
                 },
                 {
@@ -675,10 +675,10 @@
             "en": "However, he now felt a deep shame over the lie and he had begun to feel guilt.",
             "target_words": [
                 {
-                    "word_in_sentence": "lögn",
+                    "word_in_sentence": "lögnen",
                     "base_form": "lögn",
                     "position_start": 42,
-                    "position_end": 46,
+                    "position_end": 48,
                     "contextual_en": "lie"
                 },
                 {

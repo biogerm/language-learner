@@ -102,10 +102,10 @@
             "en": "I was tired and thought it was nice to laze around and be a real couch potato.",
             "target_words": [
                 {
-                    "word_in_sentence": "skön",
+                    "word_in_sentence": "skönt",
                     "base_form": "skön",
                     "position_start": 36,
-                    "position_end": 40,
+                    "position_end": 41,
                     "contextual_en": "nice"
                 },
                 {
@@ -259,10 +259,10 @@
                     "contextual_en": "put on"
                 },
                 {
-                    "word_in_sentence": "skynda mi",
+                    "word_in_sentence": "skynda",
                     "base_form": "skynda på",
                     "position_start": 39,
-                    "position_end": 48,
+                    "position_end": 45,
                     "contextual_en": "hurry"
                 }
             ],
@@ -317,13 +317,6 @@
                     "position_start": 61,
                     "position_end": 65,
                     "contextual_en": "nice"
-                },
-                {
-                    "word_in_sentence": "ta på",
-                    "base_form": "ta på",
-                    "position_start": 79,
-                    "position_end": 84,
-                    "contextual_en": "sit on"
                 },
                 {
                     "word_in_sentence": "bygga",
@@ -473,13 +466,6 @@
                     "position_start": 31,
                     "position_end": 35,
                     "contextual_en": "soak up"
-                },
-                {
-                    "word_in_sentence": " ge mi",
-                    "base_form": "flytta",
-                    "position_start": 86,
-                    "position_end": 92,
-                    "contextual_en": "move"
                 }
             ],
             "secondary_words": [
@@ -581,10 +567,10 @@
                     "contextual_en": "divided"
                 },
                 {
-                    "word_in_sentence": "ar enor",
+                    "word_in_sentence": "var",
                     "base_form": "storlek",
-                    "position_start": 46,
-                    "position_end": 53,
+                    "position_start": 45,
+                    "position_end": 48,
                     "contextual_en": "were huge"
                 }
             ],
@@ -641,10 +627,10 @@
                     "contextual_en": "dry yourself"
                 },
                 {
-                    "word_in_sentence": "nog",
+                    "word_in_sentence": "noggrant",
                     "base_form": "nog",
                     "position_start": 31,
-                    "position_end": 34,
+                    "position_end": 39,
                     "contextual_en": "carefully"
                 }
             ],
@@ -663,13 +649,6 @@
             "sv": "Jag funderade på att ringa till frisören för en klippning i en snygg salong, så jag skulle slippa se tråkig ut.",
             "en": "I thought about calling the hairdresser for a haircut in a nice salon, so I wouldn't have to look boring.",
             "target_words": [
-                {
-                    "word_in_sentence": "ag fu",
-                    "base_form": "själv",
-                    "position_start": 1,
-                    "position_end": 6,
-                    "contextual_en": "self"
-                },
                 {
                     "word_in_sentence": "ringa till",
                     "base_form": "ringa till",

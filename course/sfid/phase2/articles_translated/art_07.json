@@ -115,9 +115,9 @@
             "en": "It was a large construction project next to a new shopping center.",
             "target_words": [
                 {
-                    "word_in_sentence": "projekt",
+                    "word_in_sentence": "byggnadsprojekt",
                     "base_form": "projekt",
-                    "position_start": 26,
+                    "position_start": 18,
                     "position_end": 33,
                     "contextual_en": "project"
                 },
@@ -129,10 +129,10 @@
                     "contextual_en": "construction project"
                 },
                 {
-                    "word_in_sentence": "handel",
+                    "word_in_sentence": "handelscentrum",
                     "base_form": "handel",
                     "position_start": 51,
-                    "position_end": 57,
+                    "position_end": 65,
                     "contextual_en": "shopping"
                 },
                 {
@@ -275,13 +275,6 @@
                     "position_start": 56,
                     "position_end": 62,
                     "contextual_en": "trade"
-                },
-                {
-                    "word_in_sentence": "vd",
-                    "base_form": "vd",
-                    "position_start": 28,
-                    "position_end": 30,
-                    "contextual_en": "CEO"
                 },
                 {
                     "word_in_sentence": "lansera",

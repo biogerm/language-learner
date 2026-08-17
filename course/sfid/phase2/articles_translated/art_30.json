@@ -189,10 +189,10 @@
             "en": "I usually daydream and take a break with coffee and a hard rusk in my living room.",
             "target_words": [
                 {
-                    "word_in_sentence": "vardag",
+                    "word_in_sentence": "vardagsrum",
                     "base_form": "vardag",
                     "position_start": 72,
-                    "position_end": 78,
+                    "position_end": 82,
                     "contextual_en": "day"
                 },
                 {
@@ -314,10 +314,10 @@
                     "contextual_en": "cleaner"
                 },
                 {
-                    "word_in_sentence": "lla miljö",
+                    "word_in_sentence": "hålla",
                     "base_form": "hålla ren",
-                    "position_start": 42,
-                    "position_end": 51,
+                    "position_start": 40,
+                    "position_end": 45,
                     "contextual_en": "keep the environment"
                 }
             ],
@@ -452,13 +452,6 @@
             "sv": "En myskväll (”en sån” = vardagligt för en sådan mysig kväll) är vad jag brukar leva för.",
             "en": "A cozy evening (\"en sån\" = colloquial for such a cozy evening) is what I usually live for.",
             "target_words": [
-                {
-                    "word_in_sentence": "vardag",
-                    "base_form": "vardag",
-                    "position_start": 24,
-                    "position_end": 30,
-                    "contextual_en": "everyday"
-                },
                 {
                     "word_in_sentence": "myskväll",
                     "base_form": "myskväll",

@@ -86,10 +86,10 @@
                     "contextual_en": "story"
                 },
                 {
-                    "word_in_sentence": "län",
+                    "word_in_sentence": "länder",
                     "base_form": "län",
                     "position_start": 57,
-                    "position_end": 60,
+                    "position_end": 63,
                     "contextual_en": "countries"
                 }
             ],
@@ -109,10 +109,10 @@
             "en": "\"Some countries had for a long time a powerful rule under a specific empress.",
             "target_words": [
                 {
-                    "word_in_sentence": "län",
+                    "word_in_sentence": "länder",
                     "base_form": "län",
                     "position_start": 7,
-                    "position_end": 10,
+                    "position_end": 13,
                     "contextual_en": "countries"
                 },
                 {
@@ -257,10 +257,10 @@
             "en": "An unknown foreigner or a political opponent could quickly end up on a gallows hill for a bloody execution.",
             "target_words": [
                 {
-                    "word_in_sentence": "län",
+                    "word_in_sentence": "utlänning",
                     "base_form": "län",
-                    "position_start": 11,
-                    "position_end": 14,
+                    "position_start": 9,
+                    "position_end": 18,
                     "contextual_en": "foreigner"
                 },
                 {
@@ -560,8 +560,8 @@
                 {
                     "word_in_sentence": "ledamot",
                     "base_form": "ledamot",
-                    "position_start": 45,
-                    "position_end": 52,
+                    "position_start": 81,
+                    "position_end": 88,
                     "contextual_en": "member"
                 }
             ],
@@ -648,8 +648,8 @@
                 {
                     "word_in_sentence": "omröstning",
                     "base_form": "omröstning",
-                    "position_start": 26,
-                    "position_end": 36,
+                    "position_start": 57,
+                    "position_end": 67,
                     "contextual_en": "vote"
                 }
             ],
@@ -897,13 +897,6 @@
             "sv": "Det stora torget brukar vara nere på stan, och det fungerar som en mycket bra samlingsplats.",
             "en": "The main square is usually down in town, and it serves as a very good gathering place.",
             "target_words": [
-                {
-                    "word_in_sentence": "vara nere på",
-                    "base_form": "vara nere på",
-                    "position_start": 24,
-                    "position_end": 36,
-                    "contextual_en": "be down in"
-                },
                 {
                     "word_in_sentence": "samlingsplats",
                     "base_form": "samlingsplats",

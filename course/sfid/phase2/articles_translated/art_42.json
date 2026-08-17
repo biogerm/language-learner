@@ -57,9 +57,9 @@
                     "contextual_en": "royal power"
                 },
                 {
-                    "word_in_sentence": "makt",
+                    "word_in_sentence": "kungamakt",
                     "base_form": "makt",
-                    "position_start": 32,
+                    "position_start": 27,
                     "position_end": 36,
                     "contextual_en": "power"
                 }
@@ -119,8 +119,8 @@
                 {
                     "word_in_sentence": "stat",
                     "base_form": "stat",
-                    "position_start": 4,
-                    "position_end": 8,
+                    "position_start": 128,
+                    "position_end": 132,
                     "contextual_en": "state"
                 },
                 {
@@ -182,10 +182,10 @@
             "en": "A future crown princess, a prince or a princess has a welcoming smile but makes no laws.",
             "target_words": [
                 {
-                    "word_in_sentence": "lag",
+                    "word_in_sentence": "lagar",
                     "base_form": "lag",
                     "position_start": 99,
-                    "position_end": 102,
+                    "position_end": 104,
                     "contextual_en": "laws"
                 },
                 {
@@ -198,15 +198,15 @@
                 {
                     "word_in_sentence": "prins",
                     "base_form": "prins",
-                    "position_start": 16,
-                    "position_end": 21,
+                    "position_start": 30,
+                    "position_end": 35,
                     "contextual_en": "prince"
                 },
                 {
                     "word_in_sentence": "prinsessa",
                     "base_form": "prinsessa",
-                    "position_start": 16,
-                    "position_end": 25,
+                    "position_start": 45,
+                    "position_end": 54,
                     "contextual_en": "princess"
                 },
                 {
@@ -240,13 +240,6 @@
             "en": "\"Should we...?\" a friend asked suddenly, as we stood at a large railway station to catch a train.",
             "target_words": [
                 {
-                    "word_in_sentence": "stat",
-                    "base_form": "stat",
-                    "position_start": 69,
-                    "position_end": 73,
-                    "contextual_en": "state"
-                },
-                {
                     "word_in_sentence": "Ska vi…?",
                     "base_form": "Ska vi…?",
                     "position_start": 1,
@@ -254,10 +247,10 @@
                     "contextual_en": "Should we...?"
                 },
                 {
-                    "word_in_sentence": "plötslig",
+                    "word_in_sentence": "plötsligt",
                     "base_form": "plötslig",
                     "position_start": 26,
-                    "position_end": 34,
+                    "position_end": 35,
                     "contextual_en": "sudden"
                 },
                 {
@@ -365,10 +358,10 @@
             "en": "He wanted to get hold of a role as an important leader and famous politician.",
             "target_words": [
                 {
-                    "word_in_sentence": "politik",
+                    "word_in_sentence": "politiker",
                     "base_form": "politik",
                     "position_start": 58,
-                    "position_end": 65,
+                    "position_end": 67,
                     "contextual_en": "politician"
                 },
                 {
@@ -498,10 +491,10 @@
             "en": "\"Someone wanted to lend a lot of state currency to a rich businessman so he became rich as a troll.",
             "target_words": [
                 {
-                    "word_in_sentence": "stat",
+                    "word_in_sentence": "statlig",
                     "base_form": "stat",
                     "position_start": 28,
-                    "position_end": 32,
+                    "position_end": 35,
                     "contextual_en": "state"
                 },
                 {
@@ -615,10 +608,10 @@
             "en": "In the past, an elite could carry out a demonstration of power.",
             "target_words": [
                 {
-                    "word_in_sentence": "makt",
+                    "word_in_sentence": "maktdemonstration",
                     "base_form": "makt",
                     "position_start": 37,
-                    "position_end": 41,
+                    "position_end": 54,
                     "contextual_en": "power"
                 },
                 {
@@ -1006,13 +999,6 @@
                     "position_start": 39,
                     "position_end": 51,
                     "contextual_en": "phrasal verbs"
-                },
-                {
-                    "word_in_sentence": "partikel",
-                    "base_form": "partikel",
-                    "position_start": 39,
-                    "position_end": 47,
-                    "contextual_en": "particle"
                 }
             ],
             "secondary_words": [
@@ -1045,10 +1031,10 @@
                     "contextual_en": "particle"
                 },
                 {
-                    "word_in_sentence": "kombinera",
+                    "word_in_sentence": "kombinerar",
                     "base_form": "kombinera",
                     "position_start": 5,
-                    "position_end": 14,
+                    "position_end": 15,
                     "contextual_en": "combine"
                 }
             ],

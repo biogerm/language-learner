@@ -103,9 +103,9 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "projekt",
+                    "word_in_sentence": "byggnadsprojekt",
                     "base_form": "projekt",
-                    "position_start": 26,
+                    "position_start": 18,
                     "position_end": 33
                 },
                 {
@@ -115,10 +115,10 @@
                     "position_end": 33
                 },
                 {
-                    "word_in_sentence": "handel",
+                    "word_in_sentence": "handelscentrum",
                     "base_form": "handel",
                     "position_start": 51,
-                    "position_end": 57
+                    "position_end": 65
                 },
                 {
                     "word_in_sentence": "handelscentrum",

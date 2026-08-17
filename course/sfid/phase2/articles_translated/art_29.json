@@ -20,10 +20,10 @@
                     "contextual_en": "period"
                 },
                 {
-                    "word_in_sentence": "bo",
+                    "word_in_sentence": "bodde",
                     "base_form": "bo",
                     "position_start": 19,
-                    "position_end": 21,
+                    "position_end": 24,
                     "contextual_en": "lived"
                 },
                 {
@@ -191,10 +191,10 @@
             "en": "So recently I started looking for a new home.",
             "target_words": [
                 {
-                    "word_in_sentence": "bo",
+                    "word_in_sentence": "bostad",
                     "base_form": "bo",
                     "position_start": 46,
-                    "position_end": 48,
+                    "position_end": 52,
                     "contextual_en": "home"
                 },
                 {
@@ -893,9 +893,9 @@
             "en": "What happens tomorrow?",
             "target_words": [
                 {
-                    "word_in_sentence": "morgon",
+                    "word_in_sentence": "imorgon",
                     "base_form": "morgon",
-                    "position_start": 12,
+                    "position_start": 11,
                     "position_end": 18,
                     "contextual_en": "tomorrow"
                 },
@@ -1047,10 +1047,10 @@
                     "contextual_en": "critic"
                 },
                 {
-                    "word_in_sentence": "lik",
+                    "word_in_sentence": "liknande",
                     "base_form": "lik",
                     "position_start": 61,
-                    "position_end": 64,
+                    "position_end": 69,
                     "contextual_en": "similar"
                 }
             ],

@@ -139,13 +139,6 @@
             "en": "He was married to a nice woman, and their long marriage felt like a singing beautiful dream.",
             "target_words": [
                 {
-                    "word_in_sentence": "ö",
-                    "base_form": "ö",
-                    "position_start": 95,
-                    "position_end": 96,
-                    "contextual_en": "island"
-                },
-                {
                     "word_in_sentence": "gift med",
                     "base_form": "gift med",
                     "position_start": 8,
@@ -242,13 +235,6 @@
             "sv": "Han ville laga god mat för alla och försöka locka gäster för att skapa en bra stämning i huset.",
             "en": "He wanted to cook good food for everyone and try to attract guests to create a good atmosphere in the house.",
             "target_words": [
-                {
-                    "word_in_sentence": "ö",
-                    "base_form": "ö",
-                    "position_start": 24,
-                    "position_end": 25,
-                    "contextual_en": "island"
-                },
                 {
                     "word_in_sentence": "laga",
                     "base_form": "laga",
@@ -398,13 +384,6 @@
             "en": "He often said: \"Do you understand?",
             "target_words": [
                 {
-                    "word_in_sentence": "ö",
-                    "base_form": "ö",
-                    "position_start": 15,
-                    "position_end": 16,
-                    "contextual_en": "island"
-                },
-                {
                     "word_in_sentence": "Förstår du?",
                     "base_form": "Förstår du?",
                     "position_start": 14,
@@ -443,13 +422,6 @@
             "en": "He could give advice to exactly everyone who needed it.",
             "target_words": [
                 {
-                    "word_in_sentence": "ö",
-                    "base_form": "ö",
-                    "position_start": 40,
-                    "position_end": 41,
-                    "contextual_en": "island"
-                },
-                {
                     "word_in_sentence": "ge råd",
                     "base_form": "ge råd",
                     "position_start": 10,
@@ -479,13 +451,6 @@
             "sv": "Han brukade till och med tända ett ljus för dem han tänkt på och ville beundra.",
             "en": "He even used to light a candle for those he thought of and wanted to admire.",
             "target_words": [
-                {
-                    "word_in_sentence": "ö",
-                    "base_form": "ö",
-                    "position_start": 41,
-                    "position_end": 42,
-                    "contextual_en": "island"
-                },
                 {
                     "word_in_sentence": "med",
                     "base_form": "med",
@@ -553,13 +518,6 @@
             "en": "He was a real mythomaniac and a dangerous liar.",
             "target_words": [
                 {
-                    "word_in_sentence": "ö",
-                    "base_form": "ö",
-                    "position_start": 41,
-                    "position_end": 42,
-                    "contextual_en": "island"
-                },
-                {
                     "word_in_sentence": "mytoman",
                     "base_form": "mytoman",
                     "position_start": 18,
@@ -613,16 +571,9 @@
             "en": "He was very quick-thinking and seemed serious on the surface, but was quite unpleasant on the inside.",
             "target_words": [
                 {
-                    "word_in_sentence": "ö",
-                    "base_form": "ö",
-                    "position_start": 43,
-                    "position_end": 44,
-                    "contextual_en": "island"
-                },
-                {
-                    "word_in_sentence": "tänkt",
+                    "word_in_sentence": "snabbtänkt",
                     "base_form": "tänkt",
-                    "position_start": 21,
+                    "position_start": 16,
                     "position_end": 26,
                     "contextual_en": "thinking"
                 },
@@ -701,10 +652,10 @@
             "en": "His strange behavior was very annoying, but still you unfortunately became a little intrigued by his wild stories.",
             "target_words": [
                 {
-                    "word_in_sentence": "locka",
+                    "word_in_sentence": "lockad",
                     "base_form": "locka",
                     "position_start": 77,
-                    "position_end": 82,
+                    "position_end": 83,
                     "contextual_en": "intrigued"
                 },
                 {
@@ -824,13 +775,6 @@
                     "position_start": 18,
                     "position_end": 30,
                     "contextual_en": "controlled"
-                },
-                {
-                    "word_in_sentence": "tro",
-                    "base_form": "tro",
-                    "position_start": 21,
-                    "position_end": 24,
-                    "contextual_en": "believe"
                 }
             ],
             "secondary_words": [
@@ -1067,10 +1011,10 @@
             "en": "But he didn't dare to stay, and therefore a mandatory move became the only choice.",
             "target_words": [
                 {
-                    "word_in_sentence": "våga",
+                    "word_in_sentence": "vågade",
                     "base_form": "våga",
                     "position_start": 8,
-                    "position_end": 12,
+                    "position_end": 14,
                     "contextual_en": "dare"
                 },
                 {

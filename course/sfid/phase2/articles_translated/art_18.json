@@ -411,13 +411,6 @@
             "en": "She started teaching me every plant name and explained that you can plant them to get a natural and ecological decoration around your wooden house.",
             "target_words": [
                 {
-                    "word_in_sentence": "natur",
-                    "base_form": "natur",
-                    "position_start": 90,
-                    "position_end": 95,
-                    "contextual_en": "nature"
-                },
-                {
                     "word_in_sentence": "växtnamn",
                     "base_form": "växtnamn",
                     "position_start": 27,
@@ -779,8 +772,8 @@
                 {
                     "word_in_sentence": "säl",
                     "base_form": "säl",
-                    "position_start": 19,
-                    "position_end": 22,
+                    "position_start": 57,
+                    "position_end": 60,
                     "contextual_en": "seal"
                 },
                 {
@@ -851,10 +844,10 @@
             "en": "Some seals felt almost as fearless as a tame dog.",
             "target_words": [
                 {
-                    "word_in_sentence": "säl",
+                    "word_in_sentence": "sälar",
                     "base_form": "säl",
                     "position_start": 6,
-                    "position_end": 9,
+                    "position_end": 11,
                     "contextual_en": "seals"
                 },
                 {

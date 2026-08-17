@@ -207,10 +207,10 @@
             "en": "He thought I should be outdoors more.\n\nA few days ago, I started walking. more. For some.",
             "target_words": [
                 {
-                    "word_in_sentence": "vara uto",
+                    "word_in_sentence": "vara",
                     "base_form": "vara ute",
                     "position_start": 22,
-                    "position_end": 30,
+                    "position_end": 26,
                     "contextual_en": "be outdoors"
                 },
                 {
@@ -243,13 +243,6 @@
                     "position_start": 34,
                     "position_end": 43,
                     "contextual_en": "looking"
-                },
-                {
-                    "word_in_sentence": "dagar sedan",
-                    "base_form": "dagar sedan",
-                    "position_start": 10,
-                    "position_end": 21,
-                    "contextual_en": "days ago"
                 }
             ]
         },
@@ -611,8 +604,8 @@
                 {
                     "word_in_sentence": "i",
                     "base_form": "i övermorgon",
-                    "position_start": 1,
-                    "position_end": 2,
+                    "position_start": 61,
+                    "position_end": 62,
                     "contextual_en": "the day after tomorrow"
                 },
                 {
@@ -766,13 +759,6 @@
             ],
             "secondary_words": [
                 {
-                    "word_in_sentence": "städa ur",
-                    "base_form": "städa ur",
-                    "position_start": 17,
-                    "position_end": 25,
-                    "contextual_en": "clean out"
-                },
-                {
                     "word_in_sentence": "lugnt",
                     "base_form": "lugnt",
                     "position_start": 104,
@@ -840,10 +826,10 @@
             "en": "I stopped giving up and decided to let out all the stress.",
             "target_words": [
                 {
-                    "word_in_sentence": "ge",
+                    "word_in_sentence": "gånger",
                     "base_form": "ge upp",
-                    "position_start": 26,
-                    "position_end": 28,
+                    "position_start": 23,
+                    "position_end": 29,
                     "contextual_en": "giving up"
                 }
             ],
@@ -909,13 +895,6 @@
             ],
             "secondary_words": [
                 {
-                    "word_in_sentence": "släppa ut",
-                    "base_form": "släppa ut",
-                    "position_start": 44,
-                    "position_end": 53,
-                    "contextual_en": "let out"
-                },
-                {
                     "word_in_sentence": "slutade",
                     "base_form": "slutade",
                     "position_start": 4,
@@ -937,15 +916,7 @@
                     "contextual_en": "seventh place"
                 }
             ],
-            "secondary_words": [
-                {
-                    "word_in_sentence": "hundra år",
-                    "base_form": "hundra år",
-                    "position_start": 46,
-                    "position_end": 55,
-                    "contextual_en": "a hundred years"
-                }
-            ]
+            "secondary_words": []
         },
         {
             "sentence_id": "art_31_s032",
@@ -966,15 +937,7 @@
             "sentence_id": "art_31_s033",
             "sv": "Mitt favoritlag kom på sjunde plats i ligan, men vad gör det?",
             "en": "",
-            "target_words": [
-                {
-                    "word_in_sentence": "sjunde plats",
-                    "base_form": "sjunde plats",
-                    "position_start": 23,
-                    "position_end": 35,
-                    "contextual_en": "seventh place"
-                }
-            ],
+            "target_words": [],
             "secondary_words": [
                 {
                     "word_in_sentence": "favoritlag",
@@ -990,15 +953,7 @@
             "sv": "Livet går vidare!",
             "en": "",
             "target_words": [],
-            "secondary_words": [
-                {
-                    "word_in_sentence": "Livet går vidare",
-                    "base_form": "livet går vidare",
-                    "position_start": 0,
-                    "position_end": 16,
-                    "contextual_en": "Life goes on"
-                }
-            ]
+            "secondary_words": []
         }
     ],
     "primary_words_used": [

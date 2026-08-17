@@ -143,8 +143,8 @@
                     "word_in_sentence": "därför",
                     "base_form": "därför",
                     "contextual_en": "therefore",
-                    "position_start": -1,
-                    "position_end": -1
+                    "position_start": 0,
+                    "position_end": 6
                 },
                 {
                     "word_in_sentence": "slut",
@@ -309,9 +309,9 @@
                     "contextual_en": "marzipan cake"
                 },
                 {
-                    "word_in_sentence": "tårta",
+                    "word_in_sentence": "marsipantårta",
                     "base_form": "tårta",
-                    "position_start": 53,
+                    "position_start": 45,
                     "position_end": 58,
                     "contextual_en": "cake"
                 },
@@ -620,13 +620,6 @@
             "en": "I walked around among the shelves while thinking about what to choose.",
             "target_words": [
                 {
-                    "word_in_sentence": "väl",
-                    "base_form": "väl",
-                    "position_start": 67,
-                    "position_end": 70,
-                    "contextual_en": "well"
-                },
-                {
                     "word_in_sentence": "omkring",
                     "base_form": "omkring",
                     "position_start": 9,
@@ -694,10 +687,10 @@
             "en": "I found a new kind of candy, which was a small jelly fish with a lovely fruit flavor.",
             "target_words": [
                 {
-                    "word_in_sentence": "frukt",
+                    "word_in_sentence": "fruktsmak",
                     "base_form": "frukt",
                     "position_start": 69,
-                    "position_end": 74,
+                    "position_end": 78,
                     "contextual_en": "fruit"
                 },
                 {
@@ -882,8 +875,8 @@
                     "word_in_sentence": "allt",
                     "base_form": "all",
                     "contextual_en": "this",
-                    "position_start": -1,
-                    "position_end": -1
+                    "position_start": 0,
+                    "position_end": 4
                 }
             ]
         },

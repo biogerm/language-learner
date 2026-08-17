@@ -16,19 +16,22 @@
                     "word_in_sentence": "har inte något emot",
                     "base_form": "har inte något emot",
                     "position_start": 4,
-                    "position_end": 23
+                    "position_end": 23,
+                    "contextual_en": "do not mind"
                 },
                 {
                     "word_in_sentence": "månad",
                     "base_form": "månad",
                     "position_start": 71,
-                    "position_end": 76
+                    "position_end": 76,
+                    "contextual_en": "month"
                 },
                 {
                     "word_in_sentence": "miljöcertifierad",
                     "base_form": "miljöcertifierad",
                     "position_start": 97,
-                    "position_end": 113
+                    "position_end": 113,
+                    "contextual_en": "eco-certified"
                 }
             ],
             "secondary_words": [
@@ -55,19 +58,22 @@
                     "word_in_sentence": "meter över havet",
                     "base_form": "meter över havet",
                     "position_start": 17,
-                    "position_end": 33
+                    "position_end": 33,
+                    "contextual_en": "meters above sea level"
                 },
                 {
                     "word_in_sentence": "utsikt",
                     "base_form": "utsikt",
                     "position_start": 51,
-                    "position_end": 57
+                    "position_end": 57,
+                    "contextual_en": "view"
                 },
                 {
                     "word_in_sentence": "himmel",
                     "base_form": "himmel",
                     "position_start": 71,
-                    "position_end": 77
+                    "position_end": 77,
+                    "contextual_en": "sky"
                 }
             ],
             "secondary_words": [
@@ -93,14 +99,16 @@
                 {
                     "word_in_sentence": "trä",
                     "base_form": "trä",
-                    "position_start": 19,
-                    "position_end": 22
+                    "position_start": 44,
+                    "position_end": 47,
+                    "contextual_en": "wood"
                 },
                 {
                     "word_in_sentence": "trädkoja",
                     "base_form": "trädkoja",
                     "position_start": 19,
-                    "position_end": 27
+                    "position_end": 27,
+                    "contextual_en": "treehouse"
                 }
             ],
             "secondary_words": [
@@ -127,19 +135,22 @@
                     "word_in_sentence": "informell",
                     "base_form": "informell",
                     "position_start": 15,
-                    "position_end": 24
+                    "position_end": 24,
+                    "contextual_en": "informal"
                 },
                 {
                     "word_in_sentence": "hållbarhet",
                     "base_form": "hållbarhet",
                     "position_start": 37,
-                    "position_end": 47
+                    "position_end": 47,
+                    "contextual_en": "sustainability"
                 },
                 {
                     "word_in_sentence": "på allvar",
                     "base_form": "på allvar",
                     "position_start": 48,
-                    "position_end": 57
+                    "position_end": 57,
+                    "contextual_en": "seriously"
                 }
             ],
             "secondary_words": [
@@ -166,7 +177,8 @@
                     "word_in_sentence": "verkar vara",
                     "base_form": "verka vara",
                     "position_start": 7,
-                    "position_end": 18
+                    "position_end": 18,
+                    "contextual_en": "seems to be"
                 }
             ],
             "secondary_words": [
@@ -193,7 +205,8 @@
                     "word_in_sentence": "Det tycker jag också.",
                     "base_form": "Det tycker jag också.",
                     "position_start": 1,
-                    "position_end": 22
+                    "position_end": 22,
+                    "contextual_en": "I think so too."
                 }
             ],
             "secondary_words": [
@@ -220,13 +233,15 @@
                     "word_in_sentence": "idrottsstjärna",
                     "base_form": "idrottsstjärna",
                     "position_start": 19,
-                    "position_end": 33
+                    "position_end": 33,
+                    "contextual_en": "sports star"
                 },
                 {
                     "word_in_sentence": "miljömedveten",
                     "base_form": "miljömedveten",
                     "position_start": 48,
-                    "position_end": 61
+                    "position_end": 61,
+                    "contextual_en": "environmentally conscious"
                 }
             ],
             "secondary_words": [
@@ -253,7 +268,8 @@
                     "word_in_sentence": "berg- och dalbana",
                     "base_form": "berg -och dalbana",
                     "position_start": 26,
-                    "position_end": 43
+                    "position_end": 43,
+                    "contextual_en": "roller coaster"
                 }
             ],
             "secondary_words": [
@@ -300,19 +316,22 @@
                     "word_in_sentence": "skillnad",
                     "base_form": "skillnad",
                     "position_start": 20,
-                    "position_end": 28
+                    "position_end": 28,
+                    "contextual_en": "difference"
                 },
                 {
                     "word_in_sentence": "forskning",
                     "base_form": "forkning",
                     "position_start": 50,
-                    "position_end": 59
+                    "position_end": 59,
+                    "contextual_en": "research"
                 },
                 {
                     "word_in_sentence": "beteende",
                     "base_form": "beteende",
                     "position_start": 71,
-                    "position_end": 79
+                    "position_end": 79,
+                    "contextual_en": "behavior"
                 }
             ],
             "secondary_words": [
@@ -339,13 +358,15 @@
                     "word_in_sentence": "Däremot",
                     "base_form": "däremot",
                     "position_start": 0,
-                    "position_end": 7
+                    "position_end": 7,
+                    "contextual_en": "On the other hand"
                 },
                 {
                     "word_in_sentence": "ursprungliga",
                     "base_form": "ursprunglig",
                     "position_start": 35,
-                    "position_end": 47
+                    "position_end": 47,
+                    "contextual_en": "original"
                 }
             ],
             "secondary_words": [
@@ -372,37 +393,43 @@
                     "word_in_sentence": "Inom",
                     "base_form": "inom",
                     "position_start": 0,
-                    "position_end": 4
+                    "position_end": 4,
+                    "contextual_en": "Within"
                 },
                 {
                     "word_in_sentence": "reningsverk",
                     "base_form": "reningsverk",
                     "position_start": 41,
-                    "position_end": 52
+                    "position_end": 52,
+                    "contextual_en": "treatment plant"
                 },
                 {
                     "word_in_sentence": "högvarv",
                     "base_form": "högvarv",
                     "position_start": 56,
-                    "position_end": 63
+                    "position_end": 63,
+                    "contextual_en": "full speed"
                 },
                 {
                     "word_in_sentence": "utsläpp",
                     "base_form": "utsläpp",
                     "position_start": 84,
-                    "position_end": 91
+                    "position_end": 91,
+                    "contextual_en": "emissions"
                 },
                 {
                     "word_in_sentence": "som gör att",
                     "base_form": "som gör att",
                     "position_start": 92,
-                    "position_end": 103
+                    "position_end": 103,
+                    "contextual_en": "that cause"
                 },
                 {
                     "word_in_sentence": "flod",
                     "base_form": "flod",
                     "position_start": 108,
-                    "position_end": 112
+                    "position_end": 112,
+                    "contextual_en": "river"
                 }
             ],
             "secondary_words": [
@@ -429,19 +456,22 @@
                     "word_in_sentence": "Sällan",
                     "base_form": "sällan",
                     "position_start": 0,
-                    "position_end": 6
+                    "position_end": 6,
+                    "contextual_en": "Rarely"
                 },
                 {
                     "word_in_sentence": "vattenyta",
                     "base_form": "vattenyta",
                     "position_start": 25,
-                    "position_end": 34
+                    "position_end": 34,
+                    "contextual_en": "water surface"
                 },
                 {
                     "word_in_sentence": "på första plats",
                     "base_form": "på första plats",
                     "position_start": 64,
-                    "position_end": 79
+                    "position_end": 79,
+                    "contextual_en": "in first place"
                 }
             ],
             "secondary_words": [
@@ -468,13 +498,15 @@
                     "word_in_sentence": "miljövänlig",
                     "base_form": "miljövänlig",
                     "position_start": 19,
-                    "position_end": 30
+                    "position_end": 30,
+                    "contextual_en": "environmentally friendly"
                 },
                 {
                     "word_in_sentence": "åsikt",
                     "base_form": "åsikt",
                     "position_start": 59,
-                    "position_end": 64
+                    "position_end": 64,
+                    "contextual_en": "opinion"
                 }
             ],
             "secondary_words": [
@@ -501,19 +533,22 @@
                     "word_in_sentence": "I somras",
                     "base_form": "i somras",
                     "position_start": 0,
-                    "position_end": 8
+                    "position_end": 8,
+                    "contextual_en": "Last summer"
                 },
                 {
                     "word_in_sentence": "växa",
                     "base_form": "växa",
                     "position_start": 28,
-                    "position_end": 32
+                    "position_end": 32,
+                    "contextual_en": "grow"
                 },
                 {
                     "word_in_sentence": "sommar",
                     "base_form": "sommar",
                     "position_start": 47,
-                    "position_end": 53
+                    "position_end": 53,
+                    "contextual_en": "summer"
                 }
             ],
             "secondary_words": [
@@ -540,25 +575,29 @@
                     "word_in_sentence": "kall",
                     "base_form": "kall",
                     "position_start": 9,
-                    "position_end": 13
+                    "position_end": 13,
+                    "contextual_en": "cold"
                 },
                 {
                     "word_in_sentence": "gryning",
                     "base_form": "gryning",
                     "position_start": 14,
-                    "position_end": 21
+                    "position_end": 21,
+                    "contextual_en": "dawn"
                 },
                 {
                     "word_in_sentence": "skymning",
                     "base_form": "skymning",
                     "position_start": 32,
-                    "position_end": 40
+                    "position_end": 40,
+                    "contextual_en": "dusk"
                 },
                 {
                     "word_in_sentence": "själva",
                     "base_form": "själva",
                     "position_start": 45,
-                    "position_end": 51
+                    "position_end": 51,
+                    "contextual_en": "itself"
                 }
             ],
             "secondary_words": [
@@ -585,7 +624,8 @@
                     "word_in_sentence": "ha gott om",
                     "base_form": "ha gott om",
                     "position_start": 15,
-                    "position_end": 25
+                    "position_end": 25,
+                    "contextual_en": "have plenty of"
                 }
             ],
             "secondary_words": [
@@ -612,19 +652,22 @@
                     "word_in_sentence": "avslöja",
                     "base_form": "avslöja",
                     "position_start": 8,
-                    "position_end": 15
+                    "position_end": 15,
+                    "contextual_en": "reveal"
                 },
                 {
                     "word_in_sentence": "skadad",
                     "base_form": "skadad",
                     "position_start": 30,
-                    "position_end": 36
+                    "position_end": 36,
+                    "contextual_en": "injured"
                 },
                 {
                     "word_in_sentence": "höna",
                     "base_form": "höna",
                     "position_start": 37,
-                    "position_end": 41
+                    "position_end": 41,
+                    "contextual_en": "hen"
                 }
             ],
             "secondary_words": [
@@ -651,31 +694,36 @@
                     "word_in_sentence": "kanin",
                     "base_form": "kanin",
                     "position_start": 8,
-                    "position_end": 13
+                    "position_end": 13,
+                    "contextual_en": "rabbit"
                 },
                 {
                     "word_in_sentence": "bakben",
                     "base_form": "bakben",
                     "position_start": 32,
-                    "position_end": 38
+                    "position_end": 38,
+                    "contextual_en": "hind legs"
                 },
                 {
                     "word_in_sentence": "mus",
                     "base_form": "mus",
                     "position_start": 69,
-                    "position_end": 72
+                    "position_end": 72,
+                    "contextual_en": "mouse"
                 },
                 {
                     "word_in_sentence": "råtta",
                     "base_form": "råtta",
                     "position_start": 80,
-                    "position_end": 85
+                    "position_end": 85,
+                    "contextual_en": "rat"
                 },
                 {
                     "word_in_sentence": "sten",
                     "base_form": "sten",
                     "position_start": 94,
-                    "position_end": 98
+                    "position_end": 98,
+                    "contextual_en": "rock"
                 }
             ],
             "secondary_words": [
@@ -702,7 +750,8 @@
                     "word_in_sentence": "plantera in",
                     "base_form": "plantera in",
                     "position_start": 17,
-                    "position_end": 28
+                    "position_end": 28,
+                    "contextual_en": "introduce"
                 }
             ],
             "secondary_words": [
@@ -729,13 +778,15 @@
                     "word_in_sentence": "älgstam",
                     "base_form": "älgstam",
                     "position_start": 9,
-                    "position_end": 16
+                    "position_end": 16,
+                    "contextual_en": "moose population"
                 },
                 {
                     "word_in_sentence": "älgko",
                     "base_form": "älgko",
                     "position_start": 44,
-                    "position_end": 49
+                    "position_end": 49,
+                    "contextual_en": "cow moose"
                 }
             ],
             "secondary_words": [
@@ -762,19 +813,22 @@
                     "word_in_sentence": "grävling",
                     "base_form": "grävling",
                     "position_start": 22,
-                    "position_end": 30
+                    "position_end": 30,
+                    "contextual_en": "badger"
                 },
                 {
                     "word_in_sentence": "vessla",
                     "base_form": "vessla",
                     "position_start": 41,
-                    "position_end": 47
+                    "position_end": 47,
+                    "contextual_en": "weasel"
                 },
                 {
                     "word_in_sentence": "bäver",
                     "base_form": "bäver",
                     "position_start": 75,
-                    "position_end": 80
+                    "position_end": 80,
+                    "contextual_en": "beaver"
                 }
             ],
             "secondary_words": [
@@ -801,25 +855,29 @@
                     "word_in_sentence": "giftig",
                     "base_form": "giftig",
                     "position_start": 23,
-                    "position_end": 29
+                    "position_end": 29,
+                    "contextual_en": "venomous"
                 },
                 {
                     "word_in_sentence": "huggorm",
                     "base_form": "huggorm",
                     "position_start": 30,
-                    "position_end": 37
+                    "position_end": 37,
+                    "contextual_en": "viper"
                 },
                 {
                     "word_in_sentence": "bär",
                     "base_form": "bär",
                     "position_start": 65,
-                    "position_end": 68
+                    "position_end": 68,
+                    "contextual_en": "berries"
                 },
                 {
                     "word_in_sentence": "bi",
                     "base_form": "bi",
                     "position_start": 88,
-                    "position_end": 90
+                    "position_end": 90,
+                    "contextual_en": "bee"
                 }
             ],
             "secondary_words": [
@@ -843,16 +901,18 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "bär",
+                    "word_in_sentence": "bära",
                     "base_form": "bär",
                     "position_start": 73,
-                    "position_end": 76
+                    "position_end": 77,
+                    "contextual_en": "carry"
                 },
                 {
                     "word_in_sentence": "åsna",
                     "base_form": "åsna",
                     "position_start": 49,
-                    "position_end": 53
+                    "position_end": 53,
+                    "contextual_en": "donkey"
                 }
             ],
             "secondary_words": [
@@ -899,7 +959,8 @@
                     "word_in_sentence": "Ta reda på mer!",
                     "base_form": "Ta reda på mer!",
                     "position_start": 0,
-                    "position_end": 15
+                    "position_end": 15,
+                    "contextual_en": "Find out more!"
                 }
             ],
             "secondary_words": [

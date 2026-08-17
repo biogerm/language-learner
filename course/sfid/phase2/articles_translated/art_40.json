@@ -523,13 +523,6 @@
             "en": "He was almost like a popular comedian and often created a comical atmosphere.",
             "target_words": [
                 {
-                    "word_in_sentence": "komik",
-                    "base_form": "komik",
-                    "position_start": 30,
-                    "position_end": 35,
-                    "contextual_en": "comedy"
-                },
-                {
                     "word_in_sentence": "komiker",
                     "base_form": "komiker",
                     "position_start": 30,
@@ -776,10 +769,10 @@
             "en": "\"Watch out for viper bites in front of the cabin,\" the hunter warned and pointed to a specific spot in the grass.",
             "target_words": [
                 {
-                    "word_in_sentence": "jägare",
+                    "word_in_sentence": "jägaren",
                     "base_form": "jägare",
                     "position_start": 52,
-                    "position_end": 58,
+                    "position_end": 59,
                     "contextual_en": "hunter"
                 },
                 {

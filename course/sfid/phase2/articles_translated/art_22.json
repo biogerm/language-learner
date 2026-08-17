@@ -238,13 +238,6 @@
                     "position_start": 48,
                     "position_end": 53,
                     "contextual_en": "suit"
-                },
-                {
-                    "word_in_sentence": "pass",
-                    "base_form": "pass",
-                    "position_start": 48,
-                    "position_end": 52,
-                    "contextual_en": "workout"
                 }
             ],
             "secondary_words": [
@@ -320,13 +313,6 @@
             "sv": "Jag bestämde mig för att bli frisk och att det är viktigt att bry sig om sin hälsa.",
             "en": "I decided to get well and that it is important to care about one's health.",
             "target_words": [
-                {
-                    "word_in_sentence": "vikt",
-                    "base_form": "vikt",
-                    "position_start": 50,
-                    "position_end": 54,
-                    "contextual_en": "weight"
-                },
                 {
                     "word_in_sentence": "frisk",
                     "base_form": "frisk",
@@ -587,13 +573,6 @@
             "en": "He said that \"exercising\" provides a healthy lifestyle.",
             "target_words": [
                 {
-                    "word_in_sentence": "motion",
-                    "base_form": "motion",
-                    "position_start": 12,
-                    "position_end": 18,
-                    "contextual_en": "exercise"
-                },
-                {
                     "word_in_sentence": "motionera",
                     "base_form": "motienera",
                     "position_start": 12,
@@ -638,10 +617,10 @@
                     "contextual_en": "sessions"
                 },
                 {
-                    "word_in_sentence": "träna",
+                    "word_in_sentence": "tränade",
                     "base_form": "träna",
                     "position_start": 3,
-                    "position_end": 8,
+                    "position_end": 10,
                     "contextual_en": "train"
                 },
                 {
@@ -675,10 +654,10 @@
             "en": "It was a form of exercise that was based on intensive strength training.",
             "target_words": [
                 {
-                    "word_in_sentence": "motion",
+                    "word_in_sentence": "motionsform",
                     "base_form": "motion",
                     "position_start": 11,
-                    "position_end": 17,
+                    "position_end": 22,
                     "contextual_en": "exercise"
                 },
                 {
@@ -769,13 +748,6 @@
             "sv": "Ibland blev jag delvis döv av ansträngning, men jag lärde mig att stretcha efter varje träningspass.",
             "en": "Sometimes I became partially deaf from exertion, but I learned to stretch after every workout.",
             "target_words": [
-                {
-                    "word_in_sentence": "pass",
-                    "base_form": "pass",
-                    "position_start": 95,
-                    "position_end": 99,
-                    "contextual_en": "session"
-                },
                 {
                     "word_in_sentence": "delvis",
                     "base_form": "delvis",
@@ -1013,10 +985,10 @@
             "en": "We learned to listen to the body, which works a bit... on its own, in a fantastic way.",
             "target_words": [
                 {
-                    "word_in_sentence": "… för sig",
+                    "word_in_sentence": "lite",
                     "base_form": "… för sig",
-                    "position_start": 53,
-                    "position_end": 62,
+                    "position_start": 49,
+                    "position_end": 53,
                     "contextual_en": "on its own"
                 }
             ],

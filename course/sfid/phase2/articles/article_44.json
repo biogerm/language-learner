@@ -175,10 +175,10 @@
             "en": "",
             "target_words": [
                 {
-                    "word_in_sentence": "kommun",
+                    "word_in_sentence": "kommunal",
                     "base_form": "kommun",
                     "position_start": 58,
-                    "position_end": 64
+                    "position_end": 66
                 },
                 {
                     "word_in_sentence": "kollektivtrafik",
@@ -563,9 +563,9 @@
                     "position_end": 59
                 },
                 {
-                    "word_in_sentence": "erkan",
+                    "word_in_sentence": "verkan",
                     "base_form": "följd",
-                    "position_start": 81,
+                    "position_start": 80,
                     "position_end": 86
                 }
             ],
