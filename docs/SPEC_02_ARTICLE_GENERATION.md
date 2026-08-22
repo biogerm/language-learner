@@ -92,7 +92,7 @@ The AI generation results must be serialized into JSON data strictly following a
       "stage_title": "Daily Life and Health",
       "articles": [
         {
-          "article_id": "art_01",
+          "article_id": "art01",
           "article_title": "En dag på gymmet",
           "target_word_count": 25,
           "sentences": [

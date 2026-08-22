@@ -133,10 +133,14 @@ A lightweight data store used as an **in-progress learning queue**. Words are pl
 | `base_form` | sentence JSON | Primary key / lookup index |
 | `word_type` | `word_metadata.json` | verb, noun, adjective, etc. |
 | `en_translation` | Combined (contextual + global) | As assembled above |
-| `sv_context` | sentence JSON (`sv` field) | The full Swedish example sentence |
-| `sentence_audio_filename` | sentence JSON | Filename only, no path |
 | `contextual_en` | sentence JSON | Precise in-context translation |
-| `source` | article metadata | Which article the word came from |
+| `word_in_sentence`| sentence JSON | Exact inflected form used in the sentence |
+| `course_id` | article metadata | Hierarchy index 1 (e.g., `sfid`) |
+| `stage_id` | article metadata | Hierarchy index 2 (e.g., `stage_01`) |
+| `article_id` | article metadata | Hierarchy index 3 (e.g., `art01`) |
+| `sentence_id` | article metadata | Hierarchy index 4 (e.g., `art01_s001`) |
+
+*Note: Frontend uses these 4 IDs to look up the full `sv_context` and `sentence_audio_filename` dynamically from `data.js`.*
 
 **Double Threshold (Removal Rule)**: A word is removed from Store A once it passes both:
 - ✅ **Dictation Mode**: 100% correct
@@ -151,7 +155,7 @@ A permanent, long-lived data store for **user-defined custom words** — words t
 
 *   **Trigger**: The user can manually add a word at any time (e.g., from an external source, a physical book, or a conversation).
 *   **User Input Required**: The user must manually enter the English translation, as the system cannot infer it from the article data.
-*   **System Auto-Saves**: The system should attempt to auto-populate as many fields as possible (e.g., looking up `word_type` and inflections from the SQLite database if the word exists there). Fields that cannot be resolved (e.g., `sv_context`, `sentence_audio_filename`) are left empty.
+*   **System Auto-Saves**: The system should attempt to auto-populate the 4-level hierarchy IDs **if** the word was added while reading a specific article. If the word was added outside of the reading context, these fields remain empty.
 
 **Record Schema for Store B**:
 
@@ -159,10 +163,10 @@ A permanent, long-lived data store for **user-defined custom words** — words t
 |---|---|---|
 | `base_form` | User input | Primary key |
 | `en_translation` | User input (mandatory) | Manually entered by user |
-| `word_type` | Auto-resolved from DB | If found in SQLite, else empty |
-| `sv_context` | Auto-resolved from DB | If found in SQLite, else empty |
-| `sentence_audio_filename` | Auto-resolved from DB | If found in SQLite, else empty |
-| `notes` | User input (optional) | Free-text personal notes |
+| `course_id` | Reading Context | Filled if added while reading, else empty |
+| `stage_id` | Reading Context | Filled if added while reading, else empty |
+| `article_id` | Reading Context | Filled if added while reading, else empty |
+| `sentence_id` | Reading Context | Filled if added while reading, else empty |
 
 **Double Threshold (Retention Rule)**: Even after a Store B word passes the double-threshold validation, it is **retained permanently**. The user's custom vocabulary is a personal asset and must not be deleted.
 
