@@ -113,11 +113,58 @@ window.DICTATION_WORDS = [
 
 The frontend web application must process the generated `data.js` to provide an interactive reading experience and integrate with the Spaced Repetition System (FSRS).
 
-### 3.1 Learning Queue & FSRS Entry Threshold
-To ensure the high quality of the frontend memory database, the interactions and storage must follow these strict rules:
-*   **Target Words**: Automatically enter the "Initial Learning Queue" alongside the article.
-*   **Secondary Words / Dictionary Lookup**: During reading, if the user looks up a word via the 📖 button, selects a word, and clicks "Save", it enters the "Initial Learning Queue". At this point, the system MUST extract the `contextual_en` from the sentence JSON, and extract the global translation from `global_dict.js`, combining them into the format `[Contextual Translation] ([Master Dictionary Global Translation])` (e.g., `couch potato (someone who lies on the sofa, inactive)`).
-*   **Double Threshold (FSRS Entry Barrier)**: Neither of these two types of words enters the FSRS library immediately! They must pass a strict double-threshold validation on the frontend: **100% Correct in Dictation Mode + 100% Correct in Translation Mode**. Only after passing this dual assessment will the system officially write them into the browser's `localStorage("customVocab")` (the FSRS anti-forgetting database).
+### 3.1 Learning Queue & Word Storage Architecture
+
+To ensure high-quality spaced repetition and correct data lifecycle management, the system must implement **two separate data stores** and a strict entry protocol.
+
+#### Store A: Staging Queue (Temporary)
+A lightweight data store used as an **in-progress learning queue**. Words are placed here when they enter the "Initial Learning Queue" and are removed once the word has been mastered (passed the double threshold). This store handles **Target Words** and **Secondary Words** — words that are already indexed in the master dictionary.
+
+*   **Target Words**: Automatically enter Store A alongside the article load. No user action required.
+*   **Secondary Words / Dictionary Lookup**: During reading, if the user taps the 📖 button, selects a word, and clicks "Save", it enters Store A. At this point, the system MUST assemble the word's record by combining:
+    *   `contextual_en` (from the sentence's JSON) — the in-context meaning
+    *   The global translation from `global_dict.js` — the base dictionary meaning
+    *   Combined format: `[Contextual Translation] ([Master Dictionary Global Translation])` (e.g., `couch potato (someone who lies on the sofa, inactive)`)
+
+**Record Schema for Store A** (must mirror the master dictionary structure to allow full index-based retrieval during review):
+
+| Field | Source | Notes |
+|---|---|---|
+| `base_form` | sentence JSON | Primary key / lookup index |
+| `word_type` | `word_metadata.json` | verb, noun, adjective, etc. |
+| `en_translation` | Combined (contextual + global) | As assembled above |
+| `sv_context` | sentence JSON (`sv` field) | The full Swedish example sentence |
+| `sentence_audio_filename` | sentence JSON | Filename only, no path |
+| `contextual_en` | sentence JSON | Precise in-context translation |
+| `source` | article metadata | Which article the word came from |
+
+**Double Threshold (Removal Rule)**: A word is removed from Store A once it passes both:
+- ✅ **Dictation Mode**: 100% correct
+- ✅ **Translation Mode**: 100% correct
+
+Because Target and Secondary words already exist in the master dictionary, they do **not** need to be persisted after mastery — removing them from Store A is sufficient.
+
+---
+
+#### Store B: Permanent Custom Vocabulary (Persistent)
+A permanent, long-lived data store for **user-defined custom words** — words that do not appear in the article data but the user still wants to learn. This store is **never pruned after mastery**; it functions as the user's personal vocabulary library (analogous to an FSRS deck).
+
+*   **Trigger**: The user can manually add a word at any time (e.g., from an external source, a physical book, or a conversation).
+*   **User Input Required**: The user must manually enter the English translation, as the system cannot infer it from the article data.
+*   **System Auto-Saves**: The system should attempt to auto-populate as many fields as possible (e.g., looking up `word_type` and inflections from the SQLite database if the word exists there). Fields that cannot be resolved (e.g., `sv_context`, `sentence_audio_filename`) are left empty.
+
+**Record Schema for Store B**:
+
+| Field | Source | Notes |
+|---|---|---|
+| `base_form` | User input | Primary key |
+| `en_translation` | User input (mandatory) | Manually entered by user |
+| `word_type` | Auto-resolved from DB | If found in SQLite, else empty |
+| `sv_context` | Auto-resolved from DB | If found in SQLite, else empty |
+| `sentence_audio_filename` | Auto-resolved from DB | If found in SQLite, else empty |
+| `notes` | User input (optional) | Free-text personal notes |
+
+**Double Threshold (Retention Rule)**: Even after a Store B word passes the double-threshold validation, it is **retained permanently**. The user's custom vocabulary is a personal asset and must not be deleted.
 
 ### 3.2 Bilingual Highlighting (Dual-Sided Rendering)
 In the reading mode UI layer (e.g., `renderSentences`), implement seamless bilingual alignment highlighting to map the Swedish text to the English translation:
