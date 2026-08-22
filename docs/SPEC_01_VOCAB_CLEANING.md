@@ -90,6 +90,7 @@ Upon completion, the system must output the Master Dictionary JSON (`master_dict
 ```json
 {
   "metadata": {
+    "course_id": "sfid",
     "level": "B1",
     "source": "rivstart_b1",
     "total_words": 3433,
@@ -97,20 +98,28 @@ Upon completion, the system must output the Master Dictionary JSON (`master_dict
   },
   "words": {
     "soffpotatis": {
-      "en": "couch potato",
-      "word_class": "noun",
-      "gender": "en"
+      "base_form": "soffpotatis",
+      "en_translation": "couch potato",
+      "word_in_sentence": null,
+      "contextual_en": null,
+      "stage_id": null,
+      "article_id": null,
+      "sentence_id": null
     },
     "träna": {
-      "en": "exercise, work out",
-      "word_class": "verb",
-      "gender": null
+      "base_form": "träna",
+      "en_translation": "exercise, work out",
+      "word_in_sentence": null,
+      "contextual_en": null,
+      "stage_id": null,
+      "article_id": null,
+      "sentence_id": null
     }
   }
 }
 ```
-> [!TIP]
-> If `word_class` and `gender` cannot be fully determined by rules or AI in this phase, they can be set to `null` and refined in later phases. However, the `en` (translation) field MUST contain a non-empty string.
+> [!NOTE]
+> The `words` object defines the **Word Object** blueprint. In Phase 1, only `base_form` and `en_translation` are populated. The remaining fields (used for contextual UI rendering) are explicitly initialized to `null` to enforce a unified data structure across all pipeline phases. They will be populated in Phase 5.
 
 ## 6. Validation Rules
 

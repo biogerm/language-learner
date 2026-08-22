@@ -92,7 +92,7 @@ Introduce an ASR mechanism to perform closed-loop validation on the generated au
 ## 5. Output Specification
 
 ### 5.1 Audio Files
-- **Directories**: `sentences_audio/` and `words_audio/`.
+- **Directories**: `audio/{course_id}/sentences/` and `audio/{course_id}/words/`.
 - **Format**: MP3, Mono, 24kHz Sample Rate.
 
 ### 5.2 Audio Manifest JSON
@@ -100,11 +100,12 @@ At the end of the run, an `audio_manifest.json` must be generated for frontend a
 ```json
 {
   "metadata": {
+    "course_id": "sfid",
+    "total_sentences": 1750,
+    "total_words": 3433,
     "generated_at": "2025-01-01T00:00:00Z",
     "voices": ["sv-SE-SofieNeural", "sv-SE-MattiasNeural"],
-    "rate": "-20%",
-    "total_sentence_files": 500,
-    "total_word_files": 3433
+    "rate": "-20%"
   },
   "sentences": {
     "art01_s001": {

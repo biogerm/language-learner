@@ -10,38 +10,22 @@ The pipeline takes the outputs from Phase 1 (Master Dictionary) and Phase 2 (Art
 graph TD
     A[Phase 1: master_dict.json] --> C[Frontend Assembler]
     B[Phase 2: Structured Articles] --> C
-    C --> D[data.js (Articles)]
-    C --> E[global_dict.js (Vocab)]
+    C --> D[course_sfid_articles.json]
+    C --> E[course_sfid_vocab.json]
     B --> F[HTML Print Generator]
     F --> G[sfid_b1_articles.html]
 ```
 
-## 2. Frontend Data Interfaces
+### 2. Frontend Data Interfaces (Abstract Datasets)
 
-The frontend application requires the data to be injected as global JavaScript variables. This allows the static frontend to operate without a backend server.
+To ensure the frontend application is decoupled from backend specific technologies and can be deployed anywhere (local, cloud, or app), the Phase 5 output MUST consist of pure, abstract JSON datasets. **No hardcoded `.js` variable injection is allowed.**
 
-### 2.1 Dictionary Interface (`global_dict.js`)
+### 2.1 Static Article Dataset
+The generated articles from Phase 2 must be assembled into a single JSON dataset mirroring the **Course -> Stage -> Article** hierarchy.
 
-The `master_dict.json` must be flattened into a simple key-value store. This powers the "Extract Vocab" feature in the frontend (specifically `app.js` lines 200-464), which looks up words highlighted by the user and displays their translations.
-
-**Output Specification (`global_dict.js`):**
-```javascript
-// Auto-generated from master_dict.json. DO NOT EDIT.
-window.globalDictionary = {
-    "soffpotatis": "couch potato",
-    "träna": "exercise, work out",
-    "granne": "neighbor"
-};
-```
-
-### 2.2 Article Data Interface (`data.js`)
-
-The generated articles from Phase 2 must be assembled into a single JavaScript object mirroring the **Course -> Stage -> Article** hierarchy.
-
-**Output Specification (`data.js`):**
-```javascript
-// Auto-generated. DO NOT EDIT.
-window.APP_DATA = {
+**Output Specification (`course_sfid_articles.json`):**
+```json
+{
   "course_id": "sfid",
   "course_title": "SFI D",
   "stages": [
@@ -50,9 +34,8 @@ window.APP_DATA = {
       "stage_title": "Daily Life and Health",
       "articles": [
         {
-          "article_id": "art_01",
+          "article_id": "art01",
           "article_title": "En dag på gymmet",
-          "target_word_count": 25,
           "sentences": [
             {
               "sentence_id": "art01_s001",
@@ -62,14 +45,9 @@ window.APP_DATA = {
                 {
                   "word_in_sentence": "soffpotatis",
                   "base_form": "soffpotatis",
+                  "contextual_en": "couch potato",
                   "position_start": 25,
                   "position_end": 36
-                },
-                {
-                  "word_in_sentence": "tränar",
-                  "base_form": "träna",
-                  "position_start": 48,
-                  "position_end": 54
                 }
               ]
             }
@@ -78,108 +56,73 @@ window.APP_DATA = {
       ]
     }
   ]
-};
+}
 ```
 
-### 2.3 Dictation Data Interface (`dictation_data.js`)
+### 2.2 Static Contextual Vocabulary Dataset
+Phase 5 must extract all `target_words` and `secondary_words` from all articles, merge them with the translations from `master_dictionary.json`, and output a unified, flat array of **Word Objects**. This dataset serves as the pre-compiled "ammunition" for frontend learning queues.
 
-Phase 5 must extract all `target_words` with their context from the Phase 2 Article JSONs to generate the dataset for the frontend's "Dictation" and "Flashcard" modes.
-To allow the frontend to display both the contextual meaning and the standard dictionary definition, this interface **must** cross-reference the master dictionary during generation:
-
-**Assembly Logic:**
-1. Iterate over all sentences in the articles and extract all `target_words`.
-2. Extract the Swedish base form (`base_form`) and the contextual translation (`contextual_en` mapped to `en`).
-3. Use the `base_form` to look up the standard global translation in `master_dict.json`.
-4. Inject this global translation as a new field named `dictionary_en`.
-5. When rendering in the frontend App, `dictionary_en` should be displayed in parentheses next to the original explanation.
-
-**Output Specification (`dictation_data.js`):**
-```javascript
-// Auto-generated from articles and master_dict.json. DO NOT EDIT.
-window.DICTATION_WORDS = [
+**The Universal `Word Object` Schema:**
+This is the atomic data unit used across the entire frontend ecosystem.
+```json
+[
   {
-    "sv": "gå",
-    "en": "went",
-    "dictionary_en": "go, walk",
-    "context_sv": "Han gick hem.",
-    "stage": "Daily Life and Health",
-    "article": "En dag på gymmet",
-    "course_id": "sfid"
+    "base_form": "springa",
+    "word_in_sentence": "sprang",
+    "en_translation": "run",
+    "contextual_en": "ran",
+    "stage_id": "stage_01",
+    "article_id": "art01",
+    "sentence_id": "art01_s001"
   }
-];
+]
 ```
+
+**Field Descriptions:**
+
+| Field | Source | Notes |
+|---|---|---|
+| `base_form` | `master_dictionary.json` & Phase 2 | The dictionary root form (Primary Key). |
+| `word_in_sentence`| Phase 2 Article | The exact inflected form used in the text. |
+| `en_translation` | `master_dictionary.json` | The global/general dictionary translation. |
+| `contextual_en` | Phase 2 Article | The precise in-context translation for this specific usage. |
+| `stage_id` | Phase 5 Assembler | Hierarchy index 1 (e.g., `stage_01`). |
+| `article_id` | Phase 5 Assembler | Hierarchy index 2 (e.g., `art01`). |
+| `sentence_id` | Phase 5 Assembler | Hierarchy index 3 (e.g., `art01_s001`). |
+
+*(Output file: `course_sfid_vocab.json`)*
 
 ## 3. Web App UI & FSRS Logic
 
-The frontend web application must process the generated `data.js` to provide an interactive reading experience and integrate with the Spaced Repetition System (FSRS).
+The frontend web application processes these abstract JSON datasets to provide an interactive reading experience and integrate with the Spaced Repetition System (FSRS).
 
 ### 3.1 Learning Queue & Word Storage Architecture
 
-To ensure high-quality spaced repetition and correct data lifecycle management, the system must implement **two separate data stores** and a strict entry protocol.
+To ensure high-quality spaced repetition and correct data lifecycle management, the system implements **two separate data stores**. Both stores MUST strictly use the **Universal Word Object** schema (the 8 fields defined above).
 
-#### Store A: Staging Queue (Temporary)
-A lightweight data store used as an **in-progress learning queue**. Words are placed here when they enter the "Initial Learning Queue" and are removed once the word has been mastered (passed the double threshold). This store handles **Target Words** and **Secondary Words** — words that are already indexed in the master dictionary.
+#### Store A: Temporary Learning Queue
+A lightweight data store used as an **in-progress learning queue**. Words are placed here when the user starts learning a set, and are permanently **deleted** once the word has been mastered (passed the double threshold).
 
-*   **Target Words**: Automatically enter Store A alongside the article load. No user action required.
-*   **Secondary Words / Dictionary Lookup**: During reading, if the user taps the 📖 button, selects a word, and clicks "Save", it enters Store A. At this point, the system MUST assemble the word's record by combining:
-    *   `contextual_en` (from the sentence's JSON) — the in-context meaning
-    *   The global translation from `global_dict.js` — the base dictionary meaning
-    *   Combined format: `[Contextual Translation] ([Master Dictionary Global Translation])` (e.g., `couch potato (someone who lies on the sofa, inactive)`)
+*   **Data Source**: When a learning session begins, the frontend directly **COPIES** the fully populated `Word Objects` belonging to that article from the Static Contextual Vocabulary Dataset into Store A.
+*   **Double Threshold (Removal Rule)**: A word is deleted from Store A once it passes both:
+    *   ✅ **Dictation Mode**: 100% correct
+    *   ✅ **Flashcard Translation Mode**: 100% correct
 
-**Record Schema for Store A** (must mirror the master dictionary structure to allow full index-based retrieval during review):
+#### Store B: Permanent Custom Vocabulary
+A permanent data store for **user-defined custom words**—words that do not exist in the course syllabus but the user manually highlighted or added. This store is **never pruned** after mastery.
 
-| Field | Source | Notes |
-|---|---|---|
-| `base_form` | sentence JSON | Primary key / lookup index |
-| `word_type` | `word_metadata.json` | verb, noun, adjective, etc. |
-| `en_translation` | Combined (contextual + global) | As assembled above |
-| `contextual_en` | sentence JSON | Precise in-context translation |
-| `word_in_sentence`| sentence JSON | Exact inflected form used in the sentence |
-| `course_id` | article metadata | Hierarchy index 1 (e.g., `sfid`) |
-| `stage_id` | article metadata | Hierarchy index 2 (e.g., `stage_01`) |
-| `article_id` | article metadata | Hierarchy index 3 (e.g., `art01`) |
-| `sentence_id` | article metadata | Hierarchy index 4 (e.g., `art01_s001`) |
+*   **Data Source**: User instantiation. The frontend creates a new `Word Object`.
+*   **Field Population**:
+    *   `base_form` and `word_in_sentence` are set to the exact string the user clicked (since no LLM is present to determine the base form).
+    *   `en_translation` MUST be manually typed by the user.
+    *   `contextual_en` is `null` (the system cannot infer it).
+    *   If added while reading an article, the 3-level IDs (`stage_id`, `article_id`, `sentence_id`) are automatically populated from the context. Otherwise, they are `null`.
 
-*Note: Frontend uses these 4 IDs to look up the full `sv_context` and `sentence_audio_filename` dynamically from `data.js`.*
-
-**Double Threshold (Removal Rule)**: A word is removed from Store A once it passes both:
-- ✅ **Dictation Mode**: 100% correct
-- ✅ **Translation Mode**: 100% correct
-
-Because Target and Secondary words already exist in the master dictionary, they do **not** need to be persisted after mastery — removing them from Store A is sufficient.
-
----
-
-#### Store B: Permanent Custom Vocabulary (Persistent)
-A permanent, long-lived data store for **user-defined custom words** — words that do not appear in the article data but the user still wants to learn. This store is **never pruned after mastery**; it functions as the user's personal vocabulary library (analogous to an FSRS deck).
-
-*   **Trigger**: The user can manually add a word at any time (e.g., from an external source, a physical book, or a conversation).
-*   **User Input Required**: The user must manually enter the English translation, as the system cannot infer it from the article data.
-*   **System Auto-Saves**: The system should attempt to auto-populate the 4-level hierarchy IDs **if** the word was added while reading a specific article. If the word was added outside of the reading context, these fields remain empty.
-
-**Record Schema for Store B**:
-
-| Field | Source | Notes |
-|---|---|---|
-| `base_form` | User input | Primary key |
-| `en_translation` | User input (mandatory) | Manually entered by user |
-| `course_id` | Reading Context | Filled if added while reading, else empty |
-| `stage_id` | Reading Context | Filled if added while reading, else empty |
-| `article_id` | Reading Context | Filled if added while reading, else empty |
-| `sentence_id` | Reading Context | Filled if added while reading, else empty |
-
-**Double Threshold (Retention Rule)**: Even after a Store B word passes the double-threshold validation, it is **retained permanently**. The user's custom vocabulary is a personal asset and must not be deleted.
-
-### 3.2 Bilingual Highlighting (Dual-Sided Rendering)
-In the reading mode UI layer (e.g., `renderSentences`), implement seamless bilingual alignment highlighting to map the Swedish text to the English translation:
-*   **Target Words (Core Vocabulary)**:
-    *   **Swedish Side (sv)**: Match the `word_in_sentence` string and render prominently (e.g., **bold + gold** color).
-    *   **English Side (en)**: Match the extracted `contextual_en` string and render with the exact same styling (**bold + gold**).
-*   **Secondary Words (Auxiliary Vocabulary)**:
-    *   **Swedish Side (sv)**: Match the `word_in_sentence` string and render with secondary styling (e.g., blue dashed underline).
-    *   **English Side (en)**: Match the `contextual_en` string and render with the corresponding secondary styling (blue dashed underline).
-
-This dual-sided rendering ensures that when a student reads, their eyes can immediately map the contextual meaning between the two languages.
+### 3.2 UI Rendering & Testing Logic (The Single Source of Truth)
+Because Store A, Store B, and the Static Vocabulary Dataset all use the exact same `Word Object` schema, the frontend UI logic is completely unified:
+1.  **Testing (Dictation/Flashcards)**: The ONLY standard for a correct answer is matching the `word_in_sentence` field.
+2.  **Displaying Translation**: The UI prioritizes showing `contextual_en`. If it is `null` (e.g., in Store B), it falls back to showing `en_translation`.
+3.  **Highlighting & Cloze Deletion**: The frontend uses the 3 IDs (`stage_id`, `article_id`, `sentence_id`) in the `Word Object` to dynamically query the **Static Article Dataset**. It retrieves the `sentenceData`, which contains the `sv` string and the `position_start` / `position_end` coordinates for precise highlighting. The `Word Object` itself does NOT store coordinates, eliminating data redundancy.
 
 ## 4. Printable HTML Generation
 
@@ -196,7 +139,7 @@ To satisfy the requirement of providing printable physical study materials, the 
 *   **Metadata Header**: The top of the first page should include the Course Title, Level (SFI D / B1), and Generation Date.
 
 ### 4.2 HTML Output Path
-*   **File Path**: `print/sfid_b1_articles.html`
+*   **File Path**: `output/print/sfid_b1_articles.html`
 
 ### 4.3 CSS Print Example
 The generator script must inject the following CSS block into the generated HTML:
@@ -216,13 +159,10 @@ The generator script must inject the following CSS block into the generated HTML
 
 ## 5. Execution Steps
 
-1.  Read `master_dict.json`.
-2.  Format into Key-Value pairs and wrap in `window.globalDictionary = ...`.
-3.  Write to the external application directory `<web_app_dir>/js/global_dict.js`.
-4.  Read all Article JSONs in the `chapters/` directory.
-5.  Combine them into the nested `Course -> Stage -> Article` structure.
-6.  Wrap in `window.APP_DATA = ...`.
-7.  Write to the external application directory `<web_app_dir>/js/data.js`.
-8.  Extract `target_words` from articles and cross-reference with `master_dict.json` to generate an array of vocabulary objects with a `dictionary_en` field.
-9.  Wrap in `window.DICTATION_WORDS = ...` and write to `<web_app_dir>/js/dictation_data.js`.
-10. Pass the Article JSONs to an HTML templating engine (e.g., Jinja2 or custom string interpolation) and write `print/sfid_b1_articles.html`.
+1.  Read `master_dictionary.json` from Phase 1.
+2.  Read all Article JSONs (`chapters/*.json`) from Phase 2.
+3.  Assemble the hierarchical articles into `course_sfid_articles.json` (Static Article Dataset).
+4.  Iterate through all sentences and extract `target_words` and `secondary_words`.
+5.  Cross-reference with `master_dictionary.json` to assemble fully populated `Word Objects`.
+6.  Output the flat array of Word Objects to `course_sfid_vocab.json` (Static Contextual Vocabulary Dataset).
+7.  Pass the Article JSONs to an HTML templating engine and output `output/print/sfid_b1_articles.html`.

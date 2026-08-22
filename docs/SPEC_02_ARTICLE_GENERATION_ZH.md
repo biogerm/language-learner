@@ -140,12 +140,12 @@ AI 生成的结果必须被序列化为严格遵循三层嵌套架构的 JSON �
 *   `article_title`: 具体阅读文章的有意义的标题。
 *   `sv`: 完整的瑞典语原句文本。
 *   `en`: **整句**完整的英文翻译（千万不要仅仅翻译那些目标单词，而是要翻译整个句子）。
-*   `target_words`: 句子中出现的目标词汇数组。
-    *   `word_in_sentence`: 单词在句子中的实际形态（可能发生了变位）。
-    *   `base_form`: 字典基本形态（必须与 `master_dict.json` 中的 key 完全匹配）。
-    *   `contextual_en`: 该单词在当前句子特定语境下的英文翻译。
-    *   `position_start` / `position_end`: 基于 `sv` 字符串的 0 索引字符边界 `[start, end)`，用于 UI 精确高亮。
-*   `secondary_words`: 额外的非大纲拓展词汇数组（针对 B1 学习者有难度的动词、名词等）。它的对象结构与 `target_words` 完全一致（包含 `word_in_sentence`, `base_form`, `contextual_en`, `position_start`, `position_end`）。
+*   `target_words`: 出现在句子中的目标词汇数组。这些字段专门用于在 Phase 5 中为通用的 `Word Object` 提供语境数据。
+    *   `word_in_sentence`: 句子中实际使用的单词变形形式。
+    *   `base_form`: 字典原形（必须与 `master_dict.json` 中的 key 完全匹配）。
+    *   `contextual_en`: 该词在当前句子语境下的精准英文翻译。
+    *   `position_start` / `position_end`: 基于 `sv` 字符串的从 0 开始的字符边界 `[start, end)`，用于精确的 UI 高亮显示。
+*   `secondary_words`: 对 B1 学习者有用的额外非目标词汇数组（例如，中等难度的动词、名词）。遵循与 `target_words` 完全相同的对象结构（`word_in_sentence`, `base_form`, `contextual_en`, `position_start`, `position_end`）。
 *   `primary_words_used`: 在本篇文章中完成“主出场”的词汇。
 *   `secondary_words_used`: 在本篇文章中作为自然复现上下文的词汇。
 

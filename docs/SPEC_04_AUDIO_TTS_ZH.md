@@ -89,17 +89,18 @@ def generate_tts(text, mp3_path, voice):
 - **数字**: 如果句子中包含数字，在比较之前将数字标准化为其拼写出的文本形式。
 - **专有名词**: 如果已知 Whisper 经常误认某些专有名词，将其从比较文本中排除。
 
-## 5. 输出规范
+## 5. 输出规范 (Output Specification)
 
 ### 5.1 音频文件
-- **目录**: `sentences_audio/` 和 `words_audio/`。
-- **格式**: MP3, 单声道 (Mono), 24kHz 采样率。
+*   **目录**: `audio/{course_id}/sentences/` 和 `audio/{course_id}/words/`。
+*   **格式**: MP3, 单声道 (Mono), 24kHz 采样率。
 
-### 5.2 音频清单 JSON (Audio Manifest)
-在运行结束时，必须生成一个 `audio_manifest.json` 供前端和后端状态追踪。
+### 5.2 音频清单 (Audio Manifest JSON)
+在运行结束时，必须生成一个 `audio_manifest.json`，用于前端和后端的运行状态跟踪。
 ```json
 {
   "metadata": {
+    "course_id": "sfid",
     "generated_at": "2025-01-01T00:00:00Z",
     "voices": ["sv-SE-SofieNeural", "sv-SE-MattiasNeural"],
     "rate": "-20%",

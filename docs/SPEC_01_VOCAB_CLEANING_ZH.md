@@ -90,6 +90,7 @@
 ```json
 {
   "metadata": {
+    "course_id": "sfid",
     "level": "B1",
     "source": "rivstart_b1",
     "total_words": 3433,
@@ -97,20 +98,28 @@
   },
   "words": {
     "soffpotatis": {
-      "en": "couch potato",
-      "word_class": "noun",
-      "gender": "en"
+      "base_form": "soffpotatis",
+      "en_translation": "couch potato",
+      "word_in_sentence": null,
+      "contextual_en": null,
+      "stage_id": null,
+      "article_id": null,
+      "sentence_id": null
     },
     "träna": {
-      "en": "exercise, work out",
-      "word_class": "verb",
-      "gender": null
+      "base_form": "träna",
+      "en_translation": "exercise, work out",
+      "word_in_sentence": null,
+      "contextual_en": null,
+      "stage_id": null,
+      "article_id": null,
+      "sentence_id": null
     }
   }
 }
 ```
-> [!TIP]
-> 如果 `word_class` 和 `gender` 在本阶段无法通过规则或 AI 完全确定，可设为 `null` 并在后续阶段完善。但是 `en` (翻译) 字段必须包含非空字符串。
+> [!NOTE]
+> `words` 对象定义了全管线通用的 **Word Object** 蓝图。在 Phase 1 阶段，仅有 `base_form` 和 `en_translation` 被赋予实质内容。其余用于语境 UI 渲染的字段必须显式初始化为 `null`，以此强制约束全管线数据结构的绝对统一。这些空白字段将在 Phase 5 被最终填满。
 
 ## 6. 校验规则 (Validation Rules)
 

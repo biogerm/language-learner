@@ -16,32 +16,16 @@ graph TD
     F --> G[sfid_b1_articles.html]
 ```
 
-## 2. 前端数据接口
+## 2. 前端数据接口 (Abstract Datasets)
 
-前端应用程序要求数据作为全局 JavaScript 变量注入。这允许静态前端在没有后端服务器的情况下运行。
+为了确保前端应用与特定的后端技术解耦，并且可以部署在任何地方（本地、云端或移动端 App），Phase 5 的输出必须是纯粹的、抽象的 JSON 数据集。**绝对不允许出现硬编码的 `.js` 变量注入。**
 
-### 2.1 词典接口 (`global_dict.js`)
+### 2.1 静态文章数据集 (Static Article Dataset)
+必须将 Phase 2 生成的文章组装成单个 JSON 数据集，精确反映 **课程 (Course) -> 阶段 (Stage) -> 文章 (Article)** 的层级结构。
 
-`master_dict.json` 必须被扁平化为一个简单的键值对 (Key-Value) 存储。这为前端的“提取词汇 (Extract Vocab)”功能提供支持（特别是 `app.js` 的 200-464 行），该功能会查找用户高亮的单词并显示其翻译。
-
-**输出规范 (`global_dict.js`):**
-```javascript
-// Auto-generated from master_dict.json. DO NOT EDIT.
-window.globalDictionary = {
-    "soffpotatis": "couch potato",
-    "träna": "exercise, work out",
-    "granne": "neighbor"
-};
-```
-
-### 2.2 文章数据接口 (`data.js`)
-
-Phase 2 生成的文章必须被组装成一个映射了 **Course -> Stage -> Article** 层级结构的单一 JavaScript 对象。
-
-**输出规范 (`data.js`):**
-```javascript
-// Auto-generated. DO NOT EDIT.
-window.APP_DATA = {
+**输出规范 (`course_sfid_articles.json`):**
+```json
+{
   "course_id": "sfid",
   "course_title": "SFI D",
   "stages": [
@@ -50,9 +34,8 @@ window.APP_DATA = {
       "stage_title": "Daily Life and Health",
       "articles": [
         {
-          "article_id": "art_01",
+          "article_id": "art01",
           "article_title": "En dag på gymmet",
-          "target_word_count": 25,
           "sentences": [
             {
               "sentence_id": "art01_s001",
@@ -62,14 +45,9 @@ window.APP_DATA = {
                 {
                   "word_in_sentence": "soffpotatis",
                   "base_form": "soffpotatis",
+                  "contextual_en": "couch potato",
                   "position_start": 25,
                   "position_end": 36
-                },
-                {
-                  "word_in_sentence": "tränar",
-                  "base_form": "träna",
-                  "position_start": 48,
-                  "position_end": 54
                 }
               ]
             }
@@ -78,111 +56,77 @@ window.APP_DATA = {
       ]
     }
   ]
-};
+}
 ```
 
-### 2.3 听写题库接口 (`dictation_data.js`)
+### 2.2 静态语境词汇全集 (Static Contextual Vocabulary Dataset)
+Phase 5 必须从所有文章中提取出所有的 `target_words` 和 `secondary_words`，将其与 `master_dictionary.json` 中的翻译进行合并，最终输出一个统一的、扁平化的 **Word Objects** 数组。这个数据集将作为前端学习队列预先编译好的“弹药库”。
 
-Phase 5 需要从 Phase 2 输出的所有文章中提取出带语境的 `target_words`，并生成供前端“听写模式”和“闪卡模式”使用的数据集。
-为了在前端显示时既能展示语境释义，又能展示标准字典释义，该接口在生成时**必须**跨表联查主词典：
-
-**组装逻辑:**
-1. 遍历所有文章中的句子，提取所有的 `target_words`。
-2. 提取其瑞典语原形 (`base_form`) 和语境翻译 (`contextual_en` 映射为 `en`)。
-3. 拿着 `base_form` 去 `master_dict.json` 中查询标准的全局解释。
-4. 将查到的全局解释作为新字段 `dictionary_en` 一并注入。
-5. 前端 App 在显示时，应将 `dictionary_en` 用括号包裹显示在原本释义的旁边。
-
-**输出规范 (`dictation_data.js`):**
-```javascript
-// Auto-generated from articles and master_dict.json. DO NOT EDIT.
-window.DICTATION_WORDS = [
+**通用 `Word Object` 结构：**
+这是贯穿整个前端生态系统的最小原子数据单元。
+```json
+[
   {
-    "sv": "gå",
-    "en": "went",
-    "dictionary_en": "go, walk",
-    "context_sv": "Han gick hem.",
-    "stage": "Daily Life and Health",
-    "article": "En dag på gymmet",
-    "course_id": "sfid"
+    "base_form": "springa",
+    "word_in_sentence": "sprang",
+    "en_translation": "run",
+    "contextual_en": "ran",
+    "stage_id": "stage_01",
+    "article_id": "art01",
+    "sentence_id": "art01_s001"
   }
-];
+]
 ```
+
+**字段说明 (Field Descriptions)：**
+
+| 字段 | 来源 | 说明 |
+|---|---|---|
+| `base_form` | 主词典 & Phase 2 | 字典里的原形（主键）。 |
+| `word_in_sentence`| Phase 2 文章 | 该词在文中实际使用的确切变形形式。 |
+| `en_translation` | 主词典 | 字典里的全局基础翻译。 |
+| `contextual_en` | Phase 2 文章 | 该词在当前句子中的精准语境翻译。 |
+| `stage_id` | Phase 5 组装器 | 级联索引 1 (例如 `stage_01`)。 |
+| `article_id` | Phase 5 组装器 | 级联索引 2 (例如 `art01`)。 |
+| `sentence_id` | Phase 5 组装器 | 级联索引 3 (例如 `art01_s001`)。 |
+
+*(输出文件: `course_sfid_vocab.json`)*
 
 ## 3. Web App UI 与 FSRS 逻辑
 
-前端应用程序不仅需要加载 `data.js` 展示静态内容，还需要提供高度交互的阅读体验并集成 FSRS 间隔重复记忆算法。
+前端 Web 应用将处理这些抽象的 JSON 数据集，以提供交互式阅读体验并与间隔重复系统 (FSRS) 进行整合。
 
 ### 3.1 学习队列与单词存储架构
 
-为了确保间隔重复复习的质量以及数据生命周期的正确管理，系统必须实现**两个独立的数据存储**，并遵循严格的准入协议。
+为了保证高质量的间隔重复和正确的数据生命周期管理，系统实现了**两个独立的数据存储库 (Stores)**。这两个库都必须严格使用上述的 8 字段 **通用 Word Object** 结构。
 
-#### 存储 A：暂存学习队列（临时）
-一个轻量级的数据存储，用作**进行中的学习队列**。单词在进入"初始学习队列"时被放入此处，在通过双重考核（双重准入门槛）后从此处删除。此存储处理 **Target Words（考点词）** 和 **Secondary Words（副词汇）** —— 这些词均已在主词典中有索引记录。
+#### Store A: 临时学习队列 (Temporary Learning Queue)
+这是一个轻量级的数据库，用作**进行中的学习队列**。当用户开始学习某篇文章时，单词进入此队列；一旦该单词被完全掌握（通过双重阈值测试），它就会被**永久删除**。
 
-*   **Target Words（考点词）**：随文章加载自动进入存储 A，无需任何用户操作。
-*   **Secondary Words（副词汇）/ 查词保存**：在阅读中，用户通过 📖 按钮查词并选中某个词点击"保存"后，该词才会进入存储 A。此时，系统必须通过以下方式组装词条记录：
-    *   `contextual_en`（来自当前句子的 JSON）—— 语境精准翻译
-    *   来自 `global_dict.js` 的全局字典翻译 —— 词语基础含义
-    *   组合格式：`[语境精准翻译] ([主词典全局翻译])`（例如：`couch potato (someone who lies on the sofa, inactive)`）
+*   **数据来源**: 当学习会话开始时，前端直接从“静态语境词汇全集”中，将属于该文章的、已经完全填充完毕的 `Word Objects` **复制 (COPY)** 进 Store A。
+*   **双重阈值（移除规则）**: 当单词同时通过以下两项测试后，将从 Store A 中被剔除：
+    *   ✅ **听写模式 (Dictation)**: 100% 正确
+    *   ✅ **闪卡翻译模式 (Flashcard)**: 100% 正确
 
-**存储 A 的记录结构**（必须与主词典的数据结构保持一致，以便复习时能通过索引取得包括例句在内的所有信息）：
-| 字段 | 来源 | 说明 |
-|---|---|---|
-| `base_form` | 句子 JSON | 主键 / 查找索引 |
-| `word_type` | `word_metadata.json` | 动词、名词、形容词等 |
-| `en_translation` | 组合（语境 + 全局） | 按上述格式组装 |
-| `contextual_en` | 句子 JSON | 该词在本句中的精确翻译 |
-| `word_in_sentence`| 句子 JSON | 该词在句子中的实际变形形式 |
-| `course_id` | 文章元数据 | 级联索引 1 (如 `sfid`) |
-| `stage_id` | 文章元数据 | 级联索引 2 (如 `stage_01`) |
-| `article_id` | 文章元数据 | 级联索引 3 (如 `art01`) |
-| `sentence_id` | 文章元数据 | 级联索引 4 (如 `art01_s001`) |
+#### Store B: 永久自定义词汇库 (Permanent Custom Vocabulary)
+这是一个永久性的数据存储库，用于存放**用户自定义的单词**——也就是那些不在课程大纲内，但用户手动高亮或添加的单词。这个库在单词被掌握后**永远不会被清空**。
 
-*注：前端使用这 4 个级联 ID，直接从 `data.js` 动态查询完整的 `sv_context` (瑞典语例句) 和 `sentence_audio_filename` (音频文件名)。*
+*   **数据来源**: 由用户手动实例化。前端会创建一个全新的 `Word Object`。
+*   **字段填充规则**:
+    *   `base_form` 和 `word_in_sentence` 被设为用户点击的确切字符串（因为这里没有大模型来推断字典原形）。
+    *   `en_translation` 必须由用户手动输入。
+    *   `contextual_en` 设为 `null`（系统无法推断）。
+    *   如果是在阅读某篇文章时添加的单词，那么 3 层 ID（`stage_id`, `article_id`, `sentence_id`）会自动根据上下文填充。否则它们将保持为空 (`null`)。
 
-**双重准入门槛（删除规则）**：当一个词通过以下两项后，从存储 A 中删除：
-- ✅ **听写模式**：100% 正确
-- ✅ **翻译模式**：100% 正确
-
-因为 Target Words 和 Secondary Words 在主词典中已有完整记录，通过双重考核后**不需要持久保存**——从存储 A 删除即可。
-
----
-
-#### 存储 B：永久自定义词汇库（持久化）
-一个永久性的长期数据存储，用于保存**用户自定义词汇** —— 即不在文章数据中出现、但用户仍希望学习的单词。此存储在通过双重准入后**永不清除**，相当于用户的个人词汇库（类似于 FSRS 记忆库）。
-
-*   **触发条件**：用户可在任何时候手动添加单词（例如来自课外书、物理教材或日常对话）。
-*   **需要用户输入**：由于系统无法从文章数据中推断释义，用户必须手动输入英文翻译。
-*   **系统自动补全**：如果用户是在阅读某篇文章时添加的词汇，系统应自动填充 4 层级联 ID。如果是脱离阅读上下文添加的，这些字段留空。
-
-**存储 B 的记录结构**：
-
-| 字段 | 来源 | 说明 |
-|---|---|---|
-| `base_form` | 用户输入 | 主键 |
-| `en_translation` | 用户输入（必填） | 用户手动输入 |
-| `course_id` | 阅读上下文 | 阅读时添加则自动填充，否则留空 |
-| `stage_id` | 阅读上下文 | 阅读时添加则自动填充，否则留空 |
-| `article_id` | 阅读上下文 | 阅读时添加则自动填充，否则留空 |
-| `sentence_id` | 阅读上下文 | 阅读时添加则自动填充，否则留空 |
-
-**双重准入门槛（保留规则）**：即使存储 B 中的单词通过了双重考核验证，也必须**永久保留**。用户的自定义词汇库是个人资产，绝对不能被删除。
-
-### 3.2 双端双语高亮渲染 (Bilingual Highlighting)
-在阅读模式的 UI 层（例如 `renderSentences` 中），必须实现严丝合缝的中瑞双语对齐高亮：
-*   **Target Words (考点词)**：
-    *   **瑞典语侧 (sv)**：匹配 `word_in_sentence` 字段，进行醒目渲染（例如：**加粗+金色**）。
-    *   **英语侧 (en)**：匹配大模型提取的 `contextual_en` 字符串，进行完全对应的同款渲染（**加粗+金色**）。
-*   **Secondary Words (副词汇)**：
-    *   **瑞典语侧 (sv)**：匹配 `word_in_sentence` 字段，进行次级渲染（例如：蓝色虚线下划线）。
-    *   **英语侧 (en)**：匹配 `contextual_en` 字符串，进行对应的次级渲染（蓝色虚线下划线）。
-
-这样学生在阅读时，视线在上下两行扫过，立刻就能将语境严丝合缝地对齐，极大提升双语对照学习的效率。
+### 3.2 UI 渲染与测试逻辑 (唯一事实源)
+由于 Store A、Store B 和静态词汇数据集使用的都是完全一样的 `Word Object` 结构，前端的 UI 逻辑得到了彻底的统一：
+1.  **测试 (听写/闪卡)**: 评判答案是否正确的唯一标准就是匹配 `word_in_sentence` 字段。
+2.  **释义显示**: UI 优先显示 `contextual_en`。如果它为空（例如在 Store B 中），则回退显示全局的 `en_translation`。
+3.  **高亮与挖空**: 前端利用 `Word Object` 里的 3 层 ID (`stage_id`, `article_id`, `sentence_id`) 去动态查询 **静态文章数据集**。从而获取到 `sentenceData`，里面包含了 `sv` 原句以及用于精确高亮的 `position_start` / `position_end` 坐标。`Word Object` 本身**绝对不存储**坐标，彻底消除了数据冗余。
 
 ## 4. 可打印 HTML 生成
 
-为了满足提供物理学习资料的打印需求，流水线必须生成一个独立的 HTML 文件，包含所有格式化为适合 A4 打印的文章。
+为了满足提供可打印纸质学习材料的需求，管线必须生成一个包含所有文章、排版为 A4 打印格式的独立 HTML 文件。
 
 ### 4.1 布局与排版要求
 
@@ -195,7 +139,7 @@ window.DICTATION_WORDS = [
 *   **元数据页眉**: 首页顶部应包含课程标题、级别 (SFI D / B1) 和生成日期。
 
 ### 4.2 HTML 输出路径
-*   **文件路径**: `print/sfid_b1_articles.html`
+*   **文件路径**: `output/print/sfid_b1_articles.html`
 
 ### 4.3 CSS 打印样式示例
 生成器脚本必须将以下 CSS 块注入生成的 HTML 中：
@@ -215,13 +159,10 @@ window.DICTATION_WORDS = [
 
 ## 5. 执行步骤
 
-1.  读取 `master_dict.json`。
-2.  格式化为 Key-Value 键值对，并包裹在 `window.globalDictionary = ...` 中。
-3.  写入到外部应用目录 `<web_app_dir>/js/global_dict.js`。
-4.  读取 `chapters/` 目录下的所有文章 JSON。
-5.  将它们合并为嵌套的 `Course -> Stage -> Article` 结构。
-6.  包裹在 `window.APP_DATA = ...` 中。
-7.  写入到外部应用目录 `<web_app_dir>/js/data.js`。
-8.  提取文章中的 `target_words` 并结合 `master_dict.json` 生成带 `dictionary_en` 字段的词汇数组。
-9.  包裹在 `window.DICTATION_WORDS = ...` 中，并写入到 `<web_app_dir>/js/dictation_data.js`。
-10. 将文章 JSON 传递给 HTML 模板引擎（如 Jinja2 或自定义字符串插值），并写入 `print/sfid_b1_articles.html`。
+1.  读取 Phase 1 的 `master_dictionary.json`。
+2.  读取 Phase 2 的所有文章 JSON (`chapters/*.json`)。
+3.  将具有层级结构的文章组装成 `course_sfid_articles.json` (静态文章数据集)。
+4.  遍历所有句子，提取 `target_words` 和 `secondary_words`。
+5.  与 `master_dictionary.json` 交叉比对，拼装出字段饱满的 `Word Objects`。
+6.  将这些 Word Objects 的扁平化数组输出至 `course_sfid_vocab.json` (静态语境词汇全集)。
+7.  将文章 JSON 传递给 HTML 模板引擎，输出 `output/print/sfid_b1_articles.html`。

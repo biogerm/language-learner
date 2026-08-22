@@ -104,14 +104,25 @@ The AI generation results must be serialized into JSON data strictly following a
                 {
                   "word_in_sentence": "soffpotatis",
                   "base_form": "soffpotatis",
+                  "contextual_en": "couch potato",
                   "position_start": 25,
                   "position_end": 36
                 },
                 {
                   "word_in_sentence": "tränar",
                   "base_form": "träna",
+                  "contextual_en": "exercises",
                   "position_start": 48,
                   "position_end": 54
+                }
+              ],
+              "secondary_words": [
+                {
+                  "word_in_sentence": "granne",
+                  "base_form": "granne",
+                  "contextual_en": "neighbor",
+                  "position_start": 4,
+                  "position_end": 10
                 }
               ]
             }
@@ -131,7 +142,7 @@ The AI generation results must be serialized into JSON data strictly following a
 *   `article_title`: A meaningful title for the specific reading article.
 *   `sv`: The complete Swedish original sentence text.
 *   `en`: The complete English translation of the ENTIRE sentence (NOT just the translation of the individual target words).
-*   `target_words`: Array of target words appearing in the sentence.
+*   `target_words`: Array of target words appearing in the sentence. These fields supply the contextual data required to assemble the universal `Word Object` in Phase 5.
     *   `word_in_sentence`: The actual inflected form of the word used in the sentence.
     *   `base_form`: The dictionary base form (MUST exactly match a key in `master_dict.json`).
     *   `contextual_en`: The specific English translation of this word strictly as it is used in the context of this sentence.
