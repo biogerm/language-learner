@@ -294,103 +294,70 @@ export default function Dictation() {
   const inputBgColor = status === 'correct' ? 'rgba(0, 255, 0, 0.1)' : status === 'revealed' ? 'rgba(255, 0, 0, 0.1)' : 'transparent';
 
   return (
-    <div className="glass-panel view-container">
-
+    <main className="dictation-container glass-panel" style={{ width: '100%', maxWidth: '800px', margin: '0 auto', padding: '2rem' }}>
       {appMode === 'study' && (
-          <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '16px' }}>
-              <div id="progress-stats" style={{ display: 'flex', alignItems: 'center', fontSize: '14px', color: 'var(--text-muted)' }}>
-                  Total: {stats.total} | <span style={{ color: 'var(--success)', margin: '0 4px' }}>Mastered: {stats.mastered}</span> | <span style={{ color: 'var(--accent)', margin: '0 4px' }}>Remaining: {stats.remaining}</span>
-                  <button onClick={handleResetProgress} title="Reset Progress" style={{ background: 'rgba(255,255,255,0.1)', border: 'none', color: 'var(--text)', borderRadius: '50%', width: '24px', height: '24px', cursor: 'pointer', marginLeft: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>↻</button>
-              </div>
-          </div>
+        <div id="progress-stats" style={{ marginBottom: '1.5rem', color: '#cbd5e1', fontSize: '1rem', display: 'flex', gap: '15px', alignItems: 'center', flexWrap: 'wrap', justifyContent: 'center' }}>
+          <span id="stat-total">Total: {stats.total}</span>
+          <span id="stat-correct" style={{ color: '#4ade80' }}>Mastered: {stats.mastered}</span>
+          <span id="stat-remaining" style={{ color: '#f87171' }}>Remaining: {stats.remaining}</span>
+          <button id="reset-progress-btn" onClick={handleResetProgress} style={{ background: 'rgba(255,255,255,0.1)', border: '1px solid rgba(255,255,255,0.3)', color: 'white', borderRadius: '10px', padding: '4px 10px', cursor: 'pointer', fontSize: '0.8rem', transition: 'background 0.3s' }}>Reset Progress</button>
+        </div>
       )}
       
-      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-        <button 
-          onClick={playAudio} 
-          style={{ 
-            background: 'transparent', 
-            border: 'none', 
-            fontSize: '32px', 
-            cursor: 'pointer',
-            padding: '8px',
-            opacity: 0.8,
-            transition: 'opacity 0.2s'
-          }}
-          title="Play Audio (Tab)"
-          onMouseEnter={e => e.currentTarget.style.opacity = '1'}
-          onMouseLeave={e => e.currentTarget.style.opacity = '0.8'}
-        >
-          ▶ Tab
+      <div id="feedback-msg" className={`feedback ${status === 'correct' ? 'correct' : (wrongCount > 0 ? 'incorrect' : '')}`}>
+        {feedbackMsg}
+      </div>
+      
+      <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', marginBottom: '2rem' }}>
+        <button id="play-btn" className="play-btn" onClick={playAudio} style={{ marginBottom: '0', position: 'relative' }}>
+          ▶
+          <span style={{ position: 'absolute', bottom: '-20px', left: '50%', transform: 'translateX(-50%)', fontSize: '0.8rem', color: 'rgba(255,255,255,0.5)', fontFamily: "'Outfit', sans-serif" }}>Tab</span>
+        </button>
+        <button id="redo-btn" className="play-btn" style={{ marginBottom: '0', background: 'transparent', display: 'none', fontSize: '2rem', paddingLeft: '0' }}>
+          ↻
         </button>
       </div>
-
-      <div style={{ position: 'relative', marginTop: '16px' }}>
+      
+      <div className="input-group">
+        <div id="hint-display" style={{ color: '#9ca3af', fontStyle: 'italic', marginBottom: '0.5rem', display: 'none' }}></div>
         <input 
-          autoFocus
           type="text" 
-          value={input} 
-          onChange={e => {
-            if (status === 'typing') setInput(e.target.value);
-          }} 
+          id="spell-input" 
+          className="spell-input" 
+          placeholder="Type here and hit Enter" 
+          autoComplete="off" 
+          spellCheck="false"
+          autoFocus
+          value={input}
+          onChange={e => { if (status === 'typing') setInput(e.target.value); }}
           onKeyDown={handleKeyDown}
-          placeholder="Type here and hit Enter"
           disabled={status !== 'typing'}
           style={{ 
-            width: '100%', 
-            padding: '16px', 
-            fontSize: '24px', 
-            borderRadius: '12px', 
-            border: `2px solid ${inputBorderColor}`,
-            backgroundColor: inputBgColor,
-            textAlign: 'center', 
-            marginBottom: '8px',
-            transition: 'all 0.3s ease'
+            borderColor: inputBorderColor,
+            background: inputBgColor,
+            color: 'white'
           }}
         />
         
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', minHeight: '30px' }}>
-          <div style={{ color: status === 'correct' ? 'var(--success, #28a745)' : 'var(--error, #dc3545)', fontWeight: 'bold' }}>
-            {feedbackMsg}
-          </div>
-          
-          {status === 'typing' && (
-            <button 
-              onClick={handleReveal} 
-              className="btn-primary" 
-              style={{ background: 'transparent', border: '1px solid rgba(255,255,255,0.4)', color: 'white', padding: '4px 12px', fontSize: '14px' }}
-            >
-              Reveal Answer
-            </button>
-          )}
+        <div style={{ display: 'flex', gap: '10px', justifyContent: 'center' }}>
+          <button 
+            id="reveal-btn" 
+            className={`reveal-btn ${(status === 'typing' && wrongCount >= 3) || status === 'revealed' ? 'show' : ''}`}
+            onClick={handleReveal}
+          >
+            Reveal Answer
+          </button>
+        </div>
+        
+        <div id="answer-display" className={`answer-display ${status === 'correct' || status === 'revealed' ? 'show' : ''}`}>
+          <strong style={{ fontSize: '1.5rem', color: 'var(--accent-color)' }} id="correct-sv">{currentWord?.word}</strong>
+          <span style={{ color: '#9ca3af', fontStyle: 'italic' }} id="correct-en">{currentRecord?.en_translation}</span>
         </div>
       </div>
-
-      {status !== 'typing' && (
-        <div className="reveal-animation" style={{ width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '16px' }}>
-          <div className="flashcard-word" onClick={playAudio} style={{ cursor: 'pointer', color: 'var(--accent)' }}>
-            {currentWord?.word}
-          </div>
-          
-          <div style={{ width: '100%', height: '4px', background: 'var(--glass-border)', marginTop: '24px', borderRadius: '2px', overflow: 'hidden' }}>
-            <div style={{ 
-              height: '100%', 
-              background: 'var(--accent)', 
-              width: '100%', 
-              animation: `timerFill ${1000 + (currentWord?.word.length || 0) * 140}ms linear forwards` 
-            }} />
-          </div>
-          <style>{`
-            @keyframes timerFill {
-              from { width: 100%; }
-              to { width: 0%; }
-            }
-          `}</style>
-          
-          <p style={{ color: 'var(--text)', fontStyle: 'italic', marginTop: '16px' }}>Press Enter or Escape to skip timer</p>
-        </div>
-      )}
-    </div>
+      
+      <div id="timer-bar" className="timer-bar" style={{ display: (status === 'correct' || status === 'revealed') ? 'block' : 'none' }}>
+        <div id="timer-fill" className="timer-fill" style={{ width: '100%', transition: 'width 2s linear' }}></div>
+      </div>
+    </main>
   );
 }
-

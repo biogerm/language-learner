@@ -1,9 +1,10 @@
 import { Outlet, useNavigate, useLocation, useParams } from 'react-router-dom';
 
 import { FSRSToast } from './FSRSToast';
-import { useEffect, useState, useMemo, useRef } from 'react';
+import { useEffect, useState, useMemo, } from 'react';
 import { syncOfflineProgress } from '../utils/fsrs';
 import { useData } from '../contexts/DataContext';
+import { supabase } from '../services/supabase';
 
 export default function Layout() {
   const navigate = useNavigate();
@@ -62,7 +63,7 @@ export default function Layout() {
   };
 
   const isStudy = appMode === 'study';
-  const ndfActiveIndex = location.pathname.includes('narration') ? 0 : location.pathname.includes('dictation') ? (isStudy ? 1 : 0) : (isStudy ? 2 : 1);
+  // const ndfActiveIndex = location.pathname.includes('narration') ? 0 : location.pathname.includes('dictation') ? (isStudy ? 1 : 0) : (isStudy ? 2 : 1);
 
   const getModuleInfo = (path: string) => {
     if (path.includes('dictation')) return { name: 'Dictation', version: 'v2.1.0' };
@@ -73,15 +74,11 @@ export default function Layout() {
   const modInfo = getModuleInfo(location.pathname);
 
   return (
-    <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
-      <header className="glass-panel" style={{ 
-        position: 'sticky', top: 0, zIndex: 100,
-        padding: '20px 32px', display: 'flex', flexDirection: 'column', alignItems: 'center'
-      }}>
-        <div style={{ width: '100%', maxWidth: '800px', display: 'flex', flexDirection: 'column' }}>
+    <div className="app-container">
+      <header className="app-header glass-panel" style={{ flexDirection: 'column', alignItems: 'stretch', gap: 0, padding: '1.25rem 2rem' }}>
           
           {/* Row 1: App Info + Mode Toggles */}
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%', gap: '1rem', flexWrap: 'wrap', marginBottom: '1rem' }}>
             
             <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
               <h1 style={{ margin: 0, flexShrink: 0, fontSize: '1.75rem', fontWeight: 700, background: 'linear-gradient(to right, #fff, #cbd5e1)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
@@ -91,14 +88,14 @@ export default function Layout() {
             
             <div style={{ display: 'flex', gap: '16px', alignItems: 'center' }}>
               {courseId && (
-                <div style={{ display: 'flex', background: 'rgba(15, 23, 42, 0.8)', padding: '4px', borderRadius: '30px', position: 'relative', overflow: 'hidden' }}>
-                  <div style={{ position: 'absolute', top: 4, bottom: 4, left: 4, width: '110px', background: 'var(--accent)', borderRadius: '20px', transition: 'transform 0.3s cubic-bezier(0.4, 0, 0.2, 1)', transform: `translateX(${isStudy ? 0 : 110}px)`, boxShadow: '0 2px 10px rgba(139, 92, 246, 0.4)' }} />
+                <div className="voice-toggle" id="fsrs-mode-toggle">
                   <button 
                     onClick={() => {
                       localStorage.setItem('appMode', 'study');
                       window.dispatchEvent(new Event('appModeChanged'));
                     }}
-                    style={{ position: 'relative', zIndex: 1, width: '110px', transition: 'color 0.3s ease', background: 'transparent', color: isStudy ? 'white' : 'var(--text-muted)', border: 'none', padding: '8px 20px', borderRadius: '20px', cursor: 'pointer', fontSize: '0.875rem', fontWeight: 600 }}>
+                    className={`toggle-option ${isStudy ? 'active' : ''}`}
+                    style={{ cursor: 'pointer' }}>
                     📚 Study
                   </button>
                   <button 
@@ -109,26 +106,45 @@ export default function Layout() {
                         handleModeSwitch('dictation');
                       }
                     }}
-                    style={{ position: 'relative', zIndex: 1, width: '110px', transition: 'color 0.3s ease', background: 'transparent', color: !isStudy ? 'white' : 'var(--text-muted)', border: 'none', padding: '8px 20px', borderRadius: '20px', cursor: 'pointer', fontSize: '0.875rem', fontWeight: 600 }}>
+                    className={`toggle-option ${!isStudy ? 'active' : ''}`}
+                    style={{ cursor: 'pointer' }}>
                     📅 Review
                   </button>
                 </div>
               )}
+              
+              <button 
+                title="Sign Out"
+                onClick={async () => { await supabase.auth.signOut(); navigate('/login'); }}
+                style={{
+                  background: 'rgba(15, 23, 42, 0.4)',
+                  border: '1px solid rgba(255,255,255,0.1)',
+                  cursor: 'pointer',
+                  color: 'var(--text-muted)',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  padding: '8px',
+                  borderRadius: '50%',
+                  transition: 'all 0.2s ease',
+                  marginLeft: '8px'
+                }}
+                onMouseOver={(e) => { e.currentTarget.style.color = 'var(--error)'; e.currentTarget.style.borderColor = 'var(--error)'; }}
+                onMouseOut={(e) => { e.currentTarget.style.color = 'var(--text-muted)'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.1)'; }}
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                  <polyline points="16 17 21 12 16 7"></polyline>
+                  <line x1="21" y1="12" x2="9" y2="12"></line>
+                </svg>
+              </button>
             </div>
           </div>
 
           {/* Row 2: Stage & Article Selectors (Animated for Study Mode) */}
           {courseId && (
-            <div style={{ 
-              display: 'flex', 
-              width: '100%', 
-              maxHeight: isStudy ? '500px' : '0px', 
-              opacity: isStudy ? 1 : 0, 
-              overflow: 'hidden',
-              transition: 'max-height 0.4s ease, opacity 0.4s ease, margin-top 0.4s ease',
-              marginTop: isStudy ? '16px' : '0px'
-            }}>
-              <div id="header-selectors-portal" style={{ display: 'flex', alignItems: 'center', gap: '16px', minHeight: '34px' }}>
+            <div id="filter-controls-wrapper" style={{ overflow: 'hidden', transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)', maxHeight: isStudy ? '100px' : '0px', opacity: isStudy ? 1 : 0, width: '100%' }}>
+              <div className="filter-controls" id="header-selectors-portal" style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginBottom: '1rem' }}>
                 {stages.length > 0 && (
                   <>
                     <select className="module-selector" value={selectedStage} onChange={e => {
@@ -157,36 +173,31 @@ export default function Layout() {
 
           {/* Row 3: N/D/F or D/F Toggles */}
           {courseId && (
-            <div style={{ display: 'flex', marginTop: '16px', width: '100%' }}>
-              <div style={{ display: 'flex', background: 'rgba(15, 23, 42, 0.8)', padding: '4px', borderRadius: '30px', position: 'relative', overflow: 'hidden' }}>
-                <div style={{ position: 'absolute', top: 4, bottom: 4, left: 4, width: '130px', background: 'var(--accent)', borderRadius: '20px', transition: 'transform 0.3s cubic-bezier(0.4, 0, 0.2, 1)', transform: `translateX(${ndfActiveIndex * 130}px)`, boxShadow: '0 2px 10px rgba(139, 92, 246, 0.4)' }} />
-                <div style={{ 
-                  overflow: 'hidden', 
-                  transition: 'max-width 0.4s ease, opacity 0.4s ease',
-                  maxWidth: isStudy ? '130px' : '0px',
-                  opacity: isStudy ? 1 : 0,
-                  display: 'flex'
-                }}>
-                  <button 
+            <div style={{ display: 'flex', width: '100%' }}>
+              <nav className="mode-switcher">
+                {isStudy && (
+                  <a 
                     onClick={() => handleModeSwitch('narration')}
-                    style={{ position: 'relative', zIndex: 1, width: '130px', transition: 'color 0.3s ease', background: 'transparent', color: location.pathname.includes('narration') ? 'white' : 'var(--text-muted)', border: 'none', padding: '8px 20px', borderRadius: '20px', cursor: 'pointer', whiteSpace: 'nowrap', fontSize: '0.875rem', fontWeight: 600 }}>
+                    className={location.pathname.includes('narration') ? 'active' : ''}
+                    style={{ cursor: 'pointer' }}>
                     📖 Narration
-                  </button>
-                </div>
-                <button 
+                  </a>
+                )}
+                <a 
                   onClick={() => handleModeSwitch('dictation')}
-                  style={{ position: 'relative', zIndex: 1, width: '130px', transition: 'color 0.3s ease', background: 'transparent', color: location.pathname.includes('dictation') ? 'white' : 'var(--text-muted)', border: 'none', padding: '8px 20px', borderRadius: '20px', cursor: 'pointer', fontSize: '0.875rem', fontWeight: 600 }}>
+                  className={location.pathname.includes('dictation') ? 'active' : ''}
+                  style={{ cursor: 'pointer' }}>
                   🎧 Dictation
-                </button>
-                <button 
+                </a>
+                <a 
                   onClick={() => handleModeSwitch('flashcard')}
-                  style={{ position: 'relative', zIndex: 1, width: '130px', transition: 'color 0.3s ease', background: 'transparent', color: location.pathname.includes('flashcard') ? 'white' : 'var(--text-muted)', border: 'none', padding: '8px 20px', borderRadius: '20px', cursor: 'pointer', fontSize: '0.875rem', fontWeight: 600 }}>
+                  className={location.pathname.includes('flashcard') ? 'active' : ''}
+                  style={{ cursor: 'pointer' }}>
                   📝 Flashcard
-                </button>
-              </div>
+                </a>
+              </nav>
             </div>
           )}
-        </div>
       </header>
       
       <main style={{ flex: 1, padding: '0 16px 16px 16px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>

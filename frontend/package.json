@@ -13,6 +13,7 @@
     "@supabase/supabase-js": "^2.112.3",
     "@types/pg": "^8.21.0",
     "dexie": "^4.4.4",
+    "lucide-react": "^1.34.0",
     "pg": "^8.23.0",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
@@ -29,9 +30,15 @@
     "dotenv": "^17.4.2",
     "fake-indexeddb": "^6.2.5",
     "oxlint": "^1.75.0",
+    "playwright": "^1.62.1",
     "puppeteer": "^25.7.0",
     "tsx": "^4.23.12",
     "typescript": "~6.0.2",
     "vite": "^8.2.0"
+  },
+  "moduleVersions": {
+    "narration": "v2.0.9",
+    "dictation": "v2.1.0",
+    "flashcard": "v2.1.0"
   }
 }
