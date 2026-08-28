@@ -1,205 +1,335 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { useParams } from 'react-router-dom';
 import { db } from '../db/dexie';
-import { submitGatePass } from '../utils/fsrs';
+import { submitGatePass, getFSRSStats } from '../utils/fsrs';
 import { getMp3PublicUrl } from '../services/r2';
 import { useData } from '../contexts/DataContext';
+import { supabase } from '../services/supabase';
+import { formatWordPrompt } from '../utils/format';
+import { buildStudyQueue } from '../utils/queueBuilder';
 
 export default function Dictation() {
   const { courseId } = useParams();
-  const { courseData, loadCourse, selectedStage, selectedArticleId } = useData();
+  const { courseData, dictionary, selectedStage, selectedArticleId, learningQueue, loadCourse, appMode } = useData();
   const [queue, setQueue] = useState<any[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [input, setInput] = useState('');
   const [startTime, setStartTime] = useState(Date.now());
-  const [appMode, setAppMode] = useState(localStorage.getItem('appMode') || 'study');
   const [wrongCount, setWrongCount] = useState(0);
-  
-  // Status: 'typing' | 'correct' | 'revealed'
   const [status, setStatus] = useState<'typing' | 'correct' | 'revealed'>('typing');
-  const [feedbackMsg, setFeedbackMsg] = useState('');
-  
   const [loading, setLoading] = useState(true);
-
-  const [stats, setStats] = useState({ total: 0, mastered: 0, remaining: 0 });
+  const [feedbackMsg, setFeedbackMsg] = useState('');
+  const [fsrsStats, setFsrsStats] = useState<any>(null);
   
+  const [inputState, setInputState] = useState<'default' | 'correct' | 'incorrect'>('default');
+  const [timerFill, setTimerFill] = useState('0%');
+  const [stats, setStats] = useState({ total: 0, mastered: 0, remaining: 0 });
+
   const audioRef = useRef<HTMLAudioElement | null>(null);
-  const timerRef = useRef<number | null>(null);
+  const timerRef = useRef<any>(null);
+  const intervalRef = useRef<any>(null);
+  const isAdvancingRef = useRef(false);
+  const advanceStartTimeRef = useRef<number>(0);
 
   useEffect(() => {
-    const handleModeChange = () => {
-      setAppMode(localStorage.getItem('appMode') || 'study');
-      setCurrentIndex(0);
-      setWrongCount(0);
-      setInput('');
-      setStatus('typing');
-      setFeedbackMsg('');
-      if (timerRef.current) clearTimeout(timerRef.current);
-    };
-    window.addEventListener('appModeChanged', handleModeChange);
-    return () => window.removeEventListener('appModeChanged', handleModeChange);
-  }, []);
+    setCurrentIndex(0);
+    setWrongCount(0);
+    setInput('');
+    setStatus('typing');
+    setInputState('default');
+    setFeedbackMsg('');
+    setTimerFill('0%');
+    isAdvancingRef.current = false;
+    advanceStartTimeRef.current = 0;
+    if (timerRef.current) clearTimeout(timerRef.current);
+    if (intervalRef.current) clearInterval(intervalRef.current);
+  }, [appMode]);
 
   useEffect(() => {
     if (courseId) loadCourse(courseId);
   }, [courseId, loadCourse]);
 
+  const loadFSRSStats = useCallback(async () => {
+    try {
+      const s = await getFSRSStats(courseId);
+      setFsrsStats(s);
+    } catch (e) {
+      console.error('Failed to load FSRS stats:', e);
+    }
+  }, [courseId]);
+
   useEffect(() => {
-    const fetchQueue = async () => {
-      setLoading(true);
-      if (appMode === 'review') {
-        const now = new Date();
-        const records = await db.fsrs_progress.filter(r => {
-          if (r.course_id && r.course_id !== courseId) return false;
-          if (r.state === 0) return true; // new
-          if (r.due > now) return false;
-          if (r.todayDictationPassed) return false;
-          return true;
-        }).toArray();
-        setQueue(records);
+    if (appMode === 'review') {
+      loadFSRSStats();
+    }
+  }, [appMode, loadFSRSStats]);
+
+  const updateMasteryAndVocab = async (wordId: string, isCorrect: boolean) => {
+    if (!selectedArticleId) return;
+    try {
+      const existing = await db.study_mastery.where({ article_id: selectedArticleId, module: 'dictation', word_id: wordId.toLowerCase() }).first();
+      if (existing && existing.id) {
+        await db.study_mastery.update(existing.id, { mastered: isCorrect, updated_at: new Date().toISOString() });
       } else {
-        if (courseData && selectedStage && selectedArticleId) {
-          const sentences = courseData[selectedStage]?.[selectedArticleId] || [];
-          let sentsArray = sentences;
-          if (!Array.isArray(sentences) && typeof sentences === 'object') {
-            sentsArray = Object.keys(sentences).sort((a,b) => Number(a) - Number(b)).map(k => (sentences as any)[k]);
-          }
-          const words = new Set<string>();
-          sentsArray.forEach((s: any) => {
-            if (s.target_words) s.target_words.forEach((w: any) => words.add((w.base_form || w.word_in_sentence).toLowerCase()));
-            if (s.secondary_words) s.secondary_words.forEach((w: any) => words.add((w.base_form || w.word_in_sentence).toLowerCase()));
-          });
-          const customStr = localStorage.getItem('customVocab');
-          if (customStr) {
-             const cv = JSON.parse(customStr);
-             cv.forEach((v: any) => {
-                 if (v.stage === selectedStage && v.article === selectedArticleId) {
-                     words.add(v.sv.toLowerCase());
-                 }
-             });
-          }
-          const mw = JSON.parse(localStorage.getItem('dictationMasteredWords') || '[]');
-          
-          const total = words.size;
-          const queueItems = Array.from(words)
-              .filter(w => !mw.includes(w))
-              .map(w => ({ word_id: w }));
-          
-          setQueue(queueItems.sort(() => 0.5 - Math.random()));
-          
-          const remaining = queueItems.length;
-          const mastered = total - remaining;
-          setStats({ total, mastered, remaining });
-        } else {
-          setQueue([]);
-          setStats({ total: 0, mastered: 0, remaining: 0 });
-        }
+        await db.study_mastery.add({
+          article_id: selectedArticleId,
+          module: 'dictation',
+          word_id: wordId.toLowerCase(),
+          course_id: courseId,
+          mastered: isCorrect,
+          synced: false,
+          updated_at: new Date().toISOString()
+        });
       }
+    } catch (e) {
+      console.warn('Error updating flashcard mastery in Dexie:', e);
+    }
+
+    if (isCorrect) {
+      setStats(prev => ({
+        total: prev.total,
+        mastered: Math.min(prev.total, prev.mastered + 1),
+        remaining: Math.max(0, prev.remaining - 1)
+      }));
+    }
+  };
+
+  const lastScopeKeyRef = useRef<string>('');
+  const queueRef = useRef<any[]>([]);
+
+  const fetchQueue = useCallback(async () => {
+    try {
+      const scopeKey = `${appMode}_${courseId}_${selectedStage}_${selectedArticleId}`;
+      if (lastScopeKeyRef.current === scopeKey && queueRef.current.length > 0) {
+        return;
+      }
+
+      setLoading(true);
+      const { queue: newQueue, total, mastered, remaining } = await buildStudyQueue(
+        appMode as 'study' | 'review',
+        courseId || '',
+        selectedArticleId,
+        'dictation',
+        learningQueue
+      );
+
+      lastScopeKeyRef.current = scopeKey;
+      queueRef.current = newQueue;
+      setQueue(newQueue);
       setCurrentIndex(0);
+      setStats({ total, mastered, remaining });
+      
+      if (appMode === 'review') {
+        await loadFSRSStats();
+      }
       setLoading(false);
-    };
+    } catch(e) {
+      console.error(e);
+      setLoading(false);
+    }
+  }, [appMode, courseId, selectedStage, selectedArticleId, learningQueue, loadFSRSStats]);  useEffect(() => {
     fetchQueue();
-  }, [appMode, courseData, courseId, selectedStage, selectedArticleId]);
+  }, [fetchQueue]);
+
+  const handleResetProgress = async () => {
+    if (appMode !== 'study' || !selectedArticleId) return;
+    try {
+      const records = await db.study_mastery.where({ article_id: selectedArticleId, module: 'dictation' }).toArray();
+      for (const r of records) {
+        if (r.id) await db.study_mastery.delete(r.id);
+      }
+    } catch (e) {}
+    queueRef.current = [];
+    lastScopeKeyRef.current = '';
+    await fetchQueue();
+  };
+
+  const handleResetFSRS = async () => {
+    if (window.confirm("Are you sure you want to clear all FSRS review progress?")) {
+      try {
+        await db.fsrs_progress.clear();
+        const { data } = await supabase.auth.getUser();
+        if (data?.user) {
+          await supabase.from('fsrs_progress').delete().eq('user_id', data.user.id);
+        }
+      } catch (e) {
+        console.error('Error clearing FSRS:', e);
+      }
+      window.location.reload();
+    }
+  };
 
   const currentRecord = queue[currentIndex];
-  const currentWord = currentRecord ? { word: currentRecord.word_id, audio: `words_audio/${currentRecord.word_id}.mp3` } : null;
+  
+  const enPrompt = currentRecord ? formatWordPrompt(currentRecord, dictionary) : 'Custom Word';
 
-  const playAudio = useCallback(() => {
-    if (currentWord?.audio) {
-      const url = getMp3PublicUrl(currentWord.audio);
-      if (audioRef.current) {
-        audioRef.current.pause();
-        audioRef.current.currentTime = 0;
-        audioRef.current.src = url;
-        audioRef.current.play().catch(console.error);
-      } else {
-        const audio = new Audio(url);
-        audioRef.current = audio;
-        audio.play().catch(console.error);
+  const cleanAudioName = currentRecord?.word_id ? currentRecord.word_id.replace(/[.,!?"':;()]/g, '').trim().toLowerCase() : '';
+  const currentWord = currentRecord ? { 
+    id: currentRecord.word_id, 
+    word: currentRecord.word_id, 
+    audio: `words_audio/${cleanAudioName}.mp3` 
+  } : null;
+
+  const getExampleSentence = () => {
+    if (currentRecord?.sentence && currentRecord.sentence !== currentRecord.word_id && currentRecord.sentence !== currentRecord.word_in_sentence) {
+      return currentRecord.sentence;
+    }
+    if (currentRecord?.context_sv) return currentRecord.context_sv;
+    
+    if (courseData && (courseData as any).stages && currentWord?.word) {
+      const stages = (courseData as any).stages;
+      const targetLower = currentWord.word.toLowerCase();
+      for (const s of stages) {
+        for (const a of s.articles || []) {
+          for (const sItem of a.sentences || []) {
+            if (sItem.sv && sItem.sv.toLowerCase().includes(targetLower)) {
+              return sItem.sv;
+            }
+          }
+        }
       }
+    }
+    return '';
+  };
+  const exampleSentence = getExampleSentence();
+
+  const getEnglishTranslation = () => {
+    if (currentRecord?.context_en) return currentRecord.context_en;
+    if (currentRecord?.contextual_en) return currentRecord.contextual_en;
+    if (currentRecord?.en_translation) return currentRecord.en_translation;
+    if (currentRecord?.en) return currentRecord.en;
+    if (dictionary && currentWord?.word && dictionary[currentWord.word.toLowerCase()]) {
+      return dictionary[currentWord.word.toLowerCase()];
+    }
+    return '';
+  };
+  const enDefinition = getEnglishTranslation();
+
+  const playTTS = useCallback(() => {
+    if (!currentWord) return;
+    if ('speechSynthesis' in window) {
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(currentWord.word);
+      utterance.lang = 'sv-SE';
+      utterance.rate = 0.9;
+      window.speechSynthesis.speak(utterance);
     }
   }, [currentWord]);
 
-  const cleanText = (text: string) => {
-    return text.replace(/[.,!?"':;()\-\u2019\u2018]/g, '').trim().toLowerCase();
-  };
-
-  const updateMastery = (wordId: string, correct: boolean) => {
-    const mw = JSON.parse(localStorage.getItem('dictationMasteredWords') || '[]');
-    if (correct) {
-        if (!mw.includes(wordId.toLowerCase())) {
-            mw.push(wordId.toLowerCase());
-            localStorage.setItem('dictationMasteredWords', JSON.stringify(mw));
-        }
-    } else {
-        const newMw = mw.filter((w: string) => w !== wordId.toLowerCase());
-        if (newMw.length !== mw.length) {
-            localStorage.setItem('dictationMasteredWords', JSON.stringify(newMw));
-        }
+  const playAudio = useCallback(() => {
+    if (!currentWord) return;
+    if (audioRef.current) {
+      audioRef.current.pause();
+      audioRef.current.currentTime = 0;
     }
-  };
+    if (currentWord.audio) {
+      const url = getMp3PublicUrl(currentWord.audio);
+      const audio = new Audio(url);
+      audio.onerror = () => {
+        console.warn(`MP3 not found for "${currentWord.word}", using Swedish TTS.`);
+        playTTS();
+      };
+      audio.play().catch((err) => {
+        console.warn(`MP3 play failed for "${currentWord.word}", falling back to TTS:`, err);
+        playTTS();
+      });
+      audioRef.current = audio;
+    } else {
+      playTTS();
+    }
+  }, [currentWord, playTTS]);
 
   const proceedToNext = useCallback(() => {
     if (timerRef.current) clearTimeout(timerRef.current);
+    if (intervalRef.current) clearInterval(intervalRef.current);
+    isAdvancingRef.current = false;
+    advanceStartTimeRef.current = 0;
+    setStatus('typing');
     setWrongCount(0);
     setInput('');
-    setStatus('typing');
+    setInputState('default');
     setFeedbackMsg('');
+    setTimerFill('0%');
     setCurrentIndex(prev => prev + 1);
     setStartTime(Date.now());
   }, []);
 
   const triggerAutoAdvance = useCallback(() => {
-    if (!currentWord) return;
-    const wordLen = currentWord.word.length;
-    let duration = 1000 + wordLen * 140;
-    if (duration < 1200) duration = 1200;
-    if (duration > 8000) duration = 8000;
+    const svLen = currentWord?.word?.length || 0;
+    const enLen = enDefinition.length;
+    const ctxLen = exampleSentence ? exampleSentence.length : 0;
+    const totalLen = svLen + enLen + ctxLen;
+    const delay = Math.min(10000, Math.max(ctxLen ? 3500 : 2000, 1500 + totalLen * 100));
     
+    isAdvancingRef.current = true;
+    advanceStartTimeRef.current = Date.now();
+    let start = Date.now();
+    
+    if (intervalRef.current) clearInterval(intervalRef.current);
+    intervalRef.current = window.setInterval(() => {
+      const elapsed = Date.now() - start;
+      const percent = Math.min(100, (elapsed / delay) * 100);
+      setTimerFill(`${percent}%`);
+    }, 16);
+    
+    if (timerRef.current) clearTimeout(timerRef.current);
     timerRef.current = window.setTimeout(() => {
+      if (intervalRef.current) clearInterval(intervalRef.current);
       proceedToNext();
-    }, duration);
-  }, [currentWord, proceedToNext]);
+    }, delay);
+  }, [currentWord, enDefinition, exampleSentence, proceedToNext]);
 
   const handleCorrect = async () => {
+    if (!currentWord || !courseId || status !== 'typing') return;
+    const timeSpent = (Date.now() - startTime) / 1000;
+    const timeSec = Math.round(timeSpent);
+    
     setStatus('correct');
-    setFeedbackMsg('Correct!');
+    setInputState('correct');
+    setFeedbackMsg(`Correct! (Errors: ${wrongCount}, Time: ${timeSec}s)`);
     playAudio();
     
-    if (appMode === 'study' && currentWord) {
-        updateMastery(currentWord.word, true);
+    if (appMode === 'study') {
+      updateMasteryAndVocab(currentWord.id, true);
     }
 
-    const timeSpent = (Date.now() - startTime) / 1000;
-    if (appMode === 'review' && courseId && currentRecord) {
-       const res = await submitGatePass(courseId, currentRecord.word_id, 'dictation', wrongCount, timeSpent, false, 0);
-       if (res.completed) {
-         window.dispatchEvent(new CustomEvent('fsrs-sync', { detail: `Rated: ${res.rating}` }));
-       }
+    const res = await submitGatePass(courseId, currentWord.id, 'dictation', wrongCount, timeSpent, false, 0);
+    if (res.completed) {
+      window.dispatchEvent(new CustomEvent('fsrs-toast', { detail: res.toastMsg || `${res.ratingName} | ${res.dayStr}` }));
     }
-    
+    if (appMode === 'review') {
+      loadFSRSStats();
+      setStats(prev => ({
+        total: prev.total,
+        mastered: Math.min(prev.total, prev.mastered + 1),
+        remaining: Math.max(0, prev.remaining - 1)
+      }));
+    }
+
     triggerAutoAdvance();
   };
 
   const handleReveal = async () => {
-    if (status !== 'typing') return;
-    if (!currentWord || !courseId) return;
+    if (!currentWord || !courseId || status !== 'typing') return;
+    const timeSpent = (Date.now() - startTime) / 1000;
     
     setStatus('revealed');
-    setFeedbackMsg('已Reveal Answer');
-    
-    if (appMode === 'study') {
-        updateMastery(currentWord.word, false);
-    }
-
+    setInputState('incorrect');
+    setFeedbackMsg('Answer Revealed');
     playAudio();
     
-    const timeSpent = (Date.now() - startTime) / 1000;
-    const res = await submitGatePass(courseId, currentRecord.word_id, 'dictation', wrongCount, timeSpent, true, 1);
-    if (res.completed) {
-      window.dispatchEvent(new CustomEvent('fsrs-sync', { detail: `Rated: ${res.rating}` }));
+    if (appMode === 'study') {
+      updateMasteryAndVocab(currentWord.id, false);
     }
-    
+
+    const res = await submitGatePass(courseId, currentWord.id, 'dictation', wrongCount, timeSpent, true, 1);
+    if (res.completed) {
+      window.dispatchEvent(new CustomEvent('fsrs-toast', { detail: res.toastMsg || `${res.ratingName} | ${res.dayStr}` }));
+    }
+    if (appMode === 'review') {
+      loadFSRSStats();
+    }
+
     triggerAutoAdvance();
   };
 
@@ -207,14 +337,29 @@ export default function Dictation() {
     const handleGlobalKeyDown = (e: KeyboardEvent) => {
       if (e.key === 'Tab') {
         e.preventDefault();
+        if (wrongCount >= 2 || status !== 'typing') playAudio();
+        return;
+      }
+      
+      if (e.code === 'Space' && (e.target === document.body || status !== 'typing' || isAdvancingRef.current)) {
+        e.preventDefault();
         playAudio();
         return;
       }
+      
       if (e.key === 'Escape' || (e.key === '/' && e.metaKey)) {
         e.preventDefault();
-        if (status === 'typing') {
+        if (isAdvancingRef.current || status === 'revealed') {
+          proceedToNext();
+        } else if (status === 'typing' && wrongCount >= 1) {
           handleReveal();
-        } else {
+        }
+        return;
+      }
+
+      if ((isAdvancingRef.current || status === 'revealed' || status === 'correct') && e.key === 'Enter') {
+        if (advanceStartTimeRef.current > 0 && Date.now() - advanceStartTimeRef.current > 400) {
+          e.preventDefault();
           proceedToNext();
         }
         return;
@@ -222,142 +367,211 @@ export default function Dictation() {
     };
     window.addEventListener('keydown', handleGlobalKeyDown);
     return () => window.removeEventListener('keydown', handleGlobalKeyDown);
-  }, [status, handleReveal, proceedToNext, playAudio]);
+  }, [status, wrongCount, appMode, proceedToNext, handleReveal, playAudio]);
 
-  const handleKeyDown = async (e: React.KeyboardEvent) => {
+  const cleanText = (text: string) => {
+    return text.replace(/[.,!?"':;()\-\u2019\u2018\u2026\u201C\u201D\u00AB\u00BB]/g, '').trim().toLowerCase();
+  };
+
+  const handleKeyDown = (e: React.KeyboardEvent) => {
+    if (e.key === 'Tab' || e.key === 'Escape' || (e.key === '/' && e.metaKey)) {
+      return;
+    }
+
     if (e.key === 'Enter') {
       e.preventDefault();
-      if (!currentWord || !courseId) return;
-      
-      if (status !== 'typing') {
-        proceedToNext();
+      e.stopPropagation();
+
+      if (status === 'revealed') {
+        if (appMode !== 'review') {
+          if (advanceStartTimeRef.current > 0 && Date.now() - advanceStartTimeRef.current > 400) {
+            proceedToNext();
+          }
+        }
         return;
       }
 
+      if (status === 'correct' || isAdvancingRef.current) {
+        if (advanceStartTimeRef.current > 0 && Date.now() - advanceStartTimeRef.current > 400) {
+          proceedToNext();
+        }
+        return;
+      }
+
+      if (status !== 'typing' || !currentWord || !courseId) return;
+      
       const cleanUserText = cleanText(input);
       const cleanCorrectText = cleanText(currentWord.word);
+      const isCorrect = cleanUserText === cleanCorrectText;
       
-      if (cleanUserText === cleanCorrectText) {
-        handleCorrect();
-      } else {
+      if (!isCorrect) {
         const newWrongCount = wrongCount + 1;
         setWrongCount(newWrongCount);
+        setInput('');
+        setInputState('incorrect');
         
         let fb = '';
-        if (cleanUserText.length > cleanCorrectText.length) fb = 'Too long';
-        else if (cleanUserText.length < cleanCorrectText.length) fb = 'Too short';
-        else fb = 'Incorrect letters';
-        
-        setFeedbackMsg(fb);
-      }
-    }
-  };
-
-  const handleResetProgress = () => {
-    if (appMode !== 'study') return;
-    const mw = JSON.parse(localStorage.getItem('dictationMasteredWords') || '[]');
-    let currentScopeWords: string[] = [];
-    
-    if (courseData && selectedStage && selectedArticleId) {
-      const sentences = courseData[selectedStage]?.[selectedArticleId] || [];
-      let sentsArray = sentences;
-      if (!Array.isArray(sentences) && typeof sentences === 'object') {
-        sentsArray = Object.keys(sentences).sort((a,b) => Number(a) - Number(b)).map(k => (sentences as any)[k]);
-      }
-      sentsArray.forEach((s: any) => {
-        if (s.target_words) {
-          s.target_words.forEach((w: any) => {
-            currentScopeWords.push((w.base_form || w.word_in_sentence).toLowerCase());
-          });
+        if (cleanUserText.length > cleanCorrectText.length) {
+          fb = 'Too long';
+        } else if (cleanUserText.length < cleanCorrectText.length) {
+          fb = 'Too short';
+        } else {
+          let errCount = 0;
+          for (let i = 0; i < cleanCorrectText.length; i++) {
+            if (cleanUserText[i] !== cleanCorrectText[i]) errCount++;
+          }
+          fb = `${errCount} ${errCount === 1 ? 'letter' : 'letters'} wrong`;
         }
-      });
-      const customStr = localStorage.getItem('customVocab');
-      if (customStr) {
-         const cv = JSON.parse(customStr);
-         cv.forEach((v: any) => {
-             if (v.stage === selectedStage && v.article === selectedArticleId) {
-                 currentScopeWords.push(v.sv.toLowerCase());
-             }
-         });
+        setFeedbackMsg(fb);
+
+        if (appMode === 'study') {
+          updateMasteryAndVocab(currentWord.id, false);
+        }
+        return;
       }
+
+      handleCorrect();
     }
-    const newMw = mw.filter((w: string) => !currentScopeWords.includes(w));
-    localStorage.setItem('dictationMasteredWords', JSON.stringify(newMw));
-    window.location.reload();
   };
 
-  if (loading) return <div className="glass-panel view-container" style={{ padding: '48px', fontSize: '20px', textAlign: 'center' }}>Loading dictation...</div>;
-  if (!queue.length) return <div className="glass-panel view-container" style={{ padding: '48px', fontSize: '20px', textAlign: 'center' }}>No words available!</div>;
-  if (currentIndex >= queue.length) return <div className="glass-panel view-container" style={{ padding: '48px', fontSize: '20px', textAlign: 'center' }}>Session complete!</div>;
+  const showAnswer = status === 'correct' || status === 'revealed';
+  const isAllDone = stats.total === 0 || !queue.length || currentIndex >= queue.length;
 
-  const inputBorderColor = status === 'correct' ? 'var(--success)' : status === 'revealed' || wrongCount > 0 ? 'var(--error)' : 'var(--border)';
-  const inputBgColor = status === 'correct' ? 'rgba(0, 255, 0, 0.1)' : status === 'revealed' ? 'rgba(255, 0, 0, 0.1)' : 'transparent';
+  if (loading) return (
+    <div style={{ width: '100%', maxWidth: '800px', margin: '0 auto' }}>
+      <main className="flashcard-container glass-panel">
+        <div style={{ padding: '48px', fontSize: '20px', color: 'var(--text)' }}>Loading flashcards...</div>
+      </main>
+    </div>
+  );
 
   return (
-    <main className="dictation-container glass-panel" style={{ width: '100%', maxWidth: '800px', margin: '0 auto', padding: '2rem' }}>
-      {appMode === 'study' && (
-        <div id="progress-stats" style={{ marginBottom: '1.5rem', color: '#cbd5e1', fontSize: '1rem', display: 'flex', gap: '15px', alignItems: 'center', flexWrap: 'wrap', justifyContent: 'center' }}>
-          <span id="stat-total">Total: {stats.total}</span>
-          <span id="stat-correct" style={{ color: '#4ade80' }}>Mastered: {stats.mastered}</span>
-          <span id="stat-remaining" style={{ color: '#f87171' }}>Remaining: {stats.remaining}</span>
-          <button id="reset-progress-btn" onClick={handleResetProgress} style={{ background: 'rgba(255,255,255,0.1)', border: '1px solid rgba(255,255,255,0.3)', color: 'white', borderRadius: '10px', padding: '4px 10px', cursor: 'pointer', fontSize: '0.8rem', transition: 'background 0.3s' }}>Reset Progress</button>
+    <div style={{ width: '100%', maxWidth: '800px', margin: '0 auto' }}>
+      <main className="flashcard-container glass-panel">
+        <div id="progress-stats">
+          <span className="stat-total">
+            {appMode === 'review' ? `Review Due: ${stats.total}` : `Total: ${stats.total}`}
+          </span>
+          <span className="stat-correct">Mastered: {stats.mastered}</span>
+          <span className="stat-remaining">Remaining: {stats.remaining}</span>
+          {appMode === 'study' && (
+            <button id="reset-progress-btn" onClick={handleResetProgress}>Reset Progress</button>
+          )}
+          {appMode === 'review' && (
+            <button id="reset-progress-btn" onClick={handleResetFSRS} title="Reset all FSRS review data">Reset FSRS</button>
+          )}
+        </div>
+        
+        <div id="feedback-msg" className={`feedback ${!isAllDone && (inputState === 'correct' ? 'correct' : (inputState === 'incorrect' ? 'incorrect' : ''))}`}>
+          {!isAllDone && feedbackMsg}
+        </div>
+
+        {!isAllDone && (
+          <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', justifyContent: 'center', marginBottom: '2rem' }}>
+            <button id="play-btn" className="play-btn" onClick={playAudio} title="Play Audio (Tab)">
+              <svg className="play-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M8 5v14l11-7z" />
+              </svg>
+              <span className="tab-hint">Tab</span>
+            </button>
+          </div>
+        )}
+        
+        <div className="input-group">
+          {isAllDone && (
+            <div style={{ marginBottom: '1.5rem', textAlign: 'center' }}>
+              <div id="english-prompt" style={{ fontSize: '1.75rem', fontWeight: 700, color: '#fff', marginBottom: '0.5rem' }}>
+                {stats.total === 0
+                  ? '📝 No Words Selected'
+                  : appMode === 'review'
+                  ? '🎉 All caught up!'
+                  : '🎉 Session complete!'}
+              </div>
+              <div id="hint-display" style={{ color: '#94a3b8', fontSize: '1rem' }}>
+                {stats.total === 0
+                  ? 'All words for this article are excluded. Use Edit Mode (📖) in Narration to select words.'
+                  : appMode === 'review'
+                  ? 'No reviews due right now.'
+                  : 'All words mastered for this article.'}
+              </div>
+            </div>
+          )}
+
+          {!isAllDone && !showAnswer && wrongCount >= 3 && exampleSentence && (
+            <div id="hint-display" style={{ color: '#9ca3af', fontStyle: 'italic', marginBottom: '0.75rem', textAlign: 'center' }}>
+              {exampleSentence.replace(new RegExp(`(${currentWord?.word})`, 'gi'), '_____')}
+            </div>
+          )}
+
+          {!isAllDone && wrongCount >= 2 && status === 'typing' && enPrompt && (
+            <div id="hint-display" style={{ color: '#9ca3af', fontStyle: 'italic', marginBottom: '0.5rem', textAlign: 'center' }}>
+              Hint: {enPrompt}
+            </div>
+          )}
+          <input 
+            autoFocus={!isAllDone}
+            type="text" 
+            id="spell-input" 
+            className={`spell-input ${!isAllDone && (inputState === 'correct' ? 'correct' : (inputState === 'incorrect' ? 'incorrect' : ''))}`}
+            value={input} 
+            onChange={e => { if (!isAllDone) { setInput(e.target.value); setInputState('default'); } }} 
+            onKeyDown={handleKeyDown}
+            placeholder={isAllDone ? (appMode === 'review' ? 'All reviews completed!' : 'Session completed!') : 'Type here and hit Enter'}
+            disabled={isAllDone || showAnswer || isAdvancingRef.current}
+            autoComplete="off"
+            spellCheck="false"
+          />
+          
+          {!isAllDone && !showAnswer && (
+            <div style={{ display: 'flex', gap: '10px', justifyContent: 'center' }}>
+              <button 
+                id="reveal-btn" 
+                className={`reveal-btn ${wrongCount >= 1 ? 'show' : ''}`}
+                onClick={handleReveal}
+              >
+                Reveal Answer
+              </button>
+            </div>
+          )}
+          
+          {!isAllDone && showAnswer && (
+            <div id="answer-display" className="answer-display show">
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px' }}>
+                <strong className="correct-sv" id="correct-sv" onClick={playAudio} style={{ cursor: 'pointer' }} title="Play Audio (Tab)">
+                  {currentWord?.word}
+                </strong>
+              </div>
+              <span className="correct-en" id="correct-en">{enPrompt}</span>
+              {exampleSentence && (
+                <div id="sentence-display" style={{ marginTop: '0.75rem', fontSize: '1.05rem', color: '#cbd5e1', lineHeight: 1.5, textAlign: 'center' }}>
+                  {exampleSentence}
+                </div>
+              )}
+            </div>
+          )}
+
+          {!isAllDone && showAnswer && (
+            <button className="reveal-btn show" style={{ marginTop: '1.25rem' }} onClick={proceedToNext}>
+              Next (Enter)
+            </button>
+          )}
+        </div>
+        
+        <div id="timer-bar" className={`timer-bar ${!isAllDone && isAdvancingRef.current ? 'show' : ''}`}>
+          <div id="timer-fill" className="timer-fill" style={{ width: timerFill }}></div>
+        </div>
+      </main>
+
+      {appMode === 'review' && fsrsStats && (
+        <div id="fsrs-review-stats" className="glass-panel">
+          <div className="fsrs-stat-item"><span className="stat-val">{fsrsStats.totalStudied}</span><span className="stat-lbl">📚 Studied</span></div>
+          <div className="fsrs-stat-item"><span className="stat-val" style={{ color: '#fbbf24' }}>{fsrsStats.learning}</span><span className="stat-lbl">🌱 Learning</span></div>
+          <div className="fsrs-stat-item"><span className="stat-val" style={{ color: '#a3e635' }}>{fsrsStats.young}</span><span className="stat-lbl">🌿 Familiar</span></div>
+          <div className="fsrs-stat-item"><span className="stat-val" style={{ color: '#4ade80' }}>{fsrsStats.mature}</span><span className="stat-lbl">🌳 Mastered</span></div>
+          <div className="fsrs-stat-item"><span className="stat-val" style={{ color: '#60a5fa' }}>{fsrsStats.hitRate}%</span><span className="stat-lbl">🎯 Retention</span></div>
+          <div className="fsrs-stat-item"><span className="stat-val" style={{ color: '#c084fc' }}>{fsrsStats.dueTomorrow}</span><span className="stat-lbl">📅 Tomorrow</span></div>
         </div>
       )}
-      
-      <div id="feedback-msg" className={`feedback ${status === 'correct' ? 'correct' : (wrongCount > 0 ? 'incorrect' : '')}`}>
-        {feedbackMsg}
-      </div>
-      
-      <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', marginBottom: '2rem' }}>
-        <button id="play-btn" className="play-btn" onClick={playAudio} style={{ marginBottom: '0', position: 'relative' }}>
-          ▶
-          <span style={{ position: 'absolute', bottom: '-20px', left: '50%', transform: 'translateX(-50%)', fontSize: '0.8rem', color: 'rgba(255,255,255,0.5)', fontFamily: "'Outfit', sans-serif" }}>Tab</span>
-        </button>
-        <button id="redo-btn" className="play-btn" style={{ marginBottom: '0', background: 'transparent', display: 'none', fontSize: '2rem', paddingLeft: '0' }}>
-          ↻
-        </button>
-      </div>
-      
-      <div className="input-group">
-        <div id="hint-display" style={{ color: '#9ca3af', fontStyle: 'italic', marginBottom: '0.5rem', display: 'none' }}></div>
-        <input 
-          type="text" 
-          id="spell-input" 
-          className="spell-input" 
-          placeholder="Type here and hit Enter" 
-          autoComplete="off" 
-          spellCheck="false"
-          autoFocus
-          value={input}
-          onChange={e => { if (status === 'typing') setInput(e.target.value); }}
-          onKeyDown={handleKeyDown}
-          disabled={status !== 'typing'}
-          style={{ 
-            borderColor: inputBorderColor,
-            background: inputBgColor,
-            color: 'white'
-          }}
-        />
-        
-        <div style={{ display: 'flex', gap: '10px', justifyContent: 'center' }}>
-          <button 
-            id="reveal-btn" 
-            className={`reveal-btn ${(status === 'typing' && wrongCount >= 3) || status === 'revealed' ? 'show' : ''}`}
-            onClick={handleReveal}
-          >
-            Reveal Answer
-          </button>
-        </div>
-        
-        <div id="answer-display" className={`answer-display ${status === 'correct' || status === 'revealed' ? 'show' : ''}`}>
-          <strong style={{ fontSize: '1.5rem', color: 'var(--accent-color)' }} id="correct-sv">{currentWord?.word}</strong>
-          <span style={{ color: '#9ca3af', fontStyle: 'italic' }} id="correct-en">{currentRecord?.en_translation}</span>
-        </div>
-      </div>
-      
-      <div id="timer-bar" className="timer-bar" style={{ display: (status === 'correct' || status === 'revealed') ? 'block' : 'none' }}>
-        <div id="timer-fill" className="timer-fill" style={{ width: '100%', transition: 'width 2s linear' }}></div>
-      </div>
-    </main>
+    </div>
   );
 }

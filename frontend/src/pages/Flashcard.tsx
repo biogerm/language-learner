@@ -1,21 +1,25 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import { useParams } from 'react-router-dom';
 import { db } from '../db/dexie';
-import { submitGatePass } from '../utils/fsrs';
+import { submitGatePass, getFSRSStats } from '../utils/fsrs';
 import { getMp3PublicUrl } from '../services/r2';
 import { useData } from '../contexts/DataContext';
+import { supabase } from '../services/supabase';
+import { formatWordPrompt } from '../utils/format';
+import { buildStudyQueue } from '../utils/queueBuilder';
 
 export default function Flashcard() {
   const { courseId } = useParams();
-  const { courseData, dictionary, loadCourse, selectedStage, selectedArticleId } = useData();
+  const { courseData, dictionary, selectedStage, selectedArticleId, learningQueue, loadCourse, appMode } = useData();
   const [queue, setQueue] = useState<any[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [input, setInput] = useState('');
   const [startTime, setStartTime] = useState(Date.now());
-  const [appMode, setAppMode] = useState(localStorage.getItem('appMode') || 'study');
   const [wrongCount, setWrongCount] = useState(0);
-  const [showAnswer, setShowAnswer] = useState(false);
+  const [status, setStatus] = useState<'typing' | 'correct' | 'revealed'>('typing');
   const [loading, setLoading] = useState(true);
+  const [feedbackMsg, setFeedbackMsg] = useState('');
+  const [fsrsStats, setFsrsStats] = useState<any>(null);
   
   const [inputState, setInputState] = useState<'default' | 'correct' | 'incorrect'>('default');
   const [timerFill, setTimerFill] = useState('0%');
@@ -24,413 +28,549 @@ export default function Flashcard() {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const timerRef = useRef<any>(null);
   const intervalRef = useRef<any>(null);
-  const nextWordTimeoutRunning = useRef(false);
+  const isAdvancingRef = useRef(false);
+  const advanceStartTimeRef = useRef<number>(0);
 
   useEffect(() => {
-    const handleModeChange = () => {
-      setAppMode(localStorage.getItem('appMode') || 'study');
-      setCurrentIndex(0);
-      setWrongCount(0);
-      setInput('');
-      setShowAnswer(false);
-      setInputState('default');
-      setTimerFill('0%');
-      nextWordTimeoutRunning.current = false;
-      if (timerRef.current) clearTimeout(timerRef.current);
-      if (intervalRef.current) clearInterval(intervalRef.current);
-    };
-    window.addEventListener('appModeChanged', handleModeChange);
-    return () => window.removeEventListener('appModeChanged', handleModeChange);
-  }, []);
+    setCurrentIndex(0);
+    setWrongCount(0);
+    setInput('');
+    setStatus('typing');
+    setInputState('default');
+    setFeedbackMsg('');
+    setTimerFill('0%');
+    isAdvancingRef.current = false;
+    advanceStartTimeRef.current = 0;
+    if (timerRef.current) clearTimeout(timerRef.current);
+    if (intervalRef.current) clearInterval(intervalRef.current);
+  }, [appMode]);
 
   useEffect(() => {
     if (courseId) loadCourse(courseId);
   }, [courseId, loadCourse]);
 
-
-  const updateMasteryAndVocab = (wordId: string, isCorrect: boolean) => {
-    let vb = JSON.parse(localStorage.getItem('vocabBook') || '[]');
-    let mw = JSON.parse(localStorage.getItem('flashcardMasteredWords') || '[]');
-    
-    if (isCorrect) {
-      vb = vb.filter((w: string) => w !== wordId);
-      if (!mw.includes(wordId)) mw.push(wordId);
-    } else {
-      mw = mw.filter((w: string) => w !== wordId);
-      if (!vb.includes(wordId)) vb.push(wordId);
+  const loadFSRSStats = useCallback(async () => {
+    try {
+      const s = await getFSRSStats(courseId);
+      setFsrsStats(s);
+    } catch (e) {
+      console.error('Failed to load FSRS stats:', e);
     }
-    
-    localStorage.setItem('vocabBook', JSON.stringify(vb));
-    localStorage.setItem('flashcardMasteredWords', JSON.stringify(mw));
-  };
-
-  const fetchQueue = async () => {
-    setLoading(true);
-    if (appMode === 'review') {
-      const now = new Date();
-      const records = await db.fsrs_progress.filter(r => {
-        if (r.course_id && r.course_id !== courseId) return false;
-        if (r.state === 0) return true; // new
-        if (r.due > now) return false;
-        if (r.todayFlashcardPassed) return false;
-        return true;
-      }).toArray();
-      setQueue(records);
-    } else {
-      const mw = JSON.parse(localStorage.getItem('flashcardMasteredWords') || '[]');
-      if (selectedStage === 'review') {
-        const vb = JSON.parse(localStorage.getItem('vocabBook') || '[]');
-        const queueItems = vb
-          .filter((w: string) => !mw.includes(w))
-          .map((w: string) => ({ word_id: w, en: '', sentence: '' }));
-        setQueue(queueItems.sort(() => 0.5 - Math.random()));
-      } else if (courseData && selectedStage && selectedArticleId) {
-        const sentences = courseData[selectedStage]?.[selectedArticleId] || [];
-        let sentsArray = sentences;
-        if (!Array.isArray(sentences) && typeof sentences === 'object') {
-          sentsArray = Object.keys(sentences).sort((a,b) => Number(a) - Number(b)).map(k => (sentences as any)[k]);
-        }
-        const wordsMap = new Map<string, { sentence: string, en: string }>();
-        sentsArray.forEach((s: any) => {
-          if (s.target_words) {
-            s.target_words.forEach((w: any) => {
-              const base = (w.base_form || w.word_in_sentence).toLowerCase();
-              if (!wordsMap.has(base)) wordsMap.set(base, { sentence: s.sentence || s.sv, en: w.en || s.en || '' });
-            });
-          }
-        });
-        
-        const queueItems = Array.from(wordsMap.entries())
-          .filter(([w]) => !mw.includes(w))
-          .map(([w, data]) => ({ word_id: w, en: data.en, sentence: data.sentence }));
-        setQueue(queueItems.sort(() => 0.5 - Math.random()));
-        
-        const total = wordsMap.size;
-        const remaining = queueItems.length;
-        const mastered = total - remaining;
-        setStats({ total, mastered, remaining });
-      } else {
-        setQueue([]);
-        setStats({ total: 0, mastered: 0, remaining: 0 });
-      }
-    }
-    setCurrentIndex(0);
-    setLoading(false);
-  };
+  }, [courseId]);
 
   useEffect(() => {
-    fetchQueue();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [appMode, courseData, courseId, selectedStage, selectedArticleId]);
-
-  const handleResetProgress = () => {
-    if (appMode !== 'study') return;
-    
-    const mw = JSON.parse(localStorage.getItem('flashcardMasteredWords') || '[]');
-    let currentScopeWords: string[] = [];
-    
-    if (selectedStage === 'review') {
-      currentScopeWords = JSON.parse(localStorage.getItem('vocabBook') || '[]');
-    } else if (courseData && selectedStage && selectedArticleId) {
-      const sentences = courseData[selectedStage]?.[selectedArticleId] || [];
-      let sentsArray = sentences;
-      if (!Array.isArray(sentences) && typeof sentences === 'object') {
-        sentsArray = Object.keys(sentences).sort((a,b) => Number(a) - Number(b)).map(k => (sentences as any)[k]);
-      }
-      sentsArray.forEach((s: any) => {
-        if (s.target_words) {
-          s.target_words.forEach((w: any) => {
-            currentScopeWords.push((w.base_form || w.word_in_sentence).toLowerCase());
-          });
-        }
-      });
+    if (appMode === 'review') {
+      loadFSRSStats();
     }
-    
-    const newMw = mw.filter((w: string) => !currentScopeWords.includes(w));
-    localStorage.setItem('flashcardMasteredWords', JSON.stringify(newMw));
-    fetchQueue(); // refresh pool
+  }, [appMode, loadFSRSStats]);
+
+  const updateMasteryAndVocab = async (wordId: string, isCorrect: boolean) => {
+    if (!selectedArticleId) return;
+    try {
+      const existing = await db.study_mastery.where({ article_id: selectedArticleId, module: 'flashcard', word_id: wordId.toLowerCase() }).first();
+      if (existing && existing.id) {
+        await db.study_mastery.update(existing.id, { mastered: isCorrect, updated_at: new Date().toISOString() });
+      } else {
+        await db.study_mastery.add({
+          article_id: selectedArticleId,
+          module: 'flashcard',
+          word_id: wordId.toLowerCase(),
+          course_id: courseId,
+          mastered: isCorrect,
+          synced: false,
+          updated_at: new Date().toISOString()
+        });
+      }
+    } catch (e) {
+      console.warn('Error updating flashcard mastery in Dexie:', e);
+    }
+
+    if (isCorrect) {
+      setStats(prev => ({
+        total: prev.total,
+        mastered: Math.min(prev.total, prev.mastered + 1),
+        remaining: Math.max(0, prev.remaining - 1)
+      }));
+    }
+  };
+
+  const lastScopeKeyRef = useRef<string>('');
+  const queueRef = useRef<any[]>([]);
+
+  const fetchQueue = useCallback(async () => {
+    try {
+      const scopeKey = `${appMode}_${courseId}_${selectedStage}_${selectedArticleId}`;
+      if (lastScopeKeyRef.current === scopeKey && queueRef.current.length > 0) {
+        return;
+      }
+
+      setLoading(true);
+      const { queue: newQueue, total, mastered, remaining } = await buildStudyQueue(
+        appMode as 'study' | 'review',
+        courseId || '',
+        selectedArticleId,
+        'flashcard',
+        learningQueue
+      );
+
+      lastScopeKeyRef.current = scopeKey;
+      queueRef.current = newQueue;
+      setQueue(newQueue);
+      setCurrentIndex(0);
+      setStats({ total, mastered, remaining });
+      
+      if (appMode === 'review') {
+        await loadFSRSStats();
+      }
+      setLoading(false);
+    } catch(e) {
+      console.error(e);
+      setLoading(false);
+    }
+  }, [appMode, courseId, selectedStage, selectedArticleId, learningQueue, loadFSRSStats]);  useEffect(() => {
+    fetchQueue();
+  }, [fetchQueue]);
+
+  const handleResetProgress = async () => {
+    if (appMode !== 'study' || !selectedArticleId) return;
+    try {
+      const records = await db.study_mastery.where({ article_id: selectedArticleId, module: 'flashcard' }).toArray();
+      for (const r of records) {
+        if (r.id) await db.study_mastery.delete(r.id);
+      }
+    } catch (e) {}
+    queueRef.current = [];
+    lastScopeKeyRef.current = '';
+    await fetchQueue();
+  };
+
+  const handleResetFSRS = async () => {
+    if (window.confirm("Are you sure you want to clear all FSRS review progress?")) {
+      try {
+        await db.fsrs_progress.clear();
+        const { data } = await supabase.auth.getUser();
+        if (data?.user) {
+          await supabase.from('fsrs_progress').delete().eq('user_id', data.user.id);
+        }
+      } catch (e) {
+        console.error('Error clearing FSRS:', e);
+      }
+      window.location.reload();
+    }
   };
 
   const currentRecord = queue[currentIndex];
   
-  const enPrompt = currentRecord?.en || dictionary?.[currentRecord?.word_id] || dictionary?.[Object.keys(dictionary || {}).find(k => k.toLowerCase() === currentRecord?.word_id?.toLowerCase()) || ''] || 'Custom Word';
-  
+  const enPrompt = currentRecord ? formatWordPrompt(currentRecord, dictionary) : 'Custom Word';
+
+  const cleanAudioName = currentRecord?.word_id ? currentRecord.word_id.replace(/[.,!?"':;()]/g, '').trim().toLowerCase() : '';
   const currentWord = currentRecord ? { 
     id: currentRecord.word_id, 
     word: currentRecord.word_id, 
-    definition: enPrompt,
-    sentence: currentRecord.sentence,
-    audio: `words_audio/${currentRecord.word_id}.mp3` 
+    audio: `words_audio/${cleanAudioName}.mp3` 
   } : null;
 
-  const playAudio = () => {
-    if (currentWord?.audio) {
-      const url = getMp3PublicUrl(currentWord.audio);
-      if (audioRef.current) {
-        audioRef.current.pause();
-        audioRef.current.currentTime = 0;
-        audioRef.current.src = url;
-        audioRef.current.play().catch(console.error);
-      } else {
-        const audio = new Audio(url);
-        audioRef.current = audio;
-        audio.play().catch(console.error);
+  const getExampleSentence = () => {
+    if (currentRecord?.sentence && currentRecord.sentence !== currentRecord.word_id && currentRecord.sentence !== currentRecord.word_in_sentence) {
+      return currentRecord.sentence;
+    }
+    if (currentRecord?.context_sv) return currentRecord.context_sv;
+    
+    if (courseData && (courseData as any).stages && currentWord?.word) {
+      const stages = (courseData as any).stages;
+      const targetLower = currentWord.word.toLowerCase();
+      for (const s of stages) {
+        for (const a of s.articles || []) {
+          for (const sItem of a.sentences || []) {
+            if (sItem.sv && sItem.sv.toLowerCase().includes(targetLower)) {
+              return sItem.sv;
+            }
+          }
+        }
       }
     }
+    return '';
   };
+  const exampleSentence = getExampleSentence();
 
-  const proceedToNext = () => {
+  const getEnglishTranslation = () => {
+    if (currentRecord?.context_en) return currentRecord.context_en;
+    if (currentRecord?.contextual_en) return currentRecord.contextual_en;
+    if (currentRecord?.en_translation) return currentRecord.en_translation;
+    if (currentRecord?.en) return currentRecord.en;
+    if (dictionary && currentWord?.word && dictionary[currentWord.word.toLowerCase()]) {
+      return dictionary[currentWord.word.toLowerCase()];
+    }
+    return '';
+  };
+  const enDefinition = getEnglishTranslation();
+
+  const playTTS = useCallback(() => {
+    if (!currentWord) return;
+    if ('speechSynthesis' in window) {
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(currentWord.word);
+      utterance.lang = 'sv-SE';
+      utterance.rate = 0.9;
+      window.speechSynthesis.speak(utterance);
+    }
+  }, [currentWord]);
+
+  const playAudio = useCallback(() => {
+    if (!currentWord) return;
+    if (audioRef.current) {
+      audioRef.current.pause();
+      audioRef.current.currentTime = 0;
+    }
+    if (currentWord.audio) {
+      const url = getMp3PublicUrl(currentWord.audio);
+      const audio = new Audio(url);
+      audio.onerror = () => {
+        console.warn(`MP3 not found for "${currentWord.word}", using Swedish TTS.`);
+        playTTS();
+      };
+      audio.play().catch((err) => {
+        console.warn(`MP3 play failed for "${currentWord.word}", falling back to TTS:`, err);
+        playTTS();
+      });
+      audioRef.current = audio;
+    } else {
+      playTTS();
+    }
+  }, [currentWord, playTTS]);
+
+  const proceedToNext = useCallback(() => {
     if (timerRef.current) clearTimeout(timerRef.current);
     if (intervalRef.current) clearInterval(intervalRef.current);
-    nextWordTimeoutRunning.current = false;
+    isAdvancingRef.current = false;
+    advanceStartTimeRef.current = 0;
+    setStatus('typing');
     setWrongCount(0);
     setInput('');
-    setShowAnswer(false);
     setInputState('default');
+    setFeedbackMsg('');
     setTimerFill('0%');
     setCurrentIndex(prev => prev + 1);
     setStartTime(Date.now());
+  }, []);
+
+  const triggerAutoAdvance = useCallback(() => {
+    const svLen = currentWord?.word?.length || 0;
+    const enLen = enDefinition.length;
+    const ctxLen = exampleSentence ? exampleSentence.length : 0;
+    const totalLen = svLen + enLen + ctxLen;
+    const delay = Math.min(10000, Math.max(ctxLen ? 3500 : 2000, 1500 + totalLen * 100));
+    
+    isAdvancingRef.current = true;
+    advanceStartTimeRef.current = Date.now();
+    let start = Date.now();
+    
+    if (intervalRef.current) clearInterval(intervalRef.current);
+    intervalRef.current = window.setInterval(() => {
+      const elapsed = Date.now() - start;
+      const percent = Math.min(100, (elapsed / delay) * 100);
+      setTimerFill(`${percent}%`);
+    }, 16);
+    
+    if (timerRef.current) clearTimeout(timerRef.current);
+    timerRef.current = window.setTimeout(() => {
+      if (intervalRef.current) clearInterval(intervalRef.current);
+      proceedToNext();
+    }, delay);
+  }, [currentWord, enDefinition, exampleSentence, proceedToNext]);
+
+  const handleCorrect = async () => {
+    if (!currentWord || !courseId || status !== 'typing') return;
+    const timeSpent = (Date.now() - startTime) / 1000;
+    const timeSec = Math.round(timeSpent);
+    
+    setStatus('correct');
+    setInputState('correct');
+    setFeedbackMsg(`Correct! (Errors: ${wrongCount}, Time: ${timeSec}s)`);
+    playAudio();
+    
+    if (appMode === 'study') {
+      updateMasteryAndVocab(currentWord.id, true);
+    }
+
+    const res = await submitGatePass(courseId, currentWord.id, 'flashcard', wrongCount, timeSpent, false, 0);
+    if (res.completed) {
+      window.dispatchEvent(new CustomEvent('fsrs-toast', { detail: res.toastMsg || `${res.ratingName} | ${res.dayStr}` }));
+    }
+    if (appMode === 'review') {
+      loadFSRSStats();
+      setStats(prev => ({
+        total: prev.total,
+        mastered: Math.min(prev.total, prev.mastered + 1),
+        remaining: Math.max(0, prev.remaining - 1)
+      }));
+    }
+
+    triggerAutoAdvance();
   };
 
-  const handleRate = async (rating: number) => {
-    if (!currentWord || !courseId) return;
+  const handleReveal = async () => {
+    if (!currentWord || !courseId || status !== 'typing') return;
     const timeSpent = (Date.now() - startTime) / 1000;
     
-    if (appMode === 'review') {
-        const res = await submitGatePass(courseId, currentWord.id, 'flashcard', wrongCount, timeSpent, true, rating);
-        if (res.completed) {
-          window.dispatchEvent(new CustomEvent('fsrs-sync', { detail: `Rated: ${res.rating}` }));
-        }
-    }
-    
-    proceedToNext();
-  };
-  
-  const handleReveal = async () => {
-    if (!currentWord || !courseId) return;
-    setShowAnswer(true);
+    setStatus('revealed');
     setInputState('incorrect');
+    setFeedbackMsg('Answer Revealed');
+    playAudio();
+    
     if (appMode === 'study') {
       updateMasteryAndVocab(currentWord.id, false);
     }
-    playAudio();
+
+    const res = await submitGatePass(courseId, currentWord.id, 'flashcard', wrongCount, timeSpent, true, 1);
+    if (res.completed) {
+      window.dispatchEvent(new CustomEvent('fsrs-toast', { detail: res.toastMsg || `${res.ratingName} | ${res.dayStr}` }));
+    }
+    if (appMode === 'review') {
+      loadFSRSStats();
+    }
+
+    triggerAutoAdvance();
   };
 
   useEffect(() => {
     const handleGlobalKeyDown = (e: KeyboardEvent) => {
       if (e.key === 'Tab') {
         e.preventDefault();
-        if (wrongCount >= 2 || showAnswer) playAudio();
+        if (wrongCount >= 2 || status !== 'typing') playAudio();
         return;
       }
       
-      // Legacy audio replay
-      if (e.code === 'Space' && e.target === document.body) {
+      if (e.code === 'Space' && (e.target === document.body || status !== 'typing' || isAdvancingRef.current)) {
         e.preventDefault();
         playAudio();
         return;
       }
       
-      // Legacy reveal / skip countdown
       if (e.key === 'Escape' || (e.key === '/' && e.metaKey)) {
         e.preventDefault();
-        if (nextWordTimeoutRunning.current) {
+        if (isAdvancingRef.current || status === 'revealed') {
           proceedToNext();
-        } else if (!showAnswer) {
+        } else if (status === 'typing' && wrongCount >= 1) {
           handleReveal();
+        }
+        return;
+      }
+
+      if ((isAdvancingRef.current || status === 'revealed' || status === 'correct') && e.key === 'Enter') {
+        if (advanceStartTimeRef.current > 0 && Date.now() - advanceStartTimeRef.current > 400) {
+          e.preventDefault();
+          proceedToNext();
         }
         return;
       }
     };
     window.addEventListener('keydown', handleGlobalKeyDown);
     return () => window.removeEventListener('keydown', handleGlobalKeyDown);
-  });
+  }, [status, wrongCount, appMode, proceedToNext, handleReveal, playAudio]);
 
-  const handleKeyDown = async (e: React.KeyboardEvent) => {
+  const cleanText = (text: string) => {
+    return text.replace(/[.,!?"':;()\-\u2019\u2018\u2026\u201C\u201D\u00AB\u00BB]/g, '').trim().toLowerCase();
+  };
+
+  const handleKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === 'Tab' || e.key === 'Escape' || (e.key === '/' && e.metaKey)) {
-      // Handled globally
       return;
     }
 
-    if (!showAnswer && e.key === 'Enter') {
+    if (e.key === 'Enter') {
       e.preventDefault();
-      if (!currentWord || !courseId) return;
+      e.stopPropagation();
+
+      if (status === 'revealed') {
+        if (appMode !== 'review') {
+          if (advanceStartTimeRef.current > 0 && Date.now() - advanceStartTimeRef.current > 400) {
+            proceedToNext();
+          }
+        }
+        return;
+      }
+
+      if (status === 'correct' || isAdvancingRef.current) {
+        if (advanceStartTimeRef.current > 0 && Date.now() - advanceStartTimeRef.current > 400) {
+          proceedToNext();
+        }
+        return;
+      }
+
+      if (status !== 'typing' || !currentWord || !courseId) return;
       
-      const isCorrect = input.toLowerCase().trim() === currentWord.word.toLowerCase();
+      const cleanUserText = cleanText(input);
+      const cleanCorrectText = cleanText(currentWord.word);
+      const isCorrect = cleanUserText === cleanCorrectText;
       
       if (!isCorrect) {
-        setWrongCount(prev => prev + 1);
+        const newWrongCount = wrongCount + 1;
+        setWrongCount(newWrongCount);
         setInput('');
         setInputState('incorrect');
+        
+        let fb = '';
+        if (cleanUserText.length > cleanCorrectText.length) {
+          fb = 'Too long';
+        } else if (cleanUserText.length < cleanCorrectText.length) {
+          fb = 'Too short';
+        } else {
+          let errCount = 0;
+          for (let i = 0; i < cleanCorrectText.length; i++) {
+            if (cleanUserText[i] !== cleanCorrectText[i]) errCount++;
+          }
+          fb = `${errCount} ${errCount === 1 ? 'letter' : 'letters'} wrong`;
+        }
+        setFeedbackMsg(fb);
+
         if (appMode === 'study') {
           updateMasteryAndVocab(currentWord.id, false);
         }
         return;
       }
 
-      setInputState('correct');
-      const timeSpent = (Date.now() - startTime) / 1000;
-      
-      if (appMode === 'study') {
-        updateMasteryAndVocab(currentWord.id, true);
-        await submitGatePass(courseId, currentWord.id, 'flashcard', wrongCount, timeSpent, false, 0);
-      } else {
-        const res = await submitGatePass(courseId, currentWord.id, 'flashcard', wrongCount, timeSpent, false, 0);
-        if (res.completed) {
-          window.dispatchEvent(new CustomEvent('fsrs-sync', { detail: `Rated: ${res.rating}` }));
-        }
-      }
-      
-      // Auto-Advance Timer
-      const svLen = currentWord.word.length;
-      const enLen = currentWord.definition.length;
-      const delay = Math.max(1200, Math.min(8000, 1000 + (svLen + enLen) * 140));
-      
-      nextWordTimeoutRunning.current = true;
-      let start = Date.now();
-      
-      if (intervalRef.current) clearInterval(intervalRef.current);
-      intervalRef.current = setInterval(() => {
-        const percent = ((Date.now() - start) / delay) * 100;
-        setTimerFill(`${percent}%`);
-      }, 16);
-      
-      if (timerRef.current) clearTimeout(timerRef.current);
-      timerRef.current = setTimeout(() => {
-        clearInterval(intervalRef.current);
-        proceedToNext();
-      }, delay);
-      
-      return;
-    }
-    
-    if (showAnswer && e.key === 'Enter') {
-      e.preventDefault();
-      if (appMode !== 'review') proceedToNext();
-      else handleRate(wrongCount > 0 ? 1 : 3);
-      return;
-    }
-
-    if (showAnswer && appMode === 'review') {
-      if (e.key === '1') { e.preventDefault(); handleRate(1); }
-      if (e.key === '2') { e.preventDefault(); handleRate(2); }
-      if (e.key === '3') { e.preventDefault(); handleRate(3); }
-      if (e.key === '4') { e.preventDefault(); handleRate(4); }
+      handleCorrect();
     }
   };
 
-  const getBorderColor = () => {
-    if (inputState === 'correct') return 'var(--success, #28a745)';
-    if (inputState === 'incorrect') return 'var(--error, #dc3545)';
-    return 'var(--border)';
-  };
+  const showAnswer = status === 'correct' || status === 'revealed';
+  const isAllDone = stats.total === 0 || !queue.length || currentIndex >= queue.length;
 
-  if (loading) return <div className="glass-panel view-container" style={{ padding: '48px', fontSize: '20px', textAlign: 'center' }}>Loading flashcards...</div>;
-  if (!queue.length) return (
-    <div className="glass-panel view-container" style={{ padding: '48px', fontSize: '20px', textAlign: 'center' }}>
-      No cards available!
-      {appMode === 'study' && (
-        <div style={{ marginTop: '16px' }}>
-          <button className="btn-primary" onClick={handleResetProgress}>Reset Progress</button>
-        </div>
-      )}
-    </div>
-  );
-  if (currentIndex >= queue.length) return (
-    <div className="glass-panel view-container" style={{ padding: '48px', fontSize: '20px', textAlign: 'center' }}>
-      Session complete!
-      {appMode === 'study' && (
-        <div style={{ marginTop: '16px' }}>
-          <button className="btn-primary" onClick={handleResetProgress}>Reset Progress</button>
-        </div>
-      )}
+  if (loading) return (
+    <div style={{ width: '100%', maxWidth: '800px', margin: '0 auto' }}>
+      <main className="flashcard-container glass-panel">
+        <div style={{ padding: '48px', fontSize: '20px', color: 'var(--text)' }}>Loading flashcards...</div>
+      </main>
     </div>
   );
 
   return (
-    <div className="glass-panel view-container" style={{ position: 'relative', overflow: 'hidden' }}>
-      {nextWordTimeoutRunning.current && (
-        <div style={{ position: 'absolute', top: 0, left: 0, height: '4px', background: 'var(--success, #28a745)', width: timerFill, transition: 'width 16ms linear' }}></div>
-      )}
-      
-      {appMode === 'study' && selectedStage !== 'review' && (
-          <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '16px' }}>
-              <div id="progress-stats" style={{ display: 'flex', alignItems: 'center', fontSize: '14px', color: 'var(--text-muted)' }}>
-                  Total: {stats.total} | <span style={{ color: 'var(--success)', margin: '0 4px' }}>Mastered: {stats.mastered}</span> | <span style={{ color: 'var(--accent)', margin: '0 4px' }}>Remaining: {stats.remaining}</span>
-                  <button id="reset-progress" onClick={handleResetProgress} title="Reset Progress" style={{
-                      background: 'rgba(255,255,255,0.1)', border: 'none', color: 'var(--text)', 
-                      borderRadius: '50%', width: '24px', height: '24px', display: 'flex', 
-                      alignItems: 'center', justifyContent: 'center', cursor: 'pointer', marginLeft: '8px'
-                  }}>
-                      ↻
-                  </button>
-              </div>
-          </div>
-      )}
-      
-      <div style={{ padding: '32px 0', fontSize: '24px', fontWeight: 'bold', color: 'var(--text-h)' }}>
-        {currentWord?.definition}
-      </div>
-
-      <input 
-        autoFocus
-        type="text" 
-        value={input} 
-        onChange={e => { setInput(e.target.value); setInputState('default'); }} 
-        onKeyDown={handleKeyDown}
-        placeholder="Translate to Swedish..."
-        disabled={showAnswer || nextWordTimeoutRunning.current}
-        style={{ 
-          width: '100%', 
-          padding: '16px', 
-          fontSize: '24px', 
-          borderRadius: '12px', 
-          border: '2px solid', 
-          textAlign: 'center', 
-          borderColor: getBorderColor(),
-          color: inputState === 'correct' ? 'var(--success, #28a745)' : (inputState === 'incorrect' ? 'var(--error, #dc3545)' : 'var(--text)'),
-          marginBottom: '16px',
-          outline: 'none'
-        }}
-      />
-      
-      {wrongCount >= 2 && !showAnswer && (
-        <div style={{ color: 'var(--accent)', cursor: 'pointer', marginBottom: '8px', fontSize: '14px' }} onClick={playAudio}>
-          🔊 Audio Hint (Press Tab)
+    <div style={{ width: '100%', maxWidth: '800px', margin: '0 auto' }}>
+      <main className="flashcard-container glass-panel">
+        <div id="progress-stats">
+          <span className="stat-total">
+            {appMode === 'review' ? `Review Due: ${stats.total}` : `Total: ${stats.total}`}
+          </span>
+          <span className="stat-correct">Mastered: {stats.mastered}</span>
+          <span className="stat-remaining">Remaining: {stats.remaining}</span>
+          {appMode === 'study' && (
+            <button id="reset-progress-btn" onClick={handleResetProgress}>Reset Progress</button>
+          )}
+          {appMode === 'review' && (
+            <button id="reset-progress-btn" onClick={handleResetFSRS} title="Reset all FSRS review data">Reset FSRS</button>
+          )}
         </div>
-      )}
-      {wrongCount >= 3 && !showAnswer && currentWord?.sentence && (
-        <div style={{ color: 'var(--text-muted)', fontStyle: 'italic', marginBottom: '16px' }}>
-          {currentWord.sentence.replace(new RegExp(`(${currentWord.word})`, 'gi'), '_____')}
+        
+        <div id="feedback-msg" className={`feedback ${!isAllDone && (inputState === 'correct' ? 'correct' : (inputState === 'incorrect' ? 'incorrect' : ''))}`}>
+          {!isAllDone && feedbackMsg}
         </div>
-      )}
 
-      <div style={{ minHeight: '160px', width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-        {!showAnswer ? (
-          <button onClick={handleReveal} className="btn-primary" style={{ background: 'transparent', border: '1px solid var(--accent)', color: 'var(--accent)', maxWidth: '200px' }}>Reveal Answer</button>
-        ) : (
-          <div className="reveal-animation" style={{ width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-            <div className="flashcard-word" onClick={playAudio} style={{ cursor: 'pointer', color: 'var(--accent)' }}>
-              {currentWord?.word}
-              <span className="flashcard-audio-hint" style={{ fontSize: '14px', marginLeft: '8px' }}>🔊</span>
-            </div>
-            
-            <div style={{ marginTop: '24px', display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
-              {appMode === 'review' ? (
-                <>
-                  <button className="btn-primary" style={{ background: 'var(--error)' }} onClick={() => handleRate(1)}>Again (1)</button>
-                  <button className="btn-primary" style={{ background: 'var(--warning)' }} onClick={() => handleRate(2)}>Hard (2)</button>
-                  <button className="btn-primary" style={{ background: 'var(--success)' }} onClick={() => handleRate(3)}>Good (3)</button>
-                  <button className="btn-primary" style={{ background: 'var(--info)' }} onClick={() => handleRate(4)}>Easy (4)</button>
-                </>
-              ) : (
-                <button className="btn-primary" onClick={proceedToNext}>Next</button>
-              )}
-            </div>
-            <p style={{ color: 'var(--text)', fontStyle: 'italic', marginTop: '16px' }}>Press Enter to continue</p>
+        {!isAllDone && wrongCount >= 2 && !showAnswer && (
+          <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', justifyContent: 'center', marginBottom: '1.5rem' }}>
+            <button id="play-btn" className="play-btn" onClick={playAudio} title="Audio Hint (Tab)">
+              <svg className="play-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M8 5v14l11-7z" />
+              </svg>
+              <span className="tab-hint">Tab</span>
+            </button>
           </div>
         )}
-      </div>
+        
+        <div className="input-group">
+          {isAllDone ? (
+            <div style={{ marginBottom: '1.5rem', textAlign: 'center' }}>
+              <div id="english-prompt" style={{ fontSize: '1.75rem', fontWeight: 700, color: '#fff', marginBottom: '0.5rem' }}>
+                {stats.total === 0
+                  ? '📝 No Words Selected'
+                  : appMode === 'review'
+                  ? '🎉 All caught up!'
+                  : '🎉 Session complete!'}
+              </div>
+              <div id="hint-display" style={{ color: '#94a3b8', fontSize: '1rem' }}>
+                {stats.total === 0
+                  ? 'All words for this article are excluded. Use Edit Mode (📖) in Narration to select words.'
+                  : appMode === 'review'
+                  ? 'No reviews due right now.'
+                  : 'All words mastered for this article.'}
+              </div>
+            </div>
+          ) : (
+            <div id="english-prompt">
+              {enPrompt}
+            </div>
+          )}
+
+          {!isAllDone && !showAnswer && wrongCount >= 3 && exampleSentence && (
+            <div id="hint-display" style={{ color: '#9ca3af', fontStyle: 'italic', marginBottom: '0.75rem', textAlign: 'center' }}>
+              {exampleSentence.replace(new RegExp(`(${currentWord?.word})`, 'gi'), '_____')}
+            </div>
+          )}
+
+          <input 
+            autoFocus={!isAllDone}
+            type="text" 
+            id="spell-input" 
+            className={`spell-input ${!isAllDone && (inputState === 'correct' ? 'correct' : (inputState === 'incorrect' ? 'incorrect' : ''))}`}
+            value={input} 
+            onChange={e => { if (!isAllDone) { setInput(e.target.value); setInputState('default'); } }} 
+            onKeyDown={handleKeyDown}
+            placeholder={isAllDone ? (appMode === 'review' ? 'All reviews completed!' : 'Session completed!') : 'Type the Swedish word'}
+            disabled={isAllDone || showAnswer || isAdvancingRef.current}
+            autoComplete="off"
+            spellCheck="false"
+          />
+          
+          {!isAllDone && !showAnswer && (
+            <div style={{ display: 'flex', gap: '10px', justifyContent: 'center' }}>
+              <button 
+                id="reveal-btn" 
+                className={`reveal-btn ${wrongCount >= 1 ? 'show' : ''}`}
+                onClick={handleReveal}
+              >
+                Reveal Answer
+              </button>
+            </div>
+          )}
+          
+          {!isAllDone && showAnswer && (
+            <div id="answer-display" className="answer-display show">
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px' }}>
+                <strong className="correct-sv" id="correct-sv" onClick={playAudio} style={{ cursor: 'pointer' }} title="Play Audio (Tab)">
+                  {currentWord?.word}
+                </strong>
+              </div>
+              <span className="correct-en" id="correct-en">{enPrompt}</span>
+              {exampleSentence && (
+                <div id="sentence-display" style={{ marginTop: '0.75rem', fontSize: '1.05rem', color: '#cbd5e1', lineHeight: 1.5, textAlign: 'center' }}>
+                  {exampleSentence}
+                </div>
+              )}
+            </div>
+          )}
+
+          {!isAllDone && showAnswer && (
+            <button className="reveal-btn show" style={{ marginTop: '1.25rem' }} onClick={proceedToNext}>
+              Next (Enter)
+            </button>
+          )}
+        </div>
+        
+        <div id="timer-bar" className={`timer-bar ${!isAllDone && isAdvancingRef.current ? 'show' : ''}`}>
+          <div id="timer-fill" className="timer-fill" style={{ width: timerFill }}></div>
+        </div>
+      </main>
+
+      {appMode === 'review' && fsrsStats && (
+        <div id="fsrs-review-stats" className="glass-panel">
+          <div className="fsrs-stat-item"><span className="stat-val">{fsrsStats.totalStudied}</span><span className="stat-lbl">📚 Studied</span></div>
+          <div className="fsrs-stat-item"><span className="stat-val" style={{ color: '#fbbf24' }}>{fsrsStats.learning}</span><span className="stat-lbl">🌱 Learning</span></div>
+          <div className="fsrs-stat-item"><span className="stat-val" style={{ color: '#a3e635' }}>{fsrsStats.young}</span><span className="stat-lbl">🌿 Familiar</span></div>
+          <div className="fsrs-stat-item"><span className="stat-val" style={{ color: '#4ade80' }}>{fsrsStats.mature}</span><span className="stat-lbl">🌳 Mastered</span></div>
+          <div className="fsrs-stat-item"><span className="stat-val" style={{ color: '#60a5fa' }}>{fsrsStats.hitRate}%</span><span className="stat-lbl">🎯 Retention</span></div>
+          <div className="fsrs-stat-item"><span className="stat-val" style={{ color: '#c084fc' }}>{fsrsStats.dueTomorrow}</span><span className="stat-lbl">📅 Tomorrow</span></div>
+        </div>
+      )}
     </div>
   );
 }

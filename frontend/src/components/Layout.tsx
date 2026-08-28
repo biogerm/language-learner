@@ -1,7 +1,8 @@
+import pkg from "../../package.json";
 import { Outlet, useNavigate, useLocation, useParams } from 'react-router-dom';
 
 import { FSRSToast } from './FSRSToast';
-import { useEffect, useState, useMemo, } from 'react';
+import { useEffect, useMemo } from 'react';
 import { syncOfflineProgress } from '../utils/fsrs';
 import { useData } from '../contexts/DataContext';
 import { supabase } from '../services/supabase';
@@ -12,6 +13,7 @@ export default function Layout() {
   const { courseId } = useParams();
 
   useEffect(() => {
+    syncOfflineProgress().catch(console.error);
     const handleOnline = () => {
       console.log('App is online. Attempting to sync offline progress.');
       syncOfflineProgress().catch(console.error);
@@ -20,41 +22,45 @@ export default function Layout() {
     return () => window.removeEventListener('online', handleOnline);
   }, []);
 
-  const { courseData, dictionary, selectedStage, setSelectedStage, selectedArticleId, setSelectedArticleId } = useData();
+  const { courseData, selectedStage, setSelectedStage, selectedArticleId, setSelectedArticleId, appMode, setAppMode } = useData();
 
   const stages = useMemo(() => {
     if (!courseData) return [];
-    const baseStages = Object.keys(courseData).map(stageName => {
-      const stageObj = courseData[stageName];
-      return {
-        id: stageName,
-        title: stageName,
-        articles: Object.keys(stageObj).map(articleTitle => ({
-          id: articleTitle,
-          title: articleTitle
-        }))
-      };
-    });
-    if (location.pathname.includes('flashcard')) {
-       baseStages.push({ id: 'review', title: 'Review (Mistakes)', articles: [] });
+    let baseStages = [];
+    
+    // Check if new array schema
+    if (courseData.stages && Array.isArray(courseData.stages)) {
+        baseStages = courseData.stages.map((s: any) => ({
+            id: s.stage_id,
+            title: s.stage_title || s.title || s.stage_id,
+            articles: (s.articles || []).map((a: any) => ({
+                id: a.article_id,
+                title: a.article_title ? `${a.article_id} - ${a.article_title}` : (a.title || a.article_id)
+            }))
+        }));
+    } else {
+        // Legacy object schema
+        baseStages = Object.keys(courseData).map(stageName => {
+          const stageObj = courseData[stageName];
+          return {
+            id: stageName,
+            title: stageName,
+            articles: Object.keys(stageObj).map(articleTitle => ({
+              id: articleTitle,
+              title: articleTitle
+            }))
+          };
+        });
     }
     return baseStages;
-  }, [courseData, location.pathname]);
+  }, [courseData]);
 
   useEffect(() => {
-    if (stages.length > 0 && !selectedStage) {
+    if (stages.length > 0 && (!selectedStage || selectedStage === 'review')) {
       setSelectedStage(stages[0]?.id || '');
       setSelectedArticleId(stages[0]?.articles?.[0]?.id || '');
     }
   }, [stages, selectedStage, setSelectedStage, setSelectedArticleId]);
-
-  const [appMode, setAppMode] = useState(localStorage.getItem('appMode') || 'study');
-
-  useEffect(() => {
-    const handleModeChange = () => setAppMode(localStorage.getItem('appMode') || 'study');
-    window.addEventListener('appModeChanged', handleModeChange);
-    return () => window.removeEventListener('appModeChanged', handleModeChange);
-  }, []);
 
   const handleModeSwitch = (path: string) => {
     if (courseId) {
@@ -66,10 +72,10 @@ export default function Layout() {
   // const ndfActiveIndex = location.pathname.includes('narration') ? 0 : location.pathname.includes('dictation') ? (isStudy ? 1 : 0) : (isStudy ? 2 : 1);
 
   const getModuleInfo = (path: string) => {
-    if (path.includes('dictation')) return { name: 'Dictation', version: 'v2.1.0' };
-    if (path.includes('flashcard')) return { name: 'Flashcard', version: 'v2.1.0' };
-    if (path.includes('narration')) return { name: 'Narration', version: 'v2.0.9' };
-    return { name: 'Language Learner', version: 'v1.0.0' };
+    if (path.includes('dictation')) return { name: 'Dictation', version: 'v2.2.14' };
+    if (path.includes('flashcard')) return { name: 'Flashcard', version: 'v2.2.17' };
+    if (path.includes('narration')) return { name: 'Narration', version: 'v2.2.9' };
+    return { name: 'Language Learner', version: 'v2.2.9' };
   };
   const modInfo = getModuleInfo(location.pathname);
 
@@ -91,8 +97,7 @@ export default function Layout() {
                 <div className="voice-toggle" id="fsrs-mode-toggle">
                   <button 
                     onClick={() => {
-                      localStorage.setItem('appMode', 'study');
-                      window.dispatchEvent(new Event('appModeChanged'));
+                      setAppMode('study');
                     }}
                     className={`toggle-option ${isStudy ? 'active' : ''}`}
                     style={{ cursor: 'pointer' }}>
@@ -100,8 +105,7 @@ export default function Layout() {
                   </button>
                   <button 
                     onClick={() => {
-                      localStorage.setItem('appMode', 'review');
-                      window.dispatchEvent(new Event('appModeChanged'));
+                      setAppMode('review');
                       if (location.pathname.includes('narration')) {
                         handleModeSwitch('dictation');
                       }
@@ -147,7 +151,7 @@ export default function Layout() {
               <div className="filter-controls" id="header-selectors-portal" style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginBottom: '1rem' }}>
                 {stages.length > 0 && (
                   <>
-                    <select className="module-selector" value={selectedStage} onChange={e => {
+                    <select id="stage-select" className="glass-select" style={{ minWidth: '140px', maxWidth: '180px', textOverflow: 'ellipsis' }} value={selectedStage} onChange={e => {
                         const stageId = e.target.value;
                         setSelectedStage(stageId);
                         const stage = stages.find(s => s.id === stageId);
@@ -157,14 +161,13 @@ export default function Layout() {
                           setSelectedArticleId('');
                         }
                     }}>
-                      {location.pathname.includes('flashcard') && <option value="review">Review Ready ({Math.max(0, Object.keys(dictionary || {}).length - JSON.parse(localStorage.getItem('flashcardMasteredWords') || '[]').length)})</option>}
-                      {stages.map(s => s.id !== 'review' && <option key={s.id} value={s.id}>{s.title}</option>)}
+                      {stages.map(s => <option key={s.id} value={s.id}>{s.title}</option>)}
                     </select>
-                    {selectedStage !== 'review' && (
-                      <select className="module-selector" value={selectedArticleId} onChange={e => setSelectedArticleId(e.target.value)}>
-                        {stages.find(s => s.id === selectedStage)?.articles?.map(a => <option key={a.id} value={a.id}>{a.title}</option>)}
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                      <select id="article-select" className="glass-select" style={{ minWidth: '220px', maxWidth: '320px', textOverflow: 'ellipsis' }} value={selectedArticleId} onChange={e => setSelectedArticleId(e.target.value)}>
+                        {stages.find(s => s.id === selectedStage)?.articles?.map((a: any) => <option key={a.id} value={a.id}>{a.title}</option>)}
                       </select>
-                    )}
+                    </div>
                   </>
                 )}
               </div>
@@ -200,16 +203,14 @@ export default function Layout() {
           )}
       </header>
       
-      <main style={{ flex: 1, padding: '0 16px 16px 16px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-        <div className="reveal-animation" style={{ width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', flex: 1 }}>
+      
           <Outlet />
-        </div>
-      </main>
+
       
       <FSRSToast />
       
       <footer style={{ textAlign: 'center', padding: '16px', color: 'var(--text-mute)', fontSize: '14px' }}>
-        Language Learner v1.0.0
+        Language Learner {location.pathname.includes('narration') ? pkg.moduleVersions?.narration : location.pathname.includes('dictation') ? pkg.moduleVersions?.dictation : location.pathname.includes('flashcard') ? pkg.moduleVersions?.flashcard : 'v' + pkg.version}
       </footer>
     </div>
   );
