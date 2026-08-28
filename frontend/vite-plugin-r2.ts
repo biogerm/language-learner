@@ -41,9 +41,14 @@ export default function r2ProxyPlugin() {
             
             const response = await s3.send(command);
             
-            // 3. Set proper headers
-            res.setHeader('Content-Type', response.ContentType || 'application/octet-stream');
+            // 3. Set proper headers for audio streaming
+            const contentType = response.ContentType || (normalizedKey.endsWith('.mp3') ? 'audio/mpeg' : 'application/octet-stream');
+            res.setHeader('Content-Type', contentType);
             res.setHeader('Cache-Control', 'public, max-age=31536000');
+            res.setHeader('Accept-Ranges', 'bytes');
+            if (response.ContentLength) {
+              res.setHeader('Content-Length', response.ContentLength);
+            }
             
             // 4. Stream with robust error and termination handling
             if (response.Body instanceof Readable) {

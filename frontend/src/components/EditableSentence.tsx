@@ -1,5 +1,6 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { global_dict } from '../data/global_dict';
+import { db, type WordObject } from '../db/dexie';
 
 interface CustomVocabWord {
     sv: string;
@@ -21,13 +22,26 @@ interface EditableSentenceProps {
 }
 
 export default function EditableSentence({ sent, combinedWords, courseId, stage, article, onSaveComplete, onCancel }: EditableSentenceProps) {
-    // We load the current state from localStorage
-    const [customVocab, setCustomVocab] = useState<CustomVocabWord[]>(() => {
-        try { return JSON.parse(localStorage.getItem('customVocab') || '[]'); } catch { return []; }
-    });
-    const [excludedVocab, setExcludedVocab] = useState<string[]>(() => {
-        try { return JSON.parse(localStorage.getItem('excludedVocab') || '[]'); } catch { return []; }
-    });
+    const [customVocab, setCustomVocab] = useState<CustomVocabWord[]>([]);
+    const [excludedVocab, setExcludedVocab] = useState<string[]>([]);
+
+    useEffect(() => {
+        (async () => {
+            try {
+                const ex = await db.excluded_dictionary.toArray();
+                setExcludedVocab(ex.map(r => r.base_form.toLowerCase()));
+                const cv = await db.custom_dictionary.toArray();
+                setCustomVocab(cv.map(r => ({
+                    sv: r.base_form,
+                    en: r.en_translation,
+                    stage: r.stage_id,
+                    article: r.article_id,
+                    course_id: r.course_id,
+                    timestamp: Date.now()
+                })));
+            } catch (e) {}
+        })();
+    }, []);
 
     const [toggledStates, setToggledStates] = useState<Record<string, boolean>>({});
     const [queue, setQueue] = useState<any[]>([]);
@@ -238,8 +252,34 @@ export default function EditableSentence({ sent, combinedWords, courseId, stage,
             }
         });
 
-        if (excludedChanged) localStorage.setItem('excludedVocab', JSON.stringify(newExcluded));
-        if (customChanged) localStorage.setItem('customVocab', JSON.stringify(newCustom));
+        if (excludedChanged) {
+            db.transaction('rw', db.excluded_dictionary, async () => {
+                for (const ex of newExcluded) {
+                    const exists = await db.excluded_dictionary.where('base_form').equalsIgnoreCase(ex).first();
+                    if (!exists) await db.excluded_dictionary.add({ base_form: ex, article_id: article, course_id: courseId, synced: false });
+                }
+            }).catch(() => {});
+        }
+        if (customChanged) {
+            db.transaction('rw', db.custom_dictionary, async () => {
+                for (const item of newCustom) {
+                    const exists = await db.custom_dictionary.where({ base_form: item.sv, article_id: item.article }).first();
+                    if (!exists) {
+                        await db.custom_dictionary.add({
+                            base_form: item.sv,
+                            word_in_sentence: item.sv,
+                            en_translation: item.en,
+                            article_id: item.article || article,
+                            stage_id: item.stage || stage,
+                            course_id: item.course_id || courseId,
+                            sentence: sent.sv,
+                            sentence_en: sent.en || '',
+                            synced: false
+                        } as unknown as WordObject);
+                    }
+                }
+            }).catch(() => {});
+        }
         
         setCustomVocab(newCustom);
         setExcludedVocab(newExcluded);
@@ -255,7 +295,7 @@ export default function EditableSentence({ sent, combinedWords, courseId, stage,
         }
     };
 
-    const handleQueueSubmit = () => {
+    const handleQueueSubmit = async () => {
         if (!userTranslation.trim()) return;
         const currentItem = queue[queueIndex];
         
@@ -268,7 +308,20 @@ export default function EditableSentence({ sent, combinedWords, courseId, stage,
             course_id: currentItem.course_id,
             timestamp: Date.now()
         });
-        localStorage.setItem('customVocab', JSON.stringify(newCustom));
+        try {
+            await db.custom_dictionary.add({
+                base_form: currentItem.sv,
+                word_in_sentence: currentItem.sv,
+                en_translation: userTranslation,
+                article_id: currentItem.article || article,
+                stage_id: currentItem.stage || stage,
+                course_id: currentItem.course_id || courseId,
+                sentence: sent.sv,
+                sentence_en: sent.en || '',
+                synced: false
+            } as unknown as WordObject);
+        } catch (e) {}
+
         setCustomVocab(newCustom);
         setUserTranslation("");
 

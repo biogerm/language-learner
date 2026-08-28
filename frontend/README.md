@@ -1,32 +1,47 @@
-# React + TypeScript + Vite
+# Language Learner Web App
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+This is the frontend component of the Language Learner Cloud (LLC) project, a modern React application built with Vite.
 
-Currently, two official plugins are available:
+## Tech Stack
+- **Framework**: React 19 + Vite
+- **Routing**: React Router DOM
+- **Local Storage**: Dexie (IndexedDB wrapper)
+- **Cloud Database**: Supabase (PostgreSQL)
+- **Spaced Repetition**: `ts-fsrs`
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Architecture Highlights
 
-## React Compiler
+### Dual-Layer Storage
+The app is designed to be **Offline-First**. 
+1. **Dexie.js** acts as the primary data source for the UI. It provides instant load times and offline capabilities.
+2. **Supabase** acts as the cloud synchronization layer, ensuring that user progress (like FSRS logs, custom words, and mastery levels) is safely backed up and synced across devices.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Learning Logic (FSRS)
+We use the **Free Spaced Repetition Scheduler (FSRS)** algorithm to manage the learning queue. 
+- Words are classified into three types: `Target` (core vocabulary), `Secondary` (contextual vocabulary), and `Custom` (user-added words).
+- When a user studies an article, the system queues these words for dictation and flashcard review, automatically calculating the optimal next review date based on the user's performance.
 
-## Expanding the Oxlint configuration
+### Independent Module Versioning
+The core learning experiences are split into independent modules:
+- **Narration**
+- **Dictation**
+- **Flashcard**
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+Each of these modules is versioned independently. When updates are made to the logic or UI of a specific module, only its version badge (and the `moduleVersions` in `package.json`) is bumped.
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+## Development Scripts
+
+```bash
+npm run dev      # Start local development server
+npm run build    # Build for production
+npm run lint     # Run oxlint
+npm run preview  # Preview the production build locally
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+### Testing
+End-to-End (E2E) and automated tests (Playwright/Puppeteer) are located in the `e2e/` directory.
+
+```bash
+# Example: Run E2E tests (if configured in package.json)
+npx playwright test
+```

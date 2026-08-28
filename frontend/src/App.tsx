@@ -1,6 +1,5 @@
 import { BrowserRouter as Router, Routes, Route, Navigate, Outlet } from 'react-router-dom';
 import Login from './pages/Login';
-import Landing from './pages/Landing';
 import Dashboard from './pages/Dashboard';
 import Narration from './pages/Narration';
 import Dictation from './pages/Dictation';
@@ -34,7 +33,6 @@ function App() {
         <DataProvider>
           <Router>
             <Routes>
-              <Route path="/" element={<Landing />} />
               <Route path="/login" element={<Login />} />
               
               <Route element={<ProtectedRoute />}>
@@ -44,6 +42,7 @@ function App() {
                   <Route path="/dictation/:courseId" element={<Dictation />} />
                   <Route path="/flashcard/:courseId" element={<Flashcard />} />
                   <Route path="/course/:courseId/review" element={<Review />} />
+                  <Route path="/" element={<Navigate to="/dashboard" replace />} />
                 </Route>
               </Route>
             </Routes>

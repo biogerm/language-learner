@@ -13,51 +13,101 @@ export async function syncOfflineProgress() {
     try {
         const { data: { session } } = await supabase.auth.getSession();
         if (!session?.user) return;
+        const userId = session.user.id;
 
+        // 1. PULL: Fetch all remote records from Supabase
+        const { data: remoteRecords, error: pullError } = await supabase
+            .from('fsrs_progress')
+            .select('*')
+            .eq('user_id', userId);
+
+        if (pullError) {
+            console.error('Supabase pull error:', pullError);
+            return;
+        }
+
+        const remoteMap = new Map((remoteRecords || []).map(r => [r.word_id, r]));
+        const localRecords = await db.fsrs_progress.toArray();
+        const localMap = new Map(localRecords.map(r => [r.word_id, r]));
+
+        // 2. RECONCILE: Apply remote state & purge deleted cards
+        await db.transaction('rw', db.fsrs_progress, async () => {
+            // Delete local cards that were previously synced but removed from server
+            for (const local of localRecords) {
+                if (local.synced && !remoteMap.has(local.word_id)) {
+                    await db.fsrs_progress.delete(local.word_id);
+                }
+            }
+
+            // Update or insert remote cards into Dexie
+            for (const remote of remoteRecords || []) {
+                const local = localMap.get(remote.word_id);
+                const remoteUpdated = remote.updated_at ? new Date(remote.updated_at).getTime() : 0;
+                const localUpdated = local?.updated_at ? new Date(local.updated_at).getTime() : 0;
+
+                if (!local || (local.synced && remoteUpdated >= localUpdated)) {
+                    await db.fsrs_progress.put({
+                        word_id: remote.word_id,
+                        course_id: remote.course_id,
+                        state: remote.state,
+                        due: new Date(remote.due),
+                        stability: remote.stability,
+                        difficulty: remote.difficulty,
+                        elapsed_days: remote.elapsed_days,
+                        scheduled_days: remote.scheduled_days,
+                        reps: remote.reps,
+                        lapses: remote.lapses,
+                        last_review: remote.last_review ? new Date(remote.last_review) : new Date(),
+                        todayDictationPassed: local?.todayDictationPassed ?? (remote.today_dictation_passed || false),
+                        todayFlashcardPassed: local?.todayFlashcardPassed ?? (remote.today_flashcard_passed || false),
+                        max_wrongs: Math.max(local?.max_wrongs || 0, remote.max_wrongs || 0),
+                        max_time: Math.max(local?.max_time || 0, remote.max_time || 0),
+                        gave_up: local?.gave_up || remote.gave_up || false,
+                        reveal_count: Math.max(local?.reveal_count || 0, remote.reveal_count || 0),
+                        lastGatePassDate: local?.lastGatePassDate || remote.last_gate_pass_date,
+                        synced: true,
+                        updated_at: remote.updated_at
+                    });
+                }
+            }
+        });
+
+        // 3. PUSH: Send any un-synced local changes to Supabase
         const unsynced = await db.fsrs_progress
             .filter(record => !record.synced && !record.sync_error)
             .toArray();
 
-        if (unsynced.length === 0) return;
+        if (unsynced.length > 0) {
+            const payload = unsynced.map(record => ({
+                user_id: userId,
+                course_id: record.course_id || 'sfid',
+                word_id: record.word_id,
+                state: record.state,
+                due: record.due.toISOString(),
+                stability: record.stability || 0,
+                difficulty: record.difficulty || 0,
+                elapsed_days: record.elapsed_days || 0,
+                scheduled_days: record.scheduled_days || 0,
+                reps: record.reps || 0,
+                lapses: record.lapses || 0,
+                last_review: record.last_review ? record.last_review.toISOString() : new Date().toISOString(),
+                updated_at: record.updated_at || new Date().toISOString()
+            }));
 
-        const payload = unsynced.map(record => ({
-            user_id: session.user.id,
-            course_id: record.course_id || 'sfid',
-            word_id: record.word_id,
-            state: record.state,
-            due: record.due.toISOString(),
-            stability: record.stability || 0,
-            difficulty: record.difficulty || 0,
-            elapsed_days: record.elapsed_days || 0,
-            scheduled_days: record.scheduled_days || 0,
-            reps: record.reps || 0,
-            lapses: record.lapses || 0,
-            last_review: record.last_review ? record.last_review.toISOString() : new Date().toISOString(),
-            updated_at: new Date().toISOString()
-        }));
+            const { error: pushError } = await supabase
+                .from('fsrs_progress')
+                .upsert(payload, { onConflict: 'user_id, course_id, word_id' });
 
-        const { error } = await supabase
-            .from('fsrs_progress')
-            .upsert(payload, { onConflict: 'user_id, course_id, word_id' });
-
-        if (error) {
-            console.error('Supabase sync error:', error);
-            if (error.code === '42501' || error.message?.includes('RLS') || error.message?.includes('violates row-level security')) {
-                await Promise.all(unsynced.map(record => 
-                    db.fsrs_progress.update(record.word_id, { sync_error: error.message })
-                ));
-                window.dispatchEvent(new CustomEvent('fsrs-sync', { detail: `Sync blocked: Permission denied` }));
+            if (pushError) {
+                console.error('Supabase sync push error:', pushError);
             } else {
-                window.dispatchEvent(new CustomEvent('fsrs-sync', { detail: `Sync failed. Retrying later...` }));
+                await Promise.all(unsynced.map(record => 
+                    db.fsrs_progress.update(record.word_id, { synced: true, sync_error: undefined })
+                ));
             }
-            return;
         }
 
-        await Promise.all(unsynced.map(record => 
-            db.fsrs_progress.update(record.word_id, { synced: true, sync_error: undefined })
-        ));
-        console.log(`Successfully synced ${unsynced.length} records.`);
-        window.dispatchEvent(new CustomEvent('fsrs-sync', { detail: `Synced ${unsynced.length} cards` }));
+        window.dispatchEvent(new CustomEvent('fsrs-sync', { detail: 'FSRS synchronized' }));
     } catch (err: any) {
         console.error('Error during progress sync:', err);
         window.dispatchEvent(new CustomEvent('fsrs-sync', { detail: `Sync error: ${err.message}` }));
@@ -89,12 +139,28 @@ export function calculateFSRSRating(max_wrongs: number, max_time: number, gave_u
     return Rating.Hard;
 }
 
-export async function submitGatePass(courseId: string, wordId: string, gate: 'dictation' | 'flashcard', wrongs: number, timeSec: number, gave_up: boolean, reveal_count: number) {
-    let progress = await db.fsrs_progress.get(wordId);
+export async function submitGatePass(
+    courseId: string, 
+    wordId: string, 
+    gate: 'dictation' | 'flashcard', 
+    wrongs: number, 
+    timeSec: number, 
+    gave_up: boolean, 
+    reveal_count: number,
+    manualRating?: Rating
+) {
+    if (!wordId || typeof wordId !== 'string') return { completed: false };
+    const cleanWordId = wordId.trim().toLowerCase();
+    if (!cleanWordId) return { completed: false };
+
+    let progress = await db.fsrs_progress.get(cleanWordId);
+    if (!progress) {
+        progress = await db.fsrs_progress.where('word_id').equalsIgnoreCase(cleanWordId).first();
+    }
     if (!progress) {
         const emptyCard = createEmptyCard(new Date());
         progress = {
-            word_id: wordId,
+            word_id: cleanWordId,
             course_id: courseId,
             state: emptyCard.state,
             due: emptyCard.due,
@@ -106,6 +172,8 @@ export async function submitGatePass(courseId: string, wordId: string, gate: 'di
             lapses: emptyCard.lapses,
             last_review: emptyCard.last_review || new Date(),
         };
+    } else {
+        progress.word_id = cleanWordId;
     }
 
     const todayStr = new Date().toDateString();
@@ -133,9 +201,9 @@ export async function submitGatePass(courseId: string, wordId: string, gate: 'di
     if (gate === 'dictation') progress.todayDictationPassed = true;
     if (gate === 'flashcard') progress.todayFlashcardPassed = true;
 
-    // Check if Dual-Gate is complete
-    if (progress.todayDictationPassed && progress.todayFlashcardPassed) {
-        const rating = calculateFSRSRating(progress.max_wrongs, progress.max_time, !!progress.gave_up, progress.reveal_count);
+    // Check if Dual-Gate is complete or manual rating provided in review mode
+    if ((progress.todayDictationPassed && progress.todayFlashcardPassed) || manualRating !== undefined) {
+        const rating = manualRating !== undefined ? manualRating : calculateFSRSRating(progress.max_wrongs, progress.max_time, !!progress.gave_up, progress.reveal_count);
         
         const card: Card = {
             due: progress.due,
@@ -153,13 +221,28 @@ export async function submitGatePass(courseId: string, wordId: string, gate: 'di
         const schedulingCards = fsrs.repeat(card, new Date());
         const newCardState = (schedulingCards as any)[rating].card;
 
-        // Cap first review interval to 1 day
-        if (isFirstReview && rating !== Rating.Again) {
-            const tomorrow = new Date();
-            tomorrow.setDate(tomorrow.getDate() + 1);
-            if (newCardState.due.getTime() > tomorrow.getTime()) {
-                newCardState.due = tomorrow;
-            }
+        // =========================================================================
+        // [TESTING OVERRIDE] / [测试模式改动]
+        // -------------------------------------------------------------------------
+        // Purpose: Make words entering Review from Study mode immediately due for testing.
+        // 目的: 为了方便测试，将从 Study 学完（双门禁毕业）初次进入 Review 的单词到期时间设为“立刻到期 (now)”。
+        //
+        // HOW TO RESTORE / 如何恢复为标准 FSRS 生产规则:
+        // Delete this block and restore the standard 1-day cap logic:
+        // ```ts
+        // if (isFirstReview && rating !== Rating.Again) {
+        //     const tomorrow = new Date();
+        //     tomorrow.setDate(tomorrow.getDate() + 1);
+        //     if (newCardState.due.getTime() > tomorrow.getTime()) {
+        //         newCardState.due = tomorrow;
+        //     }
+        // }
+        // ```
+        // =========================================================================
+        if (isFirstReview) {
+            newCardState.due = new Date(Date.now() - 1000); // Immediately due for testing
+        } else if (rating !== Rating.Again) {
+            // Subsequent reviews follow standard FSRS intervals
         }
 
         // Apply new state and reset gate passes
@@ -181,18 +264,100 @@ export async function submitGatePass(courseId: string, wordId: string, gate: 'di
         progress.reveal_count = 0;
 
         progress.synced = false;
+        progress.updated_at = new Date().toISOString();
         await db.fsrs_progress.put(progress);
         
         syncOfflineProgress().catch(console.error);
 
+        const nextDue = new Date(newCardState.due);
+        const diffTime = nextDue.getTime() - Date.now();
+        let diffDays = Math.max(0, Math.ceil(diffTime / (1000 * 60 * 60 * 24)));
+        
+        let ratingName = "Hard";
+        if (rating === Rating.Again) {
+            ratingName = "Again";
+            diffDays = 0;
+        } else if (rating === Rating.Good) {
+            ratingName = "Good";
+        } else if (rating === Rating.Easy) {
+            ratingName = "Easy";
+        }
+
+        let dayStr = "";
+        if (rating === Rating.Again) {
+            dayStr = "5 mins";
+        } else if (diffDays <= 1) {
+            dayStr = "1 day";
+        } else {
+            dayStr = `${diffDays} days`;
+        }
+
         return {
             rating,
+            ratingName,
+            nextDueDays: diffDays,
+            dayStr,
+            toastMsg: `${ratingName} | ${dayStr}`,
             nextDue: newCardState.due,
             completed: true
         };
     } else {
         progress.synced = false;
+        progress.updated_at = new Date().toISOString();
         await db.fsrs_progress.put(progress);
         return { completed: false };
     }
 }
+
+export async function getFSRSStats(courseId?: string) {
+    const all = await db.fsrs_progress.toArray();
+    const records = courseId ? all.filter(r => !r.course_id || r.course_id === courseId) : all;
+    
+    let totalStudied = 0;
+    let learning = 0;
+    let young = 0;
+    let mature = 0;
+    let dueTomorrow = 0;
+    let totalReps = 0;
+    let totalLapses = 0;
+
+    const now = new Date();
+    const endOfTomorrow = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 2, 0, 0, 0, -1);
+
+    for (const r of records) {
+        if (r.state > 0) {
+            totalStudied++;
+        }
+        totalReps += Number(r.reps) || 0;
+        totalLapses += Number(r.lapses) || 0;
+
+        if (r.state === 1) {
+            learning++;
+        } else if (r.state === 2) {
+            const scheduledDays = Number(r.scheduled_days) || 0;
+            if (scheduledDays >= 21) {
+                mature++;
+            } else {
+                young++;
+            }
+        }
+
+        const due = new Date(r.due);
+        if (!isNaN(due.getTime()) && due > now && due <= endOfTomorrow) {
+            dueTomorrow++;
+        }
+    }
+
+    const hitRate = totalReps > 0 ? Math.round(((totalReps - totalLapses) / totalReps) * 100) : 100;
+
+    return {
+        totalStudied,
+        learning,
+        young,
+        mature,
+        totalReps,
+        hitRate,
+        dueTomorrow
+    };
+}
+

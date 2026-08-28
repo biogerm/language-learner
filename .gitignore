@@ -4,9 +4,30 @@ dist/
 build/
 .env
 .env.local
+.env.*
 
 # Build output
 *.log
 *.webm
 scratch/
 brain/
+
+# Local Environment and IDE
+.DS_Store
+.agents/
+.gemini/
+.obsidian/
+.vscode/
+
+# Local Cloudflare Data
+.wrangler/
+
+# Sensitive & Local Backups
+SFI\ Local\ Backup.json
+_archive_root/
+frontend/_archive_frontend/
+mock_test/
+marls/
+
+# Raw Data (Do not upload PDFs)
+*.pdf

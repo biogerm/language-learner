@@ -1,18 +1,44 @@
-# SFI D Language Learner Data Pipeline
+# Language Learner Cloud (LLC)
 
-This repository contains the data pipeline for generating Swedish language learning materials (CEFR B1 / SFI D level) from raw vocabulary lists.
+An AI-powered language learning platform currently configured for Swedish (CEFR B1 / SFI D level).
 
-## Architecture
+This project features a comprehensive ecosystem that takes raw vocabulary data, processes it into structured learning materials using AI, and serves it through a modern web application with offline-first capabilities and spaced repetition.
 
-The data pipeline consists of 5 phases, orchestrated to transform raw vocabulary into a structured, dual-language database and audio assets for frontend consumption.
+## Architecture Overview
 
-1. **Phase 1: Vocabulary Extraction & Cleaning** - Cleans raw JSON data extracted from PDFs, fixes encoding issues, and uses AI to ensure all translations are accurate.
-2. **Phase 2: Structured Article Generation** - Uses AI to generate CEFR B1 standard Swedish articles that incorporate 100% of the target vocabulary in a 3-layer architecture (`Course` -> `Step` -> `Article`).
-3. **Phase 3: Database Export (SQLite)** - Joins vocabulary and context sentences, exporting to a SQLite database (`b1_vocab.db`) for backend and mobile consumption.
-4. **Phase 4: Audio TTS** - Generates Edge TTS audio for words and sentences, with closed-loop Whisper ASR verification.
-5. **Phase 5: Frontend Assembly & HTML Print** - Packages the final JSON data for the web application and generates A4 printable HTML materials.
+The platform consists of three main components:
 
-## Directory Structure
-- `/course/sfid/data/` - Raw input vocabulary data (JSON/TXT).
-- `/scripts/` - Python pipeline scripts.
-- `/docs/` - Detailed technical specifications for each phase of the pipeline.
+### 1. Data Pipeline (`/scripts` & `/docs`)
+A robust 5-phase Python pipeline that transforms raw vocabulary into a structured, dual-language database and generates audio assets.
+- **Vocabulary Extraction**: Cleans raw data and ensures translation accuracy using AI.
+- **Article Generation**: AI generates CEFR B1 standard Swedish articles incorporating target vocabulary.
+- **Database Export**: Exports to a SQLite database (`b1_vocab.db`) for backend/mobile consumption.
+- **Audio TTS**: Generates Edge TTS audio for words and sentences with closed-loop Whisper ASR verification.
+- **Frontend Assembly**: Packages final JSON data for the web application.
+> See the `/docs` folder for detailed technical specifications (Spec 01 - 05).
+
+### 2. Web Application (`/frontend`)
+A modern React SPA (Single Page Application) built with Vite.
+- **Offline-First Storage**: Uses Dexie (IndexedDB) for local data persistence.
+- **Cloud Synchronization**: Uses Supabase for syncing user progress and data across devices.
+- **Spaced Repetition (FSRS)**: Implements the Free Spaced Repetition Scheduler for optimal learning efficiency.
+- **Learning Modes**: Features Narration, Dictation, and Flashcard learning modes.
+
+### 3. Landing Page (`/landing-page`)
+The marketing and entry point for the application.
+
+## Getting Started
+
+### Prerequisites
+- Node.js (v18+)
+- Python 3.10+ (for running the data pipeline)
+
+### Frontend Development
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+## Security & Privacy Note
+This repository does NOT contain any API keys, sensitive environment variables (`.env`), or proprietary raw PDF data. If you are setting this up locally, you will need to provide your own API keys for AI services (OpenAI/Gemini) and Supabase.

@@ -2,6 +2,7 @@ import { createContext, useContext, useState, useCallback, useEffect, type React
 import { fetchCourseData } from '../services/r2';
 import { supabase } from '../services/supabase';
 import { db, type WordObject } from '../db/dexie';
+import { syncExcludedDictionary } from '../services/sync';
 
 interface DataContextType {
   courseData: Record<string, Record<string, any>> | null;
@@ -11,13 +12,17 @@ interface DataContextType {
   setSelectedStage: (stage: string) => void;
   selectedArticleId: string;
   setSelectedArticleId: (article: string) => void;
+  appMode: 'study' | 'review';
+  setAppMode: (mode: 'study' | 'review') => void;
   
   learningQueue: WordObject[];
   customDictionary: WordObject[];
+  excludedVocab: string[];
   refreshLearningQueue: () => Promise<void>;
   removeFromLearningQueue: (id: string) => Promise<void>;
   addToCustomDictionary: (word: WordObject) => Promise<void>;
   refreshCustomDictionary: () => Promise<void>;
+  refreshExcludedDictionary: () => Promise<void>;
 }
 
 const DataContext = createContext<DataContextType | undefined>(undefined);
@@ -26,16 +31,50 @@ export function DataProvider({ children }: { children: ReactNode }) {
   const [courseData, setCourseData] = useState<Record<string, Record<string, any>> | null>(null);
   const [dictionary, setDictionary] = useState<Record<string, any> | null>(null);
   const [currentCourse, setCurrentCourse] = useState<string | null>(null);
-  const [selectedStage, setSelectedStage] = useState(localStorage.getItem('selectedStage') || '');
-  const [selectedArticleId, setSelectedArticleId] = useState(localStorage.getItem('selectedArticleId') || '');
+  const [selectedStage, setSelectedStageState] = useState('');
+  const [selectedArticleId, setSelectedArticleIdState] = useState('');
+  const [appMode, setAppModeState] = useState<'study' | 'review'>('study');
 
   const [learningQueue, setLearningQueue] = useState<WordObject[]>([]);
   const [customDictionary, setCustomDictionary] = useState<WordObject[]>([]);
+  const [excludedVocab, setExcludedVocab] = useState<string[]>([]);
 
+  // Initialize client settings from Dexie local_settings
   useEffect(() => {
-    localStorage.setItem('selectedStage', selectedStage);
-    localStorage.setItem('selectedArticleId', selectedArticleId);
-  }, [selectedStage, selectedArticleId]);
+    (async () => {
+      try {
+        const mode = await db.local_settings.get('appMode');
+        if (mode && (mode.value === 'study' || mode.value === 'review')) {
+          setAppModeState(mode.value);
+        }
+        const stage = await db.local_settings.get('selectedStage');
+        if (stage && typeof stage.value === 'string') {
+          setSelectedStageState(stage.value);
+        }
+        const art = await db.local_settings.get('selectedArticleId');
+        if (art && typeof art.value === 'string') {
+          setSelectedArticleIdState(art.value);
+        }
+      } catch (e) {
+        console.warn('Error loading local settings from Dexie:', e);
+      }
+    })();
+  }, []);
+
+  const setAppMode = useCallback((mode: 'study' | 'review') => {
+    setAppModeState(mode);
+    db.local_settings.put({ key: 'appMode', value: mode, updated_at: new Date().toISOString() }).catch(() => {});
+  }, []);
+
+  const setSelectedStage = useCallback((stage: string) => {
+    setSelectedStageState(stage);
+    db.local_settings.put({ key: 'selectedStage', value: stage, updated_at: new Date().toISOString() }).catch(() => {});
+  }, []);
+
+  const setSelectedArticleId = useCallback((article: string) => {
+    setSelectedArticleIdState(article);
+    db.local_settings.put({ key: 'selectedArticleId', value: article, updated_at: new Date().toISOString() }).catch(() => {});
+  }, []);
 
   const loadCourse = useCallback(async (courseId: string) => {
     if (currentCourse === courseId && courseData) return;
@@ -43,29 +82,33 @@ export function DataProvider({ children }: { children: ReactNode }) {
       let data = null;
       let vocabData = null;
       
+      const { data: courseRow, error } = await supabase
+        .from('courses')
+        .select('r2_json_url, r2_vocab_url, updated_at')
+        .eq('id', courseId)
+        .single();
+
+      if (error || !courseRow?.r2_json_url) {
+        throw new Error(`Course not found or missing r2_json_url for ${courseId}`);
+      }
+
       const cached = await db.course_data.get(courseId);
-      if (cached && cached.articles && Object.keys(cached.articles).length > 0) {
+      const remoteUpdated = courseRow.updated_at ? new Date(courseRow.updated_at).getTime() : 0;
+      const localUpdated = cached?.updated_at ? new Date(cached.updated_at).getTime() : 0;
+
+      if (cached && cached.articles && Object.keys(cached.articles).length > 0 && localUpdated >= remoteUpdated) {
         data = cached.articles;
         vocabData = cached.dictionary || [];
       } else {
-        const { data: courseRow, error } = await supabase
-          .from('courses')
-          .select('r2_json_url, r2_vocab_url')
-          .eq('id', courseId)
-          .single();
-
-        if (error || !courseRow?.r2_json_url) {
-          throw new Error(`Course not found or missing r2_json_url for ${courseId}`);
-        }
-
-        data = await fetchCourseData(courseRow.r2_json_url);
+        console.log(`Cache invalid or missing. Fetching course ${courseId} from remote...`);
+        data = await fetchCourseData(`${courseRow.r2_json_url}?v=${remoteUpdated}`);
         
         try {
           if (courseRow.r2_vocab_url) {
-            vocabData = await fetchCourseData(courseRow.r2_vocab_url);
+            vocabData = await fetchCourseData(`${courseRow.r2_vocab_url}?v=${remoteUpdated}`);
           } else {
             // Fallback assumption
-            vocabData = await fetchCourseData('courses/sfid/course_sfid_vocab.json');
+            vocabData = await fetchCourseData(`courses/sfid/course_sfid_vocab.json?v=${remoteUpdated}`);
           }
         } catch (err) {
           console.warn("Failed to fetch vocab data", err);
@@ -76,19 +119,47 @@ export function DataProvider({ children }: { children: ReactNode }) {
           courseId,
           dictionary: vocabData,
           articles: data,
+          updated_at: courseRow.updated_at || new Date().toISOString()
         };
         await db.course_data.put(cacheData);
       }
       
+      const dictMap: Record<string, string> = {};
+      if (Array.isArray(vocabData)) {
+        for (const v of vocabData) {
+          if (v.base_form) {
+            const translation = v.en_translation || v.contextual_en || v.en;
+            if (translation && !dictMap[v.base_form.toLowerCase()]) {
+              dictMap[v.base_form.toLowerCase()] = translation;
+            }
+          }
+        }
+      } else if (vocabData && typeof vocabData === 'object') {
+        Object.assign(dictMap, vocabData);
+      }
+
       setCourseData(data);
-      setDictionary(vocabData);
+      setDictionary(dictMap);
       setCurrentCourse(courseId);
     } catch (err) {
       console.error('Error loading course data:', err);
       const cached = await db.course_data.get(courseId);
       if (cached && cached.articles) {
+        const dictMap: Record<string, string> = {};
+        if (Array.isArray(cached.dictionary)) {
+          for (const v of cached.dictionary) {
+            if (v.base_form) {
+              const translation = v.en_translation || v.contextual_en || v.en;
+              if (translation && !dictMap[v.base_form.toLowerCase()]) {
+                dictMap[v.base_form.toLowerCase()] = translation;
+              }
+            }
+          }
+        } else if (cached.dictionary && typeof cached.dictionary === 'object') {
+          Object.assign(dictMap, cached.dictionary);
+        }
         setCourseData(cached.articles);
-        setDictionary(cached.dictionary || null);
+        setDictionary(dictMap);
         setCurrentCourse(courseId);
       } else {
         throw err;
@@ -96,79 +167,134 @@ export function DataProvider({ children }: { children: ReactNode }) {
     }
   }, [currentCourse, courseData]);
 
-  const refreshLearningQueue = useCallback(async () => {
-    if (!selectedArticleId) {
+  const syncLearningQueue = useCallback(async () => {
+    if (!currentCourse || !selectedArticleId) {
       setLearningQueue([]);
       return;
     }
-    const arr = await db.learning_queue.where('article_id').equals(selectedArticleId).toArray();
-    setLearningQueue(arr);
-  }, [selectedArticleId]);
+    const cached = await db.course_data.get(currentCourse);
+    if (!cached || !cached.dictionary) return;
+    
+    const vocabList = (cached.dictionary || []) as WordObject[];
+    
+    let targetWordsSet = new Set<string>();
+    const sentenceMap = new Map<string, { sv: string, en: string }>();
+    const wordToSentenceMap = new Map<string, { sv: string, en: string }>();
 
-  useEffect(() => {
-    let isCancelled = false;
+    if (cached.articles && cached.articles.stages) {
+        for (const s of cached.articles.stages) {
+            for (const a of s.articles) {
+                if (a.article_id === selectedArticleId && a.sentences) {
+                    for (const sent of a.sentences) {
+                        if (sent.sentence_id) {
+                            sentenceMap.set(sent.sentence_id, { sv: sent.sv, en: sent.en });
+                        }
+                        if (sent.target_words) {
+                            for (const tw of sent.target_words) {
+                                targetWordsSet.add(tw.base_form);
+                                if (!wordToSentenceMap.has(tw.base_form.toLowerCase())) {
+                                    wordToSentenceMap.set(tw.base_form.toLowerCase(), { sv: sent.sv, en: sent.en });
+                                }
+                            }
+                        }
+                        if (sent.secondary_words) {
+                            for (const sw of sent.secondary_words) {
+                                if (!wordToSentenceMap.has(sw.base_form.toLowerCase())) {
+                                    wordToSentenceMap.set(sw.base_form.toLowerCase(), { sv: sent.sv, en: sent.en });
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    const exRecords = await db.excluded_dictionary.toArray();
+    const excludedVocab = exRecords.map(r => r.base_form.toLowerCase());
+    setExcludedVocab(excludedVocab);
 
-    const syncLearningQueue = async () => {
-      if (!currentCourse || !selectedArticleId) {
-        if (!isCancelled) setLearningQueue([]);
-        return;
-      }
-      const cached = await db.course_data.get(currentCourse);
-      if (!cached || !cached.dictionary || isCancelled) return;
+    let articleVocab: WordObject[] = vocabList
+      .filter(w => {
+        if (w.article_id !== selectedArticleId || !targetWordsSet.has(w.base_form)) return false;
+        const base = (w.base_form || '').toLowerCase();
+        const inSent = (w.word_in_sentence || '').toLowerCase();
+        const isEx = (base && excludedVocab.includes(base)) || (inSent && excludedVocab.includes(inSent));
+        return !isEx;
+      })
+      .map(w => {
+        const sentInfo = (w.sentence_id && sentenceMap.get(w.sentence_id)) || wordToSentenceMap.get(w.base_form.toLowerCase());
+        return {
+          ...w,
+          sentence: sentInfo?.sv || w.sentence || '',
+          sentence_en: sentInfo?.en || w.sentence_en || '',
+          context_sv: sentInfo?.sv || w.sentence || '',
+          context_en: sentInfo?.en || w.sentence_en || ''
+        };
+      });
+    
+    const customVocab = await db.custom_dictionary.where('article_id').equals(selectedArticleId).toArray();
+    articleVocab = [...articleVocab, ...customVocab];
+    
+    // Deduplicate
+    const uniqueMap = new Map<string, WordObject>();
+    articleVocab.forEach(w => uniqueMap.set(w.base_form.toLowerCase(), w));
+    articleVocab = Array.from(uniqueMap.values());
+    
+    await db.transaction('rw', [db.learning_queue, db.custom_dictionary], async () => {
+      const validBaseForms = new Set(articleVocab.map(w => w.base_form.toLowerCase()));
       
-      const vocabList = (cached.dictionary || []) as WordObject[];
-      let articleVocab = vocabList.filter(w => w.article_id === selectedArticleId);
-      
-      const customVocab = await db.custom_dictionary.where('article_id').equals(selectedArticleId).toArray();
-      articleVocab = [...articleVocab, ...customVocab];
-      
-      // Deduplicate
-      const uniqueMap = new Map();
-      articleVocab.forEach(w => uniqueMap.set(w.base_form, w));
-      articleVocab = Array.from(uniqueMap.values());
-      
-      await db.transaction('rw', [db.learning_queue, db.fsrs_progress, db.custom_dictionary], async () => {
-        for (const w of articleVocab) {
-          if (isCancelled) return;
-          const progress = await db.fsrs_progress.where('word_id').equals(w.base_form).first(); 
-          
-          if (progress && progress.state > 0) {
-            // It has entered FSRS spaced repetition (completed dual gate at least once). Exclude from new learning queue.
-            continue;
+      // Remove words in the queue for this article that are no longer in the valid list
+      const existingQueue = await db.learning_queue.where('article_id').equals(selectedArticleId).toArray();
+      for (const existingWord of existingQueue) {
+          const base = (existingWord.base_form || '').toLowerCase();
+          const inSent = (existingWord.word_in_sentence || '').toLowerCase();
+          const isEx = (base && excludedVocab.includes(base)) || (inSent && excludedVocab.includes(inSent));
+          if (!validBaseForms.has(base) || isEx) {
+              if (existingWord.id) await db.learning_queue.delete(existingWord.id);
           }
-
-          const existing = await db.learning_queue
-            .where({ article_id: w.article_id, base_form: w.base_form })
-            .first();
-            
-          if (!existing) {
-            await db.learning_queue.add({
-              ...w,
-              course_id: currentCourse,
-              status: 'active',
-              dictation_passed: false,
-              flashcard_passed: false,
-              synced: true, // do not push defaults
-              updated_at: new Date(0).toISOString()
+      }
+      
+      for (const w of articleVocab) {
+        const existing = await db.learning_queue
+          .where({ article_id: w.article_id, base_form: w.base_form })
+          .first();
+          
+        if (!existing) {
+          const { id, ...wWithoutId } = w as any;
+          await db.learning_queue.add({
+            ...wWithoutId,
+            course_id: currentCourse,
+            status: 'active',
+            dictation_passed: false,
+            flashcard_passed: false,
+            synced: true,
+            updated_at: new Date(0).toISOString()
+          });
+        } else if (!existing.sentence || existing.sentence === existing.base_form || existing.sentence === existing.word_in_sentence) {
+          if (w.sentence) {
+            await db.learning_queue.update(existing.id!, {
+              sentence: w.sentence,
+              sentence_en: w.sentence_en,
+              context_sv: w.context_sv,
+              context_en: w.context_en
             });
           }
         }
-      });
-      
-      if (!isCancelled) {
-        const arr = await db.learning_queue.where('article_id').equals(selectedArticleId).filter(w => w.status !== 'removed' && w.status !== 'graduated').toArray();
-        if (!isCancelled) {
-          setLearningQueue(arr);
-        }
       }
-    };
+    });
+    
+    const arr = await db.learning_queue.where('article_id').equals(selectedArticleId).filter(w => w.status !== 'removed' && w.status !== 'graduated').toArray();
+    setLearningQueue(arr);
+  }, [currentCourse, selectedArticleId, selectedStage]);
 
+  const refreshLearningQueue = useCallback(async () => {
+    await syncLearningQueue();
+  }, [syncLearningQueue]);
+
+  useEffect(() => {
     syncLearningQueue();
-
-    return () => {
-      isCancelled = true;
-    };
-  }, [currentCourse, selectedArticleId, dictionary, refreshLearningQueue]);
+  }, [syncLearningQueue]);
 
   const refreshCustomDictionary = useCallback(async () => {
     try {
@@ -362,6 +488,20 @@ export function DataProvider({ children }: { children: ReactNode }) {
     syncWord();
   }, []);
 
+  const refreshExcludedDictionary = useCallback(async () => {
+    try {
+      await syncExcludedDictionary();
+      const exRecords = await db.excluded_dictionary.toArray();
+      setExcludedVocab(exRecords.map(r => r.base_form.toLowerCase()));
+    } catch (e) {
+      console.warn('Error refreshing excluded dictionary:', e);
+    }
+  }, []);
+
+  useEffect(() => {
+    refreshExcludedDictionary();
+  }, [refreshExcludedDictionary]);
+
   return (
     <DataContext.Provider value={{ 
       courseData, 
@@ -369,12 +509,15 @@ export function DataProvider({ children }: { children: ReactNode }) {
       loadCourse,
       selectedStage, setSelectedStage,
       selectedArticleId, setSelectedArticleId,
+      appMode, setAppMode,
       learningQueue,
       customDictionary,
+      excludedVocab,
       refreshLearningQueue,
       removeFromLearningQueue,
       addToCustomDictionary,
-      refreshCustomDictionary
+      refreshCustomDictionary,
+      refreshExcludedDictionary
     }}>
       {children}
     </DataContext.Provider>
