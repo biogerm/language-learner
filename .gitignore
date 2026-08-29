@@ -1,34 +1,51 @@
-# Node
+# Node & Dependencies
 node_modules/
 dist/
 build/
 .env
 .env.local
 .env.*
+!.env.example
 
-# Build output
+# Build Outputs & Testing Logs
 *.log
 *.webm
+*.bak
+test-results/
+e2e/screenshots/
+frontend/e2e/screenshots/
 scratch/
 brain/
 
-# Local Environment and IDE
+# Local Environment, IDE & OS
 .DS_Store
+**/.DS_Store
 .agents/
 .gemini/
 .obsidian/
+**/.obsidian/
 .vscode/
+**/.vscode/
 
-# Local Cloudflare Data
+# Local Cloudflare State
 .wrangler/
+**/.wrangler/
 
-# Sensitive & Local Backups
-SFI\ Local\ Backup.json
+# Protected Migration Data & Local Backups
+_migrations/
 _archive_root/
+_archive_frontend/
 frontend/_archive_frontend/
 mock_test/
 marls/
+SFI\ Local\ Backup.json
+mig_*.json
+niva_data.json
 
-# Raw Data (Do not upload PDFs)
+# Raw PDF Extraction Data & AI Model Binaries (Proprietary datasets)
 *.pdf
-!.env.example
+*.pt
+**/data/
+course/**/data/
+course/sfid/data/
+course/sfid/phase3/data/
