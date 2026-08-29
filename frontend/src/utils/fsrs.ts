@@ -360,7 +360,7 @@ export async function getFSRSStats(courseId?: string) {
         totalReps += Number(r.reps) || 0;
         totalLapses += Number(r.lapses) || 0;
 
-        if (r.state === 1) {
+        if (r.state === 1 || r.state === 3) {
             learning++;
         } else if (r.state === 2) {
             const scheduledDays = Number(r.scheduled_days) || 0;
