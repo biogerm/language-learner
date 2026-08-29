@@ -354,13 +354,17 @@ export default function Flashcard() {
     const handleGlobalKeyDown = (e: KeyboardEvent) => {
       if (e.key === 'Tab') {
         e.preventDefault();
-        playAudio();
+        if (wrongCount >= 2 || status !== 'typing') {
+          playAudio();
+        }
         return;
       }
       
       if (e.code === 'Space' && (e.target === document.body || status !== 'typing' || isAdvancingRef.current)) {
         e.preventDefault();
-        playAudio();
+        if (wrongCount >= 2 || status !== 'typing') {
+          playAudio();
+        }
         return;
       }
       

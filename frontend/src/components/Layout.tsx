@@ -107,7 +107,7 @@ export default function Layout() {
 
   const getModuleInfo = (path: string) => {
     if (path.includes('dictation')) return { name: 'Dictation', version: 'v2.2.19' };
-    if (path.includes('flashcard')) return { name: 'Flashcard', version: 'v2.2.22' };
+    if (path.includes('flashcard')) return { name: 'Flashcard', version: 'v2.2.23' };
     if (path.includes('narration')) return { name: 'Narration', version: 'v2.2.13' };
     return { name: 'Language Learner', version: 'v2.2.10' };
   };
