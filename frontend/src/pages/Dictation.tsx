@@ -4,6 +4,7 @@ import { db } from '../db/dexie';
 import { submitGatePass, getFSRSStats } from '../utils/fsrs';
 import { getMp3PublicUrl } from '../services/r2';
 import { useData } from '../contexts/DataContext';
+import { useAuth } from '../contexts/AuthContext';
 import { supabase } from '../services/supabase';
 import { formatWordPrompt } from '../utils/format';
 import { buildStudyQueue } from '../utils/queueBuilder';
@@ -11,6 +12,7 @@ import { buildStudyQueue } from '../utils/queueBuilder';
 export default function Dictation() {
   const { courseId } = useParams();
   const { courseData, dictionary, selectedStage, selectedArticleId, learningQueue, appMode } = useData();
+  const { isTester } = useAuth();
   const [queue, setQueue] = useState<any[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [input, setInput] = useState('');
@@ -145,6 +147,7 @@ export default function Dictation() {
   };
 
   const handleResetFSRS = async () => {
+    if (!isTester) return;
     if (window.confirm("Are you sure you want to clear all FSRS review progress?")) {
       try {
         await db.fsrs_progress.clear();
@@ -479,7 +482,7 @@ export default function Dictation() {
           {appMode === 'study' && (
             <button id="reset-progress-btn" onClick={handleResetProgress}>Reset Progress</button>
           )}
-          {appMode === 'review' && (
+          {appMode === 'review' && isTester && (
             <button id="reset-progress-btn" onClick={handleResetFSRS} title="Reset all FSRS review data">Reset FSRS</button>
           )}
         </div>

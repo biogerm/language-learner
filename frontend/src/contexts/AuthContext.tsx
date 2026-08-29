@@ -5,9 +5,10 @@ import type { Session } from '@supabase/supabase-js';
 interface AuthContextType {
   session: Session | null;
   loading: boolean;
+  isTester: boolean;
 }
 
-const AuthContext = createContext<AuthContextType>({ session: null, loading: true });
+const AuthContext = createContext<AuthContextType>({ session: null, loading: true, isTester: false });
 
 export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [session, setSession] = useState<Session | null>(null);
@@ -29,8 +30,15 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     return () => subscription.unsubscribe();
   }, []);
 
+  const isTester = Boolean(
+    session?.user?.app_metadata?.is_tester === true ||
+    session?.user?.app_metadata?.role === 'tester' ||
+    session?.user?.app_metadata?.role === 'admin' ||
+    session?.user?.email === 'test@example.com'
+  );
+
   return (
-    <AuthContext.Provider value={{ session, loading }}>
+    <AuthContext.Provider value={{ session, loading, isTester }}>
       {children}
     </AuthContext.Provider>
   );
