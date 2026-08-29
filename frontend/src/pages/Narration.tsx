@@ -319,7 +319,7 @@ export default function Narration() {
         .map(r => (r.word_id || '').toLowerCase());
     } catch (e) {}
 
-    let storedCustom: { sv: string; en?: string; base_form?: string; word_in_sentence?: string; is_global_target?: boolean }[] = [];
+    let storedCustom: any[] = [];
     try {
       const cu = await db.custom_dictionary.toArray();
       storedCustom = cu.map(r => ({
@@ -327,6 +327,9 @@ export default function Narration() {
         base_form: (r.base_form || '').toLowerCase(),
         word_in_sentence: (r.word_in_sentence || '').toLowerCase(),
         en: r.en_translation,
+        stage: r.stage_id,
+        article: r.article_id,
+        course_id: r.course_id,
         is_global_target: !!r.is_global_target
       }));
     } catch (e) {}
@@ -337,9 +340,9 @@ export default function Narration() {
       sv: r.word_in_sentence || r.base_form || r.sv,
       baseForm: r.base_form,
       en: r.en || '',
-      stage: selectedStage,
-      article: selectedArticleId,
-      course_id: courseId || 'sfid',
+      stage: r.stage || selectedStage,
+      article: r.article || selectedArticleId,
+      course_id: r.course_id || courseId || 'sfid',
       isGlobalTarget: r.is_global_target,
       timestamp: Date.now()
     })));
@@ -899,8 +902,7 @@ export default function Narration() {
     });
 
     // Custom vocab words that belong to this article/sentence (plain words added by user)
-    const currentArticleCustom = customVocab.filter(cv => !cv.article || cv.article === selectedArticleId);
-    currentArticleCustom.forEach(cv => {
+    customVocab.forEach(cv => {
       const cleanCv = (cv.sv || '').toLowerCase();
       const cleanWordInSent = (cv.word_in_sentence || '').toLowerCase();
       const cleanBase = (cv.base_form || cv.baseForm || '').toLowerCase();
@@ -909,20 +911,26 @@ export default function Narration() {
         return targetW === cleanCv || targetW === cleanWordInSent || targetW === cleanBase;
       });
       if (!alreadyIn) {
-        const searchWord = cv.word_in_sentence || cv.sv;
-        if (searchWord) {
+        const searchWords = [cv.word_in_sentence, cv.base_form, cv.baseForm, cv.sv].filter(Boolean) as string[];
+        const uniqueSearchWords = Array.from(new Set(searchWords));
+        for (const searchWord of uniqueSearchWords) {
           const escaped = searchWord.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
           const regex = new RegExp(`(?<![\\p{L}\\p{N}])${escaped}(?![\\p{L}\\p{N}])`, 'gui');
           let match;
           while ((match = regex.exec(svText)) !== null) {
-            allWords.push({
-              base_form: cv.baseForm || cv.base_form || cv.sv,
-              word_in_sentence: match[0],
-              contextual_en: cv.en || '',
-              position_start: match.index,
-              position_end: match.index + match[0].length,
-              type: (cv.isGlobalTarget || cv.is_global_target) ? 'global_target' : 'custom'
-            });
+            const start = match.index;
+            const end = match.index + match[0].length;
+            const overlaps = allWords.some(w => w.position_start !== undefined && w.position_end !== undefined && !(end <= w.position_start || start >= w.position_end));
+            if (!overlaps) {
+              allWords.push({
+                base_form: cv.baseForm || cv.base_form || cv.sv,
+                word_in_sentence: match[0],
+                contextual_en: cv.en || '',
+                position_start: start,
+                position_end: end,
+                type: (cv.isGlobalTarget || cv.is_global_target) ? 'global_target' : 'custom'
+              });
+            }
           }
         }
       }

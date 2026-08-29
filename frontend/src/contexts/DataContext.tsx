@@ -364,10 +364,18 @@ export function DataProvider({ children }: { children: ReactNode }) {
              const localUpdated = item.updated_at ? new Date(item.updated_at).getTime() : 0;
              const remoteUpdated = existingRemote.updated_at ? new Date(existingRemote.updated_at).getTime() : 0;
              if (localUpdated > remoteUpdated) {
-                 await supabase.from('custom_dictionary').update(toInsert).eq('id', existingRemote.id);
+                 const { error: upErr } = await supabase.from('custom_dictionary').update(toInsert).eq('id', existingRemote.id);
+                 if (!upErr && item.id) {
+                   await db.custom_dictionary.update(item.id, { synced: true });
+                 }
+             } else {
+                 if (item.id) await db.custom_dictionary.update(item.id, { synced: true });
              }
           } else {
-             await supabase.from('custom_dictionary').insert({ ...toInsert, user_id: user.id });
+             const { error: insErr } = await supabase.from('custom_dictionary').insert({ ...toInsert, user_id: user.id });
+             if (!insErr && item.id) {
+               await db.custom_dictionary.update(item.id, { synced: true });
+             }
           }
         }
         
@@ -381,7 +389,8 @@ export function DataProvider({ children }: { children: ReactNode }) {
             const remoteBaseForms = new Set(finalData.map(r => (r.base_form || '').toLowerCase()));
             const currentLocals = await db.custom_dictionary.toArray();
             for (const loc of currentLocals) {
-              if (loc.id && !remoteBaseForms.has((loc.base_form || '').toLowerCase())) {
+              // ONLY delete if it was previously confirmed synced and is now deleted on remote
+              if (loc.id && loc.synced && !remoteBaseForms.has((loc.base_form || '').toLowerCase())) {
                 await db.custom_dictionary.delete(loc.id);
                 // Also clean up from learning_queue if it was a custom word
                 const lqMatches = await db.learning_queue.where('base_form').equalsIgnoreCase(loc.base_form).toArray();
