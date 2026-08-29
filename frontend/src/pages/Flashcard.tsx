@@ -354,7 +354,7 @@ export default function Flashcard() {
     const handleGlobalKeyDown = (e: KeyboardEvent) => {
       if (e.key === 'Tab') {
         e.preventDefault();
-        if (wrongCount >= 2 || status !== 'typing') playAudio();
+        playAudio();
         return;
       }
       
@@ -418,6 +418,10 @@ export default function Flashcard() {
       if (status !== 'typing' || !currentWord || !courseId) return;
       
       const cleanUserText = cleanText(input);
+      if (!cleanUserText) {
+        // Ignore pressing Enter on empty input without penalizing as wrong
+        return;
+      }
       const cleanCorrectText = cleanText(currentWord.word);
       const isCorrect = cleanUserText === cleanCorrectText;
       
