@@ -10,7 +10,7 @@ import { buildStudyQueue } from '../utils/queueBuilder';
 
 export default function Flashcard() {
   const { courseId } = useParams();
-  const { courseData, dictionary, selectedStage, selectedArticleId, learningQueue, loadCourse, appMode } = useData();
+  const { courseData, dictionary, selectedStage, selectedArticleId, learningQueue, appMode } = useData();
   const [queue, setQueue] = useState<any[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [input, setInput] = useState('');
@@ -23,7 +23,7 @@ export default function Flashcard() {
   
   const [inputState, setInputState] = useState<'default' | 'correct' | 'incorrect'>('default');
   const [timerFill, setTimerFill] = useState('0%');
-  const [stats, setStats] = useState({ total: 0, mastered: 0, remaining: 0 });
+  const [stats, setStats] = useState<{ total: number; mastered: number; remaining: number; inFsrsCount?: number }>({ total: 0, mastered: 0, remaining: 0, inFsrsCount: 0 });
 
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const timerRef = useRef<any>(null);
@@ -43,11 +43,7 @@ export default function Flashcard() {
     advanceStartTimeRef.current = 0;
     if (timerRef.current) clearTimeout(timerRef.current);
     if (intervalRef.current) clearInterval(intervalRef.current);
-  }, [appMode]);
-
-  useEffect(() => {
-    if (courseId) loadCourse(courseId);
-  }, [courseId, loadCourse]);
+  }, [courseId, selectedStage, selectedArticleId, appMode]);
 
   const loadFSRSStats = useCallback(async () => {
     try {
@@ -67,27 +63,27 @@ export default function Flashcard() {
   const updateMasteryAndVocab = async (wordId: string, isCorrect: boolean) => {
     if (!selectedArticleId) return;
     try {
-      const existing = await db.study_mastery.where({ article_id: selectedArticleId, module: 'flashcard', word_id: wordId.toLowerCase() }).first();
+      const cleanWord = wordId.toLowerCase();
+      const existing = await db.learning_queue
+        .where('article_id')
+        .equals(selectedArticleId)
+        .filter(r => (r.base_form || '').toLowerCase() === cleanWord)
+        .first();
+
       if (existing && existing.id) {
-        await db.study_mastery.update(existing.id, { mastered: isCorrect, updated_at: new Date().toISOString() });
-      } else {
-        await db.study_mastery.add({
-          article_id: selectedArticleId,
-          module: 'flashcard',
-          word_id: wordId.toLowerCase(),
-          course_id: courseId,
-          mastered: isCorrect,
-          synced: false,
-          updated_at: new Date().toISOString()
+        await db.learning_queue.update(existing.id, {
+          flashcard_passed: isCorrect,
+          updated_at: new Date().toISOString(),
+          synced: false
         });
       }
     } catch (e) {
-      console.warn('Error updating flashcard mastery in Dexie:', e);
+      console.warn('Error updating learning_queue in Dexie:', e);
     }
 
     if (isCorrect) {
       setStats(prev => ({
-        total: prev.total,
+        ...prev,
         mastered: Math.min(prev.total, prev.mastered + 1),
         remaining: Math.max(0, prev.remaining - 1)
       }));
@@ -105,7 +101,7 @@ export default function Flashcard() {
       }
 
       setLoading(true);
-      const { queue: newQueue, total, mastered, remaining } = await buildStudyQueue(
+      const { queue: newQueue, total, mastered, remaining, inFsrsCount } = await buildStudyQueue(
         appMode as 'study' | 'review',
         courseId || '',
         selectedArticleId,
@@ -117,7 +113,7 @@ export default function Flashcard() {
       queueRef.current = newQueue;
       setQueue(newQueue);
       setCurrentIndex(0);
-      setStats({ total, mastered, remaining });
+      setStats({ total, mastered, remaining, inFsrsCount: inFsrsCount || 0 });
       
       if (appMode === 'review') {
         await loadFSRSStats();
@@ -127,16 +123,18 @@ export default function Flashcard() {
       console.error(e);
       setLoading(false);
     }
-  }, [appMode, courseId, selectedStage, selectedArticleId, learningQueue, loadFSRSStats]);  useEffect(() => {
+  }, [appMode, courseId, selectedStage, selectedArticleId, learningQueue, loadFSRSStats]);
+
+  useEffect(() => {
     fetchQueue();
   }, [fetchQueue]);
 
   const handleResetProgress = async () => {
     if (appMode !== 'study' || !selectedArticleId) return;
     try {
-      const records = await db.study_mastery.where({ article_id: selectedArticleId, module: 'flashcard' }).toArray();
+      const records = await db.learning_queue.where('article_id').equals(selectedArticleId).toArray();
       for (const r of records) {
-        if (r.id) await db.study_mastery.delete(r.id);
+        if (r.id) await db.learning_queue.update(r.id, { flashcard_passed: false, synced: false });
       }
     } catch (e) {}
     queueRef.current = [];
@@ -200,11 +198,11 @@ export default function Flashcard() {
       .filter(Boolean)
       .sort((a, b) => b.length - a.length);
     wordsToMask.forEach(w => {
-      const safeWord = w.replace(/[.*+?^${}()|[\]\\]/g, '\\const exampleSentence = getExampleSentence();');
+      const safeWord = w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
       masked = masked.replace(new RegExp(`(^|\\W)(${safeWord})(?=\\W|$)`, 'gi'), '$1_____');
     });
     wordsToMask.forEach(w => {
-      const safeWord = w.replace(/[.*+?^${}()|[\]\\]/g, '\\const exampleSentence = getExampleSentence();');
+      const safeWord = w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
       masked = masked.replace(new RegExp(`(${safeWord})`, 'gi'), '_____');
     });
     return masked;
@@ -500,14 +498,18 @@ export default function Flashcard() {
             <div style={{ marginBottom: '1.5rem', textAlign: 'center' }}>
               <div id="english-prompt" style={{ fontSize: '1.75rem', fontWeight: 700, color: '#fff', marginBottom: '0.5rem' }}>
                 {stats.total === 0
-                  ? '📝 No Words Selected'
+                  ? (stats.inFsrsCount && stats.inFsrsCount > 0
+                    ? '🎉 All words in this lesson are already in your FSRS review schedule, no initial study needed!'
+                    : '📝 No Words Selected')
                   : appMode === 'review'
                   ? '🎉 All caught up!'
                   : '🎉 Session complete!'}
               </div>
               <div id="hint-display" style={{ color: '#94a3b8', fontSize: '1rem' }}>
                 {stats.total === 0
-                  ? 'All words for this article are excluded. Use Edit Mode (📖) in Narration to select words.'
+                  ? (stats.inFsrsCount && stats.inFsrsCount > 0
+                    ? 'You can review them in Review Mode when they become due.'
+                    : 'All words for this article are excluded. Use Edit Mode (📖) in Narration to select words.')
                   : appMode === 'review'
                   ? 'No reviews due right now.'
                   : 'All words mastered for this article.'}
@@ -520,7 +522,7 @@ export default function Flashcard() {
           )}
 
           {!isAllDone && !showAnswer && wrongCount >= 3 && exampleSentence && (
-            <div id="hint-display" style={{ color: '#9ca3af', fontStyle: 'italic', marginBottom: '0.75rem', textAlign: 'center' }}>
+            <div id="sentence-hint-display" style={{ color: '#9ca3af', fontStyle: 'italic', marginBottom: '0.75rem', textAlign: 'center' }}>
               {getMaskedSentence()}
             </div>
           )}

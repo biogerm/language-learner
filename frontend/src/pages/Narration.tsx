@@ -10,6 +10,7 @@ interface MissingVocabItem {
   stage: string;
   article: string;
   course_id: string;
+  sentence_id?: string;
   context_sv: string;
   context_en: string;
   user_en?: string;
@@ -44,6 +45,7 @@ interface TokenState {
   baseForm?: string;
   dictEn?: string;
   isGlobalTarget?: boolean;
+  isInFsrs?: boolean;
 }
 
 export default function Narration() {
@@ -63,6 +65,7 @@ export default function Narration() {
   // Excluded & Custom vocab state
   const [excludedVocab, setExcludedVocab] = useState<string[]>([]);
   const [customVocab, setCustomVocab] = useState<CustomVocabEntry[]>([]);
+  const [fsrsVocab, setFsrsVocab] = useState<string[]>([]);
 
   // Missing Translation Modal State
   const [missingQueue, setMissingQueue] = useState<MissingVocabItem[]>([]);
@@ -74,13 +77,22 @@ export default function Narration() {
   const wordAudioRef = useRef<HTMLAudioElement | null>(null);
   const sentenceRefs = useRef<(HTMLElement | null)[]>([]);
 
-  // Load excludedVocab and customVocab from Dexie
+  // Load excludedVocab, customVocab, and fsrsVocab from Dexie
   const loadVocabStorage = useCallback(async () => {
     try {
       const storedEx = await db.excluded_dictionary.toArray();
       setExcludedVocab(storedEx.map(r => r.base_form.toLowerCase()));
     } catch (e) {
       setExcludedVocab([]);
+    }
+
+    try {
+      const activeCid = (courseId || 'sfid').toLowerCase();
+      const allFsrs = await db.fsrs_progress.toArray();
+      const activeFsrs = allFsrs.filter(r => (!r.course_id || r.course_id.toLowerCase() === activeCid) && r.state !== 0);
+      setFsrsVocab(activeFsrs.map(r => (r.word_id || '').toLowerCase()));
+    } catch (e) {
+      setFsrsVocab([]);
     }
 
     try {
@@ -103,7 +115,7 @@ export default function Narration() {
     } catch (e) {
       setCustomVocab([]);
     }
-  }, []);
+  }, [courseId]);
 
   useEffect(() => {
     loadVocabStorage();
@@ -298,6 +310,15 @@ export default function Narration() {
       storedEx = ex.map(r => r.base_form.toLowerCase());
     } catch (e) {}
 
+    let storedFsrs: string[] = [];
+    try {
+      const activeCid = (courseId || 'sfid').toLowerCase();
+      const allFsrs = await db.fsrs_progress.toArray();
+      storedFsrs = allFsrs
+        .filter(r => (!r.course_id || r.course_id.toLowerCase() === activeCid) && r.state !== 0)
+        .map(r => (r.word_id || '').toLowerCase());
+    } catch (e) {}
+
     let storedCustom: { sv: string; en?: string; base_form?: string; word_in_sentence?: string; is_global_target?: boolean }[] = [];
     try {
       const cu = await db.custom_dictionary.toArray();
@@ -311,6 +332,7 @@ export default function Narration() {
     } catch (e) {}
 
     setExcludedVocab(storedEx);
+    setFsrsVocab(storedFsrs);
     setCustomVocab(storedCustom.map(r => ({
       sv: r.word_in_sentence || r.base_form || r.sv,
       baseForm: r.base_form,
@@ -375,6 +397,7 @@ export default function Narration() {
       if (isTarget) {
         const baseForm = targetObj?.base_form || cleanWord;
         const isExcluded = storedEx.includes(baseForm.toLowerCase()) || storedEx.includes(cleanWordLower);
+        const isInFsrs = storedFsrs.includes(cleanWordLower) || storedFsrs.includes(baseForm.toLowerCase());
         const initiallySelected = !isExcluded;
         return {
           token,
@@ -385,10 +408,12 @@ export default function Narration() {
           type: 'target',
           isSelected: initiallySelected,
           isUnknown: false,
-          initiallySelected
+          initiallySelected,
+          isInFsrs
         };
       } else if (isSecondary) {
         const baseForm = secondaryObj?.base_form || cleanWord;
+        const isInFsrs = storedFsrs.includes(cleanWordLower) || storedFsrs.includes(baseForm.toLowerCase());
         const initiallySelected = isCustom;
         return {
           token,
@@ -399,21 +424,27 @@ export default function Narration() {
           type: 'secondary',
           isSelected: initiallySelected,
           isUnknown: false,
-          initiallySelected
+          initiallySelected,
+          isInFsrs
         };
       } else if (isCustom) {
+        const baseForm = customObj?.base_form || cleanWord;
+        const isInFsrs = storedFsrs.includes(cleanWordLower) || storedFsrs.includes(baseForm.toLowerCase());
         return {
           token,
           cleanWord,
           cleanWordLower,
+          baseForm,
           isWord: true,
           type: 'custom',
           isSelected: true,
           isUnknown: false,
           initiallySelected: true,
-          isGlobalTarget: customObj?.is_global_target
+          isGlobalTarget: customObj?.is_global_target,
+          isInFsrs
         };
       } else {
+        const isInFsrs = storedFsrs.includes(cleanWordLower);
         return {
           token,
           cleanWord,
@@ -422,7 +453,8 @@ export default function Narration() {
           type: 'plain',
           isSelected: false,
           isUnknown: false,
-          initiallySelected: false
+          initiallySelected: false,
+          isInFsrs
         };
       }
     });
@@ -694,6 +726,7 @@ export default function Narration() {
               article_id: item.article || article,
               stage_id: item.stage || stage,
               course_id: item.course_id || currentCourseId,
+              sentence_id: sent.sentence_id || sent.id || '',
               sentence: sent.sv,
               sentence_en: sent.en || '',
               is_global_target: item.isGlobalTarget || false,
@@ -807,6 +840,7 @@ export default function Narration() {
               article_id: item.article,
               stage_id: item.stage,
               course_id: item.course_id,
+              sentence_id: item.sentence_id || '',
               sentence: item.context_sv,
               sentence_en: item.context_en,
               synced: false
@@ -852,13 +886,14 @@ export default function Narration() {
       }));
     }
 
-    // Filter out excluded target words
+    // Filter out excluded target words and words already in active FSRS review schedule
     allWords = allWords.filter(w => {
       const base = (w.base_form || '').toLowerCase();
       const inSent = (w.word_in_sentence || '').toLowerCase();
       if (w.type === 'target') {
         const isEx = (base && excludedVocab.includes(base)) || (inSent && excludedVocab.includes(inSent));
-        return !isEx;
+        const isInFsrs = (base && fsrsVocab.includes(base)) || (inSent && fsrsVocab.includes(inSent));
+        return !isEx && !isInFsrs;
       }
       return true;
     });
@@ -1128,6 +1163,29 @@ export default function Narration() {
                             }}
                           >
                             {t.token}
+                            {t.isInFsrs && (
+                              <span
+                                className="fsrs-review-badge"
+                                title="Already in FSRS review schedule"
+                                style={{
+                                  display: 'inline-flex',
+                                  alignItems: 'center',
+                                  justifyContent: 'center',
+                                  fontSize: '0.7em',
+                                  padding: '1px 3px',
+                                  marginLeft: '2px',
+                                  borderRadius: '3px',
+                                  backgroundColor: 'rgba(34, 197, 94, 0.25)',
+                                  color: '#4ade80',
+                                  border: '1px solid rgba(34, 197, 94, 0.4)',
+                                  verticalAlign: 'super',
+                                  lineHeight: 1,
+                                  fontWeight: 'bold'
+                                }}
+                              >
+                                ✓
+                              </span>
+                            )}
                           </span>
                         );
                       })}

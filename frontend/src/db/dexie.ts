@@ -89,18 +89,6 @@ export interface ExcludedDictWord {
   updated_at?: string;
 }
 
-export interface StudyMastery {
-  id?: number;
-  user_id?: string;
-  article_id: string;
-  module: 'dictation' | 'flashcard';
-  word_id: string;
-  course_id?: string;
-  mastered: boolean;
-  synced?: boolean;
-  updated_at?: string;
-}
-
 export class AppDatabase extends Dexie {
   courses!: Table<Course, string>;
   course_data!: Table<CourseData, string>;
@@ -109,20 +97,18 @@ export class AppDatabase extends Dexie {
   custom_dictionary!: Table<CustomDictWord, string>; 
   excluded_dictionary!: Table<ExcludedDictWord, number>;
   local_settings!: Table<LocalSetting, string>;
-  study_mastery!: Table<StudyMastery, number>;
 
   constructor() {
     super('AppDatabase');
     
-    this.version(9).stores({
+    this.version(10).stores({
       courses: 'id, title', 
       course_data: 'courseId',
       fsrs_progress: 'word_id, state, due, synced, sync_error',
       learning_queue: '++id, article_id, base_form, [article_id+base_form], status, synced',
       custom_dictionary: '++id, base_form, article_id, synced',
       excluded_dictionary: '++id, base_form, article_id, course_id, synced',
-      local_settings: 'key',
-      study_mastery: '++id, [article_id+module+word_id], article_id, module, word_id, synced'
+      local_settings: 'key'
     });
   }
 }

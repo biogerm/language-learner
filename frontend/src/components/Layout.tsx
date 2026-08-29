@@ -22,7 +22,13 @@ export default function Layout() {
     return () => window.removeEventListener('online', handleOnline);
   }, []);
 
-  const { courseData, selectedStage, setSelectedStage, selectedArticleId, setSelectedArticleId, appMode, setAppMode } = useData();
+  const { courseData, loadCourse, selectedStage, setSelectedStage, selectedArticleId, setSelectedArticleId, appMode, setAppMode } = useData();
+
+  useEffect(() => {
+    if (courseId) {
+      loadCourse(courseId).catch(console.error);
+    }
+  }, [courseId, loadCourse]);
 
   const stages = useMemo(() => {
     if (!courseData) return [];
@@ -78,9 +84,9 @@ export default function Layout() {
   // const ndfActiveIndex = location.pathname.includes('narration') ? 0 : location.pathname.includes('dictation') ? (isStudy ? 1 : 0) : (isStudy ? 2 : 1);
 
   const getModuleInfo = (path: string) => {
-    if (path.includes('dictation')) return { name: 'Dictation', version: 'v2.2.15' };
-    if (path.includes('flashcard')) return { name: 'Flashcard', version: 'v2.2.18' };
-    if (path.includes('narration')) return { name: 'Narration', version: 'v2.2.10' };
+    if (path.includes('dictation')) return { name: 'Dictation', version: 'v2.2.17' };
+    if (path.includes('flashcard')) return { name: 'Flashcard', version: 'v2.2.20' };
+    if (path.includes('narration')) return { name: 'Narration', version: 'v2.2.11' };
     return { name: 'Language Learner', version: 'v2.2.10' };
   };
   const modInfo = getModuleInfo(location.pathname);
