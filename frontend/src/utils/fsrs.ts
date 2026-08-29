@@ -267,6 +267,20 @@ export async function submitGatePass(
         progress.updated_at = new Date().toISOString();
         await db.fsrs_progress.put(progress);
         
+        // On Dual-Gate Graduation of initial learning cards: Purge from learning_queue
+        if (isFirstReview) {
+          try {
+            const lqMatches = await db.learning_queue.where('base_form').equalsIgnoreCase(cleanWordId).toArray();
+            for (const lq of lqMatches) {
+              if (lq.id) await db.learning_queue.delete(lq.id);
+            }
+            const { data: authData } = await supabase.auth.getUser();
+            if (authData?.user) {
+              await supabase.from('learning_queue').delete().eq('user_id', authData.user.id).ilike('base_form', cleanWordId);
+            }
+          } catch (e) {}
+        }
+
         syncOfflineProgress().catch(console.error);
 
         const nextDue = new Date(newCardState.due);
@@ -305,6 +319,21 @@ export async function submitGatePass(
         progress.synced = false;
         progress.updated_at = new Date().toISOString();
         await db.fsrs_progress.put(progress);
+
+        // On Single-Gate Pass: Only record in learning_queue for ungraduated cards in initial Study Mode
+        if (progress.state === 0) {
+          try {
+            const existingLq = await db.learning_queue.where('base_form').equalsIgnoreCase(cleanWordId).first();
+            if (existingLq && existingLq.id) {
+              await db.learning_queue.update(existingLq.id, {
+                dictation_passed: !!progress.todayDictationPassed,
+                flashcard_passed: !!progress.todayFlashcardPassed,
+                synced: false
+              });
+            }
+          } catch (e) {}
+        }
+
         return { completed: false };
     }
 }

@@ -287,51 +287,30 @@ export function DataProvider({ children }: { children: ReactNode }) {
     articleVocab.forEach(w => uniqueMap.set(w.base_form.toLowerCase(), w));
     articleVocab = Array.from(uniqueMap.values());
     
-    await db.transaction('rw', [db.learning_queue, db.custom_dictionary], async () => {
-      const validBaseForms = new Set(articleVocab.map(w => w.base_form.toLowerCase()));
-      
-      // Remove words in the queue for this article that are no longer in the valid list
+    // Clean up any stale in-progress learning_queue items that are now in FSRS, excluded, or orphan
+    try {
       const existingQueue = await db.learning_queue.where('article_id').equals(selectedArticleId).toArray();
-      for (const existingWord of existingQueue) {
-          const base = (existingWord.base_form || '').toLowerCase();
-          const inSent = (existingWord.word_in_sentence || '').toLowerCase();
-          const isEx = (base && excludedVocab.includes(base)) || (inSent && excludedVocab.includes(inSent));
-          if (!validBaseForms.has(base) || isEx) {
-              if (existingWord.id) await db.learning_queue.delete(existingWord.id);
-          }
-      }
-      
-      for (const w of articleVocab) {
-        const existing = await db.learning_queue
-          .where({ article_id: w.article_id, base_form: w.base_form })
-          .first();
-          
-        if (!existing) {
-          const { id, ...wWithoutId } = w as any;
-          await db.learning_queue.add({
-            ...wWithoutId,
-            course_id: currentCourse,
-            status: 'active',
-            dictation_passed: false,
-            flashcard_passed: false,
-            synced: true,
-            updated_at: new Date(0).toISOString()
-          });
-        } else if (!existing.sentence || existing.sentence === existing.base_form || existing.sentence === existing.word_in_sentence) {
-          if (w.sentence) {
-            await db.learning_queue.update(existing.id!, {
-              sentence: w.sentence,
-              sentence_en: w.sentence_en,
-              context_sv: w.context_sv,
-              context_en: w.context_en
-            });
-          }
+      const fsrsRecords = await db.fsrs_progress.where('course_id').equals(currentCourse).toArray();
+      const fsrsSet = new Set(fsrsRecords.filter(r => r.state !== 0).map(r => (r.word_id || '').toLowerCase()));
+
+      for (const item of existingQueue) {
+        const base = (item.base_form || '').toLowerCase();
+        const isEx = base && excludedVocab.includes(base);
+        const isGraduated = base && fsrsSet.has(base);
+        if ((isEx || isGraduated) && item.id) {
+          await db.learning_queue.delete(item.id);
         }
       }
-    });
-    
-    const arr = await db.learning_queue.where('article_id').equals(selectedArticleId).filter(w => w.status !== 'removed' && w.status !== 'graduated').toArray();
-    setLearningQueue(arr);
+
+      // Purge orphan records without article_id
+      const orphans = await db.learning_queue.filter(r => !r.article_id).toArray();
+      for (const o of orphans) {
+        if (o.id) await db.learning_queue.delete(o.id);
+      }
+    } catch (e) {}
+
+    // In-memory representation for current article study session
+    setLearningQueue(articleVocab);
   }, [currentCourse, selectedArticleId, selectedStage]);
 
   const refreshLearningQueue = useCallback(async () => {

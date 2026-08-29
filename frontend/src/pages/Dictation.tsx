@@ -136,7 +136,7 @@ export default function Dictation() {
     try {
       const records = await db.learning_queue.where('article_id').equals(selectedArticleId).toArray();
       for (const r of records) {
-        if (r.id) await db.learning_queue.update(r.id, { dictation_passed: false, synced: false });
+        if (r.id) await db.learning_queue.delete(r.id);
       }
     } catch (e) {}
     queueRef.current = [];

@@ -240,9 +240,12 @@ export const buildStudyQueue = async (
       return { queue: [], total: 0, mastered: 0, remaining: 0, inFsrsCount: 0 };
     }
 
-    let rawLq = await db.learning_queue.where('article_id').equals(selectedArticleId).toArray();
-    if (rawLq.length === 0 && learningQueueProp) {
+    let rawLq: any[] = [];
+    if (learningQueueProp && learningQueueProp.length > 0) {
       rawLq = learningQueueProp.filter((w: any) => w.article_id === selectedArticleId);
+    }
+    if (rawLq.length === 0) {
+      rawLq = await db.learning_queue.where('article_id').equals(selectedArticleId).toArray();
     }
 
     const exRecords = await db.excluded_dictionary.toArray();
@@ -256,6 +259,10 @@ export const buildStudyQueue = async (
       })
       .toArray();
     const fsrsWordSet = new Set(fsrsRecords.map((r: any) => (r.word_id || '').toLowerCase()));
+
+    // Fetch in-progress gate passes from db.learning_queue
+    const inProgressRecords = await db.learning_queue.toArray();
+    const inProgressMap = new Map(inProgressRecords.map(r => [(r.base_form || '').toLowerCase(), r]));
 
     const uniqueMap = new Map();
     rawLq.forEach((w: any) => {
@@ -275,8 +282,11 @@ export const buildStudyQueue = async (
     totalCount = uniqueList.length;
 
     const unmasteredList = uniqueList.filter((w: any) => {
-      if (moduleType === 'dictation') return !w.dictation_passed;
-      if (moduleType === 'flashcard') return !w.flashcard_passed;
+      const inProg = inProgressMap.get((w.base_form || '').toLowerCase());
+      const dictPassed = inProg ? inProg.dictation_passed : w.dictation_passed;
+      const flashPassed = inProg ? inProg.flashcard_passed : w.flashcard_passed;
+      if (moduleType === 'dictation') return !dictPassed;
+      if (moduleType === 'flashcard') return !flashPassed;
       return true;
     });
     masteredCount = totalCount - unmasteredList.length;
