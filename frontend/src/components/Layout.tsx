@@ -2,9 +2,10 @@ import pkg from "../../package.json";
 import { Outlet, useNavigate, useLocation, useParams } from 'react-router-dom';
 
 import { FSRSToast } from './FSRSToast';
-import { useEffect, useMemo } from 'react';
+import { useState, useEffect, useRef, useMemo } from 'react';
 import { syncOfflineProgress } from '../utils/fsrs';
 import { useData } from '../contexts/DataContext';
+import { useAuth } from '../contexts/AuthContext';
 import { supabase } from '../services/supabase';
 
 export default function Layout() {
@@ -80,6 +81,27 @@ export default function Layout() {
     }
   };
 
+  const { session } = useAuth();
+  const [isUserMenuOpen, setIsUserMenuOpen] = useState(false);
+  const userMenuRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (userMenuRef.current && !userMenuRef.current.contains(event.target as Node)) {
+        setIsUserMenuOpen(false);
+      }
+    };
+    if (isUserMenuOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+    }
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [isUserMenuOpen]);
+
+  const userEmail = session?.user?.email || 'Student';
+  const avatarLetter = (userEmail[0] || 'U').toUpperCase();
+
   const isStudy = appMode === 'study';
   // const ndfActiveIndex = location.pathname.includes('narration') ? 0 : location.pathname.includes('dictation') ? (isStudy ? 1 : 0) : (isStudy ? 2 : 1);
 
@@ -129,31 +151,112 @@ export default function Layout() {
                 </div>
               )}
               
-              <button 
-                title="Sign Out"
-                onClick={async () => { await supabase.auth.signOut(); navigate('/login'); }}
-                style={{
-                  background: 'rgba(15, 23, 42, 0.4)',
-                  border: '1px solid rgba(255,255,255,0.1)',
-                  cursor: 'pointer',
-                  color: 'var(--text-muted)',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  padding: '8px',
-                  borderRadius: '50%',
-                  transition: 'all 0.2s ease',
-                  marginLeft: '8px'
-                }}
-                onMouseOver={(e) => { e.currentTarget.style.color = 'var(--error)'; e.currentTarget.style.borderColor = 'var(--error)'; }}
-                onMouseOut={(e) => { e.currentTarget.style.color = 'var(--text-muted)'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.1)'; }}
-              >
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
-                  <polyline points="16 17 21 12 16 7"></polyline>
-                  <line x1="21" y1="12" x2="9" y2="12"></line>
-                </svg>
-              </button>
+              {/* User Avatar Menu */}
+              <div ref={userMenuRef} style={{ position: 'relative', marginLeft: '8px' }}>
+                <button 
+                  id="user-avatar-btn"
+                  title={`Signed in as ${userEmail}`}
+                  onClick={() => setIsUserMenuOpen(prev => !prev)}
+                  style={{
+                    background: 'linear-gradient(135deg, #6366f1, #8b5cf6)',
+                    border: '1px solid rgba(255, 255, 255, 0.25)',
+                    cursor: 'pointer',
+                    color: '#ffffff',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    width: '36px',
+                    height: '36px',
+                    borderRadius: '50%',
+                    fontWeight: 700,
+                    fontSize: '0.95rem',
+                    boxShadow: '0 2px 8px rgba(99, 102, 241, 0.35)',
+                    transition: 'all 0.2s ease',
+                    outline: 'none',
+                    transform: isUserMenuOpen ? 'scale(1.05)' : 'scale(1)',
+                    borderColor: isUserMenuOpen ? '#a855f7' : 'rgba(255, 255, 255, 0.25)'
+                  }}
+                  onMouseOver={(e) => { e.currentTarget.style.transform = 'scale(1.08)'; }}
+                  onMouseOut={(e) => { if (!isUserMenuOpen) e.currentTarget.style.transform = 'scale(1)'; }}
+                >
+                  {avatarLetter}
+                </button>
+
+                {/* Dropdown Popover */}
+                {isUserMenuOpen && (
+                  <div 
+                    id="user-menu-popover"
+                    style={{
+                      position: 'absolute',
+                      right: 0,
+                      top: 'calc(100% + 10px)',
+                      zIndex: 1000,
+                      minWidth: '240px',
+                      background: 'rgba(15, 23, 42, 0.95)',
+                      backdropFilter: 'blur(16px)',
+                      border: '1px solid rgba(255, 255, 255, 0.12)',
+                      borderRadius: '12px',
+                      boxShadow: '0 10px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.5)',
+                      padding: '14px',
+                      animation: 'fadeIn 0.15s ease-out'
+                    }}
+                  >
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '12px', paddingBottom: '12px', borderBottom: '1px solid rgba(255, 255, 255, 0.1)' }}>
+                      <div style={{ width: '34px', height: '34px', borderRadius: '50%', background: 'linear-gradient(135deg, #6366f1, #a855f7)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 700, fontSize: '0.9rem', color: '#fff', flexShrink: 0 }}>
+                        {avatarLetter}
+                      </div>
+                      <div style={{ overflow: 'hidden', textAlign: 'left' }}>
+                        <div style={{ fontSize: '0.7rem', color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.05em', fontWeight: 600 }}>Signed in as</div>
+                        <div style={{ fontSize: '0.85rem', color: '#f8fafc', fontWeight: 600, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', maxWidth: '170px' }} title={userEmail}>
+                          {userEmail}
+                        </div>
+                      </div>
+                    </div>
+
+                    <button 
+                      id="user-menu-signout"
+                      onClick={async () => {
+                        setIsUserMenuOpen(false);
+                        await supabase.auth.signOut();
+                        navigate('/login');
+                      }}
+                      style={{
+                        width: '100%',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        gap: '8px',
+                        padding: '8px 14px',
+                        borderRadius: '8px',
+                        background: 'rgba(239, 68, 68, 0.12)',
+                        border: '1px solid rgba(239, 68, 68, 0.25)',
+                        color: '#fca5a5',
+                        fontSize: '0.85rem',
+                        fontWeight: 600,
+                        cursor: 'pointer',
+                        transition: 'all 0.2s ease'
+                      }}
+                      onMouseOver={(e) => {
+                        e.currentTarget.style.background = 'rgba(239, 68, 68, 0.22)';
+                        e.currentTarget.style.borderColor = 'rgba(239, 68, 68, 0.5)';
+                        e.currentTarget.style.color = '#fff';
+                      }}
+                      onMouseOut={(e) => {
+                        e.currentTarget.style.background = 'rgba(239, 68, 68, 0.12)';
+                        e.currentTarget.style.borderColor = 'rgba(239, 68, 68, 0.25)';
+                        e.currentTarget.style.color = '#fca5a5';
+                      }}
+                    >
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                        <polyline points="16 17 21 12 16 7"></polyline>
+                        <line x1="21" y1="12" x2="9" y2="12"></line>
+                      </svg>
+                      Sign Out
+                    </button>
+                  </div>
+                )}
+              </div>
             </div>
           </div>
 

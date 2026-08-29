@@ -377,7 +377,20 @@ export function DataProvider({ children }: { children: ReactNode }) {
           .eq('user_id', user.id);
           
         if (finalData) {
-          await db.transaction('rw', db.custom_dictionary, async () => {
+          await db.transaction('rw', [db.custom_dictionary, db.learning_queue], async () => {
+            const remoteBaseForms = new Set(finalData.map(r => (r.base_form || '').toLowerCase()));
+            const currentLocals = await db.custom_dictionary.toArray();
+            for (const loc of currentLocals) {
+              if (loc.id && !remoteBaseForms.has((loc.base_form || '').toLowerCase())) {
+                await db.custom_dictionary.delete(loc.id);
+                // Also clean up from learning_queue if it was a custom word
+                const lqMatches = await db.learning_queue.where('base_form').equalsIgnoreCase(loc.base_form).toArray();
+                for (const lq of lqMatches) {
+                  if (lq.id) await db.learning_queue.delete(lq.id);
+                }
+              }
+            }
+
             for (const item of finalData) {
               const parsedItem = { ...item, synced: true };
               const existing = await db.custom_dictionary.where('base_form').equals(item.base_form).first();
