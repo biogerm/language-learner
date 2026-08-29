@@ -40,5 +40,8 @@ npm install
 npm run dev
 ```
 
+### Deployment & CI/CD
+For production deployment instructions and architecture details, see the [Deployment Guide](deployment.md).
+
 ## Security & Privacy Note
 This repository does NOT contain any API keys, sensitive environment variables (`.env`), or proprietary raw PDF data. If you are setting this up locally, you will need to provide your own API keys for AI services (OpenAI/Gemini) and Supabase.

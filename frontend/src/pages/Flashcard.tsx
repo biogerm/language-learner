@@ -193,6 +193,24 @@ export default function Flashcard() {
   };
   const exampleSentence = getExampleSentence();
 
+  const getMaskedSentence = () => {
+    if (!exampleSentence || !currentRecord) return '';
+    let masked = exampleSentence;
+    const wordsToMask = [currentRecord.word_id, currentRecord.base_form, currentRecord.word_in_sentence]
+      .filter(Boolean)
+      .sort((a, b) => b.length - a.length);
+    wordsToMask.forEach(w => {
+      const safeWord = w.replace(/[.*+?^${}()|[\]\\]/g, '\\const exampleSentence = getExampleSentence();');
+      masked = masked.replace(new RegExp(`(^|\\W)(${safeWord})(?=\\W|$)`, 'gi'), '$1_____');
+    });
+    wordsToMask.forEach(w => {
+      const safeWord = w.replace(/[.*+?^${}()|[\]\\]/g, '\\const exampleSentence = getExampleSentence();');
+      masked = masked.replace(new RegExp(`(${safeWord})`, 'gi'), '_____');
+    });
+    return masked;
+  };
+
+
   const getEnglishTranslation = () => {
     if (currentRecord?.context_en) return currentRecord.context_en;
     if (currentRecord?.contextual_en) return currentRecord.contextual_en;
@@ -503,7 +521,7 @@ export default function Flashcard() {
 
           {!isAllDone && !showAnswer && wrongCount >= 3 && exampleSentence && (
             <div id="hint-display" style={{ color: '#9ca3af', fontStyle: 'italic', marginBottom: '0.75rem', textAlign: 'center' }}>
-              {exampleSentence.replace(new RegExp(`(${currentWord?.word})`, 'gi'), '_____')}
+              {getMaskedSentence()}
             </div>
           )}
 

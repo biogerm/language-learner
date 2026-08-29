@@ -56,11 +56,17 @@ export default function Layout() {
   }, [courseData]);
 
   useEffect(() => {
-    if (stages.length > 0 && (!selectedStage || selectedStage === 'review')) {
-      setSelectedStage(stages[0]?.id || '');
-      setSelectedArticleId(stages[0]?.articles?.[0]?.id || '');
+    if (stages.length > 0) {
+      const currentStageObj = stages.find(s => s.id === selectedStage);
+      if (!currentStageObj) {
+        const firstStage = stages[0];
+        setSelectedStage(firstStage?.id || '');
+        setSelectedArticleId(firstStage?.articles?.[0]?.id || '');
+      } else if (!currentStageObj.articles.some((a: any) => a.id === selectedArticleId)) {
+        setSelectedArticleId(currentStageObj.articles?.[0]?.id || '');
+      }
     }
-  }, [stages, selectedStage, setSelectedStage, setSelectedArticleId]);
+  }, [stages, selectedStage, selectedArticleId, setSelectedStage, setSelectedArticleId]);
 
   const handleModeSwitch = (path: string) => {
     if (courseId) {
@@ -72,10 +78,10 @@ export default function Layout() {
   // const ndfActiveIndex = location.pathname.includes('narration') ? 0 : location.pathname.includes('dictation') ? (isStudy ? 1 : 0) : (isStudy ? 2 : 1);
 
   const getModuleInfo = (path: string) => {
-    if (path.includes('dictation')) return { name: 'Dictation', version: 'v2.2.14' };
-    if (path.includes('flashcard')) return { name: 'Flashcard', version: 'v2.2.17' };
-    if (path.includes('narration')) return { name: 'Narration', version: 'v2.2.9' };
-    return { name: 'Language Learner', version: 'v2.2.9' };
+    if (path.includes('dictation')) return { name: 'Dictation', version: 'v2.2.15' };
+    if (path.includes('flashcard')) return { name: 'Flashcard', version: 'v2.2.18' };
+    if (path.includes('narration')) return { name: 'Narration', version: 'v2.2.10' };
+    return { name: 'Language Learner', version: 'v2.2.10' };
   };
   const modInfo = getModuleInfo(location.pathname);
 

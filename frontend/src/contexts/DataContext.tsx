@@ -96,7 +96,12 @@ export function DataProvider({ children }: { children: ReactNode }) {
       const remoteUpdated = courseRow.updated_at ? new Date(courseRow.updated_at).getTime() : 0;
       const localUpdated = cached?.updated_at ? new Date(cached.updated_at).getTime() : 0;
 
-      if (cached && cached.articles && Object.keys(cached.articles).length > 0 && localUpdated >= remoteUpdated) {
+      const hasValidDict = cached && (
+        (Array.isArray(cached.dictionary) && cached.dictionary.length > 0) ||
+        (cached.dictionary && typeof cached.dictionary === 'object' && Object.keys(cached.dictionary).length > 0)
+      );
+
+      if (cached && cached.articles && Object.keys(cached.articles).length > 0 && hasValidDict && localUpdated >= remoteUpdated) {
         data = cached.articles;
         vocabData = cached.dictionary || [];
       } else {
@@ -107,8 +112,8 @@ export function DataProvider({ children }: { children: ReactNode }) {
           if (courseRow.r2_vocab_url) {
             vocabData = await fetchCourseData(`${courseRow.r2_vocab_url}?v=${remoteUpdated}`);
           } else {
-            // Fallback assumption
-            vocabData = await fetchCourseData(`courses/sfid/course_sfid_vocab.json?v=${remoteUpdated}`);
+            // Fallback assumption based on current courseId
+            vocabData = await fetchCourseData(`courses/${courseId}/course_${courseId}_vocab.json?v=${remoteUpdated}`);
           }
         } catch (err) {
           console.warn("Failed to fetch vocab data", err);
@@ -214,24 +219,65 @@ export function DataProvider({ children }: { children: ReactNode }) {
     const excludedVocab = exRecords.map(r => r.base_form.toLowerCase());
     setExcludedVocab(excludedVocab);
 
-    let articleVocab: WordObject[] = vocabList
-      .filter(w => {
-        if (w.article_id !== selectedArticleId || !targetWordsSet.has(w.base_form)) return false;
-        const base = (w.base_form || '').toLowerCase();
-        const inSent = (w.word_in_sentence || '').toLowerCase();
-        const isEx = (base && excludedVocab.includes(base)) || (inSent && excludedVocab.includes(inSent));
-        return !isEx;
-      })
-      .map(w => {
-        const sentInfo = (w.sentence_id && sentenceMap.get(w.sentence_id)) || wordToSentenceMap.get(w.base_form.toLowerCase());
-        return {
-          ...w,
-          sentence: sentInfo?.sv || w.sentence || '',
-          sentence_en: sentInfo?.en || w.sentence_en || '',
-          context_sv: sentInfo?.sv || w.sentence || '',
-          context_en: sentInfo?.en || w.sentence_en || ''
-        };
-      });
+    let articleVocab: WordObject[] = [];
+    if (Array.isArray(vocabList) && vocabList.length > 0) {
+      articleVocab = vocabList
+        .filter(w => {
+          if (w.article_id !== selectedArticleId || !targetWordsSet.has(w.base_form)) return false;
+          const base = (w.base_form || '').toLowerCase();
+          const inSent = (w.word_in_sentence || '').toLowerCase();
+          const isEx = (base && excludedVocab.includes(base)) || (inSent && excludedVocab.includes(inSent));
+          return !isEx;
+        })
+        .map(w => {
+          const sentInfo = (w.sentence_id && sentenceMap.get(w.sentence_id)) || wordToSentenceMap.get(w.base_form.toLowerCase());
+          return {
+            ...w,
+            sentence: sentInfo?.sv || w.sentence || '',
+            sentence_en: sentInfo?.en || w.sentence_en || '',
+            context_sv: sentInfo?.sv || w.sentence || '',
+            context_en: sentInfo?.en || w.sentence_en || ''
+          };
+        });
+    }
+
+    // Robust Fallback: If vocabList didn't match or was empty, construct directly from target_words in the article sentences!
+    if (articleVocab.length === 0 && cached.articles && cached.articles.stages) {
+      for (const s of cached.articles.stages) {
+        for (const a of s.articles || []) {
+          if (a.article_id === selectedArticleId && a.sentences) {
+            for (const sent of a.sentences) {
+              if (sent.target_words) {
+                for (const tw of sent.target_words) {
+                  const base = (tw.base_form || '').toLowerCase();
+                  const inSent = (tw.word_in_sentence || '').toLowerCase();
+                  const isEx = (base && excludedVocab.includes(base)) || (inSent && excludedVocab.includes(inSent));
+                  if (!isEx) {
+                    articleVocab.push({
+                      base_form: tw.base_form,
+                      word_in_sentence: tw.word_in_sentence || tw.base_form,
+                      en_translation: tw.en_translation || tw.contextual_en || '',
+                      contextual_en: tw.contextual_en || '',
+                      dict_en: tw.dict_en || tw.contextual_en || '',
+                      article_id: a.article_id,
+                      stage_id: s.stage_id,
+                      course_id: currentCourse,
+                      sentence: sent.sv || '',
+                      sentence_en: sent.en || '',
+                      context_sv: sent.sv || '',
+                      context_en: sent.en || '',
+                      sentence_id: sent.sentence_id || '',
+                      synced: true,
+                      updated_at: new Date(0).toISOString()
+                    } as unknown as WordObject);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
     
     const customVocab = await db.custom_dictionary.where('article_id').equals(selectedArticleId).toArray();
     articleVocab = [...articleVocab, ...customVocab];
