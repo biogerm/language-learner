@@ -7,11 +7,16 @@ build/
 .env.*
 !.env.example
 
-# Build Outputs & Testing Logs
+# Build Outputs, Archives & Logs
 *.log
 *.webm
 *.bak
+*.tar
+*.tar.gz
+*.gz
+*.zip
 test-results/
+**/test-results/
 e2e/screenshots/
 frontend/e2e/screenshots/
 scratch/
@@ -36,16 +41,17 @@ _migrations/
 _archive_root/
 _archive_frontend/
 frontend/_archive_frontend/
+scripts/adhoc/
 mock_test/
-marls/
 SFI\ Local\ Backup.json
 mig_*.json
 niva_data.json
 
-# Raw PDF Extraction Data & AI Model Binaries (Proprietary datasets)
+# Raw PDF Extraction Data, Intermediate Chunks & AI Model Binaries
 *.pdf
 *.pt
 **/data/
 course/**/data/
 course/sfid/data/
 course/sfid/phase3/data/
+course/sfid/phase2/archive/intermediate_files/
