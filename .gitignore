@@ -31,3 +31,4 @@ marls/
 
 # Raw Data (Do not upload PDFs)
 *.pdf
+!.env.example
