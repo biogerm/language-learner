@@ -91,25 +91,41 @@ export const resolveWordMetadata = async (
 ): Promise<UnifiedQueueItem> => {
   const cleanWordId = (word_id || '').trim().toLowerCase();
 
-  // 1. Look up in custom_dictionary first
-  const custom = await db.custom_dictionary
-    .where('base_form')
-    .equalsIgnoreCase(cleanWordId)
-    .first();
+  // 1. Look up in custom_dictionary (prioritize matching article if provided)
+  let custom = null;
+  if (fallbackData?.article_id) {
+    custom = await db.custom_dictionary
+      .where({ article_id: fallbackData.article_id, base_form: cleanWordId })
+      .first();
+  }
+  if (!custom) {
+    custom = await db.custom_dictionary
+      .where('base_form')
+      .equalsIgnoreCase(cleanWordId)
+      .first();
+  }
 
-  // 2. Look up in learning_queue
-  const lq = await db.learning_queue
-    .where('base_form')
-    .equalsIgnoreCase(cleanWordId)
-    .first();
+  // 2. Look up in learning_queue (prioritize matching article if provided)
+  let lq = null;
+  if (fallbackData?.article_id) {
+    lq = await db.learning_queue
+      .where({ article_id: fallbackData.article_id, base_form: cleanWordId })
+      .first();
+  }
+  if (!lq) {
+    lq = await db.learning_queue
+      .where('base_form')
+      .equalsIgnoreCase(cleanWordId)
+      .first();
+  }
 
   // 3. Resolve base properties
-  const baseForm = custom?.base_form || lq?.base_form || fallbackData?.base_form || word_id;
-  const wordInSentence = custom?.word_in_sentence || lq?.word_in_sentence || fallbackData?.word_in_sentence || '';
+  const baseForm = fallbackData?.base_form || custom?.base_form || lq?.base_form || word_id;
+  const wordInSentence = fallbackData?.word_in_sentence || custom?.word_in_sentence || lq?.word_in_sentence || '';
 
-  // Resolve course_id and sentence_id coordinates
-  const targetCourseId = custom?.course_id || lq?.course_id || fallbackData?.course_id || activeCourseId || 'sfid';
-  let targetSentenceId = custom?.sentence_id || lq?.sentence_id || fallbackData?.sentence_id || '';
+  // Resolve course_id and sentence_id coordinates (prioritize fallbackData coordinates from current article queue)
+  const targetCourseId = fallbackData?.course_id || custom?.course_id || lq?.course_id || activeCourseId || 'sfid';
+  let targetSentenceId = fallbackData?.sentence_id || custom?.sentence_id || lq?.sentence_id || '';
 
   // If sentence_id is missing, search main dictionary
   if (!targetSentenceId) {
@@ -136,6 +152,12 @@ export const resolveWordMetadata = async (
     const match = sentenceMap.get(targetSentenceId)!;
     resolvedSentenceSv = match.sv;
     resolvedSentenceEn = match.en;
+  } else if (fallbackData?.sentence && fallbackData.sentence !== baseForm && fallbackData.sentence !== wordInSentence) {
+    resolvedSentenceSv = fallbackData.sentence;
+    resolvedSentenceEn = fallbackData.sentence_en || fallbackData.context_en || '';
+  } else if (custom?.sentence && custom.sentence !== baseForm && custom.sentence !== wordInSentence) {
+    resolvedSentenceSv = custom.sentence;
+    resolvedSentenceEn = custom.sentence_en || custom.context_en || '';
   } else if (wordToSentenceMap.has(cleanWordId)) {
     const match = wordToSentenceMap.get(cleanWordId)!;
     resolvedSentenceSv = match.sv;
@@ -143,25 +165,25 @@ export const resolveWordMetadata = async (
   }
 
   // Fallback to cached string if dynamic resolution yielded nothing
-  const rawFallbackSv = lq?.sentence || lq?.context_sv || custom?.sentence || custom?.context_sv || fallbackData?.sentence || '';
+  const rawFallbackSv = fallbackData?.sentence || lq?.sentence || lq?.context_sv || custom?.sentence || custom?.context_sv || '';
   const finalSentence =
     resolvedSentenceSv ||
     (rawFallbackSv && rawFallbackSv !== baseForm && rawFallbackSv !== wordInSentence ? rawFallbackSv : '');
-  const finalContextEn = resolvedSentenceEn || lq?.context_en || custom?.context_en || fallbackData?.context_en || '';
+  const finalContextEn = resolvedSentenceEn || fallbackData?.context_en || fallbackData?.sentence_en || lq?.context_en || custom?.context_en || '';
 
   return {
     ...fallbackData,
     word_id,
     base_form: baseForm,
     word_in_sentence: wordInSentence,
-    en_translation: custom?.en_translation || lq?.en_translation || fallbackData?.en_translation || '',
-    contextual_en: custom?.contextual_en || lq?.contextual_en || fallbackData?.contextual_en || '',
-    dict_en: custom?.dict_en || lq?.dict_en || fallbackData?.dict_en || '',
-    en: custom?.en || lq?.en || fallbackData?.en || '',
+    en_translation: custom?.en_translation || fallbackData?.en_translation || lq?.en_translation || '',
+    contextual_en: custom?.contextual_en || fallbackData?.contextual_en || lq?.contextual_en || '',
+    dict_en: custom?.dict_en || fallbackData?.dict_en || lq?.dict_en || '',
+    en: custom?.en || fallbackData?.en || lq?.en || '',
     sentence: finalSentence,
     context_sv: finalSentence,
     context_en: finalContextEn,
-    article_id: custom?.article_id || lq?.article_id || fallbackData?.article_id || '',
+    article_id: fallbackData?.article_id || custom?.article_id || lq?.article_id || '',
     course_id: targetCourseId
   };
 };
