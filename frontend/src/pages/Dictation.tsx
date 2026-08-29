@@ -176,15 +176,16 @@ export default function Dictation() {
     }
     if (currentRecord?.context_sv) return currentRecord.context_sv;
     
-    if (courseData && (courseData as any).stages && currentWord?.word) {
+    // Look in current selected article first!
+    if (courseData && (courseData as any).stages && (currentRecord?.article_id || selectedArticleId) && currentWord?.word) {
       const stages = (courseData as any).stages;
+      const targetArticleId = currentRecord?.article_id || selectedArticleId;
       const targetLower = currentWord.word.toLowerCase();
-      for (const s of stages) {
-        for (const a of s.articles || []) {
-          for (const sItem of a.sentences || []) {
-            if (sItem.sv && sItem.sv.toLowerCase().includes(targetLower)) {
-              return sItem.sv;
-            }
+      const currentArt = stages.flatMap((s: any) => s.articles || []).find((a: any) => a.article_id === targetArticleId);
+      if (currentArt) {
+        for (const sItem of currentArt.sentences || []) {
+          if (sItem.sv && sItem.sv.toLowerCase().includes(targetLower)) {
+            return sItem.sv;
           }
         }
       }

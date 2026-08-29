@@ -106,9 +106,9 @@ export default function Layout() {
   // const ndfActiveIndex = location.pathname.includes('narration') ? 0 : location.pathname.includes('dictation') ? (isStudy ? 1 : 0) : (isStudy ? 2 : 1);
 
   const getModuleInfo = (path: string) => {
-    if (path.includes('dictation')) return { name: 'Dictation', version: 'v2.2.17' };
-    if (path.includes('flashcard')) return { name: 'Flashcard', version: 'v2.2.20' };
-    if (path.includes('narration')) return { name: 'Narration', version: 'v2.2.12' };
+    if (path.includes('dictation')) return { name: 'Dictation', version: 'v2.2.18' };
+    if (path.includes('flashcard')) return { name: 'Flashcard', version: 'v2.2.21' };
+    if (path.includes('narration')) return { name: 'Narration', version: 'v2.2.13' };
     return { name: 'Language Learner', version: 'v2.2.10' };
   };
   const modInfo = getModuleInfo(location.pathname);

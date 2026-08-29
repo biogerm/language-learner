@@ -29,6 +29,11 @@ interface CustomVocabEntry {
   base_form?: string;
   word_in_sentence?: string;
   dictEn?: string;
+  sentence_id?: string;
+  sentence?: string;
+  sentence_en?: string;
+  context_sv?: string;
+  context_en?: string;
   isGlobalTarget?: boolean;
   is_global_target?: boolean;
 }
@@ -623,10 +628,18 @@ export default function Narration() {
 
           updatedCustom.push({
             sv: t.cleanWord,
+            baseForm: t.baseForm || t.cleanWord,
+            base_form: t.baseForm || t.cleanWord,
+            word_in_sentence: t.cleanWord,
             en: translationStr,
             stage,
             article,
             course_id: currentCourseId,
+            sentence_id: sent.sentence_id || sent.id || '',
+            sentence: sent.sv,
+            sentence_en: sent.en || '',
+            context_sv: sent.sv,
+            context_en: sent.en || '',
             timestamp: Date.now()
           });
         } else if (!t.isSelected) {
@@ -655,6 +668,7 @@ export default function Narration() {
               stage,
               article,
               course_id: currentCourseId,
+              sentence_id: sent.sentence_id || sent.id || '',
               context_sv: sent.sv,
               context_en: sent.en || '',
               baseForm: t.baseForm,
@@ -670,7 +684,14 @@ export default function Narration() {
               course_id: currentCourseId,
               timestamp: Date.now(),
               baseForm: t.baseForm,
+              base_form: t.baseForm,
+              word_in_sentence: t.cleanWord,
               dictEn: t.dictEn,
+              sentence_id: sent.sentence_id || sent.id || '',
+              sentence: sent.sv,
+              sentence_en: sent.en || '',
+              context_sv: sent.sv,
+              context_en: sent.en || '',
               isGlobalTarget: t.isGlobalTarget
             });
           }
@@ -830,6 +851,11 @@ export default function Narration() {
             stage: item.stage,
             article: item.article,
             course_id: item.course_id,
+            sentence_id: item.sentence_id || '',
+            sentence: item.context_sv,
+            sentence_en: item.context_en || '',
+            context_sv: item.context_sv,
+            context_en: item.context_en || '',
             timestamp: Date.now()
           });
 
