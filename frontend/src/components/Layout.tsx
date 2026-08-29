@@ -114,7 +114,7 @@ export default function Layout() {
 
   return (
     <div className="app-container">
-      <header className="app-header glass-panel" style={{ flexDirection: 'column', alignItems: 'stretch', gap: 0, padding: '1.25rem 2rem' }}>
+      <header className="app-header glass-panel" style={{ position: 'relative', zIndex: 100, flexDirection: 'column', alignItems: 'stretch', gap: 0, padding: '1.25rem 2rem' }}>
           
           {/* Row 1: App Info + Mode Toggles */}
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%', gap: '1rem', flexWrap: 'wrap', marginBottom: '1rem' }}>
