@@ -33,41 +33,62 @@ export interface StudyQueueStats {
 // Memory cache for sentence mappings: courseId -> Map<sentence_id, { sv: string, en: string }>
 const courseSentenceCache = new Map<string, Map<string, { sv: string; en: string }>>();
 const courseWordToSentenceCache = new Map<string, Map<string, { sv: string; en: string }>>();
+const courseArticleWordMapCache = new Map<string, Map<string, Map<string, { sv: string; en: string }>>>();
 
 export const getSentenceMapForCourse = async (courseId: string) => {
   if (courseSentenceCache.has(courseId)) {
     return {
       sentenceMap: courseSentenceCache.get(courseId)!,
-      wordToSentenceMap: courseWordToSentenceCache.get(courseId)!
+      wordToSentenceMap: courseWordToSentenceCache.get(courseId)!,
+      articleWordMap: courseArticleWordMapCache.get(courseId)!
     };
   }
 
   const sentenceMap = new Map<string, { sv: string; en: string }>();
   const wordToSentenceMap = new Map<string, { sv: string; en: string }>();
+  const articleWordMap = new Map<string, Map<string, { sv: string; en: string }>>();
 
   try {
     const cached = await db.course_data.get(courseId);
     if (cached && cached.articles && cached.articles.stages) {
       for (const s of cached.articles.stages) {
         for (const a of s.articles || []) {
+          const artId = a.article_id;
+          if (!articleWordMap.has(artId)) {
+            articleWordMap.set(artId, new Map<string, { sv: string; en: string }>());
+          }
+          const currentArtMap = articleWordMap.get(artId)!;
+
           for (const sent of a.sentences || []) {
             if (sent.sentence_id) {
               sentenceMap.set(sent.sentence_id, { sv: sent.sv, en: sent.en || '' });
             }
+
+            // Index all words in sentence for this specific article
+            const tokens = (sent.sv || '').split(/[\s.,!?;:()[\]{}”"“‘’«»\-\…]+/).filter(Boolean);
+            for (const tok of tokens) {
+              const cleanTok = tok.toLowerCase();
+              if (cleanTok && !currentArtMap.has(cleanTok)) {
+                currentArtMap.set(cleanTok, { sv: sent.sv, en: sent.en || '' });
+              }
+            }
+
             if (sent.target_words) {
               for (const tw of sent.target_words) {
                 const base = (tw.base_form || '').toLowerCase();
-                if (base && !wordToSentenceMap.has(base)) {
-                  wordToSentenceMap.set(base, { sv: sent.sv, en: sent.en || '' });
-                }
+                const inSent = (tw.word_in_sentence || '').toLowerCase();
+                if (base && !currentArtMap.has(base)) currentArtMap.set(base, { sv: sent.sv, en: sent.en || '' });
+                if (inSent && !currentArtMap.has(inSent)) currentArtMap.set(inSent, { sv: sent.sv, en: sent.en || '' });
+                if (base && !wordToSentenceMap.has(base)) wordToSentenceMap.set(base, { sv: sent.sv, en: sent.en || '' });
               }
             }
             if (sent.secondary_words) {
               for (const sw of sent.secondary_words) {
                 const base = (sw.base_form || '').toLowerCase();
-                if (base && !wordToSentenceMap.has(base)) {
-                  wordToSentenceMap.set(base, { sv: sent.sv, en: sent.en || '' });
-                }
+                const inSent = (sw.word_in_sentence || '').toLowerCase();
+                if (base && !currentArtMap.has(base)) currentArtMap.set(base, { sv: sent.sv, en: sent.en || '' });
+                if (inSent && !currentArtMap.has(inSent)) currentArtMap.set(inSent, { sv: sent.sv, en: sent.en || '' });
+                if (base && !wordToSentenceMap.has(base)) wordToSentenceMap.set(base, { sv: sent.sv, en: sent.en || '' });
               }
             }
           }
@@ -80,8 +101,9 @@ export const getSentenceMapForCourse = async (courseId: string) => {
 
   courseSentenceCache.set(courseId, sentenceMap);
   courseWordToSentenceCache.set(courseId, wordToSentenceMap);
+  courseArticleWordMapCache.set(courseId, articleWordMap);
 
-  return { sentenceMap, wordToSentenceMap };
+  return { sentenceMap, wordToSentenceMap, articleWordMap };
 };
 
 export const resolveWordMetadata = async (
@@ -125,30 +147,22 @@ export const resolveWordMetadata = async (
 
   // Resolve course_id and sentence_id coordinates (prioritize fallbackData coordinates from current article queue)
   const targetCourseId = fallbackData?.course_id || custom?.course_id || lq?.course_id || activeCourseId || 'sfid';
+  const targetArticleId = fallbackData?.article_id || custom?.article_id || lq?.article_id || '';
   let targetSentenceId = fallbackData?.sentence_id || custom?.sentence_id || lq?.sentence_id || '';
 
-  // If sentence_id is missing, search main dictionary
-  if (!targetSentenceId) {
-    try {
-      const cached = await db.course_data.get(targetCourseId);
-      if (cached && cached.dictionary && Array.isArray(cached.dictionary)) {
-        const dictEntry = cached.dictionary.find(
-          (d: any) => (d.base_form || '').toLowerCase() === cleanWordId
-        );
-        if (dictEntry && dictEntry.sentence_id) {
-          targetSentenceId = dictEntry.sentence_id;
-        }
-      }
-    } catch (e) {}
-  }
-
-  // 4. Resolve sentence text dynamically via sentenceMap
+  // 4. Resolve sentence text dynamically
   let resolvedSentenceSv = '';
   let resolvedSentenceEn = '';
 
-  const { sentenceMap, wordToSentenceMap } = await getSentenceMapForCourse(targetCourseId);
+  const { sentenceMap, wordToSentenceMap, articleWordMap } = await getSentenceMapForCourse(targetCourseId);
+  const currentArtMap = targetArticleId ? articleWordMap.get(targetArticleId) : null;
 
-  if (targetSentenceId && sentenceMap.has(targetSentenceId)) {
+  // Prioritize looking within CURRENT article
+  if (currentArtMap && (currentArtMap.has(cleanWordId) || (wordInSentence && currentArtMap.has(wordInSentence.toLowerCase())))) {
+    const match = currentArtMap.get(cleanWordId) || currentArtMap.get(wordInSentence.toLowerCase())!;
+    resolvedSentenceSv = match.sv;
+    resolvedSentenceEn = match.en;
+  } else if (targetSentenceId && sentenceMap.has(targetSentenceId)) {
     const match = sentenceMap.get(targetSentenceId)!;
     resolvedSentenceSv = match.sv;
     resolvedSentenceEn = match.en;
