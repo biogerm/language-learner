@@ -432,7 +432,6 @@ export default function Flashcard() {
       if (!isCorrect) {
         const newWrongCount = wrongCount + 1;
         setWrongCount(newWrongCount);
-        setInput('');
         setInputState('incorrect');
         
         let fb = '';

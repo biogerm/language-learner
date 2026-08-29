@@ -103,13 +103,12 @@ export default function Layout() {
   const avatarLetter = (userEmail[0] || 'U').toUpperCase();
 
   const isStudy = appMode === 'study';
-  // const ndfActiveIndex = location.pathname.includes('narration') ? 0 : location.pathname.includes('dictation') ? (isStudy ? 1 : 0) : (isStudy ? 2 : 1);
 
   const getModuleInfo = (path: string) => {
-    if (path.includes('dictation')) return { name: 'Dictation', version: 'v2.2.19' };
-    if (path.includes('flashcard')) return { name: 'Flashcard', version: 'v2.2.23' };
-    if (path.includes('narration')) return { name: 'Narration', version: 'v2.2.13' };
-    return { name: 'Language Learner', version: 'v2.2.10' };
+    if (path.includes('dictation')) return { name: 'Dictation', version: 'v2.2.20' };
+    if (path.includes('flashcard')) return { name: 'Flashcard', version: 'v2.2.24' };
+    if (path.includes('narration')) return { name: 'Narration', version: 'v2.2.14' };
+    return { name: 'Language Learner', version: 'v2.2.0' };
   };
   const modInfo = getModuleInfo(location.pathname);
 
@@ -120,10 +119,53 @@ export default function Layout() {
           {/* Row 1: App Info + Mode Toggles */}
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%', gap: '1rem', flexWrap: 'wrap', marginBottom: '1rem' }}>
             
-            <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
-              <h1 style={{ margin: 0, flexShrink: 0, fontSize: '1.75rem', fontWeight: 700, background: 'linear-gradient(to right, #fff, #cbd5e1)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
-                {modInfo.name} <span style={{ fontSize: '0.8rem', background: 'rgba(255,255,255,0.2)', padding: '2px 8px', borderRadius: '10px', marginLeft: '10px', verticalAlign: 'middle', WebkitTextFillColor: 'initial', color: 'white' }}>{modInfo.version}</span>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+              <h1 
+                onClick={() => navigate('/dashboard')}
+                title="Go to Courses"
+                style={{ 
+                  margin: 0, 
+                  flexShrink: 0, 
+                  fontSize: '1.75rem', 
+                  fontWeight: 700, 
+                  background: 'linear-gradient(to right, #fff, #cbd5e1)', 
+                  WebkitBackgroundClip: 'text', 
+                  WebkitTextFillColor: 'transparent',
+                  cursor: 'pointer',
+                  letterSpacing: '-0.02em'
+                }}
+              >
+                Language Learner
               </h1>
+              {courseId && (
+                <button 
+                  id="header-switch-course-btn"
+                  onClick={() => navigate('/dashboard')}
+                  title="Switch Course"
+                  style={{
+                    background: 'rgba(255, 255, 255, 0.08)',
+                    border: '1px solid rgba(255, 255, 255, 0.15)',
+                    borderRadius: '20px',
+                    padding: '4px 12px',
+                    color: '#e2e8f0',
+                    fontSize: '0.8rem',
+                    fontWeight: 600,
+                    cursor: 'pointer',
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '6px',
+                    transition: 'all 0.2s ease'
+                  }}
+                  onMouseOver={e => e.currentTarget.style.background = 'rgba(255, 255, 255, 0.16)'}
+                  onMouseOut={e => e.currentTarget.style.background = 'rgba(255, 255, 255, 0.08)'}
+                >
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                  </svg>
+                  Courses
+                </button>
+              )}
             </div>
             
             <div style={{ display: 'flex', gap: '16px', alignItems: 'center' }}>
@@ -158,25 +200,22 @@ export default function Layout() {
                   title={`Signed in as ${userEmail}`}
                   onClick={() => setIsUserMenuOpen(prev => !prev)}
                   style={{
+                    width: '38px',
+                    height: '38px',
+                    borderRadius: '50%',
                     background: 'linear-gradient(135deg, #6366f1, #8b5cf6)',
-                    border: '1px solid rgba(255, 255, 255, 0.25)',
+                    border: '2px solid rgba(255, 255, 255, 0.2)',
+                    color: '#fff',
+                    fontWeight: 700,
+                    fontSize: '1rem',
                     cursor: 'pointer',
-                    color: '#ffffff',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
-                    width: '36px',
-                    height: '36px',
-                    borderRadius: '50%',
-                    fontWeight: 700,
-                    fontSize: '0.95rem',
-                    boxShadow: '0 2px 8px rgba(99, 102, 241, 0.35)',
-                    transition: 'all 0.2s ease',
-                    outline: 'none',
-                    transform: isUserMenuOpen ? 'scale(1.05)' : 'scale(1)',
-                    borderColor: isUserMenuOpen ? '#a855f7' : 'rgba(255, 255, 255, 0.25)'
+                    boxShadow: '0 2px 8px rgba(0, 0, 0, 0.3)',
+                    transition: 'all 0.2s ease'
                   }}
-                  onMouseOver={(e) => { e.currentTarget.style.transform = 'scale(1.08)'; }}
+                  onMouseOver={(e) => { e.currentTarget.style.transform = 'scale(1.05)'; }}
                   onMouseOut={(e) => { if (!isUserMenuOpen) e.currentTarget.style.transform = 'scale(1)'; }}
                 >
                   {avatarLetter}
@@ -212,6 +251,45 @@ export default function Layout() {
                         </div>
                       </div>
                     </div>
+
+                    <button 
+                      id="user-menu-switch-course"
+                      onClick={() => {
+                        setIsUserMenuOpen(false);
+                        navigate('/dashboard');
+                      }}
+                      style={{
+                        width: '100%',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        gap: '8px',
+                        padding: '8px 14px',
+                        borderRadius: '8px',
+                        background: 'rgba(255, 255, 255, 0.08)',
+                        border: '1px solid rgba(255, 255, 255, 0.15)',
+                        color: '#e2e8f0',
+                        fontSize: '0.85rem',
+                        fontWeight: 600,
+                        cursor: 'pointer',
+                        marginBottom: '8px',
+                        transition: 'all 0.2s ease'
+                      }}
+                      onMouseOver={(e) => {
+                        e.currentTarget.style.background = 'rgba(255, 255, 255, 0.15)';
+                        e.currentTarget.style.color = '#fff';
+                      }}
+                      onMouseOut={(e) => {
+                        e.currentTarget.style.background = 'rgba(255, 255, 255, 0.08)';
+                        e.currentTarget.style.color = '#e2e8f0';
+                      }}
+                    >
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                      </svg>
+                      Switch Course
+                    </button>
 
                     <button 
                       id="user-menu-signout"
@@ -289,9 +367,9 @@ export default function Layout() {
             </div>
           )}
 
-          {/* Row 3: N/D/F or D/F Toggles */}
+          {/* Row 3: N/D/F or D/F Toggles + Module Version Badge */}
           {courseId && (
-            <div style={{ display: 'flex', width: '100%' }}>
+            <div style={{ display: 'flex', width: '100%', alignItems: 'center', justifyContent: 'space-between', gap: '1rem', flexWrap: 'wrap' }}>
               <nav className="mode-switcher">
                 {isStudy && (
                   <a 
@@ -314,6 +392,27 @@ export default function Layout() {
                   📝 Flashcard
                 </a>
               </nav>
+
+              <div style={{ display: 'flex', alignItems: 'center' }}>
+                <span 
+                  id="module-version-badge"
+                  style={{ 
+                    fontSize: '0.8rem', 
+                    fontWeight: 600, 
+                    background: 'rgba(255,255,255,0.08)', 
+                    border: '1px solid rgba(255,255,255,0.12)', 
+                    color: '#94a3b8', 
+                    padding: '4px 12px', 
+                    borderRadius: '12px', 
+                    letterSpacing: '0.02em',
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '6px'
+                  }}
+                >
+                  {modInfo.name} <span style={{ color: '#c084fc' }}>{modInfo.version}</span>
+                </span>
+              </div>
             </div>
           )}
       </header>
