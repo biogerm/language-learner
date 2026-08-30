@@ -1,7 +1,7 @@
 import { getMp3PublicUrl } from '../services/r2';
-import r2AudioList from '../data/r2_audio_index.json';
 
-const availableAudioSet = new Set<string>(r2AudioList);
+// In-memory cache: word -> verified MP3 URL string or false (TTS only)
+const audioProbeCache = new Map<string, string | false>();
 let activeAudio: HTMLAudioElement | null = null;
 let cachedVoices: SpeechSynthesisVoice[] = [];
 
@@ -65,15 +65,52 @@ export const playSwedishTTS = (word: string) => {
 };
 
 /**
+ * Pre-probes whether a word has a valid MP3 file in R2 in the background.
+ * Call this when a new word card loads or enters the queue.
+ */
+export const preProbeWordAudio = (word: string) => {
+  if (!word) return;
+  const trimmed = word.trim();
+  if (audioProbeCache.has(trimmed)) return;
+
+  const rawKey = encodeURIComponent(trimmed);
+  const rawLowerKey = encodeURIComponent(trimmed.toLowerCase());
+  const cleanWord = trimmed.replace(/[.,!?"':;()]/g, '').trim().toLowerCase();
+  const cleanKey = encodeURIComponent(cleanWord);
+  const snakeKey = encodeURIComponent(trimmed.toLowerCase().replace(/\s+/g, '_'));
+  const cleanSnakeKey = encodeURIComponent(cleanWord.replace(/\s+/g, '_'));
+
+  const candidateUrls = Array.from(new Set([
+    getMp3PublicUrl(`words_audio/${rawKey}.mp3`),
+    getMp3PublicUrl(`words_audio/${rawLowerKey}.mp3`),
+    getMp3PublicUrl(`words_audio/${cleanKey}.mp3`),
+    getMp3PublicUrl(`words_audio/${snakeKey}.mp3`),
+    getMp3PublicUrl(`words_audio/${cleanSnakeKey}.mp3`)
+  ]));
+
+  (async () => {
+    for (const url of candidateUrls) {
+      try {
+        const res = await fetch(url, { method: 'HEAD' });
+        if (res.ok) {
+          audioProbeCache.set(trimmed, url);
+          return;
+        }
+      } catch {}
+    }
+    audioProbeCache.set(trimmed, false);
+  })();
+};
+
+/**
  * Play the exact audio for a word or phrase.
- * If known to exist in R2 audio repository, plays the studio MP3 recording.
- * If not in R2 repository, immediately and synchronously plays Swedish TTS within the user gesture!
+ * If pre-probed as available, plays the verified studio MP3.
+ * If pre-probed as missing, immediately speaks Swedish TTS synchronously within user gesture.
  */
 export const playExactWordAudio = (word: string) => {
   if (!word) return;
-  const rawTrimmed = word.trim();
-  const cleanWord = rawTrimmed.replace(/[.,!?"':;()]/g, '').trim().toLowerCase();
-  if (!rawTrimmed) return;
+  const trimmed = word.trim();
+  if (!trimmed) return;
 
   // Stop previous audio
   if (activeAudio) {
@@ -81,39 +118,28 @@ export const playExactWordAudio = (word: string) => {
     activeAudio.currentTime = 0;
   }
 
-  // Find matching audio filename in availableAudioSet:
-  // 1. Raw exact (e.g. "Hör av dig snart!")
-  // 2. Raw lowercase (e.g. "hör av dig snart!")
-  // 3. Clean word (e.g. "hör av dig snart" / "trotta")
-  // 4. Snake_case (e.g. "hör_av_dig_snart!" / "hör_av_dig_snart")
-  const candidates = [
-    rawTrimmed,
-    rawTrimmed.toLowerCase(),
-    cleanWord,
-    rawTrimmed.toLowerCase().replace(/\s+/g, '_'),
-    cleanWord.replace(/\s+/g, '_')
-  ];
-
-  let matchedFilename: string | null = null;
-  for (const c of candidates) {
-    if (availableAudioSet.has(c)) {
-      matchedFilename = c;
-      break;
-    }
-  }
-
-  if (matchedFilename) {
-    const encoded = encodeURIComponent(matchedFilename);
-    const url = getMp3PublicUrl(`words_audio/${encoded}.mp3`);
-    const audio = new Audio(url);
-    activeAudio = audio;
-    audio.play().catch((err) => {
-      if (err.name !== 'AbortError') {
-        playSwedishTTS(word);
-      }
-    });
-  } else {
-    // Synchronously trigger Swedish TTS within user gesture (100% reliable)
+  const cached = audioProbeCache.get(trimmed);
+  if (cached === false) {
     playSwedishTTS(word);
+    return;
   }
+  if (typeof cached === 'string') {
+    const audio = new Audio(cached);
+    activeAudio = audio;
+    audio.play().catch(() => playSwedishTTS(word));
+    return;
+  }
+
+  // Probe in-flight fallback
+  preProbeWordAudio(word);
+  const rawKey = encodeURIComponent(trimmed);
+  const url = getMp3PublicUrl(`words_audio/${rawKey}.mp3`);
+  const audio = new Audio(url);
+  activeAudio = audio;
+  audio.play().catch((err) => {
+    if (err.name !== 'AbortError') {
+      audioProbeCache.set(trimmed, false);
+      playSwedishTTS(word);
+    }
+  });
 };

@@ -7,7 +7,7 @@ import { useAuth } from '../contexts/AuthContext';
 import { supabase } from '../services/supabase';
 import { formatWordPrompt } from '../utils/format';
 import { buildStudyQueue } from '../utils/queueBuilder';
-import { playExactWordAudio } from '../utils/sound';
+import { playExactWordAudio, preProbeWordAudio } from '../utils/sound';
 
 export default function Flashcard() {
   const { courseId } = useParams();
@@ -387,12 +387,31 @@ export default function Flashcard() {
     }, 50);
   }, []);
 
+  // Proactively pre-probe audio for current and upcoming words
+  useEffect(() => {
+    if (currentWord?.word) {
+      preProbeWordAudio(currentWord.word);
+    }
+    const next1 = queue[currentIndex + 1]?.word_id || queue[currentIndex + 1]?.base_form;
+    const next2 = queue[currentIndex + 2]?.word_id || queue[currentIndex + 2]?.base_form;
+    if (next1) preProbeWordAudio(next1);
+    if (next2) preProbeWordAudio(next2);
+  }, [currentIndex, currentWord, queue]);
+
   const triggerAutoAdvance = useCallback(() => {
     const svLen = currentWord?.word?.length || 0;
     const enLen = enDefinition.length;
-    const ctxLen = (exampleSentence ? exampleSentence.length : 0) + (exampleSentenceEn ? exampleSentenceEn.length : 0);
-    const totalLen = svLen + enLen + ctxLen;
-    const delay = Math.min(10000, Math.max(ctxLen ? 3500 : 2000, 1500 + totalLen * 100));
+    const svSentLen = exampleSentence ? exampleSentence.length : 0;
+    const enSentLen = exampleSentenceEn ? exampleSentenceEn.length : 0;
+
+    // Generous reading speed for language learning:
+    // - Base comprehension buffer: 2500ms
+    // - Swedish sentence: 150ms per char
+    // - English sentence translation: 100ms per char
+    // - Word and definition: 100ms per char
+    const calculatedDelay = 2500 + svLen * 100 + enLen * 100 + svSentLen * 150 + enSentLen * 100;
+    const minDelay = (svSentLen > 0) ? 6000 : 2500;
+    const delay = Math.min(18000, Math.max(minDelay, calculatedDelay));
     
     isAdvancingRef.current = true;
     advanceStartTimeRef.current = Date.now();
@@ -410,7 +429,7 @@ export default function Flashcard() {
       if (intervalRef.current) clearInterval(intervalRef.current);
       proceedToNext();
     }, delay);
-  }, [currentWord, enDefinition, exampleSentence, proceedToNext]);
+  }, [currentWord, enDefinition, exampleSentence, exampleSentenceEn, proceedToNext]);
 
   const handleCorrect = async () => {
     if (!currentWord || !courseId || status !== 'typing') return;
