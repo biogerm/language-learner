@@ -477,10 +477,7 @@ export default function Dictation() {
       updateMasteryAndVocab(currentWord.id, false);
       await submitGatePass(courseId, currentWord.id, 'dictation', wrongCount, timeSpent, true, 1);
     } else {
-      const res = await submitGatePass(courseId, currentWord.id, 'dictation', wrongCount, timeSpent, true, 1, 1);
-      if (res.completed) {
-        window.dispatchEvent(new CustomEvent('fsrs-toast', { detail: res.toastMsg || `${res.ratingName} | ${res.dayStr}` }));
-      }
+      await submitGatePass(courseId, currentWord.id, 'dictation', wrongCount, timeSpent, true, 1, 1);
       loadFSRSStats();
     }
 
