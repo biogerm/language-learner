@@ -137,6 +137,58 @@ export default function r2ProxyPlugin() {
               res.end('Internal Server Error');
             }
           }
+        } else if (req.url?.startsWith('/api/apple-tts')) {
+          try {
+            const parsed = new URL(req.url, 'http://localhost:5173');
+            const text = parsed.searchParams.get('text') || '';
+            const voiceParam = parsed.searchParams.get('voice') || 'Alva (Premium)';
+            if (!text) {
+              res.statusCode = 400;
+              return res.end('Missing text parameter');
+            }
+
+            const { exec } = await import('child_process');
+            const fs = await import('fs');
+            const os = await import('os');
+
+            const tmpAiff = path.join(os.tmpdir(), `alva_${Date.now()}_${Math.random().toString(36).slice(2)}.aiff`);
+            const tmpWav = path.join(os.tmpdir(), `alva_${Date.now()}_${Math.random().toString(36).slice(2)}.wav`);
+
+            const safeVoice = voiceParam.includes('Premium') ? 'Alva (Premium)' : 'Alva';
+            const safeText = text.replace(/["\\]/g, '\\$&');
+
+            exec(`say -v "${safeVoice}" -o "${tmpAiff}" "${safeText}" && afconvert -f WAVE -d LEI16 "${tmpAiff}" "${tmpWav}"`, (err) => {
+              try {
+                if (err || !fs.existsSync(tmpWav)) {
+                  // If Alva (Premium) failed, fallback to standard Alva
+                  exec(`say -v "Alva" -o "${tmpAiff}" "${safeText}" && afconvert -f WAVE -d LEI16 "${tmpAiff}" "${tmpWav}"`, (err2) => {
+                    if (err2 || !fs.existsSync(tmpWav)) {
+                      res.statusCode = 500;
+                      return res.end('Apple TTS Error');
+                    }
+                    const data = fs.readFileSync(tmpWav);
+                    try { fs.unlinkSync(tmpAiff); fs.unlinkSync(tmpWav); } catch {}
+                    res.setHeader('Content-Type', 'audio/wav');
+                    res.setHeader('Cache-Control', 'public, max-age=86400');
+                    return res.end(data);
+                  });
+                  return;
+                }
+
+                const data = fs.readFileSync(tmpWav);
+                try { fs.unlinkSync(tmpAiff); fs.unlinkSync(tmpWav); } catch {}
+                res.setHeader('Content-Type', 'audio/wav');
+                res.setHeader('Cache-Control', 'public, max-age=86400');
+                return res.end(data);
+              } catch (e: any) {
+                res.statusCode = 500;
+                res.end('Error');
+              }
+            });
+          } catch (e: any) {
+            res.statusCode = 500;
+            res.end('Error');
+          }
         } else if (req.url?.startsWith('/api/tts')) {
           try {
             const parsed = new URL(req.url, 'http://localhost:5173');
