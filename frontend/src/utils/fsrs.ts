@@ -199,18 +199,20 @@ export async function submitGatePass(
     }
     progress.lastGatePassDate = todayStr;
     
-    // Accumulate sticky performance
     progress.max_wrongs = (progress.max_wrongs || 0) + (wrongs || 0);
-    progress.max_time = Math.max(progress.max_time || 0, timeSec || 0);
+    progress.max_time = Math.max(progress.max_time || 0, Number(timeSec) || 0);
     if (gave_up) progress.gave_up = true;
     progress.reveal_count = (progress.reveal_count || 0) + (reveal_count || 0);
-    
-    if (gate === 'dictation') progress.todayDictationPassed = true;
-    if (gate === 'flashcard') progress.todayFlashcardPassed = true;
+
+    // If not giving up, mark gate as passed
+    if (!gave_up) {
+        if (gate === 'dictation') progress.todayDictationPassed = true;
+        if (gate === 'flashcard') progress.todayFlashcardPassed = true;
+    }
 
     // Check if Dual-Gate is complete or manual rating provided in review mode
     if ((progress.todayDictationPassed && progress.todayFlashcardPassed) || manualRating !== undefined) {
-        const rating = manualRating !== undefined ? manualRating : calculateFSRSRating(progress.max_wrongs, progress.max_time, !!progress.gave_up, progress.reveal_count);
+        const rating = manualRating !== undefined ? manualRating : calculateFSRSRating(progress.max_wrongs || 0, progress.max_time || 0, !!progress.gave_up, progress.reveal_count || 0);
         
         const card: Card = {
             due: progress.due,
