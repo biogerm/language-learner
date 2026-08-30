@@ -46,11 +46,6 @@ export const playSwedishTTS = (word: string) => {
     utterance.rate = 0.9;
     utterance.pitch = 1.0;
 
-    const svVoice = getSwedishVoice();
-    if (svVoice) {
-      utterance.voice = svVoice;
-    }
-
     (window as any)._activeTTS = utterance;
     utterance.onend = () => { (window as any)._activeTTS = null; };
     utterance.onerror = (e) => {
