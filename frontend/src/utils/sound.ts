@@ -83,24 +83,21 @@ export const preProbeWordAudio = (word: string) => {
     getMp3PublicUrl(`words_audio/${cleanSnakeKey}.mp3`)
   ]));
 
-  (async () => {
-    for (const url of candidateUrls) {
-      try {
-        const res = await fetch(url, { method: 'HEAD' });
-        if (res.ok) {
-          audioProbeCache.set(trimmed, url);
-          return;
-        }
-      } catch {}
-    }
-    audioProbeCache.set(trimmed, false);
-  })();
+  // Probe all candidates concurrently in parallel
+  Promise.all(candidateUrls.map(url =>
+    fetch(url, { method: 'HEAD' })
+      .then(res => res.ok ? url : null)
+      .catch(() => null)
+  )).then(results => {
+    const matched = results.find((r): r is string => !!r);
+    audioProbeCache.set(trimmed, matched || false);
+  });
 };
 
 /**
  * Play the exact audio for a word or phrase.
  * If pre-probed as available, plays the verified studio MP3.
- * If pre-probed as missing, immediately speaks Swedish TTS synchronously within user gesture.
+ * If pre-probed as missing or in-flight, immediately speaks Swedish TTS synchronously within user gesture.
  */
 export const playExactWordAudio = (word: string) => {
   if (!word) return;
@@ -125,16 +122,8 @@ export const playExactWordAudio = (word: string) => {
     return;
   }
 
-  // Probe in-flight fallback
+  // If probe is still in-flight or not cached yet, play Swedish TTS synchronously
+  // to ensure browser User Activation is NEVER lost!
+  playSwedishTTS(word);
   preProbeWordAudio(word);
-  const rawKey = encodeURIComponent(trimmed);
-  const url = getMp3PublicUrl(`words_audio/${rawKey}.mp3`);
-  const audio = new Audio(url);
-  activeAudio = audio;
-  audio.play().catch((err) => {
-    if (err.name !== 'AbortError') {
-      audioProbeCache.set(trimmed, false);
-      playSwedishTTS(word);
-    }
-  });
 };
