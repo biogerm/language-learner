@@ -2,7 +2,7 @@ import { createContext, useContext, useState, useCallback, useEffect, type React
 import { fetchCourseData } from '../services/r2';
 import { supabase } from '../services/supabase';
 import { db, type WordObject } from '../db/dexie';
-import { syncExcludedDictionary } from '../services/sync';
+import { syncExcludedDictionary, syncCustomDictionary } from '../services/sync';
 
 interface DataContextType {
   courseData: Record<string, Record<string, any>> | null;
@@ -347,82 +347,9 @@ export function DataProvider({ children }: { children: ReactNode }) {
 
   const refreshCustomDictionary = useCallback(async () => {
     try {
+      await syncCustomDictionary();
       const local = await db.custom_dictionary.toArray();
       setCustomDictionary(local);
-      
-      const { data: { user } } = await supabase.auth.getUser();
-      if (!user) return;
-      
-      const { data, error } = await supabase
-        .from('custom_dictionary')
-        .select('*')
-        .eq('user_id', user.id);
-        
-      if (!error && data) {
-        const unsynced = local.filter(l => !l.synced);
-        for (const item of unsynced) {
-          const { synced: _synced, id: _id, ...toInsert } = item;
-          const existingRemote = data.find(r => r.base_form === item.base_form);
-          if (existingRemote) {
-             const localUpdated = item.updated_at ? new Date(item.updated_at).getTime() : 0;
-             const remoteUpdated = existingRemote.updated_at ? new Date(existingRemote.updated_at).getTime() : 0;
-             if (localUpdated > remoteUpdated) {
-                 const { error: upErr } = await supabase.from('custom_dictionary').update(toInsert).eq('id', existingRemote.id);
-                 if (!upErr && item.id) {
-                   await db.custom_dictionary.update(item.id, { synced: true });
-                 }
-             } else {
-                 if (item.id) await db.custom_dictionary.update(item.id, { synced: true });
-             }
-          } else {
-             const { error: insErr } = await supabase.from('custom_dictionary').insert({ ...toInsert, user_id: user.id });
-             if (!insErr && item.id) {
-               await db.custom_dictionary.update(item.id, { synced: true });
-             }
-          }
-        }
-        
-        const { data: finalData } = await supabase
-          .from('custom_dictionary')
-          .select('*')
-          .eq('user_id', user.id);
-          
-        if (finalData) {
-          await db.transaction('rw', [db.custom_dictionary, db.learning_queue], async () => {
-            const remoteBaseForms = new Set(finalData.map(r => (r.base_form || '').toLowerCase()));
-            const currentLocals = await db.custom_dictionary.toArray();
-            for (const loc of currentLocals) {
-              // ONLY delete if it was previously confirmed synced and is now deleted on remote
-              if (loc.id && loc.synced && !remoteBaseForms.has((loc.base_form || '').toLowerCase())) {
-                await db.custom_dictionary.delete(loc.id);
-                // Also clean up from learning_queue if it was a custom word
-                const lqMatches = await db.learning_queue.where('base_form').equalsIgnoreCase(loc.base_form).toArray();
-                for (const lq of lqMatches) {
-                  if (lq.id) await db.learning_queue.delete(lq.id);
-                }
-              }
-            }
-
-            for (const item of finalData) {
-              const parsedItem = { ...item, synced: true };
-              const existing = await db.custom_dictionary.where('base_form').equals(item.base_form).first();
-              
-              if (existing && existing.id) {
-                const localUpdated = existing.updated_at ? new Date(existing.updated_at).getTime() : 0;
-                const remoteUpdated = item.updated_at ? new Date(item.updated_at).getTime() : 0;
-                if (!existing.synced && localUpdated > remoteUpdated) {
-                    continue;
-                }
-                await db.custom_dictionary.update(existing.id, parsedItem);
-              } else {
-                await db.custom_dictionary.add(parsedItem);
-              }
-            }
-          });
-          const newLocal = await db.custom_dictionary.toArray();
-          setCustomDictionary(newLocal);
-        }
-      }
     } catch (err) {
       console.warn("Offline or sync failed, using local customDictionary data", err);
     }
@@ -438,14 +365,14 @@ export function DataProvider({ children }: { children: ReactNode }) {
     
     // Pull first
     const { data: remoteData } = await supabase.from('learning_queue').select('*').eq('user_id', user.id);
-    const remoteMap = new Map();
-    if (remoteData) remoteData.forEach(r => remoteMap.set(r.course_id + '_' + r.article_id + '_' + r.base_form, r));
+    const { data: localQueue } = { data: await db.learning_queue.toArray() };
     
-    // Push
-    const unsynced = await db.learning_queue.filter(r => !r.synced).toArray();
-    if (unsynced.length > 0) {
+    const remoteMap = new Map((remoteData || []).map(r => [r.course_id + '_' + r.article_id + '_' + r.base_form, r]));
+    
+    // Push unsynced or newly updated local records
+    if (localQueue) {
        const payloadToPush = [];
-       for (const record of unsynced) {
+       for (const record of localQueue) {
            const localUpdated = record.updated_at ? new Date(record.updated_at).getTime() : 0;
            const key = (record.course_id || 'sfid') + '_' + record.article_id + '_' + record.base_form;
            const remote = remoteMap.get(key);
@@ -496,24 +423,23 @@ export function DataProvider({ children }: { children: ReactNode }) {
                        updated_at: remote.updated_at,
                        synced: true
                    });
-               } else {
-                   // If we don't have it locally, wait, we might not have downloaded the course JSON.
-                   // So we shouldn't insert a bare record unless we have WordObject data.
-                   // Actually, if it's missing, it's fine, next time syncLearningQueue runs it will pull defaults and then we'll merge.
                }
            }
         });
-        // We need to refresh the queue if something changed. But this is a background sync.
     }
   };
 
   useEffect(() => {
     const handleOnline = () => {
         syncLearningQueueRemote().catch(console.error);
+        syncExcludedDictionary().catch(console.error);
+        syncCustomDictionary().catch(console.error);
     };
     window.addEventListener('online', handleOnline);
     // Initial load sync
     syncLearningQueueRemote().catch(console.error);
+    syncExcludedDictionary().catch(console.error);
+    syncCustomDictionary().catch(console.error);
     return () => window.removeEventListener('online', handleOnline);
   }, []);
 

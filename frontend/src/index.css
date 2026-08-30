@@ -1552,7 +1552,7 @@ strong {
 
 /* ==========================================================================
    Mobile Header (<= 768px - iPhone & Mobile Screens)
-   Clean 3-Row Compact Architecture
+   Clean 3-Row Compact Architecture with iOS Touch-Friendly Targets (36-40px)
    ========================================================================== */
 
 @media (max-width: 768px) {
@@ -1566,9 +1566,9 @@ strong {
     }
 
     .app-header {
-        padding: 0.65rem 0.75rem;
-        gap: 8px;
-        border-radius: 14px;
+        padding: 0.75rem 0.85rem;
+        gap: 10px;
+        border-radius: 16px;
         width: 100%;
         box-sizing: border-box;
     }
@@ -1590,22 +1590,26 @@ strong {
     }
 
     .header-title {
-        font-size: 1.05rem;
+        font-size: 1.08rem;
         white-space: nowrap;
         flex-shrink: 0;
     }
 
     .header-courses-btn {
-        padding: 3px 8px;
-        font-size: 0.72rem;
-        border-radius: 14px;
-        gap: 4px;
+        height: 36px;
+        padding: 0 11px;
+        font-size: 0.82rem;
+        border-radius: 18px;
+        gap: 5px;
         flex-shrink: 0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .header-courses-btn svg {
-        width: 11px;
-        height: 11px;
+        width: 13px;
+        height: 13px;
     }
 
     .header-user-group {
@@ -1620,9 +1624,10 @@ strong {
     }
 
     #user-avatar-btn {
-        width: 32px;
-        height: 32px;
-        font-size: 0.85rem;
+        width: 36px;
+        height: 36px;
+        font-size: 0.95rem;
+        flex-shrink: 0;
     }
 
     /* Row 2: SR Toggle + NDF Toggle */
@@ -1631,41 +1636,55 @@ strong {
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        gap: 6px;
+        gap: 8px;
     }
 
     #fsrs-mode-toggle.voice-toggle {
-        padding: 2px;
-        border-radius: 12px;
+        height: 38px;
+        padding: 3px;
+        border-radius: 14px;
         flex-shrink: 0;
+        display: inline-flex;
+        align-items: center;
+        box-sizing: border-box;
     }
 
     #fsrs-mode-toggle .toggle-option {
-        padding: 4px 8px;
-        font-size: 0.76rem;
+        height: 32px;
+        padding: 0 10px;
+        font-size: 0.82rem;
         border-radius: 10px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
     }
 
     .mode-switcher {
+        height: 38px;
         display: flex;
         align-items: center;
         background: rgba(0, 0, 0, 0.25);
-        padding: 2px 3px;
+        padding: 3px;
         border-radius: 14px;
-        gap: 2px;
+        gap: 3px;
         flex-shrink: 0;
         max-width: 100%;
+        box-sizing: border-box;
     }
 
     .mode-switcher a {
-        padding: 4px 8px;
-        font-size: 0.76rem;
+        height: 32px;
+        padding: 0 10px;
+        font-size: 0.82rem;
         border-radius: 10px;
         max-width: none;
         display: inline-flex;
         align-items: center;
-        gap: 3px;
+        justify-content: center;
+        gap: 4px;
         white-space: nowrap;
+        box-sizing: border-box;
     }
 
     /* On mobile, inactive tabs show icons and active tab shows full name for ultra-clean fit */
@@ -1677,7 +1696,7 @@ strong {
     .header-row-selectors .filter-controls {
         display: grid;
         grid-template-columns: 1fr 1.3fr;
-        gap: 6px;
+        gap: 8px;
         width: 100%;
         margin-bottom: 0;
     }
@@ -1687,38 +1706,50 @@ strong {
         width: 100%;
         min-width: 0;
         max-width: 100%;
-        font-size: 0.8rem;
-        padding: 5px 8px;
-        height: 32px;
+        font-size: 0.84rem;
+        padding: 0 10px;
+        height: 36px;
+        border-radius: 10px;
         box-sizing: border-box;
     }
 }
 
-/* Extra small screens (<= 480px, iPhone SE / Mini) */
-@media (max-width: 480px) {
+/* Extra small screens (<= 390px, iPhone SE / Mini) */
+@media (max-width: 390px) {
     .header-title {
-        font-size: 0.98rem;
+        font-size: 0.95rem;
     }
 
     .header-courses-btn {
-        padding: 2px 6px;
-        font-size: 0.7rem;
+        height: 34px;
+        padding: 0 8px;
+        font-size: 0.76rem;
     }
 
     #user-avatar-btn {
-        width: 28px;
-        height: 28px;
-        font-size: 0.8rem;
+        width: 32px;
+        height: 32px;
+        font-size: 0.88rem;
+    }
+
+    #fsrs-mode-toggle.voice-toggle {
+        height: 36px;
     }
 
     #fsrs-mode-toggle .toggle-option {
-        padding: 3px 6px;
-        font-size: 0.72rem;
+        height: 30px;
+        padding: 0 8px;
+        font-size: 0.78rem;
+    }
+
+    .mode-switcher {
+        height: 36px;
     }
 
     .mode-switcher a {
-        padding: 3px 6px;
-        font-size: 0.72rem;
+        height: 30px;
+        padding: 0 8px;
+        font-size: 0.78rem;
     }
 }
 

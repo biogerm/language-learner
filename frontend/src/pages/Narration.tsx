@@ -5,6 +5,7 @@ import { getMp3PublicUrl } from '../services/r2';
 import { db, type WordObject } from '../db/dexie';
 import { global_dict } from '../data/global_dict';
 import { playExactWordAudio } from '../utils/sound';
+import { syncExcludedDictionary, syncCustomDictionary } from '../services/sync';
 
 interface MissingVocabItem {
   sv: string;
@@ -121,6 +122,30 @@ export default function Narration() {
     } catch (e) {
       setCustomVocab([]);
     }
+
+    // Trigger cloud sync and update state if remote has newer items
+    Promise.all([syncExcludedDictionary(), syncCustomDictionary()]).then(async () => {
+      try {
+        const freshEx = await db.excluded_dictionary.toArray();
+        setExcludedVocab(freshEx.map(r => r.base_form.toLowerCase()));
+        const freshCustom = await db.custom_dictionary.toArray();
+        setCustomVocab(freshCustom.map(r => ({
+          sv: r.word_in_sentence || r.base_form,
+          baseForm: r.base_form,
+          base_form: r.base_form,
+          word_in_sentence: r.word_in_sentence,
+          dictEn: r.dict_en,
+          en: r.en_translation,
+          stage: r.stage_id,
+          article: r.article_id,
+          course_id: r.course_id,
+          context_sv: r.sentence || r.context_sv,
+          context_en: r.sentence_en || r.context_en,
+          isGlobalTarget: !!r.is_global_target,
+          timestamp: Date.now()
+        })));
+      } catch {}
+    }).catch(console.warn);
   }, [courseId]);
 
   useEffect(() => {
@@ -879,6 +904,8 @@ export default function Narration() {
     } else {
       window.dispatchEvent(new CustomEvent('fsrs-toast', { detail: 'Vocabulary updated' }));
       await loadVocabStorage();
+      await syncExcludedDictionary();
+      await syncCustomDictionary();
       refreshCustomDictionary();
       refreshExcludedDictionary();
       refreshLearningQueue();
@@ -951,13 +978,17 @@ export default function Narration() {
 
       setCustomVocab(finalCustom);
       window.dispatchEvent(new CustomEvent('fsrs-toast', { detail: '🎉 Added to vocabulary book!' }));
+      await loadVocabStorage();
+      await syncExcludedDictionary();
+      await syncCustomDictionary();
+      refreshCustomDictionary();
+      refreshExcludedDictionary();
       refreshLearningQueue();
 
       setMissingQueue([]);
       setMissingIndex(null);
       setMissingInput('');
       setMissingError('');
-      loadVocabStorage();
     }
   };
 
