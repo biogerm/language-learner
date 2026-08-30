@@ -230,28 +230,13 @@ export async function submitGatePass(
         const schedulingCards = fsrs.repeat(card, new Date());
         const newCardState = (schedulingCards as any)[rating].card;
 
-        // =========================================================================
-        // [TESTING OVERRIDE] / [测试模式改动]
-        // -------------------------------------------------------------------------
-        // Purpose: Make words entering Review from Study mode immediately due for testing.
-        // 目的: 为了方便测试，将从 Study 学完（双门禁毕业）初次进入 Review 的单词到期时间设为“立刻到期 (now)”。
-        //
-        // HOW TO RESTORE / 如何恢复为标准 FSRS 生产规则:
-        // Delete this block and restore the standard 1-day cap logic:
-        // ```ts
-        // if (isFirstReview && rating !== Rating.Again) {
-        //     const tomorrow = new Date();
-        //     tomorrow.setDate(tomorrow.getDate() + 1);
-        //     if (newCardState.due.getTime() > tomorrow.getTime()) {
-        //         newCardState.due = tomorrow;
-        //     }
-        // }
-        // ```
-        // =========================================================================
-        if (isFirstReview) {
-            newCardState.due = new Date(Date.now() - 1000); // Immediately due for testing
-        } else if (rating !== Rating.Again) {
-            // Subsequent reviews follow standard FSRS intervals
+        // Standard FSRS production rule: First-time graduated cards capped at next day (tomorrow)
+        if (isFirstReview && rating !== Rating.Again) {
+            const tomorrow = new Date();
+            tomorrow.setDate(tomorrow.getDate() + 1);
+            if (newCardState.due.getTime() > tomorrow.getTime()) {
+                newCardState.due = tomorrow;
+            }
         }
 
         // Apply new state and reset gate passes

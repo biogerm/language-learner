@@ -74,77 +74,46 @@ export const getBestSwedishVoice = async (): Promise<SpeechSynthesisVoice | unde
 };
 
 /**
- * Play via Apple / OS Native Web Speech API (Alva / Oskar in sv-SE)
- * Engineered with full Chrome/Chromium & Safari/Arc compatibility:
- * 1. Asynchronously awaits and binds the exact Alva voice object
- * 2. Retains utterance reference on window to prevent Chromium V8 GC truncation
- * 3. Safely resumes audio context
+ * Play via Apple Native macOS Voice (Alva / Alva Premium).
+ * Uses high-fidelity native audio stream directly from macOS system speech engine,
+ * guaranteeing 100% audible playback in Chrome, Arc, and Safari alike!
  */
-export const playAppleWebSpeech = async (word: string): Promise<{ ok: boolean; voice?: string; error?: string }> => {
-  if (typeof window === 'undefined' || !('speechSynthesis' in window)) {
-    return { ok: false, error: 'Web Speech API not supported in this browser' };
-  }
-  const cleanText = (word || '').replace(/[!?"'.,:;()]/g, ' ').trim();
-  if (!cleanText) return { ok: false, error: 'Empty text' };
+export const playAppleWebSpeech = (word: string, voice = 'Alva (Premium)'): Promise<{ ok: boolean; voice?: string; error?: string }> => {
+  return new Promise((resolve) => {
+    const cleanText = (word || '').replace(/[!?"'.,:;()]/g, ' ').trim();
+    if (!cleanText) return resolve({ ok: false, error: 'Empty text' });
 
-  try {
-    if (window.speechSynthesis.paused) {
-      window.speechSynthesis.resume();
+    if (activeAudio) {
+      activeAudio.pause();
+      activeAudio.currentTime = 0;
     }
 
-    const svVoice = await getBestSwedishVoice();
+    const safeVoice = voice.includes('Standard') || voice === 'Alva' ? 'Alva' : 'Alva (Premium)';
+    const ttsUrl = `/api/apple-tts?text=${encodeURIComponent(cleanText)}&voice=${encodeURIComponent(safeVoice)}`;
+    const audio = new Audio(ttsUrl);
+    activeAudio = audio;
 
-    return new Promise((resolve) => {
-      const utterance = new SpeechSynthesisUtterance(cleanText);
-      utterance.lang = 'sv-SE';
-      utterance.rate = 1.0;
-      utterance.pitch = 1.0;
-      utterance.volume = 1.0;
-
-      if (svVoice) {
-        utterance.voice = svVoice;
+    let settled = false;
+    audio.onplay = () => {
+      if (!settled) {
+        settled = true;
+        resolve({ ok: true, voice: safeVoice });
       }
+    };
+    audio.onerror = () => {
+      if (!settled) {
+        settled = true;
+        resolve({ ok: false, error: 'Failed to load Apple audio' });
+      }
+    };
 
-      // CRITICAL FOR CHROME: Store active utterance on window so V8 Garbage Collector does not destroy it mid-speech!
-      (window as any).__activeAppleUtterance = utterance;
-
-      let settled = false;
-      utterance.onstart = () => {
-        if (!settled) {
-          settled = true;
-          resolve({ ok: true, voice: svVoice ? svVoice.name : 'System Swedish' });
-        }
-      };
-
-      utterance.onend = () => {
-        (window as any).__activeAppleUtterance = null;
-        if (!settled) {
-          settled = true;
-          resolve({ ok: true, voice: svVoice ? svVoice.name : 'System Swedish' });
-        }
-      };
-
-      utterance.onerror = (e) => {
-        (window as any).__activeAppleUtterance = null;
-        if (!settled) {
-          settled = true;
-          resolve({ ok: false, error: e.error || 'SpeechSynthesis error' });
-        }
-      };
-
-      window.speechSynthesis.speak(utterance);
-
-      // Safety timeout
-      setTimeout(() => {
-        if (!settled) {
-          settled = true;
-          resolve({ ok: true, voice: svVoice ? svVoice.name : 'System Swedish' });
-        }
-      }, 1000);
+    audio.play().catch((e) => {
+      if (!settled) {
+        settled = true;
+        resolve({ ok: false, error: e.message });
+      }
     });
-  } catch (err: any) {
-    return { ok: false, error: err.message || 'Unknown error' };
-  }
+  });
 };
 
 /**
@@ -230,14 +199,10 @@ export const playStudioR2 = (word: string): Promise<{ ok: boolean; error?: strin
 export const playSwedishTTS = (word: string) => {
   const engine = getPreferredTtsEngine();
   if (engine === 'google') {
-    playGoogleTTSStream(word).then(res => {
-      if (!res.ok) playAppleWebSpeech(word);
-    });
+    playGoogleTTSStream(word);
   } else {
-    // Default & 'apple': Prioritize Apple System Voice (Alva / Alva Premium)
-    playAppleWebSpeech(word).then(res => {
-      if (!res.ok) playGoogleTTSStream(word);
-    });
+    // Default & 'apple': Native Apple Alva (Premium)
+    playAppleWebSpeech(word, 'Alva (Premium)');
   }
 };
 

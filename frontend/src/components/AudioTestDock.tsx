@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import {
   getPreferredTtsEngine,
   setPreferredTtsEngine,
@@ -10,58 +10,53 @@ import {
 
 export default function AudioTestDock() {
   const [engine, setEngine] = useState<TtsEngine>(getPreferredTtsEngine());
-  const [customWord, setCustomWord] = useState('trotta');
-  const [statusLog, setStatusLog] = useState<string>('Ready. Click a test button below to listen.');
-  const [availableVoices, setAvailableVoices] = useState<string[]>([]);
+  const [customWord, setCustomWord] = useState('trötta');
+  const [statusLog, setStatusLog] = useState<string>('Ready. Click a test button below.');
   const [isExpanded, setIsExpanded] = useState(true);
-
-  useEffect(() => {
-    if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
-      const updateVoices = () => {
-        const voices = window.speechSynthesis.getVoices();
-        const sv = voices
-          .filter(v => v.lang.toLowerCase().includes('sv') || v.name.toLowerCase().includes('alva') || v.name.toLowerCase().includes('swedish'))
-          .map(v => `${v.name} (${v.lang})`);
-        setAvailableVoices(sv);
-      };
-      updateVoices();
-      window.speechSynthesis.onvoiceschanged = updateVoices;
-    }
-  }, []);
 
   const handleEngineChange = (newEngine: TtsEngine) => {
     setEngine(newEngine);
     setPreferredTtsEngine(newEngine);
-    setStatusLog(`Switched global TTS Engine to: ${newEngine.toUpperCase()}`);
+    setStatusLog(`Active Engine set to: ${newEngine === 'apple' ? '🍏 Apple Alva (Premium)' : '🌐 Google Stream'}`);
   };
 
-  const testApple = async (word: string) => {
-    setStatusLog(`Testing Apple Native Web Speech for "${word}"...`);
-    const res = await playAppleWebSpeech(word);
+  const testAlvaPremium = async (word: string) => {
+    setStatusLog(`Playing "${word}" via 🍏 Apple Alva (Premium)...`);
+    const res = await playAppleWebSpeech(word, 'Alva (Premium)');
     if (res.ok) {
-      setStatusLog(`🔊 Apple Web Speech: Played "${word}" via [${res.voice || 'sv-SE'}]`);
+      setStatusLog(`🔊 Played "${word}" via 🍏 Apple Alva (Premium)`);
     } else {
-      setStatusLog(`❌ Apple Web Speech Error: ${res.error || 'Failed'}`);
+      setStatusLog(`❌ Error: ${res.error || 'Failed'}`);
+    }
+  };
+
+  const testAlvaStandard = async (word: string) => {
+    setStatusLog(`Playing "${word}" via 🍏 Apple Alva (Standard)...`);
+    const res = await playAppleWebSpeech(word, 'Alva');
+    if (res.ok) {
+      setStatusLog(`🔊 Played "${word}" via 🍏 Apple Alva (Standard)`);
+    } else {
+      setStatusLog(`❌ Error: ${res.error || 'Failed'}`);
     }
   };
 
   const testGoogle = async (word: string) => {
-    setStatusLog(`Testing Google Cloud Stream for "${word}"...`);
+    setStatusLog(`Playing "${word}" via 🌐 Google Stream...`);
     const res = await playGoogleTTSStream(word);
     if (res.ok) {
-      setStatusLog(`🔊 Google Cloud Stream: Played "${word}" (200 OK)`);
+      setStatusLog(`🔊 Played "${word}" via 🌐 Google Stream`);
     } else {
-      setStatusLog(`❌ Google Cloud Stream Error: ${res.error || 'Failed'}`);
+      setStatusLog(`❌ Error: ${res.error || 'Failed'}`);
     }
   };
 
   const testStudio = async (word: string) => {
-    setStatusLog(`Testing Studio R2 MP3 for "${word}"...`);
+    setStatusLog(`Playing "${word}" via 🎵 Studio MP3...`);
     const res = await playStudioR2(word);
     if (res.ok) {
-      setStatusLog(`🎵 Studio R2 MP3: Played "${word}.mp3" (200 OK)`);
+      setStatusLog(`🎵 Played "${word}.mp3" (Studio Recording)`);
     } else {
-      setStatusLog(`❌ Studio R2 Error: ${res.error || '404'}`);
+      setStatusLog(`❌ 404: No studio MP3 found for "${word}"`);
     }
   };
 
@@ -82,17 +77,7 @@ export default function AudioTestDock() {
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: isExpanded ? '1rem' : '0' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
           <span style={{ fontSize: '1.25rem' }}>🎧</span>
-          <strong style={{ fontSize: '1rem', fontWeight: 600, color: '#e2e8f0' }}>Audio Engine Cross-Browser Test Bench</strong>
-          <span style={{
-            fontSize: '0.75rem',
-            padding: '2px 8px',
-            borderRadius: '9999px',
-            background: 'rgba(59, 130, 246, 0.2)',
-            color: '#60a5fa',
-            border: '1px solid rgba(59, 130, 246, 0.4)'
-          }}>
-            Multi-Engine
-          </span>
+          <strong style={{ fontSize: '1rem', fontWeight: 600, color: '#e2e8f0' }}>Swedish Audio Engine Dock</strong>
         </div>
         <button
           onClick={() => setIsExpanded(!isExpanded)}
@@ -112,28 +97,28 @@ export default function AudioTestDock() {
         <>
           {/* Active Engine Selector */}
           <div style={{ marginBottom: '1.25rem', display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '8px' }}>
-            <span style={{ fontSize: '0.85rem', color: '#94a3b8', marginRight: '4px' }}>Active Engine:</span>
+            <span style={{ fontSize: '0.85rem', color: '#94a3b8', marginRight: '4px' }}>App Default Engine:</span>
             <button
               onClick={() => handleEngineChange('apple')}
               style={{
-                padding: '6px 12px',
+                padding: '6px 14px',
                 borderRadius: '8px',
                 fontSize: '0.85rem',
-                fontWeight: engine === 'apple' ? 600 : 400,
-                background: engine === 'apple' ? '#6366f1' : 'rgba(255, 255, 255, 0.06)',
+                fontWeight: engine === 'apple' || engine === 'auto' ? 600 : 400,
+                background: engine === 'apple' || engine === 'auto' ? '#6366f1' : 'rgba(255, 255, 255, 0.06)',
                 color: '#fff',
-                border: engine === 'apple' ? '1px solid #818cf8' : '1px solid rgba(255, 255, 255, 0.1)',
+                border: engine === 'apple' || engine === 'auto' ? '1px solid #818cf8' : '1px solid rgba(255, 255, 255, 0.1)',
                 cursor: 'pointer',
                 transition: 'all 0.2s'
               }}
             >
-              🍏 Apple System (Alva / Web Speech)
+              🍏 Apple Alva (Native macOS)
             </button>
 
             <button
               onClick={() => handleEngineChange('google')}
               style={{
-                padding: '6px 12px',
+                padding: '6px 14px',
                 borderRadius: '8px',
                 fontSize: '0.85rem',
                 fontWeight: engine === 'google' ? 600 : 400,
@@ -144,66 +129,26 @@ export default function AudioTestDock() {
                 transition: 'all 0.2s'
               }}
             >
-              🌐 Google Cloud Stream (/api/tts)
-            </button>
-
-            <button
-              onClick={() => handleEngineChange('auto')}
-              style={{
-                padding: '6px 12px',
-                borderRadius: '8px',
-                fontSize: '0.85rem',
-                fontWeight: engine === 'auto' ? 600 : 400,
-                background: engine === 'auto' ? '#10b981' : 'rgba(255, 255, 255, 0.06)',
-                color: '#fff',
-                border: engine === 'auto' ? '1px solid #34d399' : '1px solid rgba(255, 255, 255, 0.1)',
-                cursor: 'pointer',
-                transition: 'all 0.2s'
-              }}
-            >
-              ⚡ Auto (Stream + Fallback)
+              🌐 Google Stream
             </button>
           </div>
 
           {/* Quick Word Comparison Grid */}
           <div style={{ marginBottom: '1.25rem' }}>
-            <div style={{ fontSize: '0.85rem', color: '#94a3b8', marginBottom: '8px' }}>Compare Preset Words Across Engines:</div>
+            <div style={{ fontSize: '0.85rem', color: '#94a3b8', marginBottom: '8px' }}>Direct Word Comparison:</div>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '10px' }}>
-              {/* trotta */}
-              <div style={{ background: 'rgba(255, 255, 255, 0.03)', padding: '10px 14px', borderRadius: '10px', border: '1px solid rgba(255, 255, 255, 0.06)' }}>
-                <div style={{ fontWeight: 600, fontSize: '0.95rem', color: '#f8fafc', marginBottom: '6px' }}>"trotta" (No Studio MP3)</div>
-                <div style={{ display: 'flex', gap: '6px' }}>
-                  <button onClick={() => testApple('trotta')} style={{ flex: 1, padding: '5px 8px', borderRadius: '6px', fontSize: '0.75rem', background: '#4338ca', color: '#fff', border: 'none', cursor: 'pointer' }}>
-                    🍏 Apple Alva
-                  </button>
-                  <button onClick={() => testGoogle('trotta')} style={{ flex: 1, padding: '5px 8px', borderRadius: '6px', fontSize: '0.75rem', background: '#0284c7', color: '#fff', border: 'none', cursor: 'pointer' }}>
-                    🌐 Google Stream
-                  </button>
-                </div>
-              </div>
-
               {/* trötta */}
               <div style={{ background: 'rgba(255, 255, 255, 0.03)', padding: '10px 14px', borderRadius: '10px', border: '1px solid rgba(255, 255, 255, 0.06)' }}>
-                <div style={{ fontWeight: 600, fontSize: '0.95rem', color: '#f8fafc', marginBottom: '6px' }}>"trötta" (No Studio MP3)</div>
+                <div style={{ fontWeight: 600, fontSize: '0.95rem', color: '#f8fafc', marginBottom: '6px' }}>"trötta"</div>
                 <div style={{ display: 'flex', gap: '6px' }}>
-                  <button onClick={() => testApple('trötta')} style={{ flex: 1, padding: '5px 8px', borderRadius: '6px', fontSize: '0.75rem', background: '#4338ca', color: '#fff', border: 'none', cursor: 'pointer' }}>
-                    🍏 Apple Alva
+                  <button onClick={() => testAlvaPremium('trötta')} style={{ flex: 1, padding: '5px 8px', borderRadius: '6px', fontSize: '0.75rem', background: '#6366f1', color: '#fff', border: 'none', cursor: 'pointer' }}>
+                    🍏 Alva Premium
+                  </button>
+                  <button onClick={() => testAlvaStandard('trötta')} style={{ flex: 1, padding: '5px 8px', borderRadius: '6px', fontSize: '0.75rem', background: '#4338ca', color: '#fff', border: 'none', cursor: 'pointer' }}>
+                    🍏 Alva Standard
                   </button>
                   <button onClick={() => testGoogle('trötta')} style={{ flex: 1, padding: '5px 8px', borderRadius: '6px', fontSize: '0.75rem', background: '#0284c7', color: '#fff', border: 'none', cursor: 'pointer' }}>
-                    🌐 Google Stream
-                  </button>
-                </div>
-              </div>
-
-              {/* Hör av dig snart! */}
-              <div style={{ background: 'rgba(255, 255, 255, 0.03)', padding: '10px 14px', borderRadius: '10px', border: '1px solid rgba(255, 255, 255, 0.06)' }}>
-                <div style={{ fontWeight: 600, fontSize: '0.95rem', color: '#f8fafc', marginBottom: '6px' }}>"Hör av dig snart!"</div>
-                <div style={{ display: 'flex', gap: '6px' }}>
-                  <button onClick={() => testStudio('Hör av dig snart!')} style={{ flex: 1, padding: '5px 8px', borderRadius: '6px', fontSize: '0.75rem', background: '#059669', color: '#fff', border: 'none', cursor: 'pointer' }}>
-                    🎵 Studio MP3
-                  </button>
-                  <button onClick={() => testApple('Hör av dig snart!')} style={{ flex: 1, padding: '5px 8px', borderRadius: '6px', fontSize: '0.75rem', background: '#4338ca', color: '#fff', border: 'none', cursor: 'pointer' }}>
-                    🍏 Apple Alva
+                    🌐 Google
                   </button>
                 </div>
               </div>
@@ -215,8 +160,24 @@ export default function AudioTestDock() {
                   <button onClick={() => testStudio('konditional')} style={{ flex: 1, padding: '5px 8px', borderRadius: '6px', fontSize: '0.75rem', background: '#059669', color: '#fff', border: 'none', cursor: 'pointer' }}>
                     🎵 Studio MP3
                   </button>
+                  <button onClick={() => testAlvaPremium('konditional')} style={{ flex: 1, padding: '5px 8px', borderRadius: '6px', fontSize: '0.75rem', background: '#6366f1', color: '#fff', border: 'none', cursor: 'pointer' }}>
+                    🍏 Alva Premium
+                  </button>
                   <button onClick={() => testGoogle('konditional')} style={{ flex: 1, padding: '5px 8px', borderRadius: '6px', fontSize: '0.75rem', background: '#0284c7', color: '#fff', border: 'none', cursor: 'pointer' }}>
-                    🌐 Google Stream
+                    🌐 Google
+                  </button>
+                </div>
+              </div>
+
+              {/* Hör av dig snart! */}
+              <div style={{ background: 'rgba(255, 255, 255, 0.03)', padding: '10px 14px', borderRadius: '10px', border: '1px solid rgba(255, 255, 255, 0.06)' }}>
+                <div style={{ fontWeight: 600, fontSize: '0.95rem', color: '#f8fafc', marginBottom: '6px' }}>"Hör av dig snart!"</div>
+                <div style={{ display: 'flex', gap: '6px' }}>
+                  <button onClick={() => testStudio('Hör av dig snart!')} style={{ flex: 1, padding: '5px 8px', borderRadius: '6px', fontSize: '0.75rem', background: '#059669', color: '#fff', border: 'none', cursor: 'pointer' }}>
+                    🎵 Studio MP3
+                  </button>
+                  <button onClick={() => testAlvaPremium('Hör av dig snart!')} style={{ flex: 1, padding: '5px 8px', borderRadius: '6px', fontSize: '0.75rem', background: '#6366f1', color: '#fff', border: 'none', cursor: 'pointer' }}>
+                    🍏 Alva Premium
                   </button>
                 </div>
               </div>
@@ -242,7 +203,7 @@ export default function AudioTestDock() {
               }}
             />
             <button
-              onClick={() => testApple(customWord)}
+              onClick={() => testAlvaPremium(customWord)}
               style={{
                 padding: '8px 14px',
                 borderRadius: '8px',
@@ -254,7 +215,22 @@ export default function AudioTestDock() {
                 fontWeight: 500
               }}
             >
-              🍏 Play Apple
+              🍏 Alva Premium
+            </button>
+            <button
+              onClick={() => testAlvaStandard(customWord)}
+              style={{
+                padding: '8px 14px',
+                borderRadius: '8px',
+                background: '#4338ca',
+                color: '#fff',
+                border: 'none',
+                cursor: 'pointer',
+                fontSize: '0.85rem',
+                fontWeight: 500
+              }}
+            >
+              🍏 Alva Standard
             </button>
             <button
               onClick={() => testGoogle(customWord)}
@@ -269,7 +245,7 @@ export default function AudioTestDock() {
                 fontWeight: 500
               }}
             >
-              🌐 Play Google
+              🌐 Google
             </button>
             <button
               onClick={() => testStudio(customWord)}
@@ -284,7 +260,7 @@ export default function AudioTestDock() {
                 fontWeight: 500
               }}
             >
-              🎵 Try Studio
+              🎵 Studio
             </button>
           </div>
 
@@ -294,31 +270,12 @@ export default function AudioTestDock() {
             borderRadius: '8px',
             padding: '10px 14px',
             border: '1px solid rgba(255, 255, 255, 0.05)',
-            fontSize: '0.85rem',
-            marginBottom: '1rem'
+            fontSize: '0.85rem'
           }}>
-            <div style={{ display: 'flex', justifyContent: 'space-between', color: '#94a3b8', marginBottom: '4px', fontSize: '0.75rem' }}>
-              <span>Live Diagnostic Output</span>
-              <span>Swedish System Voices Detected: {availableVoices.length > 0 ? availableVoices.join(', ') : 'None (Browser default)'}</span>
-            </div>
+            <div style={{ color: '#94a3b8', marginBottom: '4px', fontSize: '0.75rem' }}>Live Diagnostic Status:</div>
             <div style={{ color: '#38bdf8', fontFamily: 'monospace' }}>
               {statusLog}
             </div>
-          </div>
-
-          {/* Browser & Pronunciation Tips */}
-          <div style={{
-            padding: '10px 14px',
-            borderRadius: '8px',
-            background: 'rgba(255, 255, 255, 0.02)',
-            border: '1px solid rgba(255, 255, 255, 0.06)',
-            fontSize: '0.8rem',
-            color: '#94a3b8',
-            lineHeight: 1.5
-          }}>
-            <div style={{ fontWeight: 600, color: '#cbd5e1', marginBottom: '4px' }}>💡 Audio Engine Tips:</div>
-            <div>• <strong>Why Apple Alva was silent in Chrome:</strong> Chrome sandbox blocks macOS system voices if they are not installed locally. To enable Alva in Chrome: <em>macOS System Settings → Accessibility → Spoken Content → System Voice → Download "Alva"</em>. (Arc and Safari have native macOS voice entitlements).</div>
-            <div>• <strong>Swedish Pronunciation:</strong> Be sure to test with authentic Swedish characters like <strong>"trötta"</strong> (with <em>ö</em>). Testing non-Swedish spelling like <em>"trotta"</em> causes TTS to read it with English phonemes.</div>
           </div>
         </>
       )}
