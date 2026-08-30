@@ -31,29 +31,50 @@ export function DataProvider({ children }: { children: ReactNode }) {
   const [courseData, setCourseData] = useState<Record<string, Record<string, any>> | null>(null);
   const [dictionary, setDictionary] = useState<Record<string, any> | null>(null);
   const [currentCourse, setCurrentCourse] = useState<string | null>(null);
-  const [selectedStage, setSelectedStageState] = useState('');
-  const [selectedArticleId, setSelectedArticleIdState] = useState('');
-  const [appMode, setAppModeState] = useState<'study' | 'review'>('study');
+  const [selectedStage, setSelectedStageState] = useState<string>(() => {
+    try {
+      return localStorage.getItem('selectedStage') || '';
+    } catch {
+      return '';
+    }
+  });
+  const [selectedArticleId, setSelectedArticleIdState] = useState<string>(() => {
+    try {
+      return localStorage.getItem('selectedArticleId') || '';
+    } catch {
+      return '';
+    }
+  });
+  const [appMode, setAppModeState] = useState<'study' | 'review'>(() => {
+    try {
+      const mode = localStorage.getItem('appMode');
+      if (mode === 'study' || mode === 'review') return mode;
+    } catch {}
+    return 'study';
+  });
 
   const [learningQueue, setLearningQueue] = useState<WordObject[]>([]);
   const [customDictionary, setCustomDictionary] = useState<WordObject[]>([]);
   const [excludedVocab, setExcludedVocab] = useState<string[]>([]);
 
-  // Initialize client settings from Dexie local_settings (persists mode across page refreshes)
+  // Initialize client settings from Dexie local_settings (fallback/sync)
   useEffect(() => {
     (async () => {
       try {
         const mode = await db.local_settings.get('appMode');
         if (mode && (mode.value === 'study' || mode.value === 'review')) {
           setAppModeState(mode.value);
+          try { localStorage.setItem('appMode', mode.value); } catch {}
         }
         const stage = await db.local_settings.get('selectedStage');
         if (stage && typeof stage.value === 'string') {
           setSelectedStageState(stage.value);
+          try { localStorage.setItem('selectedStage', stage.value); } catch {}
         }
         const art = await db.local_settings.get('selectedArticleId');
         if (art && typeof art.value === 'string') {
           setSelectedArticleIdState(art.value);
+          try { localStorage.setItem('selectedArticleId', art.value); } catch {}
         }
       } catch (e) {
         console.warn('Error loading local settings from Dexie:', e);
@@ -63,16 +84,19 @@ export function DataProvider({ children }: { children: ReactNode }) {
 
   const setAppMode = useCallback((mode: 'study' | 'review') => {
     setAppModeState(mode);
+    try { localStorage.setItem('appMode', mode); } catch {}
     db.local_settings.put({ key: 'appMode', value: mode, updated_at: new Date().toISOString() }).catch(() => {});
   }, []);
 
   const setSelectedStage = useCallback((stage: string) => {
     setSelectedStageState(stage);
+    try { localStorage.setItem('selectedStage', stage); } catch {}
     db.local_settings.put({ key: 'selectedStage', value: stage, updated_at: new Date().toISOString() }).catch(() => {});
   }, []);
 
   const setSelectedArticleId = useCallback((article: string) => {
     setSelectedArticleIdState(article);
+    try { localStorage.setItem('selectedArticleId', article); } catch {}
     db.local_settings.put({ key: 'selectedArticleId', value: article, updated_at: new Date().toISOString() }).catch(() => {});
   }, []);
 
