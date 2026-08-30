@@ -60,7 +60,7 @@ export const playSwedishTTS = (word: string) => {
 };
 
 /**
- * Pre-probes whether a word has a valid MP3 file in R2 in the background.
+ * Pre-probes whether the exact MP3 file exists in R2 in the background.
  * Call this when a new word card loads or enters the queue.
  */
 export const preProbeWordAudio = (word: string) => {
@@ -68,36 +68,20 @@ export const preProbeWordAudio = (word: string) => {
   const trimmed = word.trim();
   if (audioProbeCache.has(trimmed)) return;
 
-  const rawKey = encodeURIComponent(trimmed);
-  const rawLowerKey = encodeURIComponent(trimmed.toLowerCase());
-  const cleanWord = trimmed.replace(/[.,!?"':;()]/g, '').trim().toLowerCase();
-  const cleanKey = encodeURIComponent(cleanWord);
-  const snakeKey = encodeURIComponent(trimmed.toLowerCase().replace(/\s+/g, '_'));
-  const cleanSnakeKey = encodeURIComponent(cleanWord.replace(/\s+/g, '_'));
-
-  const candidateUrls = Array.from(new Set([
-    getMp3PublicUrl(`words_audio/${rawKey}.mp3`),
-    getMp3PublicUrl(`words_audio/${rawLowerKey}.mp3`),
-    getMp3PublicUrl(`words_audio/${cleanKey}.mp3`),
-    getMp3PublicUrl(`words_audio/${snakeKey}.mp3`),
-    getMp3PublicUrl(`words_audio/${cleanSnakeKey}.mp3`)
-  ]));
-
-  // Probe all candidates concurrently in parallel
-  Promise.all(candidateUrls.map(url =>
-    fetch(url, { method: 'HEAD' })
-      .then(res => res.ok ? url : null)
-      .catch(() => null)
-  )).then(results => {
-    const matched = results.find((r): r is string => !!r);
-    audioProbeCache.set(trimmed, matched || false);
-  });
+  const url = getMp3PublicUrl(`words_audio/${encodeURIComponent(trimmed)}.mp3`);
+  fetch(url, { method: 'HEAD' })
+    .then(res => {
+      audioProbeCache.set(trimmed, res.ok ? url : false);
+    })
+    .catch(() => {
+      audioProbeCache.set(trimmed, false);
+    });
 };
 
 /**
  * Play the exact audio for a word or phrase.
- * If pre-probed as available, plays the verified studio MP3.
- * If pre-probed as missing or in-flight, immediately speaks Swedish TTS synchronously within user gesture.
+ * If exact MP3 exists on R2, plays the studio MP3.
+ * If not, immediately speaks Swedish TTS synchronously within the user gesture.
  */
 export const playExactWordAudio = (word: string) => {
   if (!word) return;
