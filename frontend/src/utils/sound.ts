@@ -1,87 +1,56 @@
 import { getMp3PublicUrl } from '../services/r2';
 
-export type TtsEngine = 'auto' | 'apple' | 'google';
-
 // Cache of words confirmed to have NO studio MP3 on R2
 const missingAudioCache = new Set<string>();
 let activeAudio: HTMLAudioElement | null = null;
 
-export const getPreferredTtsEngine = (): TtsEngine => {
-  if (typeof window === 'undefined') return 'auto';
-  return (localStorage.getItem('preferred_tts_engine') as TtsEngine) || 'auto';
-};
+const isApplePlatform = typeof navigator !== 'undefined' && (
+  /iPhone|iPad|iPod/i.test(navigator.userAgent) ||
+  (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1) ||
+  /^((?!chrome|android).)*safari/i.test(navigator.userAgent)
+);
 
-export const setPreferredTtsEngine = (engine: TtsEngine) => {
-  if (typeof window === 'undefined') return;
-  localStorage.setItem('preferred_tts_engine', engine);
-};
+/**
+ * Play via Apple Web Speech API (Native WebKit in iOS / Safari)
+ */
+export const playAppleNativeWebSpeech = (word: string): boolean => {
+  if (typeof window === 'undefined' || !('speechSynthesis' in window)) return false;
+  const cleanText = (word || '').replace(/[!?"'.,:;()]/g, ' ').trim();
+  if (!cleanText) return false;
 
-let cachedVoices: SpeechSynthesisVoice[] = [];
-let voiceLoadingPromise: Promise<SpeechSynthesisVoice[]> | null = null;
-
-export const loadSwedishVoices = (): Promise<SpeechSynthesisVoice[]> => {
-  if (typeof window === 'undefined' || !('speechSynthesis' in window)) {
-    return Promise.resolve([]);
+  try {
+    if (window.speechSynthesis.paused) {
+      window.speechSynthesis.resume();
+    }
+    const utterance = new SpeechSynthesisUtterance(cleanText);
+    utterance.lang = 'sv-SE';
+    utterance.rate = 1.0;
+    utterance.pitch = 1.0;
+    (window as any).__activeSpeechUtterance = utterance;
+    window.speechSynthesis.speak(utterance);
+    return true;
+  } catch {
+    return false;
   }
-
-  const current = window.speechSynthesis.getVoices();
-  if (current && current.length > 0) {
-    cachedVoices = current;
-    return Promise.resolve(current);
-  }
-
-  if (voiceLoadingPromise) return voiceLoadingPromise;
-
-  voiceLoadingPromise = new Promise((resolve) => {
-    const handleVoices = () => {
-      const v = window.speechSynthesis.getVoices();
-      if (v && v.length > 0) {
-        cachedVoices = v;
-        window.speechSynthesis.removeEventListener('voiceschanged', handleVoices);
-        resolve(v);
-      }
-    };
-
-    window.speechSynthesis.addEventListener('voiceschanged', handleVoices);
-    window.speechSynthesis.onvoiceschanged = handleVoices;
-
-    // Timeout fallback in case voiceschanged never triggers
-    setTimeout(() => {
-      cachedVoices = window.speechSynthesis.getVoices() || [];
-      resolve(cachedVoices);
-    }, 1500);
-  });
-
-  return voiceLoadingPromise;
-};
-
-// Start loading voices immediately
-if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
-  loadSwedishVoices();
-}
-
-export const getBestSwedishVoice = async (): Promise<SpeechSynthesisVoice | undefined> => {
-  const voices = await loadSwedishVoices();
-  // Priority: Alva (Premium) > Alva (Enhanced) > Alva > Oskar (Premium) > Oskar > any sv voice
-  return (
-    voices.find(v => v.name.includes('Alva (Premium)')) ||
-    voices.find(v => v.name.includes('Alva (Enhanced)')) ||
-    voices.find(v => v.name.toLowerCase().includes('alva') && (v.lang.toLowerCase().includes('sv') || v.lang.toLowerCase().includes('se'))) ||
-    voices.find(v => v.name.includes('Oskar (Premium)')) ||
-    voices.find(v => v.name.includes('Oskar')) ||
-    voices.find(v => v.lang.toLowerCase().startsWith('sv') || v.lang.toLowerCase().includes('se'))
-  );
 };
 
 /**
  * Play via Apple Native macOS Voice (Alva / Alva Premium).
  * Uses high-fidelity native audio stream directly from macOS system speech engine,
- * guaranteeing 100% audible playback in Chrome, Arc, and Safari alike!
+ * or direct WebKit synthesis on iOS / Safari.
  */
 export const playAppleWebSpeech = (word: string, voice = 'Alva (Premium)'): Promise<{ ok: boolean; voice?: string; error?: string }> => {
   return new Promise((resolve) => {
     const cleanText = (word || '').replace(/[!?"'.,:;()]/g, ' ').trim();
     if (!cleanText) return resolve({ ok: false, error: 'Empty text' });
+
+    // On iOS (iPhone/iPad) or native Safari, use direct WebKit speech synthesis for 0ms latency & 100% native Apple audio
+    if (isApplePlatform && typeof window !== 'undefined' && 'speechSynthesis' in window) {
+      const ok = playAppleNativeWebSpeech(cleanText);
+      if (ok) {
+        return resolve({ ok: true, voice: 'Apple iOS / Safari Swedish' });
+      }
+    }
 
     if (activeAudio) {
       activeAudio.pause();
@@ -101,16 +70,17 @@ export const playAppleWebSpeech = (word: string, voice = 'Alva (Premium)'): Prom
       }
     };
     audio.onerror = () => {
+      // If /api/apple-tts fails (e.g. deployed on cloud Linux), fallback to Google stream
       if (!settled) {
         settled = true;
-        resolve({ ok: false, error: 'Failed to load Apple audio' });
+        playGoogleTTSStream(cleanText).then(resolve);
       }
     };
 
-    audio.play().catch((e) => {
+    audio.play().catch(() => {
       if (!settled) {
         settled = true;
-        resolve({ ok: false, error: e.message });
+        playGoogleTTSStream(cleanText).then(resolve);
       }
     });
   });
@@ -197,13 +167,8 @@ export const playStudioR2 = (word: string): Promise<{ ok: boolean; error?: strin
 };
 
 export const playSwedishTTS = (word: string) => {
-  const engine = getPreferredTtsEngine();
-  if (engine === 'google') {
-    playGoogleTTSStream(word);
-  } else {
-    // Default & 'apple': Native Apple Alva (Premium)
-    playAppleWebSpeech(word, 'Alva (Premium)');
-  }
+  // Default: Native Apple Alva (Premium) / iOS Native WebKit, with cloud fallback
+  playAppleWebSpeech(word, 'Alva (Premium)');
 };
 
 /**
