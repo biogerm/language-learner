@@ -1,45 +1,19 @@
 import { getMp3PublicUrl } from '../services/r2';
 
-// In-memory cache: word -> verified MP3 URL string or false (TTS only)
-const audioProbeCache = new Map<string, string | false>();
+// Cache of words confirmed to have NO studio MP3 on R2
+const missingAudioCache = new Set<string>();
 let activeAudio: HTMLAudioElement | null = null;
-let cachedVoices: SpeechSynthesisVoice[] = [];
-
-// Pre-load voices on module import
-if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
-  const loadVoices = () => {
-    try {
-      const v = window.speechSynthesis.getVoices();
-      if (v && v.length > 0) {
-        cachedVoices = v;
-      }
-    } catch {}
-  };
-  loadVoices();
-  window.speechSynthesis.onvoiceschanged = loadVoices;
-}
-
-export const getSwedishVoice = (): SpeechSynthesisVoice | undefined => {
-  if (typeof window === 'undefined' || !('speechSynthesis' in window)) return undefined;
-  const voices = cachedVoices.length ? cachedVoices : window.speechSynthesis.getVoices();
-  return (
-    voices.find(v => v.lang && (v.lang.toLowerCase().startsWith('sv') || v.lang.toLowerCase().includes('se'))) ||
-    voices.find(v => v.name && v.name.toLowerCase().includes('swedish'))
-  );
-};
 
 export const playSwedishTTS = (word: string) => {
   const cleanText = (word || '').replace(/[!?"'.,:;()]/g, ' ').trim();
   if (!cleanText) return;
 
-  // Stop previous audio
   if (activeAudio) {
     activeAudio.pause();
     activeAudio.currentTime = 0;
   }
 
   // 1. Primary: Real Swedish Audio Stream via HTML5 Audio
-  // 100% audible on all Mac speakers, independent of local macOS voice downloads!
   const ttsUrl = `/api/tts?text=${encodeURIComponent(cleanText)}`;
   const audio = new Audio(ttsUrl);
   activeAudio = audio;
@@ -65,27 +39,28 @@ export const playSwedishTTS = (word: string) => {
 
 /**
  * Pre-probes whether the exact MP3 file exists in R2 in the background.
- * Call this when a new word card loads or enters the queue.
  */
 export const preProbeWordAudio = (word: string) => {
   if (!word) return;
   const trimmed = word.trim();
-  if (audioProbeCache.has(trimmed)) return;
+  if (missingAudioCache.has(trimmed)) return;
 
   const url = getMp3PublicUrl(`words_audio/${encodeURIComponent(trimmed)}.mp3`);
   fetch(url, { method: 'HEAD' })
     .then(res => {
-      audioProbeCache.set(trimmed, res.ok ? url : false);
+      if (!res.ok) {
+        missingAudioCache.add(trimmed);
+      }
     })
     .catch(() => {
-      audioProbeCache.set(trimmed, false);
+      missingAudioCache.add(trimmed);
     });
 };
 
 /**
  * Play the exact audio for a word or phrase.
- * If exact MP3 exists on R2, plays the studio MP3.
- * If not, immediately speaks Swedish TTS synchronously within the user gesture.
+ * 1. ALWAYS tries studio MP3 from R2 first (e.g. konditional, Hör av dig snart!, slut, etc.)
+ * 2. If known to have no MP3 (or on 404 error), plays clear Swedish TTS audio stream.
  */
 export const playExactWordAudio = (word: string) => {
   if (!word) return;
@@ -98,20 +73,29 @@ export const playExactWordAudio = (word: string) => {
     activeAudio.currentTime = 0;
   }
 
-  const cached = audioProbeCache.get(trimmed);
-  if (cached === false) {
+  // If already confirmed to lack MP3, play TTS directly
+  if (missingAudioCache.has(trimmed)) {
     playSwedishTTS(word);
     return;
   }
-  if (typeof cached === 'string') {
-    const audio = new Audio(cached);
-    activeAudio = audio;
-    audio.play().catch(() => playSwedishTTS(word));
-    return;
-  }
 
-  // If probe is still in-flight or not cached yet, play Swedish TTS synchronously
-  // to ensure browser User Activation is NEVER lost!
-  playSwedishTTS(word);
-  preProbeWordAudio(word);
+  // Attempt studio MP3 from R2
+  const mp3Url = getMp3PublicUrl(`words_audio/${encodeURIComponent(trimmed)}.mp3`);
+  const audio = new Audio(mp3Url);
+  activeAudio = audio;
+
+  let hasFallenBack = false;
+  const fallback = () => {
+    if (hasFallenBack) return;
+    hasFallenBack = true;
+    missingAudioCache.add(trimmed);
+    playSwedishTTS(word);
+  };
+
+  audio.onerror = () => fallback();
+  audio.play().catch((err) => {
+    if (err.name !== 'AbortError') {
+      fallback();
+    }
+  });
 };
