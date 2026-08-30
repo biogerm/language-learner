@@ -294,7 +294,8 @@ export default function AudioTestDock() {
             borderRadius: '8px',
             padding: '10px 14px',
             border: '1px solid rgba(255, 255, 255, 0.05)',
-            fontSize: '0.85rem'
+            fontSize: '0.85rem',
+            marginBottom: '1rem'
           }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', color: '#94a3b8', marginBottom: '4px', fontSize: '0.75rem' }}>
               <span>Live Diagnostic Output</span>
@@ -303,6 +304,21 @@ export default function AudioTestDock() {
             <div style={{ color: '#38bdf8', fontFamily: 'monospace' }}>
               {statusLog}
             </div>
+          </div>
+
+          {/* Browser & Pronunciation Tips */}
+          <div style={{
+            padding: '10px 14px',
+            borderRadius: '8px',
+            background: 'rgba(255, 255, 255, 0.02)',
+            border: '1px solid rgba(255, 255, 255, 0.06)',
+            fontSize: '0.8rem',
+            color: '#94a3b8',
+            lineHeight: 1.5
+          }}>
+            <div style={{ fontWeight: 600, color: '#cbd5e1', marginBottom: '4px' }}>💡 Audio Engine Tips:</div>
+            <div>• <strong>Why Apple Alva was silent in Chrome:</strong> Chrome sandbox blocks macOS system voices if they are not installed locally. To enable Alva in Chrome: <em>macOS System Settings → Accessibility → Spoken Content → System Voice → Download "Alva"</em>. (Arc and Safari have native macOS voice entitlements).</div>
+            <div>• <strong>Swedish Pronunciation:</strong> Be sure to test with authentic Swedish characters like <strong>"trötta"</strong> (with <em>ö</em>). Testing non-Swedish spelling like <em>"trotta"</em> causes TTS to read it with English phonemes.</div>
           </div>
         </>
       )}
