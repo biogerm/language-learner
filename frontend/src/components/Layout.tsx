@@ -105,9 +105,9 @@ export default function Layout() {
   const isStudy = appMode === 'study';
 
   const getModuleInfo = (path: string) => {
-    if (path.includes('dictation')) return { name: 'Dictation', version: 'v2.2.21' };
-    if (path.includes('flashcard')) return { name: 'Flashcard', version: 'v2.2.25' };
-    if (path.includes('narration')) return { name: 'Narration', version: 'v2.2.14' };
+    if (path.includes('dictation')) return { name: 'Dictation', version: 'v2.2.22' };
+    if (path.includes('flashcard')) return { name: 'Flashcard', version: 'v2.2.26' };
+    if (path.includes('narration')) return { name: 'Narration', version: 'v2.2.15' };
     return { name: 'Language Learner', version: 'v2.2.0' };
   };
   const modInfo = getModuleInfo(location.pathname);
