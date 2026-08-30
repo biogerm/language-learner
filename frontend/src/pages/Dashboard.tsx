@@ -2,11 +2,13 @@ import { useEffect, useState } from 'react';
 import { supabase, getSession } from '../services/supabase';
 import { useNavigate } from 'react-router-dom';
 import { syncOfflineProgress } from '../utils/fsrs';
+import { useData } from '../contexts/DataContext';
 
 export default function Dashboard() {
   const [user, setUser] = useState<any>(null);
   const [courses, setCourses] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
+  const { setAppMode } = useData();
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -84,7 +86,10 @@ export default function Dashboard() {
                 <p style={{ color: 'var(--text)', marginBottom: '24px', fontSize: '16px' }}>{course.description || 'No description available.'}</p>
                 <button 
                   className="btn-primary" 
-                  onClick={() => navigate(`/narration/${course.id}`)}
+                  onClick={() => {
+                    setAppMode('study');
+                    navigate(`/narration/${course.id}`);
+                  }}
                 >
                   Start Studying
                 </button>
