@@ -1388,4 +1388,338 @@ strong {
     animation: fadeInUp 0.3s ease;
 }
 
+/* ==========================================================================
+   Header & Navigation Responsive Architecture (Desktop & Mobile)
+   ========================================================================== */
+
+.app-header {
+    position: relative;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    padding: 1.25rem 2rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.header-row-brand {
+    gap: 1rem;
+}
+
+.header-brand-group {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 0;
+}
+
+.header-title {
+    margin: 0;
+    flex-shrink: 0;
+    font-size: 1.75rem;
+    font-weight: 700;
+    background: linear-gradient(to right, #fff, #cbd5e1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    letter-spacing: -0.02em;
+    font-family: var(--heading);
+}
+
+.header-courses-btn {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    padding: 4px 12px;
+    color: #e2e8f0;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.header-courses-btn:hover {
+    background: rgba(255, 255, 255, 0.16);
+    color: #fff;
+}
+
+.header-user-group {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+}
+
+.header-version-badge {
+    font-size: 0.8rem;
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: #94a3b8;
+    padding: 4px 12px;
+    border-radius: 12px;
+    letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+}
+
+#user-avatar-btn {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+}
+
+#user-avatar-btn:hover {
+    transform: scale(1.05);
+}
+
+.header-row-modes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 12px;
+}
+
+.header-row-selectors {
+    overflow: hidden;
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    width: 100%;
+}
+
+.header-row-selectors.expanded {
+    max-height: 80px;
+    opacity: 1;
+}
+
+.header-row-selectors.collapsed {
+    max-height: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.header-row-selectors .filter-controls {
+    display: flex;
+    gap: 12px;
+    width: 100%;
+}
+
+.header-row-selectors .stage-select {
+    min-width: 150px;
+    max-width: 220px;
+    text-overflow: ellipsis;
+}
+
+.header-row-selectors .article-select {
+    min-width: 220px;
+    max-width: 340px;
+    text-overflow: ellipsis;
+}
+
+/* ==========================================================================
+   Mobile Header (<= 768px - iPhone & Mobile Screens)
+   Clean 3-Row Compact Architecture
+   ========================================================================== */
+
+/* ==========================================================================
+   Mobile Header (<= 768px - iPhone & Mobile Screens)
+   Clean 3-Row Compact Architecture
+   ========================================================================== */
+
+@media (max-width: 768px) {
+    .app-container {
+        padding: 0.5rem 0.5rem 2rem 0.5rem;
+        gap: 1rem;
+        width: 100%;
+        max-width: 100vw;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+
+    .app-header {
+        padding: 0.65rem 0.75rem;
+        gap: 8px;
+        border-radius: 14px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Row 1: Brand & User */
+    .header-row-brand {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        gap: 8px;
+    }
+
+    .header-brand-group {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        flex-shrink: 0;
+    }
+
+    .header-title {
+        font-size: 1.05rem;
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+
+    .header-courses-btn {
+        padding: 3px 8px;
+        font-size: 0.72rem;
+        border-radius: 14px;
+        gap: 4px;
+        flex-shrink: 0;
+    }
+
+    .header-courses-btn svg {
+        width: 11px;
+        height: 11px;
+    }
+
+    .header-user-group {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        flex-shrink: 0;
+    }
+
+    .header-version-badge {
+        display: none; /* Hidden on mobile header to keep Row 1 clean (Title + Courses + User Avatar) */
+    }
+
+    #user-avatar-btn {
+        width: 32px;
+        height: 32px;
+        font-size: 0.85rem;
+    }
+
+    /* Row 2: SR Toggle + NDF Toggle */
+    .header-row-modes {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        gap: 6px;
+    }
+
+    #fsrs-mode-toggle.voice-toggle {
+        padding: 2px;
+        border-radius: 12px;
+        flex-shrink: 0;
+    }
+
+    #fsrs-mode-toggle .toggle-option {
+        padding: 4px 8px;
+        font-size: 0.76rem;
+        border-radius: 10px;
+    }
+
+    .mode-switcher {
+        display: flex;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.25);
+        padding: 2px 3px;
+        border-radius: 14px;
+        gap: 2px;
+        flex-shrink: 0;
+        max-width: 100%;
+    }
+
+    .mode-switcher a {
+        padding: 4px 8px;
+        font-size: 0.76rem;
+        border-radius: 10px;
+        max-width: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 3px;
+        white-space: nowrap;
+    }
+
+    /* On mobile, inactive tabs show icons and active tab shows full name for ultra-clean fit */
+    .mode-switcher a:not(.active) .mode-label {
+        display: none;
+    }
+
+    /* Row 3: Stage & Article Grid */
+    .header-row-selectors .filter-controls {
+        display: grid;
+        grid-template-columns: 1fr 1.3fr;
+        gap: 6px;
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .header-row-selectors .stage-select,
+    .header-row-selectors .article-select {
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+        font-size: 0.8rem;
+        padding: 5px 8px;
+        height: 32px;
+        box-sizing: border-box;
+    }
+}
+
+/* Extra small screens (<= 480px, iPhone SE / Mini) */
+@media (max-width: 480px) {
+    .header-title {
+        font-size: 0.98rem;
+    }
+
+    .header-courses-btn {
+        padding: 2px 6px;
+        font-size: 0.7rem;
+    }
+
+    #user-avatar-btn {
+        width: 28px;
+        height: 28px;
+        font-size: 0.8rem;
+    }
+
+    #fsrs-mode-toggle .toggle-option {
+        padding: 3px 6px;
+        font-size: 0.72rem;
+    }
+
+    .mode-switcher a {
+        padding: 3px 6px;
+        font-size: 0.72rem;
+    }
+}
+
 
