@@ -530,7 +530,15 @@ export default function Flashcard() {
   };
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
-    if (e.key === 'Tab' || e.key === 'Escape' || (e.key === '/' && e.metaKey)) {
+    if (e.key === 'Tab') {
+      e.preventDefault();
+      if (wrongCount >= 2 || status !== 'typing') {
+        playAudio();
+      }
+      return;
+    }
+
+    if (e.key === 'Escape' || (e.key === '/' && e.metaKey)) {
       return;
     }
 

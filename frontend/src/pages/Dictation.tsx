@@ -528,7 +528,13 @@ export default function Dictation() {
   };
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
-    if (e.key === 'Tab' || e.key === 'Escape' || (e.key === '/' && e.metaKey)) {
+    if (e.key === 'Tab') {
+      e.preventDefault();
+      playAudio();
+      return;
+    }
+
+    if (e.key === 'Escape' || (e.key === '/' && e.metaKey)) {
       return;
     }
 
