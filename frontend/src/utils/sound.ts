@@ -29,34 +29,38 @@ export const getSwedishVoice = (): SpeechSynthesisVoice | undefined => {
 };
 
 export const playSwedishTTS = (word: string) => {
-  if (typeof window === 'undefined' || !('speechSynthesis' in window)) return;
   const cleanText = (word || '').replace(/[!?"'.,:;()]/g, ' ').trim();
   if (!cleanText) return;
 
-  try {
-    if (window.speechSynthesis.paused) {
-      window.speechSynthesis.resume();
-    }
-    if (window.speechSynthesis.speaking || window.speechSynthesis.pending) {
-      window.speechSynthesis.cancel();
-    }
-
-    const utterance = new SpeechSynthesisUtterance(cleanText);
-    utterance.lang = 'sv-SE';
-    utterance.rate = 0.9;
-    utterance.pitch = 1.0;
-
-    (window as any)._activeTTS = utterance;
-    utterance.onend = () => { (window as any)._activeTTS = null; };
-    utterance.onerror = (e) => {
-      console.warn('Swedish TTS error:', e);
-      (window as any)._activeTTS = null;
-    };
-
-    window.speechSynthesis.speak(utterance);
-  } catch (err) {
-    console.warn('Failed to speak Swedish TTS:', err);
+  // Stop previous audio
+  if (activeAudio) {
+    activeAudio.pause();
+    activeAudio.currentTime = 0;
   }
+
+  // 1. Primary: Real Swedish Audio Stream via HTML5 Audio
+  // 100% audible on all Mac speakers, independent of local macOS voice downloads!
+  const ttsUrl = `/api/tts?text=${encodeURIComponent(cleanText)}`;
+  const audio = new Audio(ttsUrl);
+  activeAudio = audio;
+  
+  audio.play().catch(() => {
+    // 2. Secondary fallback: Web Speech API
+    if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
+      try {
+        if (window.speechSynthesis.paused) {
+          window.speechSynthesis.resume();
+        }
+        const utterance = new SpeechSynthesisUtterance(cleanText);
+        utterance.lang = 'sv-SE';
+        utterance.rate = 0.9;
+        utterance.pitch = 1.0;
+        window.speechSynthesis.speak(utterance);
+      } catch (e) {
+        console.warn('SpeechSynthesis fallback failed:', e);
+      }
+    }
+  });
 };
 
 /**
