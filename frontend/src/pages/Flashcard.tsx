@@ -473,13 +473,12 @@ export default function Flashcard() {
     
     if (appMode === 'study') {
       updateMasteryAndVocab(currentWord.id, false);
-    }
-
-    const res = await submitGatePass(courseId, currentWord.id, 'flashcard', wrongCount, timeSpent, true, 1);
-    if (res.completed) {
-      window.dispatchEvent(new CustomEvent('fsrs-toast', { detail: res.toastMsg || `${res.ratingName} | ${res.dayStr}` }));
-    }
-    if (appMode === 'review') {
+      await submitGatePass(courseId, currentWord.id, 'flashcard', wrongCount, timeSpent, true, 1);
+    } else {
+      const res = await submitGatePass(courseId, currentWord.id, 'flashcard', wrongCount, timeSpent, true, 1, 1);
+      if (res.completed) {
+        window.dispatchEvent(new CustomEvent('fsrs-toast', { detail: res.toastMsg || `${res.ratingName} | ${res.dayStr}` }));
+      }
       loadFSRSStats();
     }
 
