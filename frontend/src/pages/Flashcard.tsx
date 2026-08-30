@@ -653,21 +653,21 @@ export default function Flashcard() {
           {isAllDone ? (
             <div style={{ marginBottom: '1.5rem', textAlign: 'center' }}>
               <div id="english-prompt" style={{ fontSize: '1.75rem', fontWeight: 700, color: '#fff', marginBottom: '0.5rem' }}>
-                {stats.total === 0
+                {appMode === 'review'
+                  ? '🎉 All caught up!'
+                  : stats.total === 0
                   ? (stats.inFsrsCount && stats.inFsrsCount > 0
                     ? '🎉 All words in this lesson are already in your FSRS review schedule, no initial study needed!'
                     : '📝 No Words Selected')
-                  : appMode === 'review'
-                  ? '🎉 All caught up!'
                   : '🎉 Session complete!'}
               </div>
               <div id="hint-display" style={{ color: '#94a3b8', fontSize: '1rem' }}>
-                {stats.total === 0
+                {appMode === 'review'
+                  ? 'No reviews due right now.'
+                  : stats.total === 0
                   ? (stats.inFsrsCount && stats.inFsrsCount > 0
                     ? 'You can review them in Review Mode when they become due.'
                     : 'All words for this article are excluded. Use Edit Mode (📖) in Narration to select words.')
-                  : appMode === 'review'
-                  ? 'No reviews due right now.'
                   : 'All words mastered for this article.'}
               </div>
             </div>
