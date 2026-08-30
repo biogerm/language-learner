@@ -475,10 +475,7 @@ export default function Flashcard() {
       updateMasteryAndVocab(currentWord.id, false);
       await submitGatePass(courseId, currentWord.id, 'flashcard', wrongCount, timeSpent, true, 1);
     } else {
-      const res = await submitGatePass(courseId, currentWord.id, 'flashcard', wrongCount, timeSpent, true, 1, 1);
-      if (res.completed) {
-        window.dispatchEvent(new CustomEvent('fsrs-toast', { detail: res.toastMsg || `${res.ratingName} | ${res.dayStr}` }));
-      }
+      await submitGatePass(courseId, currentWord.id, 'flashcard', wrongCount, timeSpent, true, 1, 1);
       loadFSRSStats();
     }
 
