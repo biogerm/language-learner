@@ -1,4 +1,4 @@
-import { S3Client, GetObjectCommand } from '@aws-sdk/client-s3';
+import { S3Client, GetObjectCommand, ListObjectsV2Command } from '@aws-sdk/client-s3';
 import { Readable } from 'stream';
 import dotenv from 'dotenv';
 import path from 'path';
@@ -13,6 +13,49 @@ const s3 = new S3Client({
     secretAccessKey: process.env.R2_SecretAccessKey!,
   },
 });
+
+// In-memory case-insensitive key index for words_audio
+const wordAudioIndex = new Map<string, string>();
+let isIndexLoaded = false;
+let isIndexLoading = false;
+
+const cleanKeyForLookup = (key: string) => {
+  return key.toLowerCase().replace(/^(words_audio\/)/, '').replace(/\.mp3$/, '').replace(/[.!?,"']/g, '').trim();
+};
+
+const ensureIndexLoaded = async () => {
+  if (isIndexLoaded || isIndexLoading) return;
+  isIndexLoading = true;
+  try {
+    let isTruncated = true;
+    let continuationToken: string | undefined = undefined;
+    while (isTruncated) {
+      const res: any = await s3.send(new ListObjectsV2Command({
+        Bucket: process.env.R2_BUCKET_NAME || 'language-learner-courses',
+        Prefix: 'words_audio/',
+        ContinuationToken: continuationToken
+      }));
+      for (const item of (res.Contents || [])) {
+        if (item.Key) {
+          const clean = cleanKeyForLookup(item.Key);
+          if (!wordAudioIndex.has(clean)) {
+            wordAudioIndex.set(clean, item.Key);
+          }
+        }
+      }
+      isTruncated = res.IsTruncated || false;
+      continuationToken = res.NextContinuationToken;
+    }
+    isIndexLoaded = true;
+  } catch (e) {
+    console.error('Failed to pre-index words_audio keys:', e);
+  } finally {
+    isIndexLoading = false;
+  }
+};
+
+// Start background load immediately
+ensureIndexLoaded();
 
 export default function r2ProxyPlugin() {
   return {
@@ -34,9 +77,21 @@ export default function r2ProxyPlugin() {
               return res.end('Forbidden: Invalid Path');
             }
 
+            let keyToFetch = normalizedKey;
+
+            // If words_audio request, check if we need smart case/punctuation resolution
+            if (normalizedKey.startsWith('words_audio/')) {
+              await ensureIndexLoaded();
+              const clean = cleanKeyForLookup(normalizedKey);
+              const indexedKey = wordAudioIndex.get(clean);
+              if (indexedKey) {
+                keyToFetch = indexedKey;
+              }
+            }
+
             const command = new GetObjectCommand({
               Bucket: process.env.R2_BUCKET_NAME || 'language-learner-courses',
-              Key: normalizedKey,
+              Key: keyToFetch,
             });
             
             const response = await s3.send(command);
