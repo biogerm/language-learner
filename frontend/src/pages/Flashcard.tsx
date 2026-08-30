@@ -28,6 +28,7 @@ export default function Flashcard() {
   const [stats, setStats] = useState<{ total: number; mastered: number; remaining: number; inFsrsCount?: number }>({ total: 0, mastered: 0, remaining: 0, inFsrsCount: 0 });
 
   const audioRef = useRef<HTMLAudioElement | null>(null);
+  const inputRef = useRef<HTMLInputElement | null>(null);
   const timerRef = useRef<any>(null);
   const intervalRef = useRef<any>(null);
   const isAdvancingRef = useRef(false);
@@ -305,6 +306,9 @@ export default function Flashcard() {
     setTimerFill('0%');
     setCurrentIndex(prev => prev + 1);
     setStartTime(Date.now());
+    setTimeout(() => {
+      inputRef.current?.focus();
+    }, 50);
   }, []);
 
   const triggerAutoAdvance = useCallback(() => {
@@ -497,6 +501,15 @@ export default function Flashcard() {
   const showAnswer = status === 'correct' || status === 'revealed';
   const isAllDone = stats.total === 0 || !queue.length || currentIndex >= queue.length;
 
+  useEffect(() => {
+    if (status === 'typing' && !isAllDone && !loading) {
+      const timer = setTimeout(() => {
+        inputRef.current?.focus();
+      }, 50);
+      return () => clearTimeout(timer);
+    }
+  }, [currentIndex, status, isAllDone, loading]);
+
   if (loading) return (
     <div style={{ width: '100%', maxWidth: '800px', margin: '0 auto' }}>
       <main className="flashcard-container glass-panel">
@@ -572,6 +585,7 @@ export default function Flashcard() {
           )}
 
           <input 
+            ref={inputRef}
             autoFocus={!isAllDone}
             type="text" 
             id="spell-input" 
