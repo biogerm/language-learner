@@ -1,40 +1,176 @@
 import { getMp3PublicUrl } from '../services/r2';
 
+export type TtsEngine = 'auto' | 'apple' | 'google';
+
 // Cache of words confirmed to have NO studio MP3 on R2
 const missingAudioCache = new Set<string>();
 let activeAudio: HTMLAudioElement | null = null;
 
-export const playSwedishTTS = (word: string) => {
-  const cleanText = (word || '').replace(/[!?"'.,:;()]/g, ' ').trim();
-  if (!cleanText) return;
+export const getPreferredTtsEngine = (): TtsEngine => {
+  if (typeof window === 'undefined') return 'auto';
+  return (localStorage.getItem('preferred_tts_engine') as TtsEngine) || 'auto';
+};
 
-  if (activeAudio) {
-    activeAudio.pause();
-    activeAudio.currentTime = 0;
-  }
+export const setPreferredTtsEngine = (engine: TtsEngine) => {
+  if (typeof window === 'undefined') return;
+  localStorage.setItem('preferred_tts_engine', engine);
+};
 
-  // 1. Primary: Real Swedish Audio Stream via HTML5 Audio
-  const ttsUrl = `/api/tts?text=${encodeURIComponent(cleanText)}`;
-  const audio = new Audio(ttsUrl);
-  activeAudio = audio;
-  
-  audio.play().catch(() => {
-    // 2. Secondary fallback: Web Speech API
-    if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
-      try {
-        if (window.speechSynthesis.paused) {
-          window.speechSynthesis.resume();
-        }
-        const utterance = new SpeechSynthesisUtterance(cleanText);
-        utterance.lang = 'sv-SE';
-        utterance.rate = 0.9;
-        utterance.pitch = 1.0;
-        window.speechSynthesis.speak(utterance);
-      } catch (e) {
-        console.warn('SpeechSynthesis fallback failed:', e);
+/**
+ * Play via Apple / OS Native Web Speech API (Alva / Oskar / Siri in sv-SE)
+ */
+export const playAppleWebSpeech = (word: string): Promise<{ ok: boolean; voice?: string; error?: string }> => {
+  return new Promise((resolve) => {
+    if (typeof window === 'undefined' || !('speechSynthesis' in window)) {
+      return resolve({ ok: false, error: 'Web Speech API not supported in this browser' });
+    }
+    const cleanText = (word || '').replace(/[!?"'.,:;()]/g, ' ').trim();
+    if (!cleanText) return resolve({ ok: false, error: 'Empty text' });
+
+    try {
+      if (window.speechSynthesis.paused) {
+        window.speechSynthesis.resume();
       }
+      if (window.speechSynthesis.speaking || window.speechSynthesis.pending) {
+        window.speechSynthesis.cancel();
+      }
+
+      const utterance = new SpeechSynthesisUtterance(cleanText);
+      utterance.lang = 'sv-SE';
+      utterance.rate = 0.9;
+      utterance.pitch = 1.0;
+
+      const voices = window.speechSynthesis.getVoices();
+      const svVoice = voices.find(v => v.lang.toLowerCase().includes('sv') || v.name.toLowerCase().includes('alva') || v.name.toLowerCase().includes('swedish'));
+      if (svVoice) {
+        utterance.voice = svVoice;
+      }
+
+      let settled = false;
+      utterance.onstart = () => {
+        if (!settled) {
+          settled = true;
+          resolve({ ok: true, voice: svVoice ? svVoice.name : 'System Default (sv-SE)' });
+        }
+      };
+      utterance.onend = () => {
+        if (!settled) {
+          settled = true;
+          resolve({ ok: true, voice: svVoice ? svVoice.name : 'System Default (sv-SE)' });
+        }
+      };
+      utterance.onerror = (e) => {
+        if (!settled) {
+          settled = true;
+          resolve({ ok: false, error: e.error || 'SpeechSynthesis error' });
+        }
+      };
+
+      window.speechSynthesis.speak(utterance);
+      // Fallback timeout in case onstart/onend doesn't fire
+      setTimeout(() => {
+        if (!settled) {
+          settled = true;
+          resolve({ ok: true, voice: svVoice ? svVoice.name : 'System Default (sv-SE)' });
+        }
+      }, 600);
+    } catch (err: any) {
+      resolve({ ok: false, error: err.message || 'Unknown error' });
     }
   });
+};
+
+/**
+ * Play via Google Cloud TTS Audio Stream (/api/tts)
+ */
+export const playGoogleTTSStream = (word: string): Promise<{ ok: boolean; error?: string }> => {
+  return new Promise((resolve) => {
+    const cleanText = (word || '').replace(/[!?"'.,:;()]/g, ' ').trim();
+    if (!cleanText) return resolve({ ok: false, error: 'Empty text' });
+
+    if (activeAudio) {
+      activeAudio.pause();
+      activeAudio.currentTime = 0;
+    }
+
+    const ttsUrl = `/api/tts?text=${encodeURIComponent(cleanText)}`;
+    const audio = new Audio(ttsUrl);
+    activeAudio = audio;
+
+    let settled = false;
+    audio.onplay = () => {
+      if (!settled) {
+        settled = true;
+        resolve({ ok: true });
+      }
+    };
+    audio.onerror = () => {
+      if (!settled) {
+        settled = true;
+        resolve({ ok: false, error: 'Failed to load TTS audio stream' });
+      }
+    };
+
+    audio.play().catch((e) => {
+      if (!settled) {
+        settled = true;
+        resolve({ ok: false, error: e.message });
+      }
+    });
+  });
+};
+
+/**
+ * Play Studio R2 MP3
+ */
+export const playStudioR2 = (word: string): Promise<{ ok: boolean; error?: string }> => {
+  return new Promise((resolve) => {
+    const trimmed = (word || '').trim();
+    if (!trimmed) return resolve({ ok: false, error: 'Empty word' });
+
+    if (activeAudio) {
+      activeAudio.pause();
+      activeAudio.currentTime = 0;
+    }
+
+    const mp3Url = getMp3PublicUrl(`words_audio/${encodeURIComponent(trimmed)}.mp3`);
+    const audio = new Audio(mp3Url);
+    activeAudio = audio;
+
+    let settled = false;
+    audio.onplay = () => {
+      if (!settled) {
+        settled = true;
+        resolve({ ok: true });
+      }
+    };
+    audio.onerror = () => {
+      if (!settled) {
+        settled = true;
+        resolve({ ok: false, error: '404: Studio MP3 not found in R2' });
+      }
+    };
+
+    audio.play().catch((err) => {
+      if (!settled) {
+        settled = true;
+        resolve({ ok: false, error: err.message });
+      }
+    });
+  });
+};
+
+export const playSwedishTTS = (word: string) => {
+  const engine = getPreferredTtsEngine();
+  if (engine === 'apple') {
+    playAppleWebSpeech(word).then(res => {
+      if (!res.ok) playGoogleTTSStream(word);
+    });
+  } else {
+    playGoogleTTSStream(word).then(res => {
+      if (!res.ok) playAppleWebSpeech(word);
+    });
+  }
 };
 
 /**
@@ -60,7 +196,7 @@ export const preProbeWordAudio = (word: string) => {
 /**
  * Play the exact audio for a word or phrase.
  * 1. ALWAYS tries studio MP3 from R2 first (e.g. konditional, Hör av dig snart!, slut, etc.)
- * 2. If known to have no MP3 (or on 404 error), plays clear Swedish TTS audio stream.
+ * 2. If known to have no MP3 (or on 404 error), plays TTS according to preferred engine.
  */
 export const playExactWordAudio = (word: string) => {
   if (!word) return;
