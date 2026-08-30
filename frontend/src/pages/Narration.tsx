@@ -320,56 +320,15 @@ export default function Narration() {
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [sentencesArray, activeIndex, playAudio, editModeIndex, missingIndex]);
 
-  // Enter Edit Mode on a specific sentence
-  // Enter Edit Mode on a specific sentence
-  const enterEditMode = useCallback(async (sentenceIndex: number) => {
+  // Enter Edit Mode on a specific sentence (instant 0ms response)
+  const enterEditMode = useCallback((sentenceIndex: number) => {
     stopPlayback();
     const sent = sentencesArray[sentenceIndex];
     if (!sent) return;
 
-    let storedEx: string[] = [];
-    try {
-      const ex = await db.excluded_dictionary.toArray();
-      storedEx = ex.map(r => r.base_form.toLowerCase());
-    } catch (e) {}
-
-    let storedFsrs: string[] = [];
-    try {
-      const activeCid = (courseId || 'sfid').toLowerCase();
-      const allFsrs = await db.fsrs_progress.toArray();
-      storedFsrs = allFsrs
-        .filter(r => (!r.course_id || r.course_id.toLowerCase() === activeCid) && r.state !== 0)
-        .map(r => (r.word_id || '').toLowerCase());
-    } catch (e) {}
-
-    let storedCustom: any[] = [];
-    try {
-      const cu = await db.custom_dictionary.toArray();
-      storedCustom = cu.map(r => ({
-        sv: (r.word_in_sentence || r.base_form || '').toLowerCase(),
-        base_form: (r.base_form || '').toLowerCase(),
-        word_in_sentence: (r.word_in_sentence || '').toLowerCase(),
-        en: r.en_translation,
-        stage: r.stage_id,
-        article: r.article_id,
-        course_id: r.course_id,
-        is_global_target: !!r.is_global_target
-      }));
-    } catch (e) {}
-
-    setExcludedVocab(storedEx);
-    setFsrsVocab(storedFsrs);
-    setCustomVocab(storedCustom.map(r => ({
-      sv: r.word_in_sentence || r.base_form || r.sv,
-      baseForm: r.base_form,
-      en: r.en || '',
-      stage: r.stage || selectedStage,
-      article: r.article || selectedArticleId,
-      course_id: r.course_id || courseId || 'sfid',
-      isGlobalTarget: r.is_global_target,
-      timestamp: Date.now()
-    })));
-
+    const storedCustom = customVocab;
+    const storedEx = excludedVocab;
+    const storedFsrs = fsrsVocab;
     const svText = sent.sv || '';
 
     // 1. Gather all structured positioned words (targets, secondaries, and custom phrases)
@@ -801,100 +760,9 @@ export default function Narration() {
       }
     });
 
-    // Save excluded and custom vocab
+    // Save excluded and custom vocab immediately in React state
     setExcludedVocab(updatedEx);
     setCustomVocab(updatedCustom);
-
-    // Sync to Dexie excluded_dictionary, custom_dictionary & clean up excluded words from learning_queue
-    try {
-      await db.transaction('rw', [db.excluded_dictionary, db.custom_dictionary, db.learning_queue], async () => {
-        // Excluded words: Add new
-        const allExInDb = await db.excluded_dictionary.toArray();
-        const existingExSet = new Set(allExInDb.map(r => r.base_form.toLowerCase()));
-        for (const exWord of updatedEx) {
-          if (!existingExSet.has(exWord.toLowerCase())) {
-            await db.excluded_dictionary.add({
-              base_form: exWord.toLowerCase(),
-              article_id: selectedArticleId,
-              course_id: currentCourseId,
-              synced: false
-            });
-          }
-        }
-        // Excluded words: Remove unexcluded
-        for (const rec of allExInDb) {
-          if (!updatedEx.includes(rec.base_form.toLowerCase()) && rec.id) {
-            await db.excluded_dictionary.delete(rec.id);
-          }
-        }
-
-        // Custom words: Add new
-        const currentCustomInDb = await db.custom_dictionary.where('article_id').equals(selectedArticleId).toArray();
-        for (const item of updatedCustom) {
-          const baseFormToSave = item.baseForm || item.base_form || item.sv;
-          const wordInSentenceToSave = item.word_in_sentence || item.sv;
-          const existing = currentCustomInDb.find(c => 
-            (c.base_form && c.base_form.toLowerCase() === baseFormToSave.toLowerCase()) ||
-            (c.word_in_sentence && c.word_in_sentence.toLowerCase() === wordInSentenceToSave.toLowerCase())
-          );
-          if (!existing) {
-            await db.custom_dictionary.add({
-              base_form: baseFormToSave,
-              word_in_sentence: wordInSentenceToSave,
-              en_translation: item.en,
-              dict_en: item.dictEn,
-              article_id: item.article || article,
-              stage_id: item.stage || stage,
-              course_id: item.course_id || currentCourseId,
-              sentence_id: sent.sentence_id || sent.id || '',
-              sentence: sent.sv,
-              sentence_en: sent.en || '',
-              is_global_target: item.isGlobalTarget || false,
-              synced: false
-            } as unknown as WordObject);
-          }
-        }
-        // Custom words: Delete unselected
-        const updatedCustomSvSet = new Set(updatedCustom.map(c => c.sv.toLowerCase()));
-        const updatedCustomBaseSet = new Set(updatedCustom.map(c => (c.baseForm || c.base_form || c.sv).toLowerCase()));
-        const updatedCustomInSentSet = new Set(updatedCustom.map(c => (c.word_in_sentence || c.sv).toLowerCase()));
-        for (const ec of currentCustomInDb) {
-          const ecBase = (ec.base_form || '').toLowerCase();
-          const ecInSent = (ec.word_in_sentence || '').toLowerCase();
-          const isRetained = 
-            (ecBase && (updatedCustomBaseSet.has(ecBase) || updatedCustomSvSet.has(ecBase) || updatedCustomInSentSet.has(ecBase))) ||
-            (ecInSent && (updatedCustomInSentSet.has(ecInSent) || updatedCustomSvSet.has(ecInSent) || updatedCustomBaseSet.has(ecInSent)));
-          if (!isRetained && ec.id) {
-            await db.custom_dictionary.delete(ec.id);
-          }
-        }
-
-        // Clean up excluded or unselected words from learning_queue for this article
-        const articleLq = await db.learning_queue.where('article_id').equals(selectedArticleId).toArray();
-        for (const item of articleLq) {
-          const base = (item.base_form || '').toLowerCase();
-          const inSent = (item.word_in_sentence || '').toLowerCase();
-          const isEx = updatedEx.includes(base) || (inSent && updatedEx.includes(inSent));
-          const isCustom = updatedCustomBaseSet.has(base) || updatedCustomSvSet.has(base) || updatedCustomInSentSet.has(inSent);
-          
-          let isTargetInCourse = false;
-          if (courseData && (courseData as any).stages) {
-            const currentArt = (courseData as any).stages.flatMap((s: any) => s.articles || []).find((a: any) => a.article_id === selectedArticleId);
-            if (currentArt) {
-              isTargetInCourse = (currentArt.sentences || []).some((s: any) =>
-                (s.target_words || []).some((tw: any) => (tw.base_form || '').toLowerCase() === base || (tw.word_in_sentence || '').toLowerCase() === inSent)
-              );
-            }
-          }
-
-          if (isEx || (!isCustom && !isTargetInCourse)) {
-            if (item.id) await db.learning_queue.delete(item.id);
-          }
-        }
-      });
-    } catch (e) {
-      console.warn('Error syncing custom/excluded vocab to Dexie:', e);
-    }
 
     if (missingQueueItems.length > 0) {
       setMissingQueue(missingQueueItems);
@@ -902,18 +770,110 @@ export default function Narration() {
       setMissingInput('');
       setMissingError('');
     } else {
+      // Exit Edit Mode IMMEDIATELY (0ms lag, optimistic UI)
+      setEditModeIndex(null);
+      setEditingTokens([]);
+      setHasChanged(false);
       window.dispatchEvent(new CustomEvent('fsrs-toast', { detail: 'Vocabulary updated' }));
-      await loadVocabStorage();
-      await syncExcludedDictionary();
-      await syncCustomDictionary();
-      refreshCustomDictionary();
-      refreshExcludedDictionary();
-      refreshLearningQueue();
     }
 
-    setEditModeIndex(null);
-    setEditingTokens([]);
-    setHasChanged(false);
+    // Perform Dexie database write and Supabase cloud sync completely in background without blocking UI
+    (async () => {
+      try {
+        await db.transaction('rw', [db.excluded_dictionary, db.custom_dictionary, db.learning_queue], async () => {
+          // Excluded words: Add new
+          const allExInDb = await db.excluded_dictionary.toArray();
+          const existingExSet = new Set(allExInDb.map(r => r.base_form.toLowerCase()));
+          for (const exWord of updatedEx) {
+            if (!existingExSet.has(exWord.toLowerCase())) {
+              await db.excluded_dictionary.add({
+                base_form: exWord.toLowerCase(),
+                article_id: selectedArticleId,
+                course_id: currentCourseId,
+                synced: false
+              });
+            }
+          }
+          // Excluded words: Remove unexcluded
+          for (const rec of allExInDb) {
+            if (!updatedEx.includes(rec.base_form.toLowerCase()) && rec.id) {
+              await db.excluded_dictionary.delete(rec.id);
+            }
+          }
+
+          // Custom words: Add new
+          const currentCustomInDb = await db.custom_dictionary.where('article_id').equals(selectedArticleId).toArray();
+          for (const item of updatedCustom) {
+            const baseFormToSave = item.baseForm || item.base_form || item.sv;
+            const wordInSentenceToSave = item.word_in_sentence || item.sv;
+            const existing = currentCustomInDb.find(c => 
+              (c.base_form && c.base_form.toLowerCase() === baseFormToSave.toLowerCase()) ||
+              (c.word_in_sentence && c.word_in_sentence.toLowerCase() === wordInSentenceToSave.toLowerCase())
+            );
+            if (!existing) {
+              await db.custom_dictionary.add({
+                base_form: baseFormToSave,
+                word_in_sentence: wordInSentenceToSave,
+                en_translation: item.en,
+                dict_en: item.dictEn,
+                article_id: item.article || article,
+                stage_id: item.stage || stage,
+                course_id: item.course_id || currentCourseId,
+                sentence_id: sent.sentence_id || sent.id || '',
+                sentence: sent.sv,
+                sentence_en: sent.en || '',
+                is_global_target: item.isGlobalTarget || false,
+                synced: false
+              } as unknown as WordObject);
+            }
+          }
+          // Custom words: Delete unselected
+          const updatedCustomSvSet = new Set(updatedCustom.map(c => c.sv.toLowerCase()));
+          const updatedCustomBaseSet = new Set(updatedCustom.map(c => (c.baseForm || c.base_form || c.sv).toLowerCase()));
+          const updatedCustomInSentSet = new Set(updatedCustom.map(c => (c.word_in_sentence || c.sv).toLowerCase()));
+          for (const ec of currentCustomInDb) {
+            const ecBase = (ec.base_form || '').toLowerCase();
+            const ecInSent = (ec.word_in_sentence || '').toLowerCase();
+            const isRetained = 
+              (ecBase && (updatedCustomBaseSet.has(ecBase) || updatedCustomSvSet.has(ecBase) || updatedCustomInSentSet.has(ecBase))) ||
+              (ecInSent && (updatedCustomInSentSet.has(ecInSent) || updatedCustomSvSet.has(ecInSent) || updatedCustomBaseSet.has(ecInSent)));
+            if (!isRetained && ec.id) {
+              await db.custom_dictionary.delete(ec.id);
+            }
+          }
+
+          // Clean up excluded or unselected words from learning_queue for this article
+          const articleLq = await db.learning_queue.where('article_id').equals(selectedArticleId).toArray();
+          for (const item of articleLq) {
+            const base = (item.base_form || '').toLowerCase();
+            const inSent = (item.word_in_sentence || '').toLowerCase();
+            const isEx = updatedEx.includes(base) || (inSent && updatedEx.includes(inSent));
+            const isCustom = updatedCustomBaseSet.has(base) || updatedCustomSvSet.has(base) || updatedCustomInSentSet.has(inSent);
+            
+            let isTargetInCourse = false;
+            if (courseData && (courseData as any).stages) {
+              const currentArt = (courseData as any).stages.flatMap((s: any) => s.articles || []).find((a: any) => a.article_id === selectedArticleId);
+              if (currentArt) {
+                isTargetInCourse = (currentArt.sentences || []).some((s: any) =>
+                  (s.target_words || []).some((tw: any) => (tw.base_form || '').toLowerCase() === base || (tw.word_in_sentence || '').toLowerCase() === inSent)
+                );
+              }
+            }
+
+            if (isEx || (!isCustom && !isTargetInCourse)) {
+              if (item.id) await db.learning_queue.delete(item.id);
+            }
+          }
+        });
+
+        await Promise.all([syncExcludedDictionary(), syncCustomDictionary()]);
+        refreshCustomDictionary();
+        refreshExcludedDictionary();
+        refreshLearningQueue();
+      } catch (e) {
+        console.warn('Error saving and syncing vocabulary:', e);
+      }
+    })();
   };
 
   // Missing Translation Modal Submit
@@ -956,39 +916,48 @@ export default function Narration() {
             context_en: item.context_en || '',
             timestamp: Date.now()
           });
-
-          // Add to Dexie custom_dictionary
-          try {
-            await db.custom_dictionary.add({
-              base_form: item.baseForm || item.sv,
-              word_in_sentence: item.sv,
-              en_translation: item.user_en,
-              dict_en: item.dictEn,
-              article_id: item.article,
-              stage_id: item.stage,
-              course_id: item.course_id,
-              sentence_id: item.sentence_id || '',
-              sentence: item.context_sv,
-              sentence_en: item.context_en,
-              synced: false
-            } as unknown as WordObject);
-          } catch (e) {}
         }
       }
 
+      // Optimistically update customVocab and exit modal immediately (0ms lag)
       setCustomVocab(finalCustom);
-      window.dispatchEvent(new CustomEvent('fsrs-toast', { detail: '🎉 Added to vocabulary book!' }));
-      await loadVocabStorage();
-      await syncExcludedDictionary();
-      await syncCustomDictionary();
-      refreshCustomDictionary();
-      refreshExcludedDictionary();
-      refreshLearningQueue();
-
+      setEditModeIndex(null);
+      setEditingTokens([]);
+      setHasChanged(false);
       setMissingQueue([]);
       setMissingIndex(null);
       setMissingInput('');
       setMissingError('');
+      window.dispatchEvent(new CustomEvent('fsrs-toast', { detail: '🎉 Added to vocabulary book!' }));
+
+      // Background persistence and sync
+      (async () => {
+        try {
+          for (const item of missingQueue) {
+            if (item.user_en) {
+              await db.custom_dictionary.add({
+                base_form: item.baseForm || item.sv,
+                word_in_sentence: item.sv,
+                en_translation: item.user_en,
+                dict_en: item.dictEn,
+                article_id: item.article,
+                stage_id: item.stage,
+                course_id: item.course_id,
+                sentence_id: item.sentence_id || '',
+                sentence: item.context_sv,
+                sentence_en: item.context_en,
+                synced: false
+              } as unknown as WordObject);
+            }
+          }
+          await Promise.all([syncExcludedDictionary(), syncCustomDictionary()]);
+          refreshCustomDictionary();
+          refreshExcludedDictionary();
+          refreshLearningQueue();
+        } catch (e) {
+          console.warn('Error in background missing submit:', e);
+        }
+      })();
     }
   };
 
