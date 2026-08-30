@@ -1,10 +1,6 @@
 import { supabase } from './supabase';
 
-const r2PublicUrl = import.meta.env.VITE_R2_PUBLIC_URL;
-
-if (!r2PublicUrl) {
-  console.warn('R2 Public URL is missing from environment variables.');
-}
+const r2PublicUrl = import.meta.env.VITE_R2_PUBLIC_URL || 'https://cdn.languagelearner.se';
 
 /**
  * Returns the public URL for an MP3 file stored in R2.
@@ -13,7 +9,10 @@ if (!r2PublicUrl) {
  */
 export const getMp3PublicUrl = (filename: string): string => {
   const path = filename.startsWith('/') ? filename : `/${filename}`;
-  return `/api/r2${path}`;
+  if (import.meta.env.DEV) {
+    return `/api/r2${path}`;
+  }
+  return `${r2PublicUrl}${path}`;
 };
 
 /**
