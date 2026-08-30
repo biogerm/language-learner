@@ -70,13 +70,14 @@ export const playSwedishTTS = (word: string) => {
 
 /**
  * Play the exact audio for a word or phrase.
- * If the exact MP3 does not exist (404), directly speak the exact word via Swedish TTS.
- * Never play a different base word in Dictation / Flashcard!
+ * Probes exact raw filename (preserving case/punctuation like "Hör av dig snart!.mp3"),
+ * lowercase, clean, and snake_case candidates before falling back to Swedish TTS.
  */
 export const playExactWordAudio = (word: string) => {
   if (!word) return;
-  const cleanWord = word.replace(/[.,!?"':;()]/g, '').trim().toLowerCase();
-  if (!cleanWord) return;
+  const rawTrimmed = word.trim();
+  const cleanWord = rawTrimmed.replace(/[.,!?"':;()]/g, '').trim().toLowerCase();
+  if (!rawTrimmed) return;
 
   // Stop previous audio
   if (activeAudio) {
@@ -85,31 +86,53 @@ export const playExactWordAudio = (word: string) => {
   }
 
   // If already known to lack MP3, trigger TTS synchronously during user gesture
-  if (missingAudioCache.has(cleanWord)) {
+  if (missingAudioCache.has(rawTrimmed) && missingAudioCache.has(cleanWord)) {
     playSwedishTTS(word);
     return;
   }
 
-  const encodedFilename = encodeURIComponent(cleanWord);
-  const url = getMp3PublicUrl(`words_audio/${encodedFilename}.mp3`);
-  const audio = new Audio(url);
-  activeAudio = audio;
-  let hasFallenBack = false;
+  const rawKey = encodeURIComponent(rawTrimmed);
+  const rawLowerKey = encodeURIComponent(rawTrimmed.toLowerCase());
+  const cleanKey = encodeURIComponent(cleanWord);
+  const snakeKey = encodeURIComponent(rawTrimmed.toLowerCase().replace(/\s+/g, '_'));
+  const cleanSnakeKey = encodeURIComponent(cleanWord.replace(/\s+/g, '_'));
 
-  const fallbackToTTS = () => {
-    if (hasFallenBack) return;
-    hasFallenBack = true;
-    missingAudioCache.add(cleanWord);
-    playSwedishTTS(word);
-  };
+  const candidateUrls = Array.from(new Set([
+    getMp3PublicUrl(`words_audio/${rawKey}.mp3`),
+    getMp3PublicUrl(`words_audio/${rawLowerKey}.mp3`),
+    getMp3PublicUrl(`words_audio/${cleanKey}.mp3`),
+    getMp3PublicUrl(`words_audio/${snakeKey}.mp3`),
+    getMp3PublicUrl(`words_audio/${cleanSnakeKey}.mp3`)
+  ]));
 
-  audio.onerror = () => {
-    fallbackToTTS();
-  };
+  let currentIndex = 0;
 
-  audio.play().catch((err) => {
-    if (err.name !== 'AbortError') {
-      fallbackToTTS();
+  const tryNext = () => {
+    if (currentIndex >= candidateUrls.length) {
+      missingAudioCache.add(rawTrimmed);
+      missingAudioCache.add(cleanWord);
+      playSwedishTTS(word);
+      return;
     }
-  });
+
+    const url = candidateUrls[currentIndex++];
+    const audio = new Audio(url);
+    activeAudio = audio;
+    let settled = false;
+
+    const onFail = () => {
+      if (settled) return;
+      settled = true;
+      tryNext();
+    };
+
+    audio.onerror = () => onFail();
+    audio.play().catch((err) => {
+      if (err.name !== 'AbortError') {
+        onFail();
+      }
+    });
+  };
+
+  tryNext();
 };
