@@ -8,6 +8,7 @@ import { supabase } from '../services/supabase';
 import { formatWordPrompt } from '../utils/format';
 import { buildStudyQueue } from '../utils/queueBuilder';
 import { playExactWordAudio, preProbeWordAudio } from '../utils/sound';
+import AudioTestDock from '../components/AudioTestDock';
 
 export default function Dictation() {
   const { courseId } = useParams();
@@ -766,6 +767,8 @@ export default function Dictation() {
           <div className="fsrs-stat-item"><span className="stat-val" style={{ color: '#c084fc' }}>{fsrsStats.dueTomorrow}</span><span className="stat-lbl">📅 Tomorrow</span></div>
         </div>
       )}
+
+      <AudioTestDock />
     </div>
   );
 }
