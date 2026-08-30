@@ -262,17 +262,60 @@ export default function Narration() {
     audio.play().catch(console.error);
   }, [activeIndex, stopPlayback]);
 
+  const missingWordAudioCache = useRef<Set<string>>(new Set());
+
+  const playWordTTS = useCallback((word: string) => {
+    if ('speechSynthesis' in window) {
+      window.speechSynthesis.cancel();
+      if (window.speechSynthesis.paused) {
+        window.speechSynthesis.resume();
+      }
+      const utterance = new SpeechSynthesisUtterance(word);
+      utterance.lang = 'sv-SE';
+      utterance.rate = 0.9;
+
+      const voices = window.speechSynthesis.getVoices();
+      const svVoice = voices.find(v => v.lang && (v.lang.startsWith('sv') || v.lang.includes('Swedish')));
+      if (svVoice) {
+        utterance.voice = svVoice;
+      }
+
+      (window as any)._activeUtterance = utterance;
+      utterance.onend = () => { (window as any)._activeUtterance = null; };
+      utterance.onerror = () => { (window as any)._activeUtterance = null; };
+
+      window.speechSynthesis.speak(utterance);
+    }
+  }, []);
+
   const playWordAudio = useCallback((word: string) => {
     if (wordAudioRef.current) {
       wordAudioRef.current.pause();
       wordAudioRef.current.currentTime = 0;
     }
-    const cleanWord = decodeURIComponent(word).toLowerCase();
+    const cleanWord = decodeURIComponent(word).toLowerCase().trim();
+    if (missingWordAudioCache.current.has(cleanWord)) {
+      playWordTTS(cleanWord);
+      return;
+    }
+
     const url = getMp3PublicUrl(`words_audio/${cleanWord}.mp3`);
     const audio = new Audio(url);
+    let hasFallenBack = false;
+
+    const handleFallback = () => {
+      if (hasFallenBack) return;
+      hasFallenBack = true;
+      missingWordAudioCache.current.add(cleanWord);
+      playWordTTS(cleanWord);
+    };
+
+    audio.onerror = () => handleFallback();
+    audio.play().catch(err => {
+      if (err.name !== 'AbortError') handleFallback();
+    });
     wordAudioRef.current = audio;
-    audio.play().catch(err => console.warn('Word audio play failed:', err));
-  }, []);
+  }, [playWordTTS]);
 
   // Keyboard navigation
   useEffect(() => {

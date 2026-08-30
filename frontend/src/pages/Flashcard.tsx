@@ -225,13 +225,30 @@ export default function Flashcard() {
   };
   const enDefinition = getEnglishTranslation();
 
-  const playTTS = useCallback(() => {
-    if (!currentWord) return;
+  const missingAudioCache = useRef<Set<string>>(new Set());
+
+  const playTTS = useCallback((textToSpeak?: string) => {
+    const wordText = textToSpeak || currentWord?.word;
+    if (!wordText) return;
     if ('speechSynthesis' in window) {
       window.speechSynthesis.cancel();
-      const utterance = new SpeechSynthesisUtterance(currentWord.word);
+      if (window.speechSynthesis.paused) {
+        window.speechSynthesis.resume();
+      }
+      const utterance = new SpeechSynthesisUtterance(wordText);
       utterance.lang = 'sv-SE';
       utterance.rate = 0.9;
+
+      const voices = window.speechSynthesis.getVoices();
+      const svVoice = voices.find(v => v.lang && (v.lang.startsWith('sv') || v.lang.includes('Swedish')));
+      if (svVoice) {
+        utterance.voice = svVoice;
+      }
+
+      (window as any)._activeUtterance = utterance;
+      utterance.onend = () => { (window as any)._activeUtterance = null; };
+      utterance.onerror = () => { (window as any)._activeUtterance = null; };
+
       window.speechSynthesis.speak(utterance);
     }
   }, [currentWord]);
@@ -242,16 +259,32 @@ export default function Flashcard() {
       audioRef.current.pause();
       audioRef.current.currentTime = 0;
     }
+
+    const cleanWord = currentWord.word.trim().toLowerCase();
+    if (missingAudioCache.current.has(cleanWord)) {
+      playTTS();
+      return;
+    }
+
     if (currentWord.audio) {
       const url = getMp3PublicUrl(currentWord.audio);
       const audio = new Audio(url);
-      audio.onerror = () => {
-        console.warn(`MP3 not found for "${currentWord.word}", using Swedish TTS.`);
+      let hasFallenBack = false;
+
+      const handleFallback = () => {
+        if (hasFallenBack) return;
+        hasFallenBack = true;
+        missingAudioCache.current.add(cleanWord);
         playTTS();
       };
+
+      audio.onerror = () => {
+        handleFallback();
+      };
       audio.play().catch((err) => {
-        console.warn(`MP3 play failed for "${currentWord.word}", falling back to TTS:`, err);
-        playTTS();
+        if (err.name !== 'AbortError') {
+          handleFallback();
+        }
       });
       audioRef.current = audio;
     } else {
