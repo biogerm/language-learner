@@ -345,120 +345,198 @@ export default function Narration() {
       timestamp: Date.now()
     })));
 
-    const rawTokens = sent.sv.split(/(\s+)/);
-    const parsedTokens: TokenState[] = rawTokens.map((token: string) => {
-      if (/^\s+$/.test(token) || token === '') {
-        return {
-          token,
-          cleanWord: '',
-          cleanWordLower: '',
-          isWord: false,
-          type: 'plain',
-          isSelected: false,
-          isUnknown: false,
-          initiallySelected: false
-        };
-      }
+    const svText = sent.sv || '';
 
-      const cleanWord = token.replace(/[.,!?;:()[\]{}”"“‘’«»\-\…]/g, '').trim();
-      if (!cleanWord) {
-        return {
-          token,
-          cleanWord: '',
-          cleanWordLower: '',
-          isWord: false,
-          type: 'plain',
-          isSelected: false,
-          isUnknown: false,
-          initiallySelected: false
-        };
-      }
+    // 1. Gather all structured positioned words (targets, secondaries, and custom phrases)
+    const allKnownWords: any[] = [];
+    if (sent.target_words) {
+      allKnownWords.push(...sent.target_words.map((w: any) => ({ ...w, type: 'target' })));
+    }
+    if (sent.secondary_words) {
+      allKnownWords.push(...sent.secondary_words.map((w: any) => ({ ...w, type: 'secondary' })));
+    }
 
-      const cleanWordLower = cleanWord.toLowerCase();
-
-      const targetObj = sent.target_words?.find((tw: any) =>
-        (tw.base_form && tw.base_form.toLowerCase() === cleanWordLower) ||
-        (tw.word_in_sentence && tw.word_in_sentence.toLowerCase() === cleanWordLower)
-      );
-      const isTarget = !!targetObj;
-
-      const secondaryObj = !isTarget && sent.secondary_words?.find((sw: any) =>
-        (sw.base_form && sw.base_form.toLowerCase() === cleanWordLower) ||
-        (sw.word_in_sentence && sw.word_in_sentence.toLowerCase() === cleanWordLower)
-      );
-      const isSecondary = !!secondaryObj;
-
-      const customObj = storedCustom.find(cv => 
-        cleanWordLower === cv.sv ||
-        cleanWordLower === cv.base_form ||
-        cleanWordLower === cv.word_in_sentence
-      );
-      const isCustom = !!customObj;
-
-      if (isTarget) {
-        const baseForm = targetObj?.base_form || cleanWord;
-        const isExcluded = storedEx.includes(baseForm.toLowerCase()) || storedEx.includes(cleanWordLower);
-        const isInFsrs = storedFsrs.includes(cleanWordLower) || storedFsrs.includes(baseForm.toLowerCase());
-        const initiallySelected = !isExcluded;
-        return {
-          token,
-          cleanWord,
-          cleanWordLower,
-          baseForm,
-          isWord: true,
-          type: 'target',
-          isSelected: initiallySelected,
-          isUnknown: false,
-          initiallySelected,
-          isInFsrs
-        };
-      } else if (isSecondary) {
-        const baseForm = secondaryObj?.base_form || cleanWord;
-        const isInFsrs = storedFsrs.includes(cleanWordLower) || storedFsrs.includes(baseForm.toLowerCase());
-        const initiallySelected = isCustom;
-        return {
-          token,
-          cleanWord,
-          cleanWordLower,
-          baseForm,
-          isWord: true,
-          type: 'secondary',
-          isSelected: initiallySelected,
-          isUnknown: false,
-          initiallySelected,
-          isInFsrs
-        };
-      } else if (isCustom) {
-        const baseForm = customObj?.base_form || cleanWord;
-        const isInFsrs = storedFsrs.includes(cleanWordLower) || storedFsrs.includes(baseForm.toLowerCase());
-        return {
-          token,
-          cleanWord,
-          cleanWordLower,
-          baseForm,
-          isWord: true,
-          type: 'custom',
-          isSelected: true,
-          isUnknown: false,
-          initiallySelected: true,
-          isGlobalTarget: customObj?.is_global_target,
-          isInFsrs
-        };
+    // Resolve positions for any words missing position_start/position_end
+    const positionedWords: any[] = [];
+    allKnownWords.forEach(w => {
+      if (w.position_start !== undefined && w.position_end !== undefined) {
+        positionedWords.push(w);
       } else {
-        const isInFsrs = storedFsrs.includes(cleanWordLower);
-        return {
-          token,
-          cleanWord,
-          cleanWordLower,
-          isWord: true,
-          type: 'plain',
-          isSelected: false,
-          isUnknown: false,
-          initiallySelected: false,
-          isInFsrs
-        };
+        const searchWord = w.word_in_sentence || w.base_form || '';
+        if (searchWord) {
+          const escaped = searchWord.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
+          const regex = new RegExp(`(?<![\\p{L}\\p{N}])${escaped}(?![\\p{L}\\p{N}])`, 'gui');
+          const match = regex.exec(svText);
+          if (match) {
+            positionedWords.push({
+              ...w,
+              position_start: match.index,
+              position_end: match.index + match[0].length
+            });
+          }
+        }
       }
     });
+
+    // Check custom vocab words that might be multi-word phrases or positioned in this sentence
+    storedCustom.forEach(cv => {
+      const cleanCv = (cv.sv || '').toLowerCase();
+      const cleanWordInSent = (cv.word_in_sentence || '').toLowerCase();
+      const cleanBase = (cv.base_form || '').toLowerCase();
+      const alreadyIn = positionedWords.some(w => {
+        const targetW = (w.base_form || w.word_in_sentence || '').toLowerCase();
+        return targetW === cleanCv || targetW === cleanWordInSent || targetW === cleanBase;
+      });
+      if (!alreadyIn) {
+        const searchWords = [cv.word_in_sentence, cv.base_form, cv.sv].filter(Boolean) as string[];
+        for (const sw of searchWords) {
+          const escaped = sw.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
+          const regex = new RegExp(`(?<![\\p{L}\\p{N}])${escaped}(?![\\p{L}\\p{N}])`, 'gui');
+          let match;
+          while ((match = regex.exec(svText)) !== null) {
+            const start = match.index;
+            const end = match.index + match[0].length;
+            const overlaps = positionedWords.some(w => !(end <= w.position_start || start >= w.position_end));
+            if (!overlaps) {
+              positionedWords.push({
+                base_form: cv.base_form || cv.sv,
+                word_in_sentence: match[0],
+                position_start: start,
+                position_end: end,
+                type: cv.is_global_target ? 'global_target' : 'custom',
+                customObj: cv
+              });
+            }
+          }
+        }
+      }
+    });
+
+    // Sort by position_start
+    positionedWords.sort((a, b) => a.position_start - b.position_start);
+
+    // 2. Build editing tokens by walking through svText chunks
+    const parsedTokens: TokenState[] = [];
+    let curIdx = 0;
+
+    const processPlainChunk = (plainText: string) => {
+      if (!plainText) return;
+      const rawTokens = plainText.split(/(\s+)/);
+      rawTokens.forEach((tok) => {
+        if (/^\s+$/.test(tok) || tok === '') {
+          parsedTokens.push({
+            token: tok,
+            cleanWord: '',
+            cleanWordLower: '',
+            isWord: false,
+            type: 'plain',
+            isSelected: false,
+            isUnknown: false,
+            initiallySelected: false
+          });
+          return;
+        }
+
+        const cleanWord = tok.replace(/[.,!?;:()[\]{}”"“‘’«»\-\…]/g, '').trim();
+        if (!cleanWord) {
+          parsedTokens.push({
+            token: tok,
+            cleanWord: '',
+            cleanWordLower: '',
+            isWord: false,
+            type: 'plain',
+            isSelected: false,
+            isUnknown: false,
+            initiallySelected: false
+          });
+          return;
+        }
+
+        const cleanWordLower = cleanWord.toLowerCase();
+        const customObj = storedCustom.find(cv =>
+          cleanWordLower === cv.sv || cleanWordLower === cv.base_form || cleanWordLower === cv.word_in_sentence
+        );
+        const isCustom = !!customObj;
+        const isInFsrs = storedFsrs.includes(cleanWordLower);
+
+        if (isCustom) {
+          const baseForm = customObj?.base_form || cleanWord;
+          parsedTokens.push({
+            token: tok,
+            cleanWord,
+            cleanWordLower,
+            baseForm,
+            isWord: true,
+            type: 'custom',
+            isSelected: true,
+            isUnknown: false,
+            initiallySelected: true,
+            isGlobalTarget: customObj?.is_global_target,
+            isInFsrs
+          });
+        } else {
+          parsedTokens.push({
+            token: tok,
+            cleanWord,
+            cleanWordLower,
+            isWord: true,
+            type: 'plain',
+            isSelected: false,
+            isUnknown: false,
+            initiallySelected: false,
+            isInFsrs
+          });
+        }
+      });
+    };
+
+    positionedWords.forEach(w => {
+      if (w.position_start > curIdx) {
+        processPlainChunk(svText.substring(curIdx, w.position_start));
+      }
+
+      const exactPhrase = svText.substring(w.position_start, w.position_end);
+      const cleanPhrase = w.word_in_sentence || exactPhrase;
+      const cleanWordLower = cleanPhrase.toLowerCase();
+      const baseForm = w.base_form || cleanPhrase;
+      const baseFormLower = baseForm.toLowerCase();
+
+      const isExcluded = storedEx.includes(baseFormLower) || storedEx.includes(cleanWordLower);
+      const isCustom = storedCustom.some(cv =>
+        cv.sv === cleanWordLower || cv.base_form === cleanWordLower || cv.word_in_sentence === cleanWordLower ||
+        cv.sv === baseFormLower || cv.base_form === baseFormLower
+      );
+      const isInFsrs = storedFsrs.includes(cleanWordLower) || storedFsrs.includes(baseFormLower);
+
+      let initiallySelected = false;
+      if (w.type === 'target') {
+        initiallySelected = !isExcluded;
+      } else if (w.type === 'secondary') {
+        initiallySelected = isCustom;
+      } else if (w.type === 'custom' || w.type === 'global_target') {
+        initiallySelected = true;
+      }
+
+      parsedTokens.push({
+        token: exactPhrase,
+        cleanWord: cleanPhrase,
+        cleanWordLower,
+        baseForm,
+        isWord: true,
+        type: w.type,
+        isSelected: initiallySelected,
+        isUnknown: false,
+        initiallySelected,
+        isGlobalTarget: w.type === 'global_target' || w.customObj?.is_global_target,
+        isInFsrs
+      });
+
+      curIdx = w.position_end;
+    });
+
+    if (curIdx < svText.length) {
+      processPlainChunk(svText.substring(curIdx));
+    }
 
     setEditingTokens(parsedTokens);
     setEditModeIndex(sentenceIndex);
