@@ -468,7 +468,7 @@ export default function Flashcard() {
     
     setStatus('revealed');
     setInputState('incorrect');
-    setFeedbackMsg('Answer Revealed');
+    setFeedbackMsg('');
     playAudio();
     
     if (appMode === 'study') {
