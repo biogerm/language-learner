@@ -58,13 +58,13 @@ export async function syncOfflineProgress() {
                         reps: remote.reps,
                         lapses: remote.lapses,
                         last_review: remote.last_review ? new Date(remote.last_review) : new Date(),
-                        todayDictationPassed: local?.todayDictationPassed ?? (remote.today_dictation_passed || false),
-                        todayFlashcardPassed: local?.todayFlashcardPassed ?? (remote.today_flashcard_passed || false),
-                        max_wrongs: Math.max(local?.max_wrongs || 0, remote.max_wrongs || 0),
-                        max_time: Math.max(local?.max_time || 0, remote.max_time || 0),
-                        gave_up: local?.gave_up || remote.gave_up || false,
-                        reveal_count: Math.max(local?.reveal_count || 0, remote.reveal_count || 0),
-                        lastGatePassDate: local?.lastGatePassDate || remote.last_gate_pass_date,
+                        todayDictationPassed: remote.today_dictation_passed ?? false,
+                        todayFlashcardPassed: remote.today_flashcard_passed ?? false,
+                        max_wrongs: remote.max_wrongs ?? 0,
+                        max_time: remote.max_time ?? 0,
+                        gave_up: remote.gave_up ?? false,
+                        reveal_count: remote.reveal_count ?? 0,
+                        lastGatePassDate: remote.last_gate_pass_date || null,
                         synced: true,
                         updated_at: remote.updated_at
                     });
@@ -91,6 +91,13 @@ export async function syncOfflineProgress() {
                 reps: record.reps || 0,
                 lapses: record.lapses || 0,
                 last_review: record.last_review ? record.last_review.toISOString() : new Date().toISOString(),
+                today_dictation_passed: record.todayDictationPassed ?? false,
+                today_flashcard_passed: record.todayFlashcardPassed ?? false,
+                max_wrongs: record.max_wrongs || 0,
+                max_time: record.max_time || 0,
+                gave_up: record.gave_up || false,
+                reveal_count: record.reveal_count || 0,
+                last_gate_pass_date: record.lastGatePassDate || null,
                 updated_at: record.updated_at || new Date().toISOString()
             }));
 
