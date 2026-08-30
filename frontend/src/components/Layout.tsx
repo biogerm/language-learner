@@ -114,109 +114,50 @@ export default function Layout() {
 
   return (
     <div className="app-container">
-      <header className="app-header glass-panel" style={{ position: 'relative', zIndex: 100, flexDirection: 'column', alignItems: 'stretch', gap: 0, padding: '1.25rem 2rem' }}>
+      <header className="app-header glass-panel">
           
-          {/* Row 1: App Info + Mode Toggles */}
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%', gap: '1rem', flexWrap: 'wrap', marginBottom: '1rem' }}>
-            
-            <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+          {/* Row 1: App Info / Courses + Version Badge & User Avatar */}
+          <div className="header-row header-row-brand">
+            <div className="header-brand-group">
               <h1 
+                className="header-title"
                 onClick={() => navigate('/dashboard')}
                 title="Go to Courses"
-                style={{ 
-                  margin: 0, 
-                  flexShrink: 0, 
-                  fontSize: '1.75rem', 
-                  fontWeight: 700, 
-                  background: 'linear-gradient(to right, #fff, #cbd5e1)', 
-                  WebkitBackgroundClip: 'text', 
-                  WebkitTextFillColor: 'transparent',
-                  cursor: 'pointer',
-                  letterSpacing: '-0.02em'
-                }}
               >
                 Language Learner
               </h1>
               {courseId && (
                 <button 
                   id="header-switch-course-btn"
+                  className="header-courses-btn"
                   onClick={() => navigate('/dashboard')}
                   title="Switch Course"
-                  style={{
-                    background: 'rgba(255, 255, 255, 0.08)',
-                    border: '1px solid rgba(255, 255, 255, 0.15)',
-                    borderRadius: '20px',
-                    padding: '4px 12px',
-                    color: '#e2e8f0',
-                    fontSize: '0.8rem',
-                    fontWeight: 600,
-                    cursor: 'pointer',
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '6px',
-                    transition: 'all 0.2s ease'
-                  }}
-                  onMouseOver={e => e.currentTarget.style.background = 'rgba(255, 255, 255, 0.16)'}
-                  onMouseOut={e => e.currentTarget.style.background = 'rgba(255, 255, 255, 0.08)'}
                 >
                   <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
                     <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
                   </svg>
-                  Courses
+                  <span>Courses</span>
                 </button>
               )}
             </div>
             
-            <div style={{ display: 'flex', gap: '16px', alignItems: 'center' }}>
+            <div className="header-user-group">
               {courseId && (
-                <div className="voice-toggle" id="fsrs-mode-toggle">
-                  <button 
-                    onClick={() => {
-                      setAppMode('study');
-                    }}
-                    className={`toggle-option ${isStudy ? 'active' : ''}`}
-                    style={{ cursor: 'pointer' }}>
-                    📚 Study
-                  </button>
-                  <button 
-                    onClick={() => {
-                      setAppMode('review');
-                      if (location.pathname.includes('narration')) {
-                        handleModeSwitch('dictation');
-                      }
-                    }}
-                    className={`toggle-option ${!isStudy ? 'active' : ''}`}
-                    style={{ cursor: 'pointer' }}>
-                    📅 Review
-                  </button>
-                </div>
+                <span 
+                  id="module-version-badge"
+                  className="header-version-badge"
+                >
+                  <span className="mod-name">{modInfo.name}</span> <span className="mod-ver" style={{ color: '#c084fc' }}>{modInfo.version}</span>
+                </span>
               )}
-              
+
               {/* User Avatar Menu */}
-              <div ref={userMenuRef} style={{ position: 'relative', marginLeft: '8px' }}>
+              <div ref={userMenuRef} style={{ position: 'relative' }}>
                 <button 
                   id="user-avatar-btn"
                   title={`Signed in as ${userEmail}`}
                   onClick={() => setIsUserMenuOpen(prev => !prev)}
-                  style={{
-                    width: '38px',
-                    height: '38px',
-                    borderRadius: '50%',
-                    background: 'linear-gradient(135deg, #6366f1, #8b5cf6)',
-                    border: '2px solid rgba(255, 255, 255, 0.2)',
-                    color: '#fff',
-                    fontWeight: 700,
-                    fontSize: '1rem',
-                    cursor: 'pointer',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    boxShadow: '0 2px 8px rgba(0, 0, 0, 0.3)',
-                    transition: 'all 0.2s ease'
-                  }}
-                  onMouseOver={(e) => { e.currentTarget.style.transform = 'scale(1.05)'; }}
-                  onMouseOut={(e) => { if (!isUserMenuOpen) e.currentTarget.style.transform = 'scale(1)'; }}
                 >
                   {avatarLetter}
                 </button>
@@ -291,6 +232,12 @@ export default function Layout() {
                       Switch Course
                     </button>
 
+                    <div style={{ padding: '6px 0 10px 0', display: 'flex', justifyContent: 'center' }}>
+                      <span style={{ fontSize: '0.75rem', color: '#94a3b8' }}>
+                        {modInfo.name} <span style={{ color: '#c084fc', fontWeight: 600 }}>{modInfo.version}</span>
+                      </span>
+                    </div>
+
                     <button 
                       id="user-menu-signout"
                       onClick={async () => {
@@ -338,13 +285,74 @@ export default function Layout() {
             </div>
           </div>
 
-          {/* Row 2: Stage & Article Selectors (Animated for Study Mode) */}
+          {/* Row 2: Study/Review Mode + Narration/Dictation/Flashcard Toggles */}
           {courseId && (
-            <div id="filter-controls-wrapper" style={{ overflow: 'hidden', transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)', maxHeight: isStudy ? '100px' : '0px', opacity: isStudy ? 1 : 0, width: '100%' }}>
-              <div className="filter-controls" id="header-selectors-portal" style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginBottom: '1rem' }}>
+            <div className="header-row header-row-modes">
+              <div className="voice-toggle" id="fsrs-mode-toggle">
+                <button 
+                  onClick={() => {
+                    setAppMode('study');
+                  }}
+                  className={`toggle-option ${isStudy ? 'active' : ''}`}
+                  style={{ cursor: 'pointer' }}>
+                  <span className="sr-icon">📚</span>
+                  <span className="sr-label">Study</span>
+                </button>
+                <button 
+                  onClick={() => {
+                    setAppMode('review');
+                    if (location.pathname.includes('narration')) {
+                      handleModeSwitch('dictation');
+                    }
+                  }}
+                  className={`toggle-option ${!isStudy ? 'active' : ''}`}
+                  style={{ cursor: 'pointer' }}>
+                  <span className="sr-icon">📅</span>
+                  <span className="sr-label">Review</span>
+                </button>
+              </div>
+
+              <nav className="mode-switcher">
+                {isStudy && (
+                  <a 
+                    onClick={() => handleModeSwitch('narration')}
+                    className={location.pathname.includes('narration') ? 'active' : ''}
+                    style={{ cursor: 'pointer' }}
+                    title="Narration"
+                  >
+                    <span className="mode-icon">📖</span>
+                    <span className="mode-label">Narration</span>
+                  </a>
+                )}
+                <a 
+                  onClick={() => handleModeSwitch('dictation')}
+                  className={location.pathname.includes('dictation') ? 'active' : ''}
+                  style={{ cursor: 'pointer' }}
+                  title="Dictation"
+                >
+                  <span className="mode-icon">🎧</span>
+                  <span className="mode-label">Dictation</span>
+                </a>
+                <a 
+                  onClick={() => handleModeSwitch('flashcard')}
+                  className={location.pathname.includes('flashcard') ? 'active' : ''}
+                  style={{ cursor: 'pointer' }}
+                  title="Flashcard"
+                >
+                  <span className="mode-icon">📝</span>
+                  <span className="mode-label">Flashcard</span>
+                </a>
+              </nav>
+            </div>
+          )}
+
+          {/* Row 3: Stage & Article Selectors (Collapsible for Study Mode) */}
+          {courseId && (
+            <div id="filter-controls-wrapper" className={`header-row-selectors ${isStudy ? 'expanded' : 'collapsed'}`}>
+              <div className="filter-controls" id="header-selectors-portal">
                 {stages.length > 0 && (
                   <>
-                    <select id="stage-select" className="glass-select" style={{ minWidth: '140px', maxWidth: '180px', textOverflow: 'ellipsis' }} value={selectedStage} onChange={e => {
+                    <select id="stage-select" className="glass-select stage-select" value={selectedStage} onChange={e => {
                         const stageId = e.target.value;
                         setSelectedStage(stageId);
                         const stage = stages.find(s => s.id === stageId);
@@ -356,62 +364,11 @@ export default function Layout() {
                     }}>
                       {stages.map(s => <option key={s.id} value={s.id}>{s.title}</option>)}
                     </select>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                      <select id="article-select" className="glass-select" style={{ minWidth: '220px', maxWidth: '320px', textOverflow: 'ellipsis' }} value={selectedArticleId} onChange={e => setSelectedArticleId(e.target.value)}>
-                        {stages.find(s => s.id === selectedStage)?.articles?.map((a: any) => <option key={a.id} value={a.id}>{a.title}</option>)}
-                      </select>
-                    </div>
+                    <select id="article-select" className="glass-select article-select" value={selectedArticleId} onChange={e => setSelectedArticleId(e.target.value)}>
+                      {stages.find(s => s.id === selectedStage)?.articles?.map((a: any) => <option key={a.id} value={a.id}>{a.title}</option>)}
+                    </select>
                   </>
                 )}
-              </div>
-            </div>
-          )}
-
-          {/* Row 3: N/D/F or D/F Toggles + Module Version Badge */}
-          {courseId && (
-            <div style={{ display: 'flex', width: '100%', alignItems: 'center', justifyContent: 'space-between', gap: '1rem', flexWrap: 'wrap' }}>
-              <nav className="mode-switcher">
-                {isStudy && (
-                  <a 
-                    onClick={() => handleModeSwitch('narration')}
-                    className={location.pathname.includes('narration') ? 'active' : ''}
-                    style={{ cursor: 'pointer' }}>
-                    📖 Narration
-                  </a>
-                )}
-                <a 
-                  onClick={() => handleModeSwitch('dictation')}
-                  className={location.pathname.includes('dictation') ? 'active' : ''}
-                  style={{ cursor: 'pointer' }}>
-                  🎧 Dictation
-                </a>
-                <a 
-                  onClick={() => handleModeSwitch('flashcard')}
-                  className={location.pathname.includes('flashcard') ? 'active' : ''}
-                  style={{ cursor: 'pointer' }}>
-                  📝 Flashcard
-                </a>
-              </nav>
-
-              <div style={{ display: 'flex', alignItems: 'center' }}>
-                <span 
-                  id="module-version-badge"
-                  style={{ 
-                    fontSize: '0.8rem', 
-                    fontWeight: 600, 
-                    background: 'rgba(255,255,255,0.08)', 
-                    border: '1px solid rgba(255,255,255,0.12)', 
-                    color: '#94a3b8', 
-                    padding: '4px 12px', 
-                    borderRadius: '12px', 
-                    letterSpacing: '0.02em',
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '6px'
-                  }}
-                >
-                  {modInfo.name} <span style={{ color: '#c084fc' }}>{modInfo.version}</span>
-                </span>
               </div>
             </div>
           )}

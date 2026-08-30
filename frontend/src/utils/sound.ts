@@ -172,29 +172,27 @@ export const playSwedishTTS = (word: string) => {
 };
 
 /**
- * Pre-probes whether the exact MP3 file exists in R2 in the background.
+ * Pre-probes / preloads word audio.
+ * Note: Never use fetch(HEAD) to cross-origin CDN without CORS headers,
+ * as it caused false-positive errors marking all words as missing audio.
  */
 export const preProbeWordAudio = (word: string) => {
   if (!word) return;
   const trimmed = word.trim();
   if (missingAudioCache.has(trimmed)) return;
 
-  const url = getMp3PublicUrl(`words_audio/${encodeURIComponent(trimmed)}.mp3`);
-  fetch(url, { method: 'HEAD' })
-    .then(res => {
-      if (!res.ok) {
-        missingAudioCache.add(trimmed);
-      }
-    })
-    .catch(() => {
-      missingAudioCache.add(trimmed);
-    });
+  try {
+    const url = getMp3PublicUrl(`words_audio/${encodeURIComponent(trimmed)}.mp3`);
+    const preloadAudio = new Audio();
+    preloadAudio.preload = 'auto';
+    preloadAudio.src = url;
+  } catch {}
 };
 
 /**
  * Play the exact audio for a word or phrase.
  * 1. ALWAYS tries studio MP3 from R2 first (e.g. konditional, Hör av dig snart!, slut, etc.)
- * 2. If known to have no MP3 (or on 404 error), plays TTS according to preferred engine.
+ * 2. If known to have no MP3 (via audio.onerror), falls back to native Apple / cloud TTS.
  */
 export const playExactWordAudio = (word: string) => {
   if (!word) return;
@@ -213,7 +211,7 @@ export const playExactWordAudio = (word: string) => {
     return;
   }
 
-  // Attempt studio MP3 from R2
+  // Attempt studio MP3 from R2 via HTML5 Audio element
   const mp3Url = getMp3PublicUrl(`words_audio/${encodeURIComponent(trimmed)}.mp3`);
   const audio = new Audio(mp3Url);
   activeAudio = audio;
@@ -226,10 +224,17 @@ export const playExactWordAudio = (word: string) => {
     playSwedishTTS(word);
   };
 
-  audio.onerror = () => fallback();
-  audio.play().catch((err) => {
-    if (err.name !== 'AbortError') {
-      fallback();
-    }
-  });
+  audio.onerror = () => {
+    fallback();
+  };
+
+  const playPromise = audio.play();
+  if (playPromise !== undefined) {
+    playPromise.catch((err) => {
+      if (err.name === 'AbortError') return;
+      if (err.name !== 'NotAllowedError') {
+        fallback();
+      }
+    });
+  }
 };
