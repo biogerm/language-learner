@@ -470,7 +470,7 @@ export default function Dictation() {
     
     setStatus('revealed');
     setInputState('incorrect');
-    setFeedbackMsg('Answer Revealed');
+    setFeedbackMsg('');
     playAudio();
     
     if (appMode === 'study') {
