@@ -368,69 +368,94 @@ export default function Dictation() {
   const missingAudioCache = useRef<Set<string>>(new Set());
 
   const playTTS = useCallback((textToSpeak?: string) => {
-    const wordText = textToSpeak || currentWord?.word;
+    const wordText = textToSpeak || currentRecord?.word_in_sentence || currentRecord?.word_id || currentRecord?.base_form;
     if (!wordText) return;
     if ('speechSynthesis' in window) {
-      window.speechSynthesis.cancel();
-      if (window.speechSynthesis.paused) {
-        window.speechSynthesis.resume();
-      }
-      const utterance = new SpeechSynthesisUtterance(wordText);
-      utterance.lang = 'sv-SE';
-      utterance.rate = 0.9;
-
-      const voices = window.speechSynthesis.getVoices();
-      const svVoice = voices.find(v => v.lang && (v.lang.startsWith('sv') || v.lang.includes('Swedish')));
-      if (svVoice) {
-        utterance.voice = svVoice;
+      if (window.speechSynthesis.speaking || window.speechSynthesis.pending) {
+        window.speechSynthesis.cancel();
       }
 
-      (window as any)._activeUtterance = utterance;
-      utterance.onend = () => { (window as any)._activeUtterance = null; };
-      utterance.onerror = () => { (window as any)._activeUtterance = null; };
+      setTimeout(() => {
+        if (window.speechSynthesis.paused) {
+          window.speechSynthesis.resume();
+        }
+        const utterance = new SpeechSynthesisUtterance(wordText);
+        utterance.lang = 'sv-SE';
+        utterance.rate = 0.9;
 
-      window.speechSynthesis.speak(utterance);
+        const voices = window.speechSynthesis.getVoices();
+        const svVoice = voices.find(v => v.lang && (v.lang.startsWith('sv') || v.lang.includes('Swedish')));
+        if (svVoice) {
+          utterance.voice = svVoice;
+        }
+
+        (window as any)._activeUtterance = utterance;
+        utterance.onend = () => { (window as any)._activeUtterance = null; };
+        utterance.onerror = () => { (window as any)._activeUtterance = null; };
+
+        window.speechSynthesis.speak(utterance);
+      }, 25);
     }
-  }, [currentWord]);
+  }, [currentRecord]);
 
   const playAudio = useCallback(() => {
-    if (!currentWord) return;
+    if (!currentRecord) return;
     if (audioRef.current) {
       audioRef.current.pause();
       audioRef.current.currentTime = 0;
     }
 
-    const cleanWord = currentWord.word.trim().toLowerCase();
-    if (missingAudioCache.current.has(cleanWord)) {
+    const rawCandidates = [
+      currentRecord.word_in_sentence,
+      currentRecord.word_id,
+      currentRecord.base_form
+    ].filter(Boolean);
+
+    const candidateUrls: string[] = [];
+    for (const raw of rawCandidates) {
+      const clean = (raw as string).replace(/[.,!?"':;()]/g, '').trim().toLowerCase();
+      if (clean && !missingAudioCache.current.has(clean)) {
+        const url = getMp3PublicUrl(`words_audio/${clean}.mp3`);
+        if (!candidateUrls.includes(url)) {
+          candidateUrls.push(url);
+        }
+      }
+    }
+
+    if (candidateUrls.length === 0) {
       playTTS();
       return;
     }
 
-    if (currentWord.audio) {
-      const url = getMp3PublicUrl(currentWord.audio);
-      const audio = new Audio(url);
-      let hasFallenBack = false;
-
-      const handleFallback = () => {
-        if (hasFallenBack) return;
-        hasFallenBack = true;
-        missingAudioCache.current.add(cleanWord);
+    const tryCandidate = (index: number) => {
+      if (index >= candidateUrls.length) {
         playTTS();
+        return;
+      }
+
+      const url = candidateUrls[index];
+      const audio = new Audio(url);
+      let settled = false;
+
+      const nextCandidate = () => {
+        if (settled) return;
+        settled = true;
+        const match = url.match(/words_audio\/(.+)\.mp3/);
+        if (match && match[1]) missingAudioCache.current.add(match[1]);
+        tryCandidate(index + 1);
       };
 
-      audio.onerror = () => {
-        handleFallback();
-      };
-      audio.play().catch((err) => {
+      audio.onerror = () => nextCandidate();
+      audio.play().catch(err => {
         if (err.name !== 'AbortError') {
-          handleFallback();
+          nextCandidate();
         }
       });
       audioRef.current = audio;
-    } else {
-      playTTS();
-    }
-  }, [currentWord, playTTS]);
+    };
+
+    tryCandidate(0);
+  }, [currentRecord, playTTS]);
 
   const proceedToNext = useCallback(() => {
     if (timerRef.current) clearTimeout(timerRef.current);
