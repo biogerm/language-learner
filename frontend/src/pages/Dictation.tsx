@@ -175,13 +175,19 @@ export default function Dictation() {
   } : null;
 
   const getExampleSentence = () => {
+    let sv = '';
+    let en = '';
+
     if (currentRecord?.sentence && currentRecord.sentence !== currentRecord.word_id && currentRecord.sentence !== currentRecord.word_in_sentence) {
-      return currentRecord.sentence;
+      sv = currentRecord.sentence;
+      en = currentRecord.context_en || currentRecord.sentence_en || '';
+    } else if (currentRecord?.context_sv) {
+      sv = currentRecord.context_sv;
+      en = currentRecord.context_en || currentRecord.sentence_en || '';
     }
-    if (currentRecord?.context_sv) return currentRecord.context_sv;
     
-    // Look in current selected article first!
-    if (courseData && (courseData as any).stages && (currentRecord?.article_id || selectedArticleId) && currentWord?.word) {
+    // Look in current selected article first or search all stages
+    if ((!sv || !en) && courseData && (courseData as any).stages && currentWord?.word) {
       const stages = (courseData as any).stages;
       const targetArticleId = currentRecord?.article_id || selectedArticleId;
       const targetLower = currentWord.word.toLowerCase();
@@ -189,14 +195,146 @@ export default function Dictation() {
       if (currentArt) {
         for (const sItem of currentArt.sentences || []) {
           if (sItem.sv && sItem.sv.toLowerCase().includes(targetLower)) {
-            return sItem.sv;
+            if (!sv) sv = sItem.sv;
+            if (!en) en = sItem.en || '';
+            break;
+          }
+        }
+      }
+      if (!sv) {
+        for (const s of stages) {
+          for (const a of s.articles || []) {
+            for (const sItem of a.sentences || []) {
+              if (sItem.sv && sItem.sv.toLowerCase().includes(targetLower)) {
+                sv = sItem.sv;
+                en = sItem.en || '';
+                break;
+              }
+            }
+            if (sv) break;
+          }
+          if (sv) break;
+        }
+      }
+    }
+    return { sv, en };
+  };
+  const exampleSentenceObj = getExampleSentence();
+  const exampleSentence = exampleSentenceObj.sv;
+  const exampleSentenceEn = exampleSentenceObj.en;
+
+  const renderHighlightedSwedish = (text: string) => {
+    if (!text || !currentRecord) return text;
+    const wordsToHighlight = [
+      currentRecord.word_in_sentence,
+      currentRecord.word_id,
+      currentRecord.base_form,
+      currentWord?.word
+    ].filter(Boolean)
+      .map(w => (w as string).trim())
+      .filter(w => w.length > 0);
+
+    const uniqueWords = Array.from(new Set(wordsToHighlight)).sort((a, b) => b.length - a.length);
+    if (!uniqueWords.length) return text;
+
+    const escaped = uniqueWords.map(w => w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|');
+    const regex = new RegExp(`(?:^|(?<=[^\\p{L}\\p{N}]))(${escaped})(?=[^\\p{L}\\p{N}]|$)`, 'giu');
+
+    const parts: React.ReactNode[] = [];
+    let lastIdx = 0;
+    let match;
+    while ((match = regex.exec(text)) !== null) {
+      if (match.index > lastIdx) {
+        parts.push(text.slice(lastIdx, match.index));
+      }
+      parts.push(
+        <span
+          key={match.index}
+          className="sentence-highlight-sv"
+          style={{
+            color: '#c084fc',
+            backgroundColor: 'rgba(168, 85, 247, 0.22)',
+            padding: '1px 6px',
+            borderRadius: '4px',
+            fontWeight: 700,
+            borderBottom: '2px solid #a855f7'
+          }}
+        >
+          {match[0]}
+        </span>
+      );
+      lastIdx = match.index + match[0].length;
+    }
+    if (lastIdx < text.length) {
+      parts.push(text.slice(lastIdx));
+    }
+    return parts.length ? parts : text;
+  };
+
+  const renderHighlightedEnglish = (text: string) => {
+    if (!text || !currentRecord) return text;
+
+    const rawTerms = [
+      currentRecord.contextual_en,
+      currentRecord.en_translation,
+      currentRecord.en,
+      currentRecord.dict_en,
+      enPrompt
+    ].filter(Boolean);
+
+    const candidates = new Set<string>();
+    for (const raw of rawTerms) {
+      const cleanRaw = raw.replace(/\([^)]*\)/g, '').trim();
+      const parts = cleanRaw.split(/[\/,;\n]+/);
+      for (let p of parts) {
+        p = p.trim().replace(/^(to|a|an|the)\s+/i, '').trim();
+        if (p.length > 1) candidates.add(p);
+        const words = p.split(/\s+/);
+        if (words.length > 1) {
+          for (const w of words) {
+            const cw = w.trim().replace(/^(to|a|an|the)\s+/i, '').trim();
+            if (cw.length > 2) candidates.add(cw);
           }
         }
       }
     }
-    return '';
+
+    const sortedCandidates = Array.from(candidates).sort((a, b) => b.length - a.length);
+    if (!sortedCandidates.length) return text;
+
+    const escaped = sortedCandidates.map(w => w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|');
+    const regex = new RegExp(`(?:^|(?<=[^\\p{L}\\p{N}]))(${escaped})(?=[^\\p{L}\\p{N}]|$)`, 'giu');
+
+    const parts: React.ReactNode[] = [];
+    let lastIdx = 0;
+    let match;
+    while ((match = regex.exec(text)) !== null) {
+      if (match.index > lastIdx) {
+        parts.push(text.slice(lastIdx, match.index));
+      }
+      parts.push(
+        <span
+          key={match.index}
+          className="sentence-highlight-en"
+          style={{
+            color: '#38bdf8',
+            backgroundColor: 'rgba(56, 189, 248, 0.2)',
+            padding: '1px 6px',
+            borderRadius: '4px',
+            fontWeight: 600,
+            borderBottom: '2px solid #38bdf8'
+          }}
+        >
+          {match[0]}
+        </span>
+      );
+      lastIdx = match.index + match[0].length;
+    }
+    if (lastIdx < text.length) {
+      parts.push(text.slice(lastIdx));
+    }
+    return parts.length ? parts : text;
   };
-  const exampleSentence = getExampleSentence();
 
   const getMaskedSentence = () => {
     if (!exampleSentence || !currentRecord) return '';
@@ -214,7 +352,6 @@ export default function Dictation() {
     });
     return masked;
   };
-
 
   const getEnglishTranslation = () => {
     if (currentRecord?.context_en) return currentRecord.context_en;
@@ -316,7 +453,7 @@ export default function Dictation() {
   const triggerAutoAdvance = useCallback(() => {
     const svLen = currentWord?.word?.length || 0;
     const enLen = enDefinition.length;
-    const ctxLen = exampleSentence ? exampleSentence.length : 0;
+    const ctxLen = (exampleSentence ? exampleSentence.length : 0) + (exampleSentenceEn ? exampleSentenceEn.length : 0);
     const totalLen = svLen + enLen + ctxLen;
     const delay = Math.min(10000, Math.max(ctxLen ? 3500 : 2000, 1500 + totalLen * 100));
     
@@ -619,8 +756,25 @@ export default function Dictation() {
               </div>
               <span className="correct-en" id="correct-en">{enPrompt}</span>
               {exampleSentence && (
-                <div id="sentence-display" style={{ marginTop: '0.75rem', fontSize: '1.05rem', color: '#cbd5e1', lineHeight: 1.5, textAlign: 'center' }}>
-                  {exampleSentence}
+                <div 
+                  id="sentence-display" 
+                  style={{ 
+                    marginTop: '1rem', 
+                    padding: '12px 18px', 
+                    background: 'rgba(255, 255, 255, 0.04)', 
+                    borderRadius: '10px', 
+                    border: '1px solid rgba(255, 255, 255, 0.08)',
+                    textAlign: 'center' 
+                  }}
+                >
+                  <div style={{ fontSize: '1.1rem', color: '#f1f5f9', lineHeight: 1.6, fontWeight: 500 }}>
+                    {renderHighlightedSwedish(exampleSentence)}
+                  </div>
+                  {exampleSentenceEn && (
+                    <div id="sentence-en-display" style={{ marginTop: '6px', fontSize: '0.95rem', color: '#94a3b8', lineHeight: 1.5, fontStyle: 'italic' }}>
+                      {renderHighlightedEnglish(exampleSentenceEn)}
+                    </div>
+                  )}
                 </div>
               )}
             </div>
