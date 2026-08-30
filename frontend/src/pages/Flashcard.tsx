@@ -363,12 +363,11 @@ export default function Flashcard() {
   const enDefinition = getEnglishTranslation();
 
   const playAudio = useCallback(() => {
-    if (!currentRecord) return;
-    const targetWord = currentRecord.word_in_sentence || currentRecord.word_id || currentRecord.base_form;
+    const targetWord = currentWord?.word || currentRecord?.word_id || currentRecord?.base_form;
     if (targetWord) {
       playExactWordAudio(targetWord);
     }
-  }, [currentRecord]);
+  }, [currentWord, currentRecord]);
 
   const proceedToNext = useCallback(() => {
     if (timerRef.current) clearTimeout(timerRef.current);
