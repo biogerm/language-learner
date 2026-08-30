@@ -327,24 +327,21 @@ h1, h2, h3, h4 {
 
 /* Extract Vocab Button */
 .extract-vocab-btn {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    background: rgba(15, 23, 42, 0.6);
-    border: 1px solid var(--glass-border);
-    color: var(--text-secondary);
-    padding: 6px;
-    border-radius: 50%;
-    width: 32px;
-    height: 32px;
-    display: flex;
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #f1f5f9;
+    padding: 4px 8px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    font-size: 1rem;
-    cursor: pointer;
-    opacity: 0;
-    transition: all 0.3s ease;
-    z-index: 10;
+    line-height: 1;
+    transition: all 0.18s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+    user-select: none;
+    opacity: 0.85;
 }
 
 .sentence-card:hover .extract-vocab-btn,
@@ -353,9 +350,15 @@ h1, h2, h3, h4 {
 }
 
 .extract-vocab-btn:hover {
-    background: rgba(255, 255, 255, 0.1);
-    color: var(--text-primary);
-    border-color: var(--accent-hover);
+    background: rgba(139, 92, 246, 0.35);
+    border-color: rgba(167, 139, 250, 0.8);
+    color: #ffffff;
+    transform: translateY(-1px) scale(1.15);
+    box-shadow: 0 4px 16px rgba(139, 92, 246, 0.45);
+}
+
+.extract-vocab-btn:active {
+    transform: scale(0.92);
 }
 
 /* Unified Module Selector */
@@ -643,39 +646,6 @@ strong {
 .sentence-card.edit-mode {
     border-color: var(--accent-color);
     box-shadow: 0 0 15px rgba(139, 92, 246, 0.3);
-}
-
-/* Extract Vocab Button */
-.extract-vocab-btn {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    background: rgba(15, 23, 42, 0.6);
-    border: 1px solid var(--glass-border);
-    color: var(--text-secondary);
-    padding: 6px;
-    border-radius: 50%;
-    width: 32px;
-    height: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1rem;
-    cursor: pointer;
-    opacity: 0;
-    transition: all 0.3s ease;
-    z-index: 10;
-}
-
-.sentence-card:hover .extract-vocab-btn,
-.sentence-card.edit-mode .extract-vocab-btn {
-    opacity: 1;
-}
-
-.extract-vocab-btn:hover {
-    background: rgba(255, 255, 255, 0.1);
-    color: var(--text-primary);
-    border-color: var(--accent-hover);
 }
 
 /* Selectable Words */

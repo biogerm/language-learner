@@ -193,77 +193,70 @@ export default function Narration() {
     return sentences;
   }, [courseData, selectedStage, selectedArticleId]);
 
-  // Dictionary lookup helper strictly matching L
+  // Precompute course lemma & translation index once per course load (O(1) lookups instead of nested loops)
+  const courseLemmaMap = useMemo(() => {
+    const map = new Map<string, { baseForm: string; dictEn: string; isGlobalTarget: boolean }>();
+    if (!courseData) return map;
+    const stages: any[] = Array.isArray(courseData.stages) ? courseData.stages : [];
+    for (const stage of stages) {
+      for (const article of stage.articles || []) {
+        for (const s of article.sentences || []) {
+          for (const tw of s.target_words || []) {
+            const inSent = (tw.word_in_sentence || '').toLowerCase();
+            const base = (tw.base_form || '').toLowerCase();
+            const en = tw.en_translation || tw.contextual_en || (base ? (global_dict as Record<string, string>)[base] : '');
+            if (inSent && en && !map.has(inSent)) map.set(inSent, { baseForm: base || inSent, dictEn: en, isGlobalTarget: true });
+            if (base && en && !map.has(base)) map.set(base, { baseForm: base, dictEn: en, isGlobalTarget: true });
+          }
+          for (const sw of s.secondary_words || []) {
+            const inSent = (sw.word_in_sentence || '').toLowerCase();
+            const base = (sw.base_form || '').toLowerCase();
+            const en = sw.en_translation || sw.contextual_en || (base ? (global_dict as Record<string, string>)[base] : '');
+            if (inSent && en && !map.has(inSent)) map.set(inSent, { baseForm: base || inSent, dictEn: en, isGlobalTarget: false });
+            if (base && en && !map.has(base)) map.set(base, { baseForm: base, dictEn: en, isGlobalTarget: false });
+          }
+        }
+      }
+    }
+    return map;
+  }, [courseData]);
+
+  // Fast O(1) in-memory Sets & Maps for instantaneous lookups
+  const excludedSet = useMemo(() => new Set(excludedVocab.map(v => v.toLowerCase())), [excludedVocab]);
+  const fsrsSet = useMemo(() => new Set(fsrsVocab.map(v => v.toLowerCase())), [fsrsVocab]);
+  const customMap = useMemo(() => {
+    const map = new Map<string, CustomVocabEntry>();
+    for (const c of customVocab) {
+      if (c.sv) map.set(c.sv.toLowerCase(), c);
+      if (c.base_form) map.set(c.base_form.toLowerCase(), c);
+      if (c.word_in_sentence) map.set(c.word_in_sentence.toLowerCase(), c);
+    }
+    return map;
+  }, [customVocab]);
+
+  // Dictionary lookup helper strictly matching L (O(1) speed)
   const getKnownTranslation = useCallback((word: string): string => {
     if (!word) return '';
     const cleanW = word.toLowerCase();
     const globalEn = (global_dict as Record<string, string>)[cleanW];
     if (globalEn) return globalEn;
-
-    // Check courseData lemma map -> global_dict
-    if (courseData) {
-      const stages: any[] = Array.isArray(courseData.stages) ? courseData.stages : [];
-      for (const stage of stages) {
-        for (const article of stage.articles || []) {
-          for (const s of article.sentences || []) {
-            const allMeta = [...(s.target_words || []), ...(s.secondary_words || [])];
-            for (const tw of allMeta) {
-              const inSent = (tw.word_in_sentence || '').toLowerCase();
-              const base = (tw.base_form || '').toLowerCase();
-              if (inSent === cleanW || base === cleanW) {
-                if (base && (global_dict as Record<string, string>)[base]) {
-                  return (global_dict as Record<string, string>)[base];
-                }
-              }
-            }
-          }
-        }
-      }
+    const fromCourse = courseLemmaMap.get(cleanW);
+    if (fromCourse?.dictEn) return fromCourse.dictEn;
+    if (fromCourse?.baseForm && (global_dict as Record<string, string>)[fromCourse.baseForm]) {
+      return (global_dict as Record<string, string>)[fromCourse.baseForm];
     }
     return '';
-  }, [courseData]);
+  }, [courseLemmaMap]);
 
-  const getKnownTranslationInfo = useCallback((word: string): { baseForm: string, dictEn: string, isGlobalTarget?: boolean } | null => {
+  const getKnownTranslationInfo = useCallback((word: string): { baseForm: string; dictEn: string; isGlobalTarget?: boolean } | null => {
     if (!word) return null;
     const cleanW = word.toLowerCase();
-
-    if (courseData) {
-      const stages: any[] = Array.isArray(courseData.stages) ? courseData.stages : [];
-      for (const stage of stages) {
-        for (const article of stage.articles || []) {
-          for (const s of article.sentences || []) {
-            const targets = s.target_words || [];
-            for (const tw of targets) {
-              const inSent = (tw.word_in_sentence || '').toLowerCase();
-              const base = (tw.base_form || '').toLowerCase();
-              if (inSent === cleanW || base === cleanW) {
-                const en = tw.en_translation || tw.contextual_en || (base ? (global_dict as Record<string, string>)[base] : '');
-                if (en) {
-                  return { baseForm: base || cleanW, dictEn: en, isGlobalTarget: true };
-                }
-              }
-            }
-            const secondaries = s.secondary_words || [];
-            for (const sw of secondaries) {
-              const inSent = (sw.word_in_sentence || '').toLowerCase();
-              const base = (sw.base_form || '').toLowerCase();
-              if (inSent === cleanW || base === cleanW) {
-                const en = sw.en_translation || sw.contextual_en || (base ? (global_dict as Record<string, string>)[base] : '');
-                if (en) {
-                  return { baseForm: base || cleanW, dictEn: en, isGlobalTarget: false };
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-
+    const fromCourse = courseLemmaMap.get(cleanW);
+    if (fromCourse) return fromCourse;
     const globalEn = (global_dict as Record<string, string>)[cleanW];
     if (globalEn) return { baseForm: cleanW, dictEn: globalEn, isGlobalTarget: false };
-
     return null;
-  }, [courseData]);
+  }, [courseLemmaMap]);
 
   const stopPlayback = useCallback(() => {
     if (audioRef.current) {
@@ -326,9 +319,6 @@ export default function Narration() {
     const sent = sentencesArray[sentenceIndex];
     if (!sent) return;
 
-    const storedCustom = customVocab;
-    const storedEx = excludedVocab;
-    const storedFsrs = fsrsVocab;
     const svText = sent.sv || '';
 
     // 1. Gather all structured positioned words (targets, secondaries, and custom phrases)
@@ -363,7 +353,7 @@ export default function Narration() {
     });
 
     // Check custom vocab words that might be multi-word phrases or positioned in this sentence
-    storedCustom.forEach(cv => {
+    customVocab.forEach((cv: any) => {
       const cleanCv = (cv.sv || '').toLowerCase();
       const cleanWordInSent = (cv.word_in_sentence || '').toLowerCase();
       const cleanBase = (cv.base_form || '').toLowerCase();
@@ -437,11 +427,9 @@ export default function Narration() {
         }
 
         const cleanWordLower = cleanWord.toLowerCase();
-        const customObj = storedCustom.find(cv =>
-          cleanWordLower === cv.sv || cleanWordLower === cv.base_form || cleanWordLower === cv.word_in_sentence
-        );
+        const customObj = customMap.get(cleanWordLower);
         const isCustom = !!customObj;
-        const isInFsrs = storedFsrs.includes(cleanWordLower);
+        const isInFsrs = fsrsSet.has(cleanWordLower);
 
         if (isCustom) {
           const baseForm = customObj?.base_form || cleanWord;
@@ -485,12 +473,9 @@ export default function Narration() {
       const baseForm = w.base_form || cleanPhrase;
       const baseFormLower = baseForm.toLowerCase();
 
-      const isExcluded = storedEx.includes(baseFormLower) || storedEx.includes(cleanWordLower);
-      const isCustom = storedCustom.some(cv =>
-        cv.sv === cleanWordLower || cv.base_form === cleanWordLower || cv.word_in_sentence === cleanWordLower ||
-        cv.sv === baseFormLower || cv.base_form === baseFormLower
-      );
-      const isInFsrs = storedFsrs.includes(cleanWordLower) || storedFsrs.includes(baseFormLower);
+      const isExcluded = excludedSet.has(baseFormLower) || excludedSet.has(cleanWordLower);
+      const isCustom = customMap.has(cleanWordLower) || customMap.has(baseFormLower);
+      const isInFsrs = fsrsSet.has(cleanWordLower) || fsrsSet.has(baseFormLower);
 
       let initiallySelected = false;
       if (w.type === 'target') {
@@ -527,46 +512,46 @@ export default function Narration() {
     setHasChanged(false);
   }, [sentencesArray, stopPlayback, selectedStage, selectedArticleId, courseId]);
 
-  // Karaoke Animation on Entering Edit Mode (replicating L)
+  // Karaoke Animation on Entering Edit Mode (smooth, non-blocking)
   useEffect(() => {
     if (editModeIndex === null) return;
     const container = sentenceRefs.current[editModeIndex];
     if (!container) return;
 
     const words = container.querySelectorAll('.selectable-word');
-    words.forEach((w, i) => {
-      const htmlEl = w as HTMLElement;
-      const t = htmlEl.dataset.type;
-      const isGlobal = htmlEl.dataset.isglobaltarget === 'true';
-      if (t === 'target') {
-        htmlEl.style.setProperty('--k-bg', 'var(--accent, #8b5cf6)');
-        htmlEl.style.setProperty('--k-color', 'white');
-        htmlEl.style.setProperty('--k-border', 'none');
-      } else if (t === 'secondary') {
-        htmlEl.style.setProperty('--k-bg', '#3b82f6');
-        htmlEl.style.setProperty('--k-color', 'white');
-        htmlEl.style.setProperty('--k-border', 'none');
-      } else if (isGlobal) {
-        htmlEl.style.setProperty('--k-bg', '#a855f7');
-        htmlEl.style.setProperty('--k-color', 'white');
-        htmlEl.style.setProperty('--k-border', '1px dashed #e9d5ff');
-      } else if (t === 'custom') {
-        htmlEl.style.setProperty('--k-bg', '#10b981');
-        htmlEl.style.setProperty('--k-color', 'white');
-        htmlEl.style.setProperty('--k-border', 'none');
-      } else {
-        htmlEl.style.setProperty('--k-bg', 'transparent');
-        htmlEl.style.setProperty('--k-color', 'var(--text, #e2e8f0)');
-        htmlEl.style.setProperty('--k-border', '1px dashed var(--text-mute, #94a3b8)');
-      }
+    requestAnimationFrame(() => {
+      words.forEach((w, i) => {
+        const htmlEl = w as HTMLElement;
+        const t = htmlEl.dataset.type;
+        const isGlobal = htmlEl.dataset.isglobaltarget === 'true';
+        if (t === 'target') {
+          htmlEl.style.setProperty('--k-bg', 'var(--accent, #8b5cf6)');
+          htmlEl.style.setProperty('--k-color', 'white');
+          htmlEl.style.setProperty('--k-border', 'none');
+        } else if (t === 'secondary') {
+          htmlEl.style.setProperty('--k-bg', '#3b82f6');
+          htmlEl.style.setProperty('--k-color', 'white');
+          htmlEl.style.setProperty('--k-border', 'none');
+        } else if (isGlobal) {
+          htmlEl.style.setProperty('--k-bg', '#a855f7');
+          htmlEl.style.setProperty('--k-color', 'white');
+          htmlEl.style.setProperty('--k-border', '1px dashed #e9d5ff');
+        } else if (t === 'custom') {
+          htmlEl.style.setProperty('--k-bg', '#10b981');
+          htmlEl.style.setProperty('--k-color', 'white');
+          htmlEl.style.setProperty('--k-border', 'none');
+        } else {
+          htmlEl.style.setProperty('--k-bg', 'transparent');
+          htmlEl.style.setProperty('--k-color', 'var(--text, #e2e8f0)');
+          htmlEl.style.setProperty('--k-border', '1px dashed var(--text-mute, #94a3b8)');
+        }
 
-      htmlEl.style.animationDelay = `${i * 35}ms`;
-      htmlEl.classList.remove('karaoke-anim');
-      void htmlEl.offsetWidth;
-      htmlEl.classList.add('karaoke-anim');
+        htmlEl.style.animationDelay = `${i * 35}ms`;
+        htmlEl.classList.add('karaoke-anim');
+      });
     });
 
-    const totalDuration = words.length * 35 + 500;
+    const totalDuration = words.length * 35 + 400;
     const timeoutId = window.setTimeout(() => {
       words.forEach(w => {
         const htmlEl = w as HTMLElement;
@@ -581,7 +566,7 @@ export default function Narration() {
     return () => clearTimeout(timeoutId);
   }, [editModeIndex]);
 
-  // Click Word in Edit Mode (Strictly replicating L's logic)
+  // Click Word in Edit Mode (Strictly replicating L's logic, instantaneous 0ms)
   const handleWordClickInEdit = (tIdx: number) => {
     setEditingTokens(prev => {
       const updated = prev.map((t, idx) => {
@@ -627,21 +612,20 @@ export default function Narration() {
     });
   };
 
-  // Cancel Edit Mode
+  // Cancel Edit Mode (instantaneous 0ms)
   const handleCancelEdit = () => {
     setEditModeIndex(null);
     setEditingTokens([]);
     setHasChanged(false);
   };
 
-  // Save Vocab (Strictly replicating L's saveVocab)
-  const handleSaveVocab = async () => {
+  // Save Vocab (Strictly replicating L's saveVocab, instantaneous 0ms)
+  const handleSaveVocab = () => {
     if (editModeIndex === null) return;
     const sent = sentencesArray[editModeIndex];
     if (!sent) return;
 
-    const exInDb = await db.excluded_dictionary.toArray();
-    let updatedEx = exInDb.map(r => r.base_form.toLowerCase());
+    let updatedEx = [...excludedVocab];
     let updatedCustom = [...customVocab];
     const missingQueueItems: MissingVocabItem[] = [];
 
@@ -961,107 +945,104 @@ export default function Narration() {
     }
   };
 
-  // Extract and position words for Reading Mode (Swedish & English)
-  const getSentenceWords = (sent: any, sentIdx: number) => {
-    const svText = sent.sv || '';
-    let allWords: any[] = [];
+  // Precompute positioned words for all sentences in the active article (O(1) instantaneous access during render)
+  const articleWordsMap = useMemo(() => {
+    return sentencesArray.map((sent: any, sentIdx: number) => {
+      const svText = sent.sv || '';
+      let allWords: any[] = [];
 
-    if (sent.target_words) {
-      allWords.push(...sent.target_words.map((w: any) => ({ ...w, type: 'target' })));
-    }
-    if (sent.secondary_words) {
-      allWords.push(...sent.secondary_words.map((sw: any) => {
-        const isCustom = customVocab.some(cv => {
-          const cleanCv = (cv.sv || '').toLowerCase();
-          const cleanBase = (cv.baseForm || cv.base_form || '').toLowerCase();
-          const cleanInSent = (cv.word_in_sentence || '').toLowerCase();
-          const targetW = (sw.base_form || sw.word_in_sentence || '').toLowerCase();
-          return targetW === cleanCv || targetW === cleanBase || targetW === cleanInSent;
-        });
-        return {
-          ...sw,
-          type: 'secondary',
-          isSelectedSecondary: isCustom
-        };
-      }));
-    }
-
-    // Filter out excluded target words and words already in active FSRS review schedule
-    allWords = allWords.filter(w => {
-      const base = (w.base_form || '').toLowerCase();
-      const inSent = (w.word_in_sentence || '').toLowerCase();
-      if (w.type === 'target') {
-        const isEx = (base && excludedVocab.includes(base)) || (inSent && excludedVocab.includes(inSent));
-        const isInFsrs = (base && fsrsVocab.includes(base)) || (inSent && fsrsVocab.includes(inSent));
-        return !isEx && !isInFsrs;
+      if (sent.target_words) {
+        allWords.push(...sent.target_words.map((w: any) => ({ ...w, type: 'target' })));
       }
-      return true;
-    });
+      if (sent.secondary_words) {
+        allWords.push(...sent.secondary_words.map((sw: any) => {
+          const targetW = (sw.base_form || sw.word_in_sentence || '').toLowerCase();
+          const isCustom = customMap.has(targetW);
+          return {
+            ...sw,
+            type: 'secondary',
+            isSelectedSecondary: isCustom
+          };
+        }));
+      }
 
-    // Custom vocab words that belong to this article/sentence (plain words added by user)
-    customVocab.forEach(cv => {
-      const cleanCv = (cv.sv || '').toLowerCase();
-      const cleanWordInSent = (cv.word_in_sentence || '').toLowerCase();
-      const cleanBase = (cv.base_form || cv.baseForm || '').toLowerCase();
-      const alreadyIn = allWords.some(w => {
-        const targetW = (w.base_form || w.word_in_sentence || '').toLowerCase();
-        return targetW === cleanCv || targetW === cleanWordInSent || targetW === cleanBase;
+      // Filter out excluded target words and words already in active FSRS review schedule
+      allWords = allWords.filter(w => {
+        const base = (w.base_form || '').toLowerCase();
+        const inSent = (w.word_in_sentence || '').toLowerCase();
+        if (w.type === 'target') {
+          const isEx = (base && excludedSet.has(base)) || (inSent && excludedSet.has(inSent));
+          const isInFsrs = (base && fsrsSet.has(base)) || (inSent && fsrsSet.has(inSent));
+          return !isEx && !isInFsrs;
+        }
+        return true;
       });
-      if (!alreadyIn) {
-        const searchWords = [cv.word_in_sentence, cv.base_form, cv.baseForm, cv.sv].filter(Boolean) as string[];
-        const uniqueSearchWords = Array.from(new Set(searchWords));
-        for (const searchWord of uniqueSearchWords) {
-          const escaped = searchWord.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
-          const regex = new RegExp(`(?<![\\p{L}\\p{N}])${escaped}(?![\\p{L}\\p{N}])`, 'gui');
-          let match;
-          while ((match = regex.exec(svText)) !== null) {
-            const start = match.index;
-            const end = match.index + match[0].length;
-            const overlaps = allWords.some(w => w.position_start !== undefined && w.position_end !== undefined && !(end <= w.position_start || start >= w.position_end));
-            if (!overlaps) {
-              allWords.push({
-                base_form: cv.baseForm || cv.base_form || cv.sv,
-                word_in_sentence: match[0],
-                contextual_en: cv.en || '',
-                position_start: start,
-                position_end: end,
-                type: (cv.isGlobalTarget || cv.is_global_target) ? 'global_target' : 'custom'
+
+      // Custom vocab words that belong to this article/sentence (plain words added by user)
+      customVocab.forEach(cv => {
+        const cleanCv = (cv.sv || '').toLowerCase();
+        const cleanWordInSent = (cv.word_in_sentence || '').toLowerCase();
+        const cleanBase = (cv.base_form || cv.baseForm || '').toLowerCase();
+        const alreadyIn = allWords.some(w => {
+          const targetW = (w.base_form || w.word_in_sentence || '').toLowerCase();
+          return targetW === cleanCv || targetW === cleanWordInSent || targetW === cleanBase;
+        });
+        if (!alreadyIn) {
+          const searchWords = [cv.word_in_sentence, cv.base_form, cv.baseForm, cv.sv].filter(Boolean) as string[];
+          const uniqueSearchWords = Array.from(new Set(searchWords));
+          for (const searchWord of uniqueSearchWords) {
+            const escaped = searchWord.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
+            const regex = new RegExp(`(?<![\\p{L}\\p{N}])${escaped}(?![\\p{L}\\p{N}])`, 'gui');
+            let match;
+            while ((match = regex.exec(svText)) !== null) {
+              const start = match.index;
+              const end = match.index + match[0].length;
+              const overlaps = allWords.some(w => w.position_start !== undefined && w.position_end !== undefined && !(end <= w.position_start || start >= w.position_end));
+              if (!overlaps) {
+                allWords.push({
+                  base_form: cv.baseForm || cv.base_form || cv.sv,
+                  word_in_sentence: match[0],
+                  contextual_en: cv.en || '',
+                  position_start: start,
+                  position_end: end,
+                  type: (cv.isGlobalTarget || cv.is_global_target) ? 'global_target' : 'custom'
+                });
+              }
+            }
+          }
+        }
+      });
+
+      // Resolve positions for any words missing position_start/position_end
+      const positionedWords: any[] = [];
+      allWords.forEach(w => {
+        if (w.position_start !== undefined && w.position_end !== undefined) {
+          positionedWords.push(w);
+        } else {
+          const searchWord = w.word_in_sentence || w.base_form || '';
+          if (searchWord) {
+            const escaped = searchWord.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
+            const regex = new RegExp(`(?<![\\p{L}\\p{N}])${escaped}(?![\\p{L}\\p{N}])`, 'gui');
+            const match = regex.exec(svText);
+            if (match) {
+              positionedWords.push({
+                ...w,
+                position_start: match.index,
+                position_end: match.index + match[0].length
               });
             }
           }
         }
-      }
-    });
+      });
 
-    // Resolve positions for any words missing position_start/position_end
-    const positionedWords: any[] = [];
-    allWords.forEach(w => {
-      if (w.position_start !== undefined && w.position_end !== undefined) {
-        positionedWords.push(w);
-      } else {
-        const searchWord = w.word_in_sentence || w.base_form || '';
-        if (searchWord) {
-          const escaped = searchWord.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
-          const regex = new RegExp(`(?<![\\p{L}\\p{N}])${escaped}(?![\\p{L}\\p{N}])`, 'gui');
-          const match = regex.exec(svText);
-          if (match) {
-            positionedWords.push({
-              ...w,
-              position_start: match.index,
-              position_end: match.index + match[0].length
-            });
-          }
-        }
-      }
-    });
+      positionedWords.sort((a, b) => a.position_start - b.position_start);
+      positionedWords.forEach((w, idx) => {
+        w._syncId = `sync-${sent.sentence_id || sent.id || sentIdx}-${idx}`;
+      });
 
-    positionedWords.sort((a, b) => a.position_start - b.position_start);
-    positionedWords.forEach((w, idx) => {
-      w._syncId = `sync-${sent.sentence_id || sent.id || sentIdx}-${idx}`;
+      return positionedWords;
     });
-
-    return positionedWords;
-  };
+  }, [sentencesArray, customMap, customVocab, excludedSet, fsrsSet]);
 
   // Render Swedish text with highlights in Reading Mode (matching L)
   const renderReadingSwedish = (sent: any, sentIdx: number, positionedWords: any[]) => {
@@ -1198,7 +1179,7 @@ export default function Narration() {
             const isActive = i === activeIndex;
             const isEditing = editModeIndex === i;
             const isPlaying = playingIndex === i;
-            const sentWords = !isEditing ? getSentenceWords(sent, i) : [];
+            const sentWords = !isEditing ? (articleWordsMap[i] || []) : [];
 
             return (
               <article
@@ -1301,16 +1282,6 @@ export default function Narration() {
                     <button
                       className="extract-vocab-btn"
                       title="Edit Vocabulary"
-                      style={{
-                        background: 'transparent',
-                        border: 'none',
-                        fontSize: '1.3rem',
-                        cursor: 'pointer',
-                        padding: '4px 8px',
-                        borderRadius: '6px',
-                        transition: 'transform 0.2s',
-                        lineHeight: 1
-                      }}
                       onClick={(e) => {
                         e.stopPropagation();
                         enterEditMode(i);
