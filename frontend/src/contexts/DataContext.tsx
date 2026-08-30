@@ -39,10 +39,14 @@ export function DataProvider({ children }: { children: ReactNode }) {
   const [customDictionary, setCustomDictionary] = useState<WordObject[]>([]);
   const [excludedVocab, setExcludedVocab] = useState<string[]>([]);
 
-  // Initialize client settings from Dexie local_settings (default appMode to 'study')
+  // Initialize client settings from Dexie local_settings (persists mode across page refreshes)
   useEffect(() => {
     (async () => {
       try {
+        const mode = await db.local_settings.get('appMode');
+        if (mode && (mode.value === 'study' || mode.value === 'review')) {
+          setAppModeState(mode.value);
+        }
         const stage = await db.local_settings.get('selectedStage');
         if (stage && typeof stage.value === 'string') {
           setSelectedStageState(stage.value);
