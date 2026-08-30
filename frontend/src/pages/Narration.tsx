@@ -4,6 +4,7 @@ import { useData } from '../contexts/DataContext';
 import { getMp3PublicUrl } from '../services/r2';
 import { db, type WordObject } from '../db/dexie';
 import { global_dict } from '../data/global_dict';
+import { playExactWordAudio } from '../utils/sound';
 
 interface MissingVocabItem {
   sv: string;
@@ -262,85 +263,9 @@ export default function Narration() {
     audio.play().catch(console.error);
   }, [activeIndex, stopPlayback]);
 
-  const missingWordAudioCache = useRef<Set<string>>(new Set());
-
-  const playWordTTS = useCallback((word: string) => {
-    if ('speechSynthesis' in window) {
-      if (window.speechSynthesis.speaking || window.speechSynthesis.pending) {
-        window.speechSynthesis.cancel();
-      }
-
-      setTimeout(() => {
-        if (window.speechSynthesis.paused) {
-          window.speechSynthesis.resume();
-        }
-        const utterance = new SpeechSynthesisUtterance(word);
-        utterance.lang = 'sv-SE';
-        utterance.rate = 0.9;
-
-        const voices = window.speechSynthesis.getVoices();
-        const svVoice = voices.find(v => v.lang && (v.lang.startsWith('sv') || v.lang.includes('Swedish')));
-        if (svVoice) {
-          utterance.voice = svVoice;
-        }
-
-        (window as any)._activeUtterance = utterance;
-        utterance.onend = () => { (window as any)._activeUtterance = null; };
-        utterance.onerror = () => { (window as any)._activeUtterance = null; };
-
-        window.speechSynthesis.speak(utterance);
-      }, 25);
-    }
+  const playWordAudio = useCallback((word: string) => {
+    playExactWordAudio(word);
   }, []);
-
-  const playWordAudio = useCallback((word: string, fallbackBase?: string) => {
-    if (wordAudioRef.current) {
-      wordAudioRef.current.pause();
-      wordAudioRef.current.currentTime = 0;
-    }
-    const cleanWord = decodeURIComponent(word).toLowerCase().trim().replace(/[.,!?"':;()]/g, '');
-    const cleanFallback = fallbackBase ? decodeURIComponent(fallbackBase).toLowerCase().trim().replace(/[.,!?"':;()]/g, '') : '';
-
-    const candidateUrls: string[] = [];
-    if (cleanWord && !missingWordAudioCache.current.has(cleanWord)) {
-      candidateUrls.push(getMp3PublicUrl(`words_audio/${cleanWord}.mp3`));
-    }
-    if (cleanFallback && cleanFallback !== cleanWord && !missingWordAudioCache.current.has(cleanFallback)) {
-      candidateUrls.push(getMp3PublicUrl(`words_audio/${cleanFallback}.mp3`));
-    }
-
-    if (candidateUrls.length === 0) {
-      playWordTTS(cleanWord || word);
-      return;
-    }
-
-    const tryCandidate = (index: number) => {
-      if (index >= candidateUrls.length) {
-        playWordTTS(cleanWord || word);
-        return;
-      }
-
-      const url = candidateUrls[index];
-      const audio = new Audio(url);
-      let settled = false;
-
-      const nextCandidate = () => {
-        if (settled) return;
-        settled = true;
-        const match = url.match(/words_audio\/(.+)\.mp3/);
-        if (match && match[1]) missingWordAudioCache.current.add(match[1]);
-        tryCandidate(index + 1);
-      };
-
-      audio.onerror = () => nextCandidate();
-      audio.play().catch(err => {
-        if (err.name !== 'AbortError') nextCandidate();
-      });
-      wordAudioRef.current = audio;
-    };
-
-    tryCandidate(0);
-  }, [playWordTTS]);
 
   // Keyboard navigation
   useEffect(() => {

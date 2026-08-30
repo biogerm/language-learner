@@ -2,12 +2,12 @@ import { useState, useEffect, useRef, useCallback } from 'react';
 import { useParams } from 'react-router-dom';
 import { db } from '../db/dexie';
 import { submitGatePass, getFSRSStats } from '../utils/fsrs';
-import { getMp3PublicUrl } from '../services/r2';
 import { useData } from '../contexts/DataContext';
 import { useAuth } from '../contexts/AuthContext';
 import { supabase } from '../services/supabase';
 import { formatWordPrompt } from '../utils/format';
 import { buildStudyQueue } from '../utils/queueBuilder';
+import { playExactWordAudio } from '../utils/sound';
 
 export default function Dictation() {
   const { courseId } = useParams();
@@ -27,7 +27,6 @@ export default function Dictation() {
   const [timerFill, setTimerFill] = useState('0%');
   const [stats, setStats] = useState<{ total: number; mastered: number; remaining: number; inFsrsCount?: number }>({ total: 0, mastered: 0, remaining: 0, inFsrsCount: 0 });
 
-  const audioRef = useRef<HTMLAudioElement | null>(null);
   const inputRef = useRef<HTMLInputElement | null>(null);
   const timerRef = useRef<any>(null);
   const intervalRef = useRef<any>(null);
@@ -365,97 +364,13 @@ export default function Dictation() {
   };
   const enDefinition = getEnglishTranslation();
 
-  const missingAudioCache = useRef<Set<string>>(new Set());
-
-  const playTTS = useCallback((textToSpeak?: string) => {
-    const wordText = textToSpeak || currentRecord?.word_in_sentence || currentRecord?.word_id || currentRecord?.base_form;
-    if (!wordText) return;
-    if ('speechSynthesis' in window) {
-      if (window.speechSynthesis.speaking || window.speechSynthesis.pending) {
-        window.speechSynthesis.cancel();
-      }
-
-      setTimeout(() => {
-        if (window.speechSynthesis.paused) {
-          window.speechSynthesis.resume();
-        }
-        const utterance = new SpeechSynthesisUtterance(wordText);
-        utterance.lang = 'sv-SE';
-        utterance.rate = 0.9;
-
-        const voices = window.speechSynthesis.getVoices();
-        const svVoice = voices.find(v => v.lang && (v.lang.startsWith('sv') || v.lang.includes('Swedish')));
-        if (svVoice) {
-          utterance.voice = svVoice;
-        }
-
-        (window as any)._activeUtterance = utterance;
-        utterance.onend = () => { (window as any)._activeUtterance = null; };
-        utterance.onerror = () => { (window as any)._activeUtterance = null; };
-
-        window.speechSynthesis.speak(utterance);
-      }, 25);
-    }
-  }, [currentRecord]);
-
   const playAudio = useCallback(() => {
     if (!currentRecord) return;
-    if (audioRef.current) {
-      audioRef.current.pause();
-      audioRef.current.currentTime = 0;
+    const targetWord = currentRecord.word_in_sentence || currentRecord.word_id || currentRecord.base_form;
+    if (targetWord) {
+      playExactWordAudio(targetWord);
     }
-
-    const rawCandidates = [
-      currentRecord.word_in_sentence,
-      currentRecord.word_id,
-      currentRecord.base_form
-    ].filter(Boolean);
-
-    const candidateUrls: string[] = [];
-    for (const raw of rawCandidates) {
-      const clean = (raw as string).replace(/[.,!?"':;()]/g, '').trim().toLowerCase();
-      if (clean && !missingAudioCache.current.has(clean)) {
-        const url = getMp3PublicUrl(`words_audio/${clean}.mp3`);
-        if (!candidateUrls.includes(url)) {
-          candidateUrls.push(url);
-        }
-      }
-    }
-
-    if (candidateUrls.length === 0) {
-      playTTS();
-      return;
-    }
-
-    const tryCandidate = (index: number) => {
-      if (index >= candidateUrls.length) {
-        playTTS();
-        return;
-      }
-
-      const url = candidateUrls[index];
-      const audio = new Audio(url);
-      let settled = false;
-
-      const nextCandidate = () => {
-        if (settled) return;
-        settled = true;
-        const match = url.match(/words_audio\/(.+)\.mp3/);
-        if (match && match[1]) missingAudioCache.current.add(match[1]);
-        tryCandidate(index + 1);
-      };
-
-      audio.onerror = () => nextCandidate();
-      audio.play().catch(err => {
-        if (err.name !== 'AbortError') {
-          nextCandidate();
-        }
-      });
-      audioRef.current = audio;
-    };
-
-    tryCandidate(0);
-  }, [currentRecord, playTTS]);
+  }, [currentRecord]);
 
   const proceedToNext = useCallback(() => {
     if (timerRef.current) clearTimeout(timerRef.current);
