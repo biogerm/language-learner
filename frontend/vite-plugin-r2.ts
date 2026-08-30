@@ -82,6 +82,37 @@ export default function r2ProxyPlugin() {
               res.end('Internal Server Error');
             }
           }
+        } else if (req.url?.startsWith('/api/tts')) {
+          try {
+            const parsed = new URL(req.url, 'http://localhost:5173');
+            const text = parsed.searchParams.get('text') || '';
+            if (!text) {
+              res.statusCode = 400;
+              return res.end('Missing text parameter');
+            }
+
+            const ttsUrl = 'https://translate.google.com/translate_tts?ie=UTF-8&tl=sv&client=tw-ob&q=' + encodeURIComponent(text);
+            const https = await import('https');
+            const proxyReq = https.get(ttsUrl, {
+              rejectUnauthorized: false,
+              headers: {
+                'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)'
+              }
+            }, (proxyRes) => {
+              res.setHeader('Content-Type', 'audio/mpeg');
+              res.setHeader('Cache-Control', 'public, max-age=86400');
+              proxyRes.pipe(res);
+            });
+
+            proxyReq.on('error', (err) => {
+              console.error('TTS Proxy Error:', err.message);
+              res.statusCode = 500;
+              res.end('TTS Proxy Error');
+            });
+          } catch (e: any) {
+            res.statusCode = 500;
+            res.end('TTS Error');
+          }
         } else {
           next();
         }
