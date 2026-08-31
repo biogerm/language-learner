@@ -152,25 +152,27 @@ export default function Narration() {
     loadVocabStorage();
   }, [loadVocabStorage]);
 
+  const recordReadingPosition = useCallback((sentenceObj: any, index: number) => {
+    setActiveIndex(index);
+    if (sentenceObj) {
+      const sId = sentenceObj.sentence_id || sentenceObj.id;
+      if (sId) {
+        try {
+          localStorage.setItem('lastReadSentence', sId);
+          if (selectedArticleId) {
+            localStorage.setItem(`lastReadSentence_${courseId || 'sfid'}_${selectedArticleId}`, sId);
+          }
+        } catch {}
+      }
+    }
+  }, [courseId, selectedArticleId]);
+
   useEffect(() => {
     if (courseId) {
       setLoading(true);
       loadCourse(courseId).finally(() => setLoading(false));
     }
   }, [courseId, loadCourse]);
-
-  useEffect(() => {
-    setActiveIndex(0);
-    setEditModeIndex(null);
-    setEditingTokens([]);
-    setHasChanged(false);
-  }, [selectedArticleId]);
-
-  useEffect(() => {
-    if (sentenceRefs.current[activeIndex]) {
-      sentenceRefs.current[activeIndex]?.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    }
-  }, [activeIndex]);
 
   const sentencesArray = useMemo(() => {
     if (!courseData || !selectedStage || !selectedArticleId) return [];
@@ -192,6 +194,40 @@ export default function Narration() {
     }
     return sentences;
   }, [courseData, selectedStage, selectedArticleId]);
+
+  // Restore and remember last read sentence position upon load and refresh (matching L)
+  useEffect(() => {
+    setEditModeIndex(null);
+    setEditingTokens([]);
+    setHasChanged(false);
+
+    if (!sentencesArray || sentencesArray.length === 0) {
+      setActiveIndex(0);
+      return;
+    }
+
+    const savedId =
+      (selectedArticleId ? localStorage.getItem(`lastReadSentence_${courseId || 'sfid'}_${selectedArticleId}`) : null) ||
+      localStorage.getItem('lastReadSentence');
+
+    if (savedId) {
+      const foundIdx = sentencesArray.findIndex((s: any) => (s.sentence_id || s.id) === savedId);
+      if (foundIdx !== -1) {
+        setActiveIndex(foundIdx);
+        return;
+      }
+    }
+    setActiveIndex(0);
+  }, [selectedArticleId, sentencesArray, courseId]);
+
+  useEffect(() => {
+    if (sentenceRefs.current[activeIndex]) {
+      const timer = setTimeout(() => {
+        sentenceRefs.current[activeIndex]?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }, 50);
+      return () => clearTimeout(timer);
+    }
+  }, [activeIndex, selectedArticleId]);
 
   // Precompute course lemma & translation index once per course load (O(1) lookups instead of nested loops)
   const courseLemmaMap = useMemo(() => {
@@ -296,14 +332,15 @@ export default function Narration() {
         const nextIdx = e.shiftKey
           ? Math.max(activeIndex - 1, 0)
           : Math.min(activeIndex + 1, (sentencesArray?.length || 1) - 1);
-        setActiveIndex(nextIdx);
         if (sentencesArray?.[nextIdx]) {
+          recordReadingPosition(sentencesArray[nextIdx], nextIdx);
           const sId = sentencesArray[nextIdx].sentence_id || sentencesArray[nextIdx].id;
           playAudio(`sentences_audio/${sId}.mp3`, nextIdx);
         }
       } else if (e.key === 'Enter') {
         e.preventDefault();
         if (sentencesArray?.[activeIndex]) {
+          recordReadingPosition(sentencesArray[activeIndex], activeIndex);
           const sId = sentencesArray[activeIndex].sentence_id || sentencesArray[activeIndex].id;
           playAudio(`sentences_audio/${sId}.mp3`, activeIndex);
         }
@@ -311,7 +348,7 @@ export default function Narration() {
     };
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [sentencesArray, activeIndex, playAudio, editModeIndex, missingIndex]);
+  }, [sentencesArray, activeIndex, playAudio, editModeIndex, missingIndex, recordReadingPosition]);
 
   // Enter Edit Mode on a specific sentence (instant 0ms response)
   const enterEditMode = useCallback((sentenceIndex: number) => {
@@ -1206,7 +1243,7 @@ export default function Narration() {
                   if (isPlaying) {
                     stopPlayback();
                   } else {
-                    setActiveIndex(i);
+                    recordReadingPosition(sent, i);
                     const sId = sent.sentence_id || sent.id;
                     playAudio(`sentences_audio/${sId}.mp3`, i);
                   }
