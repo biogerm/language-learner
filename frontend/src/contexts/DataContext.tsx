@@ -438,7 +438,8 @@ export function DataProvider({ children }: { children: ReactNode }) {
                
                if (local) {
                    const localUpdated = local.updated_at ? new Date(local.updated_at).getTime() : 0;
-                   if (!local.synced && localUpdated > remoteUpdated) continue;
+                   // Never overwrite unsynced local changes, regardless of timestamp (prevents clock skew bugs)
+                   if (!local.synced) continue;
                    
                    await db.learning_queue.update(local.id!, {
                        dictation_passed: remote.dictation_passed,
