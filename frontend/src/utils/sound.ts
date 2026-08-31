@@ -86,9 +86,6 @@ export const playAppleWebSpeech = (word: string, voice = 'Alva (Premium)'): Prom
   });
 };
 
-/**
- * Play via Google Cloud TTS Audio Stream (/api/tts)
- */
 export const playGoogleTTSStream = (word: string): Promise<{ ok: boolean; error?: string }> => {
   return new Promise((resolve) => {
     const cleanText = (word || '').replace(/[!?"'.,:;()]/g, ' ').trim();
@@ -113,14 +110,16 @@ export const playGoogleTTSStream = (word: string): Promise<{ ok: boolean; error?
     audio.onerror = () => {
       if (!settled) {
         settled = true;
-        resolve({ ok: false, error: 'Failed to load TTS audio stream' });
+        const spoken = playAppleNativeWebSpeech(cleanText);
+        resolve({ ok: spoken, error: spoken ? undefined : 'Failed to load TTS' });
       }
     };
 
-    audio.play().catch((e) => {
+    audio.play().catch(() => {
       if (!settled) {
         settled = true;
-        resolve({ ok: false, error: e.message });
+        const spoken = playAppleNativeWebSpeech(cleanText);
+        resolve({ ok: spoken });
       }
     });
   });
@@ -167,8 +166,12 @@ export const playStudioR2 = (word: string): Promise<{ ok: boolean; error?: strin
 };
 
 export const playSwedishTTS = (word: string) => {
-  // Default: Native Apple Alva (Premium) / iOS Native WebKit, with cloud fallback
-  playAppleWebSpeech(word, 'Alva (Premium)');
+  // Try Google TTS stream first, then fallback to Web Speech API
+  playGoogleTTSStream(word).then((res) => {
+    if (!res.ok) {
+      playAppleNativeWebSpeech(word);
+    }
+  });
 };
 
 /**
