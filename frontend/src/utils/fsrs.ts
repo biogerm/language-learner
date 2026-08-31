@@ -184,18 +184,13 @@ export async function submitGatePass(
     }
 
     const todayStr = new Date().toDateString();
-    if (progress.todayDictationPassed || progress.todayFlashcardPassed) {
-        if (!progress.lastGatePassDate || progress.lastGatePassDate !== todayStr) {
-            const isNewCard = progress.state === 0;
-            if (!isNewCard) {
-                progress.todayDictationPassed = false;
-                progress.todayFlashcardPassed = false;
-                progress.max_wrongs = 0;
-                progress.max_time = 0;
-                progress.gave_up = false;
-                progress.reveal_count = 0;
-            }
-        }
+    if (!progress.lastGatePassDate || progress.lastGatePassDate !== todayStr) {
+        progress.todayDictationPassed = false;
+        progress.todayFlashcardPassed = false;
+        progress.max_wrongs = 0;
+        progress.max_time = 0;
+        progress.gave_up = false;
+        progress.reveal_count = 0;
     }
     progress.lastGatePassDate = todayStr;
     
