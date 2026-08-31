@@ -1,5 +1,7 @@
 import Dexie, { type Table } from 'dexie';
 
+Dexie.debug = false;
+
 export interface Course {
   id: string;
   title: string;

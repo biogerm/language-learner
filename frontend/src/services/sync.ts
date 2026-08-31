@@ -1,15 +1,20 @@
 import { db } from '../db/dexie';
 import { supabase } from './supabase';
 
+let inFlightExcludedSync: Promise<void> | null = null;
+let inFlightCustomSync: Promise<void> | null = null;
+
 /**
  * Synchronize excluded words with Supabase cloud database
  */
-export async function syncExcludedDictionary() {
-  if (!navigator.onLine) return;
-  try {
-    const { data: { session } } = await supabase.auth.getSession();
-    if (!session?.user) return;
-    const userId = session.user.id;
+export function syncExcludedDictionary(): Promise<void> {
+  if (inFlightExcludedSync) return inFlightExcludedSync;
+  inFlightExcludedSync = (async () => {
+    if (!navigator.onLine) return;
+    try {
+      const { data: { session } } = await supabase.auth.getSession();
+      if (!session?.user) return;
+      const userId = session.user.id;
 
     // 1. Pull from Supabase
     const { data: remoteData, error } = await supabase
@@ -69,13 +74,15 @@ export async function syncExcludedDictionary() {
         for (const r of unsynced) {
           if (r.id) await db.excluded_dictionary.update(r.id, { synced: true });
         }
-      } else {
-        console.warn('Error pushing excluded_dictionary to Supabase:', pushError);
       }
     }
   } catch (e) {
     console.warn('Sync excluded dictionary error:', e);
+  } finally {
+    inFlightExcludedSync = null;
   }
+})();
+return inFlightExcludedSync;
 }
 
 /**
@@ -136,12 +143,14 @@ export async function deleteCustomDictionaryWords(baseForms: string[]) {
 /**
  * Synchronize custom dictionary (annotated / extracted vocabulary) with Supabase cloud database
  */
-export async function syncCustomDictionary() {
-  if (!navigator.onLine) return;
-  try {
-    const { data: { session } } = await supabase.auth.getSession();
-    if (!session?.user) return;
-    const userId = session.user.id;
+export function syncCustomDictionary(): Promise<void> {
+  if (inFlightCustomSync) return inFlightCustomSync;
+  inFlightCustomSync = (async () => {
+    if (!navigator.onLine) return;
+    try {
+      const { data: { session } } = await supabase.auth.getSession();
+      if (!session?.user) return;
+      const userId = session.user.id;
 
     // 1. Pull from Supabase
     const { data: remoteData, error } = await supabase
@@ -221,13 +230,15 @@ export async function syncCustomDictionary() {
         for (const r of unsynced) {
           if (r.id) await db.custom_dictionary.update(r.id, { synced: true });
         }
-      } else {
-        console.warn('Error pushing custom_dictionary to Supabase:', pushError);
       }
     }
   } catch (e) {
     console.warn('Sync custom dictionary error:', e);
+  } finally {
+    inFlightCustomSync = null;
   }
+})();
+return inFlightCustomSync;
 }
 
 /**

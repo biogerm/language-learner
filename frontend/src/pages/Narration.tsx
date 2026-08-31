@@ -55,6 +55,41 @@ interface TokenState {
   isInFsrs?: boolean;
 }
 
+// Module-level cache for course-wide lemma map to avoid re-traversing all 1752 sentences on re-renders
+let cachedCourseDataRef: any = null;
+let cachedLemmaMap = new Map<string, { baseForm: string; dictEn: string; isGlobalTarget: boolean }>();
+
+function getCourseLemmaMap(courseData: any): Map<string, { baseForm: string; dictEn: string; isGlobalTarget: boolean }> {
+  if (!courseData) return cachedLemmaMap;
+  if (cachedCourseDataRef === courseData) return cachedLemmaMap;
+
+  const map = new Map<string, { baseForm: string; dictEn: string; isGlobalTarget: boolean }>();
+  const stages: any[] = Array.isArray(courseData.stages) ? courseData.stages : [];
+  for (const stage of stages) {
+    for (const article of stage.articles || []) {
+      for (const s of article.sentences || []) {
+        for (const tw of s.target_words || []) {
+          const inSent = (tw.word_in_sentence || '').toLowerCase();
+          const base = (tw.base_form || '').toLowerCase();
+          const en = tw.en_translation || tw.contextual_en || (base ? (global_dict as Record<string, string>)[base] : '');
+          if (inSent && en && !map.has(inSent)) map.set(inSent, { baseForm: base || inSent, dictEn: en, isGlobalTarget: true });
+          if (base && en && !map.has(base)) map.set(base, { baseForm: base, dictEn: en, isGlobalTarget: true });
+        }
+        for (const sw of s.secondary_words || []) {
+          const inSent = (sw.word_in_sentence || '').toLowerCase();
+          const base = (sw.base_form || '').toLowerCase();
+          const en = sw.en_translation || sw.contextual_en || (base ? (global_dict as Record<string, string>)[base] : '');
+          if (inSent && en && !map.has(inSent)) map.set(inSent, { baseForm: base || inSent, dictEn: en, isGlobalTarget: false });
+          if (base && en && !map.has(base)) map.set(base, { baseForm: base, dictEn: en, isGlobalTarget: false });
+        }
+      }
+    }
+  }
+  cachedCourseDataRef = courseData;
+  cachedLemmaMap = map;
+  return map;
+}
+
 export default function Narration() {
   const { courseId } = useParams();
   const { courseData, loadCourse, selectedStage, selectedArticleId, refreshLearningQueue, refreshCustomDictionary, refreshExcludedDictionary } = useData();
@@ -117,7 +152,7 @@ export default function Narration() {
         context_sv: r.sentence || r.context_sv,
         context_en: r.sentence_en || r.context_en,
         isGlobalTarget: !!r.is_global_target,
-        timestamp: Date.now()
+        timestamp: r.updated_at ? new Date(r.updated_at).getTime() : 0
       })));
     } catch (e) {
       setCustomVocab([]);
@@ -142,7 +177,7 @@ export default function Narration() {
           context_sv: r.sentence || r.context_sv,
           context_en: r.sentence_en || r.context_en,
           isGlobalTarget: !!r.is_global_target,
-          timestamp: Date.now()
+          timestamp: r.updated_at ? new Date(r.updated_at).getTime() : 0
         })));
       } catch {}
     }).catch(console.warn);
@@ -229,33 +264,8 @@ export default function Narration() {
     }
   }, [activeIndex, selectedArticleId]);
 
-  // Precompute course lemma & translation index once per course load (O(1) lookups instead of nested loops)
-  const courseLemmaMap = useMemo(() => {
-    const map = new Map<string, { baseForm: string; dictEn: string; isGlobalTarget: boolean }>();
-    if (!courseData) return map;
-    const stages: any[] = Array.isArray(courseData.stages) ? courseData.stages : [];
-    for (const stage of stages) {
-      for (const article of stage.articles || []) {
-        for (const s of article.sentences || []) {
-          for (const tw of s.target_words || []) {
-            const inSent = (tw.word_in_sentence || '').toLowerCase();
-            const base = (tw.base_form || '').toLowerCase();
-            const en = tw.en_translation || tw.contextual_en || (base ? (global_dict as Record<string, string>)[base] : '');
-            if (inSent && en && !map.has(inSent)) map.set(inSent, { baseForm: base || inSent, dictEn: en, isGlobalTarget: true });
-            if (base && en && !map.has(base)) map.set(base, { baseForm: base, dictEn: en, isGlobalTarget: true });
-          }
-          for (const sw of s.secondary_words || []) {
-            const inSent = (sw.word_in_sentence || '').toLowerCase();
-            const base = (sw.base_form || '').toLowerCase();
-            const en = sw.en_translation || sw.contextual_en || (base ? (global_dict as Record<string, string>)[base] : '');
-            if (inSent && en && !map.has(inSent)) map.set(inSent, { baseForm: base || inSent, dictEn: en, isGlobalTarget: false });
-            if (base && en && !map.has(base)) map.set(base, { baseForm: base, dictEn: en, isGlobalTarget: false });
-          }
-        }
-      }
-    }
-    return map;
-  }, [courseData]);
+  // Precompute course lemma & translation index once per course load (cached globally)
+  const courseLemmaMap = useMemo(() => getCourseLemmaMap(courseData), [courseData]);
 
   // Fast O(1) in-memory Sets & Maps for instantaneous lookups
   const excludedSet = useMemo(() => new Set(excludedVocab.map(v => v.toLowerCase())), [excludedVocab]);
@@ -390,7 +400,10 @@ export default function Narration() {
     });
 
     // Check custom vocab words that might be multi-word phrases or positioned in this sentence
-    customVocab.forEach((cv: any) => {
+    const articleCustomVocab = customVocab.filter(
+      (cv: any) => !cv.article || cv.article === selectedArticleId
+    );
+    articleCustomVocab.forEach((cv: any) => {
       const cleanCv = (cv.sv || '').toLowerCase();
       const cleanWordInSent = (cv.word_in_sentence || '').toLowerCase();
       const cleanBase = (cv.base_form || '').toLowerCase();
@@ -404,7 +417,7 @@ export default function Narration() {
           const escaped = sw.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
           const regex = new RegExp(`(?<![\\p{L}\\p{N}])${escaped}(?![\\p{L}\\p{N}])`, 'gui');
           let match;
-          while ((match = regex.exec(svText)) !== null) {
+          while ((match = regex.exec(svText)) !== null) { if (match.index === regex.lastIndex) regex.lastIndex++;
             const start = match.index;
             const end = match.index + match[0].length;
             const overlaps = positionedWords.some(w => !(end <= w.position_start || start >= w.position_end));
@@ -547,7 +560,7 @@ export default function Narration() {
     setEditingTokens(parsedTokens);
     setEditModeIndex(sentenceIndex);
     setHasChanged(false);
-  }, [sentencesArray, stopPlayback, selectedStage, selectedArticleId, courseId]);
+  }, [sentencesArray, stopPlayback, customVocab, customMap, excludedSet, fsrsSet, selectedArticleId]);
 
   // Karaoke Animation on Entering Edit Mode (smooth, non-blocking)
   useEffect(() => {
@@ -640,14 +653,15 @@ export default function Narration() {
           }
         }
       });
-
-      // Check if anything changed compared to initialStates
-      const changed = updated.some(t => t.isWord && t.isSelected !== t.initiallySelected);
-      setHasChanged(changed);
-
       return updated;
     });
   };
+
+  useEffect(() => {
+    if (editingTokens.length > 0) {
+      setHasChanged(editingTokens.some(t => t.isWord && t.isSelected !== t.initiallySelected));
+    }
+  }, [editingTokens]);
 
   // Cancel Edit Mode (instantaneous 0ms)
   const handleCancelEdit = () => {
@@ -999,6 +1013,11 @@ export default function Narration() {
 
   // Precompute positioned words for all sentences in the active article (O(1) instantaneous access during render)
   const articleWordsMap = useMemo(() => {
+    // Filter custom vocab to only words belonging to the current article (or words with no article set)
+    const articleCustomVocab = customVocab.filter(
+      cv => !cv.article || cv.article === selectedArticleId
+    );
+
     return sentencesArray.map((sent: any, sentIdx: number) => {
       const svText = sent.sv || '';
       let allWords: any[] = [];
@@ -1031,7 +1050,7 @@ export default function Narration() {
       });
 
       // Custom vocab words that belong to this article/sentence (plain words added by user)
-      customVocab.forEach(cv => {
+      articleCustomVocab.forEach(cv => {
         const cleanCv = (cv.sv || '').toLowerCase();
         const cleanWordInSent = (cv.word_in_sentence || '').toLowerCase();
         const cleanBase = (cv.base_form || cv.baseForm || '').toLowerCase();
@@ -1046,7 +1065,7 @@ export default function Narration() {
             const escaped = searchWord.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
             const regex = new RegExp(`(?<![\\p{L}\\p{N}])${escaped}(?![\\p{L}\\p{N}])`, 'gui');
             let match;
-            while ((match = regex.exec(svText)) !== null) {
+            while ((match = regex.exec(svText)) !== null) { if (match.index === regex.lastIndex) regex.lastIndex++;
               const start = match.index;
               const end = match.index + match[0].length;
               const overlaps = allWords.some(w => w.position_start !== undefined && w.position_end !== undefined && !(end <= w.position_start || start >= w.position_end));
@@ -1094,7 +1113,7 @@ export default function Narration() {
 
       return positionedWords;
     });
-  }, [sentencesArray, customMap, customVocab, excludedSet, fsrsSet]);
+  }, [sentencesArray, customMap, customVocab, excludedSet, fsrsSet, selectedArticleId]);
 
   // Render Swedish text with highlights in Reading Mode (matching L)
   const renderReadingSwedish = (sent: any, sentIdx: number, positionedWords: any[]) => {
