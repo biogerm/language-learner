@@ -24,19 +24,29 @@ export async function syncExcludedDictionary() {
 
     const localRecords = await db.excluded_dictionary.toArray();
     const localMap = new Map(localRecords.map(r => [`${(r.course_id || 'sfid').toLowerCase()}_${r.base_form.toLowerCase()}`, r]));
+    const remoteKeySet = new Set((remoteData || []).map(r => `${(r.course_id || 'sfid').toLowerCase()}_${r.base_form.toLowerCase()}`));
 
-    // 2. Reconcile: add missing remote records locally
+    // 2. Reconcile:
+    // A) Add missing remote records locally
+    // B) Delete local records that were deleted on cloud (not in remoteData)
     await db.transaction('rw', db.excluded_dictionary, async () => {
       for (const remote of remoteData || []) {
         const key = `${(remote.course_id || 'sfid').toLowerCase()}_${remote.base_form.toLowerCase()}`;
         if (!localMap.has(key)) {
           await db.excluded_dictionary.add({
             base_form: remote.base_form.toLowerCase(),
-            course_id: remote.course_id || 'sfid',
+            course_id: (remote.course_id || 'sfid').toLowerCase(),
             article_id: remote.article_id || '',
             synced: true,
             updated_at: remote.updated_at || new Date().toISOString()
           });
+        }
+      }
+
+      for (const local of localRecords) {
+        const key = `${(local.course_id || 'sfid').toLowerCase()}_${local.base_form.toLowerCase()}`;
+        if (local.synced && !remoteKeySet.has(key) && local.id) {
+          await db.excluded_dictionary.delete(local.id);
         }
       }
     });
@@ -47,7 +57,7 @@ export async function syncExcludedDictionary() {
       const payload = unsynced.map(r => ({
         user_id: userId,
         base_form: r.base_form.toLowerCase(),
-        course_id: r.course_id || 'sfid',
+        course_id: (r.course_id || 'sfid').toLowerCase(),
         updated_at: r.updated_at || new Date().toISOString()
       }));
 
@@ -146,8 +156,11 @@ export async function syncCustomDictionary() {
 
     const localRecords = await db.custom_dictionary.toArray();
     const localMap = new Map(localRecords.map(r => [(r.base_form || r.word_in_sentence || '').toLowerCase(), r]));
+    const remoteKeySet = new Set((remoteData || []).map(r => (r.base_form || r.word_in_sentence || '').toLowerCase()));
 
-    // 2. Reconcile remote items into local Dexie
+    // 2. Reconcile:
+    // A) Remote records missing locally -> add them locally
+    // B) Local synced records that no longer exist remotely -> delete locally (remote was deleted on cloud)
     await db.transaction('rw', [db.custom_dictionary, db.learning_queue], async () => {
       for (const remote of remoteData || []) {
         const key = (remote.base_form || remote.word_in_sentence || '').toLowerCase();
@@ -162,6 +175,19 @@ export async function syncCustomDictionary() {
             ...remote,
             synced: true
           });
+        }
+      }
+
+      for (const local of localRecords) {
+        const key = (local.base_form || local.word_in_sentence || '').toLowerCase();
+        if (local.synced && !remoteKeySet.has(key) && local.id) {
+          await db.custom_dictionary.delete(local.id);
+          if (local.base_form) {
+            const queueItems = await db.learning_queue.where('base_form').equalsIgnoreCase(local.base_form).toArray();
+            for (const qi of queueItems) {
+              if (qi.id) await db.learning_queue.delete(qi.id);
+            }
+          }
         }
       }
     });
