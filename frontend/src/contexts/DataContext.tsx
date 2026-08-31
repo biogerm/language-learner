@@ -1,4 +1,4 @@
-import { createContext, useContext, useState, useCallback, useEffect, type ReactNode } from 'react';
+import { createContext, useContext, useState, useCallback, useEffect, useRef, type ReactNode } from 'react';
 import { fetchCourseData } from '../services/r2';
 import { supabase } from '../services/supabase';
 import { db, type WordObject } from '../db/dexie';
@@ -100,8 +100,16 @@ export function DataProvider({ children }: { children: ReactNode }) {
     db.local_settings.put({ key: 'selectedArticleId', value: article, updated_at: new Date().toISOString() }).catch(() => {});
   }, []);
 
+  const currentCourseRef = useRef<string | null>(null);
+  const courseDataRef = useRef<any>(null);
+
+  useEffect(() => {
+    currentCourseRef.current = currentCourse;
+    courseDataRef.current = courseData;
+  }, [currentCourse, courseData]);
+
   const loadCourse = useCallback(async (courseId: string) => {
-    if (currentCourse === courseId && courseData) return;
+    if (currentCourseRef.current === courseId && courseDataRef.current) return;
     try {
       let data = null;
       let vocabData = null;
@@ -194,7 +202,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
         throw err;
       }
     }
-  }, [currentCourse, courseData]);
+  }, []);
 
   const syncLearningQueue = useCallback(async () => {
     if (!currentCourse || !selectedArticleId) {
