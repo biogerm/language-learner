@@ -18,7 +18,7 @@ def find_best_match(base, sentence):
     return None
 
 def process():
-    files = glob.glob('./course/sfid/phase2/articles_translated/*.json')
+    files = glob.glob('course/sfid/phase2/articles_translated/*.json')
     for f in files:
         with open(f, 'r') as fp:
             data = json.load(fp)

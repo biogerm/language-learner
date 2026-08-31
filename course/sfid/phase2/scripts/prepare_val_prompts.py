@@ -15,7 +15,7 @@ for b_idx, b in enumerate(batches):
         f.write("4. Overwrite the file using `write_to_file` with the updated JSON. Ensure you include the `en` field and keep `sv`, `target_words`, etc.\n\n")
         f.write("Here are the files you need to process in this batch:\n")
         for idx in b:
-            f.write(f"- ./course/sfid/phase2/article_{idx}.json\n")
+            f.write(f"- course/sfid/phase2/article_{idx}.json\n")
         
         f.write("\nIMPORTANT: Please use your `write_to_file` tool to save each updated article back to its original path. Once you have successfully updated all files in this batch, reply to me saying 'Batch complete'.\n")
 

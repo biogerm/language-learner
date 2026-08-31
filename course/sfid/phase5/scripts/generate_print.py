@@ -225,7 +225,7 @@ def process():
     html.append("</body>")
     html.append("</html>")
     
-    out_dir = "./course/sfid/phase5/output"
+    out_dir = "course/sfid/phase5/output"
     os.makedirs(out_dir, exist_ok=True)
     out_path = os.path.join(out_dir, "sfid_b1_articles.html")
     with open(out_path, 'w', encoding='utf-8') as f:

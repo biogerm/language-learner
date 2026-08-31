@@ -6,7 +6,7 @@ const { chromium } = require('playwright');
   
   await p.goto('http://localhost:5173/login');
   await p.fill('input[type="email"]', 'test@example.com');
-  await p.fill('input[type="password"]', 'test_password_placeholder');
+  await p.fill('input[type="password"]', process.env.TEST_USER_PASSWORD || 'test-password');
   await p.click('button[type="submit"]');
   await p.waitForTimeout(1500);
 
@@ -17,7 +17,7 @@ const { chromium } = require('playwright');
   await p.fill('#spell-input', 'fel');
   await p.keyboard.press('Enter');
   await p.waitForTimeout(300);
-  await p.screenshot({ path: './reports/a5d1ee7a-3f21-4b48-8371-19932f1e650d/dictation_incorrect_state.png' });
+  await p.screenshot({ path: './screenshots/dictation_incorrect_state.png' });
 
   // 2. Dictation - Reveal Answer
   await p.keyboard.press('Enter');
@@ -27,7 +27,7 @@ const { chromium } = require('playwright');
   const revBtn = await p.$('#reveal-btn');
   if (revBtn) await revBtn.click();
   await p.waitForTimeout(300);
-  await p.screenshot({ path: './reports/a5d1ee7a-3f21-4b48-8371-19932f1e650d/dictation_revealed_state.png' });
+  await p.screenshot({ path: './screenshots/dictation_revealed_state.png' });
 
   // 3. Flashcard - Typing incorrect
   await p.goto('http://localhost:5173/flashcard/sfid');
@@ -36,18 +36,18 @@ const { chromium } = require('playwright');
   await p.fill('#spell-input', 'wrong');
   await p.keyboard.press('Enter');
   await p.waitForTimeout(300);
-  await p.screenshot({ path: './reports/a5d1ee7a-3f21-4b48-8371-19932f1e650d/flashcard_incorrect_state.png' });
+  await p.screenshot({ path: './screenshots/flashcard_incorrect_state.png' });
 
   // 4. Flashcard - Reveal Answer in Study mode
   const fRevBtn = await p.$('#reveal-btn');
   if (fRevBtn) await fRevBtn.click();
   await p.waitForTimeout(300);
-  await p.screenshot({ path: './reports/a5d1ee7a-3f21-4b48-8371-19932f1e650d/flashcard_revealed_state.png' });
+  await p.screenshot({ path: './screenshots/flashcard_revealed_state.png' });
 
   // 5. Narration page verification
   await p.goto('http://localhost:5173/narration/sfid');
   await p.waitForTimeout(1500);
-  await p.screenshot({ path: './reports/a5d1ee7a-3f21-4b48-8371-19932f1e650d/narration_verified.png' });
+  await p.screenshot({ path: './screenshots/narration_verified.png' });
 
   console.log('All interaction states captured successfully!');
   await b.close();

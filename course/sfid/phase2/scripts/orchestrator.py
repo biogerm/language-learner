@@ -75,7 +75,7 @@ Output strictly in JSON format matching the 3-layer schema.
 - "target_words": For each target word (both core and glue) used, identify its inflected form ("word_in_sentence"), base form ("base_form"), and 0-indexed positions.
 - "primary_words_used": An array of ALL target words (Core + Glue) you used.
 
-Save your JSON directly to `./course/sfid/phase2/article_{idx}.json` using `write_to_file`. Finish immediately after.
+Save your JSON directly to `course/sfid/phase2/article_{idx}.json` using `write_to_file`. Finish immediately after.
 """
     with open(f"prompt_{idx}.txt", "w", encoding="utf-8") as f:
         f.write(prompt)

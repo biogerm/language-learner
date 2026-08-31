@@ -14,7 +14,7 @@ async function migrateTestUser() {
   console.log('🔗 Connected to Supabase Postgres.');
 
   // 1. Get test user UUID
-  const userRes = await client.query("SELECT id FROM auth.users WHERE email = 'test@example.com';");
+  const userRes = await client.query("SELECT id FROM auth.users WHERE email = process.env.TEST_USER_EMAIL || 'test@example.com';");
   if (userRes.rows.length === 0) {
     throw new Error('Test user test@example.com not found in auth.users');
   }

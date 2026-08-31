@@ -6,7 +6,7 @@ const { chromium } = require('playwright');
   
   await p.goto('http://localhost:5173/login');
   await p.fill('input[type="email"]', 'test@example.com');
-  await p.fill('input[type="password"]', 'test_password_placeholder');
+  await p.fill('input[type="password"]', process.env.TEST_USER_PASSWORD || 'test-password');
   await p.click('button[type="submit"]');
   await p.waitForTimeout(1500);
 
@@ -16,12 +16,12 @@ const { chromium } = require('playwright');
   const reviewToggle = await p.$('#fsrs-mode-toggle button:has-text("Review")');
   if (reviewToggle) await reviewToggle.click();
   await p.waitForTimeout(1000);
-  await p.screenshot({ path: './reports/a5d1ee7a-3f21-4b48-8371-19932f1e650d/dictation_review_mode.png' });
+  await p.screenshot({ path: './screenshots/dictation_review_mode.png' });
 
   // Flashcard in Review mode
   await p.goto('http://localhost:5173/flashcard/sfid');
   await p.waitForTimeout(1000);
-  await p.screenshot({ path: './reports/a5d1ee7a-3f21-4b48-8371-19932f1e650d/flashcard_review_mode.png' });
+  await p.screenshot({ path: './screenshots/flashcard_review_mode.png' });
 
   console.log('Review modes captured successfully!');
   await b.close();
