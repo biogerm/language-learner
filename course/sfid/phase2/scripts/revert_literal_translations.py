@@ -14,7 +14,7 @@ def main():
     ]
     
     raw_en_map = {}
-    with open("./reports/0c739c98-fc9c-414d-8f46-f329cd4d61c9/teacher_review_modifications_report.md", "r", encoding="utf-8") as f:
+    with open("./reports/teacher_review_modifications_report.md", "r", encoding="utf-8") as f:
         lines = f.readlines()
         
     current_id = None

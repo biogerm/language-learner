@@ -2,7 +2,8 @@ import { chromium } from 'playwright';
 import * as path from 'path';
 import * as fs from 'fs';
 
-const SCREENSHOT_DIR = './reports/a5d1ee7a-3f21-4b48-8371-19932f1e650d';
+const ARTIFACT_DIR = process.env.ARTIFACT_DIR || './screenshots';
+const SCREENSHOT_DIR = ARTIFACT_DIR;
 
 async function main() {
   const browser = await chromium.launch({

@@ -5,7 +5,7 @@ from google import genai
 
 def main():
     client = genai.Client()
-    base_dir = "./course/sfid/phase2"
+    base_dir = "course/sfid/phase2"
     review_dir = os.path.join(base_dir, "teacher_review")
     
     if not os.path.exists(review_dir):

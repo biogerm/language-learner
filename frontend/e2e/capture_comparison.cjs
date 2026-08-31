@@ -1,7 +1,8 @@
 const { chromium } = require('playwright');
 const path = require('path');
 
-const ARTIFACT_DIR = './reports/a5d1ee7a-3f21-4b48-8371-19932f1e650d';
+const ARTIFACT_DIR = process.env.ARTIFACT_DIR || './screenshots';
+const SCREENSHOT_DIR = ARTIFACT_DIR;
 
 async function run() {
   console.log('Starting browser...');
@@ -46,7 +47,7 @@ async function run() {
   await pageC.goto('http://127.0.0.1:5173/login');
   await pageC.waitForSelector('input[type="email"]', { timeout: 5000 });
   await pageC.fill('input[type="email"]', 'test@example.com');
-  await pageC.fill('input[type="password"]', 'test_password_placeholder');
+  await pageC.fill('input[type="password"]', process.env.TEST_USER_PASSWORD || 'test-password');
   await pageC.click('button[type="submit"]');
   await pageC.waitForTimeout(1500);
 

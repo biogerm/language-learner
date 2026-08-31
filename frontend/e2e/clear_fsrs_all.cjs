@@ -25,7 +25,7 @@ async function run() {
     const supabase = createClient(supabaseUrl, supabaseKey);
     const { data: authData, error: authErr } = await supabase.auth.signInWithPassword({
       email: 'test@example.com',
-      password: 'test_password_placeholder'
+      password: process.env.TEST_USER_PASSWORD || 'test-password'
     });
     
     if (authData?.user) {
@@ -51,7 +51,7 @@ async function run() {
 
   await page.goto('http://localhost:5173/login');
   await page.fill('input[type="email"]', 'test@example.com');
-  await page.fill('input[type="password"]', 'test_password_placeholder');
+  await page.fill('input[type="password"]', process.env.TEST_USER_PASSWORD || 'test-password');
   await page.click('button[type="submit"]');
   await page.waitForTimeout(1500);
 
@@ -90,7 +90,8 @@ async function run() {
   if (revBtn) await revBtn.click();
   await page.waitForTimeout(1000);
 
-  const ARTIFACT_DIR = './reports/a5d1ee7a-3f21-4b48-8371-19932f1e650d';
+  const ARTIFACT_DIR = process.env.ARTIFACT_DIR || './screenshots';
+const SCREENSHOT_DIR = ARTIFACT_DIR;
   await page.screenshot({ path: path.join(ARTIFACT_DIR, 'dictation_after_fsrs_cleared.png') });
 
   // 4. Verify Review Mode in Flashcard

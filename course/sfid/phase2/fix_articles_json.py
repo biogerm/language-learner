@@ -3,8 +3,8 @@ import os
 import glob
 
 def process():
-    base_dir = './course/sfid/phase2/articles_translated'
-    articles_dir = './course/sfid/phase2/articles'
+    base_dir = 'course/sfid/phase2/articles_translated'
+    articles_dir = 'course/sfid/phase2/articles'
     files = glob.glob(os.path.join(base_dir, '*.json'))
     
     for trans_path in files:

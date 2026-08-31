@@ -15,9 +15,9 @@ async function runMigration() {
   await client.connect();
 
   // 1. Get test user id
-  const userRes = await client.query("SELECT id, email FROM auth.users WHERE email = 'test@example.com';");
+  const userRes = await client.query("SELECT id, email FROM auth.users WHERE email = process.env.TEST_USER_EMAIL || 'test@example.com';");
   if (userRes.rows.length === 0) {
-    throw new Error("Target user 'test@example.com' not found in auth.users");
+    throw new Error("Target user process.env.TEST_USER_EMAIL || 'test@example.com' not found in auth.users");
   }
   const userId = userRes.rows[0].id;
   console.log(`👤 Target User ID: ${userId} (${userRes.rows[0].email})`);

@@ -3,7 +3,7 @@ import re
 
 def main():
     pdf_path = '../SFI/courses/Nivatest/source_data/rivstart_B1_B2_TB__ordkort_1.pdf'
-    out_path = './extracted_ordkort.txt'
+    out_path = 'extracted_ordkort.txt'
     
     doc = fitz.open(pdf_path)
     words = set()

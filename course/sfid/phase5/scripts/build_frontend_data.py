@@ -2,7 +2,7 @@ import json, glob, re, os
 
 print("Step 1: Assembling APP_DATA for sfid...")
 sfid_data = {}
-articles = sorted(glob.glob("./course/sfid/phase2/articles_translated/art_*.json"))
+articles = sorted(glob.glob("course/sfid/phase2/articles_translated/art_*.json"))
 
 for idx, filepath in enumerate(articles):
     with open(filepath) as f:
@@ -56,7 +56,7 @@ print(f"Successfully injected 'sfid' into {legacy_data_path}")
 print("Step 1.5: Assembling dictation_data.js...")
 
 # Pre-load master dictionary for cross-referencing
-master_dict_path = "./course/sfid/phase1/master_dictionary.json"
+master_dict_path = "course/sfid/phase1/master_dictionary.json"
 with open(master_dict_path, "r") as f:
     master_dict_raw = json.load(f)
 
@@ -121,14 +121,14 @@ web_app_audio_dir = "../SFI/web_app/audio"
 os.makedirs(web_app_audio_dir, exist_ok=True)
 
 # Link sentences_audio
-src_sentences = "./course/sfid/phase4/output/sentences_audio"
+src_sentences = "course/sfid/phase4/output/sentences_audio"
 dst_sentences = os.path.join(web_app_audio_dir, "sentences_audio")
 if not os.path.exists(dst_sentences):
     os.symlink(src_sentences, dst_sentences)
     print(f"Symlinked {dst_sentences}")
 
 # Link words_audio
-src_words = "./course/sfid/phase4/output/words_audio"
+src_words = "course/sfid/phase4/output/words_audio"
 dst_words = os.path.join(web_app_audio_dir, "words_audio")
 if not os.path.exists(dst_words):
     os.symlink(src_words, dst_words)

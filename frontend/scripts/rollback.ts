@@ -8,7 +8,7 @@ const client = new Client({
 
 async function rollback() {
   await client.connect();
-  const userRes = await client.query("SELECT id FROM auth.users WHERE email = 'test@example.com'");
+  const userRes = await client.query("SELECT id FROM auth.users WHERE email = process.env.TEST_USER_EMAIL || 'test@example.com'");
   if (userRes.rows.length > 0) {
     const uid = userRes.rows[0].id;
     console.log('Rolling back all data for test user:', uid);

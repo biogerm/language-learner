@@ -34,7 +34,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     session?.user?.app_metadata?.is_tester === true ||
     session?.user?.app_metadata?.role === 'tester' ||
     session?.user?.app_metadata?.role === 'admin' ||
-    session?.user?.email === 'test@example.com'
+    session?.user?.email === process.env.TEST_USER_EMAIL || 'test@example.com'
   );
 
   return (

@@ -140,7 +140,7 @@ output = {
     "primary_words_used": core_words + glue_words
 }
 
-with open('./course/sfid/phase2/article_8.json', 'w', encoding='utf-8') as f:
+with open('course/sfid/phase2/article_8.json', 'w', encoding='utf-8') as f:
     json.dump(output, f, ensure_ascii=False, indent=2)
 
 print("SUCCESS")

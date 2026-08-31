@@ -1,7 +1,8 @@
 const { chromium } = require('playwright');
 const path = require('path');
 
-const ARTIFACT_DIR = './reports/a5d1ee7a-3f21-4b48-8371-19932f1e650d';
+const ARTIFACT_DIR = process.env.ARTIFACT_DIR || './screenshots';
+const SCREENSHOT_DIR = ARTIFACT_DIR;
 
 async function testPage(url, name) {
   console.log(`[TEST] Launching browser for ${name}...`);

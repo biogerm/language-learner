@@ -22,7 +22,7 @@ def process():
     items = content.split('## Item')[1:]
     fixes = {}
     
-    files = glob.glob('./course/sfid/phase2/articles_translated/*.json')
+    files = glob.glob('course/sfid/phase2/articles_translated/*.json')
     data_dict = {}
     for f in files:
         with open(f, 'r') as fp:

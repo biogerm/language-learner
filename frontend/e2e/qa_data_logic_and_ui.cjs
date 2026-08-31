@@ -21,8 +21,8 @@ async function run() {
 
   console.log('🚀 Step 0: Logging in at http://localhost:5173/login...');
   await page.goto('http://localhost:5173/login', { waitUntil: 'networkidle2' });
-  await page.type('input[type="email"]', 'test@example.com');
-  await page.type('input[type="password"]', 'test_password_placeholder');
+  await page.type('input[type="email"]', process.env.TEST_USER_EMAIL || 'test@example.com');
+  await page.type('input[type="password"]', process.env.TEST_USER_PASSWORD || 'test-password');
   await page.click('button[type="submit"]');
   await new Promise(r => setTimeout(r, 2000));
 

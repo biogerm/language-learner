@@ -1,7 +1,7 @@
 import json
 import os
 
-base_dir = "./course/sfid/phase2"
+base_dir = "course/sfid/phase2"
 audit_file = os.path.join(base_dir, "position_audit_failed.json")
 output_file = os.path.join(base_dir, "position_audit_prep.md")
 

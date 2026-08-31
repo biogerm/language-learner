@@ -45,7 +45,7 @@ def process():
     items = content.split('## Item ')[1:]
     
     # Load all json files from articles_translated
-    base_dir = './course/sfid/phase2/articles_translated'
+    base_dir = 'course/sfid/phase2/articles_translated'
     files = glob.glob(os.path.join(base_dir, '*.json'))
     
     data_dict = {}
@@ -126,7 +126,7 @@ def process():
             modified_files.add(file_name)
 
     # Now write the files back to both articles_translated and articles directories
-    articles_dir = './course/sfid/phase2/articles'
+    articles_dir = 'course/sfid/phase2/articles'
     
     for fname in modified_files:
         data = data_dict[fname]

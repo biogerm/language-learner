@@ -8,7 +8,7 @@ def process_articles():
     articles_dir = os.path.join(base_dir, "articles")
     
     # Correct base_dir to actual
-    base_dir = "./course/sfid/phase2"
+    base_dir = "course/sfid/phase2"
     translated_dir = os.path.join(base_dir, "articles_translated")
     articles_dir = os.path.join(base_dir, "articles")
     

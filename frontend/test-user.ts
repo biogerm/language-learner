@@ -7,7 +7,7 @@ const supabase = createClient(supabaseUrl, supabaseKey);
 async function main() {
   const { data, error } = await supabase.auth.admin.createUser({
     email: 'test@example.com',
-    password: 'test_password_placeholder',
+    password: process.env.TEST_USER_PASSWORD || 'test-password',
     email_confirm: true
   });
   if (error) console.error(error);

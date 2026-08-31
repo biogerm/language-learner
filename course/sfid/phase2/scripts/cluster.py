@@ -99,7 +99,7 @@ themes = {
     "Abstrakta Koncept": []
 }
 
-with open('./course/sfid/phase2/chunk_1.json', 'r') as f:
+with open('course/sfid/phase2/chunk_1.json', 'r') as f:
     data = json.load(f)
 
 for item in data:
