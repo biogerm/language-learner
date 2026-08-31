@@ -103,7 +103,7 @@ export async function syncOfflineProgress() {
 
             const { error: pushError } = await supabase
                 .from('fsrs_progress')
-                .upsert(payload, { onConflict: 'user_id, course_id, word_id' });
+                .upsert(payload, { onConflict: 'user_id, word_id' });
 
             if (pushError) {
                 console.error('Supabase sync push error:', pushError);
