@@ -1037,14 +1037,16 @@ export default function Narration() {
         }));
       }
 
-      // Filter out excluded target words and words already in active FSRS review schedule
+      // Filter out words already in active FSRS review schedule (unless they are excluded targets, which we keep to show the purple dashed line)
       allWords = allWords.filter(w => {
         const base = (w.base_form || '').toLowerCase();
         const inSent = (w.word_in_sentence || '').toLowerCase();
         if (w.type === 'target') {
           const isEx = (base && excludedSet.has(base)) || (inSent && excludedSet.has(inSent));
           const isInFsrs = (base && fsrsSet.has(base)) || (inSent && fsrsSet.has(inSent));
-          return !isEx && !isInFsrs;
+          w.isExcluded = isEx;
+          if (isEx) return true; // Keep excluded target words to show purple dashed underline
+          return !isInFsrs;
         }
         return true;
       });
@@ -1133,7 +1135,9 @@ export default function Narration() {
           const syncId = w._syncId || `sync-${sent.sentence_id || sent.id || sentIdx}-${idx}`;
 
           let cls = 'vocab-word';
-          if (w.type === 'target') cls += ' target-word';
+          if (w.type === 'target') {
+            cls += w.isExcluded ? ' target-word-excluded' : ' target-word';
+          }
           else if (w.type === 'secondary') {
             cls += ' secondary-word';
             if (w.isSelectedSecondary) cls += ' selected-secondary-word';
@@ -1297,6 +1301,7 @@ export default function Narration() {
 
                       let cls = 'selectable-word';
                       if (t.type === 'secondary') cls += ' secondary-word';
+                      
                       if (t.isSelected) {
                         if (t.type === 'target') cls += ' selected-word';
                         else if (t.type === 'secondary') cls += ' selected-secondary-word';
@@ -1304,6 +1309,8 @@ export default function Narration() {
                         else if (t.type === 'custom') cls += ' selected-custom-word';
                         else if (t.isUnknown) cls += ' selected-unknown-word';
                         else cls += ' selected-custom-word';
+                      } else {
+                        if (t.type === 'target') cls += ' target-word-unselected';
                       }
 
                       return (
