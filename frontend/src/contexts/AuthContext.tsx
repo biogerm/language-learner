@@ -30,11 +30,12 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     return () => subscription.unsubscribe();
   }, []);
 
+  const testUserEmail = import.meta.env.VITE_TEST_USER_EMAIL;
   const isTester = Boolean(
     session?.user?.app_metadata?.is_tester === true ||
     session?.user?.app_metadata?.role === 'tester' ||
     session?.user?.app_metadata?.role === 'admin' ||
-    session?.user?.email === process.env.TEST_USER_EMAIL || 'test@example.com'
+    (testUserEmail && session?.user?.email === testUserEmail)
   );
 
   return (
