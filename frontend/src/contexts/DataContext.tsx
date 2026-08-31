@@ -108,83 +108,72 @@ export function DataProvider({ children }: { children: ReactNode }) {
     courseDataRef.current = courseData;
   }, [currentCourse, courseData]);
 
+  const inFlightCourseLoadsRef = useRef<Map<string, Promise<void>>>(new Map());
+
   const loadCourse = useCallback(async (courseId: string) => {
     if (currentCourseRef.current === courseId && courseDataRef.current) return;
-    try {
-      let data = null;
-      let vocabData = null;
-      
-      const { data: courseRow, error } = await supabase
-        .from('courses')
-        .select('r2_json_url, r2_vocab_url, updated_at')
-        .eq('id', courseId)
-        .single();
+    if (inFlightCourseLoadsRef.current.has(courseId)) {
+      return inFlightCourseLoadsRef.current.get(courseId);
+    }
 
-      if (error || !courseRow?.r2_json_url) {
-        throw new Error(`Course not found or missing r2_json_url for ${courseId}`);
-      }
-
-      const cached = await db.course_data.get(courseId);
-      const remoteUpdated = courseRow.updated_at ? new Date(courseRow.updated_at).getTime() : 0;
-      const localUpdated = cached?.updated_at ? new Date(cached.updated_at).getTime() : 0;
-
-      const hasValidDict = cached && (
-        (Array.isArray(cached.dictionary) && cached.dictionary.length > 0) ||
-        (cached.dictionary && typeof cached.dictionary === 'object' && Object.keys(cached.dictionary).length > 0)
-      );
-
-      if (cached && cached.articles && Object.keys(cached.articles).length > 0 && hasValidDict && localUpdated >= remoteUpdated) {
-        data = cached.articles;
-        vocabData = cached.dictionary || [];
-      } else {
-        console.log(`Cache invalid or missing. Fetching course ${courseId} from remote...`);
-        data = await fetchCourseData(`${courseRow.r2_json_url}?v=${remoteUpdated}`);
+    const loadPromise = (async () => {
+      try {
+        let data = null;
+        let vocabData = null;
         
-        try {
-          if (courseRow.r2_vocab_url) {
-            vocabData = await fetchCourseData(`${courseRow.r2_vocab_url}?v=${remoteUpdated}`);
-          } else {
-            // Fallback assumption based on current courseId
-            vocabData = await fetchCourseData(`courses/${courseId}/course_${courseId}_vocab.json?v=${remoteUpdated}`);
-          }
-        } catch (err) {
-          console.warn("Failed to fetch vocab data", err);
-          vocabData = [];
+        const { data: courseRow, error } = await supabase
+          .from('courses')
+          .select('r2_json_url, r2_vocab_url, updated_at')
+          .eq('id', courseId)
+          .single();
+
+        if (error || !courseRow?.r2_json_url) {
+          throw new Error(`Course not found or missing r2_json_url for ${courseId}`);
         }
-        
-        const cacheData = {
-          courseId,
-          dictionary: vocabData,
-          articles: data,
-          updated_at: courseRow.updated_at || new Date().toISOString()
-        };
-        await db.course_data.put(cacheData);
-      }
-      
-      const dictMap: Record<string, string> = {};
-      if (Array.isArray(vocabData)) {
-        for (const v of vocabData) {
-          if (v.base_form) {
-            const translation = v.en_translation || v.contextual_en || v.en;
-            if (translation && !dictMap[v.base_form.toLowerCase()]) {
-              dictMap[v.base_form.toLowerCase()] = translation;
+
+        const cached = await db.course_data.get(courseId);
+        const remoteUpdated = courseRow.updated_at ? new Date(courseRow.updated_at).getTime() : 0;
+        const localUpdated = cached?.updated_at ? new Date(cached.updated_at).getTime() : 0;
+
+        const hasValidDict = cached && (
+          (Array.isArray(cached.dictionary) && cached.dictionary.length > 0) ||
+          (cached.dictionary && typeof cached.dictionary === 'object' && Object.keys(cached.dictionary).length > 0)
+        );
+
+        if (cached && cached.articles && Object.keys(cached.articles).length > 0 && hasValidDict && localUpdated >= remoteUpdated) {
+          data = cached.articles;
+          vocabData = cached.dictionary || [];
+        } else {
+          console.log(`Cache invalid or missing. Fetching course ${courseId} from remote...`);
+          data = await fetchCourseData(`${courseRow.r2_json_url}?v=${remoteUpdated}`);
+          
+          try {
+            if (courseRow.r2_vocab_url) {
+              vocabData = await fetchCourseData(`${courseRow.r2_vocab_url}?v=${remoteUpdated}`);
+            } else {
+              vocabData = await fetchCourseData(`courses/${courseId}/course_${courseId}_vocab.json?v=${remoteUpdated}`);
             }
+          } catch (err) {
+            console.warn("Failed to fetch vocab data", err);
+            vocabData = [];
+          }
+          
+          try {
+            const cacheData = {
+              courseId,
+              dictionary: vocabData,
+              articles: data,
+              updated_at: courseRow.updated_at || new Date().toISOString()
+            };
+            await db.course_data.put(cacheData);
+          } catch (cacheErr) {
+            console.warn("Failed to cache course data in IndexedDB:", cacheErr);
           }
         }
-      } else if (vocabData && typeof vocabData === 'object') {
-        Object.assign(dictMap, vocabData);
-      }
-
-      setCourseData(data);
-      setDictionary(dictMap);
-      setCurrentCourse(courseId);
-    } catch (err) {
-      console.error('Error loading course data:', err);
-      const cached = await db.course_data.get(courseId);
-      if (cached && cached.articles) {
+        
         const dictMap: Record<string, string> = {};
-        if (Array.isArray(cached.dictionary)) {
-          for (const v of cached.dictionary) {
+        if (Array.isArray(vocabData)) {
+          for (const v of vocabData) {
             if (v.base_form) {
               const translation = v.en_translation || v.contextual_en || v.en;
               if (translation && !dictMap[v.base_form.toLowerCase()]) {
@@ -192,16 +181,43 @@ export function DataProvider({ children }: { children: ReactNode }) {
               }
             }
           }
-        } else if (cached.dictionary && typeof cached.dictionary === 'object') {
-          Object.assign(dictMap, cached.dictionary);
+        } else if (vocabData && typeof vocabData === 'object') {
+          Object.assign(dictMap, vocabData);
         }
-        setCourseData(cached.articles);
+
+        setCourseData(data);
         setDictionary(dictMap);
         setCurrentCourse(courseId);
-      } else {
-        throw err;
+      } catch (err) {
+        console.error('Error loading course data:', err);
+        const cached = await db.course_data.get(courseId);
+        if (cached && cached.articles) {
+          const dictMap: Record<string, string> = {};
+          if (Array.isArray(cached.dictionary)) {
+            for (const v of cached.dictionary) {
+              if (v.base_form) {
+                const translation = v.en_translation || v.contextual_en || v.en;
+                if (translation && !dictMap[v.base_form.toLowerCase()]) {
+                  dictMap[v.base_form.toLowerCase()] = translation;
+                }
+              }
+            }
+          } else if (cached.dictionary && typeof cached.dictionary === 'object') {
+            Object.assign(dictMap, cached.dictionary);
+          }
+          setCourseData(cached.articles);
+          setDictionary(dictMap);
+          setCurrentCourse(courseId);
+        } else {
+          throw err;
+        }
+      } finally {
+        inFlightCourseLoadsRef.current.delete(courseId);
       }
-    }
+    })();
+
+    inFlightCourseLoadsRef.current.set(courseId, loadPromise);
+    return loadPromise;
   }, []);
 
   const syncLearningQueue = useCallback(async () => {
