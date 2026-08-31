@@ -5,7 +5,7 @@ import { getMp3PublicUrl } from '../services/r2';
 import { db, type WordObject } from '../db/dexie';
 import { global_dict } from '../data/global_dict';
 import { playExactWordAudio } from '../utils/sound';
-import { syncExcludedDictionary, syncCustomDictionary } from '../services/sync';
+import { syncExcludedDictionary, syncCustomDictionary, deleteExcludedDictionaryWords, deleteCustomDictionaryWords } from '../services/sync';
 
 interface MissingVocabItem {
   sv: string;
@@ -801,6 +801,9 @@ export default function Narration() {
     // Perform Dexie database write and Supabase cloud sync completely in background without blocking UI
     (async () => {
       try {
+        const deletedCustomWords: string[] = [];
+        const deletedExWords: string[] = [];
+
         await db.transaction('rw', [db.excluded_dictionary, db.custom_dictionary, db.learning_queue], async () => {
           // Excluded words: Add new
           const allExInDb = await db.excluded_dictionary.toArray();
@@ -818,6 +821,7 @@ export default function Narration() {
           // Excluded words: Remove unexcluded
           for (const rec of allExInDb) {
             if (!updatedEx.includes(rec.base_form.toLowerCase()) && rec.id) {
+              deletedExWords.push(rec.base_form.toLowerCase());
               await db.excluded_dictionary.delete(rec.id);
             }
           }
@@ -859,6 +863,8 @@ export default function Narration() {
               (ecBase && (updatedCustomBaseSet.has(ecBase) || updatedCustomSvSet.has(ecBase) || updatedCustomInSentSet.has(ecBase))) ||
               (ecInSent && (updatedCustomInSentSet.has(ecInSent) || updatedCustomSvSet.has(ecInSent) || updatedCustomBaseSet.has(ecInSent)));
             if (!isRetained && ec.id) {
+              if (ec.base_form) deletedCustomWords.push(ec.base_form);
+              if (ec.word_in_sentence) deletedCustomWords.push(ec.word_in_sentence);
               await db.custom_dictionary.delete(ec.id);
             }
           }
@@ -887,6 +893,15 @@ export default function Narration() {
           }
         });
 
+        // 1. Delete removed custom & unexcluded words in Supabase cloud first
+        if (deletedCustomWords.length > 0) {
+          await deleteCustomDictionaryWords(deletedCustomWords);
+        }
+        if (deletedExWords.length > 0) {
+          await deleteExcludedDictionaryWords(deletedExWords, currentCourseId);
+        }
+
+        // 2. Synchronize remaining and newly added words with Supabase cloud
         await Promise.all([syncExcludedDictionary(), syncCustomDictionary()]);
         refreshCustomDictionary();
         refreshExcludedDictionary();

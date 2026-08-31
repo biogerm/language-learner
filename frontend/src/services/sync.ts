@@ -69,6 +69,61 @@ export async function syncExcludedDictionary() {
 }
 
 /**
+ * Delete excluded words from Supabase cloud database
+ */
+export async function deleteExcludedDictionaryWords(baseForms: string[], courseId = 'sfid') {
+  if (!navigator.onLine || !baseForms || baseForms.length === 0) return;
+  try {
+    const { data: { session } } = await supabase.auth.getSession();
+    if (!session?.user) return;
+    const userId = session.user.id;
+
+    const cleanForms = Array.from(new Set(baseForms.map(w => w.toLowerCase()).filter(Boolean)));
+    if (cleanForms.length === 0) return;
+
+    const { error } = await supabase
+      .from('excluded_dictionary')
+      .delete()
+      .eq('user_id', userId)
+      .eq('course_id', courseId.toLowerCase())
+      .in('base_form', cleanForms);
+
+    if (error) {
+      console.warn('Error deleting excluded_dictionary from Supabase:', error);
+    }
+  } catch (e) {
+    console.warn('Delete excluded dictionary error:', e);
+  }
+}
+
+/**
+ * Delete custom dictionary words from Supabase cloud database
+ */
+export async function deleteCustomDictionaryWords(baseForms: string[]) {
+  if (!navigator.onLine || !baseForms || baseForms.length === 0) return;
+  try {
+    const { data: { session } } = await supabase.auth.getSession();
+    if (!session?.user) return;
+    const userId = session.user.id;
+
+    const cleanForms = Array.from(new Set(baseForms.map(w => w.toLowerCase()).filter(Boolean)));
+    if (cleanForms.length === 0) return;
+
+    const { error } = await supabase
+      .from('custom_dictionary')
+      .delete()
+      .eq('user_id', userId)
+      .in('base_form', cleanForms);
+
+    if (error) {
+      console.warn('Error deleting custom_dictionary from Supabase:', error);
+    }
+  } catch (e) {
+    console.warn('Delete custom dictionary error:', e);
+  }
+}
+
+/**
  * Synchronize custom dictionary (annotated / extracted vocabulary) with Supabase cloud database
  */
 export async function syncCustomDictionary() {
