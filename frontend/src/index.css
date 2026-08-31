@@ -901,6 +901,20 @@ strong {
     border-bottom: none !important;
 }
 
+/* Edit Mode: Unselected Target Word (dashed purple underline) */
+.selectable-word.target-word-unselected {
+    border-bottom: 2px dashed rgba(139, 92, 246, 0.8) !important;
+}
+
+/* Reading Mode: Excluded Target Word (dashed purple underline) */
+.vocab-word.target-word-excluded, .target-word-excluded {
+    border-bottom: 2px dashed rgba(139, 92, 246, 0.8);
+    padding: 0 2px;
+}
+.vocab-word.target-word-excluded:hover, .target-word-excluded:hover {
+    background-color: rgba(139, 92, 246, 0.15);
+}
+
 /* Unknown Plain Word Selected (e.g. den): Muted Gray with Dashed Border */
 .selectable-word.selected-unknown-word {
     background-color: #9ca3af !important;
