@@ -1220,7 +1220,7 @@ export default function Narration() {
 
             return (
               <article
-                className={`sentence-card ${isPlaying ? 'playing' : ''} ${isEditing ? 'edit-mode' : ''}`}
+                className={`sentence-card ${isActive ? 'active' : ''} ${isPlaying ? 'playing' : ''} ${isEditing ? 'edit-mode' : ''}`}
                 key={sent.id || sent.sentence_id || `sent_${i}`}
                 ref={el => { sentenceRefs.current[i] = el; }}
                 style={{
@@ -1249,85 +1249,70 @@ export default function Narration() {
                   }
                 }}
               >
-                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
-                  {!isEditing ? (
-                    <div style={{ margin: 0, marginBottom: '0.5rem', fontSize: '1.4rem', fontWeight: 600, lineHeight: '1.6', color: 'var(--text-h, #ffffff)', paddingRight: '40px' }}>
-                      {renderReadingSwedish(sent, i, sentWords)}
-                    </div>
-                  ) : (
-                    /* Edit Mode Word Selection (Replicating L) */
-                    <div style={{ margin: 0, marginBottom: '0.5rem', fontSize: '1.4rem', fontWeight: 600, lineHeight: '1.6', color: 'var(--text-h, #ffffff)', paddingRight: '40px' }}>
-                      {editingTokens.map((t, tIdx) => {
-                        if (!t.isWord) {
-                          return <span key={tIdx}>{t.token}</span>;
-                        }
+                {!isEditing ? (
+                  <div style={{ margin: 0, marginBottom: '0.5rem', fontSize: '1.4rem', fontWeight: 600, lineHeight: '1.6', color: 'var(--text-h, #ffffff)' }}>
+                    {renderReadingSwedish(sent, i, sentWords)}
+                  </div>
+                ) : (
+                  /* Edit Mode Word Selection (Replicating L) */
+                  <div style={{ margin: 0, marginBottom: '0.5rem', fontSize: '1.4rem', fontWeight: 600, lineHeight: '1.6', color: 'var(--text-h, #ffffff)' }}>
+                    {editingTokens.map((t, tIdx) => {
+                      if (!t.isWord) {
+                        return <span key={tIdx}>{t.token}</span>;
+                      }
 
-                        let cls = 'selectable-word';
-                        if (t.type === 'secondary') cls += ' secondary-word';
-                        if (t.isSelected) {
-                          if (t.type === 'target') cls += ' selected-word';
-                          else if (t.type === 'secondary') cls += ' selected-secondary-word';
-                          else if (t.isGlobalTarget) cls += ' selected-global-target-word';
-                          else if (t.type === 'custom') cls += ' selected-custom-word';
-                          else if (t.isUnknown) cls += ' selected-unknown-word';
-                          else cls += ' selected-custom-word';
-                        }
+                      let cls = 'selectable-word';
+                      if (t.type === 'secondary') cls += ' secondary-word';
+                      if (t.isSelected) {
+                        if (t.type === 'target') cls += ' selected-word';
+                        else if (t.type === 'secondary') cls += ' selected-secondary-word';
+                        else if (t.isGlobalTarget) cls += ' selected-global-target-word';
+                        else if (t.type === 'custom') cls += ' selected-custom-word';
+                        else if (t.isUnknown) cls += ' selected-unknown-word';
+                        else cls += ' selected-custom-word';
+                      }
 
-                        return (
-                          <span
-                            key={tIdx}
-                            className={cls}
-                            data-word={t.cleanWord}
-                            data-type={t.type}
-                            data-isglobaltarget={t.isGlobalTarget ? 'true' : 'false'}
-                            onClick={(e) => {
-                              e.stopPropagation();
-                              handleWordClickInEdit(tIdx);
-                            }}
-                          >
-                            {t.token}
-                            {t.isInFsrs && (
-                              <span
-                                className="fsrs-review-badge"
-                                title="Already in FSRS review schedule"
-                                style={{
-                                  display: 'inline-flex',
-                                  alignItems: 'center',
-                                  justifyContent: 'center',
-                                  fontSize: '0.7em',
-                                  padding: '1px 3px',
-                                  marginLeft: '2px',
-                                  borderRadius: '3px',
-                                  backgroundColor: 'rgba(34, 197, 94, 0.25)',
-                                  color: '#4ade80',
-                                  border: '1px solid rgba(34, 197, 94, 0.4)',
-                                  verticalAlign: 'super',
-                                  lineHeight: 1,
-                                  fontWeight: 'bold'
-                                }}
-                              >
-                                ✓
-                              </span>
-                            )}
-                          </span>
-                        );
-                      })}
-                    </div>
-                  )}
-
-                  {!isEditing ? (
-                    <button
-                      className="extract-vocab-btn"
-                      title="Edit Vocabulary"
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        enterEditMode(i);
-                      }}
-                    >
-                      📖
-                    </button>
-                  ) : null}
-                </div>
+                      return (
+                        <span
+                          key={tIdx}
+                          className={cls}
+                          data-word={t.cleanWord}
+                          data-type={t.type}
+                          data-isglobaltarget={t.isGlobalTarget ? 'true' : 'false'}
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            handleWordClickInEdit(tIdx);
+                          }}
+                        >
+                          {t.token}
+                          {t.isInFsrs && (
+                            <span
+                              className="fsrs-review-badge"
+                              title="Already in FSRS review schedule"
+                              style={{
+                                display: 'inline-flex',
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                                fontSize: '0.7em',
+                                padding: '1px 3px',
+                                marginLeft: '2px',
+                                borderRadius: '3px',
+                                backgroundColor: 'rgba(34, 197, 94, 0.25)',
+                                color: '#4ade80',
+                                border: '1px solid rgba(34, 197, 94, 0.4)',
+                                verticalAlign: 'super',
+                                lineHeight: 1,
+                                fontWeight: 'bold'
+                              }}
+                            >
+                              ✓
+                            </span>
+                          )}
+                        </span>
+                      );
+                    })}
+                  </div>
+                )}
 
                 {sent.en && !isEditing && (
                   <p
@@ -1343,6 +1328,19 @@ export default function Narration() {
                   >
                     {renderReadingEnglish(sent, i, sentWords)}
                   </p>
+                )}
+
+                {!isEditing && (
+                  <button
+                    className="extract-vocab-btn"
+                    title="Edit Vocabulary"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      enterEditMode(i);
+                    }}
+                  >
+                    📖
+                  </button>
                 )}
 
                 {isEditing && (
