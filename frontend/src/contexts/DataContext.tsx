@@ -419,7 +419,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
        }
        
        if (payloadToPush.length > 0) {
-           const { error } = await supabase.from('learning_queue').upsert(payloadToPush, { onConflict: 'user_id, course_id, article_id, base_form' });
+           const { error } = await supabase.from('learning_queue').upsert(payloadToPush, { onConflict: 'user_id, article_id, base_form' });
            if (!error) {
                await Promise.all(payloadToPush.map(async p => {
                    const local = await db.learning_queue.where({ article_id: p.article_id, base_form: p.base_form }).first();
