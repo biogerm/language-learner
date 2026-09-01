@@ -66,13 +66,44 @@ export default function Flashcard() {
     if (!selectedArticleId) return;
     try {
       const cleanWord = wordId.toLowerCase();
-      const existing = await db.learning_queue
+      let existing = await db.learning_queue
         .where('article_id')
         .equals(selectedArticleId)
         .filter(r => (r.base_form || '').toLowerCase() === cleanWord)
         .first();
 
-      console.log('updateMasteryAndVocab:', { wordId, selectedArticleId, found: !!existing });
+      // If the word isn't in db.learning_queue yet (words in Study mode live only in React state),
+      // create it now so the gate-pass status can be persisted and synced to Supabase.
+      if (!existing) {
+        const queueItem = queue.find((q: any) =>
+          (q.word_id || q.base_form || '').toLowerCase() === cleanWord
+        );
+        await db.learning_queue.add({
+          base_form: queueItem?.base_form || wordId,
+          word_in_sentence: queueItem?.word_in_sentence || wordId,
+          en_translation: queueItem?.en_translation || '',
+          contextual_en: queueItem?.contextual_en || '',
+          dict_en: queueItem?.dict_en || '',
+          article_id: selectedArticleId,
+          stage_id: queueItem?.stage_id || selectedStage || '',
+          course_id: courseId || 'sfid',
+          sentence_id: queueItem?.sentence_id || '',
+          sentence: queueItem?.sentence || queueItem?.context_sv || '',
+          sentence_en: queueItem?.sentence_en || queueItem?.context_en || '',
+          context_sv: queueItem?.context_sv || queueItem?.sentence || '',
+          context_en: queueItem?.context_en || queueItem?.sentence_en || '',
+          dictation_passed: false,
+          flashcard_passed: false,
+          status: 'active',
+          synced: false,
+          updated_at: new Date().toISOString()
+        } as any);
+        existing = await db.learning_queue
+          .where('article_id')
+          .equals(selectedArticleId)
+          .filter(r => (r.base_form || '').toLowerCase() === cleanWord)
+          .first();
+      }
 
       if (existing && existing.id) {
         await db.learning_queue.update(existing.id, {
@@ -83,9 +114,6 @@ export default function Flashcard() {
 
         // Trigger background sync immediately
         syncLearningQueueRemote().catch((e: any) => console.warn('Sync failed:', e));
-      } else {
-        console.warn('DEBUG: Word not found in local Dexie learning_queue!', wordId, selectedArticleId);
-        // removed bug toast
       }
     } catch (e: any) {
       console.warn('Error updating learning_queue in Dexie:', e);
