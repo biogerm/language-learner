@@ -87,7 +87,7 @@ export default function Dictation() {
         syncLearningQueueRemote().catch((e: any) => console.warn('Sync failed:', e));
       } else {
         console.warn('DEBUG: Word not found in local Dexie learning_queue!', wordId, selectedArticleId);
-        window.dispatchEvent(new CustomEvent('fsrs-toast', { detail: `BUG: ${wordId} not in ${selectedArticleId}` }));
+        // removed bug toast
       }
     } catch (e: any) {
       console.warn('Error updating learning_queue in Dexie:', e);
