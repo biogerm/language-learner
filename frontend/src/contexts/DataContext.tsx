@@ -451,6 +451,11 @@ export function DataProvider({ children }: { children: ReactNode }) {
                    // Never overwrite unsynced local changes, regardless of timestamp (prevents clock skew bugs)
                    if (!local.synced) continue;
                    
+                   const localUpdated = local.updated_at ? new Date(local.updated_at).getTime() : 0;
+                   const remoteUpdated = remote.updated_at ? new Date(remote.updated_at).getTime() : 0;
+                   // Don't overwrite newer local data with stale remote data (e.g. from the fetch before our push)
+                   if (localUpdated >= remoteUpdated) continue;
+                   
                    await db.learning_queue.update(local.id!, {
                        dictation_passed: remote.dictation_passed,
                        flashcard_passed: remote.flashcard_passed,
