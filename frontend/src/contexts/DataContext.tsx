@@ -432,12 +432,22 @@ export function DataProvider({ children }: { children: ReactNode }) {
     // Merge
     if (remoteData) {
         await db.transaction('rw', db.learning_queue, async () => {
+           // 1. Purge local synced items that no longer exist remotely (deleted by another device)
+           const allLocal = await db.learning_queue.toArray();
+           for (const localItem of allLocal) {
+               if (localItem.synced) {
+                   const stillExists = remoteData.some(r => r.article_id === localItem.article_id && r.base_form === localItem.base_form);
+                   if (!stillExists && localItem.id) {
+                       await db.learning_queue.delete(localItem.id);
+                   }
+               }
+           }
+           
+           // 2. Upsert remote items to local
            for (const remote of remoteData) {
                const local = await db.learning_queue.where({ article_id: remote.article_id, base_form: remote.base_form }).first();
-               const remoteUpdated = remote.updated_at ? new Date(remote.updated_at).getTime() : 0;
                
                if (local) {
-                   const localUpdated = local.updated_at ? new Date(local.updated_at).getTime() : 0;
                    // Never overwrite unsynced local changes, regardless of timestamp (prevents clock skew bugs)
                    if (!local.synced) continue;
                    
