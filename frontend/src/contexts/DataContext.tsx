@@ -471,6 +471,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
            }
         });
         window.dispatchEvent(new CustomEvent("fsrs-toast", { detail: "☁️ Sync Complete" }));
+        refreshLearningQueue();
     }
   };
 
