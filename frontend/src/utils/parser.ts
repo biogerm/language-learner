@@ -4,6 +4,7 @@ export interface WordData {
     position_end?: number;
     type?: 'target' | 'secondary';
     contextual_en?: string;
+    isExcluded?: boolean;
 }
 
 export function parseSentence(svText: string, targetWords: WordData[] = [], secondaryWords: WordData[] = []) {
@@ -37,7 +38,7 @@ export function parseSentence(svText: string, targetWords: WordData[] = [], seco
 }
 
 export function parseEnglishSentence(enText: string, allWords: WordData[]) {
-    let enWords = allWords.filter(w => w.contextual_en).sort((a, b) => (b.contextual_en?.length || 0) - (a.contextual_en?.length || 0));
+    let enWords = allWords.filter(w => w.contextual_en && !w.isExcluded).sort((a, b) => (b.contextual_en?.length || 0) - (a.contextual_en?.length || 0));
     let tokens: {token: string, html: string}[] = [];
     let processedEnText = enText;
 
