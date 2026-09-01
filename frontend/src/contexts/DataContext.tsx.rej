@@ -1,8 +1,0 @@
-@@ -32,6 +33,7 @@
-   courseData: null,
-   dictionary: null,
-   loadCourse: async () => {},
-+  syncUserData: async () => {},
-   selectedStage: '',
-   setSelectedStage: () => {},
-   selectedArticleId: '',
