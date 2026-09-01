@@ -11,7 +11,7 @@ import { playExactWordAudio, preProbeWordAudio } from '../utils/sound';
 
 export default function Flashcard() {
   const { courseId } = useParams();
-  const { courseData, dictionary, selectedStage, selectedArticleId, learningQueue, appMode } = useData();
+  const { courseData, dictionary, selectedStage, selectedArticleId, learningQueue, appMode, syncUserData } = useData();
   const { isTester } = useAuth();
   const [queue, setQueue] = useState<any[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -78,6 +78,9 @@ export default function Flashcard() {
           updated_at: new Date().toISOString(),
           synced: false
         });
+
+        // Trigger background sync immediately
+        syncUserData().catch(e => console.warn('Sync failed:', e));
       }
     } catch (e) {
       console.warn('Error updating learning_queue in Dexie:', e);
