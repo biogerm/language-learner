@@ -1,0 +1,46 @@
+--- frontend/src/contexts/DataContext.tsx
++++ frontend/src/contexts/DataContext.tsx
+@@ -8,6 +8,7 @@
+   courseData: Record<string, Record<string, any>> | null;
+   dictionary: Record<string, any> | null;
+   loadCourse: (courseId: string) => Promise<void>;
++  syncUserData: (isInitial?: boolean) => Promise<void>;
+   selectedStage: string;
+   setSelectedStage: (stage: string) => void;
+   selectedArticleId: string;
+@@ -32,6 +33,7 @@
+   courseData: null,
+   dictionary: null,
+   loadCourse: async () => {},
++  syncUserData: async () => {},
+   selectedStage: '',
+   setSelectedStage: () => {},
+   selectedArticleId: '',
+@@ -424,6 +426,9 @@
+                    const local = await db.learning_queue.where({ article_id: p.article_id, base_form: p.base_form }).first();
+                    if (local && local.id) await db.learning_queue.update(local.id!, { synced: true });
+                }));
++           } else {
++               console.error('Learning queue sync push error:', error);
++               window.dispatchEvent(new CustomEvent('fsrs-toast', { detail: '❌ Sync Push Failed' }));
+            }
+        }
+     }
+@@ -465,6 +470,9 @@
+                }
+            }
+         });
++        
++        // Dispatch toast so user knows sync finished successfully
++        window.dispatchEvent(new CustomEvent('fsrs-toast', { detail: '☁️ Sync Complete' }));
+     }
+   };
+ 
+@@ -547,6 +555,7 @@
+       courseData, 
+       dictionary,
+       loadCourse,
++      syncUserData,
+       selectedStage, setSelectedStage,
+       selectedArticleId, setSelectedArticleId,
+       appMode, setAppMode,
