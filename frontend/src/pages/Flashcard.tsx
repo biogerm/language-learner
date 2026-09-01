@@ -11,7 +11,7 @@ import { playExactWordAudio, preProbeWordAudio } from '../utils/sound';
 
 export default function Flashcard() {
   const { courseId } = useParams();
-  const { courseData, dictionary, selectedStage, selectedArticleId, learningQueue, appMode, syncUserData } = useData();
+  const { courseData, dictionary, selectedStage, selectedArticleId, learningQueue, appMode, syncLearningQueueRemote } = useData();
   const { isTester } = useAuth();
   const [queue, setQueue] = useState<any[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -72,6 +72,8 @@ export default function Flashcard() {
         .filter(r => (r.base_form || '').toLowerCase() === cleanWord)
         .first();
 
+      console.log('updateMasteryAndVocab:', { wordId, selectedArticleId, found: !!existing });
+
       if (existing && existing.id) {
         await db.learning_queue.update(existing.id, {
           flashcard_passed: isCorrect,
@@ -80,9 +82,12 @@ export default function Flashcard() {
         });
 
         // Trigger background sync immediately
-        syncUserData().catch(e => console.warn('Sync failed:', e));
+        syncLearningQueueRemote().catch((e: any) => console.warn('Sync failed:', e));
+      } else {
+        console.warn('DEBUG: Word not found in local Dexie learning_queue!', wordId, selectedArticleId);
+        window.dispatchEvent(new CustomEvent('fsrs-toast', { detail: `BUG: ${wordId} not in ${selectedArticleId}` }));
       }
-    } catch (e) {
+    } catch (e: any) {
       console.warn('Error updating learning_queue in Dexie:', e);
     }
 

@@ -8,7 +8,6 @@ interface DataContextType {
   courseData: Record<string, Record<string, any>> | null;
   dictionary: Record<string, any> | null;
   loadCourse: (courseId: string) => Promise<void>;
-  syncLearningQueueRemote: () => Promise<void>;
   selectedStage: string;
   setSelectedStage: (stage: string) => void;
   selectedArticleId: string;
@@ -426,9 +425,6 @@ export function DataProvider({ children }: { children: ReactNode }) {
                    const local = await db.learning_queue.where({ article_id: p.article_id, base_form: p.base_form }).first();
                    if (local && local.id) await db.learning_queue.update(local.id!, { synced: true });
                }));
-           } else {
-               console.error("Learning queue sync push error:", error);
-               window.dispatchEvent(new CustomEvent("fsrs-toast", { detail: "❌ Sync Push Failed" }));
            }
        }
     }
@@ -470,7 +466,6 @@ export function DataProvider({ children }: { children: ReactNode }) {
                }
            }
         });
-        window.dispatchEvent(new CustomEvent("fsrs-toast", { detail: "☁️ Sync Complete" }));
     }
   };
 
@@ -549,7 +544,6 @@ export function DataProvider({ children }: { children: ReactNode }) {
       courseData, 
       dictionary,
       loadCourse,
-      syncLearningQueueRemote,
       selectedStage, setSelectedStage,
       selectedArticleId, setSelectedArticleId,
       appMode, setAppMode,
