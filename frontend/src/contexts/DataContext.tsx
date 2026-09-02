@@ -384,12 +384,14 @@ export function DataProvider({ children }: { children: ReactNode }) {
     refreshCustomDictionary();
   }, [refreshCustomDictionary]);
 
-  const syncLearningQueueRemote = async () => {
-    const { data: { user } } = await supabase.auth.getUser();
-    if (!user) return;
-    
-    // Pull first
-    const { data: remoteData } = await supabase.from('learning_queue').select('*').eq('user_id', user.id);
+  const syncLearningQueueRemote = async (retries = 3): Promise<void> => {
+    try {
+      const { data: { user } } = await supabase.auth.getUser();
+      if (!user) return;
+      
+      // Pull first
+      const { data: remoteData, error: pullError } = await supabase.from('learning_queue').select('*').eq('user_id', user.id);
+      if (pullError) throw pullError;
     const { data: localQueue } = { data: await db.learning_queue.toArray() };
     
     const remoteMap = new Map((remoteData || []).map(r => [r.course_id + '_' + r.article_id + '_' + r.base_form, r]));
@@ -467,10 +469,39 @@ export function DataProvider({ children }: { children: ReactNode }) {
                        updated_at: remote.updated_at,
                        synced: true
                    });
-               }
+                } else {
+                    await db.learning_queue.add({
+                        base_form: remote.base_form,
+                        word_in_sentence: remote.word_in_sentence || remote.base_form,
+                        en_translation: remote.en_translation || '',
+                        contextual_en: remote.contextual_en || '',
+                        dict_en: remote.dict_en || '',
+                        article_id: remote.article_id,
+                        stage_id: remote.stage_id || '',
+                        course_id: remote.course_id || 'sfid',
+                        sentence_id: remote.sentence_id || '',
+                        sentence: remote.sentence || '',
+                        sentence_en: remote.sentence_en || '',
+                        context_sv: remote.context_sv || '',
+                        context_en: remote.context_en || '',
+                        dictation_passed: !!remote.dictation_passed,
+                        flashcard_passed: !!remote.flashcard_passed,
+                        status: remote.status || 'active',
+                        updated_at: remote.updated_at || new Date().toISOString(),
+                        synced: true
+                    } as any);
+                }
            }
         });
         window.dispatchEvent(new CustomEvent("fsrs-toast", { detail: "☁️ Sync Complete" }));
+      }
+    } catch (err) {
+      if (retries > 0) {
+        console.warn(`[Sync] syncLearningQueueRemote encountered error, retrying in 1500ms (${retries} left):`, err);
+        setTimeout(() => syncLearningQueueRemote(retries - 1), 1500);
+      } else {
+        console.error("[Sync] syncLearningQueueRemote failed after retries:", err);
+      }
     }
   };
 
