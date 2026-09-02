@@ -167,10 +167,10 @@ export default function Flashcard() {
     fetchQueue();
   }, [fetchQueue]);
 
-  // Listen for sync completion to immediately refresh stats and queue without tab switching
+  // Listen for sync completion to immediately refresh stats without disrupting in-progress queue
   useEffect(() => {
     const handleSyncDone = async () => {
-      if (currentIndex === 0) {
+      if (queueRef.current.length === 0) {
         lastScopeKeyRef.current = '';
         await fetchQueue();
       } else {
@@ -188,7 +188,7 @@ export default function Flashcard() {
     };
     window.addEventListener('learning-queue-updated', handleSyncDone);
     return () => window.removeEventListener('learning-queue-updated', handleSyncDone);
-  }, [currentIndex, appMode, courseId, selectedArticleId, learningQueue, fetchQueue]);
+  }, [appMode, courseId, selectedArticleId, learningQueue, fetchQueue]);
 
   const handleResetProgress = async () => {
     if (appMode !== 'study' || !selectedArticleId) return;
@@ -678,6 +678,7 @@ export default function Flashcard() {
     const handleGlobalKeyDown = (e: KeyboardEvent) => {
       if (e.key === 'Tab') {
         e.preventDefault();
+        e.stopPropagation();
         if (wrongCount >= 2 || status !== 'typing') {
           playAudio();
         }
@@ -721,6 +722,7 @@ export default function Flashcard() {
   const handleKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === 'Tab') {
       e.preventDefault();
+      e.stopPropagation();
       if (wrongCount >= 2 || status !== 'typing') {
         playAudio();
       }
@@ -831,10 +833,10 @@ export default function Flashcard() {
           <span className="stat-correct">Mastered: {stats.mastered}</span>
           <span className="stat-remaining">Remaining: {stats.remaining}</span>
           {appMode === 'study' && (
-            <button id="reset-progress-btn" onClick={handleResetProgress}>Reset Progress</button>
+            <button id="reset-progress-btn" tabIndex={-1} onClick={handleResetProgress}>Reset Progress</button>
           )}
           {appMode === 'review' && isTester && (
-            <button id="reset-fsrs-btn" onClick={handleResetFSRS} title="Reset all FSRS review data">Reset FSRS</button>
+            <button id="reset-fsrs-btn" tabIndex={-1} onClick={handleResetFSRS} title="Reset all FSRS review data">Reset FSRS</button>
           )}
         </div>
         
@@ -844,7 +846,7 @@ export default function Flashcard() {
 
         {!isAllDone && wrongCount >= 2 && !showAnswer && (
           <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', justifyContent: 'center', marginBottom: '1.5rem' }}>
-            <button id="play-btn" className="play-btn" onClick={playAudio} title="Audio Hint (Tab)">
+            <button id="play-btn" tabIndex={-1} className="play-btn" onClick={playAudio} title="Audio Hint (Tab)">
               <svg className="play-icon" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M8 5v14l11-7z" />
               </svg>
@@ -908,6 +910,7 @@ export default function Flashcard() {
             <div style={{ display: 'flex', gap: '10px', justifyContent: 'center' }}>
               <button 
                 id="reveal-btn" 
+                tabIndex={-1}
                 className={`reveal-btn ${wrongCount >= 1 ? 'show' : ''}`}
                 onClick={handleReveal}
               >
@@ -950,7 +953,7 @@ export default function Flashcard() {
           )}
 
           {!isAllDone && showAnswer && (
-            <button className="reveal-btn show" style={{ marginTop: '1.25rem' }} onClick={proceedToNext}>
+            <button tabIndex={-1} className="reveal-btn show" style={{ marginTop: '1.25rem' }} onClick={proceedToNext}>
               Next (Enter)
             </button>
           )}

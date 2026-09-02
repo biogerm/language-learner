@@ -169,10 +169,10 @@ export default function Dictation() {
     fetchQueue();
   }, [fetchQueue]);
 
-  // Listen for sync completion to immediately refresh stats and queue without tab switching
+  // Listen for sync completion to immediately refresh stats without disrupting in-progress queue
   useEffect(() => {
     const handleSyncDone = async () => {
-      if (currentIndex === 0) {
+      if (queueRef.current.length === 0) {
         lastScopeKeyRef.current = '';
         await fetchQueue();
       } else {
@@ -190,7 +190,7 @@ export default function Dictation() {
     };
     window.addEventListener('learning-queue-updated', handleSyncDone);
     return () => window.removeEventListener('learning-queue-updated', handleSyncDone);
-  }, [currentIndex, appMode, courseId, selectedArticleId, learningQueue, fetchQueue]);
+  }, [appMode, courseId, selectedArticleId, learningQueue, fetchQueue]);
 
   const handleResetProgress = async () => {
     if (appMode !== 'study' || !selectedArticleId) return;
@@ -680,6 +680,7 @@ export default function Dictation() {
     const handleGlobalKeyDown = (e: KeyboardEvent) => {
       if (e.key === 'Tab') {
         e.preventDefault();
+        e.stopPropagation();
         playAudio();
         return;
       }
@@ -719,6 +720,7 @@ export default function Dictation() {
   const handleKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === 'Tab') {
       e.preventDefault();
+      e.stopPropagation();
       playAudio();
       return;
     }
@@ -827,10 +829,10 @@ export default function Dictation() {
           <span className="stat-correct">Mastered: {stats.mastered}</span>
           <span className="stat-remaining">Remaining: {stats.remaining}</span>
           {appMode === 'study' && (
-            <button id="reset-progress-btn" onClick={handleResetProgress}>Reset Progress</button>
+            <button id="reset-progress-btn" tabIndex={-1} onClick={handleResetProgress}>Reset Progress</button>
           )}
           {appMode === 'review' && isTester && (
-            <button id="reset-fsrs-btn" onClick={handleResetFSRS} title="Reset all FSRS review data">Reset FSRS</button>
+            <button id="reset-fsrs-btn" tabIndex={-1} onClick={handleResetFSRS} title="Reset all FSRS review data">Reset FSRS</button>
           )}
         </div>
         
@@ -840,7 +842,7 @@ export default function Dictation() {
 
         {!isAllDone && (
           <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', justifyContent: 'center', marginBottom: '2rem' }}>
-            <button id="play-btn" className="play-btn" onClick={playAudio} title="Play Audio (Tab)">
+            <button id="play-btn" tabIndex={-1} className="play-btn" onClick={playAudio} title="Play Audio (Tab)">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M8 5v14l11-7z" />
               </svg>
@@ -913,6 +915,7 @@ export default function Dictation() {
             <div style={{ display: 'flex', gap: '10px', justifyContent: 'center' }}>
               <button 
                 id="reveal-btn" 
+                tabIndex={-1}
                 className={`reveal-btn ${wrongCount >= 1 ? 'show' : ''}`}
                 onClick={handleReveal}
               >
@@ -955,7 +958,7 @@ export default function Dictation() {
           )}
 
           {!isAllDone && showAnswer && (
-            <button className="reveal-btn show" style={{ marginTop: '1.25rem' }} onClick={proceedToNext}>
+            <button tabIndex={-1} className="reveal-btn show" style={{ marginTop: '1.25rem' }} onClick={proceedToNext}>
               Next (Enter)
             </button>
           )}
