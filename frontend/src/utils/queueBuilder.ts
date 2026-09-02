@@ -356,9 +356,16 @@ export const buildStudyQueue = async (
       .toArray();
     const fsrsWordSet = new Set(fsrsRecords.map((r: any) => (r.word_id || '').toLowerCase()));
 
-    // Fetch in-progress gate passes from db.learning_queue
-    const inProgressRecords = await db.learning_queue.toArray();
-    const inProgressMap = new Map(inProgressRecords.map(r => [(r.base_form || '').toLowerCase(), r]));
+    // Fetch in-progress gate passes from db.learning_queue specifically for this article
+    const inProgressRecords = await db.learning_queue.where('article_id').equals(selectedArticleId).toArray();
+    const inProgressMap = new Map<string, any>();
+    for (const r of inProgressRecords) {
+      const key = (r.base_form || '').toLowerCase();
+      const existing = inProgressMap.get(key);
+      if (!existing || r.dictation_passed || r.flashcard_passed) {
+        inProgressMap.set(key, r);
+      }
+    }
 
     const uniqueMap = new Map();
     rawLq.forEach((w: any) => {
