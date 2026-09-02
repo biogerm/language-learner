@@ -196,18 +196,19 @@ export async function submitGatePass(
     
     progress.max_wrongs = (progress.max_wrongs || 0) + (wrongs || 0);
     progress.max_time = Math.max(progress.max_time || 0, Number(timeSec) || 0);
-    if (gave_up) progress.gave_up = true;
     progress.reveal_count = (progress.reveal_count || 0) + (reveal_count || 0);
 
-    // If not giving up, mark gate as passed
-    if (!gave_up) {
-        if (gate === 'dictation') progress.todayDictationPassed = true;
-        if (gate === 'flashcard') progress.todayFlashcardPassed = true;
-    }
+    // Mark gate as completed (pass or reveal/gave_up both count as "done" for scheduling purposes)
+    if (gate === 'dictation') progress.todayDictationPassed = true;
+    if (gate === 'flashcard') progress.todayFlashcardPassed = true;
+    // Track gave_up separately — it drives the FSRS rating (gave_up → Again)
+    if (gave_up) progress.gave_up = true;
 
-    // Check if Dual-Gate is complete or manual rating provided in review mode
-    if ((progress.todayDictationPassed && progress.todayFlashcardPassed) || manualRating !== undefined) {
-        const rating = manualRating !== undefined ? manualRating : calculateFSRSRating(progress.max_wrongs || 0, progress.max_time || 0, !!progress.gave_up, progress.reveal_count || 0);
+    // Check if Dual-Gate is complete: both gates done (pass or gave_up)
+    if (progress.todayDictationPassed && progress.todayFlashcardPassed) {
+        const rating = progress.gave_up
+            ? Rating.Again
+            : (manualRating !== undefined ? manualRating : calculateFSRSRating(progress.max_wrongs || 0, progress.max_time || 0, !!progress.gave_up, progress.reveal_count || 0));
         
         const card: Card = {
             due: progress.due,

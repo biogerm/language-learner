@@ -140,7 +140,9 @@ export default function Dictation() {
       const scopeKey = appMode === 'review'
         ? `review_${courseId || ''}`
         : `study_${courseId || ''}_${selectedStage || ''}_${selectedArticleId || ''}`;
-      if (lastScopeKeyRef.current === scopeKey && queueRef.current.length > 0) {
+      // In review mode, never short-circuit via scopeKey cache — FSRS due dates change every session.
+      // In study mode, cache is safe since the article/stage scope is stable during a session.
+      if (appMode !== 'review' && lastScopeKeyRef.current === scopeKey && queueRef.current.length > 0) {
         return;
       }
 
@@ -667,12 +669,15 @@ export default function Dictation() {
       updateMasteryAndVocab(currentWord.id, false);
       await submitGatePass(courseId, currentWord.id, 'dictation', wrongCount, timeSpent, true, 1);
     } else {
-      await submitGatePass(courseId, currentWord.id, 'dictation', wrongCount, timeSpent, true, 1, 1);
+      // Review mode: mark gave_up — fsrs.ts will trigger FSRS scheduling once BOTH gates are done
+      const res = await submitGatePass(courseId, currentWord.id, 'dictation', wrongCount, timeSpent, true, 1);
+      if (res.completed) {
+        window.dispatchEvent(new CustomEvent('fsrs-toast', { detail: res.toastMsg || `${res.ratingName} | ${res.dayStr}` }));
+      }
       loadFSRSStats();
     }
 
-    // Since the word was revealed / failed, it is not mastered.
-    // Re-append to the end of the session queue so user must practice it again.
+    // Since the word was revealed / failed, re-append to queue so user must practice again this session.
     if (currentRecord) {
       queueRef.current = [...queueRef.current, currentRecord];
       setQueue(prev => [...prev, currentRecord]);
