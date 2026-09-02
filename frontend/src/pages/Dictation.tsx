@@ -131,12 +131,20 @@ export default function Dictation() {
   };
 
   const lastScopeKeyRef = useRef<string>('');
+  const lastTotalRef = useRef<number>(0);
   const queueRef = useRef<any[]>([]);
 
   const fetchQueue = useCallback(async () => {
     try {
       const scopeKey = `${appMode}_${courseId}_${selectedStage}_${selectedArticleId}`;
-      if (lastScopeKeyRef.current === scopeKey && queueRef.current.length > 0) {
+      const currentArticleLqCount = (learningQueue || []).filter(w => w.article_id === selectedArticleId).length;
+      
+      // Only skip if scope has not changed AND we don't have newly hydrated vocabulary from context
+      if (
+        lastScopeKeyRef.current === scopeKey && 
+        queueRef.current.length > 0 &&
+        (currentArticleLqCount === 0 || currentArticleLqCount <= lastTotalRef.current)
+      ) {
         return;
       }
 
@@ -150,6 +158,7 @@ export default function Dictation() {
       );
 
       lastScopeKeyRef.current = scopeKey;
+      lastTotalRef.current = total;
       queueRef.current = newQueue;
       setQueue(newQueue);
       setCurrentIndex(0);

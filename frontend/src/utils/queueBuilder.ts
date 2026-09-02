@@ -244,6 +244,102 @@ export const buildStudyQueue = async (
     if (learningQueueProp && learningQueueProp.length > 0) {
       rawLq = learningQueueProp.filter((w: any) => w.article_id === selectedArticleId);
     }
+    
+    // If learningQueueProp is empty or not yet hydrated from context, load directly from db.course_data
+    if (rawLq.length === 0 && courseId) {
+      try {
+        const cached = await db.course_data.get(courseId);
+        if (cached && cached.articles && cached.articles.stages) {
+          const vocabList = (cached.dictionary || []) as any[];
+          const targetWordsSet = new Set<string>();
+          const sentenceMap = new Map<string, { sv: string; en: string }>();
+          const wordToSentenceMap = new Map<string, { sv: string; en: string }>();
+
+          for (const s of cached.articles.stages) {
+            for (const a of s.articles || []) {
+              if (a.article_id === selectedArticleId && a.sentences) {
+                for (const sent of a.sentences) {
+                  if (sent.sentence_id) {
+                    sentenceMap.set(sent.sentence_id, { sv: sent.sv, en: sent.en || '' });
+                  }
+                  if (sent.target_words) {
+                    for (const tw of sent.target_words) {
+                      targetWordsSet.add(tw.base_form);
+                      if (!wordToSentenceMap.has(tw.base_form.toLowerCase())) {
+                        wordToSentenceMap.set(tw.base_form.toLowerCase(), { sv: sent.sv, en: sent.en || '' });
+                      }
+                    }
+                  }
+                  if (sent.secondary_words) {
+                    for (const sw of sent.secondary_words) {
+                      if (!wordToSentenceMap.has(sw.base_form.toLowerCase())) {
+                        wordToSentenceMap.set(sw.base_form.toLowerCase(), { sv: sent.sv, en: sent.en || '' });
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          if (Array.isArray(vocabList) && vocabList.length > 0) {
+            rawLq = vocabList
+              .filter((w: any) => w.article_id === selectedArticleId && targetWordsSet.has(w.base_form))
+              .map((w: any) => {
+                const sentInfo = (w.sentence_id && sentenceMap.get(w.sentence_id)) || wordToSentenceMap.get(w.base_form.toLowerCase());
+                return {
+                  ...w,
+                  sentence: sentInfo?.sv || w.sentence || '',
+                  sentence_en: sentInfo?.en || w.sentence_en || '',
+                  context_sv: sentInfo?.sv || w.sentence || '',
+                  context_en: sentInfo?.en || w.sentence_en || ''
+                };
+              });
+          }
+
+          if (rawLq.length === 0) {
+            for (const s of cached.articles.stages) {
+              for (const a of s.articles || []) {
+                if (a.article_id === selectedArticleId && a.sentences) {
+                  for (const sent of a.sentences) {
+                    if (sent.target_words) {
+                      for (const tw of sent.target_words) {
+                        rawLq.push({
+                          base_form: tw.base_form,
+                          word_in_sentence: tw.word_in_sentence || tw.base_form,
+                          en_translation: tw.en_translation || tw.contextual_en || '',
+                          contextual_en: tw.contextual_en || '',
+                          dict_en: tw.dict_en || tw.contextual_en || '',
+                          article_id: a.article_id,
+                          stage_id: s.stage_id,
+                          course_id: courseId,
+                          sentence: sent.sv || '',
+                          sentence_en: sent.en || '',
+                          context_sv: sent.sv || '',
+                          context_en: sent.en || '',
+                          sentence_id: sent.sentence_id || ''
+                        });
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          const customVocab = await db.custom_dictionary.where('article_id').equals(selectedArticleId).toArray();
+          rawLq = [...rawLq, ...customVocab];
+
+          const uniqueMap = new Map<string, any>();
+          rawLq.forEach((w: any) => uniqueMap.set(w.base_form.toLowerCase(), w));
+          rawLq = Array.from(uniqueMap.values());
+        }
+      } catch (err) {
+        console.warn('Error reading course_data in buildStudyQueue:', err);
+      }
+    }
+
+    // Last resort fallback
     if (rawLq.length === 0) {
       rawLq = await db.learning_queue.where('article_id').equals(selectedArticleId).toArray();
     }
