@@ -5,9 +5,9 @@ export function formatWordPrompt(record: {
   contextual_en?: string | null;
   dict_en?: string;
 }, dictionary?: Record<string, any> | null): string {
-  const contextual = (record.en_translation || record.contextual_en || '').trim();
+  const contextual = (record.contextual_en || record.en_translation || '').trim();
   const baseForm = (record.base_form || '').trim().toLowerCase();
-  const dictEn = (record.dict_en || (baseForm ? dictionary?.[baseForm] : '') || '').trim();
+  const dictEn = (record.dict_en || (record.en_translation && record.contextual_en && record.en_translation.toLowerCase() !== record.contextual_en.toLowerCase() ? record.en_translation : '') || (baseForm ? dictionary?.[baseForm] : '') || '').trim();
 
   // If contextual meaning is present and differs from dictionary definition of the base form:
   // Explicitly state "(base form: <dictEn>)" in pure English without leaking Swedish lemma
