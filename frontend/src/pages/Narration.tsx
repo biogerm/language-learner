@@ -1213,9 +1213,17 @@ export default function Narration() {
           if (tok) {
             const w = tok.word;
             const syncId = w._syncId;
-            let cls = `vocab-word ${w.type}-word en-word`;
-            if (w.type === 'secondary' && w.isSelectedSecondary) cls += ' selected-secondary-word';
-            if (w.type === 'global_target') cls += ' global-target-word';
+            let cls = 'vocab-word en-word';
+            if (w.type === 'target') {
+              cls += w.isExcluded ? ' target-word-excluded' : ' target-word';
+            } else if (w.type === 'secondary') {
+              cls += ' secondary-word';
+              if (w.isSelectedSecondary) cls += ' selected-secondary-word';
+            } else if (w.type === 'global_target') {
+              cls += ' global-target-word';
+            } else if (w.type === 'custom') {
+              cls += ' custom-word';
+            }
             if (hoverSyncId === syncId) cls += ' hover-sync';
             return (
               <span

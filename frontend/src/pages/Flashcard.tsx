@@ -789,7 +789,7 @@ export default function Flashcard() {
   const showAnswer = status === 'correct' || status === 'revealed';
   const isAllDone = !loading && stats.total > 0 && (
     appMode === 'study'
-      ? stats.mastered >= stats.total
+      ? (stats.mastered >= stats.total && (currentIndex >= queue.length || (!isAdvancingRef.current && status !== 'correct' && status !== 'revealed')))
       : (queue.length > 0 && currentIndex >= queue.length)
   );
 
@@ -883,20 +883,22 @@ export default function Flashcard() {
             </div>
           )}
 
-          <input 
-            ref={inputRef}
-            autoFocus={!isAllDone}
-            type="text" 
-            id="spell-input" 
-            className={`spell-input ${!isAllDone && (inputState === 'correct' ? 'correct' : (inputState === 'incorrect' ? 'incorrect' : ''))}`}
-            value={input} 
-            onChange={e => { if (!isAllDone) { setInput(e.target.value); setInputState('default'); } }} 
-            onKeyDown={handleKeyDown}
-            placeholder={isAllDone ? (appMode === 'review' ? 'All reviews completed!' : 'Session completed!') : 'Type the Swedish word'}
-            disabled={isAllDone || showAnswer || isAdvancingRef.current}
-            autoComplete="off"
-            spellCheck="false"
-          />
+          {!isAllDone && (
+            <input 
+              ref={inputRef}
+              autoFocus
+              type="text" 
+              id="spell-input" 
+              className={`spell-input ${inputState === 'correct' ? 'correct' : (inputState === 'incorrect' ? 'incorrect' : '')}`}
+              value={input} 
+              onChange={e => { setInput(e.target.value); setInputState('default'); }} 
+              onKeyDown={handleKeyDown}
+              placeholder="Type the Swedish word"
+              disabled={showAnswer || isAdvancingRef.current}
+              autoComplete="off"
+              spellCheck="false"
+            />
+          )}
           
           {!isAllDone && !showAnswer && (
             <div style={{ display: 'flex', gap: '10px', justifyContent: 'center' }}>

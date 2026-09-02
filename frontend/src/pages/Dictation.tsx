@@ -785,7 +785,7 @@ export default function Dictation() {
   const showAnswer = status === 'correct' || status === 'revealed';
   const isAllDone = !loading && stats.total > 0 && (
     appMode === 'study'
-      ? stats.mastered >= stats.total
+      ? (stats.mastered >= stats.total && (currentIndex >= queue.length || (!isAdvancingRef.current && status !== 'correct' && status !== 'revealed')))
       : (queue.length > 0 && currentIndex >= queue.length)
   );
 
@@ -837,11 +837,19 @@ export default function Dictation() {
         {!isAllDone && (
           <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', justifyContent: 'center', marginBottom: '2rem' }}>
             <button id="play-btn" className="play-btn" onClick={playAudio} title="Play Audio (Tab)">
-              <svg className="play-icon" viewBox="0 0 24 24" fill="currentColor">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M8 5v14l11-7z" />
               </svg>
-              <span className="tab-hint">Tab</span>
             </button>
+          </div>
+        )}
+
+        {isAllDone && (
+          <div style={{ textAlign: 'center', margin: '2rem 0' }}>
+            <h2 style={{ fontSize: '1.8rem', color: '#10b981', marginBottom: '1rem' }}>🎉 Congratulations!</h2>
+            <p style={{ color: 'var(--text-secondary)' }}>
+              {appMode === 'review' ? 'You have completed all scheduled FSRS reviews!' : 'You have mastered all target words in this session!'}
+            </p>
           </div>
         )}
         
@@ -880,20 +888,22 @@ export default function Dictation() {
               Hint: {enPrompt}
             </div>
           )}
-          <input 
-            ref={inputRef}
-            autoFocus={!isAllDone}
-            type="text" 
-            id="spell-input" 
-            className={`spell-input ${!isAllDone && (inputState === 'correct' ? 'correct' : (inputState === 'incorrect' ? 'incorrect' : ''))}`}
-            value={input} 
-            onChange={e => { if (!isAllDone) { setInput(e.target.value); setInputState('default'); } }} 
-            onKeyDown={handleKeyDown}
-            placeholder={isAllDone ? (appMode === 'review' ? 'All reviews completed!' : 'Session completed!') : 'Type here and hit Enter'}
-            disabled={isAllDone || showAnswer || isAdvancingRef.current}
-            autoComplete="off"
-            spellCheck="false"
-          />
+          {!isAllDone && (
+            <input 
+              ref={inputRef}
+              autoFocus
+              type="text" 
+              id="spell-input" 
+              className={`spell-input ${inputState === 'correct' ? 'correct' : (inputState === 'incorrect' ? 'incorrect' : '')}`}
+              value={input} 
+              onChange={e => { setInput(e.target.value); setInputState('default'); }} 
+              onKeyDown={handleKeyDown}
+              placeholder="Type here and hit Enter"
+              disabled={showAnswer || isAdvancingRef.current}
+              autoComplete="off"
+              spellCheck="false"
+            />
+          )}
           
           {!isAllDone && !showAnswer && (
             <div style={{ display: 'flex', gap: '10px', justifyContent: 'center' }}>
