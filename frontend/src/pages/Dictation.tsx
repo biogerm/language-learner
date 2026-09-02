@@ -165,9 +165,28 @@ export default function Dictation() {
     }
   }, [appMode, courseId, selectedStage, selectedArticleId, loadFSRSStats]);
 
+  // Listen for sync completion to immediately refresh stats and queue without tab switching
   useEffect(() => {
-    fetchQueue();
-  }, [fetchQueue]);
+    const handleSyncDone = async () => {
+      if (currentIndex === 0) {
+        lastScopeKeyRef.current = '';
+        await fetchQueue();
+      } else {
+        try {
+          const { total, mastered, remaining, inFsrsCount } = await buildStudyQueue(
+            appMode as 'study' | 'review',
+            courseId || '',
+            selectedArticleId,
+            'dictation',
+            learningQueue
+          );
+          setStats({ total, mastered, remaining, inFsrsCount: inFsrsCount || 0 });
+        } catch (e) {}
+      }
+    };
+    window.addEventListener('learning-queue-updated', handleSyncDone);
+    return () => window.removeEventListener('learning-queue-updated', handleSyncDone);
+  }, [currentIndex, appMode, courseId, selectedArticleId, learningQueue, fetchQueue]);
 
   const handleResetProgress = async () => {
     if (appMode !== 'study' || !selectedArticleId) return;
@@ -253,6 +272,8 @@ export default function Dictation() {
   const getExampleSentence = () => {
     let sv = '';
     let en = '';
+    let foundWordInSent = '';
+    let foundContextualEn = '';
 
     if (currentRecord?.sentence && currentRecord.sentence !== currentRecord.word_id && currentRecord.sentence !== currentRecord.word_in_sentence) {
       sv = currentRecord.sentence;
@@ -263,24 +284,50 @@ export default function Dictation() {
     }
     
     // Look in current selected article first or search all stages
-    if ((!sv || !en) && courseData && (courseData as any).stages && currentWord?.word) {
+    if (courseData && (courseData as any).stages && currentWord?.word) {
       const stages = (courseData as any).stages;
       const targetArticleId = currentRecord?.article_id || selectedArticleId;
       const targetLower = currentWord.word.toLowerCase();
       const currentArt = stages.flatMap((s: any) => s.articles || []).find((a: any) => a.article_id === targetArticleId);
-      if (currentArt) {
-        for (const sItem of currentArt.sentences || []) {
-          if (sItem.sv && sItem.sv.toLowerCase().includes(targetLower)) {
-            if (!sv) sv = sItem.sv;
-            if (!en) en = sItem.en || '';
-            break;
-          }
+      
+      const checkSentences = currentArt ? currentArt.sentences || [] : [];
+      for (const sItem of checkSentences) {
+        const matchTw = (sItem.target_words || []).find((tw: any) =>
+          (tw.base_form && tw.base_form.toLowerCase() === targetLower) ||
+          (tw.word_in_sentence && tw.word_in_sentence.toLowerCase() === targetLower)
+        ) || (sItem.secondary_words || []).find((sw: any) =>
+          (sw.base_form && sw.base_form.toLowerCase() === targetLower) ||
+          (sw.word_in_sentence && sw.word_in_sentence.toLowerCase() === targetLower)
+        );
+        if (matchTw) {
+          if (!sv) sv = sItem.sv;
+          if (!en) en = sItem.en || '';
+          foundWordInSent = matchTw.word_in_sentence || '';
+          foundContextualEn = matchTw.contextual_en || '';
+          break;
+        }
+        if (!sv && sItem.sv && sItem.sv.toLowerCase().includes(targetLower)) {
+          sv = sItem.sv;
+          en = sItem.en || '';
+          break;
         }
       }
+
       if (!sv) {
         for (const s of stages) {
           for (const a of s.articles || []) {
             for (const sItem of a.sentences || []) {
+              const matchTw = (sItem.target_words || []).find((tw: any) =>
+                (tw.base_form && tw.base_form.toLowerCase() === targetLower) ||
+                (tw.word_in_sentence && tw.word_in_sentence.toLowerCase() === targetLower)
+              );
+              if (matchTw) {
+                sv = sItem.sv;
+                en = sItem.en || '';
+                foundWordInSent = matchTw.word_in_sentence || '';
+                foundContextualEn = matchTw.contextual_en || '';
+                break;
+              }
               if (sItem.sv && sItem.sv.toLowerCase().includes(targetLower)) {
                 sv = sItem.sv;
                 en = sItem.en || '';
@@ -293,7 +340,7 @@ export default function Dictation() {
         }
       }
     }
-    return { sv, en };
+    return { sv, en, foundWordInSent, foundContextualEn };
   };
   const exampleSentenceObj = getExampleSentence();
   const exampleSentence = exampleSentenceObj.sv;
@@ -305,12 +352,44 @@ export default function Dictation() {
       currentRecord.word_in_sentence,
       currentRecord.word_id,
       currentRecord.base_form,
-      currentWord?.word
+      currentWord?.word,
+      exampleSentenceObj.foundWordInSent
     ].filter(Boolean)
       .map(w => (w as string).trim())
       .filter(w => w.length > 0);
 
-    const uniqueWords = Array.from(new Set(wordsToHighlight)).sort((a, b) => b.length - a.length);
+    const expandedWords = new Set<string>();
+    wordsToHighlight.forEach(w => {
+      expandedWords.add(w);
+      const low = w.toLowerCase();
+      expandedWords.add(low);
+      // Swedish inflections & endings
+      expandedWords.add(low + 't');
+      expandedWords.add(low + 'a');
+      expandedWords.add(low + 'are');
+      expandedWords.add(low + 'ast');
+      expandedWords.add(low + 'en');
+      expandedWords.add(low + 'et');
+      expandedWords.add(low + 'na');
+      expandedWords.add(low + 's');
+      expandedWords.add(low + 'ar');
+      expandedWords.add(low + 'er');
+      expandedWords.add(low + 'or');
+      expandedWords.add(low + 'de');
+      expandedWords.add(low + 'te');
+      expandedWords.add(low + 'ade');
+      expandedWords.add(low + 'at');
+      if (low.endsWith('a')) {
+        expandedWords.add(low.slice(0, -1) + 'er');
+        expandedWords.add(low.slice(0, -1) + 'ade');
+        expandedWords.add(low.slice(0, -1) + 'at');
+        expandedWords.add(low.slice(0, -1) + 'de');
+        expandedWords.add(low.slice(0, -1) + 't');
+        expandedWords.add(low.slice(0, -1) + 'r');
+      }
+    });
+
+    const uniqueWords = Array.from(expandedWords).sort((a, b) => b.length - a.length);
     if (!uniqueWords.length) return text;
 
     const escaped = uniqueWords.map(w => w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|');
@@ -355,6 +434,7 @@ export default function Dictation() {
       currentRecord.en_translation,
       currentRecord.en,
       currentRecord.dict_en,
+      exampleSentenceObj.foundContextualEn,
       enPrompt
     ].filter(Boolean);
 
@@ -375,7 +455,32 @@ export default function Dictation() {
       }
     }
 
-    const sortedCandidates = Array.from(candidates).sort((a, b) => b.length - a.length);
+    const expandedCandidates = new Set<string>();
+    candidates.forEach(c => {
+      expandedCandidates.add(c);
+      const low = c.toLowerCase();
+      expandedCandidates.add(low);
+      // English inflections & suffixes
+      expandedCandidates.add(low + 'ly');
+      expandedCandidates.add(low + 's');
+      expandedCandidates.add(low + 'es');
+      expandedCandidates.add(low + 'ed');
+      expandedCandidates.add(low + 'd');
+      expandedCandidates.add(low + 'ing');
+      expandedCandidates.add(low + 'er');
+      expandedCandidates.add(low + 'est');
+      if (low.endsWith('y')) {
+        expandedCandidates.add(low.slice(0, -1) + 'ily');
+        expandedCandidates.add(low.slice(0, -1) + 'ies');
+        expandedCandidates.add(low.slice(0, -1) + 'ied');
+      }
+      if (low.endsWith('e')) {
+        expandedCandidates.add(low.slice(0, -1) + 'ing');
+        expandedCandidates.add(low.slice(0, -1) + 'ed');
+      }
+    });
+
+    const sortedCandidates = Array.from(expandedCandidates).sort((a, b) => b.length - a.length);
     if (!sortedCandidates.length) return text;
 
     const escaped = sortedCandidates.map(w => w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|');
