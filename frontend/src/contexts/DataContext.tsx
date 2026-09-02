@@ -494,6 +494,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
           }
         });
 
+        window.dispatchEvent(new CustomEvent("learning-queue-updated"));
         window.dispatchEvent(new CustomEvent("fsrs-sync", { detail: "Sync Complete" }));
       }
     } catch (err) {
@@ -512,12 +513,21 @@ export function DataProvider({ children }: { children: ReactNode }) {
         syncExcludedDictionary().catch(console.error);
         syncCustomDictionary().catch(console.error);
     };
+    const handleVisibility = () => {
+      if (document.visibilityState === 'visible') {
+        syncLearningQueueRemote().catch(console.error);
+      }
+    };
     window.addEventListener('online', handleOnline);
+    document.addEventListener('visibilitychange', handleVisibility);
     // Initial load sync
     syncLearningQueueRemote().catch(console.error);
     syncExcludedDictionary().catch(console.error);
     syncCustomDictionary().catch(console.error);
-    return () => window.removeEventListener('online', handleOnline);
+    return () => {
+      window.removeEventListener('online', handleOnline);
+      document.removeEventListener('visibilitychange', handleVisibility);
+    };
   }, []);
 
   const removeFromLearningQueue = useCallback(async (id: string) => {
