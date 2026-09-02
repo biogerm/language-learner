@@ -171,15 +171,56 @@ export default function Dictation() {
 
   const handleResetProgress = async () => {
     if (appMode !== 'study' || !selectedArticleId) return;
+    setLoading(true);
     try {
       const records = await db.learning_queue.where('article_id').equals(selectedArticleId).toArray();
+      const articleWords = (learningQueue || [])
+        .filter(w => w.article_id === selectedArticleId)
+        .map(w => (w.base_form || '').toLowerCase().trim())
+        .filter(Boolean);
+      const nowIso = new Date().toISOString();
+
+      // 1. Reset local learning_queue
       for (const r of records) {
-        if (r.id) await db.learning_queue.delete(r.id);
+        if (r.id) {
+          await db.learning_queue.update(r.id, {
+            dictation_passed: false,
+            flashcard_passed: false,
+            status: 'active',
+            synced: true,
+            updated_at: nowIso
+          });
+        }
       }
-    } catch (e) {}
+
+      // 2. Clear any local FSRS progress for words in this article
+      for (const w of articleWords) {
+        await db.fsrs_progress.delete(w);
+      }
+
+      // 3. Reset in Supabase cloud (UPDATE is RLS-supported and ensures persistent reset)
+      const { data: { user } } = await supabase.auth.getUser();
+      if (user) {
+        await supabase
+          .from('learning_queue')
+          .update({
+            dictation_passed: false,
+            flashcard_passed: false,
+            status: 'active',
+            updated_at: nowIso
+          })
+          .eq('user_id', user.id)
+          .eq('article_id', selectedArticleId);
+      }
+
+      window.dispatchEvent(new CustomEvent('fsrs-sync', { detail: 'Progress Reset' }));
+    } catch (e) {
+      console.error('Error resetting progress:', e);
+    }
     queueRef.current = [];
     lastScopeKeyRef.current = '';
     await fetchQueue();
+    setLoading(false);
   };
 
   const handleResetFSRS = async () => {
@@ -662,7 +703,7 @@ export default function Dictation() {
             <button id="reset-progress-btn" onClick={handleResetProgress}>Reset Progress</button>
           )}
           {appMode === 'review' && isTester && (
-            <button id="reset-progress-btn" onClick={handleResetFSRS} title="Reset all FSRS review data">Reset FSRS</button>
+            <button id="reset-fsrs-btn" onClick={handleResetFSRS} title="Reset all FSRS review data">Reset FSRS</button>
           )}
         </div>
         
