@@ -388,111 +388,112 @@ export function DataProvider({ children }: { children: ReactNode }) {
     try {
       const { data: { user } } = await supabase.auth.getUser();
       if (!user) return;
-      
-      // Pull first
-      const { data: remoteData, error: pullError } = await supabase.from('learning_queue').select('*').eq('user_id', user.id);
-      if (pullError) throw pullError;
-    const { data: localQueue } = { data: await db.learning_queue.toArray() };
-    
-    const remoteMap = new Map((remoteData || []).map(r => [r.course_id + '_' + r.article_id + '_' + r.base_form, r]));
-    
-    // Push unsynced or newly updated local records
-    if (localQueue) {
-       const payloadToPush = [];
-       for (const record of localQueue) {
-           const localUpdated = record.updated_at ? new Date(record.updated_at).getTime() : 0;
-           const key = (record.course_id || 'sfid') + '_' + record.article_id + '_' + record.base_form;
-           const remote = remoteMap.get(key);
-           const remoteUpdated = remote?.updated_at ? new Date(remote.updated_at).getTime() : 0;
-           
-           if (!remote || localUpdated > remoteUpdated) {
-               payloadToPush.push({
-                   user_id: user.id,
-                   course_id: record.course_id || 'sfid',
-                   article_id: record.article_id,
-                   base_form: record.base_form,
-                   dictation_passed: record.dictation_passed || false,
-                   flashcard_passed: record.flashcard_passed || false,
-                   status: record.status || 'active',
-                   updated_at: record.updated_at || new Date().toISOString()
-               });
-           } else {
-               if (record.id) await db.learning_queue.update(record.id, { synced: true });
-           }
-       }
-       
-       if (payloadToPush.length > 0) {
-           const { error } = await supabase.from('learning_queue').upsert(payloadToPush, { onConflict: 'user_id, course_id, article_id, base_form' });
-           if (!error) {
-               await Promise.all(payloadToPush.map(async p => {
-                   const local = await db.learning_queue.where({ article_id: p.article_id, base_form: p.base_form }).first();
-                   if (local && local.id) await db.learning_queue.update(local.id!, { synced: true });
-               }));
-           } else {
-               console.error("Learning queue sync push error:", error);
-               window.dispatchEvent(new CustomEvent("fsrs-toast", { detail: "❌ Sync Push Failed" }));
-           }
-       }
-    }
-    
-    // Merge
-    if (remoteData) {
+
+      // 1. PUSH FIRST: send any dirty/unsynced local records to cloud
+      const localQueue = await db.learning_queue.toArray();
+      const dirtyRecords = (localQueue || []).filter(r => !r.synced);
+
+      if (dirtyRecords.length > 0) {
+        const payloadToPush = dirtyRecords.map(record => ({
+          user_id: user.id,
+          course_id: record.course_id || 'sfid',
+          article_id: record.article_id,
+          base_form: record.base_form,
+          dictation_passed: !!record.dictation_passed,
+          flashcard_passed: !!record.flashcard_passed,
+          status: record.status || 'active',
+          updated_at: record.updated_at || new Date().toISOString()
+        }));
+
+        const { error: pushError } = await supabase
+          .from('learning_queue')
+          .upsert(payloadToPush, { onConflict: 'user_id, course_id, article_id, base_form' });
+
+        if (pushError) {
+          throw pushError;
+        }
+
+        // Mark pushed records as synced in local Dexie
         await db.transaction('rw', db.learning_queue, async () => {
-           // 1. Purge local synced items that no longer exist remotely (deleted by another device)
-           const allLocal = await db.learning_queue.toArray();
-           for (const localItem of allLocal) {
-               if (localItem.synced) {
-                   const stillExists = remoteData.some(r => r.article_id === localItem.article_id && r.base_form === localItem.base_form);
-                   if (!stillExists && localItem.id) {
-                       await db.learning_queue.delete(localItem.id);
-                   }
-               }
-           }
-           
-           // 2. Upsert remote items to local
-           for (const remote of remoteData) {
-               const local = await db.learning_queue.where({ article_id: remote.article_id, base_form: remote.base_form }).first();
-               
-               if (local) {
-                   // Never overwrite unsynced local changes, regardless of timestamp (prevents clock skew bugs)
-                   if (!local.synced) continue;
-                   
-                   const localUpdated = local.updated_at ? new Date(local.updated_at).getTime() : 0;
-                   const remoteUpdated = remote.updated_at ? new Date(remote.updated_at).getTime() : 0;
-                   // Don't overwrite newer local data with stale remote data (e.g. from the fetch before our push)
-                   if (localUpdated >= remoteUpdated) continue;
-                   
-                   await db.learning_queue.update(local.id!, {
-                       dictation_passed: remote.dictation_passed,
-                       flashcard_passed: remote.flashcard_passed,
-                       status: remote.status,
-                       updated_at: remote.updated_at,
-                       synced: true
-                   });
-                } else {
-                    await db.learning_queue.add({
-                        base_form: remote.base_form,
-                        word_in_sentence: remote.word_in_sentence || remote.base_form,
-                        en_translation: remote.en_translation || '',
-                        contextual_en: remote.contextual_en || '',
-                        dict_en: remote.dict_en || '',
-                        article_id: remote.article_id,
-                        stage_id: remote.stage_id || '',
-                        course_id: remote.course_id || 'sfid',
-                        sentence_id: remote.sentence_id || '',
-                        sentence: remote.sentence || '',
-                        sentence_en: remote.sentence_en || '',
-                        context_sv: remote.context_sv || '',
-                        context_en: remote.context_en || '',
-                        dictation_passed: !!remote.dictation_passed,
-                        flashcard_passed: !!remote.flashcard_passed,
-                        status: remote.status || 'active',
-                        updated_at: remote.updated_at || new Date().toISOString(),
-                        synced: true
-                    } as any);
-                }
-           }
+          for (const d of dirtyRecords) {
+            if (d.id) {
+              await db.learning_queue.update(d.id, { synced: true });
+            }
+          }
         });
+      }
+
+      // 2. PULL SECOND: fetch fresh, authoritative cloud state AFTER push completes
+      const { data: remoteData, error: pullError } = await supabase
+        .from('learning_queue')
+        .select('*')
+        .eq('user_id', user.id);
+
+      if (pullError) throw pullError;
+
+      // 3. MERGE: reconcile cloud state with local Dexie
+      if (remoteData) {
+        await db.transaction('rw', db.learning_queue, async () => {
+          const currentLocal = await db.learning_queue.toArray();
+
+          // A. Purge local synced items that no longer exist remotely (deleted on another device)
+          for (const localItem of currentLocal) {
+            if (localItem.synced) {
+              const stillExists = remoteData.some(
+                r => r.article_id === localItem.article_id && r.base_form === localItem.base_form
+              );
+              if (!stillExists && localItem.id) {
+                await db.learning_queue.delete(localItem.id);
+              }
+            }
+          }
+
+          // B. Upsert remote items into local
+          for (const remote of remoteData) {
+            const local = await db.learning_queue
+              .where({ article_id: remote.article_id, base_form: remote.base_form })
+              .first();
+
+            if (local) {
+              // Never overwrite unsynced local changes
+              if (!local.synced) continue;
+
+              const localUpdated = local.updated_at ? new Date(local.updated_at).getTime() : 0;
+              const remoteUpdated = remote.updated_at ? new Date(remote.updated_at).getTime() : 0;
+              if (localUpdated >= remoteUpdated) continue;
+
+              await db.learning_queue.update(local.id!, {
+                dictation_passed: !!remote.dictation_passed,
+                flashcard_passed: !!remote.flashcard_passed,
+                status: remote.status,
+                updated_at: remote.updated_at,
+                synced: true
+              });
+            } else {
+              await db.learning_queue.add({
+                base_form: remote.base_form,
+                word_in_sentence: remote.word_in_sentence || remote.base_form,
+                en_translation: remote.en_translation || '',
+                contextual_en: remote.contextual_en || '',
+                dict_en: remote.dict_en || '',
+                article_id: remote.article_id,
+                stage_id: remote.stage_id || '',
+                course_id: remote.course_id || 'sfid',
+                sentence_id: remote.sentence_id || '',
+                sentence: remote.sentence || '',
+                sentence_en: remote.sentence_en || '',
+                context_sv: remote.context_sv || '',
+                context_en: remote.context_en || '',
+                dictation_passed: !!remote.dictation_passed,
+                flashcard_passed: !!remote.flashcard_passed,
+                status: remote.status || 'active',
+                updated_at: remote.updated_at || new Date().toISOString(),
+                synced: true
+              } as any);
+            }
+          }
+        });
+
         window.dispatchEvent(new CustomEvent("fsrs-toast", { detail: "☁️ Sync Complete" }));
       }
     } catch (err) {
