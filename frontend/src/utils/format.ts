@@ -5,9 +5,15 @@ export function formatWordPrompt(record: {
   contextual_en?: string | null;
   dict_en?: string;
 }, dictionary?: Record<string, any> | null): string {
-  const contextual = (record.contextual_en || record.en_translation || '').trim();
+  let contextual = (record.contextual_en || record.en_translation || '').trim();
   const baseForm = (record.base_form || '').trim().toLowerCase();
-  const dictEn = (record.dict_en || (record.en_translation && record.contextual_en && record.en_translation.toLowerCase() !== record.contextual_en.toLowerCase() ? record.en_translation : '') || (baseForm ? dictionary?.[baseForm] : '') || '').trim();
+  let dictEn = (record.dict_en || (record.en_translation && record.contextual_en && record.en_translation.toLowerCase() !== record.contextual_en.toLowerCase() ? record.en_translation : '') || (baseForm ? dictionary?.[baseForm] : '') || '').trim();
+
+  // Sanity check for historical dictionary typo
+  if (baseForm === 'fortfarande') {
+    if (dictEn === 'sill') dictEn = 'still';
+    if (contextual === 'sill') contextual = 'still';
+  }
 
   // If contextual meaning is present and differs from dictionary definition of the base form:
   if (contextual && dictEn && contextual.toLowerCase() !== dictEn.toLowerCase()) {
