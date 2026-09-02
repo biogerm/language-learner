@@ -557,6 +557,13 @@ export default function Dictation() {
       loadFSRSStats();
     }
 
+    // Since the word was revealed / failed, it is not mastered.
+    // Re-append to the end of the session queue so user must practice it again.
+    if (currentRecord) {
+      queueRef.current = [...queueRef.current, currentRecord];
+      setQueue(prev => [...prev, currentRecord]);
+    }
+
     triggerAutoAdvance();
   };
 
@@ -671,7 +678,18 @@ export default function Dictation() {
   };
 
   const showAnswer = status === 'correct' || status === 'revealed';
-  const isAllDone = stats.total === 0 || !queue.length || currentIndex >= queue.length;
+  const isAllDone = !loading && stats.total > 0 && (
+    appMode === 'study'
+      ? stats.mastered >= stats.total
+      : (queue.length > 0 && currentIndex >= queue.length)
+  );
+
+  // Safety net: In study mode, if current queue runs out but some words remain unmastered, auto-recycle remaining
+  useEffect(() => {
+    if (!loading && appMode === 'study' && queue.length > 0 && currentIndex >= queue.length && stats.mastered < stats.total) {
+      fetchQueue();
+    }
+  }, [currentIndex, queue.length, stats.mastered, stats.total, appMode, loading, fetchQueue]);
 
   useEffect(() => {
     if (status === 'typing' && !isAllDone && !loading) {
