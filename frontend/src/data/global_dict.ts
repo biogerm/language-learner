@@ -1649,7 +1649,7 @@ export const global_dict = {
     "stamfader": "ancestor,",
     "släkt med": "related to",
     "ske": "occur",
-    "fortfarande": "sill",
+    "fortfarande": "still",
     "döda": "kill",
     "givetvis": "of course",
     "icke": "not",
