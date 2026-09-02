@@ -163,7 +163,11 @@ export default function Dictation() {
       console.error(e);
       setLoading(false);
     }
-  }, [appMode, courseId, selectedStage, selectedArticleId, loadFSRSStats]);
+  }, [appMode, courseId, selectedStage, selectedArticleId, loadFSRSStats, learningQueue]);
+
+  useEffect(() => {
+    fetchQueue();
+  }, [fetchQueue]);
 
   // Listen for sync completion to immediately refresh stats and queue without tab switching
   useEffect(() => {
@@ -808,7 +812,7 @@ export default function Dictation() {
   if (loading) return (
     <div style={{ width: '100%', maxWidth: '800px', margin: '0 auto' }}>
       <main className="flashcard-container glass-panel">
-        <div style={{ padding: '48px', fontSize: '20px', color: 'var(--text)' }}>Loading flashcards...</div>
+        <div style={{ padding: '48px', fontSize: '20px', color: 'var(--text)' }}>Loading dictation...</div>
       </main>
     </div>
   );
