@@ -4,6 +4,17 @@ import { getMp3PublicUrl } from '../services/r2';
 const missingAudioCache = new Set<string>();
 let activeAudio: HTMLAudioElement | null = null;
 
+/**
+ * Normalize a word/phrase for R2 audio lookup.
+ * R2 files are stored with the first letter capitalized (e.g. "Jag har ingen aning om….mp3"),
+ * but word_ids in FSRS/queue may be lowercase. Capitalizing ensures we hit the original file
+ * and avoid CDN-cached 404 results from before the aliases were created.
+ */
+const normalizeForAudio = (word: string): string => {
+  if (!word) return word;
+  return word.charAt(0).toUpperCase() + word.slice(1);
+};
+
 const isApplePlatform = typeof navigator !== 'undefined' && (
   /iPhone|iPad|iPod/i.test(navigator.userAgent) ||
   (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1) ||
@@ -181,7 +192,7 @@ export const playSwedishTTS = (word: string) => {
  */
 export const preProbeWordAudio = (word: string) => {
   if (!word) return;
-  const trimmed = word.trim();
+  const trimmed = normalizeForAudio(word.trim());
   if (missingAudioCache.has(trimmed)) return;
 
   try {
@@ -196,10 +207,12 @@ export const preProbeWordAudio = (word: string) => {
  * Play the exact audio for a word or phrase.
  * 1. ALWAYS tries studio MP3 from R2 first (e.g. konditional, Hör av dig snart!, slut, etc.)
  * 2. If known to have no MP3 (via audio.onerror), falls back to native Apple / cloud TTS.
+ * Note: normalizeForAudio capitalizes the first letter to match R2 filenames
+ * (e.g. "jag..." -> "Jag...") and avoid CDN-cached 404 responses.
  */
 export const playExactWordAudio = (word: string) => {
   if (!word) return;
-  const trimmed = word.trim();
+  const trimmed = normalizeForAudio(word.trim());
   if (!trimmed) return;
 
   // Stop previous audio
