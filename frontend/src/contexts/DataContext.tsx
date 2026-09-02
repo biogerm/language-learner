@@ -494,7 +494,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
           }
         });
 
-        window.dispatchEvent(new CustomEvent("fsrs-toast", { detail: "☁️ Sync Complete" }));
+        window.dispatchEvent(new CustomEvent("fsrs-sync", { detail: "Sync Complete" }));
       }
     } catch (err) {
       if (retries > 0) {
