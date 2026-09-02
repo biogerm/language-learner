@@ -21,6 +21,10 @@ export async function onRequest(context: { request: Request; params: { catchall?
 
   const newHeaders = new Headers(response.headers);
   newHeaders.set('Access-Control-Allow-Origin', '*');
+  // Prevent CDN from caching 404s for audio files — so future uploads are immediately visible
+  if (response.status === 404 && subPath.startsWith('words_audio/')) {
+    newHeaders.set('Cache-Control', 'no-store');
+  }
 
   return new Response(response.body, {
     status: response.status,
