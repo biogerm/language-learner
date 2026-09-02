@@ -10,9 +10,13 @@ export function formatWordPrompt(record: {
   const dictEn = (record.dict_en || (record.en_translation && record.contextual_en && record.en_translation.toLowerCase() !== record.contextual_en.toLowerCase() ? record.en_translation : '') || (baseForm ? dictionary?.[baseForm] : '') || '').trim();
 
   // If contextual meaning is present and differs from dictionary definition of the base form:
-  // Explicitly state "(base form: <dictEn>)" in pure English without leaking Swedish lemma
   if (contextual && dictEn && contextual.toLowerCase() !== dictEn.toLowerCase()) {
-    return `${contextual} (base form: ${dictEn})`;
+    const wordInSent = (record.word_in_sentence || '').trim().toLowerCase();
+    const isInflectedVariant = Boolean(wordInSent && baseForm && wordInSent !== baseForm);
+    if (isInflectedVariant) {
+      return `${contextual} (base form: ${dictEn})`;
+    }
+    return `${contextual} (${dictEn})`;
   }
 
   // Pure single English definition
