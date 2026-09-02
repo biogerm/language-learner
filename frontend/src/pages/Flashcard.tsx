@@ -161,7 +161,11 @@ export default function Flashcard() {
       console.error(e);
       setLoading(false);
     }
-  }, [appMode, courseId, selectedStage, selectedArticleId, loadFSRSStats]);
+  }, [appMode, courseId, selectedStage, selectedArticleId, loadFSRSStats, learningQueue]);
+
+  useEffect(() => {
+    fetchQueue();
+  }, [fetchQueue]);
 
   // Listen for sync completion to immediately refresh stats and queue without tab switching
   useEffect(() => {
