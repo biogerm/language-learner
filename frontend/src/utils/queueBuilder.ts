@@ -400,13 +400,15 @@ export const buildStudyQueue = async (
   const enrichedRecords = await Promise.all(
     rawWords.map((w: any) => resolveWordMetadata(w.word_id, w.fallbackData, courseId))
   );
-  const shuffled = enrichedRecords.sort(() => 0.5 - Math.random());
+  const finalQueue = appMode === 'review'
+    ? enrichedRecords.sort(() => 0.5 - Math.random())
+    : enrichedRecords;
 
   return {
-    queue: shuffled,
+    queue: finalQueue,
     total: totalCount,
     mastered: masteredCount,
-    remaining: shuffled.length,
+    remaining: finalQueue.length,
     inFsrsCount
   };
 };

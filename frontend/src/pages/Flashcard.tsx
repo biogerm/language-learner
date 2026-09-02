@@ -781,10 +781,6 @@ export default function Flashcard() {
           fb = `${errCount} ${errCount === 1 ? 'letter' : 'letters'} wrong`;
         }
         setFeedbackMsg(fb);
-
-        if (appMode === 'study') {
-          updateMasteryAndVocab(currentWord.id, false);
-        }
         return;
       }
 
