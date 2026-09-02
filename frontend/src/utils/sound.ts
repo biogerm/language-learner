@@ -4,16 +4,7 @@ import { getMp3PublicUrl } from '../services/r2';
 const missingAudioCache = new Set<string>();
 let activeAudio: HTMLAudioElement | null = null;
 
-/**
- * Normalize a word/phrase for R2 audio lookup.
- * R2 files are stored with the first letter capitalized (e.g. "Jag har ingen aning om….mp3"),
- * but word_ids in FSRS/queue may be lowercase. Capitalizing ensures we hit the original file
- * and avoid CDN-cached 404 results from before the aliases were created.
- */
-const normalizeForAudio = (word: string): string => {
-  if (!word) return word;
-  return word.charAt(0).toUpperCase() + word.slice(1);
-};
+
 
 const isApplePlatform = typeof navigator !== 'undefined' && (
   /iPhone|iPad|iPod/i.test(navigator.userAgent) ||
@@ -192,7 +183,7 @@ export const playSwedishTTS = (word: string) => {
  */
 export const preProbeWordAudio = (word: string) => {
   if (!word) return;
-  const trimmed = normalizeForAudio(word.trim());
+  const trimmed = word.trim();
   if (missingAudioCache.has(trimmed)) return;
 
   try {
@@ -205,14 +196,14 @@ export const preProbeWordAudio = (word: string) => {
 
 /**
  * Play the exact audio for a word or phrase.
- * 1. ALWAYS tries studio MP3 from R2 first (e.g. konditional, Hör av dig snart!, slut, etc.)
- * 2. If known to have no MP3 (via audio.onerror), falls back to native Apple / cloud TTS.
- * Note: normalizeForAudio capitalizes the first letter to match R2 filenames
- * (e.g. "jag..." -> "Jag...") and avoid CDN-cached 404 responses.
+ * 1. ALWAYS tries studio MP3 from R2 first.
+ * 2. If that 404s, tries the capitalized variant (e.g. "jag…" -> "Jag…") in case
+ *    the R2 file uses a capital first letter.
+ * 3. Only falls back to TTS if both attempts fail.
  */
 export const playExactWordAudio = (word: string) => {
   if (!word) return;
-  const trimmed = normalizeForAudio(word.trim());
+  const trimmed = word.trim();
   if (!trimmed) return;
 
   // Stop previous audio
@@ -227,30 +218,45 @@ export const playExactWordAudio = (word: string) => {
     return;
   }
 
-  // Attempt studio MP3 from R2 via HTML5 Audio element
-  const mp3Url = getMp3PublicUrl(`words_audio/${encodeURIComponent(trimmed)}.mp3`);
-  const audio = new Audio(mp3Url);
-  activeAudio = audio;
-
-  let hasFallenBack = false;
-  const fallback = () => {
-    if (hasFallenBack) return;
-    hasFallenBack = true;
-    missingAudioCache.add(trimmed);
-    playSwedishTTS(word);
+  const tryPlay = (url: string, onFail: () => void) => {
+    const audio = new Audio(url);
+    activeAudio = audio;
+    let settled = false;
+    const fail = () => {
+      if (settled) return;
+      settled = true;
+      onFail();
+    };
+    audio.onerror = fail;
+    const p = audio.play();
+    if (p !== undefined) {
+      p.catch((err) => {
+        if (err.name === 'AbortError') return;
+        if (err.name !== 'NotAllowedError') fail();
+      });
+    }
   };
 
-  audio.onerror = () => {
-    fallback();
-  };
+  // Primary attempt: exact word as stored
+  const primaryUrl = getMp3PublicUrl(`words_audio/${encodeURIComponent(trimmed)}.mp3`);
 
-  const playPromise = audio.play();
-  if (playPromise !== undefined) {
-    playPromise.catch((err) => {
-      if (err.name === 'AbortError') return;
-      if (err.name !== 'NotAllowedError') {
-        fallback();
-      }
-    });
-  }
+  // Capitalized fallback (e.g. "jag har ingen aning om…" -> "Jag har ingen aning om…")
+  const capitalized = trimmed.charAt(0).toUpperCase() + trimmed.slice(1);
+  const hasCaseVariant = capitalized !== trimmed;
+  const fallbackUrl = hasCaseVariant
+    ? getMp3PublicUrl(`words_audio/${encodeURIComponent(capitalized)}.mp3`)
+    : null;
+
+  tryPlay(primaryUrl, () => {
+    if (fallbackUrl) {
+      // Try capitalized variant before giving up
+      tryPlay(fallbackUrl, () => {
+        missingAudioCache.add(trimmed);
+        playSwedishTTS(word);
+      });
+    } else {
+      missingAudioCache.add(trimmed);
+      playSwedishTTS(word);
+    }
+  });
 };
