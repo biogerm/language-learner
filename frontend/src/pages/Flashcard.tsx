@@ -130,14 +130,19 @@ export default function Flashcard() {
 
   const lastScopeKeyRef = useRef<string>('');
   const queueRef = useRef<any[]>([]);
+  const isFetchingRef = useRef<boolean>(false);
 
   const fetchQueue = useCallback(async () => {
+    if (isFetchingRef.current) return;
     try {
-      const scopeKey = `${appMode}_${courseId}_${selectedStage}_${selectedArticleId}`;
+      const scopeKey = appMode === 'review'
+        ? `review_${courseId || ''}`
+        : `study_${courseId || ''}_${selectedStage || ''}_${selectedArticleId || ''}`;
       if (lastScopeKeyRef.current === scopeKey && queueRef.current.length > 0) {
         return;
       }
 
+      isFetchingRef.current = true;
       setLoading(true);
       const { queue: newQueue, total, mastered, remaining, inFsrsCount } = await buildStudyQueue(
         appMode as 'study' | 'review',
@@ -156,10 +161,11 @@ export default function Flashcard() {
       if (appMode === 'review') {
         await loadFSRSStats();
       }
-      setLoading(false);
     } catch(e) {
       console.error(e);
+    } finally {
       setLoading(false);
+      isFetchingRef.current = false;
     }
   }, [appMode, courseId, selectedStage, selectedArticleId, loadFSRSStats, learningQueue]);
 
@@ -170,10 +176,7 @@ export default function Flashcard() {
   // Listen for sync completion to immediately refresh stats without disrupting in-progress queue
   useEffect(() => {
     const handleSyncDone = async () => {
-      if (queueRef.current.length === 0) {
-        lastScopeKeyRef.current = '';
-        await fetchQueue();
-      } else {
+      if (queueRef.current.length > 0 || isFetchingRef.current) {
         try {
           const { total, mastered, remaining, inFsrsCount } = await buildStudyQueue(
             appMode as 'study' | 'review',
@@ -184,6 +187,8 @@ export default function Flashcard() {
           );
           setStats({ total, mastered, remaining, inFsrsCount: inFsrsCount || 0 });
         } catch (e) {}
+      } else {
+        await fetchQueue();
       }
     };
     window.addEventListener('learning-queue-updated', handleSyncDone);

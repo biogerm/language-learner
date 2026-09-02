@@ -20,7 +20,13 @@ let isIndexLoaded = false;
 let isIndexLoading = false;
 
 const cleanKeyForLookup = (key: string) => {
-  return key.toLowerCase().replace(/^(words_audio\/)/, '').replace(/\.mp3$/, '').replace(/[.!?,"']/g, '').trim();
+  return key
+    .toLowerCase()
+    .replace(/^(words_audio\/)/, '')
+    .replace(/\.mp3$/, '')
+    .replace(/[.!?,"'…_]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
 };
 
 const ensureIndexLoaded = async () => {
@@ -71,8 +77,9 @@ export default function r2ProxyPlugin() {
             // Normalize path to prevent directory traversal attacks (e.g. ../../)
             let normalizedKey = path.normalize(decodedKey).replace(/^(\.\.[\/\\])+/, '');
             
-            // 2. Reject explicitly malicious path traversal attempts
-            if (decodedKey.includes('..')) {
+            // 2. Reject explicitly malicious path traversal attempts (e.g. '../' or '..\')
+            const segments = decodedKey.split(/[/\\]/);
+            if (segments.includes('..') || normalizedKey.startsWith('..')) {
               res.statusCode = 403;
               return res.end('Forbidden: Invalid Path');
             }

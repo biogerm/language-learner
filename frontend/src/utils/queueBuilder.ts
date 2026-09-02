@@ -106,12 +106,45 @@ export const getSentenceMapForCourse = async (courseId: string) => {
   return { sentenceMap, wordToSentenceMap, articleWordMap };
 };
 
+const courseVocabCache = new Map<string, Map<string, any>>();
+
+export const getCourseVocabMap = async (courseId: string) => {
+  if (courseVocabCache.has(courseId)) {
+    return courseVocabCache.get(courseId)!;
+  }
+  const map = new Map<string, any>();
+  try {
+    const cached = await db.course_data.get(courseId);
+    if (cached && Array.isArray(cached.dictionary)) {
+      for (const item of cached.dictionary) {
+        if (item.base_form) {
+          const key = item.base_form.toLowerCase().trim();
+          if (!map.has(key)) map.set(key, item);
+        }
+        if (item.word_in_sentence) {
+          const key = item.word_in_sentence.toLowerCase().trim();
+          if (!map.has(key)) map.set(key, item);
+        }
+      }
+    }
+  } catch (e) {
+    console.warn('Error building vocab cache for course:', courseId, e);
+  }
+  courseVocabCache.set(courseId, map);
+  return map;
+};
+
 export const resolveWordMetadata = async (
   word_id: string,
   fallbackData?: any,
   activeCourseId?: string
 ): Promise<UnifiedQueueItem> => {
   const cleanWordId = (word_id || '').trim().toLowerCase();
+  const targetCourseId = fallbackData?.course_id || activeCourseId || 'sfid';
+
+  // 0. Look up in authoritative course vocabulary (e.g. course_sfid_vocab.json)
+  const vocabMap = await getCourseVocabMap(targetCourseId);
+  const courseVocab = vocabMap.get(cleanWordId);
 
   // 1. Look up in custom_dictionary (prioritize matching article if provided)
   let custom = null;
@@ -142,13 +175,12 @@ export const resolveWordMetadata = async (
   }
 
   // 3. Resolve base properties
-  const baseForm = fallbackData?.base_form || custom?.base_form || lq?.base_form || word_id;
-  const wordInSentence = fallbackData?.word_in_sentence || custom?.word_in_sentence || lq?.word_in_sentence || '';
+  const baseForm = fallbackData?.base_form || custom?.base_form || lq?.base_form || courseVocab?.base_form || word_id;
+  const wordInSentence = fallbackData?.word_in_sentence || custom?.word_in_sentence || lq?.word_in_sentence || courseVocab?.word_in_sentence || '';
 
   // Resolve course_id and sentence_id coordinates (prioritize fallbackData coordinates from current article queue)
-  const targetCourseId = fallbackData?.course_id || custom?.course_id || lq?.course_id || activeCourseId || 'sfid';
-  const targetArticleId = fallbackData?.article_id || custom?.article_id || lq?.article_id || '';
-  let targetSentenceId = fallbackData?.sentence_id || custom?.sentence_id || lq?.sentence_id || '';
+  const targetArticleId = fallbackData?.article_id || custom?.article_id || lq?.article_id || courseVocab?.article_id || '';
+  let targetSentenceId = fallbackData?.sentence_id || custom?.sentence_id || lq?.sentence_id || courseVocab?.sentence_id || '';
 
   // 4. Resolve sentence text dynamically
   let resolvedSentenceSv = '';
@@ -185,19 +217,31 @@ export const resolveWordMetadata = async (
     (rawFallbackSv && rawFallbackSv !== baseForm && rawFallbackSv !== wordInSentence ? rawFallbackSv : '');
   const finalContextEn = resolvedSentenceEn || fallbackData?.context_en || fallbackData?.sentence_en || lq?.context_en || custom?.context_en || '';
 
+  let rawEnTrans = custom?.en_translation || fallbackData?.en_translation || lq?.en_translation || courseVocab?.en_translation || '';
+  let rawContextualEn = custom?.contextual_en || fallbackData?.contextual_en || lq?.contextual_en || courseVocab?.contextual_en || '';
+  let rawDictEn = custom?.dict_en || fallbackData?.dict_en || lq?.dict_en || courseVocab?.en_translation || '';
+
+  // Sanity check for historical dictionary typo
+  if (baseForm.toLowerCase() === 'fortfarande') {
+    if (rawEnTrans === 'sill') rawEnTrans = 'still';
+    if (rawDictEn === 'sill') rawDictEn = 'still';
+    if (rawContextualEn === 'sill') rawContextualEn = 'still';
+  }
+
   return {
     ...fallbackData,
     word_id,
     base_form: baseForm,
     word_in_sentence: wordInSentence,
-    en_translation: custom?.en_translation || fallbackData?.en_translation || lq?.en_translation || '',
-    contextual_en: custom?.contextual_en || fallbackData?.contextual_en || lq?.contextual_en || '',
-    dict_en: custom?.dict_en || fallbackData?.dict_en || lq?.dict_en || '',
-    en: custom?.en || fallbackData?.en || lq?.en || '',
+    en_translation: rawEnTrans,
+    contextual_en: rawContextualEn,
+    dict_en: rawDictEn,
+    en: custom?.en || fallbackData?.en || lq?.en || courseVocab?.en || '',
     sentence: finalSentence,
     context_sv: finalSentence,
     context_en: finalContextEn,
-    article_id: fallbackData?.article_id || custom?.article_id || lq?.article_id || '',
+    article_id: targetArticleId,
+    sentence_id: targetSentenceId,
     course_id: targetCourseId
   };
 };
@@ -231,6 +275,14 @@ export const buildStudyQueue = async (
         return true;
       })
       .toArray();
+
+    // Sort deterministically: most overdue first, tie-break by word_id alphabetically
+    fsrsRecords.sort((a: any, b: any) => {
+      const timeA = new Date(a.due).getTime();
+      const timeB = new Date(b.due).getTime();
+      if (timeA !== timeB) return timeA - timeB;
+      return (a.word_id || '').localeCompare(b.word_id || '');
+    });
 
     rawWords = fsrsRecords.map((r: any) => ({ word_id: r.word_id, fallbackData: r }));
     totalCount = rawWords.length;
@@ -400,6 +452,7 @@ export const buildStudyQueue = async (
   const enrichedRecords = await Promise.all(
     rawWords.map((w: any) => resolveWordMetadata(w.word_id, w.fallbackData, courseId))
   );
+
   const finalQueue = appMode === 'review'
     ? enrichedRecords.sort(() => 0.5 - Math.random())
     : enrichedRecords;
