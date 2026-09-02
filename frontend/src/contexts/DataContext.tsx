@@ -186,6 +186,10 @@ export function DataProvider({ children }: { children: ReactNode }) {
           Object.assign(dictMap, vocabData);
         }
 
+        if (dictMap['fortfarande'] === 'sill') {
+          dictMap['fortfarande'] = 'still';
+        }
+
         setCourseData(data);
         setDictionary(dictMap);
         setCurrentCourse(courseId);
@@ -205,6 +209,9 @@ export function DataProvider({ children }: { children: ReactNode }) {
             }
           } else if (cached.dictionary && typeof cached.dictionary === 'object') {
             Object.assign(dictMap, cached.dictionary);
+          }
+          if (dictMap['fortfarande'] === 'sill') {
+            dictMap['fortfarande'] = 'still';
           }
           setCourseData(cached.articles);
           setDictionary(dictMap);
