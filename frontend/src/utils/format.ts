@@ -26,5 +26,5 @@ export function formatWordPrompt(record: {
   }
 
   // Pure single English definition
-  return contextual || dictEn || 'Custom Word';
+  return contextual || dictEn || record.word_in_sentence || record.base_form || '';
 }

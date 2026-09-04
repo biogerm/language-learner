@@ -271,7 +271,7 @@ export default function Dictation() {
 
   const currentRecord = queue[currentIndex];
   
-  const enPrompt = currentRecord ? formatWordPrompt(currentRecord, dictionary) : 'Custom Word';
+  const enPrompt = currentRecord ? formatWordPrompt(currentRecord, dictionary) : '';
 
   const cleanAudioName = currentRecord?.word_id ? currentRecord.word_id.replace(/[.,!?"':;()]/g, '').trim().toLowerCase() : '';
   const currentWord = currentRecord ? { 
@@ -795,10 +795,12 @@ export default function Dictation() {
   };
 
   const showAnswer = status === 'correct' || status === 'revealed';
-  const isAllDone = !loading && stats.total > 0 && (
-    appMode === 'study'
-      ? (stats.mastered >= stats.total && (currentIndex >= queue.length || (!isAdvancingRef.current && status !== 'correct' && status !== 'revealed')))
-      : (queue.length > 0 && currentIndex >= queue.length)
+  const isAllDone = !loading && (
+    stats.total === 0 ||
+    (appMode === 'review'
+      ? (queue.length === 0 || currentIndex >= queue.length)
+      : (stats.mastered >= stats.total && (currentIndex >= queue.length || (!isAdvancingRef.current && status !== 'correct' && status !== 'revealed')))
+    )
   );
 
   // Safety net: In study mode, if current queue runs out but some words remain unmastered, auto-recycle remaining
@@ -856,7 +858,7 @@ export default function Dictation() {
           </div>
         )}
 
-        {isAllDone && (
+        {isAllDone && stats.total > 0 && (
           <div style={{ textAlign: 'center', margin: '2rem 0' }}>
             <h2 style={{ fontSize: '1.8rem', color: '#10b981', marginBottom: '1rem' }}>🎉 Congratulations!</h2>
             <p style={{ color: 'var(--text-secondary)' }}>
@@ -870,7 +872,7 @@ export default function Dictation() {
             <div style={{ marginBottom: '1.5rem', textAlign: 'center' }}>
               <div id="english-prompt" style={{ fontSize: '1.75rem', fontWeight: 700, color: '#fff', marginBottom: '0.5rem' }}>
                 {appMode === 'review'
-                  ? '🎉 All caught up!'
+                  ? (stats.total > 0 ? '🎉 All Reviews Completed!' : '🎉 All caught up!')
                   : stats.total === 0
                   ? (stats.inFsrsCount && stats.inFsrsCount > 0
                     ? '🎉 All words in this lesson are already in your FSRS review schedule, no initial study needed!'
@@ -879,7 +881,7 @@ export default function Dictation() {
               </div>
               <div id="hint-display" style={{ color: '#94a3b8', fontSize: '1rem' }}>
                 {appMode === 'review'
-                  ? 'No reviews due right now.'
+                  ? (stats.total > 0 ? 'You have completed all scheduled FSRS reviews!' : 'No reviews due right now.')
                   : stats.total === 0
                   ? (stats.inFsrsCount && stats.inFsrsCount > 0
                     ? 'You can review them in Review Mode when they become due.'
