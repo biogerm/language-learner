@@ -913,7 +913,10 @@ export default function Dictation() {
               placeholder="Type here and hit Enter"
               disabled={showAnswer || isAdvancingRef.current}
               autoComplete="off"
-              spellCheck="false"
+              autoCapitalize="none"
+              autoCorrect="off"
+              spellCheck={false}
+              enterKeyHint="done"
             />
           )}
           
