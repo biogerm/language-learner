@@ -907,7 +907,10 @@ export default function Flashcard() {
               placeholder="Type the Swedish word"
               disabled={showAnswer || isAdvancingRef.current}
               autoComplete="off"
-              spellCheck="false"
+              autoCapitalize="none"
+              autoCorrect="off"
+              spellCheck={false}
+              enterKeyHint="done"
             />
           )}
           
