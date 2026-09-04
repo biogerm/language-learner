@@ -2,9 +2,36 @@ import { getMp3PublicUrl } from '../services/r2';
 
 // Cache of words confirmed to have NO studio MP3 on R2
 const missingAudioCache = new Set<string>();
-let activeAudio: HTMLAudioElement | null = null;
+// Cache of URLs already preloaded via fetch into browser HTTP cache
+const preloadedUrls = new Set<string>();
 
+// Global singleton audio instance — avoids exhausting iOS/WebKit CoreAudio hardware channels
+let sharedAudio: HTMLAudioElement | null = null;
 
+const getSharedAudio = (): HTMLAudioElement => {
+  if (!sharedAudio && typeof window !== 'undefined') {
+    sharedAudio = new Audio();
+  }
+  return sharedAudio!;
+};
+
+/**
+ * Safely stops active audio and completely releases the underlying WebKit AVPlayer/CoreAudio pipeline.
+ */
+export const stopAudio = () => {
+  if (sharedAudio) {
+    sharedAudio.onerror = null;
+    sharedAudio.onplay = null;
+    sharedAudio.pause();
+    sharedAudio.removeAttribute('src');
+    sharedAudio.load(); // Forces WebKit to tear down the AVPlayer hardware decoder
+  }
+  if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
+    try {
+      window.speechSynthesis.cancel(); // Clears any stuck utterance queue on iOS
+    } catch {}
+  }
+};
 
 const isApplePlatform = typeof navigator !== 'undefined' && (
   /iPhone|iPad|iPod/i.test(navigator.userAgent) ||
@@ -21,6 +48,8 @@ export const playAppleNativeWebSpeech = (word: string): boolean => {
   if (!cleanText) return false;
 
   try {
+    // Cancel any stuck utterances in iOS WebKit speech queue before speaking
+    window.speechSynthesis.cancel();
     if (window.speechSynthesis.paused) {
       window.speechSynthesis.resume();
     }
@@ -54,15 +83,11 @@ export const playAppleWebSpeech = (word: string, voice = 'Alva (Premium)'): Prom
       }
     }
 
-    if (activeAudio) {
-      activeAudio.pause();
-      activeAudio.currentTime = 0;
-    }
+    stopAudio();
 
     const safeVoice = voice.includes('Standard') || voice === 'Alva' ? 'Alva' : 'Alva (Premium)';
     const ttsUrl = `/api/apple-tts?text=${encodeURIComponent(cleanText)}&voice=${encodeURIComponent(safeVoice)}`;
-    const audio = new Audio(ttsUrl);
-    activeAudio = audio;
+    const audio = getSharedAudio();
 
     let settled = false;
     audio.onplay = () => {
@@ -79,6 +104,7 @@ export const playAppleWebSpeech = (word: string, voice = 'Alva (Premium)'): Prom
       }
     };
 
+    audio.src = ttsUrl;
     audio.play().catch(() => {
       if (!settled) {
         settled = true;
@@ -93,14 +119,10 @@ export const playGoogleTTSStream = (word: string): Promise<{ ok: boolean; error?
     const cleanText = (word || '').replace(/[!?"'.,:;()]/g, ' ').trim();
     if (!cleanText) return resolve({ ok: false, error: 'Empty text' });
 
-    if (activeAudio) {
-      activeAudio.pause();
-      activeAudio.currentTime = 0;
-    }
+    stopAudio();
 
     const ttsUrl = `/api/tts?text=${encodeURIComponent(cleanText)}`;
-    const audio = new Audio(ttsUrl);
-    activeAudio = audio;
+    const audio = getSharedAudio();
 
     let settled = false;
     audio.onplay = () => {
@@ -117,6 +139,7 @@ export const playGoogleTTSStream = (word: string): Promise<{ ok: boolean; error?
       }
     };
 
+    audio.src = ttsUrl;
     audio.play().catch(() => {
       if (!settled) {
         settled = true;
@@ -135,14 +158,10 @@ export const playStudioR2 = (word: string): Promise<{ ok: boolean; error?: strin
     const trimmed = (word || '').trim();
     if (!trimmed) return resolve({ ok: false, error: 'Empty word' });
 
-    if (activeAudio) {
-      activeAudio.pause();
-      activeAudio.currentTime = 0;
-    }
+    stopAudio();
 
     const mp3Url = getMp3PublicUrl(`words_audio/${encodeURIComponent(trimmed)}.mp3`);
-    const audio = new Audio(mp3Url);
-    activeAudio = audio;
+    const audio = getSharedAudio();
 
     let settled = false;
     audio.onplay = () => {
@@ -158,6 +177,7 @@ export const playStudioR2 = (word: string): Promise<{ ok: boolean; error?: strin
       }
     };
 
+    audio.src = mp3Url;
     audio.play().catch((err) => {
       if (!settled) {
         settled = true;
@@ -177,25 +197,42 @@ export const playSwedishTTS = (word: string) => {
 };
 
 /**
- * Pre-probes / preloads word audio.
- * Note: Never use fetch(HEAD) to cross-origin CDN without CORS headers,
- * as it caused false-positive errors marking all words as missing audio.
+ * Pre-probes / preloads word audio into browser HTTP cache without allocating
+ * any underlying WebKit CoreAudio hardware channels or leaking Audio elements.
  */
-export const preProbeWordAudio = (word: string) => {
+export const preProbeWordAudio = async (word: string) => {
   if (!word) return;
   const trimmed = word.trim();
-  if (missingAudioCache.has(trimmed)) return;
+  if (!trimmed || missingAudioCache.has(trimmed)) return;
+
+  const primaryUrl = getMp3PublicUrl(`words_audio/${encodeURIComponent(trimmed)}.mp3`);
+  if (preloadedUrls.has(primaryUrl)) return;
+  preloadedUrls.add(primaryUrl);
 
   try {
-    const url = getMp3PublicUrl(`words_audio/${encodeURIComponent(trimmed)}.mp3`);
-    const preloadAudio = new Audio();
-    preloadAudio.preload = 'auto';
-    preloadAudio.src = url;
+    // Warm the browser's HTTP disk/memory cache cleanly
+    const res = await fetch(primaryUrl, { method: 'GET' });
+    if (res.ok) {
+      return;
+    }
+    if (res.status === 404) {
+      // Also probe capitalized variant
+      const capitalized = trimmed.charAt(0).toUpperCase() + trimmed.slice(1);
+      if (capitalized !== trimmed) {
+        const fallbackUrl = getMp3PublicUrl(`words_audio/${encodeURIComponent(capitalized)}.mp3`);
+        if (!preloadedUrls.has(fallbackUrl)) {
+          preloadedUrls.add(fallbackUrl);
+          const fbRes = await fetch(fallbackUrl, { method: 'GET' });
+          if (fbRes.ok) return;
+        }
+      }
+      missingAudioCache.add(trimmed);
+    }
   } catch {}
 };
 
 /**
- * Play the exact audio for a word or phrase.
+ * Play the exact audio for a word or phrase using the shared singleton audio player.
  * 1. ALWAYS tries studio MP3 from R2 first.
  * 2. If that 404s, tries the capitalized variant (e.g. "jag…" -> "Jag…") in case
  *    the R2 file uses a capital first letter.
@@ -206,11 +243,7 @@ export const playExactWordAudio = (word: string) => {
   const trimmed = word.trim();
   if (!trimmed) return;
 
-  // Stop previous audio
-  if (activeAudio) {
-    activeAudio.pause();
-    activeAudio.currentTime = 0;
-  }
+  stopAudio();
 
   // If already confirmed to lack MP3, play TTS directly
   if (missingAudioCache.has(trimmed)) {
@@ -218,45 +251,61 @@ export const playExactWordAudio = (word: string) => {
     return;
   }
 
-  const tryPlay = (url: string, onFail: () => void) => {
-    const audio = new Audio(url);
-    activeAudio = audio;
-    let settled = false;
-    const fail = () => {
-      if (settled) return;
-      settled = true;
-      onFail();
-    };
-    audio.onerror = fail;
-    const p = audio.play();
-    if (p !== undefined) {
-      p.catch((err) => {
-        if (err.name === 'AbortError') return;
-        if (err.name !== 'NotAllowedError') fail();
-      });
-    }
-  };
-
-  // Primary attempt: exact word as stored
+  const audio = getSharedAudio();
   const primaryUrl = getMp3PublicUrl(`words_audio/${encodeURIComponent(trimmed)}.mp3`);
-
-  // Capitalized fallback (e.g. "jag har ingen aning om…" -> "Jag har ingen aning om…")
   const capitalized = trimmed.charAt(0).toUpperCase() + trimmed.slice(1);
   const hasCaseVariant = capitalized !== trimmed;
   const fallbackUrl = hasCaseVariant
     ? getMp3PublicUrl(`words_audio/${encodeURIComponent(capitalized)}.mp3`)
     : null;
 
-  tryPlay(primaryUrl, () => {
-    if (fallbackUrl) {
-      // Try capitalized variant before giving up
-      tryPlay(fallbackUrl, () => {
+  let currentAttempt: 'primary' | 'fallback' | 'done' = 'primary';
+
+  const onError = () => {
+    if (currentAttempt === 'primary') {
+      if (fallbackUrl) {
+        currentAttempt = 'fallback';
+        audio.pause();
+        audio.removeAttribute('src');
+        audio.load();
+        audio.src = fallbackUrl;
+        const p = audio.play();
+        if (p !== undefined) {
+          p.catch((err) => {
+            if (err.name === 'AbortError') return;
+            if (err.name !== 'NotAllowedError') {
+              currentAttempt = 'done';
+              missingAudioCache.add(trimmed);
+              playSwedishTTS(word);
+            }
+          });
+        }
+      } else {
+        currentAttempt = 'done';
         missingAudioCache.add(trimmed);
         playSwedishTTS(word);
-      });
-    } else {
+      }
+    } else if (currentAttempt === 'fallback') {
+      currentAttempt = 'done';
       missingAudioCache.add(trimmed);
       playSwedishTTS(word);
     }
-  });
+  };
+
+  audio.onplay = () => {
+    audio.onerror = null;
+  };
+  audio.onerror = onError;
+  audio.src = primaryUrl;
+
+  const p = audio.play();
+  if (p !== undefined) {
+    p.catch((err) => {
+      if (err.name === 'AbortError') return;
+      if (err.name !== 'NotAllowedError') {
+        onError();
+      }
+    });
+  }
 };
+
