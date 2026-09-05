@@ -127,21 +127,39 @@ export function calculateFSRSRating(max_wrongs: number, max_time: number, gave_u
     const time = Number(max_time) || 0;
     const reveals = Number(reveal_count) || (isGaveUp ? 1 : 0);
 
-    // 1. Again
-    if (reveals > 4 || wrongs > 20 || time > 60) return Rating.Again;
-    
-    // 2. Hard
-    if (reveals === 3 || reveals === 4) return Rating.Hard;
-    if (wrongs >= 3 && wrongs <= 20) return Rating.Hard;
-    if (wrongs === 2 && time > 20) return Rating.Hard;
+    // 1. Again (5 mins interval / reset to relearning)
+    // - Both gates gave up / revealed (reveals >= 2): neither hearing nor reading was recalled
+    // - Single reveal combined with high error count (reveals >= 1 && wrongs >= 4)
+    // - Extreme trial-and-error struggle without reveal (wrongs >= 6)
+    // - Severe timeout with multiple errors (time > 60 && wrongs >= 4)
+    if (reveals >= 2 || (reveals >= 1 && wrongs >= 4) || wrongs >= 6 || (time > 60 && wrongs >= 4)) {
+        return Rating.Again;
+    }
 
-    // 3. Good
-    if (reveals === 2) return Rating.Good;
-    if (wrongs <= 1 && time > 15) return Rating.Good;
-    if (wrongs === 2 && time <= 20) return Rating.Good;
+    // 2. Hard (1 day interval)
+    // - Single-gate reveal (reveals === 1): one gate was looked up, but the other was solved independently!
+    //   Capped strictly at Hard (guaranteed impossible to get Good or Easy).
+    // - Multiple errors without reveal (3 <= wrongs <= 5)
+    // - Noticeable hesitation/errors without reveal (wrongs >= 2 && time > 30)
+    if (reveals === 1 || wrongs >= 3 || (wrongs >= 2 && time > 30)) {
+        return Rating.Hard;
+    }
 
-    // 4. Easy
-    if (reveals < 2 && wrongs <= 1 && time <= 15) return Rating.Easy;
+    // 3. Good (2~3 days interval)
+    // - Strictly NO reveals allowed (reveals === 0)
+    // - Minor errors (wrongs === 1 || wrongs === 2)
+    // - Or 0-1 error but took longer than 15s (time > 15)
+    if (reveals === 0) {
+        if (wrongs === 2 && time <= 30) return Rating.Good;
+        if (wrongs <= 1 && time > 15) return Rating.Good;
+    }
+
+    // 4. Easy (3~4 days interval)
+    // - Strictly NO reveals allowed (reveals === 0)
+    // - Flawless or near-flawless (wrongs <= 1) and quick (time <= 15s)
+    if (reveals === 0 && wrongs <= 1 && time <= 15) {
+        return Rating.Easy;
+    }
 
     return Rating.Hard;
 }
@@ -201,14 +219,14 @@ export async function submitGatePass(
     // Mark gate as completed (pass or reveal/gave_up both count as "done" for scheduling purposes)
     if (gate === 'dictation') progress.todayDictationPassed = true;
     if (gate === 'flashcard') progress.todayFlashcardPassed = true;
-    // Track gave_up separately — it drives the FSRS rating (gave_up → Again)
+    // Track gave_up separately
     if (gave_up) progress.gave_up = true;
 
     // Check if Dual-Gate is complete: both gates done (pass or gave_up)
     if (progress.todayDictationPassed && progress.todayFlashcardPassed) {
-        const rating = progress.gave_up
-            ? Rating.Again
-            : (manualRating !== undefined ? manualRating : calculateFSRSRating(progress.max_wrongs || 0, progress.max_time || 0, !!progress.gave_up, progress.reveal_count || 0));
+        const rating = manualRating !== undefined 
+            ? manualRating 
+            : calculateFSRSRating(progress.max_wrongs || 0, progress.max_time || 0, !!progress.gave_up, progress.reveal_count || 0);
         
         const card: Card = {
             due: progress.due,
