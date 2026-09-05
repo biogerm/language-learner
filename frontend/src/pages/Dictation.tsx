@@ -688,10 +688,14 @@ export default function Dictation() {
 
   useEffect(() => {
     const handleGlobalKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Tab') {
+      if (e.key === 'Tab' || e.code === 'Tab' || e.keyCode === 9) {
         e.preventDefault();
         e.stopPropagation();
         playAudio();
+        inputRef.current?.focus();
+        requestAnimationFrame(() => {
+          inputRef.current?.focus();
+        });
         return;
       }
       
@@ -719,8 +723,8 @@ export default function Dictation() {
         return;
       }
     };
-    window.addEventListener('keydown', handleGlobalKeyDown);
-    return () => window.removeEventListener('keydown', handleGlobalKeyDown);
+    window.addEventListener('keydown', handleGlobalKeyDown, { capture: true });
+    return () => window.removeEventListener('keydown', handleGlobalKeyDown, { capture: true });
   }, [status, wrongCount, appMode, proceedToNext, handleReveal, playAudio]);
 
   const cleanText = (text: string) => {
@@ -728,10 +732,14 @@ export default function Dictation() {
   };
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
-    if (e.key === 'Tab') {
+    if (e.key === 'Tab' || e.code === 'Tab' || e.keyCode === 9) {
       e.preventDefault();
       e.stopPropagation();
       playAudio();
+      inputRef.current?.focus();
+      requestAnimationFrame(() => {
+        inputRef.current?.focus();
+      });
       return;
     }
 
