@@ -62,7 +62,6 @@ export async function syncOfflineProgress() {
                         todayFlashcardPassed: remote.today_flashcard_passed ?? false,
                         max_wrongs: remote.max_wrongs ?? 0,
                         max_time: remote.max_time ?? 0,
-                        gave_up: remote.gave_up ?? false,
                         reveal_count: remote.reveal_count ?? 0,
                         lastGatePassDate: remote.last_gate_pass_date || null,
                         synced: true,
@@ -95,7 +94,6 @@ export async function syncOfflineProgress() {
                 today_flashcard_passed: record.todayFlashcardPassed ?? false,
                 max_wrongs: record.max_wrongs || 0,
                 max_time: record.max_time || 0,
-                gave_up: record.gave_up || false,
                 reveal_count: record.reveal_count || 0,
                 last_gate_pass_date: record.lastGatePassDate || null,
                 updated_at: record.updated_at || new Date().toISOString()
@@ -121,11 +119,10 @@ export async function syncOfflineProgress() {
     }
 }
 
-export function calculateFSRSRating(max_wrongs: number, max_time: number, gave_up: boolean, reveal_count: number): Rating {
-    const isGaveUp = gave_up === true;
+export function calculateFSRSRating(max_wrongs: number, max_time: number, reveal_count: number): Rating {
     const wrongs = Number(max_wrongs) || 0;
     const time = Number(max_time) || 0;
-    const reveals = Number(reveal_count) || (isGaveUp ? 1 : 0);
+    const reveals = Number(reveal_count) || 0;
 
     // 1. Again (5 mins interval / reset to relearning)
     // - Both gates gave up / revealed (reveals >= 2): neither hearing nor reading was recalled
@@ -170,7 +167,6 @@ export async function submitGatePass(
     gate: 'dictation' | 'flashcard', 
     wrongs: number, 
     timeSec: number, 
-    gave_up: boolean, 
     reveal_count: number,
     manualRating?: Rating
 ) {
@@ -207,7 +203,6 @@ export async function submitGatePass(
         progress.todayFlashcardPassed = false;
         progress.max_wrongs = 0;
         progress.max_time = 0;
-        progress.gave_up = false;
         progress.reveal_count = 0;
     }
     progress.lastGatePassDate = todayStr;
@@ -216,17 +211,15 @@ export async function submitGatePass(
     progress.max_time = Math.max(progress.max_time || 0, Number(timeSec) || 0);
     progress.reveal_count = (progress.reveal_count || 0) + (reveal_count || 0);
 
-    // Mark gate as completed (pass or reveal/gave_up both count as "done" for scheduling purposes)
+    // Mark gate as completed (pass or reveal both count as "done" for scheduling purposes)
     if (gate === 'dictation') progress.todayDictationPassed = true;
     if (gate === 'flashcard') progress.todayFlashcardPassed = true;
-    // Track gave_up separately
-    if (gave_up) progress.gave_up = true;
 
-    // Check if Dual-Gate is complete: both gates done (pass or gave_up)
+    // Check if Dual-Gate is complete: both gates done (pass or reveal)
     if (progress.todayDictationPassed && progress.todayFlashcardPassed) {
         const rating = manualRating !== undefined 
             ? manualRating 
-            : calculateFSRSRating(progress.max_wrongs || 0, progress.max_time || 0, !!progress.gave_up, progress.reveal_count || 0);
+            : calculateFSRSRating(progress.max_wrongs || 0, progress.max_time || 0, progress.reveal_count || 0);
         
         const card: Card = {
             due: progress.due,
@@ -268,7 +261,6 @@ export async function submitGatePass(
         progress.todayFlashcardPassed = false;
         progress.max_wrongs = 0;
         progress.max_time = 0;
-        progress.gave_up = false;
         progress.reveal_count = 0;
 
         progress.synced = false;

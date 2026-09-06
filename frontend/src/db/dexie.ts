@@ -35,7 +35,6 @@ export interface FsrsProgress {
   todayFlashcardPassed?: boolean;
   max_wrongs?: number;
   max_time?: number;
-  gave_up?: boolean;
   reveal_count?: number;
   lastGatePassDate?: string;
 }
