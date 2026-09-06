@@ -640,7 +640,7 @@ export default function Dictation() {
       updateMasteryAndVocab(currentWord.id, true);
     }
 
-    const res = await submitGatePass(courseId, currentWord.id, 'dictation', wrongCount, timeSpent, false, 0);
+    const res = await submitGatePass(courseId, currentWord.id, 'dictation', wrongCount, timeSpent, 0);
     if (res.completed) {
       window.dispatchEvent(new CustomEvent('fsrs-toast', { detail: res.toastMsg || `${res.ratingName} | ${res.dayStr}` }));
     }
@@ -667,10 +667,10 @@ export default function Dictation() {
     
     if (appMode === 'study') {
       updateMasteryAndVocab(currentWord.id, false);
-      await submitGatePass(courseId, currentWord.id, 'dictation', wrongCount, timeSpent, true, 1);
+      await submitGatePass(courseId, currentWord.id, 'dictation', wrongCount, timeSpent, 1);
     } else {
-      // Review mode: mark gave_up — fsrs.ts will trigger FSRS scheduling once BOTH gates are done
-      const res = await submitGatePass(courseId, currentWord.id, 'dictation', wrongCount, timeSpent, true, 1);
+      // Review mode: fsrs.ts will trigger FSRS scheduling once BOTH gates are done
+      const res = await submitGatePass(courseId, currentWord.id, 'dictation', wrongCount, timeSpent, 1);
       if (res.completed) {
         window.dispatchEvent(new CustomEvent('fsrs-toast', { detail: res.toastMsg || `${res.ratingName} | ${res.dayStr}` }));
       }
