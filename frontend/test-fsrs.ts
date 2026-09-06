@@ -8,7 +8,7 @@ async function testFSRS() {
   const wordId = "mock-word-123";
   
   console.log(`Submitting gate pass for ${wordId} (Rating Good: 1 wrong, 10s, false, 0 reveals)...`);
-  // max_wrongs: 1, max_time: 10, gave_up: false, reveal_count: 0 -> should evaluate to Good or Easy. 
+  // max_wrongs: 1, max_time: 10, reveal_count: 0 -> should evaluate to Good or Easy. 
   // Let's pass: 2 reveals for 'Good', or 1 wrong 16s for Good. 
   // Wait, the logic for Good is:
   // if (reveals === 2) return Rating.Good;
