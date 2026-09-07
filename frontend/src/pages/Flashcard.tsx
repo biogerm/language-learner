@@ -623,6 +623,23 @@ export default function Flashcard() {
     }, delay);
   }, [currentWord, enDefinition, exampleSentence, exampleSentenceEn, proceedToNext]);
 
+  const checkForNewlyExpiredWords = async () => {
+    if (appMode !== 'review') return 0;
+    try {
+      const { queue: currentDueQueue } = await buildStudyQueue('review', courseId || '', selectedArticleId, 'flashcard', learningQueue);
+      const existingIds = new Set(queueRef.current.map((item: any) => item.word_id));
+      const newlyExpired = currentDueQueue.filter((item: any) => !existingIds.has(item.word_id));
+      if (newlyExpired.length > 0) {
+        queueRef.current = [...queueRef.current, ...newlyExpired];
+        setQueue(prev => [...prev, ...newlyExpired]);
+        return newlyExpired.length;
+      }
+    } catch (e) {
+      console.warn('Error checking newly expired words:', e);
+    }
+    return 0;
+  };
+
   const handleCorrect = async () => {
     if (!currentWord || !courseId || status !== 'typing') return;
     const timeSpent = (Date.now() - startTime) / 1000;
@@ -637,16 +654,22 @@ export default function Flashcard() {
       updateMasteryAndVocab(currentWord.id, true);
     }
 
-    const res = await submitGatePass(courseId, currentWord.id, 'flashcard', wrongCount, timeSpent, 0);
+    const totalWrongs = (currentRecord?.accumulatedWrongs || 0) + wrongCount;
+    const totalTime = (currentRecord?.accumulatedTime || 0) + timeSpent;
+    const totalReveals = currentRecord?.reveals || 0;
+
+    const res = await submitGatePass(courseId, currentWord.id, 'flashcard', totalWrongs, totalTime, totalReveals);
     if (res.completed) {
       window.dispatchEvent(new CustomEvent('fsrs-toast', { detail: res.toastMsg || `${res.ratingName} | ${res.dayStr}` }));
     }
     if (appMode === 'review') {
       loadFSRSStats();
+      const newCount = await checkForNewlyExpiredWords();
       setStats(prev => ({
-        total: prev.total,
-        mastered: Math.min(prev.total, prev.mastered + 1),
-        remaining: Math.max(0, prev.remaining - 1)
+        total: prev.total + newCount,
+        mastered: Math.min(prev.total + newCount, prev.mastered + 1),
+        remaining: Math.max(0, prev.remaining - 1) + newCount,
+        inFsrsCount: prev.inFsrsCount
       }));
     }
 
@@ -661,23 +684,17 @@ export default function Flashcard() {
     setInputState('incorrect');
     setFeedbackMsg('');
     playAudio();
-    
-    if (appMode === 'study') {
-      updateMasteryAndVocab(currentWord.id, false);
-      await submitGatePass(courseId, currentWord.id, 'flashcard', wrongCount, timeSpent, 1);
-    } else {
-      // Review mode: fsrs.ts will trigger FSRS scheduling once BOTH gates are done
-      const res = await submitGatePass(courseId, currentWord.id, 'flashcard', wrongCount, timeSpent, 1);
-      if (res.completed) {
-        window.dispatchEvent(new CustomEvent('fsrs-toast', { detail: res.toastMsg || `${res.ratingName} | ${res.dayStr}` }));
-      }
-      loadFSRSStats();
-    }
 
     // Since the word was revealed / failed, re-append to queue so user must practice again this session.
     if (currentRecord) {
-      queueRef.current = [...queueRef.current, currentRecord];
-      setQueue(prev => [...prev, currentRecord]);
+      const updatedRecord = {
+        ...currentRecord,
+        reveals: (currentRecord.reveals || 0) + 1,
+        accumulatedWrongs: (currentRecord.accumulatedWrongs || 0) + wrongCount,
+        accumulatedTime: (currentRecord.accumulatedTime || 0) + timeSpent,
+      };
+      queueRef.current = [...queueRef.current, updatedRecord];
+      setQueue(prev => [...prev, updatedRecord]);
     }
 
     triggerAutoAdvance();
