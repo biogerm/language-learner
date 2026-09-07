@@ -267,8 +267,15 @@ export const buildStudyQueue = async (
       .filter((r: any) => {
         if (r.course_id && r.course_id !== courseId) return false;
         if (r.state === 0) return false;
-        if (moduleType === 'dictation' && r.todayDictationPassed) return false;
-        if (moduleType === 'flashcard' && r.todayFlashcardPassed) return false;
+        const nowTime = Date.now();
+        let lastPassTime = 0;
+        if (r.lastGatePassDate) {
+            const d = new Date(r.lastGatePassDate);
+            if (!isNaN(d.getTime())) lastPassTime = d.getTime();
+        }
+        const isValid = (nowTime - lastPassTime) <= 24 * 60 * 60 * 1000;
+        if (isValid && moduleType === 'dictation' && r.todayDictationPassed) return false;
+        if (isValid && moduleType === 'flashcard' && r.todayFlashcardPassed) return false;
         if (excludedVocab.includes((r.word_id || '').toLowerCase())) return false;
         const dueDate = new Date(r.due);
         if (dueDate > now) return false;
