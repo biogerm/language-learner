@@ -266,7 +266,9 @@ export const buildStudyQueue = async (
     const fsrsRecords = await db.fsrs_progress
       .filter((r: any) => {
         if (r.course_id && r.course_id !== courseId) return false;
-        if (r.state === 0) return false;
+        // NEW manually-added words (state=2, lastGatePassDate=now) enter review immediately.
+        // Previously-added words that never got promoted must not be blocked by state=0 here.
+        // (New-manual adds are still filtered by due date below.)
         const nowTime = Date.now();
         let lastPassTime = 0;
         if (r.lastGatePassDate) {

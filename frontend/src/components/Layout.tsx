@@ -2,6 +2,7 @@ import pkg from "../../package.json";
 import { Outlet, useNavigate, useLocation, useParams } from 'react-router-dom';
 
 import { FSRSToast } from './FSRSToast';
+import AddToFsrsModal from './AddToFsrsModal';
 import { useState, useEffect, useRef, useMemo } from 'react';
 import { syncOfflineProgress } from '../utils/fsrs';
 import { useData } from '../contexts/DataContext';
@@ -24,6 +25,7 @@ export default function Layout() {
   }, []);
 
   const { courseData, loadCourse, selectedStage, setSelectedStage, selectedArticleId, setSelectedArticleId, appMode, setAppMode } = useData();
+  const [addWordOpen, setAddWordOpen] = useState(false);
 
   useEffect(() => {
     if (courseId) {
@@ -311,6 +313,33 @@ export default function Layout() {
                   <span className="sr-label">Review</span>
                 </button>
               </div>
+              {!isStudy && (
+                <button
+                  id="add-word-to-review"
+                  aria-label="Add word to FSRS review"
+                  title="Add a word to your review queue"
+                  onClick={() => setAddWordOpen(true)}
+                  style={{
+                    width: '31px',
+                    height: '31px',
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    borderRadius: '50%',
+                    border: '1px solid var(--border)',
+                    background: 'rgba(15, 23, 42, 0.8)',
+                    color: 'var(--text, #fff)',
+                    fontSize: '16px',
+                    lineHeight: 1,
+                    cursor: 'pointer',
+                    marginLeft: '-178px',
+                    alignSelf: 'center',
+                    flexShrink: 0,
+                    padding: 0
+                  }}>
+                  +
+                </button>
+              )}
 
               <nav className="mode-switcher">
                 {isStudy && (
@@ -377,6 +406,8 @@ export default function Layout() {
       
           <Outlet />
 
+      
+      <AddToFsrsModal courseId={courseId || ''} isOpen={addWordOpen} onClose={() => setAddWordOpen(false)} />
       
       <FSRSToast />
       
