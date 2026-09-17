@@ -705,9 +705,16 @@ export default function Flashcard() {
       if (e.key === 'Tab' || e.code === 'Tab' || e.keyCode === 9) {
         e.preventDefault();
         e.stopPropagation();
-        // Play synchronously inside the gesture handler — iOS Safari drops
-        // audio eligibility if play() happens after focus/RAF deferrals.
-        playAudio();
+        // INTENTIONAL GATE: audio hint is a reward for struggling — it only plays
+        // after 2+ wrong attempts, or once the answer is revealed/advancing.
+        // Do NOT remove this condition; hint-on-demand from the first Tab defeats
+        // the recall-first design of the flashcard flow.
+        // iOS NOTE: when this gate passes, playAudio() must run synchronously
+        // inside this gesture handler (no focus/RAF deferrals before it) or
+        // iOS Safari drops playback eligibility.
+        if (wrongCount >= 2 || status !== 'typing') {
+          playAudio();
+        }
         inputRef.current?.focus();
         requestAnimationFrame(() => {
           inputRef.current?.focus();
@@ -717,7 +724,10 @@ export default function Flashcard() {
 
       if (e.code === 'Space' && (e.target === document.body || status !== 'typing' || isAdvancingRef.current)) {
         e.preventDefault();
-        playAudio();
+        // Same intentional gate as Tab: Space is an audio hint, not free playback.
+        if (wrongCount >= 2 || status !== 'typing') {
+          playAudio();
+        }
         return;
       }
       
@@ -751,8 +761,12 @@ export default function Flashcard() {
     if (e.key === 'Tab' || e.code === 'Tab' || e.keyCode === 9) {
       e.preventDefault();
       e.stopPropagation();
-      // Synchronous play inside the gesture handler (iOS Safari requirement)
-      playAudio();
+      // INTENTIONAL GATE (same as global handler): audio hint only after 2+ wrong
+      // attempts or once revealed/advancing. Do NOT remove — recall-first design.
+      // iOS: keep playAudio() synchronous inside this gesture handler.
+      if (wrongCount >= 2 || status !== 'typing') {
+        playAudio();
+      }
       inputRef.current?.focus();
       requestAnimationFrame(() => {
         inputRef.current?.focus();
