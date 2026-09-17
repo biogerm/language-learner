@@ -5,6 +5,11 @@ export async function onRequest(context: { request: Request; params: { catchall?
 
   let response = await fetch(targetUrl, {
     method: context.request.method,
+    cf: {
+      // Cache JSON course data & audio at the Cloudflare edge (respects origin cache headers)
+      cacheEverything: true,
+      cacheTtlByStatus: { '200-299': 86400, 404: 0, '500-599': 0 },
+    },
   });
 
   // Fallback for audio casing mismatch (e.g. lowercase to Capitalized)
@@ -24,6 +29,13 @@ export async function onRequest(context: { request: Request; params: { catchall?
   // Prevent CDN from caching 404s for audio files — so future uploads are immediately visible
   if (response.status === 404 && subPath.startsWith('words_audio/')) {
     newHeaders.set('Cache-Control', 'no-store');
+  } else if (subPath.endsWith('.json')) {
+    // Course data JSON: cache at edge + browser for 1 day, serve stale up to 7 days while revalidating.
+    // ?v=<updated_at> cache-buster in the app URL guarantees fresh fetch after course updates.
+    newHeaders.set('Cache-Control', 'public, max-age=86400, stale-while-revalidate=604800');
+  } else if (subPath.startsWith('words_audio/') || subPath.startsWith('sentences_audio/')) {
+    // Audio files are immutable content — cache aggressively at edge and browser
+    newHeaders.set('Cache-Control', 'public, max-age=31536000, immutable');
   }
 
   return new Response(response.body, {

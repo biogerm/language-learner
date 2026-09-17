@@ -8,6 +8,39 @@ const preloadedUrls = new Set<string>();
 // Global singleton audio instance — avoids exhausting iOS/WebKit CoreAudio hardware channels
 let sharedAudio: HTMLAudioElement | null = null;
 
+// iOS Safari requires at least one successful play() inside a real user-gesture
+// event handler before it will allow ANY media playback. Keydown counts as a
+// gesture, but only if play() is called synchronously within the handler.
+// We unlock on the first trusted touch/click/keydown anywhere in the app.
+let audioUnlocked = false;
+let unlockHandlersBound = false;
+const unlockAudio = () => {
+  if (audioUnlocked) return;
+  audioUnlocked = true;
+  const audio = getSharedAudio();
+  // Silent, empty 1-sample wav — enough to mark the element as user-activated
+  const silentDataUri =
+    'data:audio/wav;base64,UklGRigAAABXQVZFZm10IBIAAAABAAEARKwAAIhYAQACABAAAABkYXRhAgAAAAEA';
+  audio.muted = true;
+  audio.src = silentDataUri;
+  audio.play().then(() => {
+    audio.pause();
+    audio.muted = false;
+    audio.removeAttribute('src');
+  }).catch(() => {
+    audio.muted = false;
+  });
+};
+export const bindAudioUnlock = () => {
+  if (typeof window === 'undefined' || unlockHandlersBound) return;
+  unlockHandlersBound = true;
+  const opts = { capture: true, passive: true } as AddEventListenerOptions;
+  window.addEventListener('touchstart', unlockAudio, opts);
+  window.addEventListener('touchend', unlockAudio, opts);
+  window.addEventListener('keydown', unlockAudio, opts);
+  window.addEventListener('click', unlockAudio, opts);
+};
+
 const getSharedAudio = (): HTMLAudioElement => {
   if (!sharedAudio && typeof window !== 'undefined') {
     sharedAudio = new Audio();

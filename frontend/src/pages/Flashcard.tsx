@@ -705,21 +705,19 @@ export default function Flashcard() {
       if (e.key === 'Tab' || e.code === 'Tab' || e.keyCode === 9) {
         e.preventDefault();
         e.stopPropagation();
-        if (wrongCount >= 2 || status !== 'typing') {
-          playAudio();
-        }
+        // Play synchronously inside the gesture handler — iOS Safari drops
+        // audio eligibility if play() happens after focus/RAF deferrals.
+        playAudio();
         inputRef.current?.focus();
         requestAnimationFrame(() => {
           inputRef.current?.focus();
         });
         return;
       }
-      
+
       if (e.code === 'Space' && (e.target === document.body || status !== 'typing' || isAdvancingRef.current)) {
         e.preventDefault();
-        if (wrongCount >= 2 || status !== 'typing') {
-          playAudio();
-        }
+        playAudio();
         return;
       }
       
@@ -753,9 +751,8 @@ export default function Flashcard() {
     if (e.key === 'Tab' || e.code === 'Tab' || e.keyCode === 9) {
       e.preventDefault();
       e.stopPropagation();
-      if (wrongCount >= 2 || status !== 'typing') {
-        playAudio();
-      }
+      // Synchronous play inside the gesture handler (iOS Safari requirement)
+      playAudio();
       inputRef.current?.focus();
       requestAnimationFrame(() => {
         inputRef.current?.focus();
