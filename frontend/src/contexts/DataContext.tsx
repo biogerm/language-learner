@@ -440,64 +440,89 @@ export function DataProvider({ children }: { children: ReactNode }) {
 
       // 3. MERGE: reconcile cloud state with local Dexie
       if (remoteData) {
-        await db.transaction('rw', db.learning_queue, async () => {
-          const currentLocal = await db.learning_queue.toArray();
+        // PERF: build in-memory maps instead of per-row IndexedDB queries.
+        // The old code ran one .where().first() query + one .add() per remote
+        // row inside a transaction — O(N) IndexedDB round-trips that froze the
+        // main thread for ~20s on accounts with a large learning_queue.
+        // Now: 1 bulk read, pure-memory diff, 1 bulk write.
+        const currentLocal = await db.learning_queue.toArray();
+        const localByKey = new Map<string, any>();
+        for (const localItem of currentLocal) {
+          localByKey.set(`${localItem.article_id}|${(localItem.base_form || '').toLowerCase()}`, localItem);
+        }
+        const remoteKeys = new Set<string>();
+        for (const remote of remoteData) {
+          remoteKeys.add(`${remote.article_id}|${(remote.base_form || '').toLowerCase()}`);
+        }
 
-          // A. Purge local synced items that no longer exist remotely (deleted on another device)
-          for (const localItem of currentLocal) {
-            if (localItem.synced) {
-              const stillExists = remoteData.some(
-                r => r.article_id === localItem.article_id && r.base_form === localItem.base_form
-              );
-              if (!stillExists && localItem.id) {
-                await db.learning_queue.delete(localItem.id);
-              }
+        // A. Purge local synced items that no longer exist remotely (deleted on another device)
+        const idsToDelete: string[] = [];
+        for (const localItem of currentLocal) {
+          if (localItem.synced) {
+            const key = `${localItem.article_id}|${(localItem.base_form || '').toLowerCase()}`;
+            if (!remoteKeys.has(key) && localItem.id) {
+              idsToDelete.push(localItem.id);
             }
           }
+        }
 
-          // B. Upsert remote items into local
-          for (const remote of remoteData) {
-            const local = await db.learning_queue
-              .where({ article_id: remote.article_id, base_form: remote.base_form })
-              .first();
+        // B. Diff remote vs local in memory, collect writes
+        const toAdd: any[] = [];
+        const toUpdate: { id: any; changes: any }[] = [];
+        for (const remote of remoteData) {
+          const key = `${remote.article_id}|${(remote.base_form || '').toLowerCase()}`;
+          const local = localByKey.get(key);
 
-            if (local) {
-              // Never overwrite unsynced local changes
-              if (!local.synced) continue;
+          if (local) {
+            // Never overwrite unsynced local changes
+            if (!local.synced) continue;
 
-              const localUpdated = local.updated_at ? new Date(local.updated_at).getTime() : 0;
-              const remoteUpdated = remote.updated_at ? new Date(remote.updated_at).getTime() : 0;
-              if (localUpdated >= remoteUpdated) continue;
+            const localUpdated = local.updated_at ? new Date(local.updated_at).getTime() : 0;
+            const remoteUpdated = remote.updated_at ? new Date(remote.updated_at).getTime() : 0;
+            if (localUpdated >= remoteUpdated) continue;
 
-              await db.learning_queue.update(local.id!, {
+            toUpdate.push({
+              id: local.id,
+              changes: {
                 dictation_passed: !!remote.dictation_passed,
                 flashcard_passed: !!remote.flashcard_passed,
                 status: remote.status,
                 updated_at: remote.updated_at,
                 synced: true
-              });
-            } else {
-              await db.learning_queue.add({
-                base_form: remote.base_form,
-                word_in_sentence: remote.word_in_sentence || remote.base_form,
-                en_translation: remote.en_translation || '',
-                contextual_en: remote.contextual_en || '',
-                dict_en: remote.dict_en || '',
-                article_id: remote.article_id,
-                stage_id: remote.stage_id || '',
-                course_id: remote.course_id || 'sfid',
-                sentence_id: remote.sentence_id || '',
-                sentence: remote.sentence || '',
-                sentence_en: remote.sentence_en || '',
-                context_sv: remote.context_sv || '',
-                context_en: remote.context_en || '',
-                dictation_passed: !!remote.dictation_passed,
-                flashcard_passed: !!remote.flashcard_passed,
-                status: remote.status || 'active',
-                updated_at: remote.updated_at || new Date().toISOString(),
-                synced: true
-              } as any);
-            }
+              }
+            });
+          } else {
+            toAdd.push({
+              base_form: remote.base_form,
+              word_in_sentence: remote.word_in_sentence || remote.base_form,
+              en_translation: remote.en_translation || '',
+              contextual_en: remote.contextual_en || '',
+              dict_en: remote.dict_en || '',
+              article_id: remote.article_id,
+              stage_id: remote.stage_id || '',
+              course_id: remote.course_id || 'sfid',
+              sentence_id: remote.sentence_id || '',
+              sentence: remote.sentence || '',
+              sentence_en: remote.sentence_en || '',
+              context_sv: remote.context_sv || '',
+              context_en: remote.context_en || '',
+              dictation_passed: !!remote.dictation_passed,
+              flashcard_passed: !!remote.flashcard_passed,
+              status: remote.status || 'active',
+              updated_at: remote.updated_at || new Date().toISOString(),
+              synced: true
+            });
+          }
+        }
+
+        // C. Apply all writes in ONE transaction (bulk operations)
+        await db.transaction('rw', db.learning_queue, async () => {
+          if (idsToDelete.length > 0) await db.learning_queue.bulkDelete(idsToDelete);
+          if (toAdd.length > 0) await db.learning_queue.bulkAdd(toAdd);
+          if (toUpdate.length > 0) {
+            await db.learning_queue.bulkUpdate(
+              toUpdate.map(u => ({ key: String(u.id), changes: u.changes }))
+            );
           }
         });
 
