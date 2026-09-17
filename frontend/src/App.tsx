@@ -1,20 +1,26 @@
 import { BrowserRouter as Router, Routes, Route, Navigate, Outlet } from 'react-router-dom';
+import { useEffect } from 'react';
 import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
 import Narration from './pages/Narration';
 import Dictation from './pages/Dictation';
 import Flashcard from './pages/Flashcard';
-import Review from './pages/Review';
 import Layout from './components/Layout';
 import './index.css';
 
 import { ErrorBoundary } from './components/ErrorBoundary';
 import { AuthProvider, useAuth } from './contexts/AuthContext';
 import { DataProvider } from './contexts/DataContext';
+import { bindAudioUnlock } from './utils/sound';
 
 function ProtectedRoute() {
   const { session, loading } = useAuth();
-  
+
+  // iOS Safari: unlock the audio element on first user gesture (touch/key/click)
+  useEffect(() => {
+    bindAudioUnlock();
+  }, []);
+
   if (loading) {
     return <div style={{ padding: '24px', textAlign: 'center' }}>Loading...</div>;
   }
@@ -41,7 +47,7 @@ function App() {
                   <Route path="/narration/:courseId" element={<Narration />} />
                   <Route path="/dictation/:courseId" element={<Dictation />} />
                   <Route path="/flashcard/:courseId" element={<Flashcard />} />
-                  <Route path="/course/:courseId/review" element={<Review />} />
+                  <Route path="/course/:courseId/review" element={<Navigate to="/dashboard" replace />} />
                   <Route path="/" element={<Navigate to="/dashboard" replace />} />
                 </Route>
               </Route>
