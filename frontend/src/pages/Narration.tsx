@@ -1278,8 +1278,13 @@ export default function Narration() {
                   border: isActive ? '2px solid var(--accent, #8b5cf6)' : '1px solid var(--border, rgba(255,255,255,0.1))',
                   borderRadius: '12px',
                   background: isActive ? 'rgba(139, 92, 246, 0.08)' : 'var(--glass-bg, rgba(15, 23, 42, 0.6))',
-                  transition: 'all 0.2s ease',
-                  cursor: isEditing ? 'default' : 'pointer'
+                  // Perf: transition only what changes (border/background) — 'all' animates
+                  // layout-affecting props and janks fast scrolling on iPad Safari
+                  transition: 'border-color 0.2s ease, background 0.2s ease',
+                  cursor: isEditing ? 'default' : 'pointer',
+                  // Perf: let the browser skip offscreen card rendering/paint during fast scroll
+                  contentVisibility: 'auto',
+                  containIntrinsicSize: 'auto 120px'
                 }}
                 onClick={(e) => {
                   if (isEditing) return;

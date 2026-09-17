@@ -538,6 +538,21 @@ html {
     overflow: hidden;
 }
 
+/* iPad Safari perf: hover-transform janks fast scroll (hover fires on tap) —
+   disable transform effects on touch devices */
+@media (hover: none) {
+    .sentence-card {
+        transition: none;
+    }
+    .sentence-card:hover {
+        transform: none;
+        box-shadow: none;
+    }
+    .sentence-card::before {
+        transition: none;
+    }
+}
+
 .sentence-card::before {
     content: '';
     position: absolute;
