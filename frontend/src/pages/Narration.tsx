@@ -417,7 +417,11 @@ export default function Narration() {
           const escaped = sw.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
           const regex = new RegExp(`(?<![\\p{L}\\p{N}])${escaped}(?![\\p{L}\\p{N}])`, 'gui');
           let match;
-          while ((match = regex.exec(svText)) !== null) { if (match.index === regex.lastIndex) regex.lastIndex++;
+          let lastSeenIndex = -1; // infinite-loop guard: bail if exec doesn't advance
+          while ((match = regex.exec(svText)) !== null) {
+            if (match.index === regex.lastIndex) regex.lastIndex++;
+            if (match.index === lastSeenIndex) break; // zero-advance -> stuck, bail
+            lastSeenIndex = match.index;
             const start = match.index;
             const end = match.index + match[0].length;
             const overlaps = positionedWords.some(w => !(end <= w.position_start || start >= w.position_end));
@@ -1067,7 +1071,11 @@ export default function Narration() {
             const escaped = searchWord.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
             const regex = new RegExp(`(?<![\\p{L}\\p{N}])${escaped}(?![\\p{L}\\p{N}])`, 'gui');
             let match;
-            while ((match = regex.exec(svText)) !== null) { if (match.index === regex.lastIndex) regex.lastIndex++;
+            let lastSeenIndex = -1; // infinite-loop guard: bail if exec doesn't advance
+            while ((match = regex.exec(svText)) !== null) {
+              if (match.index === regex.lastIndex) regex.lastIndex++;
+              if (match.index === lastSeenIndex) break; // zero-advance -> stuck, bail
+              lastSeenIndex = match.index;
               const start = match.index;
               const end = match.index + match[0].length;
               const overlaps = allWords.some(w => w.position_start !== undefined && w.position_end !== undefined && !(end <= w.position_start || start >= w.position_end));
