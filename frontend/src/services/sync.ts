@@ -34,27 +34,36 @@ export function syncExcludedDictionary(): Promise<void> {
     // 2. Reconcile:
     // A) Add missing remote records locally
     // B) Delete local records that were deleted on cloud (not in remoteData)
-    await db.transaction('rw', db.excluded_dictionary, async () => {
-      for (const remote of remoteData || []) {
-        const key = `${(remote.course_id || 'sfid').toLowerCase()}_${remote.base_form.toLowerCase()}`;
-        if (!localMap.has(key)) {
-          await db.excluded_dictionary.add({
-            base_form: remote.base_form.toLowerCase(),
-            course_id: (remote.course_id || 'sfid').toLowerCase(),
-            article_id: remote.article_id || '',
-            synced: true,
-            updated_at: remote.updated_at || new Date().toISOString()
-          });
-        }
+    // PERF: bulk writes — per-row add/delete inside one transaction serialized
+    // thousands of IndexedDB requests when the tables are large.
+    const toAddEx: any[] = [];
+    for (const remote of remoteData || []) {
+      const key = `${(remote.course_id || 'sfid').toLowerCase()}_${remote.base_form.toLowerCase()}`;
+      if (!localMap.has(key)) {
+        toAddEx.push({
+          base_form: remote.base_form.toLowerCase(),
+          course_id: (remote.course_id || 'sfid').toLowerCase(),
+          article_id: remote.article_id || '',
+          synced: true,
+          updated_at: remote.updated_at || new Date().toISOString()
+        });
       }
+    }
 
-      for (const local of localRecords) {
-        const key = `${(local.course_id || 'sfid').toLowerCase()}_${local.base_form.toLowerCase()}`;
-        if (local.synced && !remoteKeySet.has(key) && local.id) {
-          await db.excluded_dictionary.delete(local.id);
-        }
+    const exIdsToDelete: number[] = [];
+    for (const local of localRecords) {
+      const key = `${(local.course_id || 'sfid').toLowerCase()}_${local.base_form.toLowerCase()}`;
+      if (local.synced && !remoteKeySet.has(key) && local.id) {
+        exIdsToDelete.push(local.id);
       }
-    });
+    }
+
+    if (toAddEx.length > 0 || exIdsToDelete.length > 0) {
+      await db.transaction('rw', db.excluded_dictionary, async () => {
+        if (toAddEx.length > 0) await db.excluded_dictionary.bulkAdd(toAddEx);
+        if (exIdsToDelete.length > 0) await db.excluded_dictionary.bulkDelete(exIdsToDelete);
+      });
+    }
 
     // 3. Push unsynced local records
     const unsynced = await db.excluded_dictionary.filter(r => !r.synced).toArray();
@@ -170,34 +179,48 @@ export function syncCustomDictionary(): Promise<void> {
     // 2. Reconcile:
     // A) Remote records missing locally -> add them locally
     // B) Local synced records that no longer exist remotely -> delete locally (remote was deleted on cloud)
-    await db.transaction('rw', [db.custom_dictionary, db.learning_queue], async () => {
-      for (const remote of remoteData || []) {
-        const key = (remote.base_form || remote.word_in_sentence || '').toLowerCase();
-        const local = localMap.get(key);
-        if (!local) {
-          await db.custom_dictionary.add({
-            ...remote,
-            synced: true
-          });
-        } else if (local.id && local.synced) {
-          await db.custom_dictionary.update(local.id, {
-            ...remote,
-            synced: true
-          });
-        }
+    // PERF: in-memory diff + bulk writes. The old per-row add/update/delete loops
+    // (plus a learning_queue query PER deleted row) serialized thousands of
+    // IndexedDB requests when the tables are large.
+    const toAddCd: any[] = [];
+    const toUpdateCd: { key: string; changes: any }[] = [];
+    for (const remote of remoteData || []) {
+      const key = (remote.base_form || remote.word_in_sentence || '').toLowerCase();
+      const local = localMap.get(key);
+      if (!local) {
+        toAddCd.push({
+          ...remote,
+          synced: true
+        });
+      } else if (local.id && local.synced) {
+        toUpdateCd.push({ key: String(local.id), changes: { ...remote, synced: true } });
       }
+    }
 
-      for (const local of localRecords) {
-        const key = (local.base_form || local.word_in_sentence || '').toLowerCase();
-        if (local.synced && !remoteKeySet.has(key) && local.id) {
-          await db.custom_dictionary.delete(local.id);
-          if (local.base_form) {
-            const queueItems = await db.learning_queue.where('base_form').equalsIgnoreCase(local.base_form).toArray();
-            for (const qi of queueItems) {
-              if (qi.id) await db.learning_queue.delete(qi.id);
-            }
+    const cdIdsToDelete: string[] = [];
+    const queueBaseFormsToDelete: string[] = [];
+    for (const local of localRecords) {
+      const key = (local.base_form || local.word_in_sentence || '').toLowerCase();
+      if (local.synced && !remoteKeySet.has(key) && local.id) {
+        cdIdsToDelete.push(local.id);
+        if (local.base_form) queueBaseFormsToDelete.push(local.base_form.toLowerCase());
+      }
+    }
+
+    await db.transaction('rw', [db.custom_dictionary, db.learning_queue], async () => {
+      if (toAddCd.length > 0) await db.custom_dictionary.bulkAdd(toAddCd);
+      if (toUpdateCd.length > 0) await db.custom_dictionary.bulkUpdate(toUpdateCd);
+      if (cdIdsToDelete.length > 0) await db.custom_dictionary.bulkDelete(cdIdsToDelete);
+      // One indexed query per affected base_form (small set), then one bulk delete
+      if (queueBaseFormsToDelete.length > 0) {
+        const queueIdsToDelete: any[] = [];
+        for (const bf of Array.from(new Set(queueBaseFormsToDelete))) {
+          const queueItems = await db.learning_queue.where('base_form').equalsIgnoreCase(bf).toArray();
+          for (const qi of queueItems) {
+            if (qi.id) queueIdsToDelete.push(qi.id);
           }
         }
+        if (queueIdsToDelete.length > 0) await db.learning_queue.bulkDelete(queueIdsToDelete.map(id => String(id)));
       }
     });
 

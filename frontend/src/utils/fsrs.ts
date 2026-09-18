@@ -4,7 +4,20 @@ import { supabase } from '../services/supabase';
 
 const fsrs = new FSRS({});
 
+let inFlightSync: Promise<void> | null = null;
+
 export async function syncOfflineProgress() {
+    // Dedupe: Layout, Dashboard, DataContext and auth events all call this on boot.
+    // Parallel runs each pull the full table and run giant per-row write transactions,
+    // which collide in IndexedDB and peg the CPU (observed 100% + stuck sync toast).
+    if (inFlightSync) return inFlightSync;
+    inFlightSync = (async () => {
+        await doSyncOfflineProgress();
+    })().finally(() => { inFlightSync = null; });
+    return inFlightSync;
+}
+
+async function doSyncOfflineProgress() {
     if (!navigator.onLine) {
         window.dispatchEvent(new CustomEvent('fsrs-sync', { detail: 'Offline. Waiting to sync...' }));
         return;
@@ -31,45 +44,53 @@ export async function syncOfflineProgress() {
         const localMap = new Map(localRecords.map(r => [r.word_id, r]));
 
         // 2. RECONCILE: Apply remote state & purge deleted cards
-        await db.transaction('rw', db.fsrs_progress, async () => {
-            // Delete local cards that were previously synced but removed from server
-            for (const local of localRecords) {
-                if (local.synced && !remoteMap.has(local.word_id)) {
-                    await db.fsrs_progress.delete(local.word_id);
-                }
+        // PERF: bulk writes. The old per-row delete/put loops inside one transaction
+        // serialized thousands of IndexedDB requests per sync (main-thread jank,
+        // CPU spin when multiple syncs raced before the in-flight dedupe existed).
+        const idsToDelete: string[] = [];
+        for (const local of localRecords) {
+            if (local.synced && !remoteMap.has(local.word_id)) {
+                idsToDelete.push(local.word_id);
             }
+        }
 
-            // Update or insert remote cards into Dexie
-            for (const remote of remoteRecords || []) {
-                const local = localMap.get(remote.word_id);
-                const remoteUpdated = remote.updated_at ? new Date(remote.updated_at).getTime() : 0;
-                const localUpdated = local?.updated_at ? new Date(local.updated_at).getTime() : 0;
+        const toPut: any[] = [];
+        for (const remote of remoteRecords || []) {
+            const local = localMap.get(remote.word_id);
+            const remoteUpdated = remote.updated_at ? new Date(remote.updated_at).getTime() : 0;
+            const localUpdated = local?.updated_at ? new Date(local.updated_at).getTime() : 0;
 
-                if (!local || (local.synced && remoteUpdated >= localUpdated)) {
-                    await db.fsrs_progress.put({
-                        word_id: remote.word_id,
-                        course_id: remote.course_id,
-                        state: remote.state,
-                        due: new Date(remote.due),
-                        stability: remote.stability,
-                        difficulty: remote.difficulty,
-                        elapsed_days: remote.elapsed_days,
-                        scheduled_days: remote.scheduled_days,
-                        reps: remote.reps,
-                        lapses: remote.lapses,
-                        last_review: remote.last_review ? new Date(remote.last_review) : new Date(),
-                        todayDictationPassed: remote.today_dictation_passed ?? false,
-                        todayFlashcardPassed: remote.today_flashcard_passed ?? false,
-                        max_wrongs: remote.max_wrongs ?? 0,
-                        max_time: remote.max_time ?? 0,
-                        reveal_count: remote.reveal_count ?? 0,
-                        lastGatePassDate: remote.last_gate_pass_date || null,
-                        synced: true,
-                        updated_at: remote.updated_at
-                    });
-                }
+            if (!local || (local.synced && remoteUpdated >= localUpdated)) {
+                toPut.push({
+                    word_id: remote.word_id,
+                    course_id: remote.course_id,
+                    state: remote.state,
+                    due: new Date(remote.due),
+                    stability: remote.stability,
+                    difficulty: remote.difficulty,
+                    elapsed_days: remote.elapsed_days,
+                    scheduled_days: remote.scheduled_days,
+                    reps: remote.reps,
+                    lapses: remote.lapses,
+                    last_review: remote.last_review ? new Date(remote.last_review) : new Date(),
+                    todayDictationPassed: remote.today_dictation_passed ?? false,
+                    todayFlashcardPassed: remote.today_flashcard_passed ?? false,
+                    max_wrongs: remote.max_wrongs ?? 0,
+                    max_time: remote.max_time ?? 0,
+                    reveal_count: remote.reveal_count ?? 0,
+                    lastGatePassDate: remote.last_gate_pass_date || null,
+                    synced: true,
+                    updated_at: remote.updated_at
+                });
             }
-        });
+        }
+
+        if (idsToDelete.length > 0 || toPut.length > 0) {
+            await db.transaction('rw', db.fsrs_progress, async () => {
+                if (idsToDelete.length > 0) await db.fsrs_progress.bulkDelete(idsToDelete);
+                if (toPut.length > 0) await db.fsrs_progress.bulkPut(toPut);
+            });
+        }
 
         // 3. PUSH: Send any un-synced local changes to Supabase
         const unsynced = await db.fsrs_progress
