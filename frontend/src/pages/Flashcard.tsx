@@ -732,8 +732,21 @@ export default function Flashcard() {
       }
 
       // iPad hardware keyboards: Safari reserves Tab for browser focus nav, so
-      // the page never receives it. Backquote (`) is not browser-reserved on
-      // iPadOS and reaches the page — same intentional gate as Tab.
+      // the page never receives it. Alt+P (Option+P) is not browser-reserved on
+      // iPadOS and reaches the page — same intentional gate as Tab. Swedish
+      // keyboards have no backquote key, so Option+P is the primary hint key.
+      if ((e.altKey || e.metaKey) && e.code === 'KeyP') {
+        e.preventDefault();
+        e.stopPropagation();
+        if (wrongCount >= 2 || status !== 'typing') {
+          playAudio();
+        }
+        inputRef.current?.focus();
+        requestAnimationFrame(() => {
+          inputRef.current?.focus();
+        });
+        return;
+      }
       if (e.key === '`' || e.code === 'Backquote') {
         e.preventDefault();
         e.stopPropagation();
@@ -910,8 +923,8 @@ export default function Flashcard() {
                 <path d="M8 5v14l11-7z" />
               </svg>
               {/* iPadOS Safari reserves Tab for browser focus nav and the page
-                  never receives it — show the Backquote key as the keyboard hint. */}
-              <span className="tab-hint">`</span>
+                  never receives it — show Option+P (works on Swedish keyboards). */}
+              <span className="tab-hint">⌥P</span>
             </button>
           </div>
         )}
