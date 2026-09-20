@@ -7,6 +7,9 @@ const preloadedUrls = new Set<string>();
 
 // Global singleton audio instance — avoids exhausting iOS/WebKit CoreAudio hardware channels
 let sharedAudio: HTMLAudioElement | null = null;
+// Whether the current playback was interrupted by an external cause (iOS
+// soft-keyboard focus change, view mutation). If so, resume automatically.
+let resumeOnInterrupt = false;
 
 // iOS Safari requires at least one successful play() inside a real user-gesture
 // event handler before it will allow ANY media playback. Keydown counts as a
@@ -60,6 +63,16 @@ export const reportAudio = (msg: string) => {
 const getSharedAudio = (): HTMLAudioElement => {
   if (!sharedAudio && typeof window !== 'undefined') {
     sharedAudio = new Audio();
+    // iOS interrupts <audio> playback when the soft keyboard opens / view
+    // layer mutates (e.g. tapping the spell input while audio plays). When
+    // the pause is NOT user-initiated (stopAudio), resume it automatically.
+    sharedAudio.addEventListener('pause', () => {
+      if (resumeOnInterrupt && sharedAudio && !sharedAudio.ended) {
+        resumeOnInterrupt = false;
+        reportAudio('playback interrupted (external) -> resuming');
+        sharedAudio.play().catch((e) => reportAudio(`resume failed: ${e.name}`));
+      }
+    });
   }
   return sharedAudio!;
 };
@@ -69,6 +82,9 @@ const getSharedAudio = (): HTMLAudioElement => {
  */
 export const stopAudio = () => {
   if (sharedAudio) {
+    // A stopAudio() call = deliberate stop (new word, new attempt) — the pause
+    // listener must NOT treat this as an external interruption and resume.
+    resumeOnInterrupt = false;
     sharedAudio.onerror = null;
     sharedAudio.onplay = null;
     sharedAudio.pause();
@@ -352,6 +368,9 @@ export const playExactWordAudio = (word: string) => {
   audio.onplay = () => {
     audio.onerror = null;
   };
+  // While this word plays, any external pause (soft keyboard, view mutation)
+  // should trigger an automatic resume via the pause listener.
+  resumeOnInterrupt = true;
   audio.onerror = onError;
   audio.src = primaryUrl;
 
