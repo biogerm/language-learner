@@ -918,7 +918,7 @@ export default function Flashcard() {
 
         {!isAllDone && wrongCount >= 2 && !showAnswer && (
           <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', justifyContent: 'center', marginBottom: '1.5rem' }}>
-            <button id="play-btn" tabIndex={-1} className="play-btn" onClick={playAudio} title="Audio Hint (Tab or `)">
+            <button id="play-btn" tabIndex={-1} className="play-btn" onClick={playAudio} title="Audio Hint (⌥P / Tab / Space)">
               <svg className="play-icon" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M8 5v14l11-7z" />
               </svg>
@@ -1005,7 +1005,7 @@ export default function Flashcard() {
           {!isAllDone && showAnswer && (
             <div id="answer-display" className="answer-display show">
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px' }}>
-                <strong className="correct-sv" id="correct-sv" onClick={playAudio} style={{ cursor: 'pointer' }} title="Play Audio (Tab)">
+                <strong className="correct-sv" id="correct-sv" onClick={playAudio} style={{ cursor: 'pointer' }} title="Play Audio (⌥P / Tab / Space)">
                   {currentWord?.word}
                 </strong>
               </div>
