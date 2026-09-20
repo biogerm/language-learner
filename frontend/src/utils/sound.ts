@@ -18,17 +18,21 @@ const unlockAudio = () => {
   if (audioUnlocked) return;
   audioUnlocked = true;
   const audio = getSharedAudio();
-  // Silent, empty 1-sample wav — enough to mark the element as user-activated
-  const silentDataUri =
+  // iOS WebKit quirk: a MUTED play() does NOT count as gesture activation —
+  // the element stays "not user-activated" and later play() calls are rejected.
+  // The unlock source must be audible (volume 0.01 is still counted as real
+  // playback) AND the play() must happen synchronously inside the gesture.
+  audio.volume = 0.01;
+  audio.src =
     'data:audio/wav;base64,UklGRigAAABXQVZFZm10IBIAAAABAAEARKwAAIhYAQACABAAAABkYXRhAgAAAAEA';
-  audio.muted = true;
-  audio.src = silentDataUri;
   audio.play().then(() => {
     audio.pause();
-    audio.muted = false;
     audio.removeAttribute('src');
+    audio.volume = 1;
   }).catch(() => {
-    audio.muted = false;
+    // Unlock failed (no gesture yet) — retry on the next interaction
+    audioUnlocked = false;
+    audio.volume = 1;
   });
 };
 export const bindAudioUnlock = () => {
@@ -306,7 +310,13 @@ export const playExactWordAudio = (word: string) => {
         if (p !== undefined) {
           p.catch((err) => {
             if (err.name === 'AbortError') return;
-            if (err.name !== 'NotAllowedError') {
+            // NotAllowedError included: on iOS Safari the fallback MP3 attempt is
+            // also gesture-gated — do NOT cache the word as "missing MP3" for that
+            // (it would permanently kill studio audio for this word). Just play TTS.
+            if (err.name === 'NotAllowedError') {
+              currentAttempt = 'done';
+              playSwedishTTS(word);
+            } else {
               currentAttempt = 'done';
               missingAudioCache.add(trimmed);
               playSwedishTTS(word);
@@ -335,9 +345,14 @@ export const playExactWordAudio = (word: string) => {
   if (p !== undefined) {
     p.catch((err) => {
       if (err.name === 'AbortError') return;
-      if (err.name !== 'NotAllowedError') {
-        onError();
+      if (err.name === 'NotAllowedError') {
+        // iOS Safari: play() rejected because no user-activated gesture yet.
+        // Do NOT stay silent — fall back to Web Speech (speechSynthesis is
+        // separately gesture-gated and usually works after first touch).
+        playSwedishTTS(word);
+        return;
       }
+      onError();
     });
   }
 };
