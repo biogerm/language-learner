@@ -730,7 +730,23 @@ export default function Flashcard() {
         }
         return;
       }
-      
+
+      // iPad hardware keyboards: Safari reserves Tab for browser focus nav, so
+      // the page never receives it. Backquote (`) is not browser-reserved on
+      // iPadOS and reaches the page — same intentional gate as Tab.
+      if (e.key === '`' || e.code === 'Backquote') {
+        e.preventDefault();
+        e.stopPropagation();
+        if (wrongCount >= 2 || status !== 'typing') {
+          playAudio();
+        }
+        inputRef.current?.focus();
+        requestAnimationFrame(() => {
+          inputRef.current?.focus();
+        });
+        return;
+      }
+
       if (e.key === 'Escape' || (e.key === '/' && e.metaKey)) {
         e.preventDefault();
         if (isAdvancingRef.current || status === 'revealed') {
@@ -889,11 +905,13 @@ export default function Flashcard() {
 
         {!isAllDone && wrongCount >= 2 && !showAnswer && (
           <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', justifyContent: 'center', marginBottom: '1.5rem' }}>
-            <button id="play-btn" tabIndex={-1} className="play-btn" onClick={playAudio} title="Audio Hint (Tab)">
+            <button id="play-btn" tabIndex={-1} className="play-btn" onClick={playAudio} title="Audio Hint (Tab or `)">
               <svg className="play-icon" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M8 5v14l11-7z" />
               </svg>
-              <span className="tab-hint">Tab</span>
+              {/* iPadOS Safari reserves Tab for browser focus nav and the page
+                  never receives it — show the Backquote key as the keyboard hint. */}
+              <span className="tab-hint">`</span>
             </button>
           </div>
         )}
