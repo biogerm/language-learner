@@ -10,11 +10,16 @@ if (!supabaseUrl || !supabaseKey) {
 export const supabase = createClient(supabaseUrl || '', supabaseKey || '');
 
 /**
- * Sign in using OAuth provider
+ * Sign in using OAuth provider.
+ * redirectTo must be passed explicitly: Supabase otherwise falls back to the
+ * Site URL configured in the dashboard (localhost:3000), which breaks OAuth
+ * sign-in from any other origin (iPad on LAN, preview deploys, custom domain).
  */
 export const signInWithOAuth = async (provider: 'google' | 'github' | 'apple') => {
+  const redirectTo = `${window.location.origin}/`;
   const { data, error } = await supabase.auth.signInWithOAuth({
     provider,
+    options: { redirectTo },
   });
   if (error) {
     console.error('Error signing in with OAuth:', error.message);

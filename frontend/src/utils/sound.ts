@@ -45,6 +45,18 @@ export const bindAudioUnlock = () => {
   window.addEventListener('click', unlockAudio, opts);
 };
 
+// ---- Audio diagnostics (enable with ?audiodebug=1 in the URL) ----
+// Surfaces every audio decision on-screen so iPad WebKit rejections are visible.
+const audioDebugEnabled =
+  typeof window !== 'undefined' &&
+  new URLSearchParams(window.location.search).has('audiodebug');
+export const isAudioDebug = () => audioDebugEnabled;
+export const reportAudio = (msg: string) => {
+  if (!audioDebugEnabled) return;
+  console.warn('[audio-debug]', msg);
+  window.dispatchEvent(new CustomEvent('audio-debug', { detail: msg }));
+};
+
 const getSharedAudio = (): HTMLAudioElement => {
   if (!sharedAudio && typeof window !== 'undefined') {
     sharedAudio = new Audio();
@@ -281,9 +293,11 @@ export const playExactWordAudio = (word: string) => {
   if (!trimmed) return;
 
   stopAudio();
+  reportAudio(`play "${trimmed}" | unlocked=${audioUnlocked} | platform=${isApplePlatform ? 'apple' : 'other'}`);
 
   // If already confirmed to lack MP3, play TTS directly
   if (missingAudioCache.has(trimmed)) {
+    reportAudio(`"${trimmed}" in missingAudioCache -> TTS`);
     playSwedishTTS(word);
     return;
   }
@@ -343,7 +357,8 @@ export const playExactWordAudio = (word: string) => {
 
   const p = audio.play();
   if (p !== undefined) {
-    p.catch((err) => {
+    p.then(() => reportAudio(`play() OK "${trimmed}"`)).catch((err) => {
+      reportAudio(`play() REJECTED ${err.name}: ${err.message}`);
       if (err.name === 'AbortError') return;
       if (err.name === 'NotAllowedError') {
         // iOS Safari: play() rejected because no user-activated gesture yet.
