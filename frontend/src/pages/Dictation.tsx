@@ -723,8 +723,19 @@ export default function Dictation() {
       }
 
       // iPad hardware keyboards: Safari reserves Tab for browser focus nav, so
-      // the page never receives it. Backquote (`) is not browser-reserved on
-      // iPadOS and reaches the page — audio hint, same as Tab.
+      // the page never receives it. Alt+P (Option+P) is not browser-reserved on
+      // iPadOS and reaches the page — audio hint, same as Tab. Swedish
+      // keyboards have no backquote key, so Option+P is the primary hint key.
+      if ((e.altKey || e.metaKey) && e.code === 'KeyP') {
+        e.preventDefault();
+        e.stopPropagation();
+        playAudio();
+        inputRef.current?.focus();
+        requestAnimationFrame(() => {
+          inputRef.current?.focus();
+        });
+        return;
+      }
       if (e.key === '`' || e.code === 'Backquote') {
         e.preventDefault();
         e.stopPropagation();
