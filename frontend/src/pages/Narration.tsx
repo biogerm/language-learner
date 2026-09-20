@@ -1194,7 +1194,20 @@ export default function Narration() {
     let enText = sent.en || '';
     if (!enText) return null;
 
-    const enWords = positionedWords
+    // Only words actually rendered in the SV line may highlight EN. Overlapping
+    // dataset entries (e.g. "utbilda" + nested "utbilda sig till") would
+    // otherwise let a hidden phrase entry grab the EN span and freeze the
+    // highlight state — mirror the reading-mode walk to pick the visible ones.
+    const visibleWords: any[] = [];
+    let walkIdx = 0;
+    positionedWords.forEach(w => {
+      if (w.position_start >= walkIdx) {
+        visibleWords.push(w);
+        walkIdx = w.position_end;
+      }
+    });
+
+    const enWords = visibleWords
       .filter(w => w.contextual_en)
       .sort((a, b) => b.contextual_en.length - a.contextual_en.length);
 
