@@ -440,13 +440,10 @@ export default function Narration() {
       }
     });
 
-    // Sort by position_start, longest phrase first on ties — nested overlapping
-    // entries (e.g. phrase "utbilda sig till" + word "utbilda" both at pos 13)
-    // must be deduped so edit mode shows each word exactly once.
-    positionedWords.sort((a, b) =>
-      (a.position_start - b.position_start) ||
-      ((b.position_end - b.position_start) - (a.position_end - a.position_start))
-    );
+    // Sort exactly like reading mode (position_start, stable = array order on
+    // ties) so both modes render the same word spans. The overlap guard below
+    // then skips nested duplicates (e.g. "utbilda" inside "utbilda sig till").
+    positionedWords.sort((a, b) => a.position_start - b.position_start);
 
     // 2. Build editing tokens by walking through svText chunks
     const parsedTokens: TokenState[] = [];
