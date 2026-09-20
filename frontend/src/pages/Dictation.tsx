@@ -900,10 +900,11 @@ export default function Dictation() {
 
         {!isAllDone && (
           <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', justifyContent: 'center', marginBottom: '2rem' }}>
-            <button id="play-btn" tabIndex={-1} className="play-btn" onClick={playAudio} title="Play Audio (Tab or `)">
+            <button id="play-btn" tabIndex={-1} className="play-btn" onClick={playAudio} title="Play Audio (Tab / Space / ⌥P)">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M8 5v14l11-7z" />
               </svg>
+              <span className="tab-hint">Tab · Space · ⌥P</span>
             </button>
           </div>
         )}
@@ -991,7 +992,7 @@ export default function Dictation() {
           {!isAllDone && showAnswer && (
             <div id="answer-display" className="answer-display show">
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px' }}>
-                <strong className="correct-sv" id="correct-sv" onClick={playAudio} style={{ cursor: 'pointer' }} title="Play Audio (Tab)">
+                <strong className="correct-sv" id="correct-sv" onClick={playAudio} style={{ cursor: 'pointer' }} title="Play Audio (Tab / Space / ⌥P)">
                   {currentWord?.word}
                 </strong>
               </div>
