@@ -944,6 +944,9 @@ export default function Dictation() {
               autoCorrect="off"
               spellCheck={false}
               enterKeyHint="done"
+              // iPad Safari: after Tab steals focus, programmatic focus() needs a
+              // fresh gesture — tapping the input re-focuses it (no page reload).
+              onTouchEnd={(e) => { e.preventDefault(); inputRef.current?.focus(); }}
             />
           )}
           

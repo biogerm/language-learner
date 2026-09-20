@@ -949,6 +949,12 @@ export default function Flashcard() {
               autoCorrect="off"
               spellCheck={false}
               enterKeyHint="done"
+              // iPad Safari: after a Tab keypress steals focus (page can't prevent
+              // Safari's focus navigation once it decides to), programmatic
+              // focus() needs a fresh user gesture. Touching anywhere re-focuses
+              // the input, so the user can recover without a page reload.
+              onTouchEnd={(e) => { e.preventDefault(); inputRef.current?.focus(); }}
+              onFocusCapture={(e) => { (e.target as HTMLElement).dataset.focused = '1'; }}
             />
           )}
           
