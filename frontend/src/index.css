@@ -1075,15 +1075,19 @@ strong {
 
 .play-btn .tab-hint {
     position: absolute;
-    bottom: -22px;
+    /* Inside the button bottom edge instead of below it — the space below
+       the button is tight (feedback/input follow immediately), and wider
+       labels like 'P' overlapped the row underneath. */
+    bottom: 6px;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     font-weight: 500;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.75);
     font-family: var(--sans);
     pointer-events: none;
     letter-spacing: 0.5px;
+    line-height: 1;
 }
 
 /* Flashcard English Prompt */
