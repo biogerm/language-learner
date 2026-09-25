@@ -899,7 +899,7 @@ export default function Dictation() {
         </div>
 
         {!isAllDone && (
-          <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', justifyContent: 'center', marginBottom: '2rem' }}>
+          <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', justifyContent: 'center', marginBottom: '3.5rem' }}>
             <button id="play-btn" tabIndex={-1} className="play-btn" onClick={playAudio} title="Play Audio (Tab / Space / ⌥P)">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M8 5v14l11-7z" />

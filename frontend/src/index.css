@@ -1075,19 +1075,20 @@ strong {
 
 .play-btn .tab-hint {
     position: absolute;
-    /* Inside the button bottom edge instead of below it — the space below
-       the button is tight (feedback/input follow immediately), and wider
-       labels like 'P' overlapped the row underneath. */
-    bottom: 6px;
+    /* Outside below the button. The original overlap happened because the
+       container rows around the button had no reserved space for the label —
+       give the hint a real slot via padding on the button wrapper instead of
+       squeezing it inside the button. */
+    bottom: -24px;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     font-weight: 500;
-    color: rgba(255, 255, 255, 0.75);
+    color: rgba(255, 255, 255, 0.5);
     font-family: var(--sans);
     pointer-events: none;
     letter-spacing: 0.5px;
-    line-height: 1;
+    white-space: nowrap;
 }
 
 /* Flashcard English Prompt */
