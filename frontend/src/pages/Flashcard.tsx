@@ -23,6 +23,9 @@ export default function Flashcard() {
   const [feedbackMsg, setFeedbackMsg] = useState('');
   const [fsrsStats, setFsrsStats] = useState<any>(null);
   
+  const [isEditingDef, setIsEditingDef] = useState(false);
+  const [editDefInput, setEditDefInput] = useState('');
+
   const [inputState, setInputState] = useState<'default' | 'correct' | 'incorrect'>('default');
   const [timerFill, setTimerFill] = useState('0%');
   const [stats, setStats] = useState<{ total: number; mastered: number; remaining: number; inFsrsCount?: number }>({ total: 0, mastered: 0, remaining: 0, inFsrsCount: 0 });
@@ -571,6 +574,8 @@ export default function Flashcard() {
     setInput('');
     setInputState('default');
     setFeedbackMsg('');
+    setIsEditingDef(false);
+    setEditDefInput('');
     setTimerFill('0%');
     setCurrentIndex(prev => prev + 1);
     setStartTime(Date.now());
@@ -887,6 +892,49 @@ export default function Flashcard() {
     }
   }, [currentIndex, status, isAllDone, loading]);
 
+  const handleSaveDef = async () => {
+    if (!currentRecord || !editDefInput.trim()) return;
+    try {
+      const cleanInput = editDefInput.trim();
+      const currentCourseId = courseId || 'sfid';
+      const cleanW = (currentRecord.word_in_sentence || currentRecord.word_id || currentRecord.base_form || '').toLowerCase();
+      
+      const newCustom = {
+        sv: cleanW,
+        base_form: currentRecord.base_form || cleanW,
+        word_in_sentence: cleanW,
+        en_translation: cleanInput,
+        dict_en: cleanInput,
+        stage_id: currentRecord.stage_id || selectedStage || '',
+        article_id: currentRecord.article_id || selectedArticleId || '',
+        course_id: currentCourseId,
+        sentence_id: currentRecord.sentence_id || '',
+        sentence: exampleSentence || '',
+        sentence_en: exampleSentenceEn || '',
+        context_sv: exampleSentence || '',
+        context_en: exampleSentenceEn || '',
+        updated_at: new Date().toISOString(),
+        synced: false
+      };
+
+      await db.custom_dictionary.put(newCustom as any);
+      
+      // Update local record temporarily for this session
+      currentRecord.en_translation = cleanInput;
+      currentRecord.contextual_en = cleanInput;
+      
+      // Attempt to sync immediately
+      import('../services/sync').then(({ syncCustomDictionary }) => {
+        syncCustomDictionary().catch(e => console.warn('Sync custom dict failed', e));
+      });
+      
+      setIsEditingDef(false);
+      window.dispatchEvent(new CustomEvent('fsrs-toast', { detail: '🎉 Translation updated & saved to custom dictionary!' }));
+    } catch(e) {
+      console.error('Failed to save custom def', e);
+    }
+  };
+
   if (loading) return (
     <div style={{ width: '100%', maxWidth: '800px', margin: '0 auto' }}>
       <main className="flashcard-container glass-panel">
@@ -917,8 +965,8 @@ export default function Flashcard() {
         </div>
 
         {!isAllDone && wrongCount >= 2 && !showAnswer && (
-          <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', justifyContent: 'center', marginBottom: '1.5rem' }}>
-            <button id="play-btn" tabIndex={-1} className="play-btn" onClick={playAudio} title="Audio Hint (⌥P / Tab / Space)">
+          <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', justifyContent: 'center', marginBottom: '3rem' }}>
+            <button id="play-btn" tabIndex={-1} className="play-btn" onClick={playAudio} title="Audio Hint (Tab or Option+P)">
               <svg className="play-icon" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M8 5v14l11-7z" />
               </svg>
@@ -952,8 +1000,35 @@ export default function Flashcard() {
               </div>
             </div>
           ) : (
-            <div id="english-prompt">
-              {enPrompt}
+            <div id="english-prompt" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', position: 'relative' }}>
+              {isEditingDef ? (
+                <div style={{ display: 'flex', gap: '8px', width: '100%', maxWidth: '400px', alignItems: 'center' }} onClick={e => e.stopPropagation()}>
+                  <input
+                    autoFocus
+                    value={editDefInput}
+                    onChange={e => setEditDefInput(e.target.value)}
+                    onKeyDown={e => {
+                      if (e.key === 'Enter') handleSaveDef();
+                      if (e.key === 'Escape') setIsEditingDef(false);
+                      e.stopPropagation();
+                    }}
+                    style={{ flex: 1, padding: '8px 12px', borderRadius: '8px', background: 'var(--bg-highlight, rgba(255,255,255,0.1))', border: '1px solid #475569', color: '#fff', fontSize: '1rem' }}
+                  />
+                  <button onClick={handleSaveDef} style={{ padding: '8px 16px', borderRadius: '8px', background: '#10b981', color: '#fff', border: 'none', cursor: 'pointer', fontWeight: 'bold' }}>Save</button>
+                  <button onClick={() => setIsEditingDef(false)} style={{ padding: '8px 16px', borderRadius: '8px', background: '#ef4444', color: '#fff', border: 'none', cursor: 'pointer', fontWeight: 'bold' }}>Cancel</button>
+                </div>
+              ) : (
+                <>
+                  <span>{enPrompt}</span>
+                  <button 
+                    onClick={(e) => { e.stopPropagation(); setIsEditingDef(true); setEditDefInput(enPrompt); }} 
+                    style={{ background: 'none', border: 'none', cursor: 'pointer', color: '#64748b', fontSize: '1.2rem', padding: '4px', display: 'flex', alignItems: 'center' }}
+                    title="Edit Translation"
+                  >
+                    ✏️
+                  </button>
+                </>
+              )}
             </div>
           )}
 
@@ -1009,7 +1084,36 @@ export default function Flashcard() {
                   {currentWord?.word}
                 </strong>
               </div>
-              <span className="correct-en" id="correct-en">{enPrompt}</span>
+              <div className="correct-en" id="correct-en" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}>
+                {isEditingDef ? (
+                  <div style={{ display: 'flex', gap: '8px', width: '100%', maxWidth: '400px', alignItems: 'center' }} onClick={e => e.stopPropagation()}>
+                    <input
+                      autoFocus
+                      value={editDefInput}
+                      onChange={e => setEditDefInput(e.target.value)}
+                      onKeyDown={e => {
+                        if (e.key === 'Enter') handleSaveDef();
+                        if (e.key === 'Escape') setIsEditingDef(false);
+                        e.stopPropagation();
+                      }}
+                      style={{ flex: 1, padding: '8px 12px', borderRadius: '8px', background: 'var(--bg-highlight, rgba(255,255,255,0.1))', border: '1px solid #475569', color: '#fff', fontSize: '1rem' }}
+                    />
+                    <button onClick={handleSaveDef} style={{ padding: '8px 16px', borderRadius: '8px', background: '#10b981', color: '#fff', border: 'none', cursor: 'pointer', fontWeight: 'bold' }}>Save</button>
+                    <button onClick={() => setIsEditingDef(false)} style={{ padding: '8px 16px', borderRadius: '8px', background: '#ef4444', color: '#fff', border: 'none', cursor: 'pointer', fontWeight: 'bold' }}>Cancel</button>
+                  </div>
+                ) : (
+                  <>
+                    <span>{enPrompt}</span>
+                    <button 
+                      onClick={(e) => { e.stopPropagation(); setIsEditingDef(true); setEditDefInput(enPrompt); }} 
+                      style={{ background: 'none', border: 'none', cursor: 'pointer', color: '#64748b', fontSize: '1.2rem', padding: '4px', display: 'flex', alignItems: 'center' }}
+                      title="Edit Translation"
+                    >
+                      ✏️
+                    </button>
+                  </>
+                )}
+              </div>
               {exampleSentence && (
                 <div 
                   id="sentence-display" 
