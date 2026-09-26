@@ -187,7 +187,14 @@ export default function AddToFsrsModal({ courseId, isOpen, onClose }: AddToFsrsM
 
       // Add to FSRS progress
       // state=2 (Review) so the word enters the review flow immediately — no waiting.
-      const existing = await db.fsrs_progress.get(finalWord);
+      // CRITICAL: normalize word_id to lowercase. Every other path (submitGatePass,
+      // queueBuilder, sync) keys fsrs by lowercase. If a user typed "Förmån" and we
+      // stored it verbatim, answering correctly would update the lowercase row while
+      // the capitalized row stays due forever -> word repeats infinitely in review.
+      finalWord = finalWord.trim().toLowerCase();
+      const existing =
+        (await db.fsrs_progress.get(finalWord)) ??
+        (await db.fsrs_progress.where('word_id').equalsIgnoreCase(finalWord).first());
       let dueStr = '';
       if (!existing) {
         const now = new Date();

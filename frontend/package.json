@@ -1,6 +1,6 @@
 {
   "name": "frontend-temp",
-  "version": "v2.2.12",
+  "version": "v2.2.13",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -37,7 +37,7 @@
   },
   "moduleVersions": {
     "narration": "v2.2.35",
-    "dictation": "v2.2.63",
-    "flashcard": "v2.2.69"
+    "dictation": "v2.2.64",
+    "flashcard": "v2.2.70"
   }
 }
