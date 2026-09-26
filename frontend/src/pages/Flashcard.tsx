@@ -727,14 +727,9 @@ export default function Flashcard() {
         return;
       }
 
-      if (e.code === 'Space' && (e.target === document.body || status !== 'typing' || isAdvancingRef.current)) {
-        e.preventDefault();
-        // Same intentional gate as Tab: Space is an audio hint, not free playback.
-        if (wrongCount >= 2 || status !== 'typing') {
-          playAudio();
-        }
-        return;
-      }
+      // Space is the audio hint ONLY in Narration mode — removed from Flashcard
+      // per user decision 2026-09-26 (typing spaces for multi-word answers must
+      // never be interpreted as playback, even between cards).
 
       // iPad hardware keyboards: Safari reserves Tab for browser focus nav, so
       // the page never receives it. Alt+P (Option+P) is not browser-reserved on
@@ -1080,7 +1075,7 @@ export default function Flashcard() {
           {!isAllDone && showAnswer && (
             <div id="answer-display" className="answer-display show">
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px' }}>
-                <strong className="correct-sv" id="correct-sv" onClick={playAudio} style={{ cursor: 'pointer' }} title="Play Audio (⌥P / Tab / Space)">
+                <strong className="correct-sv" id="correct-sv" onClick={playAudio} style={{ cursor: 'pointer' }} title="Play Audio (⌥P / Tab)">
                   {currentWord?.word}
                 </strong>
               </div>
