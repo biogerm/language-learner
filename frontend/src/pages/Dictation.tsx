@@ -716,16 +716,9 @@ export default function Dictation() {
         return;
       }
       
-      if (e.code === 'Space' && (e.target === document.body || status !== 'typing' || isAdvancingRef.current)) {
-        e.preventDefault();
-        playAudio();
-        return;
-      }
-
-      // iPad hardware keyboards: Safari reserves Tab for browser focus nav, so
-      // the page never receives it. Alt+P (Option+P) is not browser-reserved on
-      // iPadOS and reaches the page — audio hint, same as Tab. Swedish
-      // keyboards have no backquote key, so Option+P is the primary hint key.
+      // Space is the audio hint ONLY in Narration mode; in D/F typing must keep
+      // space characters for multi-word answers (e.g. "försova sig"). Removed
+      // per user decision 2026-09-26: D/F do not play audio on Space.
       if ((e.altKey || e.metaKey) && e.code === 'KeyP') {
         e.preventDefault();
         e.stopPropagation();
@@ -900,11 +893,11 @@ export default function Dictation() {
 
         {!isAllDone && (
           <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', justifyContent: 'center', marginBottom: '3.5rem' }}>
-            <button id="play-btn" tabIndex={-1} className="play-btn" onClick={playAudio} title="Play Audio (Tab / Space / ⌥P)">
+            <button id="play-btn" tabIndex={-1} className="play-btn" onClick={playAudio} title="Play Audio (Tab / ⌥P)">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M8 5v14l11-7z" />
               </svg>
-              <span className="tab-hint">Tab · Space · ⌥P</span>
+              <span className="tab-hint">Tab · ⌥P</span>
             </button>
           </div>
         )}
@@ -992,7 +985,7 @@ export default function Dictation() {
           {!isAllDone && showAnswer && (
             <div id="answer-display" className="answer-display show">
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px' }}>
-                <strong className="correct-sv" id="correct-sv" onClick={playAudio} style={{ cursor: 'pointer' }} title="Play Audio (Tab / Space / ⌥P)">
+                <strong className="correct-sv" id="correct-sv" onClick={playAudio} style={{ cursor: 'pointer' }} title="Play Audio (Tab / ⌥P)">
                   {currentWord?.word}
                 </strong>
               </div>
