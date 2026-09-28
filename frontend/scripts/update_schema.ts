@@ -2,6 +2,9 @@ import { Client } from 'pg';
 import * as dotenv from 'dotenv';
 import { fileURLToPath } from 'url';
 import { dirname, resolve } from 'path';
+import * as dotenv from 'dotenv';
+dotenv.config({ path: '.env.local' });
+if (!process.env.SUPABASE_DB_URL) throw new Error('Set SUPABASE_DB_URL in .env.local');
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -13,9 +16,8 @@ if (!dbPassword) {
     process.exit(1);
 }
 
-const connectionString = `postgresql://postgres.qtyzqyzjqscdbjcfqwuz:${dbPassword}@aws-1-eu-west-3.pooler.supabase.com:5432/postgres`;
-
 const client = new Client({
+  connectionString: process.env.SUPABASE_DB_URL,
     connectionString,
 });
 

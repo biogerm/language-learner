@@ -5,9 +5,11 @@ import { customDictionaryToMigrate } from '../migration_preview/custom_dictionar
 import { excludedDictionaryToMigrate } from '../migration_preview/excluded_dictionary_to_migrate.js';
 
 dotenv.config({ path: '.env.local' });
+if (!process.env.SUPABASE_DB_URL) throw new Error('Set SUPABASE_DB_URL in .env.local');
+
 
 const client = new Client({
-  connectionString: `postgresql://postgres.qtyzqyzjqscdbjcfqwuz:${process.env.SUPABASE_DB_PWD}@aws-1-eu-west-3.pooler.supabase.com:5432/postgres`
+  connectionString: process.env.SUPABASE_DB_URL,
 });
 
 async function runMigration() {
