@@ -2,9 +2,11 @@ import { Client } from 'pg';
 import * as dotenv from 'dotenv';
 
 dotenv.config({ path: '.env.local' });
+if (!process.env.SUPABASE_DB_URL) throw new Error('Set SUPABASE_DB_URL in .env.local');
+
 
 const client = new Client({
-  connectionString: `postgresql://postgres.qtyzqyzjqscdbjcfqwuz:${process.env.SUPABASE_DB_PWD}@aws-1-eu-west-3.pooler.supabase.com:5432/postgres`
+  connectionString: process.env.SUPABASE_DB_URL,
 });
 
 async function upgradeFsrsSchema() {
