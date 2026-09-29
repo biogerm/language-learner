@@ -16,7 +16,7 @@ export default function AddToFsrsModal({ courseId, isOpen, onClose }: AddToFsrsM
   const [message, setMessage] = useState('');
   const [loading, setLoading] = useState(false);
   const { courseData } = useData();
-  const [result, setResult] = useState<{ found_in: 'course' | 'global' | 'custom' | 'existing'; en: string; sentence?: string; sentence_en?: string; due?: string } | null>(null);
+  const [result, setResult] = useState<{ found_in: 'course' | 'global' | 'custom' | 'existing'; word: string; en: string; dict_en?: string; sentence?: string; sentence_en?: string; due?: string } | null>(null);
   const [addedCount, setAddedCount] = useState(0);
 
   // Reset state whenever the modal closes so reopening always starts at step 1
@@ -133,7 +133,7 @@ export default function AddToFsrsModal({ courseId, isOpen, onClose }: AddToFsrsM
     return null;
   };
 
-  const handleAdd = async () => {
+  const handleLookup = async () => {
     setLoading(true);
     setMessage('');
     try {
@@ -144,22 +144,21 @@ export default function AddToFsrsModal({ courseId, isOpen, onClose }: AddToFsrsM
       if (courseWord) {
         // Use the word from course data
         finalWord = courseWord.word;
+        const dictEn = (global_dict as any)[finalWord.toLowerCase()];
         setResult({
           found_in: 'course',
+          word: finalWord,
           en: courseWord.en,
+          dict_en: dictEn,
           sentence: courseWord.sentence,
           sentence_en: courseWord.sentence_en
         });
-        // We don't need to save anything extra because the course data already has it.
-        // Just add to FSRS.
       } else {
         // Step 2: Check global dictionary
         const lowerWord = word.toLowerCase();
         const globalEn = (global_dict as any)[lowerWord];
         if (globalEn) {
-          setResult({ found_in: 'global', en: globalEn });
-          // No need to save to custom dictionary because it's in global_dict (without example)
-          // But note: the global_dict doesn't have example sentences, so we just add the word.
+          setResult({ found_in: 'global', word: finalWord, en: globalEn });
         } else {
           // Step 3: Not found anywhere, ask for translation
           if (!translation) {
@@ -169,34 +168,51 @@ export default function AddToFsrsModal({ courseId, isOpen, onClose }: AddToFsrsM
             setLoading(false);
             return;
           }
-          setResult({ found_in: 'custom', en: translation });
-          // Save to custom dictionary
-          await db.custom_dictionary.add({
-            base_form: word,
-            word_in_sentence: word, // Since we don't have a sentence, we use the word itself
-            en_translation: translation,
-            article_id: '', // Not tied to an article
-            stage_id: '', // Not tied to a stage
-            course_id: courseId,
-            sentence: '', // No example sentence
-            sentence_en: '',
-            synced: false
-          } as any);
+          setResult({ found_in: 'custom', word: finalWord, en: translation });
         }
       }
 
-      // Add to FSRS progress
-      // state=2 (Review) so the word enters the review flow immediately — no waiting.
-      // CRITICAL: normalize word_id to lowercase. Every other path (submitGatePass,
-      // queueBuilder, sync) keys fsrs by lowercase. If a user typed "Förmån" and we
-      // stored it verbatim, answering correctly would update the lowercase row while
-      // the capitalized row stays due forever -> word repeats infinitely in review.
-      finalWord = finalWord.trim().toLowerCase();
+      // Check if it already exists in FSRS
+      const lowerFinalWord = finalWord.trim().toLowerCase();
       const existing =
-        (await db.fsrs_progress.get(finalWord)) ??
-        (await db.fsrs_progress.where('word_id').equalsIgnoreCase(finalWord).first());
-      let dueStr = '';
-      if (!existing) {
+        (await db.fsrs_progress.get(lowerFinalWord)) ??
+        (await db.fsrs_progress.where('word_id').equalsIgnoreCase(lowerFinalWord).first());
+        
+      if (existing) {
+        const dueStr = new Date(existing.due).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
+        setResult(r => (r ? { ...r, found_in: 'existing', due: dueStr } : r));
+      }
+
+      setStep(3);
+    } catch (err) {
+      console.error('Lookup failed:', err);
+      setMessage('Failed to look up word.');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleConfirm = async () => {
+    if (!result) return;
+    setLoading(true);
+    try {
+      if (result.found_in === 'custom') {
+        // Save to custom dictionary
+        await db.custom_dictionary.add({
+          base_form: result.word,
+          word_in_sentence: result.word,
+          en_translation: translation,
+          article_id: '', // Not tied to an article
+          stage_id: '', // Not tied to a stage
+          course_id: courseId,
+          sentence: '', // No example sentence
+          sentence_en: '',
+          synced: false
+        } as any);
+      }
+
+      if (result.found_in !== 'existing') {
+        const finalWord = result.word.trim().toLowerCase();
         const now = new Date();
         await db.fsrs_progress.put({
           word_id: finalWord,
@@ -213,18 +229,20 @@ export default function AddToFsrsModal({ courseId, isOpen, onClose }: AddToFsrsM
           lastGatePassDate: now.toISOString(),
           synced: false
         });
-        dueStr = 'now';
+        
         // Trigger sync event + queue refresh so the new word appears in the live review session
         window.dispatchEvent(new CustomEvent('fsrs-sync', { detail: `Added ${finalWord} to queue` }));
         window.dispatchEvent(new CustomEvent('learning-queue-updated'));
-      } else {
-        dueStr = new Date(existing.due).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
-        setResult(r => (r ? { ...r, found_in: 'existing', due: dueStr } : r));
+        
+        setAddedCount(c => c + 1);
       }
 
-      setStep(3);
-      setMessage(`Added "${finalWord}" to review queue`);
-      if (result?.found_in !== 'existing') setAddedCount(c => c + 1);
+      // Continue adding: reset to step 1
+      setStep(1);
+      setWord('');
+      setTranslation('');
+      setMessage('');
+      setResult(null);
     } catch (err) {
       console.error('Failed to add word to FSRS:', err);
       setMessage('Failed to add word. Please try again.');
@@ -233,13 +251,27 @@ export default function AddToFsrsModal({ courseId, isOpen, onClose }: AddToFsrsM
     }
   };
 
+  const highlightText = (text: string, toHighlight: string, color: string = '#a855f7') => {
+    if (!toHighlight || !text) return <>{text}</>;
+    // Case-insensitive replace with react nodes
+    const regex = new RegExp(`(${toHighlight.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
+    const parts = text.split(regex);
+    return (
+      <>
+        {parts.map((part, i) => 
+          regex.test(part) ? <strong key={i} style={{ color }}>{part}</strong> : part
+        )}
+      </>
+    );
+  };
+
   if (!isOpen) return null;
 
-  const sourceMeta: Record<string, { icon: string; label: string; note: string; color: string }> = {
-    course:   { icon: '📖', label: 'Found in course',        note: 'This word comes with an example sentence from your course.', color: '#34d399' },
-    global:   { icon: '📚', label: 'Found in dictionary',    note: 'General dictionary word — no course example sentence available.', color: '#60a5fa' },
-    custom:   { icon: '✏️', label: 'Custom word',            note: 'Not in any dictionary — saved to your custom word list with your translation.', color: '#fbbf24' },
-    existing: { icon: '🔁', label: 'Already in review',      note: 'This word is already in your FSRS queue — nothing changed.', color: '#a78bfa' }
+  const sourceMeta: Record<string, { icon: string; label: string; color: string }> = {
+    course:   { icon: '📖', label: 'Found in course',        color: '#34d399' },
+    global:   { icon: '📚', label: 'Found in dictionary',    color: '#60a5fa' },
+    custom:   { icon: '✏️', label: 'Custom word',            color: '#fbbf24' },
+    existing: { icon: '🔁', label: 'Already in review',      color: '#a78bfa' }
   };
   const meta = result ? sourceMeta[result.found_in] : null;
 
@@ -274,11 +306,11 @@ export default function AddToFsrsModal({ courseId, isOpen, onClose }: AddToFsrsM
               placeholder="Swedish word"
               value={word}
               onChange={(e) => setWord(e.target.value)}
-              onKeyDown={(e) => { if (e.key === 'Enter') handleAdd(); }}
+              onKeyDown={(e) => { if (e.key === 'Enter') handleLookup(); }}
               autoFocus
               style={{ width: '100%', padding: '14px 16px', fontSize: '17px', borderRadius: '10px', border: '1px solid var(--border)', background: 'rgba(255,255,255,0.1)', color: 'white', outline: 'none', boxSizing: 'border-box' }}
             />
-            <button className="btn-primary" onClick={handleAdd} disabled={loading || !word.trim()} style={{ padding: '12px 16px', width: '100%', borderRadius: '10px', fontSize: '15px', fontWeight: 600 }}>
+            <button className="btn-primary" onClick={handleLookup} disabled={loading || !word.trim()} style={{ padding: '12px 16px', width: '100%', borderRadius: '10px', fontSize: '15px', fontWeight: 600 }}>
               {loading ? 'Looking up…' : 'Add to Review'}
             </button>
           </>
@@ -297,11 +329,11 @@ export default function AddToFsrsModal({ courseId, isOpen, onClose }: AddToFsrsM
               placeholder="English translation"
               value={translation}
               onChange={(e) => setTranslation(e.target.value)}
-              onKeyDown={(e) => { if (e.key === 'Enter') handleAdd(); }}
+              onKeyDown={(e) => { if (e.key === 'Enter') handleLookup(); }}
               autoFocus
               style={{ width: '100%', padding: '14px 16px', fontSize: '17px', borderRadius: '10px', border: '1px solid var(--border)', background: 'rgba(255,255,255,0.1)', color: 'white', outline: 'none', boxSizing: 'border-box' }}
             />
-            <button className="btn-primary" onClick={handleAdd} disabled={loading || !translation.trim()} style={{ padding: '12px 16px', width: '100%', borderRadius: '10px', fontSize: '15px', fontWeight: 600 }}>
+            <button className="btn-primary" onClick={handleLookup} disabled={loading || !translation.trim()} style={{ padding: '12px 16px', width: '100%', borderRadius: '10px', fontSize: '15px', fontWeight: 600 }}>
               {loading ? 'Saving…' : 'Save & Add to Review'}
             </button>
           </>
@@ -312,7 +344,7 @@ export default function AddToFsrsModal({ courseId, isOpen, onClose }: AddToFsrsM
               <span style={{ fontSize: '26px' }}>{meta.icon}</span>
               <div>
                 <h3 style={{ margin: 0, fontSize: '16px' }}>
-                  {result!.found_in === 'existing' ? `"${word}" is already in review` : `"${word}" added to review`}
+                  "{result!.word}" preview
                 </h3>
                 <span style={{ fontSize: '12px', color: meta.color, fontWeight: 600 }}>{meta.label}</span>
               </div>
@@ -321,41 +353,41 @@ export default function AddToFsrsModal({ courseId, isOpen, onClose }: AddToFsrsM
               padding: '12px 14px', borderRadius: '10px', background: 'rgba(255,255,255,0.06)',
               border: '1px solid var(--border)', display: 'flex', flexDirection: 'column', gap: '6px'
             }}>
-              <p style={{ margin: 0, fontSize: '13px', opacity: 0.8, lineHeight: 1.5 }}>{meta.note}</p>
               <div style={{ fontSize: '14px', lineHeight: 1.6 }}>
-                <span style={{ opacity: 0.6, fontSize: '12px' }}>EN</span>{' '}
+                <span style={{ opacity: 0.6, fontSize: '12px' }}>{result!.dict_en ? 'CTX' : 'EN'}</span>{' '}
                 <strong>{result!.en}</strong>
               </div>
+              {result!.dict_en && result!.dict_en !== result!.en && (
+                <div style={{ fontSize: '14px', lineHeight: 1.6 }}>
+                  <span style={{ opacity: 0.6, fontSize: '12px' }}>DICT</span>{' '}
+                  <strong>{result!.dict_en}</strong>
+                </div>
+              )}
               {result!.sentence && (
                 <div style={{ fontSize: '13px', lineHeight: 1.6, borderTop: '1px solid var(--border)', paddingTop: '8px' }}>
-                  <span style={{ opacity: 0.6 }}>{result!.sentence}</span>
-                  {result!.sentence_en && <div style={{ opacity: 0.55, fontStyle: 'italic', fontSize: '12px', marginTop: '2px' }}>{result!.sentence_en}</div>}
+                  <span style={{ opacity: 0.8 }}>{highlightText(result!.sentence, result!.word, '#a855f7')}</span>
+                  {result!.sentence_en && <div style={{ opacity: 0.55, fontStyle: 'italic', fontSize: '12px', marginTop: '4px' }}>{highlightText(result!.sentence_en, result!.en, '#a855f7')}</div>}
                 </div>
               )}
             </div>
-            <div style={{ fontSize: '12.5px', opacity: 0.7, display: 'flex', alignItems: 'center', gap: '6px' }}>
-              🗓️ {result!.found_in === 'existing'
-                ? <>Already due — next review <strong style={{ opacity: 1 }}>{result!.due}</strong></>
-                : <>In your review queue <strong style={{ opacity: 1 }}>right now</strong> — it will appear in this session's Review flow</>}
-            </div>
+            {result!.found_in === 'existing' && (
+              <div style={{ fontSize: '12.5px', opacity: 0.7, display: 'flex', alignItems: 'center', gap: '6px' }}>
+                🗓️ Already due — next review <strong style={{ opacity: 1 }}>{result!.due}</strong>
+              </div>
+            )}
             <div style={{ display: 'flex', gap: '10px' }}>
               <button
                 className="btn-primary"
-                onClick={() => {
-                  // Continue adding: reset to step 1, keep the modal open
-                  setStep(1);
-                  setWord('');
-                  setTranslation('');
-                  setMessage('');
-                  setResult(null);
-                }}
+                onClick={handleConfirm}
+                disabled={loading}
                 style={{ padding: '12px 16px', flex: 1, borderRadius: '10px', fontSize: '14px', fontWeight: 600 }}>
-                + Add another
+                {loading ? 'Adding...' : 'Confirm and add another'}
               </button>
               <button
                 onClick={onClose}
+                disabled={loading}
                 style={{ padding: '12px 16px', borderRadius: '10px', fontSize: '14px', fontWeight: 600, background: 'transparent', color: 'var(--text-mute, rgba(255,255,255,0.7))', border: '1px solid var(--border)', cursor: 'pointer' }}>
-                Done
+                Cancel
               </button>
             </div>
           </>

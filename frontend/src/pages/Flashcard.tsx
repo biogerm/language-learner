@@ -899,6 +899,7 @@ export default function Flashcard() {
         base_form: currentRecord.base_form || cleanW,
         word_in_sentence: cleanW,
         en_translation: cleanInput,
+        contextual_en: cleanInput,
         dict_en: cleanInput,
         stage_id: currentRecord.stage_id || selectedStage || '',
         article_id: currentRecord.article_id || selectedArticleId || '',
@@ -917,6 +918,7 @@ export default function Flashcard() {
       // Update local record temporarily for this session
       currentRecord.en_translation = cleanInput;
       currentRecord.contextual_en = cleanInput;
+      currentRecord.dict_en = cleanInput;
       
       // Attempt to sync immediately
       import('../services/sync').then(({ syncCustomDictionary }) => {

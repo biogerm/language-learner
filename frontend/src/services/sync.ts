@@ -232,6 +232,7 @@ export function syncCustomDictionary(): Promise<void> {
         base_form: r.base_form || r.word_in_sentence,
         word_in_sentence: r.word_in_sentence || r.base_form,
         en_translation: r.en_translation || r.en || '',
+        contextual_en: r.contextual_en || r.en_translation || r.en || '',
         dict_en: r.dict_en || null,
         stage_id: r.stage_id || '',
         article_id: r.article_id || '',
