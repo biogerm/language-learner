@@ -18,7 +18,11 @@ async function run() {
   const e = await client.query('SELECT count(*) AS count FROM public.excluded_dictionary WHERE user_id = $1', [uid]);
   const l = await client.query('SELECT count(*) AS count FROM public.learning_queue WHERE user_id = $1', [uid]);
 
+<<<<<<< HEAD
   console.log('=== Current Cloud Data for test@example.com ===');
+=======
+  console.log('=== Current Cloud Data for biogerm@gmail.com ===');
+>>>>>>> e8d1b08c0c4465b924ef4ee22117c918709a5460
   console.log('fsrs_progress:', f.rows[0].count);
   console.log('custom_dictionary:', c.rows[0].count);
   console.log('excluded_dictionary:', e.rows[0].count);

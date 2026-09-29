@@ -16,9 +16,15 @@ async function migratePersonalUser() {
   console.log('🔗 Connected to Supabase Postgres.');
 
   // 1. Get personal user UUID
+<<<<<<< HEAD
   const userRes = await client.query("SELECT id FROM auth.users WHERE email = 'test@example.com'");
   if (userRes.rows.length === 0) {
     throw new Error('User test@example.com not found in auth.users');
+=======
+  const userRes = await client.query("SELECT id FROM auth.users WHERE email = 'biogerm@gmail.com'");
+  if (userRes.rows.length === 0) {
+    throw new Error('User biogerm@gmail.com not found in auth.users');
+>>>>>>> e8d1b08c0c4465b924ef4ee22117c918709a5460
   }
   const userId = userRes.rows[0].id;
   console.log(`👤 Found official personal user UUID: ${userId}`);
@@ -126,7 +132,11 @@ async function migratePersonalUser() {
   const lqCountRes = await client.query('SELECT count(*) FROM learning_queue WHERE user_id = $1', [userId]);
 
   console.log('\n=== ✅ Official Account Migration Complete & Verified on Supabase ===');
+<<<<<<< HEAD
   console.log(`- User: test@example.com (${userId})`);
+=======
+  console.log(`- User: biogerm@gmail.com (${userId})`);
+>>>>>>> e8d1b08c0c4465b924ef4ee22117c918709a5460
   console.log(`- fsrs_progress: ${fsrsCountRes.rows[0].count} rows (Expected: ${fsrsData.length})`);
   console.log(`- custom_dictionary: ${customCountRes.rows[0].count} rows (Expected: ${customData.length})`);
   console.log(`- excluded_dictionary: ${excludedCountRes.rows[0].count} rows (Expected: ${excludedData.length})`);
