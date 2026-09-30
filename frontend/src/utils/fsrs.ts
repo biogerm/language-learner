@@ -256,13 +256,11 @@ export async function submitGatePass(
         const schedulingCards = fsrs.repeat(card, new Date());
         const newCardState = (schedulingCards as any)[rating].card;
 
-        // Standard FSRS production rule: First-time graduated cards capped at next day (tomorrow)
+        // Standard FSRS production rule: First-time graduated cards are forced to next day (tomorrow)
         if (isFirstReview && rating !== Rating.Again) {
             const tomorrow = new Date();
             tomorrow.setDate(tomorrow.getDate() + 1);
-            if (newCardState.due.getTime() > tomorrow.getTime()) {
-                newCardState.due = tomorrow;
-            }
+            newCardState.due = tomorrow;
         }
 
         // Apply new state and reset gate passes
