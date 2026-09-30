@@ -893,10 +893,14 @@ export default function Flashcard() {
       const cleanInput = editDefInput.trim();
       const currentCourseId = courseId || 'sfid';
       const cleanW = (currentRecord.word_in_sentence || currentRecord.word_id || currentRecord.base_form || '').toLowerCase();
+      const baseForm = currentRecord.base_form || cleanW;
       
+      const existing = await db.custom_dictionary.where('base_form').equalsIgnoreCase(baseForm).first();
+
       const newCustom = {
+        ...(existing ? { id: existing.id } : {}),
         sv: cleanW,
-        base_form: currentRecord.base_form || cleanW,
+        base_form: baseForm,
         word_in_sentence: cleanW,
         en_translation: cleanInput,
         contextual_en: cleanInput,
